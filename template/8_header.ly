@@ -2,22 +2,22 @@
 	title = \markup { \fontsize #5 \sans 
 		\center-column {
 			\vspace #10
-			"__COMPOSITEUR"
-			"__DATE_NAISSANCE - __DATE_DECES"
+			"__COMPOSER"
+			"__COMPOSER_BIRTH_YEAR - __COMPOSER_DEATH_YEAR"
 		}
 	}
 	subtitle = \markup { 
 		\fontsize #5 \sans
 		\center-column {
 			\vspace #10
-			"__OEUVRE"
-			"__OPUS"
+			"__SCORE_TITLE_1"
+			"__SCORE_TITLE_2"
 		}
 	}
 	subsubtitle = \markup { \fontsize #3 \sans
 		\center-column {
 			\vspace #10
-			"__SOUS_TITRE"
+			"__SCORE_SUBTITLE"
 		}
 	}
 }
