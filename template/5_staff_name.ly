@@ -3,7 +3,7 @@
 %#        instrument : __INSTRUMENT                                            #
 %###############################################################################
 __CLEF_STAFF_NAME = {
-	\set Staff.instrumentName = #"Intrument_one"
+	\set Staff.instrumentName = #"__INSTRUMENT_NAME"
 %	\set Staff.instrumentName = \markup {
 %		\center-column {
 %			"Corni"
@@ -12,8 +12,8 @@ __CLEF_STAFF_NAME = {
 %			}
 %		}
 %	}
-	\set Staff.shortInstrumentName = #"I1"
-	\set Staff.midiInstrument = #"acoustic grand"
+	\set Staff.shortInstrumentName = #"__SHORT_INST_NAME"
+	\set Staff.midiInstrument = #"__MIDI_INSTRUMENT"
 	
 }
 %__SEP

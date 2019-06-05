@@ -1,5 +1,5 @@
 __CLEF_GLOBAL = {
-	\time __MESURE
-	\tempo "__INDICATION_TEMPO"
+	\time __TIME
+	\tempo "__TEMPO_MARK"
 }
 %__SEP
