@@ -44,7 +44,9 @@ class Score:
             file_input = open(self.path_input + '/' + self.input,'r')
         except IOError:
             print 'Cannot open', self.path_input + '/' + self.input
+        line = 0
         for current_line in file_input.readlines():
+            line = line + 1
             if current_line == '\n':
                 break
             if current_line[0] != '%':
@@ -138,21 +140,19 @@ class Score:
                     elif keyword == '__SCORE_SUBTITLE':
                         self.subtitle = value
                     elif keyword == '__TIME':
-                        self.time.append([])
                         temp = value.split(',')
                         if len(temp) == 1:
-                            self.time[-1].append(temp[0])
+                            self.time.append(temp[0])
                         else:
                             for i in range(len(temp)):
-                                self.time[-1].append(temp[i])
+                                self.time.append(temp[i])
                     elif keyword == '__TEMPO_MARK':
                         temp = value.split(',')
-                        self.tempo.append([])
                         if len(temp) == 1:
-                            self.tempo[-1].append(temp[0])
+                            self.tempo.append(temp[0])
                         else:
                             for i in range(len(temp)):
-                                self.tempo[-1].append(temp[i])
+                                self.tempo.append(temp[i])
                     elif keyword == '__STAFF_CLEF':
                         self.staff_clef.append([])
                         temp = value.split(',')
@@ -195,6 +195,8 @@ class Score:
                                 self.short_inst_name[-1].append(temp[i])
                     else:
                         print('Keyword ' + keyword + ' is Unknown')
+                else:
+                    print('Illegal data at line ' + str(line))
     
     def checkInput(self):
         if not len(self.nbr_bar) - self.nbr_mvt == 0:
@@ -227,6 +229,7 @@ class Score:
             self.status = 'ERROR'
             self.error.append('__NUMBER_OF_VOICE do not match __VOICE_PER_STAFF !')
         if not len(self.time) - self.nbr_mvt == 0:
+            print(self.time, self.nbr_mvt)
             self.status = 'ERROR'
             self.error.append('__TIME do not match __NUMBER_OF_MVT !')
         if not len(self.tempo) - self.nbr_mvt == 0:
@@ -237,7 +240,7 @@ class Score:
             self.error.append('__STAFF_CLEF do not match __NUMBER_OF_MVT !')
         temp = 0
         for i in range(self.nbr_mvt):
-            if len(self.staff_clef[i]) - self.nbr_staff[i] == 0:
+            if not len(self.staff_clef[i]) - self.nbr_staff[i] == 0:
                 temp = 1
         if temp == 1:
             self.status = 'ERROR'
@@ -248,22 +251,45 @@ class Score:
             self.error.append('__KEY do not match __NUMBER_OF_MVT !')
         temp = 0
         for i in range(self.nbr_mvt):
-#            print(self.key)
-            if len(self.key[i]) - self.nbr_staff[i] == 0:
+            if not len(self.key[i]) - self.nbr_staff[i] == 0:
                 temp = 1
         if temp == 1:
             self.status = 'ERROR'
             self.error.append('__KEY do not match __NUMBER_OF_STAFF !')
+        # 
+        if not len(self.midi_instrument) - self.nbr_mvt == 0:
+            self.status = 'ERROR'
+            self.error.append('__MIDI_INSTRUMENT do not match __NUMBER_OF_MVT !')
+        temp = 0
+        for i in range(self.nbr_mvt):
+            if not len(self.midi_instrument[i]) - self.nbr_voice[i] == 0:
+                temp = 1
+        if temp == 1:
+            self.status = 'ERROR'
+            self.error.append('__MIDI_INSTRUMENT do not match __NUMBER_OF_VOICE !')
+        #
+        if not len(self.instrument_name) - self.nbr_mvt == 0:
+            self.status = 'ERROR'
+            self.error.append('__INSTRUMENT_NAME do not match __NUMBER_OF_MVT !')
+        temp = 0
+        for i in range(self.nbr_mvt):
+            if not len(self.instrument_name[i]) - self.nbr_voice[i] == 0:
+                temp = 1
+        if temp == 1:
+            self.status = 'ERROR'
+            self.error.append('__INSTRUMENT_NAME do not match __NUMBER_OF_VOICE !')
+        #
+        if not len(self.short_inst_name) - self.nbr_mvt == 0:
+            self.status = 'ERROR'
+            self.error.append('__SHORT_INSTRUMENT_NAME do not match __NUMBER_OF_MVT !')
+        temp = 0
+        for i in range(self.nbr_mvt):
+            if not len(self.short_inst_name[i]) - self.nbr_voice[i] == 0:
+                temp = 1
+        if temp == 1:
+            self.status = 'ERROR'
+            self.error.append('__SHORT_INSTRUMENT_NAME do not match __NUMBER_OF_VOICE !')
 
-
-# check à rajouter :
-#  - time : autant d'arguments que de mvt
-#  - tempo : autant d'arguments que de mvt
-#  - staff_clef : autant d'arguments que de staff et de mvt
-#  - key : autant d'arguments que de mvt et de voice
-#  - midi_instrument : autant d'arguments que de mvt et de voice
-#  - instrument_name : autant d'arguments que de mvt et de voice
-#  - short_inst_name : autant d'arguments que de mvt et de voice
 
 path = sys.path[0]
 user_file = sys.argv[1]
