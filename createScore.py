@@ -22,8 +22,9 @@ class Score:
         self.nbr_mvt = 'default'
         self.nbr_bar = []
         self.nbr_staff = []
-        self.nbr_voice = []
+        self.nbr_voice = 'default'
         self.voice_per_staff = []
+        self.voice_per_mvt = []
         self.composer_name = 'default'
         self.composer_birth = 'default'
         self.composer_death = 'default'
@@ -32,11 +33,15 @@ class Score:
         self.subtitle = 'default'
         self.time = []
         self.tempo = []
-        self.staff_clef = []
+        self.voice_clef = []
         self.key = []
-        self.instrument_name = []
-        self.short_inst_name = []
-        self.midi_instrument = []
+        self.voice_name = []
+        self.voice_short_name = []
+        self.voice_midi = []
+        self.voice_group = []
+        self.date = strftime('%A %d %B %Y, %H:%M:%S',gmtime())
+        self.file_cond = []
+        self.file_part = []
     
     
     def readInput(self):
@@ -97,20 +102,11 @@ class Score:
                                     self.status = 'ERROR'
                                     self.error.append('__NUMBER_OF_STAFF is not an integer !')
                     elif keyword == '__NUMBER_OF_VOICE':
-                        temp = value.split(',')
-                        if len(temp) == 1:
-                            try:
-                                self.nbr_voice.append(int(temp[0]))
-                            except ValueError:
-                                self.status = 'ERROR'
-                                self.error.append('__NUMBER_OF_VOICE is not an integer !')
-                        else:
-                            for i in range(len(temp)):
-                                try:
-                                    self.nbr_voice.append(int(temp[i]))
-                                except ValueError:
-                                    self.status = 'ERROR'
-                                    self.error.append('__NUMBER_OF_VOICE is not an integer !')
+                        try:
+                            self.nbr_voice = int(value)
+                        except:
+                            self.status = 'ERROR'
+                            self.error.append('__NUMBER_OF_VOICE is not an integer !')
                     elif keyword == '__VOICE_PER_STAFF':
                         temp = value.split(',')
                         self.voice_per_staff.append([])
@@ -127,6 +123,22 @@ class Score:
                                 except ValueError:
                                     self.status = 'ERROR'
                                     self.error.append('__VOICE_PER_STAFF is not an integer !')
+                    elif keyword == '__VOICE_PER_MVT':
+                        temp = value.split(',')
+                        self.voice_per_mvt.append([])
+                        if len(temp) == 1:
+                            try:
+                                self.voice_per_mvt[-1].append(int(temp[0]))
+                            except ValueError:
+                                self.status = 'ERROR'
+                                self.error.append('__VOICE_PER_MVT is not an integer !')
+                        else:
+                            for i in range(len(temp)):
+                                try:
+                                    self.voice_per_mvt[-1].append(int(temp[i]))
+                                except ValueError:
+                                    self.status = 'ERROR'
+                                    self.error.append('__VOICE_PER_MVT is not an integer !')
                     elif keyword == '__COMPOSER_NAME':
                         self.composer_name = value
                     elif keyword == '__COMPOSER_BIRTH_YEAR':
@@ -153,14 +165,8 @@ class Score:
                         else:
                             for i in range(len(temp)):
                                 self.tempo.append(temp[i])
-                    elif keyword == '__STAFF_CLEF':
-                        self.staff_clef.append([])
-                        temp = value.split(',')
-                        if len(temp) == 1:
-                            self.staff_clef[-1].append(temp[0])
-                        else:
-                            for i in range(len(temp)):
-                                self.staff_clef[-1].append(temp[i])
+                    elif keyword == '__VOICE_CLEF':
+                        self.voice_clef.append(value)
                     elif keyword == '__KEY':
                         self.key.append([])
                         temp = value.split(',')
@@ -169,30 +175,22 @@ class Score:
                         else:
                             for i in range(len(temp)):
                                 self.key[-1].append(temp[i])
-                    elif keyword == '__MIDI_INSTRUMENT':
+                    elif keyword == '__VOICE_MIDI':
+                        self.voice_midi.append(value)
+                    elif keyword == '__VOICE_NAME':
+                        self.voice_name.append(value)
+                    elif keyword == '__VOICE_SHORT_NAME':
+                        self.voice_short_name.append(value)
+                    elif keyword == '__VOICE_GROUP':
+                        self.voice_group.append([])
                         temp = value.split(',')
-                        self.midi_instrument.append([])
-                        if len(temp) == 1:
-                            self.midi_instrument[-1].append(temp[0])
-                        else:
-                            for i in range(len(temp)):
-                                self.midi_instrument[-1].append(temp[i])
-                    elif keyword == '__INSTRUMENT_NAME':
-                        temp = value.split(',')
-                        self.instrument_name.append([])
-                        if len(temp) == 1:
-                            self.instrument_name[-1].append(temp[0])
-                        else:
-                            for i in range(len(temp)):
-                                self.instrument_name[-1].append(temp[i])
-                    elif keyword == '__SHORT_INSTRUMENT_NAME':
-                        temp = value.split(',')
-                        self.short_inst_name.append([])
-                        if len(temp) == 1:
-                            self.short_inst_name[-1].append(temp[0])
-                        else:
-                            for i in range(len(temp)):
-                                self.short_inst_name[-1].append(temp[i])
+                        self.voice_group[-1].append(temp[0])
+                        try:
+                            for i in range(len(temp)-1):
+                                self.voice_group[-1].append(int(temp[i+1]))
+                        except ValueError:
+                            self.status = 'ERROR'
+                            self.error.append('__VOICE_GROUP is not an integer !')
                     else:
                         print('Keyword ' + keyword + ' is Unknown')
                 else:
@@ -205,29 +203,16 @@ class Score:
         if not len(self.nbr_staff) - self.nbr_mvt == 0:
             self.status = 'ERROR'
             self.error.append('__NUMBER_OF_STAFF do not match __NUMBER_OF_MVT !')
-        if not len(self.nbr_voice) - self.nbr_mvt == 0:
-            self.status = 'ERROR'
-            self.error.append('__NUMBER_OF_VOICE do not match __NUMBER_OF_MVT !')
         if not len(self.voice_per_staff) - self.nbr_mvt == 0:
             self.status = 'ERROR'
             self.error.append('__VOICE_PER_STAFF do not match __NUMBER_OF_MVT !')
         temp = 0
         for i in range(len(self.nbr_staff)):
-            if self.nbr_staff[i] > self.nbr_voice[i]:
+            if self.nbr_staff[i] > self.nbr_voice:
                 temp = 1
         if temp == 1:
             self.status = 'ERROR'
             self.error.append('one value of __NUMBER_OF_STAFF is greater than __NUMBER_OF_VOICE !')
-        temp = 0
-        for i in range(self.nbr_mvt):
-            total = 0
-            for j in range(len(self.voice_per_staff[i])):
-                total = total + self.voice_per_staff[i][j]
-            if not total - self.nbr_voice[i] == 0:
-                temp = 1
-        if temp == 1:
-            self.status = 'ERROR'
-            self.error.append('__NUMBER_OF_VOICE do not match __VOICE_PER_STAFF !')
         if not len(self.time) - self.nbr_mvt == 0:
             print(self.time, self.nbr_mvt)
             self.status = 'ERROR'
@@ -235,16 +220,9 @@ class Score:
         if not len(self.tempo) - self.nbr_mvt == 0:
             self.status = 'ERROR'
             self.error.append('__TEMPO_MARK do not match __NUMBER_OF_MVT !')
-        if not len(self.staff_clef) - self.nbr_mvt == 0:
+        if not len(self.voice_clef) - self.nbr_voice == 0:
             self.status = 'ERROR'
-            self.error.append('__STAFF_CLEF do not match __NUMBER_OF_MVT !')
-        temp = 0
-        for i in range(self.nbr_mvt):
-            if not len(self.staff_clef[i]) - self.nbr_staff[i] == 0:
-                temp = 1
-        if temp == 1:
-            self.status = 'ERROR'
-            self.error.append('__STAFF_CLEF do not match __NUMBER_OF_STAFF !')
+            self.error.append('__VOICE_CLEF do not match __NUMBER_OF_VOICE !')
         # check
         if not len(self.key) - self.nbr_mvt == 0:
             self.status = 'ERROR'
@@ -257,39 +235,57 @@ class Score:
             self.status = 'ERROR'
             self.error.append('__KEY do not match __NUMBER_OF_STAFF !')
         # 
-        if not len(self.midi_instrument) - self.nbr_mvt == 0:
+        if not len(self.voice_midi) - self.nbr_voice == 0:
             self.status = 'ERROR'
-            self.error.append('__MIDI_INSTRUMENT do not match __NUMBER_OF_MVT !')
-        temp = 0
-        for i in range(self.nbr_mvt):
-            if not len(self.midi_instrument[i]) - self.nbr_voice[i] == 0:
-                temp = 1
-        if temp == 1:
-            self.status = 'ERROR'
-            self.error.append('__MIDI_INSTRUMENT do not match __NUMBER_OF_VOICE !')
+            self.error.append('__VOICE_MIDI do not match __NUMBER_OF_VOICE !')
         #
-        if not len(self.instrument_name) - self.nbr_mvt == 0:
+        if not len(self.voice_name) - self.nbr_voice == 0:
             self.status = 'ERROR'
-            self.error.append('__INSTRUMENT_NAME do not match __NUMBER_OF_MVT !')
-        temp = 0
-        for i in range(self.nbr_mvt):
-            if not len(self.instrument_name[i]) - self.nbr_voice[i] == 0:
-                temp = 1
-        if temp == 1:
-            self.status = 'ERROR'
-            self.error.append('__INSTRUMENT_NAME do not match __NUMBER_OF_VOICE !')
+            self.error.append('__VOICE_NAME do not match __NUMBER_OF_VOICE !')
         #
-        if not len(self.short_inst_name) - self.nbr_mvt == 0:
+        if not len(self.voice_short_name) - self.nbr_voice == 0:
             self.status = 'ERROR'
-            self.error.append('__SHORT_INSTRUMENT_NAME do not match __NUMBER_OF_MVT !')
-        temp = 0
+            self.error.append('__VOICE_SHORT_NAME do not match __NUMBER_OF_VOICE !')
+    
+    def updateInternal(self):
+        """
+        - determine the number of score to be written (one per movement + one per instrument)
+        - assign the paramater of each of them
+        - 
+        """
+        if len(self.voice_group) == 1:
+            if self.nbr_voice > 1:
+                self.nbr_score = 2
+            else:
+                self.nbr_score = 1
+        else:
+            self.nbr_score = self.nbr_mvt + len(self.voice_group)
+        # creation des conducteurs
         for i in range(self.nbr_mvt):
-            if not len(self.short_inst_name[i]) - self.nbr_voice[i] == 0:
-                temp = 1
-        if temp == 1:
-            self.status = 'ERROR'
-            self.error.append('__SHORT_INSTRUMENT_NAME do not match __NUMBER_OF_VOICE !')
+            file_name = '00_' + str(self.file_label) + '_Conductor_mvt' + \
+                str(i+1) + '.ly'
+            print(file_name)
+            self.file_cond.append(lilyFile(file_name, self.folder))
+        # Création des parts
+        for i in range(len(self.voice_group)):
+            file_name = '00_' + str(self.file_label) + '_Part' + rightJustify(i+1) \
+                + '_' + str(self.voice_group[i][0]) + '.ly'
+            print(file_name)
+            self.file_part.append(lilyFile(file_name, self.folder))
+        
 
+class lilyFile:
+    def __init__(self, filename, path):
+        self.file_name = filename
+        self.path = path
+        self.content = []
+
+def rightJustify(number):
+    if number < 10:
+        res = '0' + str(number)
+    else:
+        res = str(number)
+    return res
 
 path = sys.path[0]
 user_file = sys.argv[1]
@@ -299,3 +295,5 @@ myScore.readInput()
 myScore.checkInput()
 if myScore.status == 'ERROR':
     print(myScore.error)
+else:
+    myScore.updateInternal()
