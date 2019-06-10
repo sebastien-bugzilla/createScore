@@ -1,9 +1,13 @@
 %###############################################################################
-%#   S T A F F    __X __Y                                                      #
-%#        instrument : __INSTRUMENT                                            #
+%#                           V O I C E   N A M E S                             #
 %###############################################################################
 __CLEF_STAFF_NAME = {
 	\set Staff.instrumentName = #"__VOICE_NAME"
+	\set Staff.shortInstrumentName = #"__VOICE_SHORT_NAME"
+	\set Staff.midiInstrument = #"__VOICE_MIDI"
+}
+%__SEP
+
 %	\set Staff.instrumentName = \markup {
 %		\center-column {
 %			"Corni"
@@ -12,8 +16,4 @@ __CLEF_STAFF_NAME = {
 %			}
 %		}
 %	}
-	\set Staff.shortInstrumentName = #"__SHORT_INST_NAME"
-	\set Staff.midiInstrument = #"__MIDI_INSTRUMENT"
-	
-}
-%__SEP
+

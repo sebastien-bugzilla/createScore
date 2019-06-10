@@ -1,5 +1,8 @@
+%###############################################################################
+%#                          M U S I C   S E C T I O N                          #
+%###############################################################################
 __CLEF_MUSIQUE = \relative c {
-	\clef __STAFF_CLEF
-	__INITIAL_KEY_SIGNATURE
+	\clef __VOICE_CLEF
+	\key __INITIAL_KEY_SIGNATURE
 %	\transposition a
 

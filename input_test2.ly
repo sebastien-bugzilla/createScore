@@ -17,6 +17,11 @@ __NUMBER_OF_VOICE:1
 %        X is the number of movement
 %        Y is the number of staff of the Xth movement
 __VOICE_PER_STAFF:1
+% Voice playing per mvt
+%    X lines of Y numbers 1 (or 0) if voice X play (or not) in mvt Y
+%       X is the number of the voice (from top to bass)
+%       Y is the number of the mvt
+__VOICE_PER_MVT:1
 % Composer
 __COMPOSER_NAME:Johan Sebastian Bach
 % Composer's birth year
@@ -37,7 +42,7 @@ __TEMPO_MARK:Allegro
 %    X lines of Y clef name (treble, bass, alto, tenor, etc...) seperated by comas where :
 %        X is the number of movement
 %        Y is the number of staff
-__STAFF_CLEF:treble
+__VOICE_CLEF:treble
 % key of each voice for each movement 
 %    X lines of Y instrument name seperated by comas where :
 %        X is the number of movement
@@ -47,17 +52,21 @@ __KEY:c major
 %    X lines of Y instrument name seperated by comas where :
 %        X is the number of movement
 %        Y is the number of voice
-__INSTRUMENT_NAME:Cor
+__VOICE_NAME:Cor
 % Short nstrument name of each voice for each movement 
 %    X lines of Y instrument name seperated by comas where :
 %        X is the number of movement
 %        Y is the number of voice
-__SHORT_INSTRUMENT_NAME:Hr
+__VOICE_SHORT_NAME:Hr
 % MIDI instrument of each voice for each movement 
 %    X lines of Y instrument name seperated by comas where :
 %        X is the number of movement
 %        Y is the number of voice
-__MIDI_INSTRUMENT:horn
+__VOICE_MIDI:horn
+% Voice group to write seperate parts. One line per group. will be used to gather
+% score of flute I and II in one file, instead of generate seperate files of each voice.
+% 
+__VOICE_GROUP:Corno,1
 
 
 ________________________________________________________________________________

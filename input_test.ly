@@ -103,9 +103,9 @@ __VOICE_MIDI:violin
 __VOICE_MIDI:viola
 __VOICE_MIDI:violoncello
 __VOICE_MIDI:violoncello
-% Instrument name of each voice for each movement 
+% Instrument name of each voice
 %    X lines instrument name 
-%        X is the number of movement
+%        X is the number of voices
 __VOICE_NAME:Corno I
 __VOICE_NAME:Corno II
 __VOICE_NAME:Oboe I
