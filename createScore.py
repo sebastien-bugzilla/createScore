@@ -358,6 +358,7 @@ class Score:
             self.file_optional.append(lilyFile(file_name_cond, self.folder))
             self.file_optional[-1].upd_option(self.template[3])
             file_name_part = self.file_label + '_Parts_option.ly'
+            self.file_optional.append(lilyFile(file_name_part, self.folder))
             self.file_optional[-1].upd_option(self.template[4])
             # add of file time as include in part file
             for i in range(len(self.file_part)):
@@ -451,24 +452,62 @@ class Score:
                             input_music, l+1)
     
     def create_score_cond(self):
-        for i in range(len(self.nbr_mvt)):
-            for j in range(len(self.nbr_staff[i])):
-                
-                if self.voice_per_mvt[j][i] == 1:
-                    # input time
-                    if self.nbr_mvt == 1:
-                        input_time = 'timeMvt'
-                    else:
-                        input_time = 'timeMvt' + romain(i+1)
-                    # input name
-                    input_name = 'nameVoice' + romain(j+1)
-                    # input 
+        if len(self.file_cond) > 0:
+            for i in range(self.nbr_mvt):
+                # input music & input name
+                local_music = []
+                local_name = []
+                liste1 = []
+                liste2 = []
+                for j in range(self.nbr_voice):
+                    if self.voice_per_mvt[j][i] == 1:
+                        voice = self.voice_name[j][0]
+                        voice = voice.replace(' ', '')
+                        liste1.append('music'+ voice + 'Mvt' + romain(i+1))
+                        liste2.append('nameVoice' + romain(j+1))
+                added_voice = 0
+                for j in range(self.nbr_staff[i]):
+                    local_music.append([])
+                    local_name.append([])
+                    for k in range(self.voice_per_staff[i][j]):
+                        local_music[-1].append(liste1[added_voice])
+                        local_name[-1].append(liste2[added_voice])
+                        added_voice = added_voice + 1
+                # input time
+                if self.nbr_mvt == 1:
+                    input_time = 'timeMvt'
+                else:
+                    input_time = 'timeMvt' + romain(i+1)
+                self.file_cond[i].upd_score_cond(input_time, local_name, local_music)
     
     def close_score(self):
         for i in range(len(self.file_cond)):
             self.file_cond[i].content.append('}')
         for i in range(len(self.file_part)):
             self.file_part[i].content.append('}')
+    
+    def create_folder(self):
+        try:
+            os.mkdir(self.folder)
+        except OSError:
+            print('Creation of directory %s failed' % self.folder)
+    
+    def generate_files(self):
+        if len(self.file_cond) > 0:
+            for i in range(len(self.file_cond)):
+                self.file_cond[i].write()
+        if len(self.file_part) > 0:
+            for i in range(len(self.file_part)):
+                self.file_part[i].write()
+        if len(self.file_music) > 0:
+            for i in range(len(self.file_music)):
+                self.file_music[i].write()
+        if len(self.file_optional) > 0:
+            for i in range(len(self.file_optional)):
+                self.file_optional[i].write()
+
+
+
 
 class lilyFile:
     def __init__(self, filename, path):
@@ -613,6 +652,42 @@ class lilyFile:
         self.content.append('\t\t}')
         self.content.append('\t}')
     
+    def upd_score_cond(self, time, name, music):
+        time = '\\' + time
+        self.content.append('\t\score {')
+        self.content.append('\t\t<<')
+        self.content.append('\t\t\t\\new StaffGroup <<')
+        for i in range(len(name)):
+            self.content.append('\t\t\t\t\\new Staff {')
+            self.content.append('\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+            self.content.append('\t\t\t\t\t' + '\\' + name[i][0])
+            if len(music[i]) > 1:
+                temp = '\\' + music[i][0][0]
+                j = 1
+                while j < len(music[i]):
+                    temp = temp + '\\' + music[i][j][0]
+                    j = j + 1
+                self.content.append('\t\t\t\t\t\\partcombine ' + temp)
+            else:
+                self.content.append('\t\t\t\t\t\\' + music[i][0])
+            self.content.append('\t\t\t\t}')
+        self.content.append('\t\t\t>>')
+        self.content.append('\t\t>>')
+        self.content.append('\t\t\\header {')
+        self.content.append('\t\t\tbreakbefore = ##t')
+        self.content.append('\t\t}')
+        self.content.append('\t\t\\layout {')
+        self.content.append('\t\t}')
+        self.content.append('\t}')
+    
+    def write(self):
+        file_location = os.path.join(self.path, self.file_name)
+        write_file = open(file_location, 'w')
+        for i in range(len(self.content)):
+            write_file.write(self.content[i] + '\n')
+        write_file.close()
+    
+    
     def display(self):
         for i in range(len(self.content)):
             print(self.content[i])
@@ -656,7 +731,8 @@ else:
     myScore.create_include()
     myScore.create_book()
     myScore.create_score_part()
-    myScore.file_part[0].display()
-#    for i in range(len(myScore.file_music)):
-#        myScore.file_music[i].display()
-    #myScore.file_time[0].display()
+    myScore.create_score_cond()
+    myScore.close_score()
+    myScore.create_folder()
+    myScore.generate_files()
+
