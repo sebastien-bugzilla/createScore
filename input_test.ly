@@ -3,7 +3,7 @@ __PROJECT:Concerto Brandebourgeois n°1
 % File label (will be used to derive all filenames : no space)
 __FILE_LABEL:BrandenburgConcerto1
 % Folder (will be created if it doesn't exist)
-__FOLDER:/media/Documents/Partitions/lilypond/17-BWV1046
+__FOLDER:/media/Documents/Programmation/Python/createScore/test3
 % Number of movement
 __NUMBER_OF_MVT:10
 % Number of bar for each movement (number only, separated by comas)
@@ -73,20 +73,23 @@ __VOICE_CLEF:treble
 __VOICE_CLEF:alto
 __VOICE_CLEF:bass
 __VOICE_CLEF:bass
-% Key of each staff for each movement 
+% Key of each voice for each movement 
 %    X lines of Y key (c major, d minor, etc...) seperated by comas where :
-%        X is the number of movement
-%        Y is the number of staff
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
-__KEY:c major,c major,c major
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
-__KEY:c major,c major,c major,c major
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
-__KEY:c major,c major,c major
-__KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
+%        X is the number of voice
+%        Y is the number of mvt
+% major, minor will be replace by \major and \minor
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
+__KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
 % MIDI instrument of each voice for each movement 
 %    X lines of Y instrument name seperated by comas where :
 %        X is the number of movement
@@ -136,7 +139,7 @@ __VOICE_SHORT_NAME:Vlc
 __VOICE_SHORT_NAME:Cont
 % Voice group to write seperate parts. One line per group. will be used to gather
 % score of flute I and II in one file, instead of generate seperate files of each voice.
-% 
+% First field must be the name of the group, next fields are numbers only
 __VOICE_GROUP:Corno,1,2
 __VOICE_GROUP:Oboe,3,4,5
 __VOICE_GROUP:Fagotto,6
@@ -145,10 +148,23 @@ __VOICE_GROUP:VlnI,8
 __VOICE_GROUP:VlnII,9
 __VOICE_GROUP:Vla,10
 __VOICE_GROUP:Vlc,11,12
+% file gathering : by mvt, by voice, no (default)
+%   mvt : will gather files by movements
+%   voice : will gather files by movements
+%   no : no subdirectories
+__FILE_GATHER:mvt
+% Voice formatting
 
 
 
 ________________________________________________________________________________
+
+reste à voir :
+- grandstaff
++ répertoire / sous répertoires
+= voix de formattage
+- fichier midi simplifié pour débug
+- fichier markup 
 
 obligatoire
 

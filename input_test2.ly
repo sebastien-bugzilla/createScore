@@ -3,7 +3,7 @@ __PROJECT:Concerto Brandebourgeois n°1
 % File label (will be used to derive all filenames : no space)
 __FILE_LABEL:BrandenburgConcerto1
 % Folder (will be created if it doesn't exist)
-__FOLDER:/media/Documents/Partitions/lilypond/17-BWV1046
+__FOLDER:/media/Documents/Programmation/Python/createScore/test2
 % Number of movement
 __NUMBER_OF_MVT:1
 % Number of bar for each movement (number only, separated by comas)

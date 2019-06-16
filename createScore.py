@@ -40,6 +40,7 @@ class Score:
         self.voice_midi = []
         self.voice_group = []
         self.date = strftime('%A %d %B %Y, %H:%M:%S',gmtime())
+        self.file_gather = 'no'
         self.file_cond = []
         self.file_part = []
         self.file_music = []
@@ -199,6 +200,13 @@ class Score:
                         except ValueError:
                             self.status = 'ERROR'
                             self.error.append('__VOICE_GROUP is not an integer !')
+                    elif keyword == '__FILE_GATHER':
+                        if value == 'mvt':
+                            self.file_gather = 'mvt'
+                        elif value == 'voice':
+                            self.file_gather = 'voice'
+                        else:
+                            self.file_gather = 'no'
                     else:
                         print('Keyword ' + keyword + ' is Unknown')
                 else:
@@ -334,6 +342,9 @@ class Score:
         else:
             file_name = self.file_label + '_timeMvt.ly'
             self.file_optional.append(lilyFile(file_name, self.folder))
+            self.file_optional[0].add_info(0,0)
+            self.file_optional[0].upd_file_id(self.template[0], self.project, \
+                file_name, self.date)
             if self.nbr_mvt == 1:
                 self.file_optional[0].upd_time(self.template[2], 'timeMvt', self.time[0], \
                     self.tempo[0])
@@ -343,10 +354,14 @@ class Score:
                     self.file_optional[0].upd_time(self.template[2], 'timeMvt' + suffix, \
                         self.time[i], self.tempo[i])
             # add of file time as include in part file
+            if self.file_gather == 'no':
+                subdir = ''
+            else:
+                subdir = '00-Common'
             for i in range(len(self.file_part)):
-                self.file_part[i].add_include(file_name, '')
+                self.file_part[i].add_include(file_name, subdir)
             for i in range(len(self.file_cond)):
-                self.file_cond[i].add_include(file_name, '')
+                self.file_cond[i].add_include(file_name, subdir)
     
     def create_option(self):
         # if only one score is produced, section options is added directly in the file
@@ -356,15 +371,25 @@ class Score:
         else:
             file_name_cond = self.file_label + '_Conductor_option.ly'
             self.file_optional.append(lilyFile(file_name_cond, self.folder))
+            self.file_optional[-1].add_info(0,0)
+            self.file_optional[-1].upd_file_id(self.template[0], self.project, \
+                file_name_cond, self.date)
             self.file_optional[-1].upd_option(self.template[3])
             file_name_part = self.file_label + '_Parts_option.ly'
             self.file_optional.append(lilyFile(file_name_part, self.folder))
+            self.file_optional[-1].add_info(0,0)
+            self.file_optional[-1].upd_file_id(self.template[0], self.project, \
+                file_name_part, self.date)
             self.file_optional[-1].upd_option(self.template[4])
-            # add of file time as include in part file
+            # add of file option as include in part file
+            if self.file_gather == 'no':
+                subdir = ''
+            else:
+                subdir = '00-Common'
             for i in range(len(self.file_part)):
-                self.file_part[i].add_include(file_name_part, '')
+                self.file_part[i].add_include(file_name_part, subdir)
             for i in range(len(self.file_cond)):
-                self.file_cond[i].add_include(file_name_cond, '')
+                self.file_cond[i].add_include(file_name_cond, subdir)
     
     def create_staff_name(self):
         # if only one score is produced, section file name is added directly in the file
@@ -377,6 +402,9 @@ class Score:
         else:
             file_name = self.file_label + '_VoiceName.ly'
             self.file_optional.append(lilyFile(file_name, self.folder))
+            self.file_optional[-1].add_info(0,0)
+            self.file_optional[-1].upd_file_id(self.template[0], self.project, \
+                file_name, self.date)
             for i in range(self.nbr_voice):
                 suffix = romain(i+1)
                 self.file_optional[-1].upd_staff_name(self.template[5], 'nameVoice' \
@@ -404,14 +432,23 @@ class Score:
                         file_name = rightJustify(j+1) + '_mvt' + rightJustify(j+1) + '_' + \
                             rightJustify(i+1) + '_music_' + voice + '.ly'
                         musicFile = lilyFile(file_name, self.folder)
+                        musicFile.add_info(j+1, i+1)
+                        musicFile.upd_file_id(self.template[0], self.project, \
+                            file_name, self.date)
                         musicFile.upd_music(self.template[6], section_name, \
                             self.voice_clef[i], self.key[i][j], self.nbr_bar[j], 5)
                         self.file_music.append(musicFile)
-                        self.file_cond[j].add_include(file_name, '')
+                        if self.file_gather == 'mvt':
+                            subdir = rightJustify(j+1) + '-Mvt' + str(j+1)
+                        elif self.file_gather == 'voice':
+                            subdir = rightJustify(i+1) + '-Voice' + str(i+1)
+                        else:
+                            subdir = ''
+                        self.file_cond[j].add_include(file_name, subdir)
                         for k in range(len(self.voice_group)):
                             if i+1 in self.voice_group[k]:
-                                #print(i+1, self.voice_group[k])
-                                self.file_part[k].add_include(file_name, '')
+                                self.file_part[k].add_include(file_name, subdir)
+    
     
     def create_include(self):
         for i in range(len(self.file_cond)):
@@ -486,11 +523,37 @@ class Score:
         for i in range(len(self.file_part)):
             self.file_part[i].content.append('}')
     
+    def gather_file(self):
+        if len(self.file_music) > 0:
+            for i in range(len(self.file_music)):
+                self.file_music[i].upd_gather(self.file_gather)
+        if len(self.file_optional) > 0:
+            for i in range(len(self.file_optional)):
+                self.file_optional[i].upd_gather(self.file_gather)
+    
     def create_folder(self):
         try:
             os.mkdir(self.folder)
         except OSError:
             print('Creation of directory %s failed' % self.folder)
+        if len(self.file_optional) > 0:
+            for i in range(len(self.file_optional)):
+                if hasattr(self.file_optional[i], 'subdir'):
+                    new_dir = self.folder + '/' + self.file_optional[i].subdir
+                    if not os.path.exists(new_dir):
+                        try:
+                            os.mkdir(new_dir)
+                        except:
+                            print('Creation of directory %s failed' % new_dir)
+        if len(self.file_music) > 0:
+            for i in range(len(self.file_music)):
+                if hasattr(self.file_music[i], 'subdir'):
+                    new_dir = self.folder + '/' + self.file_music[i].subdir
+                    if not os.path.exists(new_dir):
+                        try:
+                            os.mkdir(new_dir)
+                        except:
+                            print('Creation of directory %s failed' % new_dir)
     
     def generate_files(self):
         if len(self.file_cond) > 0:
@@ -516,8 +579,9 @@ class lilyFile:
         self.content = []
         self.include_file = []
     
-    def add_include(self, include_file, path):
-        self.include_file.append(include_file)
+    def add_include(self, include_file, subdir):
+        data = [include_file, subdir]
+        self.include_file.append(data)
     
     def upd_file_id(self, template, project, file_name, date):
         try:
@@ -610,8 +674,12 @@ class lilyFile:
     
     def upd_include(self):
         for i in range(len(self.include_file)):
-            inc_file = self.include_file[i]
-            self.content.append('\include "' + inc_file + '"')
+            inc_file = self.include_file[i][0]
+            subdir = self.include_file[i][1]
+            if subdir == '':
+                self.content.append('\include "' + inc_file + '"')
+            else:
+                self.content.append('\include "./' + subdir + '/' + inc_file + '"')
     
     def upd_book(self, template, composer, birth, death, title1, title2, subtitle):
         try:
@@ -681,12 +749,32 @@ class lilyFile:
         self.content.append('\t}')
     
     def write(self):
-        file_location = os.path.join(self.path, self.file_name)
+        if hasattr(self, 'subdir'):
+            file_location = os.path.join(self.path, self.subdir, self.file_name)
+        else:
+            file_location = os.path.join(self.path, self.file_name)
         write_file = open(file_location, 'w')
         for i in range(len(self.content)):
             write_file.write(self.content[i] + '\n')
         write_file.close()
     
+    def add_info(self, mvt, voice):
+        self.mvt = mvt
+        self.voice = voice
+    
+    def upd_gather(self, orga):
+        if orga == 'mvt':
+            if self.mvt == 0:
+                self.subdir = '00-Common'
+            else:
+                self.subdir = rightJustify(self.mvt) + '-Mvt' + str(self.mvt)
+        elif orga == 'voice':
+            if self.voice == 0:
+                self.subdir = '00-Common'
+            else:
+                self.subdir = rightJustify(self.voice) + '-Voice' + str(self.voice)
+        else:
+            self.subdir = ''
     
     def display(self):
         for i in range(len(self.content)):
@@ -733,6 +821,7 @@ else:
     myScore.create_score_part()
     myScore.create_score_cond()
     myScore.close_score()
+    myScore.gather_file()
     myScore.create_folder()
     myScore.generate_files()
 
