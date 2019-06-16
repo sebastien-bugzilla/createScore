@@ -6,7 +6,6 @@ __CLEF_STAFF_NAME = {
 	\set Staff.shortInstrumentName = #"__VOICE_SHORT_NAME"
 	\set Staff.midiInstrument = #"__VOICE_MIDI"
 }
-%__SEP
 
 %	\set Staff.instrumentName = \markup {
 %		\center-column {

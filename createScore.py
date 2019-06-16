@@ -5,6 +5,7 @@ import sys
 import os
 from time import gmtime, strftime
 import math
+import locale
 
 class Score:
     def __init__(self, path, input_file):
@@ -41,6 +42,7 @@ class Score:
         self.voice_group = []
         self.date = strftime('%A %d %B %Y, %H:%M:%S',gmtime())
         self.file_gather = 'no'
+        self.voice_format = 'no'
         self.file_cond = []
         self.file_part = []
         self.file_music = []
@@ -207,6 +209,8 @@ class Score:
                             self.file_gather = 'voice'
                         else:
                             self.file_gather = 'no'
+                    elif keyword == '__VOICE_FORMAT':
+                        self.voice_format = value
                     else:
                         print('Keyword ' + keyword + ' is Unknown')
                 else:
@@ -410,6 +414,14 @@ class Score:
                 self.file_optional[-1].upd_staff_name(self.template[5], 'nameVoice' \
                     + suffix, self.voice_name[i], self.voice_short_name[i], \
                     self.voice_midi[i])
+            if self.file_gather == 'no':
+                subdir = ''
+            else:
+                subdir = '00-Common'
+            for i in range(len(self.file_part)):
+                self.file_part[i].add_include(file_name, subdir)
+            for i in range(len(self.file_cond)):
+                self.file_cond[i].add_include(file_name, subdir)
     
     def create_music(self):
         # if only one score is produced, music section is added directly in the file
@@ -449,6 +461,31 @@ class Score:
                             if i+1 in self.voice_group[k]:
                                 self.file_part[k].add_include(file_name, subdir)
     
+    def create_voice_format(self):
+        if self.voice_format == 'yes':
+            if len(self.file_cond) + len(self.file_part) == 1:
+                for i in range(self.nbr_mvt):
+                    section_name = 'formatMvt' + romain(i+1) + 'VoiceI'
+                    self.file_part[0].upd_voice_format(section_name)
+            else:
+                for i in range(self.nbr_mvt):
+                    file_name = '00_' + self.file_label + '_Format_Mvt' + str(i+1) + '.ly'
+                    section_name_cond = 'formatConductorMvt' + romain(i+1)
+                    format_file = lilyFile(file_name, self.folder)
+                    format_file.add_info(0,0)
+                    format_file.upd_file_id(self.template[0], self.project, \
+                        file_name, self.date)
+                    for j in range(self.nbr_voice):
+                        if self.voice_per_mvt[j][i] == 1:
+                            section_name = 'formatMvt' + romain(i+1) + 'Voice' + romain(j+1)
+                            format_file.upd_voice_format(section_name)
+                    format_file.upd_voice_format(section_name_cond)
+                    self.file_optional.append(format_file)
+                    for j in range(len(self.file_part)):
+                        self.file_part[j].add_include(file_name, '00-Common')
+                    for j in range(len(self.file_cond)):
+                        if i == j:
+                            self.file_cond[j].add_include(file_name, '00-Common')
     
     def create_include(self):
         for i in range(len(self.file_cond)):
@@ -484,9 +521,12 @@ class Score:
                         voice = voice.replace(' ','')
                         input_music = 'music' + voice + 'Mvt' +  romain(l+1)
                         # input format voice
-                        input_format = 'no'
+                        if self.voice_format == 'no':
+                            input_format = 'no'
+                        else:
+                            input_format = 'formatMvt' + romain(l+1) + 'Voice' + romain(k+1)
                         self.file_part[i].upd_score_part(input_time, input_name, \
-                            input_music, l+1)
+                            input_music, l+1, input_format)
     
     def create_score_cond(self):
         if len(self.file_cond) > 0:
@@ -515,7 +555,13 @@ class Score:
                     input_time = 'timeMvt'
                 else:
                     input_time = 'timeMvt' + romain(i+1)
-                self.file_cond[i].upd_score_cond(input_time, local_name, local_music)
+                # input format
+                if self.voice_format == 'no':
+                    input_format = 'no'
+                else:
+                    input_format = 'formatConductorMvt' + romain(i+1)
+                self.file_cond[i].upd_score_cond(input_time, local_name, \
+                    local_music, input_format)
     
     def close_score(self):
         for i in range(len(self.file_cond)):
@@ -672,6 +718,12 @@ class lilyFile:
                 self.content.append('\t')
         self.content.append('}')
     
+    def upd_voice_format(self, format_section):
+        self.content.append(format_section + ' = {')
+        self.content.append('\t\override Score.NonMusicalPaperColumn.line-break-permission = ##f')
+        self.content.append('\t\override Score.NonMusicalPaperColumn.page-break-permission = ##f')
+        self.content.append('}')
+    
     def upd_include(self):
         for i in range(len(self.include_file)):
             inc_file = self.include_file[i][0]
@@ -696,12 +748,16 @@ class lilyFile:
             line = line.replace('__SCORE_SUBTITLE',subtitle)
             self.content.append(line)
     
-    def upd_score_part(self, time, name, music, i_mvt):
+    def upd_score_part(self, time, name, music, i_mvt, input_format):
         time = '\\' + time
         name = '\\' + name
         music = '\\' + music
         self.content.append('\t\score {')
         self.content.append('\t\t\\new Staff <<')
+        if not input_format == 'no':
+            self.content.append('\t\t\t\\new Voice {')
+            self.content.append('\t\t\t\t' + '\\' + input_format)
+            self.content.append('\t\t\t}')
         self.content.append('\t\t\t\\new Voice {')
         self.content.append('\t\t\t\t' + time + ' \generalOptions \partOptions')
         self.content.append('\t\t\t\t' + name + ' ' + music)
@@ -720,25 +776,61 @@ class lilyFile:
         self.content.append('\t\t}')
         self.content.append('\t}')
     
-    def upd_score_cond(self, time, name, music):
+    def upd_score_cond(self, time, name, music, input_format):
         time = '\\' + time
         self.content.append('\t\score {')
         self.content.append('\t\t<<')
         self.content.append('\t\t\t\\new StaffGroup <<')
         for i in range(len(name)):
-            self.content.append('\t\t\t\t\\new Staff {')
-            self.content.append('\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
-            self.content.append('\t\t\t\t\t' + '\\' + name[i][0])
-            if len(music[i]) > 1:
-                temp = '\\' + music[i][0][0]
-                j = 1
-                while j < len(music[i]):
-                    temp = temp + '\\' + music[i][j][0]
-                    j = j + 1
-                self.content.append('\t\t\t\t\t\\partcombine ' + temp)
+            if not input_format == 'no':
+                if i == 0:
+                    self.content.append('\t\t\t\t\\new Staff <<')
+                    self.content.append('\t\t\t\t\t\\new Voice {')
+                    self.content.append('\t\t\t\t\t\t' + '\\' + input_format)
+                    self.content.append('\t\t\t\t\t}')
+                    self.content.append('\t\t\t\t\t\\new Voice {')
+                    self.content.append('\t\t\t\t\t\t'+ time + \
+                        ' \generalOptions \conductorOptions')
+                    self.content.append('\t\t\t\t\t\t' + '\\' + name[i][0])
+                    if len(music[i]) > 1:
+                        temp = '\\' + music[i][0][0]
+                        j = 1
+                        while j < len(music[i]):
+                            temp = temp + '\\' + music[i][j][0]
+                            j = j + 1
+                        self.content.append('\t\t\t\t\t\t\\partcombine ' + temp)
+                    else:
+                        self.content.append('\t\t\t\t\t\t\\' + music[i][0])
+                    self.content.append('\t\t\t\t\t}')
+                    self.content.append('\t\t\t\t>>')
+                else:
+                    self.content.append('\t\t\t\t\\new Staff {')
+                    self.content.append('\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+                    self.content.append('\t\t\t\t\t' + '\\' + name[i][0])
+                    if len(music[i]) > 1:
+                        temp = '\\' + music[i][0][0]
+                        j = 1
+                        while j < len(music[i]):
+                            temp = temp + '\\' + music[i][j][0]
+                            j = j + 1
+                        self.content.append('\t\t\t\t\t\\partcombine ' + temp)
+                    else:
+                        self.content.append('\t\t\t\t\t\\' + music[i][0])
+                    self.content.append('\t\t\t\t}')
             else:
-                self.content.append('\t\t\t\t\t\\' + music[i][0])
-            self.content.append('\t\t\t\t}')
+                self.content.append('\t\t\t\t\\new Staff {')
+                self.content.append('\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+                self.content.append('\t\t\t\t\t' + '\\' + name[i][0])
+                if len(music[i]) > 1:
+                    temp = '\\' + music[i][0][0]
+                    j = 1
+                    while j < len(music[i]):
+                        temp = temp + '\\' + music[i][j][0]
+                        j = j + 1
+                    self.content.append('\t\t\t\t\t\\partcombine ' + temp)
+                else:
+                    self.content.append('\t\t\t\t\t\\' + music[i][0])
+                self.content.append('\t\t\t\t}')
         self.content.append('\t\t\t>>')
         self.content.append('\t\t>>')
         self.content.append('\t\t\\header {')
@@ -799,7 +891,6 @@ def romain(n):
     return res
 
 
-
 path = sys.path[0]
 user_file = sys.argv[1]
 
@@ -816,6 +907,7 @@ else:
     myScore.create_option()
     myScore.create_staff_name()
     myScore.create_music()
+    myScore.create_voice_format()
     myScore.create_include()
     myScore.create_book()
     myScore.create_score_part()

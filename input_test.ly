@@ -153,7 +153,10 @@ __VOICE_GROUP:Vlc,11,12
 %   voice : will gather files by movements
 %   no : no subdirectories
 __FILE_GATHER:mvt
-% Voice formatting
+% Voice formatting option
+%   if set to yes, a voice will be used to handle line / page break
+%   if set to no, nothing will be done
+__VOICE_FORMAT:yes
 
 
 

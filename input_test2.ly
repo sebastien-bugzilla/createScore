@@ -67,6 +67,10 @@ __VOICE_MIDI:horn
 % score of flute I and II in one file, instead of generate seperate files of each voice.
 % 
 __VOICE_GROUP:Corno,1
+% Voice formatting option
+%   if set to yes, a voice will be used to handle line / page break
+%   if set to no, nothing will be done
+__VOICE_FORMAT:yes
 
 
 ________________________________________________________________________________

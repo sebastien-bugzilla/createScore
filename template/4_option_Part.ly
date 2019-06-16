@@ -18,5 +18,4 @@ partOptions = {
 		beam-event tuplet-span-event
 		dynamic-event slur-event)
 }
-%__SEP
 

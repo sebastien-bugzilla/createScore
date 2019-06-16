@@ -16,5 +16,4 @@ conductorOptions = {
 	#(set-global-staff-size 12)
 	\override Score.BarNumber #'font-size = #2
 }
-%__SEP
 
