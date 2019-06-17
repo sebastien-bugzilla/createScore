@@ -43,6 +43,7 @@ class Score:
         self.date = strftime('%A %d %B %Y, %H:%M:%S',gmtime())
         self.file_gather = 'no'
         self.voice_format = 'no'
+        self.grandstaff = []
         self.file_cond = []
         self.file_part = []
         self.file_music = []
@@ -211,6 +212,11 @@ class Score:
                             self.file_gather = 'no'
                     elif keyword == '__VOICE_FORMAT':
                         self.voice_format = value
+                    elif keyword == '__GRANDSTAFF':
+                        self.grandstaff.append([])
+                        temp = value.split(',')
+                        for i in range(len(temp)):
+                            self.grandstaff[-1].append(temp[i])
                     else:
                         print('Keyword ' + keyword + ' is Unknown')
                 else:
@@ -266,6 +272,10 @@ class Score:
         if not len(self.voice_short_name) - self.nbr_voice == 0:
             self.status = 'ERROR'
             self.error.append('__VOICE_SHORT_NAME do not match __NUMBER_OF_VOICE !')
+        if len(self.grandstaff) > 0:
+            if not len(self.grandstaff) == self.nbr_mvt:
+                self.status = 'ERROR'
+                self.error.append('__GRANDSTAFF do not match __NUMBER_OF_MVT !')
     
     def fileCreation(self):
         """
@@ -561,7 +571,7 @@ class Score:
                 else:
                     input_format = 'formatConductorMvt' + romain(i+1)
                 self.file_cond[i].upd_score_cond(input_time, local_name, \
-                    local_music, input_format)
+                    local_music, input_format, self.grandstaff[i])
     
     def close_score(self):
         for i in range(len(self.file_cond)):
@@ -776,61 +786,86 @@ class lilyFile:
         self.content.append('\t\t}')
         self.content.append('\t}')
     
-    def upd_score_cond(self, time, name, music, input_format):
+    def upd_score_cond(self, time, name, music, input_format, grandstaff):
+        gs_beg = []
+        gs_end = []
+        gs_tab = []
+        for i in range(len(grandstaff)):
+            interval = grandstaff[i]
+            interval_split = interval.split('-')
+            gs_beg.append(int(interval_split[0])-1)
+            gs_end.append(int(interval_split[1])-1)
+        for i in range(len(gs_beg)):
+            for j in range(gs_beg[i], gs_end[i]+1):
+                gs_tab.append(j)
         time = '\\' + time
         self.content.append('\t\score {')
         self.content.append('\t\t<<')
         self.content.append('\t\t\t\\new StaffGroup <<')
         for i in range(len(name)):
+            if i in gs_tab:
+                pref = '\t'
+            else:
+                pref = ''
             if not input_format == 'no':
                 if i == 0:
-                    self.content.append('\t\t\t\t\\new Staff <<')
-                    self.content.append('\t\t\t\t\t\\new Voice {')
-                    self.content.append('\t\t\t\t\t\t' + '\\' + input_format)
-                    self.content.append('\t\t\t\t\t}')
-                    self.content.append('\t\t\t\t\t\\new Voice {')
-                    self.content.append('\t\t\t\t\t\t'+ time + \
+                    if i in gs_beg:
+                        self.content.append('\t\t\t\t\\new GrandStaff <<')
+                    self.content.append(pref + '\t\t\t\t\\new Staff <<')
+                    self.content.append(pref + '\t\t\t\t\t\\new Voice {')
+                    self.content.append(pref + '\t\t\t\t\t\t' + '\\' + input_format)
+                    self.content.append(pref + '\t\t\t\t\t}')
+                    self.content.append(pref + '\t\t\t\t\t\\new Voice {')
+                    self.content.append(pref + '\t\t\t\t\t\t'+ time + \
                         ' \generalOptions \conductorOptions')
-                    self.content.append('\t\t\t\t\t\t' + '\\' + name[i][0])
+                    self.content.append(pref + '\t\t\t\t\t\t' + '\\' + name[i][0])
                     if len(music[i]) > 1:
                         temp = '\\' + music[i][0][0]
                         j = 1
                         while j < len(music[i]):
                             temp = temp + '\\' + music[i][j][0]
                             j = j + 1
-                        self.content.append('\t\t\t\t\t\t\\partcombine ' + temp)
+                        self.content.append(pref + '\t\t\t\t\t\t\\partcombine ' + temp)
                     else:
-                        self.content.append('\t\t\t\t\t\t\\' + music[i][0])
-                    self.content.append('\t\t\t\t\t}')
-                    self.content.append('\t\t\t\t>>')
+                        self.content.append(pref + '\t\t\t\t\t\t\\' + music[i][0])
+                    self.content.append(pref + '\t\t\t\t\t}')
+                    self.content.append(pref + '\t\t\t\t>>')
                 else:
-                    self.content.append('\t\t\t\t\\new Staff {')
-                    self.content.append('\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
-                    self.content.append('\t\t\t\t\t' + '\\' + name[i][0])
+                    if i in gs_beg:
+                        self.content.append('\t\t\t\t\\new GrandStaff <<')
+                    self.content.append(pref + '\t\t\t\t\\new Staff {')
+                    self.content.append(pref + '\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+                    self.content.append(pref + '\t\t\t\t\t' + '\\' + name[i][0])
                     if len(music[i]) > 1:
                         temp = '\\' + music[i][0][0]
                         j = 1
                         while j < len(music[i]):
                             temp = temp + '\\' + music[i][j][0]
                             j = j + 1
-                        self.content.append('\t\t\t\t\t\\partcombine ' + temp)
+                        self.content.append(pref + '\t\t\t\t\t\\partcombine ' + temp)
                     else:
-                        self.content.append('\t\t\t\t\t\\' + music[i][0])
-                    self.content.append('\t\t\t\t}')
+                        self.content.append(pref + '\t\t\t\t\t\\' + music[i][0])
+                    self.content.append(pref + '\t\t\t\t}')
+                    if i in gs_end:
+                        self.content.append('\t\t\t\t>>')
             else:
-                self.content.append('\t\t\t\t\\new Staff {')
-                self.content.append('\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
-                self.content.append('\t\t\t\t\t' + '\\' + name[i][0])
+                if i in gs_beg:
+                    self.content.append('\t\t\t\t\\new GrandStaff <<')
+                self.content.append(pref + '\t\t\t\t\\new Staff {')
+                self.content.append(pref + '\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+                self.content.append(pref + '\t\t\t\t\t' + '\\' + name[i][0])
                 if len(music[i]) > 1:
                     temp = '\\' + music[i][0][0]
                     j = 1
                     while j < len(music[i]):
                         temp = temp + '\\' + music[i][j][0]
                         j = j + 1
-                    self.content.append('\t\t\t\t\t\\partcombine ' + temp)
+                    self.content.append(pref + '\t\t\t\t\t\\partcombine ' + temp)
                 else:
-                    self.content.append('\t\t\t\t\t\\' + music[i][0])
-                self.content.append('\t\t\t\t}')
+                    self.content.append(pref + '\t\t\t\t\t\\' + music[i][0])
+                self.content.append(pref + '\t\t\t\t}')
+                if i in gs_end:
+                    self.content.append('\t\t\t\t>>')
         self.content.append('\t\t\t>>')
         self.content.append('\t\t>>')
         self.content.append('\t\t\\header {')

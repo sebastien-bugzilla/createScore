@@ -157,15 +157,27 @@ __FILE_GATHER:mvt
 %   if set to yes, a voice will be used to handle line / page break
 %   if set to no, nothing will be done
 __VOICE_FORMAT:yes
+% Grand staff : indicate staves grouped by grandStaff
+%   X lignes of range of numbers where X is the number of mvt.
+__GRANDSTAFF:1-2,3-5,8-9,11-12
+__GRANDSTAFF:1-3,6-7
+__GRANDSTAFF:1-2,3-5,8-9
+__GRANDSTAFF:1-2,3-5,8-9
+__GRANDSTAFF:1-2
+__GRANDSTAFF:1-2,3-5,8-9
+__GRANDSTAFF:1-2
+__GRANDSTAFF:1-2,3-5,8-9
+__GRANDSTAFF:1-2
+__GRANDSTAFF:1-2,3-5,8-9
 
 
 
 ________________________________________________________________________________
 
 reste à voir :
-- grandstaff
+= grandstaff
 + répertoire / sous répertoires
-= voix de formattage
++ voix de formattage
 - fichier midi simplifié pour débug
 - fichier markup 
 
