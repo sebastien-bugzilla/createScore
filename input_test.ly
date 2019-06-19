@@ -1,6 +1,6 @@
 % Project
 __PROJECT:Concerto Brandebourgeois n°1
-% File label (will be used to derive all filenames : no space)
+% File label (will be used to derive main filenames : no space)
 __FILE_LABEL:BrandenburgConcerto1
 % Folder (will be created if it doesn't exist)
 __FOLDER:/media/Documents/Programmation/Python/createScore/test3
@@ -57,7 +57,7 @@ __SCORE_SUBTITLE:Mouvement 1
 % Time of each movement 
 __TIME:2/2,3/4,6/8,3/4,3/4,3/4,3/8,3/4,2/4,3/4
 % Initial tempo mark for each movmement (texte separated by comas)
-__TEMPO_MARK:-,Adagio,Allegro,Menuet,Trio I,Menuet,Polonaise,Menuet,Trio II, Menuet
+__TEMPO_MARK:-,Adagio,Allegro,Menuet,Trio I,Menuet,Polonaise,Menuet,Trio II,Menuet
 % clef of each staff for each movement 
 %    X lines of clef name (treble, bass, alto, tenor, etc...) seperated by comas where :
 %        X is the number of voice
@@ -94,8 +94,8 @@ __KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f 
 %    X lines of Y instrument name seperated by comas where :
 %        X is the number of movement
 %        Y is the number of voice
-__VOICE_MIDI:horn
-__VOICE_MIDI:horn
+__VOICE_MIDI:french horn
+__VOICE_MIDI:french horn
 __VOICE_MIDI:oboe
 __VOICE_MIDI:oboe
 __VOICE_MIDI:oboe
@@ -104,23 +104,23 @@ __VOICE_MIDI:violin
 __VOICE_MIDI:violin
 __VOICE_MIDI:violin
 __VOICE_MIDI:viola
-__VOICE_MIDI:violoncello
-__VOICE_MIDI:violoncello
-% Instrument name of each voice
-%    X lines instrument name 
-%        X is the number of voices
+__VOICE_MIDI:cello
+__VOICE_MIDI:cello
+% Instrument name of each voice (it will appear at the beginning of each staff
+%    X lines of instrument name where X is the number of voices
+%    when necessary add coma to fill the name on more lines
 __VOICE_NAME:Corno I
 __VOICE_NAME:Corno II
 __VOICE_NAME:Oboe I
 __VOICE_NAME:Oboe II
 __VOICE_NAME:Oboe III
 __VOICE_NAME:Fagotto
-__VOICE_NAME:Violin piccolo
+__VOICE_NAME:Violino piccolo
 __VOICE_NAME:Violino I
 __VOICE_NAME:Violino II
 __VOICE_NAME:Viola
 __VOICE_NAME:Violoncello
-__VOICE_NAME:Continuo
+__VOICE_NAME:Continuo e,Violone grosso
 % Short Instrument name of each voice for each movement 
 %    X lines of Y Short instrument name seperated by comas where :
 %        X is the number of movement
@@ -159,27 +159,51 @@ __FILE_GATHER:mvt
 __VOICE_FORMAT:yes
 % Grand staff : indicate staves grouped by grandStaff
 %   X lignes of range of numbers where X is the number of mvt.
-__GRANDSTAFF:1-2,3-5,8-9,11-12
-__GRANDSTAFF:1-3,6-7
-__GRANDSTAFF:1-2,3-5,8-9
-__GRANDSTAFF:1-2,3-5,8-9
-__GRANDSTAFF:1-2
-__GRANDSTAFF:1-2,3-5,8-9
-__GRANDSTAFF:1-2
-__GRANDSTAFF:1-2,3-5,8-9
-__GRANDSTAFF:1-2
-__GRANDSTAFF:1-2,3-5,8-9
-
+%__GRANDSTAFF:1-2,3-5,8-9,11-12
+%__GRANDSTAFF:1-3,6-7
+%__GRANDSTAFF:1-2,3-5,8-9
+%__GRANDSTAFF:1-2,3-5,8-9
+%__GRANDSTAFF:1-2
+%__GRANDSTAFF:1-2,3-5,8-9
+%__GRANDSTAFF:1-2
+%__GRANDSTAFF:1-2,3-5,8-9
+%__GRANDSTAFF:1-2
+%__GRANDSTAFF:1-2,3-5,8-9
+% midi output :
+%   yes : to create file to generate midi file for debug
+%   no otherwise
+__MIDI_OUTPUT:yes
+% groups for midi debug : it might be useful to group string / wind instrument in
+% different files
+%   X lines of voice range seperated by commas 1-5,6-10 to have 2 midi files 
+%      first one with voice 1 to 5, second one with voices 6 to 10 on Mvt X
+__MIDI_GROUP:1-6,7-12
+__MIDI_GROUP:1-4,5-9
+__MIDI_GROUP:1-6,7-11
+__MIDI_GROUP:1-6,7-11
+__MIDI_GROUP:1-3
+__MIDI_GROUP:1-6,7-11
+__MIDI_GROUP:1-4
+__MIDI_GROUP:1-6,7-11
+__MIDI_GROUP:1-3
+__MIDI_GROUP:1-6,7-11
+% in music file add a commented mark each X bars to spot easily for file readability
+% when set to 5, music file will contains "% bars 1 to 5"
+__BAR_GROUP_COMMENT:5
 
 
 ________________________________________________________________________________
 
 reste à voir :
-= grandstaff
++ grandstaff
 + répertoire / sous répertoires
 + voix de formattage
-- fichier midi simplifié pour débug
-- fichier markup 
++ fichier midi simplifié pour débug
++ fichier markup 
++ repère de mesure toutes les x mesures
+= bug date anglaise
++ revoir le nom des fichier music 'm01_v05_music_cello.ly'
+
 
 obligatoire
 

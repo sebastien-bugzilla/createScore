@@ -3,7 +3,7 @@
 
 import sys
 import os
-from time import gmtime, strftime
+from time import localtime, strftime
 import math
 import locale
 
@@ -40,14 +40,18 @@ class Score:
         self.voice_short_name = []
         self.voice_midi = []
         self.voice_group = []
-        self.date = strftime('%A %d %B %Y, %H:%M:%S',gmtime())
+        self.date = strftime('%A %d %B %Y, %H:%M:%S', localtime())
         self.file_gather = 'no'
         self.voice_format = 'no'
-        self.grandstaff = []
+        self.grandstaff = 'no'
+        self.midi_output = 'no'
+        self.bar_group_comment = 5
+        self.midi_group = []
         self.file_cond = []
         self.file_part = []
         self.file_music = []
         self.file_optional = []
+        self.file_midi = []
     
     
     def readInput(self):
@@ -213,10 +217,25 @@ class Score:
                     elif keyword == '__VOICE_FORMAT':
                         self.voice_format = value
                     elif keyword == '__GRANDSTAFF':
+                        if self.grandstaff == 'no':
+                            self.grandstaff = []
                         self.grandstaff.append([])
                         temp = value.split(',')
                         for i in range(len(temp)):
                             self.grandstaff[-1].append(temp[i])
+                    elif keyword == '__MIDI_OUTPUT':
+                        self.midi_output = value
+                    elif keyword == '__MIDI_GROUP':
+                        temp = value.split(',')
+                        self.midi_group.append([])
+                        for i in range(len(temp)):
+                            self.midi_group[-1].append(temp[i])
+                    elif keyword == '__BAR_GROUP_COMMENT':
+                        try:
+                            self.bar_group_comment = int(value)
+                        except ValueError:
+                            self.status = 'ERROR'
+                            self.error.append('__BAR_GROUP_COMMENT is not an integer !')
                     else:
                         print('Keyword ' + keyword + ' is Unknown')
                 else:
@@ -272,10 +291,14 @@ class Score:
         if not len(self.voice_short_name) - self.nbr_voice == 0:
             self.status = 'ERROR'
             self.error.append('__VOICE_SHORT_NAME do not match __NUMBER_OF_VOICE !')
-        if len(self.grandstaff) > 0:
+        if not self.grandstaff == 'no':
             if not len(self.grandstaff) == self.nbr_mvt:
                 self.status = 'ERROR'
                 self.error.append('__GRANDSTAFF do not match __NUMBER_OF_MVT !')
+        if self.midi_output == 'yes':
+            if not len(self.midi_group) - self.nbr_mvt == 0:
+                self.status = 'ERROR'
+                self.error.append('__MIDI_GROUP do not match __NUMBER_OF_MVT !')
     
     def fileCreation(self):
         """
@@ -433,6 +456,27 @@ class Score:
             for i in range(len(self.file_cond)):
                 self.file_cond[i].add_include(file_name, subdir)
     
+    def create_markup(self):
+        # if only one score is produced, section markup is added directly in the file
+        # else it is added in seperate file included in each score file
+        if len(self.file_cond) + len(self.file_part) == 1:
+            self.file_part[0].upd_markup()
+        else:
+            file_name = self.file_label + '_markup.ly'
+            file_markup = lilyFile(file_name, self.folder)
+            file_markup.add_info(0,0)
+            file_markup.upd_file_id(self.template[0], self.project, file_name, \
+                self.date)
+            self.file_optional.append(file_markup)
+            if self.file_gather == 'no':
+                subdir = ''
+            else:
+                subdir = '00-Common'
+            for i in range(len(self.file_cond)):
+                self.file_cond[i].add_include(file_name, subdir)
+            for i in range(len(self.file_part)):
+                self.file_part[i].add_include(file_name, subdir)
+    
     def create_music(self):
         # if only one score is produced, music section is added directly in the file
         # else it is added in seperate file included in each score file
@@ -441,9 +485,9 @@ class Score:
                 voice = self.voice_name[0][0]
                 voice = voice.replace(' ', '')
                 section_name = 'music' + voice + 'Mvt' + romain(i+1)
-                file_name = rightJustify(i+1) + '_music_' + voice + '.ly'
+                file_name = 'm' + rightJustify(i+1) + '_music_' + voice + '.ly'
                 self.file_part[0].upd_music(self.template[6], section_name, \
-                    self.voice_clef[0], self.key[i][0], self.nbr_bar[i], 5)
+                    self.voice_clef[0], self.key[i][0], self.nbr_bar[i], self.bar_group_comment)
         else:
             for i in range(self.nbr_voice):
                 voice = self.voice_name[i][0]
@@ -451,14 +495,14 @@ class Score:
                 for j in range(self.nbr_mvt):
                     if self.voice_per_mvt[i][j] == 1:
                         section_name = 'music' + voice + 'Mvt' + romain(j+1)
-                        file_name = rightJustify(j+1) + '_mvt' + rightJustify(j+1) + '_' + \
-                            rightJustify(i+1) + '_music_' + voice + '.ly'
+                        file_name = 'm' + rightJustify(j+1) + '_v' + rightJustify(i+1) \
+                           + '_music_' + voice + '.ly'
                         musicFile = lilyFile(file_name, self.folder)
                         musicFile.add_info(j+1, i+1)
                         musicFile.upd_file_id(self.template[0], self.project, \
                             file_name, self.date)
                         musicFile.upd_music(self.template[6], section_name, \
-                            self.voice_clef[i], self.key[i][j], self.nbr_bar[j], 5)
+                            self.voice_clef[i], self.key[i][j], self.nbr_bar[j], self.bar_group_comment)
                         self.file_music.append(musicFile)
                         if self.file_gather == 'mvt':
                             subdir = rightJustify(j+1) + '-Mvt' + str(j+1)
@@ -570,9 +614,13 @@ class Score:
                     input_format = 'no'
                 else:
                     input_format = 'formatConductorMvt' + romain(i+1)
-                self.file_cond[i].upd_score_cond(input_time, local_name, \
-                    local_music, input_format, self.grandstaff[i])
-    
+                if self.grandstaff == 'no':
+                    self.file_cond[i].upd_score_cond(input_time, local_name, \
+                        local_music, input_format, self.grandstaff)
+                else:
+                    self.file_cond[i].upd_score_cond(input_time, local_name, \
+                        local_music, input_format, self.grandstaff[i])
+        
     def close_score(self):
         for i in range(len(self.file_cond)):
             self.file_cond[i].content.append('}')
@@ -586,6 +634,54 @@ class Score:
         if len(self.file_optional) > 0:
             for i in range(len(self.file_optional)):
                 self.file_optional[i].upd_gather(self.file_gather)
+    
+    def create_midi_file(self):
+        if self.midi_output == 'yes':
+            if not len(self.file_cond) + len(self.file_part) == 1:
+                # ajouter le traitement des group de voix dans midi_group
+                gpe_midi_beg = []
+                gpe_midi_end = []
+                tab_section = []
+                for i in range(self.nbr_mvt):
+                    tab_section.append([])
+                    gpe_midi_beg.append([])
+                    gpe_midi_end.append([])
+                    for j in range(len(self.midi_group[i])):
+                        tab_section[-1].append([])
+                        temp = self.midi_group[i][j].split('-')
+                        gpe_midi_beg[-1].append(int(temp[0])-1)
+                        gpe_midi_end[-1].append(int(temp[1])-1)
+                for i in range(self.nbr_mvt):
+                    file_name = '00_' + self.file_label + '_midi_Mvt' + str(i+1) + '.ly'
+                    midi_file = lilyFile(file_name, self.folder)
+                    midi_file.upd_file_id(self.template[0], self.project, \
+                        file_name, self.date)
+                    # add of include files
+                    nb_voice = 0
+                    for j in range(self.nbr_voice):
+                        if self.voice_per_mvt[j][i] == 1:
+                            voice = self.voice_name[j][0]
+                            voice = voice.replace(' ', '')
+                            section_name = 'music' + voice + 'Mvt' + romain(i+1)
+                            for k in range(len(gpe_midi_beg[i])):
+                                if nb_voice in range(gpe_midi_beg[i][k], gpe_midi_end[i][k]):
+                                    gpe = k
+                            tab_section[i][gpe].append(section_name)
+                            inc_file = 'm' + rightJustify(i + 1) + '_v' + \
+                                rightJustify(j + 1) + '_music_' + voice + '.ly'
+                            dir_file = '../' + rightJustify(i+1) + '-Mvt' + str(i+1)
+                            midi_file.add_include(inc_file, dir_file)
+                            nb_voice = nb_voice + 1
+                    file_label = self.file_label + '_timeMvt.ly'
+                    file_voice = self.file_label + '_VoiceName.ly'
+                    midi_file.add_include(file_label, '../00-Common')
+                    midi_file.add_include(file_voice, '../00-Common')
+                    midi_file.upd_include()
+                    midi_file.upd_midi(tab_section[i], 'timeMvt' + romain(i+1))
+                    midi_file.add_info(0,0)
+                    midi_file.upd_gather('99-midi')
+                    self.file_midi.append(midi_file)
+                    
     
     def create_folder(self):
         try:
@@ -610,6 +706,15 @@ class Score:
                             os.mkdir(new_dir)
                         except:
                             print('Creation of directory %s failed' % new_dir)
+        if len(self.file_midi) > 0:
+            for i in range(len(self.file_midi)):
+                if hasattr(self.file_midi[i], 'subdir'):
+                    new_dir = self.folder + '/' + self.file_midi[i].subdir
+                    if not os.path.exists(new_dir):
+                        try:
+                            os.mkdir(new_dir)
+                        except:
+                            print('Creation of directory %s failed' % new_dir)
     
     def generate_files(self):
         if len(self.file_cond) > 0:
@@ -624,6 +729,9 @@ class Score:
         if len(self.file_optional) > 0:
             for i in range(len(self.file_optional)):
                 self.file_optional[i].write()
+        if len(self.file_midi) > 0:
+            for i in range(len(self.file_midi)):
+                self.file_midi[i].write()
 
 
 
@@ -697,6 +805,11 @@ class lilyFile:
         self.content.append('\t\set Staff.shortInstrumentName = #"' + shortName + '"')
         self.content.append('\t\set Staff.midiInstrument = #"' + midi +'"')
         self.content.append('}')
+    
+    def upd_markup(self):
+        self.content.append('%###############################################################################')
+        self.content.append('%#                       M A R K U P    S E C T I O N                          #')
+        self.content.append('%###############################################################################')
     
     def upd_music(self, template, sectionName, voice_clef, key, nbMesure, step):
         try:
@@ -790,14 +903,17 @@ class lilyFile:
         gs_beg = []
         gs_end = []
         gs_tab = []
-        for i in range(len(grandstaff)):
-            interval = grandstaff[i]
-            interval_split = interval.split('-')
-            gs_beg.append(int(interval_split[0])-1)
-            gs_end.append(int(interval_split[1])-1)
-        for i in range(len(gs_beg)):
-            for j in range(gs_beg[i], gs_end[i]+1):
-                gs_tab.append(j)
+        if grandstaff == 'no':
+            pref = ''
+        else:
+            for i in range(len(grandstaff)):
+                interval = grandstaff[i]
+                interval_split = interval.split('-')
+                gs_beg.append(int(interval_split[0])-1)
+                gs_end.append(int(interval_split[1])-1)
+            for i in range(len(gs_beg)):
+                for j in range(gs_beg[i], gs_end[i]+1):
+                    gs_tab.append(j)
         time = '\\' + time
         self.content.append('\t\score {')
         self.content.append('\t\t<<')
@@ -875,6 +991,33 @@ class lilyFile:
         self.content.append('\t\t}')
         self.content.append('\t}')
     
+    def upd_midi(self, tab_section, time_section):
+        self.content.append('%###############################################################################')
+        self.content.append('%#                          B O O K    S E C T I O N                           #')
+        self.content.append('%###############################################################################')
+        for i in range(len(tab_section)):
+            gpe_name = 'groupe' + romain(i+1)
+            self.content.append('\\book {')
+            self.content.append('\t#(define output-suffix "' + gpe_name + '")')
+            self.content.append('\t\score {')
+            self.content.append('\t\t<<')
+            self.content.append('\t\t\t\\new StaffGroup <<')
+            for j in range(len(tab_section[i])):
+                self.content.append('\t\t\t\t\\new Staff { ' + '\\' + time_section \
+                    + ' \\' + tab_section[i][j] + ' }')
+            self.content.append('\t\t\t>>')
+            self.content.append('\t\t>>')
+            self.content.append('\t\t\midi {')
+            self.content.append('\t\t\t\\tempo 4 = 80')
+            self.content.append('\t\t\t\context {')
+            self.content.append('\t\t\t\t\Voice')
+            self.content.append('\t\t\t\t\\remove "Dynamic_performer"')
+            self.content.append('\t\t\t}')
+            self.content.append('\t\t}')
+            self.content.append('\t}')
+            self.content.append('}')
+    
+    
     def write(self):
         if hasattr(self, 'subdir'):
             file_location = os.path.join(self.path, self.subdir, self.file_name)
@@ -901,7 +1044,7 @@ class lilyFile:
             else:
                 self.subdir = rightJustify(self.voice) + '-Voice' + str(self.voice)
         else:
-            self.subdir = ''
+            self.subdir = orga
     
     def display(self):
         for i in range(len(self.content)):
@@ -941,6 +1084,7 @@ else:
     myScore.create_time()
     myScore.create_option()
     myScore.create_staff_name()
+    myScore.create_markup()
     myScore.create_music()
     myScore.create_voice_format()
     myScore.create_include()
@@ -949,6 +1093,7 @@ else:
     myScore.create_score_cond()
     myScore.close_score()
     myScore.gather_file()
+    myScore.create_midi_file()
     myScore.create_folder()
     myScore.generate_files()
 
