@@ -574,6 +574,7 @@ class Score:
             for j in range(len(self.voice_group[i])-1):
                 k = self.voice_group[i][j+1] - 1
                 for l in range(self.nbr_mvt):
+#                    print(k, l)
                     if self.voice_per_mvt[k][l] == 1:
                         # input time
                         if len(self.file_cond) + len(self.file_part) == 1:
@@ -1172,8 +1173,8 @@ class lilyFile:
                 self.subdir = '00-Common'
             else:
                 self.subdir = rightJustify(self.voice) + '-Voice' + str(self.voice)
-        else:
-            self.subdir = orga
+        elif orga == 'no':
+            self.subdir = ''
     
     def display(self):
         for i in range(len(self.content)):
