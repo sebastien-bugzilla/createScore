@@ -43,6 +43,7 @@ class Score:
         self.date = strftime('%A %d %B %Y, %H:%M:%S', localtime())
         self.file_gather = 'no'
         self.voice_format = 'no'
+        self.staffgroup = 'no'
         self.grandstaff = 'no'
         self.midi_output = 'no'
         self.bar_group_comment = 5
@@ -216,6 +217,13 @@ class Score:
                             self.file_gather = 'no'
                     elif keyword == '__VOICE_FORMAT':
                         self.voice_format = value
+                    elif keyword == '__STAFFGROUP':
+                        if self.staffgroup == 'no':
+                            self.staffgroup = []
+                        self.staffgroup.append([])
+                        temp = value.split(',')
+                        for i in range(len(temp)):
+                            self.staffgroup[-1].append(temp[i])
                     elif keyword == '__GRANDSTAFF':
                         if self.grandstaff == 'no':
                             self.grandstaff = []
@@ -291,6 +299,10 @@ class Score:
         if not len(self.voice_short_name) - self.nbr_voice == 0:
             self.status = 'ERROR'
             self.error.append('__VOICE_SHORT_NAME do not match __NUMBER_OF_VOICE !')
+        if not self.staffgroup == 'no':
+            if not len(self.staffgroup) == self.nbr_mvt:
+                self.status = 'ERROR'
+                self.error.append('__STAFFGROUP do not match __NUMBER_OF_MVT !')
         if not self.grandstaff == 'no':
             if not len(self.grandstaff) == self.nbr_mvt:
                 self.status = 'ERROR'
@@ -614,12 +626,20 @@ class Score:
                     input_format = 'no'
                 else:
                     input_format = 'formatConductorMvt' + romain(i+1)
-                if self.grandstaff == 'no':
-                    self.file_cond[i].upd_score_cond(input_time, local_name, \
-                        local_music, input_format, self.grandstaff)
+                if self.staffgroup == 'no':
+                    if self.grandstaff == 'no':
+                        self.file_cond[i].upd_score_cond(input_time, local_name, \
+                            local_music, input_format, self.grandstaff, self.staffgroup)
+                    else:
+                        self.file_cond[i].upd_score_cond(input_time, local_name, \
+                            local_music, input_format, self.grandstaff[i], self.staffgroup)
                 else:
-                    self.file_cond[i].upd_score_cond(input_time, local_name, \
-                        local_music, input_format, self.grandstaff[i])
+                    if self.grandstaff == 'no':
+                        self.file_cond[i].upd_score_cond(input_time, local_name, \
+                            local_music, input_format, self.grandstaff, self.staffgroup[i])
+                    else:
+                        self.file_cond[i].upd_score_cond(input_time, local_name, \
+                            local_music, input_format, self.grandstaff[i], self.staffgroup[i])
         
     def close_score(self):
         for i in range(len(self.file_cond)):
@@ -800,6 +820,7 @@ class lilyFile:
             for i in range(len(voiceName)):
                 self.content.append('\t\t\t\line { "' + voiceName[i] + '" }')
             self.content.append('\t\t}')
+            self.content.append('\t}')
         else:
             self.content.append('\t\set Staff.instrumentName = #"' + voiceName[0] + '"')
         self.content.append('\t\set Staff.shortInstrumentName = #"' + shortName + '"')
@@ -899,90 +920,198 @@ class lilyFile:
         self.content.append('\t\t}')
         self.content.append('\t}')
     
-    def upd_score_cond(self, time, name, music, input_format, grandstaff):
-        gs_beg = []
-        gs_end = []
-        gs_tab = []
-        if grandstaff == 'no':
-            pref = ''
-        else:
+#    def upd_score_cond_old(self, time, name, music, input_format, grandstaff):
+#        gs_beg = []
+#        gs_end = []
+#        gs_tab = []
+#        if grandstaff == 'no':
+#            pref = ''
+#        else:
+#            for i in range(len(grandstaff)):
+#                interval = grandstaff[i]
+#                interval_split = interval.split('-')
+#                gs_beg.append(int(interval_split[0])-1)
+#                gs_end.append(int(interval_split[1])-1)
+#            for i in range(len(gs_beg)):
+#                for j in range(gs_beg[i], gs_end[i]+1):
+#                    gs_tab.append(j)
+#        time = '\\' + time
+#        self.content.append('\t\score {')
+#        self.content.append('\t\t<<')
+#        self.content.append('\t\t\t\\new StaffGroup <<')
+#        for i in range(len(name)):
+#            if i in gs_tab:
+#                pref = '\t'
+#            else:
+#                pref = ''
+#            if not input_format == 'no':
+#                if i == 0:
+#                    if i in gs_beg:
+#                        self.content.append('\t\t\t\t\\new GrandStaff <<')
+#                    self.content.append(pref + '\t\t\t\t\\new Staff <<')
+#                    self.content.append(pref + '\t\t\t\t\t\\new Voice {')
+#                    self.content.append(pref + '\t\t\t\t\t\t' + '\\' + input_format)
+#                    self.content.append(pref + '\t\t\t\t\t}')
+#                    self.content.append(pref + '\t\t\t\t\t\\new Voice {')
+#                    self.content.append(pref + '\t\t\t\t\t\t'+ time + \
+#                        ' \generalOptions \conductorOptions')
+#                    self.content.append(pref + '\t\t\t\t\t\t' + '\\' + name[i][0])
+#                    if len(music[i]) > 1:
+#                        temp = '\\' + music[i][0][0]
+#                        j = 1
+#                        while j < len(music[i]):
+#                            temp = temp + '\\' + music[i][j][0]
+#                            j = j + 1
+#                        self.content.append(pref + '\t\t\t\t\t\t\\partcombine ' + temp)
+#                    else:
+#                        self.content.append(pref + '\t\t\t\t\t\t\\' + music[i][0])
+#                    self.content.append(pref + '\t\t\t\t\t}')
+#                    self.content.append(pref + '\t\t\t\t>>')
+#                else:
+#                    if i in gs_beg:
+#                        self.content.append('\t\t\t\t\\new GrandStaff <<')
+#                    self.content.append(pref + '\t\t\t\t\\new Staff {')
+#                    self.content.append(pref + '\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+#                    self.content.append(pref + '\t\t\t\t\t' + '\\' + name[i][0])
+#                    if len(music[i]) > 1:
+#                        temp = '\\' + music[i][0][0]
+#                        j = 1
+#                        while j < len(music[i]):
+#                            temp = temp + '\\' + music[i][j][0]
+#                            j = j + 1
+#                        self.content.append(pref + '\t\t\t\t\t\\partcombine ' + temp)
+#                    else:
+#                        self.content.append(pref + '\t\t\t\t\t\\' + music[i][0])
+#                    self.content.append(pref + '\t\t\t\t}')
+#                    if i in gs_end:
+#                        self.content.append('\t\t\t\t>>')
+#            else:
+#                if i in gs_beg:
+#                    self.content.append('\t\t\t\t\\new GrandStaff <<')
+#                self.content.append(pref + '\t\t\t\t\\new Staff {')
+#                self.content.append(pref + '\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
+#                self.content.append(pref + '\t\t\t\t\t' + '\\' + name[i][0])
+#                if len(music[i]) > 1:
+#                    temp = '\\' + music[i][0][0]
+#                    j = 1
+#                    while j < len(music[i]):
+#                        temp = temp + '\\' + music[i][j][0]
+#                        j = j + 1
+#                    self.content.append(pref + '\t\t\t\t\t\\partcombine ' + temp)
+#                else:
+#                    self.content.append(pref + '\t\t\t\t\t\\' + music[i][0])
+#                self.content.append(pref + '\t\t\t\t}')
+#                if i in gs_end:
+#                    self.content.append('\t\t\t\t>>')
+#        self.content.append('\t\t\t>>')
+#        self.content.append('\t\t>>')
+#        self.content.append('\t\t\\header {')
+#        self.content.append('\t\t\tbreakbefore = ##t')
+#        self.content.append('\t\t}')
+#        self.content.append('\t\t\\layout {')
+#        self.content.append('\t\t}')
+#        self.content.append('\t}')
+    
+    
+    
+    def upd_score_cond(self, time, name, music, input_format, grandstaff, staffgroup):
+        gdSt_beg = []
+        gdSt_end = []
+        gdSt_tab = []
+        stGp_beg = []
+        stGp_end = []
+        stGp_tab = []
+        
+        if grandstaff <> 'no':
             for i in range(len(grandstaff)):
                 interval = grandstaff[i]
                 interval_split = interval.split('-')
-                gs_beg.append(int(interval_split[0])-1)
-                gs_end.append(int(interval_split[1])-1)
-            for i in range(len(gs_beg)):
-                for j in range(gs_beg[i], gs_end[i]+1):
-                    gs_tab.append(j)
+                gdSt_beg.append(int(interval_split[0])-1)
+                gdSt_end.append(int(interval_split[1])-1)
+            for i in range(len(gdSt_beg)):
+                for j in range(gdSt_beg[i], gdSt_end[i]+1):
+                    gdSt_tab.append(j)
+        
+        if staffgroup <> 'no':
+            for i in range(len(staffgroup)):
+                interval = staffgroup[i]
+                interval_split = interval.split('-')
+                stGp_beg.append(int(interval_split[0])-1)
+                stGp_end.append(int(interval_split[1])-1)
+            for i in range(len(stGp_beg)):
+                for j in range(stGp_beg[i], stGp_end[i]+1):
+                    stGp_tab.append(j)
+        
         time = '\\' + time
         self.content.append('\t\score {')
         self.content.append('\t\t<<')
-        self.content.append('\t\t\t\\new StaffGroup <<')
         for i in range(len(name)):
-            if i in gs_tab:
-                pref = '\t'
-            else:
-                pref = ''
-            if not input_format == 'no':
+            pref = '\t\t\t'
+            pref_gdSt = ''
+            pref_stGp = ''
+            pref_form = ''
+            if i in gdSt_tab:
+                pref_gdSt = '\t'
+            if i in stGp_tab:
+                pref_stGp = '\t'
+            if input_format <> 'no':
                 if i == 0:
-                    if i in gs_beg:
-                        self.content.append('\t\t\t\t\\new GrandStaff <<')
-                    self.content.append(pref + '\t\t\t\t\\new Staff <<')
-                    self.content.append(pref + '\t\t\t\t\t\\new Voice {')
-                    self.content.append(pref + '\t\t\t\t\t\t' + '\\' + input_format)
-                    self.content.append(pref + '\t\t\t\t\t}')
-                    self.content.append(pref + '\t\t\t\t\t\\new Voice {')
-                    self.content.append(pref + '\t\t\t\t\t\t'+ time + \
-                        ' \generalOptions \conductorOptions')
-                    self.content.append(pref + '\t\t\t\t\t\t' + '\\' + name[i][0])
-                    if len(music[i]) > 1:
-                        temp = '\\' + music[i][0][0]
-                        j = 1
-                        while j < len(music[i]):
-                            temp = temp + '\\' + music[i][j][0]
-                            j = j + 1
-                        self.content.append(pref + '\t\t\t\t\t\t\\partcombine ' + temp)
-                    else:
-                        self.content.append(pref + '\t\t\t\t\t\t\\' + music[i][0])
-                    self.content.append(pref + '\t\t\t\t\t}')
-                    self.content.append(pref + '\t\t\t\t>>')
-                else:
-                    if i in gs_beg:
-                        self.content.append('\t\t\t\t\\new GrandStaff <<')
-                    self.content.append(pref + '\t\t\t\t\\new Staff {')
-                    self.content.append(pref + '\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
-                    self.content.append(pref + '\t\t\t\t\t' + '\\' + name[i][0])
-                    if len(music[i]) > 1:
-                        temp = '\\' + music[i][0][0]
-                        j = 1
-                        while j < len(music[i]):
-                            temp = temp + '\\' + music[i][j][0]
-                            j = j + 1
-                        self.content.append(pref + '\t\t\t\t\t\\partcombine ' + temp)
-                    else:
-                        self.content.append(pref + '\t\t\t\t\t\\' + music[i][0])
-                    self.content.append(pref + '\t\t\t\t}')
-                    if i in gs_end:
-                        self.content.append('\t\t\t\t>>')
+                    pref_form = '\t'
+            # ligne 1
+            if input_format == 'no':
+                ligne1 = pref_gdSt + pref_form + pref_stGp + '\\new Staff {'
             else:
-                if i in gs_beg:
-                    self.content.append('\t\t\t\t\\new GrandStaff <<')
-                self.content.append(pref + '\t\t\t\t\\new Staff {')
-                self.content.append(pref + '\t\t\t\t\t' + time + ' \generalOptions \conductorOptions')
-                self.content.append(pref + '\t\t\t\t\t' + '\\' + name[i][0])
-                if len(music[i]) > 1:
-                    temp = '\\' + music[i][0][0]
-                    j = 1
-                    while j < len(music[i]):
-                        temp = temp + '\\' + music[i][j][0]
-                        j = j + 1
-                    self.content.append(pref + '\t\t\t\t\t\\partcombine ' + temp)
+                if i == 0:
+                    ligne1 = pref_gdSt + pref_form + pref_stGp + '\\new Voice {'
                 else:
-                    self.content.append(pref + '\t\t\t\t\t\\' + music[i][0])
-                self.content.append(pref + '\t\t\t\t}')
-                if i in gs_end:
-                    self.content.append('\t\t\t\t>>')
-        self.content.append('\t\t\t>>')
+                    ligne1 = pref_gdSt + pref_form + pref_stGp + '\\new Staff {'
+            # ligne 2
+            ligne2 = pref_gdSt + pref_form + pref_stGp + '\t' + time + ' \generalOptions \conductorOptions'
+            # ligne 3 
+            ligne3 = pref_gdSt + pref_form + pref_stGp + '\t' + '\\' + name[i][0]
+            # ligne 4
+            if len(music[i]) == 1:
+                ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\' + music[i][0]
+            else:
+                temp = '\\' + music[i][0][0]
+                j = 1
+                while j < len(music[i]):
+                    temp = temp + '\\' + music[i][j][0]
+                    j = j + 1
+                ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\partcombine ' + temp
+            # ligne 5
+            ligne5 = pref_gdSt + pref_form + pref_stGp + '}'
+            if i == 0:
+                if i in stGp_beg:
+                    self.content.append(pref + '\\new StaffGroup <<')
+                if i in gdSt_beg:
+                    self.content.append(pref + pref_stGp + '\\new GrandStaff <<')
+                if not input_format == 'no':
+                    self.content.append(pref + pref_stGp + pref_gdSt + '\\new Staff <<')
+                    self.content.append(pref + pref_stGp + pref_gdSt + '\t\\new Voice {')
+                    self.content.append(pref + pref_stGp + pref_gdSt + '\t\t' + '\\' + input_format)
+                    self.content.append(pref + pref_stGp + pref_gdSt + '\t}')
+                self.content.append(pref + ligne1)
+                self.content.append(pref + ligne2)
+                self.content.append(pref + ligne3)
+                self.content.append(pref + ligne4)
+                self.content.append(pref + ligne5)
+                if not input_format == 'no':
+                    self.content.append(pref + pref_stGp + pref_gdSt + '>>')
+            else:
+                if i in stGp_beg:
+                    self.content.append(pref + '\\new StaffGroup <<')
+                if i in gdSt_beg:
+                    self.content.append(pref + pref_stGp + '\\new GrandStaff <<')
+                self.content.append(pref + ligne1)
+                self.content.append(pref + ligne2)
+                self.content.append(pref + ligne3)
+                self.content.append(pref + ligne4)
+                self.content.append(pref + ligne5)
+                if i in gdSt_end:
+                    self.content.append(pref + pref_stGp + '>>')
+                if i in stGp_end:
+                    self.content.append(pref + '>>')
         self.content.append('\t\t>>')
         self.content.append('\t\t\\header {')
         self.content.append('\t\t\tbreakbefore = ##t')
