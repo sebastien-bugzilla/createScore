@@ -91,9 +91,8 @@ __KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c 
 __KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
 __KEY:c major,c major,c major,c major,c major,c major,c major,c major,c major,c major
 % MIDI instrument of each voice for each movement 
-%    X lines of Y instrument name seperated by comas where :
-%        X is the number of movement
-%        Y is the number of voice
+%    X lines of instrument name where :
+%        X is the number of voice
 __VOICE_MIDI:horn
 __VOICE_MIDI:horn
 __VOICE_MIDI:oboe
@@ -122,9 +121,8 @@ __VOICE_NAME:Viola
 __VOICE_NAME:Violoncello
 __VOICE_NAME:Continuo
 % Short Instrument name of each voice for each movement 
-%    X lines of Y Short instrument name seperated by comas where :
-%        X is the number of movement
-%        Y is the number of voice
+%    X lines of Short instrument name where :
+%        X is the number of voice
 __VOICE_SHORT_NAME:Hr I
 __VOICE_SHORT_NAME:Hr II
 __VOICE_SHORT_NAME:Ob I

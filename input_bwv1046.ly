@@ -90,10 +90,9 @@ __KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f 
 __KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
 __KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
 __KEY:f major,f major,f major,f major,f major,f major,f major,f major,f major,f major
-% MIDI instrument of each voice for each movement 
-%    X lines of Y instrument name seperated by comas where :
-%        X is the number of movement
-%        Y is the number of voice
+% MIDI instrument of each voice  
+%    X lines of instrument name where :
+%        X is the number of voice
 __VOICE_MIDI:french horn
 __VOICE_MIDI:french horn
 __VOICE_MIDI:oboe
@@ -122,9 +121,8 @@ __VOICE_NAME:Viola
 __VOICE_NAME:Violoncello
 __VOICE_NAME:Continuo e,Violone grosso
 % Short Instrument name of each voice for each movement 
-%    X lines of Y Short instrument name seperated by comas where :
-%        X is the number of movement
-%        Y is the number of voice
+%    X lines of Short instrument name where :
+%        X is the number of voice
 __VOICE_SHORT_NAME:Hr I
 __VOICE_SHORT_NAME:Hr II
 __VOICE_SHORT_NAME:Ob I

@@ -53,15 +53,13 @@ __KEY:c major
 %        X is the number of movement
 %        Y is the number of voice
 __VOICE_NAME:Cor
-% Short nstrument name of each voice for each movement 
-%    X lines of Y instrument name seperated by comas where :
-%        X is the number of movement
-%        Y is the number of voice
+% Short Instrument name of each voice 
+%    X lines of Short instrument name where :
+%        X is the number of voice
 __VOICE_SHORT_NAME:Hr
 % MIDI instrument of each voice for each movement 
-%    X lines of Y instrument name seperated by comas where :
-%        X is the number of movement
-%        Y is the number of voice
+%    X lines of instrument name where :
+%        X is the number of voice
 __VOICE_MIDI:horn
 % Voice group to write seperate parts. One line per group. will be used to gather
 % score of flute I and II in one file, instead of generate seperate files of each voice.

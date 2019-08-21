@@ -527,6 +527,7 @@ class Score:
                             if i+1 in self.voice_group[k]:
                                 self.file_part[k].add_include(file_name, subdir)
     
+    
     def create_voice_format(self):
         if self.voice_format == 'yes':
             if len(self.file_cond) + len(self.file_part) == 1:
@@ -534,24 +535,34 @@ class Score:
                     section_name = 'formatMvt' + romain(i+1) + 'VoiceI'
                     self.file_part[0].upd_voice_format(section_name)
             else:
+                # fichier conducteur
                 for i in range(self.nbr_mvt):
-                    file_name = '00_' + self.file_label + '_Format_Mvt' + str(i+1) + '.ly'
+                    file_name = '00_' + self.file_label + '_Format_Cond_Mvt' + str(i+1) + '.ly'
                     section_name_cond = 'formatConductorMvt' + romain(i+1)
                     format_file = lilyFile(file_name, self.folder)
                     format_file.add_info(0,0)
                     format_file.upd_file_id(self.template[0], self.project, \
                         file_name, self.date)
-                    for j in range(self.nbr_voice):
-                        if self.voice_per_mvt[j][i] == 1:
-                            section_name = 'formatMvt' + romain(i+1) + 'Voice' + romain(j+1)
-                            format_file.upd_voice_format(section_name)
                     format_file.upd_voice_format(section_name_cond)
                     self.file_optional.append(format_file)
-                    for j in range(len(self.file_part)):
-                        self.file_part[j].add_include(file_name, '00-Common')
                     for j in range(len(self.file_cond)):
                         if i == j:
                             self.file_cond[j].add_include(file_name, '00-Common')
+                # fichier part
+                for i in range(len(self.voice_group)):
+                    file_name = '00_' + self.file_label + '_Format_' + self.voice_group[i][0] + '.ly'
+                    format_file = lilyFile(file_name, self.folder)
+                    format_file.add_info(0,0)
+                    format_file.upd_file_id(self.template[0], self.project, \
+                        file_name, self.date)
+                    self.file_optional.append(format_file)
+                    for j in range(1, len(self.voice_group[i])):
+                        k = self.voice_group[i][j]
+                        for l in range(self.nbr_mvt):
+                            if self.voice_per_mvt[k-1][l] == 1:
+                                section_name = 'formatMvt' + romain(l+1) + 'Voice' + romain(k)
+                                format_file.upd_voice_format(section_name)
+                    self.file_part[i].add_include(file_name, '00-Common')
     
     def create_include(self):
         for i in range(len(self.file_cond)):
@@ -574,7 +585,6 @@ class Score:
             for j in range(len(self.voice_group[i])-1):
                 k = self.voice_group[i][j+1] - 1
                 for l in range(self.nbr_mvt):
-#                    print(k, l)
                     if self.voice_per_mvt[k][l] == 1:
                         # input time
                         if len(self.file_cond) + len(self.file_part) == 1:
@@ -909,7 +919,7 @@ class lilyFile:
         self.content.append('\t\t\t}')
         self.content.append('\t\t>>')
         self.content.append('\t\t\\header {')
-        self.content.append('\t\t\tbreakbefore = ##t')
+        self.content.append('\t\t\tbreakbefore = ##f')
         self.content.append('\t\t\tpiece = \\markup {')
         self.content.append('\t\t\t\t\\fill-line {')
         self.content.append('\t\t\t\t\t\\fontsize #4')
@@ -1074,10 +1084,10 @@ class lilyFile:
             if len(music[i]) == 1:
                 ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\' + music[i][0]
             else:
-                temp = '\\' + music[i][0][0]
+                temp = '\\' + music[i][0]
                 j = 1
                 while j < len(music[i]):
-                    temp = temp + '\\' + music[i][j][0]
+                    temp = temp + ' \\' + music[i][j]
                     j = j + 1
                 ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\partcombine ' + temp
             # ligne 5
@@ -1089,9 +1099,9 @@ class lilyFile:
                     self.content.append(pref + pref_stGp + '\\new GrandStaff <<')
                 if not input_format == 'no':
                     self.content.append(pref + pref_stGp + pref_gdSt + '\\new Staff <<')
-                    self.content.append(pref + pref_stGp + pref_gdSt + '\t\\new Voice {')
-                    self.content.append(pref + pref_stGp + pref_gdSt + '\t\t' + '\\' + input_format)
-                    self.content.append(pref + pref_stGp + pref_gdSt + '\t}')
+                    self.content.append('%' + pref + pref_stGp + pref_gdSt + '\t\\new Voice {')
+                    self.content.append('%' + pref + pref_stGp + pref_gdSt + '\t\t' + '\\' + input_format)
+                    self.content.append('%' + pref + pref_stGp + pref_gdSt + '\t}')
                 self.content.append(pref + ligne1)
                 self.content.append(pref + ligne2)
                 self.content.append(pref + ligne3)
