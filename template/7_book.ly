@@ -3,25 +3,16 @@
 %###############################################################################
 \book {
 	\header {
-		title = \markup { \fontsize #5 \sans 
-			\center-column {
-				\vspace #10
-				"__COMPOSER_NAME"
-				"__COMPOSER_BIRTH_YEAR - __COMPOSER_DEATH_YEAR"
-			}
-		}
 		subtitle = \markup { 
-			\fontsize #5 \sans
+			\abs-fontsize #12 \sans
 			\center-column {
-				\vspace #10
-				"__SCORE_TITLE_1"
-				"__SCORE_TITLE_2"
+				"__SUBTITLE"
 			}
 		}
-		subsubtitle = \markup { \fontsize #3 \sans
-			\center-column {
-				\vspace #10
-				"__SCORE_SUBTITLE"
-			}
+		subsubtitle = \markup { 
+			"__SUBSUBTITLE"
+		}
+		instrument = \markup {
+			"__INSTRUMENT"
 		}
 	}

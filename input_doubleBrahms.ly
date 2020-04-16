@@ -3,7 +3,7 @@ __PROJECT:Double Concerto Op102
 % File label (will be used to derive main filenames : no space)
 __FILE_LABEL:DoubleConcerto
 % Folder (will be created if it doesn't exist)
-__FOLDER:/media/Documents/Partitions/lilypond/18-BrahmsDouble
+__FOLDER:/media/Documents/Programmation/Python/createScore/double
 % Number of movement
 __NUMBER_OF_MVT:3
 % Number of bar for each movement (number only, separated by comas)
@@ -52,11 +52,7 @@ __COMPOSER_BIRTH_YEAR:1833
 % Composer's birth date
 __COMPOSER_DEATH_YEAR:1897
 % Score title 1
-__SCORE_TITLE_1:Double Concerto pour Violon et Violoncelle
-% Score title 2
-__SCORE_TITLE_2:en la mineur Opus 102
-% Score subtitle
-__SCORE_SUBTITLE:Mouvement 1
+__SCORE_TITLE:Double Concerto pour Violon et Violoncelle,en la mineur Op102
 % Time of each movement 
 __TIME:4/4,3/4,2/4
 % Initial tempo mark for each movmement (texte separated by comas)
@@ -138,56 +134,46 @@ __VOICE_MIDI:violin
 __VOICE_MIDI:viola
 __VOICE_MIDI:cello
 __VOICE_MIDI:contrabass
+% Voice label : the label of each voice. It will be used to define music section
+%    X lines of label where X is the number of voice
+%        no number
+%        all distinct
+__VOICE_LABEL:FloteI
+__VOICE_LABEL:FloteII
+__VOICE_LABEL:OboeI
+__VOICE_LABEL:OboeII
+__VOICE_LABEL:KlarinetI
+__VOICE_LABEL:KlarinetII
+__VOICE_LABEL:FagottoI
+__VOICE_LABEL:FagottoII
+__VOICE_LABEL:HornI
+__VOICE_LABEL:HornII
+__VOICE_LABEL:HornIII
+__VOICE_LABEL:HornIV
+__VOICE_LABEL:TrumpetI
+__VOICE_LABEL:TrumpetII
+__VOICE_LABEL:Pauken
+__VOICE_LABEL:SoloViolin
+__VOICE_LABEL:SoloCello
+__VOICE_LABEL:ViolinI
+__VOICE_LABEL:ViolinII
+__VOICE_LABEL:Brastche
+__VOICE_LABEL:Violoncell
+__VOICE_LABEL:Kontrabass
 % Instrument name of each voice (it will appear at the beginning of each staff
 %    X lines of instrument name where X is the number of voices
-%    when necessary add coma to fill the name on more lines
-__VOICE_NAME:Flote I
-__VOICE_NAME:Flote II
-__VOICE_NAME:Oboe I
-__VOICE_NAME:Oboe II
-__VOICE_NAME:Klarinet I
-__VOICE_NAME:Klarinet II
-__VOICE_NAME:Fagotto I
-__VOICE_NAME:Fagotto II
-__VOICE_NAME:Horn I, in E
-__VOICE_NAME:Horn II, in E
-__VOICE_NAME:Horn III, in D
-__VOICE_NAME:Horn IV, in D
-__VOICE_NAME:Trumpet I, in D
-__VOICE_NAME:Trumpet II, in D
-__VOICE_NAME:Pauken, in A E
-__VOICE_NAME:SoloViolin
-__VOICE_NAME:SoloCello
-__VOICE_NAME:Violin I
-__VOICE_NAME:Violin II
-__VOICE_NAME:Bratsche
-__VOICE_NAME:Violoncell
-__VOICE_NAME:Kontrabass
+%    when necessary add / to fill the name on more lines
+__VOICE_NAME:Flote I,Flote II,Oboe I,Oboe II,Klarinet I,Klarinet II,Fagotto I,Fagotto II,Horn I/in E,Horn II/in E,Horn III/in D,Horn IV/in D,Trumpet I/in D,Trumpet II/in D,Pauken/in A E,SoloViolin,SoloCello,Violin I,Violin II,Bratsche,Violoncell,Kontrabass
+__VOICE_NAME:Flote I,Flote II,Oboe I,Oboe II,Klarinet I,Klarinet II,Fagotto I,Fagotto II,Horn I/in D,Horn II/in D,Horn III/in F,Horn IV/in F,Trumpet I/in D,Trumpet II/in D,,SoloViolin,SoloCello,Violin I,Violin II,Bratsche,Violoncell,Kontrabass
+__VOICE_NAME:Flote I,Flote II,Oboe I,Oboe II,Klarinet I,Klarinet II,Fagotto I,Fagotto II,Horn I/in E,Horn II/in E,Horn III/in D,Horn IV/in D,Trumpet I/in D,Trumpet II/in D,Pauken/in A E,SoloViolin,SoloCello,Violin I,Violin II,Bratsche,Violoncell,Kontrabass
 % Short Instrument name of each voice for each movement 
-%    X lines of short instrument name where :
-%        X is the number of voice
-__VOICE_SHORT_NAME:Fl I
-__VOICE_SHORT_NAME:Fl II
-__VOICE_SHORT_NAME:Ob I
-__VOICE_SHORT_NAME:Ob II
-__VOICE_SHORT_NAME:Kl I
-__VOICE_SHORT_NAME:Kl II
-__VOICE_SHORT_NAME:Fag I
-__VOICE_SHORT_NAME:Fag II
-__VOICE_SHORT_NAME:Hn I
-__VOICE_SHORT_NAME:Hn II
-__VOICE_SHORT_NAME:Hn III
-__VOICE_SHORT_NAME:Hn IV
-__VOICE_SHORT_NAME:Tr I
-__VOICE_SHORT_NAME:Tr II
-__VOICE_SHORT_NAME:Pk
-__VOICE_SHORT_NAME:Solo-Vln
-__VOICE_SHORT_NAME:Solo-Vlc
-__VOICE_SHORT_NAME:Vln I
-__VOICE_SHORT_NAME:Vln II
-__VOICE_SHORT_NAME:Br
-__VOICE_SHORT_NAME:Vcl
-__VOICE_SHORT_NAME:Kb
+%    X lines of Y short instrument name where :
+%        X is the number of Mvt
+%        Y is the number of voice
+%        Leave void if voie Y do not appear in mvt X
+__VOICE_SHORT_NAME:Fl I,Fl II,Ob I,Ob II,Kl I,Kl II,Fag I,Fag II,Hn I,Hn II,Hn III,Hn IV,Tr I,Tr II,Pk,Solo-Vln,Solo-Vlc,Vln I,Vln II,Br,Vcl,Kb
+__VOICE_SHORT_NAME:Fl I,Fl II,Ob I,Ob II,Kl I,Kl II,Fag I,Fag II,Hn I,Hn II,Hn III,Hn IV,Tr I,Tr II,,Solo-Vln,Solo-Vlc,Vln I,Vln II,Br,Vcl,Kb
+__VOICE_SHORT_NAME:Fl I,Fl II,Ob I,Ob II,Kl I,Kl II,Fag I,Fag II,Hn I,Hn II,Hn III,Hn IV,Tr I,Tr II,Pk,Solo-Vln,Solo-Vlc,Vln I,Vln II,Br,Vcl,Kb
 % Voice group to write seperate parts. One line per group. will be used to gather
 % score of flute I and II in one file, instead of generate seperate files of each voice.
 % First field must be the name of the group (no space), next fields are numbers only
@@ -205,9 +191,27 @@ __VOICE_GROUP:ViolinII,19
 __VOICE_GROUP:Bratsche,20
 __VOICE_GROUP:Violoncelle,21
 __VOICE_GROUP:Kontrabass,22
+% Staff name : they will appear in Conductor pdf output
+%   X lines of Y names separated by comas where
+%      X is the number of mvt
+%      Y is the nomber of staff of mvt X
+%      For each name the following personnalisation are possible
+%         - no "/" or "_" : basic option the name will displayed on one line
+%         - A/B or A/B/C : A and B (and C) will be displayed in column
+%         - A_B/C : A in line with B and C in column
+__STAFF_NAME:2 Flöten,2 Oboen,2 Klarinetten in A,2 Fagotte,in E_1./2.,in D_3./4.,2 Trompeten in D,Pauken in A E,Solo-Violine,Solo-Violoncell,1. Violine,2. Violine,Bratsche,Violoncell,Kontrabass
+__STAFF_NAME:2 Flöten,2 Oboen,2 Klarinetten in A,2 Fagotte,in D_1./2.,in F_3./4.,2 Trompeten in D,Solo-Violine,Solo-Violoncell,1. Violine,2. Violine,Bratsche,Violoncell,Kontrabass
+__STAFF_NAME:2 Flöten,2 Oboen,2 Klarinetten in A,2 Fagotte,in E_1./2.,in D_3./4.,2 Trompeten in D,Pauken in A E,Solo-Violine,Solo-Violoncell,1. Violine,2. Violine,Bratsche,Violoncell,Kontrabass
+% Staff Short name : they will appear in Conductor pdf output
+%   X lines of Y names separated by comas where
+%      X is the number of mvt
+%      Y is the nomber of staff of mvt X
+__STAFF_SHORT_NAME:Fl.,Ob.,Klar./(A),Fag.,Hr.(E),Hr.(D),Trpt./(D),Pk.,Solo-/Viol.,Solo-/Vlc.,1. Viol.,2. Viol.,Br.,Vlc.,K.-B.
+__STAFF_SHORT_NAME:Fl.,Ob.,Klar./(A),Fag.,Hr.(D),Hr.(F),Trpt./(D),Solo-/Viol.,Solo-/Vlc.,1. Viol.,2. Viol.,Br.,Vlc.,K.-B.
+__STAFF_SHORT_NAME:Fl.,Ob.,Klar./(A),Fag.,Hr.(E),Hr.(D),Trpt./(D),Pk.,Solo-/Viol.,Solo-/Vlc.,1. Viol.,2. Viol.,Br.,Vlc.,K.-B.
 % file gathering : by mvt, by voice, no (default)
 %   mvt : will gather files by movements
-%   voice : will gather files by movements
+%   voice : will gather files by voice
 %   no : no subdirectories
 __FILE_GATHER:mvt
 % Voice formatting option
@@ -224,6 +228,18 @@ __STAFFGROUP:1-8,11-15
 __GRANDSTAFF:5-6,11-12,14-15
 __GRANDSTAFF:5-6,10-11,13-14
 __GRANDSTAFF:5-6,11-12,14-15
+% Grand staff name : indicate the instrument name groupes by Grand Staff
+%   X lines of Y names where X is the number of mvt and Y is the name
+%      of GrandStaff. Same personalisation as for Staff name is possible.
+__GRANDSTAFF_NAME:4 Hörner,,
+__GRANDSTAFF_NAME:4 Hörner,,
+__GRANDSTAFF_NAME:4 Hörner,,
+% Grand staff name : indicate the instrument name groupes by Grand Staff
+%   X lines of Y names where X is the number of mvt and Y is the name
+%      of GrandStaff. Same personalisation as for Staff name is possible.
+__GRANDSTAFF_SHORT_NAME:Hr,,
+__GRANDSTAFF_SHORT_NAME:Hr,,
+__GRANDSTAFF_SHORT_NAME:Hr,,
 % midi output :
 %   yes : to create file to generate midi file for debug
 %   no otherwise
@@ -238,4 +254,6 @@ __MIDI_GROUP:1-8,9-15,16-17,18-22
 % in music file add a commented mark each X bars to spot easily for file readability
 % when set to 5, music file will contains "% bars 1 to 5"
 __BAR_GROUP_COMMENT:5
+% add of cue Voice in part voices
+__CUE_VOICE:yes
 

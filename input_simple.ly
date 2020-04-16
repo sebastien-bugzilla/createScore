@@ -1,9 +1,9 @@
 % Project
 __PROJECT:Concerto Brandebourgeois n°1
 % File label (will be used to derive all filenames : no space)
-__FILE_LABEL:BrandenburgConcerto1
+__FILE_LABEL:simple
 % Folder (will be created if it doesn't exist)
-__FOLDER:/media/Documents/Programmation/Python/createScore/test2
+__FOLDER:/media/Documents/Programmation/Python/createScore/simple
 % Number of movement
 __NUMBER_OF_MVT:1
 % Number of bar for each movement (number only, separated by comas)
@@ -23,17 +23,13 @@ __VOICE_PER_STAFF:1
 %       Y is the number of the mvt
 __VOICE_PER_MVT:1
 % Composer
-__COMPOSER_NAME:Johan Sebastian Bach
+__COMPOSER_NAME:Johann Sebastian Bach
 % Composer's birth year
 __COMPOSER_BIRTH_YEAR:1685
 % Composer's birth date
 __COMPOSER_DEATH_YEAR:1750
-% Score title 1
-__SCORE_TITLE_1:Concerto Brandebourgeois n 1
-% Score title 2
-__SCORE_TITLE_2:en Fa majeur BWV1046
-% Score subtitle
-__SCORE_SUBTITLE:Mouvement 1
+% Score title
+__SCORE_TITLE:Concerto Brandebourgeois n 1,en Fa majeur BWV1046
 % Time of each movement (valid time signature, separated by comas)
 __TIME:2/2
 % Initial tempo mark for each movmement (texte separated by comas)
@@ -61,10 +57,15 @@ __VOICE_SHORT_NAME:Hr
 %    X lines of instrument name where :
 %        X is the number of voice
 __VOICE_MIDI:horn
+% Voice label : the label of each voice. It will be used to define music section
+%    X lines of label where X is the number of voice
+%        no number
+%        all distinct
+__VOICE_LABEL:HornI
 % Voice group to write seperate parts. One line per group. will be used to gather
 % score of flute I and II in one file, instead of generate seperate files of each voice.
 % 
-__VOICE_GROUP:Corno,1
+__VOICE_GROUP:Cor,1
 % Voice formatting option
 %   if set to yes, a voice will be used to handle line / page break
 %   if set to no, nothing will be done
