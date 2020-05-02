@@ -4,6 +4,10 @@ __PROJECT:Double Concerto Op102
 __FILE_LABEL:DoubleConcerto
 % Folder (will be created if it doesn't exist)
 __FOLDER:/media/Documents/Programmation/Python/createScore/double
+% Typesetter
+__TYPESETTER:Sébastien MANEN
+% Source
+__SOURCE:Breitkopf and Härtel, 1926-27
 % Number of movement
 __NUMBER_OF_MVT:3
 % Number of bar for each movement (number only, separated by comas)
@@ -209,9 +213,12 @@ __STAFF_NAME:2 Flöten,2 Oboen,2 Klarinetten in A,2 Fagotte,in E_1./2.,in D_3./4
 __STAFF_SHORT_NAME:Fl.,Ob.,Klar./(A),Fag.,Hr.(E),Hr.(D),Trpt./(D),Pk.,Solo-/Viol.,Solo-/Vlc.,1. Viol.,2. Viol.,Br.,Vlc.,K.-B.
 __STAFF_SHORT_NAME:Fl.,Ob.,Klar./(A),Fag.,Hr.(D),Hr.(F),Trpt./(D),Solo-/Viol.,Solo-/Vlc.,1. Viol.,2. Viol.,Br.,Vlc.,K.-B.
 __STAFF_SHORT_NAME:Fl.,Ob.,Klar./(A),Fag.,Hr.(E),Hr.(D),Trpt./(D),Pk.,Solo-/Viol.,Solo-/Vlc.,1. Viol.,2. Viol.,Br.,Vlc.,K.-B.
-% file gathering : by mvt, by voice, no (default)
+% Use of include files
+%   yes : some sections of the score will be written in seperate files
+%   no : 1 score = 1 file only
+__USE_INCLUDE:yes
+% file gathering : by mvt, no (default)
 %   mvt : will gather files by movements
-%   voice : will gather files by voice
 %   no : no subdirectories
 __FILE_GATHER:mvt
 % Voice formatting option
@@ -249,7 +256,7 @@ __MIDI_OUTPUT:yes
 %   X lines of voice range seperated by commas 1-5,6-10 to have 2 midi files 
 %      first one with voice 1 to 5, second one with voices 6 to 10 on Mvt X
 __MIDI_GROUP:1-8,9-15,16-17,18-22
-__MIDI_GROUP:1-9,9-14,15-16,17-21
+__MIDI_GROUP:1-8,9-14,15-16,17-21
 __MIDI_GROUP:1-8,9-15,16-17,18-22
 % in music file add a commented mark each X bars to spot easily for file readability
 % when set to 5, music file will contains "% bars 1 to 5"

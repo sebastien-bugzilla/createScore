@@ -4,6 +4,8 @@ __PROJECT:Concerto Brandebourgeois n°1
 __FILE_LABEL:simple
 % Folder (will be created if it doesn't exist)
 __FOLDER:/media/Documents/Programmation/Python/createScore/simple
+% Typesetter
+__TYPESETTER:Sébastien MANEN
 % Number of movement
 __NUMBER_OF_MVT:1
 % Number of bar for each movement (number only, separated by comas)

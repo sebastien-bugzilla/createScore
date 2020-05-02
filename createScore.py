@@ -1,5 +1,5 @@
 # -*- coding:Utf-8 -*-
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import os
@@ -7,14 +7,23 @@ from time import localtime, strftime
 import math
 import locale
 
-class Score:
+class ScoreSet:
+	"""
+	Class ScoreSet : it is the entity that :
+		- read user input
+		- check user input
+		- prepare internal variable for score input
+		- gather all scores creation
+	"""
 	def __init__(self, path, input_file):
 		self.input = input_file
 		self.path_input = path
+		self.score = []
 		self.status = 'UNCHECKED'
 		self.error = []
-		self.template = ['1_fileID.ly','2_paper.ly','3_timeMvt.ly','4_option_Cond.ly', \
-			'4_option_Part.ly', '5_staff_name.ly','6_musique.ly','7_book.ly','8_header.ly']
+		self.template = ['1_fileID.ly','2_paper.ly','3_timeMvt.ly', \
+			'4_option_Cond.ly', '4_option_Part.ly', '5_staff_name.ly', \
+			'6_musique.ly','7_book.ly','8_header.ly']
 		self.file = []
 		self.section = []
 		self.project = 'default'
@@ -41,8 +50,9 @@ class Score:
 		self.voice_group = []
 		self.staff_name = []
 		self.staff_short_name = []
-		self.date = strftime('%A %d %B %Y, %H:%M:%S', localtime())
+		self.date = strftime('%A %d %B %Y, %H:%M', localtime())
 		self.file_gather = 'no'
+		self.use_include = 'no'
 		self.voice_format = 'no'
 		self.staffgroup = 'no'
 		self.grandstaff = 'no'
@@ -51,15 +61,16 @@ class Score:
 		self.midi_output = 'no'
 		self.bar_group_comment = 5
 		self.midi_group = []
-		self.file_cond = []
-		self.file_part = []
-		self.file_music = []
-		self.file_optional = []
-		self.file_midi = []
 		self.cue_voice = 'no'
+		self.typesetter = ''
+		self.source = ''
 	
 	
 	def readInput(self):
+		"""
+		This function read user input and attribute information to ScoreSet
+		instance. Few checks are made.
+		"""
 		try:
 			file_input = open(self.path_input + '/' + self.input,'r')
 		except IOError:
@@ -239,22 +250,36 @@ class Score:
 							self.file_gather = 'voice'
 						else:
 							self.file_gather = 'no'
+					elif keyword == '__USE_INCLUDE':
+						self.use_include = value
 					elif keyword == '__VOICE_FORMAT':
 						self.voice_format = value
 					elif keyword == '__STAFFGROUP':
 						if self.staffgroup == 'no':
 							self.staffgroup = []
 						self.staffgroup.append([])
-						temp = value.split(',')
-						for i in range(len(temp)):
-							self.staffgroup[-1].append(temp[i])
+						staff_beg = []
+						staff_end = []
+						staffgp = value.split(',')
+						for i in range(len(staffgp)):
+							temp = staffgp[i].split('-')
+							staff_beg.append(int(temp[0]))
+							staff_end.append(int(temp[1]))
+						self.staffgroup[-1].append(staff_beg)
+						self.staffgroup[-1].append(staff_end)
 					elif keyword == '__GRANDSTAFF':
 						if self.grandstaff == 'no':
 							self.grandstaff = []
 						self.grandstaff.append([])
-						temp = value.split(',')
-						for i in range(len(temp)):
-							self.grandstaff[-1].append(temp[i])
+						staff_beg = []
+						staff_end = []
+						gdstaff = value.split(',')
+						for i in range(len(gdstaff)):
+							temp = gdstaff[i].split('-')
+							staff_beg.append(int(temp[0]))
+							staff_end.append(int(temp[1]))
+						self.grandstaff[-1].append(staff_beg)
+						self.grandstaff[-1].append(staff_end)
 					elif keyword == '__GRANDSTAFF_NAME':
 						self.grandstaff_name.append([])
 						temp = value.split(',')
@@ -286,12 +311,20 @@ class Score:
 							self.error.append('__BAR_GROUP_COMMENT is not an integer !')
 					elif keyword == '__CUE_VOICE':
 						self.cue_voice = value
+					elif keyword == '__TYPESETTER':
+						self.typesetter = value
+					elif keyword == '__SOURCE':
+						self.source = value
 					else:
 						print('Keyword ' + keyword + ' is Unknown')
 				else:
 					print('Illegal data at line ' + str(line))
 	
 	def checkInput(self):
+		"""
+		The objective is to detect major problems in user input.
+		Not every inconsistencies are checked though.
+		"""
 		if not len(self.nbr_bar) - self.nbr_mvt == 0:
 			self.status = 'ERROR'
 			self.error.append('__NUMBER_OF_BAR do not match __NUMBER_OF_MVT !')
@@ -380,606 +413,641 @@ class Score:
 					self.error.append('__STAFF_SHORT_NAME do not match __NUMBER_OF_STAFF for mvt ' \
 						+ str(i+1) + " !")
 	
-	def fileCreation(self):
+	
+	def set_common_information(self):
 		"""
-		- determine the number of score to be written (one per movement + one per instrument)
-		- assign the paramater of each of them
-		- 
+		This function defines all common information for all scores of SetScore.
 		"""
-		if self.nbr_mvt == 1:
-			if len(self.voice_group) == 1:
-				if self.nbr_voice == 1:
-					file_name = '00_' + str(self.file_label) + '.ly'
-					self.file_part.append(lilyFile(file_name, self.folder))
+		for i in range(len(self.score)):
+			self.score[i].set_title(self.title)
+			self.score[i].set_composer_name(self.composer_name)
+			self.score[i].set_composer_death(self.composer_death)
+			self.score[i].set_composer_birth(self.composer_birth)
+			self.score[i].set_templates(self.template)
+			self.score[i].set_project(self.project)
+			self.score[i].set_folder(self.folder)
+			self.score[i].set_use_include(self.use_include)
+			self.score[i].set_file_gather(self.file_gather)
+			self.score[i].set_date(self.date)
+			self.score[i].set_voice_format(self.voice_format)
+			self.score[i].set_bar_group_comment(self.bar_group_comment)
+			self.score[i].set_typesetter(self.typesetter)
+			self.score[i].set_source(self.source)
+	
+	def set_part_information(self, i):
+		"""
+		This function defines specific information for parts scores
+		"""
+		n = self.score[i].gpeVoice
+		# information which don't depend on nb_voice or nb_mvt
+		subtitle = 'Part for ' + self.voice_group[n][0]
+		subsubtitle = self.composer_name + ' — ' + self.title.replace(',', ' ')
+		self.score[i].set_subtitle(subtitle)
+		self.score[i].set_subsubtitle(subsubtitle)
+		self.score[i].set_cue_voice(self.cue_voice)
+		self.score[i].set_instrument(self.voice_group[n][0])
+		# information which depend only on nbr_mvt
+		for j in range(self.nbr_mvt):
+			self.score[i].add_time_sign(self.time[j])
+			self.score[i].add_tempo(self.tempo[j])
+#			self.score[i].add_nbr_bar(self.nbr_bar[j])
+		# information which depend only on voice
+#		for j in range(len(self.voice_group[n])-1):
+#			n_voice = self.voice_group[n][j+1]-1
+#			clef = self.voice_clef[n_voice]
+#			midi = self.voice_midi[n_voice]
+#			self.score[i].add_clef(clef)
+#			self.score[i].add_midi(midi)
+		# information which depend on voice and mvt
+		for j in range(len(self.voice_group[n])-1):
+			n_voice = self.voice_group[n][j+1]-1
+			label = self.voice_label[n_voice]
+			for k in range(self.nbr_mvt):
+				if self.voice_per_mvt[n_voice][k] == 1:
+					key_format = 'format' + label + 'Mvt' + romain(k+1)
+					key_time = 'timeMvt' + romain(k+1)
+					key_name_voice = 'name' + label + 'Mvt' + romain(k+1)
+					key_cue_voice = 'cueVoice' + label + 'Mvt' + romain(k+1)
+					key_music = 'music' + label + 'Mvt' + romain(k+1)
+					voice_name = self.voice_name[k][n_voice]
+					voice_short_name = self.voice_short_name[k][n_voice]
+					tone = self.key[n_voice][k]
+					midi = self.voice_midi[n_voice]
+					clef = self.voice_clef[n_voice]
+					num_mvt = romain(k+1)
+					self.score[i].add_nbr_bar(self.nbr_bar[k])
+					self.score[i].add_key_format(key_format)
+					self.score[i].add_key_time(key_time)
+					self.score[i].add_key_name_voice(key_name_voice)
+					self.score[i].add_key_cue_voice(key_cue_voice)
+					self.score[i].add_key_music(key_music)
+					self.score[i].add_voice_name(voice_name)
+					self.score[i].add_voice_short_name(voice_short_name)
+					self.score[i].add_tone(tone)
+					self.score[i].add_midi(midi)
+					self.score[i].add_clef(clef)
+					self.score[i].add_num_mvt(num_mvt)
+
+	
+	def set_cond_information(self, i):
+		"""
+		This function defines specific information for conductor scores
+		"""
+		# information independant of nbr_mvt or staff
+		n = self.score[i].mvt
+		if (n+1) % 10 == 1:
+			subtitle = str(n+1) + 'st movement'
+		elif (n+1) % 10 == 2:
+			subtitle = str(n+1) + 'nd movement'
+		elif (n+1) % 10 == 3:
+			subtitle = str(n+1) + 'rd movement'
+		else:
+			subtitle = str(n+1) + 'th movement'
+		subsubtitle = self.composer_name + ' — ' + self.title.replace(',', ' ')\
+			+ ' — ' + subtitle
+		key_format = 'formatConductorMvt' + romain(n+1)
+		self.score[i].set_subtitle(subtitle)
+		self.score[i].set_subsubtitle(subsubtitle)
+		self.score[i].set_grandstaff(self.grandstaff)
+		self.score[i].set_staffgroup(self.staffgroup)
+		self.score[i].add_time_sign(self.time[n])
+		self.score[i].add_tempo(self.tempo[n])
+		self.score[i].add_nbr_bar(self.nbr_bar[n])
+		self.score[i].add_key_format(key_format)
+		# information which depends of staff
+		for j in range(self.nbr_staff[n]):
+			key_time = 'timeMvt' + romain(n+1)
+			key_staff_name = 'nameStaff' + romain(j+1) + 'Mvt' + romain(n+1)
+			id_voice = self.get_voice_on_staff(j,n)
+			key_music = []
+			for k in range(len(id_voice)):
+				music_voice = 'music' + self.voice_label[id_voice[k]] \
+					+ 'Mvt' + romain(n+1)
+				key_music.append(music_voice)
+			if self.if_in_staffgroup(j,n) == 'yes':
+				if_staffgroup = 1
+			else:
+				if_staffgroup = 0
+			temp = self.if_in_grandstaff(j,n)
+			if temp == 'no':
+				if_grandstaff = 0
+				key_gdstaff_name = ''
+			else:
+				if_grandstaff = 1
+				num_gdstaff = temp[1]
+				key_gdstaff_name = 'nameGrandStaff' + romain(num_gdstaff+1) \
+					+ 'Mvt' + romain(n+1)
+			staff_name = self.staff_name[n][j]
+			staff_short_name = self.staff_short_name[n][j]
+			if if_grandstaff == 1:
+				gdstaff_name = self.grandstaff_name[n][num_gdstaff]
+				gdstaff_short_name = self.grandstaff_short_name[n][num_gdstaff]
+			else:
+				gdstaff_name = ''
+				gdstaff_short_name = ''
+			voice_clef = []
+			tone = []
+			for k in range(len(id_voice)):
+				voice_clef.append(self.voice_clef[id_voice[k]])
+				tone.append(self.key[id_voice[k]][n])
+			# add of all information to the score
+			self.score[i].add_key_time(key_time)
+			self.score[i].add_key_staff_name(key_staff_name)
+			self.score[i].add_key_music(key_music)
+			self.score[i].add_if_staffgroup(if_staffgroup)
+			self.score[i].add_if_grandstaff(if_grandstaff)
+			self.score[i].add_key_gdstaff_name(key_gdstaff_name)
+			self.score[i].add_staff_name(staff_name)
+			self.score[i].add_staff_short_name(staff_short_name)
+			self.score[i].add_gdstaff_name(gdstaff_name)
+			self.score[i].add_gdstaff_short_name(gdstaff_short_name)
+			self.score[i].add_clef(voice_clef)
+			self.score[i].add_tone(tone)
+	
+	def set_midi_information(self, i):
+		"""
+		This function defines specific information for midi scores
+		"""
+		# information indepedant of nbr_mvt or staff
+		n = self.score[i].mvt
+		self.score[i].add_time_sign(self.time[n])
+		self.score[i].add_tempo(self.tempo[n])
+		self.score[i].add_nbr_bar(self.nbr_bar[n])
+		# information which depends of staff
+		for j in range(len(self.midi_group[n])):
+			interval = self.midi_group[n][j].split('-')
+			key_music = []
+			key_time = []
+			clef = []
+			tone = []
+			voice_name = []
+			voice_short_name = []
+			voice_midi = []
+			for k in range(int(interval[0])-1, int(interval[1])-1 +1):
+				key_music.append('music' + self.voice_label[k] + 'Mvt' \
+					+ romain(n+1))
+				key_time.append('timeMvt' + romain(n+1))
+				clef.append(self.voice_clef[k])
+				tone.append(self.key[k][n])
+				voice_name.append(self.voice_name[n][k])
+				voice_short_name.append(self.voice_short_name[n][k])
+				voice_midi.append(self.voice_midi[k])
+			self.score[i].add_key_music(key_music)
+			self.score[i].add_key_time(key_time)
+			self.score[i].add_clef(clef)
+			self.score[i].add_tone(tone)
+			self.score[i].add_voice_name(voice_name)
+			self.score[i].add_voice_short_name(voice_short_name)
+			self.score[i].add_voice_midi(voice_midi)
+	
+	
+	def get_voice_on_staff(self, staff, mvt):
+		"""
+		this function give the voice label that play in staff and for the mvt
+		given in parameter. staff go from 0 to nb_staff - 1
+		"""
+		i = 0
+		voice = 0
+		result = []
+		while i < staff:
+			voice = voice + self.voice_per_staff[mvt][i]
+			i = i + 1
+		#print(voice)
+		j = 0
+		while voice != 0:
+			voice = voice - self.voice_per_mvt[j][mvt]
+			j = j + 1
+		if self.voice_per_mvt[j][mvt] == 0:
+			j = j + 1
+		#print(voice)
+		for k in range(self.voice_per_staff[mvt][staff]):
+			result.append(j + k)
+		return result
+	
+	def if_in_staffgroup(self, staff, mvt):
+		"""
+		This function return yes if staff is in a staffgroup, no if not.
+		"""
+		answer = 'TBD'
+		if self.staffgroup == 'no':
+			answer = 'no'
+		else:
+#			for i in range(len(self.staffgroup[mvt])):
+#				interval = self.staffgroup[mvt][i].split('-')
+#				if staff in range(int(interval[0])-1, int(interval[1])-1 + 1):
+#					answer = 'yes'
+#			if answer == 'TBD':
+#				answer = 'no'
+			for i in range(len(self.staffgroup[mvt])):
+				#interval = self.grandstaff[mvt][i].split('-')
+				for j in range(len(self.staffgroup[mvt][0])):
+					staff_beg = self.staffgroup[mvt][0][j]
+					staff_end = self.staffgroup[mvt][1][j]
+					if staff in range(int(staff_beg)-1, int(staff_end) -1 + 1):
+						answer = 'yes'
+			if answer == 'TBD':
+				answer = 'no'
+		return answer
+	
+	def if_in_grandstaff(self, staff, mvt):
+		"""
+		This function return yes if staff is in a grandstaff, no if not.
+		if yes, the group of grandstaff is also returned.
+		"""
+		answer = 'TBD'
+		if self.grandstaff == 'no':
+			answer = 'no'
+		else:
+			for i in range(len(self.grandstaff[mvt])):
+				#interval = self.grandstaff[mvt][i].split('-')
+				for j in range(len(self.grandstaff[mvt][0])):
+					staff_beg = self.grandstaff[mvt][0][j]
+					staff_end = self.grandstaff[mvt][1][j]
+					if staff in range(int(staff_beg)-1, int(staff_end) -1 + 1):
+						answer = ['yes', j]
+			if answer == 'TBD':
+				answer = 'no'
+		return answer
+	
+	def add_include_file(self):
+		"""
+		This function will add the include files and subdirectories to each
+		score.
+		"""
+		for i in range(len(self.score)):
+			if self.score[i].typeScore == 'part':
+				n = self.score[i].gpeVoice
+				if self.file_gather == 'mvt':
+					sub_dir = '00-Common'
 				else:
-					file_name = '10_' + str(self.file_label) + '_Conductor.ly'
-					self.file_cond.append(lilyFile(file_name, self.folder))
-					file_name = '20_' + str(self.file_label) + '_Part.ly'
-					self.file_part.append(lilyFile(file_name, self.folder))
-			else:
-				file_name = '10_' + str(self.file_label) + '_Conductor.ly'
-				self.file_cond.append(lilyFile(file_name, self.folder))
-				for i in range(self.voice_group):
-					file_name = '20_' + str(self.file_label) + '_' + str(self.voice_group[i][0]) + '.ly'
-					self.file_part.append(lilyFile(file_name, self.folder))
-		else:
-			if len(self.voice_group) == 1:
-				if self.nbr_voice == 1:
-					file_name = '20_' + str(self.file_label) + '_Part.ly'
-					self.file_part.append(lilyFile(file_name, self.folder))
+					sub_dir = ''
+				file_header = self.file_label + '_Header.ily'
+				self.score[i].add_include_file(file_header, sub_dir, 'header')
+				file_paper = self.file_label + '_PaperParts.ily'
+				self.score[i].add_include_file(file_paper, sub_dir, 'paper')
+				file_time = self.file_label + '_timeMvt.ily'
+				self.score[i].add_include_file(file_time, sub_dir, 'time')
+				file_option = self.file_label + '_OptionParts.ily'
+				self.score[i].add_include_file(file_option, sub_dir, 'option')
+				file_nameVoice = self.file_label + '_NameVoice.ily'
+				self.score[i].add_include_file(file_nameVoice, sub_dir, \
+					'voice_name')
+				file_shortcuts = self.file_label + '_Shortcuts.ily'
+				self.score[i].add_include_file(file_shortcuts, sub_dir, \
+					'shortcut')
+				file_format = self.file_label + '_Format_Part' \
+					+ self.voice_group[n][0] + '.ily'
+				self.score[i].add_include_file(file_format, sub_dir, 'format')
+				if self.cue_voice == 'yes':
+					file_cue_voice = self.file_label + '_CueVoice.ily'
+					self.score[i].add_include_file(file_cue_voice, sub_dir, \
+						'cue_voice')
+				for j in range(self.nbr_mvt):
+					if self.file_gather == 'mvt':
+						sub_dir = rightJustify(j+1) + '-Mvt' + str(j+1)
+					else:
+						sub_dir = ''
+					for k in range(len(self.voice_group[n])-1):
+						num_voice = self.voice_group[n][k+1] - 1
+						if self.voice_per_mvt[num_voice][j] != 0:
+							label_voice = self.voice_label[num_voice]
+							file_name = 'm' + rightJustify(j+1) + '_v' \
+								+ rightJustify(num_voice+1) + '_music_' \
+								+ label_voice + '.ily'
+							self.score[i].add_include_file(file_name, sub_dir, \
+								'music')
+			elif self.score[i].typeScore == 'conductor':
+				n = self.score[i].mvt
+				if self.file_gather == 'mvt':
+					sub_dir = '00-Common'
 				else:
-					file_name = '20_' + str(self.file_label) + '_Parts.ly'
-					self.file_part.append(lilyFile(file_name, self.folder))
-					for i in range(self.nbr_mvt):
-						file_name = '10_' + str(self.file_label) + '_Conductor_mvt' + \
-							rightJustify(i+1) + '.ly'
-						self.file_cond.append(lilyFile(file_name, self.folder))
-			else:
-				# creation of conductors files
-				for i in range(self.nbr_mvt):
-					file_name = '10_' + str(self.file_label) + '_Conductor_mvt' + \
-						str(i+1) + '.ly'
-					self.file_cond.append(lilyFile(file_name, self.folder))
-				# Creation of parts files
-				for i in range(len(self.voice_group)):
-					file_name = '20_' + str(self.file_label) + '_Part' + rightJustify(i+1) \
-						+ '_' + str(self.voice_group[i][0]) + '.ly'
-					self.file_part.append(lilyFile(file_name, self.folder))
-	
-	def create_file_id(self):
-		# conductor files 
-		for i in range(len(self.file_cond)):
-			self.file_cond[i].upd_file_id(self.template[0], self.project, \
-				self.file_cond[i].file_name, self.date)
-		# part files
-		for i in range(len(self.file_part)):
-			self.file_part[i].upd_file_id(self.template[0], self.project, \
-				self.file_part[i].file_name, self.date)
-	
-	def create_header(self):
-		# if only one score is produced, section header is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			self.file_part[0].upd_header(self.template[8], self.composer_name, \
-				self.composer_birth, self.composer_death, self.title)
-		else:
-			file_name = self.file_label + '_Header.ily'
-			self.file_optional.append(lilyFile(file_name, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			self.file_optional[-1].upd_header(self.template[8], self.composer_name, \
-				self.composer_birth, self.composer_death, self.title)
-			# add of file header as include in part & conductor files
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_part)):
-				self.file_part[i].add_include(file_name, subdir)
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name, subdir)
-	
-	def create_paper(self):
-		# if only one score is produced, section paper is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			self.file_part[0].upd_paper(self.template[1])
-		else:
-			file_name = self.file_label + '_Paper.ily'
-			self.file_optional.append(lilyFile(file_name, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			self.file_optional[-1].upd_paper(self.template[1])
-			# add of file paper as include in part & conductor files
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_part)):
-				self.file_part[i].add_include(file_name, subdir)
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name, subdir)
-	
-	def create_time(self):
-		# if only one score is produced, section time is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			if self.nbr_mvt == 1:
-				self.file_part[0].upd_time(self.template[2], 'timeMvt', self.time[0], \
-					self.tempo[0])
-			else:
-				for i in range(self.nbr_mvt):
-					suffix = romain(i+1)
-					self.file_part[0].upd_time(self.template[2], 'timeMvt' + suffix, \
-						self.time[i], self.tempo[i])
-		else:
-			file_name = self.file_label + '_timeMvt.ily'
-			self.file_optional.append(lilyFile(file_name, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			if self.nbr_mvt == 1:
-				self.file_optional[-1].upd_time(self.template[2], 'timeMvt', self.time[0], \
-					self.tempo[0])
-			else:
-				for i in range(self.nbr_mvt):
-					suffix = romain(i+1)
-					self.file_optional[-1].upd_time(self.template[2], 'timeMvt' + suffix, \
-						self.time[i], self.tempo[i])
-			# add of file time as include in part file
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_part)):
-				self.file_part[i].add_include(file_name, subdir)
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name, subdir)
-	
-	def create_option(self):
-		# if only one score is produced, section options is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			self.file_part[0].upd_option(self.template[4])
-		else:
-			file_name_cond = self.file_label + '_OptionConductors.ily'
-			self.file_optional.append(lilyFile(file_name_cond, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name_cond, self.date)
-			self.file_optional[-1].upd_option(self.template[3])
-			file_name_part = self.file_label + '_OptionParts.ily'
-			self.file_optional.append(lilyFile(file_name_part, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name_part, self.date)
-			self.file_optional[-1].upd_option(self.template[4])
-			# add of file option as include in part file
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_part)):
-				self.file_part[i].add_include(file_name_part, subdir)
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name_cond, subdir)
-	
-	def create_voice_name(self):
-		# if only one score is produced, section file name is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			for i in range(self.nbr_voice):
-				self.file_part[0].upd_instrument_name(self.template[5], 
-					'Voice', 'I', 'I', self.voice_name[i][0], \
-					self.voice_short_name[i][0], self.voice_midi[i])
-		else:
-			file_name = self.file_label + '_NameVoice.ily'
-			self.file_optional.append(lilyFile(file_name, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			for i in range(len(self.voice_name)):
-				for j in range(len(self.voice_name[i])):
-					numMvt = romain(i+1)
-					numVoix = romain(j+1)
-					self.file_optional[-1].upd_instrument_name(self.template[5], \
-						'Voice', numMvt, numVoix, self.voice_name[i][j], \
-						self.voice_short_name[i][j], self.voice_midi[j])
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_part)):
-				self.file_part[i].add_include(file_name, subdir)
-	
-	def create_staff_name(self):
-		# staff name is only used when conductor score are produced
-		# 
-		if not len(self.file_cond) + len(self.file_part) == 1:
-			file_name = self.file_label + '_NameStaff.ily'
-			self.file_optional.append(lilyFile(file_name, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			for i in range(len(self.staff_name)):
-				for j in range(len(self.staff_name[i])):
-					numMvt = romain(i+1)
-					numVoix = romain(j+1)
-					self.file_optional[-1].upd_instrument_name(self.template[5], \
-						'Staff', numMvt, numVoix, self.staff_name[i][j], \
-						self.staff_short_name[i][j], '')
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name, subdir)
-	
-	def create_grandstaff_name(self):
-		# Grandstaff name is only used when conductor score are produced
-		# 
-		if not len(self.file_cond) + len(self.file_part) == 1:
-			file_name = self.file_label + '_NameGrandStaff.ily'
-			self.file_optional.append(lilyFile(file_name, self.folder))
-			self.file_optional[-1].add_info(0,0)
-			self.file_optional[-1].upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			for i in range(len(self.grandstaff_name)):
-				for j in range(len(self.grandstaff_name[i])):
-					numMvt = romain(i+1)
-					numVoix = romain(j+1)
-					self.file_optional[-1].upd_instrument_name(self.template[5], \
-						'GrandStaff', numMvt, numVoix, self.grandstaff_name[i][j], \
-						self.grandstaff_short_name[i][j], '')
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name, subdir)
-	
-	def create_shortcuts(self):
-		# if only one score is produced, section markup is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			self.file_part[0].upd_shortcuts()
-		else:
-			file_name = self.file_label + '_Shortcuts.ily'
-			file_markup = lilyFile(file_name, self.folder)
-			file_markup.add_info(0,0)
-			file_markup.upd_file_id(self.template[0], self.project, file_name, \
-				self.date)
-			self.file_optional.append(file_markup)
-			if self.file_gather == 'no':
-				subdir = ''
-			else:
-				subdir = '00-Common'
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].add_include(file_name, subdir)
-			for i in range(len(self.file_part)):
-				self.file_part[i].add_include(file_name, subdir)
-	
-	def create_music(self):
-		# if only one score is produced, music section is added directly in the file
-		# else it is added in seperate file included in each score file
-		if len(self.file_cond) + len(self.file_part) == 1:
-			for i in range(self.nbr_mvt):
-				voice = self.voice_label[0]
-				section_name = 'music' + voice + 'Mvt' + romain(i+1)
-				self.file_part[0].upd_music(self.template[6], section_name, \
-					self.voice_clef[0], self.key[i][0], self.nbr_bar[i], self.bar_group_comment)
-		else:
-			for i in range(self.nbr_mvt):
-				for j in range(len(self.voice_name[i])):
-					voice = self.voice_label[j]
-					if self.voice_per_mvt[j][i] == 1:
-						section_name = 'music' + voice + 'Mvt' + romain(i+1)
-						file_name = 'm' + rightJustify(i+1) + '_v' + rightJustify(j+1) \
-						   + '_music_' + voice + '.ily'
-						musicFile = lilyFile(file_name, self.folder)
-						musicFile.add_info(i+1, j+1)
-						musicFile.upd_file_id(self.template[0], self.project, \
-							file_name, self.date)
-						musicFile.upd_music(self.template[6], section_name, \
-							self.voice_clef[j], self.key[j][i], self.nbr_bar[i], self.bar_group_comment)
-						self.file_music.append(musicFile)
-						if self.file_gather == 'mvt':
-							subdir = rightJustify(i+1) + '-Mvt' + str(i+1)
-						elif self.file_gather == 'voice':
-							subdir = rightJustify(j+1) + '-Voice' + str(j+1)
-						else:
-							subdir = ''
-						self.file_cond[i].add_include(file_name, subdir)
-						for k in range(len(self.voice_group)):
-							if j+1 in self.voice_group[k]:
-								self.file_part[k].add_include(file_name, subdir)
-	
-	
-	def create_voice_format(self):
-		if self.voice_format == 'yes':
-			if len(self.file_cond) + len(self.file_part) == 1:
-				for i in range(self.nbr_mvt):
-					section_name = 'formatMvt' + romain(i+1) + 'VoiceI'
-					self.file_part[0].upd_voice_format(section_name)
-			else:
-				# fichier conducteur
-				for i in range(self.nbr_mvt):
-					file_name = self.file_label + '_Format_Cond_Mvt' + str(i+1) + '.ily'
-					section_name_cond = 'formatConductorMvt' + romain(i+1)
-					format_file = lilyFile(file_name, self.folder)
-					format_file.add_info(0,0)
-					format_file.upd_file_id(self.template[0], self.project, \
-						file_name, self.date)
-					format_file.upd_voice_format(section_name_cond)
-					self.file_optional.append(format_file)
-					for j in range(len(self.file_cond)):
-						if i == j:
-							self.file_cond[j].add_include(file_name, '00-Common')
-				# fichier part
-				for i in range(len(self.voice_group)):
-					file_name = self.file_label + '_Format_Part' + self.voice_group[i][0] + '.ily'
-					format_file = lilyFile(file_name, self.folder)
-					format_file.add_info(0,0)
-					format_file.upd_file_id(self.template[0], self.project, \
-						file_name, self.date)
-					self.file_optional.append(format_file)
-					for j in range(1, len(self.voice_group[i])):
-						k = self.voice_group[i][j]
-						for l in range(self.nbr_mvt):
-							if self.voice_per_mvt[k-1][l] == 1:
-								section_name = 'formatMvt' + romain(l+1) + 'Voice' + romain(k)
-								format_file.upd_voice_format(section_name)
-					self.file_part[i].add_include(file_name, '00-Common')
-	
-	def create_include(self):
-		for i in range(len(self.file_cond)):
-			self.file_cond[i].upd_include()
-		for i in range(len(self.file_part)):
-			self.file_part[i].upd_include()
-	
-	def create_cue_voice(self):
-		# if only one score is produced, cue voice is added directly in the file
-		# else it is added in seperate file included in each score file
-		if not len(self.file_cond) + len(self.file_part) == 1:
-			# création du fichier contenant les cueVoice
-			file_name = self.file_label + '_CueVoice.ily'
-			cue_file = lilyFile(file_name, self.folder)
-			cue_file.add_info(0,0)
-			cue_file.upd_file_id(self.template[0], self.project, \
-				file_name, self.date)
-			self.file_optional.append(cue_file)
-			for i in range(len(self.voice_group)):
-				self.file_part[i].add_include(file_name, '00-Common')
-				new_gpe = 'yes'
-				for j in range(len(self.voice_group[i])-1):
-					gpe_name = self.voice_group[i][0]
-					k = self.voice_group[i][j+1]
-					voice = self.voice_label[k-1]
-					for l in range(self.nbr_mvt):
-						if self.voice_per_mvt[k-1][l] == 1:
-							self.file_part[i].upd_cue_voice('addQuote', voice, \
-								romain(l+1), new_gpe, gpe_name, file_name)
-							cue_file.upd_cue_voice('note', voice, \
-								romain(l+1), new_gpe, gpe_name, file_name)
-							new_gpe = 'no'
-	
-	def create_book(self):
-		for i in range(len(self.file_cond)):
-			if (i+1) % 10 == 1:
-				subtitle = 'st'
-			elif (i+1) % 10 == 2:
-				subtitle = 'nd'
-			elif (i+1) % 10 == 3:
-				subtitle = 'rd'
-			else:
-				subtitle = 'th'
-			subtitle = str((i+1) % 10) + subtitle + 'Movement'
-			subsubtitle = self.composer_name + ' — ' + self.title + ' — ' + subtitle
-			instrument = ''
-			self.file_cond[i].upd_book(self.template[7], subtitle, \
-				subsubtitle, instrument)
-		for i in range(len(self.file_part)):
-			subtitle = 'Part for ' + self.voice_group[i][0]
-			subsubtitle = self.composer_name + ' — ' + self.title
-			instrument = self.voice_group[i][0]
-			self.file_part[i].upd_book(self.template[7], subtitle, \
-				subsubtitle, instrument)
-	
-	def create_score_part(self):
-		for i in range(len(self.voice_group)):
-			for j in range(len(self.voice_group[i])-1):
-				k = self.voice_group[i][j+1] - 1
-				for l in range(self.nbr_mvt):
-					if self.voice_per_mvt[k][l] == 1:
-						# input time
-						if len(self.file_cond) + len(self.file_part) == 1:
-							input_time = 'timeMvt'
-						else:
-							input_time = 'timeMvt' + romain(l+1)
-						# input name
-						input_name = 'nameVoice' + romain(k+1)
-						# input music
-						voice = self.voice_label[k]
-						#voice = voice.replace(' ','')
-						input_music = 'music' + voice + 'Mvt' +  romain(l+1)
-						# input format voice
-						if self.voice_format == 'no':
-							input_format = 'no'
-						else:
-							input_format = 'formatMvt' + romain(l+1) + 'Voice' + romain(k+1)
-						self.file_part[i].upd_score_part(input_time, input_name, \
-							input_music, l+1, input_format, self.cue_voice)
-	
-	def create_score_cond(self):
-		if len(self.file_cond) > 0:
-			for i in range(self.nbr_mvt):
-				numMvt = romain(i+1)
-				# input music & input name
-				local_music = []
-				local_name = []
-				liste1 = []
+					sub_dir = ''
+				file_header = self.file_label + '_Header.ily'
+				self.score[i].add_include_file(file_header, sub_dir, 'header')
+				file_paper = self.file_label + '_PaperConductors.ily'
+				self.score[i].add_include_file(file_paper, sub_dir, 'paper')
+				file_time = self.file_label + '_timeMvt.ily'
+				self.score[i].add_include_file(file_time, sub_dir, 'time')
+				file_option = self.file_label + '_OptionConductors.ily'
+				self.score[i].add_include_file(file_option, sub_dir, 'option')
+				file_nameStaff = self.file_label + '_NameStaff.ily'
+				self.score[i].add_include_file(file_nameStaff, sub_dir, \
+					'staff_name')
+				file_nameGdStaff = self.file_label + '_NameGrandStaff.ily'
+				self.score[i].add_include_file(file_nameGdStaff, sub_dir, \
+					'grandstaff_name')
+				file_shortcuts = self.file_label + '_Shortcuts.ily'
+				self.score[i].add_include_file(file_shortcuts, sub_dir, \
+					'shortcut')
+				file_format = self.file_label + '_Format_Cond_Mvt' \
+					+ rightJustify(n+1) + '.ily'
+				self.score[i].add_include_file(file_format, sub_dir, 'format')
+				if self.file_gather == 'mvt':
+					sub_dir = rightJustify(n+1) + '-Mvt' + str(n+1)
+				else:
+					sub_dir = ''
 				for j in range(self.nbr_voice):
-					if self.voice_per_mvt[j][i] == 1:
-						voice = self.voice_label[j]
-						liste1.append('music'+ voice + 'Mvt' + romain(i+1))
-				added_voice = 0
-				for j in range(self.nbr_staff[i]):
-					local_music.append([])
-					name_staff = 'nameStaff' + romain(j+1) + 'mvt' + romain(i+1)
-					local_name.append(name_staff)
-					for k in range(self.voice_per_staff[i][j]):
-						local_music[-1].append(liste1[added_voice])
-						added_voice = added_voice + 1
-				# input time
-				if self.nbr_mvt == 1:
-					input_time = 'timeMvt'
+					if self.voice_per_mvt[j][n] != 0:
+						label_voice = self.voice_label[j]
+						file_name = 'm' + rightJustify(n+1) + '_v' \
+							+ rightJustify(j+1) + '_music_' \
+							+ label_voice + '.ily'
+						self.score[i].add_include_file(file_name, sub_dir, \
+							'music')
+			elif self.score[i].typeScore == 'midi':
+				n = self.score[i].mvt
+				if self.file_gather == 'mvt':
+					sub_dir = '00-Common'
 				else:
-					input_time = 'timeMvt' + romain(i+1)
-				# input format
-				if self.voice_format == 'no':
-					input_format = 'no'
+					sub_dir = ''
+				file_time = self.file_label + '_timeMvt.ily'
+				self.score[i].add_include_file(file_time, sub_dir, 'time')
+				file_shortcuts = self.file_label + '_Shortcuts.ily'
+				self.score[i].add_include_file(file_shortcuts, sub_dir, \
+					'shortcut')
+				file_nameVoice = self.file_label + '_NameVoice.ily'
+				self.score[i].add_include_file(file_nameVoice, sub_dir, \
+					'voice_name')
+				if self.file_gather == 'mvt':
+					sub_dir = rightJustify(n+1) + '-Mvt' + str(n+1)
 				else:
-					input_format = 'formatConductorMvt' + romain(i+1)
-				if self.staffgroup == 'no':
-					if self.grandstaff == 'no':
-						self.file_cond[i].upd_score_cond(input_time, local_name, \
-							local_music, input_format, self.grandstaff, self.staffgroup, numMvt)
-					else:
-						self.file_cond[i].upd_score_cond(input_time, local_name, \
-							local_music, input_format, self.grandstaff[i], self.staffgroup, numMvt)
-				else:
-					if self.grandstaff == 'no':
-						self.file_cond[i].upd_score_cond(input_time, local_name, \
-							local_music, input_format, self.grandstaff, self.staffgroup[i], numMvt)
-					else:
-						self.file_cond[i].upd_score_cond(input_time, local_name, \
-							local_music, input_format, self.grandstaff[i], self.staffgroup[i], numMvt)
-		
-	def close_score(self):
-		for i in range(len(self.file_cond)):
-			self.file_cond[i].content.append('}')
-		for i in range(len(self.file_part)):
-			self.file_part[i].content.append('}')
+					sub_dir = ''
+				for j in range(self.nbr_voice):
+					if self.voice_per_mvt[j][n] != 0:
+						label_voice = self.voice_label[j]
+						file_name = 'm' + rightJustify(n+1) + '_v' \
+							+ rightJustify(j+1) + '_music_' \
+							+ label_voice + '.ily'
+						self.score[i].add_include_file(file_name, sub_dir, 
+							'music')
 	
-	def gather_file(self):
-		if len(self.file_music) > 0:
-			for i in range(len(self.file_music)):
-				self.file_music[i].upd_gather(self.file_gather)
-		if len(self.file_optional) > 0:
-			for i in range(len(self.file_optional)):
-				self.file_optional[i].upd_gather(self.file_gather)
-	
-	def create_midi_file(self):
-		if self.midi_output == 'yes':
-			if not len(self.file_cond) + len(self.file_part) == 1:
-				# ajouter le traitement des group de voix dans midi_group
-				gpe_midi_beg = []
-				gpe_midi_end = []
-				tab_section = []
-				for i in range(self.nbr_mvt):
-					tab_section.append([])
-					gpe_midi_beg.append([])
-					gpe_midi_end.append([])
-					for j in range(len(self.midi_group[i])):
-						tab_section[-1].append([])
-						temp = self.midi_group[i][j].split('-')
-						gpe_midi_beg[-1].append(int(temp[0])-1)
-						gpe_midi_end[-1].append(int(temp[1])-1)
-				for i in range(self.nbr_mvt):
-					file_name = '00_' + self.file_label + '_midi_Mvt' + str(i+1) + '.ly'
-					midi_file = lilyFile(file_name, self.folder)
-					midi_file.upd_file_id(self.template[0], self.project, \
-						file_name, self.date)
-					# add of include files
-					nb_voice = 0
-					for j in range(self.nbr_voice):
-						if self.voice_per_mvt[j][i] == 1:
-							voice = self.voice_label[j]
-							section_name = 'music' + voice + 'Mvt' + romain(i+1)
-							for k in range(len(gpe_midi_beg[i])):
-								if nb_voice in range(gpe_midi_beg[i][k], gpe_midi_end[i][k]):
-									gpe = k
-							tab_section[i][gpe].append(section_name)
-							inc_file = 'm' + rightJustify(i + 1) + '_v' + \
-								rightJustify(j + 1) + '_music_' + voice + '.ly'
-							dir_file = '../' + rightJustify(i+1) + '-Mvt' + str(i+1)
-							midi_file.add_include(inc_file, dir_file)
-							nb_voice = nb_voice + 1
-					file_label = self.file_label + '_timeMvt.ly'
-					file_voice = self.file_label + '_VoiceName.ly'
-					midi_file.add_include(file_label, '../00-Common')
-					midi_file.add_include(file_voice, '../00-Common')
-					midi_file.upd_include()
-					midi_file.upd_midi(tab_section[i], 'timeMvt' + romain(i+1))
-					midi_file.add_info(0,0)
-					midi_file.upd_gather('99-midi')
-					self.file_midi.append(midi_file)
-					
-	
-	def create_folder(self):
+	def create_directory(self):
+		"""
+		This function will create the directory of the project.
+		"""
 		try:
 			os.mkdir(self.folder)
 		except OSError:
 			print('Creation of directory %s failed' % self.folder)
-		if len(self.file_optional) > 0:
-			for i in range(len(self.file_optional)):
-				if hasattr(self.file_optional[i], 'subdir'):
-					new_dir = self.folder + '/' + self.file_optional[i].subdir
-					if not os.path.exists(new_dir):
-						try:
-							os.mkdir(new_dir)
-						except:
-							print('Creation of directory %s failed' % new_dir)
-		if len(self.file_music) > 0:
-			for i in range(len(self.file_music)):
-				if hasattr(self.file_music[i], 'subdir'):
-					new_dir = self.folder + '/' + self.file_music[i].subdir
-					if not os.path.exists(new_dir):
-						try:
-							os.mkdir(new_dir)
-						except:
-							print('Creation of directory %s failed' % new_dir)
-		if len(self.file_midi) > 0:
-			for i in range(len(self.file_midi)):
-				if hasattr(self.file_midi[i], 'subdir'):
-					new_dir = self.folder + '/' + self.file_midi[i].subdir
-					if not os.path.exists(new_dir):
-						try:
-							os.mkdir(new_dir)
-						except:
-							print('Creation of directory %s failed' % new_dir)
 	
-	def generate_files(self):
-		if len(self.file_cond) > 0:
-			for i in range(len(self.file_cond)):
-				self.file_cond[i].write()
-		if len(self.file_part) > 0:
-			for i in range(len(self.file_part)):
-				self.file_part[i].write()
-		if len(self.file_music) > 0:
-			for i in range(len(self.file_music)):
-				self.file_music[i].write()
-		if len(self.file_optional) > 0:
-			for i in range(len(self.file_optional)):
-				self.file_optional[i].write()
-		if len(self.file_midi) > 0:
-			for i in range(len(self.file_midi)):
-				self.file_midi[i].write()
+	def write_file(self):
+		"""
+		This function will write all score files. If there is no included files
+		it call a write function define in score class. If not, the writing is 
+		made at ScoreSet level to avoid to write the same file each time it is
+		included in a score.
+		"""
+		if self.file_gather == 'no':
+			for i in range(len(self.score)):
+				self.score[i].write_to_file('no')
+		else:
+			for i in range(len(self.score)):
+				self.score[i].write_to_file('yes')
 
 
 
 
-class lilyFile:
-	def __init__(self, filename, path):
-		self.file_name = filename
-		self.path = path
-		self.content = []
+
+class Score(ScoreSet):
+	def __init__(self, fileName, typeScore, number):
+		self.typeScore = typeScore
+		if typeScore == 'part':
+			self.gpeVoice = number
+		else:
+			self.mvt = number
+		self.fileName = fileName
+		self.entete_score = []
+		self.entete_file = []
+		self.sectionHeader = []
+		self.sectionPaper = []
+		self.sectionTime = []
+		self.sectionOption = []
+		self.sectionVoiceName = []
+		self.sectionStaffName = []
+		self.sectionGdStaffName = []
+		self.sectionShortcut = []
+		self.sectionCueVoice = []
+		self.sectionFormat = []
+		self.sectionMusic = []
+		self.sectionInclude = []
+		self.sectionScore = []
 		self.include_file = []
+		self.subdir = []
+		self.time_sign = []
+		self.tempo = []
+		self.nbr_bar = []
+		self.clef = []
+		self.midi = []
+		self.key_format = []
+		self.key_time = []
+		self.key_name_voice = []
+		self.key_cue_voice = []
+		self.key_music = []
+		self.voice_name = []
+		self.voice_short_name = []
+		self.tone = []
+		self.key_staff_name = []
+		self.if_staffgroup = []
+		self.if_grandstaff = []
+		self.key_gdstaff_name = []
+		self.staff_name = []
+		self.staff_short_name = []
+		self.gdstaff_name = []
+		self.gdstaff_short_name = []
+		self.voice_midi = []
+		self.num_mvt = [] # contain the current number of mvt for parts scores
 	
-	def add_include(self, include_file, subdir):
-		data = [include_file, subdir]
-		self.include_file.append(data)
+	def set_title(self, title):
+		self.title = title
 	
-	def upd_file_id(self, template, project, file_name, date):
+	def set_composer_name(self, composer_name):
+		self.composer_name = composer_name
+	
+	def set_composer_death(self, composer_death):
+		self.composer_death = composer_death
+	
+	def set_composer_birth(self, composer_birth):
+		self.composer_birth = composer_birth
+	
+	def set_templates(self, templates):
+		self.templates = templates
+	
+	def set_project(self, project):
+		self.project = project
+	
+	def set_folder(self, folder):
+		self.folder = folder
+	
+	def set_use_include(self, use_include):
+		self.use_include = use_include
+	
+	def set_file_gather(self, file_gather):
+		self.file_gather = file_gather
+	
+	def set_date(self, date):
+		self.date = date
+	
+	def set_voice_format(self, voice_format):
+		self.voice_format = voice_format
+	
+	def set_subtitle(self, subtitle):
+		self.subtitle = subtitle
+	
+	def set_subsubtitle(self, subsubtitle):
+		self.subsubtitle = subsubtitle
+	
+	def set_cue_voice(self, cue_voice):
+		self.cue_voice = cue_voice
+	
+	def set_instrument(self, instrument):
+		self.instrument = instrument
+	
+	def set_bar_group_comment(self, bar_group_comment):
+		self.bar_group_comment = bar_group_comment
+	
+	def set_staffgroup(self, staffgroup):
+		self.staffgroup = staffgroup
+	
+	def set_grandstaff(self, grandstaff):
+		self.grandstaff = grandstaff
+	
+	def set_typesetter(self, typesetter):
+		self.typesetter = typesetter
+	
+	def set_source(self, source):
+		self.source = source
+	
+	def add_time_sign(self, time_sign):
+		self.time_sign.append(time_sign)
+	
+	def add_tempo(self, tempo):
+		self.tempo.append(tempo)
+	
+	def add_nbr_bar(self, nbr_bar):
+		self.nbr_bar.append(nbr_bar)
+	
+	def add_clef(self, clef):
+		self.clef.append(clef)
+	
+	def add_midi(self, midi):
+		self.midi.append(midi)
+	
+	def add_key_format(self, key_format):
+		self.key_format.append(key_format)
+	
+	def add_key_time(self, key_time):
+		self.key_time.append(key_time)
+	
+	def add_key_name_voice(self, key_name_voice):
+		self.key_name_voice.append(key_name_voice)
+	
+	def add_key_cue_voice(self, key_cue_voice):
+		self.key_cue_voice.append(key_cue_voice)
+	
+	def add_key_music(self, key_music):
+		self.key_music.append(key_music)
+	
+	def add_voice_name(self, voice_name):
+		self.voice_name.append(voice_name)
+	
+	def add_voice_short_name(self, voice_short_name):
+		self.voice_short_name.append(voice_short_name)
+	
+	def add_tone(self, tone):
+		self.tone.append(tone)
+	
+	def add_key_staff_name(self, key_staff_name):
+		self.key_staff_name.append(key_staff_name)
+	
+	def add_if_staffgroup(self, if_staffgroup):
+		self.if_staffgroup.append(if_staffgroup)
+	
+	def add_if_grandstaff(self, if_grandstaff):
+		self.if_grandstaff.append(if_grandstaff)
+	
+	def add_key_gdstaff_name(self, key_gdstaff_name):
+		self.key_gdstaff_name.append(key_gdstaff_name)
+	
+	def add_staff_name(self, staff_name):
+		self.staff_name.append(staff_name)
+	
+	def add_staff_short_name(self, staff_short_name):
+		self.staff_short_name.append(staff_short_name)
+	
+	def add_gdstaff_name(self, gdstaff_name):
+		self.gdstaff_name.append(gdstaff_name)
+	
+	def add_gdstaff_short_name(self, gdstaff_short_name):
+		self.gdstaff_short_name.append(gdstaff_short_name)
+	
+	def add_voice_clef(self, voice_clef):
+		self.voice_clef.append(voice_clef)
+	
+	def add_voice_midi(self, voice_midi):
+		self.voice_midi.append(voice_midi)
+	
+	def add_num_mvt(self, num_mvt):
+		self.num_mvt.append(num_mvt)
+	
+	def add_include_file(self, file_name, sub_dir, section):
+		"""
+		This function add included file name in a separate table. They are also
+		added to the first two element of each sections. For music section
+		which can be written in multiple files it is necessary to have 2D table.
+		"""
+		self.include_file.append(file_name)
+		self.subdir.append(sub_dir)
+		if section == 'header':
+			self.sectionHeader.append(sub_dir)
+			self.sectionHeader.append(file_name)
+		elif section == 'paper':
+			self.sectionPaper.append(sub_dir)
+			self.sectionPaper.append(file_name)
+		elif section == 'time':
+			self.sectionTime.append(sub_dir)
+			self.sectionTime.append(file_name)
+		elif section == 'option':
+			self.sectionOption.append(sub_dir)
+			self.sectionOption.append(file_name)
+		elif section == 'voice_name':
+			self.sectionVoiceName.append(sub_dir)
+			self.sectionVoiceName.append(file_name)
+		elif section == 'staff_name':
+			self.sectionStaffName.append(sub_dir)
+			self.sectionStaffName.append(file_name)
+		elif section == 'grandstaff_name':
+			self.sectionGdStaffName.append(sub_dir)
+			self.sectionGdStaffName.append(file_name)
+		elif section == 'shortcut':
+			self.sectionShortcut.append(sub_dir)
+			self.sectionShortcut.append(file_name)
+		elif section == 'cue_voice':
+			self.sectionCueVoice.append(sub_dir)
+			self.sectionCueVoice.append(file_name)
+		elif section == 'format':
+			self.sectionFormat.append(sub_dir)
+			self.sectionFormat.append(file_name)
+		elif section == 'music':
+			self.sectionMusic.append([])
+			self.sectionMusic[-1].append(sub_dir)
+			self.sectionMusic[-1].append(file_name)
+	
+	
+	
+	# on créé d'abord les sections de toutes les partitions.
+	# une fois fait si besoin on crée les fichiers inclus auquels on attribut
+	# les sections présentes
+	def create_part_score(self):
+		"""
+		This function create lilypond input of each  section of part scores 
+		and stored in sectionHeader, ...
+		"""
+		# section header
 		try:
-			file_template = open('./template/' + template, 'r')
+			file_template = open('./template/' + self.templates[8], 'r')
 		except:
-			print('Cannot open ./template/' + template)
-		for line in file_template.readlines():
-			line = line.rstrip('\n')
-			line = line.replace('__PROJECT_NAME', project)
-			line = line.replace('__FILE_NAME', file_name)
-			line = line.replace('__DATE', date)
-			self.content.append(line)
-	
-	def upd_header(self, template, composer, composer_birth, composer_death, title):
-		try:
-			file_template = open('./template/' + template, 'r')
-		except:
-			print('Cannot open ./template/' + template)
-		tab_title = title.split(',')
+			print('Cannot open ./template/' + self.templates[8])
+		tab_title = self.title.split(',')
 		if len(tab_title) == 1:
 			final_title = tab_title[0]
 		else:
@@ -992,317 +1060,387 @@ class lilyFile:
 				i = i + 1
 		for line in file_template.readlines():
 			line = line.rstrip('\n')
-			line = line.replace('__COMPOSER_NAME', composer)
-			line = line.replace('__COMPOSER_BIRTH_YEAR', composer_birth)
-			line = line.replace('__COMPOSER_DEATH_YEAR', composer_death)
+			line = line.replace('__COMPOSER_NAME', self.composer_name)
+			line = line.replace('__COMPOSER_BIRTH_YEAR', self.composer_birth)
+			line = line.replace('__COMPOSER_DEATH_YEAR', self.composer_death)
 			line = line.replace('__SCORE_TITLE', final_title)
-			self.content.append(line)
-	
-	def upd_paper(self, template):
-		try:
-			file_template = open('./template/' + template, 'r')
-		except:
-			print('Cannot open ./template/' + template)
-		for line in file_template.readlines():
-			line = line.rstrip('\n')
-			self.content.append(line)
-	
-	def upd_time(self, template, section_name, time, tempo):
-		try:
-			file_template = open('./template/' + template, 'r')
-		except:
-			print('Cannot open ./template/' + template)
-		for line in file_template.readlines():
-			line = line.rstrip('\n')
-			line = line.replace('__CLEF_GLOBAL', section_name)
-			line = line.replace('__TIME', time)
-			line = line.replace('__TEMPO_MARK', tempo)
-			self.content.append(line)
-	
-	def upd_option(self, template):
-		try:
-			file_template = open('./template/' + template, 'r')
-		except:
-			print('Cannot open ./template/' + template)
-		for line in file_template.readlines():
-			line = line.rstrip('\n')
-			self.content.append(line)
-	
-	def upd_instrument_name(self, template, type_staff, numMvt, numVoice, voiceName, shortName, midi):
-		if numVoice == 'I':
-			self.content.append('%' + '#'*79)
-			if type_staff == 'Voice':
-				titre = 'V O I C E   N A M E S'
-			elif type_staff == 'Staff':
-				titre = 'S T A F F   N A M E S'
-			elif type_staff == 'GrandStaff':
-				titre = 'G R A N D   S T A F F   N A M E S'
-			nb_espace = (80 - 3 - len(titre))/2
-			self.content.append('%#' + ' '*int(nb_espace) + titre \
-				+ ' '*int(nb_espace) + '#')
-			self.content.append('%' + '#'*79)
-		# traitement du nom de la voix
-		nb_slash = voiceName.count('/')
-		nb_undsc = voiceName.count('_')
-		if nb_slash + nb_undsc == 0:
-			# on est dans le cas standard : staff.instrumentName = "Flute"
-			# on couvre également le cas où voiceName = ""
-			voiceNameFinal = '"' + voiceName + '"'
-		elif nb_undsc == 0:
-			nameCut = voiceName.split('/')
-			if nb_slash == 1:
-				# on est dans le cas avec un nom sur deux lignes
-				voiceNameFinal = '\markup {\n\t\t\center-column {\n\t\t\t\lower #1 "' \
-					+ nameCut[0] + '" "' + nameCut[1] + '"\n\t\t}\n\t}'
-			elif nb_slash == 2:
-				# on est dans le cas avec un nom sur trois lignes
-				voiceNameFinal = '\markup {\n\t\t\center-column {\n\t\t\t\lower #1 "' \
-					+ nameCut[0] + '" "' + nameCut[1] + '" "' + nameCut[2] + \
-					'"\n\t\t}\n\t}'
-		elif nb_undsc == 1 and nb_slash ==1:
-			# on est dans le cas A_B/C
-			nameCutS = voiceName.split('/')
-			nameCutU = nameCutS[0].split('_')
-			voiceNameFinal = '\markup {\n\t\t\line {\n\t\t\t\hspace #5 \lower #1.5 "' \
-				+ nameCutU[0] + '"\n\t\t\t\center-column {\n\t\t\t\t"' \
-				+ nameCutU[1] + '" "' + nameCutS[1] + '"\n\t\t\t}\n\t\t}\n\t}'
-		else:
-			# on est dans un cas non géré : on revient à la forme simple avec input utilisateur
-			voiceNameFinal = '"' + voiceName + '"'
-		# traitement du nom raccourcit de la voix
-		nb_slash = shortName.count('/')
-		nb_undsc = shortName.count('_')
-		if nb_slash + nb_undsc == 0:
-			# on est dans le cas standard : staff.instrumentName = "Flute"
-			shortNameFinal = '"' + shortName + '"'
-		elif nb_undsc == 0:
-			nameCut = shortName.split('/')
-			if nb_slash == 1:
-				# on est dans le cas avec un nom sur deux lignes
-				shortNameFinal = '\markup {\n\t\t\center-column {\n\t\t\t\lower #1 "' \
-					+ nameCut[0] + '" "' + nameCut[1] + '"\n\t\t}\n\t}'
-			elif nb_slash == 2:
-				# on est dans le cas avec un nom sur trois lignes
-				shortNameFinal = '\markup {\n\t\t\center-column {\n\t\t\t\lower #1 "' \
-					+ nameCut[0] + '" "' + nameCut[1] + '" "' + nameCut[2] + \
-					'"\n\t\t}\n\t}'
-		elif nb_undsc == 1 and nb_slash ==1:
-			# on est dans le cas A_B/C
-			nameCutS = shortName.split('/')
-			nameCutU = nameCutS[0].split('_')
-			shortNameFinal = '\markup {\n\t\t\line {\n\t\t\t\hspace #5 \lower #1.5 "' \
-				+ nameCutU[0] + '"\n\t\t\t\center-column {\n\t\t\t\t"' \
-				+ nameCutU[1] + '" "' + nameCutS[1] + '"\n\t\t\t}\n\t\t}\n\t}'
-		else:
-			# on est dans un cas non géré : on revient à la forme simple avec input utilisateur
-			shortNameFinal = '"' + shortName + '"'
-		# lecture du template :
-		try:
-			file_template = open('./template/' + template, 'r')
-		except:
-			print('Cannot open ./template/'+ template)
-		for line in file_template.readlines():
-			line = line.rstrip('\n')
-#			if (midi == '' and line.count('midiInstrument') > 0):
-#				file_template.readline()
-			line = line.replace('__CLEF_STAFF_NAME', 'name' + type_staff + str(numVoice) \
-				+ 'mvt' + str(numMvt))
-			line = line.replace('__VOICE_MIDI', '"' + midi + '"')
-			line = line.replace('__VOICE_NAME', voiceNameFinal)
-			line = line.replace('__VOICE_SHORT_NAME', shortNameFinal)
-			self.content.append(line)
+			self.sectionHeader.append(line)
 		file_template.close()
-	
-	def upd_shortcuts(self):
-		self.content.append('%' + '#'*79)
-		titre = 'M A R K U P   S E C T I O N'
-		if (80-3-len(titre)) % 2 == 0:
-			nbre_espace = (80 - 3 -len(titre))/2
-			self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-				+ ' ' * int(nbre_espace) + '#')
-		else:
-			nbre_espace = int((80-3-len(titre))/2)
-			self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-				+ ' ' * int(nbre_espace + 1) + '#')
-		self.content.append('%' + '#'*79)
-	
-	def upd_music(self, template, sectionName, voice_clef, key, nbMesure, step):
+		
+		# section paper :
 		try:
-			file_template = open('./template/' + template, 'r')
+			template_paper = open('./template/' + self.templates[1], 'r')
 		except:
-			print('Cannot open ./template/' + template)
-		key = key.replace(' m', ' \m')
+			print('Cannot open ./template/' + self.templates[1])
+		for line in template_paper.readlines():
+			line = line.rstrip('\n')
+			self.sectionPaper.append(line)
+		template_paper.close()
+		
+		# section time
+		for i in range(len(self.time_sign)):
+			try:
+				template_time = open('./template/' + self.templates[2], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[2])
+			key_time = 'timeMvt' + romain(i+1)
+			for line in template_time.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_GLOBAL', key_time)
+				line = line.replace('__TIME', self.time_sign[i])
+				line = line.replace('__TEMPO_MARK', self.tempo[i])
+				self.sectionTime.append(line)
+			template_time.close()
+		
+		# section option
+		try:
+			template_option = open('./template/' + self.templates[4], 'r')
+		except:
+			print('Cannot open ./template/' + self.templates[4])
+		for line in template_option.readlines():
+			line = line.rstrip('\n')
+			self.sectionOption.append(line)
+		template_option.close()
+		
+		# section voice name
+		for i in range(len(self.key_name_voice)):
+			try:
+				template_name = open('./template/' + self.templates[5], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[5])
+			voice_name = get_name_voice(self.voice_name[i])
+			voice_short_name = get_name_voice(self.voice_short_name[i])
+			for line in template_name.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_STAFF_NAME', self.key_name_voice[i])
+				line = line.replace('__VOICE_NAME', voice_name)
+				line = line.replace('__VOICE_SHORT_NAME', voice_short_name)
+				line = line.replace('__VOICE_MIDI',self.midi[i])
+				self.sectionVoiceName.append(line)
+			template_name.close()
+		
+		# section markup
+		txt_title = title('shortcuts section')
+		for i in range(len(txt_title)):
+			self.sectionShortcut.append(txt_title[i])
+		
+		# section cue voice
+		if self.cue_voice == 'yes':
+			for i in range(len(self.key_cue_voice)):
+				line1 = self.key_cue_voice[i] + ' = \\relative c {'
+				line2 = '\t'
+				line3 = '}'
+				self.sectionCueVoice.append(line1)
+				self.sectionCueVoice.append(line2)
+				self.sectionCueVoice.append(line3)
+		
+		# section voice format
+		if self.voice_format == 'yes':
+			for i in range(len(self.key_format)):
+				l1 = self.key_format[i] + ' = {'
+				l2 = '\t\override Score.NonMusicalPaperColumn.' \
+					+ 'line-break-permission = ##f'
+				l3 = '\t\override Score.NonMusicalPaperColumn.' \
+					+ 'page-break-permission = ##f'
+				l4 = '}'
+				self.sectionFormat.append(l1)
+				self.sectionFormat.append(l2)
+				self.sectionFormat.append(l3)
+				self.sectionFormat.append(l4)
+		
+		# section music
+		for i in range(len(self.key_music)):
+			# a quelle condition sectionMusic n'a pas été initialisé.
+			#self.sectionMusic.append([])
+			if len(self.sectionMusic) == 0:
+				self.sectionMusic.append([])
+			try:
+				file_music = open('./template/' + self.templates[6], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[6])
+			tone = self.tone[i].replace(' m', ' \m')
+			for line in file_music.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_MUSIQUE',self.key_music[i])
+				line = line.replace('__VOICE_CLEF',self.clef[i])
+				line = line.replace('__INITIAL_KEY_SIGNATURE',tone)
+				self.sectionMusic[i].append(line)
+			nbMesure = self.nbr_bar[i]
+			step = self.bar_group_comment
+			if nbMesure % step == 0:
+				nbStep = int(nbMesure / step)
+			else:
+				nbStep = int(math.floor(float(nbMesure)/step)) + 1
+			for j in range(nbStep):
+				if j < nbStep - 1:
+					self.sectionMusic[i].append('% Bars ' + str(1 + j*step) \
+						+ ' to ' + str(step + j*step))
+					self.sectionMusic[i].append('\t')
+				else:
+					if nbMesure - 1 - j * step == 0:
+						self.sectionMusic[i].append('% Bar ' + str(nbMesure))
+					elif nbMesure - 1 - j * step == 1:
+						self.sectionMusic[i].append('% Bars ' + str(1 + j*step) \
+							+ ' and ' + str(nbMesure))
+					else:
+						self.sectionMusic[i].append('% Bars ' + str(1 + j*step) \
+							+ ' to ' + str(nbMesure))
+					self.sectionMusic[i].append('\t')
+			self.sectionMusic[i].append('}')
+			file_music.close()
+		
+		# section score
+		if self.cue_voice == 'yes':
+			for i in range(len(self.key_cue_voice)):
+				line = '\\addQuote "' + self.key_cue_voice[i] + '" { \\' \
+					+ self.key_cue_voice[i] + ' }'
+				self.sectionScore.append(line)
+		try:
+			file_score = open('./template/' + self.templates[7], 'r')
+		except:
+			print('Cannot open ./template/' + self.templates[7])
+		for line in file_score.readlines():
+			line = line.rstrip('\n')
+			line = line.replace('__SUBTITLE', self.subtitle)
+			line = line.replace('__SUBSUBTITLE', self.subsubtitle)
+			line = line.replace('__INSTRUMENT', self.instrument)
+			self.sectionScore.append(line)
+		file_score.close()
+		
+		for i in range(len(self.key_music)):
+			time = '\\' + self.key_time[i]
+			name = '\\' + self.key_name_voice[i]
+			music = '\\' + self.key_music[i]
+			key_format = '\\' + self.key_format[i]
+			num_mvt = self.num_mvt[i]
+			self.sectionScore.append('\t\score {')
+			self.sectionScore.append('\t\t\\new Staff <<')
+			if self.voice_format == 'yes':
+				self.sectionScore.append('\t\t\t\\new Voice {')
+				self.sectionScore.append('\t\t\t\t' + key_format)
+				self.sectionScore.append('\t\t\t}')
+			self.sectionScore.append('\t\t\t\\new Voice {')
+			self.sectionScore.append('\t\t\t\t' + time + \
+				' \generalOptions \partOptions')
+			self.sectionScore.append('\t\t\t\t' + name + ' ' + music)
+			self.sectionScore.append('\t\t\t}')
+			self.sectionScore.append('\t\t>>')
+			self.sectionScore.append('\t\t\\header {')
+			self.sectionScore.append('\t\t\tbreakbefore = ##f')
+			self.sectionScore.append('\t\t\tpiece = \\markup {')
+			self.sectionScore.append('\t\t\t\t\\fill-line {')
+			self.sectionScore.append('\t\t\t\t\t\\fontsize #4')
+			self.sectionScore.append('\t\t\t\t\t' + num_mvt)
+			self.sectionScore.append('\t\t\t\t}')
+			self.sectionScore.append('\t\t\t}')
+			self.sectionScore.append('\t\t}')
+			self.sectionScore.append('\t\t\\layout {')
+			if self.cue_voice == 'yes':
+				line1 = '\t\t\t\\context {'
+				line2 = '\t\t\t\t\\CueVoice \\layoutCueVoice'
+				line3 = '\t\t\t}'
+				self.sectionScore.append(line1)
+				self.sectionScore.append(line2)
+				self.sectionScore.append(line3)
+			self.sectionScore.append('\t\t}')
+			self.sectionScore.append('\t}')
+		self.sectionScore.append('}')
+	
+	def create_cond_score(self):
+		"""
+		This function create lilypond input of each  section of conductors 
+		scores and stored in sectionHeader, ...
+		"""
+		n = self.mvt
+		# section header
+		try:
+			file_template = open('./template/' + self.templates[8], 'r')
+		except:
+			print('Cannot open ./template/' + self.templates[8])
+		tab_title = self.title.split(',')
+		if len(tab_title) == 1:
+			final_title = tab_title[0]
+		else:
+			i = 0
+			while i < len(tab_title):
+				if i == 0:
+					final_title = '"' + tab_title[0] + '"'
+				else:
+					final_title = final_title + '\n\t\t\t' + '"' \
+						+ tab_title[i] + '"'
+				i = i + 1
 		for line in file_template.readlines():
 			line = line.rstrip('\n')
-			line = line.replace('__CLEF_MUSIQUE',sectionName)
-			line = line.replace('__VOICE_CLEF',voice_clef)
-			line = line.replace('__INITIAL_KEY_SIGNATURE',key)
-			self.content.append(line)
-		if nbMesure % step == 0:
-			nbStep = int(nbMesure / step)
-		else:
-			nbStep = int(math.floor(float(nbMesure)/step)) + 1
-		for i in range(nbStep):
-			if i < nbStep - 1:
-				self.content.append('% Bars ' + str(1 + i*step) + ' to ' + str(step + i*step))
-				self.content.append('\t')
-			else:
-				if nbMesure - 1 - i * step == 0:
-					self.content.append('% Bar ' + str(nbMesure))
-				elif nbMesure - 1 - i * step == 1:
-					self.content.append('% Bars ' + str(1 + i*step) + ' and ' + str(nbMesure))
-				else:
-					self.content.append('% Bars ' + str(1 + i*step) + ' to ' + str(nbMesure))
-				self.content.append('\t')
-		self.content.append('}')
-	
-	def upd_voice_format(self, format_section):
-		self.content.append(format_section + ' = {')
-		self.content.append('\t\override Score.NonMusicalPaperColumn.line-break-permission = ##f')
-		self.content.append('\t\override Score.NonMusicalPaperColumn.page-break-permission = ##f')
-		self.content.append('}')
-	
-	def upd_include(self):
-		self.content.append('%' + '#'*79)
-		titre = 'I N C L U D E   F I L E S'
-		if (80-3-len(titre)) % 2 == 0:
-			nbre_espace = (80 - 3 -len(titre))/2
-			self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-				+ ' ' * int(nbre_espace) + '#')
-		else:
-			nbre_espace = int((80-3-len(titre))/2)
-			self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-				+ ' ' * int(nbre_espace + 1) + '#')
-		self.content.append('%' + '#'*79)
-		for i in range(len(self.include_file)):
-			inc_file = self.include_file[i][0]
-			subdir = self.include_file[i][1]
-			if subdir == '':
-				self.content.append('\include "' + inc_file + '"')
-			else:
-				self.content.append('\include "./' + subdir + '/' + inc_file + '"')
-	
-	def upd_cue_voice(self, action, voiceLabel, numMvt, if_new_gpe, gpe_name, file_name):
-		if action == 'note':
-			if if_new_gpe == 'yes':
-				self.content.append('%' + '#'*79)
-				titre = 'C U E   V O I C E S : ' + gpe_name
-				if (80-3-len(titre)) % 2 == 0:
-					nbre_espace = (80 - 3 -len(titre))/2
-					self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-						+ ' ' * int(nbre_espace) + '#')
-				else:
-					nbre_espace = int((80-3-len(titre))/2)
-					self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-						+ ' ' * int(nbre_espace + 1) + '#')
-				self.content.append('%' + '#'*79)
-			nom_cue_voice = 'cueVoice' + voiceLabel + 'm' + str(numMvt)
-			self.content.append(nom_cue_voice + ' = \\relative c {\n\t\n}')
-		else:
-			if if_new_gpe == 'yes':
-				line_include = '\\include "./00-Common/' + file_name + '"'
-				self.content.append(line_include)
-			nom_cue_voice = 'cueVoice' + voiceLabel + 'm' + str(numMvt)
-			line = '\\addQuote "' + nom_cue_voice + '" { \\' + nom_cue_voice \
-				+ ' }'
-			self.content.append(line)
-	
-	def upd_book(self, template, subtitle, subsubtitle, instrument):
+			line = line.replace('__COMPOSER_NAME', self.composer_name)
+			line = line.replace('__COMPOSER_BIRTH_YEAR', self.composer_birth)
+			line = line.replace('__COMPOSER_DEATH_YEAR', self.composer_death)
+			line = line.replace('__SCORE_TITLE', final_title)
+			self.sectionHeader.append(line)
+		file_template.close()
+		
+		# section paper :
 		try:
-			file_template = open('./template/' + template, 'r')
+			template_paper = open('./template/' + self.templates[1], 'r')
 		except:
-			print('Cannot open ./template/' + template)
-		for line in file_template.readlines():
+			print('Cannot open ./template/' + self.templates[1])
+		for line in template_paper.readlines():
 			line = line.rstrip('\n')
-			line = line.replace('__SUBTITLE', subtitle)
-			line = line.replace('__SUBSUBTITLE',subsubtitle)
-			line = line.replace('__INSTRUMENT',instrument)
-			self.content.append(line)
-	
-	def upd_score_part(self, time, name, music, i_mvt, input_format, cue_voice):
-		time = '\\' + time
-		name = '\\' + name
-		music = '\\' + music
-		self.content.append('\t\score {')
-		self.content.append('\t\t\\new Staff <<')
-		if not input_format == 'no':
-			self.content.append('\t\t\t\\new Voice {')
-			self.content.append('\t\t\t\t' + '\\' + input_format)
-			self.content.append('\t\t\t}')
-		self.content.append('\t\t\t\\new Voice {')
-		self.content.append('\t\t\t\t' + time + ' \generalOptions \partOptions')
-		self.content.append('\t\t\t\t' + name + ' ' + music)
-		self.content.append('\t\t\t}')
-		self.content.append('\t\t>>')
-		self.content.append('\t\t\\header {')
-		self.content.append('\t\t\tbreakbefore = ##f')
-		self.content.append('\t\t\tpiece = \\markup {')
-		self.content.append('\t\t\t\t\\fill-line {')
-		self.content.append('\t\t\t\t\t\\fontsize #4')
-		self.content.append('\t\t\t\t\t' + romain(i_mvt))
-		self.content.append('\t\t\t\t}')
-		self.content.append('\t\t\t}')
-		self.content.append('\t\t}')
-		self.content.append('\t\t\\layout {')
-		if cue_voice == 'yes':
-			line1 = '\t\t\t\\context {'
-			line2 = '\t\t\t\t\\CueVoice \\layoutCueVoice'
-			line3 = '\t\t\t}'
-			self.content.append(line1)
-			self.content.append(line2)
-			self.content.append(line3)
-		self.content.append('\t\t}')
-		self.content.append('\t}')
-	
-	
-	
-	
-	def upd_score_cond(self, time, name, music, input_format, grandstaff, staffgroup, numMvt):
-		gdSt_beg = []
-		gdSt_end = []
-		gdSt_tab = []
-		stGp_beg = []
-		stGp_end = []
-		stGp_tab = []
+			self.sectionPaper.append(line)
+		template_paper.close()
 		
-		if grandstaff != 'no':
-			for i in range(len(grandstaff)):
-				interval = grandstaff[i]
-				interval_split = interval.split('-')
-				gdSt_beg.append(int(interval_split[0])-1)
-				gdSt_end.append(int(interval_split[1])-1)
-			for i in range(len(gdSt_beg)):
-				for j in range(gdSt_beg[i], gdSt_end[i]+1):
-					gdSt_tab.append(j)
+		# section time
+		for i in range(len(self.time_sign)):
+			try:
+				template_time = open('./template/' + self.templates[2], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[2])
+			key_time = 'timeMvt' + romain(n+1)
+			for line in template_time.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_GLOBAL', key_time)
+				line = line.replace('__TIME', self.time_sign[i])
+				line = line.replace('__TEMPO_MARK', self.tempo[i])
+				self.sectionTime.append(line)
+			template_time.close()
 		
-		if staffgroup != 'no':
-			for i in range(len(staffgroup)):
-				interval = staffgroup[i]
-				interval_split = interval.split('-')
-				stGp_beg.append(int(interval_split[0])-1)
-				stGp_end.append(int(interval_split[1])-1)
-			for i in range(len(stGp_beg)):
-				for j in range(stGp_beg[i], stGp_end[i]+1):
-					stGp_tab.append(j)
+		# section option
+		try:
+			template_option = open('./template/' + self.templates[4], 'r')
+		except:
+			print('Cannot open ./template/' + self.templates[4])
+		for line in template_option.readlines():
+			line = line.rstrip('\n')
+			self.sectionOption.append(line)
+		template_option.close()
 		
-		time = '\\' + time
-		self.content.append('\t\score {')
-		self.content.append('\t\t<<')
+		# section staff name
+		for i in range(len(self.key_staff_name)):
+			try:
+				template_name = open('./template/' + self.templates[5], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[5])
+			staff_name = get_name_voice(self.staff_name[i])
+			staff_short_name = get_name_voice(self.staff_short_name[i])
+			for line in template_name.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_STAFF_NAME', self.key_staff_name[i])
+				line = line.replace('__VOICE_NAME', staff_name)
+				line = line.replace('__VOICE_SHORT_NAME', staff_short_name)
+				line = line.replace('__VOICE_MIDI','')
+				self.sectionStaffName.append(line)
+			template_name.close()
+		
+		# section GdStaff name
+		for i in range(len(self.key_gdstaff_name)):
+			if i+1 in self.grandstaff[n][0]:
+			#if self.key_gdstaff_name[i] != '':
+				try:
+					template_name = open('./template/' + self.templates[5], 'r')
+				except:
+					print('Cannot open ./template/' + self.templates[5])
+				gdstaff_name = get_name_voice(self.gdstaff_name[i])
+				gdstaff_short_name = get_name_voice(self.gdstaff_short_name[i])
+				for line in template_name.readlines():
+					line = line.rstrip('\n')
+					line = line.replace('__CLEF_STAFF_NAME', self.key_gdstaff_name[i])
+					line = line.replace('__VOICE_NAME', gdstaff_name)
+					line = line.replace('__VOICE_SHORT_NAME', gdstaff_short_name)
+					line = line.replace('__VOICE_MIDI','')
+					self.sectionGdStaffName.append(line)
+				template_name.close()
+		
+		# section shortcut
+		txt_title = title('shortcuts section')
+		for i in range(len(txt_title)):
+			self.sectionShortcut.append(txt_title[i])
+		
+		# section voice format
+		if self.voice_format == 'yes':
+			for i in range(len(self.key_format)):
+				l1 = self.key_format[i] + ' = {'
+				l2 = '\t\override Score.NonMusicalPaperColumn.' \
+					+ 'line-break-permission = ##f'
+				l3 = '\t\override Score.NonMusicalPaperColumn.' \
+					+ 'page-break-permission = ##f'
+				l4 = '}'
+				self.sectionFormat.append(l1)
+				self.sectionFormat.append(l2)
+				self.sectionFormat.append(l3)
+				self.sectionFormat.append(l4)
+		
+		# section music
+		num_music = 0
+		for i in range(len(self.key_music)):
+			for j in range(len(self.key_music[i])):
+				#self.sectionMusic.append([])
+				try:
+					file_music = open('./template/' + self.templates[6], 'r')
+				except:
+					print('Cannot open ./template/' + self.templates[6])
+				tone = self.tone[i][j].replace(' m', ' \m')
+				for line in file_music.readlines():
+					line = line.rstrip('\n')
+					line = line.replace('__CLEF_MUSIQUE',self.key_music[i][j])
+					line = line.replace('__VOICE_CLEF',self.clef[i][j])
+					line = line.replace('__INITIAL_KEY_SIGNATURE',tone)
+					self.sectionMusic[num_music].append(line)
+				nbMesure = self.nbr_bar[0]
+				step = self.bar_group_comment
+				if nbMesure % step == 0:
+					nbStep = int(nbMesure / step)
+				else:
+					nbStep = int(math.floor(float(nbMesure)/step)) + 1
+				for k in range(nbStep):
+					if k < nbStep - 1:
+						self.sectionMusic[num_music].append('% Bars ' \
+							+ str(1 + k*step) + ' to ' + str(step + k*step))
+						self.sectionMusic[num_music].append('\t')
+					else:
+						if nbMesure - 1 - k * step == 0:
+							self.sectionMusic[num_music].append('% Bar ' \
+								+ str(nbMesure))
+						elif nbMesure - 1 - k * step == 1:
+							self.sectionMusic[num_music].append('% Bars ' \
+								+ str(1 + k*step) + ' and ' + str(nbMesure))
+						else:
+							self.sectionMusic[num_music].append('% Bars ' \
+								+ str(1 + k*step) + ' to ' + str(nbMesure))
+						self.sectionMusic[num_music].append('\t')
+				self.sectionMusic[num_music].append('}')
+				file_music.close()
+				num_music = num_music + 1
+		
+		# section score
+		try:
+			file_score = open('./template/' + self.templates[7], 'r')
+		except:
+			print('Cannot open ./template/' + self.templates[7])
+		for line in file_score.readlines():
+			line = line.rstrip('\n')
+			line = line.replace('__SUBTITLE', self.subtitle)
+			line = line.replace('__SUBSUBTITLE', self.subsubtitle)
+			line = line.replace('__INSTRUMENT', '')
+			self.sectionScore.append(line)
+		file_score.close()
+		
+		
+		self.sectionScore.append('\t\score {')
+		self.sectionScore.append('\t\t<<')
 		count_gdSt = 0
-		for i in range(len(name)):
+		for i in range(len(self.key_music)):
 			pref = '\t\t\t'
 			pref_gdSt = ''
 			pref_stGp = ''
 			pref_form = ''
-			if i in gdSt_tab:
+			if self.if_grandstaff[i] == 1:
 				pref_gdSt = '\t'
-			if i in stGp_tab:
+			if self.if_staffgroup[i] == 1:
 				pref_stGp = '\t'
-			if input_format != 'no':
+			if self.voice_format == 'yes':
 				if i == 0:
 					pref_form = '\t'
 			# ligne 1
-			if input_format == 'no':
+			if self.voice_format == 'no':
 				ligne1 = pref_gdSt + pref_form + pref_stGp + '\\new Staff {'
 			else:
 				if i == 0:
@@ -1310,140 +1448,600 @@ class lilyFile:
 				else:
 					ligne1 = pref_gdSt + pref_form + pref_stGp + '\\new Staff {'
 			# ligne 2
-			ligne2 = pref_gdSt + pref_form + pref_stGp + '\t' + time + ' \generalOptions \conductorOptions'
+			ligne2 = pref_gdSt + pref_form + pref_stGp + '\t\\' \
+				+ self.key_time[i] + ' \generalOptions \conductorOptions'
 			# ligne 3 
-			ligne3 = pref_gdSt + pref_form + pref_stGp + '\t' + '\\' + name[i]
+			ligne3 = pref_gdSt + pref_form + pref_stGp + '\t' + '\\' \
+				+ self.key_staff_name[i]
 			# ligne 4
-			if len(music[i]) == 1:
-				ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\' + music[i][0]
+			if len(self.key_music[i]) == 1:
+				ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\' \
+					+ self.key_music[i][0]
 			else:
-				temp = '\\' + music[i][0]
+				temp = '\\' + self.key_music[i][0]
 				j = 1
-				while j < len(music[i]):
-					temp = temp + ' \\' + music[i][j]
+				while j < len(self.key_music[i]):
+					temp = temp + ' \\' + self.key_music[i][j]
 					j = j + 1
-				ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\partcombine ' + temp
+				ligne4 = pref_gdSt + pref_form + pref_stGp + \
+					'\t\\partcombine ' + temp
 			# ligne 5
 			ligne5 = pref_gdSt + pref_form + pref_stGp + '}'
+			
+			#
+			# Repenser le stockage des staffgroup et grandstaff et repérer
+			# les staff de début et de fin de chacun. C'est la seule chose utile
+			#
+			
 			if i == 0:
-				if i in stGp_beg:
-					self.content.append(pref + '\\new StaffGroup <<')
-				if i in gdSt_beg:
+				if i+1 in self.staffgroup[n][0]:
+					self.sectionScore.append(pref + '\\new StaffGroup <<')
+				if i+1 in self.grandstaff[n][0]:
 					count_gdSt = count_gdSt + 1
 					num_gdSt = romain(count_gdSt)
-					temp = pref + pref_stGp + '\\new GrandStaff \with { ' + \
-						'\\nameGrandStaff' + num_gdSt + 'mvt' + numMvt + ' } <<'
-					self.content.append(temp)
-				if not input_format == 'no':
-					self.content.append(pref + pref_stGp + pref_gdSt + '\\new Staff <<')
-					self.content.append('%' + pref + pref_stGp + pref_gdSt + '\t\\new Voice {')
-					self.content.append('%' + pref + pref_stGp + pref_gdSt + '\t\t' + '\\' + input_format)
-					self.content.append('%' + pref + pref_stGp + pref_gdSt + '\t}')
-				self.content.append(pref + ligne1)
-				self.content.append(pref + ligne2)
-				self.content.append(pref + ligne3)
-				self.content.append(pref + ligne4)
-				self.content.append(pref + ligne5)
-				if not input_format == 'no':
-					self.content.append(pref + pref_stGp + pref_gdSt + '>>')
+					temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
+						+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					self.sectionScore.append(temp)
+				if self.voice_format == 'yes':
+					self.sectionScore.append(pref + pref_stGp + pref_gdSt \
+						+ '\\new Staff <<')
+					self.sectionScore.append('%' + pref + pref_stGp \
+						+ pref_gdSt + '\t\\new Voice {')
+					self.sectionScore.append('%' + pref + pref_stGp \
+						+ pref_gdSt + '\t\t' + '\\' + self.key_format[0])
+					self.sectionScore.append('%' + pref + pref_stGp \
+						+ pref_gdSt + '\t}')
+				self.sectionScore.append(pref + ligne1)
+				self.sectionScore.append(pref + ligne2)
+				self.sectionScore.append(pref + ligne3)
+				self.sectionScore.append(pref + ligne4)
+				self.sectionScore.append(pref + ligne5)
+				if self.voice_format == 'yes':
+					self.sectionScore.append(pref + pref_stGp \
+						+ pref_gdSt + '>>')
 			else:
-				if i in stGp_beg:
-					self.content.append(pref + '\\new StaffGroup <<')
-				if i in gdSt_beg:
+				if i+1 in self.staffgroup[n][0]:
+					self.sectionScore.append(pref + '\\new StaffGroup <<')
+				if i+1 in self.grandstaff[n][0]:
 					count_gdSt = count_gdSt + 1
 					num_gdSt = romain(count_gdSt)
-					temp = pref + pref_stGp + '\\new GrandStaff \with { ' + \
-						'\\nameGrandStaff' + num_gdSt + 'mvt' + numMvt + ' } <<'
-					self.content.append(temp)
-				self.content.append(pref + ligne1)
-				self.content.append(pref + ligne2)
-				self.content.append(pref + ligne3)
-				self.content.append(pref + ligne4)
-				self.content.append(pref + ligne5)
-				if i in gdSt_end:
-					self.content.append(pref + pref_stGp + '>>')
-				if i in stGp_end:
-					self.content.append(pref + '>>')
-		self.content.append('\t\t>>')
-		self.content.append('\t\t\\header {')
-		self.content.append('\t\t\tbreakbefore = ##t')
-		self.content.append('\t\t}')
-		self.content.append('\t\t\\layout {')
-		self.content.append('\t\t}')
-		self.content.append('\t}')
+					temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
+						+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					self.sectionScore.append(temp)
+				self.sectionScore.append(pref + ligne1)
+				self.sectionScore.append(pref + ligne2)
+				self.sectionScore.append(pref + ligne3)
+				self.sectionScore.append(pref + ligne4)
+				self.sectionScore.append(pref + ligne5)
+				if i+1 in self.grandstaff[n][1]:
+					self.sectionScore.append(pref + pref_stGp + '>>')
+				if i+1 in self.staffgroup[n][1]:
+					self.sectionScore.append(pref + '>>')
+		self.sectionScore.append('\t\t>>')
+		self.sectionScore.append('\t\t\\header {')
+		self.sectionScore.append('\t\t\tbreakbefore = ##t')
+		self.sectionScore.append('\t\t}')
+		self.sectionScore.append('\t\t\\layout {')
+		self.sectionScore.append('\t\t}')
+		self.sectionScore.append('\t}')
+		self.sectionScore.append('}')
 	
-	def upd_midi(self, tab_section, time_section):
-		self.content.append('%' + '#'*79)
-		titre = 'B O O K   S E C T I O N'
-		if (80-3-len(titre)) % 2 == 0:
-			nbre_espace = (80 - 3 -len(titre))/2
-			self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-				+ ' ' * int(nbre_espace) + '#')
-		else:
-			nbre_espace = int((80-3-len(titre))/2)
-			self.content.append('%#' + ' ' * int(nbre_espace) + titre \
-				+ ' ' * int(nbre_espace + 1) + '#')
-		self.content.append('%' + '#'*79)
-		for i in range(len(tab_section)):
-			gpe_name = 'groupe' + romain(i+1)
-			self.content.append('\\book {')
-			self.content.append('\t#(define output-suffix "' + gpe_name + '")')
-			self.content.append('\t\score {')
-			self.content.append('\t\t<<')
-			self.content.append('\t\t\t\\new StaffGroup <<')
-			for j in range(len(tab_section[i])):
-				self.content.append('\t\t\t\t\\new Staff { ' + '\\' + time_section \
-					+ ' \\' + tab_section[i][j] + ' }')
-			self.content.append('\t\t\t>>')
-			self.content.append('\t\t>>')
-			self.content.append('\t\t\midi {')
-			self.content.append('\t\t\t\\tempo 4 = 80')
-			self.content.append('\t\t\t\context {')
-			self.content.append('\t\t\t\t\Voice')
-			self.content.append('\t\t\t\t\\remove "Dynamic_performer"')
-			self.content.append('\t\t\t}')
-			self.content.append('\t\t}')
-			self.content.append('\t}')
-			self.content.append('}')
-	
-	
-	def write(self):
-		if hasattr(self, 'subdir'):
-			file_location = os.path.join(self.path, self.subdir, self.file_name)
-		else:
-			file_location = os.path.join(self.path, self.file_name)
-		write_file = open(file_location, 'w')
-		for i in range(len(self.content)):
-			write_file.write(self.content[i] + '\n')
-		write_file.close()
-	
-	def add_info(self, mvt, voice):
+	def create_midi_score(self):
 		"""
-		ajoute l'appartenance du fichier à un mouvement ou une voix passé en paramètre.
-		si les mvt = voice = 0, alors le fichier sera dans 00-Common
+		This function create lilypond input of each  section of midi scores 
+		and store in sectionHeader, ...
 		"""
-		self.mvt = mvt
-		self.voice = voice
+		n = self.mvt
+		# section header
+			# no header in midi scores 
+		
+		# section paper :
+			# no paper in midi scores
+		
+		# section time
+		for i in range(len(self.time_sign)):
+			try:
+				template_time = open('./template/' + self.templates[2], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[2])
+			key_time = 'timeMvt' + romain(i+1)
+			for line in template_time.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_GLOBAL', key_time)
+				line = line.replace('__TIME', self.time_sign[i])
+				line = line.replace('__TEMPO_MARK', self.tempo[i])
+				self.sectionTime.append(line)
+			template_time.close()
+		
+		# section option
+			# no option in midi score
+		
+		# section voice name
+		for i in range(len(self.key_name_voice)):
+			try:
+				template_name = open('./template/' + self.templates[5], 'r')
+			except:
+				print('Cannot open ./template/' + self.templates[5])
+			voice_name = get_name_voice(self.voice_name[i])
+			voice_short_name = get_name_voice(self.voice_short_name[i])
+			for line in template_name.readlines():
+				line = line.rstrip('\n')
+				line = line.replace('__CLEF_STAFF_NAME', self.key_name_voice[i])
+				line = line.replace('__VOICE_NAME', voice_name)
+				line = line.replace('__VOICE_SHORT_NAME', voice_short_name)
+				line = line.replace('__VOICE_MIDI',self.midi[i])
+				self.sectionVoiceName.append(line)
+			template_name.close()
+		
+		# section markup
+		txt_title = title('shortcuts section')
+		for i in range(len(txt_title)):
+			self.sectionShortcut.append(txt_title[i])
+		
+		# section cue voice
+			# no cue voice for midi score
+		
+		# section voice format
+			# no format voice for midi score
+		
+		# section music
+		num_music = 0
+		for i in range(len(self.key_music)):
+			for j in range(len(self.key_music[i])):
+				#self.sectionMusic.append([])
+				try:
+					file_music = open('./template/' + self.templates[6], 'r')
+				except:
+					print('Cannot open ./template/' + self.templates[6])
+				tone = self.tone[i][j].replace(' m', ' \m')
+				for line in file_music.readlines():
+					line = line.rstrip('\n')
+					line = line.replace('__CLEF_MUSIQUE',self.key_music[i][j])
+					line = line.replace('__VOICE_CLEF',self.clef[i][j])
+					line = line.replace('__INITIAL_KEY_SIGNATURE',tone)
+					self.sectionMusic[num_music].append(line)
+				nbMesure = self.nbr_bar[0]
+				step = self.bar_group_comment
+				if nbMesure % step == 0:
+					nbStep = int(nbMesure / step)
+				else:
+					nbStep = int(math.floor(float(nbMesure)/step)) + 1
+				for k in range(nbStep):
+					if k < nbStep - 1:
+						self.sectionMusic[num_music].append('% Bars ' \
+							+ str(1 + k*step) + ' to ' + str(step + k*step))
+						self.sectionMusic[num_music].append('\t')
+					else:
+						if nbMesure - 1 - k * step == 0:
+							self.sectionMusic[num_music].append('% Bar ' \
+								+ str(nbMesure))
+						elif nbMesure - 1 - k * step == 1:
+							self.sectionMusic[num_music].append('% Bars ' \
+								+ str(1 + k*step) + ' and ' + str(nbMesure))
+						else:
+							self.sectionMusic[num_music].append('% Bars ' \
+								+ str(1 + k*step) + ' to ' + str(nbMesure))
+						self.sectionMusic[num_music].append('\t')
+				self.sectionMusic[num_music].append('}')
+				file_music.close()
+				num_music = num_music + 1
+		
+		# section score
+#		temp = title('book section')
+#		self.scoreSection.append(temp)
+		for i in range(len(self.key_music)):
+			self.sectionScore.append('\\book {')
+			self.sectionScore.append('\t#(define output-suffix "groupe' \
+				+ romain(i+1) + '")')
+			self.sectionScore.append('\t\\score {')
+			self.sectionScore.append('\t\t<<')
+			self.sectionScore.append('\t\t\t\\new StaffGroup <<')
+			for j in range(len(self.key_music[i])):
+				line = '\\' + self.key_time[i][j] + ' \\' + self.key_music[i][j]
+				self.sectionScore.append('\t\t\t\t\\new Staff { ' + \
+					line + ' }')
+			self.sectionScore.append('\t\t\t>>')
+			self.sectionScore.append('\t\t>>')
+			self.sectionScore.append('\t\t\midi {')
+			self.sectionScore.append('\t\t\t\\tempo 4 = 80')
+			self.sectionScore.append('\t\t\t\context {')
+			self.sectionScore.append('\t\t\t\t\Voice')
+			self.sectionScore.append('\t\t\t\t\\remove "Dynamic_performer"')
+			self.sectionScore.append('\t\t\t}')
+			self.sectionScore.append('\t\t}')
+			self.sectionScore.append('\t}')
+			self.sectionScore.append('}')
 	
-	def upd_gather(self, orga):
-		if orga == 'mvt':
-			if self.mvt == 0:
-				self.subdir = '00-Common'
-			else:
-				self.subdir = rightJustify(self.mvt) + '-Mvt' + str(self.mvt)
-		elif orga == 'voice':
-			if self.voice == 0:
-				self.subdir = '00-Common'
-			else:
-				self.subdir = rightJustify(self.voice) + '-Voice' + str(self.voice)
-		elif orga == 'no':
-			self.subdir = ''
+	def create_include_section(self):
+		"""
+		This function will fill sectionInclude
+		"""
+		for i in range(len(self.include_file)):
+			line = '\\include "./' + self.subdir[i] + '/' \
+				+ self.include_file[i] + '"'
+			self.sectionInclude.append(line)
+	
+	def create_subdirectories(self):
+		"""
+		This function will create subdirectories if any.
+		"""
+		subdirectories = list(set(self.subdir))
+		for i in range(len(subdirectories)):
+			path_dir = self.folder + '/' + subdirectories[i]
+			if not os.path.exists(path_dir):
+				os.mkdir(path_dir)
+	
+	def create_entete(self):
+		"""
+		this methode create the commented text added at the beginning of each
+		score file. It takes general informations (composer, source, date, 
+		etc...). This method create also the commented text added at each
+		include files
+		"""
+		# entete_score
+		title_header = title('header')
+		for i in range(len(title_header)):
+			self.entete_score.append(title_header[i])
+		self.entete_score.append('%')
+		information = []
+		prefix = '%                       '
+		information.append('%  Composer           : ' + self.composer_name \
+			+ '(' + self.composer_birth + ' - ' + self.composer_death + ')' )
+		information.append('%  work               : ' \
+			+ self.title.replace(',', ' '))
+		information.append('%  Source             : ' + self.source)
+		if self.typeScore == 'conductor':
+			information.append('%  Type of score      : ' \
+				+ 'Score conductor mvt ' + romain(self.mvt+1))
+		elif self.typeScore == 'part':
+			information.append('%  Type of score      : ' + 'Score for ' \
+				+ self.instrument)
 		else:
-			self.subdir = orga
+			information.append('%  Type of score      : ' \
+				+ 'Midi conductor mvt ' + romain(self.mvt+1))
+		information.append('%  Typesetter         : ' + self.typesetter)
+		information.append('%  date of initiation : ' + self.date)
+		res_information = cut_text(information, 80, prefix)
+		for i in range(len(res_information)):
+			self.entete_score.append(res_information[i])
+		self.entete_score.append('%')
+		
+		# entete_file
+		information = []
+		prefix = '%                '
+		information.append('%  work        : ' + self.title.replace(',', ' '))
+		information.append('%  typesetter  : ' + self.typesetter)
+		information.append('%  date        : ' + self.date)
+		res_information = cut_text(information, 80, prefix)
+		for i in range(len(res_information)):
+			self.entete_file.append(res_information[i])
 	
-	def display(self):
-		for i in range(len(self.content)):
-			print(self.content[i])
+	
+	def write_to_file(self, if_include):
+		"""
+		This function write each partition in a common file or a set of files
+		depending the use of include files pass in parameter if_include.
+		"""
+		if if_include == 'no':
+			# all sections of the score go in a common file
+			file_res = open(self.folder + '/' + self.fileName, 'w')
+			for i in range(len(self.entete_score)):
+				file_res.write(self.entete_score[i]+'\n')
+			#header
+			title_header = title('header section')
+			for i in range(len(title_header)):
+				file_res.write(title_header[i]+'\n')
+			for i in range(len(self.sectionHeader)):
+				file_res.write(self.sectionHeader[i]+'\n')
+			#paper
+			title_paper = title('paper section')
+			for i in range(len(title_paper)):
+				file_res.write(title_paper[i]+'\n')
+			for i in range(len(self.sectionPaper)):
+				file_res.write(self.sectionPaper[i]+'\n')
+			#time
+			title_time = title('time and tempo section')
+			for i in range(len(title_time)):
+				file_res.write(title_time[i]+'\n')
+			for i in range(len(self.sectionTime)):
+				file_res.write(self.sectionTime[i]+'\n')
+			#option
+			title_option = title('option section')
+			for i in range(len(title_option)):
+				file_res.write(title_option[i]+'\n')
+			for i in range(len(self.sectionOption)):
+				file_res.write(self.sectionOption[i]+'\n')
+			# voice name
+			title_voicename = title('voice name')
+			for i in range(len(title_voicename)):
+				file_res.write(title_voicename[i]+'\n')
+			for i in range(len(self.sectionVoiceName)):
+				file_res.write(self.sectionVoiceName[i]+'\n')
+			# staff name
+			title_staffname = title('staff name')
+			for i in range(len(title_staffname)):
+				file_res.write(title_staffname[i]+'\n')
+			for i in range(len(self.sectionStaffName)):
+				file_res.write(self.sectionStaffName[i]+'\n')
+			# gdstaff name
+			title_gdstaffname = title('grand staff name')
+			for i in range(len(title_gdstaffname)):
+				file_res.write(title_gdstaffname[i]+'\n')
+			for i in range(len(self.sectionGdStaffName)):
+				file_res.write(self.sectionGdStaffName[i]+'\n')
+			# cue voice
+			title_cuevoice = title('cue voice')
+			for i in range(len(title_cuevoice)):
+				file_res.write(title_cuevoice[i]+'\n')
+			for i in range(len(self.sectionCueVoice)):
+				file_res.write(self.sectionCueVoice[i]+'\n')
+			# format
+			title_format = title('voice format')
+			for i in range(len(title_format)):
+				file_res.write(title_format[i]+'\n')
+			for i in range(len(self.sectionFormat)):
+				file_res.write(self.sectionFormat[i]+'\n')
+			# music
+			title_music = title('music section')
+			for i in range(len(title_music)):
+				file_res.write(title_music[i]+'\n')
+			for i in range(len(self.sectionMusic)):
+				for j in range(len(self.sectionMusic[i])):
+					file_res.write(self.sectionMusic[i][j]+'\n')
+			# score
+			title_score = title('score section')
+			for i in range(len(title_score)):
+				file_res.write(title_score[i]+'\n')
+			for i in range(len(self.sectionScore)):
+				file_res.write(self.sectionScore[i]+'\n')
+			file_res.close()
+		else:
+			print(self.fileName)
+			# each section go in a separate file.
+			folder = self.folder
+			# section header
+			if len(self.sectionHeader) > 1:
+				subdir = self.sectionHeader[0]
+				file_name = self.sectionHeader[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_header = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_header.write(self.entete_file[i]+'\n')
+					for i in range(2, len(self.sectionHeader)):
+						file_header.write(self.sectionHeader[i]+'\n')
+					file_header.close()
+			# section paper
+			if len(self.sectionPaper) > 1:
+				subdir = self.sectionPaper[0]
+				file_name = self.sectionPaper[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_paper = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_paper.write(self.entete_file[i]+'\n')
+					for i in range(2, len(self.sectionPaper)):
+						file_paper.write(self.sectionPaper[i]+'\n')
+					file_paper.close()
+			# section option
+			if len(self.sectionOption) > 1:
+				subdir = self.sectionOption[0]
+				file_name = self.sectionOption[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_option = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_option.write(self.entete_file[i]+'\n')
+					for i in range(2, len(self.sectionOption)):
+						file_option.write(self.sectionOption[i]+'\n')
+					file_option.close()
+			# section time
+			if self.typeScore == 'conductor':
+				subdir = self.sectionTime[0]
+				file_name = self.sectionTime[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_time = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_time.write(self.entete_file[i]+'\n')
+					time_title = title('time and tempo section')
+					for i in range(len(time_title)):
+						file_time.write(time_title[i]+'\n')
+					for i in range(2, len(self.sectionTime)):
+						file_time.write(self.sectionTime[i]+'\n')
+				else:
+					file_time = open(file_path, 'a')
+					for i in range(2, len(self.sectionTime)):
+						file_time.write(self.sectionTime[i]+'\n')
+				file_time.close()
+			# section voice name 
+			if self.typeScore == 'part':
+				subdir = self.sectionVoiceName[0]
+				file_name = self.sectionVoiceName[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_voicename = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_voicename.write(self.entete_file[i]+'\n')
+					voice_title = title('voice name : ' + self.instrument)
+					for i in range(len(voice_title)):
+						file_voicename.write(voice_title[i]+'\n')
+					for i in range(2, len(self.sectionVoiceName)):
+						file_voicename.write(self.sectionVoiceName[i]+'\n')
+				else:
+					file_voicename = open(file_path, 'a')
+					voice_title = title('voice name : ' + self.instrument)
+					for i in range(len(voice_title)):
+						file_voicename.write(voice_title[i]+'\n')
+					for i in range(2, len(self.sectionVoiceName)):
+						file_voicename.write(self.sectionVoiceName[i]+'\n')
+				file_voicename.close()
+			# section staff name
+			if self.typeScore == 'conductor':
+				subdir = self.sectionStaffName[0]
+				file_name = self.sectionStaffName[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_staffname = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_staffname.write(self.entete_file[i]+'\n')
+					staff_title = title('staff name : mvt ' \
+						+ romain(self.mvt + 1))
+					for i in range(len(staff_title)):
+						file_staffname.write(staff_title[i]+'\n')
+					for i in range(2, len(self.sectionStaffName)):
+						file_staffname.write(self.sectionStaffName[i]+'\n')
+				else:
+					file_staffname = open(file_path, 'a')
+					staff_title = title('staff name : mvt ' \
+						+ romain(self.mvt + 1))
+					for i in range(len(staff_title)):
+						file_staffname.write(staff_title[i]+'\n')
+					for i in range(2, len(self.sectionStaffName)):
+						file_staffname.write(self.sectionStaffName[i]+'\n')
+				file_staffname.close()
+			# section Grand Staff
+			if self.typeScore == 'conductor':
+				if len(self.sectionGdStaffName)>1:
+					subdir = self.sectionGdStaffName[0]
+					file_name = self.sectionGdStaffName[1]
+					file_path = folder + '/' + subdir + '/' + file_name
+					if not os.path.exists(file_path):
+						file_gdstaffname = open(file_path, 'w')
+						for i in range(len(self.entete_file)):
+							file_gdstaffname.write(self.entete_file[i]+'\n')
+						gdstaff_title = title('grand staff name : mvt ' \
+							+ romain(self.mvt +1))
+						for i in range(len(gdstaff_title)):
+							file_gdstaffname.write(gdstaff_title[i] + '\n')
+						for i in range(2, len(self.sectionGdStaffName)):
+							file_gdstaffname.write(self.sectionGdStaffName[i] \
+								+'\n')
+					else:
+						file_gdstaffname = open(file_path, 'a')
+						gdstaff_title = title('grand staff name : mvt ' \
+							+ romain(self.mvt +1))
+						for i in range(len(gdstaff_title)):
+							file_gdstaffname.write(gdstaff_title[i] + '\n')
+						for i in range(2, len(self.sectionGdStaffName)):
+							file_gdstaffname.write(self.sectionGdStaffName[i] \
+								+'\n')
+					file_gdstaffname.close()
+			# section shortcut
+			if len(self.sectionShortcut) > 0:
+				subdir = self.sectionShortcut[0]
+				file_name = self.sectionShortcut[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_shortcut = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_shortcut.write(self.entete_file[i]+'\n')
+					for i in range(2, len(self.sectionShortcut)):
+						file_shortcut.write(self.sectionShortcut[i]+'\n')
+					file_shortcut.close()
+			# section cuevoice
+			if self.typeScore == 'part':
+				subdir = self.sectionCueVoice[0]
+				file_name = self.sectionCueVoice[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_cuevoice = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_cuevoice.write(self.entete_file[i]+'\n')
+					title_cuevoice = title('cue voice for ' + self.instrument)
+					for i in range(len(title_cuevoice)):
+						file_cuevoice.write(title_cuevoice[i]+'\n')
+					for i in range(2, len(self.sectionCueVoice)):
+						file_cuevoice.write(self.sectionCueVoice[i]+'\n')
+				else:
+					file_cuevoice = open(file_path, 'a')
+					title_cuevoice = title('cue voice for ' + self.instrument)
+					for i in range(len(title_cuevoice)):
+						file_cuevoice.write(title_cuevoice[i]+'\n')
+					for i in range(2, len(self.sectionCueVoice)):
+						file_cuevoice.write(self.sectionCueVoice[i]+'\n')
+				file_cuevoice.close()
+			# section format
+			if len(self.sectionFormat) > 0:
+				subdir = self.sectionFormat[0]
+				file_name = self.sectionFormat[1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				if not os.path.exists(file_path):
+					file_format = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_format.write(self.entete_file[i]+'\n')
+					if self.typeScore == 'conductor':
+						title_format = title('conductor score format')
+					elif self.typeScore == 'part':
+						title_format = title('part score format')
+					for i in range(len(title_format)):
+						file_format.write(title_format[i]+'\n')
+					for i in range(2, len(self.sectionFormat)):
+						file_format.write(self.sectionFormat[i]+'\n')
+					file_format.close()
+			# section music
+			for i in range(len(self.sectionMusic)):
+				subdir = self.sectionMusic[i][0]
+				file_name = self.sectionMusic[i][1]
+				file_path = folder + '/' + subdir + '/' + file_name
+				title_music = title('music section')
+				if not os.path.exists(file_path):
+					file_music = open(file_path, 'w')
+					for i in range(len(self.entete_file)):
+						file_music.write(self.entete_file[i]+'\n')
+					for j in range(len(title_music)):
+						file_music.write(title_music[j]+'\n')
+					for j in range(2, len(self.sectionMusic[i])):
+						file_music.write(self.sectionMusic[i][j]+'\n')
+					file_music.close()
+			# section Score & include are written in main file
+			file_name = self.fileName
+			file_path = folder + '/' + file_name
+			title_include = title('include files')
+			title_score = title('score section')
+			if not os.path.exists(file_path):
+				file_score = open(file_path, 'w')
+				for i in range(len(self.entete_score)):
+					file_score.write(self.entete_score[i]+'\n')
+				for i in range(len(title_include)):
+					file_score.write(title_include[i] + '\n')
+				for i in range(len(self.sectionInclude)):
+					file_score.write(self.sectionInclude[i]+'\n')
+				for i in range(len(title_score)):
+					file_score.write(title_score[i] + '\n')
+				for i in range(len(self.sectionScore)):
+					file_score.write(self.sectionScore[i]+'\n')
+				file_score.close()
+			
+	
+
+def cut_text(text, num_car, prefixe):
+	"""
+	This function will cut text at the right position when the number of
+	character is higher than "num_car". In this case, a new line is added with
+	the prefixe.
+	"""
+	res = []
+	if type(text) == str:
+		while len(text) > num_car:
+			length = num_car - 1
+			while text[length] != ' ':
+				length = length - 1
+			res.append(text[0:length])
+			text = prefixe + text[length:]
+		res.append(text)
+	elif type(text) == list:
+		for i in range(len(text)):
+			txt = text[i]
+			while len(txt) > num_car:
+				length = num_car - 1
+				while txt[length] != ' ':
+					length = length - 1
+				res.append(txt[0:length])
+				txt = prefixe + txt[length:]
+			res.append(txt)
+	return res
+
 
 
 def rightJustify(number):
@@ -1463,40 +2061,235 @@ def romain(n):
 			res += v
 	return res
 
+def title(title):
+	"""
+	This function create a title with the text pass in parameter. 
+	- Title is written in upper case, center on 80 characters
+	- when possible a space is added between each characters of the title
+	- a top and a down line of "#" is added
+	"""
+	result = []
+	result.append('%' + '#'*79)
+	txt = ''
+	if len(title) < 37:
+		for i in range(len(title)):
+			if i < len(title)-1:
+				txt = txt + title[i].upper() + ' '
+			else:
+				txt = txt + title[i].upper()
+	else:
+		for i in range(len(title)):
+			txt = txt + title[i].upper()
+	nb_car = len(txt)
+	if (80 - 3 - len(txt)) % 2 == 0:
+		nb_espace = (80 - 3 - len(txt)) / 2
+		result.append('%#' + ' '*int(nb_espace) + txt + ' '*int(nb_espace) \
+			+ '#')
+	else:
+		nb_espace = (80 - 3 - len(txt) -1) / 2
+		result.append('%#' + ' '*int(nb_espace) + txt + ' '*int(nb_espace+1) \
+			+ '#')
+	result.append('%' + '#'*79)
+	return result
+
+def get_name_voice(input_name):
+	"""
+	This function return lilypond code to have proper name of staff / voice or
+	GdStaff given by user. the following possibilities are taken into account :
+	 "A" : A is displayed on one line
+	 "A/B" or "A/B/C" : A and B (and C) will be displayed in column
+	 "A_B/C" A in line with B and C in column
+	"""
+	# traitement du nom de la voix
+	nb_slash = input_name.count('/')
+	nb_undsc = input_name.count('_')
+	answer = ''
+	if nb_slash + nb_undsc == 0:
+		# on est dans le cas standard : staff.instrumentName = "Flute"
+		# on couvre également le cas où voiceName = ""
+		answer = '"' + input_name + '"'
+	elif nb_undsc == 0:
+		nameCut = input_name.split('/')
+		if nb_slash == 1:
+			# on est dans le cas avec un nom sur deux lignes
+			answer = '\markup {\n\t\t\center-column {\n\t\t\t\lower #1 "' \
+				+ nameCut[0] + '" "' + nameCut[1] + '"\n\t\t}\n\t}'
+		elif nb_slash == 2:
+			# on est dans le cas avec un nom sur trois lignes
+			answer = '\markup {\n\t\t\center-column {\n\t\t\t\lower #1 "' \
+				+ nameCut[0] + '" "' + nameCut[1] + '" "' + nameCut[2] + \
+				'"\n\t\t}\n\t}'
+	elif nb_undsc == 1 and nb_slash ==1:
+		# on est dans le cas A_B/C
+		nameCutS = input_name.split('/')
+		nameCutU = nameCutS[0].split('_')
+		answer = '\markup {\n\t\t\line {\n\t\t\t\hspace #5 \lower #1.5 "' \
+			+ nameCutU[0] + '"\n\t\t\t\center-column {\n\t\t\t\t"' \
+			+ nameCutU[1] + '" "' + nameCutS[1] + '"\n\t\t\t}\n\t\t}\n\t}'
+	else:
+		# on est dans un cas non géré : on revient à la forme simple 
+		# avec input utilisateur
+		answer = '"' + input_name + '"'
+	return answer
+
+
+
 
 path = sys.path[0]
 user_file = sys.argv[1]
 
-
-myScore = Score(path, user_file)
-myScore.readInput()
-myScore.checkInput()
-if myScore.status == 'ERROR':
-	for i in range(len(myScore.error)):
-		print(myScore.error[i])
+myScoreSet = ScoreSet(path, user_file)
+myScoreSet.readInput()
+myScoreSet.checkInput()
+if myScoreSet.status == 'ERROR':
+	for i in range(len(myScoreSet.error)):
+		print(myScoreSet.error[i])
 else:
-	myScore.fileCreation()
-	myScore.create_file_id()
-	myScore.create_header()
-	myScore.create_paper()
-	myScore.create_time()
-	myScore.create_option()
-	myScore.create_voice_name()
-	myScore.create_staff_name()
-	if myScore.grandstaff != 'no':
-		myScore.create_grandstaff_name()
-	myScore.create_shortcuts()
-	myScore.create_music()
-	myScore.create_voice_format()
-	myScore.create_include()
-	if myScore.cue_voice == 'yes':
-		myScore.create_cue_voice()
-	myScore.create_book()
-	myScore.create_score_part()
-	myScore.create_score_cond()
-	myScore.close_score()
-	myScore.gather_file()
-	myScore.create_midi_file()
-	myScore.create_folder()
-	myScore.generate_files()
+	# creation of Scores
+	if myScoreSet.nbr_mvt == 1:
+		if len(myScoreSet.voice_group) == 1:
+			if myScoreSet.nbr_voice == 1:
+				# 1 score for 1 voice and 1 mvt
+				# = 1 score created
+				file_name = '00_' + str(myScoreSet.file_label) + '.ly'
+				myScoreSet.score.append(Score(file_name, 'part',0))
+			else:
+				# 1 score for 1 group of X voices and 1 mvt
+				# = 2 scores created
+				file_name = '10_' + str(myScoreSet.file_label) + '_Conductor.ly'
+				myScoreSet.score.append(Score(file_name, 'conductor', 0))
+				file_name = '20_' + str(myScoreSet.file_label) + '_Part.ly'
+				myScoreSet.score.append(Score(file_name, 'part', 0))
+		else:
+			# 1 score for Y groups of X voices and 1 mvt
+			# = Y + 1 scores created
+			file_name = '10_' + str(myScoreSet.file_label) + '_Conductor.ly'
+			myScoreSet.score.append(Score(file_name, 'conductor', 0))
+			for i in range(myScoreSet.voice_group):
+				file_name = '20_' + str(myScoreSet.file_label) + '_Part' \
+					+ rightJustifiy(i+1) + '_' \
+					+ str(myScoreSet.voice_group[i][0]) + '.ly'
+				myScoreSet.score.append(Score(file_name, 'part', i))
+	else:
+		if len(myScoreSet.voice_group) == 1:
+			if myScoreSet.nbr_voice == 1:
+				# 1 score for 1 voice and X mvt
+				# = 1 score created
+				file_name = '20_' + str(myScoreSet.file_label) + '_Part.ly'
+				myScoreSet.score.append(Score(file_name, 'part', 0))
+			else:
+				# 1 score for 1 group of voices and Z mvt
+				# = Z + 1 scores created
+				file_name = '20_' + str(myScoreSet.file_label) + '_Parts.ly'
+				myScoreSet.score.append(Score(file_name, 'part', 0))
+				for i in range(myScoreSet.nbr_mvt):
+					file_name = '10_' + str(myScoreSet.file_label) \
+						+ '_Conductor_mvt' + rightJustify(i+1) + '.ly'
+					myScoreSet.score.append(Score(file_name, 'conductor', i))
+		else:
+			# 1 score for Y groups of X voices and Z mvt
+			# = Y + Z scores created
+			# creation of conductors files
+			for i in range(myScoreSet.nbr_mvt):
+				file_name = '10_' + str(myScoreSet.file_label) \
+					+ '_Conductor_mvt' + str(i+1) + '.ly'
+				myScoreSet.score.append(Score(file_name, 'conductor', i))
+			# Creation of parts files
+			for i in range(len(myScoreSet.voice_group)):
+				file_name = '20_' + str(myScoreSet.file_label) + '_Part' \
+					+ rightJustify(i+1) \
+					+ '_' + str(myScoreSet.voice_group[i][0]) + '.ly'
+				myScoreSet.score.append(Score(file_name, 'part', i))
+	# creation of midi Scores : 1 score per mvt
+	if myScoreSet.midi_output == 'yes':
+		for i in range(myScoreSet.nbr_mvt):
+			file_name = '30_' + str(myScoreSet.file_label) + '_midi_Mvt' \
+				+ str(i+1) + '.ly'
+			myScoreSet.score.append(Score(file_name, 'midi', i))
+	
+	#preparation of information
+	myScoreSet.set_common_information()
+	for i in range(len(myScoreSet.score)):
+		if myScoreSet.score[i].typeScore == 'part':
+			myScoreSet.set_part_information(i)
+		elif myScoreSet.score[i].typeScore == 'conductor':
+			myScoreSet.set_cond_information(i)
+		else:
+			myScoreSet.set_midi_information(i)
+	
+	
+	myScoreSet.create_directory()
+	if myScoreSet.use_include == 'yes':
+		myScoreSet.add_include_file()
+	
+	for i in range(len(myScoreSet.score)):
+		if myScoreSet.score[i].typeScore == 'part':
+			myScoreSet.score[i].create_part_score()
+		if myScoreSet.score[i].typeScore == 'conductor':
+			myScoreSet.score[i].create_cond_score()
+		if myScoreSet.score[i].typeScore == 'midi':
+			myScoreSet.score[i].create_midi_score()
+		if not myScoreSet.file_gather == 'no':
+			myScoreSet.score[i].create_include_section()
+		myScoreSet.score[i].create_entete()
+	
+	if not myScoreSet.file_gather == 'no':
+		for i in range(len(myScoreSet.score)):
+			myScoreSet.score[i].create_subdirectories()
+	
+	myScoreSet.write_file()
+	
+	
+	
+	
+	
+	
+	
+#	for i in range(myScoreSet.nbr_staff[0]):
+#		print(myScoreSet.if_in_grandstaff(i,0))
+	
+	#print(myScoreSet.score[3].sectionScore)
+	
+	
+	
+#	print(title('test un titre'))
+	
+#	print(myScoreSet.score[17].key_music)
+#	print(myScoreSet.score[1].if_grandstaff)
+#	print(myScoreSet.if_in_grandstaff(13,0))
+	
+#	print(myScoreSet.if_in_staffgroup(8,2))
+	
+#	test = myScoreSet.get_voice_on_staff(14,2)
+#	print(test)
+#	if len(test)==2:
+#		print(myScoreSet.voice_label[test[0]],myScoreSet.voice_label[test[1]])
+#	else:
+#		print(myScoreSet.voice_label[test[0]])
+	
+	#print(myScoreSet.score[0])
+	
+	# myScore.create_file_id()
+	# myScore.create_header()
+	# myScore.create_paper()
+	# myScore.create_time()
+	# myScore.create_option()
+	# myScore.create_voice_name()
+	# myScore.create_staff_name()
+	# if myScore.grandstaff != 'no':
+	# 	myScore.create_grandstaff_name()
+	# myScore.create_shortcuts()
+	# myScore.create_music()
+	# myScore.create_voice_format()
+	# myScore.create_include()
+	# if myScore.cue_voice == 'yes':
+	# 	myScore.create_cue_voice()
+	# myScore.create_book()
+	# myScore.create_score_part()
+	# myScore.create_score_cond()
+	# myScore.close_score()
+	# myScore.gather_file()
+	# myScore.create_midi_file()
+	# myScore.create_folder()
+	# myScore.generate_files()
 
