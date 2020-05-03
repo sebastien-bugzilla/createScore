@@ -58,6 +58,7 @@ class ScoreSet:
 		self.grandstaff = 'no'
 		self.grandstaff_name = []
 		self.grandstaff_short_name = []
+		self.pianostaff = 'no'
 		self.midi_output = 'no'
 		self.bar_group_comment = 5
 		self.midi_group = []
@@ -280,6 +281,19 @@ class ScoreSet:
 							staff_end.append(int(temp[1]))
 						self.grandstaff[-1].append(staff_beg)
 						self.grandstaff[-1].append(staff_end)
+					elif keyword == '__PIANOSTAFF':
+						if self.pianostaff == 'no':
+							self.pianostaff = []
+						self.pianostaff.append([])
+						pstaff_beg = []
+						pstaff_end = []
+						pstaff = value.split(',')
+						for i in range(len(pstaff)):
+							temp = pstaff[i].split('-')
+							pstaff_beg.append(int(temp[0]))
+							pstaff_end.append(int(temp[1]))
+						self.pianostaff[-1].append(pstaff_beg)
+						self.pianostaff[-1].append(pstaff_end)
 					elif keyword == '__GRANDSTAFF_NAME':
 						self.grandstaff_name.append([])
 						temp = value.split(',')
@@ -412,7 +426,20 @@ class ScoreSet:
 					self.status = 'ERROR'
 					self.error.append('__STAFF_SHORT_NAME do not match __NUMBER_OF_STAFF for mvt ' \
 						+ str(i+1) + " !")
-	
+		if not self.pianostaff == 'no':
+			if not len(self.pianostaff) == self.nbr_mvt:
+				self.status = 'ERROR'
+				self.error.append('__STAFF_PIANO do not match __NUMBER_OF_MVT !')
+			for i in range(len(self.pianostaff)):
+				for j in range(len(self.pianostaff[i][0])):
+					n_beg = self.pianostaff[i][0][j]
+					stat = 0
+					if not self.grandstaff == 'no':
+						if n_beg in self.grandstaff[i][0]:
+							stat = 1
+			if stat == 0:
+				self.status == 'ERROR'
+				self.error.append('Missing GrandStaff at Piano Staff')
 	
 	def set_common_information(self):
 		"""
@@ -450,20 +477,13 @@ class ScoreSet:
 		for j in range(self.nbr_mvt):
 			self.score[i].add_time_sign(self.time[j])
 			self.score[i].add_tempo(self.tempo[j])
-#			self.score[i].add_nbr_bar(self.nbr_bar[j])
-		# information which depend only on voice
-#		for j in range(len(self.voice_group[n])-1):
-#			n_voice = self.voice_group[n][j+1]-1
-#			clef = self.voice_clef[n_voice]
-#			midi = self.voice_midi[n_voice]
-#			self.score[i].add_clef(clef)
-#			self.score[i].add_midi(midi)
 		# information which depend on voice and mvt
 		for j in range(len(self.voice_group[n])-1):
 			n_voice = self.voice_group[n][j+1]-1
 			label = self.voice_label[n_voice]
 			for k in range(self.nbr_mvt):
 				if self.voice_per_mvt[n_voice][k] == 1:
+					staff = self.get_staff_for_voice(n_voice+1,k)
 					key_format = 'format' + label + 'Mvt' + romain(k+1)
 					key_time = 'timeMvt' + romain(k+1)
 					key_name_voice = 'name' + label + 'Mvt' + romain(k+1)
@@ -487,7 +507,8 @@ class ScoreSet:
 					self.score[i].add_midi(midi)
 					self.score[i].add_clef(clef)
 					self.score[i].add_num_mvt(num_mvt)
-
+					self.score[i].add_multistaff(staff)
+	
 	
 	def set_cond_information(self, i):
 		"""
@@ -510,6 +531,7 @@ class ScoreSet:
 		self.score[i].set_subsubtitle(subsubtitle)
 		self.score[i].set_grandstaff(self.grandstaff)
 		self.score[i].set_staffgroup(self.staffgroup)
+		self.score[i].set_pianostaff(self.pianostaff)
 		self.score[i].add_time_sign(self.time[n])
 		self.score[i].add_tempo(self.tempo[n])
 		self.score[i].add_nbr_bar(self.nbr_bar[n])
@@ -632,12 +654,6 @@ class ScoreSet:
 		if self.staffgroup == 'no':
 			answer = 'no'
 		else:
-#			for i in range(len(self.staffgroup[mvt])):
-#				interval = self.staffgroup[mvt][i].split('-')
-#				if staff in range(int(interval[0])-1, int(interval[1])-1 + 1):
-#					answer = 'yes'
-#			if answer == 'TBD':
-#				answer = 'no'
 			for i in range(len(self.staffgroup[mvt])):
 				#interval = self.grandstaff[mvt][i].split('-')
 				for j in range(len(self.staffgroup[mvt][0])):
@@ -668,6 +684,71 @@ class ScoreSet:
 			if answer == 'TBD':
 				answer = 'no'
 		return answer
+	
+	def if_in_pianostaff(self, staff, mvt):
+		"""
+		This function return yes if staff is in a grandstaff, no if not.
+		if yes, the group of grandstaff is also returned.
+		"""
+		answer = 'TBD'
+		if self.pianostaff == 'no':
+			answer = 'no'
+		else:
+			for i in range(len(self.pianostaff[mvt])):
+				#interval = self.grandstaff[mvt][i].split('-')
+				for j in range(len(self.pianostaff[mvt][0])):
+					staff_beg = self.pianostaff[mvt][0][j]
+					staff_end = self.pianostaff[mvt][1][j]
+					if staff in range(int(staff_beg)-1, int(staff_end) -1 + 1):
+						answer = 'yes'
+			if answer == 'TBD':
+				answer = 'no'
+		return answer
+	
+	def check_piano_score(self):
+		"""
+		This function check for scores of piano. In this cases the attribute
+		pianostaff of the score is set to 'yes' and the number of voice in each
+		staff is stored.
+		"""
+		for i in range(len(self.score)):
+			if self.score[i].typeScore == 'part':
+				gpe_voice = self.score[i].gpeVoice
+				voice = self.voice_group[gpe_voice][1]
+				inc = 0
+				for j in range(voice):
+					inc = inc + self.voice_per_mvt[j][0]
+				staff = 0
+				k = 0
+				while k < inc:
+					k = k + self.voice_per_staff[0][staff]
+					staff = staff + 1
+				if staff in self.pianostaff[0][0]:
+					self.score[i].set_piano_score('yes')
+					nb_voice_up = self.voice_per_staff[0][staff]
+					nb_voice_down = self.voice_per_staff[0][staff+1]
+					self.score[i].add_piano_voice_per_staff(nb_voice_up)
+					self.score[i].add_piano_voice_per_staff(nb_voice_down)
+	
+	def get_staff_for_voice(self, voice, mvt):
+		"""
+		This function return the staff ID for a given voice and mvt.
+		Warning : 
+			voice go from 1 to nbr_voice
+			mvt go from 0 to nbr_mvt - 1
+			staff go from 1 to nbr staff
+		"""
+		inc = 0
+		for i in range(voice):
+			inc = inc + self.voice_per_mvt[i][mvt]
+		staff = 0
+		k = 0
+		while k < inc:
+			k = k + self.voice_per_staff[mvt][staff]
+			staff = staff + 1
+		return staff
+	
+	# voice group > voice > staff > if piano
 	
 	def add_include_file(self):
 		"""
@@ -856,6 +937,9 @@ class Score(ScoreSet):
 		self.gdstaff_short_name = []
 		self.voice_midi = []
 		self.num_mvt = [] # contain the current number of mvt for parts scores
+		self.piano_score = 'no'
+		self.multistaff = []
+		self.piano_voice_per_staff = []
 	
 	def set_title(self, title):
 		self.title = title
@@ -911,11 +995,17 @@ class Score(ScoreSet):
 	def set_grandstaff(self, grandstaff):
 		self.grandstaff = grandstaff
 	
+	def set_pianostaff(self, pianostaff):
+		self.pianostaff = pianostaff
+	
 	def set_typesetter(self, typesetter):
 		self.typesetter = typesetter
 	
 	def set_source(self, source):
 		self.source = source
+	
+	def set_piano_score(self, if_piano_score):
+		self.piano_score = if_piano_score
 	
 	def add_time_sign(self, time_sign):
 		self.time_sign.append(time_sign)
@@ -989,6 +1079,12 @@ class Score(ScoreSet):
 	def add_num_mvt(self, num_mvt):
 		self.num_mvt.append(num_mvt)
 	
+	def add_multistaff(self, staff):
+		self.multistaff.append(staff)
+	
+	def add_piano_voice_per_staff(self, num_voice):
+		self.piano_voice_per_staff.append(num_voice)
+	
 	def add_include_file(self, file_name, sub_dir, section):
 		"""
 		This function add included file name in a separate table. They are also
@@ -1034,9 +1130,6 @@ class Score(ScoreSet):
 	
 	
 	
-	# on créé d'abord les sections de toutes les partitions.
-	# une fois fait si besoin on crée les fichiers inclus auquels on attribut
-	# les sections présentes
 	def create_part_score(self):
 		"""
 		This function create lilypond input of each  section of part scores 
@@ -1207,43 +1300,111 @@ class Score(ScoreSet):
 			self.sectionScore.append(line)
 		file_score.close()
 		
-		for i in range(len(self.key_music)):
-			time = '\\' + self.key_time[i]
-			name = '\\' + self.key_name_voice[i]
-			music = '\\' + self.key_music[i]
-			key_format = '\\' + self.key_format[i]
-			num_mvt = self.num_mvt[i]
-			self.sectionScore.append('\t\score {')
-			self.sectionScore.append('\t\t\\new Staff <<')
-			if self.voice_format == 'yes':
+		if self.piano_score == 'no':
+			for i in range(len(self.key_music)):
+				time = '\\' + self.key_time[i]
+				name = '\\' + self.key_name_voice[i]
+				music = '\\' + self.key_music[i]
+				key_format = '\\' + self.key_format[i]
+				num_mvt = self.num_mvt[i]
+				self.sectionScore.append('\t\score {')
+				self.sectionScore.append('\t\t\\new Staff <<')
+				if self.voice_format == 'yes':
+					self.sectionScore.append('\t\t\t\\new Voice {')
+					self.sectionScore.append('\t\t\t\t' + key_format)
+					self.sectionScore.append('\t\t\t}')
 				self.sectionScore.append('\t\t\t\\new Voice {')
-				self.sectionScore.append('\t\t\t\t' + key_format)
+				self.sectionScore.append('\t\t\t\t' + time + \
+					' \generalOptions \partOptions')
+				self.sectionScore.append('\t\t\t\t' + name + ' ' + music)
 				self.sectionScore.append('\t\t\t}')
-			self.sectionScore.append('\t\t\t\\new Voice {')
-			self.sectionScore.append('\t\t\t\t' + time + \
-				' \generalOptions \partOptions')
-			self.sectionScore.append('\t\t\t\t' + name + ' ' + music)
-			self.sectionScore.append('\t\t\t}')
-			self.sectionScore.append('\t\t>>')
-			self.sectionScore.append('\t\t\\header {')
-			self.sectionScore.append('\t\t\tbreakbefore = ##f')
-			self.sectionScore.append('\t\t\tpiece = \\markup {')
-			self.sectionScore.append('\t\t\t\t\\fill-line {')
-			self.sectionScore.append('\t\t\t\t\t\\fontsize #4')
-			self.sectionScore.append('\t\t\t\t\t' + num_mvt)
-			self.sectionScore.append('\t\t\t\t}')
-			self.sectionScore.append('\t\t\t}')
-			self.sectionScore.append('\t\t}')
-			self.sectionScore.append('\t\t\\layout {')
-			if self.cue_voice == 'yes':
-				line1 = '\t\t\t\\context {'
-				line2 = '\t\t\t\t\\CueVoice \\layoutCueVoice'
-				line3 = '\t\t\t}'
-				self.sectionScore.append(line1)
-				self.sectionScore.append(line2)
-				self.sectionScore.append(line3)
-			self.sectionScore.append('\t\t}')
-			self.sectionScore.append('\t}')
+				self.sectionScore.append('\t\t>>')
+				self.sectionScore.append('\t\t\\header {')
+				self.sectionScore.append('\t\t\tbreakbefore = ##f')
+				self.sectionScore.append('\t\t\tpiece = \\markup {')
+				self.sectionScore.append('\t\t\t\t\\fill-line {')
+				self.sectionScore.append('\t\t\t\t\t\\fontsize #4')
+				self.sectionScore.append('\t\t\t\t\t' + num_mvt)
+				self.sectionScore.append('\t\t\t\t}')
+				self.sectionScore.append('\t\t\t}')
+				self.sectionScore.append('\t\t}')
+				self.sectionScore.append('\t\t\\layout {')
+				if self.cue_voice == 'yes':
+					line1 = '\t\t\t\\context {'
+					line2 = '\t\t\t\t\\CueVoice \\layoutCueVoice'
+					line3 = '\t\t\t}'
+					self.sectionScore.append(line1)
+					self.sectionScore.append(line2)
+					self.sectionScore.append(line3)
+				self.sectionScore.append('\t\t}')
+				self.sectionScore.append('\t}')
+		else:
+			nbr_mvt = len(self.time_sign)
+			nb_up = self.piano_voice_per_staff[0]
+			nb_down = self.piano_voice_per_staff[1]
+			i_mvt = 0
+			while i_mvt < nbr_mvt:
+				i_up = 0
+				i_down = 0
+				i_voice = 0
+				self.sectionScore.append('\t\\score {')
+				self.sectionScore.append('\t\t\\new PianoStaff <<')
+				# staff up
+				self.sectionScore.append('\t\t\t\\new Staff {')
+				self.sectionScore.append('\t\t\t\t<<')
+				if i_up == 0:
+					key_format = '\\' + self.key_format[i_mvt]
+					self.sectionScore.append('\t\t\t\t\t\\new Voice {')
+					self.sectionScore.append('\t\t\t\t\t\t' + key_format)
+					self.sectionScore.append('\t\t\t\t\t}')
+				while i_up < nb_up:
+					time = '\\' + self.key_time[i_mvt+nbr_mvt*i_voice]
+					name = '\\' + self.key_name_voice[i_mvt+nbr_mvt*i_voice]
+					music = '\\' + self.key_music[i_mvt+nbr_mvt*i_voice]
+					self.sectionScore.append('\t\t\t\t\t\\new Voice {')
+					self.sectionScore.append('\t\t\t\t\t\t' + time \
+						+ ' \generalOptions \partOptions')
+					self.sectionScore.append('\t\t\t\t\t\t' + name + ' ' \
+						+ music)
+					self.sectionScore.append('\t\t\t\t\t}')
+					i_up = i_up + 1
+					i_voice = i_voice + 1
+				self.sectionScore.append('\t\t\t\t>>')
+				self.sectionScore.append('\t\t\t}')
+				# staff down
+				self.sectionScore.append('\t\t\t\\new Staff {')
+				self.sectionScore.append('\t\t\t\t<<')
+				while i_down < nb_down:
+					time = '\\' + self.key_time[i_mvt+nbr_mvt*i_voice]
+					name = '\\' + self.key_name_voice[i_mvt+nbr_mvt*i_voice]
+					music = '\\' + self.key_music[i_mvt+nbr_mvt*i_voice]
+					self.sectionScore.append('\t\t\t\t\t\\new Voice {')
+					self.sectionScore.append('\t\t\t\t\t\t' + time \
+						+ ' \generalOptions \partOptions')
+					self.sectionScore.append('\t\t\t\t\t\t' + name + ' ' \
+						+ music)
+					self.sectionScore.append('\t\t\t\t\t}')
+					i_down = i_down + 1
+					i_voice = i_voice + 1
+				self.sectionScore.append('\t\t\t\t>>')
+				self.sectionScore.append('\t\t\t}')
+				self.sectionScore.append('\t\t>>')
+				self.sectionScore.append('\t\t\\header {')
+				self.sectionScore.append('\t\t\tbreakbefore = ##f')
+				self.sectionScore.append('\t\t\tpiece = \\markup {')
+				self.sectionScore.append('\t\t\t\t\\fill-line {')
+				self.sectionScore.append('\t\t\t\t\t\\fontsize #4')
+				self.sectionScore.append('\t\t\t\t\t' + romain(i_mvt + 1))
+				self.sectionScore.append('\t\t\t\t}')
+				self.sectionScore.append('\t\t\t}')
+				self.sectionScore.append('\t\t}')
+				self.sectionScore.append('\t\t\\layout {')
+				self.sectionScore.append('\t\t\t\\context {')
+				self.sectionScore.append('\t\t\t\t\\CueVoice \\layoutCueVoice')
+				self.sectionScore.append('\t\t\t}')
+				self.sectionScore.append('\t\t}')
+				self.sectionScore.append('\t}')
+				i_mvt = i_mvt + 1
 		self.sectionScore.append('}')
 	
 	def create_cond_score(self):
@@ -1458,20 +1619,25 @@ class Score(ScoreSet):
 				ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\' \
 					+ self.key_music[i][0]
 			else:
-				temp = '\\' + self.key_music[i][0]
-				j = 1
-				while j < len(self.key_music[i]):
-					temp = temp + ' \\' + self.key_music[i][j]
-					j = j + 1
-				ligne4 = pref_gdSt + pref_form + pref_stGp + \
-					'\t\\partcombine ' + temp
+				if i+1 in self.pianostaff[n][0]:
+					temp = '<< { \\' + self.key_music[i][0]
+					j = 1
+					while j < len(self.key_music[i][0]):
+						temp = temp + ' } \\\\ { \\' + self.key_music[i][j]
+						j = j + 1
+					ligne4 = pref_gdSt + pref_form + pref_stGp + \
+						temp + ' } >>'
+				else:
+					temp = '\\' + self.key_music[i][0]
+					j = 1
+					while j < len(self.key_music[i]):
+						temp = temp + ' \\' + self.key_music[i][j]
+						j = j + 1
+					ligne4 = pref_gdSt + pref_form + pref_stGp + \
+						'\t\\partcombine ' + temp
 			# ligne 5
 			ligne5 = pref_gdSt + pref_form + pref_stGp + '}'
 			
-			#
-			# Repenser le stockage des staffgroup et grandstaff et repérer
-			# les staff de début et de fin de chacun. C'est la seule chose utile
-			#
 			
 			if i == 0:
 				if i+1 in self.staffgroup[n][0]:
@@ -1479,8 +1645,12 @@ class Score(ScoreSet):
 				if i+1 in self.grandstaff[n][0]:
 					count_gdSt = count_gdSt + 1
 					num_gdSt = romain(count_gdSt)
-					temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
-						+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					if i+1 in self.pianostaff[n][0]:
+						temp = pref + pref_stGp + '\\new PianoStaff \with { ' \
+							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					else:
+						temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
+							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
 					self.sectionScore.append(temp)
 				if self.voice_format == 'yes':
 					self.sectionScore.append(pref + pref_stGp + pref_gdSt \
@@ -1505,8 +1675,12 @@ class Score(ScoreSet):
 				if i+1 in self.grandstaff[n][0]:
 					count_gdSt = count_gdSt + 1
 					num_gdSt = romain(count_gdSt)
-					temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
-						+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					if i+1 in self.pianostaff[n][0]:
+						temp = pref + pref_stGp + '\\new PianoStaff \with { ' \
+							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					else:
+						temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
+							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
 					self.sectionScore.append(temp)
 				self.sectionScore.append(pref + ligne1)
 				self.sectionScore.append(pref + ligne2)
@@ -2208,6 +2382,8 @@ else:
 			myScoreSet.score.append(Score(file_name, 'midi', i))
 	
 	#preparation of information
+	if not myScoreSet.pianostaff == 'no':
+		myScoreSet.check_piano_score()
 	myScoreSet.set_common_information()
 	for i in range(len(myScoreSet.score)):
 		if myScoreSet.score[i].typeScore == 'part':
