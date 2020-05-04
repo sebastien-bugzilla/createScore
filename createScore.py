@@ -634,14 +634,13 @@ class ScoreSet:
 		while i < staff:
 			voice = voice + self.voice_per_staff[mvt][i]
 			i = i + 1
-		#print(voice)
 		j = 0
 		while voice != 0:
 			voice = voice - self.voice_per_mvt[j][mvt]
 			j = j + 1
-		if self.voice_per_mvt[j][mvt] == 0:
+		#if self.voice_per_mvt[j][mvt] == 0:
+		while self.voice_per_mvt[j][mvt] == 0:
 			j = j + 1
-		#print(voice)
 		for k in range(self.voice_per_staff[mvt][staff]):
 			result.append(j + k)
 		return result
@@ -1970,7 +1969,7 @@ class Score(ScoreSet):
 				file_res.write(self.sectionScore[i]+'\n')
 			file_res.close()
 		else:
-			print(self.fileName)
+			#print(self.fileName)
 			# each section go in a separate file.
 			folder = self.folder
 			# section header
@@ -2161,8 +2160,8 @@ class Score(ScoreSet):
 				title_music = title('music section')
 				if not os.path.exists(file_path):
 					file_music = open(file_path, 'w')
-					for i in range(len(self.entete_file)):
-						file_music.write(self.entete_file[i]+'\n')
+					for j in range(len(self.entete_file)):
+						file_music.write(self.entete_file[j]+'\n')
 					for j in range(len(title_music)):
 						file_music.write(title_music[j]+'\n')
 					for j in range(2, len(self.sectionMusic[i])):
@@ -2202,7 +2201,7 @@ def cut_text(text, num_car, prefixe):
 			while text[length] != ' ':
 				length = length - 1
 			res.append(text[0:length])
-			text = prefixe + text[length:]
+			text = prefixe + text[length+1:]
 		res.append(text)
 	elif type(text) == list:
 		for i in range(len(text)):
@@ -2212,7 +2211,7 @@ def cut_text(text, num_car, prefixe):
 				while txt[length] != ' ':
 					length = length - 1
 				res.append(txt[0:length])
-				txt = prefixe + txt[length:]
+				txt = prefixe + txt[length+1:]
 			res.append(txt)
 	return res
 
