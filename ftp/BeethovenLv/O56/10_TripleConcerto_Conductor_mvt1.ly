@@ -1,0 +1,162 @@
+%###############################################################################
+%#                                 H E A D E R                                 #
+%###############################################################################
+%
+%  Composer           : Ludwig van Beethoven(1770 - 1827)
+%  work               : Concerto for Violin Cello and Piano in C Major Op56
+%                       "Triple Concerto"
+%  Source             : Breitkopf und Härtel, n.d.[1862]. Plate B.70.
+%  Type of score      : Score conductor mvt I
+%  Typesetter         : Sébastien MANEN
+%  date of initiation : Friday 08 May 2020, 14:21
+%
+%###############################################################################
+%#                          I N C L U D E   F I L E S                          #
+%###############################################################################
+\version "2.20.0"
+\include "./00-Common/TripleConcerto_Header.ily"
+\include "./00-Common/TripleConcerto_PaperConductors.ily"
+\include "./00-Common/TripleConcerto_timeMvt.ily"
+\include "./00-Common/TripleConcerto_OptionConductors.ily"
+\include "./00-Common/TripleConcerto_NameStaff.ily"
+\include "./00-Common/TripleConcerto_NameGrandStaff.ily"
+\include "./00-Common/TripleConcerto_Shortcuts.ily"
+\include "./00-Common/TripleConcerto_Format_Cond_Mvt01.ily"
+\include "./01-Mvt1/m01_v01_music_Flote.ily"
+\include "./01-Mvt1/m01_v02_music_OboeI.ily"
+\include "./01-Mvt1/m01_v03_music_OboeII.ily"
+\include "./01-Mvt1/m01_v04_music_ClarinetI.ily"
+\include "./01-Mvt1/m01_v05_music_ClarinetII.ily"
+\include "./01-Mvt1/m01_v06_music_FagottoI.ily"
+\include "./01-Mvt1/m01_v07_music_FagottoII.ily"
+\include "./01-Mvt1/m01_v08_music_CornoI.ily"
+\include "./01-Mvt1/m01_v09_music_CornoII.ily"
+\include "./01-Mvt1/m01_v10_music_TrombeI.ily"
+\include "./01-Mvt1/m01_v11_music_TrombeII.ily"
+\include "./01-Mvt1/m01_v12_music_Timpani.ily"
+\include "./01-Mvt1/m01_v13_music_SoloViolin.ily"
+\include "./01-Mvt1/m01_v14_music_SoloCello.ily"
+\include "./01-Mvt1/m01_v15_music_PianoUp.ily"
+\include "./01-Mvt1/m01_v16_music_PianoDown.ily"
+\include "./01-Mvt1/m01_v17_music_ViolinI.ily"
+\include "./01-Mvt1/m01_v18_music_ViolinII.ily"
+\include "./01-Mvt1/m01_v19_music_Viola.ily"
+\include "./01-Mvt1/m01_v20_music_Violoncell.ily"
+\include "./01-Mvt1/m01_v21_music_Basso.ily"
+%###############################################################################
+%#                          S C O R E   S E C T I O N                          #
+%###############################################################################
+\book {
+	\header {
+		subtitle = \markup { 
+			\abs-fontsize #12 \sans
+			\center-column {
+				"1st movement"
+			}
+		}
+		subsubtitle = \markup { 
+			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 "Triple Concerto" — 1st movement"
+		}
+		instrument = \markup {
+			""
+		}
+	}
+	\score {
+		<<
+%			\new StaffGroup <<
+%				\new Staff <<
+%%					\new Voice {
+%%						\formatConductorMvtI
+%%					}
+%					\new Voice {
+%						\timeMvtI \generalOptions \conductorOptions
+%						\nameStaffIMvtI
+%						\musicFloteMvtI
+%					}
+%				>>
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffIIMvtI
+					\partcombine \musicOboeIMvtI \musicOboeIIMvtI
+					%\musicOboeIIMvtI
+				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffIIIMvtI
+%					\partcombine \musicClarinetIMvtI \musicClarinetIIMvtI
+%				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffIVMvtI
+%					\partcombine \musicFagottoIMvtI \musicFagottoIIMvtI
+%				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffVMvtI
+%					\partcombine \musicCornoIMvtI \musicCornoIIMvtI
+%				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffVIMvtI
+%					\partcombine \musicTrombeIMvtI \musicTrombeIIMvtI
+%				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffVIIMvtI
+%					\musicTimpaniMvtI
+%				}
+%			>>
+%			\new Staff {
+%				\timeMvtI \generalOptions \conductorOptions
+%				\nameStaffVIIIMvtI
+%				\musicSoloViolinMvtI
+%			}
+%			\new Staff {
+%				\timeMvtI \generalOptions \conductorOptions
+%				\nameStaffIXMvtI
+%				\musicSoloCelloMvtI
+%			}
+%			\new PianoStaff \with { \nameGrandStaffIMvtI } <<
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffXMvtI
+%					\musicPianoUpMvtI
+%				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffXIMvtI
+%					\musicPianoDownMvtI
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
+%					\new Staff {
+%						\timeMvtI \generalOptions \conductorOptions
+%						\nameStaffXIIMvtI
+%						\musicViolinIMvtI
+%					}
+%					\new Staff {
+%						\timeMvtI \generalOptions \conductorOptions
+%						\nameStaffXIIIMvtI
+%						\musicViolinIIMvtI
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffXIVMvtI
+%					\musicViolaMvtI
+%				}
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffXVMvtI
+%					\partcombine \musicVioloncellMvtI \musicBassoMvtI
+%				}
+%			>>
+		>>
+		\header {
+			breakbefore = ##t
+		}
+		\layout {
+		}
+	}
+}
