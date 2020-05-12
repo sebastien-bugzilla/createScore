@@ -5,12 +5,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicSoloViolinMvtI = \relative c {
+musicSoloViolinMvtI = \relative c''' {
 	\clef treble
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	
+	R1*32
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -23,6 +23,8 @@ musicSoloViolinMvtI = \relative c {
 	
 % Bars 31 to 35
 	
+	\mark \default
+	R1*42
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -39,12 +41,24 @@ musicSoloViolinMvtI = \relative c {
 	
 % Bars 71 to 75
 	
+	
+	
+	\mark \default
+	R1*10
 % Bars 76 to 80
 	
 % Bars 81 to 85
 	
-% Bars 86 to 90
 	
+	
+	
+	g2_\dolce( fis8[ g b8. a16])
+% Bars 86 to 90
+	a4 r r2
+	a2( gis8[ a c8. b16])
+	b4 r r8. b16[( d8. c16)]
+	c4 r r8. c16[( e8. d16])
+	d4(\trill f)\sfp~ \tuplet 3/2 4 {f8 e-. d-. a'-.\sfp g-. f-.}
 % Bars 91 to 95
 	
 % Bars 96 to 100

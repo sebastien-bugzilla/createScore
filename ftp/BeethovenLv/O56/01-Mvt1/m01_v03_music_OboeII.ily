@@ -383,7 +383,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	R1*2^\piuallegro
+	\tempo "Più allegro." R1*2
 	
 % Bars 516 to 520
 	r2 r8. d16\f-.[ f8.-. e16-.] 

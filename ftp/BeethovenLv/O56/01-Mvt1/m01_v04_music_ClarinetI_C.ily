@@ -72,7 +72,7 @@ musicClarinetIMvtI = \relative c' {
 % Bars 71 to 75
 	
 	
-	g1\ff~
+	g1_\ff~
 	g \mark \default
 	e4 r r2
 % Bars 76 to 80
@@ -172,7 +172,7 @@ musicClarinetIMvtI = \relative c' {
 % Bars 231 to 235
 	fis1~
 	fis4 fis fis fis
-	b,8. b16 b4 r8. c16 c4
+	\partcombineApart b,8. b16 \partcombineAutomatic b4 r8. c16 c4
 	r8. f!16 f4 r8. e16 e4
 	r2 r4 d-.
 % Bars 236 to 240
@@ -224,8 +224,8 @@ musicClarinetIMvtI = \relative c' {
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
-	e4 c!2 bes4
-	a f'2 f4
+	e4 \partcombineApart c!2 bes4
+	a \partcombineAutomatic f'2 f4
 	f-. f-. f-. f-.
 % Bars 331 to 335
 	f2( e~
@@ -365,7 +365,7 @@ musicClarinetIMvtI = \relative c' {
 	g4 r r b8 r
 	c r b r c r b r
 	c4 r r b8 r
-	c r b r c r b r
+	c r b r c r \once \partcombineApart b r
 % Bars 526 to 530
 	e r d r e r d r
 	e r d r e r d r

@@ -5,7 +5,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCornoIIMvtI = \relative c'' {
+musicCornoIMvtI = \relative c'' {
 	\clef treble
 	\key c \major
 %	\transposition a
@@ -15,9 +15,9 @@ musicCornoIIMvtI = \relative c'' {
 	
 % Bars 11 to 15
 	
-	g1\f\>
-	e~\pp
-	e
+	\partcombineChords d1\f\>
+	c~\pp
+	c~
 	\crescText "cresc. poco a poco" c~\<
 % Bars 16 to 20
 	c~
@@ -26,20 +26,20 @@ musicCornoIIMvtI = \relative c'' {
 	c~
 	c
 % Bars 21 to 25
-	c2.\f c4-.
+	c2.\f \partcombineAutomatic c4-.
 	c-. c-. c-. c-.
 	c1~
 	c4 c-. c-. c-. 
 	c1~
 % Bars 26 to 30
 	c4 c-. c-. c-. 
-	g'1~
-	g4 g-. g-. g-.
+	d1~
+	d4 d-. d-. d-.
 	g1~
-	g4 e'-. e-. e-.
+	g4 g-. g-. g-.
 % Bars 31 to 35
-	d-. r r2
-	r4 c,2 c4 \mark \default
+	f-. r r2
+	r4 c2 c4 \mark \default
 	g\p r r2
 	r2 r4 e'\p~
 	e e2 g4~
@@ -48,9 +48,9 @@ musicCornoIIMvtI = \relative c'' {
 	R1*3
 	
 	
-	r4 g_\crescmarkup( d' g,)
+	r4 g_\crescmarkup( f d)
 % Bars 41 to 45
-	c,2\p(~ c8.[ e16 g8. e16])
+	c2\p(~ c8.[ e16 g8. e16])
 	c2. r4
 	R1*6
 % Bars 46 to 50
@@ -70,13 +70,13 @@ musicCornoIIMvtI = \relative c'' {
 	c2\ff c
 	c4 c c c
 % Bars 61 to 65
-	g r r d''
+	g r r d'
 	d r r d
 	d r r8. d16[-. d8.-. d16]-. 
 	d4 r r8. d16[-. d8.-. d16]-.
 	d4 r8. d16-. d4-. r8. d16-.
 % Bars 66 to 70
-	g,4-. r8. d'16-. d4-. r8. d16-.
+	d4-. r8. d16-. d4-. r8. d16-.
 	d4-. d-. d-. d-.
 	d-. d-. d-. d-.
 	d-. r r2
@@ -84,9 +84,9 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 71 to 75
 	
 	
-	g,1\ff~
-	g \mark \default
-	e4 r r2
+	\partcombineChords g1\ff(
+	e) \partcombineAutomatic \mark \default
+	c4 r r2
 % Bars 76 to 80
 	R1*9
 % Bars 81 to 85
@@ -94,7 +94,7 @@ musicCornoIIMvtI = \relative c'' {
 	
 	
 	
-	g,4\p r r2
+	g4\p r r2
 % Bars 86 to 90
 	r4 g8\p r g r g r 
 	g r r4 r2
@@ -107,10 +107,10 @@ musicCornoIIMvtI = \relative c'' {
 	R1*4
 % Bars 96 to 100
 	\mark \default
-	e'1\pp
-	g~
-	g
-	c4 r c,2~
+	c1\pp
+	d~
+	d
+	e4 r c2~
 % Bars 101 to 105
 	c1~
 	c4 r r2
@@ -119,13 +119,13 @@ musicCornoIIMvtI = \relative c'' {
 	
 % Bars 111 to 115
 	
-	r4 g4\p~ g8 c( e e')
-	e8.( d16) c2 d8.( g,16)
-	e2.\ff c'4
-	g1~
+	r4 g4\p~ g8 c( e g)
+	g8.( f16) e2 f8.( d16)
+	c2.\ff e4
+	g1
 % Bars 116 to 120
-	g
-	e2~ e8 g-. e-. g-. \mark \default
+	d
+	c2~ c8 g'-. e-. g-. \mark \default
 	c,\p r r4 r2
 	R1*13
 % Bars 121 to 125
@@ -134,8 +134,8 @@ musicCornoIIMvtI = \relative c'' {
 	
 % Bars 131 to 135
 	
-	c'4\f c2( g4)
-	c,4 r r2
+	e4\f e2( d4)
+	c4 r r2
 	R1*7
 % Bars 136 to 140
 	
@@ -202,13 +202,13 @@ musicCornoIIMvtI = \relative c'' {
 	c2. c4
 	c c c c
 	c2~ c8 c-. c-. c-.
-	c4 r r8. f'16-.[ f8.-. f16]-. 
+	c4 r r8. f16-.[ f8.-. f16]-. 
 	e4 r r8. e16[-. e8.-. e16] 
 % Bars 231 to 235
-	c,4 r c r
+	c4 r c r
 	c r c r
 	e r e r
-	f' r e, r
+	\once \partcombineApart f r e r
 	r e e2~ 
 % Bars 236 to 240
 	e4 e-. e2~
@@ -283,18 +283,18 @@ musicCornoIIMvtI = \relative c'' {
 	c4 c8. c16 c4 c
 	c1~
 	c8.[ c16 c8. c16] c2~
-	c8.[ c16 c8. c16] c8.[ f'16 f8. f16]
-	f4 d d d
+	c8.[ c16 c8. c16] \partcombineApart c8.[ f16 f8. f16]
+	f4 \partcombineAutomatic f f f
 % Bars 331 to 335
-	g,2 c
-	c,1
-	g4 r g' r
-	g r r2
+	d2 e
+	c1
+	g4 r d' r
+	d r r2
 	R1
 % Bars 336 to 340
-	g1\f\>
-	e1\pp~
-	e
+	d1\f\>
+	c1\pp~
+	c
 	\crescText "cresc. poco a poco" c\<~
 	c~
 % Bars 341 to 345
@@ -310,7 +310,7 @@ musicCornoIIMvtI = \relative c'' {
 	c2\ff~ c8 r r4
 	R1
 % Bars 351 to 355
-	g'2\f~ g8 r r4
+	d2\f~ d8 r r4
 	R1 \mark #11
 	e2~\f e8 r r4
 	R1*4
@@ -327,7 +327,7 @@ musicCornoIIMvtI = \relative c'' {
 	
 	
 	
-	r4 f'2\f c,4~
+	r4 \once \partcombineApart f2 c4~
 % Bars 371 to 375
 	c r r2
 	R1*6
@@ -348,15 +348,15 @@ musicCornoIIMvtI = \relative c'' {
 	g-. g-. g-. g-.
 	g-. r r2
 	R1
-	r4 g8-.\p r r2
+	r4 d8-.\p r r2
 % Bars 391 to 395
-	r4 g8-. r r2
+	r4 d8-. r r2
 	R1*10
 % Bars 396 to 400
 	
 % Bars 401 to 405
 	
-	r8. c,16[\f-. c8.-. c16]-. c2~
+	r8. c16[\f-. c8.-. c16]-. c2~
 	c8.[( e16 g8. e16)] c8 r r4
 	R1*19
 % Bars 406 to 410
@@ -368,14 +368,14 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 421 to 425
 	
 	
-	r8. e16-.\pp e8-. r r8. e16-. e8-. r
-	r8. e16-. e8-. r r8. e16[-. e8.-. e16]-. 
-	g8.-. g16-. g8-. r r8. g16-. g8-. r
+	r8. c16-.\pp c8-. r r8. c16-. c8-. r
+	r8. c16-. c8-. r r8. c16[-. c8.-. c16]-. 
+	d8.-. d16-. d8-. r r8. d16-. d8-. r
 % Bars 426 to 430
-	r8. g16-. g8-. r r8. g16[-. g8.-. g16]-. 
-	c4 r r8. e16[-. e8.-. e16]-. 
-	e4 r r8. c16[-. c8.-. c16]-. 
-	c4 r r2
+	r8. d16-. d8-. r r8. d16[-. d8.-. d16]-. 
+	e4 r r8. e16[-. e8.-. e16]-. 
+	e4 r r8. e16[-. e8.-. e16]-. 
+	f4 r r2
 	R1 \mark \default
 % Bars 431 to 435
 	r4 r8. g16-.\pp g4-. r8. g16-.
@@ -412,10 +412,10 @@ musicCornoIIMvtI = \relative c'' {
 	R1*3
 	
 	
-	e''1\pp(
-	d
+	g'1\pp(
+	f
 % Bars 476 to 480
-	c2) c,~
+	e2) c~
 	c1
 	g4 r r2
 	R1*5
@@ -423,53 +423,49 @@ musicCornoIIMvtI = \relative c'' {
 	
 	
 	
-	r2 r4 c'8\pp r
-	g r r4 r g8 r
+	r2 r4 e'8\pp r
+	d r r4 r d8 r
 % Bars 486 to 490
-	c r r4 r8. c16[-. c8.-. c16]-. 
-	g8 r r4 r8. g16[-. g8.-. g16]-. 
-	c8 r r4 r2
-	c,8 r r4 r8. c16[-. c8.-. c16]-. 
-	c8 r r8. c'16 c8 r r8. c16
+	e r r4 r8. e16[-. e8.-. e16]-. 
+	d8 r r4 r8. d16[-. d8.-. d16]-. 
+	e8 r r4 r2
+	c8 r r4 r8. c16[-. c8.-. c16]-. 
+	c8 r r8. e16 e8 r r8. e16
 % Bars 491 to 495
-	g8 r r8. g16 g8 r r8. g16 \mark \default
-	c8.[\mf c,16-. c8.-. c16]-. c8 r r4
+	d8 r r8. d16 d8 r r8. d16 \mark \default
+	\partcombineApart c8.[ c16-. c8.-. c16]-. \partcombineAutomatic c8 r r4
 	r8. c16[ c8. c16] c8 r r4
-	R1*12
+	R1*20
 % Bars 496 to 500
 	
 % Bars 501 to 505
 	
 % Bars 506 to 510
-	\clef bass c,,1~\f
-	c~
-	c~
-	c~
-	c~
+	
 % Bars 511 to 515
-	c~
-	c~
-	c
-	\tempo "Più allegro." c4 r r2
-	R1*2 \clef treble
+	
+	
+	
+	\tempo "Più allegro." R1*3
+	
 % Bars 516 to 520
 	
-	r2 r8. g''16\f[-. c8.-. c16]-. 
+	r2 r8. g16\f[-. c8.-. c16]-. 
 	c4-.\ff r r2 \mark \default
 	g'4-.\ff r r2
-	c,4 r r g'8 r 
+	c,4 r r d8 r 
 % Bars 521 to 525
-	e8 r g r e r g r
-	e4 r r g8 r
-	c r g r c r g r
-	c4 r r g8 r
-	c r g r c r g r
+	c8 r d r c r d r
+	c4 r r d8 r
+	e r d r e r d r
+	e4 r r d8 r
+	e r d r e r d r
 % Bars 526 to 530
-	c r g r c r g r 
-	c r g r c r g r 
-	c4 r g r 
-	c r g r
-	c r8. e,16 e4 r8. e16
+	e r d r e r d r 
+	e r d r e r d r 
+	e4 r d r 
+	e r d r
+	e r8. c16 c4 r8. c16
 % Bar 531
-	e4 r r2 \bar "|."
+	c4 r r2 \bar "|."
 }

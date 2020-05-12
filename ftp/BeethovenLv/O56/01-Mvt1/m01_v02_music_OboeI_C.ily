@@ -19,7 +19,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	c1\f\cresc
+	c1_\f_\cresc
 	b8([ c d8. c16)] c4-. c-.
 % Bars 21 to 25
 	f2.\ff c'4-.
@@ -46,7 +46,7 @@ musicOboeIMvtI = \relative c'' {
 	r4 g'(_\crescmarkup f d)
 % Bars 41 to 45
 	c2(~ c8.[ e16 g8. e16])
-	c2. cis4(
+	\partcombineApart c2. \partcombineAutomatic cis4(
 	d e f g
 	a) r r2
 	R1*6
@@ -79,7 +79,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 71 to 75
 	g,) r r2
 	R1
-	g'~\ff
+	g'~_\ff
 	g \mark \default
 	e4 r r2
 % Bars 76 to 80
@@ -105,7 +105,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	c,2.(\ff e4)
+	c,2.(_\ff e4)
 	g2.( f4)
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16)]
@@ -207,7 +207,7 @@ musicOboeIMvtI = \relative c'' {
 	e8 e4 e e e8~
 	e e4 e e e8~
 % Bars 241 to 245
-	e2(\> fis\p
+	e2(_\> fis_\p
 	b,2. e4
 	a,) r r2
 	R1*33
@@ -226,31 +226,31 @@ musicOboeIMvtI = \relative c'' {
 % Bars 276 to 280
 	\mark \default
 	R1
-	r2 a8[(\p bes d8. bes16)]
+	\partcombineApart r2 a8[(\p bes d8. bes16)] \partcombineAutomatic
 	R1
-	r2 b!8[(^\semprepp c ees8. c16)]
+	\partcombineApart r2 b!8[(^\semprepp c ees8. c16)] \partcombineAutomatic
 % Bars 281 to 285
 	R1
-	r2 a8([ bes des8. bes16)]
+	\partcombineApart r2 a8([ bes des8. bes16)] \partcombineAutomatic
 	R1*3
 	
 	
 % Bars 286 to 290
-	r2 ais8[(^\semprep b! d!8. b16)]
+	\partcombineApart r2 ais8[(^\semprep b! d!8. b16)] \partcombineAutomatic
 	R1
-	r2 ais8[( b d8. b16)]
+	\partcombineApart r2 ais8[( b d8. b16)] \partcombineAutomatic
 	R1*3
 	
 % Bars 291 to 295
 	
-	r2 b8[( c e8. c16)]
+	\partcombineApart r2 b8[( c e8. c16)] \partcombineAutomatic
 	R1
-	r2 cis8([ d f8. d16)]
+	\partcombineApart r2 cis8([ d f8. d16)] \partcombineAutomatic
 	R1
 % Bars 296 to 300
-	r2 b8[( c! ees8. c16)]
+	\partcombineApart r2 b8[( c! ees8. c16)] \partcombineAutomatic
 	R1
-	r2 b8([ c d8. c16)]
+	\partcombineApart r2 b8([ c d8. c16)] \partcombineAutomatic
 	R1*25
 % Bars 301 to 305
 	
@@ -264,7 +264,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	g'1^\pcresc \mark \default
+	\partcombineApart g'1^\pcresc \partcombineAutomatic \mark \default
 	c\ff~
 % Bars 326 to 330
 	c4 c8. c16 c4 c
@@ -283,9 +283,9 @@ musicOboeIMvtI = \relative c'' {
 % Bars 341 to 345
 	
 	
-	c,1\cresc
-	b8([ c d8. c16)] c4-. c-.
-	f2\f~ f8 r c\p r
+	c,1_\cresc
+	b8([ c d8. c16)] c4-. c-.\!
+	f2_\f~ f8 r c\p r
 % Bars 346 to 350
 	a r c r a r f r
 	c'2\ff~ c8 r c4\p(

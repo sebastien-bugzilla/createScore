@@ -14,7 +14,8 @@ generalOptions = {
 	\compressFullBarRests
 }
 conductorOptions = {
-	\set Staff.soloText = #""
+	\set Staff.soloText = #"1."
+	\set Staff.soloIIText = #"2."
 	\override Score.BarNumber #'font-size = #1
 }
 #(set-global-staff-size 19)

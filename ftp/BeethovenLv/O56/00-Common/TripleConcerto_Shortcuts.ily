@@ -11,16 +11,26 @@ crescmarkup=^\markup {\italic cresc.}
 semprep = \markup { \italic sempre \dynamic p}
 semprepp = \markup { \italic sempre \dynamic pp}
 pcresc = \markup { \dynamic p \italic cresc.}
+dimmarkup=^\markup {\italic dim.}
+fcresc = \markup { \dynamic f \italic cresc.}
+dolce=^\markup {\italic {dolce}}
+
+
+crescText = #(define-music-function
+	(cresctext)
+	(markup?)
+	#{
+		\once \set crescendoText = \markup {\italic { #cresctext } }
+		\once \set crescendoSpanner = #'text
+	#}
+)
 
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}
 %benmarccresc = ^\markup {\italic {ben marc. cresc.}}
 %crescmolto=^\markup {\italic {cresc. molto}}
-%crescpocoapoco=^\markup {\italic {cresc. poco a poco}}
-%dimmarkup=^\markup {\italic dim.}
 %div=^\markup {div.}
-%dolce=^\markup {\italic {dolce}}
 %espress=^\markup {\italic {espress.}}
 %espr=^\markup {\italic {espr.}}
 %express=^\markup {\italic {express.}}

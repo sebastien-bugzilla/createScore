@@ -48,7 +48,7 @@ musicCornoIIMvtI = \relative c'' {
 	R1*3
 	
 	
-	r4 g_\crescmarkup( d' g,)
+	r4 g( d' g,)
 % Bars 41 to 45
 	c,2\p(~ c8.[ e16 g8. e16])
 	c2. r4
@@ -66,7 +66,7 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 56 to 60
 	
 	
-	c1_\fcresc 
+	c1 
 	c2\ff c
 	c4 c c c
 % Bars 61 to 65
@@ -257,7 +257,7 @@ musicCornoIIMvtI = \relative c'' {
 	g~
 % Bars 306 to 310
 	g4 c,2 c4
-	g1_\semprepp~
+	g1~
 	g8 r g r r2
 	g1~
 	g8 r g r r2
