@@ -14,6 +14,17 @@ pcresc = \markup { \dynamic p \italic cresc.}
 dimmarkup=^\markup {\italic dim.}
 fcresc = \markup { \dynamic f \italic cresc.}
 dolce=^\markup {\italic {dolce}}
+sempreppD = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp"))
+semprestaccato=^\markup {\italic {sempre staccato}}
+cantabile=^\markup {\italic cantabile}
+pdim = \markup { \dynamic p \italic dim.}
+fmarcato = \markup { \dynamic f \italic marcato}
+sharp =^\markup {\tiny \sharp} 
+espressivo=^\markup {\italic {espressivo}}
+plegato=^\markup {\dynamic p \italic {legato}}
+piuf=^\markup {\italic {più} \dynamic f}
+decresc=^\markup {\italic decresc.}
+dimin=^\markup {\italic dimin.}
 
 
 crescText = #(define-music-function
@@ -24,7 +35,14 @@ crescText = #(define-music-function
 		\once \set crescendoSpanner = #'text
 	#}
 )
-
+dimText = #(define-music-function
+	(cresctext)
+	(markup?)
+	#{
+		\once \set decrescendoText = \markup {\italic { #cresctext } }
+		\once \set decrescendoSpanner = #'text
+	#}
+)
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

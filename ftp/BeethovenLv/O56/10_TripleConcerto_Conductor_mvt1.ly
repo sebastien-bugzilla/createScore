@@ -110,28 +110,28 @@
 %					\musicTimpaniMvtI
 %				}
 %			>>
-			\new Staff {
-				\timeMvtI \generalOptions \conductorOptions
-				\nameStaffVIIIMvtI
-				\musicSoloViolinMvtI
-			}
+%			\new Staff {
+%				\timeMvtI \generalOptions \conductorOptions
+%				\nameStaffVIIIMvtI
+%				\musicSoloViolinMvtI
+%			}
 %			\new Staff {
 %				\timeMvtI \generalOptions \conductorOptions
 %				\nameStaffIXMvtI
 %				\musicSoloCelloMvtI
 %			}
-%			\new PianoStaff \with { \nameGrandStaffIMvtI } <<
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffXMvtI
-%					\musicPianoUpMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffXIMvtI
-%					\musicPianoDownMvtI
-%				}
-%			>>
+			\new PianoStaff \with { \nameGrandStaffIMvtI } <<
+				\new Staff = "up" {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffXMvtI
+					\musicPianoUpMvtI
+				}
+				\new Staff ="down" {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffXIMvtI
+					\musicPianoDownMvtI
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
 %					\new Staff {
