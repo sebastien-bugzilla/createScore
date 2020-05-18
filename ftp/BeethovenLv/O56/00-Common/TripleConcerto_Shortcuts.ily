@@ -1,7 +1,7 @@
 %  work        : Concerto for Violin Cello and Piano in C Major Op56 "Triple
 %                Concerto"
 %  typesetter  : Sébastien MANEN
-%  date        : Friday 08 May 2020, 14:21
+%  date        : Monday 04 May 2020, 21:05
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
@@ -25,6 +25,10 @@ plegato=^\markup {\dynamic p \italic {legato}}
 piuf=^\markup {\italic {più} \dynamic f}
 decresc=^\markup {\italic decresc.}
 dimin=^\markup {\italic dimin.}
+legato=^\markup {\italic legato}
+flat=^\markup { \tiny \flat}
+pdolce = \markup { \dynamic p \italic dolce}
+sempreff = \markup {\italic sempre \dynamic ff }
 
 
 crescText = #(define-music-function

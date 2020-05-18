@@ -1,7 +1,7 @@
 %  work        : Concerto for Violin Cello and Piano in C Major Op56 "Triple
 %                Concerto"
 %  typesetter  : Sébastien MANEN
-%  date        : Friday 08 May 2020, 14:21
+%  date        : Monday 04 May 2020, 21:05
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
@@ -103,16 +103,16 @@ musicPianoUpMvtI = \relative c'' {
 	e8.( dis16 d4.) d8\trill( \grace {cis16[ d]} e8 b)
 % Bars 136 to 140
 	d( c! b a) a4(\trill \grace {gis16[ a]} c8. a16)
-	gis4 r r2
-	\change Staff = "down" r16\p e,, a c \change Staff = "up" e \change Staff = "down" a, c \change Staff = "up" e \change Staff = "down" r e, a c \change Staff = "up" e \change Staff = "down" a, c \change Staff = "up" e
-	\change Staff = "down" r16 d, a c d a c d r d, e b' d e, b' d
-	r c, e a r^\crescmarkup a, a' a, r f' \change Staff = "up" f' \change Staff = "down" f, r f \change Staff = "up" f' \change Staff = "down" f,
+	gis4 r r2 \voiceOne
+	\change Staff = "down" r16^\p e,, a c \change Staff = "up" e \change Staff = "down" a, c \change Staff = "up" e \change Staff = "down" r e, a c \change Staff = "up" e \change Staff = "down" a, c \change Staff = "up" e
+	\change Staff = "down" r16 d, a' c d a c d r d, e b' d e, b' d
+	r c, e a r^\crescmarkup a, a' a, r f' \change Staff = "up" f' \change Staff = "down" f, r f \change Staff = "up" f' \change Staff = "down" f, \oneVoice
 % Bars 141 to 145
-	\change Staff = "up" e'4\p r r2
+	\change Staff = "up" e'4 r r2
 	R1
 	\tuplet 3/2 4 {r8 e'-. e-. e-. e-. e-. e(\sf <d! f!>) q-. q-. q-. q-.}
 	\tuplet 3/2 4 {q(\sf <c e>) q-. q-. q-. q-. q( <b d>) q-. <a c>( <c a'>) q-.}
-	<b gis>4 r r2
+	<b gis'>4 r r2
 % Bars 146 to 150
 	\tuplet 3/2 4 {r8 e,_\crescmarkup( gis) gis( b) b( e) e( gis) gis( b) b(}
 	\tuplet 3/2 4 {e) e( b) b( gis) gis( e) e( b) b( gis) gis(}
@@ -128,7 +128,7 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 156 to 160
 	e fis_\dimmarkup dis fis e fis dis fis e fis d e cis d b cis
 	a4\p r <cis, e a>8 r q r
-	q r r4 r q8 r
+	q r r4 r <cis e ais>8 r
 	<d fis b>8 r <fis ais cis> r <fis b d> r <a cis e> r
 	<a d fis> r r4 r2
 % Bars 161 to 165
@@ -140,11 +140,11 @@ musicPianoUpMvtI = \relative c'' {
 	cis b ais b d cis b cis e d cis d fis e dis e
 	fis8_\dimmarkup fis4 fis fis fis8(
 % Bars 171 to 175
-	f)\pp f4 f f f~
+	f!)\pp f4 f f f8~
 	f_\crescmarkup f4 f f f8~
 	\tuplet 3/2 4 {f(\pp e g f e d c! bes a g f! e)}
-	\tuplet 3/2 4 {d(^\crescmarkup c! bes a g f! e bes' g e c! bes)}
-	a4\sf\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g)}
+	\tuplet 3/2 4 {d(_\crescmarkup c! bes a g f! e bes' g e c! bes)}
+	a4\sf\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g)\!}
 % Bars 176 to 180
 	f4_\plegato^\dolce(~ \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
 	c4~ \tuplet 3/2 4 {c8 a' c} b4~ \tuplet 3/2 4 {b8 fis b)}
@@ -153,7 +153,7 @@ musicPianoUpMvtI = \relative c'' {
 	e16\pp dis e dis e dis e dis e dis f! e d c b a
 % Bars 181 to 185
 	\afterGrace b1\startTrillSpan {a8[\stopTrillSpan c b]}
-	a4\f r r2
+	a4 r r2
 	R1*11
 % Bars 186 to 190
 	
@@ -174,7 +174,7 @@ musicPianoUpMvtI = \relative c'' {
 	a8[) r16 a,]( a'4~ a8)[ r16 a,]( a'4~
 	a16\ff) a e cis a e' cis a e cis' a e cis a' e cis
 	e\p cis' a e a e' cis a cis a' e cis e cis' a e
-	d'\f a dis, c! a dis c a dis, c' a dis, c a' dis c
+	d'\f a dis, c! a dis c a dis, c' a dis, c a' dis, c
 % Bars 206 to 210
 	dis\p c' a dis, a' dis c a c a' dis, c dis c' a dis,
 	c'_\crescmarkup a dis, c c' a e c c' a e c c' a e c
@@ -194,7 +194,7 @@ musicPianoUpMvtI = \relative c'' {
 	gis1~\startTrillSpan
 	gis
 % Bars 221 to 225
-	b~
+	b~\startTrillSpan
 	b2~ b16\stopTrillSpan d, e fis gis a b c
 	<b d>1\startTrillSpan\cresc~
 	\afterGrace q {<a c>16[(\stopTrillSpan <b d>])} \mark \default
@@ -228,11 +228,11 @@ musicPianoUpMvtI = \relative c'' {
 	cis8.[( g16 e'8. cis16] g8.[ e16 cis'8. g16])
 	e_\crescmarkup cis g' e cis g e' cis g e cis' g e cis g' e
 % Bars 276 to 280
-	cis \change Staff = "down" g \change Staff = "up" e' cis \change Staff = "down" g e cis' g e cis g' e cise cis g \mark \default
-	f4\f \change Staff = "up" r r2
+	\voiceOne cis \change Staff = "down" g \change Staff = "up" e' cis \change Staff = "down" g e cis' g e cis g' e cis e cis g \mark \default
+	f4\f \oneVoice \change Staff = "up" r r2
 	\tuplet 3/2 4 {f''8\f-. d'-. bes-. f'-. d-. bes'-. f-. d'-. bes-. f'-. f-. f-. }
 	f4 r r2
-	\tuplet 3/2 4 {f,,8-. ees'-. c-. f-. ees-. c'-. f,-. ees'-. c-. f'-. f-. f-. }
+	\tuplet 3/2 4 {f,,8-. ees'-. c-. f-. ees-. c'-. f,-. ees'-. c-. f-. f-. f-. }
 % Bars 281 to 285
 	f4 r r2
 	\tuplet 3/2 4 {f,,8-. des'-. bes-. f'-. des-. bes'-. f-. des'-. bes-. f'-. f-. f-. }
@@ -253,8 +253,8 @@ musicPianoUpMvtI = \relative c'' {
 	c4 r r2
 % Bars 296 to 300
 	\tuplet 3/2 4 {c,,8 g' ees c' g ees' c g' ees c' g g}
-	aes4 r \tuplet 3/2 4 {aes,8 f' des a' f des'}
-	r2 \tuplet 3/2 4 {a,! ees' c a'! ees c'}
+	aes4 r \tuplet 3/2 4 {aes,8 f' des aes' f des'}
+	r2 \tuplet 3/2 4 {a,!8 ees' c a'! ees c'}
 	b4 r r2
 	R1*5
 % Bars 301 to 305
@@ -277,15 +277,15 @@ musicPianoUpMvtI = \relative c'' {
 	f8\pp f4 f f f8(
 % Bars 316 to 320
 	e) e4 e e e8(
-	<fis, dis'>8 q4 q q q8(
+	<fis, dis'>8) q4 q q q8(
 	<f! d'!>) q4 q q q8(
 	<e c'>) q4 q q q8(
 	<ees c'>) q4 q q q8
 % Bars 321 to 325
 	<d c'>4 r r2
-	r16 \change Staff = "down" d,, e f g a b c \change Staff = "up" d e f g a b c d
+	\voiceOne r16_\crescmarkup \change Staff = "down" d,, e f g a b c \change Staff = "up" d e f g a b c d
 	r16 \change Staff = "down" f,, g a b \change Staff = "up" c d e f g a b c d e f
-	r16 d,\ff e f g a b c d e f g a b c d \mark \default
+	\oneVoice r16 d,\ff e f g a b c d e f g a b c d \mark \default 
 	<e, g c e>4 r r2
 % Bars 326 to 330
 	R1*27
@@ -299,9 +299,9 @@ musicPianoUpMvtI = \relative c'' {
 	
 % Bars 351 to 355
 	
-	\mark \default
+	\mark #11
 	r2 r4 \tuplet 3/2 4 {a,,8-.\mf e'-. cis-. }
-	\tuplet 3/2 4 {a-. e-. cis'-. a-. e'-. cis-. a'-. e-. cis-. e-. cis-. a-. }
+	\tuplet 3/2 4 {a'-. e-. cis'-. a-. e'-. cis-. a'-. e-. cis-. e-. cis-. a-. }
 	\tuplet 3/2 4 {a,_\semprestaccato f' d a' f d' a f' d a' f d}
 % Bars 356 to 360
 	\tuplet 3/2 4 {f, d' bes f' d bes' f d' bes f' d bes}
@@ -321,91 +321,185 @@ musicPianoUpMvtI = \relative c'' {
 	<f c'>4 r r2
 	R1
 % Bars 371 to 375
-	r8 c,16( c') d,( d') e'( e') f,( f') g,( g') a,( a') bes,( bes') 
+	r8 c,16( c') d,( d') e,( e') f,( f') g,( g') a,( a') bes,( bes') 
 	c,( c') r8 c4.( c8\turn d a)
 	c8.( b!16 bes4.) bes8(\trill c g)
 	\tuplet 3/2 4 {a8 a,, c f a, c r a d f a, d} \clef bass
-	\tuplet 3/2 4 {r gis, d' f g, d' r g a e' g, cis}
+	\tuplet 3/2 4 {r gis, d' f g, d' r g, a e' g, cis}
 % Bars 376 to 380
 	r16 d,_\crescmarkup a' d, r d aes' d, r d g d b d g b,
 	e g c g e a! c a e a c a fis a c fis
 	g4 r r2 \clef treble
-	R1
+	R1 
 	\tuplet 3/2 4 {r8 g' g g g g g(\sf <f aes>) q q q q}
 % Bars 381 to 385
-	\tuplet 3/2 4 {q(\sf <ees g> q-. q q q q( <d f>) q <c e>( <e c'>) q}
+	\tuplet 3/2 4 {q(\sf <ees g>) q-. q q q q( <d f>) q <c e>( <e c'>) q}
 	<d b'>4 r r2
 	\tuplet 3/2 4 {r8 g,,\cresc( b) b( d) d( g) g( b) b( d) d(}
 	\tuplet 3/2 4 {g) g( d) d( b) b( g) g( d) d( b) b(}
-	\tuplet 3/2 4 {g-.\ff <d' g>-. <b d>-. <g' b>-. <d g>-. <b' d>-. <g b>-. <d' g>-. <b d>-. <g' b>-. <d g>-. <b d g b>-.} \mark \default
+	\tuplet 3/2 4 {g-.)\ff <d' g>-. <b d>-. <g' b>-. <d g>-. <b' d>-. <g b>-. <d' g>-. <b d>-. <g' b>-. <d g>-. <b d g b>-.} \mark \default
 % Bars 386 to 390
 	q4 r r2
 	R1
-	\change Staff = "down" g,,16\fp b d c b g' b a g b d c \change Staff = "up" b d f! e
+	\change Staff = "down" \voiceOne g,,16^\fp b d c b g' b a g b d c \change Staff = "up" \oneVoice b d f! e
 	d b' d c b d f e d b' d c b d f e
 	d\< f a g f g e f d e cis e d f e g
 % Bars 391 to 395
-	f g a g f g e f d e cis e d f e g
+	f g a g f g e f d\> e cis e d f e g\!
 	f g e f d e cis e d e c d b c a c
 	b_\dimin c a b g( a fis a g a f g e f d e)
 	c4\p r \clef bass <e,, g c>8 r q r
 	q r r4 r <e a cis>8 r
 % Bars 396 to 400
 	<f a d> r <a cis e> r <a d f> r \clef treble <c! e g> r
-	<c e g> r r4 r2
+	<c f a> r r4 r2
 	R1*6
 % Bars 401 to 405
 	
+	
+	
+	r2 r8 g''16(\p b a c b d)
+	c e g e g e g e d c b c d cis bis cis
 % Bars 406 to 410
-	
+	e d cis d f e dis e g f e f a g fis g
+	a8_\dimmarkup a4 a a a8(
+	aes)\pp aes4 aes aes aes8~
+	aes_\crescmarkup aes4 aes aes aes8~
+	\tuplet 3/2 4 {aes\pp( g f ees des c bes aes g f ees des}
 % Bars 411 to 415
-	
+	\tuplet 3/2 4 {c_\crescmarkup bes aes g des' bes g des' bes g ees des)}
+	c4(\sf\>~ \tuplet 3/2 4 {c8 b!_\legato c e! g b! c g bes\!}
+	aes4~ \tuplet 3/2 4 {aes8 f' aes} g4~ \tuplet 3/2 4 {g8 d f}
+	ees4~ \tuplet 3/2 4 {ees8 c' ees} d4~ \tuplet 3/2 4 {d8 a! d)}
+	c2~ \tuplet 3/2 4 {c8( g\dim a! b! c d)}
 % Bars 416 to 420
-	
+	ees2~ \tuplet 3/2 4 {ees8( b c d e f)}
+	g4~\pp g16( fis f ees d c b c ees c f d)
+	\afterGrace d2.\startTrillSpan^\flat {cis16[\stopTrillSpan\< d]} fis8. g16
+	c,4\f r r2
+	R1*11
 % Bars 421 to 425
 	
 % Bars 426 to 430
 	
+	
+	
+	
+	\mark \default
 % Bars 431 to 435
-	
+	c,16\f d c b c d c d e f e d e f e f 
+	fis g fis g fis g fis g fis g a g f e d c
+	b c b a g a b c d e d c b c d e
+	f g f e d e f g a gis b a g f e d
+	e f e f e f e f e f g f e d c b
 % Bars 436 to 440
-	
+	c d' cis d cis d cis d cis d e d c bes a g
+	a d cis d c bes a g a d cis d c bes a g
+	a8[ r16 c,]( c'4~ c8)[ r16 c,(] c'4~
+	c8[) r16 c,]( c'4~ c8)[ r16 c,]( c'4~
+	c16) c g e c g' e c g e' c g e c' g e
 % Bars 441 to 445
-	
+	g\p e' c g c g' e c e c' g e c g' e c
+	f\f c' b c fis, c' fis, ees c fis ees c fis, ees' c fis,
+	ees\p c' fis, ees fis ees' c fis, c' fis ees c ees c' fis, ees
+	c'_\crescmarkup fis, ees c c' g ees c c' g ees c c' g ees c
+	c' g ees c c' a! ees c c' a ees c c' a ees c
 % Bars 446 to 450
-	
+	c' a ees c b'!\sf g d b! b' g d b c'\sf g e c
+	c' g e c d'\sf c a d, d' c a d, d'\sf c a d,
+	<d a' c d>4\p r r2
+	d2\p(~ d8.[ cis16 d8. cis16]
+	d4) <a c! d>4_\dimmarkup q r
 % Bars 451 to 455
+	r q q q
+	q\pp r r2
+	R1*2
 	
+	b,16(\pp c d e f g a ais b c d e f g a! ais)
 % Bars 456 to 460
-	
+	b1\startTrillSpan~
+	b
+	d\startTrillSpan~
+	d2~ d16\stopTrillSpan b, c d e f g a
+	b1\startTrillSpan~\cresc
 % Bars 461 to 465
-	
+	\afterGrace b {a16[(\stopTrillSpan b])} \mark \default
+	c4\ff r r2
+	R1*8
 % Bars 466 to 470
 	
 % Bars 471 to 475
-	
+	r8. g16[(\< a8.\> g16)] g4\! r
+	r8. g16[(\< a8.\> g16)] g4\! r
+	r8. g16[(\< a8.\> g16)] r8.\! g16[(\< a8.\> g16)]\!
+	r16 g( fis g a g fis g) g,4 r
+	r16 g'( fis g a g fis g) g,4 r
 % Bars 476 to 480
-	
+	r16 g'(_\crescmarkup fis g a g fis g) g,4 r
+	r2 r4 fis4\f\trill
+	g16(\p d e! fis g a b a g fis e d \clef bass c b a g
+	fis g a b c b a g fis e d c b a g fis
+	g a b c d c b a g a b c d e fis g)
 % Bars 481 to 485
-	
+	fis( e d e fis g a b c b a b \clef treble c d e fis
+	g_\crescmarkup a b c d e f! fis g a b c d e f! fis
+	g\f fis g fis g fis g fis g fis g fis g f e d)
+	c8\p r <g c e g> r q2
+	r4 <g d' f g>8 r q2
 % Bars 486 to 490
-	
+	r8. <g c e g>16[ q8. q16] q2
+	r8. <g d' f g>16[ q8. q16] q2
+	r8. <bes c e g>16[ q8. q16] q8 r r4
+	r8. <a c f a>16[ q8. q16] q8 r r4
+	r8. <g c e g>16_\crescmarkup q8 r r8. q16 q8 r
 % Bars 491 to 495
-	
+	r8. <g b! f' g>16 q8 r r8. q16 q8 r \mark \default
+	r2 r16 bes,,\ff e g bes e g bes
+	a4 r r16 a f c a f c f
+	\change Staff = "down" \voiceOne \tuplet 3/2 4 {a,8^\p( f, a c a c f c f a f a}
+	\change Staff = "up" \oneVoice \tuplet 3/2 4 {c a c f c f a f a c a c}
 % Bars 496 to 500
-	
+	\tuplet 3/2 4 {f c f a_\dimin f a c a c f c f}
+	\tuplet 3/2 4 {a\p c, f a c, f a c, f a g f}
+	\tuplet 3/2 4 {e\pp g f e ees d cis c b bes a aes}
+	\tuplet 3/2 4 {g fis f e ees d cis c b bes a aes)}
+	g1\startTrillSpan~
 % Bars 501 to 505
-	
+	g
+	g'\startTrillSpan~
+	g~
+	g~_\crescmarkup
+	\afterGrace g {fis16[(\stopTrillSpan g])}
 % Bars 506 to 510
-	
+	g4..(_\pdolce e16 c4) c
+	c2. c8.( c'16)
+	c4..( a16 f4) f
+	f4(-\tweak X-offset #2 \turn a8 g b a g f)
+	e4 r r2
 % Bars 511 to 515
-	
+	r16 g fis g a g f e d c d e f g a bes
+	b!( c b c d c bes a) g8( f) f-. f-.
+	f2~ f16 f( a g b! a g f)
+	\tempo "Più allegro." e4 r r2
+	R1*4
 % Bars 516 to 520
 	
+	
+	\mark \default
+	<g, g'>4\ff r r2
+	r16 c,_\sempreff( d e f g a b) c4 r
 % Bars 521 to 525
-	
+	R1
+	r16 e,\ff f g a b c d e4 r
+	R1
+	r16 g, a b c d e f g2\startTrillSpan~
+	g1~
 % Bars 526 to 530
-	
+	g~
+	g2~ g4. a16\stopTrillSpan( b)
+	c16 b a g f e d c g' f e d c b a g 
+	c b a g f e d c g' f e d c b a g
+	c4 r <c' e g c> r
 % Bar 531
-	
+	c, r r2 \bar "|."
 }
