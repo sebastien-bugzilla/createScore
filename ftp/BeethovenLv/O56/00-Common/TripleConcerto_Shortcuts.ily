@@ -29,6 +29,11 @@ legato=^\markup {\italic legato}
 flat=^\markup { \tiny \flat}
 pdolce = \markup { \dynamic p \italic dolce}
 sempreff = \markup {\italic sempre \dynamic ff }
+pizz = \markup {\italic pizz}
+arco = \markup {\italic arco}
+crescpocoapoco = \markup {\italic {cresc. poco a poco}}
+moltopiano = \markup {\italic {molto piano}}
+
 
 
 crescText = #(define-music-function
