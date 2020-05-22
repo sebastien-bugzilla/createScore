@@ -126,7 +126,7 @@ musicFloteMvtI = \relative c''' {
 	e'2\ff b4-. gis-.
 	e-. e'-. b-. gis-.
 % Bars 151 to 155
-	e r r2
+	e-. r r2
 	R1*13
 % Bars 156 to 160
 	
@@ -352,7 +352,7 @@ musicFloteMvtI = \relative c''' {
 % Bars 466 to 470
 	aes8.-.[ c16-. aes8.-. c16-.] ees2~\sf
 	ees8.[ c16-. g8.-. c16-.] ees2\sf~
-	ees8. c16-. ees4~\sf ees8. c16 ees4~\sf
+	ees8. c16 ees4~\sf ees8. c16 ees4~\sf
 	ees8.[ c16-. ees8.-. c16-.] ees8.-.[ c16-. ees8.-. c16-.]
 	b4 r r2
 % Bars 471 to 475

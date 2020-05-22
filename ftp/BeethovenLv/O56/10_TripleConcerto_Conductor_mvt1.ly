@@ -145,16 +145,17 @@
 						\musicViolinIIMvtI
 					}
 				>>
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffXIVMvtI
-%					\musicViolaMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffXVMvtI
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffXIVMvtI
+					\musicViolaMvtI
+				}
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffXVMvtI
 %					\partcombine \musicVioloncellMvtI \musicBassoMvtI
-%				}
+					\musicVioloncellMvtI
+				}
 			>>
 		>>
 		\header {

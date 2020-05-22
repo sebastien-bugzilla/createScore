@@ -130,7 +130,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	
-	r8. e16-.[\f e8.-. e16-.] e2~
+	r8. e16-.[\f e8.-. e16-.] e2~\sf
 % Bars 166 to 170
 	e~ e8 r r4
 	R1*27
@@ -320,7 +320,7 @@ musicClarinetIIMvtI = \relative c' {
 	r2 r8. ees16\ff[-. ees8.-. ees16]-. 
 	ees4 r r8. g16[-. g8.-. g16]-. 
 	a4.. a16 a4.. a16
-	a8.[-. a16-. a8.-. a16]-. a8.[-. a16-. a8.-. a16]-. 
+	a8.[ a16-. a8.-. a16]-. a8.[-. a16-. a8.-. a16]-. 
 	d,4 r r2
 % Bars 471 to 475
 	R1*5
@@ -357,7 +357,7 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 516 to 520
 	r2 r8. d'16[\f-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4\ff r r2 \mark \default
+	f4-.\ff r r2 \mark \default
 	g4-.\ff r r2
 	c,4 r r d8 r
 % Bars 521 to 525

@@ -406,7 +406,7 @@ musicCornoIMvtI = \relative c'' {
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4-. r r8. c16[-. c8.-. c16]-. 
 	c4.. c16 c4.. c16
-	c8.[-. c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
+	c8.[ c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
 	g4 r r2
 % Bars 471 to 475
 	R1*3

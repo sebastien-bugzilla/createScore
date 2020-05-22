@@ -34,8 +34,8 @@ musicOboeIMvtI = \relative c'' {
 	g2. g4-.
 	g-. g-. g-. g-.
 % Bars 31 to 35
-	f4 f2\sf d8.-. c16-.
-	b4 c2\sf a8.-. fis16-. \mark \default
+	f4-. f2\sf d8.-. c16-.
+	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
 	R1*6
 % Bars 36 to 40
@@ -197,7 +197,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 231 to 235
 	a4.. a16 a4.. a16
 	a8.-.[ a16-. a8.-. a16-.] a8.-.[ a16-. a8.-. a16-.] 
-	gis8. gis16-. gis4 r8. a16 a4
+	gis8. gis16 gis4 r8. a16 a4
 	r8. a16 a4 r8. gis16 gis4
 	r e-. e2~
 % Bars 236 to 240
@@ -365,7 +365,7 @@ musicOboeIMvtI = \relative c'' {
 	g8.-.[ g16-. g8.-. g16-.] g4-. r
 	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 436 to 440
-	r8. c16-.[ c8.-. c16-.] c4-. r
+	r8. c16-.[\p c8.-. c16-.] c4-. r
 	r r8. c16-. c4-. r8. c16-.
 	c4-. r r2
 	R1*23
@@ -387,7 +387,7 @@ musicOboeIMvtI = \relative c'' {
 	ees4 r r8. c'16-.[ c8.-. c16-.] 
 	c4 r r8. c16-.[ c8.-. c16-.] 
 	c4.. c16 c4.. c16
-	c8.-.[ c16-. c8.-. c16-.] c8.-.[ c16-. c8.-. c16-.] 
+	c8.[ c16-. c8.-. c16-.] c8.-.[ c16-. c8.-. c16-.] 
 	b4 r r2
 % Bars 471 to 475
 	R1*13

@@ -30,8 +30,8 @@ musicOboeIIMvtI = \relative c'' {
 	cis2. e4-.
 	cis-. e-. cis-. a-.
 % Bars 31 to 35
-	d4 f2\sf d8.-. c!16-.
-	b4 c2\sf a8.-. fis16-. \mark \default
+	d4-. f2\sf d8.-. c!16-.
+	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
 	R1*6
 % Bars 36 to 40
@@ -184,7 +184,7 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 231 to 235
 	c4.. c16 c4.. c16
 	c8.-.[ c16-. c8.-. c16-.] c8.-.[ c16-. c8.-. c16-.] 
-	b8. b16-. b4 r8. c16 c4
+	b8. b16 b4 r8. c16 c4
 	r8. b16 b4 r8. b16 b4
 	r e-. e2~
 % Bars 236 to 240
@@ -328,7 +328,7 @@ musicOboeIIMvtI = \relative c'' {
 	g8.-.[ g16-. g8.-. g16-.] g4-. r
 	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 436 to 440
-	r8. c'16-.[ c8.-. c16-.] c4-. r
+	r8. c'16-.[\p c8.-. c16-.] c4-. r
 	r r8. c16-. c4-. r8. c16-.
 	c4-. r r2
 	R1*23
@@ -350,7 +350,7 @@ musicOboeIIMvtI = \relative c'' {
 	c4 r r8. ees16-.[ ees8.-. ees16-.] 
 	ees4 r r8. ees16-.[ ees8.-. ees16-.] 
 	ees4.. ees16 ees4.. ees16
-	ees8.-.[ ees16-. ees8.-. ees16-.] ees8.-.[ ees16-. ees8.-. ees16-.] 
+	ees8.[ ees16-. ees8.-. ees16-.] ees8.-.[ ees16-. ees8.-. ees16-.] 
 	d4 r r2
 % Bars 471 to 475
 	R1*13

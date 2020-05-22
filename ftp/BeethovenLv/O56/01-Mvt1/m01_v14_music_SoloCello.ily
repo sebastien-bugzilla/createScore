@@ -136,7 +136,7 @@ musicSoloCelloMvtI = \relative c' {
 	b cis d e)
 	fis2~ fis8( d) a-. fis-.
 % Bars 161 to 165
-	\tuplet 3/2 4 {d-. fis-. a-. d-. a-. d-. a d a d a d}
+	\tuplet 3/2 4 {d-. fis-. a-. d-. a-. d-. a^\semprestaccato d a d a d}
 	\tuplet 3/2 4 {a d a d a d a d a b a b}
 	\tuplet 3/2 4 {cis a a a a a a b a \acciaccatura a gis( fis) gis-.}
 	a4 r r2 \clef bass
@@ -418,7 +418,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 421 to 425
 	b8.[-. g16-. d'8.-. d16]-. b8.[-. g16-. f'!8.-. f16]-. 
 	b,8.[-. g16-. aes'8.-. aes16]-. g8.[-. f16-. ees8.-. d16]-. 
-	c4 \tuplet 3/2 4 {g'8-. a!-. b!-. c( d) c-. b-. c-. d-.}
+	c4 \tuplet 3/2 4 {g'8-.\p a!-. b!-. c( d) c-. b-. c-. d-.}
 	\tuplet 3/2 4 {dis( e) e-. e-. e-. e-. e-. d!-. c-. g'-. f-. e-.}
 	\tuplet 3/2 4 {d( b) \clef treble b'-. b b b b( g) d'-. d d d}
 % Bars 426 to 430
@@ -457,7 +457,7 @@ musicSoloCelloMvtI = \relative c' {
 	g,,16(_\semprepp a b c d e f fis g a b c cis d dis e)
 	\clef tenor f1\startTrillSpan~
 	f2~ f16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-. 
-	b1\startTrillSpan~
+	b1\startTrillSpan\cresc~
 % Bars 461 to 465
 	\afterGrace b {a16[(\stopTrillSpan b)]} \mark \default
 	c4\ff r r2

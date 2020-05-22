@@ -125,7 +125,7 @@ musicSoloViolinMvtI = \relative c''' {
 	
 % Bars 156 to 160
 	
-	\tuplet 3/2 4 {cis,,,8\p-. e-. a-. cis-. a-. e-. cis-. e-. a-. cis,-. e-. a-. }
+	\tuplet 3/2 4 {cis,,,8\p-. e-. a-. cis-. a-. e-. cis^\semprestaccato e a cis, e a }
 	\tuplet 3/2 4 {cis, e a cis a e cis e cis fis cis fis}
 	\tuplet 3/2 4 {d fis d fis ais, fis' b, fis' b, a' cis, a'}
 	\tuplet 3/2 4 {d, fis a d a fis d fis a d fis a}
@@ -170,7 +170,7 @@ musicSoloViolinMvtI = \relative c''' {
 	e,( d') b'( d,) e,( d') gis( d) e,( d') b'( d,) e,( b') gis'( b,)
 	b'\noBeam b,, d c b gis' b a gis a b c d e fis gis
 % Bars 186 to 190
-	\tuplet 3/2 4 {a8( b) a-. gis-. a-. b-. c( d) c-. b-. c-. d-.}
+	\tuplet 3/2 4 {a8(_\pstacc b) a-. gis-. a-. b-. c( d) c-. b-. c-. d-.}
 	\tuplet 3/2 4 {dis( e) e-. e-. e-. e-. e-. d-. c-. c-. b-. a-.}
 	\tuplet 3/2 4 {gis( e) b'-. b-. b-. b-. b( gis) d'-. d-. d-. d-.}
 	\tuplet 3/2 4 {d( b) f'-. f-. f-. f-. f-. e-. d-. d-. c-. b-.}
@@ -232,7 +232,7 @@ musicSoloViolinMvtI = \relative c''' {
 	gis4 r r8. gis16[( b8. a16])
 	a4 r r8. a16[( cis8. b16])
 % Bars 261 to 265
-	b4(\trill d4)~\sfp \tuplet 3/2 4 {d8 cis-. b-. fis'-.\sfp e-. d-.}
+	b4(\trill^\sharp d4)~\sfp \tuplet 3/2 4 {d8 cis-. b-. fis'-.\sfp e-. d-.}
 	\tuplet 3/2 4 {d cis b fis'\sfp e d d cis b fis'\sfp e d}
 	\tuplet 3/2 4 {d cis b b a gis gis fis e e d cis}
 	\tuplet 3/2 4 {cis b a a gis fis fis e dis fis e dis}
@@ -514,7 +514,7 @@ musicSoloViolinMvtI = \relative c''' {
 	
 	
 	\mark \default
-	<g g'>4-.\ff r r2
+	<g g'>4\ff r r2
 	r16 c, d e f g a b c4 r
 % Bars 521 to 525
 	R1

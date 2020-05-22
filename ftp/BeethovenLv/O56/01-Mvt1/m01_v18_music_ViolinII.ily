@@ -537,7 +537,7 @@ musicViolinIIMvtI = \relative c' {
 	aes8.[-. c16-. aes8.-. c16]-. ees2\sf~
 	ees8.[ c16-. g8.-. c16-.] ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4\sf~
-	ees8.[-. c16-. ees8.-. c16]-. ees8.[-. c16-. ees8.-. c16]-.
+	ees8.[ c16-. ees8.-. c16]-. ees8.[-. c16-. ees8.-. c16]-.
 	bes4\fp r r2
 % Bars 471 to 475
 	R1*3
@@ -578,7 +578,7 @@ musicViolinIIMvtI = \relative c' {
 	b(\<
 	g\>)
 % Bars 506 to 510
-	g8\! bes\p bes bes bes bes bes bes
+	g8\! bes\pp bes bes bes bes bes bes
 	c c c c c c c c
 	c c c c c c c c
 	d d d d d d d d

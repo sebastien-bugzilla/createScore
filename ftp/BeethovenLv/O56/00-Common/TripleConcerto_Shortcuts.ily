@@ -33,7 +33,9 @@ pizz = \markup {\italic pizz}
 arco = \markup {\italic arco}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
 moltopiano = \markup {\italic {molto piano}}
-
+unobassoeviolonc = \markup {Uno Basso e Violonc.}
+tutti = \markup {\italic tutti}
+pstacc = \markup {\dynamic p \italic stacc.}
 
 
 crescText = #(define-music-function

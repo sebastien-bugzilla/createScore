@@ -168,7 +168,7 @@ musicPianoDownMvtI = \relative c' {
 	r8 q q q q4 r
 	r8 q q q q q q q
 % Bars 181 to 185
-	<e a b> q q q <e gis b>^\< q q q
+	<e a b> q q q <e gis b>^\< q q q\!
 	<a, a'>4^\f r r2
 	R1*11
 % Bars 186 to 190
@@ -418,7 +418,7 @@ musicPianoDownMvtI = \relative c' {
 	
 	\mark \default
 % Bars 431 to 435
-	\clef bass <c,, c'>8[ r16 <c e g c>] q4 r8. q16-. q4-.
+	\clef bass <c,, c'>8[ r16 <c e g c>-.] q4-. r8. q16-. q4-.
 	r2 r8. q16-.[ q8.-. q16-.]
 	<g g'>8-.[ r16 q-.] q4-. r8. q16-. q4-.
 	r8. q16-. q4-. r8. q16-. q8.-. q16-.

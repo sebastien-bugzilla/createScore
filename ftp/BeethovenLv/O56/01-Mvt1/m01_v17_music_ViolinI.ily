@@ -80,7 +80,7 @@ musicViolinIMvtI = \relative c' {
 % Bars 61 to 65
 	b4 r r <d,, b' g'>-.
 	<d a' fis'>-. r r q-.
-	<d b' g'> r r8. <b' g'>16-.[ q8.-. q16-.]
+	<d b' g'>-. r r8. <b' g'>16-.[ q8.-. q16-.]
 	<a fis'>4-. r r8. q16-.[ q8.-. q16-.]
 	<b g'>4-. r8. q16-. <c a'>4-. r8. q16-.
 % Bars 66 to 70
@@ -385,7 +385,7 @@ musicViolinIMvtI = \relative c' {
 	d r d r d r d r
 	d r d r d r d r
 	<g, g'> r q r q r q r \mark \default
-	<<c'2^\arco {<g, g'>4 s}>> b'8([ c e8. d16])
+	<<c'2^\arco\ff {<g, g'>4 s}>> b'8([ c e8. d16])
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -599,7 +599,7 @@ musicViolinIMvtI = \relative c' {
 	f8.\f[-. e16-. d8.-. c16-.] b8.[-. d'16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
 	f4-.\ff r r2 \mark \default
-	<g, g'>4\ff r r2
+	<g, g'>4-.\ff r r2
 	c4 r r <g d' b'>8 r
 % Bars 521 to 525
 	<g e' c'> r <g d' b'> r <g e' c'> r <g d' b'> r 

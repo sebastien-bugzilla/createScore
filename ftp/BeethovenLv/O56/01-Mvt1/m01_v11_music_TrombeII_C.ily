@@ -295,7 +295,7 @@ musicTrombeIIMvtI = \relative c' {
 	
 % Bars 461 to 465
 	\mark \default
-	c4 r r2
+	c4\ff r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -303,7 +303,7 @@ musicTrombeIIMvtI = \relative c' {
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4 r c r
-	c8.[-. c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
+	c8.[ c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
 	g4 r r2
 % Bars 471 to 475
 	R1*21
@@ -330,8 +330,8 @@ musicTrombeIIMvtI = \relative c' {
 % Bars 516 to 520
 	
 	r2 r8. g16\f[-. c8.-. c16]-. 
-	c4\ff r r2 \mark \default
-	g4\ff r r2
+	c4-.\ff r r2 \mark \default
+	g4-.\ff r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r

@@ -295,7 +295,7 @@ musicTimpaniMvtI = \relative c {
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4 r c r
-	c8.[-. c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
+	c8.[ c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
 	g4 r r2
 % Bars 471 to 475
 	R1*7
@@ -319,7 +319,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 491 to 495
 	g8 r r8. g16 g8 r r8. g16 \mark \default
 	c8.\mf[ c16-. c8.-. c16]-.  c8 r r4
-	r8. c16[-. c8.-. c16]-. c8 r r4
+	r8. c16[ c8. c16] c8 r r4
 	R1*20
 % Bars 496 to 500
 	

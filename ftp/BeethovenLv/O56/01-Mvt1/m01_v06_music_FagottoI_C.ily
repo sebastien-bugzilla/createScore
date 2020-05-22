@@ -153,7 +153,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	r8. e''16\f[ d8.-. b16-.] a2\sf(~
+	r8. e''16\f[-. d8.-. b16-.] a2\sf(~
 % Bars 166 to 170
 	a8.[ cis16 a8. cis16]) a8 r r4
 	r d(\pp cis8) r r4
@@ -297,7 +297,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	c'1_\cresc
 	b8[( c d8. c16)] c4-. c-.
-	c2~ c8  r c\p r
+	c2~_\f c8  r c\p r
 % Bars 346 to 350
 	a r c r a r f r
 	c'2~ c8 r c4\p(
@@ -390,7 +390,7 @@ musicFagottoIMvtI = \relative c' {
 	ees4 r r8. c16[-. c8.-. c16]-. 
 	c4 r r8. ees16[-. ees8.-. ees16]-. 
 	ees4.. ees16 ees4.. ees16
-	ees8.[-. ees16-. ees8.-. ees16]-. ees8.[-. ees16-. ees8.-. ees16]-. 
+	ees8.[ ees16-. ees8.-. ees16]-. ees8.[-. ees16-. ees8.-. ees16]-. 
 	d4 r r2
 % Bars 471 to 475
 	R1
@@ -428,8 +428,8 @@ musicFagottoIMvtI = \relative c' {
 % Bars 516 to 520
 	r2 r8. d16\f[-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4\ff r r2 \mark \default
-	g'4\ff r r2
+	f4-.\ff r r2 \mark \default
+	g'4-.\ff r r2
 	c,4 r r b'8 r
 % Bars 521 to 525
 	c r b r c r b r
