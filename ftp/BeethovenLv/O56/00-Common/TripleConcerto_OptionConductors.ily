@@ -18,7 +18,7 @@ conductorOptions = {
 	\set Staff.soloIIText = #"2."
 	\override Score.BarNumber #'font-size = #1
 }
-#(set-global-staff-size 13)
+#(set-global-staff-size 19)
 \layout {
 	\context {
 		\Staff
@@ -28,5 +28,5 @@ conductorOptions = {
 		%\override VerticalAxisGroup.remove-first = ##t
 		\override TupletNumber.avoid-slur = #'ignore
 	}
-	#(layout-set-staff-size 13)
+	#(layout-set-staff-size 19)
 }

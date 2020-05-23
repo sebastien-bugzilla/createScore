@@ -36,6 +36,8 @@ moltopiano = \markup {\italic {molto piano}}
 unobassoeviolonc = \markup {Uno Basso e Violonc.}
 tutti = \markup {\italic tutti}
 pstacc = \markup {\dynamic p \italic stacc.}
+moltocantabile = \markup {\italic {molto cantabile}}
+
 
 
 crescText = #(define-music-function
