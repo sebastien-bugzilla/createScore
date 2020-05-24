@@ -46,7 +46,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 16 = 70
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -64,7 +64,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 16 = 70
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -84,7 +84,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 16 = 70
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -105,7 +105,38 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 16 = 70
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \nameClarinetIMvtII \timeMvtII \musicClarinetIMvtII }
+				\new Staff { \nameClarinetIIMvtII \timeMvtII \musicClarinetIIMvtII }
+				\new Staff { \nameFagottoIMvtII \timeMvtII \musicFagottoIMvtII }
+				\new Staff { \nameFagottoIIMvtII \timeMvtII \musicFagottoIIMvtII }
+				\new Staff { \nameCornoIMvtII \timeMvtII \musicCornoIMvtII }
+				\new Staff { \nameCornoIMvtII \timeMvtII \musicCornoIIMvtII }
+				\new Staff { \nameSoloViolinMvtII \timeMvtII \musicSoloViolinMvtII }
+				\new Staff { \nameSoloCelloMvtII \timeMvtII \musicSoloCelloMvtII }
+				\new Staff = "up" { \namePianoUpMvtII \timeMvtII \musicPianoUpMvtII }
+				\new Staff = "down" { \namePianoDownMvtII \timeMvtII \musicPianoDownMvtII }
+				\new Staff { \nameViolinIMvtII \timeMvtII \musicViolinIMvtII }
+				\new Staff { \nameViolinIIMvtII \timeMvtII \musicViolinIIMvtII }
+				\new Staff { \nameViolaMvtII \timeMvtII \musicViolaMvtII }
+				\new Staff { \nameVioloncellMvtII \timeMvtII \musicVioloncellMvtII }
+				\new Staff { \nameBassoMvtII \timeMvtII \musicBassoMvtII }
+			>>
+		>>
+		\midi {
+			\tempo 16 = 70
 			\context {
 				\Voice
 				\remove "Dynamic_performer"

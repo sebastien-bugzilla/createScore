@@ -53,9 +53,9 @@ musicPianoDownMvtII = \relative c {
 	\tuplet 3/2 16 {aes32[\sustainOn aes' c] 
 		ees[ aes] \oneVoice r} 
 		r8 \voiceTwo 
-		\tuplet 3/2 32 {des,,64[\sustainOff ees des']} 
-		r32 
-		\tuplet 3/2 32 {c,64[ ees c']} r32
+		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {des,,64[^(\sustainOff ees des')]} 
+		r32
+		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {c,64[^( ees c'])} r32
 % Bars 26 to 30
 	\tuplet 3/2 16 {g,32[\sustainOn g' bes] 
 		des[ ees g] 
@@ -83,16 +83,16 @@ musicPianoDownMvtII = \relative c {
 % Bars 31 to 35
 	<des des'>( <bes bes'> <g g'>) \mark \default
 	<ees ees'>8.\sf\noBeam <ees ees'>16 <f f'> <g g'>
-	\tuplet 3/2 16 {aes32[\p\sustainOn aes' c] 
+	\oneVoice \tuplet 3/2 16 {aes32[\p\sustainOn aes' c] 
 		ees[ aes c]} 
-		r8 
+		r8 \voiceTwo
 		aes,,64\sustainOff[ aes'] 
 		r32 
 		aes,64[ aes'] 
 		r32
 	\tuplet 3/2 16 {aes,32[\sustainOn aes' bes] 
 		des r r} 
-		r8 
+		\oneVoice r8 \voiceTwo
 		aes,64\sustainOff[ aes'] 
 		r32 
 		aes,64[ aes'] 
@@ -152,9 +152,9 @@ musicPianoDownMvtII = \relative c {
 		d[ g] r } 
 		r16 
 		r8
-	\tuplet 3/2 16 {g,,,32[ b' d] 
-		g[ b d] \change Staff = "up" 
-		g[ b] r} \change Staff = "down" 
+	\tuplet 3/2 16 {g,,,32[^\sempreped b' d] 
+		g[ b d] \change Staff = "up" \voiceTwo
+		g[ b] r} \change Staff = "down" \oneVoice
 		r16 
 		r8
 	\tuplet 3/2 16 {g,,,32[ d'' g] 

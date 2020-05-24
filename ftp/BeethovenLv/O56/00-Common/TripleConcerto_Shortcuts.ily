@@ -29,7 +29,7 @@ legato=^\markup {\italic legato}
 flat=^\markup { \tiny \flat}
 pdolce = \markup { \dynamic p \italic dolce}
 sempreff = \markup {\italic sempre \dynamic ff }
-pizz = \markup {\italic pizz}
+pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
 moltopiano = \markup {\italic {molto piano}}
@@ -37,7 +37,10 @@ unobassoeviolonc = \markup {Uno Basso e Violonc.}
 tutti = \markup {\italic tutti}
 pstacc = \markup {\dynamic p \italic stacc.}
 moltocantabile = \markup {\italic {molto cantabile}}
-
+consordino = \markup {\italic {con sordino}}
+senzasordino = \markup {\italic {senza sordino}}
+pcrescD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
+sempreped = \markup {\italic sempre \musicglyph "pedal.Ped" }
 
 
 crescText = #(define-music-function

@@ -387,32 +387,32 @@ nameSoloCelloMvtIII = {
 namePianoUpMvtI = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"piano"
+	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoUpMvtII = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"piano"
+	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoUpMvtIII = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"piano"
+	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoDownMvtI = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"piano"
+	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoDownMvtII = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"piano"
+	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoDownMvtIII = {
 	\set Staff.instrumentName = ""
 	\set Staff.shortInstrumentName = ""
-	\set Staff.midiInstrument = #"piano"
+	\set Staff.midiInstrument = #"acoustic grand"
 }
 %###############################################################################
 %#                   V O I C E   N A M E   :   V I O L I N I                   #

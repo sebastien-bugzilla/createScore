@@ -13,7 +13,7 @@ musicVioloncellMvtII = \relative c {
 	aes4\p des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
-	ees8.\noBeam \clef tenor ees'32( des c16 bes)
+	ees8.\noBeam \partcombineApart \clef tenor ees'32( des c16 bes)
 	aes4( des16 c)
 % Bars 6 to 10
 	bes8( g ees16 g) \clef bass
@@ -23,7 +23,7 @@ musicVioloncellMvtII = \relative c {
 	ees,( aes c)
 % Bars 11 to 15
 	ees,(_\crescmarkup bes' g)
-	ees8.\sf\noBeam ees16(\p f g)
+	ees8._\sf\noBeam ees16( f g) \partcombineAutomatic
 	aes4( des16 c)
 	bes8( ees8. des16)
 	c8_\crescmarkup c4\f\>

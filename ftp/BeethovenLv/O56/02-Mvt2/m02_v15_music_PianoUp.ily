@@ -105,9 +105,9 @@ musicPianoUpMvtII = \relative c' {
 		ees,[^\decresc g \change Staff = "up" ees'] \change Staff = "down" 
 		ees,[ aes \change Staff = "up" ees'] \change Staff = "down" 
 		ees,[ bes' \change Staff = "up" ees]}
-	r8 
+	\oneVoice r8 
 		\tuplet 3/2 16 {ees32\p[ aes c] 
-		aes[ ees c]} \change Staff = "down" 
+		aes[ ees c]} \voiceOne \change Staff = "down" 
 		r32 
 		\tuplet 3/2 32 {des,64[( g bes)]} 
 		r32 \tuplet 3/2 32 {c,64[( aes' c])}
@@ -121,9 +121,9 @@ musicPianoUpMvtII = \relative c' {
 		\tuplet 3/2 32 {g64[ bes des]}
 	r16^\crescmarkup 
 		\tuplet 3/2 16 {ees,32[ aes c]\sustainOff} 
-		r8 \change Staff = "up" 
+		r8 \change Staff = "up" \oneVoice
 		\tuplet 3/2 16 {r32 c[ e] 
-		g[ bes bes,]} \change Staff = "down" 
+		g[ bes bes,]} \change Staff = "down" \voiceOne
 % Bars 36 to 40
 	r32^\crescmarkup 
 		\tuplet 3/2 32 {f64[ aes \change Staff = "up" f']} \change Staff = "down" 

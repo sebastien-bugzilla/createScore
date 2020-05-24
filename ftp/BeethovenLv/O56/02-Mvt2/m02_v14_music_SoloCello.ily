@@ -14,7 +14,7 @@ musicSoloCelloMvtII = \relative c'' {
 	
 	
 	r8 r16 \clef treble g(_\moltocantabile aes bes)
-	c4( b16 c)
+	c4( bes16 c)
 % Bars 6 to 10
 	des8( ees8.\sfp des16)
 	c8[(~ c16. bes32]) c16.( d32)
