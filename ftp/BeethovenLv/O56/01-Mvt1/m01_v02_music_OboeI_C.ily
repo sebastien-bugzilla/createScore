@@ -207,7 +207,7 @@ musicOboeIMvtI = \relative c'' {
 	e8 e4 e e e8~
 	e e4 e e e8~
 % Bars 241 to 245
-	e2(_\> fis_\p
+	e2(_\> f_\p
 	b,2. e4
 	a,) r r2
 	R1*33

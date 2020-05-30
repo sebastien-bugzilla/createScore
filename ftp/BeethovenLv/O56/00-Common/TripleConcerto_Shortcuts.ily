@@ -41,7 +41,9 @@ consordino = \markup {\italic {con sordino}}
 senzasordino = \markup {\italic {senza sordino}}
 pcrescD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
 sempreped = \markup {\italic sempre \musicglyph "pedal.Ped" }
-
+rallentando = \markup {\italic rallentando}
+atempo=^\markup {\bold {a tempo}}
+fermatacentered=^\markup {\musicglyph "scripts.ufermata"}
 
 crescText = #(define-music-function
 	(cresctext)
@@ -59,6 +61,15 @@ dimText = #(define-music-function
 		\once \set decrescendoSpanner = #'text
 	#}
 )
+fermataCentered  = #(define-music-function
+	()
+	()
+	#{
+		\once \override Score.MultiMeasureRest.transparent = ##t 
+		R2.^\markup {\musicglyph "scripts.ufermata"}
+	#}
+)
+
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

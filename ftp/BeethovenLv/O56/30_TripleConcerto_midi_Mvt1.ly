@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_NameVoice.ily"
@@ -55,7 +56,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 120
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -76,7 +77,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 120
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -91,12 +92,14 @@
 			\new StaffGroup <<
 				\new Staff { \timeMvtI \musicSoloViolinMvtI }
 				\new Staff { \timeMvtI \musicSoloCelloMvtI }
-				\new Staff { \timeMvtI \musicPianoUpMvtI }
-				\new Staff { \timeMvtI \musicPianoDownMvtI }
+				\new PianoStaff <<
+					\new Staff = "up" { \timeMvtI \musicPianoUpMvtI }
+					\new Staff = "down" { \timeMvtI \musicPianoDownMvtI }
+				>>
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 120
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -117,7 +120,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 120
 			\context {
 				\Voice
 				\remove "Dynamic_performer"

@@ -53,8 +53,8 @@ musicClarinetIMvtIII = \relative c'' {
 	c4\f e, g
 	c16 b c d e d e f g g, a b
 % Bars 56 to 60
-	c4. e8\sf( g, b) \mark \default
-	c r r4 r
+	c4. e8( g, b) \mark \default
+	\once \partcombineApart c r r4 r
 	c8-. e\sf-. g,-. c\sf-. e,-. g'\sf-. 
 	c, e\sf g, c\sf e, g\sf
 	c, r c' r c r
@@ -70,7 +70,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	d,2.\pp~
+	d,2.~
 % Bars 81 to 85
 	d~
 	d2 d4
@@ -99,7 +99,7 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 116 to 120
 	
 	
-	<< e2.~ {s8\pp\< s s s\> s s}>>
+	<< e2.~ {s8\pp\< s s s s s\>}>>
 	e8\! r r4 r
 	R2.*29
 % Bars 121 to 125
@@ -127,11 +127,11 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 156 to 160
 	e4. c'8 c d
 	c r e,16 d e f g e f g
-	a f g a d,8( d'4) d8
+	a f g a \partcombineApart d,8( d'4) \partcombineAutomatic d8
 	d4\sf( c8) r f,4(\sf
 	e8) r r4 r
 % Bars 161 to 165
-	e'4\sf~ e8 r r4
+	e'4\sf( e8) r r4
 	r c(\f f,8) r
 	R2.*3
 % Bars 166 to 170
@@ -139,7 +139,7 @@ musicClarinetIMvtIII = \relative c'' {
 	b8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4.\sf f8 e d
-	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
+	\acciaccatura d c-. b-. c-. d-. e-. e,-.
 % Bars 171 to 175
 	a\p r r4 r
 	R2.*3
@@ -220,7 +220,7 @@ musicClarinetIMvtIII = \relative c'' {
 	r r8 d4 d8
 	d4(\ff c8) r d4(\sf
 	c8) r e r e r
-	e r c, r r4
+	e r \once \partcombineApart c, r r4
 	R2.*5
 % Bars 256 to 260
 	
@@ -237,7 +237,7 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 271 to 275
 	
 	
-	g2.\pp~
+	g2.~
 	g~
 	g
 % Bars 276 to 280
@@ -255,7 +255,7 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 286 to 290
 	e\f r g, r g r
 	R2.
-	g2.\f
+	g2.
 	R2.*10
 % Bars 291 to 295
 	
@@ -297,7 +297,7 @@ musicClarinetIMvtIII = \relative c'' {
 	f8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8^\fermata \tempo "Allegro." r } {\fermataCentered}>> \bar "||"
+	<< { r4 r r8 \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
@@ -324,12 +324,12 @@ musicClarinetIMvtIII = \relative c'' {
 	g8\f( a16 b c8 d)
 	e4( c8) r
 	R2
-	r4 g8 g
+	r4 \partcombineApart g8 g \partcombineAutomatic
 % Bars 391 to 395
 	g(\f a16 b c8 b)
 	c4.\sf r8
 	c4.\sf r8
-	g4.\sf r8
+	\once \partcombineApart g4. r8
 	aes2
 % Bars 396 to 400
 	g\ff~
@@ -392,10 +392,10 @@ musicClarinetIMvtIII = \relative c'' {
 	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
 	c, r r4 r
 	c8 r r4 e8\sf r
-	c r r4 c'8\sf r
+	\once \partcombineApart c r r4 c'8\sf r
 % Bars 471 to 475
-	c, r r4 c8\sf r
-	c' r g r e r 
+	\once \partcombineApart c, r r4 \once \partcombineApart c8 r
+	\once \partcombineApart c' r \once \partcombineApart g r \once \partcombineApart e r 
 	c' r r4 r 
 	c8 r r4 r
 	c8 r r4 r \bar "|."
