@@ -5,7 +5,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombeIIMvtIII = \relative c' {
+musicTrombeIMvtIII = \relative c'' {
 	\clef treble
 	\key c \major
 %	\transposition a
@@ -35,29 +35,29 @@ musicTrombeIIMvtIII = \relative c' {
 	g4 c4. c8
 	c c g\noBeam g4 g8
 % Bars 41 to 45
-	g4 g8 r g4\sf(
-	c8) r r4 r 
+	g4 g8 r g4(
+	c,8) r r4 r 
 	R2.*3
 % Bars 46 to 50
 	d'4.\sf d16 d d8 d
 	d8 d4\sf d16 d d8 d
-	d g,,4\sf g16 g g8 g
+	d g,4\sf g16 g g8 g
 	r4 g8 r g r 
-	c\p r r4 r
+	\once \partcombineApart c,\p r r4 r
 % Bars 51 to 55
 	R2.
-	c2._\pcresc
-	g
-	c4\f e g,8. g16
-	c4 e g,8. g16
+	\once \partcombineApart c2.
+	g'
+	\partcombineApart c,4 e \partcombineAutomatic g8. g16
+	c4 \once \partcombineApart e, g8. g16
 % Bars 56 to 60
-	c4. g8\sf g g \mark \default
+	\once \partcombineApart c,4. g'8\sf g g \mark \default
 	c8 r r4 r
 	c8 r c r c r
-	c c c c c c 
-	c r g' r e r
+	c c c c c c
+	\once \partcombineApart c, r \once \partcombineApart g' r \once \partcombineApart e r
 % Bars 61 to 65
-	c r r4 r
+	\once \partcombineApart c r r4 r
 	R2.*31
 % Bars 66 to 70
 	
@@ -77,7 +77,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
-	r4 r r8 g\p
+	r4 r r8 g'\p
 	c r r4  r8 g
 % Bars 101 to 105
 	c r r4 r8 g
@@ -122,17 +122,17 @@ musicTrombeIIMvtIII = \relative c' {
 	g4 c4. c8
 	c c g\noBeam g4 g8
 	g4 g8 r g4\sf(
-	c8) r r4 r
+	e8) r r4 r
 % Bars 161 to 165
-	e4\sf e8 r r4
+	e'4\sf e8 r r4
 	r4 c\sf c8 r
 	R2.*2
 	
-	e8\f e16 e e8 e e e
+	e,8\f e16 e e8 e e e
 % Bars 166 to 170
 	e\p r r4 r
 	R2.
-	e8\sf e16 e e8\sf e16 e e8\sf e16 e
+	e'8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
 	R2.*9
 % Bars 171 to 175
@@ -160,8 +160,8 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 221 to 225
 	r4 r g,\p \mark \default
-	c8\f-. r r4 r
-	g8 r r4 r
+	\partcombineApart c8-. g-. c-. g-. e-. c-. 
+	g \partcombineAutomatic r r4 r
 	R2.*20
 % Bars 226 to 230
 	
@@ -173,19 +173,19 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
-	r4 r g8\ff g
+	r4 r g'8\ff g
 	g2 g8 g
 % Bars 246 to 250
 	g4 c4. c8
-	c r r4 r8 d'~
-	d d d\noBeam g,,4 g8
+	c r r4 r8 \partcombineApart d~
+	d d d\noBeam \partcombineAutomatic g,4 g8
 	g4. g8 g g
 	g4 c4. c16 c
 % Bars 251 to 255
 	c8 r g4 r8 g16 g
 	g4(\ff c8) r g4\sf(
-	c8) r g' r e r
-	c r c r r4
+	c8) r \once \partcombineApart g r \once \partcombineApart e r
+	\once \partcombineApart c r \once \partcombineApart c r r4
 	R2.*7
 % Bars 256 to 260
 	
@@ -205,7 +205,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	\mark \default
 % Bars 286 to 290
-	c8\f r c r c r
+	e8\f r e r e r
 	R2.
 	g8\f r g r g r
 	R2.*3
@@ -239,8 +239,8 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	g2._\pcresc \mark \default
 % Bars 326 to 330
-	c8\f-. g-. c-. g'-. e-. c-. 
-	g r g r g r
+	\partcombineApart c8-. g-. c-. g-. e-. c-. \partcombineAutomatic
+	g' r g r g r
 	g r r4 r
 	g8 r r4 r
 	g8 r r4 r
@@ -324,8 +324,8 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 456 to 460
 	
-	c2.\f
-	g \mark \default
+	\once \partcombineApart c,2.
+	g' \mark \default
 	c4. g8\sf g g
 	c r r4 r
 % Bars 461 to 465
@@ -338,12 +338,12 @@ musicTrombeIIMvtIII = \relative c' {
 	c r r4 r
 	c8 c\sf c c\sf c c\sf
 	c r r4 r
-	c8 r r4 c8\sf r
-	c r r4 c8\sf r
+	\once \partcombineApart c,8 r r4 \once \partcombineApart c8 r
+	\once \partcombineApart c r r4 e8\sf r
 % Bars 471 to 475
-	c r r4 c8\sf r
-	c' r g r e r
-	c r r4 r
-	c8 r r4 r
-	c8 r r4 r \bar "|."
+	\once \partcombineApart c r r4 e8\sf r
+	\once \partcombineApart c' r \once \partcombineApart g r \once \partcombineApart e r
+	e r r4 r
+	c'8 r r4 r
+	\once \partcombineApart c,8 r r4 r \bar "|."
 }

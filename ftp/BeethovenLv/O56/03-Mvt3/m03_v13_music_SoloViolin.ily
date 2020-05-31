@@ -5,18 +5,27 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicSoloViolinMvtIII = \relative c {
+musicSoloViolinMvtIII = \relative c'' {
 	\clef treble
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	
+	R2.*7
 % Bars 6 to 10
 	
+	
+	r4 r ais16(_\sottovoce b) ais( b)
+	b4.( cis16 dis e8 fis)
+	gis4( e4. dis8)
 % Bars 11 to 15
-	
+	cis8( a'~ a) a16( gis) gis( fis) fis( e)
+	e( dis) dis( cis) cis( b) ais( b) ais( b) ais( b)
+	b4.( cis16 dis e8 fis)
+	g!4( e4. d!8)
+	cis( a' d,4. c8)
 % Bars 16 to 20
-	
+	b(\p g' c,) r r4
+	R2.
 % Bars 21 to 25
 	
 % Bars 26 to 30

@@ -47,8 +47,8 @@ musicFagottoIMvtIII = \relative c' {
 	a'4.\sf a16 a a8 a
 	b8 a4\sf a16 a a8 a
 	b8 b4\sf b16 b b8-. a-.
-	a8. a16 g8 r g, r
-	c\p r r4 r
+	a8. a16 \once \partcombineApart g8 r \once \partcombineApart g, r
+	\once \partcombineApart c r r4 r
 % Bars 51 to 55
 	R2.
 	c'4._\crescmarkup e32[( g16.]) g32([ e16.]) e32[( c16.])
@@ -96,8 +96,8 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 91 to 95
 	d r r4 r
 	r g,8\p r a r \mark \default
-	g\noBeam\f b([\trill \grace {a16[ b]} g8)] d'\trill[( \grace {c16[ d]} b8]) \afterGrace g'8\trill {fis16[ g]}
-	g4\p( fis8) r r4
+	\partcombineApart g\noBeam b([\trill \grace {a16[ b]} g8)] d'\trill[( \grace {c16[ d]} b8]) \afterGrace g'8\trill {fis16[ g]}
+	g4\p( fis8) r r4 \partcombineAutomatic
 	a,8\f fis a fis a fis
 % Bars 96 to 100
 	b\p r r4 r
@@ -140,13 +140,13 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	r4 r \acciaccatura fis8 g\ff \acciaccatura fis g
+	r4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 156 to 160
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4) c4.\sf( b8)
 	a( f') b,(\noBeam g'4) g8
-	g4(\sf c,8) r g4(\sf
-	c,8) r r4 r 
+	g4( c,8) r \partcombineApart g4(
+	c,8) \partcombineAutomatic r r4 r 
 % Bars 161 to 165
 	e4(\sf a8) r r4
 	r4 c(\sf f,8) r
@@ -172,7 +172,7 @@ musicFagottoIMvtIII = \relative c' {
 	r8 c16\pp c c8 c c c
 	r8 c16 c c8 c c c
 % Bars 181 to 185
-	r8 e16 e e8 e f f
+	r8 e16 e e8 e \partcombineApart f f \partcombineAutomatic
 	e r r4 r
 	r8 c16\pp c c8 c c c
 	r8 c16 c c8 c c c
@@ -191,12 +191,12 @@ musicFagottoIMvtIII = \relative c' {
 	r8 \clef tenor e16 e e8 e e e
 % Bars 196 to 200
 	r8 e16 e e8 e g g
-	r8 f16 f f8 f g g
+	r8 f16 f f8 f \partcombineApart g g \partcombineAutomatic
 	f r r4 r
 	\clef bass r8 b,16 b b8 b b b
 	r8 b16 b b8 b d d
 % Bars 201 to 205
-	r8 c16 c c8 c d d
+	r8 c16 c c8 c \partcombineApart d d \partcombineAutomatic
 	c8 r r4 r4
 	R2.*6
 % Bars 206 to 210
@@ -231,7 +231,7 @@ musicFagottoIMvtIII = \relative c' {
 	
 	
 	
-	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8 g \acciaccatura fis g
 	g4.( a16 b c8 d)
 % Bars 246 to 250
 	e4( c4.\sf b8)
@@ -242,8 +242,8 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 251 to 255
 	a( f') b,(\noBeam g'4) g8
 	g4(\ff c,8) r g'4(\sf
-	c,8) r g r e r
-	c r c r r4
+	c,8) r \once \partcombineApart g r \once \partcombineApart e r
+	\once \partcombineApart c r \once \partcombineApart c r r4
 	r e'4(\p f8) r 
 % Bars 256 to 260
 	R2.*3
@@ -278,8 +278,8 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 286 to 290
 	e\f r g, r g r
 	g2.\p
-	g8\f\noBeam b8\trill([ \grace {a16[ b]} g8)] d'\trill([ \grace {cis16[ d]} b8]) \afterGrace g'8\trill {fis16[ g]}
-	f!4\p( e8) r r4
+	\partcombineApart g8\f\noBeam b8\trill([ \grace {a16[ b]} g8)] d'\trill([ \grace {cis16[ d]} b8]) \afterGrace g'8\trill {fis16[ g]}
+	f!4\p( e8) r r4 \partcombineAutomatic
 	R2.*9
 % Bars 291 to 295
 	
@@ -366,9 +366,9 @@ musicFagottoIMvtIII = \relative c' {
 	b( c b a) g8-. g-.
 % Bars 391 to 395
 	g\f( a16 b c8 d)
-	ees4(\sf c8) r
-	ees4(\sf c8) r
-	ees4(\sf bes8) r
+	ees4( c8) r
+	ees4( c8) r
+	ees4( bes8) r
 	d2
 % Bars 396 to 400
 	d~\ff
@@ -417,7 +417,7 @@ musicFagottoIMvtIII = \relative c' {
 	c\f r c r r4
 	a8\pp-. a-. a-. a-. a-. a-. 
 % Bars 446 to 450
-	b\f r g r r4
+	b\f r \once \partcombineApart g r r4
 	c8\pp-. c-. c-. c-. c-. c-. 
 	c\f r c r r4
 	a8 r a r r4

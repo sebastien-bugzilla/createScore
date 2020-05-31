@@ -27,12 +27,12 @@
 \include "./03-Mvt3/m03_v03_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v04_music_ClarinetI_C.ily"
 \include "./03-Mvt3/m03_v05_music_ClarinetII_C.ily"
-\include "./03-Mvt3/m03_v06_music_FagottoI.ily"
-\include "./03-Mvt3/m03_v07_music_FagottoII.ily"
-\include "./03-Mvt3/m03_v08_music_CornoI.ily"
-\include "./03-Mvt3/m03_v09_music_CornoII.ily"
-\include "./03-Mvt3/m03_v10_music_TrombeI.ily"
-\include "./03-Mvt3/m03_v11_music_TrombeII.ily"
+\include "./03-Mvt3/m03_v06_music_FagottoI_C.ily"
+\include "./03-Mvt3/m03_v07_music_FagottoII_C.ily"
+\include "./03-Mvt3/m03_v08_music_CornoI_C.ily"
+\include "./03-Mvt3/m03_v09_music_CornoII_C.ily"
+\include "./03-Mvt3/m03_v10_music_TrombeI_C.ily"
+\include "./03-Mvt3/m03_v11_music_TrombeII_C.ily"
 \include "./03-Mvt3/m03_v12_music_Timpani.ily"
 \include "./03-Mvt3/m03_v13_music_SoloViolin.ily"
 \include "./03-Mvt3/m03_v14_music_SoloCello.ily"
@@ -64,42 +64,45 @@
 	\score {
 		<<
 %			\new StaffGroup <<
-				\new Staff <<
+%				\new Staff <<
+%%					\new Voice {
+%%						\formatConductorMvtIII
+%%					}
 %					\new Voice {
-%						\formatConductorMvtIII
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffIMvtIII
+%						\musicFloteMvtIII
 %					}
-					\new Voice {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffIMvtIII
-						\musicFloteMvtIII
-					}
-				>>
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffIIMvtIII
-					\partcombine #'(0 . 12) \musicOboeIMvtIII \musicOboeIIMvtIII
-%					\musicOboeIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffIIIMvtIII
-					\partcombine \musicClarinetIMvtIII \musicClarinetIIMvtIII
-%					\musicClarinetIIMvtIII
-				}
+%				>>
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffIIMvtIII
+%					\partcombine #'(0 . 12) \musicOboeIMvtIII \musicOboeIIMvtIII
+%%					\musicOboeIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffIIIMvtIII
+%					\partcombine \musicClarinetIMvtIII \musicClarinetIIMvtIII
+%%					\musicClarinetIIMvtIII
+%				}
 %				\new Staff {
 %					\timeMvtIII \generalOptions \conductorOptions
 %					\nameStaffIVMvtIII
-%					\partcombine \musicFagottoIMvtIII \musicFagottoIIMvtIII
+%					\partcombine #'(0 . 16) \musicFagottoIMvtIII \musicFagottoIIMvtIII
+%%					\musicFagottoIIMvtIII 
 %				}
 %				\new Staff {
 %					\timeMvtIII \generalOptions \conductorOptions
 %					\nameStaffVMvtIII
-%					\partcombine \musicCornoIMvtIII \musicCornoIIMvtIII
+%					\partcombine #'(0 . 16) \musicCornoIMvtIII \musicCornoIIMvtIII
+%%					\musicCornoIIMvtIII
 %				}
 %				\new Staff {
 %					\timeMvtIII \generalOptions \conductorOptions
 %					\nameStaffVIMvtIII
 %					\partcombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
+%%					\musicTrombeIIMvtIII
 %				}
 %				\new Staff {
 %					\timeMvtIII \generalOptions \conductorOptions
@@ -107,11 +110,11 @@
 %					\musicTimpaniMvtIII
 %				}
 %			>>
-%			\new Staff {
-%				\timeMvtIII \generalOptions \conductorOptions
-%				\nameStaffVIIIMvtIII
-%				\musicSoloViolinMvtIII
-%			}
+			\new Staff {
+				\timeMvtIII \generalOptions \conductorOptions
+				\nameStaffVIIIMvtIII
+				\musicSoloViolinMvtIII
+			}
 %			\new Staff {
 %				\timeMvtIII \generalOptions \conductorOptions
 %				\nameStaffIXMvtIII

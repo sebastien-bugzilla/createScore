@@ -35,8 +35,8 @@ musicTrombeIIMvtIII = \relative c' {
 	g4 c4. c8
 	c c g\noBeam g4 g8
 % Bars 41 to 45
-	g4 g8 r g4\sf(
-	c8) r r4 r 
+	g4 g8 r g4\sf\(
+	c8\) r r4 r 
 	R2.*3
 % Bars 46 to 50
 	d'4.\sf d16 d d8 d
@@ -237,7 +237,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
-	g2._\pcresc \mark \default
+	g2. \mark \default
 % Bars 326 to 330
 	c8\f-. g-. c-. g'-. e-. c-. 
 	g r g r g r

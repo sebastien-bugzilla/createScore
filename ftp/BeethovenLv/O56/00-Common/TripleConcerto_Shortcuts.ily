@@ -43,7 +43,8 @@ pcrescD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cr
 sempreped = \markup {\italic sempre \musicglyph "pedal.Ped" }
 rallentando = \markup {\italic rallentando}
 atempo=^\markup {\bold {a tempo}}
-fermatacentered=^\markup {\musicglyph "scripts.ufermata"}
+sottovoce = ^\markup {\italic {sotto voce}}
+
 
 crescText = #(define-music-function
 	(cresctext)
