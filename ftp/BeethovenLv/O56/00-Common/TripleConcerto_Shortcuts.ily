@@ -6,27 +6,27 @@
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
 
-piuallegro=^\markup {Più Allegro}
-crescmarkup=^\markup {\italic cresc.}
+piuallegro = \markup {Più Allegro}
+crescmarkup = \markup {\italic cresc.}
 semprep = \markup { \italic sempre \dynamic p}
 semprepp = \markup { \italic sempre \dynamic pp}
 pcresc = \markup { \dynamic p \italic cresc.}
-dimmarkup=^\markup {\italic dim.}
+dimmarkup = \markup {\italic dim.}
 fcresc = \markup { \dynamic f \italic cresc.}
-dolce=^\markup {\italic {dolce}}
+dolce = \markup {\italic {dolce}}
 sempreppD = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp"))
-semprestaccato=^\markup {\italic {sempre staccato}}
-cantabile=^\markup {\italic cantabile}
+semprestaccato = \markup {\italic {sempre staccato}}
+cantabile = \markup {\italic cantabile}
 pdim = \markup { \dynamic p \italic dim.}
 fmarcato = \markup { \dynamic f \italic marcato}
-sharp =^\markup {\tiny \sharp} 
-espressivo=^\markup {\italic {espressivo}}
-plegato=^\markup {\dynamic p \italic {legato}}
-piuf=^\markup {\italic {più} \dynamic f}
-decresc=^\markup {\italic decresc.}
-dimin=^\markup {\italic dimin.}
-legato=^\markup {\italic legato}
-flat=^\markup { \tiny \flat}
+sharp = \markup {\tiny \sharp} 
+espressivo = \markup {\italic {espressivo}}
+plegato = \markup {\dynamic p \italic {legato}}
+piuf = \markup {\italic {più} \dynamic f}
+decresc = \markup {\italic decresc.}
+dimin = \markup {\italic dimin.}
+legato = \markup {\italic legato}
+flat = \markup { \tiny \flat}
 pdolce = \markup { \dynamic p \italic dolce}
 sempreff = \markup {\italic sempre \dynamic ff }
 pizz = \markup {\italic pizz.}
@@ -42,9 +42,12 @@ senzasordino = \markup {\italic {senza sordino}}
 pcrescD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
 sempreped = \markup {\italic sempre \musicglyph "pedal.Ped" }
 rallentando = \markup {\italic rallentando}
-atempo=^\markup {\bold {a tempo}}
-sottovoce = ^\markup {\italic {sotto voce}}
-
+atempo = \markup {\bold {a tempo}}
+sottovoce = \markup {\italic {sotto voce}}
+staccato = \markup {\italic staccato}
+natural = \markup {\tiny \natural} 
+psottovoce = \markup {\dynamic p \italic {sott voce}}
+crescsottovoce = \markup {\italic {cresc. sotto voce}}
 
 crescText = #(define-music-function
 	(cresctext)
@@ -68,6 +71,13 @@ fermataCentered  = #(define-music-function
 	#{
 		\once \override Score.MultiMeasureRest.transparent = ##t 
 		R2.^\markup {\musicglyph "scripts.ufermata"}
+	#}
+)
+textSpanner = #(define-music-function
+	(textSpanner)
+	(markup?)
+	#{
+		\once \override TextSpanner.bound-details.left.text = \markup {\italic { #textSpanner } }
 	#}
 )
 
