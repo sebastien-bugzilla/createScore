@@ -46,8 +46,15 @@ atempo = \markup {\bold {a tempo}}
 sottovoce = \markup {\italic {sotto voce}}
 staccato = \markup {\italic staccato}
 natural = \markup {\tiny \natural} 
-psottovoce = \markup {\dynamic p \italic {sott voce}}
+psottovoce = \markup {\dynamic p \italic {sotto voce}}
 crescsottovoce = \markup {\italic {cresc. sotto voce}}
+pespressivo = \markup {\dynamic p \italic espressivo}
+legato = \markup {\italic legato}
+decresc = \markup {\italic decresc.}
+stacc = \markup {\italic stacc.}
+dimin = \markup {\italic dimin.}
+ppsempre = \markup {\dynamic pp \italic sempre}
+
 
 crescText = #(define-music-function
 	(cresctext)
