@@ -132,30 +132,31 @@
 					\musicPianoDownMvtIII
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffXIIMvtIII
-%						\musicViolinIMvtIII
-%					}
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffXIIIMvtIII
-%						\musicViolinIIMvtIII
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIII \generalOptions \conductorOptions
-%					\nameStaffXIVMvtIII
-%					\musicViolaMvtIII
-%				}
-%				\new Staff {
-%					\timeMvtIII \generalOptions \conductorOptions
-%					\nameStaffXVMvtIII
-%					\partcombine \musicVioloncellMvtIII \musicBassoMvtIII
-%				}
-%			>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffXIIMvtIII
+						\musicViolinIMvtIII
+					}
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffXIIIMvtIII
+						\musicViolinIIMvtIII
+					}
+				>>
+				\new Staff {
+					\timeMvtIII \generalOptions \conductorOptions
+					\nameStaffXIVMvtIII
+					\musicViolaMvtIII
+				}
+				\new Staff {
+					\timeMvtIII \generalOptions \conductorOptions
+					\nameStaffXVMvtIII
+					\partcombine \musicVioloncellMvtIII \musicBassoMvtIII
+%					\musicBassoMvtIII
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##t
