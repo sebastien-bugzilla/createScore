@@ -211,7 +211,7 @@ musicPianoDownMvtI = \relative c' {
 	d1~\startTrillSpan
 % Bars 221 to 225
 	d2~ d16\stopTrillSpan gis,, a b c d e fis
-	gis b, c d e fis g a b d, e fis g a b c
+	gis b, c d e fis gis a b d, e fis gis a b c
 	d1\startTrillSpan~
 	\afterGrace d {c16[(\stopTrillSpan d)]} \mark \default
 	c4 r r2
@@ -382,7 +382,7 @@ musicPianoDownMvtI = \relative c' {
 	r2 r8 \clef treble g''16( b a c b d)
 	c e g e g e g e d c b c d cis bis cis
 % Bars 406 to 415
-	e d cis d fis e dis e g fis e fis a g fis g
+	e d cis d f e dis e g f e f a g fis g
 	<<{
 		f,!4( a c f!)
 		f,( aes c f)

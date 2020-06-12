@@ -46,7 +46,7 @@ musicViolaMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	r4 <b d>\ff^\arco\fermata r
+	\grace {s8.} r4 <b d>\ff^\arco\fermata r
 	R2.*2
 	
 	c8(\pp-. c-. c-. c-. c-. c)-. 
@@ -171,7 +171,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	\mark \default
-	r4 <b d>\ff^\arco\fermata r
+	\grace {s8.} r4 <b d>\ff^\arco\fermata r
 	R2.*2
 % Bars 151 to 155
 	
@@ -367,7 +367,7 @@ musicViolaMvtIII = \relative c' {
 	g8 r r4 b8^\pizz\p r
 % Bars 331 to 335
 	b r r4 r
-	<<{r4 r r8 \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*3
 	
 	

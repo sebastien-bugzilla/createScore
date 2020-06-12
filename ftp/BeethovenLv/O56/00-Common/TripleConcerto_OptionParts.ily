@@ -9,6 +9,9 @@ generalOptions = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\override Score.RehearsalMark #'font-size = #4
 	\compressFullBarRests
+	\override BreathingSign.text = \markup {
+		\musicglyph "scripts.caesura.curved"
+	}
 }
 partOptions = {
 	\override Score.BarNumber #'font-size = #0.1

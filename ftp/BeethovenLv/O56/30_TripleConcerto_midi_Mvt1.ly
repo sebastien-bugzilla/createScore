@@ -92,10 +92,6 @@
 			\new StaffGroup <<
 				\new Staff { \timeMvtI \musicSoloViolinMvtI }
 				\new Staff { \timeMvtI \musicSoloCelloMvtI }
-				\new PianoStaff <<
-					\new Staff = "up" { \timeMvtI \musicPianoUpMvtI }
-					\new Staff = "down" { \timeMvtI \musicPianoDownMvtI }
-				>>
 			>>
 		>>
 		\midi {
@@ -112,11 +108,31 @@
 	\score {
 		<<
 			\new StaffGroup <<
+				\new PianoStaff <<
+					\new Staff = "up" { \timeMvtI \musicPianoUpMvtI }
+					\new Staff = "down" { \timeMvtI \musicPianoDownMvtI }
+				>>
+			>>
+		>>
+		\midi {
+			\tempo 4 = 120
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeV")
+	\score {
+		<<
+			\new StaffGroup <<
 				\new Staff { \timeMvtI \musicViolinIMvtI }
 				\new Staff { \timeMvtI \musicViolinIIMvtI }
 				\new Staff { \timeMvtI \musicViolaMvtI }
 				\new Staff { \timeMvtI \musicVioloncellMvtI }
-				\new Staff { \timeMvtI \musicBassoMvtI }
+				%\new Staff { \timeMvtI \musicBassoMvtI }
 			>>
 		>>
 		\midi {

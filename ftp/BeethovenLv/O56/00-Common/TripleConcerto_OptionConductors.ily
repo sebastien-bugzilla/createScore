@@ -12,6 +12,9 @@ generalOptions = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\override Score.RehearsalMark #'font-size = #4
 	\compressFullBarRests
+	\override BreathingSign.text = \markup {
+		\musicglyph "scripts.caesura.curved"
+	}
 }
 conductorOptions = {
 	\set Staff.soloText = #"1."

@@ -139,8 +139,8 @@ musicPianoUpMvtIII = \relative c {
 % Bars 146 to 150
 	<d g b d>8 r r4 r
 	<g b d g>8 r r4 r
-	\tuplet 6/4 4 {r16_\crescmarkup f'!( e f e f) d( b' ais b ais b) f( d' cis d cis d)} 
-	\grace {cis16[( d e]} \mark \default d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
+	\tuplet 6/4 4 {r16_\crescmarkup f'!( e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark \default 
+	\grace {cis16[( d e]} d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 151 to 155
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
@@ -333,7 +333,7 @@ musicPianoUpMvtIII = \relative c {
 	b8) r r4 r
 % Bars 331 to 335
 	R2.
-	<< { <d, aes'>4\p\fermata r r8 \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	<< { <d, aes'>4\p\fermata r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*3
 % Bars 336 to 340
 	r4 r8 d'16( b

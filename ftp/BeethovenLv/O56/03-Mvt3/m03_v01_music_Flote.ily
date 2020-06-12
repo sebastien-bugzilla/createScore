@@ -29,7 +29,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	\mark #4
 % Bars 31 to 35
-	r4 f\fermata\ff r
+	\grace {s8.} r4 f\fermata\ff r
 	R2.*5
 % Bars 36 to 40
 	
@@ -114,7 +114,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	r4 f\fermata\ff r
+	\grace {s8.} r4 f\fermata\ff r
 	R2.*5
 % Bars 151 to 155
 	
@@ -248,7 +248,7 @@ musicFloteMvtIII = \relative c''' {
 	b8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< { r4 r r8 \tempo "Allegro." r } {\fermataCentered}>> \bar "||"
+	<< { r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	

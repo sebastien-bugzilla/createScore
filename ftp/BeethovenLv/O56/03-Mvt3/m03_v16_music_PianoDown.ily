@@ -134,8 +134,8 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 146 to 150
 	<g, g'>8 r r4 r
 	q8 r r4 r
-	\tuplet 6/4 4 {q16\noBeam d'''( cis d cis d) \clef treble b d'( cis d cis d) b( f' e f e f)} 
-	\grace {e16[( f g]} \mark \default f2)\fermata \acciaccatura fis,8 g \acciaccatura fis g
+	\tuplet 6/4 4 {q16\noBeam d'''( cis d cis d) \clef treble b d'( cis d cis d) b( f' e f e f)} \mark \default 
+	\grace {e16[( f g]} f2)\fermata \acciaccatura fis,8 g \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 151 to 155
 	\acciaccatura fis g4 r r
@@ -328,7 +328,7 @@ musicPianoDownMvtIII = \relative c, {
 	b8) r r4 r
 % Bars 331 to 335
 	R2. \clef bass
-	<< { b4\fermata r r8 \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<< { b4\fermata r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*3
 	
 	

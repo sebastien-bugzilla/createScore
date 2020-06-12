@@ -348,7 +348,7 @@ musicViolinIIMvtI = \relative c' {
 	ees
 	f\fp
 	ees\fp
-	<bes d>8 q q q r q q q
+	<b d>8 q q q r q q q
 	r <c ees> q q r q q q
 % Bars 301 to 305
 	r <d f> q q r q q q
@@ -538,7 +538,7 @@ musicViolinIIMvtI = \relative c' {
 	ees8.[ c16-. g8.-. c16-.] ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4\sf~
 	ees8.[ c16-. ees8.-. c16]-. ees8.[-. c16-. ees8.-. c16]-.
-	bes4\fp r r2
+	b4\fp r r2
 % Bars 471 to 475
 	R1*3
 	

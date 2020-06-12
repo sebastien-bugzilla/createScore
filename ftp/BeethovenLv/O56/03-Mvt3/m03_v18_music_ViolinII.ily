@@ -46,7 +46,7 @@ musicViolinIIMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	r4 <g f' d'>\ff\fermata^\arco r
+	\grace {s8.} r4 <g f' d'>\ff\fermata^\arco r
 	R2.*2
 	
 	e'8\pp(-. e-. e-. e-. e-. e-.)
@@ -171,7 +171,7 @@ musicViolinIIMvtIII = \relative c' {
 	
 	
 	\mark \default
-	r4 <g f' d'>4\fermata\ff^\arco r
+	\grace {s8.} r4 <g f' d'>4\fermata\ff^\arco r
 	R2.*2
 % Bars 151 to 155
 	
@@ -369,7 +369,7 @@ musicViolinIIMvtIII = \relative c' {
 	<g f'>8 r r4 d'8\p^\pizz r
 % Bars 331 to 335
 	d r r4 r 
-	<<{r4 r r8 \tempo "Allegro." r}{\fermataCentered}>> \bar "||"
+	<<{r4 r r8 \breathe \tempo "Allegro." r}{\fermataCentered}>> \bar "||"
 	\time 2/4 R2*3
 	
 	

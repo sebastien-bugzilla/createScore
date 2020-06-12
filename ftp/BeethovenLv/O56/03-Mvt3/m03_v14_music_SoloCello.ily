@@ -43,7 +43,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	d b'( ais b ais b) b d( cis d cis d) b f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark #4
 % Bars 31 to 35
-	f2\f\fermata r4
+	\grace {s8.} f2\f\fermata r4
 	R2.
 	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \acciaccatura fis'8 g \acciaccatura fis g
 	\clef treble g4.\startTrillSpan a16(\stopTrillSpan b c8 d)
@@ -170,7 +170,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	g b( ais b ais b) g d'( cis d cis d) b g'( fis g fis g)
 	d b'( ais b ais b) b d( cis d cis d) b f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark \default
-	f2\fermata\f r4
+	\grace {s8.} f2\fermata\f r4
 	R2.
 % Bars 151 to 155
 	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \acciaccatura fis'8 g \acciaccatura fis g \clef treble
@@ -371,7 +371,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	R2.*2
 % Bars 331 to 335
 	
-	<< {f'4\fermata\p r r8 \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
+	<< {f'4\fermata\p r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*3
 	
 	

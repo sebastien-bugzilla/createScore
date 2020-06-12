@@ -70,7 +70,7 @@ musicPianoUpMvtI = \relative c'' {
 	<c e>4 r e16\f f g a b c d e
 	a,4 r a16 b c d e f g a 
 	e e, f fis g gis a bes b c cis d dis e f fis
-	g gis b bes b c cis d dis e f fis g fis g fis
+	g gis a bes b c cis d dis e f fis g fis g fis
 % Bars 111 to 115
 	g fis f e dis e f fis g fis f e dis e f fis
 	\tuplet 3/2 4 {g8-. fis-. f-. e-. ees-. d-. cis-. c-. b-. bes-. a-. aes-. }
@@ -373,7 +373,7 @@ musicPianoUpMvtI = \relative c'' {
 	ees4~ \tuplet 3/2 4 {ees8 c' ees} d4~ \tuplet 3/2 4 {d8 a! d)}
 	c2~ \tuplet 3/2 4 {c8( g\dim a! b! c d)}
 % Bars 416 to 420
-	ees2~ \tuplet 3/2 4 {ees8( b c d e f)}
+	ees2~ \tuplet 3/2 4 {ees8( b c d ees f)}
 	g4~\pp g16( fis f ees d c b c ees c f d)
 	\afterGrace d2.\startTrillSpan^\flat {cis16[\stopTrillSpan\< d]} fis8. g16
 	c,4\f r r2

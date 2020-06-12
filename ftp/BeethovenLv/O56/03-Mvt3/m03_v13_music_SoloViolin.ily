@@ -39,7 +39,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	\tuplet 6/4 4 {r16 g( fis g fis g) g, b'( ais b ais b) g, d''( cis d cis d)}
 	d2_\crescmarkup\startTrillSpan~ d8..( cis32)\stopTrillSpan \mark #4
 % Bars 31 to 35
-	d2\f\fermata r4
+	\grace {s8.} d2\f\fermata r4
 	\acciaccatura fis8 g\pp \acciaccatura fis g \acciaccatura fis g4 r
 	r r \acciaccatura fis,8 g \acciaccatura fis g
 	g4.\startTrillSpan a16(\stopTrillSpan b c8 d)
@@ -158,7 +158,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	R2.
 	\tuplet 6/4 4 {r16 g( fis g fis g) g, b'( ais b ais b) g, d''( cis d cis d)}
 	d2_\crescmarkup\startTrillSpan~ d8..( cis32)\stopTrillSpan \mark \default
-	d2\fermata\f r4
+	\grace {s8.} d2\fermata\f r4
 	\acciaccatura fis8 g\pp \acciaccatura fis g \acciaccatura fis g4 r
 % Bars 151 to 155
 	r r \acciaccatura fis,8 g \acciaccatura fis g
@@ -358,7 +358,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	\tuplet 6/4 4 {d,,16\f( f e f b ais b d cis d f e f a! gis a) a( gis}
 % Bars 331 to 335
 	a2.)\>
-	aes2\p\fermata~ aes8 \tempo "Allegro." g16[ g] \bar "||"
+	aes2\p\fermata~ aes8 \breathe \tempo "Allegro." g16[ g] \bar "||"
 	\time 2/4 g4. g16 g
 	g4. g16 g
 	\tuplet 3/2 4 {g8 g_\crescmarkup g g g g

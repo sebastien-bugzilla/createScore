@@ -45,7 +45,7 @@ musicClarinetIMvtII = \relative c'' {
 	d4(\pp cis16 d)
 % Bars 41 to 45
 	d4.\f\>
-	d8.\p([ c32 d]) cis( d cis d)
+	d8.\p([ cis32 d]) cis( d cis d)
 	d8.\f f8\> f16\! \mark \default
 	e8\p r r
 	R4.*9

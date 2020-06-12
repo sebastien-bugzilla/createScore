@@ -26,7 +26,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	\mark #4
 % Bars 31 to 35
-	r4 g\ff\fermata r
+	\grace {s8.} r4 g\ff\fermata r
 	R2.*5
 % Bars 36 to 40
 	
@@ -111,7 +111,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	\mark \default
-	r4 g\ff\fermata r
+	\grace {s8.} r4 g\ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
@@ -247,7 +247,7 @@ musicTimpaniMvtIII = \relative c {
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4  r r8 \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
+	<<{r4  r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
 	\time 2/4 R2*54
 % Bars 336 to 340
 	
