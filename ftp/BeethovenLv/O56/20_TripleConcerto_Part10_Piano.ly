@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -53,18 +54,18 @@
 	}
 	\score {
 		\new PianoStaff <<
-			\new Staff {
+			\new Staff = "up" {
 				<<
-					\new Voice {
-						\formatPianoUpMvtI
-					}
+%					\new Voice {
+%						\formatPianoUpMvtI
+%					}
 					\new Voice {
 						\timeMvtI \generalOptions \partOptions
 						\namePianoUpMvtI \musicPianoUpMvtI
 					}
 				>>
 			}
-			\new Staff {
+			\new Staff = "down" {
 				<<
 					\new Voice {
 						\timeMvtI \generalOptions \partOptions
@@ -74,7 +75,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -90,18 +91,18 @@
 	}
 	\score {
 		\new PianoStaff <<
-			\new Staff {
+			\new Staff = "up" {
 				<<
-					\new Voice {
-						\formatPianoUpMvtII
-					}
+%					\new Voice {
+%						\formatPianoUpMvtII
+%					}
 					\new Voice {
 						\timeMvtII \generalOptions \partOptions
 						\namePianoUpMvtII \musicPianoUpMvtII
 					}
 				>>
 			}
-			\new Staff {
+			\new Staff = "down" {
 				<<
 					\new Voice {
 						\timeMvtII \generalOptions \partOptions
@@ -127,18 +128,18 @@
 	}
 	\score {
 		\new PianoStaff <<
-			\new Staff {
+			\new Staff = "up" {
 				<<
-					\new Voice {
-						\formatPianoUpMvtIII
-					}
+%					\new Voice {
+%						\formatPianoUpMvtIII
+%					}
 					\new Voice {
 						\timeMvtIII \generalOptions \partOptions
 						\namePianoUpMvtIII \musicPianoUpMvtIII
 					}
 				>>
 			}
-			\new Staff {
+			\new Staff = "down" {
 				<<
 					\new Voice {
 						\timeMvtIII \generalOptions \partOptions

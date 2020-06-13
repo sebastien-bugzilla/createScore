@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -53,16 +54,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtI
-			}
+%			\new Voice {
+%				\formatCornoIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameCornoIMvtI \musicCornoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -78,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtII
-			}
+%			\new Voice {
+%				\formatCornoIMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIMvtII \musicCornoIMvtII
@@ -103,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameCornoIMvtIII \musicCornoIMvtIII
@@ -128,16 +129,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtI
-			}
+%			\new Voice {
+%				\formatCornoIIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameCornoIIMvtI \musicCornoIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -153,9 +154,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtII
-			}
+%			\new Voice {
+%				\formatCornoIIMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIIMvtII \musicCornoIIMvtII
@@ -178,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameCornoIIMvtIII \musicCornoIIMvtIII

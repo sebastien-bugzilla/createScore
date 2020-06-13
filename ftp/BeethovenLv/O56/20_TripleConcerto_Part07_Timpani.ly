@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -45,16 +46,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtI
-			}
+%			\new Voice {
+%				\formatTimpaniMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTimpaniMvtI \musicTimpaniMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -70,9 +71,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTimpaniMvtIII \musicTimpaniMvtIII

@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -49,16 +50,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtI
-			}
+%			\new Voice {
+%				\formatTrombeIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTrombeIMvtI \musicTrombeIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -74,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombeIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrombeIMvtIII \musicTrombeIMvtIII
@@ -99,16 +100,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtI
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTrombeIIMvtI \musicTrombeIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -124,9 +125,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtIII
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrombeIIMvtIII \musicTrombeIIMvtIII

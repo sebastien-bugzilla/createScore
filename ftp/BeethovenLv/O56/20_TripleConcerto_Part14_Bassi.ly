@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -53,16 +54,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncellMvtI
-			}
+%			\new Voice {
+%				\formatVioloncellMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameVioloncellMvtI \musicVioloncellMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -78,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncellMvtII
-			}
+%			\new Voice {
+%				\formatVioloncellMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameVioloncellMvtII \musicVioloncellMvtII
@@ -103,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatVioloncellMvtIII
-			}
+%			\new Voice {
+%				\formatVioloncellMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameVioloncellMvtIII \musicVioloncellMvtIII
@@ -128,16 +129,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatBassoMvtI
-			}
+%			\new Voice {
+%				\formatBassoMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameBassoMvtI \musicBassoMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -153,9 +154,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatBassoMvtII
-			}
+%			\new Voice {
+%				\formatBassoMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameBassoMvtII \musicBassoMvtII
@@ -178,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatBassoMvtIII
-			}
+%			\new Voice {
+%				\formatBassoMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameBassoMvtIII \musicBassoMvtIII

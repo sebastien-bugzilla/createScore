@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -53,16 +54,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottoIMvtI \musicFagottoIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -78,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameFagottoIMvtII \musicFagottoIMvtII
@@ -103,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottoIMvtIII \musicFagottoIMvtIII
@@ -128,16 +129,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottoIIMvtI \musicFagottoIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -153,9 +154,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameFagottoIIMvtII \musicFagottoIIMvtII
@@ -178,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottoIIMvtIII \musicFagottoIIMvtIII

@@ -22,9 +22,9 @@ partOptions = {
 		decrescendo-event )
 	\set Voice.restNumberThreshold = #0
 }
-#(set-global-staff-size 19)
+#(set-global-staff-size 18)
 \layout {
-	#(layout-set-staff-size 19)
+	#(layout-set-staff-size 18)
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 }
