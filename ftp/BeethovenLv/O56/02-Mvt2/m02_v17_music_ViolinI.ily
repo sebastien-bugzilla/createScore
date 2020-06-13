@@ -10,7 +10,7 @@ musicViolinIMvtII = \relative c' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	c4\p^\consordino b16-. c-.
+	c4\p^\consordino bes16-. c-.
 	des8 r des
 	des8(~ des16. ees32) c16.( des32)
 	bes8.\noBeam ees8( g16)

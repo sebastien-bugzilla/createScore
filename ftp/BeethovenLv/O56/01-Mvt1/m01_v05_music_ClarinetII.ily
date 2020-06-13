@@ -30,7 +30,7 @@ musicClarinetIIMvtI = \relative c' {
 	g2. g4-.
 	g-. g-. g-. g-.
 % Bars 31 to 35
-	f-. f2\sf d8.-. c!16-.
+	f-. f2\sf d8.-. c16-.
 	b4-. c2\sf a'8.-. fis16-. \mark \default
 	g4\p r r2
 	R1*6
@@ -162,9 +162,9 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	f2.\ff f4(
+	f2.\ff f4
 % Bars 226 to 230
-	e2. e4)
+	e2. e4
 	bes4 bes bes bes
 	a2~ a8 c-. a-. c-.
 	a'4 r  r8. a16[-. a8.-. a16]-. 

@@ -42,7 +42,7 @@ musicClarinetIIMvtII = \relative c'' {
 % Bars 41 to 45
 	
 	
-	r8.\f d'8\> d16\! \mark \default
+	r8. d'8\> d16\! \mark \default
 	cis8\p r r
 	R4.*9
 % Bars 46 to 50

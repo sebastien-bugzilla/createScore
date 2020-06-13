@@ -175,7 +175,7 @@ musicPianoDownMvtIII = \relative c, {
 	d8 r r4 r \clef bass
 % Bars 191 to 195
 	e,,8-. e'16( dis e8-.) \clef treble e16( fis gis8-.) gis16( a
-	b8-.) b16( c d!8-.) d16( f fis gis a b)
+	b8-.) b16( c d!8-.) d16( e fis gis a b)
 	c2( \afterGrace b4\trill) {a16[ b]}
 	a8 r r4 r \clef bass
 	a,,,16-. a'-. a-. gis-. a-. a,-. a'-. b-. cis-. cis,-. cis'-. d-. 

@@ -45,9 +45,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFloteMvtI
-			}
+%			\new Voice {
+%				\formatFloteMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFloteMvtI \musicFloteMvtI
@@ -70,9 +70,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFloteMvtIII
-			}
+%			\new Voice {
+%				\formatFloteMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFloteMvtIII \musicFloteMvtIII

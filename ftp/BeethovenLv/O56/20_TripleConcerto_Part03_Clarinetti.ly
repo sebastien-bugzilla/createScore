@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -53,16 +54,16 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinetIMvtI
-			}
+%			\new Voice {
+%				\formatClarinetIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameClarinetIMvtI \musicClarinetIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -78,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinetIMvtII
-			}
+%			\new Voice {
+%				\formatClarinetIMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameClarinetIMvtII \musicClarinetIMvtII
@@ -103,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinetIMvtIII
-			}
+%			\new Voice {
+%				\formatClarinetIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameClarinetIMvtIII \musicClarinetIMvtIII
@@ -128,9 +129,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinetIIMvtI
-			}
+%			\new Voice {
+%				\formatClarinetIIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameClarinetIIMvtI \musicClarinetIIMvtI
@@ -153,9 +154,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinetIIMvtII
-			}
+%			\new Voice {
+%				\formatClarinetIIMvtII
+%			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameClarinetIIMvtII \musicClarinetIIMvtII
@@ -178,9 +179,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinetIIMvtIII
-			}
+%			\new Voice {
+%				\formatClarinetIIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameClarinetIIMvtIII \musicClarinetIIMvtIII

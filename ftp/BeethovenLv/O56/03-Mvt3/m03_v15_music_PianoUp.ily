@@ -76,7 +76,7 @@ musicPianoUpMvtIII = \relative c {
 	r b( ais b ais b g d' cis d cis d b g' fis g fis g)}
 % Bars 81 to 85
 	\grace {fis16[( g a]} g4)( fis!8) r r4
-	\tuplet 6/4 4 {d16( fis eis fis eis fis dis a' gis a gis a fis d' cis d cis d)}
+	\tuplet 6/4 4 {d16( fis eis fis eis fis d a' gis a gis a fis d' cis d cis d)}
 	b8 r r4 r
 	R2.*2
 	
@@ -390,7 +390,7 @@ musicPianoUpMvtIII = \relative c {
 	b a g f e d c b
 	e\p g c e a,, c f a
 % Bars 386 to 390
-	g, c e g g, c d g \mark \default
+	g, c e g g, b d g \mark \default
 	c,8 r r4
 	R2*16
 % Bars 391 to 395

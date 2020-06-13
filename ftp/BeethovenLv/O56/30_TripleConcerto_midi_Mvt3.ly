@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_NameVoice.ily"
@@ -55,7 +56,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -76,7 +77,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -91,12 +92,10 @@
 			\new StaffGroup <<
 				\new Staff { \timeMvtIII \musicSoloViolinMvtIII }
 				\new Staff { \timeMvtIII \musicSoloCelloMvtIII }
-				\new Staff { \timeMvtIII \musicPianoUpMvtIII }
-				\new Staff { \timeMvtIII \musicPianoDownMvtIII }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -109,15 +108,33 @@
 	\score {
 		<<
 			\new StaffGroup <<
+				\new Staff = "up" { \timeMvtIII \musicPianoUpMvtIII }
+				\new Staff = "down" { \timeMvtIII \musicPianoDownMvtIII }
+			>>
+		>>
+		\midi {
+			\tempo 4 = 100
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeV")
+	\score {
+		<<
+			\new StaffGroup <<
 				\new Staff { \timeMvtIII \musicViolinIMvtIII }
 				\new Staff { \timeMvtIII \musicViolinIIMvtIII }
 				\new Staff { \timeMvtIII \musicViolaMvtIII }
 				\new Staff { \timeMvtIII \musicVioloncellMvtIII }
-				\new Staff { \timeMvtIII \musicBassoMvtIII }
+				%\new Staff { \timeMvtIII \musicBassoMvtIII }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"

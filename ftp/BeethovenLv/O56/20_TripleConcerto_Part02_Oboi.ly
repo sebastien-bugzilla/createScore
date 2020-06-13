@@ -49,9 +49,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtI
-			}
+%			\new Voice {
+%				\formatOboeIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIMvtI \musicOboeIMvtI
@@ -74,9 +74,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIMvtIII \musicOboeIMvtIII
@@ -99,9 +99,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtI
-			}
+%			\new Voice {
+%				\formatOboeIIMvtI
+%			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIIMvtI \musicOboeIIMvtI
@@ -124,9 +124,9 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIII
+%			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIIMvtIII \musicOboeIIMvtIII

@@ -219,7 +219,7 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 206 to 210
 	c8(\< b c d e fis)\!
 	g2.\p\startTrillSpan~
-	g2~ g8. f16\stopTrillSpan
+	g2~ g8. fis16\stopTrillSpan
 	g8( d) d-. d-. e16( d c d)
 	e8(\< dis e fis g ais)\!
 % Bars 211 to 215

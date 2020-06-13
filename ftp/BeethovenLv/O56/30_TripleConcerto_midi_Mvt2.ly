@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_NameVoice.ily"
@@ -79,8 +80,6 @@
 			\new StaffGroup <<
 				\new Staff { \timeMvtII \musicSoloViolinMvtII }
 				\new Staff { \timeMvtII \musicSoloCelloMvtII }
-				\new Staff { \timeMvtII \musicPianoUpMvtII }
-				\new Staff { \timeMvtII \musicPianoDownMvtII }
 			>>
 		>>
 		\midi {
@@ -97,11 +96,8 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtII \musicViolinIMvtII }
-				\new Staff { \timeMvtII \musicViolinIIMvtII }
-				\new Staff { \timeMvtII \musicViolaMvtII }
-				\new Staff { \timeMvtII \musicVioloncellMvtII }
-				\new Staff { \timeMvtII \musicBassoMvtII }
+				\new Staff = "up" { \timeMvtII \musicPianoUpMvtII }
+				\new Staff = "down" { \timeMvtII \musicPianoDownMvtII }
 			>>
 		>>
 		\midi {
@@ -115,6 +111,27 @@
 }
 \book {
 	#(define output-suffix "groupeV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtII \musicViolinIMvtII }
+				\new Staff { \timeMvtII \musicViolinIIMvtII }
+				\new Staff { \timeMvtII \musicViolaMvtII }
+				\new Staff { \timeMvtII \musicVioloncellMvtII }
+				%\new Staff { \timeMvtII \musicBassoMvtII }
+			>>
+		>>
+		\midi {
+			\tempo 16 = 70
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeVI")
 	\score {
 		<<
 			\new StaffGroup <<

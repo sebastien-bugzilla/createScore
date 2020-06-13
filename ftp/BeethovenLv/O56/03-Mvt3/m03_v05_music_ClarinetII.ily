@@ -73,7 +73,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	b2.\pp(
 % Bars 81 to 85
 	c)
-	a2~ a8 gis
+	a2~ a8 fis
 	b4 r r
 	R2.*8
 % Bars 86 to 90
