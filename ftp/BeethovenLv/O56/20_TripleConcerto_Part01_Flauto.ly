@@ -13,6 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/TripleConcerto_Header.ily"
 \include "./00-Common/TripleConcerto_PaperParts.ily"
 \include "./00-Common/TripleConcerto_timeMvt.ily"
@@ -27,7 +28,7 @@
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
 \addQuote "cueVoiceFloteMvtI" { \cueVoiceFloteMvtI }
-\addQuote "cueVoiceFloteMvtIII" { \cueVoiceFloteMvtIII }
+%\addQuote "cueVoiceFloteMvtIII" { \cueVoiceFloteMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -54,7 +55,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -66,6 +67,37 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatFloteMvtIII
+%			}
+			\new Voice {
+				\generalOptions \partOptions \nameFloteMvtIII 
+				\timeMvtII \clef treble \key aes \major
+				R4.*20 \mark \default 
+				R4.*11 \mark \default
+				R4.*12 \mark \default
+				R4.*10
+				\bar "||"
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			ragged-right = ##f
 		}
 	}
 	\score {

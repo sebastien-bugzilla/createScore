@@ -10,15 +10,21 @@ musicFloteMvtI = \relative c''' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*18 
+	<>^\tutti R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
+		\ni R1
+		R
+		R
 % Bars 16 to 20
-	
-	
-	
+		R
+		R
+		R \no
+	}
 	c1\f\cresc
 	b8([ c d8. c16)] c4-. c-.
 % Bars 21 to 25
@@ -37,24 +43,29 @@ musicFloteMvtI = \relative c''' {
 	d-. f2\sf d8. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
-	R1*6
+	R1*4
 	
 % Bars 36 to 40
 	
-	
-	
-	
-	r4 g'(_\crescmarkup f d)
+	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
+		\ni R1
+		R
+		r4 \no } g'(_\crescmarkup f d)
 % Bars 41 to 45
 	c2(~\p c8.[ e16 g8. e16)]
 	c2. cis4(
 	d e f g
 	a) r r2
-	R1*6
+	R1*3
 % Bars 46 to 50
 	
+	
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R
+		R
 % Bars 51 to 55
-	r2 c,(\pp
+		r2 c,^(\pp \no }
 	b4) r r2
 	R1*3
 	
@@ -82,7 +93,7 @@ musicFloteMvtI = \relative c''' {
 	R1
 	g'1~\ff
 	g \mark \default
-	e4 r r2
+	e4 r^\solo r2
 % Bars 76 to 80
 	R1*21
 % Bars 81 to 85
@@ -93,22 +104,24 @@ musicFloteMvtI = \relative c''' {
 	
 % Bars 96 to 100
 	\mark \default
-	R1*17
+	R1*15
 % Bars 101 to 105
 	
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-	
-	
-	c2.\ff( e4)
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R \no
+	}
+	c2.\ff(^\tutti e4)
 	g2.( f4)
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16)]
 	c2~ c8 g-. e-. g-. \mark \default
-	c,8\p r r4 r2
-	R1*30
+	c,8\p^\solo r r4 r2
+	R1*27
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -120,24 +133,28 @@ musicFloteMvtI = \relative c''' {
 % Bars 141 to 145
 	
 % Bars 146 to 150
-	
-	
-	\mark \default
-	e'2\ff b4-. gis-.
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R
+		R \no \markOffset #0.5 \mark \default
+	}
+	e'2\ff^\tutti b4-. gis-.
 	e-. e'-. b-. gis-.
 % Bars 151 to 155
-	e-. r r2
-	R1*13
+	e-.^\solo r r2
+	R1*11
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	
-	
-	
+	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
+		\cueClef bass \ni R1
+		<< R {s2 s8. s16^\tutti s4} >> \no \cueClefUnset
+	}
 	r8. e16-.\f[ fis8.-. gis16-.] a2(\sf~
 % Bars 166 to 170
-	a8.[ cis16 e8. cis16)] a8 r r4
+	a8.[ cis16 e8. cis16)] a8 r^\solo r4
 	R1*27
 % Bars 171 to 175
 	
@@ -151,16 +168,18 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	\mark \default
-	R1*5
+	R1*3
 % Bars 196 to 200
 	
-	
-	
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R \no
+	}
 	r8. a16-.\p[ a8.-. a16-.] a4 r
 	r  r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
 	a4-. r r2
-	R1*23
+	R1*21
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -170,9 +189,11 @@ musicFloteMvtI = \relative c''' {
 % Bars 221 to 225
 	
 	
-	
-	\mark \default
-	a2.\ff a4(
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R \no \mark \default
+	}
+	a2.\ff-\tweak X-offset #1.5 ^\tutti a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.([ f16 g8. a16)]
@@ -194,7 +215,7 @@ musicFloteMvtI = \relative c''' {
 % Bars 241 to 245
 	e2\>( f\p
 	b,2. e4
-	a,) r r2
+	a,) r^\solo r2
 	R1*33
 % Bars 246 to 250
 	
@@ -210,10 +231,15 @@ musicFloteMvtI = \relative c''' {
 	
 % Bars 276 to 280
 	\mark \default
-	R1*6
+	R1
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R
+		R
 % Bars 281 to 285
-	
-	
+		R
+		R \no
+	}
 	r2 b!8([\p c d!8. c16)]
 	R1*5
 	
@@ -228,7 +254,7 @@ musicFloteMvtI = \relative c''' {
 % Bars 296 to 300
 	
 	r2 c8([\p des ees8. des16)]
-	R1*27
+	R1*25
 % Bars 301 to 305
 	
 % Bars 306 to 310
@@ -240,9 +266,11 @@ musicFloteMvtI = \relative c''' {
 % Bars 321 to 325
 	
 	
-	
-	\mark \default
-	c2\ff( b8[ c e8. d16)]
+	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
+		\ni \mmrPos #-4 R1
+		\mmrPos #-4 R \no \mark \default
+	}
+	c2\ff(^\tutti b8[ c e8. d16)]
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16-.)]
@@ -262,7 +290,7 @@ musicFloteMvtI = \relative c''' {
 	
 	c,1\cresc 
 	b8[( c d8. c16)] c4-. c-.
-	f2\f~ f8 r r4
+	f2\f~ f8 r^\solo r4
 % Bars 346 to 350
 	R1
 	c2\ff~ c8 r c4\p(
@@ -287,31 +315,39 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	r2 r4 c'\f~
+	r2^\tutti r4 c'\f~
 % Bars 371 to 375
-	c r r2
-	R1*14
+	c^\solo r r2
+	R1*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
+		\ni \mmrPos #6 R1
+		\mmrPos #8 R \no \mark \default
+	}
 % Bars 386 to 390
-	g'2\ff d4-. b-.
+	g'2\ff^\tutti d4-. b-.
 	g-. g'-. d-. b-.
-	g-. r r2
-	R1*13
+	g-.^\solo r r2
+	R1*11
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
-% Bars 401 to 405
 	
-	r8. g16-.\f[ a8.-. b16-.] c2(~
-	c8.[ e16 g8. e16)] c8 r r4
+	
+	
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni \cueClef bass R1
+% Bars 401 to 405
+		R1 \no \cueClefUnset
+	}
+	r8. g16-.\f[^\tutti a8.-. b16-.] c2(~
+	c8.[ e16 g8. e16)] c8^\solo r r4
 	R1*27
 % Bars 406 to 410
 	
@@ -328,12 +364,18 @@ musicFloteMvtI = \relative c''' {
 	
 	\mark \default
 % Bars 431 to 435
-	R1*5
+	R1*3
+	
+	
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
+		R \no
+	}
 % Bars 436 to 440
 	r8. c16-.\p[ c8.-. c16-.] c4-. r
 	r r8. c16-. c4-. r8. c16-.
 	c4-. r r2
-	R1*23
+	R1*21
 	
 % Bars 441 to 445
 	
@@ -343,9 +385,15 @@ musicFloteMvtI = \relative c''' {
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni R1
 % Bars 461 to 465
-	\mark \default
-	c2.\ff c4(
+		R \no \mark \default
+	}
+	c2.\ff^\tutti c4(
 	ees2. des4)
 	bes4-. bes-. \acciaccatura c8 bes8.([ aes16 bes8. c16-.)]
 	aes2~ aes8 ees-. c-. ees-.
@@ -354,7 +402,7 @@ musicFloteMvtI = \relative c''' {
 	ees8.[ c16-. g8.-. c16-.] ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4~\sf
 	ees8.[ c16-. ees8.-. c16-.] ees8.-.[ c16-. ees8.-. c16-.]
-	b4 r r2
+	b4 r^\solo r2
 % Bars 471 to 475
 	R1*5
 	
@@ -383,8 +431,10 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
-	
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\tempo "Più allegro." <>^\tutti \ni \mmrPos #4 R1
+		\mmrPos #6 R \no
+	}
 % Bars 516 to 520
 	f8.\f[ e16-. d8.-. c16-.] b8.-.\noBeam d'16-.[ f8.-. e16-.]
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 

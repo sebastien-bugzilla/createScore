@@ -54,7 +54,9 @@ decresc = \markup {\italic decresc.}
 stacc = \markup {\italic stacc.}
 dimin = \markup {\italic dimin.}
 ppsempre = \markup {\dynamic pp \italic sempre}
-
+tutti = \markup {Tutti.}
+solo = \markup {Solo.}
+ppcrescpocoapoco = \markup {\dynamic pp \italic {cresc. poco a poco}}
 
 crescText = #(define-music-function
 	(cresctext)
@@ -85,6 +87,38 @@ textSpanner = #(define-music-function
 	(markup?)
 	#{
 		\once \override TextSpanner.bound-details.left.text = \markup {\italic { #textSpanner } }
+	#}
+)
+
+no = #(define-music-function
+	()
+	()
+	#{
+		\undo \omit MultiMeasureRestNumber
+	#}
+)
+
+ni = #(define-music-function
+	()
+	()
+	#{
+		\omit MultiMeasureRestNumber
+	#}
+)
+
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+markOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.X-offset = #offset
 	#}
 )
 

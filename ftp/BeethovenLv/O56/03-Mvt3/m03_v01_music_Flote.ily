@@ -34,7 +34,7 @@ musicFloteMvtIII = \relative c''' {
 % Bars 36 to 40
 	
 	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
-	g4.( a16 b\noBeam c8 d)
+	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)( c4.\sf b8)
 	a( f') b,( g'4) g8
 % Bars 41 to 45

@@ -21,6 +21,7 @@ partOptions = {
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
 		decrescendo-event )
 	\set Voice.restNumberThreshold = #0
+	\override TupletNumber.avoid-slur = #'around
 }
 #(set-global-staff-size 18)
 \layout {
@@ -32,5 +33,6 @@ layoutCueVoice = \with {
 	fontSize = #-3
 	\override Stem.length-fraction = #0.9
 	\override TupletBracket #'bracket-visibility = ##f
+	%\override TupletNumber.avoid-slur = #'around
 	%\override Font.font-size = #+5
 }
