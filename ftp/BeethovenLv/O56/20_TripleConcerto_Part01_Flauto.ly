@@ -28,7 +28,7 @@
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
 \addQuote "cueVoiceFloteMvtI" { \cueVoiceFloteMvtI }
-%\addQuote "cueVoiceFloteMvtIII" { \cueVoiceFloteMvtIII }
+\addQuote "cueVoiceFloteMvtIII" { \cueVoiceFloteMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 

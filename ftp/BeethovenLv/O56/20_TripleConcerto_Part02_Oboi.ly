@@ -30,9 +30,9 @@
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
 \addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
-\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
-\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
-\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
+%\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
+%\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
+%\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -73,79 +73,79 @@
 			}
 		}
 	}
-	\score {
-		\new Staff <<
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatOboeIMvtIII
+%%			}
 %			\new Voice {
-%				\formatOboeIMvtIII
+%				\timeMvtIII \generalOptions \partOptions
+%				\nameOboeIMvtIII \musicOboeIMvtIII
 %			}
-			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameOboeIMvtIII \musicOboeIMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					III
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatOboeIIMvtI
+%%			}
 %			\new Voice {
-%				\formatOboeIIMvtI
+%				\timeMvtI \generalOptions \partOptions
+%				\nameOboeIIMvtI \musicOboeIIMvtI
 %			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameOboeIIMvtI \musicOboeIIMvtI
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					I
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatOboeIIMvtIII
+%%			}
 %			\new Voice {
-%				\formatOboeIIMvtIII
+%				\timeMvtIII \generalOptions \partOptions
+%				\nameOboeIIMvtIII \musicOboeIIMvtIII
 %			}
-			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameOboeIIMvtIII \musicOboeIIMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					III
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
 }

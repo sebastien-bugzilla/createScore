@@ -10,16 +10,21 @@ musicFloteMvtIII = \relative c''' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*16
+	R2.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-% Bars 16 to 20
 	
-	r8 g16-.\pp g-. g8-.[ g-. g-.] r
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		R
+		R
+% Bars 16 to 20
+		<< R2. {s2 s4^\tutti} >>
+		r8 \no } g16-.\pp g-. g8-.[ g-. g-.] r
 	r c16-. c-. c8[-. c-. c-.] r
-	R2.*12
+	R2.*12^\solo
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -33,7 +38,7 @@ musicFloteMvtIII = \relative c''' {
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8^\tutti g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)( c4.\sf b8)
 	a( f') b,( g'4) g8
@@ -62,8 +67,8 @@ musicFloteMvtIII = \relative c''' {
 	c,-. e\sf-. g,-. c\sf-. e,-. g\sf-. 
 	c, r c' r c r
 % Bars 61 to 65
-	c r r4 r
-	R2.*31
+	c r^\solo r4 r
+	R2.*29
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -75,8 +80,10 @@ musicFloteMvtIII = \relative c''' {
 % Bars 86 to 90
 	
 % Bars 91 to 95
-	
-	\mark \default
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		\mmrPos #-8 R \no \mark \default
+	}
 	g,8\f[ b(\trill \grace {a16[ b]} g8) d'8(\trill \grace {c16[ d]} b8) \afterGrace  g']\trill {fis16[ g]} 
 	g4\p( fis!8) r r4
 	d8\f[ fis(\trill \grace {e16[ fis]} d8) a'(\trill \grace {g16[ a]} fis8) \afterGrace d'8\trill] {cis16[ d]}  
@@ -90,7 +97,7 @@ musicFloteMvtIII = \relative c''' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	<>^\atempo R2.*21
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -100,14 +107,16 @@ musicFloteMvtIII = \relative c''' {
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	
-	
-	
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		R
+		R
+		R \no
+	}
 	r8 g16-.\pp g-. g8-.[ g-. g-.] r
 % Bars 136 to 140
 	r8 c16-. c-. c8[-. c-. c-.] r
-	R2.*12
+	R2.*12^\solo
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -121,7 +130,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8^\tutti g\ff \acciaccatura fis g
 % Bars 156 to 160
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4) c4.\sf( b8)
@@ -141,13 +150,13 @@ musicFloteMvtIII = \relative c''' {
 	e4.\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a\p r r4 r
+	a\p r^\solo r4 r
 	R2.*7
 % Bars 176 to 180
 	
 	
 	\mark \default
-	R2.*43
+	R2.*39
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -164,11 +173,17 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 216 to 220
 	
+	
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		R
+		R
 % Bars 221 to 225
-	\mark \default
+		R \no \mark \default
+	}
 	r8 g\f-. c-. g-. e-. c-. 
 	g' r r4 r
-	R2.*20
+	R2.*17
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -176,10 +191,11 @@ musicFloteMvtIII = \relative c''' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r \acciaccatura fis8 g\ff \acciaccatura fis g
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+		r4 r } \acciaccatura fis8^\tutti g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 % Bars 246 to 250
 	e4( c4.\sf b8)
@@ -191,13 +207,13 @@ musicFloteMvtIII = \relative c''' {
 	a( f') b,(\noBeam g'4) g8
 	g4(\ff c,8) r g'4(\sf
 	c,8) r e r e r
-	e r c r r4
+	e r c r^\solo r4
 	R2.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	\mark #11
-	R2.*24
+	R2.*22
 % Bars 266 to 270
 	
 % Bars 271 to 275
@@ -208,8 +224,10 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		R \no \mark \default
+	}
 % Bars 286 to 290
 	c,8\f\noBeam e([\trill \grace {d16[ e]} c8)] g'[(\trill \grace {fis16[ g]} e8)] \afterGrace c'\trill {b16[ c]}
 	c4\p( b8) r r4
@@ -222,12 +240,12 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	r4 r8 r^\rallentando r4
+	r4 r8 r_\rallentando r4
 	R2.*3
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*23
+	<>^\atempo R2.*20
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -237,9 +255,11 @@ musicFloteMvtIII = \relative c''' {
 % Bars 321 to 325
 	
 	
-	
-	
-	\mark \default
+	\cueDuring #"cueVoiceFloteMvtIII" #UP {
+		\ni R2.
+		R
+		R \no \mark \default
+	}
 % Bars 326 to 330
 	r8 g,\f-. c-. g-. e-. c-. 
 	g' g16 g b8 b16 b d8 d16 d
@@ -248,8 +268,8 @@ musicFloteMvtIII = \relative c''' {
 	b8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< { r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered}>> \bar "||"
-	\time 2/4 R2*54
+	<< { r4 r r8 \breathe \tempo "Allegro." r } { \ni \fermataCentered \no}>> \bar "||"
+	\time 2/4 R2*52
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -270,8 +290,14 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 381 to 385
 	
+	
+	
+	
+	\cueDuring #"cueVoiceFloteMvtIII" #DOWN {
+		\ni \mmrPos #-4 R2
 % Bars 386 to 390
-	\mark \default
+		\mmrPos #-4 R \no \mark \default
+	}
 	g8(\f a16 b c8 d)
 	e4( c8) r
 	f16( g f e d e d c)
@@ -312,7 +338,7 @@ musicFloteMvtIII = \relative c''' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R\fermataMarkup \bar "||" 
+	\ni R\fermataMarkup \no \bar "||" 
 	\time 3/4 \tempo "Tempo I." R2.
 	e8\f r  c r r4
 	R2.

@@ -47,10 +47,10 @@ musicFloteMvtI = \relative c''' {
 	
 % Bars 36 to 40
 	
-	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
-		\ni R1
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni \clef tenor R1
 		R
-		r4 \no } g'(_\crescmarkup f d)
+		r4 \no \clef treble } g'(_\crescmarkup f d)
 % Bars 41 to 45
 	c2(~\p c8.[ e16 g8. e16)]
 	c2. cis4(

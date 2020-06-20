@@ -10,15 +10,21 @@ musicOboeIMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*18
+	<>^\tutti R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\cueDuring #"cueVoiceOboeIMvtI" #DOWN {
+		\ni R1
+		R
+		R
 % Bars 16 to 20
-	
-	
-	
+		R
+		R
+		R \no
+	}
 	c1\f\cresc
 	b8([ c d8. c16)] c4-. c-.
 % Bars 21 to 25
@@ -37,13 +43,14 @@ musicOboeIMvtI = \relative c'' {
 	f4-. f2\sf d8.-. c16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
-	R1*6
+	R1*4
 % Bars 36 to 40
 	
 	
-	
-	
-	r4 g'(_\crescmarkup f d)
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\clef tenor \ni R1
+		R
+		r4 \clef treble \no } g'(_\crescmarkup f d)
 % Bars 41 to 45
 	c2(~ c8.[ e16 g8. e16])
 	c2. cis4(
@@ -81,7 +88,7 @@ musicOboeIMvtI = \relative c'' {
 	R1
 	g'~\ff
 	g \mark \default
-	e4 r r2
+	e4 r^\solo r2
 % Bars 76 to 80
 	R1*21
 % Bars 81 to 85
@@ -92,12 +99,17 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 96 to 100
 	\mark \default
-	R1*10
+	R1*8
 % Bars 101 to 105
 	
-% Bars 106 to 110
 	
-	r4 e8\p r r2
+	
+	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+% Bars 106 to 110
+		\mmrPos #-6 R 
+		e4\rest \no } e8\p r r2
 	r4 a8 r r2
 	R1*5
 	
@@ -105,12 +117,12 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	c,2.(\ff e4)
+	c,2.(\ff^\tutti e4)
 	g2.( f4)
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16)]
 	c2~ c8 g'-. e-. g-. \mark \default
-	c,\p r r4 r2
+	c,\p^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -128,31 +140,35 @@ musicOboeIMvtI = \relative c'' {
 	
 	e'4-.\f e2( f8. d16)
 	g4 r r2
-	R1*15
+	R1*12
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
 % Bars 146 to 150
-	
-	
-	\mark \default
-	e2\ff b'4-. gis-.
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+		R
+		R \no \mark \default
+	}
+	e2\ff^\tutti b'4-. gis-.
 	e-. e-. b'-. gis-.
 % Bars 151 to 155
-	e-. r r2
-	R1*13
+	e-. r^\solo r2
+	R1*11
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	
-	
-	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\clef bass \ni R1
+		<< R {s2 s8. s16^\tutti s4} >>\no \clef treble
+	}
 	r8. e16-.\f[ d8.-. d16-.] cis2~\sf
 % Bars 166 to 170
 	cis2~ cis8 r r4
-	r d(\pp cis8) r r4
+	r d(\pp cis8) r^\solo r4
 	R1*26
 % Bars 171 to 175
 	
@@ -166,16 +182,18 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*5
+	R1*2
 % Bars 196 to 200
-	
-	
-	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+		R
+		R \no
+	}
 	r8. a16-.\p[ a8.-. a16-.] a4 r
 	r r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
 	a4-. r r2
-	R1*23
+	R1*21
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -185,9 +203,11 @@ musicOboeIMvtI = \relative c'' {
 % Bars 221 to 225
 	
 	
-	
-	\mark \default
-	f'2.\ff f4
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+		R \no \mark \default
+	}
+	f'2.\ff^\tutti f4
 % Bars 226 to 230
 	e2. e4
 	g c c c
@@ -209,8 +229,8 @@ musicOboeIMvtI = \relative c'' {
 % Bars 241 to 245
 	e2(\> f\p
 	b,2. e4
-	a,) r r2
-	R1*33
+	a,) r^\solo r2
+	R1*31
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -223,9 +243,15 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 271 to 275
 	
+	
+	
+	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
 % Bars 276 to 280
-	\mark \default
-	R1
+		R \mark \default
+		R1 \no
+	}
 	r2 a8[(\p bes d8. bes16)]
 	R1
 	r2 b!8[(^\semprepp c ees8. c16)]
@@ -251,7 +277,7 @@ musicOboeIMvtI = \relative c'' {
 	r2 b8[( c! ees8. c16)]
 	R1
 	r2 b8([ c d8. c16)]
-	R1*25
+	R1*22
 % Bars 301 to 305
 	
 % Bars 306 to 310
@@ -261,11 +287,13 @@ musicOboeIMvtI = \relative c'' {
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	
-	
-	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+		R
+		R \no
+	}
 	g'1^\pcresc \mark \default
-	c\ff~
+	c\ff~^\tutti
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c1~
@@ -277,15 +305,21 @@ musicOboeIMvtI = \relative c'' {
 	c1
 	b4 r b r
 	b r r2
-	R1*8
+	R1*4
 % Bars 336 to 340
 	
+	
+	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni \mmrPos #4 R1
+		\mmrPos #6 R
 % Bars 341 to 345
-	
-	
+		R
+		\mmrPos #-6 R \no
+	}
 	c,1\cresc
 	b8([ c d8. c16)] c4-. c-.
-	f2\f~ f8 r c\p r
+	f2\f~ f8 r^\solo c\p r
 % Bars 346 to 350
 	a r c r a r f r
 	c'2\ff~ c8 r c4\p(
@@ -303,43 +337,53 @@ musicOboeIMvtI = \relative c'' {
 	a^\crescmarkup r c r a r f r
 	c'2.\f(\> bes4)
 	a4\p r r2
-	R1*10
+	R1*9
 % Bars 361 to 365
 	
 % Bars 366 to 370
 	
 	
 	
-	
-	a'4-.\f a2( bes8. g16)
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni \mmrPos #-6 R1 \no
+	}
+	a'4-.\f^\tutti a2( bes8. g16)
 % Bars 371 to 375
-	a4 r r2
-	R1*14
+	a4^\solo r r2
+	R1*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+		R \no \mark \default
+	}
 % Bars 386 to 390
-	g2\ff d4-. b-.
+	g2\ff^\tutti d4-. b-.
 	g-. g'-. d-. b-.
-	g-. r r2
+	g-.^\solo r r2
 	R1
 	r4 f'8-.\p r r2
 % Bars 391 to 395
 	r4 f8-. r r2
-	R1*10
+	R1*8
 % Bars 396 to 400
 	
-% Bars 401 to 405
 	
+	
+	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni \clef bass R1
+% Bars 401 to 405
+		<< R {s2 s8. s16^\tutti s4 } >> \clef treble \no
+	}
 	r8. g16-.\f[ f8.-. d16-.] c2(~
-	c8.[ e16 g8. e16]) c8 r r4
+	c8.[ e16 g8. e16]) c8 r^\solo r4
 	r f4(\pp e8) r r4
-	R1*18
+	R1*16
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -347,8 +391,10 @@ musicOboeIMvtI = \relative c'' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	
-	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\clef bass \ni R1
+		R \no \clef treble
+	}
 	r8. c16-.\pp c8-. r r8. c16-. c8-. r
 	r8. c16-. c8-. r r8. c16-.[ c8.-. c16-.]
 	b8.-. f'16-. f8-. r r8. f16-. f8-. r
@@ -368,7 +414,7 @@ musicOboeIMvtI = \relative c'' {
 	r8. c16-.[\p c8.-. c16-.] c4-. r
 	r r8. c16-. c4-. r8. c16-.
 	c4-. r r2
-	R1*23
+	R1*21
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -377,9 +423,15 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 456 to 460
 	
+	
+	
+	
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
 % Bars 461 to 465
-	\mark \default
-	ees1\ff
+		R \no \mark \default
+	}
+	ees1\ff^\tutti
 	ees
 	ees
 	ees
@@ -388,16 +440,17 @@ musicOboeIMvtI = \relative c'' {
 	c4 r r8. c16-.[ c8.-. c16-.] 
 	c4.. c16 c4.. c16
 	c8.[ c16-. c8.-. c16-.] c8.-.[ c16-. c8.-. c16-.] 
-	b4 r r2
+	b4 r^\solo r2
 % Bars 471 to 475
-	R1*13
+	R1*12
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
 	
-	
-	r2 r4 e,8\pp r
+	\cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni R1
+		r2 r4 \no } e,8\pp r
 	f r r4 r f8 r
 % Bars 486 to 490
 	e r r4 r8. e16-.[ e8.-. e16-.] 
@@ -420,13 +473,14 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
-	
+	\tempo "Più allegro." \cueDuring #"cueVoiceOboeIMvtI" #UP {
+		\ni \mmrPos #6 <>^\tutti R1
+		\mmrPos #6 R
 % Bars 516 to 520
-	r2 r8. d,16\f-.[ f8.-. e16-.] 
+		r2 \no } r8. d,16\f-.[ f8.-. e16-.] 
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
-	g'4-.\ff r r2
+	g'4-.\ff^\solo r r2
 	c,4 r r b8 r
 % Bars 521 to 525
 	c8 r b r c r b r
