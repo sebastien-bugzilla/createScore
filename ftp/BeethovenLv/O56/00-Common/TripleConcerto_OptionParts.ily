@@ -35,4 +35,10 @@ layoutCueVoice = \with {
 	\override TupletBracket #'bracket-visibility = ##f
 	%\override TupletNumber.avoid-slur = #'around
 	%\override Font.font-size = #+5
+	
+%	\override Beam.beam-thickness = #0.30
+%	\override StemTremolo.beam-thickness = #0.30
+%	\override Beam.length-fraction = #0.8
+%	\override Stem.length-fraction = #0.8
+%	fontSize = #-3
 }

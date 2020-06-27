@@ -29,9 +29,9 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
+%\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
 %\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
-%\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
+\addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
 %\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
 \book {
 	\header {
@@ -48,31 +48,31 @@
 			"Oboi"
 		}
 	}
-	\score {
-		\new Staff <<
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatOboeIMvtI
+%%			}
 %			\new Voice {
-%				\formatOboeIMvtI
+%				\timeMvtI \generalOptions \partOptions
+%				\nameOboeIMvtI \musicOboeIMvtI
 %			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameOboeIMvtI \musicOboeIMvtI
-			}
-		>>
-		\header {
-			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
+%		>>
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					I
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
 %	\score {
 %		\new Staff <<
 %%			\new Voice {
@@ -98,31 +98,31 @@
 %			}
 %		}
 %	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatOboeIIMvtI
-%%			}
+	\score {
+		\new Staff <<
 %			\new Voice {
-%				\timeMvtI \generalOptions \partOptions
-%				\nameOboeIIMvtI \musicOboeIIMvtI
+%				\formatOboeIIMvtI
 %			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					I
-%				}
-%			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
-%			}
-%		}
-%	}
+			\new Voice {
+				\timeMvtI \generalOptions \partOptions
+				\nameOboeIIMvtI \musicOboeIIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					I
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+		}
+	}
 %	\score {
 %		\new Staff <<
 %%			\new Voice {

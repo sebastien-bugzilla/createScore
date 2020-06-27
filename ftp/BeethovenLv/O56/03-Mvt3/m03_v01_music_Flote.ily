@@ -298,7 +298,7 @@ musicFloteMvtIII = \relative c''' {
 % Bars 386 to 390
 		\mmrPos #-4 R \no \mark \default
 	}
-	g8(\f a16 b c8 d)
+	g8(\f^\tutti a16 b c8 d)
 	e4( c8) r
 	f16( g f e d e d c)
 	b( c b a) g8-. g-.
@@ -313,7 +313,7 @@ musicFloteMvtIII = \relative c''' {
 	f
 	ees\sf
 	ees\sf
-	e!8 r r4
+	e!8 r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410

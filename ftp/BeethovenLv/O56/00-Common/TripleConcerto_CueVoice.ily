@@ -143,7 +143,7 @@ cueVoiceOboeIMvtI = \relative c' {
 	R1*64
 	% bar 105 - 107
 	r16 c\p^\markup {Vln.conc} d e f g a b c d e f g8 g
-	f4 <d, f>2\trill \grace {e16[ f]} <f a>8. <d f>16
+	<d f>4^\markup {Pf.} <d, f>2\trill \grace {e16[ f]} <f a>8. <d f>16
 	<c e>4 s4 s2
 	R1*38
 	% bar 146 - 148
@@ -208,11 +208,138 @@ cueVoiceOboeIMvtI = \relative c' {
 	dis16_( e dis e) g8._( f16) e_( f e f) a8. g16
 	f8.\f e16 d8. c16 s2
 }
-cueVoiceOboeIMvtIII = \relative c {
-	
+cueVoiceOboeIMvtIII = \relative c'' {
+	R2.*12
+	% bar 13 - 17
+	b4._(^\markup {Vln.conc} cis16 dis e8 fis)
+	g4_( e4. d8)
+	cis_( a' d,4. c8)
+	b_(\p g' c,) r c,8._(^\markup {Viol.I} e16
+	g8) s s2
+	R2.*60
+	% bar 78 - 79
+	d,8\noBeam^\markup {Vlc.Conc} fis'_([\trill \grace {e16 fis} d8]) a'[_(\trill \grace {g16 a} fis8]) \afterGrace d'8\trill {cis16 d}
+	c!4( b8) r r4
+	R2.*51
+	% bar 131 - 134
+	b4._(^\markup {Viol.Conc} cis16 dis e8 fis)
+	g4_( e4. d8)
+	cis_( a' d,4. c8)
+	b_(\p g' c,) r r4
+	R2.*72
+	% bar 207 - 208
+	g8\p^\markup {Vlc.Conc}^( d) d d e16^( d c d)
+	e8^( c) c c d16^( c b c)
+	R2.*32
+	% bar 241 - 244
+	g'4._(^\markup {Viol.conc}_\crescmarkup a16 b c8 d)
+	\grace {c16_( d} e4)_( c4. b8)
+	a_([ f')] b,_( g'4) g8
+	g4_(\f c,8) r r4
+	R2.*26
+	% bar 271 - 272
+	g,,8\noBeam^\markup {Vlc.conc} b'[_(\trill \grace {a16 b} g8]) d'[_(\trill \grace {cis16 d} b8)] \afterGrace g'8\trill {fis16 g}
+	f!4_( e8) e\rest e4\rest
+	R2.*33
+	% bar 306 - 307
+	r8 a_(^\markup {Pf.} c) r r dis_(
+	e b) b-. b-. c16_( b a b)
+	R2.*25 \time 2/4
+	R2*52
+	% bar 385 - 386
+	d'16\p^\markup {Vln.Conc} c b c d c b a
+	a^( g) fis g a^( g) fis g
 }
-cueVoiceOboeIIMvtI = \relative c {
-	
+cueVoiceOboeIIMvtI = \relative c'' {
+	R1*16
+	% bar 17 - 20
+	g1^\markup {Viol.I}
+	fis8_( g a8. g16) g4 g
+	c1^\markup {Ob.I}
+	b8_( c d8. c16) c4 c
+	R1*17
+	% bar 38 - 39
+	e,2.-\tweak X-offset #-4.5 _\markup {Fag.I} c4_(
+	b d c a)
+	g r r2
+	R1*13
+	% bar 54 - 55
+	g1(^\markup {Fag.II}
+	f)
+	R1*9
+	% bar 65 - 67
+	s4 d''4_~^\markup {Ob.I} d8. d16 d4_~
+	d8. d16 d4_~ d8. d16 d4~
+	d8 s s2.
+	R1*37
+	% bar 105 - 107
+	<e g>4^\markup {Pf.} <c' e>4. <c e>16 <b d> <a c> <g b> <f a> <e g>
+	<d f>4 <d, f>2\trill \grace {e16 f} <f a>8. <d f>16
+	<c e>4 s2.
+	R1*23
+	% bar 131
+	r8 e'16_(^\markup {Pf.} e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
+	R1*15
+	% bar 147 - 148
+	\tuplet 3/2 4 {gis'8^\markup {Viol.conc} gis_( e) e_( b) b_( gis) gis_( e) e_( b) b_(
+	gis)\ff e' b gis' e b' gis e' b} r8^\markup {Viol.II} \tuplet 3/2 8 {b,16_( cis dis)}
+	R1*14
+	% bar 163 - 164
+	e,,8^\markup {Vlc.} r fis r d r e4^\arco_~
+	e cis b8.\noBeam e,16\f-.[ fis8.-. gis16-.]
+	R1*31
+	% bar 196 - 198
+	r8. e'''16-.^\markup {Cor.I} e4-. r8. e16-. e4-.
+	r8. e16-. e8.-. e16-. e4-. r4
+	r8. c16-. c8.-. c16-. c4-. r
+	R1*24
+	% bar 223 - 224
+	gis8_\ppcrescpocoapoco^\markup {Viol.I} gis gis gis b b b b
+	d d d d gis gis gis gis
+	R1*50
+	% bar 275 - 277
+	cis,2(_\crescmarkup^\markup {Vln.conc} e
+	g cis)
+	\tuplet 3/2 4 {d8\f f, bes d, f bes, d f, bes d, d d}
+	R1*43
+	% bar 321 - 324
+	g8^\markup {Cor.I} r g r g r g r
+	g r g r g r g r
+	g r g r g r g r
+	g'1^\markup {Ob.I}
+	R1*18
+	% bar 343 - 344
+	c,1^\markup {Ob.I}
+	b8_( c d8. c16) c4 c
+	R1*24
+	% bar 369
+	r8 a16_(^\markup {Vln.Conc} a') g,_( g') f,_( f') e,_( e') d,_( d') c,_( c') bes,_( bes')
+	R1*14
+	% bar 384 - 385
+	\tuplet 3/2 4 {b'8^\markup {Vln.conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
+	b\ff) b' g d' b g' d b' g d' b g'}
+	R1*14
+	% bar 400 - 401
+	g,,,8^\markup {Vlc.} r a r f r g4^\arco_(_~
+	g e d8.) g,16[\f a8. b16]
+	R1*19
+	% bar 421 - 422
+	b8.^\markup {Vlc.conc} g16 d'8. d16 b8. g16 f'8. f16
+	b,8. g16 aes'8. aes16 g8. f16 ees8. d16
+	R1*37
+	% bar 460 - 461
+	b''8^\markup {Viol.I}_\ppcrescpocoapoco b b b d d d d 
+	f f f f b b b b
+	R1*21
+	% bar 483 - 484
+	r4^\markup {Viol.conc} <f f'> r <d d'>
+	<e e'>16 g,([\p a b] c d e d c b a g) s4
+	R1*29
+	% bar 514-516
+	b,16_(_\crescmarkup^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	dis16_( e dis e) g8._( f16) e_( f e f) a8. g16
+	f8.\f e16 d8. c16 s2
+
 }
 cueVoiceOboeIIMvtIII = \relative c {
 	

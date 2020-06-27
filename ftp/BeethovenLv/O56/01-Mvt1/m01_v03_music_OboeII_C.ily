@@ -61,7 +61,7 @@ musicOboeIIMvtI = \relative c'' {
 	a2\ff a
 	a4 a a a
 % Bars 61 to 65
-	b-. r r2
+	b r r2
 	R1*5
 	
 	
