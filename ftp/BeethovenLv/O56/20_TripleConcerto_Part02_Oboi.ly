@@ -29,10 +29,10 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
-%\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
+\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
+\addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
 \addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
-%\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
+\addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -48,68 +48,18 @@
 			"Oboi"
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatOboeIMvtI
-%%			}
-%			\new Voice {
-%				\timeMvtI \generalOptions \partOptions
-%				\nameOboeIMvtI \musicOboeIMvtI
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					I
-%				}
-%			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
-%			}
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatOboeIMvtIII
-%%			}
-%			\new Voice {
-%				\timeMvtIII \generalOptions \partOptions
-%				\nameOboeIMvtIII \musicOboeIMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					III
-%				}
-%			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
-%			}
-%		}
-%	}
 	\score {
 		\new Staff <<
 %			\new Voice {
-%				\formatOboeIIMvtI
+%				\formatOboeIMvtI
 %			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
-				\nameOboeIIMvtI \musicOboeIIMvtI
+				\nameOboeIMvtI \musicOboeIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -123,29 +73,141 @@
 			}
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatOboeIIMvtIII
-%%			}
+	\score {
+		\new Staff <<
 %			\new Voice {
-%				\timeMvtIII \generalOptions \partOptions
-%				\nameOboeIIMvtIII \musicOboeIIMvtIII
+%				\formatFloteMvtIII
 %			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					III
-%				}
+			\new Voice {
+				\generalOptions \partOptions \nameOboeIMvtIII 
+				\timeMvtII \clef treble \key aes \major
+				R4.*20 \mark \default 
+				R4.*11 \mark \default
+				R4.*12 \mark \default
+				R4.*10
+				\bar "||"
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatOboeIMvtIII
 %			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
+			\new Voice {
+				\timeMvtIII \generalOptions \partOptions
+				\nameOboeIMvtIII \musicOboeIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					III
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatOboeIIMvtI
 %			}
-%		}
-%	}
+			\new Voice {
+				\timeMvtI \generalOptions \partOptions
+				\nameOboeIIMvtI \musicOboeIIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					I
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatFloteMvtIII
+%			}
+			\new Voice {
+				\generalOptions \partOptions \nameOboeIIMvtIII 
+				\timeMvtII \clef treble \key aes \major
+				R4.*20 \mark \default 
+				R4.*11 \mark \default
+				R4.*12 \mark \default
+				R4.*10
+				\bar "||"
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatOboeIIMvtIII
+%			}
+			\new Voice {
+				\timeMvtIII \generalOptions \partOptions
+				\nameOboeIIMvtIII \musicOboeIIMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					III
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+		}
+	}
 }

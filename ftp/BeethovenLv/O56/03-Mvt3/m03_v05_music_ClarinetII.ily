@@ -10,7 +10,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*30
+	R2.*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -23,14 +23,15 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	
-	\mark #4
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R \mark #4 \no
 % Bars 31 to 35
-	r4 b\fermata\ff r
+		r4 } b\fermata\ff r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r d,8\ff d
+	r4 r d,8\ff^\tutti d
 	c4. e8 e f
 	e8 r e16 d e f g e f g
 	a f g a d,8( f4) f8
@@ -59,8 +60,8 @@ musicClarinetIIMvtIII = \relative c'' {
 	c e\sf g, c\sf e, g\sf
 	c, r e r e r
 % Bars 61 to 65
-	e r r4 r
-	R2.*18
+	e r^\solo r4 r
+	R2.*16
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -68,8 +69,10 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 76 to 80
 	
 	
-	
-	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni << \mmrPos #-6 R2. {\clef bass s8 \clef treble s s2} >>
+		R2. \no
+	}
 	b2.\pp(
 % Bars 81 to 85
 	c)
@@ -93,15 +96,17 @@ musicClarinetIIMvtIII = \relative c'' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	<>^\atempo R2.*6
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
-	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni \mmrPos #-8 R2.
+		R \no
+	}
 	<< c2.~ {s8\pp\< s s s\> s s}>>
 	c8\! r r4 r
-	R2.*29
+	R2.*27
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -114,16 +119,17 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	r4 b'\fermata\ff r
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R \mark \default \no
+		r4 } b'\fermata\ff r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r d,8\ff d
+	r4 r d,8\ff^\tutti d
 % Bars 156 to 160
 	c4. e8 e f
 	e r e16 d e f g e f g
@@ -135,13 +141,13 @@ musicClarinetIIMvtIII = \relative c'' {
 	r c,(\f f8) r
 	R2.*3
 % Bars 166 to 170
-	gis8\p gis16 gis-. gis8-. gis-. a-. a-. 
+	gis8\p gis16 gis gis8-. gis-. a-. a-. 
 	gis8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4.\sf f8 e d
 	\acciaccatura d c-. b-. c-. d-. e-. e-. 
 % Bars 171 to 175
-	a,\p r r4 r
+	a,\p r^\solo r4 r
 	R2.*3
 	
 	
@@ -174,25 +180,29 @@ musicClarinetIIMvtIII = \relative c'' {
 	r8 a16 a a8 a a a
 	r8 a16 a a8 a a a
 	a r r4 r
-	R2.*10
+	R2.*21
 % Bars 201 to 205
 	
 % Bars 206 to 210
 	
-	
-	
-	R2.
-	R2.
 % Bars 211 to 215
-	R2.*11
+	
 % Bars 216 to 220
 	
+	
+	
+	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni R2.
 % Bars 221 to 225
-	\mark \default
+		R \no \mark \default
+	}
 	c'8\f-. g-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.
-	R
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni R \no
+	}
 % Bars 226 to 230
 	fis8 r r4 r
 	r g8 r g r
@@ -201,14 +211,16 @@ musicClarinetIIMvtIII = \relative c'' {
 	r4 fis8 r fis r
 % Bars 231 to 235
 	d8 r r4 r
-	R2.*13
+	R2.*9
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni R2.
+		R
+		R
+		<< R {s2  s4^\tutti } >> \no
+	}
 	e2\ff~ e8 f
 % Bars 246 to 250
 	e4 c4. c8
@@ -220,7 +232,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	r r8 f4 f8
 	f4(\ff e8) r f4(\sf
 	e8) r c' r c r
-	c r c, r r4
+	c r c, r^\solo r4
 	R2.*5
 % Bars 256 to 260
 	
@@ -268,37 +280,31 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	<>^\atempo R2.*20
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
-	
-	
-	R2.
-	R
 % Bars 316 to 320
-	R
-	R
-	R
-	R
-	R
+	
 % Bars 321 to 325
-	R
-	R
-	R
-	R
-	R \mark \default
+	
+	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no \mark \default
+	}
 % Bars 326 to 330
 	c'8\f-. g-. c-. g-. e-. c-. 
-	g\noBeam g16 g b8 b16 b d8 d16 d
+	g g16 g b8 b16 b d8 d16 d
 	f8 r r4 r
 	d8 r r4 r
 	d8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
-	\time 2/4 R2*54
+	<< {r4 r r8 \breathe \tempo "Allegro." r } {\ni \fermataCentered \no } >> \bar "||"
+	\time 2/4 R2*51
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -319,9 +325,15 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 % Bars 381 to 385
 	
+	
+	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #DOWN {
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 386 to 390
-	\mark \default
-	e8\f( f16 d e8 f)
+		\mmrPos #-4 R \no \mark \default
+	}
+	e8\f(^\tutti f16 d e8 f)
 	g4( e8) r
 	R2
 	r4 g8 g
@@ -336,7 +348,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	f
 	ees\sf
 	c'\sf
-	c8 r r4
+	c8 r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -344,11 +356,17 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*13
+	R2*10
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
+	
+	\cueDuring #"cueVoiceClarinetIIMvtIII" #UP {
+		\ni R2
+		R 
+		R \no
+	}
 % Bars 426 to 430
 	c,2\p
 	c8 r r4
@@ -363,7 +381,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
+	\ni R2\fermataMarkup \no \bar "||"
 	\time 3/4 \tempo "Tempo I." e8\pp-. e-. e-. e-. e-. e-. 
 	e\f r e r r4
 	d8\pp-. d-. d-. d-. d-. d-. 

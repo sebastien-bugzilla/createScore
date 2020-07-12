@@ -10,7 +10,7 @@ musicClarinetIIMvtII = \relative c'' {
 	\key bes \major
 	\transposition bes
 % Bars 1 to 5
-	R4.*20
+	R4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,7 +20,9 @@ musicClarinetIIMvtII = \relative c'' {
 	
 	
 	
-	\mark \default
+	\cueDuring #"cueVoiceClarinetIIMvtII" #UP {
+		\ni R4. \no \mark \default
+	}
 % Bars 21 to 25
 	bes4\p( a16 bes)
 	c8 r c
@@ -36,14 +38,19 @@ musicClarinetIIMvtII = \relative c'' {
 % Bars 31 to 35
 	f8_\crescmarkup f f \mark \default
 	f8.\sf\> r16\! r8
-	R4.*10
+	R4.*7
 % Bars 36 to 40
 	
+	
+	
+	
+	\cueDuring #"cueVoiceClarinetIIMvtII" #UP {
+		\ni <>^\tutti R4.
 % Bars 41 to 45
-	
-	
-	r8. d'8\> d16\! \mark \default
-	cis8\p r r
+		R
+		R \no
+		r8. } d'8\> d16\! \mark \default
+	cis8\p^\solo r r
 	R4.*9
 % Bars 46 to 50
 	

@@ -135,7 +135,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	r c,(\f f8) r
 	R2.*3
 % Bars 166 to 170
-	gis8\p gis16 gis-. gis8-. gis-. a-. a-. 
+	gis8\p gis16 gis gis8-. gis-. a-. a-. 
 	gis8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4.\sf f8 e d

@@ -58,6 +58,7 @@ tutti = \markup {Tutti.}
 solo = \markup {Solo.}
 ppcrescpocoapoco = \markup {\dynamic pp \italic {cresc. poco a poco}}
 
+
 crescText = #(define-music-function
 	(cresctext)
 	(markup?)
@@ -119,6 +120,16 @@ markOffset = #(define-music-function
 	(number?)
 	#{
 		\once \override Score.RehearsalMark.X-offset = #offset
+	#}
+)
+
+attaca = #(define-music-function
+	()
+	()
+	#{
+		\once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+		\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+		\mark \markup {\normalsize \italic attaca.}
 	#}
 )
 

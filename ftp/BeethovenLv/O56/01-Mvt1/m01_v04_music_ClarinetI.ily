@@ -10,13 +10,19 @@ musicClarinetIMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*20
+	<>^\tutti R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	
+	
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1
+		R \no
+	}
 % Bars 21 to 25
 	f1\ff
 	c'
@@ -46,11 +52,17 @@ musicClarinetIMvtI = \relative c' {
 	g,4 r r a~
 	a a2 c4~
 	c r r2
-	R1*11
+	R1*7
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1
+		R
+		R
+		\mmrPos #-6 R \no
+	}
 % Bars 56 to 60
 	r8. g16([\p a8. g16]) g4 r
 	r8. g16_\crescmarkup([ a8. g16]) g4 r
@@ -67,7 +79,7 @@ musicClarinetIMvtI = \relative c' {
 	b4-. r8. b16-. a4-. r8. a16-.
 	b4-. a-. b-. a-.
 	b-. a-. b-. a-.
-	b-. r r2
+	b-. r^\solo r2
 	R1*3
 % Bars 71 to 75
 	
@@ -85,54 +97,62 @@ musicClarinetIMvtI = \relative c' {
 	
 % Bars 96 to 100
 	\mark \default
-	R1*17
+	R1*15
 % Bars 101 to 105
 	
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-	
-	
-	g1\ff
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1
+		R \no
+	}
+	g1\ff^\tutti
 	g~
 % Bars 116 to 120
 	g
 	g \mark \default
-	g8\p r r4 r2
-	R1*13
+	g8\p^\solo r r4 r2
+	R1*12
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1 \no
+	}
 	c4\f c2( d8. b16)
 	e4 r r2
-	R1*15
+	R1*13
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	e2\ff b4-. gis-.
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1
+		R \no \mark \default
+	}
+	e2\ff^\tutti b4-. gis-.
 	e-. e'-. b-. gis-.
 % Bars 151 to 155
-	e-. r r2
-	R1*13
+	e-.^\solo r r2
+	R1*11
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	
-	
-	
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni \clef bass R1
+		<<R {s2 s8. s16^\tutti s4}>> \no \clef treble
+	}
 	r8. e'16-.[\f e8.-. e16-.] e2~\sf
 % Bars 166 to 170
-	e~ e8 r r4
+	e~ e8 r^\solo r4
 	R1*27
 % Bars 171 to 175
 	
@@ -146,7 +166,7 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R1*31
+	R1*29
 % Bars 196 to 200
 	
 % Bars 201 to 205
@@ -160,9 +180,11 @@ musicClarinetIMvtI = \relative c' {
 % Bars 221 to 225
 	
 	
-	
-	\mark \default
-	a,2.\ff a4(
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1
+		R \no \mark \default
+	}
+	a,2.\ff^\tutti a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.([ f16 g8. a16)]
@@ -183,7 +205,7 @@ musicClarinetIMvtI = \relative c' {
 	c-. d-. c-. d-. 
 % Bars 241 to 245
 	c r r2
-	R1*35
+	<>^\solo R1*35
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -198,7 +220,7 @@ musicClarinetIMvtI = \relative c' {
 	
 % Bars 276 to 280
 	\mark \default
-	R1*48
+	R1*46
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -218,9 +240,11 @@ musicClarinetIMvtI = \relative c' {
 % Bars 321 to 325
 	
 	
-	
-	\mark \default
-	c2\ff( b8[ c e8. d16)]
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni \clef bass << \mmrPos #-8 R1 {s4 \clef treble s2.} >>
+		R1 \no \mark \default
+	}
+	c2\ff(^\tutti b8[ c e8. d16)]
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -240,7 +264,7 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	
-	c2~\f c8 r r4
+	c2~\f c8 r^\solo r4
 % Bars 346 to 350
 	R1
 	c2\ff~ c8 r r4
@@ -251,7 +275,7 @@ musicClarinetIMvtI = \relative c' {
 	b2\f~ b8 r r4
 	R1 \mark #11
 	cis2~\f cis8 r r4
-	R1*16
+	R1*15
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -260,32 +284,41 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	
-	
-	r2 r4 c~\f
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni \mmrPos #-6 R1
+		r2^\tutti r4 \no }  c~\f
 % Bars 371 to 375
-	c r r2
-	R1*14
+	c^\solo r r2
+	R1*12
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni R1
+		R \no \mark \default
+	}
 % Bars 386 to 390
-	g'2\ff d4-. b-.
+	g'2\ff^\tutti d4-. b-.
 	g-. g'-. d-. b-.
-	g-. r r2
-	R1*13
+	g-.^\solo r r2
+	R1*11
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
-% Bars 401 to 405
 	
-	r8. g16[\f-. a8.-. b16]-. c2~
-	c~ c8 r r4
+	
+	
+	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni \clef bass R1
+% Bars 401 to 405
+		R \no \clef treble
+	}
+	r8. g16[\f-.^\tutti a8.-. b16]-. c2~
+	c~ c8 r^\solo r4
 	R1*27
 % Bars 406 to 410
 	
@@ -315,9 +348,13 @@ musicClarinetIMvtI = \relative c' {
 	
 % Bars 461 to 465
 	\mark \default
-	R1*4
+	\cueDuring #"cueVoiceClarinetIMvtI" #DOWN {
+		\ni <>^\tutti \mmrPos #-4 R1
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-6 R \no
 % Bars 466 to 470
-	r2 r8. c16\ff[-. c8.-. c16]-. 
+		e,2\rest } r8. c'16\ff[-. c8.-. c16]-. 
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4.. c16 c4.. c16
 	c8.[ c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
@@ -352,10 +389,11 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	
-	\tempo "Più allegro." R1*2
-	
+	\tempo "Più allegro." <>^\tutti \cueDuring #"cueVoiceClarinetIMvtI" #UP {
+		\ni \mmrPos #-8 R1
+		\mmrPos #-6 R
 % Bars 516 to 520
-	r2 r8. d16[\f-. f8.-. e16]-. 
+		r2 r8. \no } d16[\f-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
 	f4-.\ff r r2 \mark \default
 	g'4-.\ff r r2

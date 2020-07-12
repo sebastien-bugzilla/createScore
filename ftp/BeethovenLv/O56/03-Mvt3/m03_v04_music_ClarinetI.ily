@@ -10,7 +10,7 @@ musicClarinetIMvtIII = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*30
+	R2.*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -23,14 +23,15 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	
-	\mark #4
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R \mark #4
 % Bars 31 to 35
-	r4 d\fermata\ff r
+		r4 \no } d\fermata\ff r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r f,8\ff f
+	r4 r f,8\ff^\tutti f
 	e4. c'8 c d
 	c8 r e,16 d e f g e f g
 	a f g a d,8( d'4) d8
@@ -59,8 +60,8 @@ musicClarinetIMvtIII = \relative c'' {
 	c, e\sf g, c\sf e, g\sf
 	c, r c' r c r
 % Bars 61 to 65
-	c r r4 r
-	R2.*18
+	c r^\solo r4 r
+	R2.*16
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -68,8 +69,10 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 76 to 80
 	
 	
-	
-	
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni << \mmrPos #-6 R2. {\clef bass s8 \clef treble s8 s2} >>
+		R2. \no
+	}
 	d,2.\pp~
 % Bars 81 to 85
 	d~
@@ -93,15 +96,17 @@ musicClarinetIMvtIII = \relative c'' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	<>^\atempo R2.*6
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
-	
-	<< e2.~ {s8\pp\< s s s\> s s}>>
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R \no
+	}
+	<< e2.~ {s8-\tweak X-offset #-2 \pp\< s s s s\> s}>>
 	e8\! r r4 r
-	R2.*29
+	R2.*27
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -114,16 +119,17 @@ musicClarinetIMvtIII = \relative c'' {
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	r4 d'\fermata\ff r
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni R2.
+		R \no \mark \default
+		r4 } d'\fermata\ff r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r f,8\ff f
+	r4 r f,8\ff^\tutti f
 % Bars 156 to 160
 	e4. c'8 c d
 	c r e,16 d e f g e f g
@@ -135,13 +141,13 @@ musicClarinetIMvtIII = \relative c'' {
 	r c(\f f,8) r
 	R2.*3
 % Bars 166 to 170
-	b8\p b16 b-. b8-. b-. c-. c-. 
+	b8\p b16 b b8-. b-. c-. c-. 
 	b8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4.\sf f8 e d
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a\p r r4 r
+	a\p r^\solo r4 r
 	R2.*3
 	
 	
@@ -201,14 +207,16 @@ musicClarinetIMvtIII = \relative c'' {
 	r4 a8 r a r
 % Bars 231 to 235
 	b8 r r4 r
-	R2.*13
+	R2.*9
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni R2.
+		R
+		R
+		<< R {s2 s4^\tutti} >> \no
+	}
 	c2\ff~ c8 d
 % Bars 246 to 250
 	c4 c4. c8
@@ -220,7 +228,7 @@ musicClarinetIMvtIII = \relative c'' {
 	r r8 d4 d8
 	d4(\ff c8) r d4(\sf
 	c8) r e r e r
-	e r c, r r4
+	e r c, r^\solo r4
 	R2.*5
 % Bars 256 to 260
 	
@@ -268,14 +276,15 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	<>^\atempo R2.*8
 % Bars 306 to 310
 	
 % Bars 311 to 315
-	
-	
-	
-	r4 r g_\semprepp(
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+		r2 } g4_\semprepp(
 	b2.)~
 % Bars 316 to 320
 	b~
@@ -297,8 +306,8 @@ musicClarinetIMvtIII = \relative c'' {
 	f8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r } {\fermataCentered}>> \bar "||"
-	\time 2/4 R2*54
+	<< {r4 r r8 \breathe \tempo "Allegro." r } {\ni \fermataCentered \no }>> \bar "||"
+	\time 2/4 R2*51
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -319,9 +328,15 @@ musicClarinetIMvtIII = \relative c'' {
 	
 % Bars 381 to 385
 	
+	
+	
+	\cueDuring #"cueVoiceClarinetIMvtIII" #DOWN {
+		\ni \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 386 to 390
-	\mark \default
-	g8\f( a16 b c8 d)
+		\mmrPos #-4 R \no \mark \default
+	}
+	g8\f(^\tutti a16 b c8 d)
 	e4( c8) r
 	R2
 	r4 g8 g
@@ -336,7 +351,7 @@ musicClarinetIMvtIII = \relative c'' {
 	g
 	g\sf
 	ees'\sf
-	e!8 r r4
+	e!8 r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -344,11 +359,17 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*13
+	R2*10
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
+	
+	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
+		\ni R2
+		R
+		R \no
+	}
 % Bars 426 to 430
 	d,2\p
 	e8 r r4
@@ -363,7 +384,7 @@ musicClarinetIMvtIII = \relative c'' {
 	\mark \default
 % Bars 441 to 445
 	R2
-	R2\fermataMarkup \bar "||"
+	\ni R2\fermataMarkup \no \bar "||"
 	\time 3/4 \tempo "Tempo I." g8\pp-. g-. g-. g-. g-. g-. 
 	g\f r g r r4
 	f8\pp-. f-. f-. f-. f-. f-. 
