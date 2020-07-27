@@ -10,30 +10,37 @@ musicFagottoIMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*16
+	R2.*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-% Bars 16 to 20
 	
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R
+% Bars 16 to 20
+		<< R {s2 s4^\tutti} >> \no \clef bass
+	}
 	r8 g16\pp-. g-. g8-. g-. g-. r
 	r8 c16-. c-. c8-. c-. c-. r
-	R2.*12
+	<>^\solo R2.*10
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 	
 	
-	
-	\mark #4
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni R2.
+		R \no \mark #4
 % Bars 31 to 35
-	r4 g\ff\fermata r
+		r4 } g\ff\fermata r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis8 g \acciaccatura fis g
+	r4 r \acciaccatura fis8 g^\tutti\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)( c4.\sf b8)
 	a( f') b,(\noBeam g'4) g8
@@ -62,25 +69,27 @@ musicFagottoIMvtIII = \relative c' {
 	c, e\sf g, c\sf e, g\sf
 	c, r g' r e r
 % Bars 61 to 65
-	c r r4 r
+	c r^\solo r4 r
 	R2.
 	c'4\pp( e g)
 	c( e, g
 	c g8) r r4
 % Bars 66 to 70
 	R2.
-	\clef tenor d'2(\pp c4)
+	d'2(\pp c4)
 	b( d c
 	b a8) r r4
-	R2.*10
+	R2.*8
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
 	
-	
-	
-	\clef bass g8\pp-. d-. g-. d-. g-. d-. 
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni << R2. {s8 \clef treble s8 s2} >>
+		R2. \no \clef bass
+	}
+	g8\pp-. d-. g-. d-. g-. d-. 
 % Bars 81 to 85
 	a' d, a' d, a' d, 
 	fis d fis d fis d
@@ -109,7 +118,7 @@ musicFagottoIMvtIII = \relative c' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*25
+	<>^\atempo R2.*21
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -119,28 +128,31 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	
-	
-	
-	
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R
+		<< R {s2 s4^\tutti} >> \no \clef bass
+	}
 	r8 g16-.\pp g-. g8-. g-. g-. r
 % Bars 136 to 140
 	r8 c16-. c-. c8-. c-. c-. r
-	R2.*12
+	<>^\solo R2.*10
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	r4 g\ff\fermata r
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni R2.
+		R \no \mark \default
+		r4 } g\ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r \acciaccatura fis8 g\ff \acciaccatura fis g
+	r4 r \acciaccatura fis8^\tutti g\ff \acciaccatura fis g
 % Bars 156 to 160
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4) c4.\sf( b8)
@@ -160,7 +172,7 @@ musicFagottoIMvtIII = \relative c' {
 	b8 e4\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a\p\noBeam c16\pp c c8 c c c
+	a\p\noBeam c16\pp^\solo c c8 c c c
 	r8 c16 c c8 c c c
 	r8 e16 e e8 e f f
 	e r r4 r
@@ -224,14 +236,15 @@ musicFagottoIMvtIII = \relative c' {
 	r4 ees8 r ees r
 % Bars 231 to 235
 	d r r4 r
-	R2.*12
+	R2.*9
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R \no
+		r4 r \clef bass } \acciaccatura fis,8 g\ff^\tutti \acciaccatura fis g
 	g4.( a16 b c8 d)
 % Bars 246 to 250
 	e4( c4.\sf b8)
@@ -243,7 +256,7 @@ musicFagottoIMvtIII = \relative c' {
 	a( f') b,(\noBeam g'4) g8
 	g4(\ff c,8) r g'4(\sf
 	c,8) r g r e r
-	c r c r r4
+	c r c r^\solo r4
 	r e'4(\p f8) r 
 % Bars 256 to 260
 	R2.*3
@@ -254,12 +267,14 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 261 to 265
 	r4 a( bes8) r \mark #11
 	r8 a-.[ g-.] r r4
-	R2.*10
+	R2.*8
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	
-	
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni << R2. {s8 \clef tenor s s2} >>
+		R2. \clef bass \no
+	}
 	c8\pp-. g-. c-. g-. c-. g-. 
 	d'-. g,-. d'-. g,-. d'-. g,-. 
 	d'-. g,-. b-. g-. b-. g-. 
@@ -292,14 +307,19 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*11
+	<>^\atempo R2.*7
 % Bars 306 to 310
 	
+	
+	
+	
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni \clef tenor R2.
 % Bars 311 to 315
-	
-	
-	
-	r4 r g,_\semprepp(
+		R
+		R
+		R \no \clef bass
+		r4 r } g,_\semprepp(
 	b2.)~
 % Bars 316 to 320
 	b~
@@ -321,8 +341,8 @@ musicFagottoIMvtIII = \relative c' {
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<< {r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
-	\time 2/4 R2*34
+	<< {r4 r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no}>> \bar "||"
+	\time 2/4 R2*27
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -333,11 +353,20 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 356 to 360
 	
+	
+	
+	
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni \clef treble R2
 % Bars 361 to 365
-	
+		R
+		R
+		R
+		R
+		R
 % Bars 366 to 370
-	
-	r8 bes'4\pp bes8
+		R \no
+		r8 \clef bass } bes'4\pp bes8
 	r a4 a8
 	r8 a4 a8
 	r b!4 b8
@@ -360,7 +389,7 @@ musicFagottoIMvtIII = \relative c' {
 	R2*3
 % Bars 386 to 390
 	\mark \default
-	g,8\f( a16 b c8 d)
+	g,8\f(^\tutti a16 b c8 d)
 	e4( c8) r
 	f16( g f e d e d c)
 	b( c b a) g8-. g-.
@@ -375,7 +404,7 @@ musicFagottoIMvtIII = \relative c' {
 	d
 	ees\sf
 	c\sf
-	g8 r r4
+	g8 r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -401,18 +430,20 @@ musicFagottoIMvtIII = \relative c' {
 % Bars 426 to 430
 	a
 	g8 r r4
-	R2*13
+	R2*11
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceFagottoIMvtIII" #UP {
+		\ni \clef tenor R2
+		R \mark \default
 % Bars 441 to 445
-	R2
-	R2\fermataMarkup \bar "||"
+		R2
+		R2 \clef bass \no \bar "||"
+	}
 	\time 3/4 \tempo "Tempo I." c8\pp-. c-. c-. c-. c-. c-. 
 	c\f r c r r4
 	a8\pp-. a-. a-. a-. a-. a-. 

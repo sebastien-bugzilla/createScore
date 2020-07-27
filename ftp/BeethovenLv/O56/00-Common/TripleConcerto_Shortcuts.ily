@@ -57,7 +57,17 @@ ppsempre = \markup {\dynamic pp \italic sempre}
 tutti = \markup {Tutti.}
 solo = \markup {Solo.}
 ppcrescpocoapoco = \markup {\dynamic pp \italic {cresc. poco a poco}}
-
+adagio = \markup {adagio}
+one=^\markup {\tiny \number 1}
+two=^\markup {\tiny \number 2}
+three=^\markup {\tiny \number 3}
+four=^\markup {\tiny \number 4}
+five=^\markup {\tiny \number 5}
+six=^\markup {\tiny \number 6}
+seven=^\markup {\tiny \number 7}
+eight=^\markup {\tiny \number 8}
+nine=^\markup {\tiny \number 9}
+ten=^\markup {\tiny \number 10}
 
 crescText = #(define-music-function
 	(cresctext)

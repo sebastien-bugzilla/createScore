@@ -10,7 +10,7 @@ musicFagottoIMvtII = \relative c' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*20
+	R4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,7 +20,9 @@ musicFagottoIMvtII = \relative c' {
 	
 	
 	
-	\mark \default
+	\cueDuring #"cueVoiceFagottoIMvtII" #UP {
+		\ni R4. \no \mark \default
+	}
 % Bars 21 to 25
 	c4( bes16 c)
 	des8 r des

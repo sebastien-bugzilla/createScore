@@ -33,7 +33,7 @@ musicFagottoIMvtIII = \relative c' {
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis8 g \acciaccatura fis g
+	r4 r \acciaccatura fis8 g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)( c4.\sf b8)
 	a( f') b,(\noBeam g'4) g8

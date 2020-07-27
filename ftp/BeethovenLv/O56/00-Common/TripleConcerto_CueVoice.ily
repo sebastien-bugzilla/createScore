@@ -636,22 +636,275 @@ cueVoiceClarinetIIMvtIII = \relative c'' {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	
+	R1*12
+	% bar 13 - 18
+	c'1\pp^\markup {Viol.I}
+	b8_( c d8. c16) c4 c
+	e1_\crescpocoapoco
+	dis8_( e f8. e16) e4 e
+	g1
+	fis8_( g a8. g16) g4 g
+	R1*85
+	% bar 104 - 107
+	<f' a>2._(\trill^\markup {Pf.} \grace {gis16 a} <a c>8. <f a>16)
+	<e g!>4 <c' e>4. <c e>16 <b d> <a c> <g b> <f a> <e g>
+	<d f>4 <d, f>2\trill \grace {e16 f} <f a>8. <d f>16
+	<c e>4 r r2
+	R1*39
+	% bar 147 - 148
+	\tuplet 3/2 4 {r8^\markup {Vlc.conc} e,,_(_\crescmarkup gis) gis_( b) b_( e) e_( gis) gis_( b) b_(
+	e)\ff gis, b e, gis b, e gis, b } r8^\markup {Vlc.} \tuplet 3/2 8 {b16_( cis dis)}
+	R1*14
+	% bar 163 - 164
+	e8^\markup {Vlc.} r fis r d r e4^\arco_~
+	e cis b8. e,16[\f fis8. gis16]
+	R1*31
+	% bar 196 - 198
+	b'4^\markup {Vlc.conc} e,16 dis e fis gis a gis fis e fis gis a
+	b c b a gis a b c d cis e d c b a gis
+	a bes a bes a bes a bes a bes c bes a g! f! e
+	R1*24
+	% bar 223 - 224
+	gis'8^\markup {Viol.I}_\ppcrescpocoapoco gis gis gis b b b b
+	d d d d gis gis gis gis
+	R1*41
+	% bar 266 - 267
+	a,,8_(^\markup {Vlc.conc} gis fis gis cis b ais b)
+	e_( d gis8.\> fis16\! e8 d cis b)
+	R1*54
+	% bar 322 - 323
+	r16 d,^\markup {Pf.} e f g a b c d e f g a b c d
+	g,,1_\pcresc^\markup {Fag.II}
+	R1*60
+	% bar 384 - 385
+	\tuplet 3/2 4 {r8 g,_(^\markup {Vlc.conc}_\crescmarkup b) b_( d) d_( g) g_( b) b_( d) d_(
+	g)\ff b, d g, b d, g b, d} r8 \tuplet 3/2 8 {d16_(^\markup {Vlc.} e fis)}
+	R1*14
+	% bar 400 - 401
+	g8^\markup {Vlc.} r a r f r g4(~^\arco
+	g e d8.) g,16[ a8. b16]
+	R1*23
+	% bar 425 - 427
+	b''8.^\markup {Ob.I} f'16 f8 r r8. f16 f8 r
+	r8. f16 f8 r r8. f16[ f8. f16]
+	e4 r r2
+	R1*32
+	% bar 460 - 461
+	b8_\ppcrescpocoapoco^\markup {Viol.I} b b b d d d d
+	f f f f b b b b
+	R1*24
+	% bar 486 - 488
+	e,8^\markup {Ob.I} r r4 r8. e16[ e8. e16]
+	f8 r r4 r8. f16[ f8. f16]
+	e8 r r4 r2
+	R1*25
+	% bar 514 - 516
+	b,,16^\markup {Vlc.}_(_\crescmarkup c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	dis_( e dis e) g8._( f16) e16_( f e f) a8. g16
+	f8.\f[ e16 d8. c16] r2
 }
 cueVoiceFagottoIMvtII = \relative c {
-	
+	R4.*19
+	% bar 20
+	r8 \tuplet 3/2 16 {r32 ees_([_\espressivo^\markup {Pf.} d] \tupletNeutral ees[ aes g] aes[ c b] c[ ees d])}
 }
-cueVoiceFagottoIMvtIII = \relative c {
-	
+cueVoiceFagottoIMvtIII = \relative c'' {
+	R2.*12
+	% bar 13 - 16
+	b4.(^\markup {Viol.conc} cis16 dis e8 fis)
+	g4( e4. d!8)
+	cis( a' d,4. c!8)
+	b(\p g' c,) r r4
+	R2.*12
+	% bar 29 - 31
+	\tuplet 6/4 4 {d,,16^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'!_( e f e f)}
+	f2\trill_~ f8.._( e32)
+	f2*1/2\f^\fermata r2
+	R2.*46
+	% bar 78 - 79
+	d,8\noBeam^\markup {Vlc.conc} fis'[_(\trill \grace {e16 fis} d8]) a'[_(\trill \grace {g16 a} fis8]) \afterGrace d' {cis16 d}
+	c!4( b8) r r4
+	R2.*51
+	% bar 131 - 134
+	b4.(^\markup {Viol.conc} cis16 dis e8 fis)
+	g4( e4. d!8)
+	cis( a' d,4. c!8)
+	b(\p g' c,) r r4
+	R2.*12
+	% bar 147 - 149
+	\tuplet 6/4 4 {d,,16^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'_( e f e f)}
+	f2\trill_~ f8.._( e32)
+	f2*1/2\f\fermata r2
+	R2.*91
+	% bar 241 - 244
+	g4.(\trill^\markup {Vln.conc}\cresc a16 b c8 d)
+	\grace {c16( d)} e4( c4. b8)
+	a8( f') b,( g'4) g8
+	g4(\f c,8) r r4
+	R2.*26
+	% bar 271 - 272
+	g,,8^\markup {Vlc.conc} b'[(\trill \grace {a16 b} g8)] d'([\trill \grace {cis16 d} b8]) \afterGrace g'\trill  {fis16 g}
+	f!4( e8) r r4
+	R2.*37
+	% bar 310 - 314
+	c8_(\<^\markup {Vlc.conc} b c d e fis)\!
+	g_( d) d-. d-. e16_( d c d)
+	e8_( c) c-. c-. d16_( c b c)
+	b8_( g) g g g g
+	c4 c, r
+	R2.*18
+	R2*27
+	% bar 360 - 367
+	g''8^\markup {Pf.} a16 b c b c d 
+	e dis e d c d c b
+	a d f e d e d c
+	b c b a g4\trill_~
+	g8 a16 b c b c d
+	e dis e d c d c b
+	a f' b, g' b, g' b, g'
+	c, r r8 r4
+	R2*71
+	% bar 439 - 442
+	\tuplet 3/2 4 {g,8\p(^\markup {Pf.} aes a bes b c
+	cis d ees e f) f}
+	f2\trill~
+	\afterGrace f\fermata {e16^\adagio f}
 }
 cueVoiceFagottoIIMvtI = \relative c {
-	
+	R1*18
+	% bar 19 - 20
+	c'1\f\cresc^\markup {Fag.I} 
+	b8_([ c d8. c16]) c4-. c-.\!
+	R1*83
+	% bar 104 - 107
+	<f' a>2._(\trill^\markup {Pf.} \grace {gis16 a} <a c>8. <f a>16)
+	<e g!>4 <c' e>4. <c e>16 <b d> <a c> <g b> <f a> <e g>
+	<d f>4 <d, f>2\trill \grace {e16 f} <f a>8. <d f>16
+	<c e>4 r r2
+	R1*21
+	% bar 129 - 131
+	r8^\markup {Pf.} c,16_( c') d,_( d') e,_( e') f,_( f') g,_( g') a,_( a') b,_( b')
+	c,_( c') r8 r4 r2
+	r8 c,16_( c') b,_( b') a,_( a') g,_( g') f,_( f') e,_( e') d,_( d')
+	R1*15
+	% bar 147 - 148
+	\tuplet 3/2 4 {r8^\markup {Vlc.conc} e,,_(_\crescmarkup gis) gis_( b) b_( e) e_( gis) gis_( b) b_(
+	e)\ff gis, b e, gis b, e gis, b } r8^\markup {Vlc.} \tuplet 3/2 8 {b16_( cis dis)}
+	R1*14
+	% bar 163 - 164
+	e8^\markup {Vlc.} r fis r d r e4^\arco_~
+	e cis b8. e,16[\f fis8. gis16]
+	R1*58
+	% bar 223 - 224
+	gis''8^\markup {Viol.I}_\ppcrescpocoapoco gis gis gis b b b b
+	d d d d gis gis gis gis
+	R1*41
+	% bar 266 - 267
+	a,,8_(^\markup {Vlc.conc} gis fis gis cis b ais b)
+	e_([ d gis8.\> fis16\!] e8 d cis b)
+	R1*52
+	% bar 320 - 322
+	r16 fis,^\markup {Pf.} g a b c d ees fis g a b c d ees fis
+	f!4 r r2
+	r16 d,_\crescmarkup e f g a b c d e f g a b c d
+	R1*20
+	% bar 343 - 344
+	c,1^\markup {Fag.I}
+	b8_([ c d8. c16]) c4 c
+	R1*39
+	% bar 384 - 385
+	\tuplet 3/2 4 {r8 g,_(^\markup {Vlc.conc}_\crescmarkup b) b_( d) d_( g) g_( b) b_( d) d_(
+	g)\ff b, d g, b d, g b, d} r8 \tuplet 3/2 8 {d16_(^\markup {Vlc.} e fis)}
+	R1*14
+	% bar 400 - 401
+	g8^\markup {Vlc.} r a r f r g4(~^\arco
+	g e d8.) g,16[ a8. b16]
+	R1*23
+	% bar 425 - 427
+	b''8.^\markup {Ob.I} f'16 f8 r r8. f16 f8 r
+	r8. f16 f8 r r8. f16[ f8. f16]
+	e4 r r2
+	R1*32
+	% bar 460 - 461
+	b8_\ppcrescpocoapoco^\markup {Viol.I} b b b d d d d
+	f f f f b b b b
+	R1*24
+	% bar 486 - 488
+	e,8^\markup {Ob.I} r r4 r8. e16[ e8. e16]
+	f8 r r4 r8. f16[ f8. f16]
+	e8 r r4 r2
+	R1*25
+	% bar 514 - 516
+	b,,16^\markup {Vlc.}_(_\crescmarkup c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	dis_( e dis e) g8._( f16) e16_( f e f) a8. g16
+	f8.\f[ e16 d8. c16] r2
 }
 cueVoiceFagottoIIMvtII = \relative c {
-	
+	R4.*19
+	% bar 20
+	r8 \tuplet 3/2 16 {r32 ees_([_\espressivo^\markup {Pf.} d] \tupletNeutral ees[ aes g] aes[ c b] c[ ees d])}
 }
 cueVoiceFagottoIIMvtIII = \relative c {
-	
+	R2.*28
+	% bar 29 - 31
+	\tuplet 6/4 4 {d16^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'!_( e f e f)}
+	f2\trill_~ f8.._( e32)
+	f2*1/2\f^\fermata r2
+	R2.*31
+	% bar 63 - 65
+	c,4(^\markup {Fag.I} e g)
+	c( e, g
+	c g8) r r4
+	R2.*14
+	% bar 80 - 83
+	g8\pp^\markup {Fag.I} d g d g d
+	a' d, a' d, a' d,
+	fis d fis d fis d 
+	g4 r r
+	R2.*63
+	% bar 147 - 149
+	\tuplet 6/4 4 {d16^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'_( e f e f)}
+	f2\trill_~ f8.._( e32)
+	f2*1/2\f\fermata r2
+	R2.*68
+	% bar 218 - 221
+	r8 g'16\pp^\markup {Cor.I} g g8 g g g
+	R2.
+	r8 g16\pp g g8 g g g
+	g2.
+	R2.*19
+	% bar 241 - 244
+	g,4._(\trill^\markup {Vln.conc}\cresc a16 b c8 d)
+	\grace {c16_( d)} e4_( c4. b8)
+	a8_( f') b,_( g'4) g8
+	g4_(\f c,8) r r4
+	R2.*28
+	% bar 273 - 276
+	c,8\pp^\markup {Fag.I} g c g c g
+	d' g, d' g, d' g,
+	d' g, b g b g
+	c r r4 r
+	R2.*48
+	% bar 325 - 326
+	g2.^\markup {Fag.I}_\crescmarkup
+	c8\f g c g e c
+	R2.*6
+	R2*27
+	% bar 360 - 367
+	g''8^\markup {Pf.} a16 b c b c d 
+	e dis e d c d c b
+	a d f e d e d c
+	b c b a g4\trill_~
+	g8 a16 b c b c d
+	e dis e d c d c b
+	a f' b, g' b, g' b, g'
+	c, r r8 r4
+	R2*71
+	% bar 439 - 442
+	\tuplet 3/2 4 {g,8\p_(^\markup {Pf.} aes a bes b c
+	cis d ees e f) f}
+	f2\trill~
+	\afterGrace f\fermata {e16^\adagio f}
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #
