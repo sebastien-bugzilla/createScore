@@ -163,7 +163,7 @@ musicCornoIMvtIII = \relative c'' {
 	e4. r8 r4
 	R2.
 % Bars 171 to 175
-	r8 e16\p e e8 e e e
+	r8 e16\pp e e8 e e e
 	r8 e16 e e8 e e e
 	r8 g16 g g8 g g g
 	g r r4 r

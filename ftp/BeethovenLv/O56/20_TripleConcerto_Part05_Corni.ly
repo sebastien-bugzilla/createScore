@@ -34,9 +34,9 @@
 \addQuote "cueVoiceCornoIMvtI" { \cueVoiceCornoIMvtI }
 \addQuote "cueVoiceCornoIMvtII" { \cueVoiceCornoIMvtII }
 \addQuote "cueVoiceCornoIMvtIII" { \cueVoiceCornoIMvtIII }
-\addQuote "cueVoiceCornoIIMvtI" { \cueVoiceCornoIIMvtI }
-\addQuote "cueVoiceCornoIIMvtII" { \cueVoiceCornoIIMvtII }
-\addQuote "cueVoiceCornoIIMvtIII" { \cueVoiceCornoIIMvtIII }
+%\addQuote "cueVoiceCornoIIMvtI" { \cueVoiceCornoIIMvtI }
+%\addQuote "cueVoiceCornoIIMvtII" { \cueVoiceCornoIIMvtII }
+%\addQuote "cueVoiceCornoIIMvtIII" { \cueVoiceCornoIIMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -127,79 +127,79 @@
 			}
 		}
 	}
-	\score {
-		\new Staff <<
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatCornoIIMvtI
+%%			}
 %			\new Voice {
-%				\formatCornoIIMvtI
+%				\timeMvtI \generalOptions \partOptions
+%				\nameCornoIIMvtI \musicCornoIIMvtI
 %			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameCornoIIMvtI \musicCornoIIMvtI
-			}
-		>>
-		\header {
-			breakbefore = ##t
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					I
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
+%		>>
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					I
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatCornoIIMvtII
+%%			}
 %			\new Voice {
-%				\formatCornoIIMvtII
+%				\timeMvtII \generalOptions \partOptions
+%				\nameCornoIIMvtII \musicCornoIIMvtII
 %			}
-			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameCornoIIMvtII \musicCornoIIMvtII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					II
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatCornoIIMvtIII
+%%			}
 %			\new Voice {
-%				\formatCornoIIMvtIII
+%				\timeMvtIII \generalOptions \partOptions
+%				\nameCornoIIMvtIII \musicCornoIIMvtIII
 %			}
-			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameCornoIIMvtIII \musicCornoIIMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					III
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
 }
