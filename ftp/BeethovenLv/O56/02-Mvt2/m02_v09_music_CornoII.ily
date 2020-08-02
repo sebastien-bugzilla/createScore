@@ -10,11 +10,17 @@ musicCornoIIMvtII = \relative c, {
 	\key c \major
 	\transposition ees
 % Bars 1 to 5
-	R4.*11
+	R4.*8
 % Bars 6 to 10
 	
-% Bars 11 to 15
 	
+	
+	\cueDuring #"cueVoiceCornoIIMvtII" #DOWN {
+		\ni R4.
+		R
+% Bars 11 to 15
+		R \no
+	}
 	\clef bass r8. c16\p c c
 	c4.~
 	c~
@@ -26,11 +32,13 @@ musicCornoIIMvtII = \relative c, {
 	
 	\mark \default
 % Bars 21 to 25
-	R4.*4
-	
-	
-	
-	\clef treble c''4.~\pp
+	R4. \clef treble 
+	\cueDuring #"cueVoiceCornoIIMvtII" #UP {
+		\ni R4.
+		R
+		<< R {s8. \clef bass s \clef treble} >> \no
+	}
+	c''4.~\pp
 % Bars 26 to 30
 	c~
 	c8.\noBeam c16 c( g)

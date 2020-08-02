@@ -37,11 +37,10 @@ musicCornoIMvtII = \relative c'' {
 	c
 % Bars 31 to 35
 	c8_\crescmarkup c c \mark \default
-	c8.\sf\> r16\! r8
-	\cueDuring #"cueVoiceCornoIMvtII" #UP {
+	c8.\sf\> r16\! \cueDuring #"cueVoiceCornoIMvtII" #DOWN { \clef bass r8
 		\ni R4.
 		R \no
-		r8 } e4\sf\>
+		r8 } \clef treble e4\sf\>
 % Bars 36 to 40
 	d8.\pp[ d16~] d d
 	c8. c8 c16

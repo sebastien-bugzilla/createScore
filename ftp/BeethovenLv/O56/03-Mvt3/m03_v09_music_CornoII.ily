@@ -10,14 +10,20 @@ musicCornoIIMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*10
+	R2.*7
 % Bars 6 to 10
 	
+	
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+	}
 % Bars 11 to 15
 	e2.\pp~
 	e~
 	e8 r r4 r
-	R2.*17
+	R2.*15
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -26,17 +32,18 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	
-	\mark #4
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2.
+		R \no \mark #4
 % Bars 31 to 35
-	r4 g\ff\fermata r
+		r4 } g\ff\fermata r
 	R2.*2
 	
 	c,2.\pp~
 	c~_\crescmarkup
 % Bars 36 to 40
 	c~
-	c8 c c c g'\ff[ g]
+	c8 c c c g'\ff[^\tutti g]
 	e4. g,8 g g
 	g4 c4. c8
 	c c g\noBeam g'4 g8
@@ -65,8 +72,8 @@ musicCornoIIMvtIII = \relative c' {
 	c c c c c c 
 	c r g' r e r
 % Bars 61 to 65
-	c r r4 r
-	R2.*23
+	c r^\solo r4 r
+	R2.*20
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -75,10 +82,11 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 81 to 85
 	
-	
-	
-	
-	r4 r g8\pp-. g-.
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni \clef bass R2.
+		R
+		R \no
+		r4 r } \clef treble g8\pp-. g-.
 % Bars 86 to 90
 	g r r4 g8-. g-.
 	g r g r g r
@@ -108,42 +116,51 @@ musicCornoIIMvtIII = \relative c' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*8
+	<>^\atempo R2.*4
 % Bars 111 to 115
 	
+	
+	
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R
 % Bars 116 to 120
-	
-	
+		\mmrPos #-8 R
+		\mmrPos #-6 R \no
+	}
 	<< c2.~ {s8\pp\< s s s s s\>} >>
 	c8\! r r4 r
-	R2.*9
+	R2.*6
 % Bars 121 to 125
 	
 % Bars 126 to 130
-	
-	
-	
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+	}
 	e2.\pp~
 	e~
 % Bars 131 to 135
 	e8 r r4 r
-	R2.*17
+	R2.*15
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	r4 g\ff\fermata r
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2.
+		R \no \mark \default
+		r4 } g\ff\fermata r
 	R2.*2
 % Bars 151 to 155
 	
 	c,2.\pp~
 	c~_\crescmarkup
 	c~
-	c8 c c c g'\ff[ g]
+	c8 c c c g'\ff[^\tutti g]
 % Bars 156 to 160
 	e4. g,8 g g
 	g4 c4. c8
@@ -163,7 +180,7 @@ musicCornoIIMvtIII = \relative c' {
 	e4. r8 r4
 	R2.
 % Bars 171 to 175
-	r8 e16\pp e e8 e e e
+	r8 e16\pp^\solo e e8 e e e
 	r8 e16 e e8 e e e
 	r8 g16 g g8 g g g
 	g r r4 r
@@ -221,7 +238,7 @@ musicCornoIIMvtIII = \relative c' {
 	g2._\crescmarkup~ \mark \default
 	g4. g8-. e-. c-.
 	g r r4 r
-	R2.*20
+	R2.*17
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -229,10 +246,11 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r g8\ff g
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R
+		R \no
+		r4 r } g8\ff^\tutti g
 	e'2 e8 g,
 % Bars 246 to 250
 	g4 c4. c8
@@ -244,7 +262,7 @@ musicCornoIIMvtIII = \relative c' {
 	c8 d' g,\noBeam g4 g8
 	g4(\ff e8) r g4(\sf
 	e8) r e r e r
-	e r c r r4
+	e r c r^\solo r4
 	R2.*2
 % Bars 256 to 260
 	
@@ -255,15 +273,20 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 261 to 265
 	c~ \mark #11
 	c8 c-. c-. r r4
-	R2.*18
+	R2.*16
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
+	
+	
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2.
+		R \no
 % Bars 281 to 285
-	r4 r r8 c\p
+		r4 } r r8 c\p
 	c r c r c r
 	c r r4 r8 c\f
 	c r r4 r
@@ -300,15 +323,17 @@ musicCornoIIMvtIII = \relative c' {
 	g~
 	g~
 	g4( e g)
-	R2.*11
+	R2.*8
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 	
-	
-	
-	\mark \default
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R
+		\mmrPos #-8 R \no \mark \default
+	}
 % Bars 326 to 330
 	r8 g\f-. c-. g-. e-. c-. 
 	g' g,16 g g8 g16 g g8 g16 g
@@ -317,8 +342,8 @@ musicCornoIIMvtIII = \relative c' {
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered} >> \bar "||"
-	\time 2/4 R2*34
+	<<{r4 r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no} >> \bar "||"
+	\time 2/4 R2*30
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -331,8 +356,14 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 361 to 365
 	
-% Bars 366 to 370
 	
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2
+		R
+		R
+% Bars 366 to 370
+		R \no
+	}
 	r8 c4\pp c8
 	r8 c4 c8
 	r c4 c8
@@ -355,7 +386,7 @@ musicCornoIIMvtIII = \relative c' {
 	R2*3
 % Bars 386 to 390
 	\mark \default
-	c8\f r c c
+	c8\f^\tutti r c c
 	c'4( e,8) r
 	R2
 	r4 g8 g
@@ -370,7 +401,7 @@ musicCornoIIMvtIII = \relative c' {
 	g,
 	c,\sf
 	c\sf
-	c'8 r r4
+	c'8 r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -378,31 +409,35 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*12
+	R2*8
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	
-	
-	
-	
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni R2
+		R
+		R
+		R \no
+	}
 	c,2\fp~
 % Bars 426 to 430
 	c~
 	c8 r r4
-	R2*13
+	R2*11
 % Bars 431 to 435
 	
 % Bars 436 to 440
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
+		\ni \mmrPos #4 R2
+		\mmrPos #4 R \mark \default
 % Bars 441 to 445
-	R2
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." R2.
+		\mmrPos #-6 R2
+		\mmrPos #-6 R2 \bar "||"
+		\time 3/4 \tempo "Tempo I." R2. \no
+	}
 	c'8\f r e, r r4
 	R2.
 % Bars 446 to 450
