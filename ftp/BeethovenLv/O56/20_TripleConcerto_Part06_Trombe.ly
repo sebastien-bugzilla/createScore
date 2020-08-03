@@ -76,6 +76,37 @@
 	\score {
 		\new Staff <<
 %			\new Voice {
+%				\formatFloteMvtIII
+%			}
+			\new Voice {
+				\generalOptions \partOptions \nameTrombeIMvtIII 
+				\timeMvtII \clef treble \key aes \major
+				R4.*20 \mark \default 
+				R4.*11 \mark \default
+				R4.*12 \mark \default
+				R4.*10
+				\bar "||"
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
 %				\formatTrombeIMvtIII
 %			}
 			\new Voice {
@@ -121,6 +152,37 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatFloteMvtIII
+%			}
+			\new Voice {
+				\generalOptions \partOptions \nameTrombeIIMvtIII 
+				\timeMvtII \clef treble \key aes \major
+				R4.*20 \mark \default 
+				R4.*11 \mark \default
+				R4.*12 \mark \default
+				R4.*10
+				\bar "||"
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			ragged-right = ##f
 		}
 	}
 	\score {

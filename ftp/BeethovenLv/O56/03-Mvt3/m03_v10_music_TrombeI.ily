@@ -10,9 +10,18 @@ musicTrombeIMvtIII = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*30
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R
+		R
+		\mmrPos #-6 R
+		\mmrPos #-6 R
 % Bars 6 to 10
-	
+		R
+		R
+		R \no
+	}
+	R2.*20
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -23,14 +32,15 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	
 	
-	
-	\mark #4
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R \no \mark #4
 % Bars 31 to 35
-	r4 g\ff\fermata r
+		r4 } g\ff\fermata r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r g8\ff g
+	r4 r g8\ff^\tutti g
 	g4. g8 g g
 	g4 c4. c8
 	c c g\noBeam g4 g8
@@ -57,7 +67,7 @@ musicTrombeIMvtIII = \relative c'' {
 	c c c c c c 
 	c, r g' r e r
 % Bars 61 to 65
-	c r r4 r
+	c r^\solo r4 r
 	R2.*31
 % Bars 66 to 70
 	
@@ -72,12 +82,13 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 91 to 95
 	
 	\mark \default
-	R2.*6
+	R2.*4
 % Bars 96 to 100
 	
-	
-	
-	r4 r r8 g'\p
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni R2.
+		R \no
+		r4 r r8 } g'\p
 	c r r4  r8 g
 % Bars 101 to 105
 	c r r4 r8 g
@@ -90,7 +101,7 @@ musicTrombeIMvtIII = \relative c'' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*39
+	<>^\atempo R2.*37
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -107,16 +118,17 @@ musicTrombeIMvtIII = \relative c'' {
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	r4 g\ff\fermata r
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni \mmrPos #-6 R2.
+		R \no \mark \default
+		r4 } g\ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r g8\ff g
+	r4 r g8\ff^\tutti g
 % Bars 156 to 160
 	g4. g8 g g
 	g4 c4. c8
@@ -134,14 +146,14 @@ musicTrombeIMvtIII = \relative c'' {
 	R2.
 	e'8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
-	R2.*9
+	<>^\solo R2.*9
 % Bars 171 to 175
 	
 % Bars 176 to 180
 	
 	
 	\mark \default
-	R2.*42
+	R2.*39
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -158,11 +170,16 @@ musicTrombeIMvtIII = \relative c'' {
 	
 % Bars 216 to 220
 	
+	
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
 % Bars 221 to 225
-	r4 r g,\p \mark \default
+		\clef bass r4 r } \clef treble g,\p \mark \default
 	c8\f-. g-. c-. g-. e-. c-. 
 	g r r4 r
-	R2.*20
+	R2.*17
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -170,10 +187,11 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r g'8\ff g
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+		r4 r } g'8\ff^\tutti g
 	g2 g8 g
 % Bars 246 to 250
 	g4 c4. c8
@@ -185,13 +203,13 @@ musicTrombeIMvtIII = \relative c'' {
 	c8 r g4 r8 g16 g
 	g4(\ff c8) r g4\sf(
 	c8) r g r e r
-	c r c r r4
+	c r c r^\solo r4
 	R2.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	\mark #11
-	R2.*24
+	R2.*22
 % Bars 266 to 270
 	
 % Bars 271 to 275
@@ -202,8 +220,10 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni R2.
+		R \no \mark \default
+	}
 % Bars 286 to 290
 	e8\f r e r e r
 	R2.
@@ -225,7 +245,7 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*22
+	<>^\atempo R2.*19
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -234,9 +254,11 @@ musicTrombeIMvtIII = \relative c'' {
 	
 % Bars 321 to 325
 	
-	
-	
-	
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+	}
 	g2._\pcresc \mark \default
 % Bars 326 to 330
 	c8\f-. g-. c-. g-. e-. c-. 
@@ -246,8 +268,8 @@ musicTrombeIMvtIII = \relative c'' {
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
-	\time 2/4 R2*54
+	<<{r4 r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no}>> \bar "||"
+	\time 2/4 R2*51
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -268,9 +290,15 @@ musicTrombeIMvtIII = \relative c'' {
 	
 % Bars 381 to 385
 	
+	
+	
+	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
+		\ni R2
+		R
 % Bars 386 to 390
-	\mark \default
-	c8\f r c c
+		R \no \mark \default
+	}
+	c8\f^\tutti r c c
 	c4 c8 r
 	R2
 	r4 g8 g
@@ -285,7 +313,7 @@ musicTrombeIMvtIII = \relative c'' {
 	g
 	c4.\sf r8
 	c4.\sf r8
-	g r r4
+	g r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -293,7 +321,7 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*28
+	R2*26
 % Bars 416 to 420
 	
 % Bars 421 to 425
@@ -306,12 +334,14 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceTrombeIMvtIII" #DOWN {
+		\ni \clef bass \mmrPos #-4 R2
+		\mmrPos #-4 R \mark \default
 % Bars 441 to 445
-	R2
-	R2\fermataMarkup \bar "||"
-	\tempo "Tempo I." \time 3/4 R2.
+		\clef treble R2
+		R2 \bar "||"
+		\tempo "Tempo I." \time 3/4 \mmrPos #6 R2. \no
+	}
 	c8\f r c r r4
 	R2.
 % Bars 446 to 450
