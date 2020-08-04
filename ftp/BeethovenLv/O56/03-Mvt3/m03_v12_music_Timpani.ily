@@ -10,9 +10,18 @@ musicTimpaniMvtIII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*30
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni \clef treble \mmrPos #-6 R2.
+		R
+		R
+		\mmrPos #-6 R
+		\mmrPos #-6 R
 % Bars 6 to 10
-	
+		R
+		R
+		R \no \clef bass
+	}
+	R2.*20
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -23,14 +32,15 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	
-	\mark #4
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni \clef treble \mmrPos #-6 R2.
+		R \mark #4 \no
 % Bars 31 to 35
-	\grace {s8.} r4 g\ff\fermata r
+		\grace {s8.} r4 \clef bass } g\ff\fermata r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r g8\f g
+	r4 r g8\f^\tutti g
 	c4 r8 g c g
 	c r c r c r
 	c c g g r g
@@ -59,7 +69,7 @@ musicTimpaniMvtIII = \relative c {
 	c4 c2\startTrillSpan
 	c8\stopTrillSpan r c r c r
 % Bars 61 to 65
-	c r r4 r
+	c r^\solo r4 r
 	R2.*31
 % Bars 66 to 70
 	
@@ -74,12 +84,13 @@ musicTimpaniMvtIII = \relative c {
 % Bars 91 to 95
 	
 	\mark \default
-	R2.*6
+	R2.*4
 % Bars 96 to 100
 	
-	
-	
-	r4 r r8 g\p
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni \clef treble R2.
+		R \no 
+		r4 r r8 \clef bass } g\p
 	c r r4 r8 g
 % Bars 101 to 105
 	c r r4 r8 g
@@ -92,7 +103,7 @@ musicTimpaniMvtIII = \relative c {
 	R2.*3
 	
 	
-	<>^\atempo R2.*39
+	<>^\atempo R2.*37
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -109,16 +120,17 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 146 to 150
 	
-	
-	\mark \default
-	\grace {s8.} r4 g\ff\fermata r
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni R2.
+		R \mark \default \no
+		\grace {s8.} r4 } g\ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r g8\ff g
+	r4 r g8\ff^\tutti g
 % Bars 156 to 160
 	c4 r8 g c g
 	c r c r r c
@@ -128,7 +140,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 161 to 165
 	R2.
 	r4 c8 r c r
-	R2.*16
+	<>^\solo R2.*16
 % Bars 166 to 170
 	
 % Bars 171 to 175
@@ -137,7 +149,7 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	\mark \default
-	R2.*42
+	R2.*39
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -154,6 +166,12 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 216 to 220
 	
+	
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R \no \clef bass
+	}
 % Bars 221 to 225
 	r8 g16^\crescmarkup g g8 g g g \mark \default
 	c\f c c c c c
@@ -168,14 +186,15 @@ musicTimpaniMvtIII = \relative c {
 	r4 g8 r g r
 % Bars 231 to 235
 	g8 r r4 r
-	R2.*12
+	R2.*9
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r g8\f g
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R \no 
+		r4 r \clef bass } g8\f^\tutti g
 	c r r c\noBeam c g
 % Bars 246 to 250
 	c r c r c r
@@ -187,13 +206,13 @@ musicTimpaniMvtIII = \relative c {
 	c r g4 r8 g16 g
 	g8\ff r c r g4\trill
 	c8 r c r c r
-	c r c r r4
+	c r c r^\solo r4
 	R2.*7
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	\mark #11
-	R2.*24
+	R2.*22
 % Bars 266 to 270
 	
 % Bars 271 to 275
@@ -204,8 +223,10 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni << R2. {s8 \clef treble s8 s2} >>
+		R2. \no \mark \default \clef bass
+	}
 % Bars 286 to 290
 	c8\f r c r c r
 	R2.
@@ -226,7 +247,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*22
+	<>^\atempo R2.*20
 % Bars 306 to 310
 	
 % Bars 311 to 315
@@ -236,8 +257,10 @@ musicTimpaniMvtIII = \relative c {
 % Bars 321 to 325
 	
 	
-	
-	
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni \clef treble R2.
+		R \no \clef bass
+	}
 	g4\p g_\crescmarkup r8 g \mark \default
 % Bars 326 to 330
 	c8\f c c c c c
@@ -247,8 +270,8 @@ musicTimpaniMvtIII = \relative c {
 	g8 r r4 r
 % Bars 331 to 335
 	R2.
-	<<{r4  r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
-	\time 2/4 R2*54
+	<<{r4  r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no}>> \bar "||"
+	\time 2/4 R2*51
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -269,9 +292,15 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 381 to 385
 	
+	
+	
+	\cueDuring #"cueVoiceTimpaniMvtIII" #DOWN {
+		\ni \clef treble \mmrPos #-4 R2
+		\mmrPos #-4 R
 % Bars 386 to 390
-	\mark \default
-	c8\f r c c
+		\mmrPos #-4 R \no \clef bass \mark \default
+	}
+	c8\f^\tutti r c c
 	c16 c c c c8 r
 	R2
 	r4 g8 g
@@ -286,7 +315,7 @@ musicTimpaniMvtIII = \relative c {
 	g
 	c16\stopTrillSpan\sf c c c c8 r
 	c16\sf c c c c8 r
-	g r r4
+	g r r4^\solo
 % Bars 401 to 405
 	R2*12
 % Bars 406 to 410
@@ -294,7 +323,7 @@ musicTimpaniMvtIII = \relative c {
 % Bars 411 to 415
 	
 	\mark \default
-	R2*28
+	R2*26
 % Bars 416 to 420
 	
 % Bars 421 to 425
@@ -307,12 +336,14 @@ musicTimpaniMvtIII = \relative c {
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceTimpaniMvtIII" #UP {
+		\ni R2
+		R \mark \default
 % Bars 441 to 445
-	R2
-	R2\fermataMarkup \bar "||"
-	\tempo "Tempo I." \time 3/4 R2.
+		\clef treble \mmrPos #-6 R2
+		\mmrPos #-6 R2 \bar "||"
+		\tempo "Tempo I." \time 3/4 R2. \clef bass \no 
+	}
 	c8\f r c r r4
 	R2.
 % Bars 446 to 450

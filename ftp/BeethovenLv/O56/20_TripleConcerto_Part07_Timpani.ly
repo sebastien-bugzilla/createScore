@@ -72,6 +72,37 @@
 	\score {
 		\new Staff <<
 %			\new Voice {
+%				\formatFloteMvtIII
+%			}
+			\new Voice {
+				\generalOptions \partOptions \nameTimpaniMvtIII 
+				\timeMvtII \clef bass \key aes \major
+				R4.*20 \mark \default 
+				R4.*11 \mark \default
+				R4.*12 \mark \default
+				R4.*10
+				\bar "||"
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			ragged-right = ##f
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
 %				\formatTimpaniMvtIII
 %			}
 			\new Voice {

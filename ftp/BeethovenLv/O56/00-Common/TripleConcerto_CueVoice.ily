@@ -59,7 +59,7 @@ cueVoiceFloteMvtI = \relative c' {
 	r b,, c d e f g a b c d e f g a b
 	R1*59
 	% bar 384 - 385
-	\tuplet 3/2 4 {b,8^\markup {Viol.I} b^( g) g^( d) d^( b) b^( g) g^( d) d^(
+	\tuplet 3/2 4 {b,8^\markup {Viol.conc} b^( g) g^( d) d^( b) b^( g) g^( d) d^(
 	b) b'-. g-. d'-. b-. g'-. d-. b'-. g-. d'-. b-. g'-. }
 	R1*14
 	% bar 400 - 401
@@ -1448,10 +1448,108 @@ cueVoiceTrombeIIMvtIII = \relative c {
 %#                  C U E   V O I C E   F O R   T I M P A N I                  #
 %###############################################################################
 cueVoiceTimpaniMvtI = \relative c {
-	
+	R1*16
+	% bar 17 - 20
+	g''1^\markup {Viol.I}
+	fis8_([ g a8. g16]) g4 g
+	c1_\fcresc^\markup {Ob.I}
+	b8[_( c d8. c16]) c4 c
+	R1*91
+	% bar 112 - 113
+	r4^\markup {Corn.I} g4\p_~ g8 c_( e g)
+	g8._( f16) e2 f8._( d16)
+	R1*15
+	% bar 129 - 131
+	r8^\markup {Pf.} e,16_(\p e') f,_( f') g,_( g') a,_( a') b,_( b') c,_( c') d,_( d')
+	e,_( e') r8 r4 r2
+	r8 e,16_( e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
+	R1*89
+	% bar 221 - 224
+	gis16^\markup {Viol.conc} gis, a b c d e fis gis b, c d e fis gis a
+	b d, e fis gis a b c d gis, a b c d e fis
+	gis,,8^\markup {Viol.I}_\ppcrescpocoapoco gis gis gis b b b b
+	d d d d gis gis gis gis
+	R1*97
+	% bar 322 - 324
+	g,8^\markup {Corn.I} r g r g r g r
+	g_\pcresc r g r g r g r 
+	g r g r g r g r
+	R1*59
+	% bar 384 - 385
+	\tuplet 3/2 4 {b'8^\markup {Viol.conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
+	b) b'-. g-. d'-. b-. g'-. d-. b'-. g-. d'-. b-. g'-. }
+	R1*72
+	% bar 458 - 461
+	d16^\markup {Viol.conc} b,, c d e f g a b d, e f g a b c
+	d b c d e f g a b d, e f g a b c
+	b,8_\ppcrescpocoapoco^\markup {Viol.I} b b b d d d d
+	f f f f b b b b
+	R1*52
+	% bar 514 - 517
+	b,,16_(_\crescmarkup^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	dis_( e dis e) g8._( f16) e_( f e f) a8._( g16)
+	f8.\f[ e16 d8. c16] b8.[ d'16 f8. e16]
+	d8.[ c16 b8. a16] r2
 }
 cueVoiceTimpaniMvtIII = \relative c {
-	
+	% bar 1 - 8
+	g''4._(_\psottovoce^\markup {Vlc.conc} a16 b c8 d)
+	e4_( c4. b8)
+	a_( f'_~ f) f16_( e) e_( d) d_( c)
+	c_( b) b_( a) a_( g) fis_( g) fis_( g) fis_( g)
+	g4._(\trill a16 b c8 d)
+	e4_( c4. b8)
+	ais4_( g'4. e8)
+	dis8 r b r r4
+	R2.*20
+	% bar 29 - 31
+	\tuplet 6/4 4 {r16^\markup {Viol.conc} g_( fis g fis g) g, b'_( ais b ais b) g, d''_( cis d cis d)}
+	d2_\crescmarkup\trill_~ d8.._( cis32)
+	d2*1/2\fermata\f s2
+	R2.*65
+	% bar 97 - 99
+	\tuplet 6/4 4 {g,16^\markup {Viol.conc}_\crescmarkup b_( ais b ais b) g d'_( cis d cis d) b g'_( fis g fis g)}
+	\grace {fis16_( g a} g8.)_( f16) f'2_~
+	f8[ d b g f] s
+	R2.*47
+	% bar 147 - 149
+	\tuplet 6/4 4 {d,,16^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'_( e f e f)}
+	f2\trill_\crescmarkup_~ f8.._( e32)
+	f2*1/2\f\fermata r2
+	R2.*68
+	% bar 218 - 221
+	r8 g'16\pp^\markup {Ob.I} g g8 g g g
+	R2.
+	r8 g16\pp g g8 g g g
+	g2._\crescmarkup
+	R2.*19
+	% bar 241 - 244
+	g,4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
+	\grace {c16 d} e4( c4. b8)
+	a( f') b,( g'4) g8
+	g4(\f c,8) r s4
+	R2.*39
+	% bar 284 - 285
+	g,8\f^\markup {Vln.conc} g'''4\sf e8-. c-. a-.
+	g-. e-. c-. a-. g8.( a32 b)
+	R2.*37
+	% bar 323 - 324
+	r16 fis(^\markup {Pf.} g a b c d e g f! e d)
+	e( g, a b c d e f a g f e)
+	R2.*8
+	R2*51
+	% bar 384 - 386
+	g4.^\trill^\markup {Vln.Conc} a16 b
+	d\p c b c d c b a
+	a^( g) fis g a^( g) fis g
+	R2*52
+	% bar 439 - 443
+	\tuplet 3/2 4 {g,,8\p_(^\markup {Pf.} aes a bes b c
+	cis d ees e f) f }
+	f2\trill_~
+	\afterGrace f\fermata {e16^\adagio f}
+	g'4._(_\dolce a16 b c8 d)
+
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   S O L O V L N                  #

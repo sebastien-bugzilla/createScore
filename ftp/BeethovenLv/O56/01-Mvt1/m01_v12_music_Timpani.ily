@@ -10,13 +10,19 @@ musicTimpaniMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*20
+	<>^\tutti R1*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		\mmrPos #-6 R
+		R
+		R \no \clef bass
+	}
 % Bars 21 to 25
 	c1\f\startTrillSpan~
 	c4\stopTrillSpan c-. c-. c-.
@@ -68,7 +74,7 @@ musicTimpaniMvtI = \relative c {
 	
 	g1\ff\startTrillSpan
 	c4\stopTrillSpan r8. c16 c4 c \mark \default
-	c4 r r2
+	c4 r^\solo r2
 % Bars 76 to 80
 	R1*21
 	
@@ -80,27 +86,35 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 96 to 100
 	\mark \default
-	R1*17
+	R1*15
 % Bars 101 to 105
 	
 % Bars 106 to 110
 	
 % Bars 111 to 115
 	
-	
-	
-	c4\ff r r2
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		R \no \clef bass
+	}
+	c4\ff^\tutti r r2
 	g4 r r2
 % Bars 116 to 120
 	g4 g g g
 	c r r2 \mark \default
-	R1*14
+	<>^\solo R1*11
 % Bars 121 to 125
 	
 % Bars 126 to 130
 	
-% Bars 131 to 135
 	
+	
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		R
+% Bars 131 to 135
+		R \no \clef bass
+	}
 	r4 c\f c g
 	g r r2
 	R1*15
@@ -133,7 +147,7 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	\mark \default
-	R1*31
+	R1*27
 % Bars 196 to 200
 	
 % Bars 201 to 205
@@ -145,11 +159,13 @@ musicTimpaniMvtI = \relative c {
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	
-	
-	
-	\mark \default
-	c4\ff r r2
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R
+		R \no \clef bass \mark \default
+	}
+	c4\ff^\tutti r r2
 % Bars 226 to 230
 	c4 r r2
 	c4 r c r
@@ -159,7 +175,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 231 to 235
 	c4 r c r
 	c r c r
-	R1*44
+	<>^\solo R1*44
 % Bars 236 to 240
 	
 % Bars 241 to 245
@@ -178,7 +194,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 276 to 280
 	\mark \default
-	R1*48
+	R1*45
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -197,10 +213,12 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 321 to 325
 	
-	
-	
-	\mark \default
-	c4\ff r r2
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R1 \no \clef bass \mark \default 
+	}
+	c4\ff^\tutti r r2
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c r r2
@@ -220,7 +238,7 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	c2\f\startTrillSpan~ c8\stopTrillSpan r r4
+	c2\f\startTrillSpan~ c8\stopTrillSpan r^\solo r4
 % Bars 346 to 350
 	R1
 	c2\ff\startTrillSpan~ c8\stopTrillSpan r r4
@@ -231,7 +249,7 @@ musicTimpaniMvtI = \relative c {
 	g2\f\startTrillSpan~ g8\stopTrillSpan r r4
 	R1 \mark #11
 	g2\f\startTrillSpan~ g8\stopTrillSpan r r4
-	R1*32
+	R1*30
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -246,12 +264,14 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		R \no \clef bass \mark \default
+	}
 % Bars 386 to 390
-	g4\ff r g4-. g-.
+	g4\ff^\tutti r g4-. g-.
 	g-. g-. g-. g-.
-	g-. r r2
+	g-.^\solo r r2
 	R1*42
 % Bars 391 to 395
 	
@@ -274,7 +294,7 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 % Bars 431 to 435
-	R1*31
+	R1*27
 % Bars 436 to 440
 	
 % Bars 441 to 445
@@ -285,9 +305,15 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 456 to 460
 	
+	
+	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R
 % Bars 461 to 465
-	\mark \default
-	c4\ff r r2
+		R \no \clef bass \mark \default
+	}
+	c4\ff^\tutti r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -296,7 +322,7 @@ musicTimpaniMvtI = \relative c {
 	c4 r r8. c16[-. c8.-. c16]-. 
 	c4 r c r
 	c8.[ c16-. c8.-. c16]-. c8.[-. c16-. c8.-. c16]-. 
-	g4 r r2
+	g4 r^\solo r2
 % Bars 471 to 475
 	R1*7
 % Bars 476 to 480
@@ -331,13 +357,14 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	\tempo "Più allegro." R1*3
-	
+	\tempo "Più allegro." \cueDuring #"cueVoiceTimpaniMvtI" #UP {
+		\ni \clef treble \mmrPos #-10 << R1 {s4^\tutti s2.}>>
+		\mmrPos #-8 R1
 % Bars 516 to 520
-	
-	r2 r8. g16[\f-. c8.-. c16]-. 
+		\mmrPos #-8 R \no
+		r2 \clef bass } r8. g16[\f-. c8.-. c16]-. 
 	c4-.\ff r r2 \mark \default
-	g4-.\ff r r2
+	g4-.\ff^\solo r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r
