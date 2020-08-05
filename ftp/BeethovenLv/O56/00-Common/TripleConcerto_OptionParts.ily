@@ -21,7 +21,7 @@ partOptions = {
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
 		decrescendo-event )
 	\set Voice.restNumberThreshold = #0
-	\override TupletNumber.avoid-slur = #'around
+	\override TupletNumber.avoid-slur = #'ignore
 }
 #(set-global-staff-size 18)
 \layout {

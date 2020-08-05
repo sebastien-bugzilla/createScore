@@ -1549,19 +1549,107 @@ cueVoiceTimpaniMvtIII = \relative c {
 	f2\trill_~
 	\afterGrace f\fermata {e16^\adagio f}
 	g'4._(_\dolce a16 b c8 d)
-
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   S O L O V L N                  #
 %###############################################################################
 cueVoiceSoloViolinMvtI = \relative c {
-	
+	R1*76
+	% bar 77 - 84
+	c'2_(^\markup {Vlc.conc} b8[ c e8. d16])
+	d4 r r2
+	d2_( cis8[ d f8. e16])
+	e4 r r8. e16[_( g8. f16])
+	f2. g4\trill
+	a_( f d c)
+	b2_( d4.._\crescmarkup c16)
+	\afterGrace a1\trill {g16_( b a)}
+	R1*33
+	% bar 118 - 124
+	c2.^(_\markup {Vlc.conc} e4
+	g2. f4)
+	d d d8.[^( c16 d8. e16])
+	c2. c'8.^( b16)
+	b4^( a^~ a8) gis^( a b)
+	d4^( c4^~ c8) e^( c a)
+	g2^(^~ g8 f e16 g f8)
+	R1*127
+	% bar 252 - 255
+	d'2.^\markup {Vlc.conc} e4_(\trill
+	fis d b a)
+	gis2_(_\crescmarkup b4.. a16)
+	\afterGrace fis1\trill {e16 gis fis}
+	R1*83
+	% bar 339 - 345
+	e1^\markup {Viol.I}_\crescpocoapoco
+	dis8[_( e f8. e16)] e4 e
+	g1
+	fis8[_( g a8. g16)] g4 g
+	c'1_\crescmarkup^\markup {Fl.}
+	b8_([ c d8. c16]) c4 c
+	f2~ f8 r r4
+	R1*13
+	% bar 359 - 362
+	f,,,2._\cantabile^\markup {Vlc.conc} f'8._( e16)
+	e4_( d_~ d8) cis_( d e)
+	g4_( f_~ f8) a_( f d)
+	c2_(_~ c8 bes a16 c bes8)
+	R1*107
+	% bar 470 - 473
+	r2 r8. g'16[_(^\markup {Vlc.conc}_\espressivo a8. g16)]
+	b2_~ b8.[ g16_( a8. g16)]
+	c2_~ c8.[ g16_( a8. g16)]
+	f'4_( d b f)
 }
 cueVoiceSoloViolinMvtII = \relative c {
-	
+	R4.*22
+	% bar 23 - 24
+	\tuplet 3/2 16 {ees''32_([^\markup {Pf.} c des] c'[ a bes] c,[ ees des] c'[ a bes] c,[ bes' aes] des,[ c' bes])
+	bes,[_( aes' g] bes[ g ees] bes[ g ees])} r8.
+	R4.*19
+	% bar 44
+	\tuplet 3/2 16 {g,,32[_(\p^\markup {Vlc.conc} g' fis] g[ b ais] b[ d cis] d[ g d])} f!_( ees) d_( c)
 }
 cueVoiceSoloViolinMvtIII = \relative c {
-	
+	% bar 1 - 8
+	g''4._(^\markup {Vlc.conc}_\psottovoce a16 b c8 d)
+	e4_( c4. b8)
+	a_( f'_~ f) f16_( e) e_( d) d_( c)
+	c_( b) b_( a) a_( g) fis_( g) fis_( g) fis_( g)
+	g4.\trill_( a16 b c8 d)
+	\grace {c16 d} e4_( c4. b8)
+	ais4_( g'4. e8)
+	dis r b r r4
+	R2.*45
+	% bar 54 - 56
+	c,16\f^\markup {Viol.I} b c d e d e f g g a b
+	c b c d e d e f g g a b 
+	c4. e8_(\sf g, b)
+	R2.*67
+	% bar 124 - 126
+	e,4_(^\markup {Vlc.conc} c4. b8)
+	ais4_( g'4. e8)
+	dis r b r r4
+	R2.*40
+	% bar 167 - 170
+	e,,16\f^\markup {Vlc.} d c b a\sf b c d e\sf d c b
+	a\sf b c d e\sf d c b a\sf b c d 
+	e4.\sf f8 e d
+	c[ b c d e] s
+	R2.*83
+	% bar 254 - 255
+	r4 r16 g_\dolce_(^\markup {Vlc.conc} a) b_( c) d_( e) f_(
+	g4) r r
+	R2.*77
+	R2*67
+	% bar 400 - 406
+	r4 \tuplet 3/2 4 {g,,8\f^\markup {Vlc.conc} a b
+	c b c a b c
+	d c d b c d
+	e d e c d e
+	f e f d e f
+	g f g e f g
+	a g a } r4
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   S O L O V L C                  #
