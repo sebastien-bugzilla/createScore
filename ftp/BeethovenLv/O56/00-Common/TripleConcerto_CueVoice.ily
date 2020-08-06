@@ -1655,13 +1655,99 @@ cueVoiceSoloViolinMvtIII = \relative c {
 %#                  C U E   V O I C E   F O R   S O L O V L C                  #
 %###############################################################################
 cueVoiceSoloCelloMvtI = \relative c {
-	
+	R1*72
+	% bar 73 - 76
+	g1\ff^\markup {Vlc}
+	c,4 r8. c'16 c4 c 
+	c8\noBeam c'\pp^\markup {Viol.I} c c c c c c
+	c c c c   c c c c 
+	R1*77
+	% bar 154 - 156
+	d'2_(_~^\markup {Pf.} d8 ais b cis)
+	d_( fis, gis a! b dis, e fis)
+	gis_( b, cis dis) s2
+	R1*81
+	% bar 238 - 242
+	s2 r8.^\markup {Fag.I} b16[ b8. b16]
+	c4 b c d
+	c d c e
+	e2(\> f\p
+	b,2. e4)
+	R1*102
+	% bar 345 - 347
+	a,,8\f^\markup {Vlc}( b16 c d e f g) a4 \tuplet 3/2 4 {a'8\f^\markup {Viol.conc} f' c
+	a' f c' a f' c a' f c' c c c }
+	g,,,,8\ff^\markup {Vlc}( a16 b c d e f) g8 r r4
+	R1*43
+	% bar 391 - 393
+	d''2_(_~^\markup {Pf.} d8 e f cis)
+	d_( e f ais,) b_( c d fis,)
+	g a! b16_( d, e fis) s4 s
+	R1*73
+	% bar 467 - 470
+	ees'8.^\markup {Viol.II}[ c16 g8. c16] ees2\sf~
+	ees8. c16 ees4\sf~ ees8. c16 ees4~\sf
+	ees8.[ c16 ees8. c16] ees8.[ c16 ees8. c16]
+	bes4\fp r s2
+	R1*43
+	% bar 514 - 518
+	b,,16(^\markup {Vlc} c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	dis_( e dis e) g8._( f16) e_( f e f) a8._( g16)
+	f8.\f[ e16 d8. c16] b8.[ d16 f8. e16]
+	d8.[ c16 b8. a16] b8.[ g16 c8. e,16]
+	f4\ff r r2
 }
 cueVoiceSoloCelloMvtII = \relative c {
-	
+	% bar 1 - 4
+	c'4\p^\markup {Viol.I} bes16 c
+	des8 r des
+	des^(^~ des16. ees32) c16.^( des32)
+	bes8. s
+	R4.*16
+	% bar 21 - 24
+	c'4_(\p^\markup {Clar.I} bes16 c)
+	des8 r des
+	des_(_~ des16. ees32 c16. des32)
+	bes8 r4
+	R4.*15
+	% bar 40 - 43
+	c4(^\markup {Clar.I} b16 c)
+	c4.\f\>
+	c8.[_(\p b32 c)] b_( c b c)
+	d8.\f ees8\> ees16\!
 }
 cueVoiceSoloCelloMvtIII = \relative c {
-	
+	R2.*53
+	% bar 54 - 56
+	c'16\f^\markup {Viol.I} b c d e d e f g g a b
+	c b c d e d e f g g a b 
+	c4. e8_(\sf g, b)
+	R2.*114
+	% bar 171 - 174
+	a,,8^\markup {Viol.conc} a'16_( gis a8) a16_( b c8) c16_( d
+	e8) fis16_( gis a8) a16_( b c8) c16_( d)
+	e2_( \afterGrace d4)\trill {c16 d}
+	c4 r r
+	R2.*77
+	% bar 252 - 254
+	g,,,4_(\ff^\markup {Vlc.} c8) r g4\sf_(
+	c8) r g' r e r
+	c r c r r4
+	R2.*77
+	% bar 332 - 336
+	s2 s8 g'''16^\markup {Viol.conc} g
+	g4. g16 g
+	g4. g16 g
+	\tuplet 3/2 4 {g8 g g  g g g
+	g g g } r4
+	R2*59
+	% bar 396 - 400
+	b,,,!8[\ff^\markup {Vlc.} b' b b]
+	b[ b b b]
+	c,\sf[ c' c c]
+	fis,,\sf[ fis' fis fis]
+	g r r4
+
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   P I A N O                    #
