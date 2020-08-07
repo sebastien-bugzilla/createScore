@@ -143,6 +143,25 @@ attaca = #(define-music-function
 	#}
 )
 
+InCueContext = {
+	\override Beam.beam-thickness = #0.30
+	\override StemTremolo.beam-thickness = #0.30
+	\override Beam.length-fraction = #0.8
+	\override Stem.length-fraction = #0.8
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\set fontSize = #-3
+}
+
+OutCueContext = {
+	\revert Beam.beam-thickness
+	\revert StemTremolo.beam-thickness
+	\revert Beam.length-fraction
+	\revert Stem.length-fraction
+%	\override Stem.length = #7
+%	\override Beam.length = #7
+	\unset fontSize
+}
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

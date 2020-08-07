@@ -31,12 +31,12 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoicePianoUpMvtI" { \cueVoicePianoUpMvtI }
-\addQuote "cueVoicePianoUpMvtII" { \cueVoicePianoUpMvtII }
-\addQuote "cueVoicePianoUpMvtIII" { \cueVoicePianoUpMvtIII }
-\addQuote "cueVoicePianoDownMvtI" { \cueVoicePianoDownMvtI }
-\addQuote "cueVoicePianoDownMvtII" { \cueVoicePianoDownMvtII }
-\addQuote "cueVoicePianoDownMvtIII" { \cueVoicePianoDownMvtIII }
+%\addQuote "cueVoicePianoUpMvtI" { \cueVoicePianoUpMvtI }
+%\addQuote "cueVoicePianoUpMvtII" { \cueVoicePianoUpMvtII }
+%\addQuote "cueVoicePianoUpMvtIII" { \cueVoicePianoUpMvtIII }
+%\addQuote "cueVoicePianoDownMvtI" { \cueVoicePianoDownMvtI }
+%\addQuote "cueVoicePianoDownMvtII" { \cueVoicePianoDownMvtII }
+%\addQuote "cueVoicePianoDownMvtIII" { \cueVoicePianoDownMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -59,17 +59,28 @@
 %					\new Voice {
 %						\formatPianoUpMvtI
 %					}
+%					\new Voice {
+%						\timeMvtI \generalOptions \partOptions
+%						\namePianoUpMvtI \musicPianoUpMvtI
+%					}
 					\new Voice {
 						\timeMvtI \generalOptions \partOptions
-						\namePianoUpMvtI \musicPianoUpMvtI
+						\cueVoicePianoUpMvtI
+					}
+					\new Voice {
+						\cueVoicePianoThirdMvtI
 					}
 				>>
 			}
 			\new Staff = "down" {
 				<<
+%					\new Voice {
+%						\timeMvtI \generalOptions \partOptions
+%						\namePianoDownMvtI \musicPianoDownMvtI
+%					}
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						\namePianoDownMvtI \musicPianoDownMvtI
+						\clef bass
+						\cueVoicePianoDownMvtI
 					}
 				>>
 			}
@@ -89,78 +100,78 @@
 			}
 		}
 	}
-	\score {
-		\new PianoStaff <<
-			\new Staff = "up" {
-				<<
+%	\score {
+%		\new PianoStaff <<
+%			\new Staff = "up" {
+%				<<
+%%					\new Voice {
+%%						\formatPianoUpMvtII
+%%					}
 %					\new Voice {
-%						\formatPianoUpMvtII
+%						\timeMvtII \generalOptions \partOptions
+%						\namePianoUpMvtII \musicPianoUpMvtII
 %					}
-					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\namePianoUpMvtII \musicPianoUpMvtII
-					}
-				>>
-			}
-			\new Staff = "down" {
-				<<
-					\new Voice {
-						\timeMvtII \generalOptions \partOptions
-						\namePianoDownMvtII \musicPianoDownMvtII
-					}
-				>>
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new PianoStaff <<
-			\new Staff = "up" {
-				<<
+%				>>
+%			}
+%			\new Staff = "down" {
+%				<<
 %					\new Voice {
-%						\formatPianoUpMvtIII
+%						\timeMvtII \generalOptions \partOptions
+%						\namePianoDownMvtII \musicPianoDownMvtII
 %					}
-					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\namePianoUpMvtIII \musicPianoUpMvtIII
-					}
-				>>
-			}
-			\new Staff = "down" {
-				<<
-					\new Voice {
-						\timeMvtIII \generalOptions \partOptions
-						\namePianoDownMvtIII \musicPianoDownMvtIII
-					}
-				>>
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
+%				>>
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					II
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
+%	\score {
+%		\new PianoStaff <<
+%			\new Staff = "up" {
+%				<<
+%%					\new Voice {
+%%						\formatPianoUpMvtIII
+%%					}
+%					\new Voice {
+%						\timeMvtIII \generalOptions \partOptions
+%						\namePianoUpMvtIII \musicPianoUpMvtIII
+%					}
+%				>>
+%			}
+%			\new Staff = "down" {
+%				<<
+%					\new Voice {
+%						\timeMvtIII \generalOptions \partOptions
+%						\namePianoDownMvtIII \musicPianoDownMvtIII
+%					}
+%				>>
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##f
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					III
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%		}
+%	}
 }

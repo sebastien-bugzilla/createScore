@@ -1753,21 +1753,83 @@ cueVoiceSoloCelloMvtIII = \relative c {
 %#                    C U E   V O I C E   F O R   P I A N O                    #
 %###############################################################################
 cueVoicePianoUpMvtI = \relative c {
+% Bars 1 to 5
+	\InCueContext \change Staff = "down" \voiceOne c2(^\pp^\markup {Vlc.u.B} b8[ c e8. d16])
+	d4 r r2
+	d2( cis8[ d f8. e16])
+	e4 r r8. e16[( g8. f16)]
+	f4 r r8. f16[( a8. f16)]
+% Bars 6 to 10
+	d4-. f-. d-. \change Staff = "up" \oneVoice r4
+	<g d' f>2^(^\markup {Viol.} <g c~ e~>_\crescmarkup
+	<\tweak duration-log #0 c e>2 <d fis>)
+	<b d g>4\pp-. r q-. r
+	q-. r r2
+% Bars 11 to 15
+	<a c f!>4-. r r2
+	\clef bass <g d'>1^\markup {Cor.}\f\>
+	c1\pp
+	\clef treble b8[( c d8. c16)] c4-. c-.
+	<c e>1_\crescpocoapoco
+% Bars 16 to 20
+	<b dis>8([ <c e> <d! f>8. <c e>16)] q4-. q-.
+	<e g>1
+	<dis fis>8[( <e g> <f! a>8. <e g>16]) <e g>4-. q-.
+	<c' e g c>1^\markup {Fl.Ob.}
+	<b b'>8([ <c c'> <d d'>8. <c c'>16]) <c c'>4-. q-.
+% Bars 21 to 25
+	<f a c f>2.\ff <c c'>4-.
+	<a a'>-. <c c'>-. <a c a'>-. <f c' f>-.
+	<c' e g c>1
+	<b b'>8([ <c c'> <d d'>8. <c c'>16]) <c c'>4-. q-.
+	<f a c f>2. <c c'>4-.
+% Bars 26 to 30
+	<a c a'>-. <c c'>-. <a c a'>-. <f c' f>-.
+	<b d g b>2. <d d'>4-.
+% Bars 31 to 35
 	
-}
-cueVoicePianoUpMvtII = \relative c {
+% Bars 36 to 40
 	
-}
-cueVoicePianoUpMvtIII = \relative c {
+% Bars 41 to 45
+	
+% Bars 46 to 50
+	
+% Bars 51 to 55
+	
+% Bars 56 to 60
+	
+% Bars 61 to 65
+	
+% Bars 66 to 70
+	
+% Bars 71 to 75
+	
+% Bars 76 to 80
+	
+% Bars 81 to 85
+	
+% Bars 86 to 90
+	
+% Bars 91 to 95
 	
 }
 cueVoicePianoDownMvtI = \relative c {
+	s1*531
+}
+cueVoicePianoThirdMvtI = \relative c {
+	\InCueContext s1*12
+	\change Staff = "up" \shiftOff e16 g \change Staff = "down" e g s2.
+}
+cueVoicePianoUpMvtII = \relative c {
 	
 }
 cueVoicePianoDownMvtII = \relative c {
 	
 }
 cueVoicePianoDownMvtIII = \relative c {
+	
+}
+cueVoicePianoUpMvtIII = \relative c {
 	
 }
 %###############################################################################

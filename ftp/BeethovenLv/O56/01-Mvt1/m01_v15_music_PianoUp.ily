@@ -10,7 +10,7 @@ musicPianoUpMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*32
+	s1*32
 % Bars 6 to 10
 	
 % Bars 11 to 15
