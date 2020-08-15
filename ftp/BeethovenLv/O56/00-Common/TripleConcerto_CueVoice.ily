@@ -1747,7 +1747,6 @@ cueVoiceSoloCelloMvtIII = \relative c {
 	c,\sf[ c' c c]
 	fis,,\sf[ fis' fis fis]
 	g r r4
-
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   P I A N O                    #
@@ -1786,39 +1785,859 @@ cueVoicePianoUpMvtI = \relative c {
 % Bars 26 to 30
 	<a c a'>-. <c c'>-. <a c a'>-. <f c' f>-.
 	<b d g b>2. <d d'>4-.
+	<b b'>-. <d d'>-. <b b'>-. <g g'>-.
+	<cis g' a cis>2. <e e'>4-.
+	<cis cis'>-. <e e'>-. <cis cis'>-. <a a'>-.
+% Bars 31 to 35
+	<d f d'>-. <f f'>2 <d d'>8.-. <c! c'!>16-.
+	<b b'>4-. <c c'>2 <a a'>8.-. <fis fis'>16-.
+	<< {\InCueContext g'4 r r2} \\ {\InCueContext g,2\p(~ g8.[ b16 d8. b16])} >>
+	g2.^( <b, e~ gis)>4^\markup {Fag.Cor.}
+	<c e a>( <gis' b> <a c> <b d>)
+% Bars 36 to 40
+	<c e>1_\crescmarkup
+	<e, c' e>2\p~ q8.( <a a'>16 <c c'>8. <a a'>16)
+	\voiceOne e'2. c4
+	b( d c a) \oneVoice
+	\tuplet 3/2 4 {g8 b d b_\crescmarkup d g f! d b g f d}
+% Bars 41 to 45
+	<c' c'>2\p~ q8.[( <e e'>16 <g g'>8. <e e'>16])
+	<c c'>2. <cis cis'>4(
+	<d d'> <e cis' e> <f d' f> <g e' g>
+	\voiceOne a'2) s \oneVoice
+	<aes,, c f aes>1\pp
+% Bars 46 to 50
+	<aes des aes'>_\crescmarkup(
+	<aes c aes'>4)\p( <aes c ees>) q-.( q-.)
+	\voiceOne ees'2.(_\crescmarkup des4)
+	c1~\sf\>
+	c2(\pp d!
+% Bars 51 to 55
+	<ees, c'>1
+	<g b>4) s r8. g16_([ a8. g16])
+	b2~ b8.[ g16_( a8. g16)]
+	c2~ c8.[ g16_( a8. g16)]
+	f'4( d b f)
+% Bars 56 to 60
+	e^\markup {Ob.} r4 r8. g'16_\crescmarkup[(^\markup {Viol.Fl.} a8. g16])
+	b2~ b8.[ g16( a8. g16)]
+	c2~ c8.[ c16( d8. c16])
+	e4..\ff c16 ees4.. c16 \oneVoice
+	<ees, fis ees'>8.-.[ <ees fis c'>16-. <ees fis ees'>8.-. <ees fis c'>16-.] <ees fis ees'>8.-.[ <ees fis c'>16-. <ees fis ees'>8.-. <ees fis c'>16-.]
+% Bars 61 to 65
+	<d g b>4-. <d d'>-. <d d'>^\tenmarkup\sustainOn <g, b d g>-.\sustainOff
+	<fis a d fis>-. <d' d'>-. <d d'>^\tenmarkup\sustainOn <fis, a d f>-.\sustainOff
+	<g b d g>8.[ <d' d'>16 q8. q16] q8.^\tenmarkup\sustainOn\noBeam <g, b d g>16-.[ q8.-. q16-.]\sustainOff
+	<fis a d fis>8.-.[ <d' d'>16-. q8.-. q16-.] q8.^\tenmarkup\sustainOn\noBeam <fis, a d fis>16[-. q8.-. q16-.]\sustainOff
+	<g b d g>8.-.[ <d' d'>16-. q8.^\tenmarkup <b d g>16] <c d fis a>8.-.[ <d d'>16-. q8.^\tenmarkup <c d fis a>16-.]
+% Bars 66 to 70
+	<b d g b>8.-.[ <d d'>16 q8.^\tenmarkup <b d g b>16-.] <c d fis a>8.[ <d d'>16-. q8.^\tenmarkup <c d fis a>16-.]
+	\voiceOne g'8-. d'4 d d d8~
+	d d4 d d d8 \oneVoice
+	<d, d'>2\fp^\markup {Fl.Ob.}( <e e'>
+	<a, a'>2. <d d'>4)
+% Bars 71 to 75
+	\voiceOne g4\pp r r2
+	s1 \oneVoice
+	<g b d g>1\ff
+	<e g c e>4 r8. <c e g c>16-. q4-. q-.
+	q8\noBeam c,8\pp c c  c c c c
+% Bars 76 to 80
+	c c c c c c c c
+	c c c c c c c c
+	c c c c c c c c
+	c c c c c c c c
+	c c c c c c c c
+% Bars 81 to 85
+	c c c c c c c c
+	c_\crescmarkup c c c c c c c
+	c c c c c c c c
+	c <c d> q q  q q q q
+	\voiceOne g''2^\markup {Viol.solo.} fis8([ g b8. a16])
+% Bars 86 to 90
+	a4 r r2
+	a2 gis8[( a c8. b16])
+	b4 r r8. b16([ d8. c16])
+	c4 r r8. c16[( e8. d16])
+	d4\trill( f)~ \tuplet 3/2 4 {f8 e-. d-. a'-. g-. f-.
+% Bars 91 to 95
+	f-. e-. d-. a'-. g-. f-. f-. e-. d-. a'-. g-. f-. 
+	f-. e-. d-. d-. c-. b-. b-. a-. g-. g-. f-. e-. 
+	e d c c b a a g fis a g fis
+	a g fis a g fis a g fis a g fis}
+	a8(_\dolce g fis g c b ais b
+% Bars 96 to 100
+	e)[ d( g8. f16)] e8( d c b)
+	R1*17
+% Bars 101 to 105
+	
+% Bars 106 to 110
+	
+% Bars 111 to 115
+	
+	
+	
+	s4 \oneVoice r4 r <e, c' e>(
+	<f g b g'>2. <f g b f'>4)
+% Bars 116 to 120
+	<<{\InCueContext d'4-. d-. \acciaccatura e8 d8.[( c16 d8. e16)]} \\ {\InCueContext <f, g>4 q q q}>>
+	<e g c>2~ q8 g-. e-. g-.
+% Bars 121 to 125
+	
+% Bars 126 to 130
+	
+% Bars 131 to 135
+	
+% Bars 136 to 140
+	
+% Bars 141 to 145
+	
+% Bars 146 to 150
+	
+% Bars 151 to 155
+	
+% Bars 156 to 160
+	
+% Bars 161 to 165
+	
+% Bars 166 to 170
+	
+% Bars 171 to 175
+	
+% Bars 176 to 180
+	
+% Bars 181 to 185
+	
+% Bars 186 to 190
+	
+% Bars 191 to 195
+	
+% Bars 196 to 200
+	
+% Bars 201 to 205
+	
+% Bars 206 to 210
+	
+% Bars 211 to 215
+	
+% Bars 216 to 220
+	
+% Bars 221 to 225
+	
+% Bars 226 to 230
+	
+% Bars 231 to 235
+	
+% Bars 236 to 240
+	
+% Bars 241 to 245
+	
+% Bars 246 to 250
+	
+% Bars 251 to 255
+	
+% Bars 256 to 260
+	
+% Bars 261 to 265
+	
+% Bars 266 to 270
+	
+% Bars 271 to 275
+	
+% Bars 276 to 280
+	
+% Bars 281 to 285
+	
+% Bars 286 to 290
+	
+% Bars 291 to 295
+	
+% Bars 296 to 300
+	
+% Bars 301 to 305
+	
+% Bars 306 to 310
+	
+% Bars 311 to 315
+	
+% Bars 316 to 320
+	
+% Bars 321 to 325
+	
+% Bars 326 to 330
+	
+% Bars 331 to 335
+	
+% Bars 336 to 340
+	
+% Bars 341 to 345
+	
+% Bars 346 to 350
+	
+% Bars 351 to 355
+	
+% Bars 356 to 360
+	
+% Bars 361 to 365
+	
+% Bars 366 to 370
+	
+% Bars 371 to 375
+	
+% Bars 376 to 380
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
+	
+% Bars 391 to 395
+	
+% Bars 396 to 400
+	
+% Bars 401 to 405
+	
+% Bars 406 to 410
+	
+% Bars 411 to 415
+	
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	
+% Bars 456 to 460
+	
+% Bars 461 to 465
+	
+% Bars 466 to 470
+	
+% Bars 471 to 475
+	
+% Bars 476 to 480
+	
+% Bars 481 to 485
+	
+% Bars 486 to 490
+	
+% Bars 491 to 495
+	
+% Bars 496 to 500
+	
+% Bars 501 to 505
+	
+% Bars 506 to 510
+	
+% Bars 511 to 515
+	
+% Bars 516 to 520
+	
+% Bars 521 to 525
+	
+% Bars 526 to 529
+	
+}
+cueVoicePianoDownMvtI = \relative c {
+% Bars 1 to 5
+	\InCueContext \voiceTwo c,2( b8[ c e8. d16])
+	d4 r r2
+	d2( cis8[ d f8. e16)]
+	e4 r r8. e16[( g8. f16])
+	f4 r r8. f16[( a8. f16])
+% Bars 6 to 10
+	d4-. f-. d-. <c c'>-.
+	\oneVoice <b b'>2 <c c'>
+	\afterGrace a1^\trill {g16 a}
+	g4-. r <g g'>-. r
+	q r r2
+% Bars 11 to 15
+	<a a'>4 r r r8 g'16( a
+	<b, b')>4 r r r8 \tuplet 3/2 8 {g'16( a b)}
+	<c, c'>8 \stemDown c'\noBeam \stemNeutral <c e>16 g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' 
+	<c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' 
+	<c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' 
+% Bars 16 to 20
+	<c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' <c, e> g' 
+	<c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' 
+	<c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' <c, g'> c' 
+	<c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' 
+	<c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' <c, e g> c' 
+% Bars 21 to 25
+	<a,, a'>8 b16( c d e f g) a8-. b16( c d e f g)
+	a4-. <<{\InCueContext f16 a f a f a f a f a f a} \\ {\InCueContext <a, c>4 q q}>>
+	<g, g'>8-. a16( b c d e f) g8-. a16( b c d e f)
+	g4-. <<{\InCueContext e16 g e g e g e g e g e g} \\ {\InCueContext <g, c>4 q q }>>
+	<f, f'>8 g16( a b c d e) f8-. g16( a b c d e)
+% Bars 26 to 30
+	f4-. <<{\InCueContext c16 f c f c f c f c f c f} \\ {\InCueContext <f, a>4 q q }>>
+	<f, f'>8-. g16( a b c d e) f8-. g16( a b c d e)
+	f4-. <<{\InCueContext d16 g d g d g d g d g d g} \\ {\InCueContext <f, g b>4 q q}>>
+	<e a e'>8-. f16( g a b cis d) e8-. f16( g a b cis d)
+	<<{\InCueContext s8 cis16 e cis e cis e  cis e cis e  cis e cis e} \\ {\InCueContext e8 <e, g a> q q q q q q}>>
+% Bars 31 to 35
+	<d f a d>4-. <f, f'>2 <d d'>8.-. <c! c'!>16-.
+	<b b'>4-. <c c'>2 <a a'>8.-. <fis fis'>16-.
+	<<{
+		\InCueContext \tuplet 3/2 4 {<g g'>8 b' d g d b g b d g, b d
+		g, b d g d b g b d e, b' e
+		a, c e e, b' e a, c e g,! d' g
+% Bars 36 to 40
+		c, e g c g e c e g c, e gis
+		c, e a c a e c e a c, e a
+		c, e a c a e c e a c, e a
+		d, g b d, g b \oneVoice d, fis a d cis d}
+		\voiceOne b4 g( f! d)
+% Bars 41 to 43
+		\tuplet 3/2 4 {e8 g c e c g e g c e, g c
+		e, g c e c g e g c e, g a
+		f a d a, e' a d, f a c, g' c}
+	} \\ {
+		\InCueContext s4 r g, g
+		g r g e
+		a e a g
+% Bars 36 to 40
+		c r c c
+		a r a a 
+		a r a a
+		d d s2
+		g4 g,2 a8. b16
+% Bars 41 to 43
+		c2 c4 c
+		c2 c4 a
+		d a d c!
+	}>>
+% Bars 44 to 45
+	<f, c' f>1~
+	q
+% Bars 46 to 50
+	<f des' f>
+	<ees ees'>~
+	q
+	<e! c' e!>
+	<f f'>2 <b,! b'!>
+% Bars 51 to 55
+	<c c'> <fis, fis'>
+	<g g'>4 r \tuplet 3/2 4 {g''8-. b-. d-. g-. d-. b-.}
+	<g, f'>2 \tuplet 3/2 4 {g'8-. b-. d-. g-. d-. b-.}
+	<g, e' g>2 \tuplet 3/2 4 {g'8-. c-. e-. g-. e-. c-.}
+	<g, d' f>1
+% Bars 56 to 60
+	\tuplet 3/2 4 {g8 c e g e c g c e g e c
+	g\sustainOn d' f g f d g, d'\sustainOff f g f d
+	g,\sustainOn c e g e c g\sustainOff c ees c ees g}
+	<g, c ees a>8. q16 q4 q8. q16 q4
+	q8.[-. q16-. q8.-. q16]-. q8.[-. q16-. q8.-. q16]-. 
+% Bars 61 to 65
+	<g b d g>4-. r r <g g'>-.
+	<d d'>-. r r <d d'>-.
+	<g, g'>-. r r8. <g' g'>16-.[ q8.-. q16-.]
+	<d d'>4-. r r8. q16-.[ q8.-. q16-.]
+	<g, g'>4-. r8. q16-. <d' d'>4 r8. q16-.
+% Bars 66 to 70
+	<g g'>4-. r8. q16-. <d d'>4-. r8. q16-.
+	<g, g'>4-. <d' d'>-. <g g'>-. <d d'>-.
+	<g, g'>-. <d' d'>-. <g, g'>-. <d' d'>-.
+	<g b d g> r r2
+	R1
+% Bars 71 to 75
+	<g g'>2( <a a'>
+	<d, d'>1)
+	<g, g'>1:32
+	<c g' c>4 r8. <c c'>16-. q4-. q-.
+	q8 r r4 r2
+% Bars 76 to 80
+	R1
+	\voiceOne c''2^\markup {Vcl.solo.} b8[_( c e8. d16])
+	d4 r r2
+	d2 cis8[_( d f8. e16])
+	e4 r r8. e16_([ g8. f16])
+% Bars 81 to 85
+	f2. a4\trill
+	a f( d c)
+	b2 d4.. c16
+	\afterGrace a1\trill {g16 b a}
+	<<{\InCueContext g2 s} \\ {\InCueContext <g, g'>4 \oneVoice r r2}>>
+% Bars 86 to 90
+	\oneVoice r4 <g g'>8 r q r q r
+	q r r4 r2
+	r4 g8 r g r r4
+	r g8 r g r r4
+	g <g g'> r q
+% Bars 91 to 95
+	r q r q
+	<< {
+		\InCueContext q \clef treble \tuplet 3/2 4 {b''8-.^\markup {Vlc.solo.} a-. g-. g-. f-. e-. e-. d-. c-.  
+		\clef bass c b a a g fis c' b a c b a
+		c b a c b a c b a c b a}
+		c_( b ais b \change Staff = "up" \voiceTwo e d cis d
+% Bars 96 to 100
+		g)[ f( b8. a16]) g8( f e d)
+	} \\ {
+		\InCueContext s4 r r2
+		R1
+		R
+		R
+% Bars 96 to 100
+		R
+	} >>
+	R1*17
+	
+% Bars 96 to 100
+	
+% Bars 101 to 105
+	
+% Bars 106 to 110
+	
+% Bars 111 to 115
+	
+	
+	
+	s4 \voiceOne <e, g>4^\ff q q
+	g  g g g
+% Bars 116 to 120
+	g g g g
+	g g g g
+% Bars 121 to 125
+	
+% Bars 126 to 130
+	
+% Bars 131 to 135
+	
+% Bars 136 to 140
+	
+% Bars 141 to 145
+	
+% Bars 146 to 150
+	
+% Bars 151 to 155
+	
+% Bars 156 to 160
+	
+% Bars 161 to 165
+	
+% Bars 166 to 170
+	
+% Bars 171 to 175
+	
+% Bars 176 to 180
+	
+% Bars 181 to 185
+	
+% Bars 186 to 190
+	
+% Bars 191 to 195
+	
+% Bars 196 to 200
+	
+% Bars 201 to 205
+	
+% Bars 206 to 210
+	
+% Bars 211 to 215
+	
+% Bars 216 to 220
+	
+% Bars 221 to 225
+	
+% Bars 226 to 230
+	
+% Bars 231 to 235
+	
+% Bars 236 to 240
+	
+% Bars 241 to 245
+	
+% Bars 246 to 250
+	
+% Bars 251 to 255
+	
+% Bars 256 to 260
+	
+% Bars 261 to 265
+	
+% Bars 266 to 270
+	
+% Bars 271 to 275
+	
+% Bars 276 to 280
+	
+% Bars 281 to 285
+	
+% Bars 286 to 290
+	
+% Bars 291 to 295
+	
+% Bars 296 to 300
+	
+% Bars 301 to 305
+	
+% Bars 306 to 310
+	
+% Bars 311 to 315
+	
+% Bars 316 to 320
+	
+% Bars 321 to 325
+	
+% Bars 326 to 330
+	
+% Bars 331 to 335
+	
+% Bars 336 to 340
+	
+% Bars 341 to 345
+	
+% Bars 346 to 350
+	
+% Bars 351 to 355
+	
+% Bars 356 to 360
+	
+% Bars 361 to 365
+	
+% Bars 366 to 370
+	
+% Bars 371 to 375
+	
+% Bars 376 to 380
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
+	
+% Bars 391 to 395
+	
+% Bars 396 to 400
+	
+% Bars 401 to 405
+	
+% Bars 406 to 410
+	
+% Bars 411 to 415
+	
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	
+% Bars 456 to 460
+	
+% Bars 461 to 465
+	
+% Bars 466 to 470
+	
+% Bars 471 to 475
+	
+% Bars 476 to 480
+	
+% Bars 481 to 485
+	
+% Bars 486 to 490
+	
+% Bars 491 to 495
+	
+% Bars 496 to 500
+	
+% Bars 501 to 505
+	
+% Bars 506 to 510
+	
+% Bars 511 to 515
+	
+% Bars 516 to 520
+	
+% Bars 521 to 525
+	
+% Bars 526 to 529
+	s1*531
+}
+cueVoicePianoThirdMvtI = \relative c {
+% Bars 1 to 5
+	\InCueContext s1*12
+% Bars 11 to 15
+	
+	\change Staff = "up" \shiftOff e16 g \change Staff = "down" e g s2.
+	s1*21
+% Bars 16 to 20
+	
+% Bars 21 to 25
+	
+% Bars 26 to 30
+	
 % Bars 31 to 35
 	
-% Bars 36 to 40
 	
+	
+	
+	\change Staff = "up" s4 \voiceTwo e'2 s4
+% Bars 36 to 40
+	s1*2
+	
+	<e \tweak duration-log #1 c'>4(\sfp a c a)
+	g b a <c, fis>
+	s1*4
 % Bars 41 to 45
 	
+	
+	
+	<a''^~ f'>2_\dimmarkup a
+	s1*3
 % Bars 46 to 50
 	
+	
+	<g, bes>1
+	q2. q4
+	<f aes>2 <f g>
 % Bars 51 to 55
-	
+	g a!
+	\tuplet 3/2 4 {d,8-. b-. d-. g-. d-. b-.} s2
+	\tuplet 3/2 4 {b'8 b,-. d-. g-. d-. b-.} s2
+	\tuplet 3/2 4 {c'8 c,-. e-. g-. e-. c-.} s2
+	\tuplet 3/2 4 {f'8 f, g b g f b b, d f d b}
 % Bars 56 to 60
-	
+	e8.[ g16 a8. g16] g4 r
+	r8. g16([ a8. g16]) g4 r
+	r8. g16[( a8. g16]) g4 r
+	<e'! fis>2 q
+	s1*7
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
+	<b d>4-. <d fis a>-. <d g b>-. <d fis a>-.
+	<d g>-. <d fis a>-. <d g>-. <d fis a>-.
+	s1*2
+	
 % Bars 71 to 75
+	g,2_\markup {Viol.}( a
+	d,1)
+	s1*4
+	
 	
 % Bars 76 to 80
 	
+	\change Staff = "down" R1
+	r4 b8 r b r b r
+	b4 r r2
+	r4 bes8 r bes r r4
 % Bars 81 to 85
-	
+	r4 a8 r a4( e)
+	f a( f e)
+	d2( e
+	f) fis
+	\change Staff = "up" \voiceOne <b d>8 <b d g>\p q q  q q q q
 % Bars 86 to 90
-	
+	<c ees fis a> q q q  q q q q 
+	q q q q \override Beam.positions = #'(2 . 2) q q q q \revert Beam.positions
+	<d f! b> <g, d' f g> q q  q q q q
+	<g c e g> q q q  q q q q
+	<g d' f g>4 <b d g> e\rest <d f g>
 % Bars 91 to 95
+	e\rest <b d g> e\rest <d f g>
+	<d f g> e\rest e2\rest
+	\voiceTwo R1
+	R
+	R
+% Bars 96 to 100
+	R 
+	R1*17
+% Bars 101 to 105
 	
-}
-cueVoicePianoDownMvtI = \relative c {
-	s1*531
-}
-cueVoicePianoThirdMvtI = \relative c {
-	\InCueContext s1*12
-	\change Staff = "up" \shiftOff e16 g \change Staff = "down" e g s2.
+% Bars 106 to 110
+	
+% Bars 111 to 115
+	
+	
+	
+	\change Staff = "down" s4 c,8 g c g c g
+	d' g, d' g, d' g, d' g,
+% Bars 116 to 120
+	b g b g b g b g
+	c g c g c g c g
+% Bars 121 to 125
+	
+% Bars 126 to 130
+	
+% Bars 131 to 135
+	
+% Bars 136 to 140
+	
+% Bars 141 to 145
+	
+% Bars 146 to 150
+	
+% Bars 151 to 155
+	
+% Bars 156 to 160
+	
+% Bars 161 to 165
+	
+% Bars 166 to 170
+	
+% Bars 171 to 175
+	
+% Bars 176 to 180
+	
+% Bars 181 to 185
+	
+% Bars 186 to 190
+	
+% Bars 191 to 195
+	
+% Bars 196 to 200
+	
+% Bars 201 to 205
+	
+% Bars 206 to 210
+	
+% Bars 211 to 215
+	
+% Bars 216 to 220
+	
+% Bars 221 to 225
+	
+% Bars 226 to 230
+	
+% Bars 231 to 235
+	
+% Bars 236 to 240
+	
+% Bars 241 to 245
+	
+% Bars 246 to 250
+	
+% Bars 251 to 255
+	
+% Bars 256 to 260
+	
+% Bars 261 to 265
+	
+% Bars 266 to 270
+	
+% Bars 271 to 275
+	
+% Bars 276 to 280
+	
+% Bars 281 to 285
+	
+% Bars 286 to 290
+	
+% Bars 291 to 295
+	
+% Bars 296 to 300
+	
+% Bars 301 to 305
+	
+% Bars 306 to 310
+	
+% Bars 311 to 315
+	
+% Bars 316 to 320
+	
+% Bars 321 to 325
+	
+% Bars 326 to 330
+	
+% Bars 331 to 335
+	
+% Bars 336 to 340
+	
+% Bars 341 to 345
+	
+% Bars 346 to 350
+	
+% Bars 351 to 355
+	
+% Bars 356 to 360
+	
+% Bars 361 to 365
+	
+% Bars 366 to 370
+	
+% Bars 371 to 375
+	
+% Bars 376 to 380
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
+	
+% Bars 391 to 395
+	
+% Bars 396 to 400
+	
+% Bars 401 to 405
+	
+% Bars 406 to 410
+	
+% Bars 411 to 415
+	
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	
+% Bars 456 to 460
+	
+% Bars 461 to 465
+	
+% Bars 466 to 470
+	
+% Bars 471 to 475
+	
+% Bars 476 to 480
+	
+% Bars 481 to 485
+	
+% Bars 486 to 490
+	
+% Bars 491 to 495
+	
+% Bars 496 to 500
+	
+% Bars 501 to 505
+	
+% Bars 506 to 510
+	
+% Bars 511 to 515
+	
+% Bars 516 to 520
+	
+% Bars 521 to 525
+	
+% Bars 526 to 529
 }
 cueVoicePianoUpMvtII = \relative c {
 	
