@@ -10,7 +10,7 @@ musicViolinIIMvtII = \relative c' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	aes4\p^\consordino g16-. aes-.
+	aes4\p^\consordino^\tutti g16-. aes-.
 	bes8 r bes
 	bes(~ bes16. g32) aes16.( bes32)
 	g8.\noBeam ees'8( des16)
@@ -43,18 +43,20 @@ musicViolinIIMvtII = \relative c' {
 	
 % Bars 31 to 35
 	\mark \default
-	R4.*8
+	R4.*5
 % Bars 36 to 40
 	
-	
-	
-	
-	c16\pp(-.^\arco c-. c-. c-. c-. c-.)
+	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
+		\ni R4.
+		R
+		R \no
+	}
+	c16\pp(-.^\arco^\tutti c-. c-. c-. c-. c-.)
 % Bars 41 to 45
 	c32\f[ c c c]  c[ c\> c c]  c[ c c c]
 	aes16\p aes aes aes aes aes
 	a32\f[ c c c]  c[ ees ees\> ees] ees[ c c c] \mark \default
-	b8\p r16 g(\<\noBeam \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
+	b8\p^\solo r16 g(\<\noBeam \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -63,7 +65,9 @@ musicViolinIIMvtII = \relative c' {
 	g' d b
 	g r r
 % Bars 51 to 53
-	<>^\senzasordino R4.*2
-	
-	r8 r <b des>16^\pizz r \bar "||"
+	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
+		<>^\senzasordino \ni << \mmrPos #-6 R4. { \clef bass s8 \clef treble s4} >>
+		R4. \no
+		r8 r <b des>16_\pizz r 
+	} \bar "||"
 }

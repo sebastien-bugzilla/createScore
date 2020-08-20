@@ -32,7 +32,7 @@ musicViolinIIMvtIII = \relative c' {
 	g8-.) r r4 g8.( b16
 	c8-.) r r4 e,8.-. c16-.
 	b8.-. b16-. b8-. r c-. r
-	b-. r r4 r
+	b-. r r4 r^\solo
 % Bars 21 to 25
 	r <b d>^\pizz r
 	r c r
@@ -53,7 +53,7 @@ musicViolinIIMvtIII = \relative c' {
 	e\cresc e e e e e 
 % Bars 36 to 40
 	f f f f f f
-	<b, f'>[ <b f'> <b f'> <b f'>] d16\ff b d b
+	<b, f'>[ <b f'> <b f'> <b f'>] d16\ff^\tutti b d b
 	e c e c e c e c e c f d
 	e c e c e d e f g e f g
 	a f g a d, <g, f'> q q q q q q
@@ -82,7 +82,7 @@ musicViolinIIMvtIII = \relative c' {
 	c e\sf g, c\sf e, g\sf
 	c, r <g e' c'> r q r
 % Bars 61 to 65
-	q r r4 r
+	q r^\solo r4 r
 	r8 e'\p r e r d
 	r e r e r d
 	r e r e r d
@@ -92,22 +92,34 @@ musicViolinIIMvtIII = \relative c' {
 	r b r b r c
 	r b r b r c
 	r b d r r4
-	R2.*6
+	R2.*2
 % Bars 71 to 75
 	
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2.
+		R
+		R
+		R \no
+	}
 % Bars 76 to 80
 	b4^\pizz r r
 	c r r
 	c r r
 	b8 r r4 r
-	R2.*13
+	R2.*9
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
-% Bars 91 to 95
 	
-	\mark \default
+	
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2.
+		R
+% Bars 91 to 95
+		R
+		\mmrPos #-8 R \no \mark \default
+	}
 	b16(\f^\arco d b d  b d b d  b d b d)
 	<c d>2.\p
 	a16(\f d a d  a d a d  a d a d)
@@ -128,13 +140,19 @@ musicViolinIIMvtIII = \relative c' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*9
+	<>^\atempo R2.*4
 % Bars 111 to 115
 	
+	
+	
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni \mmrPos #-8 R2.
+		\mmrPos #-8 R
 % Bars 116 to 120
-	
-	
-	
+		\mmrPos #-8 R
+		\mmrPos #-8 R
+		\mmrPos #-8 R \no
+	}
 	c16(\pp e) c( e) c( e) c( e) c( e) c( e) 
 	c( e) c( e) c( e) c( e) c( e) c( e) 
 % Bars 121 to 125
@@ -153,12 +171,12 @@ musicViolinIIMvtIII = \relative c' {
 	e( gis) e( gis) e( gis) e( gis) e( g) e( g) 
 	e( g) e( g) e( g) e( g) e( g) e( g) 
 	e( g) e( g) d!( f) d( f) d( f) d( f) 
-	d(\pp f) d( f) c8 r c8.( e16
+	d(\pp f) d( f) c8 r c8.(^\tutti e16
 	g8-.) r r4 g8.( b16
 % Bars 136 to 140
 	c8-.) r r4 e,8.-. c16-.
 	b8.-. b16-. b8-. r c-. r
-	b-. r r4 r
+	b-. r r4 r^\solo
 	r <b d>^\pizz r
 	r c r
 % Bars 141 to 145
@@ -178,7 +196,7 @@ musicViolinIIMvtIII = \relative c' {
 	e'8-.(\pp e-. e-. e-. e-. e-.)
 	e_\crescmarkup e e e e e 
 	f f f f f f 
-	<b, f'>[ q q q] d16\ff b d b
+	<b, f'>[ q q q] d16\ff^\tutti b d b
 % Bars 156 to 160
 	e c e c e c e c e c f d
 	e c e c e d e f g e f g
@@ -198,7 +216,7 @@ musicViolinIIMvtIII = \relative c' {
 	<gis b>8 e4\sf f'8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	<a, a'>\p r r4 r
+	<a, a'>\p r^\solo r4 r
 	c8^\pizz r r4 r
 	e8 r r4 f8 r
 	e r r4 r8 \tuplet 3/2 8 {g,16(\f^\arco a b)}
@@ -261,7 +279,7 @@ musicViolinIIMvtIII = \relative c' {
 	d2(_\crescmarkup f4) \mark \default
 	e8\f-. g-. c-. g-. e-. c-. 
 	g r r4 r
-	R2.*20
+	R2.*17
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -269,10 +287,11 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r e'16\ff-. g,-. e'-. g,-. 
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+		r4 r } e'16\ff-.^\tutti g,-. e'-. g,-. 
 	e' g, e' g, e' g, e' g, e' g, f' g, 
 % Bars 246 to 250
 	e' g, e' g, e' d e f g e f g
@@ -284,7 +303,7 @@ musicViolinIIMvtIII = \relative c' {
 	a f g a d, b d b d b d b
 	<g f'>4(\ff <g e'>8) r <g f'>4(\sf
 	<g e'>8) r <g e' c'> r q r
-	q r c r r4
+	q r c r^\solo r4
 	r8 e\p r e  r f
 % Bars 256 to 260
 	r e r e r f
@@ -305,15 +324,16 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 271 to 275
 	f r r
 	e r r
-	R2.*12
+	R2.*9
 % Bars 276 to 280
 	
 % Bars 281 to 285
 	
-	
-	
-	
-	r4 r r8 d^\arco \mark \default
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+		r4 r } r8 d^\arco \mark \default
 % Bars 286 to 290
 	c\f e[(\trill \grace {d16 e} c8]) g'([\trill \grace {fis16 g} e8]) \afterGrace c'\trill {b16 c}
 	c4(\p b8) r r4
@@ -369,12 +389,13 @@ musicViolinIIMvtIII = \relative c' {
 	<g f'>8 r r4 d'8\p^\pizz r
 % Bars 331 to 335
 	d r r4 r 
-	<<{r4 r r8 \breathe \tempo "Allegro." r}{\fermataCentered}>> \bar "||"
-	\time 2/4 R2*3
-	
-	
+	<<{\oneVoice r4 r r8 \breathSign \breathe \tempo "Allegro." r} \\ {\ni \fermataCentered \no} \\ {\InCueContext s2 s8 g'16 g} >> \bar "||"
+	\time 2/4 \cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2
+		R
+		R \no
 % Bars 336 to 340
-	r4 r8 b_\semprepp^\arco
+		r4 } r8 b,,_\semprepp^\arco
 	c c r e
 	e e r e
 	f f r f
@@ -435,7 +456,7 @@ musicViolinIIMvtIII = \relative c' {
 	e8\p e r d
 % Bars 386 to 390
 	r e r d \mark \default
-	g,\f( a16 b c8 d)
+	g,\f(^\tutti a16 b c8 d)
 	e4( c8) r
 	f8( g a) a
 	d,( c) d16( b c d)
@@ -450,14 +471,20 @@ musicViolinIIMvtIII = \relative c' {
 	q q q q q q q q 
 	<c ees>\sf <ees c'> q q q q q q 
 	q\sf q q q q q q q
-	<e! c'>8 r r4
+	<e! c'>8 r r4^\solo
 % Bars 401 to 405
-	R2*12
+	R2*5
 % Bars 406 to 410
-	
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2
+		R
+		R
+		R
+		R
 % Bars 411 to 415
-	
-	\mark \default
+		R
+		R \no \mark \default
+	}
 	<c ees>8\f r r4
 	R2*3
 % Bars 416 to 420
@@ -475,19 +502,25 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 426 to 430
 	R2
 	<c e>8\p r r4
-	R2*13
+	R2*7
 % Bars 431 to 435
 	
+	
+	
+	
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2
 % Bars 436 to 440
-	
-	
-	
-	
-	\mark \default
+		R
+		R
+		R
+		R
+		R \mark \default
 % Bars 441 to 445
-	d8^\pizz r r4
-	R2\fermataMarkup \bar "||"
-	\tempo "Tempo I." \time 3/4 R2.
+		d8_\pizz r r4
+		R2_\fermataMarkup \bar "||"
+		\tempo "Tempo I." \time 3/4 R2. \no
+	}
 	<g, e' e'>8\f^\arco r <g e' c'> r r4
 	R2.
 % Bars 446 to 450
