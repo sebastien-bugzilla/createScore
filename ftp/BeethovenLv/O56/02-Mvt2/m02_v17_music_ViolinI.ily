@@ -10,14 +10,14 @@ musicViolinIMvtII = \relative c' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	c4\p^\consordino bes16-. c-.
+	c4\p^\consordino^\tutti bes16-. c-.
 	des8 r des
 	des8(~ des16. ees32) c16.( des32)
 	bes8.\noBeam ees8( g16)
 	aes4( g16 aes)
 % Bars 6 to 10
 	g8( bes g16 bes)
-	aes8\noBeam ees16(-. ees-.) ees( d)~
+	aes8\noBeam ees16(-.^\solo ees-.) ees( d)~
 	d d( ees) ees-.(\pp ees-. ees-.)
 	<des! ees>32 q q q r q q q r q q q
 	r ees ees ees r ees ees ees r ees ees ees
@@ -57,12 +57,12 @@ musicViolinIMvtII = \relative c' {
 		R
 		R \no
 	}
-	c16\pp-.^\arco( c-. c-. c-. c-. c-.)
+	c16\pp-.^\arco^\tutti( c-. c-. c-. c-. c-.)
 % Bars 41 to 45
 	c32\f[ c c c] c[ c\> c c] c[ c c c]
 	c16\p c c c c c
 	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees] \mark \default
-	d8\p r16 g,(\<\noBeam \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
+	d8\p^\solo r16 g,(\<\noBeam \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r

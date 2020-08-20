@@ -28,11 +28,11 @@ musicViolinIMvtIII = \relative c' {
 	g( b) g( b) g( b) g( b) g( bes) g( bes) 
 	g( a) g( a) f!( a) f( a) f( aes) f( aes)
 % Bars 16 to 20
-	f(\pp g) f( g) e8 r c8.( e16
+	f(\pp g) f( g) e8 r c8.(^\tutti e16
 	g8-.) r r4 g8.( b16
 	c8-.) r r4 c8.-. e16-. 
 	d8.-. b16-. g8-. r \acciaccatura b a-. r
-	g-. r r4 r
+	g-. r r4 r^\solo
 % Bars 21 to 25
 	r <g, g'>^\pizz r
 	r e' r
@@ -57,7 +57,7 @@ musicViolinIMvtIII = \relative c' {
 	g\cresc g g g g g
 % Bars 36 to 40
 	a a a a a a
-	g[ g g g] \acciaccatura fis g\ff \acciaccatura fis g
+	g[ g g g] \acciaccatura fis g\ff^\tutti \acciaccatura fis g
 	g4. a16( b c8 d)
 	\grace {c16[( d]} e4) c4.(\sf b8)
 	a( f') b,(\noBeam g'4) g8
@@ -86,7 +86,7 @@ musicViolinIMvtIII = \relative c' {
 	c, e\sf g, c\sf e, g\sf
 	c, r <c g' e' c'> r q r
 % Bars 61 to 65
-	q r r4 r
+	q r r4^\solo r
 	r8 <g g'>\p r q r q
 	r q r q r q
 	r q r q r q
@@ -153,8 +153,8 @@ musicViolinIMvtIII = \relative c' {
 		<>^\atempo R2.
 % Bars 111 to 115
 		R
-		R
-		R
+		\mmrPos #-6 R
+		\mmrPos #-6 R
 		R
 		R
 % Bars 116 to 120
@@ -180,12 +180,12 @@ musicViolinIMvtIII = \relative c' {
 	gis( b) gis( b) gis( b) gis( b) g( b) g( b) 
 	g( b) g( b) g( b) g( b) g( bes) g( bes) 
 	g( a) g( a) f!( a) f( a) f( aes) f( aes)
-	f(\pp g) f( g) e8 r c8.( e16
+	f(\pp g) f( g) e8 r c8.(^\tutti e16
 	g8-.) r r4 g8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. e16-.
 	d8.-. b16-. g8-. r \acciaccatura b a-. r
-	g-. r r4 r
+	g-. r r4 r^\solo
 	r <g, g'>^\pizz r
 	r e' r
 % Bars 141 to 145
@@ -209,7 +209,7 @@ musicViolinIMvtIII = \relative c' {
 	g'8(-.\pp g-. g-. g-. g-. g-.)
 	g_\crescmarkup g g g g g
 	a a a a a a
-	g[ g g g] \acciaccatura fis g\ff \acciaccatura fis g
+	g[ g g g] \acciaccatura fis g\ff^\tutti \acciaccatura fis g
 % Bars 156 to 160
 	g4. a16( b c8 d)
 	\grace {c16[( d]} e4) c4.\sf( b8)
@@ -229,7 +229,7 @@ musicViolinIMvtIII = \relative c' {
 	q4.\sf f'8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,
 % Bars 171 to 175
-	a8\p r r4 r
+	a8\p r^\solo r4 r
 	e8^\pizz r r4 r
 	<g, g'>8 r r4 q8 r
 	q r r4 r8 \tuplet 3/2 8 {g'16(\f^\arco a b)}
@@ -308,7 +308,7 @@ musicViolinIMvtIII = \relative c' {
 		R
 		R
 % Bars 236 to 240
-		R
+		\mmrPos #-6 R
 		R
 		R
 		R
@@ -317,7 +317,7 @@ musicViolinIMvtIII = \relative c' {
 		R
 		R
 		R \no
-		r4 r } \acciaccatura fis'8 g\ff \acciaccatura fis g
+		r4 r } \acciaccatura fis'8 g\ff^\tutti \acciaccatura fis g
 	g4.( a16 b c8 d)
 % Bars 246 to 250
 	e4( c4.\sf b8)
@@ -329,7 +329,7 @@ musicViolinIMvtIII = \relative c' {
 	a( f') b,(\noBeam g'4) g8
 	g4(\ff c,8) r g'4(\sf
 	c,8) r <g e' c'> r q r
-	q r c, r r4
+	q r c, r^\solo r4
 	r8 <g g'>\p r q r q
 % Bars 256 to 260
 	r q r q r q
@@ -496,7 +496,7 @@ musicViolinIMvtIII = \relative c' {
 	q8\p g' r a
 % Bars 386 to 390
 	r g r g \mark \default
-	g(\f a16 b c8 d)
+	g(\f^\tutti a16 b c8 d)
 	e4( c8) r
 	f16( g f e d e d c)
 	b( c b a) g8-. g-.
@@ -511,7 +511,7 @@ musicViolinIMvtIII = \relative c' {
 	g g g g g g g g
 	g\sf g g g g g g g
 	<a,! a'!>\sf q q q q q q q
-	g'8 r r4
+	g'8 r r4^\solo
 % Bars 401 to 405
 	\cueDuring #"cueVoiceViolinIMvtIII" #UP {
 		\ni \mmrPos #4 R2

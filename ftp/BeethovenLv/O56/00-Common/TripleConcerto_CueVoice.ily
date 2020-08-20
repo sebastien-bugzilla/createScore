@@ -2862,7 +2862,7 @@ cueVoiceViolinIMvtIII = \relative c {
 	d[ b g e] d8.( e32 fis)
 	R2.*14
 	% bar 107 - 118
-	\textSpanner "8va" g'4^\markup {Vl.conc.}\startTextSpan r8 e[_( g e])
+	\textSpanner #"8va" g'4^\markup {Vl.conc.}\startTextSpan r8 e[_( g e])
 	g_( e g e g e)
 	g4 r8 e[_( g e])
 	g\pp \stopTextSpan c_([ e)] g,[_( c]) e,_(
