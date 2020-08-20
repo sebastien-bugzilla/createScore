@@ -164,6 +164,14 @@ OutCueContext = {
 	\unset fontSize
 }
 
+breathSign = #(define-music-function
+	()
+	()
+	#{
+	\override BreathingSign.text = \markup { \musicglyph "scripts.caesura.curved" }
+	#}
+)
+
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}
 %benmarccresc = ^\markup {\italic {ben marc. cresc.}}

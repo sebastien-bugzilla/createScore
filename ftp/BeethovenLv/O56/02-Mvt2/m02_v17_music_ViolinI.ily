@@ -37,18 +37,26 @@ musicViolinIMvtII = \relative c' {
 	c8^\pizz r bes16 c
 	des8 r des
 	des des16.[ ees32 c16. des32]
-	bes8 r r
-	R4.*7
+	bes8 \cueDuring #"cueVoiceViolinIMvtII" #UP { r r
+		\ni R4.
 % Bars 26 to 30
-	
+		R
+		R
+		R
+		R
+		R
 % Bars 31 to 35
-	\mark \default
-	R4.*8
+		R \mark \default
+		R
+		R
+		R
+		R
 % Bars 36 to 40
-	
-	
-	
-	
+		R
+		R
+		R
+		R \no
+	}
 	c16\pp-.^\arco( c-. c-. c-. c-. c-.)
 % Bars 41 to 45
 	c32\f[ c c c] c[ c\> c c] c[ c c c]
@@ -63,7 +71,8 @@ musicViolinIMvtII = \relative c' {
 	g d b
 	g r r
 % Bars 51 to 53
-	<>^\senzasordino R4.*2
-	
-	r8 r f'16^\pizz r \bar "||"
+	\cueDuring #"cueVoiceViolinIMvtII" #UP {
+		\ni <>_\senzasordino R4.
+		R \no
+		r8 r f'16_\pizz r } \bar "||"
 }
