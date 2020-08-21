@@ -10,10 +10,10 @@ musicVioloncellMvtII = \relative c {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	aes4\p des16-. c-.
+	aes4\p^\tutti des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
-	ees8.\noBeam \clef tenor ees'32( des c16 bes)
+	ees8.\noBeam \clef tenor ees'32(^\solo des c16 bes)
 	aes4( des16 c)
 % Bars 6 to 10
 	bes8( g ees16 g) \clef bass
@@ -43,18 +43,20 @@ musicVioloncellMvtII = \relative c {
 	
 % Bars 31 to 35
 	\mark \default
-	R4.*8
+	R4.*5
 % Bars 36 to 40
 	
-	
-	
-	
-	aes,16-.\pp(^\arco aes-. aes-. aes-. aes-. aes-.)
+	\cueDuring #"cueVoiceVioloncellMvtII" #UP {
+		\ni \clef treble \mmrPos #6 R4.
+		R
+		R \no \clef bass
+	}
+	aes,16-.\pp(^\arco^\tutti aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
 	g32\f[ g g g] g[ g\> g g] g[ g g g]
 	f16\p f f f f f
 	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \mark \default
-	g8\p r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
+	g8\p^\solo r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -63,7 +65,10 @@ musicVioloncellMvtII = \relative c {
 	g' d b
 	g r r
 % Bars 51 to 53
-	R4.*2
-	
-	r8 r g16^\pizz r \bar "||"
+	\cueDuring #"cueVoiceVioloncellMvtII" #UP {
+		\ni R4.
+		R \no
+		r8 r g16_\pizz r 
+	}
+	\bar "||"
 }

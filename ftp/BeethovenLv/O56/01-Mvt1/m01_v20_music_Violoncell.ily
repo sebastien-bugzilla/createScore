@@ -10,7 +10,7 @@ musicVioloncellMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c2\pp( b8[ c e8. d16])
+	c2\pp(^\tutti b8[ c e8. d16])
 	d4 r r2
 	d2( cis8[ d f8. e16])
 	e4 r r8. e16([ g8. f16])
@@ -98,17 +98,23 @@ musicVioloncellMvtI = \relative c {
 	d,1)
 	g\ff
 	c,4 r8. c'16-. c4-. c-. \mark \default
-	c r r2
+	c r^\solo r2
 % Bars 76 to 80
-	R1*21
+	R1*17
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
+	
+	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
+		\ni \clef tenor R1 
+		R
+		R
 % Bars 96 to 100
-	\mark \default
+		R \no \clef bass \mark \default
+	}
 	c4\p^\unobassoeviolonc r r2
 	r4 c8 r c r c r
 	c4 r r2
@@ -134,7 +140,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 116 to 120
 	b g b g b g b g
 	c g c g c g c g \mark \default
-	c\p r r4 r2
+	c\p^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -172,7 +178,7 @@ musicVioloncellMvtI = \relative c {
 	e2\ff b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
-	e-. r r2
+	e-.^\solo r r2
 	R1
 	r4 e''\p^\unobassoeviolonc r2
 	r4 e r2
@@ -186,7 +192,7 @@ musicVioloncellMvtI = \relative c {
 	e cis b8.\noBeam e,16\f[-.^\tutti fis8.-. gis16]-. 
 	a2(~\sf a8.[ cis16 e8. cis16])
 % Bars 166 to 170
-	a2. a4\p~^\unobassoeviolonc
+	a2. a4\p~^\unobassoeviolonc^\solo
 	a2. a8 r
 	a r a r a r fis r
 	b r fis r b r a r
@@ -220,13 +226,15 @@ musicVioloncellMvtI = \relative c {
 	d4 r8. d16-. dis4-. r8. dis16-.
 	e8 r f r d! r e r \mark \default
 	a,4 r r2
-	R1*9
+	R1*6
 % Bars 196 to 200
 	
 % Bars 201 to 205
-	
-	
-	
+	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
+		\ni \clef treble R1
+		R
+		\mmrPos #-6 R \no \clef bass
+	}
 	g'1\p^\unobassoeviolonc(
 	fis4)\f r r2
 % Bars 206 to 210
@@ -274,21 +282,26 @@ musicVioloncellMvtI = \relative c {
 % Bars 241 to 245
 	a,-. r r2
 	R1
-	r2 fis'(\pp^\unobassoeviolonc
+	r2^\solo fis'(\pp^\unobassoeviolonc
 	b,1)
 	e(
 % Bars 246 to 250
 	a,4) r r2
-	R1*20
+	R1*17
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
 % Bars 261 to 265
 	
-% Bars 266 to 270
 	
-	r2 r4 e'(\p
+	
+	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
+		\ni R1
+		R
+% Bars 266 to 270
+		R \no
+		r2 r4 } e'(\p
 	a,) r r2
 	r4 a8 r a r a r
 	a4 r r2
@@ -381,7 +394,7 @@ musicVioloncellMvtI = \relative c {
 	c c c c  c c c c
 	c c c c  c c c c
 	c c c c  c c c c 
-	a(\f b16 c d e f g) a4 r
+	a(\f b16 c d e f g) a4 r^\solo
 % Bars 346 to 350
 	R1
 	g,8(\ff a16 b c d e f) g8 r r4
@@ -413,7 +426,7 @@ musicVioloncellMvtI = \relative c {
 	
 	f4\f^\tutti d( c bes
 % Bars 371 to 375
-	a) r r2
+	a)^\solo r r2
 	R1*6
 % Bars 376 to 380
 	
@@ -430,20 +443,26 @@ musicVioloncellMvtI = \relative c {
 % Bars 386 to 390
 	g2\ff d4-. b-.
 	g-. g'-. d-. b-.
-	g-. r r2
-	R1*9
+	g-.^\solo r r2
+	R1*4
 % Bars 391 to 395
 	
+	
+	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R
 % Bars 396 to 400
-	
-	
+		R
+		R \no \clef bass
+	}
 	f'4^\pizz^\unobassoeviolonc r f f
 	f r r fis
 	g8 r a r f! r g4^\arco(~
 % Bars 401 to 405
 	g e d8.\noBeam) g,16\f^\tutti[-. a8.-. b16]-. 
 	c2(~ c8.[ e16 g8. e16])
-	c2. c4\p~^\unobassoeviolonc
+	c2. c4\p~^\unobassoeviolonc^\solo
 	c2. c8 r
 	c r c r c r a r
 % Bars 406 to 410
@@ -478,9 +497,15 @@ musicVioloncellMvtI = \relative c {
 	g8 r a r f! r g r \mark \default
 % Bars 431 to 435
 	c4 r r2
-	R1*9
+	R1*6
 % Bars 436 to 440
 	
+	
+	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R \clef bass \no
+	}
 % Bars 441 to 445
 	bes1\p
 	a4\f r r2
@@ -516,7 +541,7 @@ musicVioloncellMvtI = \relative c {
 	g4 r r8. g,16[-. g8.-. g16]-. 
 	fis4.. fis16 fis4.. fis16
 	fis8.[ fis16-. fis8.-. fis16]-. fis8.[-. fis16-. fis8.-. fis16]-. 
-	g'1\fp(
+	g'1\fp(^\solo
 % Bars 471 to 475
 	f!
 	e!
@@ -534,12 +559,17 @@ musicVioloncellMvtI = \relative c {
 	g,4 r g r
 	g r g r 
 	c4 r r2
-	R1*7
+	R1*4
 % Bars 486 to 490
 	
+	
+	
+	\cueDuring #"cueVoiceVioloncellMvtI" #UP {
+		\ni \clef treble R1
+		R
 % Bars 491 to 495
-	\mark \default
-	r2 r8. c16\mf[^\arco c8. c16]
+		R \no \mark \default
+		r2 \clef bass } r8. c16\mf[^\arco c8. c16]
 	f,8 r r4 r8. f16[ f8. f16]
 	f1\p~
 	f~
@@ -571,7 +601,7 @@ musicVioloncellMvtI = \relative c {
 	f8.\f[-. e16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
 	f4-.\ff r r2 \mark \default
-	g4-.\ff r r2
+	g4-.\ff^\solo r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r 

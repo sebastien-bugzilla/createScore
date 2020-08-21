@@ -28,11 +28,11 @@ musicVioloncellMvtIII = \relative c' {
 	e8 r e r r g
 	a r d r r f,
 % Bars 16 to 20
-	g r c r c,8.(\pp^\arco e16
+	g r c r c,8.(\pp^\arco^\tutti e16
 	g8-.) r r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
-	g,-. r r4 r
+	g,-. r r4 r^\solo
 % Bars 21 to 25
 	r g^\pizz r
 	r c r
@@ -53,7 +53,7 @@ musicVioloncellMvtIII = \relative c' {
 	c\cresc c c c c c 
 % Bars 36 to 40
 	c c c c c c
-	c4 c c8\ff c
+	c4 c c8\ff^\tutti c
 	c16 g c g c g c g c g c g 
 	c g c g c b c d e c d e
 	f d e f g g, b g b g b g
@@ -82,7 +82,7 @@ musicVioloncellMvtIII = \relative c' {
 	c, e\sf g, c\sf e, g\sf 
 	c, r g' r e r
 % Bars 61 to 65
-	c r r4 r
+	c r^\solo r4 r
 	c'8\p r c r c r
 	c r e r g r
 	c r e, r g r
@@ -92,22 +92,34 @@ musicVioloncellMvtIII = \relative c' {
 	g4( b d)
 	g( b, d)
 	g,( d'8) r r4
-	R2.*6
+	R2.*2
 % Bars 71 to 75
 	
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R
+		R \no \clef bass
+	}
 % Bars 76 to 80
 	g,4^\pizz r r
 	d r r 
 	d r r
 	g r r
-	R2.*13
+	R2.*9
 % Bars 81 to 85
 	
 % Bars 86 to 90
 	
-% Bars 91 to 95
 	
-	\mark \default
+	
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni R2.
+		R
+% Bars 91 to 95
+		R
+		\mmrPos #-8 R \no \mark \default
+	}
 	g'8\f^\arco d g d g d
 	a'\p d, a' d, a' d,
 	fis\f d fis d fis d
@@ -128,13 +140,19 @@ musicVioloncellMvtIII = \relative c' {
 	R2.*3
 	
 	
-	<>^\atempo R2.*9
+	<>^\atempo R2.*4
 % Bars 111 to 115
 	
+	
+	
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni \clef tenor R2.
+		R
 % Bars 116 to 120
-	
-	
-	
+		R
+		R
+		R \clef bass \no
+	}
 	c'2.\pp
 	c
 % Bars 121 to 125
@@ -153,12 +171,12 @@ musicVioloncellMvtIII = \relative c' {
 	e8 r r4 r
 	e8 r e r r g
 	a r d r r f,
-	g r c r c,8.(\pp^\arco e16
+	g r c r c,8.(\pp^\arco^\tutti e16
 	g8-.) r r4 g,8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
-	g,-. r r4 r
+	g,-. r r4 r^\solo
 	r g^\pizz r
 	r c r
 % Bars 141 to 145
@@ -178,7 +196,7 @@ musicVioloncellMvtIII = \relative c' {
 	c8(\pp-. c-. c-. c-. c-. c)-. 
 	c_\crescmarkup c c c c c 
 	c c c c c c
-	c4 c c8\ff c
+	c4 c c8\ff^\tutti c
 % Bars 156 to 160
 	c16 g c g c g c g c g c g 
 	c g c g c b c d e c d e
@@ -198,7 +216,7 @@ musicVioloncellMvtIII = \relative c' {
 	e4.\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a8\p r r4 r
+	a8\p^\solo r r4 r
 	a8^\pizz r r4 r
 	g8 r r4 g8 r
 	c r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
@@ -261,7 +279,7 @@ musicVioloncellMvtIII = \relative c' {
 	g_\crescmarkup \mark \default
 	c8\f-. g'-. c-. g-. e-. c-. 
 	g r r4 r
-	R2.*20
+	R2.*17
 % Bars 226 to 230
 	
 % Bars 231 to 235
@@ -269,10 +287,11 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	
-	
-	
-	r4 r c16\ff-. g-. c-. g-. 
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R \no
+		r4 r \clef bass } c16\ff-.^\tutti g-. c-. g-. 
 	c g c g c g c g c g b g
 % Bars 246 to 250
 	c g c g c b c d e c d e
@@ -284,7 +303,7 @@ musicVioloncellMvtIII = \relative c' {
 	f d e f g g, b g b g b g
 	g4(\ff c8) r g4(\sf
 	c8) r g' r e r
-	c r c r r4
+	c r c r^\solo r4
 	c8\p r c r c r
 % Bars 256 to 260
 	c r c r c r
@@ -305,15 +324,16 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 271 to 275
 	g r r
 	c r r
-	R2.*12
+	R2.*9
 % Bars 276 to 280
 	
 % Bars 281 to 285
 	
-	
-	
-	
-	r4 r r8 g^\arco \mark \default
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+		r4 r } r8 g^\arco \mark \default
 % Bars 286 to 290
 	c\f g c g c g
 	d'\p g, d' g, d' g,
@@ -368,12 +388,14 @@ musicVioloncellMvtIII = \relative c' {
 	g8 r r4 g8\p^\pizz r
 % Bars 331 to 335
 	g r r4 r
-	<<{r4 r r8 \breathe \tempo "Allegro." r}{\fermataCentered}>> \bar "||"
-	\time 2/4 R2*3
-	
-	
+	<<{\clef treble \oneVoice r4 r r8 \breathSign \breathe \tempo "Allegro." r} \\ {\ni \fermataCentered \no} \\ {\InCueContext s2 s8 g'''16 g} >> \bar "||"
+	\time 2/4 \cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni R2
+		R
+		R \no \clef bass
+	}
 % Bars 336 to 340
-	r4 r8 g'_\semprepp^\arco
+	r4 r8 g,,_\semprepp^\arco
 	c c r c
 	c c r c
 	f, f r d
@@ -434,7 +456,7 @@ musicVioloncellMvtIII = \relative c' {
 	c8\p r f, r
 % Bars 386 to 390
 	g r g r \mark \default
-	c16\ff c c c  c c c c
+	c16\ff^\tutti c c c  c c c c
 	c c c c  c c c c 
 	d8( e f fis)
 	g( a b16 g a b)
@@ -449,14 +471,20 @@ musicVioloncellMvtIII = \relative c' {
 	b[ b b b]
 	c,\sf[ c' c c]
 	fis,,\sf[ fis' fis fis]
-	g r r4
+	g r^\solo r4
 % Bars 401 to 405
-	R2*12
+	R2*5
 % Bars 406 to 410
-	
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni \clef treble R2
+		R
+		R
+		R
+		R
 % Bars 411 to 415
-	
-	\mark \default
+		R
+		R \clef bass \no \mark \default
+	}
 	fis,8\f r r4
 	R2*3
 % Bars 416 to 420
@@ -474,19 +502,25 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 426 to 430
 	R2
 	g8\p r r4
-	R2*13
+	R2*7
 % Bars 431 to 435
 	
+	
+	
+	
+	\cueDuring #"cueVoiceVioloncellMvtIII" #UP {
+		\ni \clef treble R2
 % Bars 436 to 440
-	
-	
-	
-	
-	\mark \default
+		R
+		R
+		R
+		\clef bass R
+		R \mark \default
 % Bars 441 to 445
-	g8^\pizz r r4
-	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." R2.
+		g8_\pizz r r4
+		R2_\fermataMarkup \bar "||"
+		\clef treble \time 3/4 \tempo "Tempo I." R2. \clef bass \no
+	}
 	c8\f^\arco r c r r4
 	R2.
 % Bars 446 to 450

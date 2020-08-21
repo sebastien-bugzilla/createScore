@@ -10,20 +10,21 @@ musicBassoMvtII = \relative c {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	aes4\p des16-. c-.
+	aes4\p^\tutti des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
-	ees8.\noBeam r16 r8
-	R4.
+	ees8.\noBeam r16^\solo r8
+	R4.*5
 % Bars 6 to 10
-	R4.
-	R4.
-	R4.
-	R4.
-	R4.
+	
+	
+	
+	
+	\cueDuring #"cueVoiceBassoMvtII" #UP {
+		\ni \mmrPos #-6 R4.
 % Bars 11 to 15
-	R4.
-	r8 r16 ees,16(\p f g)
+		\mmrPos #-6 R \no
+		r8 r16 } ees,16(\p f g)
 	aes4( des16 c)
 	bes8( ees8. des16)
 	c8_\crescmarkup c4\f\>
@@ -43,18 +44,20 @@ musicBassoMvtII = \relative c {
 	
 % Bars 31 to 35
 	\mark \default
-	R4.*8
+	R4.*5
 % Bars 36 to 40
 	
-	
-	
-	
-	aes,16-.\pp(^\arco aes-. aes-. aes-. aes-. aes-.)
+	\cueDuring #"cueVoiceBassoMvtII" #UP {
+		\ni \clef tenor R4.
+		R
+		R \no \clef bass
+	}
+	aes,16-.\pp(^\arco^\tutti aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
 	g32\f[ g g g] g[ g\> g g] g[ g g g]
 	f16\p f f f f f
 	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \mark \default
-	g8\p r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
+	g8\p^\solo r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -63,7 +66,10 @@ musicBassoMvtII = \relative c {
 	g' d b
 	g r r
 % Bars 51 to 53
-	R4.*2
-	
-	r8 r g16^\pizz r \bar "||"
+	\cueDuring #"cueVoiceBassoMvtII" #UP {
+		\ni R4.
+		R \no
+		r8 r g16_\pizz r 
+	}
+	\bar "||"
 }
