@@ -10,7 +10,7 @@ musicViolaMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R1*6
+	<>^\tutti R1*6
 % Bars 6 to 10
 	
 	g2\pp( c~
@@ -94,7 +94,7 @@ musicViolaMvtI = \relative c' {
 	d,1)
 	<g g>1\ff
 	c,4 r8. <g' e'>16-. q4-. q-. \mark \default
-	q r r2
+	q r^\solo r2
 % Bars 76 to 80
 	R1
 	c4\p r r2
@@ -139,12 +139,12 @@ musicViolaMvtI = \relative c' {
 	
 	
 	r2 r4 g8\p r
-	c16\ff g e g c g e g c g e g c g e g
+	c16\ff^\tutti g e g c g e g c g e g c g e g
 	b g f g b g f g b g f g b g f g
 % Bars 116 to 120
 	d' g, f g d' g, f g d' g, f g f g f g
 	e g e g e g e g e g e g e g e g \mark \default
-	e8\p r r4 r2
+	e8\p^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -179,10 +179,10 @@ musicViolaMvtI = \relative c' {
 	b4 r r2
 	e4 r r2
 	r r4 r8 \tuplet 3/2 4 {b16[( cis dis)]} \mark \default
-	e2\ff b'4-. gis-.
+	e2\ff^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
-	e-. r r2
+	e-.^\solo r r2
 	R1
 	r4 gis'\p r2
 	r4 gis r2
@@ -193,10 +193,10 @@ musicViolaMvtI = \relative c' {
 	d4^\pizz r d d 
 	d r r b
 	cis cis fis d
-	e e e e
+	e e e e^\tutti
 	r8. e,16\f[^\arco-. fis8.-. gis16]-. a2\sf(~
 % Bars 166 to 170
-	a8.[ cis16 e8. cis16]) a8 r e4\p~
+	a8.[ cis16 e8. cis16]) a8 r^\solo e4\p~
 	e8 r r4 r r8 e
 	r e r e r e r fis
 	r fis r fis r fis r a!
@@ -230,13 +230,15 @@ musicViolaMvtI = \relative c' {
 	d4 r8. d,16-. dis4-. r8. dis16-.
 	e8 r f r d! r e r \mark \default
 	a r r4 r2
-	R1*9
+	R1*6
 % Bars 196 to 200
 	
 % Bars 201 to 205
-	
-	
-	
+	\cueDuring #"cueVoiceViolaMvtI" #UP {
+		\ni \clef treble R1
+		R
+		\mmrPos #-6 R \no \clef alto
+	}
 	e'1(\p
 	a,4\f) r r2
 % Bars 206 to 210
@@ -262,7 +264,7 @@ musicViolaMvtI = \relative c' {
 	r gis r gis
 	\crescText "cresc. poco a poco" d8\pp\< d d d  d d d d 
 	gis gis gis gis d d d d \mark \default
-	c16\ff a a a a4:16 a2:
+	c16\ff^\tutti a a a a4:16 a2:
 % Bars 226 to 230
 	c: c:
 	c: c:
@@ -284,7 +286,7 @@ musicViolaMvtI = \relative c' {
 % Bars 241 to 245
 	a, r r2
 	R1
-	r2 fis'\pp(
+	r2^\solo fis'\pp(
 	b,1 
 	c
 % Bars 246 to 250
@@ -379,7 +381,7 @@ musicViolaMvtI = \relative c' {
 	f r f r f r f r
 	f r f r f r f r
 	g r g r g r g r \mark \default
-	<c, c'>2:16\ff^\arco q:
+	<c, c'>2:16\ff^\arco^\tutti q:
 % Bars 326 to 330
 	q: q:
 	q: q:
@@ -403,7 +405,7 @@ musicViolaMvtI = \relative c' {
 	c( g c g c g c g c g c g c g c g)
 	e'( c e c e c e c e c e c e c e c)
 	g'( e g e g e g e c' g c g c g c g)
-	a\ff a, a a  a a a a a a a a a8\p a
+	a\ff a, a a  a a a a a a a^\solo a a8\p a
 % Bars 346 to 350
 	a a a a  a a a a 
 	g16\ff g g g  g g g g  g g g g g8\p g
@@ -433,9 +435,9 @@ musicViolaMvtI = \relative c' {
 	a r r2
 	f'4( d c bes
 	a) r r2
-	r4 a8.(\f b!16 c4 g8. c16)
+	r4^\tutti a8.(\f b!16 c4 g8. c16)
 % Bars 371 to 375
-	<f, c'>4 r r2
+	<f, c'>4^\solo r r2
 	R1*7
 % Bars 376 to 380
 	
@@ -450,22 +452,28 @@ musicViolaMvtI = \relative c' {
 	g4 r r2
 	g4 r r r8 \tuplet 3/2 8 {d16( e fis)} \mark \default
 % Bars 386 to 390
-	g2\ff d4-. b-.
+	g2\ff^\tutti d4-. b-.
 	g-. g'-. d-. b-.
-	g-. r r2
-	R1*9
+	g-.^\solo r r2
+	R1*4
 % Bars 391 to 395
 	
+	
+	\cueDuring #"cueVoiceViolaMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R
 % Bars 396 to 400
-	
-	
+		R
+		R \clef alto \no
+	}
 	f'4^\pizz r f f 
 	f r r d 
 	g a, a g
 % Bars 401 to 405
 	g e' b d
-	r8. g,16\f^\arco[-. f8.-. d16]-. e2(~
-	e8.[ g16 e8. g16] e8) r g4\p~
+	r8. g,16\f^\arco[-.^\tutti f8.-. d16]-. e2(~
+	e8.[ g16 e8. g16] e8) r^\solo g4\p~
 	g8 r r4 r r8 g
 	r g r g r g r a
 % Bars 406 to 410
@@ -500,9 +508,15 @@ musicViolaMvtI = \relative c' {
 	g8 r a r f! r g r \mark \default
 % Bars 431 to 435
 	c,4 r r2
-	R1*9
+	R1*6
 % Bars 436 to 440
 	
+	
+	\cueDuring #"cueVoiceViolaMvtI" #UP {
+		\ni \clef treble R1
+		R
+		R \clef alto \no
+	}
 % Bars 441 to 445
 	e1\p
 	f4\f r r2
@@ -529,7 +543,7 @@ musicViolaMvtI = \relative c' {
 	\crescText "cresc. poco a poco" d,8\pp\< d d d f f f f
 % Bars 461 to 465
 	b b b b d d d d \mark \default
-	c16\ff <c, ees> q q  q q q q q2:16
+	c16\ff^\tutti <c, ees> q q  q q q q q2:16
 	<des ees>: q:
 	q: q:
 	<c ees>: q:
@@ -538,7 +552,7 @@ musicViolaMvtI = \relative c' {
 	c4 r r8. g16[-. g8.-. g16]-. 
 	a!4.. a16 a4.. a16
 	a8.[ a16-. a8.-. a16]-. a8.[-. ees'16-. c8.-. ees16]-. 
-	g,1\fp(
+	g,1\fp(^\solo
 % Bars 471 to 475
 	f
 	e!
@@ -556,12 +570,17 @@ musicViolaMvtI = \relative c' {
 	d4 b c r
 	d r b r
 	c r r2
-	R1*7
+	R1*4
 % Bars 486 to 490
 	
+	
+	
+	\cueDuring #"cueVoiceViolaMvtI" #UP {
+		\ni \clef treble R1
+		R
 % Bars 491 to 495
-	\mark \default
-	r2 r8. <c, c'>16[\mf^\arco q8. q16]
+		R \no \mark \default
+		r2 \clef alto } r8. <c, c'>16[\mf^\arco q8. q16]
 	q8 r r4 r8. c'16[ c8. c16]
 	c1\p(
 	a
@@ -587,13 +606,13 @@ musicViolaMvtI = \relative c' {
 	bes bes bes bes   bes bes bes bes
 	a a a a  a a a a
 	g g g g   g g g g
-	\tempo "Più allegro." r2 cis,16(_\crescmarkup d cis d) f8.( e16)
+	\tempo "Più allegro." r2^\tutti cis,16(_\crescmarkup d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e'16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
 	f4\ff-. r r2 \mark \default
-	<g g'>4\ff-. r r2
+	<g g'>4\ff-.^\solo r r2
 	c,4 r r g'8 r
 % Bars 521 to 525
 	c r g r c r g r

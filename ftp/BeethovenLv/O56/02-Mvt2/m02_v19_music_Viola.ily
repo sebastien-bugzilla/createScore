@@ -10,10 +10,10 @@ musicViolaMvtII = \relative c {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	ees4\p ees16-. ees-.
+	ees4\p^\tutti ees16-. ees-.
 	ees8 r ees
 	ees8~ ees16. ees32 ees16.( f32)
-	ees8.\noBeam ees'32( des c16 ees)
+	ees8.\noBeam ees'32(^\solo des c16 ees)
 	c8([ ees] bes16 c)
 % Bars 6 to 10
 	des8( bes g16 bes)
@@ -43,18 +43,20 @@ musicViolaMvtII = \relative c {
 	
 % Bars 31 to 35
 	\mark \default
-	R4.*8
+	R4.*5
 % Bars 36 to 40
 	
-	
-	
-	
-	<c ees>16\pp^\arco-.( q-. q-. q-. q-. q-.)
+	\cueDuring #"cueVoiceViolaMvtII" #UP {
+		\ni \clef treble R4.
+		R
+		R \no \clef alto
+	}
+	<c ees>16\pp^\arco-.(^\tutti q-. q-. q-. q-. q-.)
 % Bars 41 to 45
 	q32[\f q q q] q[ q\> q q] q[ q q q]
 	d16\p d d d d d
 	ees32[\f a a a] a[ a a\> a] a[ a a a] \mark \default
-	d,8\p r16 g16\noBeam\<( \afterGrace aes!8)\>\startTrillSpan {g16[\stopTrillSpan aes]\!}
+	d,8\p^\solo r16 g16\noBeam\<( \afterGrace aes!8)\>\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -63,7 +65,10 @@ musicViolaMvtII = \relative c {
 	g' d b
 	g r r
 % Bars 51 to 53
-	<> R4.*2
-	
-	r8 r g16^\pizz r \bar "||"
+	\cueDuring #"cueVoiceViolaMvtII" #UP {
+		\ni << R4. { \clef bass s8 \clef alto s4} >>
+		R4. \no
+		r8 r g16_\pizz r 
+	}
+	\bar "||"
 }
