@@ -59,10 +59,10 @@
 %					\new Voice {
 %						\formatPianoUpMvtI
 %					}
-%					\new Voice {
-%						\timeMvtI \generalOptions \partOptions
-%						\namePianoUpMvtI \musicPianoUpMvtI
-%					}
+					\new Voice {
+						\timeMvtI \generalOptions \partOptions
+						\namePianoUpMvtI \musicPianoUpMvtI
+					}
 					\new Voice {
 						\timeMvtI \generalOptions \partOptions
 						\cueVoicePianoUpMvtI
@@ -74,10 +74,10 @@
 			}
 			\new Staff = "down" {
 				<<
-%					\new Voice {
-%						\timeMvtI \generalOptions \partOptions
-%						\namePianoDownMvtI \musicPianoDownMvtI
-%					}
+					\new Voice {
+						\timeMvtI \generalOptions \partOptions
+						\namePianoDownMvtI \musicPianoDownMvtI
+					}
 					\new Voice {
 						\clef bass
 						\cueVoicePianoDownMvtI
@@ -97,6 +97,10 @@
 		\layout {
 			\context {
 				\CueVoice \layoutCueVoice
+			}
+			\context {
+				\PianoStaff
+				\consists #Span_stem_engraver
 			}
 		}
 	}
