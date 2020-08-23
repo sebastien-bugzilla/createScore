@@ -10,7 +10,7 @@ musicPianoUpMvtII = \relative c' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*19
+	s4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,8 +20,8 @@ musicPianoUpMvtII = \relative c' {
 	
 	
 	
-	r8 
-		\tuplet 3/2 16 {r32 ees([_\espressivo d] 
+	\voiceOne r8 
+		\tuplet 3/2 16 {r32 \oneVoice ees([_\espressivo^\klaviersolobold d] 
 		ees[ aes g] 
 		aes[ c b] 
 		c[ ees d])} \mark \default
@@ -163,13 +163,13 @@ musicPianoUpMvtII = \relative c' {
 		\tuplet 3/2 16 {ees,32[ bes' des]\sustainOff}
 	<ees, aes c>8 r r \change Staff = "up" \oneVoice
 % Bars 41 to 45
-	R4.*3
+	s4.*3
 	
 	\mark \default
-	R4.*2
+	s4.*2
 	
 % Bars 46 to 50
-	r8_\semprep 
+	r8_\semprep^\klaviersolobold 
 		\tuplet 3/2 16 {r32( r b'') 
 		d[ g d] 
 		b[ g d]} \voiceOne 
@@ -192,5 +192,5 @@ musicPianoUpMvtII = \relative c' {
 		b[ d b]}
 	g8\pp r r \oneVoice
 % Bars 51 to 53
-	R4.*3 \bar "||"
+	s4.*3 \bar "||"
 }

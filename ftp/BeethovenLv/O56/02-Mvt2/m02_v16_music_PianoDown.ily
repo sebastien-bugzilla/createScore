@@ -10,7 +10,7 @@ musicPianoDownMvtII = \relative c {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	R4.*19
+	s4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -141,10 +141,10 @@ musicPianoDownMvtII = \relative c {
 		r16
 	<aes, aes'>8 r r \oneVoice
 % Bars 41 to 45
-	R4.*3
+	s4.*3
 	
 	\mark \default
-	R4.*2
+	s4.*2
 	
 % Bars 46 to 50
 	\tuplet 3/2 16 {g32[(\sustainOn g' b)] 
@@ -170,6 +170,6 @@ musicPianoDownMvtII = \relative c {
 		b[ d b]}
 	g8 r r \oneVoice
 % Bars 51 to 53
-	R4.*3
+	s4.*3
 	\bar "||"
 }

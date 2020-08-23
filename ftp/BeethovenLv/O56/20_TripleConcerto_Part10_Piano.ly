@@ -52,35 +52,87 @@
 			"Piano"
 		}
 	}
+%	\score {
+%		\new PianoStaff <<
+%			\new Staff = "up" {
+%				<<
+%%					\new Voice {
+%%						\formatPianoUpMvtI
+%%					}
+%					\new Voice {
+%						\timeMvtI \generalOptions \partOptions
+%						\namePianoUpMvtI \musicPianoUpMvtI
+%					}
+%					\new Voice {
+%						\timeMvtI \generalOptions \partOptions
+%						\cueVoicePianoUpMvtI
+%					}
+%					\new Voice {
+%						\cueVoicePianoThirdMvtI
+%					}
+%				>>
+%			}
+%			\new Staff = "down" {
+%				<<
+%					\new Voice {
+%						\timeMvtI \generalOptions \partOptions
+%						\namePianoDownMvtI \musicPianoDownMvtI
+%					}
+%					\new Voice {
+%						\clef bass
+%						\cueVoicePianoDownMvtI
+%					}
+%				>>
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\fill-line {
+%					\fontsize #4
+%					I
+%				}
+%			}
+%		}
+%		\layout {
+%			\context {
+%				\CueVoice \layoutCueVoice
+%			}
+%			\context {
+%				\PianoStaff
+%				\consists #Span_stem_engraver
+%			}
+%		}
+%	}
 	\score {
 		\new PianoStaff <<
 			\new Staff = "up" {
 				<<
 %					\new Voice {
-%						\formatPianoUpMvtI
+%						\formatPianoUpMvtII
 %					}
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						\namePianoUpMvtI \musicPianoUpMvtI
+						\timeMvtII \generalOptions \partOptions
+						\namePianoUpMvtII \musicPianoUpMvtII
 					}
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						\cueVoicePianoUpMvtI
+						\timeMvtII \generalOptions \partOptions
+						\cueVoicePianoUpMvtII
 					}
 					\new Voice {
-						\cueVoicePianoThirdMvtI
+						\cueVoicePianoThirdMvtII
 					}
 				>>
 			}
 			\new Staff = "down" {
 				<<
 					\new Voice {
-						\timeMvtI \generalOptions \partOptions
-						\namePianoDownMvtI \musicPianoDownMvtI
+						\timeMvtII \generalOptions \partOptions
+						\namePianoDownMvtII \musicPianoDownMvtII
 					}
 					\new Voice {
-						\clef bass
-						\cueVoicePianoDownMvtI
+						\timeMvtII \generalOptions \partOptions
+						\cueVoicePianoDownMvtII
 					}
 				>>
 			}
@@ -90,7 +142,7 @@
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
-					I
+					II
 				}
 			}
 		}
@@ -104,43 +156,6 @@
 			}
 		}
 	}
-%	\score {
-%		\new PianoStaff <<
-%			\new Staff = "up" {
-%				<<
-%%					\new Voice {
-%%						\formatPianoUpMvtII
-%%					}
-%					\new Voice {
-%						\timeMvtII \generalOptions \partOptions
-%						\namePianoUpMvtII \musicPianoUpMvtII
-%					}
-%				>>
-%			}
-%			\new Staff = "down" {
-%				<<
-%					\new Voice {
-%						\timeMvtII \generalOptions \partOptions
-%						\namePianoDownMvtII \musicPianoDownMvtII
-%					}
-%				>>
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					II
-%				}
-%			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
-%			}
-%		}
-%	}
 %	\score {
 %		\new PianoStaff <<
 %			\new Staff = "up" {

@@ -3048,10 +3048,155 @@ cueVoicePianoThirdMvtI = \relative c {
 	
 % Bars 526 to 529
 }
+%-------------------------------------------------------------------------------
+%    M V T  2
+%-------------------------------------------------------------------------------
 cueVoicePianoUpMvtII = \relative c {
+	\key aes \major
+% Bars 1 to 5
+	\InCueContext <aes' c>4\p^\tuttibold <g bes>16-. <aes c>-.
+	<bes des>8 r q
+	q8[(~ q16. <g ees'>32)] <aes c>16. <f bes des>32
+	<g bes>8.\noBeam ees'8(^\solobold <ees g>16)
+	\voiceOne aes4( g16 aes)
+% Bars 6 to 10
+	g8( bes g16 bes)
+	\oneVoice <ees, aes>8 <c ees>16( <bes ees> <aes ees'^(>) <aes bes d)>~
+	q q( <g bes ees>) ees'-.(\pp ees-. ees-.)
+	<g, bes des! ees>32 q q q r q q q r q q q
+	r <aes c ees> q q r q q q r q q q
+% Bars 11 to 15
+	r_\crescmarkup <g bes des ees> q q r <g des' ees> q q r <bes des ees> q q
+	r16 <bes des>8\sf( <des f>16_\dimmarkup <c ees> <bes des>)
+	\voiceOne c4(\p bes16 c)
+	des4( c16 des) \oneVoice
+	<aes ees'>8_\crescmarkup <<{ <bes e>4 } {s16\f\> s s s\!}>>
+% Bars 16 to 20
+	<<{\InCueContext f'4(~ f16 des)} \\ {\InCueContext aes16\p a_\crescmarkup bes c des bes}>>
+	<aes! c>32\p q q q  r <ees aes c> q q r q[ r <ees a c>]
+	r_\crescmarkup <g bes des> q q r q q q r q[ r q]
+	r <f aes c>[ r <f des' f>] r16 <ees aes c>\sf r <ees g des'>
+	\voiceTwo r \oneVoice <g des'>16( <aes c>32) s32 s8.
+% Bars 21 to 25
+	s4.*19
+% Bars 26 to 30
 	
+% Bars 31 to 35
+	
+% Bars 36 to 40
+	
+	
+	
+	
+	c4(_\markup {Clar.Fag.}^\tuttibold <b b'>16 <c c'>)
+% Bars 41 to 45
+	<c c'>4.\f\>
+	q8.([\p <b b'>32 <c c'>]) <b b'>( <c c'> <b b'> <c c'>)
+	<c ees a c>8.\f <ees c' ees>8\> q16]
+	<des b' des>8\p\noBeam^\solobold r16 g,(\<\noBeam \afterGrace aes8)\>\trill {g16 aes}
+	g8\! r r
+% Bars 46 to 50
+	s4.*4
+	
+	
+	
+	\voiceOne s8 \tuplet 3/2 16 {r32 b'^\markup {Viol.solo.}[ d] g b d} g16[ g]
+% Bars 51 to 53
+	\oneVoice g8 \voiceOne \tuplet 3/2 16 {r32 b,,[ d] g[ b d]} g32[ g g g]
+	g8 r r
+	\oneVoice \tuplet 3/2 16 {g,,32[ g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
 }
 cueVoicePianoDownMvtII = \relative c {
+	\key aes \major
+	\clef bass
+% Bars 1 to 5
+	\InCueContext <aes ees'>4 <des ees>16-. <c ees>-.
+	<g ees'>8 r q
+	\voiceOne ees'8 ees16. ees32 <aes, ees'>16. <des, des'>32 \oneVoice
+	<ees ees'>8.\noBeam \clef treble ees''32([ des] c16 <bes des>)
+	<<{\InCueContext c8[ c]_( des16 c)}\\{\InCueContext aes4 s8}>> \clef bass
+% Bars 6 to 10
+	<bes des>8( <g bes> <ees g>16 <g bes>)
+	aes8.( g16 f <bes, f'>)
+	ees( bes ees) r r8
+	ees,(^\pp g bes)
+	ees,( aes c)
+% Bars 11 to 15
+	ees,( bes' g)
+	\voiceOne r16 ees'8 ees16 ees ees \oneVoice
+	<aes, ees'>4( <des ees>16 <c ees>)
+	<<{\InCueContext ees8\noBeam ees8. g16}\\{\InCueContext bes,8( ees8. des16)}>>
+	\voiceOne ees8 g4
+% Bars 16 to 20
+	\voiceOne f4~ f16 f \oneVoice
+	<ees, ees'> r ees r ees r
+	ees[ r ees] r ees32[ r e] r
+	f[ r d] r ees!16^\sf r ees^\p r
+	\voiceOne aes16 ees'~ ees32 s32 s8. \oneVoice
+% Bars 21 to 25
+	s4.*19
+% Bars 26 to 30
+	
+% Bars 31 to 35
+	
+% Bars 36 to 40
+	
+	
+	
+	
+	s8 <aes, c ees>16(-.^\pp q-. q-. q-.)
+% Bars 41 to 45
+	<g c ees>32[ q q q]  q[ q q q]  q[ q q q]
+	<f aes c d>16 q q q q q
+	<fis a c ees>32[ <fis' a> q q] q[ <fis a c> q q] q[ <fis, a c ees> q q]
+	<g b des>8 r16 g\noBeam( \afterGrace aes8\trill) {g16 aes}
+	g8 r r
+% Bars 46 to 50
+	s4.*4
+	
+	
+	
+	\voiceOne r16 \tuplet 3/2 16 {g'32[^\markup {Vlc.solo.} b d]} \change Staff = "up" \voiceTwo g16[ g] g8
+% Bars 51 to 53
+	\change Staff = "down" \tuplet 3/2 16 {g,,32[ b d] g[ b \change Staff = "up" d]} \voiceTwo g32[ g g g] g8
+	g32[ g g g] g[ g g g] \tuplet 3/2 4 {g[ g g] g[ g g]} \change Staff = "down"
+	\oneVoice r8 r <g,, b d f>16 r
+}
+cueVoicePianoThirdMvtII = \relative c {
+% Bars 1 to 5
+	\InCueContext s4.*2
+	
+	\change Staff = "down" \voiceTwo g8~ g16. ees32( s16. \hideNotes des32) \unHideNotes
+	s4.
+	\change Staff = "up" ees''8 ees ees16 ees
+% Bars 6 to 10
+	ees8 ees8. ees16
+	s4.*5
+% Bars 11 to 15
+	
+	\change Staff = "down" \voiceTwo ees,,8._\sf ees16( f g)
+	\change Staff = "up" c'8 aes g16 aes
+	g8. bes16 aes bes
+	\change Staff = "down" c,8 c4
+% Bars 16 to 20
+	des8.( a16 bes des)
+	s4.*3
+	
+	
+	aes8 s4
+% Bars 21 to 25
+	
+% Bars 26 to 30
+	
+% Bars 31 to 35
+	
+% Bars 36 to 40
+	
+% Bars 41 to 45
+	
+% Bars 46 to 50
+	
+% Bars 51 to 53
 	
 }
 cueVoicePianoDownMvtIII = \relative c {
