@@ -75,7 +75,7 @@ musicPianoDownMvtI = \relative c' {
 	e dis d cis c cis d dis e dis d cis c cis d dis
 	\tuplet 3/2 4 {e8-. dis-. d-. cis-. c-. b-. bes-. a-. aes-. g-. fis-. f-. }
 	e8.( d16) c4. c8([\turn d8. f,16])
-	e4 r r2
+	e4 s s2
 	s1*3
 % Bars 116 to 120
 	
@@ -88,17 +88,17 @@ musicPianoDownMvtI = \relative c' {
 	<f f'> r q r
 	<c c'> r c( e
 	g) r <g, g'> r
-	<c c'> r r2
+	<c c'> s s2
 % Bars 126 to 130
 	s1*3
 	
 	
 	r8 c'16( c') d,( d') e,( e') f,( f') g,( g') \clef treble a,( a') b,( b')
-	c,( c') r8 r4 r2
+	c,( c') r8 s4 s2
 % Bars 131 to 135
-	r8 c,16( c') b,( b') a,( a') \clef bass g,( g') f,( f') e,( e') d,( d')
-	c,( c') r8 r4 r2
-	r8 c,16( c') d,( d') e,( e') f,( f') \clef treble g,( g') a,( a') b,( b')
+	s8 c,16( c') b,( b') a,( a') \clef bass g,( g') f,( f') e,( e') d,( d')
+	c,( c') r8 s4 s2
+	s8 c,16( c') d,( d') e,( e') f,( f') \clef treble g,( g') a,( a') b,( b')
 	<c, c'>2( <a a'>
 	<fis fis'> <gis gis'>)
 % Bars 136 to 140
@@ -108,13 +108,13 @@ musicPianoDownMvtI = \relative c' {
 	fis4 r8. fis16 gis4 r8. gis16
 	a8 r a, r f'! r f r \oneVoice
 % Bars 141 to 145
-	<e e'>4 r r2
+	<e e'>4 d'4\rest d2\rest
 	s1
-	\clef treble \tuplet 3/2 4 {r8 e''-. e-. e-. e-. e-. e( <d! f!>) q-. q-. q-. q-. }
+	\clef treble \tuplet 3/2 4 {r8 e'-. e-. e-. e-. e-. e( <d! f!>) q-. q-. q-. q-. }
 	\tuplet 3/2 4 {q( <c e>) q-. q-. q-. q-. q( <b d>) q-. <a c>( <c a'>) q-.}
 	<b gis'>4 r r2
 % Bars 146 to 150
-	s1
+	\ni R1 \no
 	\clef bass r4 \tuplet 3/2 4 {e,,8(^\crescmarkup gis) gis( b) b( e) e( gis) gis(}
 	b4) \tuplet 3/2 4 {e8-. gis-. b,-. e-. gis,-. b-. e,-. gis-. b-. } \mark \default
 	<e, e'>4 r r2
@@ -141,7 +141,7 @@ musicPianoDownMvtI = \relative c' {
 	s1*6
 % Bars 166 to 177
 	
-	r2 r8 \clef treble e'16( gis fis a gis b)
+	s2 s8 \clef treble e'16( gis fis a gis b)
 	a cis e cis e cis e cis b a gis a b ais gisis ais
 	cis b ais b d cis b cis e d cis d fis e dis e
 	<<{
@@ -202,11 +202,11 @@ musicPianoDownMvtI = \relative c' {
 	s1
 	r4 \clef treble dis'' dis r
 	r dis dis dis
-	dis r r2
+	s1
 % Bars 216 to 220
-	s1*3
+	s1*2
 	
-	
+	\ni R1 \no
 	\clef bass d,16(_\semprepp e fis gis a b c cis \clef treble d e fis gis a b c cis)
 	d1~\startTrillSpan
 % Bars 221 to 225
@@ -214,7 +214,7 @@ musicPianoDownMvtI = \relative c' {
 	gis b, c d e fis gis a b d, e fis gis a b c
 	d1\startTrillSpan~
 	\afterGrace d {c16[(\stopTrillSpan d)]} \mark \default
-	c4 r r2
+	c4 s s2
 % Bars 226 to 230
 	s1*42
 % Bars 231 to 235
@@ -234,7 +234,7 @@ musicPianoDownMvtI = \relative c' {
 % Bars 266 to 270
 	
 	
-	cis,2( b8[ cis e8. d16])
+	\clef treble cis,2( b8[ cis e8. d16])
 	d4 r r2
 	d2( cis8[ d f!8. e16])
 % Bars 271 to 275
@@ -245,7 +245,7 @@ musicPianoDownMvtI = \relative c' {
 	e16 cis g' e \clef bass cis g e' cis g e cis' g e cis g' e
 % Bars 276 to 280
 	\voiceTwo cis g e' cis g e cis' g e cis g' e cis e cis a \mark \default
-	bes4 \oneVoice r r2
+	bes4 r r2 \oneVoice
 	\tuplet 3/2 4 {bes''8-. d,-. f-. bes,-. d-. f,-. bes-. d,-. f-. bes,-. d-. f-. }
 	a,4 r r2
 	\tuplet 3/2 4 {a''8-. c,-. f-. a,-. c-. f,-. a-. c,-. f-. a,-. c-. f-. }
@@ -271,14 +271,14 @@ musicPianoDownMvtI = \relative c' {
 	\tuplet 3/2 4 {r8 ees' g c, ees g, c ees, g c, c' c}
 	f4 r \tuplet 3/2 4 {aes8 des, f aes, des f,}
 	r2 \tuplet 3/2 4 {fis'8 c ees a,! c fis,}
-	g4 r r2
+	g4 \voiceOne r r2 
 	s1*5
 % Bars 301 to 305
 	
 	
 	
 	
-	r4 \clef treble <f'' aes>2\sf( <ees g>8. <d f>16)
+	r4 \oneVoice \clef treble <f'' aes>2\sf( <ees g>8. <d f>16)
 % Bars 306 to 310
 	q8.( <c ees>16) q8.( <ees g>16) q8.( <d f>16) q8.( <c ees>16)
 	<b d>4 r \clef bass g2(
@@ -302,7 +302,7 @@ musicPianoDownMvtI = \relative c' {
 	s1
 	r16 d,_\crescmarkup e f g a b c \clef treble d e f g a b c d \clef bass
 	r16 g,, f e d c b a g f e d c b a g \mark \default
-	c4 r r2
+	c4 r s2
 % Bars 326 to 330
 	s1*27
 % Bars 331 to 335
@@ -316,7 +316,7 @@ musicPianoDownMvtI = \relative c' {
 % Bars 351 to 355
 	
 	\mark #11
-	r2 r4 \tuplet 3/2 4 {a'8-. e'-. cis-.}
+	s2 s4 \tuplet 3/2 4 {a'8-. e'-. cis-.}
 	\tuplet 3/2 4 {a'-. e-. cis'-. \clef treble a-. e'-. cis-. a'-. e-. cis-. e-. cis-. a-. }
 	\clef bass \tuplet 3/2 4 {a, f' d a' f d' \clef treble a f' d a' f d} \clef bass
 % Bars 356 to 360
@@ -328,7 +328,7 @@ musicPianoDownMvtI = \relative c' {
 % Bars 361 to 365
 	f r f( a)
 	c r c r
-	<f, f'> r r2
+	\voiceOne <f, f'> r4 r2 \oneVoice
 	s1*4
 % Bars 366 to 370
 	
@@ -337,7 +337,7 @@ musicPianoDownMvtI = \relative c' {
 	<f c'>4 r r2
 	s1 
 % Bars 371 to 375
-	\clef bass r8 a,,16( a') bes,( bes') c,( c') d,( d') e,( e') f,( f') g,( g')
+	\voiceOne r8 \oneVoice a,,16( a') bes,( bes') c,( c') d,( d') e,( e') f,( f') g,( g')
 	<a, a'>2 <fis fis'>
 	<g g'> <e e'>
 	<f f'>4 r8. f16 d4 r8. d16
@@ -347,15 +347,15 @@ musicPianoDownMvtI = \relative c' {
 	c,8. c'16 <a, a'>8. <b b'>16 <c c'>4 <d d'>
 	<g, g'> r r2
 	s1
-	\tuplet 3/2 4 {r8 \clef treble g'''8 g g g g g( <f aes>) q-. q q q}
+	\tuplet 3/2 4 {\voiceOne r8 \oneVoice \clef treble g'''8 g g g g g( <f aes>) q-. q q q}
 % Bars 381 to 385
 	\tuplet 3/2 4 {q( <ees g>) q-. q q q q( <d f>) q-. <c ees>( <ees c'>) q-.}
 	<d b'>4 r r2
-	s1
+	\ni R1 \no
 	\clef bass r4 \tuplet 3/2 4 {g,,,8( b) b( d) d( g) g( b) b(}
 	\tuplet 3/2 4 {d)-. b-. d-. g,-. b-. d,-. g-. b,-. d-. g,-. b-. d-. } \mark \default
 % Bars 386 to 391
-	<g, g'>4 r r2
+	<g, g'>4 s s2
 	s1
 	\voiceTwo g4 r r2 \clef treble
 	\oneVoice r16 g'' b a g b d c b d f e d b' d c
@@ -379,7 +379,7 @@ musicPianoDownMvtI = \relative c' {
 	
 	
 	
-	r2 r8 \clef treble g''16( b a c b d)
+	s2 s8 \clef treble g''16( b a c b d)
 	c e g e g e g e d c b c d cis bis cis
 % Bars 406 to 415
 	e d cis d f e dis e g f e f a g fis g
@@ -407,7 +407,7 @@ musicPianoDownMvtI = \relative c' {
 	r8 q q q q4 r
 	r8 q q q q q q q 
 	<g c d> q q q <g b d> q q q
-	<c, c'>4 r r2
+	<c, c'>4 s s2
 	s1*11
 % Bars 421 to 425
 	
@@ -444,7 +444,9 @@ musicPianoDownMvtI = \relative c' {
 % Bars 451 to 455
 	r fis fis fis
 	fis r r2
-	s1*3
+	s1*2
+	
+	\ni R1 \no
 % Bars 456 to 460
 	\clef bass f,16(^\pp g a b \clef treble c d dis e f g a b c d dis e)
 	f1~\startTrillSpan
@@ -453,7 +455,7 @@ musicPianoDownMvtI = \relative c' {
 	d1\startTrillSpan~
 % Bars 461 to 465
 	\afterGrace d {c16[(\stopTrillSpan d])} \mark \default
-	c4 r r2
+	c4 s s2
 	s1*8
 % Bars 466 to 470
 	
@@ -464,8 +466,8 @@ musicPianoDownMvtI = \relative c' {
 	r16 g( fis g a g fis g) g,4 r 
 	r16 g'( fis g a g fis g) g,4 r
 % Bars 476 to 480
-	r16 g'( fis g a g fis g) g,4 r \clef bass
-	r2 r4 fis\trill 
+	r16 g'( fis g a g fis g) g,4 r 
+	r2 r4 \clef bass fis\trill 
 	g16( d e! fis g a b a g fis e d c b a g
 	fis g a b c b a g fis e d c b a g fis
 	g a b c d c b a g a b c d e fis g
@@ -509,19 +511,19 @@ musicPianoDownMvtI = \relative c' {
 	r16 g fis g a g f e d c d e f g a bes
 	b!( c b c d c bes a) g8( f) f-. f-.
 	f2~ f16 f( a g b! a g f)
-	\tempo "Più allegro." e4 r r2 \clef bass
+	\tempo "Più allegro." e4 \clef bass s s2 
 	s1*4
 % Bars 516 to 520
 	
 	
 	\mark \default
 	<g,,, g'>4 r r2
-	r16 c( d e f g a b) c4 r
+	\voiceOne r16 \oneVoice c( d e f g a b) c4 s
 % Bars 521 to 525
 	s1
-	r16 e, f g a b c d e4 r
+	\voiceOne r16 \oneVoice e, f g a b c d e4 s
 	s1
-	r16 g, a b c d e f g2\startTrillSpan~
+	\voiceOne r16 \oneVoice g, a b c d e f g2\startTrillSpan~
 	g1~
 % Bars 526 to 530
 	g~

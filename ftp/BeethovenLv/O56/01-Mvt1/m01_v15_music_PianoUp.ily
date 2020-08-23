@@ -10,7 +10,7 @@ musicPianoUpMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	s1*32
+	<>^\tuttibold s1*32
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -55,7 +55,7 @@ musicPianoUpMvtI = \relative c'' {
 	
 % Bars 96 to 100
 	\mark \default
-	<c c'>2_\dolce( <b b'>8[ <c c'> <e e'>8. <d d'>16)]
+	<c c'>2_\dolce^\klaviersolobold( <b b'>8[ <c c'> <e e'>8. <d d'>16)]
 	<d d'>4 r r2
 	<d d'>2( <cis cis'>8[ <d d'> <f f'>8. <e e'>16])
 	<e e'>4 r r8. <e e'>16[( <g g'>8. <f f'>16])
@@ -75,12 +75,12 @@ musicPianoUpMvtI = \relative c'' {
 	g fis f e dis e f fis g fis f e dis e f fis
 	\tuplet 3/2 4 {g8-. fis-. f-. e-. ees-. d-. cis-. c-. b-. bes-. a-. aes-. }
 	g8.( f16) e4. e8\turn([ f8. d16])
-	c4 r r2 
+	c4 s s2 
 	s1*3
 % Bars 116 to 120
 	
 	\mark \default
-	\clef bass \tuplet 3/2 4 {r8\p e,,( g) c-. e,-. g-. r e( g) c-. e,-. g-.}
+	\clef bass \tuplet 3/2 4 {r8\p^\solobold e,,( g) c-. e,-. g-. r e( g) c-. e,-. g-.}
 	\tuplet 3/2 4 {r f( g) b-. f-. g-. r f( g) b-. f-. g-. }
 	\tuplet 3/2 4 {r f( g) b-. f-. g-. r f( g) b-. f-. g-. }
 % Bars 121 to 125
@@ -88,17 +88,17 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {r f( a) c-. f,-. a-. r f( a) c-. f,-. a-. }
 	\tuplet 3/2 4 {r f( g) c-. e,-. g-. r e( g) c-. e,-. g-.}
 	\tuplet 3/2 4 {r d( g) c-. d,-. g-. r d( g) b-. d,-. g-.}
-	<e g c>4 r r2
+	<e g c>4 s s2
 % Bars 126 to 130
 	s1*3 \clef treble
 	
 	
-	r8 e'16(\p e') f,( f') g,( g') a,( a') b,( b') c,( c') d,( d')
-	e,( e') r8 r4 r2
+	r8 e'16(\p^\klaviersolobold e') f,( f') g,( g') a,( a') b,( b') c,( c') d,( d')
+	e,( e') r8 s4 s2
 % Bars 131 to 135
-	r8 e,16( e') d,( d') c,( c') b,( b') a,( a') g,( g') f,( f')
-	e,( e') r8 r4 r2
-	r8 e,16(\p e') f,( f') g,( g') a,( a') b,( b') c,( c') d,( d')
+	s8 e,16( e') d,( d') c,( c') b,( b') a,( a') g,( g') f,( f')
+	e,( e') r8 s4 s2
+	s8 e,16(\p e') f,( f') g,( g') a,( a') b,( b') c,( c') d,( d')
 	e,( e') r8 e2(\turn f8. c16)
 	e8.( dis16 d4.) d8\trill( \grace {cis16[ d]} e8 b)
 % Bars 136 to 140
@@ -108,9 +108,9 @@ musicPianoUpMvtI = \relative c'' {
 	\change Staff = "down" r16 d, a' c d a c d r d, e b' d e, b' d
 	r c, e a r^\crescmarkup a, a' a, r f' \change Staff = "up" f' \change Staff = "down" f, r f \change Staff = "up" f' \change Staff = "down" f, \oneVoice
 % Bars 141 to 145
-	\change Staff = "up" e'4 r r2
+	\change Staff = "up" \shiftOn e'4 b'\rest b2\rest
 	s1
-	\tuplet 3/2 4 {r8 e'-. e-. e-. e-. e-. e(\sf <d! f!>) q-. q-. q-. q-.}
+	\tuplet 3/2 4 {r8 e-. e-. e-. e-. e-. e(\sf <d! f!>) q-. q-. q-. q-.}
 	\tuplet 3/2 4 {q(\sf <c e>) q-. q-. q-. q-. q( <b d>) q-. <a c>( <c a'>) q-.}
 	<b gis'>4 r r2
 % Bars 146 to 150
@@ -120,7 +120,7 @@ musicPianoUpMvtI = \relative c'' {
 	q4 r r2
 	s1
 % Bars 151 to 155
-	\clef bass e,,16\fp gis b a gis b d cis \clef treble b gis' b a gis b d cis
+	\clef bass e,,16\fp^\solobold gis b a gis b d cis \clef treble b gis' b a gis b d cis
 	b gis' b a gis b d cis b d fis e d e cis d
 	b\< cis ais cis b d cis e d fis e fis d e cis d
 	b cis ais cis b d cis e d\> fis e fis d e cis d\!
@@ -135,7 +135,7 @@ musicPianoUpMvtI = \relative c'' {
 	s1*6
 % Bars 166 to 170
 	
-	r2 r8 e'16(\p gis fis a gis b)
+	s2 s8 e'16(\p^\solobold gis fis a gis b)
 	a cis e cis e cis e cis b a gis a b ais gisis ais
 	cis b ais b d cis b cis e d cis d fis e dis e
 	fis8_\dimmarkup fis4 fis fis fis8(
@@ -161,7 +161,7 @@ musicPianoUpMvtI = \relative c'' {
 	
 	
 	\mark \default
-	a16\f b a gis a b a b c d c b c d c d
+	a16\f^\klaviersolobold b a gis a b a b c d c b c d c d
 	dis e dis e dis e dis e dis e f e d c b a 
 % Bars 196 to 200
 	gis a gis fis e fis gis a b c b a gis a b c
@@ -186,7 +186,7 @@ musicPianoUpMvtI = \relative c'' {
 	b2(~\p b8.[ ais16 b8. ais16])
 	b4 <fis a! b>_\dimmarkup q r
 	r q q q
-	q\pp r r2
+	<dis fis a b>\pp r r2
 % Bars 216 to 220
 	s1*2
 	
@@ -198,7 +198,7 @@ musicPianoUpMvtI = \relative c'' {
 	b2~ b16\stopTrillSpan d, e fis gis a b c
 	<b d>1\startTrillSpan\cresc~
 	\afterGrace q {<a c>16[(\stopTrillSpan <b d>])} \mark \default
-	<a c>4\ff r r2
+	<a c>4\ff s s2
 % Bars 226 to 230
 	s1*42
 % Bars 231 to 235
@@ -218,18 +218,18 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 266 to 270
 	
 	
-	<a, a'>2\p( <gis gis'>8[ <a a'> <cis cis'>8. <b b'>16])
+	<a, a'>2\p(^\klaviersolobold <gis gis'>8[ <a a'> <cis cis'>8. <b b'>16])
 	<b b'>4 r r2
 	<b b'>2( <ais ais'>8[ <b b'> <d d'>8. <cis cis'>16])
 % Bars 271 to 275
 	<cis cis'>4 r r8. <cis cis'>16[( <e e'>8. <d d'>16])
-	<d d'>4 r r8. <d d'>16[( <f f'>8. <e e'>16])
+	\voiceOne <d d'>4 r r8. \oneVoice <d d'>16[( <f f'>8. <e e'>16])
 	<e e'>4( <g g'>2) g'8.( e16)
 	cis8.[( g16 e'8. cis16] g8.[ e16 cis'8. g16])
 	e_\crescmarkup cis g' e cis g e' cis g e cis' g e cis g' e
 % Bars 276 to 280
 	\voiceOne cis \change Staff = "down" g \change Staff = "up" e' cis \change Staff = "down" g e cis' g e cis g' e cis e cis g \mark \default
-	f4\f \oneVoice \change Staff = "up" r r2
+	f4^\f r r2 \oneVoice \change Staff = "up"
 	\tuplet 3/2 4 {f''8\f-. d'-. bes-. f'-. d-. bes'-. f-. d'-. bes-. f'-. f-. f-. }
 	f4 r r2
 	\tuplet 3/2 4 {f,,8-. ees'-. c-. f-. ees-. c'-. f,-. ees'-. c-. f-. f-. f-. }
@@ -255,14 +255,14 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {c,,8 g' ees c' g ees' c g' ees c' g g}
 	aes4 r \tuplet 3/2 4 {aes,8 f' des aes' f des'}
 	r2 \tuplet 3/2 4 {a,!8 ees' c a'! ees c'}
-	b4 r r2
+	b4 \voiceOne r r2 \oneVoice
 	s1*5
 % Bars 301 to 305
 	
 	
 	
 	
-	r4 <f aes>2\sf( <ees g>8. <d f>16)
+	r4 <f aes>2\sf(^\klaviersolobold <ees g>8. <d f>16)
 % Bars 306 to 310
 	<d f>8.( <c ees>16) q8.( <ees g>16) q8.( <d f>16) q8.( <c ees>16)
 	<b d>4 g'16(\p a g a b8-.) r b16( c b c
@@ -286,7 +286,7 @@ musicPianoUpMvtI = \relative c'' {
 	\voiceOne r16_\crescmarkup \change Staff = "down" d,, e f g a b c \change Staff = "up" d e f g a b c d
 	r16 \change Staff = "down" f,, g a b \change Staff = "up" c d e f g a b c d e f
 	\oneVoice r16 d,\ff e f g a b c d e f g a b c d \mark \default 
-	<e, g c e>4 r r2
+	<e, g c e>4 r s2
 % Bars 326 to 330
 	s1*27
 % Bars 331 to 335
@@ -300,7 +300,7 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 351 to 355
 	
 	\mark #11
-	r2 r4 \tuplet 3/2 4 {a,,8-.\mf e'-. cis-. }
+	s2 s4 \tuplet 3/2 4 {a,,8-.\mf e'-. cis-. }
 	\tuplet 3/2 4 {a'-. e-. cis'-. a-. e'-. cis-. a'-. e-. cis-. e-. cis-. a-. }
 	\tuplet 3/2 4 {a,_\semprestaccato f' d a' f d' a f' d a' f d}
 % Bars 356 to 360
@@ -312,16 +312,16 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 361 to 365
 	\tuplet 3/2 4 {r a( c f a, c) r a( c f a, c)}
 	\tuplet 3/2 4 {r g( c f g, c) r g( c e g, c)}
-	<a c f>4 r r2 \clef treble
+	<a c f>4 \voiceTwo r r2 \oneVoice
 	s1*4
 % Bars 366 to 370
 	
 	
-	<f''' a>4\< <f a>2(\> <g bes>8. <e g>16)\!
+	<f''' a>4\<^\klaviersolobold <f a>2(\> <g bes>8. <e g>16)\!
 	<f c'>4 r r2
 	s1
 % Bars 371 to 375
-	r8 c,16( c') d,( d') e,( e') f,( f') g,( g') a,( a') bes,( bes') 
+	r8 c,16(^\solobold c') d,( d') e,( e') f,( f') g,( g') a,( a') bes,( bes') 
 	c,( c') r8 c4.( c8\turn d a)
 	c8.( b!16 bes4.) bes8(\trill c g)
 	\tuplet 3/2 4 {a8 a,, c f a, c r a d f a, d} \clef bass
@@ -331,7 +331,7 @@ musicPianoUpMvtI = \relative c'' {
 	e g c g e a! c a e a c a fis a c fis
 	g4 r r2 \clef treble
 	s1 
-	\tuplet 3/2 4 {r8 g' g g g g g(\sf <f aes>) q q q q}
+	\tuplet 3/2 4 {\voiceOne r8 \oneVoice g' g g g g g(\sf <f aes>) q q q q}
 % Bars 381 to 385
 	\tuplet 3/2 4 {q(\sf <ees g>) q-. q q q q( <d f>) q <c e>( <e c'>) q}
 	<d b'>4 r r2
@@ -339,7 +339,7 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {g) g( d) d( b) b( g) g( d) d( b) b(}
 	\tuplet 3/2 4 {g-.)\ff <d' g>-. <b d>-. <g' b>-. <d g>-. <b' d>-. <g b>-. <d' g>-. <b d>-. <g' b>-. <d g>-. <b d g b>-.} \mark \default
 % Bars 386 to 390
-	q4 r r2
+	q4 s s2
 	s1
 	\change Staff = "down" \voiceOne g,,16^\fp b d c b g' b a g b d c \change Staff = "up" \oneVoice b d f! e
 	d b' d c b d f e d b' d c b d f e
@@ -358,7 +358,7 @@ musicPianoUpMvtI = \relative c'' {
 	
 	
 	
-	r2 r8 g''16(\p b a c b d)
+	s2 s8 g''16(\p^\klaviersolobold b a c b d)
 	c e g e g e g e d c b c d cis bis cis
 % Bars 406 to 410
 	e d cis d f e dis e g f e f a g fis g
@@ -368,15 +368,15 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {aes\pp( g f ees des c bes aes g f ees des}
 % Bars 411 to 415
 	\tuplet 3/2 4 {c_\crescmarkup bes aes g des' bes g des' bes g ees des)}
-	c4(\sf\>~ \tuplet 3/2 4 {c8 b!_\legato c e! g b! c g bes\!}
-	aes4~ \tuplet 3/2 4 {aes8 f' aes} g4~ \tuplet 3/2 4 {g8 d f}
+	c4(\sf\>~ \tuplet 3/2 4 {c8 b!_\legato c e! g b! c g bes\!)}
+	aes4~( \tuplet 3/2 4 {aes8 f' aes} g4~ \tuplet 3/2 4 {g8 d f}
 	ees4~ \tuplet 3/2 4 {ees8 c' ees} d4~ \tuplet 3/2 4 {d8 a! d)}
 	c2~ \tuplet 3/2 4 {c8( g\dim a! b! c d)}
 % Bars 416 to 420
 	ees2~ \tuplet 3/2 4 {ees8( b c d ees f)}
 	g4~\pp g16( fis f ees d c b c ees c f d)
 	\afterGrace d2.\startTrillSpan^\flat {cis16[\stopTrillSpan\< d]} fis8. g16
-	c,4\f r r2
+	c,4\f s s2
 	s1*11
 % Bars 421 to 425
 	
@@ -387,7 +387,7 @@ musicPianoUpMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 431 to 435
-	c,16\f d c b c d c d e f e d e f e f 
+	c,16\f^\klaviersolobold d c b c d c d e f e d e f e f 
 	fis g fis g fis g fis g fis g a g f e d c
 	b c b a g a b c d e d c b c d e
 	f g f e d e f g a gis b a g f e d
@@ -415,7 +415,7 @@ musicPianoUpMvtI = \relative c'' {
 	q\pp r r2
 	s1*2
 	
-	b,16(\pp c d e f g a ais b c d e f g a! ais)
+	b,16(\pp^\klaviersolobold c d e f g a ais b c d e f g a! ais)
 % Bars 456 to 460
 	b1\startTrillSpan~
 	b
@@ -424,12 +424,12 @@ musicPianoUpMvtI = \relative c'' {
 	b1\startTrillSpan~\cresc
 % Bars 461 to 465
 	\afterGrace b {a16[(\stopTrillSpan b])} \mark \default
-	c4\ff r r2
+	c4\ff s s2
 	s1*8
 % Bars 466 to 470
 	
 % Bars 471 to 475
-	r8. g16[(\< a8.\> g16)] g4\! r
+	r8.^\klaviersolobold g16[(\< a8.\> g16)] g4\! r
 	r8. g16[(\< a8.\> g16)] g4\! r
 	r8. g16[(\< a8.\> g16)] r8.\! g16[(\< a8.\> g16)]\!
 	r16 g( fis g a g fis g) g,4 r
@@ -480,19 +480,19 @@ musicPianoUpMvtI = \relative c'' {
 	r16 g fis g a g f e d c d e f g a bes
 	b!( c b c d c bes a) g8( f) f-. f-.
 	f2~ f16 f( a g b! a g f)
-	\tempo "Più allegro." e4 r r2
+	\tempo "Più allegro." e4 s s2
 	s1*4
 % Bars 516 to 520
 	
 	
 	\mark \default
-	<g, g'>4\ff r r2
+	<g, g'>4\ff^\solobold r r2
 	r16 c,_\sempreff( d e f g a b) c4 r
 % Bars 521 to 525
 	s1
-	r16 e,\ff f g a b c d e4 r
+	r16 e,\ff^\solobold f g a b c d e4 s
 	s1
-	r16 g, a b c d e f g2\startTrillSpan~
+	\voiceOne r16 \oneVoice g,^\solobold a b c d e f g2\startTrillSpan~
 	g1~
 % Bars 526 to 530
 	g~
