@@ -161,7 +161,7 @@ musicPianoUpMvtII = \relative c' {
 		\tuplet 3/2 16 {ees,!32[ aes c\sustainOff]} 
 		r16 
 		\tuplet 3/2 16 {ees,32[ bes' des]\sustainOff}
-	<ees, aes c>8 r r \change Staff = "up" \oneVoice
+	<ees, aes c>8 s s \change Staff = "up" \oneVoice
 % Bars 41 to 45
 	s4.*3
 	
