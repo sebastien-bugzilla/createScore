@@ -96,10 +96,10 @@ musicPianoDownMvtIII = \relative c, {
 	
 	\tuplet 6/4 4 {g,16( b ais b ais b) g( d' cis d cis d) b( d' b g b g)
 	f! g f d f d b[ d b] \clef bass g b g f a g f e d}
-	c8 r r4 r8 \tuplet 3/2 4 {g16\ff a b}
+	c8 r r4 r8 \tuplet 3/2 4 {g16^\ff a b}
 % Bars 101 to 105
 	\tuplet 6/4 4 {c b a g a b c b a g a b c b c d c d}
-	e2 \tuplet 6/4 4 {e16 f e d e d}
+	e2^\sf \tuplet 6/4 4 {e16 f e d e d}
 	c8 r r4 \clef treble \tuplet 6/4 4 {e'16 f e d e d
 	c( d e f e d) c( d e f e d) c( d e f e d)
 	c d e f e d c d e f e d c d e f e d}

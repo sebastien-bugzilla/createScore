@@ -12,6 +12,7 @@ generalOptions = {
 	\override BreathingSign.text = \markup {
 		\musicglyph "scripts.caesura.curved"
 	}
+	%\override Score.SpacingSpanner.strict-grace-spacing = ##t
 }
 partOptions = {
 	\override Score.BarNumber #'font-size = #0.1

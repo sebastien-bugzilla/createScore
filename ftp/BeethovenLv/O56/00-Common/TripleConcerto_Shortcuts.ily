@@ -69,9 +69,9 @@ eight=^\markup {\tiny \number 8}
 nine=^\markup {\tiny \number 9}
 ten=^\markup {\tiny \number 10}
 tenmarkup=^\markup {\italic ten.}
-tuttibold=^\markup {\bold \abs-fontsize #12 Tutti}
-solobold=^\markup {\bold \abs-fontsize #12 Solo}
-klaviersolobold=^\markup {\bold \abs-fontsize #12 { Klavier solo }}
+tuttibold=^\markup {\bold \abs-fontsize #10 Tutti}
+solobold=^\markup {\bold \abs-fontsize #10 Solo}
+klaviersolobold=^\markup {\bold \abs-fontsize #10 { Klavier solo }}
 
 
 

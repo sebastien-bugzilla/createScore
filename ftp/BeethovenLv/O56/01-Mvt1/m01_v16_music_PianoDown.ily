@@ -199,7 +199,7 @@ musicPianoDownMvtI = \relative c' {
 	c, e a c d,\sf f b d d, f b d dis,\sf fis b dis
 % Bars 211 to 215
 	<dis, fis b dis>4 r r2
-	s1
+	\ni R1 \no
 	r4 \clef treble dis'' dis r
 	r dis dis dis
 	s1
@@ -439,7 +439,7 @@ musicPianoDownMvtI = \relative c' {
 	fis, c' ees fis f, b! d f f, b d f e,! g c e!
 	e, g c e f, a d f f, a d f fis, a d fis
 	<fis, a d fis>4 r r2
-	s1 \clef treble
+	\ni R1 \no \clef treble
 	r4 fis'' fis r
 % Bars 451 to 455
 	r fis fis fis

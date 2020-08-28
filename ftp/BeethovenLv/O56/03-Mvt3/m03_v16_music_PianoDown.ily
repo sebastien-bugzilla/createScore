@@ -10,7 +10,7 @@ musicPianoDownMvtIII = \relative c, {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*19
+	s2.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,7 +20,7 @@ musicPianoDownMvtIII = \relative c, {
 	
 	
 	
-	r4 r \acciaccatura d8 c16( b c e
+	s4 s \acciaccatura d8 c16( b c e
 % Bars 21 to 25
 	g8-.) r r4 \acciaccatura a8 g16( fis g b
 	c8-.) r r4 \acciaccatura d,8 c16( b c a
@@ -41,8 +41,8 @@ musicPianoDownMvtIII = \relative c, {
 	<e g>( c <e g> c <e g> c <e g> c <e g> c <e g> c)
 % Bars 36 to 40
 	<f a>( c <f a> c <f a> c <f a> c <f a> c <f a> c)
-	<f g>( d <f g> d <f g> d b d) r4
-	R2.*19
+	<f g>( d <f g> d <f g> d b d) s4
+	s2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
@@ -52,15 +52,15 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 56 to 60
 	\mark \default
 	\clef bass \tuplet 6/4 4 {c,,16 e g c g e c( c') r e,(\sf e') r g,,( g') r b,( b') r}
-	<c, c'>8 r r4 r
-	R2.*10
+	<c, c'>8 s s4 s
+	s2.*10
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
 	
 	
-	r4 r16 \clef treble b''( c d e fis g a)
+	s4 s16 \clef treble b''( c d e fis g a)
 	b( ais b fis g fis g dis' e dis e b
 % Bars 71 to 75
 	c b c gis a gis a eis' fis eis fis cis
@@ -89,17 +89,17 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 91 to 95
 	<d d'>-. r r4 r \clef treble
 	\tuplet 6/4 4 {d''16 ees e f fis g aes a bes b c cis} \afterGrace d4\trill {cis!16[ d]} \mark \default
-	g,8 r r4 r
-	R2.*4
+	g,8 s s4 s
+	s2.*4
 % Bars 96 to 100
 	
 	
-	\tuplet 6/4 4 {g,16( b ais b ais b) g( d' cis d cis d) b( d' b g b g)
+	\clef treble \tuplet 6/4 4 {g,16( b ais b ais b) g( d' cis d cis d) b( d' b g b g)
 	f! g f d f d b[ d b] \clef bass g b g f a g f e d}
-	c8 r r4 r8 \tuplet 3/2 4 {g16\ff a b}
+	c8 r r4 r8 \tuplet 3/2 4 {g16^\ff a b}
 % Bars 101 to 105
 	\tuplet 6/4 4 {c b a g a b c b a g a b c b c d c d}
-	e2 \tuplet 6/4 4 {e16 f e d e d}
+	e2^\sf \tuplet 6/4 4 {e16 f e d e d}
 	c8 r r4 \clef treble \tuplet 6/4 4 {e'16 f e d e d
 	c( d e f e d) c( d e f e d) c( d e f e d)
 	c d e f e d c d e f e d c d e f e d}
@@ -110,9 +110,13 @@ musicPianoDownMvtIII = \relative c, {
 	c4 r8 e-.( c-. e-.)
 	c4 r r
 % Bars 111 to 115
-	R2.*27
+	\ni R2.
+	R
+	R
+	R
+	R \no
 % Bars 116 to 120
-	
+	s2.*22
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -122,7 +126,7 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 136 to 140
 	
 	
-	\clef bass r4 r \acciaccatura d,,8 c16( b c e
+	\clef bass s4 s \acciaccatura d,,8 c16( b c e
 	g8-.) r r4 \acciaccatura a8 g16( fis g b
 	c8-.) r r4 \acciaccatura d,8 c16( b c a
 % Bars 141 to 145
@@ -142,9 +146,9 @@ musicPianoDownMvtIII = \relative c, {
 	<e g>16( c <e g> c <e g> c <e g> c <e g> c <e g> c)
 	<e g>( c <e g> c <e g> c <e g> c <e g> c <e g> c)
 	<f a>( c <f a> c <f a> c <f a> c <f a> c <f a> c)
-	<f g>( d <f g> d <f g> d b d) r4
+	<f g>( d <f g> d <f g> d b d) s4
 % Bars 156 to 160
-	R2.*18
+	s2.*18
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -153,22 +157,22 @@ musicPianoDownMvtIII = \relative c, {
 	
 	
 	
-	\clef bass r8 e,16( f g a f g e f d e)
-	c4 r r
+	\clef bass s8 e,16( f g a f g e f d e)
+	c4 s s
 % Bars 176 to 180
-	R2.*2
+	s2.*2
 	
-	r8 e16( dis e f d e c d b c) \mark \default
-	a4 r r
-	R2.*2
+	s8 e16( dis e f d e c d b c) \mark \default
+	a4 s s
+	s2.*2
 % Bars 181 to 185
 	
-	r8 e'16( f \tuplet 6/4 4 {g a g f g f e f e d e d)}
-	c4 r r
-	R2.*2
+	s8 e'16( f \tuplet 6/4 4 {g a g f g f e f e d e d)}
+	c4 s s
+	s2.*2
 	
 % Bars 186 to 190
-	r8 e16( dis \tuplet 6/4 4 {e f! e d e d cis d cis b cis b)}
+	s8 e16( dis \tuplet 6/4 4 {e f! e d e d cis d cis b cis b)}
 	a8\noBeam a'16( gis a8-.) a16( b \clef treble cis8-.) cis16( d
 	e8-.) e16( f g8-.) g16( a b cis d e)
 	f2( \afterGrace e4\trill) {d16[ e]}
@@ -207,7 +211,7 @@ musicPianoDownMvtIII = \relative c, {
 	r a( c! d fis d c a fis' d c a)
 	r g( b d f! d b g f' d b g)
 	r g( c e g e c g g' e c g)
-	R2.
+	\ni R2. \no
 	r16 g(^\f a b c d e f a g f e)
 % Bars 221 to 225
 	d( fis g a b \clef treble c d e g f! e d) \mark \default
@@ -237,8 +241,8 @@ musicPianoDownMvtIII = \relative c, {
 	g~
 	g~
 	g~
-	g8. a32\stopTrillSpan b c16 d32( e f g a b c8) r
-	R2.*17
+	g8. a32\stopTrillSpan b c16 d32( e f g a b c8) s
+	s2.*17
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -247,7 +251,7 @@ musicPianoDownMvtIII = \relative c, {
 	
 % Bars 261 to 265
 	\mark #11
-	r4 \clef treble r16 a'( bes c d e f g
+	s4 s16 \clef treble a'( bes c d e f g
 	a gis a e f e f cis' d cis d a)
 	bes( a bes fis g fis g dis' e dis e b
 	c b! c gis a gis a e' f e f cis 
@@ -276,8 +280,8 @@ musicPianoDownMvtIII = \relative c, {
 	<g c e!>-. r r4 r \clef treble
 	\tuplet 6/4 4 {g16 aes a bes b c cis d ees e f fis} \afterGrace g4\trill {fis!16[ g]} \mark \default
 % Bars 286 to 290
-	c,8 r r4 r
-	R2.*4
+	c,8 s s4 s
+	s2.*4
 % Bars 291 to 295
 	\tuplet 6/4 4 {c16 e dis e dis e c g' fis g fis g e bes' g e g e
 	c e c bes c bes \clef bass g bes g e g e c d' c bes a g}
@@ -294,7 +298,7 @@ musicPianoDownMvtIII = \relative c, {
 	f-.( a-. f-. a-. f-. a-.)
 	e4 r8 a-.( e-. a-.)
 	dis,8 r r4 r
-	R2.*2
+	\ni R2.*2 \no
 	
 % Bars 306 to 310
 	r4 r r8 \clef bass dis(
@@ -303,7 +307,7 @@ musicPianoDownMvtIII = \relative c, {
 	gis8( e) e-. e-. e-. e-.
 	a4 a, r
 % Bars 311 to 315
-	R2.*2
+	s2.*2
 	
 	\clef treble g''8( d) d-. d-. e16( d c d)
 	e8( dis e fis g ais)
@@ -315,27 +319,27 @@ musicPianoDownMvtIII = \relative c, {
 	\afterGrace cis2.\startTrillSpan^\natural {b16[\stopTrillSpan cis]}
 	d8( a) a-. a-. b16( a g a)
 % Bars 321 to 325
-	b4 r r
-	R2.
-	r16 fis( g a b c d e g f! e d)
+	b4 s s
+	\ni s2. \no
+	s16 \clef treble fis( g a b c d e g f! e d)
 	e( g, a b c d e f a g f e
 	d) fis,( g a b c d e g f! e d \mark \default
 % Bars 326 to 330
 	e g, a b c d e f a g f e
-	d8) r r4 r
-	R2.
-	\clef bass \tuplet 6/4 4 {b,16( d cis d f e f b ais b d cis \clef treble d f e f f d}
-	b8) r r4 r
+	d8) s s4 s
+	s2.
+	\clef bass \tuplet 6/4 4 {b,16( d cis d f e f b ais b d cis d f e f f d}
+	b8) r r4 s
 % Bars 331 to 335
-	R2. \clef bass
-	<< { b4\fermata r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
-	\time 2/4 R2*3
+	s2. \clef bass
+	<< { b4\fermata r r8 \breathe \tempo "Allegro." r} { \ni \fermataCentered \no }>> \bar "||"
+	\time 2/4 \ni R2*3 \no
 	
 	
 % Bars 336 to 340
 	r4 r8 d16( b
-	c8) r r4
-	R2*10
+	c8) r s4
+	s2*10
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -382,21 +386,21 @@ musicPianoDownMvtIII = \relative c, {
 	r16 b'! d c b a g f
 % Bars 381 to 385
 	e8 r r4
-	R2
+	\ni R2 \no
 	r16 d' f e d c b a
 	g f e d c b a g
 	c e g c f,, a c f
 % Bars 386 to 390
 	g, c e g g, b d g \mark \default
-	c,8 r r4
-	R2*14
+	c,8 s s4
+	s2*14
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
 % Bars 401 to 405
 	
-	r4 \tuplet 3/2 4 {g8^\f a b
+	r4 \tuplet 3/2 4 {g8\f a b
 	c b c a b c
 	d c d b c d
 	e d e c d e
@@ -410,12 +414,12 @@ musicPianoDownMvtIII = \relative c, {
 	g a g f g f
 	e f e d e d} \mark \default
 	c4 r
-	R2*2
+	\ni R2*2
 	
 % Bars 416 to 420
 	\tuplet 3/2 4 {c8\sf a fis c a fis}
 	f!4 r
-	R2*2
+	R2*2 \no
 	
 	\tuplet 3/2 4 {aes''8\sf f d b aes f}
 % Bars 421 to 425
@@ -427,13 +431,18 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 426 to 430
 	r \tuplet 3/2 4 {c8 a fis}
 	g4 r
-	R2*11
+	\ni R2 \no
+	s2*6
 % Bars 431 to 435
 	
+	
+	
+	
+	\ni R2
 % Bars 436 to 440
-	
-	
-	
+	R
+	R
+	R \no
 	\tuplet 3/2 4 {g''8(\p aes a bes b c 
 	\clef treble cis d ees e f) f} \mark \default
 % Bars 441 to 445
@@ -441,7 +450,7 @@ musicPianoDownMvtIII = \relative c, {
 	\afterGrace f\fermata {e16[\stopTrillSpan f]} \bar "||"
 	\tempo "Tempo I." \time 3/4 g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)(~ e16 c g e \clef bass c g e c)
-	R2.*4
+	s2.*4
 % Bars 446 to 450
 	
 	
@@ -456,19 +465,19 @@ musicPianoDownMvtIII = \relative c, {
 	\tuplet 6/4 4 {g'16 c e g e c g c e g e c g c e g e c
 % Bars 456 to 460
 	g d' f g f d g, d' f g f d g, d' f g f d}
-	<c e g>8 r r4 r
-	R2. \mark \default
-	R
+	<c e g>8 s s4 s
+	s2. \mark \default
+	s
 	\tuplet 6/4 4 {c,16 e g c g e c c' r e, e' r g,, g' r b, b' r}
 % Bars 461 to 465
-	<c, c'>4 r r
+	<c, c'>4 s s
 	\tuplet 6/4 4 {c16 e g c g e c c' r e, e' r g,, g' r b, b' r
 	c, c' r e, e' r g,, g' r b, b' r c, c' r e, e' r 
-	g,, g' r b, b' r c, c' r e, e' r g,, g' r b, b' r} \mark \default
-	<c, c'>8 r r4 r
+	g,,^\f g' r b, b' r c, c' r e, e' r g,, g' r b, b' r} \mark \default
+	<c, c'>8 s s4 s
 % Bars 466 to 470
 	\tuplet 6/4 4 {c'16( e d c b a) g( c b a g f) e( a g f e d)}
-	c8 r r4 r
+	c8 s s4 s
 	\tuplet 6/4 4 {c'16( e d c b a) g( c b a g f) e( a g f e d)}
 	r c-. d-. e-. f-. g-. a-. b-. c-. e,-. f-. g-. 
 	a b c d e g, a b c d e f

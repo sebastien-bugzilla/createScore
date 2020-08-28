@@ -2328,7 +2328,7 @@ cueVoicePianoDownMvtI = \relative c {
 	<g, g'>4-. <d' d'>-. <g g'>-. <d d'>-.
 	<g, g'>-. <d' d'>-. <g, g'>-. <d' d'>-.
 	<g b d g> r r2
-	s1
+	\ni R1 \no
 % Bars 71 to 75
 	<g g'>2( <a a'>
 	<d, d'>1)
@@ -2336,7 +2336,7 @@ cueVoicePianoDownMvtI = \relative c {
 	<c g' c>4 r8. <c c'>16-. q4-. q-.
 	q8 r r4 r2
 % Bars 76 to 80
-	s1
+	\ni R1 \no
 	\voiceOne c''2^\markup {Vcl.solo.} b8[_( c e8. d16])
 	d4 r r2
 	d2 cis8[_( d f8. e16])
@@ -3229,7 +3229,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	\oneVoice <b, d>8.-. <d, b'>16-. <d g>8-. r \acciaccatura b' <d, a'>8-. r
 	<b d g>-. r r4 s
 % Bars 21 to 25
-	R2.*16
+	s2.*16
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -3238,7 +3238,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 	s2 \voiceOne \acciaccatura fis'8 g^\tuttibold\ff g 
 	\oneVoice <c, e g>4. \voiceOne a'16( b c8 d)
-	\grace {c16( d} e4) c4.(\sf b8)
+	\grace {c16_( d} e4) c4.(\sf b8)
 	a([ f')] b,( \oneVoice <g d' f g>4) q8
 % Bars 41 to 45
 	q4\sf( <e g c>8) r <g' b d g>4\sf
@@ -3271,11 +3271,11 @@ cueVoicePianoUpMvtIII = \relative c {
 	<c' e>4(^\markup {Ob.} <e g> <d f>
 	<c e> <b d>8) r r4
 % Bars 66 to 70
-	R2.
+	\ni R2. \no
 	<b d>2(\pp^\markup {Ob.} <a c>4)
 	<g b>( <b d> <a c>
 	<g b> <fis a>8) s s4
-	R2.*23
+	s2.*23
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -3293,7 +3293,7 @@ cueVoicePianoUpMvtIII = \relative c {
 % Bars 96 to 100
 	c!4\p^\solobold( b8) r r4
 	<g,, b>8 <b d> <g b> <b d> <g b> <b d>
-	R2.*18
+	s2.*18
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -3328,7 +3328,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	s \oneVoice <c, c'>16-.[ q-.] q8-.[ q-.] \voiceOne c'-. s
 	\oneVoice <b, d>8.-. <d, b'>16-. <d g>8-. r \acciaccatura b'8 <d, a'>-. r
 	<b d g>-. r r4 s
-	R2.*16
+	s2.*16
 % bars 141 to 145
 	
 % Bars 146 to 150
@@ -3341,7 +3341,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	s2 \voiceOne \acciaccatura fis'8 g^\tuttibold\ff g
 % Bars 156 to 160
 	\oneVoice <c, e g>4. \voiceOne a'16( b c8 d)
-	\grace {c16( d} e4) c4.(\sf b8)
+	\grace {c16_( d} e4) c4.(^\sf b8)
 	a[( f')] b,( \oneVoice <g d' f g>4) q8
 	q4\sf( <c, e g c>8) r <g''_~ b g'>4(\sf
 	<g c>8) r <e, gis b d e>4(\sf <c e a>8) r
@@ -3377,6 +3377,7 @@ cueVoicePianoUpMvtIII = \relative c {
 	r <b e g b>16 q q8 q <b dis a' b> <a' b>
 % Bars 186 to 190
 	<e g b> s s2
+	s2.*57
 % Bars 191 to 195
 	
 % Bars 196 to 200
@@ -3399,14 +3400,32 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 % Bars 241 to 245
 	
+	
+	
+	s2 s8 <e g>\ff^\tuttibold
+	\voiceOne g4.( a16 b c8 d)
 % Bars 246 to 250
-	
+	e4 c4.(^\sf b8)
+	a([ <a f'>]~ q)\noBeam f'16( e) e( d) d( c!)
+	c( b) b( a) a( g) fis( g) fis( g) fis( g)
+	g4.(\trill a16 b c8 d)
+	\grace {c16_( d} e4) c4.(^\sf b8)
 % Bars 251 to 255
-	
+	a([ f']) b, \oneVoice <g d' f g>4 q8
+	<g b d f g>4(\sf <e g c>8) r <g' b d f g>4(\sf
+	<c, e g c>8) r q r q r
+	q r c, r^\solobold r4
+	r8\p <g c e g>[ r q r <g d' f g>]
 % Bars 256 to 260
-	
+	r <g c e g>[ r q r <g d' f g>]
+	r <g c e g>[ r q r <g d' f g>]
+	r <g' c e>-.[ <g b d g>-.] c,4_\markup {Cor.} s8
+	b'\rest <f a c>[ r q r <g bes c>]
+	b\rest <f a c>[ r q r <g bes c>]
 % Bars 261 to 265
-	
+	b\rest <f a c>[ r q r <g bes c>]
+	b\rest <f a c> <e g c>16 s8. s4
+	s2.*23
 % Bars 266 to 270
 	
 % Bars 271 to 275
@@ -3416,9 +3435,13 @@ cueVoicePianoUpMvtIII = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	
+	s8 e'(\trill^\tuttibold[ \grace {d16 e} c8)] g'([\trill \grace {fis16 g} e8]) \afterGrace c'\trill {b16 c}
+	<c, c'>4(\p^\solobold <b b'>8) r r4
+	g8\f^\tuttibold b8[(\trill \grace {a16 b} g8]) d'8[(\trill \grace {cis16 d} b8]) \afterGrace g'\trill {fis16 g}
+	f!4(^\solobold\p e8) r r4
+	r8 <e, g>-.[ <c e>-. <e g>-. <c e>-. <e g>-.]
 % Bars 291 to 295
-	
+	s2.*20
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -3426,21 +3449,44 @@ cueVoicePianoUpMvtIII = \relative c {
 % Bars 306 to 310
 	
 % Bars 311 to 315
-	
+	b16 g'! d g b, g' d g b, g' d g
+	c, g' e g c, g' e g c, g' e g
+	s2.*8
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	
+	s4 g,16 d' b d g, d' b d
+	g, e' c e g, e' c e g, e' c e
+	g, s8. s2
+	s2.*3
 % Bars 326 to 330
 	
+	s8 <g g'>16^\tuttibold\f q <b b'>8 q16 q <d d'>8 q16 q
+	<f b d f>8 r^\solobold r4 r
+	s2.
+	s2 <b, d f>8\p r
 % Bars 331 to 335
-	
+	q r r4 r
+	\voiceOne aes''2^\fermata~^\markup {Viol.} aes8\noBeam g16 g
+	\time 2/4 g4. g16 g
+	g4. g16 g
+	\tuplet 3/2 4 {g8_\crescmarkup g g g g g}
 % Bars 336 to 340
-	
+	s2
+	\oneVoice s4 r8 <e, g>8_\ppsempre
+	q q r q
+	<c f a> q r <d f a>
+	<d f g> q r <d f>
 % Bars 341 to 345
-	
+	e e r <e g>
+	q q r q
+	<d a'> q r <dis a'>
+	<e gis> q  r <gis b>
+	q q r q
 % Bars 346 to 350
-	
+	<a c> q r q
+	<g! b> q r <a b>
+	s2*33
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -3454,15 +3500,31 @@ cueVoicePianoUpMvtIII = \relative c {
 % Bars 376 to 380
 	
 % Bars 381 to 385
-	
+	\voiceOne r16 gis'^\markup {Viol.} b a gis f e d
+	c a c b a g! f e
+	d s8. s4
+	s2*3
 % Bars 386 to 390
 	
+	s8 \oneVoice <f' a>16\f(^\tuttibold <d b'> <e c'>8 <d f d'>)
+	<e g e'>4( <c e c'>8) r
+	f'16( g f e d e d c)
+	b( c b a) << { \InCueContext g8-. g-. } \\ {\InCueContext d16( b c d)} >>
 % Bars 391 to 395
-	
+	<e g>8(\f <f a>16 <d b'> <e c'>8 <g b d>)
+	<ees g ees'>4(\sf <ees g c>8) r
+	<ees aes c ees>4( <ees aes c>8) r
+	<ees g bes ees>4( <ees g bes>8) r
+	<d f aes>16 aes <d f aes>16 aes <d f aes>16 aes <d f aes>16 aes 
 % Bars 396 to 400
-	
+	\repeat tremolo 4 {<d f g>16\ff g,}
+	\repeat tremolo 4 {<d' f g>16 g,}
+	\repeat tremolo 4 {<c ees g>16\sf g}
+	\repeat tremolo 4 {<c ees a!>\sf a!}
+	<g c e! g>8 r r4^\solobold
 % Bars 401 to 405
-	
+	\ni R2 \no
+	s2*25
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -3473,22 +3535,46 @@ cueVoicePianoUpMvtIII = \relative c {
 	
 % Bars 426 to 430
 	
+	s4 \clef treble \tuplet 3/2 4 {ees8(^\markup {Viol.} e f
+	fis g aes a bes b
+	c) e,( f fis g gis
+	a bes b c cis d
 % Bars 431 to 435
-	
+	e) e,( f g a b
+	c d ees e f fis
+	g) e( f! g e f
+	g) e( f g f e)}
+	s2*8
 % Bars 436 to 440
 	
 % Bars 441 to 445
 	
-% Bars 446 to 450
 	
+	\time 3/4 s2.*2
+	
+	<d, f>8-.\pp q-. q-. q-. q-. q-.
+% Bars 446 to 450
+	<b' d g b>8\f r <g b d g> r r4
+	<c, e g>8\pp-. q-. q-. q-. q-. q-.
+	<e' g c e>\f r <c e g c> r r4
+	s2.*8
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	s8 r^\tuttibold r <g c e>32([ g'16.-.)] <g, c g'>32[( e'16.-.)] <e, g e'>32[( c'16.-.])
+	<d, f c'>32[( b'16.-.]) <d, f g b>4 <d f b>32[( d'16.-.]) <d, f d'>32[( b'16.-.]) <d, f b>32[( g16.-.])
+	<c, e g c>4. <e e'>8-.\sf <g, g'>-. <b b'>-.
+	s2.
 % Bars 461 to 465
+	s4 r8 <e e'>8-.\sf[ <g, g'>-. <b b'>-.]
+	s2.*3
 	
+	
+	s8 e'-.[\sf g,-. c-.\sf e,-. g-.\sf]
 % Bars 466 to 470
-	
+	s2.
+	s8 e'-.[\sf g,-. c-.\sf e,-. g-.\sf]
 % Bars 471 to 473
 	
 }
@@ -3519,14 +3605,14 @@ cueVoicePianoDownMvtIII = \relative c {
 	<d d'>8.-. <d b'>16-. q8-. r <d c'>-. r
 	g,-. r r4 s
 % Bars 21 to 25
-	R2.*16
+	s2.*16
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
 	
-	s2 <c f g>8 q
+	s2 \clef bass <c f g>8 q
 	<<{
 		\InCueContext g'4. g8 g g 
 		g4
@@ -3571,7 +3657,7 @@ cueVoicePianoDownMvtIII = \relative c {
 	g, <d' g b d> b <d g b d> d <a' c d>
 	g <b d> b, <g' b d> d <a' c d>
 	g,[ <g' b d> d16] s s8 s4
-	R2.*23
+	s2.*23
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -3589,7 +3675,7 @@ cueVoicePianoDownMvtIII = \relative c {
 % Bars 96 to 100
 	b2.
 	\oneVoice g,8 r r4 r 
-	R2.*18
+	s2.*18
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -3603,10 +3689,10 @@ cueVoicePianoDownMvtIII = \relative c {
 	c,8 r r4 r
 	R2.
 % Bars 121 to 125
-	R \no
+	R 
 	c''4 c c
 	c r r
-	R2.
+	R2. \no
 	c4 c4. c8
 % Bars 126 to 130
 	b8 r b r r4
@@ -3624,7 +3710,7 @@ cueVoicePianoDownMvtIII = \relative c {
 	<c, c'>8-.) r r4 <c e>8.-. <a a'>16-.
 	<d d'>8.-. <d b'>16-. q8-. r <d c'>-. r
 	g, r r4 s
-	R2.*16
+	s2.*16
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -3634,24 +3720,46 @@ cueVoicePianoDownMvtIII = \relative c {
 	
 	
 	
-	s2 <c f g>8 q
+	s2 \clef bass <c f g>8 q
 % Bars 156 to 160
-	\voiceOne g'4. g8[ g g]
-	g4 \oneVoice c,16 b c d e c d e
+	<< { \InCueContext g'4. g8[ g g] }\\ {\InCueContext c,16 g c g c g c g c g b g } >>
+	<< {\InCueContext g'4 } \\ {\InCueContext c,16 g c g } >> c16 b c d e c d e
 	f d e f g g, b g b g b g
-	<g, g'>4( <c c'>8) r <g'' d' f>4
+	<g, g'>4( <c c'>8) r <g'' d' f>4(
+	<c e>8) r <e,, e'>4( <a a'>8) r
 % Bars 161 to 165
-	
+	<e' b' d>4( <a c>8) r <c,, c'>4(
+	<f f'>8) r <c' c'>4( <f, f'>8) r
+	<a a'>4( <d, d'>8) r <a' a'>4(
+	<dis, dis'>8) r <a' a'>4.( <dis, dis'>8)
+	<e e'>16( dis' e dis) e-. d-. c-. b-. a-. b-. c-. d-. 
 % Bars 166 to 170
-	
+	e dis'( e dis) e-. d-. c-. b-. a-. b-. c-. d-. 
+	e, d c b a b c d e d c b
+	a b c d e d c b a b c d
+	<e, e'>4. <f f'>8-. <e e'>-. <d d'>-.
+	<c c'>-. <b b'>-. <c c'>-. <d d'>-. <e e'>-. e-.
 % Bars 171 to 175
-	
+	<a, a'> r r4 r
+	q8 r r4 r
+	<g g'>8 r r4 q8 r
+	<c c'>8 s s2
+	s4 r r
 % Bars 176 to 180
-	
+	<c c'>8 r r4 r
+	<b b'>8 r r4 q8 r
+	<e e'> s s2
+	s4 r r
+	<a, a'>8 r r4 r
 % Bars 181 to 185
-	
+	<g g'>8 r r4 q8 r
+	<c c'> s s2
+	s4 r r
+	q8 r r4 r
+	<b b'>8 r r4 q8 r
 % Bars 186 to 190
-	
+	<e e'>8 s s2
+	s2.*57
 % Bars 191 to 195
 	
 % Bars 196 to 200
@@ -3674,14 +3782,32 @@ cueVoicePianoDownMvtIII = \relative c {
 	
 % Bars 241 to 245
 	
+	
+	
+	s2 s8 r
+	<c' g'>16 g <c g'> g <c g'> g <c g'> g <c g'> g <b g'> g 
 % Bars 246 to 250
-	
+	<c g'> g <c g'> g c b c d e c d e
+	f e d cis d cis d e f d f fis
+	g, g' g, g' g, g' d b g f'! d b
+	<c g'> g <c g'> g <c g'> g <c g'> g <c g'> g <b g'> g 
+	<c g'> g <c g'> g c b c d e c d e
 % Bars 251 to 255
-	
+	f d e f g g, <b g'> g <b g'> g <b g'> g 
+	<g g'~>4_( <c g'>8) r <g, g'>4(
+	<c c'>8-.) r <g' g'> r <e e'> r
+	<c c'> r <c c'> r r4
+	q8[ r q r q] r
 % Bars 256 to 260
-	
+	q[ r q r q] r
+	q[ r q r q] r
+	q r <g g'> <c c'>4( <bes bes'>8)
+	<a a'> r <f f'> r q r
+	q[ r q r q] r
 % Bars 261 to 265
-	
+	q[ r q r q] r
+	q r <c' c'>16 s8. s4
+	s2.*23
 % Bars 266 to 270
 	
 % Bars 271 to 275
@@ -3691,9 +3817,13 @@ cueVoicePianoDownMvtIII = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	
+	s8 \clef bass \voiceOne e'16 g e g e g e g e g
+	<f g>2.
+	d16 g d g d g d g d g d g
+	\oneVoice <c, g'>8 g c g c g
+	<c, c'>8 r r4 r 
 % Bars 291 to 295
-	
+	s2.*20
 % Bars 296 to 300
 	
 % Bars 301 to 305
@@ -3701,21 +3831,44 @@ cueVoicePianoDownMvtIII = \relative c {
 % Bars 306 to 310
 	
 % Bars 311 to 315
-	
+	<g' d'>4 q r8 q
+	<c e>4 q r8 q
+	s2.*8
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	
+	s4 \clef bass <g d'> r8 g
+	c4 c r8 c
+	g16 s8. s2
+	s2.*3
 % Bars 326 to 330
 	
+	s8 \clef bass g16 g <b, b'>8 b'16 b <d, d'>8 d'16 d
+	<g, g'>8 r r4 r
+	s2.
+	s2 <g, g'>8 r 
 % Bars 331 to 335
-	
+	q r r4 r
+	s2. 
+	\time 2/4 s2
+	s
+	s
 % Bars 336 to 340
-	
+	s
+	s4 r8 c''8
+	c c r c
+	f, f r d
+	g g r <g b>
 % Bars 341 to 345
-	
+	c c r c
+	c c r c
+	<f, a> q r q
+	<e b'> q r \clef treble e'
+	e e r e
 % Bars 346 to 350
-	
+	<a, e'> q r q
+	<b e> q r <b dis>
+	s2*39
 % Bars 351 to 355
 	
 % Bars 356 to 360
@@ -3732,12 +3885,25 @@ cueVoicePianoDownMvtIII = \relative c {
 	
 % Bars 386 to 390
 	
+	\clef bass s8 <c, f>16 g' <c, e> g' <c, f> g'
+	<c, e> g' <c, e> g' <c, e> g' <c, e> g' 
+	\voiceOne <d f>8 <e g> <f a> <fis a>
+	<g b> <a c> b16( g a b)
 % Bars 391 to 395
-	
+	\oneVoice c, c' <c, d f> g' <c, e> g' <c, g'> b'
+	<c, ees g> c' <c, ees g> c' <c, ees g> c' <c, ees g> c' 
+	\repeat tremolo 4 {<aes, c ees>16 aes'} 
+	\repeat tremolo 4 {<bes, ees g> bes'}
+	bes,, bes' bes, bes' bes, bes' bes, bes'
 % Bars 396 to 400
-	
+	\repeat tremolo 4 {b,! b'!} 
+	\repeat tremolo 4 {b, b'}
+	\repeat tremolo 4 {c, c'}
+	\repeat tremolo 4 {fis,, fis'}
+	<g, g'>8 r \tuplet 3/2 4 {g'8^\markup {Vlc.}-. a-. b-.
 % Bars 401 to 405
-	
+	c b c a b c}
+	s2*27
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -3748,24 +3914,48 @@ cueVoicePianoDownMvtIII = \relative c {
 	
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
+	
+	\tuplet 3/2 4 {r8^\markup {Vlc.} c( d dis e f
+	fis g gis a bes b
+% Bars 431 to 435
+	c) c,( d e f g
+	a b c cis d dis
+	e) c!( d! e c d
+	e) c( d e d c)}
+	s2*8
 % Bars 436 to 440
 	
 % Bars 441 to 445
 	
-% Bars 446 to 450
 	
+	\time 3/4 s2.*2
+	
+	<f, a>8-. q-. q-. q-. q-. q-.
+% Bars 446 to 450
+	<g,, g'> r q r r4
+	\ni R2. \no
+	<c c'>8 r q r r4
+	s2.*8
 % Bars 451 to 455
 	
 % Bars 456 to 460
 	
+	s8 c16^\ff c'  c, c' c, c'  c, c' c, c'
+	g, g' g, g'  g, g' g, g'  g, g' g, g'
+	<c, c'>4. <e e'>8-.[ <g, g'> <b b'>]
+	s2.
 % Bars 461 to 465
+	s4 r8 <e e'>8[-. <g, g'>-. <b b'>-.]
+	s2.*3
 	
+	
+	s8 e'[-. g,-. c-. e,-. g]-. 
 % Bars 466 to 470
-	
+	s2.
+	s8 e'[-. g,-. c-. e,-. g]-. 
 % Bars 471 to 473
-	s2.*473
+	
 }
 cueVoicePianoThirdMvtIII = \relative c {
 	\InCueContext
@@ -3807,7 +3997,7 @@ cueVoicePianoThirdMvtIII = \relative c {
 	g'
 	c,
 	g'
-	R2.*39
+	s2.*39
 % Bars 56 to 60
 	
 % Bars 61 to 65
@@ -3851,17 +4041,24 @@ cueVoicePianoThirdMvtIII = \relative c {
 	
 	
 	s2 g'8.( b16
-	c8-.) s s4 c8.-. <c e>16-.
 % Bars 136 to 140
-	
+	c8-.) s s4 c8.-. <c e>16-.
+	s2.*18
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
 	
-% Bars 156 to 160
 	
+	
+	
+	s2 d,16 b d b
+% Bars 156 to 160
+	s4. e8 e f
+	g4 e16 d e f g e f g
+	a f g a b8 s s4
+	s2.*22
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -3871,9 +4068,13 @@ cueVoicePianoThirdMvtIII = \relative c {
 % Bars 176 to 180
 	
 % Bars 181 to 185
+	s2 s8 d,16 b
+	s2.*3
 	
+	
+	s2 s8 fis'16 dis
 % Bars 186 to 190
-	
+	s2.*59
 % Bars 191 to 195
 	
 % Bars 196 to 200
@@ -3896,14 +4097,29 @@ cueVoicePianoThirdMvtIII = \relative c {
 	
 % Bars 241 to 245
 	
+	
+	
+	
+	e2 <e g>8 <f g>
 % Bars 246 to 250
-	
+	<e g>4 e16 d e f g e f g
+	f4 s a
+	d,8[ c] b[ b] d[ d]
+	e2 <e g>8 <f g>
+	<e g>4 e16 d e f g e f g
 % Bars 251 to 255
-	
+	a f g a g8 s4 s8
+	s2.*6
 % Bars 256 to 260
 	
-% Bars 261 to 265
 	
+	s2 s8 \oneVoice c,~
+	\voiceTwo c2.
+	c~
+% Bars 261 to 265
+	c~
+	c8 c c16 s8. s4
+	s2.*23
 % Bars 266 to 270
 	
 % Bars 271 to 275
@@ -3913,7 +4129,10 @@ cueVoicePianoThirdMvtIII = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	
+	\change Staff = "down" s8 g,[ c g c g]
+	d' g, d' g, d' g,
+	b g b g b g
+	s2.*44
 % Bars 291 to 295
 	
 % Bars 296 to 300
@@ -3932,6 +4151,8 @@ cueVoicePianoThirdMvtIII = \relative c {
 	
 % Bars 331 to 335
 	
+	
+	\time 2/4 s2*56
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -3954,6 +4175,10 @@ cueVoicePianoThirdMvtIII = \relative c {
 	
 % Bars 386 to 390
 	
+	
+	
+	d'16 c e c f c fis c
+	g' c, a' c,~ c4
 % Bars 391 to 395
 	
 % Bars 396 to 400

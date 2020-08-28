@@ -336,7 +336,7 @@ musicPianoUpMvtIII = \relative c {
 	<< { <d, aes'>4\p\fermata r r8 \breathe \tempo "Allegro." r } {\fermataCentered} >> \bar "||"
 	\time 2/4 R2*3
 % Bars 336 to 340
-	r4 r8 d'16( b
+	r4 r8 d'16(\p b
 	c8) r r4
 	R2*10
 % Bars 341 to 345
