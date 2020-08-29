@@ -10,7 +10,7 @@ musicSoloViolinMvtI = \relative c''' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*32
+	s1*32
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -24,7 +24,7 @@ musicSoloViolinMvtI = \relative c''' {
 % Bars 31 to 35
 	
 	\mark \default
-	R1*42
+	s1*42
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -44,21 +44,15 @@ musicSoloViolinMvtI = \relative c''' {
 	
 	
 	\mark \default
-	<>-\tweak X-offset #1 ^\solo R1*2
+	s1*10
 % Bars 76 to 80
 	
-	\cueDuring #"cueVoiceSoloViolinMvtI" #UP {
-		\ni \clef tenor R1
-		R
-		R
-		R
 % Bars 81 to 85
-		R
-		R
-		R
-		R \clef treble \no
-	}
-	g2_\dolce( fis8[ g b8. a16])
+	
+	
+	
+	
+	g2_\dolce(^\violinesolobold fis8[ g b8. a16])
 % Bars 86 to 90
 	a4 r r2
 	a2( gis8[ a c8. b16])
@@ -74,7 +68,7 @@ musicSoloViolinMvtI = \relative c''' {
 % Bars 96 to 100
 	e)[ d(\> g8. f16)]\! e8( d c b) \mark \default
 	c2\p c,
-	b8[ r16 b'( d8. c16] \stemUp b4) \stemNeutral r
+	b8[ r16 b'( d8. c16] b4) r
 	b2 b,
 	bes8[ r16 g'( bes8. a16] g4) r
 % Bars 101 to 105
@@ -87,23 +81,24 @@ musicSoloViolinMvtI = \relative c''' {
 	g4 r r2
 	r16 e,\f f g a b c d e4 r
 	r16 a, b c d e f g a4 r
-	<>^\tutti R1*9
+	R1*4
 % Bars 111 to 115
 	
-% Bars 116 to 120
 	
-	\mark \default
-	\cueDuring #"cueVoiceSoloViolinMvtI" #DOWN {
-		\ni <>^\solo R1
-		R
-		R
+	s1
+	s
+	s
+% Bars 116 to 120
+	s
+	s \mark \default
+	s
+	R1*6
 % Bars 121 to 125
-		R
-		R
-		\mmrPos #6 R
-		R \no
-	}
-	r2 r4 c8.( b16)
+	
+	
+	
+	
+	r2 r4 c8.(^\violinesolobold b16)
 % Bars 126 to 130
 	b( a) gis( a) gis( a) gis( a) gis( a) b( a) c( b) d( c)
 	d( c) e( d) e( d) f( e) g( fis) a( g) g( fis) a( g)
@@ -129,8 +124,9 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {e) gis,,(_\crescmarkup b) b( e) e( gis) gis( b) b( e) e(}
 	\tuplet 3/2 4 {gis) gis( e) e( b) b( gis) gis( e) e( b) b(}
 	\tuplet 3/2 4 {gis)\ff e'-. b-. gis'-. e-. b'-. gis-. e'-. b-. gis'-. gis-. gis-. } \mark \default
-	gis4^\tutti r r2
-	<>^\solo R1*7
+	gis4 r^\tuttibold r2
+	R1
+	R1*6^\solobold
 % Bars 151 to 155
 	
 % Bars 156 to 160
@@ -143,11 +139,11 @@ musicSoloViolinMvtI = \relative c''' {
 	d2(~_\dolce d8.[ fis16 a8. fis16])
 	d2.( fis4)
 	e( cis b e~
-	e a,8) r r2^\tutti 
-	R1*2 <>^\solo
+	e a,8) r^\tuttibold r2 
+	R1*2
 % Bars 166 to 169
 	
-	r8 e,16\f( gis fis a gis b a8-.) r b4(\p
+	r8^\solobold e,16\f( gis fis a gis b a8-.) r b4(\p
 	a gis a ais
 	b cis d e)
 % Bars 170 to 180
@@ -204,11 +200,11 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {a8\p-. cis-. e-. a-. cis-. e-. a a a a a a}
 	a4\f r r2
 % Bars 206 to 210
-	R1*7
+	s1*7
 % Bars 211 to 215
 	
 	
-	b,2(~\p\dim b8.[ ais16 b8. ais16])
+	b,2(~\p\dim^\violinesolobold b8.[ ais16 b8. ais16])
 	b2(~ b8.[ ais16 b8. ais16])
 	\tuplet 3/2 4 {b8(\sempreppD ais a gis g fis f e dis d cis c)}
 % Bars 216 to 220
@@ -222,9 +218,9 @@ musicSoloViolinMvtI = \relative c''' {
 	b-. d, e fis gis a b c d gis, a b c d e fis
 	gis1\cresc\startTrillSpan~
 	\afterGrace gis {fis16[ gis]\stopTrillSpan} \mark \default
-	a4\ff^\tutti r r2
+	a4\ff r^\tuttibold r s
 % Bars 226 to 230
-	R1*26 <>^\solo
+	s1*30
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -235,14 +231,8 @@ musicSoloViolinMvtI = \relative c''' {
 	
 % Bars 251 to 255
 	
-	\cueDuring #"cueVoiceSoloViolinMvtI" #UP {
-		\ni R1
-		\mmrPos #-6 R
-		\mmrPos #-8 R
-		\mmrPos #-8 R \no
-	}
 % Bars 256 to 260
-	e,2(\p dis8[ e gis8. fis16])
+	e,2(\p^\solobold dis8[ e gis8. fis16])
 	fis4 r r2
 	fis2( eis8[ fis a8. gis16])
 	gis4 r r8. gis16[( b8. a16])
@@ -324,24 +314,19 @@ musicSoloViolinMvtI = \relative c''' {
 	r d,, e f g a b c d e f g a b c d
 	r f,, g a b c d e f g a b c d e f
 	r b,,\ff c d e f g a b c d e f g a b \mark \default
-	c4\ff^\tutti r r2
+	c4\ff r r2^\tuttibold
 % Bars 326 to 330
-	R1*13 
+	s1*19 
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
-	
-	
-	\cueDuring #"cueVoiceSoloViolinMvtI" #UP {
-		\ni \mmrPos #-8 R1
-		\mmrPos #-8 R
 % Bars 341 to 345
-		R
-		\mmrPos #-6 R
-		R
-		R \no
-		r2 r4 <>^\solo } \tuplet 3/2 4 {a,,8\f-. f'-. c-. }
+	
+	
+	
+	
+	s2 s4 \tuplet 3/2 4 {a,,8\f-.^\solobold f'-. c-. }
 % Bars 346 to 350
 	\tuplet 3/2 4 {a'-. f-. c'-. a-. f'-. c-. a'-. f-. c'-. c-. c-. c-. }
 	c4 r r2
@@ -350,20 +335,14 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {f'-. c-. a'-. f-. c'-. a-. f' c a' a a a }
 % Bars 351 to 355
 	g4 r r2
-	R1 \mark #11
-	R1*6
+	s1 \mark #11
+	s1*10
 % Bars 356 to 360
 	
-	
-	
-	\cueDuring #"cueVoiceSoloViolinMvtI" #UP {
-		\ni \clef tenor R1
-		R
 % Bars 361 to 365
-		R
-		R \no \clef treble
-	}
-	r16 f,,( e f a f c' a f' c a' f c' a f' c)
+	
+	
+	r16^\violinesolobold f,,( e f a f c' a f' c a' f c' a f' c)
 	e( d) d( cis) e( d) d( cis) e( d) d( cis) cis( d) d( e)
 	g( f) f( e) g( f) f( e) g( f) f( a) a( f) f( c)
 % Bars 366 to 370
@@ -371,9 +350,9 @@ musicSoloViolinMvtI = \relative c''' {
 	a8 a,16( a') bes,( bes') c,( c') d,( d') e,( e') f,( f') g,( g')
 	a,( a') r8 r4 r2
 	r8 a,16( a') g,( g') f,( f') e,( e') d,( d') c,( c') bes,( bes')
-	a,(^\tutti a') r8 r4 r2
+	a,( a') r8 r4 r2
 % Bars 371 to 375
-	<>^\solo R1*5
+	R1*5
 % Bars 376 to 380
 	f''4_\crescmarkup f4. fis8[( g d])
 	f!16( e d c b c e c b c d c b a d fis,)
@@ -387,13 +366,14 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {b) b( g) g( d) d( b) b( g) g( d) d(}
 	\tuplet 3/2 4 {b)\ff b'-. g-. d'-. b-. g'-. d-. b'-. g-. d'-. b-. g'-. } \mark \default
 % Bars 386 to 390
-	g4^\tutti r r2
-	<>^\solo R1*7
+	g4 s^\tuttibold s2
+	s1
+	R1*6^\solobold
 % Bars 391 to 395
 	
 	
 	
-	\tuplet 3/2 4 {e,,8\p-. g-. c-. e-. c-. g-. e-. g-. c-. e,-. g-. c-. }
+	\tuplet 3/2 4 {e,,8\p-.^\violinesolobold g-. c-. e-. c-. g-. e-. g-. c-. e,-. g-. c-. }
 	\tuplet 3/2 4 {e,-. g-. c-. e c g e g e g e a }
 % Bars 396 to 400
 	\tuplet 3/2 4 {f a f a cis, a' d, a' d, c' e, c'}
@@ -402,10 +382,10 @@ musicSoloViolinMvtI = \relative c''' {
 	f2.( a4)
 	g( e d  g~
 % Bars 401 to 405
-	g c,8) r r2^\tutti
-	<>^\solo R1*2
+	g c,8) r r2
+	s1*2
 	
-	r8 g,16\f( b a c b d c8-.) r d4(\p
+	r8 g,16\f(^\solobold b a c b d c8-.) r d4(\p
 	c b c cis)
 % Bars 406 to 415
 	<<{
@@ -462,8 +442,8 @@ musicSoloViolinMvtI = \relative c''' {
 	
 	\tuplet 3/2 4 {c8\p-. e-. g-. c-. e-. g-. c c c c c c}
 % Bars 441 to 445
-	c4\f r r2
-	R1*7
+	c4\f r s2
+	s1*7
 % Bars 446 to 450
 	
 	
@@ -484,21 +464,15 @@ musicSoloViolinMvtI = \relative c''' {
 	d2\cresc\startTrillSpan g\startTrillSpan~
 % Bars 461 to 465
 	\afterGrace g1 {fis16[ g]\stopTrillSpan } \mark \default
-	c4\ff^\tutti r r2
-	R1*7
+	c4\ff s s2
+	s1*11
 % Bars 466 to 470
 	
-	
-	
-	
-	\cueDuring #"cueVoiceSoloViolinMvtI" #UP {
-		\ni << R1 {s4 s2.^\solo } >>
 % Bars 471 to 475
-		R1
-		R
-		\mmrPos #-6 R \no
-	}
-	r2 r16 g,16(_\dolce fis g a g fis g)
+	
+	
+	
+	r2 r16 g,16(_\dolce^\violinesolobold fis g a g fis g)
 	c4( b8) r r16 g( fis g a g fis g)
 % Bars 476 to 480
 	d'4(_\crescmarkup c8) r r16 c( b c d c b c)
@@ -522,12 +496,12 @@ musicSoloViolinMvtI = \relative c''' {
 	\afterGrace d1\startTrillSpan {c16[( d)]\stopTrillSpan} \mark \default
 	e\ff bes g e bes g e g bes,4 r
 	r16 a c f a c f c a'4 r
-	R1*8
+	s1*8
 % Bars 496 to 500
 	
 % Bars 501 to 505
 	
-	\tuplet 3/2 4 {b,,8(\pp d c e d f e g f a g b}
+	\tuplet 3/2 4 {b,,8(\pp^\violinesolobold d c e d f e g f a g b}
 	\tuplet 3/2 4 {a c b d c e) d( f) f-. f f f }
 	f1\startTrillSpan_\crescmarkup
 	\afterGrace b,1\startTrillSpan {a16[( b)]\stopTrillSpan}
@@ -541,13 +515,13 @@ musicSoloViolinMvtI = \relative c''' {
 	c2.( bes4)
 	a2~ a16 f' g a b! c d e
 	g( f e f g f e d c b d c e d f b,)
-	\tempo "Più allegro." c4^\tutti r r2
-	R1*4
+	\tempo "Più allegro." c4 r s2
+	s1*4
 % Bars 516 to 520
 	
 	
 	\mark \default
-	<g g'>4\ff^\solo r r2
+	<g g'>4\ff^\solobold r r2
 	r16 c, d e f g a b c4 r
 % Bars 521 to 525
 	R1

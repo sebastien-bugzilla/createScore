@@ -71,7 +71,8 @@ ten=^\markup {\tiny \number 10}
 tenmarkup=^\markup {\italic ten.}
 tuttibold=^\markup {\bold \abs-fontsize #10 Tutti}
 solobold=^\markup {\bold \abs-fontsize #10 Solo}
-klaviersolobold=^\markup {\bold \abs-fontsize #10 { Klavier solo }}
+klaviersolobold=^\markup {\bold \abs-fontsize #10 {Klavier solo}}
+violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
 
 
 

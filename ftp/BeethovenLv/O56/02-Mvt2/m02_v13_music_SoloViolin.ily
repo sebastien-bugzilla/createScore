@@ -10,7 +10,7 @@ musicSoloViolinMvtII = \relative c''' {
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R4.*20
+	s4.*20
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -22,11 +22,10 @@ musicSoloViolinMvtII = \relative c''' {
 	
 	\mark \default
 % Bars 21 to 25
-	R4.*2
+	s4.*3
 	
-	\cueDuring #"cueVoiceSoloViolinMvtII" #UP {
-		\ni R4. \no
-		r8 r16 } g(_\crescmarkup aes bes)
+	
+	s8 r16 g(_\crescmarkup aes bes)
 	c4( bes16 c)
 % Bars 26 to 30
 	des8( ees8. des16)
@@ -45,14 +44,12 @@ musicSoloViolinMvtII = \relative c''' {
 	c8.\p[ c16~] c32[ b64( c)] b[( c) b( c)]
 	ees8. des16( bes! g)
 	aes16_\startTrillSpan bes\startTrillSpan c8\noBeam\stopTrillSpan~ \tuplet 3/2 16 {c32([ a bes]} ees32. g,64)
-	aes!8^\tutti r r
+	aes!8 s s
 % Bars 41 to 45
-	R4.*3
+	s4.*3
 	
 	\mark \default
-	\cueDuring #"cueVoiceSoloViolinMvtII" #UP {
-		\ni \clef bass <>^\solo R4. \clef treble \no
-	}
+	s4.
 	\tuplet 3/2 16 {g,32([ g' fis] g[ b ais] b[ d cis] d[ g d])} f!(\< ees) d(-.\> c-.)
 % Bars 46 to 50
 	b8\p r g,16.( b32)

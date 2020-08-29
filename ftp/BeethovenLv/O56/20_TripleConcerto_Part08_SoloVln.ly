@@ -28,9 +28,9 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceSoloViolinMvtI" { \cueVoiceSoloViolinMvtI }
-\addQuote "cueVoiceSoloViolinMvtII" { \cueVoiceSoloViolinMvtII }
-\addQuote "cueVoiceSoloViolinMvtIII" { \cueVoiceSoloViolinMvtIII }
+%\addQuote "cueVoiceSoloViolinMvtI" { \cueVoiceSoloViolinMvtI }
+%\addQuote "cueVoiceSoloViolinMvtII" { \cueVoiceSoloViolinMvtII }
+%\addQuote "cueVoiceSoloViolinMvtIII" { \cueVoiceSoloViolinMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -43,7 +43,7 @@
 			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 "Triple Concerto""
 		}
 		instrument = \markup {
-			"SoloVln"
+			"Violine solo"
 		}
 	}
 	\score {
@@ -54,6 +54,10 @@
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameSoloViolinMvtI \musicSoloViolinMvtI
+			}
+			\new Voice {
+				\timeMvtI \generalOptions \partOptions
+				\nameSoloViolinMvtI \cueVoiceSoloViolinMvtI
 			}
 		>>
 		\header {
@@ -80,6 +84,10 @@
 				\timeMvtII \generalOptions \partOptions
 				\nameSoloViolinMvtII \musicSoloViolinMvtII
 			}
+			\new Voice {
+				\timeMvtII \generalOptions \partOptions
+				\nameSoloViolinMvtII \cueVoiceSoloViolinMvtII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -104,6 +112,10 @@
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameSoloViolinMvtIII \musicSoloViolinMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \generalOptions \partOptions
+				\nameSoloViolinMvtIII \cueVoiceSoloViolinMvtIII
 			}
 		>>
 		\header {

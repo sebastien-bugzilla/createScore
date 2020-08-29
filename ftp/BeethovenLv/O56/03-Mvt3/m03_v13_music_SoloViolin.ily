@@ -10,16 +10,11 @@ musicSoloViolinMvtIII = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	\cueDuring #"cueVoiceSoloViolinMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R
-		R
-		\mmrPos #-6 R
-		\mmrPos #-6 R
+	s2.*7
 % Bars 6 to 10
-		R
-		R \no
-		r4 r } ais16(_\sottovoce b) ais( b)
+	
+	
+	s4 s8 r ais16(_\sottovoce^\violinesolobold b) ais( b)
 	b4.( cis16 dis e8 fis)
 	gis4( e4. dis8)
 % Bars 11 to 15
@@ -29,10 +24,10 @@ musicSoloViolinMvtIII = \relative c'' {
 	g!4( e4. d!8)
 	cis( a' d,4. c8)
 % Bars 16 to 20
-	b(\p g' c,) r r4^\tutti
-	R2.*4 <>^\solo
+	b(\p g' c,) r s4
+	s2.*4
 % Bars 21 to 25
-	r16 g,(_\semprepp b d g b d fis g a g f)
+	r16^\solobold g,(_\semprepp b d g b d fis g a g f)
 	e8 r r4 r
 	r16 d,( g b d g b d~ d8 c16 a)
 	b8 r r4  r
@@ -51,28 +46,22 @@ musicSoloViolinMvtIII = \relative c'' {
 	\grace {c16[ d]} e4_\crescmarkup( c4. b8)
 % Bars 36 to 40
 	a( f'~ f) f16( e) e( d) d( c)
-	c( b) b( a) a( g) fis( g) r4^\tutti
-	R2.*16
+	c( b) b( a) a( g) fis( g) r4
+	s2.*19
 % Bars 41 to 45
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
-	
-	
-	\cueDuring #"cueVoiceSoloViolinMvtIII" #UP {
-		\ni \mmrPos #-6 R2.
-		R
 % Bars 56 to 60
-		R \no \mark \default
-	}
-	c'4.\ff e8(\sf g, b)
+	\mark \default
+	c'4.\ff^\solobold e8(\sf g, b)
 	c r r4 r
 	R2.*3
 	
 % Bars 61 to 65
-	<>^\solo
+	
 	r4 r16 g(_\dolce a) b( c) d( e) f(
 	g4)~ g16 e( a) g( f) d( g f)
 	f( e d c b c e c) c( b a b)
@@ -138,16 +127,12 @@ musicSoloViolinMvtIII = \relative c'' {
 	r4 r16 fis( g) r r4
 	r16 fis( g) r r4 r16 fis( g) r
 % Bars 116 to 120
-	R2.*8
+	R2.*3
+	s2.*7
 % Bars 121 to 125
 	
-	
-	
-	\cueDuring #"cueVoiceSoloViolinMvtIII" #UP {
-		\ni R2.
-		R \no
 % Bars 126 to 130
-		r4 r } \acciaccatura ais8_\sottovoce b \acciaccatura ais b
+	s4 s8 r^\violinesolobold \acciaccatura ais8_\sottovoce b \acciaccatura ais b
 	b4.( cis16 dis) e8 fis
 	gis4( e4. dis8)
 	cis( a'~ a) a16( gis) gis( fis) fis( e)
@@ -156,13 +141,13 @@ musicSoloViolinMvtIII = \relative c'' {
 	b4.( cis16 dis e8 fis)
 	g!4( e4. d!8)
 	cis( a' d,4. c!8)
-	b(\p g' c,)\noBeam r r4^\tutti
-	R2.*4
+	b(\p g' c,)\noBeam r s4^\tuttibold
+	s2.*4
 % Bars 136 to 140
 	
 	
-	<>^\solo
-	r16 g,_\semprepp( b d g b d fis g a g f
+	
+	r16^\solobold g,_\semprepp( b d g b d fis g a g f
 	e8) r r4 r
 % Bars 141 to 145
 	r16 d,( g b d g b d~ d8 c16 a)
@@ -181,20 +166,19 @@ musicSoloViolinMvtIII = \relative c'' {
 	g4.(\startTrillSpan a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)(_\crescmarkup c4. b8)
 	a( f'~ f) f16( e) e( d) d( c)
-	c( b) b( a) a( g) fis( g) r4^\tutti
+	c( b) b( a) a( g) fis( g) s4
 % Bars 156 to 160
-	R2.*11
+	s2.*14
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
-	\cueDuring #"cueVoiceSoloViolinMvtIII" #UP {
-		\ni \clef bass R2.
-		R
-		R \no
-		r4 r r8 \clef treble } e
+	
+	
+	
+	s4 s s8 e^\solobold
 % Bars 171 to 175
-	a,-.^\solo a'16( gis a8)-. a16( b c8-.) c16( d
+	a,-. a'16( gis a8)-. a16( b c8-.) c16( d
 	e8-.) fis16( gis a8)-. a16( b c8-.) c16( d)
 	e2( \afterGrace d4)\trill {c16[( d])}
 	c4 r r
@@ -208,13 +192,13 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 181 to 185
 	e d c d e d c e d c b d
 	c4 r r
-	R2.*7
+	s2.*7
 % Bars 186 to 190
 	
 	
 	
 	
-	r8 d,16(\f e) f8-. d16( c b a gis fis
+	r8^\violinesolobold d,16(\f_\arco e) f8-. d16( c b a gis fis
 % Bars 191 to 195
 	e8) r r4 r
 	R2.*2
@@ -253,7 +237,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	
 % Bars 221 to 225
 	r16 fis(\f g a b c d e g f! e d \mark \default
-	e-.) g,(\ff a b c d e f a g f e
+	e-.\noBeam) g,(\ff a b c d e f a g f e
 	d8-.) r r4 r
 	R2.*3
 % Bars 226 to 230
@@ -273,17 +257,16 @@ musicSoloViolinMvtIII = \relative c'' {
 	g4.(_\crescmarkup\startTrillSpan a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)( c4. b8)
 	a( f') b,(\noBeam g'4) g8
-	g4(\f c,8) r r4^\tutti
-	R2.*9
+	g4(\f c,8) r r4
+	s2.*10
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 	
 	
-	\cueDuring #"cueVoiceSoloViolinMvtIII" #UP {
-		\ni \clef tenor << R2. {s4 s2^\solo } >> \no
-		r4 \clef treble } r16 g'^\dolce( a) b( c) d( e) f(
+	
+	r4 r16 g'_\dolce( a) b( c) d( e) f(
 % Bars 256 to 260
 	g4)~ g16 e( a) g( f) d( g f)
 	f( e d c b c e c) c( b a b)
@@ -438,25 +421,16 @@ musicSoloViolinMvtIII = \relative c'' {
 	d\p c b c d c b a
 % Bars 386 to 390
 	a( g) fis-. g-. a( g) fis-. g-. \mark \default
-	g8^\tutti r r4
-	R2*12
+	g8 s s4
+	s2*13
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
-	
-	
-	
-	\cueDuring #"cueVoiceSoloViolinMvtIII" #UP {
-		\ni \clef bass \mmrPos #-6 << R2 {s4 s^\solo} >>
 % Bars 401 to 405
-		\mmrPos #-6 R2
-		R
-		R
-		R
-		R \no
+	R2*5
 % Bars 406 to 410
-		r4 } \clef treble \tuplet 3/2 4 {g,8\f a b
+	r4 \tuplet 3/2 4 {g,8\f^\violinesolobold a b
 	c b c a b c
 	d c d b c d
 	e d e c d e
