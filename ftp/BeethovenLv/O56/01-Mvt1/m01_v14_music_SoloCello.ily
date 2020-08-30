@@ -10,7 +10,7 @@ musicSoloCelloMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*32
+	s1*32
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -24,7 +24,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 31 to 35
 	
 	\mark \default
-	R1*40
+	s1*42
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -42,14 +42,12 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 71 to 75
 	
 	
-	\cueDuring #"cueVoiceSoloCelloMvtI" #UP {
-		\ni R1
-		R \mark \default
-		<< \mmrPos #4 R {s8 \clef treble s^\solo s2.} >>
+	
+	\mark \default
+	s1*2
 % Bars 76 to 80
-		\mmrPos #4 R1 \no
-	}
-	\clef tenor c2_\dolce( b8[ c e8. d16])
+	
+	\clef tenor c2_\dolce(^\solobold b8[ c e8. d16])
 	d4 r r2
 	d2( cis8[ d f8. e16])
 	e4 r r8. e16([ g8. f16])
@@ -63,7 +61,7 @@ musicSoloCelloMvtI = \relative c' {
 	fis1~
 	fis
 	f!8[ r16 d( f8. e16)] d4 r
-	r8. e16[( g8. f16]) e8[ r16 \clef treble g16( c8. b16])
+	r8. e16[( g8. f16]) e8[ \clef treble r16 g16( c8. b16])
 	b4\trill( d)~\sfp \tuplet 3/2 4 {d8 c-. b-. f'-.\sfp e-. d-.}
 % Bars 91 to 95
 	\tuplet 3/2 4 {d-. c-. b-. f'\sfp-. e-. d-. d-. c-. b-. f'\sfp-. e-. d-. }
@@ -87,13 +85,16 @@ musicSoloCelloMvtI = \relative c' {
 	r16 g,, a b c d e f g a b c d g, a b
 	c\f c, d e f g a b c4 r
 	r16 f, g a b c d e f4 r
-	<>^\tutti R1*9
+	R1*4
+	
 % Bars 111 to 115
 	
+	
+	s1*5
 % Bars 116 to 120
 	
 	\mark \default
-	c2.(^\solo e4
+	c2.(^\solobold e4
 	g2. f4)
 	d-. d-. \acciaccatura e8 d8.[( c16 d8. e16])
 % Bars 121 to 125
@@ -127,17 +128,12 @@ musicSoloCelloMvtI = \relative c' {
 	R1
 	\tuplet 3/2 4 {r8 e,,(_\crescmarkup gis) gis( b) b( e) e( gis) gis( b) b(}
 	\tuplet 3/2 4 {e)\ff gis,-. b-. e,-. gis-. b,-. e-. gis,-. b-. e,-. gis-. b-. } \mark \default
-	e4^\tutti r r2
-	<>^\solo R1*4
+	e4 r^\tuttibold r2
+	R1
 % Bars 151 to 155
-	
-	
-	
-	\cueDuring #"cueVoiceSoloCelloMvtI" #UP {
-		\ni \clef treble R1
-		R \no
+	R1*5^\solobold
 % Bars 156 to 160
-		r2 } r8. e'16[_\dolce-. fis8.-. gis16]-. 
+	r2 r8. \clef treble e'16[_\dolce-. fis8.-. gis16]-. 
 	a2(~ a8.[ cis16 e8. cis16])
 	a2. ais4(
 	b cis d e)
@@ -146,10 +142,10 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {d-. fis-. a-. d-. a-. d-. a^\semprestaccato d a d a d}
 	\tuplet 3/2 4 {a d a d a d a d a b a b}
 	\tuplet 3/2 4 {cis a a a a a a b a \acciaccatura a gis( fis) gis-.}
-	a4 r r2 \clef bass
-	R1
+	a4 r s2 \clef bass
+	s1
 % Bars 166 to 170
-	r2 r8 e,,16(\f gis fis a gis b
+	s2 s8 e,,16(\f^\solobold gis fis a gis b
 	a8-.) r r4 r d'4(\p
 	cis b cis cis
 	d ais b cis)
@@ -200,35 +196,30 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 211 to 215
 	b2(~\p b8.[ ais16 b8. ais16)] 
 	b4 r r2
-	R1*7
+	R1
+	s1*6
 % Bars 216 to 220
 	
 	
 	
 	
-	e,,16(_\semprepp fis gis a b c d dis) e( fis gis a b c cis d!)
+	e,,16(_\semprepp^\violoncellosolobold fis gis a b c d dis) e( fis gis a b c cis d!)
 % Bars 221 to 225
 	\acciaccatura cis8 d1~\startTrillSpan
 	d~
 	d16\stopTrillSpan \clef tenor b\cresc c! d e fis gis a b2\startTrillSpan~
 	\afterGrace b1 {a16[(\stopTrillSpan b)]} \mark \default
-	a4\ff^\tutti r r2 
+	a4\ff r \clef bass s2 
 % Bars 226 to 230
-	R1*12
+	s1*17
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
-	
-	\cueDuring #"cueVoiceSoloCelloMvtI" #UP {
-		\ni \clef bass R1
-		R
-		R
 % Bars 241 to 245
-		R
-		R \no
-	}
-	a,2._\dolce^\solo b8( cis) 
+	
+	
+	a,2._\dolce^\solobold b8( cis) 
 	d2(~ d8[ cis e8. d16])
 	b8( ais cis b gis e fis gis)
 % Bars 246 to 250
@@ -326,23 +317,18 @@ musicSoloCelloMvtI = \relative c' {
 	c
 	b4 \clef bass g,, g''2~
 	g16 g f e d c b a g f e d c b a g \mark \default
-	c4\ff^\tutti r r2
+	c4\ff s s2
 % Bars 326 to 330
-	R1*19
+	s1*21
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
 % Bars 341 to 345
 	
-	
-	
-	
-	\cueDuring #"cueVoiceSoloCelloMvtI" #UP {
-		\ni << R1 {s2. \clef treble s4^\solo} >>
 % Bars 346 to 350
-		R1 \clef bass \no
-		r2 r4 } \tuplet 3/2 4 {g8-. e'-. c-. }
+	
+	s2 s4 \tuplet 3/2 4 {g8-.\f^\violoncellosolobold e'-. c-. }
 	\tuplet 3/2 4 {g'-. e-. c'-. g-. e'-. c-. \clef treble g' e c' c c c }
 	c4 r r2
 	R1
@@ -368,9 +354,9 @@ musicSoloCelloMvtI = \relative c' {
 	f,( f') f,( f') g,( g') a,( a') bes,( bes') c,( c') d,( d') e,( e')
 	f,( f') r8 r4 r2
 	r8 f,16( f') e,( e') d,( d') c,( c') bes,( bes') a,( a') g,( g')
-	f,(^\tutti f') r8 r4 r2
+	f,( f') r8 s4 s2
 % Bars 371 to 375
-	<>^\solo R1*3
+	R1*3
 	
 	
 	\clef tenor a'4 a2( bes8. f16)
@@ -388,13 +374,13 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {r8 g,,(\cresc b) b( d) d( g) g( b) b( d) d(}
 	\tuplet 3/2 4 {g)-.\ff b,-. d-. g,-. b-. d,-. g-. b,-. d-. g,-. b-. d-. } \mark \default
 % Bars 386 to 390
-	g4^\tutti r r2
-	<>^\solo R1*4
+	g4 s s2
+	s1
+	R1*5^\solobold
 % Bars 391 to 395
-	\cueDuring #"cueVoiceSoloCelloMvtI" #UP {
-		\ni \clef treble R1
-		R \no
-		r2 } r8. g'16[-._\dolce a8.-. b16]-. 
+	
+	
+	r2 r8. \clef treble g'16[-._\dolce a8.-. b16]-. 
 	c2\p(~ c8.[ e16 g8. e16])
 	c2. cis4(
 % Bars 396 to 400
@@ -405,8 +391,8 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {c d c c d c a d c b a b}
 % Bars 401 to 405
 	\tuplet 3/2 4 {c e d c b a g a g f e d}
-	c4 r^\tutti r2 \clef bass
-	r2 r8^\solo g16(\f b a c b d
+	c4 s s2 \clef bass
+	s2 s8 g16(\f^\solobold b a c b d
 	c8-.) r r4 r f(\p
 	e d e e
 % Bars 406 to 410
@@ -468,26 +454,25 @@ musicSoloCelloMvtI = \relative c' {
 	
 	d2(~\p d8.[ cis16 d8. cis16])
 	d4 r r2
-	R1*7
+	R1
 % Bars 451 to 455
-	
+	s1*6
 % Bars 456 to 460
 	
-	g,,16(_\semprepp a b c d e f fis g a b c cis d dis e)
+	g,,16(_\semprepp^\violoncellosolobold a b c d e f fis g a b c cis d dis e)
 	\clef tenor f1\startTrillSpan~
 	f2~ f16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-. 
 	b1\startTrillSpan\cresc~
 % Bars 461 to 465
 	\afterGrace b {a16[(\stopTrillSpan b)]} \mark \default
-	c4\ff^\tutti r r2
-	R1*4
+	c4\ff r \clef bass s2
+	s1*7
 % Bars 466 to 470
 	
-	\cueDuring #"cueVoiceSoloCelloMvtI" #UP {
-		\ni \clef treble R1
-		R
-		R \no
-		r2 } r8.^\solo g16[(_\espressivo a8. g16)]
+	
+	
+	
+	s2 \clef treble r8.^\solobold g16[(_\espressivo a8. g16)]
 % Bars 471 to 475
 	b2~ b8.[ g16( a8. g16)]
 	c2~ c8.[ g16( a8. g16)]
@@ -516,13 +501,13 @@ musicSoloCelloMvtI = \relative c' {
 	\afterGrace b1\startTrillSpan {a16[(\stopTrillSpan b)]} \mark \default
 	c16\ff \clef bass c,,, e g c e g c c,4 r
 	r16 f' c a f c a c f,4 r
-	R1*6
+	s1*6
 % Bars 496 to 500
 	
 	
 	
 	
-	\tuplet 3/2 4 {b8(\pp d c e d f e g f a g b}
+	\tuplet 3/2 4 {b8(\pp^\violoncellosolobold d c e d f e g f a g b}
 % Bars 501 to 505
 	\tuplet 3/2 4 {a c b d c e) d( f) f-. f f f}
 	f1(
@@ -539,14 +524,13 @@ musicSoloCelloMvtI = \relative c' {
 	c2.( bes4)
 	a2~ a16 a b! c d e f g
 	b( a gis a b a g f e d f e g f e d)
-	\tempo "Più allegro." c4^\tutti \clef bass \cueDuring #"cueVoiceSoloCelloMvtI" #UP { r4 r2
-		\ni R1
+	\tempo "Più allegro." c4 s s2 
+	s1*4
 % Bars 516 to 520
-		R
-		\mmrPos #-6 R
-		R \no \mark \default
-	}
-	<g, g'>4\ff^\solo r r2
+	
+	
+	\mark \default
+	\clef bass <g, g'>4\ff^\solobold r r2
 	r16 c d e f g a b c4 r
 % Bars 521 to 525
 	R1

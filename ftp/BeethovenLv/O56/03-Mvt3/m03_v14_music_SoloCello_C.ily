@@ -354,9 +354,9 @@ musicSoloCelloMvtIII = \relative c'' {
 % Bars 316 to 320
 	\clef treble
 	b''8( fis) fis-. fis-. gis16( fis e fis)
-	\afterGrace gis2. {fis16[ gis]}
+	\afterGrace gis2.\trill {fis16[ gis]}
 	a8( e) e-. e-. fis16( e d! e)
-	\afterGrace fis2.^\natural( {e16[ fis]}
+	\afterGrace fis2.^\natural\trill( {e16[ fis]}
 % Bars 321 to 325
 	g) fis,( g a b c d e g f! e d
 	e) g,( a b c d e f a g f e)

@@ -28,9 +28,9 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceSoloCelloMvtI" { \cueVoiceSoloCelloMvtI }
-\addQuote "cueVoiceSoloCelloMvtII" { \cueVoiceSoloCelloMvtII }
-\addQuote "cueVoiceSoloCelloMvtIII" { \cueVoiceSoloCelloMvtIII }
+%\addQuote "cueVoiceSoloCelloMvtI" { \cueVoiceSoloCelloMvtI }
+%\addQuote "cueVoiceSoloCelloMvtII" { \cueVoiceSoloCelloMvtII }
+%\addQuote "cueVoiceSoloCelloMvtIII" { \cueVoiceSoloCelloMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -54,6 +54,10 @@
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameSoloCelloMvtI \musicSoloCelloMvtI
+			}
+			\new Voice {
+				\timeMvtI \generalOptions \partOptions
+				\nameSoloCelloMvtI \cueVoiceSoloCelloMvtI
 			}
 		>>
 		\header {
@@ -80,6 +84,10 @@
 				\timeMvtII \generalOptions \partOptions
 				\nameSoloCelloMvtII \musicSoloCelloMvtII
 			}
+			\new Voice {
+				\timeMvtII \generalOptions \partOptions
+				\nameSoloCelloMvtII \cueVoiceSoloCelloMvtII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -104,6 +112,10 @@
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameSoloCelloMvtIII \musicSoloCelloMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \generalOptions \partOptions
+				\nameSoloCelloMvtIII \cueVoiceSoloCelloMvtIII
 			}
 		>>
 		\header {

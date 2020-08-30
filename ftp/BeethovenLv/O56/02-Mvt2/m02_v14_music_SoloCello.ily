@@ -6,15 +6,14 @@
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
 musicSoloCelloMvtII = \relative c'' {
-	\clef treble
+	\clef bass
 	\key aes \major
 %	\transposition a
 % Bars 1 to 5
-	\cueDuring #"cueVoiceSoloCelloMvtII" #DOWN {
-		\ni R4.^\tutti
-		R
-		R \no
-		r8 r16 } g(_\moltocantabile^\solo aes bes)
+	s4.*3
+	
+	
+	r8 r16 \clef treble g(_\moltocantabile aes bes)
 	c4( bes16 c)
 % Bars 6 to 10
 	des8( ees8.\sfp des16)
@@ -33,13 +32,12 @@ musicSoloCelloMvtII = \relative c'' {
 	c8.\noBeam b32([\p c]) b( c) b( c)
 	ees8._\crescmarkup des16( bes! g)
 	aes([ bes]) c8\sf~\noBeam c32(\> bes ees g,)
-	bes8\p( aes16) r r8 \mark \default
+	bes8\p( aes16) r r8 \clef bass \mark \default
 % Bars 21 to 25
-	\cueDuring #"cueVoiceSoloCelloMvtII" #UP {
-		\ni R4.
-		R
-		R \no
-		r8 } r16 ees(_\crescmarkup f g)
+	s4.*3
+	
+	
+	s8 \clef treble r16 ees(_\crescmarkup^\solobold f g)
 	aes4( g16 aes)
 % Bars 26 to 30
 	bes8( g8. bes16)
@@ -58,13 +56,12 @@ musicSoloCelloMvtII = \relative c'' {
 	aes16(\p ees8 \clef tenor c16 aes a)
 	bes16 des8 g bes16 \clef treble
 	aes16\startTrillSpan bes\startTrillSpan c8\noBeam~\stopTrillSpan \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
-	\cueDuring #"cueVoiceSoloCelloMvtII" #UP { aes!8^\tutti r r
+	aes!8 \clef bass s s
 % Bars 41 to 45
-		\ni R4.
-		R
-		R \no \mark \default
-	}
-	\clef bass \tuplet 3/2 16 {g,,32\p([^\solo g' fis] g[ b ais] b[ d cis] d[ g d])} f(\< ees) d(\>-. c-.)\!
+	s4.*3
+	
+	\mark \default
+	\clef bass \tuplet 3/2 16 {g,,32\p([^\solobold g' fis] g[ b ais] b[ d cis] d[ g d])} f(\< ees) d(\>-. c-.)\!
 	b8 r16 g,\<\noBeam \afterGrace aes8(\startTrillSpan\> { g16[\stopTrillSpan aes])}
 % Bars 46 to 50
 	<g g'>4.\p~

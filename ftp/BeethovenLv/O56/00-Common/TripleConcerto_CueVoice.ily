@@ -1553,13 +1553,13 @@ cueVoiceTimpaniMvtIII = \relative c {
 %###############################################################################
 %#                  C U E   V O I C E   F O R   S O L O V L N                  #
 %###############################################################################
-cueVoiceSoloViolinMvtI = \relative c' {
+cueVoiceSoloViolinMvtI = \relative c {
 	\InCueContext 
 % Bars 1 to 5
 	R1*6
 % Bars 6 to 10
 	
-	f2(\pp^\tuttibold e~
+	f'2(\pp^\tuttibold e~
 	e_\crescmarkup fis)
 	g4-.\pp r <b, g'>-. r
 	q-. r r2
@@ -2285,98 +2285,690 @@ cueVoiceSoloViolinMvtIII = \relative c {
 %#                  C U E   V O I C E   F O R   S O L O V L C                  #
 %###############################################################################
 cueVoiceSoloCelloMvtI = \relative c {
-	R1*72
-	% bar 73 - 76
-	g1\ff^\markup {Vlc}
-	c,4 r8. c'16 c4 c 
-	c8\noBeam c'\pp^\markup {Viol.I} c c c c c c
-	c c c c   c c c c 
-	R1*77
-	% bar 154 - 156
-	d'2_(_~^\markup {Pf.} d8 ais b cis)
-	d_( fis, gis a! b dis, e fis)
-	gis_( b, cis dis) s2
-	R1*81
-	% bar 238 - 242
-	s2 r8.^\markup {Fag.I} b16[ b8. b16]
-	c4 b c d
-	c d c e
-	e2(\> f\p
-	b,2. e4)
-	R1*102
-	% bar 345 - 347
-	a,,8\f^\markup {Vlc}( b16 c d e f g) a4 \tuplet 3/2 4 {a'8\f^\markup {Viol.conc} f' c
-	a' f c' a f' c a' f c' c c c }
-	g,,,,8\ff^\markup {Vlc}( a16 b c d e f) g8 r r4
-	R1*43
-	% bar 391 - 393
-	d''2_(_~^\markup {Pf.} d8 e f cis)
-	d_( e f ais,) b_( c d fis,)
-	g a! b16_( d, e fis) s4 s
-	R1*73
-	% bar 467 - 470
-	ees'8.^\markup {Viol.II}[ c16 g8. c16] ees2\sf~
-	ees8. c16 ees4\sf~ ees8. c16 ees4~\sf
-	ees8.[ c16 ees8. c16] ees8.[ c16 ees8. c16]
-	bes4\fp r s2
-	R1*43
-	% bar 514 - 518
-	b,,16(^\markup {Vlc} c b c) e8._( d16) cis_( d cis d) f8._( e16)
-	dis_( e dis e) g8._( f16) e_( f e f) a8._( g16)
-	f8.\f[ e16 d8. c16] b8.[ d16 f8. e16]
-	d8.[ c16 b8. a16] b8.[ g16 c8. e,16]
-	f4\ff r r2
+	\InCueContext
+	\clef bass
+% Bars 1 to 5
+	c2\pp(^\tuttibold b8[ c e8. d16])
+	d4 r r2
+	d2( cis8[ d f8. e16])
+	e4 r r8. e16([ g8. f16])
+	f4 r r8. f16([ a8. f16])
+% Bars 6 to 10
+	d4-. f-. d-. c-.
+	b2(\pp c)
+	\afterGrace a1\startTrillSpan_\crescmarkup {g16[\stopTrillSpan a]}
+	g4-.\pp r g-. r
+	g-. r r2
+% Bars 11 to 15
+	a4-. r r r8 g16( a
+	b4\f) r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
+	c2:8\pp c: 
+	c: c: 
+	\crescText "cresc. poco a poco" c:\< c: 
+% Bars 16 to 20
+	c: c: 
+	c: c: 
+	c: c: 
+	c: c: 
+	c: c: 
+% Bars 21 to 25
+	a8-.\ff b16( c d e f g) a8-. b16( c d e f g)
+	a4-. r r2
+	g,,8-. a16( b c d e f) g8-. a16( b c d e f)
+	g4-. r r2
+	f,,8-. g16( a b c d e) f8-. g16( a b c d e)
+% Bars 26 to 30
+	f4-. r r2
+	f,,8-. g16( a b c d e) f8-. g16( a b c d e)
+	f4-. r r2
+	e,,8-. f16( g a b cis d) e8-. f16( g a b cis d)
+	e8 e, e e   e e e e
+% Bars 31 to 35
+	d4-. f2\sf d8.-. c16-.
+	b4-. c2\sf a8.-. fis16-.
+	\partcombineApart \tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
+	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
+	\tuplet 3/2 4 {a, c e e, b' e a, c e g, d' g}
+% Bars 36 to 40
+	\tuplet 3/2 4 {c,_\crescmarkup e g c g e c e g c, e gis}
+	\tuplet 3/2 4 {c,\p e a c a e c e a c, e a}
+	\tuplet 3/2 4 {c,\sfp e a c a e c e a c, e a}
+	\tuplet 3/2 4 {d, g b d, g b d, fis a d cis d}
+	\partcombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
+% Bars 41 to 45
+	c4-.\p r c^\pizz c
+	c r r a
+	d a d c
+	f1^\arco_\dimmarkup~
+	f\pp~
+% Bars 46 to 50
+	f_\crescmarkup
+	ees\p~
+	ees_\crescmarkup
+	e!\sf\>(
+	f2)(\pp b,!
+% Bars 51 to 55
+	c fis,
+	g1~)^(
+	<g~ f'>
+	<g~ e'>
+	<g~ d'>
+% Bars 56 to 60
+	<g c>_\crescmarkup)
+	<g f'>
+	<< {\InCueContext  e'2( ees) } \\ {\InCueContext g,1}>>
+	g8.\ff g'16 g4 g,8. g'16 g4
+	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
+% Bars 61 to 65
+	g,4 r r g'-.
+	d-. r r d-. 
+	g,-. r r8. g'16[-. g8.-. g16]-. 
+	d4-. r r8. d16[-. d8.-. d16]-. 
+	g,4-. r8. g16-. d'4-. r8. d16-.
+% Bars 66 to 70
+	g4-. r8. g16-. d4-. r8. d16-.
+	g,4-. d'-. g-. d-.
+	g,-. d'-. g,-. d'-.
+	g,-. r r2
+	R1
+% Bars 71 to 75
+	g2(\pp a
+	d,1)
+	g\ff
+	c,4 r8. c'16-. c4-. c-.
+	c r^\solo r2
+% Bars 76 to 80
+	R1
+	s1*36
+% Bars 81 to 85
+	
+% Bars 86 to 90
+	
+% Bars 91 to 95
+	
+% Bars 96 to 100
+	
+% Bars 101 to 105
+	
+% Bars 106 to 110
+	
+% Bars 111 to 115
+	
+	
+	r2 r4 g8\p r
+	c8\ff^\tuttibold g c g c g c g
+	d' g, d' g, d' g, d' g,
+% Bars 116 to 120
+	b g b g b g b g
+	c g c g c g c g 
+	s1*46
+% Bars 121 to 125
+	
+% Bars 126 to 130
+	
+% Bars 131 to 135
+	
+% Bars 136 to 140
+	
+% Bars 141 to 145
+	
+% Bars 146 to 150
+	
+% Bars 151 to 155
+	
+% Bars 156 to 160
+	
+% Bars 161 to 165
+	
+	
+	
+	s2 r2^\tuttibold
+	R1
+% Bars 166 to 170
+	r2 r8 s s4
+	s1*47
+% Bars 171 to 175
+	
+% Bars 176 to 180
+	
+% Bars 181 to 185
+	
+% Bars 186 to 190
+	
+% Bars 191 to 195
+	
+% Bars 196 to 200
+	
+% Bars 201 to 205
+	
+% Bars 206 to 210
+	
+% Bars 211 to 215
+	
+	
+	
+	r2 r4 dis'\pp^\markup {Vcl.rip.}
+	dis1~
+% Bars 216 to 220
+	dis
+	e~
+	e
+	e
+	s1*5
+% Bars 221 to 225
+	
+	
+	
+	
+	s2 f!8^\tuttibold c! f c
+% Bars 226 to 230
+	g'! c, g' c, g' c, g' c,
+	e c e c e c e c
+	f c f c f c f c
+	f,4 r r8. f'16[-. f8.-. f16-.]
+	e4 r r8. e16-.[ e8.-. e16-.]
+% Bars 231 to 235
+	dis4.. dis16 dis4.. dis16
+	dis8.[-. dis16-. dis8.-. dis16]-. dis8.[-. dis16-. dis8.-. dis16]-. 
+	d!4 r8. d16 c4 r8. c16
+	d4 r8. d16 e4 r8. e16
+	a,4 r r e'
+% Bars 236 to 240
+	a r r e
+	a, r r8. e'16-.[ e8.-. e16-.]
+	a4 r r8. e16-.[ e8.-. e16-.]
+	a,4-. e'-. a-. e-.
+	a,-. e'-. a,-. e'-.
+% Bars 241 to 245
+	a, r r2
+	R1
+	s1*82
+% Bars 246 to 250
+	
+% Bars 251 to 255
+	
+% Bars 256 to 260
+	
+% Bars 261 to 265
+	
+% Bars 266 to 270
+	
+% Bars 271 to 275
+	
+% Bars 276 to 280
+	
+% Bars 281 to 285
+	
+% Bars 286 to 290
+	
+% Bars 291 to 295
+	
+% Bars 296 to 300
+	
+% Bars 301 to 305
+	
+% Bars 306 to 310
+	
+% Bars 311 to 315
+	
+% Bars 316 to 320
+	
+% Bars 321 to 325
+	
+	
+	
+	
+	s4 r^\tuttibold r2
+% Bars 326 to 330
+	R1
+	d2(\ff cis8[ d f8. e16])
+	e4 r r8. e16[( g8. f16])
+	f4 r r8. f16[( a8. f16])
+	d4-. f-. d-. c-.
+% Bars 331 to 335
+	b2( c)
+	\afterGrace a1\startTrillSpan {g16\stopTrillSpan a}
+	g4 r g r
+	g r r2
+	a4\p r r r8 g16(\p a
+% Bars 336 to 340
+	b4)\f r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
+	c2:8\pp c: 
+	c: c: 
+	c: c: 
+	c: c: 
+% Bars 341 to 345
+	c: c: 
+	c: c: 
+	c: c: 
+	c: c: 
+	a8(\f b16 c d e f g) a4 r^\solobold
+% Bars 346 to 350
+	R1
+	g,8\ff(^\markup {Vcl.rip.} a16 b c d e f) g8 r s4
+	s1*22
+% Bars 351 to 355
+	
+% Bars 356 to 360
+	
+% Bars 361 to 365
+	
+% Bars 366 to 370
+	
+	
+	
+	
+	s4 r^\tuttibold r2
+% Bars 371 to 375
+	s1*15
+% Bars 376 to 380
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
+	s4 r^\tuttibold r2
+	R1
+	s1*14
+% Bars 391 to 395
+	
+% Bars 396 to 400
+	
+% Bars 401 to 405
+	
+	s4 r^\tuttibold r2
+	r r8 s s4
+	s1*47
+% Bars 406 to 410
+	
+% Bars 411 to 415
+	
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	r2 r4 fis,^\markup {Vcl.rip.}\pp
+	fis1~
+	fis
+	g~
+	g~
+% Bars 456 to 460
+	g
+	s1*5
+% Bars 461 to 465
+	
+	s2 aes'8\ff^\tuttibold ees aes ees
+	bes' ees, bes' ees, bes' ees, bes' ees,
+	g ees g ees g ees g ees
+	aes ees aes ees aes ees aes ees
+% Bars 466 to 470
+	aes4 r r8. aes16[-. aes8.-. aes16]-. 
+	g4 r r8. g,16[-. g8.-. g16]-. 
+	fis4.. fis16 fis4.. fis16
+	fis8.[ fis16-. fis8.-. fis16]-. fis8.[-. fis16-. fis8.-. fis16]-. 
+	g4\fp r s2
+% Bars 471 to 475
+	s1*23
+% Bars 476 to 480
+	
+% Bars 481 to 485
+	
+% Bars 486 to 490
+	
+% Bars 491 to 495
+	
+	
+	
+	f1\p^\markup {Vcl.rip.}~
+	f~
+% Bars 496 to 500
+	f~_\dimmarkup
+	f
+	g\pp~
+	g
+	s1*14
+% Bars 501 to 505
+	
+% Bars 506 to 510
+	
+% Bars 511 to 515
+	
+	
+	
+	s4 r^\tuttibold r2
+% Bars 516 to 520
+	R1*4
+	
+	
+	
+	s1*13
+% Bars 521 to 525
+	
+% Bars 526 to 529
+	
 }
 cueVoiceSoloCelloMvtII = \relative c {
-	% bar 1 - 4
-	c'4\p^\markup {Viol.I} bes16 c
-	des8 r des
-	des^(^~ des16. ees32) c16.^( des32)
-	bes8. s
-	R4.*16
-	% bar 21 - 24
-	c'4_(\p^\markup {Clar.I} bes16 c)
-	des8 r des
-	des_(_~ des16. ees32 c16. des32)
-	bes8 r4
-	R4.*15
-	% bar 40 - 43
-	c4(^\markup {Clar.I} b16 c)
-	c4.\f\>
-	c8.[_(\p b32 c)] b_( c b c)
-	d8.\f ees8\> ees16\!
+	\InCueContext
+	\key aes \major
+	\clef bass
+% Bars 1 to 5
+	aes4\p^\tuttibold des16-. c-.
+	g8 r g
+	g~ g16. ees32( aes16. des32)
+	ees8. s
+	s4.*16
+% Bars 6 to 10
+	
+% Bars 11 to 15
+	
+% Bars 16 to 20
+	
+% Bars 21 to 25
+	aes,8^\pizz r des16 c
+	g8 r g 
+	g g16.[ ees32 aes16. des32]
+	ees8 s4
+	s4.*15
+% Bars 26 to 30
+	
+% Bars 31 to 35
+	
+% Bars 36 to 40
+	
+	
+	
+	
+	s8 aes,16(\p^\tuttibold-. aes-. aes-. aes-.)
+% Bars 41 to 45
+	g32\f[ g g g] g[ g\> g g] g[ g g g]
+	f16\p f f f f f
+	fis32\f[ fis' fis fis] fis[ fis\> fis fis] fis[ fis, fis fis]\!
+	s4.*10
+% Bars 46 to 50
+	
+% Bars 51 to 53
+	
 }
 cueVoiceSoloCelloMvtIII = \relative c {
-	R2.*53
-	% bar 54 - 56
-	c'16\f^\markup {Viol.I} b c d e d e f g g a b
-	c b c d e d e f g g a b 
-	c4. e8_(\sf g, b)
-	R2.*114
-	% bar 171 - 174
-	a,,8^\markup {Viol.conc} a'16_( gis a8) a16_( b c8) c16_( d
-	e8) fis16_( gis a8) a16_( b c8) c16_( d)
-	e2_( \afterGrace d4)\trill {c16 d}
-	c4 r r
-	R2.*77
-	% bar 252 - 254
-	g,,,4_(\ff^\markup {Vlc.} c8) r g4\sf_(
+	\InCueContext
+% Bars 1 to 5
+	s2.*15
+% Bars 6 to 10
+	
+% Bars 11 to 15
+	
+% Bars 16 to 20
+	s4. r8^\tuttibold s4 \clef bass
+	g'8-.\pp r r4 g,8.( b16
+	c8-.) r r4 c8.-. a16-.
+	d8.-. d16-. d8-. r d-. r
+	g,-. r^\solobold r4 r
+% Bars 21 to 25
+	r g4^\pizz r
+	s2.*15
+% Bars 26 to 30
+	
+% Bars 31 to 35
+	
+% Bars 36 to 40
+	
+	s2 r4^\tuttibold
+	c16\ff g c g c g c g c g b g
+	c g c g c b c d e c d e
+	f d e f g g, b g b g b g
+% Bars 41 to 45
+	g4\sf( c8) r g\sf r
+	c\ff r e' r a, r
+	c r f, r a r
+	d, r f r b,16 c d e 
+	f g a b c b a g f e d c
+% Bars 46 to 50
+	fis4.\sf fis16 fis fis8 fis
+	g fis4\sf fis16 fis fis8 fis
+	g f!4\sf f16 f f8-. e-.
+	d8. f16 g8 r g, r
+	c\p r r4 r
+% Bars 51 to 55
+	g'8 r r4 r
+	c8_\crescmarkup r r4 r
+	g8 r r4 r
+	c,8..\f[ c32 e8.. e32 g8.. g32]
+	c8..[ c32 e,8.. e32 g8.. g32]
+% Bars 56 to 60
+	c,4. e8\sf[( g, b])
+	s2.
+	s8 e'\sf[-.^\tuttibold g,-. c\sf-. e,-. g\sf]-. 
+	c,[-. e\sf-. g,-. c\sf-. e,-. g\sf]-. 
+	c, r g' r e r
+% Bars 61 to 65
+	c r s2
+	s2.*72
+% Bars 66 to 70
+	
+% Bars 71 to 75
+	
+% Bars 76 to 80
+	
+% Bars 81 to 85
+	
+% Bars 86 to 90
+	
+% Bars 91 to 95
+	
+% Bars 96 to 100
+	
+% Bars 101 to 105
+	
+% Bars 106 to 110
+	
+% Bars 111 to 115
+	
+% Bars 116 to 120
+	
+% Bars 121 to 125
+	
+% Bars 126 to 130
+	
+% Bars 131 to 135
+	
+	
+	
+	s2 r4^\tuttibold
+	R2.*5
+% Bars 136 to 140
+	
+	
+	
+	
+	s2.*16
+% Bars 141 to 145
+	
+% Bars 146 to 150
+	
+% Bars 151 to 155
+	
+% Bars 156 to 160
+	c'16\ff^\tuttibold g c g c g c g c g b g
+	c g c g c b c d e c d e
+	f d e f g g, b g b g b g
+	g4\sf( c8) r r4
+	r e\sf( a8) r
+% Bars 161 to 165
+	r4 r c,(\sf
+	f8) r c'4(\sf f,8) r
+	a4(\sf d,8) r a'4(\sf
+	dis,8) r a'4.(\sf dis,8)
+	e16(\f dis e dis) e-. d-. c-. b-. a-. b-. c-. d-. 
+% Bars 166 to 170
+	e8\p r r4 r
+	e16\f d c b a\sf b c d e\sf d c b
+	a\sf b c d e\sf d c b a\sf b c d
+	e4.\sf f8[-. e-. d]-. 
+	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
+% Bars 171 to 175
+	a\p^\solobold r r4 r
+	a8^\pizz r r4 r
+	g8 r r4 g8 r
+	c8 r r4 r8 \tuplet 3/2 4 {g16\f^\arco( a b)}
+	s2.*69
+% Bars 176 to 180
+	
+% Bars 181 to 185
+	
+% Bars 186 to 190
+	
+% Bars 191 to 195
+	
+% Bars 196 to 200
+	
+% Bars 201 to 205
+	
+% Bars 206 to 210
+	
+% Bars 211 to 215
+	
+% Bars 216 to 220
+	
+% Bars 221 to 225
+	
+% Bars 226 to 230
+	
+% Bars 231 to 235
+	
+% Bars 236 to 240
+	
+% Bars 241 to 245
+	
+	
+	
+	s2 r4^\tuttibold
+	c16-.\ff g-. c-. g-. c g c g c g b g
+% Bars 246 to 250
+	c g c g c b c d e c d e
+	f e d cis d cis d e f d f fis
+	g g, g g g g' d b g f'! d b
+	c g c g c g c g c g b g
+	c g c g c b c d e c d e
+% Bars 251 to 255
+	f d e f g g, b g b g b g 
+	g4\ff( c8) r g4(\sf
 	c8) r g' r e r
-	c r c r r4
-	R2.*77
-	% bar 332 - 336
-	s2 s8 g'''16^\markup {Viol.conc} g
-	g4. g16 g
-	g4. g16 g
-	\tuplet 3/2 4 {g8 g g  g g g
-	g g g } r4
-	R2*59
-	% bar 396 - 400
-	b,,,!8[\ff^\markup {Vlc.} b' b b]
+	c r s2
+	s2.*78
+% Bars 256 to 260
+	
+% Bars 261 to 265
+	
+% Bars 266 to 270
+	
+% Bars 271 to 275
+	
+% Bars 276 to 280
+	
+% Bars 281 to 285
+	
+% Bars 286 to 290
+	
+% Bars 291 to 295
+	
+% Bars 296 to 300
+	
+% Bars 301 to 305
+	
+% Bars 306 to 310
+	
+% Bars 311 to 315
+	
+% Bars 316 to 320
+	
+% Bars 321 to 325
+	
+% Bars 326 to 330
+	
+% Bars 331 to 335
+	
+	
+	\time 2/4 s2*54
+% Bars 336 to 340
+	
+% Bars 341 to 345
+	
+% Bars 346 to 350
+	
+% Bars 351 to 355
+	
+% Bars 356 to 360
+	
+% Bars 361 to 365
+	
+% Bars 366 to 370
+	
+% Bars 371 to 375
+	
+% Bars 376 to 380
+	
+% Bars 381 to 385
+	
+% Bars 386 to 390
+	
+	s8 r^\tuttibold r4
+	c16\ff c c c c c c c
+	d8([ e f fis])
+	g( a b16 g a b)
+% Bars 391 to 395
+	c c, c c c c c c
+	c8\sf[ c' c c]
+	aes,\sf[ aes' aes aes]
+	bes,\sf[ bes' bes bes]
+	bes,\sf[ bes' bes bes]
+% Bars 396 to 400
+	b,!\ff[ b'! b b]
 	b[ b b b]
 	c,\sf[ c' c c]
 	fis,,\sf[ fis' fis fis]
-	g r r4
+	g r s4
+% Bars 401 to 405
+	s2*42
+% Bars 406 to 410
+	
+% Bars 411 to 415
+	
+% Bars 416 to 420
+	
+% Bars 421 to 425
+	
+% Bars 426 to 430
+	
+% Bars 431 to 435
+	
+% Bars 436 to 440
+	
+% Bars 441 to 445
+	
+	
+	\time 3/4 s2.*33
+% Bars 446 to 450
+	
+% Bars 451 to 455
+	
+% Bars 456 to 460
+	
+% Bars 461 to 465
+	
+% Bars 466 to 470
+	
+% Bars 471 to 473
+	
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   P I A N O                    #

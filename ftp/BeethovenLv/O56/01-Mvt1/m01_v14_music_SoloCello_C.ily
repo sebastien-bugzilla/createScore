@@ -324,7 +324,7 @@ musicSoloCelloMvtI = \relative c' {
 	
 % Bars 346 to 350
 	
-	r2 r4 \tuplet 3/2 4 {g8-. e'-. c-. }
+	r2 r4 \tuplet 3/2 4 {g8-.\f e'-. c-. }
 	\tuplet 3/2 4 {g'-. e-. c'-. g-. e'-. c-. \clef treble g' e c' c c c }
 	c4 r r2
 	R1

@@ -73,7 +73,7 @@ tuttibold=^\markup {\bold \abs-fontsize #10 Tutti}
 solobold=^\markup {\bold \abs-fontsize #10 Solo}
 klaviersolobold=^\markup {\bold \abs-fontsize #10 {Klavier solo}}
 violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
-
+violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
 
 
 crescText = #(define-music-function
