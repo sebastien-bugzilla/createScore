@@ -21,7 +21,7 @@ musicFloteMvtIII = \relative c''' {
 		R
 		R
 % Bars 16 to 20
-		<< R2. {s2 s4^\tutti} >>
+		<< R2. {s2 \textOsf #800 s4^\tutti} >>
 		r8 \no } g16-.\pp g-. g8-.[ g-. g-.] r
 	r c16-. c-. c8[-. c-. c-.] r
 	R2.*12^\solo
@@ -41,7 +41,7 @@ musicFloteMvtIII = \relative c''' {
 	r4 r \acciaccatura fis,8^\tutti g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 	\grace {c16[( d]} e4)( c4.\sf b8)
-	a( f') b,( g'4) g8
+	a([ f']) b,( g'4) g8
 % Bars 41 to 45
 	g4(\sf c,8) r g'4\sf(
 	c,16)\ff b c d e d c b a gis a b
@@ -51,13 +51,13 @@ musicFloteMvtIII = \relative c''' {
 % Bars 46 to 50
 	d'4.\sf d16 d d8 d
 	d8 d4\sf d16 d d8 d
-	d8 d4\sf d16-. d-. d8-. e-.
+	d8 d4\sf d16 d d8-. e-.
 	f8. d16 c8 r b r
 	c\p r r4 r
 % Bars 51 to 55
 	R2.
-	c4._\crescmarkup e32([ g16.]) g32[( e16.]) e32([ c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32[( b16.]) b32[( g16.])
+	c4._\crescmarkup e32([ g16.-.]) g32[( e16.-.]) e32([ c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c4\f e, g
 	c16 b c d e d e f g g, a b
 % Bars 56 to 60
@@ -201,7 +201,7 @@ musicFloteMvtIII = \relative c''' {
 	e4( c4.\sf b8)
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) fis( g) fis( g)
-	g4.\startTrillSpan( a16\stopTrillSpan b c8 d)
+	g4.-\tweak extra-offset #'(0 . -1.0) \startTrillSpan( a16\stopTrillSpan b c8 d)
 	\grace {c16([ d16]} e4) c4.(\sf b8)
 % Bars 251 to 255
 	a( f') b,(\noBeam g'4) g8
@@ -352,8 +352,8 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 456 to 460
 	
-	c4.\f e32([ g16.)] g32[( e16.)] e32([ c16.])
-	c32([ b16.]) b4 b32[( d16.]) d32[( b16.)] b32[( g16.)] \mark \default
+	c4.\f e32([ g16.-.)] g32[( e16.-.)] e32([ c16.-.])
+	c32([ b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.)] b32[( g16.-.)] \mark \default
 	c4. e8-.\sf[ g,-. b-.]
 	c8 r r4 r
 % Bars 461 to 465

@@ -81,11 +81,12 @@
 			\new Voice {
 				\generalOptions \partOptions \nameOboeIMvtIII 
 				\timeMvtII \clef treble \key aes \major
+				\override Staff.MultiMeasureRest.space-increment = 3.47
 				R4.*20 \mark \default 
 				R4.*11 \mark \default
 				R4.*12 \mark \default
 				R4.*10
-				\bar "||"
+				\bar "||" \key c \major \time 3/4 \attacca
 			}
 		>>
 		\header {
@@ -162,11 +163,12 @@
 			\new Voice {
 				\generalOptions \partOptions \nameOboeIIMvtIII 
 				\timeMvtII \clef treble \key aes \major
+				\override Staff.MultiMeasureRest.space-increment = 3.47
 				R4.*20 \mark \default 
 				R4.*11 \mark \default
 				R4.*12 \mark \default
 				R4.*10
-				\bar "||"
+				\bar "||" \key c \major \time 3/4 \attacca
 			}
 		>>
 		\header {

@@ -92,14 +92,11 @@ dimText = #(define-music-function
 		\once \set decrescendoSpanner = #'text
 	#}
 )
-fermataCentered  = #(define-music-function
-	()
-	()
-	#{
-		\once \override Score.MultiMeasureRest.transparent = ##t 
-		R2.^\markup {\musicglyph "scripts.ufermata"}
-	#}
-)
+fermataCentered  = {
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R2.^\markup {\musicglyph "scripts.ufermata"}
+}
+
 textSpanner = #(define-music-function
 	(textSpanner)
 	(markup?)
@@ -108,21 +105,15 @@ textSpanner = #(define-music-function
 	#}
 )
 
-no = #(define-music-function
-	()
-	()
-	#{
-		\undo \omit MultiMeasureRestNumber
-	#}
-)
+no = {
+	\undo \omit MultiMeasureRestNumber
+}
 
-ni = #(define-music-function
-	()
-	()
-	#{
-		\omit MultiMeasureRestNumber
-	#}
-)
+
+ni = {
+	\omit MultiMeasureRestNumber
+}
+
 
 mmrPos = #(define-music-function
 	(position)
@@ -140,15 +131,11 @@ markOffset = #(define-music-function
 	#}
 )
 
-attaca = #(define-music-function
-	()
-	()
-	#{
-		\once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
-		\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-		\mark \markup {\normalsize \italic attaca.}
-	#}
-)
+attacca = {
+	\once \override TextScript.self-alignment-X=1
+	s8_\markup {\italic attacca:}
+}
+
 
 InCueContext = {
 	\override Beam.beam-thickness = #0.30 % 0.30
@@ -170,13 +157,20 @@ OutCueContext = {
 	\unset fontSize
 }
 
-breathSign = #(define-music-function
-	()
-	()
-	#{
+breathSign = {
 	\override BreathingSign.text = \markup { \musicglyph "scripts.caesura.curved" }
+}
+
+
+textOsf = #(define-music-function
+	(prio)
+	(number?)
+	#{
+		\once \override TextScript.outside-staff-priority = #prio
 	#}
 )
+
+
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

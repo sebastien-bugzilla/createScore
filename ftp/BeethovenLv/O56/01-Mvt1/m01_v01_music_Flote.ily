@@ -10,7 +10,7 @@ musicFloteMvtI = \relative c''' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*12
+	<>-\tweak X-offset #-3 ^\tutti R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -25,7 +25,7 @@ musicFloteMvtI = \relative c''' {
 		R
 		R \no
 	}
-	c1\f\cresc
+	c1-\tweak X-offset #-1.5 \f\cresc
 	b8([ c d8. c16)] c4-. c-.
 % Bars 21 to 25
 	f2.\ff c4-.
@@ -40,7 +40,7 @@ musicFloteMvtI = \relative c''' {
 	cis2. e4-.
 	cis-. e-. cis-. a-.
 % Bars 31 to 35
-	d-. f2\sf d8. c!16-.
+	d-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
 	R1*4
@@ -120,7 +120,7 @@ musicFloteMvtI = \relative c''' {
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16)]
 	c2~ c8 g-. e-. g-. \mark \default
-	c,8\p^\solo r r4 r2
+	c,8\p-\tweak X-offset #1.5 ^\solo r r4 r2
 	R1*27
 % Bars 121 to 125
 	
@@ -149,8 +149,8 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
-		\cueClef bass \ni R1
-		<< R {s2 s8. s16^\tutti s4} >> \no \cueClefUnset
+		\clef bass \ni R1
+		<< R {s2 s8. s16^\tutti s4} >> \no \clef treble
 	}
 	r8. e16-.\f[ fis8.-. gis16-.] a2(\sf~
 % Bars 166 to 170
@@ -233,12 +233,12 @@ musicFloteMvtI = \relative c''' {
 	\mark \default
 	R1
 	\cueDuring #"cueVoiceFloteMvtI" #UP {
-		\ni R1
-		R
-		R
+		\ni \mmrPos #-6 R1
+		\mmrPos #-6 R
+		\mmrPos #-6 R
 % Bars 281 to 285
-		R
-		R \no
+		\mmrPos #-6 R
+		\mmrPos #-6 R \no
 	}
 	r2 b!8([\p c d!8. c16)]
 	R1*5
@@ -315,9 +315,9 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	r2^\tutti r4 c'\f~
+	r2-\tweak X-offset #-1.5 ^\tutti r4 c'\f~
 % Bars 371 to 375
-	c^\solo r r2
+	c-\tweak X-offset #2.1 ^\solo r r2
 	R1*12
 % Bars 376 to 380
 	
@@ -325,9 +325,9 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	\cueDuring #"cueVoiceFloteMvtI" #DOWN {
-		\ni \mmrPos #6 R1
-		\mmrPos #8 R \no \mark \default
+	\cueDuring #"cueVoiceFloteMvtI" #UP {
+		\ni \mmrPos #-4 R1
+		\mmrPos #-4 R \no \mark \default
 	}
 % Bars 386 to 390
 	g'2\ff^\tutti d4-. b-.
@@ -342,9 +342,9 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	\cueDuring #"cueVoiceFloteMvtI" #UP {
-		\ni \cueClef bass R1
+		\ni \clef bass \mmrPos #-6 R1
 % Bars 401 to 405
-		R1 \no \cueClefUnset
+		\mmrPos #-6 R1 \no \clef treble
 	}
 	r8. g16-.\f[^\tutti a8.-. b16-.] c2(~
 	c8.[ e16 g8. e16)] c8^\solo r r4
@@ -393,16 +393,16 @@ musicFloteMvtI = \relative c''' {
 % Bars 461 to 465
 		R \no \mark \default
 	}
-	c2.\ff^\tutti c4(
+	c2.\ff-\tweak X-offset #-1 ^\tutti c4(
 	ees2. des4)
 	bes4-. bes-. \acciaccatura c8 bes8.([ aes16 bes8. c16-.)]
 	aes2~ aes8 ees-. c-. ees-.
 % Bars 466 to 470
-	aes8.-.[ c16-. aes8.-. c16-.] ees2~\sf
+	aes8.-.[ c16-. aes8.-. c16-.] ees2~-\tweak X-offset #-2 \sf
 	ees8.[ c16-. g8.-. c16-.] ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4~\sf
 	ees8.[ c16-. ees8.-. c16-.] ees8.-.[ c16-. ees8.-. c16-.]
-	b4 r^\solo r2
+	b!4 r^\solo r2
 % Bars 471 to 475
 	R1*5
 	
@@ -432,11 +432,11 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	\cueDuring #"cueVoiceFloteMvtI" #UP {
-		\tempo "Più allegro." <>^\tutti \ni \mmrPos #4 R1
+		\tempo "Più allegro." <>-\tweak X-offset #-6 ^\tutti \ni \mmrPos #4 R1
 		\mmrPos #6 R \no
 	}
 % Bars 516 to 520
-	f8.\f[ e16-. d8.-. c16-.] b8.-.\noBeam d'16-.[ f8.-. e16-.]
+	f8.-.\f[ e16-. d8.-. c16-.] b8.-.\noBeam d'16-.[ f8.-. e16-.]
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
 	g4-.\ff r r2

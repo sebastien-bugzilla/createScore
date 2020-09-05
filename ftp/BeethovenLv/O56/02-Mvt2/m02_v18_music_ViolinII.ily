@@ -13,7 +13,7 @@ musicViolinIIMvtII = \relative c' {
 	aes4\p^\consordino^\tutti g16-. aes-.
 	bes8 r bes
 	bes(~ bes16. g32) aes16.( bes32)
-	g8.\noBeam ees'8( des16)
+	g8.\noBeam ees'8(^\solo des16)
 	ees8([ c)] ees16 ees
 % Bars 6 to 10
 	ees8 ees8. ees16

@@ -20,7 +20,8 @@
 \include "./00-Common/TripleConcerto_OptionParts.ily"
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_PartFlauto.ily"
+%\include "./00-Common/TripleConcerto_Format_PartFlauto.ily"
+\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v01_music_Flote.ily"
 \include "./03-Mvt3/m03_v01_music_Flote.ily"
@@ -46,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtI
-%			}
+			\new Voice {
+				\formatFloteMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFloteMvtI \musicFloteMvtI
@@ -64,6 +65,7 @@
 			}
 		}
 		\layout {
+			%system-count = 25
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -71,21 +73,22 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatFloteMvtII
+			}
 			\new Voice {
 				\generalOptions \partOptions \nameFloteMvtIII 
 				\timeMvtII \clef treble \key aes \major
+				\override Staff.MultiMeasureRest.space-increment = 3.14
 				R4.*20 \mark \default 
 				R4.*11 \mark \default
 				R4.*12 \mark \default
 				R4.*10
-				\bar "||"
+				\bar "||" \key c \major \time 3/4 \attacca
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -97,14 +100,14 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
-			ragged-right = ##f
+			%ragged-right = ##f
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatFloteMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFloteMvtIII \musicFloteMvtIII
@@ -120,6 +123,7 @@
 			}
 		}
 		\layout {
+			%system-count = 24
 			\context {
 				\CueVoice \layoutCueVoice
 			}

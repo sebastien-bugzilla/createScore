@@ -56,5 +56,5 @@ musicClarinetIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 % Bars 51 to 53
-	\attaca \bar "||"
+	\bar "||"  \key c \major \time 3/4 \attacca
 }

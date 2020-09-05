@@ -23,10 +23,12 @@ partOptions = {
 		decrescendo-event text-span-event span-event  grace-music)
 	\set Voice.restNumberThreshold = #0
 	\override TupletNumber.avoid-slur = #'ignore
+	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
+	\override Score.RehearsalMark.outside-staff-priority = ##f
 }
-#(set-global-staff-size 18)
+#(set-global-staff-size 19)
 \layout {
-	#(layout-set-staff-size 18)
+	#(layout-set-staff-size 19)
 	\override TupletBracket #'bracket-visibility = ##f
 	\override Hairpin.to-barline = ##f
 }

@@ -34,7 +34,7 @@ musicFloteMvtI = \relative c''' {
 	cis2. e4-.
 	cis-. e-. cis-. a-.
 % Bars 31 to 35
-	d-. f2\sf d8. c!16-.
+	d-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
 	R1*6
@@ -354,7 +354,7 @@ musicFloteMvtI = \relative c''' {
 	ees8.[ c16-. g8.-. c16-.] ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4~\sf
 	ees8.[ c16-. ees8.-. c16-.] ees8.-.[ c16-. ees8.-. c16-.]
-	b4 r r2
+	b!4 r r2
 % Bars 471 to 475
 	R1*5
 	
@@ -386,7 +386,7 @@ musicFloteMvtI = \relative c''' {
 	\tempo "Più allegro." R1*2
 	
 % Bars 516 to 520
-	f8.\f[ e16-. d8.-. c16-.] b8.-.\noBeam d'16-.[ f8.-. e16-.]
+	f8.-.\f[ e16-. d8.-. c16-.] b8.-.\noBeam d'16-.[ f8.-. e16-.]
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
 	g4-.\ff r r2
