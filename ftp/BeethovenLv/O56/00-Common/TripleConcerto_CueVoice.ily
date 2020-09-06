@@ -129,14 +129,14 @@ cueVoiceOboeIMvtI = \relative c' {
 	R1*12
 	% bar 13 - 18
 	c1\pp -\tweak X-offset #-5 _\markup {Viol.I}
-	b8^( c d8. c16) c4^. c^.
+	b8^([ c d8. c16]) c4^. c^.
 	e1
-	dis8^( e f8. e16) e4^. e^. 
+	dis8^([ e f8. e16]) e4^. e^. 
 	g1
-	fis8^( g a8. g16) g4^. g^.
+	fis8^([ g a8. g16)] g4^. g^.
 	R1*19
 	% bar 38 - 39
-	e2.-\tweak X-offset #-4.5 _\markup {Fag.I} c4^(
+	e2.-\tweak X-offset #-4.5 ^\markup {Fag.I} c4-\shape #'((0 . 1.0) (0 . 0) (0 . 0) (0 . 0.5)) ^(
 	b d c a)
 	g r r2
 	R1*64
@@ -164,9 +164,9 @@ cueVoiceOboeIMvtI = \relative c' {
 	d d d d gis gis gis gis
 	R1*50
 	% bar 275 - 277
-	cis,2(_\crescmarkup^\markup {Vln.conc} e
+	cis,2(-\tweak extra-offset #'(0 . 2.5) _\crescmarkup -\tweak X-offset #-5 ^\markup {Vln.conc} e
 	g cis)
-	\tuplet 3/2 4 {d8\f f, bes d, f bes, d f, bes d, d d}
+	\tuplet 3/2 4 {d8-\tweak extra-offset #'(0 . 5)\f f, bes d, f bes, d f, bes d, d d}
 	R1*43
 	% bar 321 - 323
 	g8^\markup {Cor.I} r g r g r g r
@@ -174,16 +174,16 @@ cueVoiceOboeIMvtI = \relative c' {
 	g r g r g r g r
 	R1*15
 	% bar 339 - 342
-	e1_\crescpocoapoco^\markup {Viol.I}
+	e1-\tweak X-offset #-2 _\crescpocoapoco^\markup {Viol.I}
 	dis8_( e f8. e16) e4 e
 	g1
 	fis8_( g a8. g16) g4 g
 	R1*26
 	% bar 369
-	r8 a16_(^\markup {Vln.Conc} a') g,_( g') f,_( f') e,_( e') d,_( d') c,_( c') bes,_( bes')
+	r8 a16_(-\tweak X-offset #-6 ^\markup {Vln.Conc} a') g,_( g') f,_( f') e,_( e') d,_( d') c,_( c') bes,_( bes')
 	R1*14
 	% bar 384 - 385
-	\tuplet 3/2 4 {b'8^\markup {Vln.conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
+	\tuplet 3/2 4 {b'8-\tweak X-offset #-6 ^\markup {Vln.conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
 	b\ff) b' g d' b g' d b' g d' b g'}
 	R1*14
 	% bar 400 - 401
@@ -199,11 +199,11 @@ cueVoiceOboeIMvtI = \relative c' {
 	f f f f b b b b
 	R1*21
 	% bar 483 - 484
-	r4^\markup {Viol.conc} <f f'> r <d d'>
+	r4-\tweak X-offset #-4.5 ^\markup {Viol.conc} <f f'> r <d d'>
 	<e e'>16 g,([\p a b] c d e d c b a g) s4
 	R1*29
 	% bar 514-516
-	b,16_(_\crescmarkup^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	b,16_(_\crescmarkup-\tweak X-offset #-4.5 ^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
 	dis16_( e dis e) g8._( f16) e_( f e f) a8. g16
 	f8.\f e16 d8. c16 s2
 }
@@ -253,12 +253,12 @@ cueVoiceOboeIIMvtI = \relative c'' {
 	R1*16
 	% bar 17 - 20
 	g1^\markup {Viol.I}
-	fis8_( g a8. g16) g4 g
+	fis8_([ g a8. g16)] g4 g
 	c1^\markup {Ob.I}
-	b8_( c d8. c16) c4 c
+	b8_[( c d8. c16]) c4 c
 	R1*17
 	% bar 38 - 39
-	e,2.-\tweak X-offset #-4.5 _\markup {Fag.I} c4_(
+	e,2.-\tweak X-offset #-4.5 ^\markup {Fag.I} c4_(
 	b d c a)
 	g r r2
 	R1*13
@@ -277,10 +277,10 @@ cueVoiceOboeIIMvtI = \relative c'' {
 	<c e>4 s2.
 	R1*23
 	% bar 131
-	r8 e'16_(^\markup {Pf.} e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
+	r8 e'16_(-\tweak X-offset #-2.5 ^\markup {Pf.} e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
 	R1*15
 	% bar 147 - 148
-	\tuplet 3/2 4 {gis'8^\markup {Viol.conc} gis_( e) e_( b) b_( gis) gis_( e) e_( b) b_(
+	\tuplet 3/2 4 {gis'8-\tweak X-offset #-8 ^\markup {Viol.conc} gis_( e) e_( b) b_( gis) gis_( e) e_( b) b_(
 	gis)\ff e' b gis' e b' gis e' b} r8^\markup {Viol.II} \tuplet 3/2 8 {b,16_( cis dis)}
 	R1*14
 	% bar 163 - 164
@@ -312,10 +312,10 @@ cueVoiceOboeIIMvtI = \relative c'' {
 	b8_( c d8. c16) c4 c
 	R1*24
 	% bar 369
-	r8 a16_(^\markup {Vln.Conc} a') g,_( g') f,_( f') e,_( e') d,_( d') c,_( c') bes,_( bes')
+	r8 a16_(-\tweak X-offset #-7 ^\markup {Vln.Conc} a') g,_( g') f,_( f') e,_( e') d,_( d') c,_( c') bes,_( bes')
 	R1*14
 	% bar 384 - 385
-	\tuplet 3/2 4 {b'8^\markup {Vln.conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
+	\tuplet 3/2 4 {b'8-\tweak X-offset #-6 ^\markup {Vln.conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
 	b\ff) b' g d' b g' d b' g d' b g'}
 	R1*14
 	% bar 400 - 401
@@ -331,11 +331,11 @@ cueVoiceOboeIIMvtI = \relative c'' {
 	f f f f b b b b
 	R1*21
 	% bar 483 - 484
-	r4^\markup {Viol.conc} <f f'> r <d d'>
+	r4-\tweak X-offset #-5.5 ^\markup {Viol.conc} <f f'> r <d d'>
 	<e e'>16 g,([\p a b] c d e d c b a g) s4
 	R1*29
 	% bar 514-516
-	b,16_(_\crescmarkup^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	b,16_(_\crescmarkup-\tweak X-offset #-4.5 ^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
 	dis16_( e dis e) g8._( f16) e_( f e f) a8. g16
 	f8.\f e16 d8. c16 s2
 }
@@ -354,16 +354,16 @@ cueVoiceOboeIIMvtIII = \relative c'' {
 	r8 c16 c c8 c c r
 	R2.*81
 	% bar 218 - 221
-	r8 g'16\pp^\markup {Ob.I} g g8 g g g
+	r8 g'16-\tweak extra-offset #'(0 . 4) \pp^\markup {Ob.I} g g8 g g g
 	R2.
-	r8 g16\pp g g8 g g g
+	r8 g16-\tweak extra-offset #'(0 . 4) \pp g g8 g g g
 	g2._\crescmarkup
 	R2.*19
 	% bar 241 - 244
-	g,4._(^\markup {Viol.conc}_\crescmarkup a16 b c8 d)
+	g,4._(^\markup {Viol.conc}-\tweak X-offset #-1 _\crescmarkup a16 b c8 d)
 	\grace {c16_( d} e4)_( c4. b8)
 	a_([ f')] b,_( g'4) g8
-	g4_(\f c,8) r g'^\markup {Fl.} g
+	g4_(\f c,8) r g'-\tweak X-offset #-1.5 ^\markup {Fl.} g
 	R2.*26
 	% bar 271 - 272
 	g,,,8\noBeam^\markup {Vlc.conc} b'[_(\trill \grace {a16 b} g8]) d'[_(\trill \grace {cis16 d} b8)] \afterGrace g'8\trill {fis16 g}
@@ -371,13 +371,13 @@ cueVoiceOboeIIMvtIII = \relative c'' {
 	R2.*51
 	% bar 324 - 326
 	g'2.^\markup {Ob.I}~
-	g_\crescmarkup
-	c8\f g c g e c
+	g-\tweak extra-offset #'(0 . 3.9)_\crescmarkup
+	c8-\tweak extra-offset #'(0 . 4) \f g c g e c
 	R2.*6 \time 2/4
 	R2*51
 	% bar 384 - 386
-	g'4.\trill^\markup {Vln.Conc} a16 b
-	d\p c b c d c b a
+	g'4.\trill-\tweak X-offset #-7 ^\markup {Vln.Conc} a16 b
+	d-\tweak extra-offset #'(0 . 5) \p c b c d c b a
 	a^( g) fis g a^( g) fis g
 	R2*56
 	R2.*12

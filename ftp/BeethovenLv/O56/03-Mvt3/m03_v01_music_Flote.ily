@@ -21,7 +21,7 @@ musicFloteMvtIII = \relative c''' {
 		R
 		R
 % Bars 16 to 20
-		<< R2. {s2 \textOsf #800 s4^\tutti} >>
+		<< R2. {s2 \textOsp #800 s4^\tutti} >>
 		r8 \no } g16-.\pp g-. g8-.[ g-. g-.] r
 	r c16-. c-. c8[-. c-. c-.] r
 	R2.*12^\solo

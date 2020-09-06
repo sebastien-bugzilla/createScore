@@ -123,11 +123,19 @@ mmrPos = #(define-music-function
 	#}
 )
 
-markOffset = #(define-music-function
+markXOffset = #(define-music-function
 	(offset)
 	(number?)
 	#{
 		\once \override Score.RehearsalMark.X-offset = #offset
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
 	#}
 )
 
@@ -162,7 +170,7 @@ breathSign = {
 }
 
 
-textOsf = #(define-music-function
+textOsp = #(define-music-function
 	(prio)
 	(number?)
 	#{
@@ -170,6 +178,14 @@ textOsf = #(define-music-function
 	#}
 )
 
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		%\once \override MultiMeasureRest #'minimum-length = #length
+		\once \override MultiMeasureRest.space-increment = #length
+	#}
+)
 
 
 %arco=^\markup {\italic arco}

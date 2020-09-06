@@ -10,7 +10,7 @@ musicOboeIMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*12
+	<>-\tweak X-offset #-3 ^\tutti R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -25,7 +25,7 @@ musicOboeIMvtI = \relative c'' {
 		R
 		R \no
 	}
-	c1\f\cresc
+	c1-\tweak X-offset #-2 \f\cresc
 	b8([ c d8. c16)] c4-. c-.
 % Bars 21 to 25
 	f2.\ff c'4-.
@@ -122,7 +122,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16)]
 	c2~ c8 g'-. e-. g-. \mark \default
-	c,\p^\solo r r4 r2
+	c,\p-\tweak X-offset #2 ^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -151,7 +151,7 @@ musicOboeIMvtI = \relative c'' {
 		R
 		R \no \mark \default
 	}
-	e2\ff^\tutti b'4-. gis-.
+	e2\ff-\tweak X-offset #1.5 ^\tutti b'4-. gis-.
 	e-. e-. b'-. gis-.
 % Bars 151 to 155
 	e-. r^\solo r2
@@ -207,7 +207,7 @@ musicOboeIMvtI = \relative c'' {
 		\ni R1
 		R \no \mark \default
 	}
-	f'2.\ff^\tutti f4
+	f'2.\ff-\tweak X-offset #1 ^\tutti f4
 % Bars 226 to 230
 	e2. e4
 	g c c c
@@ -254,7 +254,7 @@ musicOboeIMvtI = \relative c'' {
 	}
 	r2 a8[(\p bes d8. bes16)]
 	R1
-	r2 b!8[(^\semprepp c ees8. c16)]
+	r2 b!8[(_\semprepp c ees8. c16)]
 % Bars 281 to 285
 	R1
 	r2 a8([ bes des8. bes16)]
@@ -262,7 +262,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 % Bars 286 to 290
-	r2 ais8[(^\semprep b! d!8. b16)]
+	r2 ais8[(_\semprep b! d!8. b16)]
 	R1
 	r2 ais8[( b d8. b16)]
 	R1*3
@@ -292,7 +292,7 @@ musicOboeIMvtI = \relative c'' {
 		R
 		R \no
 	}
-	g'1^\pcresc \mark \default
+	g'1-\tweak X-offset #-2 _\pcresc \mark \default
 	c\ff~^\tutti
 % Bars 326 to 330
 	c4 c8. c16 c4 c
@@ -334,7 +334,7 @@ musicOboeIMvtI = \relative c'' {
 	d r f r d r a r
 % Bars 356 to 360
 	d r f r d r bes r
-	a^\crescmarkup r c r a r f r
+	a_\crescmarkup r c r a r f r
 	c'2.\f(\> bes4)
 	a4\p r r2
 	R1*9

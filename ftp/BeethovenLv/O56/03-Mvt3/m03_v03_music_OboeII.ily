@@ -18,10 +18,10 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 16 to 20
 	
 	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni <>^\tutti R2.
+		\ni <>-\tweak X-offset #-5 ^\tutti R2.
 		R \no
 	}
-	<>^\solo R2.*12
+	<>-\tweak X-offset #-1.5 ^\solo R2.*12
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -53,8 +53,8 @@ musicOboeIIMvtIII = \relative c'' {
 	c\p r r4 r
 % Bars 51 to 55
 	R2.
-	c4._\crescmarkup e32([ g16.]) g32([ e16.)] e32([ c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32[( b16.]) b32[( g16.])
+	c4._\crescmarkup e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c4\f e, g
 	c16 b c d e d e f g, g a b 
 % Bars 56 to 60
@@ -104,8 +104,7 @@ musicOboeIIMvtIII = \relative c'' {
 	c2.\p
 	a2\f~ a8 fis
 % Bars 96 to 100
-	R2.
-	R2.*9
+	R2.*10
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -128,11 +127,11 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
-		\ni <>^\tutti R2.
+		\ni <>-\tweak X-offset #-4.5 ^\tutti R2.
 % Bars 136 to 140
 		R2. \no
 	}
-	<>^\solo R2.*12
+	<>-\tweak X-offset #-1.5 ^\solo R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -211,7 +210,7 @@ musicOboeIIMvtIII = \relative c'' {
 		\ni \mmrPos #-6 R2.
 		R
 		R
-		<< R {s2 s4^\tutti} >> \no
+		<< R {s2 \textOsp #800 s4^\tutti} >> \no
 	}
 	c2\ff~ c8 d
 % Bars 246 to 250
@@ -338,7 +337,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 386 to 390
 		R \mark \default \no
 	}
-	e8(\f^\tutti f16 e e8 f)
+	e8(\f-\tweak X-offset #1.8 ^\tutti f16 e e8 f)
 	g4( e8) r
 	R2
 	r4 g8 g

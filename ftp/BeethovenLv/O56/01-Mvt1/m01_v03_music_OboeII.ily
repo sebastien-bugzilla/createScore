@@ -10,7 +10,7 @@ musicOboeIIMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*16
+	<>-\tweak X-offset #-2 ^\tutti R1*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -48,7 +48,7 @@ musicOboeIIMvtI = \relative c'' {
 		R 
 		r4 \no \clef treble } b(_\crescmarkup c f,)
 % Bars 41 to 45
-	e4 r r2
+	e4\p r r2
 	r2 r4 e4(
 	f cis' d e
 	f) r r2
@@ -150,7 +150,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
 		\ni R1
-		R \no \mark \default
+		R \no \markYoffset #4.5 \mark \default
 	}
 	e2\ff^\tutti b4-. gis-.
 	e-. e-. b'-. gis-.
@@ -201,7 +201,7 @@ musicOboeIIMvtI = \relative c'' {
 		\ni R1
 		R \mark \default \no
 	}
-	a2.\ff^\tutti a4
+	a2.\ff-\tweak X-offset #1 ^\tutti a4
 % Bars 226 to 230
 	c2. bes4
 	bes bes bes bes
@@ -222,7 +222,7 @@ musicOboeIIMvtI = \relative c'' {
 	e e4 e e e8~
 % Bars 241 to 245
 	e4 r r2
-	<>^\solo R1*35
+	<>-\tweak X-offset #-1 ^\solo R1*35
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -236,7 +236,7 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	R1*44
 % Bars 281 to 285
 	
@@ -259,9 +259,9 @@ musicOboeIIMvtI = \relative c'' {
 		\ni R1
 		R
 		R
-		R \mark \default \no
+		R  \mark \default \no
 	}
-	c1\ff^\tutti~
+	c1\ff-\tweak X-offset #1 ^\tutti~
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c1~
@@ -292,7 +292,7 @@ musicOboeIIMvtI = \relative c'' {
 	R1
 % Bars 351 to 355
 	d2~\f d8 r r4
-	R1 \mark #11
+	R1 \markYoffset #4.5 \mark #11
 	cis2\f~ cis8 r r4
 	R1*15
 	
@@ -322,7 +322,7 @@ musicOboeIIMvtI = \relative c'' {
 		R \no \mark \default
 	}
 % Bars 386 to 390
-	g,2\ff^\tutti d'4-. b-.
+	g,2\ff-\tweak X-offset #1.5 ^\tutti d'4-. b-.
 	g-. g'-. d-. b-.
 	g-. r r2
 	R1
@@ -391,7 +391,7 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 461 to 465
 		R \mark \default \no
 	}
-	c1\ff^\tutti
+	c1\ff-\tweak X-offset #1.5 ^\tutti
 	g
 	des'
 	c
@@ -419,7 +419,7 @@ musicOboeIIMvtI = \relative c'' {
 	a8 r r4 r8. a16-.[ a8.-. a16-.] 
 	c8 r r8. c16 c8 r r8. c16
 % Bars 491 to 495
-	b!8 r r8. b16 b8 r r8. b16 \mark \default
+	b!8 r r8. b16 b8 r r8. b16 \markYoffset #4.5 \mark \default
 	bes8.\mf-.[ e16-. e8.-. e16-.] e4 r
 	r8. f16[ f8. f16] f8 r r4
 	R1*20
@@ -434,13 +434,13 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
-		\tempo "Più allegro." \ni \mmrPos #6 R1 
+		\tempo "Più allegro." \ni \mmrPos #6 <>^\tutti R1 
 		\mmrPos #6 R 
 % Bars 516 to 520
 		r2 \no } r8. d16\f-.[ f8.-. e16-.] 
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
-	g4-.\ff r r2
+	g4-.\ff-\tweak X-offset #2 ^\solo r r2
 	c,4 r r g'8 r
 % Bars 521 to 525
 	g8 r g r g r g r

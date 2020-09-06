@@ -21,10 +21,10 @@ musicOboeIMvtIII = \relative c'' {
 		R
 		R
 % Bars 16 to 20
-		<< R {s2 s4^\tutti} >> \no
+		<< R {s2 \textOsp #800 s4^\tutti} >> \no
 		r8 } g16-.\pp g-. g8-. g-. g-. r
 	r8 c16-. c-. c8-. c-. c-. r
-	<>^\solo R2.*12
+	<>-\tweak X-offset #-1.5 ^\solo R2.*12
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -56,8 +56,8 @@ musicOboeIMvtIII = \relative c'' {
 	e\p r r4 r
 % Bars 51 to 55
 	R2.
-	c4._\crescmarkup e32([ g16.]) g32([ e16.)] e32([ c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32[( b16.]) b32[( g16.])
+	c4._\crescmarkup e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c4\f e, g
 	c16 b c d e d e f g g a b 
 % Bars 56 to 60
@@ -135,7 +135,7 @@ musicOboeIMvtIII = \relative c'' {
 	r8 g,16\pp-. g-. g8-.[ g-. g-.] r
 % Bars 136 to 140
 	r8 c16-. c-. c8[-. c-. c]-. r
-	<>^\solo R2.*12
+	<>-\tweak X-offset #-2 ^\solo R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -170,7 +170,7 @@ musicOboeIMvtIII = \relative c'' {
 	\acciaccatura d c[-. b-. c-. d-. e-. e,]-. 
 % Bars 171 to 175
 	a\p r^\solo r4 r
-	R2.*7
+	\mmrLength #0.8 R2.*7
 % Bars 176 to 180
 	
 	
@@ -203,7 +203,7 @@ musicOboeIMvtIII = \relative c'' {
 	R2.
 	r8 g16\pp g g8[ g g g]
 % Bars 221 to 225
-	g2.^\crescmarkup \mark \default
+	g2._\crescmarkup \mark \default
 	c8-.\f[ g-. c-. g-. e-. c-.]
 	g' r r4 r
 	R2.*17
@@ -290,7 +290,7 @@ musicOboeIMvtIII = \relative c'' {
 	e~
 	e4( c e)
 % Bars 311 to 315
-	g2.~^\semprepp
+	g2.~_\semprepp
 	g~
 	g~
 	g4( e g)

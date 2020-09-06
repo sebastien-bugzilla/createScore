@@ -21,6 +21,7 @@
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_PartOboi.ily"
+%\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v02_music_OboeI.ily"
 \include "./01-Mvt1/m01_v03_music_OboeII.ily"
@@ -50,9 +51,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtI
-%			}
+			\new Voice {
+				\formatOboeIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIMvtI \musicOboeIMvtI
@@ -75,13 +76,13 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatOboeIMvtII
+			}
 			\new Voice {
 				\generalOptions \partOptions \nameOboeIMvtIII 
 				\timeMvtII \clef treble \key aes \major
-				\override Staff.MultiMeasureRest.space-increment = 3.47
+				\override Staff.MultiMeasureRest.space-increment = 3.14
 				R4.*20 \mark \default 
 				R4.*11 \mark \default
 				R4.*12 \mark \default
@@ -107,9 +108,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIII
-%			}
+			\new Voice {
+				\formatOboeIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIMvtIII \musicOboeIMvtIII
@@ -132,9 +133,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtI
-%			}
+			\new Voice {
+				\formatOboeIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIIMvtI \musicOboeIIMvtI
@@ -157,13 +158,13 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatOboeIIMvtII
+			}
 			\new Voice {
 				\generalOptions \partOptions \nameOboeIIMvtIII 
 				\timeMvtII \clef treble \key aes \major
-				\override Staff.MultiMeasureRest.space-increment = 3.47
+				\override Staff.MultiMeasureRest.space-increment = 3.14
 				R4.*20 \mark \default 
 				R4.*11 \mark \default
 				R4.*12 \mark \default
@@ -189,9 +190,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIII
-%			}
+			\new Voice {
+				\formatOboeIIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIIMvtIII \musicOboeIIMvtIII
@@ -207,6 +208,7 @@
 			}
 		}
 		\layout {
+			%system-count = #22
 			\context {
 				\CueVoice \layoutCueVoice
 			}

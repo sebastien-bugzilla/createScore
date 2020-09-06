@@ -3,8 +3,8 @@
 %  typesetter  : Sébastien MANEN
 %  date        : Monday 04 May 2020, 21:05
 \paper {
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
+	ragged-last-bottom = ##t
+	ragged-bottom = ##t
 	left-margin = 16 \mm
 	%annotate-spacing = ##t
 %	first-page-number = 0

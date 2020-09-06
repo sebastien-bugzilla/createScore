@@ -51,8 +51,8 @@ musicOboeIMvtIII = \relative c'' {
 	e\p r r4 r
 % Bars 51 to 55
 	R2.
-	c4._\crescmarkup e32([ g16.]) g32([ e16.)] e32([ c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32[( b16.]) b32[( g16.])
+	c4._\crescmarkup e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c4\f e, g
 	c16 b c d e d e f g g a b 
 % Bars 56 to 60

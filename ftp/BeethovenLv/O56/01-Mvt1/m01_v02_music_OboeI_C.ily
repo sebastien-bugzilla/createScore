@@ -264,7 +264,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	
-	\partcombineApart g'1^\pcresc \partcombineAutomatic \mark \default
+	\partcombineApart g'1_\pcresc \partcombineAutomatic \mark \default
 	c\ff~
 % Bars 326 to 330
 	c4 c8. c16 c4 c
@@ -300,7 +300,7 @@ musicOboeIMvtI = \relative c'' {
 	d r f r d r a r
 % Bars 356 to 360
 	d r f r d r bes r
-	a^\crescmarkup r c r a r f r
+	a_\crescmarkup r c r a r f r
 	c'2.\f(\> bes4)
 	a4\p r r2
 	R1*10
