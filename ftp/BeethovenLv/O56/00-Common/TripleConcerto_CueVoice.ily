@@ -392,7 +392,7 @@ cueVoiceClarinetIMvtI = \relative c'' {
 	R1*18
 	% bar 19 - 20
 	c1_\fcresc^\markup {Ob.I}
-	b8_( c d8. c16) c4 c
+	b8_[( c d8. c16)] c4 c
 	R1*31
 	% bar 52 - 55
 	r2 r8. g16_([^\markup {Viol.I} a8. g16])
@@ -405,10 +405,10 @@ cueVoiceClarinetIMvtI = \relative c'' {
 	g8._( f16) e2 f8._( d16)
 	R1*17
 	% bar 131
-	r8 e16_(^\markup {Pf.} e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
+	r8 e16_(-\tweak X-offset #-2 ^\markup {Pf.} e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
 	R1*15
 	% bar 147 - 148
-	\tuplet 3/2 4 {e'8^\markup {Pf.} e_( b) b_( gis) gis_( e) e_( b) b_( gis) gis_(
+	\tuplet 3/2 4 {e'8-\tweak X-offset #-2 ^\markup {Pf.} e_( b) b_( gis) gis_( e) e_( b) b_( gis) gis_(
 	e)\ff b' gis e' b gis' e b' gis} r8^\markup {Viol.II} \tuplet 3/2 8 {b,16_( cis dis)}
 	R1*14
 	% bar 163 - 164
@@ -420,19 +420,19 @@ cueVoiceClarinetIMvtI = \relative c'' {
 	d d d d gis gis gis gis
 	R1*98
 	% bar 323 - 324
-	r16 f,,^\markup {Pf.} g a b c d e f g a b c d e f
+	r16 f,,-\tweak X-offset #-2 ^\markup {Pf.} g a b c d e f g a b c d e f
 	r d,\ff e f g a b c  d e f g a b c d
 	R1*44
-	% bar 370
-	r8 a,16(^\markup {Viol.Conc} a') g,( g') f,( f') e,( e') d,( d') c,( c') bes,( bes')
+	% bar 369 - 370
+	r8 a,16(-\tweak X-offset #-7 ^\markup {Viol.Conc} a') g,( g') f,( f') e,( e') d,( d') c,( c') bes,( bes')
 	a,( a') r8 r4 r r
 	R1*13
 	% bar 384 - 385
-	\tuplet 3/2 4 {b'8^\markup {Viol.Conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
-	b)\ff b' g d' b g' d b' g} r8^\markup {Viol.II} \tuplet 3/2 8 {d16_( e fis)}
+	\tuplet 3/2 4 {b'8-\tweak X-offset #-7 ^\markup {Viol.Conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
+	b)\ff b' g d' b g' d b' g} r8-\tweak X-offset #-1 ^\markup {Viol.II} \tuplet 3/2 8 {d16_( e fis)}
 	R1*14
 	% bar 400 - 401
-	g,,8^\markup {Vlc.} r a r f r g4_(_~^\arco
+	g,,8-\tweak X-offset #-2.5 ^\markup {Vlc.} r a r f r g4_(_~^\arco
 	g e d8.) g,16\f[ a8. b16]
 	R1*60
 	% bar 462 - 465
@@ -443,7 +443,7 @@ cueVoiceClarinetIMvtI = \relative c'' {
 	aes8.[ c16 aes8. c16] s2
 	R1*47
 	% bar 514 - 516
-	b,,16(_\crescmarkup^\markup {Viol.I} c b c) e8.( d16) cis( d cis d) f8.( e16)
+	b,,16(_\crescmarkup-\tweak X-offset #-5 _\markup {Viol.I} c b c) e8.( d16) cis( d cis d) f8.( e16)
 	dis( e dis e) g8.( f16) e( f e f) a8. g16
 	f8.[ e16 d8. c16] b8. s16 s4
 }
@@ -451,7 +451,7 @@ cueVoiceClarinetIMvtII = \relative c' {
 	\transposition bes
 	R4.*19
 	% bar 20
-	r8 \tuplet 3/2 16 {r32 ees_([_\espressivo^\markup {Pf.} d] \tupletNeutral ees[ aes g] aes[ c b] c[ ees d])}
+	b'8\rest \tuplet 3/2 16 {b32\rest ees,_([_\espressivo^\markup {Pf.} d] \tupletNeutral ees[ aes g] aes[ c b] c[ ees d])}
 	R4.*18
 	% bar 39
 	aes'16^\trill^\markup {Viol.Conc} bes^\trill c8^~ \tuplet 3/2 16 {c32^([ a bes]} ees32. g,64)
@@ -480,7 +480,7 @@ cueVoiceClarinetIMvtIII = \relative c'' {
 	g,4.(^\markup {Viol.conc} a16 b c8 d)
 	\grace {c16( d)} e4( c4. b8)
 	a( f') b,( g'4) g8
-	g4(\f c,8) r r4
+	g4(-\tweak extra-offset #'(0 . 3) \f c,8) r r4
 	R2.*66
 	% bar 311 - 314
 	g'8_(^\markup {Viol.conc} d) d d e16_( d c d)
@@ -490,7 +490,7 @@ cueVoiceClarinetIMvtIII = \relative c'' {
 	R2.*18
 	R2*51
 	% bar 384 - 386
-	g''4.^\trill^\markup {Viol.Conc} a16 b
+	g''4.-\tweak extra-offset #'(0 . -3) ^\trill -\tweak X-offset #-3 ^\markup {Viol.Conc} a16 b
 	d\p c b c d c b a
 	a^( g) fis g a^( g) fis g
 	R2*36
@@ -519,11 +519,11 @@ cueVoiceClarinetIIMvtI = \relative c'' {
 	g8._( f16) e2 f8._( d16)
 	R1*17
 	% bar 131
-	r8 e16_(^\markup {Pf.} e') d,_( d') c,_( c') b,_( b') a,_( a') g,_( g') f,_( f')
+	r8 e16^(-\tweak X-offset #-2.5 ^\markup {Pf.} e') d,^( d') c,^( c') b,^( b') a,^( a') g,^( g') f,^( f')
 	R1*15
 	% bar 147 - 148
-	\tuplet 3/2 4 {e'8^\markup {Pf.} e_( b) b_( gis) gis_( e) e_( b) b_( gis) gis_(
-	e)\ff b' gis e' b gis' e b' gis} r8^\markup {Vla} \tuplet 3/2 8 {b,,16_( cis dis)}
+	\tuplet 3/2 4 {e'8-\tweak X-offset #-2.5 ^\markup {Pf.} e_( b) b_( gis) gis_( e) e_( b) b_( gis) gis_(
+	e)\ff b' gis e' b gis' e b' gis} r8^\markup {Vla} \tuplet 3/2 8 {b,,16_( cis dis)} 
 	R1*14
 	% bar 163 - 164
 	e,8^\markup {Vlc.} r fis r d r e4_~^\arco
@@ -538,16 +538,16 @@ cueVoiceClarinetIIMvtI = \relative c'' {
 		R1
 		g,
 	} \\ {
-		g,_~^\markup {Fag.II}
-		g^\markup {Fag.I}_\crescmarkup
+		g,_~-\tweak X-offset #-6 _\markup {Fag.II}
+		g-\tweak extra-offset #'(-4.5 . -6) ^\markup {Fag.I}_\crescmarkup
 	} >>
 	R1*44
 	% bar 369 - 370
-	r8 a''16(^\markup {Viol.Conc} a') g,( g') f,( f') e,( e') d,( d') c,( c') bes,( bes')
-	a,( a') r8 r4 r r
+	r8 a''16^(-\tweak X-offset #-7.5 ^\markup {Viol.Conc} a') g,^( g') f,^( f') e,^( e') d,^( d') c,^( c') bes,^( bes')
+	a,^( a') d,8\rest d4\rest s s
 	R1*13
 	% bar 384 - 385
-	\tuplet 3/2 4 {b8^\markup {Viol.Conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
+	\tuplet 3/2 4 {b'8-\tweak X-offset #-7 ^\markup {Viol.Conc} b_( g) g_( d) d_( b) b_( g) g_( d) d_(
 	b)\ff b' g d' b g' d b' g} r8^\markup {Vla} \tuplet 3/2 8 {d,16_( e fis)}
 	R1*14
 	% bar 400 - 401
@@ -555,7 +555,7 @@ cueVoiceClarinetIIMvtI = \relative c'' {
 	g e d8.) g,16\f[ a8. b16]
 	R1*60
 	% bar 462 - 466
-	c'''2.^\markup {Fl.} c4^(
+	\textOsp #1 c'''2.^\markup {Fl.} c4^(
 	ees2. des4)
 	bes bes \acciaccatura c bes8.[^( aes16 bes8. c16])
 	aes2^~ aes8 ees c ees
@@ -567,7 +567,7 @@ cueVoiceClarinetIIMvtI = \relative c'' {
 	g4 r r2
 	R1*35
 	% bar 514 - 516
-	b,16(_\crescmarkup^\markup {Viol.I} c b c) e8.( d16) cis( d cis d) f8.( e16)
+	b,16(_\crescmarkup-\tweak X-offset #-5 ^\markup {Viol.I} c b c) e8.( d16) cis( d cis d) f8.( e16)
 	dis( e dis e) g8.( f16) e( f e f) a8. g16
 	f8.[ e16 d8. c16] b8. s16 s4
 }
@@ -575,7 +575,7 @@ cueVoiceClarinetIIMvtII = \relative c' {
 	\transposition bes
 	R4.*19
 	% bar 20
-	r8 \tuplet 3/2 16 {r32 ees_([_\espressivo^\markup {Pf.} d] \tupletNeutral ees[ aes g] aes[ c b] c[ ees d])}
+	b'8\rest \tuplet 3/2 16 {b32\rest ees,_([_\espressivo-\tweak X-offset #-2.5 ^\markup {Pf.} d] \tupletNeutral ees[ aes g] aes[ c b] c[ ees d])}
 	R4.*19
 	% bar 40 - 42
 	d4_(\pp^\markup {Cl.I} cis16 d)
@@ -586,7 +586,7 @@ cueVoiceClarinetIIMvtII = \relative c' {
 cueVoiceClarinetIIMvtIII = \relative c'' {
 	R2.*28
 	% bar 29 - 31
-	\tuplet 6/4 4 {r16 g_(^\markup {Viol.Conc} fis g fis g) g, b'_( ais b ais b) g, d''_( cis d cis d)}
+	\tuplet 6/4 4 {r16 g_(-\tweak X-offset #-6 ^\markup {Viol.Conc} fis g fis g) g, b'_( ais b ais b) g, d''_( cis d cis d)}
 	d2\trill_~ d8.._( cis32)
 	d2*1/2\f\fermata s2
 	R2.*46
@@ -604,7 +604,7 @@ cueVoiceClarinetIIMvtIII = \relative c'' {
 	d2*1/2\fermata s2
 	R2.*70
 	% bar 220 - 221
-	r8 g16\pp^\markup {Ob.I} g g8 g g g
+	r8 g16-\tweak extra-offset #'(0 . 3.5) \pp-\tweak X-offset #-3 ^\markup {Ob.I} g g8 g g g
 	g2.
 	R2.*3
 	% bar 225
@@ -613,17 +613,17 @@ cueVoiceClarinetIIMvtIII = \relative c'' {
 	% bar 241 - 244
 	g4.(^\markup {Viol.conc} a16 b c8 d)
 	\grace {c16( d)} e4( c4. b8)
-	a( f') b,( g'4) g8
+	a([ f')] b,( g'4) g8
 	g4(\f c,8) r r4
 	R2.*78
 	% bar 323 - 325
-	r16 fis,(^\markup {Pf.} g a b c d e g f! e d)
+	r16 fis,(-\tweak X-offset #-2.5 ^\markup {Pf.} g a b c d e g f! e d)
 	e( g, a b c d e f a g f e
 	d) fis,( g <fis a> <g b> <a c> <b d> <c e> <e g> <d f!> <c e> <b d>)
 	R2.*7
 	R2*51
 	% bar 384 - 386
-	g'4.^\trill^\markup {Viol.Conc} a16 b
+	g'4.^\trill-\tweak X-offset #-8 ^\markup {Viol.Conc} a16 b
 	d\p c b c d c b a
 	a^( g) fis g a^( g) fis g
 	R2*36

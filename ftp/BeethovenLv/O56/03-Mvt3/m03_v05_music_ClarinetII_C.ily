@@ -132,13 +132,13 @@ musicClarinetIIMvtIII = \relative c'' {
 	c8) r r4 r
 % Bars 161 to 165
 	d'4\sf( c8) r r4
-	r c,(\f f8) r
+	r c,(\sf f8) r
 	R2.*3
 % Bars 166 to 170
 	gis8\p gis16 gis gis8-. gis-. a-. a-. 
 	gis8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
-	e4.\sf f8 e d
+	e4.\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e-.
 % Bars 171 to 175
 	a,\p r r4 r
@@ -239,7 +239,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	e2.\pp(
 	f)~
-	f8 b, d b d b
+	f8 b,-. d-. b-. d-. b-.
 % Bars 276 to 280
 	e8 r r4 r
 	R2.*2

@@ -10,7 +10,7 @@ musicClarinetIIMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*18
+	<>-\tweak X-offset #-2 ^\tutti R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -58,9 +58,9 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 51 to 55
 	
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
-		\ni R1
-		R
-		R
+		\ni \mmrPos #-6 R1
+		\mmrPos #-6 R
+		\mmrPos #-6 R
 		\mmrPos #-6 R \no
 	}
 % Bars 56 to 60
@@ -70,10 +70,10 @@ musicClarinetIIMvtI = \relative c' {
 	fis2\ff fis
 	fis4 fis fis fis
 % Bars 61 to 65
-	g r r g
+	g r r g-.
 	fis-. r r fis-.
 	g-. r r8. g16[-. g8.-. g16-.]
-	fis4 r r8. fis16-.[ fis8.-. fis16-.]
+	fis4-. r r8. fis16-.[ fis8.-. fis16-.]
 	g4-. r8. g16-. fis4-. r8. fis16-.
 % Bars 66 to 70
 	g4-. r8. g16-. fis4-. r8. fis16-.
@@ -87,7 +87,7 @@ musicClarinetIIMvtI = \relative c' {
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
 		\ni R1 \no
 	}
-	e\ff \mark \default
+	e\ff \markYoffset #4.5 \mark \default
 	c4 r^\solo r2
 % Bars 76 to 80
 	R1*21
@@ -114,7 +114,7 @@ musicClarinetIIMvtI = \relative c' {
 	f~
 % Bars 116 to 120
 	f
-	e \mark \default
+	e \markYoffset #4.5 \mark \default
 	e8\p^\solo r r4 r2
 	R1*12
 % Bars 121 to 125
@@ -122,10 +122,10 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 126 to 130
 	
 % Bars 131 to 135
-	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
-		\ni R1 \no
+	\cueDuring #"cueVoiceClarinetIIMvtI" #DOWN {
+		\ni \mmrPos #-8 R1 \no
 	}
-	e4\f e2( f8. d16)
+	e4\f-. e2( f8. d16)
 	g4 r r2
 	R1*13
 % Bars 136 to 140
@@ -136,9 +136,9 @@ musicClarinetIIMvtI = \relative c' {
 	
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
 		\ni R1
-		R \no \mark \default
+		R \no \markXoffset #-0.3 \mark \default
 	}
-	e2\ff^\tutti b'4-. gis-.
+	e2\ff-\tweak X-offset #1. ^\tutti b'4-. gis-.
 	e-. e'-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -184,9 +184,9 @@ musicClarinetIIMvtI = \relative c' {
 	
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
 		\ni R1
-		R \no \mark \default
+		R \no \markXoffset #-0.3 \mark \default
 	}
-	f2.\ff^\tutti f4
+	f2.\ff-\tweak X-offset #1 ^\tutti f4
 % Bars 226 to 230
 	e2. e4
 	bes4 bes bes bes
@@ -207,7 +207,7 @@ musicClarinetIIMvtI = \relative c' {
 	a-. b-. a-. b-. 
 % Bars 241 to 245
 	a r r2
-	<>^\solo R1*35
+	<>-\tweak X-offset #-2 ^\solo R1*35
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -221,7 +221,7 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 271 to 275
 	
 % Bars 276 to 280
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	R1*46
 % Bars 281 to 285
 	
@@ -243,10 +243,10 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
-		\ni R1
-		R \mark \default \no
+		\ni \mmrPos #4 R1
+		\mmrPos #4 R \mark \default \no
 	}
-	c,2\ff(^\tutti b8[ c e8. d16)]
+	c,2\ff(-\tweak X-offset #1 ^\tutti b8[ c e8. d16)]
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -286,9 +286,9 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	
-	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
-		\ni R1 \no
-		r2^\tutti } r4 c,~\f
+	\cueDuring #"cueVoiceClarinetIIMvtI" #DOWN {
+		\ni \mmrPos #-6 R1 \no
+		a,2\rest^\tutti } r4 c~\f
 % Bars 371 to 375
 	c^\solo r r2
 	R1*12
@@ -300,10 +300,10 @@ musicClarinetIIMvtI = \relative c' {
 	
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
 		\ni R1
-		R \mark \default \no
+		R \markXoffset #-0.3 \mark \default \no
 	}
 % Bars 386 to 390
-	g'2\ff^\tutti d4-. b-.
+	g'2\ff-\tweak X-offset #1 ^\tutti d4-. b-.
 	g-. g'-. d-. b-.
 	g-.^\solo r r2
 	R1*11
@@ -351,7 +351,7 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 461 to 465
 	\mark \default
 	\cueDuring #"cueVoiceClarinetIIMvtI" #UP {
-		\ni R1^\tutti
+		\ni  <>-\tweak X-offset #-7 ^\tutti R1
 		R
 		R
 		R \no
@@ -379,7 +379,7 @@ musicClarinetIIMvtI = \relative c' {
 	f8 r r4 r8. c16[-. c8.-. c16]-. 
 	c8 r r4 r2
 % Bars 491 to 495
-	R1 \mark \default
+	R1 \markYoffset #4.5 \mark \default
 	r8. g'16[\mf-. g8.-. g16]-. g4 r
 	r8. f16[ f8. f16] f8 r r4
 	R1*20
@@ -399,8 +399,8 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 516 to 520
 		r2 } r8. d'16[\f-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
-	g4-.\ff^\solo r r2
+	f4-.\ff r r2 \markXoffset #-0.2 \mark \default
+	g4-.\ff-\tweak X-offset #1 ^\solo r r2
 	c,4 r r d8 r
 % Bars 521 to 525
 	e r d r e r d r

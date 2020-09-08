@@ -123,11 +123,11 @@ mmrPos = #(define-music-function
 	#}
 )
 
-markXOffset = #(define-music-function
+markXoffset = #(define-music-function
 	(offset)
 	(number?)
 	#{
-		\once \override Score.RehearsalMark.X-offset = #offset
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
 	#}
 )
 
@@ -187,6 +187,15 @@ mmrLength = #(define-music-function
 	#}
 )
 
+
+textOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Staff.TextScript.padding = #0
+		\once \override Staff.TextScript.Y-offset = #offset
+	#}
+)
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

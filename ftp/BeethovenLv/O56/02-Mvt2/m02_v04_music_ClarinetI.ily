@@ -10,7 +10,7 @@ musicClarinetIMvtII = \relative c'' {
 	\key bes \major
 	\transposition bes
 % Bars 1 to 5
-	<>^\tutti R4.*19
+	<>-\tweak X-offset #-3 ^\tutti R4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15

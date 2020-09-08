@@ -58,10 +58,10 @@ musicClarinetIMvtI = \relative c' {
 	a2\ff a
 	a4 a a a
 % Bars 61 to 65
-	b r r b
+	b r r b-.
 	a-. r r a-.
 	b-. r r8. b16[-. b8.-. b16-.]
-	a4 r r8. a16-.[ a8.-. a16-.]
+	a4-. r r8. a16-.[ a8.-. a16-.]
 	b4-. r8. b16-. a4-. r8. a16-.
 % Bars 66 to 70
 	b4-. r8. b16-. a4-. r8. a16-.
@@ -107,7 +107,7 @@ musicClarinetIMvtI = \relative c' {
 	
 % Bars 131 to 135
 	
-	c4\f c2( d8. b16)
+	c4\f-. c2( d8. b16)
 	e4 r r2
 	R1*15
 % Bars 136 to 140

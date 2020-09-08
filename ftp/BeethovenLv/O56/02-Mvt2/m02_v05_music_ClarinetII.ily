@@ -10,7 +10,7 @@ musicClarinetIIMvtII = \relative c'' {
 	\key bes \major
 	\transposition bes
 % Bars 1 to 5
-	R4.*19
+	<>-\tweak X-offset #-3 ^\tutti R4.*19
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -55,5 +55,5 @@ musicClarinetIIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 % Bars 51 to 53
-	\bar "||"
+	\bar "||" \key c \major \time 3/4 \attacca
 }

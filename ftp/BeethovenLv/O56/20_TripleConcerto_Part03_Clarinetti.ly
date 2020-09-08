@@ -46,7 +46,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 "Triple Concerto""
+			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 \"Triple Concerto\""
 		}
 		instrument = \markup {
 			"Clarinetti"
@@ -54,9 +54,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatClarinetIMvtI
-%			}
+			\new Voice {
+				\formatClarinetIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameClarinetIMvtI \musicClarinetIMvtI
@@ -79,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatClarinetIMvtII
-%			}
+			\new Voice {
+				\formatClarinetIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameClarinetIMvtII \musicClarinetIMvtII
@@ -104,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatClarinetIMvtIII
-%			}
+			\new Voice {
+				\formatClarinetIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameClarinetIMvtIII \musicClarinetIMvtIII
@@ -129,16 +129,16 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatClarinetIIMvtI
-%			}
+			\new Voice {
+				\formatClarinetIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameClarinetIIMvtI \musicClarinetIIMvtI
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -154,9 +154,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatClarinetIIMvtII
-%			}
+			\new Voice {
+				\formatClarinetIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameClarinetIIMvtII \musicClarinetIIMvtII
@@ -179,16 +179,16 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatClarinetIIMvtIII
-%			}
+			\new Voice {
+				\formatClarinetIIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameClarinetIIMvtIII \musicClarinetIIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

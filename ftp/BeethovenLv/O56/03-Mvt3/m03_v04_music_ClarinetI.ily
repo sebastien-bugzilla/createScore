@@ -104,7 +104,7 @@ musicClarinetIMvtIII = \relative c'' {
 		\ni \mmrPos #-6 R2.
 		R \no
 	}
-	<< e2.~ {s8-\tweak X-offset #-2 \pp\< s s s s\> s}>>
+	<< e2.~ {s8-\tweak X-offset #-3 \pp\< s s s s s\>}>>
 	e8\! r r4 r
 	R2.*27
 % Bars 121 to 125
@@ -121,7 +121,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	\cueDuring #"cueVoiceClarinetIMvtIII" #UP {
 		\ni R2.
-		R \no \mark \default
+		R \no \markYoffset #4.5 \mark \default
 		r4 } d'\fermata\ff r
 	R2.*5
 % Bars 151 to 155
@@ -138,13 +138,13 @@ musicClarinetIMvtIII = \relative c'' {
 	e8) r r4 r
 % Bars 161 to 165
 	e'4\sf~ e8 r r4
-	r c(\f f,8) r
+	r c(\sf f,8) r
 	R2.*3
 % Bars 166 to 170
 	b8\p b16 b b8-. b-. c-. c-. 
 	b8\f r r4 e8\sf e16 e
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
-	e4.\sf f8 e d
+	e4.\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
 	a\p r^\solo r4 r
@@ -284,7 +284,7 @@ musicClarinetIMvtIII = \relative c'' {
 		\ni R2.
 		R
 		R \no
-		r2 } g4_\semprepp(
+		r2 } g4-\tweak X-offset #-5 _\semprepp(
 	b2.)~
 % Bars 316 to 320
 	b~
@@ -297,7 +297,7 @@ musicClarinetIMvtIII = \relative c'' {
 	g2.~
 	g~
 	g~
-	g_\crescmarkup \mark \default
+	g_\crescmarkup \markYoffset #4.5 \mark \default
 % Bars 326 to 330
 	c8\f-. g-. c-. g-. e-. c-. 
 	g g'16 g b8 b16 b d8 d16 d
@@ -336,7 +336,7 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 386 to 390
 		\mmrPos #-4 R \no \mark \default
 	}
-	g8\f(^\tutti a16 b c8 d)
+	g8\f(-\tweak X-offset #1 ^\tutti a16 b c8 d)
 	e4( c8) r
 	R2
 	r4 g8 g
@@ -381,7 +381,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 % Bars 441 to 445
 	R2
 	\ni R2\fermataMarkup \no \bar "||"
