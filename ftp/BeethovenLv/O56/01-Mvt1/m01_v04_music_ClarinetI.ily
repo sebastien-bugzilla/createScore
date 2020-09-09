@@ -20,8 +20,8 @@ musicClarinetIMvtI = \relative c' {
 	
 	
 	\cueDuring #"cueVoiceClarinetIMvtI" #UP {
-		\ni R1
-		R \no
+		\ni \mmrPos #-6 R1
+		\mmrPos #-6 R \no
 	}
 % Bars 21 to 25
 	f1\ff

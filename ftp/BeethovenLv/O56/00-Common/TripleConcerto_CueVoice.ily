@@ -391,7 +391,7 @@ cueVoiceOboeIIMvtIII = \relative c'' {
 cueVoiceClarinetIMvtI = \relative c'' {
 	R1*18
 	% bar 19 - 20
-	c1_\fcresc^\markup {Ob.I}
+	c1-\tweak extra-offset #'(0 . 3.5) _\fcresc^\markup {Ob.I}
 	b8_[( c d8. c16)] c4 c
 	R1*31
 	% bar 52 - 55
@@ -438,7 +438,7 @@ cueVoiceClarinetIMvtI = \relative c'' {
 	% bar 462 - 465
 	c'''2.^\markup {Fl.} c4^(
 	ees2. des4)
-	bes bes \acciaccatura c bes8.[^( aes16 bes8. c16])
+	bes bes \acciaccatura c8 bes8.[^( aes16 bes8. c16])
 	aes2^~ aes8 ees c ees
 	aes8.[ c16 aes8. c16] s2
 	R1*47
@@ -502,8 +502,8 @@ cueVoiceClarinetIMvtIII = \relative c'' {
 cueVoiceClarinetIIMvtI = \relative c'' {
 	R1*18
 	% bar 19 - 20
-	c1_\fcresc^\markup {Ob.I}
-	b8_( c d8. c16) c4 c
+	c1-\tweak extra-offset #'(0 . 2.5) _\fcresc^\markup {Ob.I}
+	b8_([ c d8. c16)] c4 c
 	R1*31
 	% bar 52 - 55
 	r2 r8. g16_([^\markup {Viol.I} a8. g16])
@@ -557,7 +557,7 @@ cueVoiceClarinetIIMvtI = \relative c'' {
 	% bar 462 - 466
 	\textOsp #1 c'''2.^\markup {Fl.} c4^(
 	ees2. des4)
-	bes bes \acciaccatura c bes8.[^( aes16 bes8. c16])
+	bes bes \acciaccatura c8 bes8.[^( aes16 bes8. c16])
 	aes2^~ aes8 ees c ees
 	aes8.[ c16 aes8. c16] s2
 	R1*9
@@ -614,7 +614,7 @@ cueVoiceClarinetIIMvtIII = \relative c'' {
 	g4.(^\markup {Viol.conc} a16 b c8 d)
 	\grace {c16( d)} e4( c4. b8)
 	a([ f')] b,( g'4) g8
-	g4(\f c,8) r r4
+	g4(-\tweak extra-offset #'(0 . 4) \f c,8) r r4
 	R2.*78
 	% bar 323 - 325
 	r16 fis,(-\tweak X-offset #-2.5 ^\markup {Pf.} g a b c d e g f! e d)
@@ -624,7 +624,7 @@ cueVoiceClarinetIIMvtIII = \relative c'' {
 	R2*51
 	% bar 384 - 386
 	g'4.^\trill-\tweak X-offset #-8 ^\markup {Viol.Conc} a16 b
-	d\p c b c d c b a
+	d-\tweak extra-offset #'(0 . 2) \p c b c d c b a
 	a^( g) fis g a^( g) fis g
 	R2*36
 	% bar 423 - 425
