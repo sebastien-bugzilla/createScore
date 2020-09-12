@@ -39,7 +39,7 @@ musicFagottoIMvtIII = \relative c' {
 	a( f') b,(\noBeam g'4) g8
 % Bars 41 to 45
 	g4\sf( c,8) r f4\sf(
-	e16) b c d e d c b a gis a b
+	e16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
 	f g a b c b a g f e d c
@@ -51,8 +51,8 @@ musicFagottoIMvtIII = \relative c' {
 	\once \partcombineApart c r r4 r
 % Bars 51 to 55
 	R2.
-	c'4._\crescmarkup e32[( g16.]) g32([ e16.]) e32[( c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32[( b16.]) b32[( g16.])
+	c'4._\crescmarkup e32[( g16.-.]) g32([ e16.-.]) e32[( c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c8..\f[ c,32 e8.. e32 g8.. g32]
 	c8..[ c32 e,8.. e32 g8.. g32]
 % Bars 56 to 60
@@ -426,8 +426,8 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 456 to 460
 	
-	c4. e32[( g16.]) g32[( e16.]) e32[( c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32([ b16.]) b32[( g16.)] \mark \default
+	c4. e32[( g16.-.]) g32[( e16.-.]) e32[( c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32([ b16.-.]) b32[( g16.-.)] \mark \default
 	c4. e8-.\sf g,-. b-.
 	c8 r r4 r
 % Bars 461 to 465

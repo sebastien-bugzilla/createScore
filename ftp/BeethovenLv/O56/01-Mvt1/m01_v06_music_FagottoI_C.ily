@@ -72,8 +72,8 @@ musicFagottoIMvtI = \relative c' {
 % Bars 61 to 65
 	d \partcombineApart d-. d2~
 	d4 d-. d2~
-	d8.[-. d16-. d8.-. d16]-. d2~
-	d8.[-. d16-. d8.-. d16]-. d2~
+	d8.[ d16-. d8.-. d16]-. d2~
+	d8.[ d16-. d8.-. d16]-. d2~
 	d8. d16-. d4~ d8. d16-. d4~
 % Bars 66 to 70
 	d8. d16-. d4~ d8. d16-. d4~
@@ -255,7 +255,7 @@ musicFagottoIMvtI = \relative c' {
 	\partcombineApart r2 cis8[( d e8. d16]) \partcombineAutomatic
 % Bars 291 to 295
 	R1
-	\partcombineApart r2 b8[( c e8. c16]) \partcombineAutomatic
+	\partcombineApart r2 b8[( c! e8. c16]) \partcombineAutomatic
 	R1
 	\partcombineApart r2 cis8([ d f8. d16]) \partcombineAutomatic
 	R1
@@ -307,7 +307,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 351 to 355
 	b2~ b8 r d\p r
 	b r d r b r g r \mark #11
-	cis2~ cis8 r e\p r
+	cis2~\f cis8 r e\p r
 	cis r e r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
@@ -411,7 +411,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 491 to 495
 	R1 \mark \default
 	R1
-	r8. f16[-.\mf f8.-. f16]-. f8 r r4
+	r8. f16[\mf f8. f16] f8 r r4
 	R1*20
 % Bars 496 to 500
 	

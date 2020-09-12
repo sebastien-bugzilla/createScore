@@ -187,7 +187,6 @@ mmrLength = #(define-music-function
 	#}
 )
 
-
 textOffset = #(define-music-function
 	(offset)
 	(number?)
@@ -196,6 +195,15 @@ textOffset = #(define-music-function
 		\once \override Staff.TextScript.Y-offset = #offset
 	#}
 )
+
+dynEsw = #(define-music-function
+	(width)
+	(pair?)
+	#{
+		\once \override DynamicText.extra-spacing-width = #width
+	#}
+)
+
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

@@ -21,6 +21,7 @@
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_PartFagotti.ily"
+%\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v06_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoII.ily"
@@ -54,9 +55,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtI
-%			}
+			\new Voice {
+				\formatFagottoIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottoIMvtI \musicFagottoIMvtI
@@ -72,6 +73,7 @@
 			}
 		}
 		\layout {
+			%system-count = #32
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -104,16 +106,16 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtIII
-%			}
+			\new Voice {
+				\formatFagottoIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottoIMvtIII \musicFagottoIMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -122,6 +124,7 @@
 			}
 		}
 		\layout {
+			%system-count = #39
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -129,9 +132,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtI
-%			}
+			\new Voice {
+				\formatFagottoIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottoIIMvtI \musicFagottoIIMvtI
@@ -154,9 +157,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtII
-%			}
+			\new Voice {
+				\formatFagottoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameFagottoIIMvtII \musicFagottoIIMvtII
@@ -179,9 +182,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIIMvtIII
-%			}
+			\new Voice {
+				\formatFagottoIIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottoIIMvtIII \musicFagottoIIMvtIII

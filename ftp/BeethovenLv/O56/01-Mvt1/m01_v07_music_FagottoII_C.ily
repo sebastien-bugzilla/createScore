@@ -411,7 +411,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 491 to 495
 	R1 \mark \default
 	R1
-	r8. f16[-.\mf f8.-. f16]-. f8 r r4
+	r8. f16[\mf f8. f16] f8 r r4
 	R1*20
 % Bars 496 to 500
 	

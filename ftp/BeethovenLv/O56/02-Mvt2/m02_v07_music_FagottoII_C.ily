@@ -22,7 +22,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 	\mark \default
 % Bars 21 to 25
-	aes4( g16 aes)
+	aes4(\p g16 aes)
 	bes8 r bes
 	bes(~\noBeam  bes16. g32 aes16. bes32)
 	g8 r r

@@ -10,7 +10,7 @@ musicFagottoIMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*12
+	<>-\tweak X-offset #-3 ^\tutti R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -46,21 +46,21 @@ musicFagottoIMvtI = \relative c' {
 	r2 r4 gis(\p
 	a b c d)
 % Bars 36 to 40
-	e1_\crescmarkup~
+	e1-\tweak X-offset #-1 _\crescmarkup~
 	e2.\p e4~
 	e2. c4(
 	b d c a)
 	g r r2
 % Bars 41 to 45
 	R1
-	r2 r4 \clef tenor cis(\p
+	r2 r4 cis(\p
 	d e f g)
 	a1_\dimmarkup(
 	aes)(\pp
 % Bars 46 to 50
 	aes)_\crescmarkup(
 	aes4)\p( ees) ees-.( ees-.)
-	ees2.(^\crescmarkup des4)
+	ees2.(_\crescmarkup des4)
 	c1\sf\>(~
 	c2\pp d!
 % Bars 51 to 55
@@ -70,7 +70,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 % Bars 56 to 60
-	\clef bass g1(_\pcresc
+	g1(_\pcresc
 	f)
 	e2( ees)
 	ees'\ff ees
@@ -78,8 +78,8 @@ musicFagottoIMvtI = \relative c' {
 % Bars 61 to 65
 	d d-. d2~
 	d4 d-. d2~
-	d8.[-. d16-. d8.-. d16]-. d2~
-	d8.[-. d16-. d8.-. d16]-. d2~
+	d8.[ d16-. d8.-. d16]-. d2~
+	d8.[ d16-. d8.-. d16]-. d2~
 	d8. d16-. d4~ d8. d16-. d4~
 % Bars 66 to 70
 	d8. d16-. d4~ d8. d16-. d4~
@@ -125,7 +125,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 116 to 120
 	d-. d-. \acciaccatura e8 d8.([ c16 d8. e16])
 	c2~ c8 g-. e-. g-. \mark \default
-	c,\p^\solo r r4 r2
+	c,\p-\tweak X-offset #1 ^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -152,9 +152,9 @@ musicFagottoIMvtI = \relative c' {
 	
 	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
 		\ni R1
-		\mmrPos #-6 R \no \mark \default
+		\mmrPos #-6 R \no \markXoffset #-0.2 \mark \default
 	}
-	e'2\ff^\tutti b'4-. gis-.
+	e'2\ff-\tweak X-offset #1 ^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -208,9 +208,9 @@ musicFagottoIMvtI = \relative c' {
 	
 	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
 		\ni \clef treble R1
-		R \clef bass \no \mark \default
+		R \clef bass \no \markXoffset #-0.3 \mark \default
 	}
-	a2.\ff^\tutti a4(
+	a2.\ff-\tweak X-offset #0.7 ^\tutti a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.[( f16 g8. a16)]
@@ -247,12 +247,12 @@ musicFagottoIMvtI = \relative c' {
 		\ni R1
 		R \no
 	}
-	a1\pp~
-	a~
-	a~
+	a1\pp~^\one
+	a~^\two
+	a~^\three
 % Bars 271 to 275
-	a~
-	a~
+	a~^\four
+	a~^\five
 	a4 r r2
 	R1*3
 	
@@ -276,7 +276,7 @@ musicFagottoIMvtI = \relative c' {
 	r2 cis8[( d e8. d16])
 % Bars 291 to 295
 	R1
-	r2 b8[( c e8. c16])
+	r2 b8[( c! e8. c16])
 	R1
 	r2 cis8([ d f8. d16])
 	R1
@@ -296,7 +296,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 321 to 325
 	
 	\cueDuring #"cueVoiceFagottoIMvtI" #UP {
-		\ni << \mmrPos #-6 R1 {s2 \clef treble s \clef bass}>>
+		\ni << \mmrPos #-8 R1 {s2 \clef treble s \clef bass}>>
 		R1 \no
 	}
 	g'1_\crescmarkup \mark \default
@@ -330,7 +330,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 351 to 355
 	b2\f~ b8 r d\p r
 	b r d r b r g r \mark #11
-	cis2~ cis8 r e\p r
+	cis2~\f cis8 r e\p r
 	cis r e r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
@@ -365,7 +365,7 @@ musicFagottoIMvtI = \relative c' {
 		R \no \mark \default
 	}
 % Bars 386 to 390
-	g2\ff^\tutti d'4-. b-.
+	g2\ff-\tweak X-offset #1.2 ^\tutti d'4-. b-.
 	g-. g-. d-. b-.
 	g-.^\solo r r2
 	R1*11
@@ -454,7 +454,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 491 to 495
 	R1 \mark \default
 	R1
-	r8. f16[-.\mf f8.-. f16]-. f8 r r4
+	r8. f16[\mf f8. f16] f8 r r4
 	R1*20
 % Bars 496 to 500
 	

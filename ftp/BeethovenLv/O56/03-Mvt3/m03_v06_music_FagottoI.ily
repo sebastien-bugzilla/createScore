@@ -46,7 +46,7 @@ musicFagottoIMvtIII = \relative c' {
 	a( f') b,(\noBeam g'4) g8
 % Bars 41 to 45
 	g4\sf( c,8) r f4\sf(
-	e16) b c d e d c b a gis a b
+	e16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
 	f g a b c b a g f e d c
@@ -58,8 +58,8 @@ musicFagottoIMvtIII = \relative c' {
 	c\p r r4 r
 % Bars 51 to 55
 	R2.
-	c'4._\crescmarkup e32[( g16.]) g32([ e16.]) e32[( c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32[( b16.]) b32[( g16.])
+	c'4._\crescmarkup e32[( g16.-.]) g32([ e16.-.]) e32[( c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
 	c8..\f[ c,32 e8.. e32 g8.. g32]
 	c8..[ c32 e,8.. e32 g8.. g32]
 % Bars 56 to 60
@@ -137,7 +137,7 @@ musicFagottoIMvtIII = \relative c' {
 	r8 g16-.\pp g-. g8-. g-. g-. r
 % Bars 136 to 140
 	r8 c16-. c-. c8-. c-. c-. r
-	<>^\solo R2.*10
+	<>-\tweak X-offset #-2 ^\solo R2.*10
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -172,7 +172,7 @@ musicFagottoIMvtIII = \relative c' {
 	b8 e4\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a\p\noBeam c16\pp^\solo c c8 c c c
+	a\p\noBeam \dynEsw #'(-4 . 0) c16\pp^\solo c c8 c c c
 	r8 c16 c c8 c c c
 	r8 e16 e e8 e f f
 	e r r4 r
@@ -200,12 +200,12 @@ musicFagottoIMvtIII = \relative c' {
 	r8 d16 d d8 d d d
 	r8 c16 c c8 c d d
 	c r r4 r
-	r8 \clef tenor e16 e e8 e e e
+	r8 e16 e e8 e e e
 % Bars 196 to 200
 	r8 e16 e e8 e g g
 	r8 f16 f f8 f g g
 	f r r4 r
-	\clef bass r8 b,16 b b8 b b b
+	r8 b,16 b b8 b b b
 	r8 b16 b b8 b d d
 % Bars 201 to 205
 	r8 c16 c c8 c d d
@@ -389,7 +389,7 @@ musicFagottoIMvtIII = \relative c' {
 	R2*3
 % Bars 386 to 390
 	\mark \default
-	g,8\f(^\tutti a16 b c8 d)
+	g,8\f(-\tweak X-offset #1.5 ^\tutti a16 b c8 d)
 	e4( c8) r
 	f16( g f e d e d c)
 	b( c b a) g8-. g-.
@@ -457,8 +457,8 @@ musicFagottoIMvtIII = \relative c' {
 	
 % Bars 456 to 460
 	
-	c4. e32[( g16.]) g32[( e16.]) e32[( c16.])
-	c32[( b16.]) b4 b32[( d16.]) d32([ b16.]) b32[( g16.)] \mark \default
+	c4. e32[( g16.-.]) g32[( e16.-.]) e32[( c16.-.])
+	c32[( b16.-.]) b4 b32[( d16.-.]) d32([ b16.-.]) b32[( g16.-.)] \mark \default
 	c4. e8-.\sf g,-. b-.
 	c8 r r4 r
 % Bars 461 to 465

@@ -10,7 +10,7 @@ musicFagottoIIMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*18
+	<>-\tweak X-offset #-2 ^\tutti R1*18
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -49,7 +49,7 @@ musicFagottoIIMvtI = \relative c {
 	g r r2
 % Bars 41 to 45
 	R1
-	r2 r4 \clef tenor e(\p
+	r2 r4 e(\p
 	f cis' d e)
 	f1_\dimmarkup~
 	f~\pp
@@ -60,21 +60,21 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 % Bars 51 to 55
-	\clef bass r2 a,\pp
+	r2 a,\pp
 	d,4 r r2
 	R1
-	g1(
+	g1(\p
 	f)
 % Bars 56 to 60
-	e1(_\pcresc
+	e1(_\crescmarkup
 	d
 	c)
 	c'2\ff c
 	c4 c c c
 % Bars 61 to 65
 	b r r g-.
-	d4 r r d
-	g, r r8. g'16[-. g8.-. g16]-. 
+	d4-. r r d-.
+	g,-. r r8. g'16[-. g8.-. g16]-. 
 	d4-. r r8. d16[-. d8.-. d16]-. 
 	g,4-. r8. g16-. d'4-. r8. d16-.
 % Bars 66 to 70
@@ -130,7 +130,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\cueDuring #"cueVoiceFagottoIIMvtI" #UP {
-		\ni << R1 {s2. \clef treble s4} >>
+		\ni << R1 {s2. \clef tenor s4} >>
 		R1
 % Bars 131 to 135
 		<<R1 {s2 \clef bass s}>> \no
@@ -146,9 +146,9 @@ musicFagottoIIMvtI = \relative c {
 	
 	\cueDuring #"cueVoiceFagottoIIMvtI" #UP {
 		\ni \mmrPos #-6 R1
-		\mmrPos #-6 R \no \mark \default
+		\mmrPos #-6 R \no \markXoffset #-0.2 \mark \default
 	}
-	e'2\ff^\tutti b'4-. gis-.
+	e'2\ff-\tweak X-offset #1 ^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -195,13 +195,13 @@ musicFagottoIIMvtI = \relative c {
 	
 	\cueDuring #"cueVoiceFagottoIIMvtI" #UP {
 		\ni \clef treble R1
-		R1 \no \mark \default \clef bass
+		R1 \no \markXoffset #-0.2 \mark \default \clef bass
 	}
-	f8\ff^\tutti c f c f c f c
+	f8\ff-\tweak X-offset #1 ^\tutti c f c f c f c
 % Bars 226 to 230
 	g' c, g' c, g' c, g' c, 
 	e c e c e c e c
-	f c f c f f c f
+	f c f c f f-. c-. f-.
 	f4 r r8. f16-.[ f8.-. f16]-. 
 	a4 r r8. a16[-. a8.-. a16]-. 
 % Bars 231 to 235
@@ -218,7 +218,7 @@ musicFagottoIIMvtI = \relative c {
 	a-. b-. a-. d-.
 % Bars 241 to 245
 	c4 r r2
-	<>^\solo R1*24
+	<>-\tweak X-offset #-2 ^\solo R1*24
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -267,7 +267,7 @@ musicFagottoIIMvtI = \relative c {
 		\ni R1
 % Bars 321 to 325
 		R
-		<< \mmrPos #-6 R {s2 \clef treble  s2 }>> \no \clef bass
+		<< \mmrPos #-8 R {s2 \clef treble  s2 }>> \no \clef bass
 	}
 	g'1_\pcresc~
 	g1 \mark \default
@@ -419,7 +419,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 491 to 495
 	R1 \mark \default
 	R1
-	r8. f16[-.\mf f8.-. f16]-. f8 r r4
+	r8. f16[\mf f8. f16] f8 r r4
 	R1*20
 % Bars 496 to 500
 	

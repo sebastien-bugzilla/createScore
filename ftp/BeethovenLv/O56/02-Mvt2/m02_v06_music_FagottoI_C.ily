@@ -22,7 +22,7 @@ musicFagottoIMvtII = \relative c' {
 	
 	\mark \default
 % Bars 21 to 25
-	c4( bes16 c)
+	c4(\p bes16 c)
 	des8 r des
 	des8\noBeam(~ des16. ees32 c16. des32)
 	bes8 r r

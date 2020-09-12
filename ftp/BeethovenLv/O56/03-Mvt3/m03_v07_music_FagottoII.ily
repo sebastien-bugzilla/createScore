@@ -37,7 +37,7 @@ musicFagottoIIMvtIII = \relative c {
 	f d e f g g, b g b g b g
 % Bars 41 to 45
 	g4\sf( c8) r d'4\sf(
-	c16) b c d e d c b a gis a b
+	c16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
 	f g a b c b a g f e d c
@@ -128,9 +128,9 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 146 to 150
 	
 	\cueDuring #"cueVoiceFagottoIIMvtIII" #UP {
-		\ni R2.
-		R \no \mark \default
-		r4 } g,\ff\fermata r
+		\ni << R2. {s4 \clef tenor s2} >>
+		R2. \no \mark \default
+		r4 } \clef bass g,\ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
@@ -157,7 +157,7 @@ musicFagottoIIMvtIII = \relative c {
 	gis8 e4\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
-	a\p\noBeam a'16\pp^\solo a a8 a a a 
+	a\p\noBeam \dynEsw #'(-4 . 0) a'16\pp^\solo a a8 a a a 
 	r8 a16 a a8 a a a
 	r8 c16 c c8 c b b
 	c r r4 r
@@ -262,12 +262,12 @@ musicFagottoIIMvtIII = \relative c {
 	\cueDuring #"cueVoiceFagottoIIMvtIII" #UP {
 		\ni R2.
 		R
-		R
+		<< R {s2 \clef tenor s4} >>
 % Bars 276 to 280
-		R \no
+		R2.
+		R
+		R \no \clef bass
 	}
-	R2.*2
-	
 	c8\p r r4 c8-. c-.
 	c r c r c r
 % Bars 281 to 285
@@ -293,20 +293,28 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 301 to 305
 	
 	
-	<>^\atempo R2.*22
+	<>^\atempo R2.*11
 % Bars 306 to 310
 	
 % Bars 311 to 315
 	
-% Bars 316 to 320
-	
-% Bars 321 to 325
-	
-	
 	
 	
 	\cueDuring #"cueVoiceFagottoIIMvtIII" #UP {
-		\ni R2. \mark \default
+		\ni R2.
+		R
+% Bars 316 to 320
+		R
+		R
+		R
+		R
+		R
+% Bars 321 to 325
+		R
+		R
+		R
+		R
+		R \mark \default
 % Bars 326 to 330
 		R \no
 	}
@@ -363,8 +371,8 @@ musicFagottoIIMvtIII = \relative c {
 	b r r4
 	R2*3
 % Bars 386 to 390
-	\mark \default
-	e,8\f(^\tutti f16 d e8 f)
+	\markXoffset #-0.2 \mark \default
+	e,8\f(-\tweak X-offset #1 ^\tutti f16 d e8 f)
 	g4( e8) r
 	R2*2
 	
@@ -405,15 +413,21 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 426 to 430
 	fis
 	g8 r r4
-	R2*11
-% Bars 431 to 435
-	
-% Bars 436 to 440
-	
-	
-	
+	R2
 	\cueDuring #"cueVoiceFagottoIIMvtIII" #UP {
-		\ni \clef tenor R2 
+		\ni \mmrPos #-6 R2
+		R
+% Bars 431 to 435
+		R
+		R
+		R
+		R
+		\clef treble R
+% Bars 436 to 440
+		R
+		R
+		R
+		\clef tenor R2 
 		R \mark \default
 % Bars 441 to 445
 		R
