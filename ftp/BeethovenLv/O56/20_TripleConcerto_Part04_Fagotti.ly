@@ -21,7 +21,6 @@
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_PartFagotti.ily"
-%\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v06_music_FagottoI.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoII.ily"
@@ -73,7 +72,6 @@
 			}
 		}
 		\layout {
-			%system-count = #32
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -81,9 +79,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFagottoIMvtII
-%			}
+			\new Voice {
+				\formatFagottoIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameFagottoIMvtII \musicFagottoIMvtII
@@ -124,7 +122,6 @@
 			}
 		}
 		\layout {
-			%system-count = #39
 			\context {
 				\CueVoice \layoutCueVoice
 			}
