@@ -204,6 +204,13 @@ dynEsw = #(define-music-function
 	#}
 )
 
+hairpinLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override Hairpin.minimum-length = #length
+	#}
+)
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

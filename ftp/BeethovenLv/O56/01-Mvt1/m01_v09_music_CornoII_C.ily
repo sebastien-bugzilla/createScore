@@ -134,7 +134,7 @@ musicCornoIIMvtI = \relative c'' {
 	
 % Bars 131 to 135
 	
-	c'4\f c2( g4)
+	c'4-.\f c2( g4)
 	c,4 r r2
 	R1*7
 % Bars 136 to 140
@@ -203,13 +203,13 @@ musicCornoIIMvtI = \relative c'' {
 	c c c c
 	c2~ c8 c-. c-. c-.
 	c4 r r8. f'16-.[ f8.-. f16]-. 
-	e4 r r8. e16[-. e8.-. e16] 
+	e4 r r8. e16[-. e8.-. e16-.] 
 % Bars 231 to 235
 	c,4 r c r
 	c r c r
 	e r e r
 	f' r e, r
-	r e e2~ 
+	r e-. e2~ 
 % Bars 236 to 240
 	e4 e-. e2~
 	e8.[ e16-. e8.-. e16]-. e2~

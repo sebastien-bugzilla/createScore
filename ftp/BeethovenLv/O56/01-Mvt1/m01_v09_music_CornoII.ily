@@ -10,7 +10,7 @@ musicCornoIIMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*5
+	<>-\tweak X-offset #-2 ^\tutti R1*5
 % Bars 6 to 10
 	\cueDuring #"cueVoiceCornoIIMvtI" #DOWN {
 		\ni \clef bass R1
@@ -24,13 +24,13 @@ musicCornoIIMvtI = \relative c'' {
 	g1\f\>
 	e~\pp
 	e
-	\crescText "cresc. poco a poco" c~\<
+	\crescText "cresc. poco a poco" c~\<^\one
 % Bars 16 to 20
-	c~
-	c~
-	c~
-	c~
-	c
+	c~^\two
+	c~^\three
+	c~^\four
+	c~^\five
+	c^\six
 % Bars 21 to 25
 	c2.\f c4-.
 	c-. c-. c-. c-.
@@ -72,7 +72,7 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 56 to 60
 	
 	
-	c1_\fcresc 
+	\textLengthOn c1_\fcresc \textLengthOff
 	c2\ff c
 	c4 c c c
 % Bars 61 to 65
@@ -91,7 +91,7 @@ musicCornoIIMvtI = \relative c'' {
 	
 	
 	g,1\ff~
-	g \mark \default
+	g \markYoffset #4.5 \mark \default
 	e4 r^\solo r2
 % Bars 76 to 80
 	R1*9
@@ -102,7 +102,7 @@ musicCornoIIMvtI = \relative c'' {
 	
 	g,4\p r r2
 % Bars 86 to 90
-	r4 g8\p r g r g r 
+	r4 g8-\tweak X-offset #-1.9 \p r g r g r 
 	g r r4 r2
 	r4 g8 r g r r4
 	r4 g8 r g r r4
@@ -126,18 +126,18 @@ musicCornoIIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceCornoIIMvtI" #UP {
-		\ni R1
+	\cueDuring #"cueVoiceCornoIIMvtI" #DOWN {
+		\ni \mmrPos #-4 R1
 % Bars 111 to 115
-		R \no
-		r4 } g4\p~ g8 c( e e')
+		\mmrPos #-4 R \no
+		a4\rest } g4-\tweak X-offset #-1.8 \p~ g8 c( e e')
 	e8.( d16) c2 d8.( g,16)
 	e2.\ff^\tutti c'4
 	g1~
 % Bars 116 to 120
 	g
-	e2~ e8 g-. e-. g-. \mark \default
-	c,\p^\solo r r4 r2
+	e2~ e8 g-. e-. g-. \markXoffset #-0.3 \mark \default
+	c,\p-\tweak X-offset #1 ^\solo r r4 r2
 	R1*10
 % Bars 121 to 125
 	
@@ -151,7 +151,7 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 131 to 135
 		R \no
 	}
-	c'4\f c2( g4)
+	c'4-.\f c2( g4)
 	c,4 r r2
 	R1*7
 % Bars 136 to 140
@@ -174,10 +174,10 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-	\cueDuring #"cueVoiceCornoIIMvtI" #UP {
-		\ni R1
-		R
-		R \no
+	\cueDuring #"cueVoiceCornoIIMvtI" #DOWN {
+		\ni \mmrPos #-4 R1
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 	}
 	e2.\p e4\f~^\tutti
 	e1~
@@ -199,11 +199,11 @@ musicCornoIIMvtI = \relative c'' {
 		R \mark \default \no
 	}
 	r8. e16-.\p e8-. r r8. e16-. e8-. r
-	r8. e16-. e8.-. e16-. e4-. r
+	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 196 to 200
 	r8. e16-. e4-. r8. e16-. e4-.
-	r8. e16-. e8.-. e16-. e4-. r
-	r8. c16-. c8.-. c16-. c4-. r
+	r8. e16-.[ e8.-. e16-.] e4-. r
+	r8. c16-.[ c8.-. c16-.] c4-. r
 	R1*24
 % Bars 201 to 205
 	
@@ -218,21 +218,21 @@ musicCornoIIMvtI = \relative c'' {
 	
 	\cueDuring #"cueVoiceCornoIIMvtI" #UP {
 		\ni R1
-		R \no \mark \default
+		R \no \markXoffset #-0.3 \mark \default
 	}
-	c2.\ff^\tutti c4
+	c2.\ff-\tweak X-offset #1 ^\tutti c4
 % Bars 226 to 230
 	c2. c4
 	c c c c
 	c2~ c8 c-. c-. c-.
 	c4 r r8. f'16-.[ f8.-. f16]-. 
-	e4 r r8. e16[-. e8.-. e16] 
+	e4 r r8. e16[-. e8.-. e16-.] 
 % Bars 231 to 235
 	c,4 r c r
 	c r c r
 	e r e r
 	f' r e, r
-	r e e2~ 
+	r e-. e2~ 
 % Bars 236 to 240
 	e4 e-. e2~
 	e8.[ e16-. e8.-. e16]-. e2~
@@ -241,7 +241,7 @@ musicCornoIIMvtI = \relative c'' {
 	e e4 e e e8~
 % Bars 241 to 245
 	e4 r r2
-	<>^\solo R1*10
+	<>-\tweak X-offset #-1 ^\solo R1*10
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -301,19 +301,19 @@ musicCornoIIMvtI = \relative c'' {
 	g8 r g r r2
 	g8 r  r4 g8 r r4
 	g8 r r4 g8 r r4
-	g1~
+	g1~^\one
 % Bars 316 to 320
-	g~
-	g~
-	g~
-	g~
-	g~
+	g~^\two
+	g~^\three
+	g~^\four
+	g~^\five
+	g~^\six
 % Bars 321 to 325
 	g8 r g r g r g r
 	g r g r g r g r 
 	g\p\cresc r g r g r g r 
 	g r g r g r g r \mark \default
-	c1\ff~^\tutti
+	c1\ff~-\tweak X-offset #0.5 ^\tutti
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c1~
@@ -330,13 +330,13 @@ musicCornoIIMvtI = \relative c'' {
 	g1\f\>
 	e1\pp~
 	e
-	\crescText "cresc. poco a poco" c\<~
-	c~
+	\crescText "cresc. poco a poco" c\<~^\one
+	c~^\two
 % Bars 341 to 345
-	c~
-	c~
-	c~
-	c
+	c~^\three
+	c~^\four
+	c~^\five
+	c^\six
 	c2\f~ c8 r^\solo r4
 % Bars 346 to 350
 	R1
@@ -377,9 +377,9 @@ musicCornoIIMvtI = \relative c'' {
 	g r r2
 	R1*3
 	
-	\mark \default
+	\markXoffset #-0.3 \mark \default
 % Bars 386 to 390
-	g'2\ff^\tutti g4-. g-.
+	g'2\ff-\tweak X-offset #1 ^\tutti g4-. g-.
 	g-. g-. g-. g-.
 	g-.^\solo r r2
 	R1
@@ -449,9 +449,9 @@ musicCornoIIMvtI = \relative c'' {
 	\cueDuring #"cueVoiceCornoIIMvtI" #UP {
 		\ni R1
 % Bars 461 to 465
-		R \mark \default \no
+		R \markXoffset #-0.3 \mark \default \no
 	}
-	c4\ff^\tutti r r2
+	c4\ff-\tweak X-offset #1 ^\tutti r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -494,23 +494,23 @@ musicCornoIIMvtI = \relative c'' {
 % Bars 501 to 505
 	
 % Bars 506 to 510
-	\clef bass c,,1~\f
-	c~
-	c~
-	c~
-	c~
+	\clef bass c,,1~\f^\one
+	c~^\two
+	c~^\three
+	c~^\four
+	c~^\five
 % Bars 511 to 515
-	c~
-	c~
-	c
+	c~^\six
+	c~^\seven
+	c^\eight
 	\tempo "Più allegro." c4^\tutti r r2 \clef treble
 	\cueDuring #"cueVoiceCornoIIMvtI" #UP {
 		\ni \mmrPos #-6 R1
 % Bars 516 to 520
 		\mmrPos #-10 R \no
 		r2 } r8. g''16\f[-. c8.-. c16]-. 
-	c4-.\ff r r2 \mark \default
-	g'4-.\ff^\solo r r2
+	c4-.\ff r r2 \markXoffset #-0.3 \mark \default
+	g'4-.\ff-\tweak X-offset #1 ^\solo r r2
 	c,4 r r g'8 r 
 % Bars 521 to 525
 	e8 r g r e r g r

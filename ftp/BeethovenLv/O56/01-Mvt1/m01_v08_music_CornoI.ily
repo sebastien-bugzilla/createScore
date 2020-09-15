@@ -10,7 +10,7 @@ musicCornoIMvtI = \relative c'' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*5
+	<>-\tweak X-offset #-2 ^\tutti R1*5
 % Bars 6 to 10
 	\cueDuring #"cueVoiceCornoIMvtI" #DOWN {
 		\ni \clef bass R1
@@ -22,15 +22,15 @@ musicCornoIMvtI = \relative c'' {
 		R \no \clef treble
 	}
 	d1\f\>
-	c~\pp
-	c~
-	\crescText "cresc. poco a poco" c~\<
+	c~\pp^\one
+	c~^\two
+	\crescText "cresc. poco a poco" c~\<^\three
 % Bars 16 to 20
-	c~
-	c~
-	c~
-	c~
-	c
+	c~^\four
+	c~^\five
+	c~^\six
+	c~^\seven
+	c^\eight
 % Bars 21 to 25
 	c2.\f c4-.
 	c-. c-. c-. c-.
@@ -63,7 +63,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	c1\sf\>~
+	\hairpinLength #7 c1\sf\>~
 	c2\pp g~
 % Bars 51 to 55
 	g c
@@ -72,7 +72,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 56 to 60
 	
 	
-	c1_\fcresc 
+	\textLengthOn c1_\fcresc \textLengthOff
 	c2\ff c
 	c4 c c c
 % Bars 61 to 65
@@ -126,18 +126,18 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	
-	\cueDuring #"cueVoiceCornoIMvtI" #UP {
-		\ni R1
+	\cueDuring #"cueVoiceCornoIMvtI" #DOWN {
+		\ni \mmrPos #-4 R1
 % Bars 111 to 115
-		R \no
-		r4 } g4\p~ g8 c( e g)
+		\mmrPos #-4 R \no
+		e,4\rest } g4\p~ g8 c( e g)
 	g8.( f16) e2 f8.( d16)
 	c2.\ff^\tutti e4
 	g1
 % Bars 116 to 120
 	d
-	c2~ c8 g'-. e-. g-. \mark \default
-	c,\p^\solo r r4 r2
+	c2~ c8 g'-. e-. g-. \markXoffset #-0.3 \mark \default
+	c,\p-\tweak X-offset #1 ^\solo r r4 r2
 	R1*10
 % Bars 121 to 125
 	
@@ -151,7 +151,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 131 to 135
 		R \no
 	}
-	e4\f e2( d4)
+	e4-.\f e2( d4)
 	c4 r r2
 	R1*7
 % Bars 136 to 140
@@ -165,7 +165,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 146 to 150
 	R1*3
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	e2\ff^\tutti e4-. e-.
 	e-. e-. e-. e-.
 % Bars 151 to 155
@@ -174,10 +174,10 @@ musicCornoIMvtI = \relative c'' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-	\cueDuring #"cueVoiceCornoIMvtI" #UP {
-		\ni R1
-		R
-		R \no
+	\cueDuring #"cueVoiceCornoIMvtI" #DOWN {
+		\ni \mmrPos #-4 R1
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 	}
 	e2.\p e4\f~^\tutti
 	e1~
@@ -218,21 +218,21 @@ musicCornoIMvtI = \relative c'' {
 	
 	\cueDuring #"cueVoiceCornoIMvtI" #UP {
 		\ni R1
-		R \no \mark \default
+		R \no \markXoffset #-0.3 \mark \default
 	}
-	c2.\ff^\tutti c4
+	c2.\ff-\tweak X-offset #1 ^\tutti c4
 % Bars 226 to 230
 	c2. c4
 	c c c c
 	c2~ c8 c-. c-. c-.
 	c4 r r8. f16-.[ f8.-. f16]-. 
-	e4 r r8. e16[-. e8.-. e16] 
+	e4 r r8. e16[-. e8.-. e16]-.
 % Bars 231 to 235
 	c4 r c r
 	c r c r
 	e r e r
 	f r e r
-	r e e2~ 
+	r e-. e2~ 
 % Bars 236 to 240
 	e4 e-. e2~
 	e8.[ e16-. e8.-. e16]-. e2~
@@ -241,7 +241,7 @@ musicCornoIMvtI = \relative c'' {
 	e e4 e e e8~
 % Bars 241 to 245
 	e4 r r2
-	<>^\solo R1*10
+	<>-\tweak X-offset #-1 ^\solo R1*10
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -301,18 +301,18 @@ musicCornoIMvtI = \relative c'' {
 	g8 r g r r2
 	g8 r  r4 g8 r r4
 	g8 r r4 g8 r r4
-	g1~
+	g1~^\one
 % Bars 316 to 320
-	g~
-	g~
-	g~
-	g~
-	g~
+	g~^\two
+	g~^\three
+	g~^\four
+	g~^\five
+	g~^\six
 % Bars 321 to 325
 	g8 r g r g r g r
 	g r g r g r g r 
 	g\p\cresc r g r g r g r 
-	g r g r g r g r \mark \default
+	g r g r g r g r \markYoffset #4.5 \mark \default
 	c1\ff^\tutti~
 % Bars 326 to 330
 	c4 c8. c16 c4 c
@@ -395,7 +395,7 @@ musicCornoIMvtI = \relative c'' {
 	\cueDuring #"cueVoiceCornoIMvtI" #UP {
 		\ni \clef bass R1
 % Bars 401 to 405
-		R \no \clef treble
+		\mmrPos #-6 R \no \clef treble
 	}
 	r8. c16[\f-.^\tutti c8.-. c16]-. c2~
 	c8.[( e16 g8. e16)] c8 r^\solo r4
@@ -449,9 +449,9 @@ musicCornoIMvtI = \relative c'' {
 	\cueDuring #"cueVoiceCornoIMvtI" #UP {
 		\ni R1
 % Bars 461 to 465
-		R \no \mark \default
+		R \no \markXoffset #-0.2 \mark \default
 	}
-	c4\ff^\tutti r r2
+	c4\ff-\tweak X-offset #1.5 ^\tutti r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -485,7 +485,7 @@ musicCornoIMvtI = \relative c'' {
 	c8 r r4 r8. c16[-. c8.-. c16]-. 
 	c8 r r8. e16 e8 r r8. e16
 % Bars 491 to 495
-	d8 r r8. d16 d8 r r8. d16 \mark \default
+	d8 r r8. d16 d8 r r8. d16 \markYoffset #4.5 \mark \default
 	c8.[\mf c16-. c8.-. c16]-. c8 r r4
 	r8. c16[ c8. c16] c8 r r4
 	R1*20

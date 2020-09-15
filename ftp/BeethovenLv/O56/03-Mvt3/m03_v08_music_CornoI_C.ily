@@ -42,7 +42,7 @@ musicCornoIMvtIII = \relative c'' {
 	c c g\noBeam d'4 d8
 % Bars 41 to 45
 	d4(\sf c8) r g'4(\sf
-	c,8) r r4 r 
+	c,8)\ff r r4 r 
 	R2.*3
 	
 	
@@ -157,7 +157,7 @@ musicCornoIMvtIII = \relative c'' {
 	
 	e8\f e16 e e8 e e e
 % Bars 166 to 170
-	e8 r r4 r
+	e8\p r r4 r
 	R2.
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
@@ -219,7 +219,7 @@ musicCornoIMvtIII = \relative c'' {
 	r8 g16\pp g g8 g g g
 % Bars 221 to 225
 	g2._\crescmarkup~ \mark \default
-	g4. g8-. e-. c-.
+	g4.\f g8-. e-. c-.
 	g r r4 r
 	R2.*20
 % Bars 226 to 230

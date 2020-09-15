@@ -134,7 +134,7 @@ musicCornoIMvtI = \relative c'' {
 	
 % Bars 131 to 135
 	
-	e4\f e2( d4)
+	e4-.\f e2( d4)
 	c4 r r2
 	R1*7
 % Bars 136 to 140
@@ -178,11 +178,11 @@ musicCornoIMvtI = \relative c'' {
 	
 	\mark \default
 	r8. e16-.\p e8-. r r8. e16-. e8-. r
-	r8. e16-. e8.-. e16-. e4-. r
+	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 196 to 200
 	r8. e16-. e4-. r8. e16-. e4-.
-	r8. e16-. e8.-. e16-. e4-. r
-	r8. c16-. c8.-. c16-. c4-. r
+	r8. e16-.[ e8.-. e16-.] e4-. r
+	r8. c16-.[ c8.-. c16-.] c4-. r
 	R1*26
 % Bars 201 to 205
 	
@@ -203,13 +203,13 @@ musicCornoIMvtI = \relative c'' {
 	c c c c
 	c2~ c8 c-. c-. c-.
 	c4 r r8. f16-.[ f8.-. f16]-. 
-	e4 r r8. e16[-. e8.-. e16] 
+	e4 r r8. e16[-. e8.-. e16]-.
 % Bars 231 to 235
 	c4 r c r
 	c r c r
 	e r e r
 	\once \partcombineApart f r e r
-	r e e2~ 
+	r e-. e2~ 
 % Bars 236 to 240
 	e4 e-. e2~
 	e8.[ e16-. e8.-. e16]-. e2~

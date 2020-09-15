@@ -33,7 +33,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
-		\ni R2.
+		\ni \mmrPos #-6  R2.
 		R \no \mark #4
 % Bars 31 to 35
 		r4 } g\ff\fermata r
@@ -49,7 +49,7 @@ musicCornoIIMvtIII = \relative c' {
 	c c g\noBeam g'4 g8
 % Bars 41 to 45
 	g4(\sf e8) r g4(\sf
-	c,8) r r4 r 
+	c,8)\ff r r4 r 
 	R2.*3
 	
 	
@@ -66,7 +66,7 @@ musicCornoIIMvtIII = \relative c' {
 	c,4\f e g
 	c e, g 
 % Bars 56 to 60
-	c,4. e8\sf g, g \mark \default
+	c,4. e8\sf g, g \markYoffset #4.5 \mark \default
 	c r r4 r
 	c8 r c r c r
 	c c c c c c 
@@ -86,7 +86,7 @@ musicCornoIIMvtIII = \relative c' {
 		\ni \clef bass R2.
 		R
 		R \no
-		r4 r } \clef treble g8\pp-. g-.
+		r4 r } \clef treble g8-\tweak X-offset #-3.5 \pp-. g-.
 % Bars 86 to 90
 	g r r4 g8-. g-.
 	g r g r g r
@@ -128,7 +128,7 @@ musicCornoIIMvtIII = \relative c' {
 		\mmrPos #-8 R
 		\mmrPos #-6 R \no
 	}
-	<< c2.~ {s8\pp\< s s s s s\>} >>
+	<< c2.~ { \hairpinLength #7 s8\pp\< s s s s s\>} >>
 	c8\! r r4 r
 	R2.*6
 % Bars 121 to 125
@@ -174,7 +174,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 	e8\f e16 e e8 e e e
 % Bars 166 to 170
-	e8 r r4 r
+	e8\p r r4 r
 	R2.
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
@@ -235,8 +235,8 @@ musicCornoIIMvtIII = \relative c' {
 	R2.
 	r8 g16\pp g g8 g g g
 % Bars 221 to 225
-	g2._\crescmarkup~ \mark \default
-	g4. g8-. e-. c-.
+	g2._\crescmarkup~ \markYoffset #4.5 \mark \default
+	g4.\f g8-. e-. c-.
 	g r r4 r
 	R2.*17
 % Bars 226 to 230
@@ -332,7 +332,7 @@ musicCornoIIMvtIII = \relative c' {
 	\cueDuring #"cueVoiceCornoIIMvtIII" #UP {
 		\ni \mmrPos #-6 R2.
 		\mmrPos #-6 R
-		\mmrPos #-8 R \no \mark \default
+		\mmrPos #-8 R \no \markYoffset #4.5 \mark \default
 	}
 % Bars 326 to 330
 	r8 g\f-. c-. g-. e-. c-. 
@@ -385,8 +385,8 @@ musicCornoIIMvtIII = \relative c' {
 	g r r4
 	R2*3
 % Bars 386 to 390
-	\mark \default
-	c8\f^\tutti r c c
+	\markXoffset #-0.3 \mark \default
+	c8\f-\tweak X-offset #1 ^\tutti r c c
 	c'4( e,8) r
 	R2
 	r4 g8 g
@@ -455,7 +455,7 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 456 to 460
 	g'
 	c8\f e, e e e e
-	g g g g g g \mark \default
+	g g g g g g \markYoffset #5 \mark \default
 	c,4. g'8\sf-. g-. g-.
 	c, r r4 r
 % Bars 461 to 465

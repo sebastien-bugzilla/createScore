@@ -36,11 +36,11 @@ musicCornoIMvtII = \relative c'' {
 	c4.~
 	c
 % Bars 31 to 35
-	c8_\crescmarkup c c \mark \default
-	c8.\sf\> r16\! \cueDuring #"cueVoiceCornoIMvtII" #DOWN { \clef bass r8
+	c8_\crescmarkup c c \markYoffset #4.5 \mark \default
+	\hairpinLength #5 c8.\sf\> r16\! \cueDuring #"cueVoiceCornoIMvtII" #DOWN { \clef bass r8
 		\ni R4.
 		R \no
-		r8 } \clef treble e4\sf\>
+		r8 } \clef treble \hairpinLength #6 e4\sf\>
 % Bars 36 to 40
 	d8.\pp[ d16~] d d
 	c8. c8 c16
@@ -55,5 +55,5 @@ musicCornoIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 % Bars 51 to 53
-	\bar "||"
+	\bar "||" \time 3/4 \attacca
 }

@@ -35,7 +35,7 @@ musicCornoIIMvtII = \relative c, {
 	R4. \clef treble 
 	\cueDuring #"cueVoiceCornoIIMvtII" #UP {
 		\ni R4.
-		R
+		\mmrPos #-6 R
 		<< R {s8. \clef bass s \clef treble} >> \no
 	}
 	c''4.~\pp
@@ -50,7 +50,7 @@ musicCornoIIMvtII = \relative c, {
 	c8.\sf\> r16\! r16 \clef bass c,,\pp
 	c4 c16 c
 	c4 c16 c
-	c8 \clef treble e'''4\sf\>
+	c8 \clef treble \hairpinLength #7 e'''4\sf\>
 % Bars 36 to 40
 	d8.\pp[ d16~] d d
 	c,8. c8 c16
@@ -65,5 +65,5 @@ musicCornoIIMvtII = \relative c, {
 % Bars 46 to 50
 	
 % Bars 51 to 53
-	\bar "||"
+	\bar "||" \time 3/4 \attacca
 }

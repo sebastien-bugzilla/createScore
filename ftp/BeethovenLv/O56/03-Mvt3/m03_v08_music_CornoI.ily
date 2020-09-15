@@ -33,7 +33,7 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni R2.
+		\ni \mmrPos #-6 R2.
 		R \mark #4 \no
 % Bars 31 to 35
 		r4 } d\ff\fermata r
@@ -49,7 +49,7 @@ musicCornoIMvtIII = \relative c'' {
 	c c g\noBeam d'4 d8
 % Bars 41 to 45
 	d4(\sf c8) r g'4(\sf
-	c,8) r r4 r 
+	c,8)\ff r r4 r 
 	R2.*3
 	
 	
@@ -128,7 +128,7 @@ musicCornoIMvtIII = \relative c'' {
 		\mmrPos #-8 R
 		R \no
 	}
-	<< g2.~ {s8\pp\< s s s s s\>} >>
+	<< g2.~ {\hairpinLength #6.5 s8\pp\< s s s s s\>} >>
 	g8\! r r4 r
 	R2.*6
 % Bars 121 to 125
@@ -151,7 +151,7 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 146 to 150
 	
 	\cueDuring #"cueVoiceCornoIMvtIII" #UP {
-		\ni R2.
+		\ni \mmrPos #-6 R2.
 		R \mark \default \no
 		r4 } d\ff\fermata r
 	R2.*2
@@ -174,7 +174,7 @@ musicCornoIMvtIII = \relative c'' {
 	
 	e8\f e16 e e8 e e e
 % Bars 166 to 170
-	e8 r r4 r
+	e8\p r r4 r
 	R2.
 	e8\sf e16 e e8\sf e16 e e8\sf e16 e
 	e4. r8 r4
@@ -235,8 +235,8 @@ musicCornoIMvtIII = \relative c'' {
 	R2.
 	r8 g16\pp g g8 g g g
 % Bars 221 to 225
-	g2._\crescmarkup~ \mark \default
-	g4. g8-. e-. c-.
+	\textLengthOn g2._\crescmarkup~ \markYoffset #4.5 \mark \default \textLengthOff
+	g4.\f g8-. e-. c-.
 	g r r4 r
 	R2.*17
 % Bars 226 to 230
@@ -250,7 +250,7 @@ musicCornoIMvtIII = \relative c'' {
 		\ni \mmrPos #-6 R2.
 		R
 		R \no
-		r4 r } g8\ff^\tutti g
+		c,4\rest r } g'8\ff^\tutti g
 	c2 c8 g
 % Bars 246 to 250
 	g4 c4. c8
@@ -451,7 +451,7 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	c2.\p\cresc
+	c2.-\tweak X-offset #-3 \p\cresc
 % Bars 456 to 460
 	g'
 	c8\f c, c c c c
@@ -463,7 +463,7 @@ musicCornoIMvtIII = \relative c'' {
 	c,8 r r4 r
 	R2.*2
 	\mark \default
-	c8\ff c\sf c c\sf c c\sf
+	c8-\tweak X-offset #-2 \ff c\sf c c\sf c c\sf
 % Bars 466 to 470
 	c r r4 r 
 	c8 c\sf c c\sf c c\sf

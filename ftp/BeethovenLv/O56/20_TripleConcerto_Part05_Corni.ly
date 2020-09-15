@@ -54,9 +54,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtI
-%			}
+			\new Voice {
+				\formatCornoIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameCornoIMvtI \musicCornoIMvtI
@@ -72,6 +72,7 @@
 			}
 		}
 		\layout {
+			system-count = #33
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -79,9 +80,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtII
-%			}
+			\new Voice {
+				\formatCornoIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIMvtII \musicCornoIMvtII
@@ -104,9 +105,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIMvtIII
-%			}
+			\new Voice {
+				\formatCornoIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameCornoIMvtIII \musicCornoIMvtIII
@@ -129,9 +130,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtI
-%			}
+			\new Voice {
+				\formatCornoIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameCornoIIMvtI \musicCornoIIMvtI
@@ -154,9 +155,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtII
-%			}
+			\new Voice {
+				\formatCornoIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameCornoIIMvtII \musicCornoIIMvtII
@@ -179,9 +180,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatCornoIIMvtIII
-%			}
+			\new Voice {
+				\formatCornoIIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameCornoIIMvtIII \musicCornoIIMvtIII
