@@ -222,7 +222,7 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	\cueDuring #"cueVoiceTrombeIMvtIII" #UP {
 		\ni R2.
-		R \no \mark \default
+		R \no \markYoffset #4.5 \mark \default
 	}
 % Bars 286 to 290
 	e8\f r e r e r
@@ -259,7 +259,7 @@ musicTrombeIMvtIII = \relative c'' {
 		R
 		R \no
 	}
-	g2._\pcresc \mark \default
+	g2.-\tweak X-offset #-2 _\pcresc \mark \default
 % Bars 326 to 330
 	c8\f-. g-. c-. g-. e-. c-. 
 	g' r g r g r
@@ -269,7 +269,7 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 331 to 335
 	R2.
 	<<{r4 r r8 \breathe \tempo "Allegro." r} {\ni \fermataCentered \no}>> \bar "||"
-	\time 2/4 R2*51
+	\time 2/4 \mmrLength #0.8 R2*51
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -296,9 +296,9 @@ musicTrombeIMvtIII = \relative c'' {
 		\ni R2
 		R
 % Bars 386 to 390
-		R \no \mark \default
+		R \no \markXoffset #-0.2 \mark \default
 	}
-	c8\f^\tutti r c c
+	c8\f-\tweak X-offset #1 ^\tutti r c c
 	c4 c8 r
 	R2
 	r4 g8 g

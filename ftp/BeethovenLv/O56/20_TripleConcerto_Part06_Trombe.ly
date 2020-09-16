@@ -50,9 +50,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombeIMvtI
-%			}
+			\new Voice {
+				\formatTrombeIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTrombeIMvtI \musicTrombeIMvtI
@@ -75,9 +75,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatTrombeIMvtII
+			}
 			\new Voice {
 				\generalOptions \partOptions \nameTrombeIMvtIII 
 				\timeMvtII \clef treble \key aes \major
@@ -85,7 +85,7 @@
 				R4.*11 \mark \default
 				R4.*12 \mark \default
 				R4.*10
-				\bar "||"
+				\bar "||" \time 3/4 \key c \major \attacca
 			}
 		>>
 		\header {
@@ -106,9 +106,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombeIMvtIII
-%			}
+			\new Voice {
+				\formatTrombeIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrombeIMvtIII \musicTrombeIMvtIII
@@ -131,9 +131,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombeIIMvtI
-%			}
+			\new Voice {
+				\formatTrombeIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTrombeIIMvtI \musicTrombeIIMvtI
@@ -156,9 +156,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatTrombeIIMvtII
+			}
 			\new Voice {
 				\generalOptions \partOptions \nameTrombeIIMvtIII 
 				\timeMvtII \clef treble \key aes \major
@@ -166,7 +166,7 @@
 				R4.*11 \mark \default
 				R4.*12 \mark \default
 				R4.*10
-				\bar "||"
+				\bar "||" \key c \major \time 3/4 \attacca
 			}
 		>>
 		\header {
@@ -187,9 +187,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTrombeIIMvtIII
-%			}
+			\new Voice {
+				\formatTrombeIIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrombeIIMvtIII \musicTrombeIIMvtIII
