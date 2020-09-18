@@ -21,6 +21,7 @@
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_PartTimpani.ily"
+\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v12_music_Timpani.ily"
 \include "./03-Mvt3/m03_v12_music_Timpani.ily"
@@ -46,9 +47,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtI
-%			}
+			\new Voice {
+				\formatTimpaniMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTimpaniMvtI \musicTimpaniMvtI
@@ -64,6 +65,7 @@
 			}
 		}
 		\layout {
+			%system-count = #18
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -71,9 +73,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFloteMvtIII
-%			}
+			\new Voice {
+				\formatTimpaniMvtII
+			}
 			\new Voice {
 				\generalOptions \partOptions \nameTimpaniMvtIII 
 				\timeMvtII \clef bass \key aes \major
@@ -81,7 +83,7 @@
 				R4.*11 \mark \default
 				R4.*12 \mark \default
 				R4.*10
-				\bar "||"
+				\bar "||" \key c \major \time 3/4 \attacca
 			}
 		>>
 		\header {
@@ -102,9 +104,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatTimpaniMvtIII
-%			}
+			\new Voice {
+				\formatTimpaniMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameTimpaniMvtIII \musicTimpaniMvtIII
@@ -120,6 +122,7 @@
 			}
 		}
 		\layout {
+			system-count = #20
 			\context {
 				\CueVoice \layoutCueVoice
 			}

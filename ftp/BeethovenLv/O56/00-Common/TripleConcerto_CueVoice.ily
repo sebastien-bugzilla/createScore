@@ -1533,7 +1533,7 @@ cueVoiceTimpaniMvtI = \relative c {
 	f f f f b b b b
 	R1*52
 	% bar 514 - 517
-	b,,16_(_\crescmarkup^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
+	b,,16_(_\crescmarkup-\tweak X-offset #-5 ^\markup {Viol.I} c b c) e8._( d16) cis_( d cis d) f8._( e16)
 	dis_( e dis e) g8._( f16) e_( f e f) a8._( g16)
 	f8.\f[ e16 d8. c16] b8.[ d'16 f8. e16]
 	d8.[ c16 b8. a16] r2
@@ -1552,7 +1552,7 @@ cueVoiceTimpaniMvtIII = \relative c {
 	% bar 29 - 31
 	\tuplet 6/4 4 {r16^\markup {Viol.conc} g_( fis g fis g) g, b'_( ais b ais b) g, d''_( cis d cis d)}
 	d2_\crescmarkup\trill_~ d8.._( cis32)
-	d2*1/2\fermata\f s2
+	d2*1/2\fermata-\tweak extra-offset #'(-1.2 . 3.4) \f s2
 	R2.*65
 	% bar 97 - 99
 	\tuplet 6/4 4 {g,16^\markup {Viol.conc}_\crescmarkup b_( ais b ais b) g d'_( cis d cis d) b g'_( fis g fis g)}
@@ -1560,42 +1560,42 @@ cueVoiceTimpaniMvtIII = \relative c {
 	f8[ d b g f] s
 	R2.*47
 	% bar 147 - 149
-	\tuplet 6/4 4 {d,,16^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'_( e f e f)}
-	f2\trill_\crescmarkup_~ f8.._( e32)
-	f2*1/2\f\fermata r2
+	\tuplet 6/4 4 {d,,16-\tweak X-offset #-5 ^\markup {Vlc.conc} b'_( ais b ais b) b d_( cis d cis d) b f'_( e f e f)}
+	f2\trill-\tweak extra-offset #'(0 . 4.8) _\crescmarkup_~ f8.._( e32)
+	f2*1/2-\tweak extra-offset #'(-0.8 . 5) \f\fermata r2
 	R2.*68
 	% bar 218 - 221
-	r8 g'16\pp^\markup {Ob.I} g g8 g g g
+	r8 g'16-\tweak extra-offset #'(0 . 3.5) \pp^\markup {Ob.I} g g8 g g g
 	R2.
-	r8 g16\pp g g8 g g g
+	r8 g16-\tweak extra-offset #'(0 . 3.5) \pp g g8 g g g
 	g2._\crescmarkup
 	R2.*19
 	% bar 241 - 244
 	g,4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
 	\grace {c16 d} e4( c4. b8)
-	a( f') b,( g'4) g8
+	a([ f']) b,( g'4) g8
 	g4(\f c,8) r s4
 	R2.*39
 	% bar 284 - 285
-	g,8\f^\markup {Vln.conc} g'''4\sf e8-. c-. a-.
+	g,8-\tweak extra-offset #'(0 . 3.5) \f-\tweak X-offset #-3 ^\markup {Vln.conc} g'''4-\tweak extra-offset #'(-1 . 7.5) \sf e8-. c-. a-.
 	g-. e-. c-. a-. g8.( a32 b)
 	R2.*37
 	% bar 323 - 324
-	r16 fis(^\markup {Pf.} g a b c d e g f! e d)
+	r16 fis(-\tweak X-offset #-2 ^\markup {Pf.} g a b c d e g f! e d)
 	e( g, a b c d e f a g f e)
 	R2.*8
 	R2*51
 	% bar 384 - 386
-	g4.^\trill^\markup {Vln.Conc} a16 b
+	g4.^\trill-\tweak X-offset #-7 ^\markup {Vln.conc} a16 b
 	d\p c b c d c b a
 	a^( g) fis g a^( g) fis g
 	R2*52
 	% bar 439 - 443
-	\tuplet 3/2 4 {g,,8\p_(^\markup {Pf.} aes a bes b c
+	\tuplet 3/2 4 {g,,8-\tweak extra-offset #'(0 . 3) \p_(-\tweak X-offset #-2 ^\markup {Pf.} aes a bes b c
 	cis d ees e f) f }
 	f2\trill_~
 	\afterGrace f\fermata {e16^\adagio f}
-	g'4._(_\dolce a16 b c8 d)
+	g'4._(-\tweak extra-offset #'(0 . 3.4)_\dolce a16 b c8 d)
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   S O L O V L N                  #

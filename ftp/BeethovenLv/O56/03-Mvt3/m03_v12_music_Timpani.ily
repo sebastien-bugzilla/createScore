@@ -134,12 +134,12 @@ musicTimpaniMvtIII = \relative c {
 % Bars 156 to 160
 	c4 r8 g c g
 	c r c r r c
-	c[ c] g[ g] r g
+	c c g g r g
 	g r c r g\sf r
 	c r r4 r
 % Bars 161 to 165
 	R2.
-	r4 c8 r c r
+	r4 c8\sf r c r
 	<>^\solo R2.*16
 % Bars 166 to 170
 	
@@ -173,7 +173,7 @@ musicTimpaniMvtIII = \relative c {
 		R \no \clef bass
 	}
 % Bars 221 to 225
-	r8 g16^\crescmarkup g g8 g g g \mark \default
+	r8 g16_\crescmarkup g g8 g g g \mark \default
 	c\f c c c c c
 	g r r4 r
 	R2.
@@ -186,7 +186,7 @@ musicTimpaniMvtIII = \relative c {
 	r4 g8 r g r
 % Bars 231 to 235
 	g8 r r4 r
-	R2.*9
+	\mmrLength #0.6 R2.*9
 % Bars 236 to 240
 	
 % Bars 241 to 245
@@ -298,9 +298,9 @@ musicTimpaniMvtIII = \relative c {
 		\ni \clef treble \mmrPos #-4 R2
 		\mmrPos #-4 R
 % Bars 386 to 390
-		\mmrPos #-4 R \no \clef bass \mark \default
+		\mmrPos #-4 R \no \clef bass \markXoffset #-0.2 \mark \default
 	}
-	c8\f^\tutti r c c
+	c8\f-\tweak X-offset #0.5 ^\tutti r c c
 	c16 c c c c8 r
 	R2
 	r4 g8 g
@@ -317,13 +317,13 @@ musicTimpaniMvtIII = \relative c {
 	c16\sf c c c c8 r
 	g r r4^\solo
 % Bars 401 to 405
-	R2*12
+	\mmrLength #1.2 R2*12
 % Bars 406 to 410
 	
 % Bars 411 to 415
 	
 	\mark \default
-	R2*26
+	\mmrLength #1.2 R2*26
 % Bars 416 to 420
 	
 % Bars 421 to 425

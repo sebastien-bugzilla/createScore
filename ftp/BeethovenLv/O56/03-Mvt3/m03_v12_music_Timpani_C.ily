@@ -122,12 +122,12 @@ musicTimpaniMvtIII = \relative c {
 % Bars 156 to 160
 	c4 r8 g c g
 	c r c r r c
-	c[ c] g[ g] r g
+	c c g g r g
 	g r c r g\sf r
 	c r r4 r
 % Bars 161 to 165
 	R2.
-	r4 c8 r c r
+	r4 c8\sf r c r
 	R2.*16
 % Bars 166 to 170
 	

@@ -318,7 +318,7 @@ musicTimpaniMvtI = \relative c {
 	g8 r r8. g16 g8 r r8. g16
 % Bars 491 to 495
 	g8 r r8. g16 g8 r r8. g16 \mark \default
-	c8.\mf[ c16-. c8.-. c16]-.  c8 r r4
+	c8.\mf[-. c16-. c8.-. c16]-.  c8 r r4
 	r8. c16[ c8. c16] c8 r r4
 	R1*20
 % Bars 496 to 500

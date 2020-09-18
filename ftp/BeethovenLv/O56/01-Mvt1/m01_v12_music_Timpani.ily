@@ -10,7 +10,7 @@ musicTimpaniMvtI = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*16
+	<>-\tweak X-offset #-2 ^\tutti R1*16
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -102,7 +102,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 116 to 120
 	g4 g g g
 	c r r2 \mark \default
-	<>^\solo R1*11
+	<>^\solo \mmrLength #2.8 R1*11
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -163,9 +163,9 @@ musicTimpaniMvtI = \relative c {
 		\ni \clef treble R1
 		R
 		R
-		R \no \clef bass \mark \default
+		R \no \clef bass \markXoffset #-0.2 \mark \default
 	}
-	c4\ff^\tutti r r2
+	c4\ff-\tweak X-offset #0.6 ^\tutti r r2
 % Bars 226 to 230
 	c4 r r2
 	c4 r c r
@@ -175,7 +175,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 231 to 235
 	c4 r c r
 	c r c r
-	<>^\solo R1*44
+	<>-\tweak X-offset #-1 ^\solo R1*44
 % Bars 236 to 240
 	
 % Bars 241 to 245
@@ -216,9 +216,9 @@ musicTimpaniMvtI = \relative c {
 	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
 		\ni \clef treble R1
 		R
-		R1 \no \clef bass \mark \default 
+		R1 \no \clef bass \markXoffset #-0.2 \mark \default 
 	}
-	c4\ff^\tutti r r2
+	c4\ff-\tweak X-offset #1 ^\tutti r r2
 % Bars 326 to 330
 	c4 c8. c16 c4 c
 	c r r2
@@ -238,18 +238,18 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	c2\f\startTrillSpan~ c8\stopTrillSpan r^\solo r4
+	c2\f\startTrillSpan~ c8 r-\tweak X-offset #0.8 ^\solo\stopTrillSpan r4
 % Bars 346 to 350
 	R1
-	c2\ff\startTrillSpan~ c8\stopTrillSpan r r4
+	c2\ff\startTrillSpan~ c8 r\stopTrillSpan r4
 	R1
-	c2\ff\startTrillSpan~ c8\stopTrillSpan r r4
+	c2\ff\startTrillSpan~ c8 r\stopTrillSpan r4
 	R1
 % Bars 351 to 355
-	g2\f\startTrillSpan~ g8\stopTrillSpan r r4
+	g2\f\startTrillSpan~ g8 r\stopTrillSpan r4
 	R1 \mark #11
-	g2\f\startTrillSpan~ g8\stopTrillSpan r r4
-	R1*30
+	\dynEsw #'(-2 . 0) g2\f\startTrillSpan~ g8 r\stopTrillSpan r4
+	\mmrLength #1.2 R1*30
 % Bars 356 to 360
 	
 % Bars 361 to 365
@@ -266,13 +266,13 @@ musicTimpaniMvtI = \relative c {
 	
 	\cueDuring #"cueVoiceTimpaniMvtI" #UP {
 		\ni \clef treble R1
-		R \no \clef bass \mark \default
+		R \no \clef bass \markXoffset #-0.2 \mark \default
 	}
 % Bars 386 to 390
-	g4\ff^\tutti r g4-. g-.
+	g4\ff-\tweak X-offset #1.2 ^\tutti r g4-. g-.
 	g-. g-. g-. g-.
 	g-.^\solo r r2
-	R1*42
+	\mmrLength #1.5 R1*42
 % Bars 391 to 395
 	
 % Bars 396 to 400
@@ -294,7 +294,7 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 % Bars 431 to 435
-	R1*27
+	\mmrLength #1.5 R1*27
 % Bars 436 to 440
 	
 % Bars 441 to 445
@@ -311,9 +311,9 @@ musicTimpaniMvtI = \relative c {
 		R
 		R
 % Bars 461 to 465
-		R \no \clef bass \mark \default
+		R \no \clef bass \markXoffset #-0.15 \mark \default
 	}
-	c4\ff^\tutti r r2
+	c4\ff-\tweak X-offset #0.5 ^\tutti r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2
@@ -344,7 +344,7 @@ musicTimpaniMvtI = \relative c {
 	g8 r r8. g16 g8 r r8. g16
 % Bars 491 to 495
 	g8 r r8. g16 g8 r r8. g16 \mark \default
-	c8.\mf[ c16-. c8.-. c16]-.  c8 r r4
+	c8.\mf[-. c16-. c8.-. c16]-.  c8 r r4
 	r8. c16[ c8. c16] c8 r r4
 	R1*20
 % Bars 496 to 500
@@ -363,8 +363,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 516 to 520
 		\mmrPos #-8 R \no
 		r2 \clef bass } r8. g16[\f-. c8.-. c16]-. 
-	c4-.\ff r r2 \mark \default
-	g4-.\ff^\solo r r2
+	c4-.\ff r r2 \markXoffset #-0.2 \mark \default
+	g4-.\ff-\tweak X-offset #1 ^\solo r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r
