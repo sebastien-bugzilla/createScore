@@ -16,6 +16,7 @@ fcresc = \markup { \dynamic f \italic cresc.}
 dolce = \markup {\italic {dolce}}
 sempreppD = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp"))
 semprestaccato = \markup {\italic {sempre staccato}}
+semprestacc = \markup {\italic {sempre stacc.}}
 cantabile = \markup {\italic cantabile}
 pdim = \markup { \dynamic p \italic dim.}
 fmarcato = \markup { \dynamic f \italic marcato}
@@ -74,7 +75,8 @@ solobold=^\markup {\bold \abs-fontsize #10 Solo}
 klaviersolobold=^\markup {\bold \abs-fontsize #10 {Klavier solo}}
 violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
 violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
-
+farco=^\markup {\dynamic f \italic arco}
+crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 
 crescText = #(define-music-function
 	(cresctext)

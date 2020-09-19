@@ -48,9 +48,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatSoloViolinMvtI
-%			}
+			\new Voice {
+				\formatSoloViolinMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameSoloViolinMvtI \musicSoloViolinMvtI
@@ -77,9 +77,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatSoloViolinMvtII
-%			}
+			\new Voice {
+				\formatSoloViolinMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameSoloViolinMvtII \musicSoloViolinMvtII
@@ -106,9 +106,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatSoloViolinMvtIII
-%			}
+			\new Voice {
+				\formatSoloViolinMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameSoloViolinMvtIII \musicSoloViolinMvtIII
@@ -119,7 +119,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

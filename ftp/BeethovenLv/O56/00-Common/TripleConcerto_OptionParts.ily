@@ -13,6 +13,8 @@ generalOptions = {
 		\musicglyph "scripts.caesura.curved"
 	}
 	%\override Score.SpacingSpanner.strict-grace-spacing = ##t
+	\override Score.DynamicTextSpanner.font-size = #0
+	\override Beam.auto-knee-gap = #3
 }
 partOptions = {
 	\override Score.BarNumber #'font-size = #0.1

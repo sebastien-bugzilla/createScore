@@ -1611,7 +1611,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 	g4-.\pp r <b, g'>-. r
 	q-. r r2
 % Bars 11 to 15
-	<a f'!>4 r r r8 g16(a
+	<a f'!>4-. r r r8 g16(a
 	b4)\f r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
 	c1\pp
 	b8([ c d8. c16)] c4-. c-.
@@ -1697,7 +1697,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 % Bars 81 to 85
 	c: c:
 	c: c:
-	c:^\crescmarkup c:
+	c:_\crescmarkup c:
 	<< {\InCueContext a'1\trill^\markup {Vlc.solo.}} \\ {\InCueContext c,8 d d d \oneVoice d2:8}>>
 	s1*28
 % Bars 86 to 90
@@ -1794,7 +1794,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 % Bars 241 to 245
 	<e c' a'> r r2
 	R1
-	r2^\solobold fis(\pp^\markup {Viol.rip.}
+	r2-\tweak X-offset #-2 ^\solobold fis(\pp^\markup {Viol.rip.}
 	b,1
 	e)
 % Bars 246 to 250
@@ -2033,7 +2033,7 @@ cueVoiceSoloViolinMvtII = \relative c {
 	c32\f[ c c c] c[ c\> c c] c[ c c c]
 	c16\p c c c c c
 	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees]
-	d8\p^\solobold r r
+	d8\p-\tweak X-offset #0.5 ^\solobold r r
 	s4.*9
 % Bars 46 to 50
 % Bars 51 to 53

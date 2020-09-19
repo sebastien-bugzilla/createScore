@@ -15,6 +15,7 @@ generalOptions = {
 	\override BreathingSign.text = \markup {
 		\musicglyph "scripts.caesura.curved"
 	}
+	\override Score.DynamicTextSpanner.font-size = #0
 }
 conductorOptions = {
 	\set Staff.soloText = #"1."
