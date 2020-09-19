@@ -21,7 +21,6 @@
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_PartTimpani.ily"
-\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v12_music_Timpani.ily"
 \include "./03-Mvt3/m03_v12_music_Timpani.ily"
@@ -65,7 +64,6 @@
 			}
 		}
 		\layout {
-			%system-count = #18
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -122,7 +120,6 @@
 			}
 		}
 		\layout {
-			system-count = #20
 			\context {
 				\CueVoice \layoutCueVoice
 			}
