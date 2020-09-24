@@ -1698,7 +1698,7 @@ cueVoiceSoloViolinMvtI = \relative c {
 	c: c:
 	c: c:
 	c:_\crescmarkup c:
-	<< {\InCueContext a'1\trill^\markup {Vlc.solo.}} \\ {\InCueContext c,8 d d d \oneVoice d2:8}>>
+	<< {\InCueContext a'1-\tweak extra-offset #'(0 . -3.7) \trill^\markup {Vlc.solo.}} \\ {\InCueContext c,8 d d d \oneVoice d2:8}>>
 	s1*28
 % Bars 86 to 90
 	
@@ -2343,7 +2343,7 @@ cueVoiceSoloCelloMvtI = \relative c {
 % Bars 6 to 10
 	d4-. f-. d-. c-.
 	b2(\pp c)
-	\afterGrace a1\startTrillSpan_\crescmarkup {g16[\stopTrillSpan a]}
+	\trillSpanCustom #5 #trillglyph \afterGrace a1\startTrillSpan_\crescmarkup {g16[\stopTrillSpan a]}
 	g4-.\pp r g-. r
 	g-. r r2
 % Bars 11 to 15
@@ -2574,7 +2574,7 @@ cueVoiceSoloCelloMvtI = \relative c {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\afterGrace a1\startTrillSpan {g16\stopTrillSpan a}
+	\trillSpanCustom #4 #trillglyph \afterGrace a1\startTrillSpan {g16\stopTrillSpan a}
 	g4 r g r
 	g r r2
 	a4\p r r r8 g16(\p a
@@ -2721,7 +2721,7 @@ cueVoiceSoloCelloMvtII = \relative c {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	aes,8^\pizz r des16 c
+	aes,8-\tweak X-offset #1 ^\pizz r des16 c
 	g8 r g 
 	g g16.[ ees32 aes16. des32]
 	ees8 s4
@@ -2755,7 +2755,7 @@ cueVoiceSoloCelloMvtIII = \relative c {
 % Bars 11 to 15
 	
 % Bars 16 to 20
-	s4. r8^\tuttibold s4 \clef bass
+	s4. r8^\tuttibold r4 \clef bass
 	g'8-.\pp r r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-.
 	d8.-. d16-. d8-. r d-. r
@@ -2795,7 +2795,7 @@ cueVoiceSoloCelloMvtIII = \relative c {
 	c,4. e8\sf[( g, b])
 	s2.
 	s8 e'\sf[-.^\tuttibold g,-. c\sf-. e,-. g\sf]-. 
-	c,[-. e\sf-. g,-. c\sf-. e,-. g\sf]-. 
+	c,[ e\sf g, c\sf e, g\sf] 
 	c, r g' r e r
 % Bars 61 to 65
 	c r s2

@@ -48,9 +48,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatSoloCelloMvtI
-%			}
+			\new Voice {
+				\formatSoloCelloMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameSoloCelloMvtI \musicSoloCelloMvtI
@@ -77,9 +77,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatSoloCelloMvtII
-%			}
+			\new Voice {
+				\formatSoloCelloMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameSoloCelloMvtII \musicSoloCelloMvtII
@@ -106,9 +106,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatSoloCelloMvtIII
-%			}
+			\new Voice {
+				\formatSoloCelloMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameSoloCelloMvtIII \musicSoloCelloMvtIII

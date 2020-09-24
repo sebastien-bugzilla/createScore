@@ -238,7 +238,7 @@ musicSoloViolinMvtI = \relative c''' {
 	gis4 r r8. gis16[( b8. a16])
 	a4 r r8. a16[( cis8. b16])
 % Bars 261 to 265
-	b4(-\tweak X-offset #-0.2 \trill-\tweak X-offset #1.2 ^\sharp d4)~\sfp \tuplet 3/2 4 {d8 cis-. b-. fis'-.\sfp e-. d-.}
+	b4(^\sharptrill d4)~\sfp \tuplet 3/2 4 {d8 cis-. b-. fis'-.\sfp e-. d-.}
 	\tuplet 3/2 4 {d-. cis-. b-. fis'\sfp-. e-. d-. d-. cis-. b-. fis'\sfp-. e-. d-.}
 	\tuplet 3/2 4 {d-. cis-. b-. b-. a-. gis-. gis-. fis-. e-. e-. d-. cis-.}
 	\tuplet 3/2 4 {cis b a a gis fis fis e dis fis e dis}
@@ -503,8 +503,8 @@ musicSoloViolinMvtI = \relative c''' {
 	
 	\tuplet 3/2 4 {b,,8(\pp^\violinesolobold d c e d f e g f a g b}
 	\tuplet 3/2 4 {a c b d c e) d( f) f-. f f f }
-	<< f1_\crescmarkup {s4\startTrillSpan s s s\stopTrillSpan} >>
-	\afterGrace b,1\startTrillSpan {a16[(\stopTrillSpan b)]}
+	<< f1_\crescmarkup {\trillSpanCustom #6 #trillglyph s4\startTrillSpan s s s\stopTrillSpan} >>
+	\trillSpanCustom #5 #trillglyph \afterGrace b,1\startTrillSpan {a16[(\stopTrillSpan b)]}
 % Bars 506 to 510
 	bes4\p r r2
 	g'4..(_\dolce e16 c4 bes)

@@ -13,7 +13,7 @@ musicSoloCelloMvtII = \relative c'' {
 	s4.*3
 	
 	
-	r8 r16 \clef treble g(_\moltocantabile aes bes)
+	r8 r16 \clef treble g(_\moltocantabile^\solobold aes bes)
 	c4( bes16 c)
 % Bars 6 to 10
 	des8( ees8.\sfp des16)
@@ -26,13 +26,13 @@ musicSoloCelloMvtII = \relative c'' {
 	des8.\sf( f16_\dimmarkup ees des)
 	c4( bes16 c)
 	des4( c16 des)
-	ees8(_\crescmarkup e4)\f\>
+	ees8(_\crescmarkup \dynEsw #'(-7 . 0) e4)\f\>
 % Bars 16 to 20
 	f8.\p f16(~_\crescmarkup f32.[ des64) f32.( des64)]
 	c8.\noBeam b32([\p c]) b( c) b( c)
 	ees8._\crescmarkup des16( bes! g)
 	aes([ bes]) c8\sf~\noBeam c32(\> bes ees g,)
-	bes8\p( aes16) r r8 \clef bass \mark \default
+	bes8\p( aes16) r r8 \clef bass \markXoffset #-0.3 \mark \default
 % Bars 21 to 25
 	s4.*3
 	
@@ -50,19 +50,19 @@ musicSoloCelloMvtII = \relative c'' {
 	bes8.\sf des16(\> c bes)
 	aes4\p( g16 aes)
 	bes4 \tuplet 3/2 16 {aes32[( c bes)] bes[( des c)]}
-	c8_\crescmarkup( bes4)\sf\>
+	c8_\crescmarkup( \dynEsw #'(-9 . 0) bes4)\sf\>
 % Bars 36 to 40
 	aes16\!_\crescmarkup([ a bes c)] des32.[( bes64]) des64.[( bes128) des64.( bes128)]
 	aes16(\p ees8 \clef tenor c16 aes a)
 	bes16 des8 g bes16 \clef treble
-	aes16\startTrillSpan bes\startTrillSpan c8\noBeam~\stopTrillSpan \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
+	aes16\trill bes\trill c8\noBeam~ \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
 	aes!8 \clef bass s s
 % Bars 41 to 45
 	s4.*3
 	
-	\mark \default
-	\clef bass \tuplet 3/2 16 {g,,32\p([^\solobold g' fis] g[ b ais] b[ d cis] d[ g d])} f(\< ees) d(\>-. c-.)\!
-	b8 r16 g,\<\noBeam \afterGrace aes8(\startTrillSpan\> { g16[\stopTrillSpan aes])}
+	\markXoffset #-0.3 \mark \default
+	\clef bass \tuplet 3/2 16 {g,,32-\tweak X-offset #-2.2 \p(_[-\tweak X-offset #0.7 ^\solobold g' fis] g[ b ais] b[ d cis] d[ g d])} f(\< ees) d(\>-. c-.)\!
+	b8 r16 g,\<\noBeam \trillSpanCustom #5 #trillglyph \afterGrace aes8(\startTrillSpan\> { g16[\stopTrillSpan aes])}
 % Bars 46 to 50
 	<g g'>4.\p~
 	q~

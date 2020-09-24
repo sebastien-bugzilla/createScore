@@ -344,7 +344,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	b''8( fis) fis-. fis-. gis16( fis e fis)
 	\afterGrace gis2.\startTrillSpan {fis16[\stopTrillSpan gis]}
 	a8( e) e-. e-. fis16( e d! e)
-	\afterGrace fis2.\startTrillSpan^\natural {e16[\stopTrillSpan fis]}
+	\trillSpanCustom #6 #naturaltrill \afterGrace fis2.\startTrillSpan {e16[\stopTrillSpan fis]}
 % Bars 321 to 325
 	g16 fis,( g a b c d e g f! e d
 	e) g,( a b c d e f a g f e)

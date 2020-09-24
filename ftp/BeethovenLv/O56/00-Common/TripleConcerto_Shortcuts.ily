@@ -77,6 +77,7 @@ violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
 violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
 farco=^\markup {\dynamic f \italic arco}
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+sharptrill = \markup {\halign #RIGHT \tiny \sharp \lower #1.2 \musicglyph #"scripts.trill" }
 
 crescText = #(define-music-function
 	(cresctext)
@@ -211,6 +212,42 @@ hairpinLength = #(define-music-function
 	(number?)
 	#{
 		\once \override Hairpin.minimum-length = #length
+	#}
+)
+
+sharptrill = \markup { 
+	\general-align #X #CENTER 
+	\line { 
+		\general-align #Y #DOWN \tiny \sharp \musicglyph #"scripts.trill" 
+	}
+}
+naturaltrill = \markup { 
+	\general-align #X #CENTER 
+	\line { 
+		\general-align #Y #DOWN \tiny \natural \musicglyph #"scripts.trill" 
+	}
+}
+flattrill = \markup { 
+	\general-align #X #CENTER 
+	\line { 
+		\general-align #Y #DOWN \tiny \flat \musicglyph #"scripts.trill" 
+	}
+}
+trillglyph = \markup {
+	\musicglyph #"scripts.trill" 
+}
+
+
+trillSpanCustom = #(define-music-function
+	(length markup)
+	(number? markup?)
+	% function to create a trill spanner with :
+	%	- specified length
+	%	- specified markup
+	#{
+		\once \override TrillSpanner.minimum-length = #length
+		\once \override TrillSpanner.springs-and-rods = #ly:spanner::set-spacing-rods
+		\once \override Score.TrillSpanner.bound-details.left.text = #markup
 	#}
 )
 

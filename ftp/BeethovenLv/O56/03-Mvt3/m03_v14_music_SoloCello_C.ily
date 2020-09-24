@@ -38,15 +38,15 @@ musicSoloCelloMvtIII = \relative c'' {
 	b8 r r4 r
 % Bars 26 to 30
 	R2.
-	\clef bass \tuplet 6/4 4 {g,16-. d'-. c-. b-. a-. g-. fis-. e-. d-. c-. b-. a-. g fis e d e fis
-	g b( ais b ais b) g d'( cis d cis d) b g'( fis g fis g)
-	d b'( ais b ais b) b d( cis d cis d) b f'!( e f e f)}
+	\clef bass \tuplet 6/4 4 {g,16-. d'-. c-. b-. a-. g-. fis-. e-. d-. c-. b-. a-. g-. fis-. e-. d-. e-. fis-.
+	g-. b( ais b ais b) g-. d'( cis d cis d) b-. g'( fis g fis g)
+	d-. b'( ais b ais b) b-. d( cis d cis d) b-. f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark #4
 % Bars 31 to 35
 	\grace {s8.} f2\f\fermata r4
 	R2.
 	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \acciaccatura fis'8 g \acciaccatura fis g
-	\clef treble g4.\startTrillSpan a16(\stopTrillSpan b c8 d)
+	\clef treble g4.(\startTrillSpan a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)^\crescmarkup( c4. b8)
 % Bars 36 to 40
 	a( f'~ f) f16( e) e( d) d( c)
@@ -83,9 +83,9 @@ musicSoloCelloMvtIII = \relative c'' {
 	a a, r c c, cis
 	d4 r r
 % Bars 76 to 80
-	g8\noBeam^\arco \clef tenor b'(\trill[ \grace {a16[ b]} g8)] d'([\trill \grace {c16[ d]} b8)] \afterGrace g'8\trill {fis16[ g]}
+	g8\noBeam^\arco \clef tenor b'(\trill[ \grace {a16[ b]} g8)] d'([\trill \grace {c16[ d]} b8)] \afterGrace g'8\trill( {fis16[ g)]}
 	g4(\> fis8)\! r r4 \clef bass
-	d,8\noBeam \clef treble fis'8(\trill[ \grace {e16[ fis]} d8)] a'[(\trill \grace {g16[ a]} fis8)] \afterGrace d'\trill {cis16[ d]}
+	d,8\noBeam \clef treble fis'8(\trill[ \grace {e16[ fis]} d8)] a'[(\trill \grace {g16[ a]} fis8)] \afterGrace d'(\trill {cis16[ d])}
 	c!4( b8) r r4
 	R2.*2
 % Bars 81 to 85
@@ -102,12 +102,12 @@ musicSoloCelloMvtIII = \relative c'' {
 	e f g a g f e f g a g f} e8 cis,\sf
 % Bars 91 to 95
 	d\noBeam\f d''4\sf b8-. g-. e-.
-	d-. b-. g-. e-. d8.( e32 fis) \mark \default
+	d-.[ b-. g-. e-.] d8.( e32 fis) \mark \default
 	g8 r r4 r
 	R2.*2
 	
 % Bars 96 to 100
-	\clef tenor \tuplet 6/4 4 {g''16\p( fis) a-. g( fis) a-. g d b \clef bass g b g d g d b d b}
+	\clef tenor \tuplet 6/4 4 {g''16\p( fis) a-. g( fis) a-. g-. d-. b-. \clef bass g-. b-. g-. d-. g-. d-. b-. d-. b-.}
 	g8 r r4 r
 	R2.
 	r4 r r8 \tuplet 3/2 8 {g16\f a b}
@@ -116,8 +116,8 @@ musicSoloCelloMvtIII = \relative c'' {
 	e d c b c d e d c b c d e d e f e f}
 	g2 \tuplet 6/4 4 {g16 a g f g f}
 	e8 r r4 \clef treble \tuplet 6/4 4 {g'16 a g f g f
-	e\dim f g a g f e f g a g f e f g a g f
-	e f g aes g f e f g aes g f e f g aes g f}
+	e\dim( f g a g f) e( f g a g f) e( f g a g f)
+	e( f g aes g f) e( f g aes g f) e( f g aes g f)}
 % Bars 106 to 110
 	e4\p r8 \textSpanner "rallentando" g(\startTextSpan-. e-. g-.)
 	e4 r8 g(-. e-. g)-. 
@@ -134,12 +134,12 @@ musicSoloCelloMvtIII = \relative c'' {
 	\tuplet 6/4 4 {g16)( fis g fis g fis) g( fis g fis g fis) g( fis g fis g fis)}
 	\grace {fis16[( g)]} g2.~\startTrillSpan
 	\afterGrace g_\crescsottovoce {fis16\stopTrillSpan}
-	g4. a16( b) c8 d
+	g4.( a16 b c8 d)
 	e4( c4. b8)
 % Bars 121 to 125
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) fis( g) fis( g)
-	g4.\startTrillSpan a16(\stopTrillSpan b c8 d)
+	g4.\startTrillSpan( a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)( c4. b8)
 	ais4( g'4. e8)
 % Bars 126 to 130
@@ -167,8 +167,8 @@ musicSoloCelloMvtIII = \relative c'' {
 	R2. \clef bass
 	\tuplet 6/4 4 {g,16-. d'-. c-. b-. a-. g-. fis-. e-. d-. c-. b-. a-. g-. fis-. e-. d-. e-. fis-. 
 % Bars 146 to 150
-	g b( ais b ais b) g d'( cis d cis d) b g'( fis g fis g)
-	d b'( ais b ais b) b d( cis d cis d) b f'!( e f e f)}
+	g-. b( ais b ais b) g-. d'( cis d cis d) b-. g'( fis g fis g)
+	d-. b'( ais b ais b) b-. d( cis d cis d) b-. f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark \default
 	\grace {s8.} f2\fermata\f r4
 	R2.
@@ -225,12 +225,12 @@ musicSoloCelloMvtIII = \relative c'' {
 	r4 r r8 e(_\espressivo
 	e' b) b-. b-. c16( b a b)
 	c8( a) a-. a-. b16( a gis a)
-	gis8( e) e-. e-. e-. e-.
+	gis8( e) e-. e-. e-.[ e-.]
 % Bars 206 to 210
 	a4\< a, r8 fis''(\!
 	g\p d) d-. d-. e16( d c d)
 	e8( c) c-. c-. d16( c b c)
-	b8( g) g-. g-. g-. g-.
+	b8( g) g-. g-. g-.[ g-.]
 	c4_\crescmarkup c,4 r8 c'
 % Bars 211 to 215
 	b2.~\p
@@ -290,15 +290,15 @@ musicSoloCelloMvtIII = \relative c'' {
 	f-. a( g) f( e8) r r4
 	r r  r8 f^\pizz
 	bes bes, r4 r 
-	r r8 c' f a,
+	r r8 c' f[ a,]
 % Bars 266 to 270
-	r g c f, r e
-	a a, r d f, fis
+	r g c[ f,] r e
+	a a, r d f,[ fis]
 	g r r4 r
-	c,8^\arco\noBeam \clef treble e''[(\trill \grace {d16[ e]} c8)] g'[(\trill \grace {fis16[ g]} e8)] \afterGrace c'\trill {b16[ c]}
+	c,8^\arco\noBeam \clef treble e''[(\trill \grace {d16[ e]} c8)] g'[(\trill \grace {fis16[ g]} e8)] \afterGrace c'\trill( {b16[ c])}
 	c4(\> b8)\! r r4 \clef bass 
 % Bars 271 to 275
-	g,,8 \clef tenor b'[(\trill \grace {a16[ b]} g8)] d'[(\trill \grace {cis16[ d]} b8]) \afterGrace g'\trill {fis16[ g]}
+	g,,8 \clef tenor b'[(\trill \grace {a16[ b]} g8)] d'[(\trill \grace {cis16[ d]} b8]) \afterGrace g'\trill( {fis16[ g)]}
 	f!4( e8) r r4
 	R2.*2
 	
@@ -314,10 +314,10 @@ musicSoloCelloMvtIII = \relative c'' {
 	\tuplet 6/4 4 {a16\cresc bes c d c bes a bes c d c bes a bes c d c bes
 	a bes c d c bes a bes c d c bes} a8 \clef bass fis,\sf
 	g\f g''4\sf e8-. c-. a-.
-	g-. e-. c-. a-. g8.( a32 b) \mark \default
+	g-.[ e-. c-. a-.] g8.( a32 b) \mark \default
 % Bars 286 to 290
 	c4 r r
-	\tuplet 6/4 4 {f'16\p( e) g-. f( e) g-. f d b g b g d g d b d b}
+	\tuplet 6/4 4 {f'16\p( e) g-. f( e) g-. f-. d-. b-. g-. b-. g-. d-. g-. d-. b-. d-. b-.}
 	g8 r r4 r
 	R2.*3
 	
@@ -383,17 +383,17 @@ musicSoloCelloMvtIII = \relative c'' {
 	
 	
 	
-	r4 \clef treble r16 e\pp gis b
-	e e, gis b e d c b
+	r4 \clef treble r16 e\pp-. gis-. b-.
+	e-. e,-. gis-. b-. e_\semprestaccato d c b
 % Bars 346 to 350
 	c b a gis a c b a
 	g! b a g fis a g fis \clef tenor
 	e2~
-	e4~ e16 d c b 
+	e4~ e16-. d-. c-. b-. 
 	a gis a gis a c b a
 % Bars 351 to 355
 	g! b a g fis a g fis
-	g4 r16 d e fis
+	g4 r16 d-. e-. fis-.
 	g\< a b c d\> b c a\!
 	g4 r16 d e fis
 	g\< a b c d\> b c a\! \clef bass
@@ -432,7 +432,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	c a c b a g! f e
 	d8 r \clef treble g'4\f\startTrillSpan~
 	g4. a16\stopTrillSpan b
-	d\p c b c d c b a
+	d\p-. c-. b-. c-. d-. c-. b-. a-.
 % Bars 386 to 390
 	a( g) fis-. g-. a( g) fis-. g-. \mark \default
 	g8 r r4 
@@ -527,7 +527,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	\tuplet 6/4 4 {c16(\f e d c\sf b a) g( c b a\sf g f) e( a g f\sf e d)}
 	c8 r r4 r
 	\tuplet 6/4 4 {c'16( e d c\sf b a) g( c b a\sf g f) e( a g f\sf e d)}
-	r16 c\ff-. d-. e-. f-. g-. a-. b-. c-. e,-. f-. g-. 
+	r16 c\ff-. d-. e-. f-. g-. a-. b-. c-.\sf e,-. f-. g-. 
 	a_\sempreff b c d e\noBeam \clef tenor g, a b c\sf d e f
 % Bars 471 to 475
 	g c, d e f g a b c\sf g a b
