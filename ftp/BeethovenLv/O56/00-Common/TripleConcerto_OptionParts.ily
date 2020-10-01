@@ -22,7 +22,7 @@ partOptions = {
 		beam-event tuplet-span-event dynamic-event articulation-event
 		dynamic-event slur-event text-script-event trill-span-event
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
-		decrescendo-event text-span-event span-event  grace-music)
+		decrescendo-event StreamEvent grace-music)
 	\set Voice.restNumberThreshold = #0
 	\override TupletNumber.avoid-slur = #'ignore
 	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)

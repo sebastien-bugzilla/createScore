@@ -26,15 +26,15 @@ musicViolinIMvtII = \relative c' {
 	r16 des8\sf( f16_\dimmarkup ees des)
 	c4\p( bes16 c)
 	des4( c16 des)
-	ees8_\crescmarkup e4\f\>
+	ees8\cresc \dynEsw #'(-7 . 0) e4\f\>
 % Bars 16 to 20
-	f4\p(_\crescmarkup~ f16 des)
+	f4-\tweak X-offset #0 \pcrescD(~ f16 des)
 	c32\p c c c r c c c r c[ r c]
 	r des_\crescmarkup des des r des des des r des[ r des]
 	r c[ r f] r16 c\sf r des\p
-	r des( c) r r8 \mark \default
+	r des( c) r r8 \markXoffset #-0.3 \mark \default
 % Bars 21 to 25
-	c8^\pizz r bes16 c
+	c8-\tweak X-offset #1.0 ^\pizz r bes16 c
 	des8 r des
 	des des16.[ ees32 c16. des32]
 	bes8 \cueDuring #"cueVoiceViolinIMvtII" #UP { r r
@@ -62,7 +62,7 @@ musicViolinIMvtII = \relative c' {
 	c32\f[ c c c] c[ c\> c c] c[ c c c]
 	c16\p c c c c c
 	c32\f[ ees ees ees] ees[ c' c\> c] c[ ees, ees ees] \mark \default
-	d8\p^\solo r16 g,(\<\noBeam \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
+	d8\p^\solo r16 g,(\<\noBeam \trillSpanCustom #5 #trillglyph \afterGrace aes!8)\startTrillSpan\> {g16[\stopTrillSpan aes\!]}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -74,5 +74,5 @@ musicViolinIMvtII = \relative c' {
 	\cueDuring #"cueVoiceViolinIMvtII" #UP {
 		\ni <>_\senzasordino R4.
 		R \no
-		r8 r f'16_\pizz r } \bar "||"
+		r8 r f'16_\pizz r } \bar "||" \key c \major \time 3/4 \attacca
 }

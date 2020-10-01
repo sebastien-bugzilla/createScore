@@ -34,6 +34,7 @@ pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 crescpocoapoco = \markup {\italic {cresc. poco a poco}}
 moltopiano = \markup {\italic {molto piano}}
+fpmoltopiano = \markup {\dynamic fp \italic {molto piano} }
 unobassoeviolonc = \markup {Uno Basso e Violonc.}
 tutti = \markup {\italic tutti}
 pstacc = \markup {\dynamic p \italic stacc.}
@@ -100,11 +101,80 @@ fermataCentered  = {
 	R2.^\markup {\musicglyph "scripts.ufermata"}
 }
 
+oneCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 1}
+	\undo \omit MultiMeasureRestNumber
+}
+twoCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 2}
+	\undo \omit MultiMeasureRestNumber
+}
+threeCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 3}
+	\undo \omit MultiMeasureRestNumber
+}
+fourCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 4}
+	\undo \omit MultiMeasureRestNumber
+}
+fiveCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 5}
+	\undo \omit MultiMeasureRestNumber
+}
+sixCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 6}
+	\undo \omit MultiMeasureRestNumber
+}
+sevenCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 7}
+	\undo \omit MultiMeasureRestNumber
+}
+eightCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 8}
+	\undo \omit MultiMeasureRestNumber
+}
+nineCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 9}
+	\undo \omit MultiMeasureRestNumber
+}
 textSpanner = #(define-music-function
-	(textSpanner)
-	(markup?)
+	(textSpanner fontshape)
+	(string? symbol?)
 	#{
-		\once \override TextSpanner.bound-details.left.text = \markup {\italic { #textSpanner } }
+		\once \override TextSpanner.font-shape = #fontshape
+		\once \override TextSpanner.bound-details.left.text = \markup { #textSpanner }
+	#}
+)
+
+ottavaBracket = #(define-music-function
+	(textSpanner fontshape)
+	(string? symbol?)
+	#{
+		\once \override TextSpanner.font-shape = #fontshape
+		\once \override TextSpanner.dash-fraction = #0.2
+		\once \override TextSpanner.dash-period = #1.5
+		\once \override TextSpanner.bound-details.right.attach-dir = #1
+		\once \override TextSpanner.bound-details.right.stencil = #ly:text-interface::print
+		\once \override TextSpanner.bound-details.right.text = \markup { \draw-dashed-line #'(0 . -0.8) }
+		\once \override TextSpanner.bound-details.left.text = \markup { #textSpanner }
 	#}
 )
 
@@ -250,6 +320,17 @@ trillSpanCustom = #(define-music-function
 		\once \override Score.TrillSpanner.bound-details.left.text = #markup
 	#}
 )
+
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	% function to create a trill spanner with :
+	%	- specified padding to avoid overlap
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
+
 
 %arco=^\markup {\italic arco}
 %benmarc=^\markup {\italic {ben marc.}}

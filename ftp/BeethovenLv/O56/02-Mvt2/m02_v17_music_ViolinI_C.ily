@@ -26,7 +26,7 @@ musicViolinIMvtII = \relative c' {
 	r16 des8\sf( f16_\dimmarkup ees des)
 	c4\p( bes16 c)
 	des4( c16 des)
-	ees8_\crescmarkup e4\f\>
+	ees8_\crescmarkup \dynEsw #'(-5 . 5) e4\f\>
 % Bars 16 to 20
 	f4\p(_\crescmarkup~ f16 des)
 	c32\p c c c r c c c r c[ r c]

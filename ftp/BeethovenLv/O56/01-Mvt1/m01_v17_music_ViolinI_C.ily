@@ -15,7 +15,7 @@ musicViolinIMvtI = \relative c' {
 	
 	f2(\pp e~
 	e_\crescmarkup fis)
-	g4-. r <b, g'>-. r
+	g4-.\pp r <b, g'>-. r
 	q-. r r2
 % Bars 11 to 15
 	<a f'!>4-. r r r8 g16( a
@@ -76,7 +76,7 @@ musicViolinIMvtI = \relative c' {
 	b2~ b8.[ g16( a8. g16)]
 	c2~ c8.[ c16( d8. c16)]
 	ees4..\ff c16 ees4.. c16
-	ees8.-. c16-. ees8.-. c16-. ees8.-. c16-. ees8.-. c16-. 
+	ees8.-.[ c16-. ees8.-. c16-.] ees8.-.[ c16-. ees8.-. c16-.] 
 % Bars 61 to 65
 	b4 r r <d,, b' g'>-.
 	<d a' fis'>-. r r q-.
@@ -162,7 +162,7 @@ musicViolinIMvtI = \relative c' {
 	r4 e2( d4
 % Bars 131 to 135
 	g) r r2
-	e4\f e2( f8. d16)
+	e4\f-. e2( f8. d16)
 	g4 r r2
 	R1*4
 	
@@ -441,7 +441,7 @@ musicViolinIMvtI = \relative c' {
 	a) r r2
 	a4-.\f a2( bes8. g16)
 % Bars 371 to 375
-	c4-. r r2
+	c4 r r2
 	R1*6
 % Bars 376 to 380
 	
@@ -502,7 +502,7 @@ musicViolinIMvtI = \relative c' {
 	g4 r8. g16 g4 r8. g16
 	c4 r r2
 	R1
-	r4 r8. f16-. fis4-. r8. fis16
+	r4 r8. f16-. fis4-. r8. fis16-.
 	g8 r a r f! r g r \mark \default
 % Bars 431 to 435
 	c,4 r r2
@@ -544,7 +544,7 @@ musicViolinIMvtI = \relative c' {
 	ees8.[ c16-. g8.-. c16]-. ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4\sf~
 	ees8.[ c16-. ees8.-. c16]-. ees8.[-. c16-. ees8.-. c16]-. 
-	\tuplet 3/2 4 {b8\fp b,,^\moltopiano d g d b g b d g d b}
+	\tuplet 3/2 4 {b8\fp b,,-.^\moltopiano d-. g d b g b d g d b}
 % Bars 471 to 475
 	\tuplet 3/2 4 {g b d g d b g b d g d b}
 	\tuplet 3/2 4 {g c e! g e c g c e g e c}

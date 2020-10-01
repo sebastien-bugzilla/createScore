@@ -11,7 +11,7 @@ musicViolinIMvtI = \relative c' {
 %	\transposition a
 % Bars 1 to 5
 	\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
-		\ni R1^\tutti
+		\ni <>^\tutti R1
 		R
 		R
 		R
@@ -21,7 +21,7 @@ musicViolinIMvtI = \relative c' {
 	}
 	f2(\pp e~
 	e_\crescmarkup fis)
-	g4-. r <b, g'>-. r
+	g4-.\pp r <b, g'>-. r
 	q-. r r2
 % Bars 11 to 15
 	<a f'!>4-. r r r8 g16( a
@@ -33,7 +33,7 @@ musicViolinIMvtI = \relative c' {
 	dis8([ e f8. e16]) e4-. e-.
 	g1
 	fis8[( g a8. g16]) g4-. g-.
-	c16( g c g c g c g \repeat tremolo 4 {c16 g)}
+	\repeat tremolo 4 {c16( g} \repeat tremolo 4 {c16 g)}
 	\repeat tremolo 4 {e'16( c)} \repeat tremolo 4 {g'16( e)}
 % Bars 21 to 25
 	<< f2.\ff {<f, c'>4 s2} >> c'4-.
@@ -54,7 +54,7 @@ musicViolinIMvtI = \relative c' {
 	g2.( gis4)
 	a( b c d)
 % Bars 36 to 40
-	e1_\crescmarkup~
+	e1-\tweak X-offset #-1 _\crescmarkup~
 	e2\p(~ e8.[ a16 c8. a16])
 	e2.\sfp c4
 	b( d c a)
@@ -82,7 +82,7 @@ musicViolinIMvtI = \relative c' {
 	b2~ b8.[ g16( a8. g16)]
 	c2~ c8.[ c16( d8. c16)]
 	ees4..\ff c16 ees4.. c16
-	ees8.-. c16-. ees8.-. c16-. ees8.-. c16-. ees8.-. c16-. 
+	ees8.-.[ c16-. ees8.-. c16-.] ees8.-.[ c16-. ees8.-. c16-.] 
 % Bars 61 to 65
 	b4 r r <d,, b' g'>-.
 	<d a' fis'>-. r r q-.
@@ -100,25 +100,25 @@ musicViolinIMvtI = \relative c' {
 	g2(\pp a
 	d,1)
 	<g, g'>\ff
-	c4 r8. <e' c'>16-. q4-. q-. \mark \default
-	q8\noBeam c,\pp c^\solo c c c c c 
+	c4 r8. <e' c'>16-. q4-. q-. \markYoffset #4.5 \mark \default
+	q8\noBeam c,\pp c^\solo c c2:8 
 % Bars 76 to 80
-	c c c c  c c c c 
-	c c c c  c c c c 
-	c c c c  c c c c 
-	c c c c  c c c c 
-	c c c c  c c c c 
+	<<{c2:8 c2:8} {\oneCentered}>>
+	<<{c2:8 c2:8} {\twoCentered}>>
+	<<{c2:8 c2:8} {\threeCentered}>>
+	<<{c2:8 c2:8} {\fourCentered}>>
+	<<{c2:8 c2:8} {\fiveCentered}>>
 % Bars 81 to 85
-	c c c c  c c c c 
-	c c c c  c c c c 
-	c_\crescmarkup c c c  c c c c 
-	c d d d d d d d
-	d\noBeam g\p g g  g g g g
+	<<{c2:8 c2:8} {\sixCentered}>>
+	<<{c2:8 c2:8} {\sevenCentered}>>
+	<<{c2:8_\crescmarkup c2:8} {\eightCentered}>>
+	c8 d d d d2:8
+	d8\noBeam g\p g g  g2:8
 % Bars 86 to 90
-	a a a a a a a a
-	a a a a a a a a
-	b g g g g g g g
-	g g g g g g g g
+	a2:8 a:
+	a: a:
+	b8 g g g g2:8
+	g: g:
 	g4 g r g
 % Bars 91 to 95
 	r g r g
@@ -143,18 +143,18 @@ musicViolinIMvtI = \relative c' {
 	f)
 	e4 r r e8. e16
 	a4 r r a8. a16
-	\cueDuring #"cueVoiceViolinIMvtI" #UP { e4 r r2
+	e4 \cueDuring #"cueVoiceViolinIMvtI" #UP {r r2
 		\ni R1
 % Bars 111 to 115
 		R
 		R \no
 		r2 r4 b'8\p r }
-	<g, e' c'>2.\ff(^\tutti e''4)
+	<g, e' c'>2.-\tweak X-offset #-3.5 \ff(^\tutti e''4)
 	g2.( f4)
 % Bars 116 to 120
 	d4-. d-. \acciaccatura e8 d8.[( c16 d8. e16])
-	c2~ c8\noBeam g-. e-. g-. \mark \default
-	\cueDuring #"cueVoiceViolinIMvtI" #UP { c,\p^\solo r r4 r2
+	c2~ c8\noBeam g-. e-. g-. \markXoffset #-0.3 \mark \default
+	\cueDuring #"cueVoiceViolinIMvtI" #UP { c,\p-\tweak X-offset #0.2 ^\solo r r4 r2
 		\ni R1
 		R
 % Bars 121 to 125
@@ -171,7 +171,7 @@ musicViolinIMvtI = \relative c' {
 	r4 e2( d4
 % Bars 131 to 135
 	g) r r2
-	e4\f e2( f8. d16)
+	e4\f-. e2( f8. d16)
 	g4 r r2
 	\cueDuring #"cueVoiceViolinIMvtI" #UP {
 		\ni R1
@@ -192,11 +192,11 @@ musicViolinIMvtI = \relative c' {
 % Bars 146 to 150
 	gis4 r r2
 	b4 r r2
-	r2 r4 r8 \tuplet 3/2 4 {b'16( cis dis)} \mark \default
+	r2 r4 r8 \tuplet 3/2 4 {b'16( cis dis)} \markYoffset #4.5 \mark \default
 	e2\ff^\tutti b4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
-	\cueDuring #"cueVoiceViolinIMvtI" #UP { e-.^\solo r r2
+	e-.^\solo \cueDuring #"cueVoiceViolinIMvtI" #UP {r r2
 		\ni R1
 		r4 d'\p r2
 		r4 d4 r2
@@ -230,7 +230,7 @@ musicViolinIMvtI = \relative c' {
 		\ni \mmrPos #-8 R1
 		\mmrPos #-8 R \no
 		r4 } a\pp r2
-	r4 c r2
+	r4 c! r2
 	r4 e,8 r e r e r
 % Bars 181 to 185
 	e r e r e r e r16 e
@@ -286,12 +286,12 @@ musicViolinIMvtI = \relative c' {
 % Bars 221 to 225
 	d4 d r d
 	r d r d
-	\crescText "cresc. poco a poco" gis,8\pp\< gis gis gis b b b b
-	d d d d gis gis gis gis \mark \default
+	\crescText "cresc. poco a poco" gis,2:8\pp\<  b:
+	d: gis: \markYoffset #4.5 \mark \default
 	<a, a'>2.\ff^\tutti a'4(
 % Bars 226 to 230
 	c2. bes4)
-	g-. g-. \acciaccatura a8 g8.[( f16 g8. a16])
+	g!-. g-. \acciaccatura a8 g8.[( f16 g8. a16])
 	f2~ f8 c-. a-. c-.
 	f8.[-. a16-. f8.-. a16-.] c2\sf~
 	c8.[ a16-. e8.-. a16-.] c2\sf~
@@ -310,27 +310,27 @@ musicViolinIMvtI = \relative c' {
 % Bars 241 to 245
 	<e c' a'> r \cueDuring #"cueVoiceViolinIMvtI" #UP { r2
 		\ni R1 \no
-		r2^\solo } fis(\pp
+		r2-\tweak X-offset #2.5 ^\solo } fis(\pp
 	b,1
 	e)
 % Bars 246 to 250
-	a,8 a'\pp a a a a a a 
-	a a a a a a a a 
-	a a a a a a a a 
-	a a a a a a a a 
-	a a a a a a a a 
+	a,8 \dynEsw #'(-1 . 0) a'\pp a a a2:8
+	<< {a2:8 a:} {\oneCentered} >>
+	<< {a2:8 a:} {\twoCentered} >>
+	<< {a2:8 a:} {\threeCentered} >>
+	<< {a2:8 a:} {\fourCentered} >>
 % Bars 251 to 255
-	a a a a a a a a 
-	a a a a a a a a 
-	a a a a a a a a 
-	a\cresc a a a a a a a 
-	a a a a a a a a 
+	<< {a2:8 a:} {\fiveCentered} >>
+	<< {a2:8 a:} {\sixCentered} >>
+	<< {a2:8 a:} {\sevenCentered} >>
+	<< {a2:8\cresc a:} {\eightCentered} >>
+	<< {a2:8 a:} {\nineCentered} >>
 % Bars 256 to 260
-	gis e\p e e  e e e e 
-	fis fis fis fis fis fis fis fis
-	fis fis fis fis fis fis fis fis
-	gis gis gis gis gis gis gis gis
-	a a a a a a a a
+	gis8 e\p e e  e2:8
+	fis: fis:
+	fis: fis:
+	gis: gis:
+	a: a:
 % Bars 261 to 265
 	b4 b, r d
 	r b r d 
@@ -409,7 +409,7 @@ musicViolinIMvtI = \relative c' {
 	d r d r d r d r
 	d r d r d r d r
 	<g, g'> r q r q r q r \mark \default
-	<<c'2^\arco\ff^\tutti {<g, g'>4 s}>> b'8([ c e8. d16])
+	<<c'2-\tweak X-offset #1 ^\arco\ff-\tweak X-offset #1 ^\tutti {<g, g'>4 s}>> b'8([ c e8. d16])
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -418,7 +418,7 @@ musicViolinIMvtI = \relative c' {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\afterGrace a1\startTrillSpan {g16[\stopTrillSpan a]}
+	\trillSpanCustom #5 #trillglyph \afterGrace a1\startTrillSpan {g16[\stopTrillSpan a]}
 	g4 r <g, d' b' g'> r
 	q r r2
 	<a' f'!>4\p r r r8 g,16(\p a
@@ -431,25 +431,25 @@ musicViolinIMvtI = \relative c' {
 % Bars 341 to 345
 	g1
 	fis8[( g a8. g16]) g4-. g-.
-	c16( g c g c g c g c g c g c g c g)
-	e'( c e c e c e c g' e g e g e g e)
-	f\ff f, f f f f f f f f f^\solo f f8\p f
+	\repeat tremolo 4 {c16( g} \repeat tremolo 4 {c g)}
+	\repeat tremolo 4 {e'( c} \repeat tremolo 4 {g' e)}
+	f\ff f, f f f4:16 f:^\solo f8\p f
 % Bars 346 to 350
-	f f f f f f f f
-	e16\ff e e e  e e e e  e e e e  e8\p e
-	e e e e e e e e
-	a16\ff a a a a a a a a a a a a8\p a
-	a a a a a a a a
+	f2:8 f: 
+	e2:16\ff  e4: e8\p e
+	e2:8 e: 
+	a2:16\ff a4: a8\p a
+	a2:8 a:
 % Bars 351 to 355
-	b16\ff b b b b b b b b b b b b8\p b
-	b b b b b b b b \mark #11
-	cis16\f cis cis cis cis cis cis cis cis cis cis cis a8\p a 
-	a a a a a a a a
-	a f f f f f f f 
+	b2:16\ff b4: b8\p b
+	b2:8 b: \mark #11
+	cis2:16\f cis4: a8\p a 
+	a2:8 a:
+	a8 f f f f2:8  
 % Bars 356 to 360
-	r f f f f f f f
-	r f_\crescmarkup f f f f f f
-	r e\f\> e e e e e e 
+	r8 f f f f2:8
+	r8 f_\crescmarkup f f f2:8
+	r8 e\f\> e e e2:8 
 	f4\p r r2 
 	\cueDuring #"cueVoiceViolinIMvtI" #UP {
 		\ni R1
@@ -466,7 +466,7 @@ musicViolinIMvtI = \relative c' {
 	a) r r2
 	a4-.\f^\tutti a2( bes8. g16)
 % Bars 371 to 375
-	c4-.^\solo r r2
+	c4^\solo r r2
 	\cueDuring #"cueVoiceViolinIMvtI" #UP {
 		\ni R1
 		R
@@ -542,8 +542,8 @@ musicViolinIMvtI = \relative c' {
 	c4 r r2
 	\cueDuring #"cueVoiceViolinIMvtI" #UP {
 		\ni R1 \no
-		r4 r8. \stemUp f16-. \stemNeutral } fis4-. r8. fis16
-	g8 r a r f! r g r \mark \default
+		r4 r8. \stemUp f16-. \stemNeutral } fis4-. r8. fis16-.
+	g8 r a r f! r g r \markYoffset #4.5 \mark \default
 % Bars 431 to 435
 	c,4 r r2
 	\cueDuring #"cueVoiceViolinIMvtI" #UP {
@@ -582,9 +582,9 @@ musicViolinIMvtI = \relative c' {
 	d f)
 	f4-. f-. r f
 	r f r f
-	\crescText "cresc. poco a poco" b,8\pp\< b b b d d d d
+	\crescText "cresc. poco a poco" b,2:8-\tweak X-offset #-2 \pp\<  d: 
 % Bars 461 to 465
-	f f f f b b b b \mark \default
+	f: b: \mark \default
 	c2.\ff^\tutti c4(
 	ees2. des4)
 	bes4-. bes-. \acciaccatura c8 bes8.[( aes16 bes8. c16])
@@ -594,7 +594,7 @@ musicViolinIMvtI = \relative c' {
 	ees8.[ c16-. g8.-. c16]-. ees2\sf~
 	ees8. c16 ees4~\sf ees8. c16 ees4\sf~
 	ees8.[ c16-. ees8.-. c16]-. ees8.[-. c16-. ees8.-. c16]-. 
-	\tuplet 3/2 4 {b8\fp b,,^\moltopiano d g^\solo d b g b d g d b}
+	\tuplet 3/2 4 {b8-\tweak X-offset #-1 _\fpmoltopiano b,,-. d-. g^\solo d b g b d g d b}
 % Bars 471 to 475
 	\tuplet 3/2 4 {g b d g d b g b d g d b}
 	\tuplet 3/2 4 {g c e! g e c g c e g e c}
@@ -602,7 +602,7 @@ musicViolinIMvtI = \relative c' {
 	<c e>4 <g g'> r q
 	r q r q
 % Bars 476 to 480
-	r q^\crescmarkup r q
+	r q_\crescmarkup r q
 	r <a fis'> r q
 	<b g'>\p r r b'^\pizz
 	c r r c
@@ -639,22 +639,22 @@ musicViolinIMvtI = \relative c' {
 	b\<~
 	b\>
 % Bars 506 to 510
-	bes8\! e\pp e e e e e e 
-	e e e e e e e e 
-	f f f f f f f f
-	f f f f f f f f
-	e e e e e e e e
+	bes8\! e\pp e e e2:8
+	e: e:
+	f: f:
+	f: f: 
+	e: e:
 % Bars 511 to 515
-	e e e e e e e e 
-	f f f f f f f f
-	f f f f f f f f
+	e: e: 
+	f: f: 
+	f: f:
 	\tempo "Più allegro." b,16_\crescmarkup(^\tutti c b c) e8.( d16) cis16( d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e16( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e16-. d8.-. c16-.] b8.[-. d'16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
-	<g, g'>4-.\ff^\solo r r2
+	f4-.\ff r r2 \markXoffset #-0.3 \mark \default
+	<g, g'>4-.\ff-\tweak X-offset #1.2 ^\solo r r2
 	c4 r r <g d' b'>8 r
 % Bars 521 to 525
 	<g e' c'> r <g d' b'> r <g e' c'> r <g d' b'> r 

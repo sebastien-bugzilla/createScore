@@ -119,7 +119,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	e\dim( f g a g f) e( f g a g f) e( f g a g f)
 	e( f g aes g f) e( f g aes g f) e( f g aes g f)}
 % Bars 106 to 110
-	e4\p r8 \textSpanner "rallentando" g(_\startTextSpan-. e-. g-.)
+	e4\p r8 \textSpanner "rallentando" #'italic g(_\startTextSpan-. e-. g-.)
 	e4 r8 g(-. e-. g)-. 
 	e(-. g-. e-. g-. e-. g)-. 
 	e4 r8 g(-. e-. g)-.\stopTextSpan
@@ -331,7 +331,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	a8 r r4 \clef treble \tuplet 6/4 4 {c'16 d c bes c bes
 	a(\dim bes c des c bes) a( bes c des c bes) a( bes c des c bes)
 	a( bes c des c bes) a( bes c des c bes) a( bes c des c bes)}
-	a4\p r8 \textSpanner "rallentando" c(-._\startTextSpan a-. c-.)
+	a4\p r8 \textSpanner "rallentando" #'italic c(-._\startTextSpan a-. c-.)
 	a4 r8 c(-. a-. c)-. 
 % Bars 301 to 305
 	a(-. c-. a-. c-. a-. c)-. 

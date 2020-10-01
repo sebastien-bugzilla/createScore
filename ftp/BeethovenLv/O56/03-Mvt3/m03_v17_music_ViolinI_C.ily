@@ -178,7 +178,7 @@ musicViolinIMvtIII = \relative c' {
 	g'8(-.\pp g-. g-. g-. g-. g-.)
 	g_\crescmarkup g g g g g
 	a a a a a a
-	g[ g g g] \acciaccatura fis g\ff \acciaccatura fis g
+	g[ g g g] \acciaccatura fis g-.\ff \acciaccatura fis g-.
 % Bars 156 to 160
 	g4. a16( b c8 d)
 	\grace {c16[( d]} e4) c4.\sf( b8)
@@ -196,7 +196,7 @@ musicViolinIMvtIII = \relative c' {
 	q8\sf q16 q q8\sf q16 q q8\sf q16 q
 	q8\sf q16 q q8\sf q16 q q8\sf q16 q
 	q4.\sf f'8-. e-. d-.
-	\acciaccatura d c-. b-. c-. d-. e-. e,
+	\acciaccatura d c-. b-. c-. d-. e-. e,-.
 % Bars 171 to 175
 	a8\p r r4 r
 	e8^\pizz r r4 r
@@ -289,7 +289,7 @@ musicViolinIMvtIII = \relative c' {
 % Bars 256 to 260
 	r q r q r q
 	r q r q r q
-	r q q r r4
+	r q-. q-. r r4
 	r8 c' r c r c
 	r c r c r c
 % Bars 261 to 265

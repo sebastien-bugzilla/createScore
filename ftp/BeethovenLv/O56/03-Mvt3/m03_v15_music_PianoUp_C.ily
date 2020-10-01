@@ -105,7 +105,7 @@ musicPianoUpMvtIII = \relative c {
 	e(\dim d c b c d) e( d c b c d) e( d c b c d)
 	e d c b c d e d c b c d e d c b c d}
 % Bars 106 to 110
-	<g, e'>4\p r8 \textSpanner "rallentando" <e c'>_\startTextSpan(-. <g e'>-. <e c'>-.)
+	<g, e'>4\p r8 \textSpanner "rallentando" #'italic <e c'>_\startTextSpan(-. <g e'>-. <e c'>-.)
 	<g e'>4 r8 <e c'>( <g e'>-. <e c'>-.)
 	<g e'>-.( <e c'>-. <g e'>-. <e c'>-. <g e'>-. <e c'>-.)
 	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)\stopTextSpan
@@ -293,7 +293,7 @@ musicPianoUpMvtIII = \relative c {
 	a g f e f g a g f e f g a g a bes a bes
 	c(\dim bes a g a bes) c( bes a g a bes) c( bes a g a bes)
 	c( bes a g a bes) c( bes a g a bes) c( bes a g a bes)}
-	c4\p r8 \textSpanner "rallentando" <f, a>-.(_\startTextSpan <a c>-. <f a>-.)
+	c4\p r8 \textSpanner "rallentando" #'italic <f, a>-.(_\startTextSpan <a c>-. <f a>-.)
 	<a c>4 r8 <f a>-.( <a c>-. <f a>-.)
 % Bars 301 to 305
 	<a c>-.( <f a>-. <a c>-. <f a>-. <a c>-. <f a>-.)
