@@ -5648,9 +5648,9 @@ cueVoiceViolinIMvtII = \relative c {
 	des8.( f16 ees des)
 	c4( bes16 c)
 	des4 \tuplet 3/2 16 {c32[( ees des)] des[( f ees)]}
-	ees8(\cresc e4\sf\>)
+	ees8(-\tweak extra-offset #'(0 . 5.1) \cresc e4-\tweak extra-offset #'(0 . 5.1) \sf -\tweak extra-offset #'(0 . 5) \>)
 	f8.\! f16~ f32.([ des64]) f64.( des128) f64.( des128)
-	c8.\p c16~ c32[ b64( c)] b( c) b( c)
+	c8.-\tweak extra-offset #'(0 . 5.1) \p c16~ c32[ b64( c)] b( c) b( c)
 	ees8. des16( bes! g)
 	aes\trill bes\trill c8~\noBeam \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
 	R4.*11

@@ -106,108 +106,108 @@
 			}
 		}
 	}
-%	\score {
-%		\new PianoStaff <<
-%			\new Staff = "up" {
-%				<<
-%%					\new Voice {
-%%						\formatPianoUpMvtII
-%%					}
+	\score {
+		\new PianoStaff <<
+			\new Staff = "up" {
+				<<
 %					\new Voice {
-%						\timeMvtII \generalOptions \partOptions
-%						\namePianoUpMvtII \musicPianoUpMvtII
+%						\formatPianoUpMvtII
 %					}
+					\new Voice {
+						\timeMvtII \generalOptions \partOptions
+						\namePianoUpMvtII \musicPianoUpMvtII
+					}
+					\new Voice {
+						\timeMvtII \generalOptions \partOptions
+						\cueVoicePianoUpMvtII
+					}
+					\new Voice {
+						\cueVoicePianoThirdMvtII
+					}
+				>>
+			}
+			\new Staff = "down" {
+				<<
+					\new Voice {
+						\timeMvtII \generalOptions \partOptions
+						\namePianoDownMvtII \musicPianoDownMvtII
+					}
+					\new Voice {
+						\timeMvtII \generalOptions \partOptions
+						\cueVoicePianoDownMvtII
+					}
+				>>
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					II
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			\context {
+				\PianoStaff
+				\consists #Span_stem_engraver
+			}
+		}
+	}
+	\score {
+		\new PianoStaff <<
+			\new Staff = "up" {
+				<<
 %					\new Voice {
-%						\timeMvtII \generalOptions \partOptions
-%						\cueVoicePianoUpMvtII
+%						\formatPianoUpMvtIII
 %					}
-%					\new Voice {
-%						\cueVoicePianoThirdMvtII
-%					}
-%				>>
-%			}
-%			\new Staff = "down" {
-%				<<
-%					\new Voice {
-%						\timeMvtII \generalOptions \partOptions
-%						\namePianoDownMvtII \musicPianoDownMvtII
-%					}
-%					\new Voice {
-%						\timeMvtII \generalOptions \partOptions
-%						\cueVoicePianoDownMvtII
-%					}
-%				>>
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					II
-%				}
-%			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
-%			}
-%			\context {
-%				\PianoStaff
-%				\consists #Span_stem_engraver
-%			}
-%		}
-%	}
-%	\score {
-%		\new PianoStaff <<
-%			\new Staff = "up" {
-%				<<
-%%					\new Voice {
-%%						\formatPianoUpMvtIII
-%%					}
-%					\new Voice {
-%						\timeMvtIII \generalOptions \partOptions
-%						\namePianoUpMvtIII \musicPianoUpMvtIII
-%					}
-%					\new Voice {
-%						\timeMvtIII \generalOptions \partOptions
-%						\cueVoicePianoUpMvtIII
-%					}
-%					\new Voice {
-%						\cueVoicePianoThirdMvtIII
-%					}
-%				>>
-%			}
-%			\new Staff = "down" {
-%				<<
-%					\new Voice {
-%						\timeMvtIII \generalOptions \partOptions
-%						\namePianoDownMvtIII \musicPianoDownMvtIII
-%					}
-%					\new Voice {
-%						\timeMvtIII \generalOptions \partOptions
-%						\cueVoicePianoDownMvtIII
-%					}
-%				>>
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\fill-line {
-%					\fontsize #4
-%					III
-%				}
-%			}
-%		}
-%		\layout {
-%			\context {
-%				\CueVoice \layoutCueVoice
-%			}
-%			\context {
-%				\PianoStaff
-%				\consists #Span_stem_engraver
-%			}
-%		}
-%	}
+					\new Voice {
+						\timeMvtIII \generalOptions \partOptions
+						\namePianoUpMvtIII \musicPianoUpMvtIII
+					}
+					\new Voice {
+						\timeMvtIII \generalOptions \partOptions
+						\cueVoicePianoUpMvtIII
+					}
+					\new Voice {
+						\cueVoicePianoThirdMvtIII
+					}
+				>>
+			}
+			\new Staff = "down" {
+				<<
+					\new Voice {
+						\timeMvtIII \generalOptions \partOptions
+						\namePianoDownMvtIII \musicPianoDownMvtIII
+					}
+					\new Voice {
+						\timeMvtIII \generalOptions \partOptions
+						\cueVoicePianoDownMvtIII
+					}
+				>>
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					III
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+			\context {
+				\PianoStaff
+				\consists #Span_stem_engraver
+			}
+		}
+	}
 }
