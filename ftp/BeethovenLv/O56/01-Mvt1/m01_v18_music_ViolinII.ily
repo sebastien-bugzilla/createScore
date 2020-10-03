@@ -10,12 +10,12 @@ musicViolinIIMvtI = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	<>^\tutti R1*6
+	<>-\tweak X-offset #-3 ^\tutti \mmrLength #1.2 R1*6
 % Bars 6 to 10
 	
 	f2(\pp g,)
 	c1_\crescmarkup
-	b4-.\pp r <b d>-. r
+	\dynEsw #'(-12 . 0) b4-.\pp r <b d>-. r
 	q-. r r2
 % Bars 11 to 15
 	<a f'>4-. r r  r8 g16( a
@@ -48,8 +48,8 @@ musicViolinIIMvtI = \relative c' {
 	r2 r4 b,(
 	c gis' a b)
 % Bars 36 to 40
-	c2._\crescmarkup e,4(
-	e2\p~ e8.[ a16 c8. a16])
+	c2._\crescmarkup e,4~
+	e2\p(~ e8.[ a16 c8. a16])
 	e4\sfp( a c a)
 	g( b a c,)
 	b4 r r2
@@ -58,11 +58,11 @@ musicViolinIIMvtI = \relative c' {
 	q r r <a e'>
 	<a f'> <a e'> <a f'> <e' c'>
 	c'1_\dimmarkup^\arco~
-	c\pp
+	\dynEsw #'(-1 . 0) c\pp
 % Bars 46 to 50
 	des_\crescmarkup
 	c4\p( aes) aes-.( aes-.)
-	g1_\crescmarkup~
+	g1-\tweak X-offset #-1.5 _\crescmarkup~
 	g2.\sf\> bes4
 	aes2\pp( f
 % Bars 51 to 55
@@ -93,19 +93,19 @@ musicViolinIIMvtI = \relative c' {
 	g2(\pp a
 	d,1)
 	<g, g'>\ff
-	c4 r8. <g' e'>16-. q4-. q-. \mark \default
-	<e c'>8^\solo r r4 r2
+	c4 r8. <g' e'>16-. q4-. q-. \markXoffset #-0.2 \mark \default
+	<e c'>8-\tweak X-offset #0.8 ^\solo r r4 r2
 % Bars 76 to 80
 	R1*4
 	
 	
 	
-	c8\p c c c  c c c c 
+	<< { c8\p c c c  c c c c } {\oneCentered}>>
 % Bars 81 to 85
-	c c c c c c c c 
-	c c c c c c c c 
-	c_\crescmarkup c c c c c c c 
-	c c c c c c c c 
+	<< { c c c c c c c c } {\twoCentered}>> 
+	<< { c c c c c c c c } {\threeCentered}>>
+	<< { c_\crescmarkup c c c c c c c } {\fourCentered}>>
+	<< { c c c c c c c c } {\fiveCentered}>>
 	b\noBeam d\p d d d d d d 
 % Bars 86 to 90
 	fis fis fis fis fis fis fis fis
@@ -139,12 +139,12 @@ musicViolinIIMvtI = \relative c' {
 	
 	
 	r2 r4 f'8\p r
-	<g, e'>16\ff^\tutti q q q  q q q q  q q q q q q q q 
-	<g f'>  q q q  q q q q  q q q q  q q q q 
+	<g, e'>2:16\ff^\tutti q: 
+	<g f'>:  q: 
 % Bars 116 to 120
-	q q q q  q q q q  q q q q  q q q q  
-	<g e'>  q q q  q q q q  q q q q  q q q q \mark \default
-	q8\p^\solo r r4 r2
+	q: q:  
+	<g e'>:  q: \markXoffset #-0.2 \mark \default
+	q8\p-\tweak X-offset #1.2 ^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -166,11 +166,11 @@ musicViolinIIMvtI = \relative c' {
 % Bars 136 to 140
 	
 	
-	r2 c2\p~
+	r2 c2-\tweak X-offset #-1 \p~
 	c b
 	a1_\crescmarkup
 % Bars 141 to 145
-	e'4\p r r2
+	\dynEsw #'(-2 . 0) e'4\p r r2
 	r4 a,( gis a)
 	e' r r2
 	r4 e( d dis
@@ -178,8 +178,8 @@ musicViolinIIMvtI = \relative c' {
 % Bars 146 to 150
 	e4 r r2
 	gis4 r r2
-	r r4 r8 \tuplet 3/2 8 {b16( cis dis)} \mark \default
-	e2\ff^\tutti b'4-. gis-.
+	r r4 r8 \tuplet 3/2 8 {b16( cis dis)} \markXoffset #-0.2 \mark \default
+	e2\ff-\tweak X-offset #1.2 ^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -210,7 +210,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 176 to 180
 	R1*2
 	
-	r4 c\ff r2
+	r4 c\pp r2
 	r4 a' r2
 	r4 c,8 r c r c r
 % Bars 181 to 185
@@ -263,8 +263,8 @@ musicViolinIIMvtI = \relative c' {
 	b4 b r b
 	r b r b
 	\crescText "cresc. poco a poco" b,8\pp\< b b b gis' gis gis gis
-	b b b b b b b b \mark \default
-	a16\ff^\tutti c, c c c4:16 c2:
+	b b b b b b b b \markXoffset #-0.2 \mark \default
+	a16\ff-\tweak X-offset #0.5 ^\tutti c, c c c4:16 c2:
 % Bars 226 to 230
 	<bes e>2: q:
 	<bes g'>: q:
@@ -273,7 +273,7 @@ musicViolinIIMvtI = \relative c' {
 	c8.[ a16-. e8.-. a16]-. c2\sf~
 % Bars 231 to 235
 	c8. a16 c4\sf~ c8. a16 c4\sf~
-	c8.[-. a16-. c8.-. a16]-. c8.[-. a16-. a8.-. c16]-. 
+	c8.[-. a16-. c8.-. a16]-. c8.[-. a16-. c8.-. a16]-. 
 	gis4\f r8. <gis e'>16 <a e'>4 r8. q16
 	<a f'>4 r8. q16 <gis e'>4 r8. q16
 	<a e'>4 r r <e b' gis'>
@@ -378,14 +378,14 @@ musicViolinIIMvtI = \relative c' {
 	e r e r e r e r
 	ees r ees r ees r ees r
 	d r d r d r d r
-	c r c r c r c r
-	c r c r c r c r
+	<<{ c r c r c r c r} {\oneCentered}>>
+	<<{ c r c r c r c r} {\twoCentered}>>
 % Bars 321 to 325
-	c_\crescpocoapoco r c r c r c r
-	c r c r c r c r
-	b r b r b r b r 
-	<g g'> r q r q r q r \mark \default
-	c2\ff(^\arco^\tutti b8[ c e8. d16])
+	<<{ c_\crescpocoapoco r c r c r c r} {\threeCentered}>>
+	<<{ c r c r c r c r} {\fourCentered}>>
+	b8 r b r b r b r 
+	<g g'> r q r q r q r \markXoffset #-0.3 \mark \default
+	c2\ff(-\tweak X-offset #0.7 ^\arco -\tweak X-offset #0.7 ^\tutti b8[ c e8. d16])
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -397,7 +397,7 @@ musicViolinIIMvtI = \relative c' {
 	e': d:
 	d4 r <g, d' b' g'> r
 	q r r2
-	<a f'!>4\p r r r8 g16(\p a
+	<a f'>4\p r r r8 g16(\p a
 % Bars 336 to 340
 	b4\f) r r r8 \tuplet 3/2 8 {g16[(_\dimmarkup a b])}
 	c1\pp
@@ -407,19 +407,19 @@ musicViolinIIMvtI = \relative c' {
 % Bars 341 to 345
 	e1
 	dis8[( e f8. e16]) e4-. e-.
-	g16( e g e g e g e g e g e g e g e)
-	c'( g c g c g c g e' c e c e c e c)
-	c\ff c, c c c c c c c c c^\solo c c8\p c 
+	\repeat tremolo 4 {g16( e} \repeat tremolo 4 {g e)} 
+	\repeat tremolo 4 {c'( g} \repeat tremolo 4 { e' c)}
+	c\ff c, c c c2:16^\solo c8\p c 
 % Bars 346 to 350
 	c c c c c c c c 
-	c16\ff c c c c c c c c c c c c8\p c
+	c2:16\ff c4: c8\p c
 	c8  c c c c c c c 
-	c16\ff c c c c c c c c c c c c8\p c
+	c2:16\ff c4: c8\p c
 	c c c c c c c c 
 % Bars 351 to 355
-	d16\f d d d d d d d d d d d d8\p d
-	d d d d d d d d \mark #11
-	g16\f g g g g g g g g g g g g8\p g
+	d2:16\f d4: d8\p d
+	d d d d d d d d \markYoffset #4.5 \mark #11
+	g2:16\f g4: g8\p g
 	g g g g g g g g 
 	f f f f f f f f
 % Bars 356 to 360
@@ -427,7 +427,7 @@ musicViolinIIMvtI = \relative c' {
 	r a_\crescmarkup a a a a a a 
 	r bes\f\> bes bes bes bes bes bes
 	a4\p r r2
-	R1*3
+	\mmrLength #1 R1*3
 % Bars 361 to 365
 	
 	
@@ -502,7 +502,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 421 to 425
 	g4 r r r8. g16
 	g4 r r r8. c16\p
-	c4 r8. c16\p c4 r8. c16
+	c4 r8. c16\pp c4 r8. c16
 	c4 r8. c16 c4 r8. c16
 	g4 r8. g16 g4 r8. g16
 % Bars 426 to 430
@@ -510,7 +510,7 @@ musicViolinIIMvtI = \relative c' {
 	c4 r r2
 	R1
 	r4 r8. f16-. fis4-. r8. fis16-.
-	g8 r a r f! r g r \mark \default
+	g8 r a r f! r g r \markYoffset #4.5 \mark \default
 % Bars 431 to 435
 	c,4 r r2
 	R1*6
@@ -616,8 +616,8 @@ musicViolinIIMvtI = \relative c' {
 % Bars 516 to 520
 	f8.\f[-. e16-. d8.-. c16]-. b8.[-. d'16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
-	<g, g'>4\ff-.^\solo r r2
+	f4-.\ff r r2 \markXoffset #-0.2 \mark \default
+	<g, g'>4\ff-.-\tweak X-offset #1 ^\solo r r2
 	c4 r r <g d' b'>8 r
 % Bars 521 to 525
 	<g e' c'> r <g d' b'> r <g e' c'> r <g d' b'> r 

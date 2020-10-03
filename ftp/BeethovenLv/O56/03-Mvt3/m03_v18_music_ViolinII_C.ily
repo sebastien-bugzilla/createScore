@@ -10,7 +10,7 @@ musicViolinIIMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c16\pp( e) c( e) c( e) c( e) c( e) c( e) 
+	c16\pp(^\arco e) c( e) c( e) c( e) c( e) c( e) 
 	c( e) c( e) c( e) c( e) c( e) c( e) 
 	c( f) c( f) c( f) c( f) c( f) c( f) 
 	d( f) d( f) b,( d) b( d) b( d) b( d) 
@@ -78,7 +78,7 @@ musicViolinIIMvtIII = \relative c' {
 % Bars 56 to 60
 	c4. e8(\sf g, b) \mark \default
 	c8 r r4 r
-	c8 e\sf g, c\sf e, g\sf
+	c8-. e\sf-. g,-. c\sf-. e,-. g\sf-.
 	c e\sf g, c\sf e, g\sf
 	c, r <g e' c'> r q r
 % Bars 61 to 65
@@ -410,7 +410,7 @@ musicViolinIIMvtIII = \relative c' {
 	c c r c 
 	c c r c
 % Bars 366 to 370
-	c d d d
+	c[ d d d]
 	c r  r4
 	f8 r r4
 	d8 r r4
@@ -437,13 +437,13 @@ musicViolinIIMvtIII = \relative c' {
 	r e r d \mark \default
 	g,\f( a16 b c8 d)
 	e4( c8) r
-	f8( g a) a
+	f8([ g a) a]
 	d,( c) d16( b c d)
 % Bars 391 to 395
 	e8(\f f16 d e8 g)
 	g16\sf ees ees ees ees ees ees ees
-	c'\sf <c, ees> q q q q q q 
-	g'\sf <g, ees'> q q q q q q
+	c'\sf\noBeam <c, ees> q q q q q q 
+	g'\sf\noBeam <g, ees'> q q q q q q
 	<aes d> <d f> q q q q q q
 % Bars 396 to 400
 	q\ff q q q q q q q 

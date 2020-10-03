@@ -48,9 +48,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtI
-%			}
+			\new Voice {
+				\formatViolinIIMvtI
+			}
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameViolinIIMvtI \musicViolinIIMvtI
@@ -73,9 +73,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtII
-%			}
+			\new Voice {
+				\formatViolinIIMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameViolinIIMvtII \musicViolinIIMvtII
@@ -98,9 +98,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatViolinIIMvtIII
-%			}
+			\new Voice {
+				\formatViolinIIMvtIII
+			}
 			\new Voice {
 				\timeMvtIII \generalOptions \partOptions
 				\nameViolinIIMvtIII \musicViolinIIMvtIII

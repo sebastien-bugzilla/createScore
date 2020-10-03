@@ -48,8 +48,8 @@ musicViolinIIMvtI = \relative c' {
 	r2 r4 b,(
 	c gis' a b)
 % Bars 36 to 40
-	c2._\crescmarkup e,4(
-	e2\p~ e8.[ a16 c8. a16])
+	c2._\crescmarkup e,4~
+	e2\p(~ e8.[ a16 c8. a16])
 	e4\sfp( a c a)
 	g( b a c,)
 	b4 r r2
@@ -210,7 +210,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 176 to 180
 	R1*2
 	
-	r4 c\ff r2
+	r4 c\pp r2
 	r4 a' r2
 	r4 c,8 r c r c r
 % Bars 181 to 185
@@ -271,7 +271,7 @@ musicViolinIIMvtI = \relative c' {
 	c8.[ a16-. e8.-. a16]-. c2\sf~
 % Bars 231 to 235
 	c8. a16 c4\sf~ c8. a16 c4\sf~
-	c8.[-. a16-. c8.-. a16]-. c8.[-. a16-. a8.-. c16]-. 
+	c8.[-. a16-. c8.-. a16]-. c8.[-. a16-. c8.-. a16]-. 
 	gis4\f r8. <gis e'>16 <a e'>4 r8. q16
 	<a f'>4 r8. q16 <gis e'>4 r8. q16
 	<a e'>4 r r <e b' gis'>
@@ -391,7 +391,7 @@ musicViolinIIMvtI = \relative c' {
 	e': d:
 	d4 r <g, d' b' g'> r
 	q r r2
-	<a f'!>4\p r r r8 g16(\p a
+	<a f'>4\p r r r8 g16(\p a
 % Bars 336 to 340
 	b4\f) r r r8 \tuplet 3/2 8 {g16[(_\dimmarkup a b])}
 	c1\pp
@@ -489,7 +489,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 421 to 425
 	g4 r r r8. g16
 	g4 r r r8. c16\p
-	c4 r8. c16\p c4 r8. c16
+	c4 r8. c16\pp c4 r8. c16
 	c4 r8. c16 c4 r8. c16
 	g4 r8. g16 g4 r8. g16
 % Bars 426 to 430
