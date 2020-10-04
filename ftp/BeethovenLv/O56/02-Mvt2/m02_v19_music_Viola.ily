@@ -12,7 +12,7 @@ musicViolaMvtII = \relative c {
 % Bars 1 to 5
 	ees4\p^\tutti ees16-. ees-.
 	ees8 r ees
-	ees8~ ees16. ees32 ees16.( f32)
+	ees8(~ ees16. ees32) ees16.( f32)
 	ees8.\noBeam ees'32(^\solo des c16 ees)
 	c8([ ees] bes16 c)
 % Bars 6 to 10
@@ -26,15 +26,15 @@ musicViolaMvtII = \relative c {
 	r16 ees8\sf ees16_\dimmarkup ees ees
 	ees4\p ees16 ees
 	ees4(~ ees16 g)
-	ees8_\crescmarkup g4\f\>
+	ees8-\tweak X-offset #-2 _\crescmarkup g4\f\>
 % Bars 16 to 20
 	f-\tweak X-offset #0 _\pcrescD~ f16 f
 	ees32\p ees ees ees r ees ees ees r ees[ r ees]
 	r g_\crescmarkup  g g r g g g r g[ r g]
 	r f[ r f] r16 ees\sf r ees\p
-	r ees( es) r r8 \mark \default
+	r ees( es) r r8 \markXoffset #-0.3 \mark \default
 % Bars 21 to 25
-	ees8^\pizz r ees16 ees
+	ees8-\tweak X-offset #1 ^\pizz r ees16 ees
 	ees8 r ees
 	ees\noBeam ees16. ees32 ees16. f32
 	ees8 r r
@@ -51,12 +51,12 @@ musicViolaMvtII = \relative c {
 		R
 		R \no \clef alto
 	}
-	<c ees>16\pp^\arco-.(^\tutti q-. q-. q-. q-. q-.)
+	<c ees>16-\tweak X-offset #-3.1 \pp^\arco-.(^\tutti q-. q-. q-. q-. q-.)
 % Bars 41 to 45
 	q32[\f q q q] q[ q\> q q] q[ q q q]
 	d16\p d d d d d
-	ees32[\f a a a] a[ a a\> a] a[ a a a] \mark \default
-	d,8\p^\solo r16 g16\noBeam\<( \afterGrace aes!8)\>\startTrillSpan {g16[\stopTrillSpan aes]\!}
+	ees32[\f a a a] a[ a a\> a] a[ a a a] \markXoffset #-0.2 \mark \default
+	d,8\p-\tweak X-offset #0.5 ^\solo r16 g16\noBeam\<( \trillSpanCustom #4 #trillglyph \afterGrace aes!8)\>\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
@@ -70,5 +70,5 @@ musicViolaMvtII = \relative c {
 		R4. \no
 		r8 r g16_\pizz r 
 	}
-	\bar "||"
+	\bar "||" \key c \major \time 3/4 \attacca
 }

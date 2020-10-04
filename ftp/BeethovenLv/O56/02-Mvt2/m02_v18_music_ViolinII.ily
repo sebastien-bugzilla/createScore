@@ -69,5 +69,5 @@ musicViolinIIMvtII = \relative c' {
 		\ni << \mmrPos #-6 R4. { \clef bass s8 \clef treble s4} >>
 		R4. \no
 		r8_\senzasordino r <b des>16_\pizz r 
-	} \bar "||"
+	} \bar "||" \key c \major \time 3/4 \attacca
 }

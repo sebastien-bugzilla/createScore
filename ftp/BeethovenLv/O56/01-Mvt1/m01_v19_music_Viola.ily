@@ -143,8 +143,8 @@ musicViolaMvtI = \relative c' {
 	b g f g b g f g b g f g b g f g
 % Bars 116 to 120
 	d' g, f g d' g, f g d' g, f g f g f g
-	e g e g e g e g e g e g e g e g \mark \default
-	e8\p^\solo r r4 r2
+	e g e g e g e g e g e g e g e g \markXoffset #-0.3 \mark \default
+	e8\p-\tweak X-offset #1 ^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -178,8 +178,8 @@ musicViolaMvtI = \relative c' {
 % Bars 146 to 150
 	b4 r r2
 	e4 r r2
-	r r4 r8 \tuplet 3/2 4 {b16[( cis dis)]} \mark \default
-	e2\ff^\tutti b'4-. gis-.
+	r r4 r8 \tuplet 3/2 4 {b16[( cis dis)]} \markXoffset #-0.2 \mark \default
+	e2\ff-\tweak X-offset #1 ^\tutti b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-.^\solo r r2
@@ -220,7 +220,7 @@ musicViolaMvtI = \relative c' {
 	e4 r r2
 	r r4 r8. e16
 % Bars 186 to 190
-	a8-.\pp r16 a-. a4-. r8. a16-. a4-.
+	a8\pp r16 a-. a4-. r8. a16-. a4-.
 	r8. a16-. a4-. r8. a16-. a4-.
 	r8. b16-. b4-. r8. d16-. d4-.
 	r8. d16-. d4-. r8. e,16-.[ e8.-. e16-.]
@@ -263,8 +263,8 @@ musicViolaMvtI = \relative c' {
 	gis4 gis r gis
 	r gis r gis
 	\crescText "cresc. poco a poco" d8\pp\< d d d  d d d d 
-	gis gis gis gis d d d d \mark \default
-	c16\ff^\tutti a a a a4:16 a2:
+	gis gis gis gis d d d d \markXoffset #-0.2 \mark \default
+	c16\ff-\tweak X-offset #0.5 ^\tutti a a a a4:16 a2:
 % Bars 226 to 230
 	c: c:
 	c: c:
@@ -288,9 +288,9 @@ musicViolaMvtI = \relative c' {
 	R1
 	r2^\solo fis'\pp(
 	b,1 
-	c
+	e
 % Bars 246 to 250
-	a4) r r2
+	a,4) r r2
 	R1*2
 	
 	r4 gis'8 r gis r gis r
@@ -396,26 +396,26 @@ musicViolaMvtI = \relative c' {
 	c4\p r r r8 g16(\p a
 % Bars 336 to 340
 	b4)\f r r r8 \tuplet 3/2 8 {g16(_\dimmarkup a b)}
-	e,16(\pp g e g e g e g e g e g e g e g)
-	e( g e g e g e g e g e g e g e g)
-	\crescText "cresc. poco a poco" e(\< g e g e g e g e g e g e g e g)
-	e( g e g e g e g e g e g e g e g)
+	\repeat tremolo 4 {e,16(\pp g} \repeat tremolo 4 {e16 g)} 
+	\repeat tremolo 4 {e16( g} \repeat tremolo 4 {e16 g)} 
+	\crescText "cresc. poco a poco" \repeat tremolo 4 {e16(\< g} \repeat tremolo 4 {e16 g)} 
+	\repeat tremolo 4 {e16( g} \repeat tremolo 4 {e16 g)} 
 % Bars 341 to 345
-	c( g c g c g c g c g c g c g c g)
-	c( g c g c g c g c g c g c g c g)
-	e'( c e c e c e c e c e c e c e c)
-	g'( e g e g e g e c' g c g c g c g)
-	a\ff a, a a  a a a a a a a^\solo a a8\p a
+	\repeat tremolo 4 {c16( g} \repeat tremolo 4 {c16 g)} 
+	\repeat tremolo 4 {c16( g} \repeat tremolo 4 {c16 g)} 
+	\repeat tremolo 4 {e'16( c} \repeat tremolo 4 {e16 c)} 
+	\repeat tremolo 4 {g'16( e} \repeat tremolo 4 {c'16 g)} 
+	a\ff a, a a  a4:16 a:^\solo a8\p a
 % Bars 346 to 350
 	a a a a  a a a a 
-	g16\ff g g g  g g g g  g g g g g8\p g
+	g2:16\ff g4: g8\p g
 	g g g g  g g g g 
-	f'16\ff f f f  f f f f  f f f f f8\p f
+	f'2:16\ff f4:  f8\p f
 	f f f f  f f f f 
 % Bars 351 to 355
-	g,16\f g g g  g g g g  g g g g  g8\p g
+	g,2:16\f g4: g8\p g
 	g g g g  g g g g \mark #11
-	g16\f g g g  g g g g  g g g g g8\p g
+	g2:16\f g4: g8\p g
 	g g g g   g g g g 
 	f f f f  f f f f 
 % Bars 356 to 360
@@ -446,7 +446,7 @@ musicViolaMvtI = \relative c' {
 	r4 g2\p g4~
 	g r r2
 % Bars 381 to 385
-	r4 ees'( d <c e>
+	r4 ees'( d <c ees>
 	<b d>) r r2
 	g'4 r r2
 	g4 r r2
@@ -598,14 +598,14 @@ musicViolaMvtI = \relative c' {
 	q\>
 % Bars 506 to 510
 	<c e>8\! g'\pp g g  g g g g
-	bes bes bes bes   bes bes bes bes
-	a a a a  a a a a 
-	g g g g   g g g g
-	g g g g   g g g g 
+	bes2:8 bes:
+	a: a:
+	g: g:
+	g: g:
 % Bars 511 to 515
-	bes bes bes bes   bes bes bes bes
-	a a a a  a a a a
-	g g g g   g g g g
+	bes: bes:
+	a: a:
+	g: g:
 	\tempo "Più allegro." r2^\tutti cis,16(_\crescmarkup d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e( f e f) a8.-. g16-.
 % Bars 516 to 520

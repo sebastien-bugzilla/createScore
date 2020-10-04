@@ -220,7 +220,7 @@ musicViolaMvtI = \relative c' {
 	e4 r r2
 	r r4 r8. e16
 % Bars 186 to 190
-	a8-.\pp r16 a-. a4-. r8. a16-. a4-.
+	a8\pp r16 a-. a4-. r8. a16-. a4-.
 	r8. a16-. a4-. r8. a16-. a4-.
 	r8. b16-. b4-. r8. d16-. d4-.
 	r8. d16-. d4-. r8. e,16-.[ e8.-. e16-.]
@@ -286,9 +286,9 @@ musicViolaMvtI = \relative c' {
 	R1
 	r2 fis'\pp(
 	b,1 
-	c
+	e
 % Bars 246 to 250
-	a4) r r2
+	a,4) r r2
 	R1*2
 	
 	r4 gis'8 r gis r gis r
@@ -444,7 +444,7 @@ musicViolaMvtI = \relative c' {
 	r4 g2\p g4~
 	g r r2
 % Bars 381 to 385
-	r4 ees'( d <c e>
+	r4 ees'( d <c ees>
 	<b d>) r r2
 	g'4 r r2
 	g4 r r2

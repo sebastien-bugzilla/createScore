@@ -59,7 +59,7 @@ musicViolaMvtIII = \relative c' {
 	a f g a d, b' d b d b d b
 % Bars 41 to 45
 	<b d>4\sf( c8) r <g g'>\sf r
-	<c, c'> c' r e r a,
+	<c, c'>\ff c' r e r a,
 	r c r f, r a
 	r d, r f' b,16 c d e 
 	f g a b c b a g f e d c
@@ -252,7 +252,7 @@ musicViolaMvtIII = \relative c' {
 	b,
 	e
 % Bars 216 to 220
-	d
+	d!
 	d
 	c
 	b
@@ -408,7 +408,7 @@ musicViolaMvtIII = \relative c' {
 	c c r c
 	c c r c
 % Bars 366 to 370
-	c g g g
+	c[ g g g]
 	g r r4
 	f8 r r4
 	d8 r r4
@@ -435,7 +435,7 @@ musicViolaMvtIII = \relative c' {
 	r c r b \mark \default
 	e,\f( f16 d e8 f)
 	g4( e8) r
-	d( e f fis)
+	d([ e f fis)]
 	g( a) b16( g a b)
 % Bars 391 to 395
 	c8\f f,16( d e8 b')

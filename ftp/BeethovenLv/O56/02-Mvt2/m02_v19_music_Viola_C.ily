@@ -12,7 +12,7 @@ musicViolaMvtII = \relative c {
 % Bars 1 to 5
 	ees4\p ees16-. ees-.
 	ees8 r ees
-	ees8~ ees16. ees32 ees16.( f32)
+	ees8(~ ees16. ees32) ees16.( f32)
 	ees8.\noBeam ees'32( des c16 ees)
 	c8([ ees] bes16 c)
 % Bars 6 to 10
