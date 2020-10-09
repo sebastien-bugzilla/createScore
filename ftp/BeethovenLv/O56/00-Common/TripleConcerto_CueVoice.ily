@@ -6070,12 +6070,12 @@ cueVoiceVioloncellMvtI = \relative c {
 	% bar 201 - 203
 	f'8[^\markup {Pf.} r16 a,]( a'4~ a8)[ r16 a,]( a'4~
 	a8)[ r16 a,]( a'4~ a8)[ r16 a,]( a'4~
-	a16)\ff a e cis a e' cis a e cis' a e cis a' e cis
+	a16)-\tweak extra-offset #'(0 . 3) \ff a e cis a e' cis a e cis' a e cis a' e cis
 	R1*60
 	% bar 264 - 267
 	\tuplet 3/2 4 {a8^\markup {Vlc.conc.} gis fis fis e dis a' gis fis a gis fis
-	a_\crescmarkup gis fis a gis fis a gis fis a gis fis}
-	a(_\dolce gis fisis gis cis b ais b)
+	a-\tweak extra-offset #'(0 . 2.5) _\crescmarkup gis fis a gis fis a gis fis a gis fis}
+	a(-\tweak extra-offset #'(0 . 2.5) _\dolce gis fisis gis cis b ais b)
 	e([ d gis8. fis16] e8[ d]) s4
 	R1*125
 	% bar 393 - 397
@@ -6106,12 +6106,12 @@ cueVoiceVioloncellMvtII = \relative c {
 	% bar 51 - 53
 	\tuplet 3/2 16 {g,,32[_(^\markup {Vlc.conc.} b) d] g[ b d]} g g g g g8\noBeam
 	g32[ g g g] g[ g g g] \tuplet 3/2 16 {g[ g g] g[ g g]
-	g[_\crescmarkup g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
+	g[-\tweak extra-offset #'(0 . 5.3) _\crescmarkup g g] g[ g g]} g64 g g g g g g g \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]}
 }
 cueVoiceVioloncellMvtIII = \relative c {
 	R2.*71
 	% bar 72 - 75
-	fis''16(^\markup {Pf.} eis fis a g fis g fis e dis e g
+	fis''16(-\tweak X-offset #-2 ^\markup {Pf.} eis fis a g fis g fis e dis e g
 	fis eis fis e d cis d f e dis e d
 	c! b c d e dis e d c b a g
 	fis a c b a g fis e d c b a)
@@ -6133,12 +6133,12 @@ cueVoiceVioloncellMvtIII = \relative c {
 	g4.(_\crescmarkup^\markup {Vln.conc} a16 b c8 d)
 	\grace {c16 d} e4( c4. b8)
 	a([ f']) b,( g'4) g8
-	g4(\f c,8) r s4
+	g4(-\tweak extra-offset #'(0 . 5) \f c,8) r s4
 	R2.*37
 	% bar 282 - 285
 	\tuplet 6/4 4 {a,16_\crescmarkup^\markup {Vlc.conc.} bes c d c bes a bes c d c bes a bes c d c bes
 	a bes c d c bes a bes c d c bes} a8 fis,\sf
-	g\f g''4\sf e8[ c a]
+	g\f g''4-\tweak extra-offset #'(0 . 5) \sf e8[ c a]
 	g[ e c a] g8.( a32 b)
 	R2.*47
 	% bar 333 - 336
@@ -6163,7 +6163,7 @@ cueVoiceVioloncellMvtIII = \relative c {
 	b,\trill b'\trill
 	\tuplet 3/2 4 {g,8\p_( aes a bes b c
 	cis d ees e f) f}
-	f2~\startTrillSpan
+	\trillSpanPadding #1.2 f2~\startTrillSpan
 	\afterGrace f\fermata^\stopTrillSpan {e16^\adagio f}
 	g4.(_\dolce a16 b c8 d)
 }

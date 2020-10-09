@@ -18,21 +18,21 @@ musicVioloncellMvtI = \relative c {
 % Bars 6 to 10
 	d4-. f-. d-. c-.
 	b2(\pp c)
-	\afterGrace a1\startTrillSpan_\crescmarkup {g16[\stopTrillSpan a]}
+	\trillSpanCustom #5 #trillglyph \afterGrace a1\startTrillSpan_\crescmarkup {g16[\stopTrillSpan a]}
 	g4-.\pp r g-. r
 	g-. r r2
 % Bars 11 to 15
 	a4-. r r r8 g16( a
 	b4\f) r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
-	c8\pp c c c  c c c c
-	c c c c  c c c c
-	\crescText "cresc. poco a poco" c\< c c c  c c c c 
+	c8\pp c c c  c2:8
+	<< {c: c:} {\oneCentered}>>
+	<< {\crescText "cresc. poco a poco" c:\< c:} {\twoCentered}>>
 % Bars 16 to 20
-	c c c c   c c c c
-	c c c c   c c c c
-	c c c c   c c c c
-	c c c c   c c c c
-	c c c c   c c c c
+	<< {c: c:} {\threeCentered}>>
+	<< {c: c:} {\fourCentered}>>
+	<< {c: c:} {\fiveCentered}>>
+	<< {c: c:} {\sixCentered}>>
+	<< {c: c:} {\sevenCentered}>>
 % Bars 21 to 25
 	a8-.\ff b16( c d e f g) a8-. b16( c d e f g)
 	a4-. r r2
@@ -48,7 +48,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 31 to 35
 	d4-. f2\sf d8.-. c16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
-	\partcombineApart \tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
+	\tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
 	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
 	\tuplet 3/2 4 {a, c e e, b' e a, c e g, d' g}
 % Bars 36 to 40
@@ -56,7 +56,7 @@ musicVioloncellMvtI = \relative c {
 	\tuplet 3/2 4 {c,\p e a c a e c e a c, e a}
 	\tuplet 3/2 4 {c,\sfp e a c a e c e a c, e a}
 	\tuplet 3/2 4 {d, g b d, g b d, fis a d cis d}
-	\partcombineAutomatic g,4 g,2_\crescmarkup( a8. b16)
+	g,4 g,2_\crescmarkup( a8. b16)
 % Bars 41 to 45
 	c4-.\p r c^\pizz c
 	c r r a
@@ -72,13 +72,13 @@ musicVioloncellMvtI = \relative c {
 % Bars 51 to 55
 	c fis,
 	g1)(
-	f'
+	f'!
 	e
 	d
 % Bars 56 to 60
-	c_\crescmarkup
-	f)
-	e2( ees)
+	c_\crescmarkup)
+	f
+	e2( ees) 
 	g,8.\ff g'16 g4 g,8. g'16 g4
 	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
 % Bars 61 to 65
@@ -113,9 +113,9 @@ musicVioloncellMvtI = \relative c {
 		R
 		R
 % Bars 96 to 100
-		R \no \clef bass \mark \default
+		R \no \clef bass \markXoffset #-0.2 \mark \default
 	}
-	c4\p^\unobassoeviolonc r r2
+	c4\p-\tweak X-offset #0.8 ^\unobassoeviolonc r r2
 	r4 c8 r c r c r
 	c4 r r2
 	r4 c r2
@@ -139,8 +139,8 @@ musicVioloncellMvtI = \relative c {
 	d' g, d' g, d' g, d' g,
 % Bars 116 to 120
 	b g b g b g b g
-	c g c g c g c g \mark \default
-	c\p^\solo r r4 r2
+	c g c g c g c g \markXoffset #-0.2 \mark \default
+	c\p-\tweak X-offset #1 ^\solo r r4 r2
 	R1*6
 % Bars 121 to 125
 	
@@ -162,7 +162,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 136 to 140
 	
 	
-	c'2(^\unobassoeviolonc a
+	c'2(^\unobassoeviolonc\p a
 	fis gis)
 	a_\crescmarkup f!
 % Bars 141 to 145
@@ -219,7 +219,7 @@ musicVioloncellMvtI = \relative c {
 	a4 r8. a16\pp a4 r8. a16
 	a4 r8. a16 a4 r8. a16
 	e'4 r8. e16 e4 r8. e16
-	e4 r8. e16 e8.[-. e16-. e8.-. e16]-. 
+	e4 r8. e16-. e8.[-. e16-. e8.-. e16]-. 
 	a4 r r8. c,16[-. c8.-. c16]-. 
 % Bars 191 to 195
 	f4 r r8. a,16[-. a8.-. a16]-. 
@@ -259,8 +259,8 @@ musicVioloncellMvtI = \relative c {
 	e4 r e r
 	e r e r
 	\crescText "cresc. poco a poco" e8\pp\< e e e  e e e e
-	e e e e  e e e e \mark \default
-	f\ff^\tutti c f c f c f c
+	e e e e  e e e e \markXoffset #-0.3 \mark \default
+	f\ff-\tweak X-offset #0.7 ^\tutti c f c f c f c
 % Bars 226 to 230
 	g' c, g' c, g' c, g' c,
 	e c e c e c e c 
@@ -358,19 +358,19 @@ musicVioloncellMvtI = \relative c {
 	r2 g8 r g r
 	r4 g8 r r4 g8 r
 	r4 g8 r r4 g8 r
-	g r g r g r g r
+	<<{ g r g r g r g r } {\oneCentered} >>
 % Bars 316 to 320
-	g r g r g r g r
-	g r g r g r g r
-	g r g r g r g r
-	g r g r g r g r
-	g r g r g r g r
+	<<{ g r g r g r g r } {\twoCentered} >>
+	<<{ g r g r g r g r } {\threeCentered} >>
+	<<{ g r g r g r g r } {\fourCentered} >>
+	<<{ g r g r g r g r } {\fiveCentered} >>
+	<<{ g r g r g r g r } {\sixCentered} >>
 % Bars 321 to 325
-	g_\crescpocoapoco r g r g r g r
-	g r g r g r g r
-	g r g r g r g r
-	g r g r g r g r \mark \default
-	c2\ff^\tutti^\arco( b8[ c e8. d16])
+	<<{ g_\crescpocoapoco r g r g r g r } {\sevenCentered} >>
+	<<{ g r g r g r g r } {\eightCentered} >>
+	<<{ g r g r g r g r } {\nineCentered} >>
+	<<{ g r g r g r g r } {\tenCentered} >> \markXoffset #-0.3 \mark \default
+	c2\ff-\tweak X-offset #0.5 ^\tutti-\tweak X-offset #0.5 ^\arco( b8[ c e8. d16])
 % Bars 326 to 330
 	d4 r r2
 	d2( cis8[ d f8. e16])
@@ -379,22 +379,22 @@ musicVioloncellMvtI = \relative c {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\afterGrace a1^\startTrillSpan {g16[\stopTrillSpan a]}
+	\trillSpanCustom #5 #trillglyph \afterGrace a1^\startTrillSpan {g16[\stopTrillSpan a]}
 	g4 r g r
 	g r r2
 	a4\p r r r8 g16(\p a
 % Bars 336 to 340
 	b4)\f r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
-	c8\pp c c c  c c c c 
-	c c c c   c c c c 
-	\crescText "cresc. poco a poco"c\< c c c   c c c c
-	c c c c   c c c c
+	c8\pp c c c  c2:8
+	<< { c: c: } { \oneCentered } >>
+	<< { \crescText "cresc. poco a poco" c:\< c: } { \twoCentered } >>
+	<< { c: c: } { \threeCentered } >>
 % Bars 341 to 345
-	c c c c  c c c c
-	c c c c  c c c c
-	c c c c  c c c c
-	c c c c  c c c c 
-	a(\f b16 c d e f g) a4 r^\solo
+	<< { c: c: } { \fourCentered } >>
+	<< { c: c: } { \fiveCentered } >>
+	<< { c: c: } { \sixCentered } >>
+	<< { c: c: } { \sevenCentered } >>
+	a8(\f b16 c d e f g) a4 r^\solo
 % Bars 346 to 350
 	R1
 	g,8(\ff a16 b c d e f) g8 r r4
@@ -493,7 +493,7 @@ musicVioloncellMvtI = \relative c {
 	g4 r8. g16 g4 r8. g16
 	c4 r r2
 	R1
-	r4 r8. f,16 fis4-. r8. fis16-.
+	r4 r8. f,16-. fis4-. r8. fis16-.
 	g8 r a r f! r g r \mark \default
 % Bars 431 to 435
 	c4 r r2
@@ -576,15 +576,15 @@ musicVioloncellMvtI = \relative c {
 % Bars 496 to 500
 	\dimText "dimin" f~\>
 	f
-	g\pp~
-	g~
-	g~
+	g\pp~^\one
+	g~^\two
+	g~^\three
 % Bars 501 to 505
-	g~
-	g~
-	g~
-	g~\<
-	g\>
+	g~^\four
+	g~^\five
+	g~^\six
+	g~\<^\seven
+	g\>^\eight
 % Bars 506 to 510
 	c2\pp^\unobassoeviolonc b8[( c e8. c16)]
 	r2 b8[( c g'8. c,16)]
@@ -600,8 +600,8 @@ musicVioloncellMvtI = \relative c {
 % Bars 516 to 520
 	f8.\f[-. e16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
-	g4-.\ff^\solo r r2
+	f4-.\ff r r2 \markXoffset #-0.3 \mark \default
+	g4-.\ff-\tweak X-offset #0.5 ^\solo r r2
 	c4 r r g8 r
 % Bars 521 to 525
 	c r g r c r g r 

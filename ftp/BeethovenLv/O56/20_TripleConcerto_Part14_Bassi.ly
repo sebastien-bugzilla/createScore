@@ -34,9 +34,6 @@
 \addQuote "cueVoiceVioloncellMvtI" { \cueVoiceVioloncellMvtI }
 \addQuote "cueVoiceVioloncellMvtII" { \cueVoiceVioloncellMvtII }
 \addQuote "cueVoiceVioloncellMvtIII" { \cueVoiceVioloncellMvtIII }
-\addQuote "cueVoiceBassoMvtI" { \cueVoiceBassoMvtI }
-\addQuote "cueVoiceBassoMvtII" { \cueVoiceBassoMvtII }
-\addQuote "cueVoiceBassoMvtIII" { \cueVoiceBassoMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -53,14 +50,22 @@
 		}
 	}
 	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtI
-%			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVioloncellMvtI \musicVioloncellMvtI
-			}
+		\new GrandStaff <<
+			\new Staff <<
+				\new Voice {
+					\formatVioloncellMvtI
+				}
+				\new Voice {
+					\timeMvtI \generalOptions \partOptions
+					\nameVioloncellMvtI \musicVioloncellMvtI
+				}
+			>>
+			\new Staff <<
+				\new Voice {
+					\timeMvtI \generalOptions \partOptions
+					\nameBassoMvtI \musicBassoMvtI
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##t
@@ -75,98 +80,27 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
+			\context {
+				\Staff 
+				\RemoveAllEmptyStaves
+			}
 		}
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtII
-%			}
+			\new Voice {
+				\formatVioloncellMvtII
+			}
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameVioloncellMvtII \musicVioloncellMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					II
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatVioloncellMvtIII
-%			}
-			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameVioloncellMvtIII \musicVioloncellMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
-					III
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtI
-%			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameBassoMvtI \musicBassoMvtI
-			}
-		>>
-		\header {
 			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
-					I
-				}
-			}
-		}
-		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-		}
-	}
-	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtII
-%			}
-			\new Voice {
-				\timeMvtII \generalOptions \partOptions
-				\nameBassoMvtII \musicBassoMvtII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\fill-line {
-					\fontsize #4
 					II
 				}
 			}
@@ -175,17 +109,29 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
+			\context {
+				\Staff 
+				\RemoveAllEmptyStaves
+			}
 		}
 	}
 	\score {
-		\new Staff <<
-%			\new Voice {
-%				\formatBassoMvtIII
-%			}
-			\new Voice {
-				\timeMvtIII \generalOptions \partOptions
-				\nameBassoMvtIII \musicBassoMvtIII
-			}
+		\new GrandStaff <<
+			\new Staff <<
+				\new Voice {
+					\formatVioloncellMvtIII
+				}
+				\new Voice {
+					\timeMvtIII \generalOptions \partOptions
+					\nameVioloncellMvtIII \musicVioloncellMvtIII
+				}
+			>>
+			\new Staff <<
+				\new Voice {
+					\timeMvtIII \generalOptions \partOptions
+					\nameBassoMvtIII \musicBassoMvtIII
+				}
+			>>
 		>>
 		\header {
 			breakbefore = ##f
@@ -199,6 +145,10 @@
 		\layout {
 			\context {
 				\CueVoice \layoutCueVoice
+			}
+			\context {
+				\Staff 
+				\RemoveAllEmptyStaves
 			}
 		}
 	}

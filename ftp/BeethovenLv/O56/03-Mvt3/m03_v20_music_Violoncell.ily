@@ -10,26 +10,51 @@ musicVioloncellMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c2.^\arco\pp
-	c
-	c
-	c4 c c
-	c2.
+	<< {
+		c2.-\tweak X-offset #2 ^\semprepp
+		c
+		c
+		c4 c c
+		c2.
 % Bars 6 to 10
-	c
-	c4 c4. c8
-	b8_\semprepp r b r r4
-	e,8^\pizz r r4 r
-	e8 r r4 r
+		c
+		c4 c4. c8
+		b8 r b r r4
+		e,8^\pizz r r4 r
+		e8 r r4 r
 % Bars 11 to 15
-	e8 r r4 r
-	e8 r r4 r
-	e8 r r4 r
-	e8 r e r r g
-	a r d r r f,
+		e8 r r4 r
+		e8 r r4 r
+		e8 r r4 r
+		e8 r e r r g
+		a r d r r f,
 % Bars 16 to 20
-	g r c r c,8.(\pp^\arco^\tutti e16
-	g8-.) r r4 g,8.( b16
+		g r c r c,8.(\pp^\arco^\tutti e16
+		g8-.)
+	} \\ {
+% Bars 1 to 5
+		c,8_\arco r r4 r
+		R2.
+		R
+		R
+		R
+% Bars 6 to 10
+		R
+		R
+		R
+		R
+		R
+% Bars 11 to 15
+		R
+		R
+		R
+		R
+		R
+% Bars 16 to 20
+		r4 r c8.( e16
+		g8-.)
+	} >>
+	   r8 r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
 	g,-. r r4 r^\solo
@@ -73,8 +98,8 @@ musicVioloncellMvtIII = \relative c' {
 	g'8 r r4 r
 	c8_\crescmarkup r r4 r
 	g8 r r4 r
-	c,8..\ff c32 e8.. e32 g8.. g32
-	c8.. c32 e,8.. e32 g8.. g32
+	c,8..\f[ c32 e8.. e32 g8.. g32]
+	c8..[ c32 e,8.. e32 g8.. g32]
 % Bars 56 to 60
 	c,4. e8\sf( g, b) \mark \default
 	c r r4 r
@@ -118,9 +143,9 @@ musicVioloncellMvtIII = \relative c' {
 		R
 % Bars 91 to 95
 		R
-		\mmrPos #-8 R \no \mark \default
+		\mmrPos #-8 R \no \markXoffset #-0.2 \mark \default
 	}
-	g'8\f^\arco d g d g d
+	g'8\f-\tweak X-offset #0.8 ^\arco d g d g d
 	a'\p d, a' d, a' d,
 	fis\f d fis d fis d
 % Bars 96 to 100
@@ -153,26 +178,45 @@ musicVioloncellMvtIII = \relative c' {
 		R
 		R \clef bass \no
 	}
-	c'2.\pp
-	c
+	<< {
+		c'2.\pp
+		c
 % Bars 121 to 125
-	c
-	c4 c c
-	c2.
-	c
-	c4 c4. c8
+		c
+		c4 c c
+		c2.
+		c
+		c4 c4. c8
 % Bars 126 to 130
-	b8_\semprepp r b r r4
-	e,8^\pizz r r4 r
-	e8 r r4 r
-	e8 r r4 r
-	e8 r r4 r
+		b8_\semprepp r b r r4
+		e,8^\pizz r r4 r
+		e8 r r4 r
+		e8 r r4 r
+		e8 r r4 r
 % Bars 131 to 135
-	e8 r r4 r
-	e8 r e r r g
-	a r d r r f,
-	g r c r c,8.(\pp^\arco^\tutti e16
-	g8-.) r r4 g,8.( b16
+		e8 r r4 r
+		e8 r e r r g
+		a r d r r f,
+		g r c r c,8.(\pp^\arco^\tutti e16 g8-.)
+	} \\ {
+		R2.
+		R %120
+		R
+		R
+		R
+		R
+		R %125
+		R
+		R
+		R
+		R
+		R %130
+		R
+		R
+		R
+		r4 r c,8.( e16 g8-.)
+	} >>
+	     r8 r4 g,8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
@@ -228,7 +272,7 @@ musicVioloncellMvtIII = \relative c' {
 	a8 r r4 r
 	a8\p^\pizz r r4 r
 % Bars 181 to 185
-	g8 r r4 g8 r
+	g!8 r r4 g8 r
 	c r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
 	c8 r r4 r
 	c8\p^\pizz r r4 r
@@ -333,7 +377,7 @@ musicVioloncellMvtIII = \relative c' {
 		\ni R2.
 		R
 		R \no
-		r4 r } r8 g^\arco \mark \default
+		r4 r } r8 g_\arco \mark \default
 % Bars 286 to 290
 	c\f g c g c g
 	d'\p g, d' g, d' g,
@@ -379,7 +423,7 @@ musicVioloncellMvtIII = \relative c' {
 	c4 c r8 c
 	g4 g r8 g
 	c4 c r8 c
-	g4_\crescmarkup g' r8 g^\arco \mark \default
+	g4_\crescmarkup g' r8 g_\arco \mark \default
 % Bars 326 to 330
 	c-. g-. c-. g-. e-. c-. 
 	g g16 g b8 b16 b d8 d16 d
@@ -395,31 +439,55 @@ musicVioloncellMvtIII = \relative c' {
 		R \no \clef bass
 	}
 % Bars 336 to 340
-	r4 r8 g,,_\semprepp^\arco
-	c c r c
-	c c r c
-	f, f r d
-	g g r g
+	<< {
+		r4 r8 g,,_\semprepp^\arco
+		c c r c
+		c c r c
+		f, f r d
+		g g r g
 % Bars 341 to 345
-	c c r c
-	c c r c
-	f, f r f
-	e e r e'
-	e e r e
+		c c r c
+		c c r c
+		f, f r f
+		e e r e'
+		e e r e
 % Bars 346 to 350
-	a, a r a
-	b b r b
-	e, e r e
-	e' e r e
-	a, a r c
+		a, a r a
+		b b r b
+		e, e r e
+		e' e r e
+		a, a r c
 % Bars 351 to 355
-	d d r d,
-	g g r d
-	g g r d
-	g g r d 
-	g g r d
+		d d r d,
+		g g r d
+		g g r d
+		g g r d 
+		g g r d
 % Bars 356 to 360
-	g r r4
+		g r r4
+	} \\ {
+		R2 %336
+		R
+		R
+		R
+		R %340
+		R
+		R
+		R
+		R
+		R %345
+		R
+		R
+		R
+		R
+		R %350
+		R
+		R
+		R
+		R
+		R %355
+		R
+	} >>
 	R2*2
 	
 	r4 r8 g,\pp
@@ -456,8 +524,8 @@ musicVioloncellMvtIII = \relative c' {
 	c8\p r f, r
 % Bars 386 to 390
 	g r g r \mark \default
-	c16\ff^\tutti c c c  c c c c
-	c c c c  c c c c 
+	c2:16\ff^\tutti
+	c:
 	d8( e f fis)
 	g( a b16 g a b)
 % Bars 391 to 395

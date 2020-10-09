@@ -155,6 +155,13 @@ nineCentered  = {
 	R1^\markup {\tiny \number 9}
 	\undo \omit MultiMeasureRestNumber
 }
+tenCentered  = {
+	\omit MultiMeasureRestNumber
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R1^\markup {\tiny \number 10}
+	\undo \omit MultiMeasureRestNumber
+}
+
 textSpanner = #(define-music-function
 	(textSpanner fontshape)
 	(string? symbol?)

@@ -62,7 +62,7 @@ musicBassoMvtIII = \relative c {
 	g'8 r r4 r
 	c8_\crescmarkup r r4 r
 	g8 r r4 r
-	c,8..\ff c32 e8.. e32 g8.. g32
+	c,8..\f c32 e8.. e32 g8.. g32
 	c8.. c32 e,8.. e32 g8.. g32
 % Bars 56 to 60
 	c,4. e8\sf( g, b) \mark \default
@@ -187,7 +187,7 @@ musicBassoMvtIII = \relative c {
 	a8 r r4 r
 	a8\p^\pizz r r4 r
 % Bars 181 to 185
-	g8 r r4 g8 r
+	g!8 r r4 g8 r
 	c r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
 	c8 r r4 r
 	c8\p^\pizz r r4 r

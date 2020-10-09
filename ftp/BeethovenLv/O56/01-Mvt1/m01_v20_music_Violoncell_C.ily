@@ -46,7 +46,7 @@ musicVioloncellMvtI = \relative c {
 	e,,8-. f16( g a b cis d) e8-. f16( g a b cis d)
 	e8 e, e e   e e e e
 % Bars 31 to 35
-	d4-. f2\sf d8.-. c16-.
+	d4-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	\partcombineApart \tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
 	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
@@ -72,12 +72,12 @@ musicVioloncellMvtI = \relative c {
 % Bars 51 to 55
 	c fis,
 	g1)(
-	f'
+	f'!
 	e
 	d
 % Bars 56 to 60
-	c_\crescmarkup
-	f)
+	c_\crescmarkup)
+	f
 	e2( ees)
 	g,8.\ff g'16 g4 g,8. g'16 g4
 	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
@@ -156,7 +156,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 136 to 140
 	
 	
-	c'2(^\unobassoeviolonc a
+	c'2(^\unobassoeviolonc\p a
 	fis gis)
 	a_\crescmarkup f!
 % Bars 141 to 145
@@ -213,7 +213,7 @@ musicVioloncellMvtI = \relative c {
 	a4 r8. a16\pp a4 r8. a16
 	a4 r8. a16 a4 r8. a16
 	e'4 r8. e16 e4 r8. e16
-	e4 r8. e16 e8.[-. e16-. e8.-. e16]-. 
+	e4 r8. e16-. e8.[-. e16-. e8.-. e16]-. 
 	a4 r r8. c,16[-. c8.-. c16]-. 
 % Bars 191 to 195
 	f4 r r8. a,16[-. a8.-. a16]-. 
@@ -474,7 +474,7 @@ musicVioloncellMvtI = \relative c {
 	g4 r8. g16 g4 r8. g16
 	c4 r r2
 	R1
-	r4 r8. f,16 fis4-. r8. fis16-.
+	r4 r8. f,16-. fis4-. r8. fis16-.
 	g8 r a r f! r g r \mark \default
 % Bars 431 to 435
 	c4 r r2

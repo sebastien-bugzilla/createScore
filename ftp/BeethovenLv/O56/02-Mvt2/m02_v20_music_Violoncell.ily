@@ -13,28 +13,42 @@ musicVioloncellMvtII = \relative c {
 	aes4\p^\tutti des16-. c-.
 	g8  r g
 	g8~ g16. ees32( aes16. des32)
-	ees8.\noBeam \clef tenor ees'32(^\solo des c16 bes)
-	aes4( des16 c)
+	<< {
+		ees8.\noBeam ees'32(^\solo des c16 bes)
+		aes4( des16 c)
 % Bars 6 to 10
-	bes8( g ees16 g) \clef bass
-	aes8(~ aes16 g f bes,)
-	ees( bes ees) r r8
-	ees,8(\pp g bes)
-	ees,( aes c)
+		bes8( g ees16 g)
+		aes8(~ aes16 g f bes,)
+		ees( bes ees) r r8
+		ees,8(\pp g bes)
+		ees,( aes c)
 % Bars 11 to 15
-	ees,(_\crescmarkup bes' g)
-	ees8.\sf\noBeam ees16(\p f g)
+		ees,(_\crescmarkup bes' g)
+		ees8.\sf\noBeam ees16(\p f g)
+	} \\ {
+		ees'8. r16 r8
+		R4.
+% Bars 6 to 10
+		R
+		R
+		R
+		R
+		R
+% Bars 11 to 15
+		R
+		r8 r16 ees,( f g)
+	} >>
 	aes4( des16 c)
 	bes8( ees8. des16)
-	c8_\crescmarkup c4\f\>
+	c8-\tweak X-offset #-1 _\crescmarkup c4\f\>
 % Bars 16 to 20
 	des8.([-\tweak X-offset #0 _\pcrescD a16] bes des)
 	ees16\p[ r ees r ees] r
 	ees[_\crescmarkup r ees] r ees32[ r e] r
 	f[ r des] r ees!16\sf r ees\p r
-	aes,8. r16 r8 \mark \default
+	aes,8. r16 r8 \markXoffset #-0.3 \mark \default
 % Bars 21 to 25
-	aes8^\pizz r des16 c
+	aes8-\tweak X-offset #1 ^\pizz r des16 c
 	g8 r g 
 	g\noBeam g16. ees32 aes16. des32
 	ees8 r r
@@ -55,8 +69,8 @@ musicVioloncellMvtII = \relative c {
 % Bars 41 to 45
 	g32\f[ g g g] g[ g\> g g] g[ g g g]
 	f16\p f f f f f
-	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \mark \default
-	g8\p^\solo r16 g16\<(\noBeam \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
+	fis32\f[ fis' fis fis] fis[ fis fis\> fis] fis[ fis, fis fis] \markXoffset #-0.2 \mark \default
+	g8\p-\tweak X-offset #1.2 ^\solo r16 g16\<(\noBeam \trillSpanCustom #4 #trillglyph \afterGrace aes8\>)\startTrillSpan {g16[\stopTrillSpan aes]\!}
 	g8 r r
 % Bars 46 to 50
 	g^\pizz r r
