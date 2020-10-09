@@ -149,6 +149,7 @@
 			}
 		}
 		\layout {
+			system-count = #20
 			\context {
 				\CueVoice \layoutCueVoice
 			}

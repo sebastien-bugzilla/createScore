@@ -84,5 +84,5 @@ musicVioloncellMvtII = \relative c {
 		R \no
 		r8 r g16_\pizz r 
 	}
-	\bar "||"
+	\key c \major \time 3/4 \bar "||" \attacca
 }
