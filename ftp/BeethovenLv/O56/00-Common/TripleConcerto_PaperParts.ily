@@ -6,6 +6,7 @@
 	ragged-last-bottom = ##t
 	ragged-bottom = ##t
 	left-margin = 16 \mm
+	bottom-margin = 16 \mm
 	%annotate-spacing = ##t
 %	first-page-number = 0
 %	slashSeparator = \markup {

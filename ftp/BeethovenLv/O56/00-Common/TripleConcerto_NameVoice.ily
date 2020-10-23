@@ -385,18 +385,18 @@ nameSoloCelloMvtIII = {
 %#                     V O I C E   N A M E   :   P I A N O                     #
 %###############################################################################
 namePianoUpMvtI = {
-	\set Staff.instrumentName = ""
-	\set Staff.shortInstrumentName = ""
+	\set Staff.instrumentName = "Pianoforte."
+	\set Staff.shortInstrumentName = "Pf"
 	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoUpMvtII = {
-	\set Staff.instrumentName = ""
-	\set Staff.shortInstrumentName = ""
+	\set Staff.instrumentName = "Pianoforte."
+	\set Staff.shortInstrumentName = "Pf"
 	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoUpMvtIII = {
-	\set Staff.instrumentName = ""
-	\set Staff.shortInstrumentName = ""
+	\set Staff.instrumentName = "Pianoforte."
+	\set Staff.shortInstrumentName = "Pf"
 	\set Staff.midiInstrument = #"acoustic grand"
 }
 namePianoDownMvtI = {

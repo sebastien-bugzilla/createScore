@@ -16,6 +16,7 @@ generalOptions = {
 		\musicglyph "scripts.caesura.curved"
 	}
 	\override Score.DynamicTextSpanner.font-size = #0
+	\override Score.SustainPedal.parent-alignment-X = 0
 }
 conductorOptions = {
 	\set Staff.soloText = #"1."

@@ -20,8 +20,7 @@
 \include "./00-Common/TripleConcerto_OptionParts.ily"
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-%\include "./00-Common/TripleConcerto_Format_PartPiano.ily"
-\include "./00-Common/TripleConcerto_Format_temp.ly"
+\include "./00-Common/TripleConcerto_Format_PartPiano.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_PianoUp.ily"
 \include "./01-Mvt1/m01_v16_music_PianoDown.ily"
@@ -32,12 +31,6 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-%\addQuote "cueVoicePianoUpMvtI" { \cueVoicePianoUpMvtI }
-%\addQuote "cueVoicePianoUpMvtII" { \cueVoicePianoUpMvtII }
-%\addQuote "cueVoicePianoUpMvtIII" { \cueVoicePianoUpMvtIII }
-%\addQuote "cueVoicePianoDownMvtI" { \cueVoicePianoDownMvtI }
-%\addQuote "cueVoicePianoDownMvtII" { \cueVoicePianoDownMvtII }
-%\addQuote "cueVoicePianoDownMvtIII" { \cueVoicePianoDownMvtIII }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -54,15 +47,15 @@
 		}
 	}
 	\score {
-		\new PianoStaff <<
+		\new PianoStaff \with { \namePianoUpMvtI } <<
 			\new Staff = "up" {
 				<<
-%					\new Voice {
-%						\formatPianoUpMvtI
-%					}
+					\new Voice {
+						\formatPianoUpMvtI
+					}
 					\new Voice {
 						\timeMvtI \generalOptions \partOptions
-						\namePianoUpMvtI \musicPianoUpMvtI
+						 \musicPianoUpMvtI
 					}
 					\new Voice {
 						\timeMvtI \generalOptions \partOptions
@@ -80,7 +73,7 @@
 						\namePianoDownMvtI \musicPianoDownMvtI
 					}
 					\new Voice {
-						\clef bass
+						\clef bass \generalOptions \partOptions
 						\cueVoicePianoDownMvtI
 					}
 				>>
@@ -96,7 +89,6 @@
 			}
 		}
 		\layout {
-			system-count = #114
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -107,22 +99,23 @@
 		}
 	}
 	\score {
-		\new PianoStaff <<
+		\new PianoStaff \with { \namePianoUpMvtII } <<
 			\new Staff = "up" {
 				<<
-%					\new Voice {
-%						\formatPianoUpMvtII
-%					}
+					\new Voice {
+						\formatPianoUpMvtII
+					}
 					\new Voice {
 						\timeMvtII \generalOptions \partOptions
-						\namePianoUpMvtII \musicPianoUpMvtII
+						\musicPianoUpMvtII
 					}
 					\new Voice {
 						\timeMvtII \generalOptions \partOptions
 						\cueVoicePianoUpMvtII
 					}
 					\new Voice {
-						\cueVoicePianoThirdMvtII
+						\timeMvtII \generalOptions \partOptions
+						\cueVoicePianoThirdMvtII 
 					}
 				>>
 			}
@@ -149,7 +142,6 @@
 			}
 		}
 		\layout {
-			system-count = #20
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -160,21 +152,22 @@
 		}
 	}
 	\score {
-		\new PianoStaff <<
+		\new PianoStaff \with { \namePianoUpMvtIII } <<
 			\new Staff = "up" {
 				<<
-%					\new Voice {
-%						\formatPianoUpMvtIII
-%					}
+					\new Voice {
+						\formatPianoUpMvtIII
+					}
 					\new Voice {
 						\timeMvtIII \generalOptions \partOptions
-						\namePianoUpMvtIII \musicPianoUpMvtIII
+						\musicPianoUpMvtIII
 					}
 					\new Voice {
 						\timeMvtIII \generalOptions \partOptions
 						\cueVoicePianoUpMvtIII
 					}
 					\new Voice {
+						\timeMvtIII \generalOptions \partOptions
 						\cueVoicePianoThirdMvtIII
 					}
 				>>

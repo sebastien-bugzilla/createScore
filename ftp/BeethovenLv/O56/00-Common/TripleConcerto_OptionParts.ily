@@ -15,6 +15,7 @@ generalOptions = {
 	%\override Score.SpacingSpanner.strict-grace-spacing = ##t
 	\override Score.DynamicTextSpanner.font-size = #0
 	\override Beam.auto-knee-gap = #3
+	\override Score.SustainPedal.parent-alignment-X = 0
 }
 partOptions = {
 	\override Score.BarNumber #'font-size = #0.1

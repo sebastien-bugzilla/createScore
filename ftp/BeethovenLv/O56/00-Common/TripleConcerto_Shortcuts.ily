@@ -74,6 +74,7 @@ tenmarkup=^\markup {\italic ten.}
 tuttibold=^\markup {\bold \abs-fontsize #10 Tutti}
 solobold=^\markup {\bold \abs-fontsize #10 Solo}
 klaviersolobold=^\markup {\bold \abs-fontsize #10 {Klavier solo}}
+klavier_solobold=^\markup {\bold \abs-fontsize #10 \column {\lower #1 Klavier solo}}
 violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
 violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
 farco=^\markup {\dynamic f \italic arco}
@@ -100,6 +101,12 @@ fermataCentered  = {
 	\once \override Score.MultiMeasureRest.transparent = ##t 
 	R2.^\markup {\musicglyph "scripts.ufermata"}
 }
+
+dfermataCentered  = {
+	\once \override Score.MultiMeasureRest.transparent = ##t 
+	R2._\markup {\musicglyph "scripts.dfermata"}
+}
+
 
 oneCentered  = {
 	\omit MultiMeasureRestNumber

@@ -103,10 +103,10 @@ musicPianoUpMvtIII = \relative c {
 	r4 r r8 \tuplet 3/2 8 {g''16\ff a b}
 	\tuplet 6/4 4 {c b a g a b c b a g a b c b c d c d
 	e(\dim d c b c d) e( d c b c d) e( d c b c d)
-	e d c b c d e d c b c d e d c b c d}
+	e( d c b c d) e( d c b c d) e( d c b c d)}
 % Bars 106 to 110
 	<g, e'>4\p r8 \textSpanner "rallentando" #'italic <e c'>_\startTextSpan(-. <g e'>-. <e c'>-.)
-	<g e'>4 r8 <e c'>( <g e'>-. <e c'>-.)
+	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)
 	<g e'>-.( <e c'>-. <g e'>-. <e c'>-. <g e'>-. <e c'>-.)
 	<g e'>4 r8 <e c'>-.( <g e'>-. <e c'>-.)\stopTextSpan
 	<>^\atempo <g e'>\noBeam\pp c( e) r r e,(
@@ -175,7 +175,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 186 to 190
 	r8 e16(\f dis \tuplet 6/4 4 {e f e d e d cis d cis b cis b)}
 	a8\noBeam a'16( gis a8-.) a16( b cis8-.) cis16( d
-	e8-.)\< e16( f g!8) g16( a b cis d e\!)
+	e8-.)\< e16( f g!8-.) g16( a b cis d e\!)
 	f2( \afterGrace e4)\trill {d16[ e]}
 	d8 r r4 r
 % Bars 191 to 195
@@ -185,7 +185,7 @@ musicPianoUpMvtIII = \relative c {
 	a8 r r4 r
 	a,,,16\f-. a'-. a-. gis-. a-. a,-. a'-. b-. cis-. cis,-. cis'-. d-. 
 % Bars 196 to 200
-	e_\stacc e, e' f g g, g' a b cis d e
+	e_\stacc e, e' f g! g,! g' a b cis d e
 	f e d e f e d f e d cis e
 	d8 r r4 r
 	e,,16\f-. e'-. e-. dis-. e-. e,-. e'-. fis-. gis gis, gis' a 
@@ -242,7 +242,7 @@ musicPianoUpMvtIII = \relative c {
 	g~\cresc
 	g~ 
 	g~ 
-	g8.\f a32\stopTrillSpan b c16\sf b32( a g f e d c8) r
+	g8.\f a32(\stopTrillSpan b c16)\sf b32( a g f e d c8) r
 	R2.*17
 % Bars 246 to 250
 	
@@ -277,7 +277,7 @@ musicPianoUpMvtIII = \relative c {
 % Bars 281 to 285
 	e d c bes a g f e d c d e} \tuplet 3/2 8 {f g a} bes!32 c d e
 	\tuplet 6/4 4 {f16\cresc e d c d e f e d c d e f e d c d e
-	f e d c d e f e d c d e} f8 <c, ees a c>-.\sf
+	f e d c d e f e d c d e} f8-. <c, ees a c>-.\sf
 	<c e! g c>8-.\f r r4 r
 	\tuplet 6/4 4 {g16\< aes a bes b c cis d ees e f fis} \afterGrace g4\trill\! {fis!16[ g]} \mark \default
 % Bars 286 to 290
@@ -384,7 +384,7 @@ musicPianoUpMvtIII = \relative c {
 	d8 r r4
 	r16 b'! d c b a g f
 % Bars 381 to 385
-	e8 r r4
+	e!8 r r4
 	R2
 	r16 f'\f a g f e d c
 	b a g f e d c b
@@ -468,11 +468,11 @@ musicPianoUpMvtIII = \relative c {
 	R
 	\tuplet 6/4 4 {c,16\p e g c g e r c[ c'] r e,[ e'] r g,,[ g'] r b,[ b']}
 % Bars 461 to 465
-	<c, c'>4 r r
+	<c, c'>4\f r r
 	\tuplet 6/4 4 {c16_\crescmarkup e g c g e r c[ c'] r e,[ e'] r g,,[ g'] r b,[ b']
 	r c,[ c'] r e,[ e'] r g,,[ g'] r b,[ b'] r c,[ c'] r e,[ e'] 
 	r g,,[\f g'] r b,[ b'] r c,[ c'] r e,[ e'] r g,,[ g'] r b,[ b']} \mark \default
-	<c, c'>8 r r4 r
+	<c, c'>8\ff r r4 r
 % Bars 466 to 470
 	\tuplet 6/4 4 {c'16(\f e d c\sf b a) g( c b a\sf g f) e( a g f\sf e d)}
 	c8 r r4 r

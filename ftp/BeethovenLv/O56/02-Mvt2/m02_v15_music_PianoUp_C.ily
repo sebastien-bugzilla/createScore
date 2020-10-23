@@ -96,7 +96,7 @@ musicPianoUpMvtII = \relative c' {
 	\tuplet 3/2 16 {ees[ g bes] \change Staff = "up" 
 		ees[ \change Staff = "down" bes g] 
 		ees[ g bes] 
-		des[ bes g] 
+		des[^\crescmarkup bes g] 
 		ees[ g bes] 
 		des[ bes g]} \mark \default
 	\tuplet 3/2 16 {ees[ g\> bes] 

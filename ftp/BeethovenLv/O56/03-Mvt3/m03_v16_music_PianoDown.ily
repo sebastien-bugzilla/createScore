@@ -95,14 +95,14 @@ musicPianoDownMvtIII = \relative c, {
 	
 	
 	\clef treble \tuplet 6/4 4 {g,16( b ais b ais b) g( d' cis d cis d) b( d' b g b g)
-	f! g f d f d b[ d b] \clef bass g b g f a g f e d}
+	f! g f d f d} \tuplet 3/2 8 { b[ d b] \clef bass g b g} \tuplet 6/4 4 {f a g f e d}
 	c8 r r4 r8 \tuplet 3/2 4 {g16^\ff a b}
 % Bars 101 to 105
 	\tuplet 6/4 4 {c b a g a b c b a g a b c b c d c d}
 	e2^\sf \tuplet 6/4 4 {e16 f e d e d}
 	c8 r r4 \clef treble \tuplet 6/4 4 {e'16 f e d e d
 	c( d e f e d) c( d e f e d) c( d e f e d)
-	c d e f e d c d e f e d c d e f e d}
+	c( d e f e d) c( d e f e d) c( d e f e d)}
 % Bars 106 to 110
 	c4 r8 e(-. c-. e-.)
 	c4 r8 e(-. c-. e-.)
@@ -174,7 +174,7 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 186 to 190
 	s8 e16( dis \tuplet 6/4 4 {e f! e d e d cis d cis b cis b)}
 	a8\noBeam a'16( gis a8-.) a16( b \clef treble cis8-.) cis16( d
-	e8-.) e16( f g8-.) g16( a b cis d e)
+	e8-.) e16( f g!8-.) g16( a b cis d e)
 	f2( \afterGrace e4\trill) {d16[ e]}
 	d8 r r4 r \clef bass
 % Bars 191 to 195
@@ -184,10 +184,10 @@ musicPianoDownMvtIII = \relative c, {
 	a8 r r4 r \clef bass
 	a,,,16-. a'-. a-. gis-. a-. a,-. a'-. b-. cis-. cis,-. cis'-. d-. 
 % Bars 196 to 200
-	e e, e' f \clef treble g g, g' a b cis d e 
+	e e, e' f \clef treble g! g,! g' a b cis d e 
 	f e d e f e d f e d cis e
 	d8 r r4 r \clef bass
-	e,,16-. e'-. e-. dis-. e-. e,-. \clef treble e'-. fis-. gis gis, gis' a
+	e,,16-. e'-. e-. dis-. e-. e,-. e'-. fis-. \clef treble gis gis, gis' a
 	b b, b' c d cis d e fis gis a b 
 % Bars 201 to 205
 	c b a b c b a c b a gis b
@@ -197,26 +197,26 @@ musicPianoDownMvtIII = \relative c, {
 	b( e d e e, e' d e b e d e)
 % Bars 206 to 210
 	a,( e' c e a, e' c e a, d c d)
-	b( g' d g g, g' d g b, g' d g)
+	\stemDown b( g' d g g, g' d g b, g' d g)
 	c,( g' e g g, g' e g c, g' e g)
-	d( g f g g, g' f g b, g' f g)
+	d( g f g g, g' f g b, g' f g) \stemNeutral
 	c,( g' e g c, e c e c e c e)
 % Bars 211 to 215
 	dis( b' fis b b, b' fis b dis, b' fis b)
 	e, b'( g b b, b' g b e, b' g b)
 	r b,( dis fis a fis dis b a' fis dis b)
-	r b( d! e gis e d b gis' e d b)
+	\stemUp r b( d! e gis e d b gis' e d b)
 	r a( cis e g! e cis a g' e cis a)
 % Bars 216 to 220
-	r a( c! d fis d c a fis' d c a)
+	\stemNeutral r a( c! d fis d c a fis' d c a)
 	r g( b d f! d b g f' d b g)
 	r g( c e g e c g g' e c g)
 	\ni R2. \no
 	r16 g(^\f a b c d e f a g f e)
 % Bars 221 to 225
 	d( fis g a b \clef treble c d e g f! e d) \mark \default
-	e(\noBeam \clef bass g, a b \clef treble c d e f a g f e
-	d8)\noBeam \clef bass \tuplet 3/2 4 {fis,,,16(^\ff g fis)} \tuplet 6/4 4 {g( fis g fis g fis) g( fis g fis g fis)
+	e( g, a b c d e f a g f e
+	d8)\noBeam \clef bass \ottava #-1 \tuplet 3/2 4 {fis,,,16(^\ff g fis)} \tuplet 6/4 4 {g( fis g fis g fis) g( fis g fis g fis)
 	g fis g fis g fis g fis g fis g fis g fis g fis g fis
 	g fis g fis g fis g fis g fis g fis g fis g fis g fis
 % Bars 226 to 230
@@ -241,7 +241,7 @@ musicPianoDownMvtIII = \relative c, {
 	g~
 	g~
 	g~
-	g8. a32\stopTrillSpan b c16 d32( e f g a b c8) s
+	g8. a32(\stopTrillSpan b \ottava #0 c16) d32( e f g a b c8) s
 	s2.*17
 % Bars 246 to 250
 	
@@ -269,9 +269,9 @@ musicPianoDownMvtIII = \relative c, {
 	\tuplet 6/4 4 {g,16 b( ais b ais b g d' cis d cis d b g' fis g fis g)}
 % Bars 276 to 280
 	e8 r r4 r
-	\tuplet 6/4 4 {c16 b a g a b c b a g a b c b c d c d}
+	\clef bass \tuplet 6/4 4 {c16 b a g a b c b a g a b c b c d c d}
 	e2 \tuplet 6/4 4 {e16 f e d e d}
-	c8 r r4 \clef bass \tuplet 6/4 4 {e,16 f e d e d
+	c8 r r4 \tuplet 6/4 4 {e,16 f e d e d
 	c d e f e d c d e f e d c d e f e d
 % Bars 281 to 285
 	c d e f g a bes c d e d c} \tuplet 3/2 8 {bes a g} f32 e d c
@@ -283,7 +283,7 @@ musicPianoDownMvtIII = \relative c, {
 	c,8 s s4 s
 	s2.*4
 % Bars 291 to 295
-	\tuplet 6/4 4 {c16 e dis e dis e c g' fis g fis g e bes' g e g e
+	\clef treble \tuplet 6/4 4 {c16 e dis e dis e c g' fis g fis g e bes' g e g e
 	c e c bes c bes \clef bass g bes g e g e c d' c bes a g}
 	f8 r r4 r
 	\tuplet 6/4 4 {f16^\f e d c d e f e d c d e f e f g f g }
@@ -316,7 +316,7 @@ musicPianoDownMvtIII = \relative c, {
 	g8( e) e-. e-. fis16( e dis e)
 	\afterGrace dis2.\startTrillSpan {cis16[\stopTrillSpan dis]}
 	e8( b) b-. b-. cis16( b a b)
-	\afterGrace cis2.\startTrillSpan^\natural {b16[\stopTrillSpan cis]}
+	\trillSpanCustom #5 #naturaltrill \afterGrace cis2.\startTrillSpan {b16[\stopTrillSpan cis]}
 	d8( a) a-. a-. b16( a g a)
 % Bars 321 to 325
 	b4 s s
@@ -332,7 +332,7 @@ musicPianoDownMvtIII = \relative c, {
 	b8) r r4 s
 % Bars 331 to 335
 	s2. \clef bass
-	<< { b4\fermata r r8 \breathe \tempo "Allegro." r} { \ni \fermataCentered \no }>> \bar "||"
+	<< { b4_\fermata r r8 \breathe \tempo "Allegro." r} { \ni \dfermataCentered \no }>> \bar "||"
 	\time 2/4 \ni R2*3 \no
 	
 	
@@ -385,7 +385,7 @@ musicPianoDownMvtIII = \relative c, {
 	d8 r r4
 	r16 b'! d c b a g f
 % Bars 381 to 385
-	e8 r r4
+	e!8 r r4
 	\ni R2 \no
 	r16 d' f e d c b a
 	g f e d c b a g
@@ -421,7 +421,7 @@ musicPianoDownMvtIII = \relative c, {
 	f!4 r
 	R2*2 \no
 	
-	\tuplet 3/2 4 {aes''8\sf f d b aes f}
+	\tuplet 3/2 4 {\tupletUp aes''8\sf f d \tupletNeutral b aes f}
 % Bars 421 to 425
 	e r r4
 	r \tuplet 3/2 4 {bes'8\sf g e}

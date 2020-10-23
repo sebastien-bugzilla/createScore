@@ -54,7 +54,7 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	<c c'>2_\dolce^\klaviersolobold( <b b'>8[ <c c'> <e e'>8. <d d'>16)]
 	<d d'>4 r r2
 	<d d'>2( <cis cis'>8[ <d d'> <f f'>8. <e e'>16])
@@ -62,11 +62,11 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 101 to 105
 	<f f'>2. <g g'>4^\trill(
 	<a a'>_\crescmarkup <f f'> <d d'> <c c'>)
-	<b b'>2(\p\< <d d'>4..\> <c c'>16)\!
-	\afterGrace <f a>2.\startTrillSpan( {gis16[\stopTrillSpan a]} <a c>8. <f a>16)
+	<b b'>2(-\tweak X-offset #-1.5 \p\< <d d'>4..\> <c c'>16)\!
+	\trillSpanCustom #5 #trillglyph \afterGrace <f a>2.\startTrillSpan( {gis16[\stopTrillSpan a]} <a c>8. <f a>16)
 	<e g!>4-. <c' e>4. <c e>16 <b d> <a c> <g b> <f a> <e g>
 % Bars 106 to 110
-	<d f>4 \afterGrace <d, f>2\startTrillSpan {e16[\stopTrillSpan f]} <f a>8. <d f>16
+	\trillSpanCustom #7 #trillglyph <d f>4 \afterGrace <d, f>2\startTrillSpan {e16[\stopTrillSpan f]} <f a>8. <d f>16
 	<c e>4 r e16\f f g a b c d e
 	a,4 r a16 b c d e f g a 
 	e e, f fis g gis a bes b c cis d dis e f fis
@@ -99,7 +99,7 @@ musicPianoUpMvtI = \relative c'' {
 	s8 e,16( e') d,( d') c,( c') b,( b') a,( a') g,( g') f,( f')
 	e,( e') r8 s4 s2
 	s8 e,16(\p e') f,( f') g,( g') a,( a') b,( b') c,( c') d,( d')
-	e,( e') r8 e2(\turn f8. c16)
+	e,( e') r8 e2(-\tweak X-offset #2.5 \turn f8. c16)
 	e8.( dis16 d4.) d8\trill( \grace {cis16[ d]} e8 b)
 % Bars 136 to 140
 	d( c! b a) a4(\trill \grace {gis16[ a]} c8. a16)
@@ -108,10 +108,10 @@ musicPianoUpMvtI = \relative c'' {
 	\change Staff = "down" r16 d, a' c d a c d r d, e b' d e, b' d
 	r c, e a r^\crescmarkup a, a' a, r f' \change Staff = "up" f' \change Staff = "down" f, r f \change Staff = "up" f' \change Staff = "down" f, \oneVoice
 % Bars 141 to 145
-	\change Staff = "up" \shiftOn e'4 b'\rest b2\rest
+	\change Staff = "up" \shiftOff e'4 b'\rest b2\rest
 	s1
-	\tuplet 3/2 4 {r8 e-. e-. e-. e-. e-. e(\sf <d! f!>) q-. q-. q-. q-.}
-	\tuplet 3/2 4 {q(\sf <c e>) q-. q-. q-. q-. q( <b d>) q-. <a c>( <c a'>) q-.}
+	\tuplet 3/2 4 {r8 e-. e-. e-. e-. e-. e(\sf <d f!>) q-. q-. q-. q-.}
+	\tuplet 3/2 4 {q(-\tweak X-offset #-1 \sf <c e>) q-. q-. q-. q-. q( <b d>) q-. <a c>( <c a'>) q-.}
 	<b gis'>4 r r2
 % Bars 146 to 150
 	\tuplet 3/2 4 {r8 e,_\crescmarkup( gis) gis( b) b( e) e( gis) gis( b) b(}
@@ -144,15 +144,15 @@ musicPianoUpMvtI = \relative c'' {
 	f_\crescmarkup f4 f f f8~
 	\tuplet 3/2 4 {f(\pp e g f e d c! bes a g f! e)}
 	\tuplet 3/2 4 {d(_\crescmarkup c! bes a g f! e bes' g e c! bes)}
-	a4\sf\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g)\!}
+	a4\sf-\tweak shorten-pair #'(2 . 0)\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g)\!}
 % Bars 176 to 180
-	f4_\plegato^\dolce(~ \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
+	f4-\tweak extra-offset #'(-1 . 1) _\plegato^\dolce(~ \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
 	c4~ \tuplet 3/2 4 {c8 a' c} b4~ \tuplet 3/2 4 {b8 fis b)}
 	a2~ \tuplet 3/2 4 {a8( e_\dimmarkup fis gis a b)}
 	c2~ \tuplet 3/2 4 {c8 gis( a b c d)}
 	e16\pp dis e dis e dis e dis e dis f! e d c b a
 % Bars 181 to 185
-	\afterGrace b1\startTrillSpan {a8[\stopTrillSpan c b]}
+	\afterGrace 15/16 b1\startTrillSpan {a8[\stopTrillSpan c b]}
 	a4 r r2
 	s1*11
 % Bars 186 to 190
@@ -183,21 +183,21 @@ musicPianoUpMvtI = \relative c'' {
 	c' a e c b'\sf a f! b, b' a f b, b'\sf a fis b,
 % Bars 211 to 215
 	<b fis' a b>4\p r r2
-	b2(~\p b8.[ ais16 b8. ais16])
+	\once \stemUp b2(~\p b8.[ ais16 b8. ais16])
 	b4 <fis a! b>_\dimmarkup q r
 	r q q q
 	<dis fis a b>\pp r r2
 % Bars 216 to 220
 	s1*2
 	
-	gis,16^\semprepp( a b c d e fis g! gis a b c d e fis g!)
-	gis1~\startTrillSpan
+	gis,16_\semprepp( a b c d e fis g! gis a b c d e fis g!)
+	\trillSpanPadding #1.5 gis1~\startTrillSpan
 	gis
 % Bars 221 to 225
 	b~\startTrillSpan
 	b2~ b16\stopTrillSpan d, e fis gis a b c
 	<b d>1\startTrillSpan\cresc~
-	\afterGrace q {<a c>16[(\stopTrillSpan <b d>])} \mark \default
+	\afterGrace q {<a c>16[(-.\stopTrillSpan <b d>-.])} \mark \default
 	<a c>4\ff s s2
 % Bars 226 to 230
 	s1*42
@@ -228,7 +228,7 @@ musicPianoUpMvtI = \relative c'' {
 	cis8.[( g16 e'8. cis16] g8.[ e16 cis'8. g16])
 	e_\crescmarkup cis g' e cis g e' cis g e cis' g e cis g' e
 % Bars 276 to 280
-	\voiceOne cis \change Staff = "down" g \change Staff = "up" e' cis \change Staff = "down" g e cis' g e cis g' e cis e cis g \mark \default
+	\voiceOne \change Staff = "down" cis g e' cis g e cis' g e cis g' e cis e cis g \mark \default
 	f4^\f r r2 \oneVoice \change Staff = "up"
 	\tuplet 3/2 4 {f''8\f-. d'-. bes-. f'-. d-. bes'-. f-. d'-. bes-. f'-. f-. f-. }
 	f4 r r2
@@ -240,13 +240,13 @@ musicPianoUpMvtI = \relative c'' {
 	r2 \tuplet 3/2 4 {c,8-. aes'-. f-. c'-. aes-. f'-. }
 	f4  r r2
 % Bars 286 to 290
-	\tuplet 3/2 4 {d,,!8_\semprestaccato b'! f d' b f' d b' f d' d d}
+	\tuplet 3/2 4 {d,,!8-\tweak extra-offset #'(0 . 0.2) _\semprestaccato b'! f d' b f' d b' f d' d d}
 	d4 r r2
 	\tuplet 3/2 4 {d,,8 b' fis d' b fis' d b' fis d' d d}
-	d4 r \tuplet 3/2 4 {gis,,8\f d' b gis' d b'}
+	d4 r \tuplet 3/2 4 {gis,,8 d' b gis' d b'}
 	r2 \tuplet 3/2 4 {gis,8 d' b gis' d b'}
 % Bars 291 to 295
-	a4\f r r2
+	a4 r r2
 	\tuplet 3/2 4 {a,,8 e' c a' e c' a e' c a' a a}
 	b4 r r2
 	\tuplet 3/2 4 {b,,8 g' d b' g d' b g' d b' b b}
@@ -283,9 +283,9 @@ musicPianoUpMvtI = \relative c'' {
 	<ees c'>) q4 q q q8
 % Bars 321 to 325
 	<d c'>4 r r2
-	\voiceOne r16_\crescmarkup \change Staff = "down" d,, e f g a b c \change Staff = "up" d e f g a b c d
-	r16 \change Staff = "down" f,, g a b \change Staff = "up" c d e f g a b c d e f
-	\oneVoice r16 d,\ff e f g a b c d e f g a b c d \mark \default 
+	\voiceOne \change Staff = "down" r16_\crescmarkup  d,, e f g a b c \change Staff = "up" d e f g a b c d
+	\change Staff = "down" r16  f,, g a b \change Staff = "up" c d e f g a b c d e f
+	\oneVoice r16 d,\ff e f g a b c d e f g a b c d \markYoffset #4.5 \mark \default 
 	<e, g c e>4 r s2
 % Bars 326 to 330
 	s1*27
@@ -331,9 +331,9 @@ musicPianoUpMvtI = \relative c'' {
 	e g c g e a! c a e a c a fis a c fis
 	g4 r r2 \clef treble
 	s1 
-	\tuplet 3/2 4 {\voiceOne r8 \oneVoice g' g g g g g(\sf <f aes>) q q q q}
+	\tuplet 3/2 4 {\voiceOne r8 \oneVoice g'-. g-. g-. g-. g-. g(\sf <f aes>) q-. q-. q-. q-.}
 % Bars 381 to 385
-	\tuplet 3/2 4 {q(\sf <ees g>) q-. q q q q( <d f>) q <c e>( <e c'>) q}
+	\tuplet 3/2 4 {q(\sf <ees g>) q-. q-. q-. q-. q( <d f>) q-. <c e>( <e c'>) q-.}
 	<d b'>4 r r2
 	\tuplet 3/2 4 {r8 g,,\cresc( b) b( d) d( g) g( b) b( d) d(}
 	\tuplet 3/2 4 {g) g( d) d( b) b( g) g( d) d( b) b(}
@@ -368,14 +368,14 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {aes\pp( g f ees des c bes aes g f ees des}
 % Bars 411 to 415
 	\tuplet 3/2 4 {c_\crescmarkup bes aes g des' bes g des' bes g ees des)}
-	c4(\sf\>~ \tuplet 3/2 4 {c8 b!_\legato c e! g b! c g bes\!)}
+	c4(\sf-\tweak shorten-pair #'(2 . 0) \>~ \tuplet 3/2 4 {c8 b!_\legato c e! g b! c g bes\!)}
 	aes4~( \tuplet 3/2 4 {aes8 f' aes} g4~ \tuplet 3/2 4 {g8 d f}
 	ees4~ \tuplet 3/2 4 {ees8 c' ees} d4~ \tuplet 3/2 4 {d8 a! d)}
 	c2~ \tuplet 3/2 4 {c8( g\dim a! b! c d)}
 % Bars 416 to 420
 	ees2~ \tuplet 3/2 4 {ees8( b c d ees f)}
 	g4~\pp g16( fis f ees d c b c ees c f d)
-	\afterGrace d2.\startTrillSpan^\flat {cis16[\stopTrillSpan\< d]} fis8. g16
+	\trillSpanCustom #5 #flattrill \afterGrace d2.-\tweak X-offset #1 \startTrillSpan {cis16[\stopTrillSpan\< d]} fis8. g16
 	c,4\f s s2
 	s1*11
 % Bars 421 to 425
@@ -385,9 +385,9 @@ musicPianoUpMvtI = \relative c'' {
 	
 	
 	
-	\mark \default
+	\markXoffset #-0.3 \mark \default
 % Bars 431 to 435
-	c,16\f^\klaviersolobold d c b c d c d e f e d e f e f 
+	c,16\f-\tweak X-offset #1 ^\klaviersolobold d c b c d c d e f e d e f e f 
 	fis g fis g fis g fis g fis g a g f e d c
 	b c b a g a b c d e d c b c d e
 	f g f e d e f g a gis b a g f e d
@@ -408,7 +408,7 @@ musicPianoUpMvtI = \relative c'' {
 	c' a ees c b'!\sf g d b! b' g d b c'\sf g e c
 	c' g e c d'\sf c a d, d' c a d, d'\sf c a d,
 	<d a' c d>4\p r r2
-	d2\p(~ d8.[ cis16 d8. cis16]
+	d2-\tweak extra-offset #'(0.5 . 0.5) \p(~ d8.[ cis16 d8. cis16]
 	d4) <a c! d>4_\dimmarkup q r
 % Bars 451 to 455
 	r q q q
@@ -417,13 +417,13 @@ musicPianoUpMvtI = \relative c'' {
 	
 	b,16(\pp^\klaviersolobold c d e f g a ais b c d e f g a! ais)
 % Bars 456 to 460
-	b1\startTrillSpan~
+	\trillSpanPadding #1.5 b1\startTrillSpan~
 	b
 	d\startTrillSpan~
-	d2~ d16\stopTrillSpan b, c d e f g a
+	d2~ d16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-.
 	b1\startTrillSpan~\cresc
 % Bars 461 to 465
-	\afterGrace b {a16[(\stopTrillSpan b])} \mark \default
+	\afterGrace b {a16[(\stopTrillSpan b])} \markYoffset #4.5 \mark \default
 	c4\ff s s2
 	s1*8
 % Bars 466 to 470
@@ -437,11 +437,11 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 476 to 480
 	r16 g'(_\crescmarkup fis g a g fis g) g,4 r
 	r2 r4 fis4\f\trill
-	g16(\p d e! fis g a b a g fis e d \clef bass c b a g
+	g16\p( d e! fis g a b a g fis e d \clef bass c b a g
 	fis g a b c b a g fis e d c b a g fis
-	g a b c d c b a g a b c d e fis g)
+	g a b c d c b a g a b c d e fis g
 % Bars 481 to 485
-	fis( e d e fis g a b c b a b \clef treble c d e fis
+	fis e d e fis g a b c b a b \clef treble c d e fis
 	g_\crescmarkup a b c d e f! fis g a b c d e f! fis
 	g\f fis g fis g fis g fis g fis g fis g f e d)
 	c8\p r <g c e g> r q2
@@ -454,8 +454,8 @@ musicPianoUpMvtI = \relative c'' {
 	r8. <g c e g>16_\crescmarkup q8 r r8. q16 q8 r
 % Bars 491 to 495
 	r8. <g b! f' g>16 q8 r r8. q16 q8 r \mark \default
-	r2 r16 bes,,\ff e g bes e g bes
-	a4 r r16 a f c a f c f
+	r2 r16\sustainOn bes,,-\tweak X-offset #0.5 \ff e g bes! e g bes!
+	a4\sustainOff r r16 a\sustainOn f c a f c f
 	\change Staff = "down" \voiceOne \tuplet 3/2 4 {a,8^\p( f, a c a c f c f a f a}
 	\change Staff = "up" \oneVoice \tuplet 3/2 4 {c a c f c f a f a c a c}
 % Bars 496 to 500
@@ -463,7 +463,7 @@ musicPianoUpMvtI = \relative c'' {
 	\tuplet 3/2 4 {a\p c, f a c, f a c, f a g f}
 	\tuplet 3/2 4 {e\pp g f e ees d cis c b bes a aes}
 	\tuplet 3/2 4 {g fis f e ees d cis c b bes a aes)}
-	g1\startTrillSpan~
+	\trillSpanPadding #1 g1\startTrillSpan~
 % Bars 501 to 505
 	g
 	g'\startTrillSpan~
@@ -474,7 +474,7 @@ musicPianoUpMvtI = \relative c'' {
 	g4..(_\pdolce e16 c4) c
 	c2. c8.( c'16)
 	c4..( a16 f4) f
-	f4(-\tweak X-offset #2 \turn a8 g b a g f)
+	f4(-\tweak X-offset #2.5 \turn a8 g b a g f)
 	e4 r r2
 % Bars 511 to 515
 	r16 g fis g a g f e d c d e f g a bes
@@ -487,7 +487,7 @@ musicPianoUpMvtI = \relative c'' {
 	
 	\mark \default
 	<g, g'>4\ff^\solobold r r2
-	r16 c,_\sempreff( d e f g a b) c4 r
+	r16 c,_\sempreff( d e f g a b) c4 s
 % Bars 521 to 525
 	s1
 	r16 e,\ff^\solobold f g a b c d e4 s

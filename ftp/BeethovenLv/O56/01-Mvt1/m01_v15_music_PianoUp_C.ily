@@ -331,9 +331,9 @@ musicPianoUpMvtI = \relative c'' {
 	e g c g e a! c a e a c a fis a c fis
 	g4 r r2 \clef treble
 	R1 
-	\tuplet 3/2 4 {r8 g' g g g g g(\sf <f aes>) q q q q}
+	\tuplet 3/2 4 {\voiceOne r8 \oneVoice g'-. g-. g-. g-. g-. g(\sf <f aes>) q-. q-. q-. q-.}
 % Bars 381 to 385
-	\tuplet 3/2 4 {q(\sf <ees g>) q-. q q q q( <d f>) q <c e>( <e c'>) q}
+	\tuplet 3/2 4 {q(\sf <ees g>) q-. q-. q-. q-. q( <d f>) q-. <c e>( <e c'>) q-.}
 	<d b'>4 r r2
 	\tuplet 3/2 4 {r8 g,,\cresc( b) b( d) d( g) g( b) b( d) d(}
 	\tuplet 3/2 4 {g) g( d) d( b) b( g) g( d) d( b) b(}
@@ -375,7 +375,7 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 416 to 420
 	ees2~ \tuplet 3/2 4 {ees8( b c d ees f)}
 	g4~\pp g16( fis f ees d c b c ees c f d)
-	\afterGrace d2.\startTrillSpan^\flat {cis16[\stopTrillSpan\< d]} fis8. g16
+	\trillSpanCustom #5 #flattrill \afterGrace d2.\startTrillSpan^\flat {cis16[\stopTrillSpan\< d]} fis8. g16
 	c,4\f r r2
 	R1*11
 % Bars 421 to 425
@@ -420,7 +420,7 @@ musicPianoUpMvtI = \relative c'' {
 	b1\startTrillSpan~
 	b
 	d\startTrillSpan~
-	d2~ d16\stopTrillSpan b, c d e f g a
+	d2~ d16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-.
 	b1\startTrillSpan~\cresc
 % Bars 461 to 465
 	\afterGrace b {a16[(\stopTrillSpan b])} \mark \default
@@ -439,9 +439,9 @@ musicPianoUpMvtI = \relative c'' {
 	r2 r4 fis4\f\trill
 	g16(\p d e! fis g a b a g fis e d \clef bass c b a g
 	fis g a b c b a g fis e d c b a g fis
-	g a b c d c b a g a b c d e fis g)
+	g a b c d c b a g a b c d e fis g
 % Bars 481 to 485
-	fis( e d e fis g a b c b a b \clef treble c d e fis
+	fis e d e fis g a b c b a b \clef treble c d e fis
 	g_\crescmarkup a b c d e f! fis g a b c d e f! fis
 	g\f fis g fis g fis g fis g fis g fis g f e d)
 	c8\p r <g c e g> r q2

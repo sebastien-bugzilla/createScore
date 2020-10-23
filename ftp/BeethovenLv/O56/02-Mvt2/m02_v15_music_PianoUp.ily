@@ -21,7 +21,7 @@ musicPianoUpMvtII = \relative c' {
 	
 	
 	\voiceOne r8 
-		\tuplet 3/2 16 {r32 \oneVoice ees([_\espressivo^\klaviersolobold d] 
+		\tuplet 3/2 16 {\once \override TupletNumber.Y-offset = #4 r32 \oneVoice ees([_\espressivo^\klaviersolobold d] 
 		ees[ aes g] 
 		aes[ c b] 
 		c[ ees d])} \mark \default
@@ -50,25 +50,25 @@ musicPianoUpMvtII = \relative c' {
 		bes[ g ees] 
 		d[ f ees] 
 		des[ c bes])} \change Staff = "up" \oneVoice
-	r16 
+	r16-\tweak Y-offset #-3 \sustainOn
 		\tuplet 3/2 16 {r32 r c' 
 		ees[ aes c] 
-		aes[ ees c]}
+		aes[ ees c]\sustainOff}
 		r32 \change Staff = "down" \voiceOne 
 		\tuplet 3/2 32 {ees,64[ g bes]} \change Staff = "up" \oneVoice 
 		r32 \voiceOne \change Staff = "down" 
 		\tuplet 3/2 4 {ees,64[ aes c]} \change Staff = "up"
 % Bars 26 to 30
-	\oneVoice r8 
-		r16 
+	\oneVoice r8-\tweak extra-offset #'(0.5 . -2) \sustainOn 
+		r16
 		\tuplet 3/2 16 {g'32[ bes des] 
-		bes[ g ees] \change Staff = "down" \voiceOne 
+		bes[ g ees]-\tweak X-offset #1 \sustainOff \change Staff = "down" \voiceOne 
 		des[ bes g]} \change Staff = "up"
-	\oneVoice r16 \voiceOne \change Staff = "down" 
+	\change Staff = "down" \voiceOne r16-\tweak extra-offset #'(0 . 15) \sustainOn
 		\tuplet 3/2 16 {c,32[ ees c']} 
 		r32 
 		\tuplet 3/2 32 {c,64[ ees c']} 
-		r32 
+		r32-\tweak extra-offset #'(0 . 17) \sustainOff
 		\tuplet 3/2 32 {bes,64[ ees bes']} 
 		r32 
 		\tuplet 3/2 32 {c,64[ ees c']} 
@@ -85,7 +85,7 @@ musicPianoUpMvtII = \relative c' {
 		ees[ g bes] \change Staff = "up" 
 		ees[ \change Staff = "down" bes g] 
 		ees[ g bes] \change Staff = "up" 
-		ees[ \change Staff = "down" bes g]_\sustainOff}
+		ees[ \change Staff = "down" bes g]-\tweak extra-offset #'(-0.5 . 8)\sustainOff}
 	\tuplet 3/2 16 {ees[ aes \change Staff = "up" c] 
 		ees[ c \change Staff = "down" aes] 
 		ees[ aes \change Staff = "up" c] 
@@ -96,7 +96,7 @@ musicPianoUpMvtII = \relative c' {
 	\tuplet 3/2 16 {ees[ g bes] \change Staff = "up" 
 		ees[ \change Staff = "down" bes g] 
 		ees[ g bes] 
-		des[ bes g] 
+		des[^\crescmarkup bes g] 
 		ees[ g bes] 
 		des[ bes g]} \mark \default
 	\tuplet 3/2 16 {ees[ g\> bes] 
@@ -119,8 +119,8 @@ musicPianoUpMvtII = \relative c' {
 		\tuplet 3/2 32 {ees,,64[ aes c]} 
 		r32 
 		\tuplet 3/2 32 {g64[ bes des]}
-	r16^\crescmarkup 
-		\tuplet 3/2 16 {ees,32[ aes c]\sustainOff} 
+	r16^\crescmarkup-\tweak extra-offset #'(0 . 17) \sustainOn 
+		\tuplet 3/2 16 {ees,32[ aes c-\tweak extra-offset #'(2 . 21) \sustainOff ]} 
 		r8 \change Staff = "up" \oneVoice
 		\tuplet 3/2 16 {r32 c[ e] 
 		g[ bes bes,]} \change Staff = "down" \voiceOne
@@ -158,9 +158,9 @@ musicPianoUpMvtII = \relative c' {
 		r32 
 		\tuplet 3/2 32 {des,64[ f bes]} 
 		r16 
-		\tuplet 3/2 16 {ees,!32[ aes c\sustainOff]} 
+		\tuplet 3/2 16 {ees,!32[ aes c-\tweak extra-offset #'(0 . 16) \sustainOff]} 
 		r16 
-		\tuplet 3/2 16 {ees,32[ bes' des]\sustainOff}
+		\tuplet 3/2 16 {ees,32[ bes' des]-\tweak extra-offset #'(0 . 13) \sustainOff}
 	<ees, aes c>8 s s \change Staff = "up" \oneVoice
 % Bars 41 to 45
 	s4.*3
@@ -170,10 +170,10 @@ musicPianoUpMvtII = \relative c' {
 	
 % Bars 46 to 50
 	r8_\semprep^\klaviersolobold 
-		\tuplet 3/2 16 {r32( r b'') 
+		\once \override TupletNumber.Y-offset = #-3 \tuplet 3/2 16 {r32( r b'') 
 		d[ g d] 
 		b[ g d]} \voiceOne 
-		b64[ \change Staff = "down" g d b] \oneVoice \change Staff = "up" 
+		\change Staff = "down" b!64[ g d! b!] \oneVoice \change Staff = "up" 
 	r8 \voiceOne 
 		\tuplet 3/2 16 {r32 r d'' 
 		g[ b g] 
@@ -192,5 +192,5 @@ musicPianoUpMvtII = \relative c' {
 		b[ d b]}
 	g8\pp r r \oneVoice
 % Bars 51 to 53
-	s4.*3 \bar "||"
+	s4.*3 \change Staff = "up" \bar "||" \key c \major \time 3/4 s8
 }

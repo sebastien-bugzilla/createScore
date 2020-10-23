@@ -50,32 +50,32 @@ musicPianoDownMvtII = \relative c {
 		bes[ g ees] 
 		d[ f ees] 
 		des[ c bes])}
-	\tuplet 3/2 16 {aes32[\sustainOn aes' c] 
+	\tuplet 3/2 16 {aes32[ aes' c] 
 		ees[ aes] \oneVoice r} 
 		r8 \voiceTwo 
-		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {des,,64[^(\sustainOff ees des')]} 
+		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {des,,64[^( ees des')]} 
 		r32
 		\shape #'((0 . 0) (0 . 0) (3 . 9) (7 . 6)) Slur \tuplet 3/2 32 {c,64[^( ees c'])} r32
 % Bars 26 to 30
-	\tuplet 3/2 16 {g,32[\sustainOn g' bes] 
+	\tuplet 3/2 16 {g,32[ g' bes] 
 		des[ ees g] 
 		bes[ des ees]} \oneVoice
 		r16 
 		r \voiceTwo
-		ees,,\sustainOff
-	\tuplet 3/2 16 {aes,32[\sustainOn ees' aes]} 
+		ees,,
+	\tuplet 3/2 16 {aes,32[ ees' aes]} 
 		r16 
 		\tuplet 3/2 32 {aes,64[ ees' aes]} 
 		r32 
-		\tuplet 3/2 32 {g,64[\sustainOff ees' g]} 
+		\tuplet 3/2 32 {g,64[ ees' g]} 
 		r32 
 		\tuplet 3/2 32 {aes,64[ ees' aes]} 
 		r32 
 		\tuplet 3/2 32 {f,64[ bes f']} 
 		r32
-	ees64\sustainOn aes bes d 
+	ees64-\tweak extra-offset #'(0.5 . 15) \sustainOn aes bes d 
 		r16 
-		ees,64\sustainOff\sustainOn g bes ees 
+		ees,64-\tweak extra-offset #'(0 . 15) \sustainOff g-\tweak extra-offset #'(-1.5 . 12.5) \sustainOn bes ees 
 		r16 
 		\oneVoice r8 \voiceTwo
 	des!8( bes ees,)
@@ -83,25 +83,25 @@ musicPianoDownMvtII = \relative c {
 % Bars 31 to 35
 	<des des'>( <bes bes'> <g g'>) \mark \default
 	<ees ees'>8.\sf\noBeam <ees ees'>16 <f f'> <g g'>
-	\oneVoice \tuplet 3/2 16 {aes32[\p\sustainOn aes' c] 
+	\oneVoice \tuplet 3/2 16 {aes32[^\p-\tweak extra-offset #'(0 . 13.5) \sustainOn aes' c] 
 		ees[ aes c]} 
 		r8 \voiceTwo
-		aes,,64\sustainOff[ aes'] 
+		aes,,64-\tweak extra-offset #'(0 . 16.5) \sustainOff[ aes'] 
 		r32 
 		aes,64[ aes'] 
 		r32
-	\tuplet 3/2 16 {aes,32[\sustainOn aes' bes] 
+	\tuplet 3/2 16 {aes,32[-\tweak extra-offset #'(0.5 . 16) \sustainOn aes' bes] 
 		des r r} 
 		\oneVoice r8 \voiceTwo
-		aes,64\sustainOff[ aes'] 
+		aes,64-\tweak extra-offset #'(-1 . 17) \sustainOff[ aes'] 
 		r32 
 		aes,64[ aes'] 
 		r32
-	\tuplet 3/2 16 {aes,32[\sustainOn aes' c]} 
-		r16 \tuplet 3/2 16 {g,32\sustainOn\sf[ g' bes] 
+	\tuplet 3/2 16 {aes,32[ aes' c]} 
+		r16 \tuplet 3/2 16 {g,32-\tweak extra-offset #'(1 . 18.6) \sustainOn\sf[ g' bes] 
 		c[ e g] \oneVoice 
 		bes r r} 
-		r16\sustainOff \voiceTwo
+		r16-\tweak extra-offset #'(3 . 8) \sustainOff \voiceTwo
 % Bars 36 to 40
 	\tuplet 3/2 32 {f,64[ c' f]} 
 		r32 
@@ -115,29 +115,29 @@ musicPianoDownMvtII = \relative c {
 		r32 
 		\tuplet 3/2 32 {des,64[ f des']} 
 		r32
-	\tuplet 3/2 16 {ees,32[(\p\sustainOn aes c])} 
+	\tuplet 3/2 16 {ees,32[(\p-\tweak extra-offset #'(0 . 16) \sustainOn aes c])} 
 		r16 
 		\tuplet 3/2 16 {ees,32[ aes c]} 
 		r16 
 		\tuplet 3/2 32 {ees,64[ aes c]} 
 		r32 
-		\tuplet 3/2 32 {ees,64[\sustainOff a c]} 
+		\tuplet 3/2 32 {ees,64[-\tweak extra-offset #'(0.25 . 14.5) \sustainOff a c]} 
 		r32
-	\tuplet 3/2 16 {ees,32\sustainOn[ bes' des]} 
+	\tuplet 3/2 16 {ees,32-\tweak extra-offset #'(0.5 . 14) \sustainOn[ bes' des]} 
 		r16 
 		\tuplet 3/2 16 {ees,32[ bes' des]} 
 		r16 
 		\tuplet 3/2 32 {ees,64[ bes' des]} 
 		r32 
-		\tuplet 3/2 4 {e,64[\sustainOff bes' des]} 
+		\tuplet 3/2 4 {e,64[-\tweak extra-offset #'(0 . 14.5) \sustainOff bes' des]} 
 		r32
 	\tuplet 3/2 32 {f,64[ aes c]} 
 		r32 
 		\tuplet 3/2 32 {des,64[ f bes]} 
 		r32 
-		\tuplet 3/2 16 {ees,!32[\sustainOn aes c]} 
+		\tuplet 3/2 16 {ees,!32[-\tweak extra-offset #'(1 . 13) \sustainOn aes c]} 
 		r16 
-		\tuplet 3/2 16 {ees,32[\sustainOn bes' des]} 
+		\tuplet 3/2 16 {ees,32[-\tweak extra-offset #'(1 . 13) \sustainOn bes' des]} 
 		r16
 	<aes, aes'>8 r r \oneVoice
 % Bars 41 to 45
@@ -147,7 +147,7 @@ musicPianoDownMvtII = \relative c {
 	s4.*2
 	
 % Bars 46 to 50
-	\tuplet 3/2 16 {g32[(\sustainOn g' b)] 
+	\tuplet 3/2 16 {g32[(-\tweak extra-offset #'(0.5 . 14) \sustainOn g' b)] 
 		d[ g b] 
 		d[ g] r } 
 		r16 
@@ -171,5 +171,5 @@ musicPianoDownMvtII = \relative c {
 	g8 r r \oneVoice
 % Bars 51 to 53
 	s4.*3
-	\bar "||"
+	\bar "||" \key c \major \time 3/4 \attacca
 }
