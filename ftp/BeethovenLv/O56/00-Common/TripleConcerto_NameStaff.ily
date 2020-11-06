@@ -120,10 +120,17 @@ nameStaffXVMvtI = {
 %#                    S T A F F   N A M E   :   M V T   I I                    #
 %###############################################################################
 nameStaffIMvtII = {
-	\set Staff.instrumentName = "Clarinetti in B."
+	\set Staff.instrumentName = \markup {
+		\concat { 
+			"Clarinetti in B " \lower #-0.5 \tiny \flat 
+		}
+	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Cl." "in B."
+			\lower #1 "Cl." 
+			\concat { 
+				"in B " \lower #-0.5 \tiny \flat
+			}
 		}
 	}
 	\set Staff.midiInstrument = #""
@@ -134,10 +141,17 @@ nameStaffIIMvtII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtII = {
-	\set Staff.instrumentName = "Corni in E."
+	\set Staff.instrumentName = \markup {
+		\concat {
+			"Corni in E " \lower #-0.5 \tiny \flat
+		}
+	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
-			\lower #1 "Cor." "in E."
+			\lower #1 "Cor."
+			\concat {
+				"in E " \lower #-0.5 \tiny \flat
+			}
 		}
 	}
 	\set Staff.midiInstrument = #""

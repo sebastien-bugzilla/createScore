@@ -21,7 +21,8 @@
 \include "./00-Common/TripleConcerto_NameStaff.ily"
 \include "./00-Common/TripleConcerto_NameGrandStaff.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-\include "./00-Common/TripleConcerto_Format_Cond_Mvt01.ily"
+%\include "./00-Common/TripleConcerto_Format_Cond_Mvt01.ily"
+\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./01-Mvt1/m01_v01_music_Flote_C.ily"
 \include "./01-Mvt1/m01_v02_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v03_music_OboeII_C.ily"
@@ -162,6 +163,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			system-count = #109
 		}
 	}
 }

@@ -29,16 +29,16 @@ musicFagottoIIMvtIII = \relative c {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 g\ff\fermata r
+	\grace {s8.} r4 g-\tweak X-offset #-2.3 \ff\fermata r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r c8\ff c
+	r4 r c8-\tweak X-offset #-3.5 \ff c
 	c16 g c g c g c g c g c g
 	c g c g c b c d e c d e
 	f d e f g g, b g b g b g
 % Bars 41 to 45
-	g4\sf( c8) r d'4\sf(
+	g4-\tweak X-offset #0.3 \sf( c8) r d'4\sf(
 	c16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d cis d e f e d c b c d e
@@ -48,7 +48,7 @@ musicFagottoIIMvtIII = \relative c {
 	g8 fis4\sf fis16 fis fis8 fis
 	g8 g4\sf g16 g g8-. g-.
 	f!8. f16 g8 r g, r
-	c\p r r4 r
+	c-\tweak X-offset #-0.3 \p r r4 r
 % Bars 51 to 55
 	R2.
 	R
@@ -96,7 +96,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 91 to 95
 	d r r4 r
 	r d8\p r d r \mark \default
-	g,\f d' g d g d
+	g,-\tweak X-offset #-2 \f d' g d g d
 	R2.
 	fis8\f d fis d fis d
 % Bars 96 to 100
@@ -133,19 +133,19 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	\mark \default
-	\grace {s8.} r4 g,\ff\fermata r
+	\grace {s8.} r4 g,-\tweak X-offset #-2.5 \ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r c8\ff c
+	r4 r c8-\tweak X-offset #-2.5 \ff c
 % Bars 156 to 160
 	c16 g c g c g c g c g c g
 	c g c g c b c d e c d e
 	f d e f g g, b g b g b g
-	g4(\sf c8) r g4(\sf
+	g4(-\tweak X-offset #0.5 \sf c8) r g4(-\tweak extra-offset #'(-2.5 . 1) \sf
 	c8) r r4 r 
 % Bars 161 to 165
 	e,4(\sf a8) r r4

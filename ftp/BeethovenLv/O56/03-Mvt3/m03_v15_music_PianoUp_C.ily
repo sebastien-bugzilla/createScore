@@ -32,12 +32,12 @@ musicPianoUpMvtIII = \relative c {
 	<g b d>8 r r4 <d' a' c d>8. q16
 	<d g b d>8 r r4 r
 	<g b d g>8 r r4 r
-	\tuplet 6/4 4 {r16 f'!(_\crescmarkup e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark #4
+	\tuplet 6/4 4 {r16 f'!(-\tweak X-offset #-2.5 _\crescmarkup e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark #4
 % Bars 31 to 35
 	\grace {cis16[ d e]} d2\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
 	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
-	g4.\startTrillSpan( a16\stopTrillSpan b c8 d)
+	\shape #'((0 . 2)(0 . 1.5)(0 . 0.5)(0 . 0)) Slur g4.-\tweak extra-offset #'(0 . -3.9)\startTrillSpan( a16\stopTrillSpan b c8 d)
 	\grace {c16[ d]} e4(_\crescmarkup c4. b8)
 % Bars 36 to 40
 	a( f'~ f) f16( e) e( d) d( c)
@@ -96,7 +96,7 @@ musicPianoUpMvtIII = \relative c {
 	
 	
 	\tuplet 6/4 4 {g,16(\cresc b ais b ais b) g( d' cis d cis d) b( d' b g b g)
-	f! g f d f d b d b g b g f a g f e d}
+	f! g f d f d} \tuplet 3/2 8 {b[ d b] g b g} \tuplet 6/4 4 {f a g f e d}
 	c8\f r r4 r
 % Bars 101 to 105
 	R2.
@@ -141,10 +141,10 @@ musicPianoUpMvtIII = \relative c {
 	<g b d g>8 r r4 r
 	\tuplet 6/4 4 {r16_\crescmarkup f'!( e f e f) d( b' ais b ais b) f( d' cis d cis d)} \mark \default 
 	\grace {cis16[( d e]} d2)\fermata\f \acciaccatura fis,8 g\pp \acciaccatura fis g
-	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
+	\acciaccatura fis8 g4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 151 to 155
-	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
-	g4.(\startTrillSpan a16\stopTrillSpan b c8 d)
+	\acciaccatura fis8 g4 r \acciaccatura fis8 g \acciaccatura fis g
+	\shape #'((0 . 2)(0 . 2)(0 . 1)(0 . 0)) Slur g4.(-\tweak extra-offset #'(0 . -4.5) \startTrillSpan a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)(_\crescmarkup c4. b8)
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) r4

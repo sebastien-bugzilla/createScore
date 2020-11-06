@@ -35,7 +35,7 @@ musicClarinetIIMvtII = \relative c'' {
 	f~
 % Bars 31 to 35
 	f8 f f \mark \default
-	f8.\sf\> r16\! r8
+	f8.-\tweak X-offset #0.5 \sf\> r16\! r8
 	R4.*7
 % Bars 36 to 40
 	

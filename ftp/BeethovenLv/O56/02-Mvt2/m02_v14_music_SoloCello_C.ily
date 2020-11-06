@@ -55,7 +55,7 @@ musicSoloCelloMvtII = \relative c'' {
 	aes16\!_\crescmarkup([ a bes c)] des32.[( bes64]) des64.[( bes128) des64.( bes128)]
 	aes16(\p ees8 \clef tenor c16 aes a)
 	bes16 des8 g bes16 \clef treble
-	aes16\startTrillSpan bes\startTrillSpan c8\noBeam~\stopTrillSpan \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
+	\trillSpanPadding #1 aes16\startTrillSpan \trillSpanPadding #1 bes\startTrillSpan c8\noBeam~\stopTrillSpan \tuplet 3/2 16 {c32[ a( bes]} ees32. g,64)
 	aes!8 r r
 % Bars 41 to 45
 	R4.*3

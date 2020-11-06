@@ -17,7 +17,7 @@ musicOboeIMvtIII = \relative c'' {
 	
 % Bars 16 to 20
 	
-	r8 g16-.\pp g-. g8-. g-. g-. r
+	r8 \once \override CombineTextScript.X-offset = #-3 g16-.\pp g-. g8-. g-. g-. r
 	r8 c16-. c-. c8-. c-. c-. r
 	R2.*12
 % Bars 21 to 25
@@ -29,13 +29,13 @@ musicOboeIMvtIII = \relative c'' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 d'\fermata\ff r
+	\grace {s8.} r4 d'\fermata-\tweak X-offset #-2.3  \ff r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis,8 g_\ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8 g-\tweak X-offset #-3.5 _\ff \acciaccatura fis g
 	g4. e8[ e f]
-	\partcombineApart e4( c4.\sf b8)
+	\partcombineApart e4( c4.-\tweak extra-offset #'(-1.1 . -4) \sf b8)
 	a( f') \partcombineAutomatic b,\noBeam( f'4) f8
 % Bars 41 to 45
 	f4(\sf e8) r \partcombineApart g4(
@@ -51,12 +51,12 @@ musicOboeIMvtIII = \relative c'' {
 	e\p r r4 r
 % Bars 51 to 55
 	R2.
-	c4._\crescmarkup e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
+	\partcombineApart c4. e32([ g16.-.]) g32([ e16.-.)] e32([ c16.-.])
 	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.])
-	c4\f e, g
+	c4 e, g
 	c16 b c d e d e f g g a b 
 % Bars 56 to 60
-	c4. \partcombineApart e,8[( g, b]) \mark \default
+	c4. e,8[( g, b]) \mark \default
 	c \partcombineAutomatic r r4 r
 	c8-. e\sf-. g,-. c\sf-. e,-. g'\sf-. 
 	c, e\sf g, c'\sf e, g\sf
@@ -123,7 +123,7 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	r8 g,16\pp-. g-. g8-.[ g-. g-.] r
+	r8 \once \override CombineTextScript.X-offset = #-3  g,16\pp-. g-. g8-.[ g-. g-.] r
 % Bars 136 to 140
 	r8 c16-. c-. c8[-. c-. c]-. r
 	R2.*12
@@ -133,7 +133,7 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 d'\fermata\ff r
+	\grace {s8.} r4 d'\fermata-\tweak X-offset #-2 \ff r
 	R2.*5
 % Bars 151 to 155
 	
@@ -143,7 +143,7 @@ musicOboeIMvtIII = \relative c'' {
 	r4 r \acciaccatura fis,8 g \acciaccatura fis g
 % Bars 156 to 160
 	g4. e8[ e f]
-	\partcombineApart e4 c4.\sf( b8)
+	\partcombineApart e4 c4.-\tweak extra-offset #'(-1 . -2) \sf( b8)
 	a( f') \partcombineAutomatic b,\noBeam( f'4) f8
 	f4(\sf e8) r g4(
 	c,8) r r4 r

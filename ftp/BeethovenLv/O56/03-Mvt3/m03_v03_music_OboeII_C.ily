@@ -29,7 +29,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 f\fermata\ff r
+	\grace {s8.} r4 f\fermata-\tweak X-offset #-2.3 \ff r
 	R2.*5
 % Bars 36 to 40
 	
@@ -38,7 +38,7 @@ musicOboeIIMvtIII = \relative c'' {
 	c8 r r4 r
 	r4 f,8( d'4) d8 
 % Bars 41 to 45
-	d4(\sf c8) r b4\sf
+	d4(\sf c8) r b4-\tweak X-offset #-1 \sf
 	c16\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e
 	d8\noBeam d'16 e f e d c b c d e 
@@ -132,14 +132,14 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 f'\fermata\ff r
+	\grace {s8.} r4 f'\fermata-\tweak X-offset #-2 \ff r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r g,8\ff g
+	r4 r g,8-\tweak X-offset #-3.5 \ff g
 % Bars 156 to 160
 	g4. c8[ c d]
 	c8 r r4 r

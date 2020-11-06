@@ -26,16 +26,16 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 d\fermata\ff r
+	\grace {s8.} r4 d\fermata-\tweak X-offset #-3.3 \ff r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r f,8\ff f
+	r4 r f,8-\tweak X-offset #-3.5 \ff f
 	e4. c'8 c d
 	c8 r e,16 d e f g e f g
 	a f g a d,8( d'4) d8
 % Bars 41 to 45
-	d4\sf( c8) r d4(\sf
+	d4-\tweak extra-offset #'(-0.4 . 0.7) \sf( c8) r d4(\sf
 	c8\ff) c r4 r
 	r f,16 e f g a g f e
 	d cis d e f e d c b c d e
@@ -50,11 +50,11 @@ musicClarinetIMvtIII = \relative c'' {
 	R2.
 	g2._\crescmarkup
 	g
-	c4\f e, g
+	\partcombineApart c4 e, g
 	c16 b c d e d e f g g, a b
 % Bars 56 to 60
 	c4. e8( g, b) \mark \default
-	\once \partcombineApart c r r4 r
+	c \partcombineAutomatic r r4 r
 	c8-. e\sf-. g,-. c\sf-. e,-. g'\sf-. 
 	c, e\sf g, c\sf e, g\sf
 	c, r c' r c r
@@ -116,19 +116,19 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 d'\fermata\ff r
+	\grace {s8.} r4 d'\fermata-\tweak X-offset #-3.3 \ff r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r f,8\ff f
+	r4 r f,8-\tweak X-offset #-2.5 \ff f
 % Bars 156 to 160
 	e4. c'8 c d
 	c r e,16 d e f g e f g
 	a f g a \partcombineApart d,8( d'4) \partcombineAutomatic d8
-	d4\sf( c8) r f,4(\sf
+	d4-\tweak X-offset #-2 \sf( c8) r f,4(-\tweak X-offset #-1 \sf
 	e8) r r4 r
 % Bars 161 to 165
 	e'4\sf( e8) r r4

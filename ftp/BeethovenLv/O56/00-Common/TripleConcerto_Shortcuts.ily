@@ -81,6 +81,16 @@ farco=^\markup {\dynamic f \italic arco}
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 sharptrill = \markup {\halign #RIGHT \tiny \sharp \lower #1.2 \musicglyph #"scripts.trill" }
 
+attaccaMark = \mark \markup { 
+	\normalsize \italic attacca:
+}
+rightAlign = {
+	\once \override Score.RehearsalMark.self-alignment-X = 1
+	\once \override Score.RehearsalMark.direction = #DOWN
+}
+
+
+
 crescText = #(define-music-function
 	(cresctext)
 	(markup?)

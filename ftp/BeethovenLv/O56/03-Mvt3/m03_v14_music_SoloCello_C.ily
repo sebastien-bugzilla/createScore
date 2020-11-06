@@ -32,7 +32,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	R2.*5
 % Bars 21 to 25
 	
-	\clef bass c,,16(_\semprepp c' e g \clef treble c e g c e dis e c)
+	\clef bass c,,16(-\tweak X-offset #2 _\semprepp c' e g \clef treble c e g c e dis e c)
 	b8 r r4 r
 	g,16( b d g b d g fis e dis e c)
 	b8 r r4 r
@@ -43,11 +43,11 @@ musicSoloCelloMvtIII = \relative c'' {
 	d-. b'( ais b ais b) b-. d( cis d cis d) b-. f'!( e f e f)}
 	f2_\crescmarkup\startTrillSpan~ f8..( e32)\stopTrillSpan \mark #4
 % Bars 31 to 35
-	\grace {s8.} f2\f\fermata r4
+	\grace {s8.} f2-\tweak extra-offset #'(0 . 1.5) \f\fermata r4
 	R2.
-	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \acciaccatura fis'8 g \acciaccatura fis g
-	\clef treble g4.(\startTrillSpan a16\stopTrillSpan b c8 d)
-	\grace {c16[( d]} e4)^\crescmarkup( c4. b8)
+	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \clef tenor \acciaccatura fis'8 g \acciaccatura fis g
+	g4.\startTrillSpan a16\stopTrillSpan( b c8 d)
+	\grace {c16[( d]} e4)_\crescmarkup( c4. b8)
 % Bars 36 to 40
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) r4
@@ -83,14 +83,14 @@ musicSoloCelloMvtIII = \relative c'' {
 	a a, r c c, cis
 	d4 r r
 % Bars 76 to 80
-	g8\noBeam^\arco \clef tenor b'(\trill[ \grace {a16[ b]} g8)] d'([\trill \grace {c16[ d]} b8)] \afterGrace g'8\trill( {fis16[ g)]}
+	g8\noBeam^\arco \clef tenor b'(\trill[ \grace {a16[ b]} g8)] d'([-\tweak extra-offset #'(-0.2 . -2.1) \trill \grace {c16[ d]} b8)] \afterGrace g'8-\tweak extra-offset #'(-0.2 . -2.3) \trill( {fis16[ g)]}
 	g4(\> fis8)\! r r4 \clef bass
 	d,8\noBeam \clef treble fis'8(\trill[ \grace {e16[ fis]} d8)] a'[(\trill \grace {g16[ a]} fis8)] \afterGrace d'(\trill {cis16[ d])}
 	c!4( b8) r r4
 	R2.*2
 % Bars 81 to 85
 	
-	\clef bass r4 r r8 \tuplet 3/2 8 {d,,16\f e fis}
+	\clef bass r4 r r8 \tuplet 3/2 8 {d,,16-\tweak X-offset #-2.2 \f e fis}
 	\tuplet 6/4 4 {g fis e d e fis g fis e d e fis g fis g a g a
 	b a g fis g a b a g fis g a b a b c b c}
 	d2 \tuplet 6/4 4 {d16 e d c d c}
@@ -110,7 +110,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	\clef tenor \tuplet 6/4 4 {g''16\p( fis) a-. g( fis) a-. g-. d-. b-. \clef bass g-. b-. g-. d-. g-. d-. b-. d-. b-.}
 	g8 r r4 r
 	R2.
-	r4 r r8 \tuplet 3/2 8 {g16\f a b}
+	r4 r r8 \tuplet 3/2 8 {g16-\tweak X-offset #-2 \f a b}
 	\tuplet 6/4 4 {c\ff b a g a b c b a g a b c b c d c d
 % Bars 101 to 105
 	e d c b c d e d c b c d e d e f e f}
@@ -143,7 +143,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	\grace {c16[( d]} e4)( c4. b8)
 	ais4( g'4. e8)
 % Bars 126 to 130
-	dis8 r b r r4 \clef bass
+	dis8 r b r r4 \clef tenor
 	e,2.~
 	e~
 	e2( a4)~
@@ -159,7 +159,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	
 	
 	
-	c,,16_\semprepp( c' e g \clef treble c e g c e dis e c
+	\clef bass \shape #'((0 . -1.5)(0 . 1)(0 . 0.5)(0 . 0)) Slur c,,16-\tweak X-offset #1 _\semprepp( c' e g \clef treble c e g c e dis e c
 % Bars 141 to 145
 	b8) r r4 r
 	g,16( b d g b d g fis e dis e c
@@ -173,9 +173,9 @@ musicSoloCelloMvtIII = \relative c'' {
 	\grace {s8.} f2\fermata\f r4
 	R2.
 % Bars 151 to 155
-	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \acciaccatura fis'8 g \acciaccatura fis g \clef treble
+	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \clef tenor \acciaccatura fis'8 g \acciaccatura fis g 
 	g4.(\startTrillSpan a16\stopTrillSpan b c8 d)
-	\grace {c16[( d]} e4)(^\crescmarkup c4. b8)
+	\grace {c16[( d]} e4)(_\crescmarkup c4. b8)
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) r4
 % Bars 156 to 160

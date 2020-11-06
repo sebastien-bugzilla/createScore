@@ -147,7 +147,7 @@ musicPianoDownMvtII = \relative c {
 	R4.*2
 	
 % Bars 46 to 50
-	\tuplet 3/2 16 {g32[(\sustainOn g' b)] 
+	\tuplet 3/2 16 {g32[(-\tweak X-offset #-3.8 \sustainOn g' b)] 
 		d[ g b] 
 		d[ g] r } 
 		r16 

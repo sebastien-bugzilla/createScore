@@ -22,7 +22,7 @@ musicPianoUpMvtII = \relative c' {
 	
 	r8 
 		\tuplet 3/2 16 {r32 ees([_\espressivo d] 
-		ees[ aes g] 
+		ees[ aes g]
 		aes[ c b] 
 		c[ ees d])} \mark \default
 % Bars 21 to 25
@@ -170,7 +170,7 @@ musicPianoUpMvtII = \relative c' {
 	
 % Bars 46 to 50
 	r8_\semprep 
-		\tuplet 3/2 16 {r32( r b'') 
+		\tuplet 3/2 16 {\once \override TupletNumber.Y-offset = #-3 r32( r b'') 
 		d[ g d] 
 		b[ g d]} \voiceOne 
 		b64[ \change Staff = "down" g d b] \oneVoice \change Staff = "up" 
@@ -190,7 +190,7 @@ musicPianoUpMvtII = \relative c' {
 		d[ g d] 
 		b![ g' d] 
 		b[ d b]}
-	g8\pp r r \oneVoice
+	g8^\pp r r \oneVoice
 % Bars 51 to 53
 	R4.*3 \bar "||"
 }

@@ -26,11 +26,11 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 g\ff\fermata r
+	\grace {s8.} r4 g-\tweak X-offset #-3.5 \ff\fermata r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r g8\ff g
+	r4 r g8-\tweak X-offset #-3.5 \ff g
 	g4. g8 g g
 	g4 c4. c8
 	c c g\noBeam g4 g8
@@ -41,9 +41,9 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 46 to 50
 	d'4.\sf d16 d d8 d
 	d8 d4\sf d16 d d8 d
-	d g,4\sf g16 g g8 g
+	d g,4-\tweak extra-offset #'(0 . 0.7) \sf g16 g g8 g
 	r4 g8 r g r 
-	\once \partcombineApart c,\p r r4 r
+	\once \partcombineApart c, r r4 r
 % Bars 51 to 55
 	R2.
 	\once \partcombineApart c2.
@@ -77,7 +77,7 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r r8 g'\p
+	r4 r r8 g'-\tweak X-offset #-1.5 \p
 	c r r4  r8 g
 % Bars 101 to 105
 	c r r4 r8 g
@@ -109,19 +109,19 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 g\ff\fermata r
+	\grace {s8.} r4 g-\tweak X-offset #-3.5 \ff\fermata r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r g8\ff g
+	r4 r g8-\tweak X-offset #-3.5 \ff g
 % Bars 156 to 160
 	g4. g8 g g
 	g4 c4. c8
 	c c g\noBeam g4 g8
-	g4 g8 r g4\sf(
+	g4 g8 r g4-\tweak X-offset #-2.8 \sf(
 	e8) r r4 r
 % Bars 161 to 165
 	e'4\sf e8 r r4

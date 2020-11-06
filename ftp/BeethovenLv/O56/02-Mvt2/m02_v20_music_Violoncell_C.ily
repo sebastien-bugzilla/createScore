@@ -19,7 +19,7 @@ musicVioloncellMvtII = \relative c {
 	bes8( g ees16 g) \clef bass
 	aes8(~ aes16 g f bes,)
 	ees( bes ees) r r8
-	ees,8(\pp g bes)
+	ees,8(_\pp g bes)
 	ees,( aes c)
 % Bars 11 to 15
 	ees,(_\crescmarkup bes' g)
@@ -49,7 +49,7 @@ musicVioloncellMvtII = \relative c {
 	
 	
 	
-	aes,16-.\pp(^\arco aes-. aes-. aes-. aes-. aes-.)
+	aes,16-.\pp(-\tweak X-offset #1.5 ^\arco aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
 	g32\f[ g g g] g[ g\> g g] g[ g g g]
 	f16\p f f f f f
@@ -65,5 +65,5 @@ musicVioloncellMvtII = \relative c {
 % Bars 51 to 53
 	R4.*2
 	
-	r8 r g16^\pizz r \bar "||"
+	r8 r g16^\pizz r \rightAlign \attaccaMark \bar "||"
 }

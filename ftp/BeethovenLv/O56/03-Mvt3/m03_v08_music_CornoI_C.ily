@@ -29,14 +29,14 @@ musicCornoIMvtIII = \relative c'' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 d\ff\fermata r
+	\grace {s8.} r4 d-\tweak X-offset #-3.3 \ff\fermata r
 	R2.*2
 	
-	c2.\pp~
+	c2.-\tweak X-offset #-3 \pp~
 	c~_\crescmarkup
 % Bars 36 to 40
 	c~
-	c8 c c c d\ff[ d]
+	c8 c c c d-\tweak X-offset #-3.5 \ff[ d]
 	c4. g8 g g
 	g4 c4. c8
 	c c g\noBeam d'4 d8
@@ -49,7 +49,7 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 46 to 50
 	d4.\sf d16 d d8 d
 	d d4\sf d16 d d8 d
-	d g,4\sf g16 g g8-. g'-.
+	d g,4-\tweak extra-offset #'(-0.2 . 0.7) \sf g16 g g8-. g'-.
 	\partcombineApart f8. f16 \partcombineAutomatic e8 r d r
 	c2.\p
 % Bars 51 to 55
@@ -95,7 +95,7 @@ musicCornoIMvtIII = \relative c'' {
 	R2.*3
 	
 	
-	r4 r r8 g,\p
+	r4 r r8 g,-\tweak X-offset #-1.5 \p
 	c r r4 r8 g
 % Bars 101 to 105
 	c r r4 r8 g
@@ -136,14 +136,14 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 d\ff\fermata r
+	\grace {s8.} r4 d-\tweak X-offset #-3.5 \ff\fermata r
 	R2.*2
 % Bars 151 to 155
 	
-	c2.\pp~
+	c2.-\tweak X-offset #-3 \pp~
 	c~_\crescmarkup
 	c~
-	c8 c c c d\ff[ d]
+	c8 c c c d-\tweak extra-offset #'(-2.5 . 0.5) \ff[ d]
 % Bars 156 to 160
 	c4. g8 g g
 	g4 c4. c8

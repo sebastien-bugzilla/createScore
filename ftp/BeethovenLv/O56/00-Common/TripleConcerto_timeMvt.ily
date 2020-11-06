@@ -15,5 +15,5 @@ timeMvtII = {
 }
 timeMvtIII = {
 	\time 3/4
-	\tempo "Rondo alla Polacca."
+	%\tempo "Rondo alla Polacca."
 }

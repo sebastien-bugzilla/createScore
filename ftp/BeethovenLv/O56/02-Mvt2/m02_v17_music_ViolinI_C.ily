@@ -28,7 +28,7 @@ musicViolinIMvtII = \relative c' {
 	des4( c16 des)
 	ees8_\crescmarkup \dynEsw #'(-5 . 5) e4\f\>
 % Bars 16 to 20
-	f4\p(_\crescmarkup~ f16 des)
+	f4-\tweak X-offset #0 \pcrescD(~ f16 des)
 	c32\p c c c r c c c r c[ r c]
 	r des_\crescmarkup des des r des des des r des[ r des]
 	r c[ r f] r16 c\sf r des\p
@@ -49,7 +49,7 @@ musicViolinIMvtII = \relative c' {
 	
 	
 	
-	c16\pp-.^\arco( c-. c-. c-. c-. c-.)
+	c16-\tweak X-offset #-1.5 \pp-.^\arco( c-. c-. c-. c-. c-.)
 % Bars 41 to 45
 	c32\f[ c c c] c[ c\> c c] c[ c c c]
 	c16\p c c c c c

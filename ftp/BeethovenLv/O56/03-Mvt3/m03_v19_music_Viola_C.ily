@@ -10,7 +10,7 @@ musicViolaMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c2.^\arco\pp
+	c2.^\arco-\tweak X-offset #-3 \pp
 	c
 	c
 	c4 c c
@@ -46,10 +46,10 @@ musicViolaMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 <b d>\ff^\arco\fermata r
+	\grace {s8.} r4 <b d>-\tweak X-offset #-3.5 \ff-\tweak X-offset #-5.5 ^\arco\fermata r
 	R2.*2
 	
-	c8(\pp-. c-. c-. c-. c-. c)-. 
+	c8(-\tweak X-offset #-3 \pp-. c-. c-. c-. c-. c)-. 
 	c\cresc c c c c c 
 % Bars 36 to 40
 	c c c c c c
@@ -59,7 +59,7 @@ musicViolaMvtIII = \relative c' {
 	a f g a d, b' d b d b d b
 % Bars 41 to 45
 	<b d>4\sf( c8) r <g g'>\sf r
-	<c, c'>\ff c' r e r a,
+	<c, c'>-\tweak X-offset #-1 \ff c' r e r a,
 	r c r f, r a
 	r d, r f' b,16 c d e 
 	f g a b c b a g f e d c
@@ -108,7 +108,7 @@ musicViolaMvtIII = \relative c' {
 % Bars 91 to 95
 	
 	\mark \default
-	g16(\f^\arco d g d g d g d g d g d)
+	g16(\f-\tweak X-offset #1 ^\arco d g d g d g d g d g d)
 	a'8\p d, a' d, a' d,
 	fis16(\f d fis d fis d fis d fis d fis d)
 % Bars 96 to 100d
@@ -135,7 +135,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	
-	c2.\pp
+	c2.-\tweak extra-offset #'(1.3 . 1.8) \pp
 	c
 % Bars 121 to 125
 	c
@@ -171,7 +171,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 <b d>\ff^\arco\fermata r
+	\grace {s8.} r4 <b d>-\tweak X-offset #-3.5 \ff-\tweak X-offset #-6 ^\arco\fermata r
 	R2.*2
 % Bars 151 to 155
 	

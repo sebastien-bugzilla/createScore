@@ -46,10 +46,10 @@ musicViolinIMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 <g d' b' f'>\ff^\arco r
+	\grace {s8.} r4 <g d' b' f'>-\tweak X-offset #-3.5 \ff-\tweak X-offset #-5.5 ^\arco^\fermata r
 	R2.*2
 	
-	g'8-.(\pp g-. g-. g-. g-. g-.)
+	g'8-.(-\tweak X-offset #-3 \pp g-. g-. g-. g-. g-.)
 	g\cresc g g g g g
 % Bars 36 to 40
 	a a a a a a
@@ -58,8 +58,8 @@ musicViolinIMvtIII = \relative c' {
 	\grace {c16[( d]} e4) c4.(\sf b8)
 	a( f') b,(\noBeam g'4) g8
 % Bars 41 to 45
-	g4(\sf c,8) r <g, g' d' b'>\sf r
-	<g' e' c'>\ff c r e r a,
+	g4(\sf c,8) r <g, g' d' b'>-\tweak X-offset #-1.5 \sf r
+	<g' e' c'>-\tweak X-offset #-1 \ff c r e r a,
 	r c r f, r a
 	r d, r f' b,16 c d e 
 	f g a b c b a g f e d c
@@ -108,7 +108,7 @@ musicViolinIMvtIII = \relative c' {
 % Bars 91 to 95
 	
 	\mark \default
-	g8\f^\arco b([\trill \grace {a16 b} g8]) d'[(\trill \grace {c16 d} b8]) \afterGrace g'\trill {fis16 g}
+	g8\f-\tweak X-offset #-1 ^\arco b([\trill \grace {a16 b} g8]) d'[(\trill \grace {c16 d} b8]) \afterGrace g'\trill {fis16 g}
 	g4\p( fis8) r r4
 	d,8\f fis([\trill \grace {e16 fis} d8)] a'(\trill[ \grace {g16 a} fis8]) \afterGrace d'\trill {cis16 d}
 % Bars 96 to 100
@@ -171,7 +171,7 @@ musicViolinIMvtIII = \relative c' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 <g d' b' f'>\ff\fermata^\arco r
+	\grace {s8.} r4 <g d' b' f'>-\tweak X-offset #-3.5 \ff\fermata-\tweak X-offset #-4 ^\arco r
 	R2.*2
 % Bars 151 to 155
 	

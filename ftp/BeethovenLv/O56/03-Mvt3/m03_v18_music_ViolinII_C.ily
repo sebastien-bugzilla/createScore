@@ -46,10 +46,10 @@ musicViolinIIMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 <g f' d'>\ff\fermata^\arco r
+	\grace {s8.} r4 <g f' d'>-\tweak X-offset #-3.5 \ff\fermata-\tweak X-offset #-5.5 ^\arco r
 	R2.*2
 	
-	e'8\pp(-. e-. e-. e-. e-. e-.)
+	e'8-\tweak X-offset #-3 \pp(-. e-. e-. e-. e-. e-.)
 	e\cresc e e e e e 
 % Bars 36 to 40
 	f f f f f f
@@ -58,8 +58,8 @@ musicViolinIIMvtIII = \relative c' {
 	e c e c e d e f g e f g
 	a f g a d, <g, f'> q q q q q q
 % Bars 41 to 45
-	q4\sf( <g e'>8) r <g d' b'>\sf r
-	<g e' c'>\ff c' r e r a,
+	q4-\tweak extra-offset #'(-1. . 0.8) \sf( <g e'>8) r <g d' b'>\sf r
+	<g e' c'>-\tweak X-offset #-1 \ff c' r e r a,
 	r c r f, r a
 	r d, r f' b,16 c d e
 	f, g a b c b a g f e d c
@@ -71,7 +71,7 @@ musicViolinIIMvtIII = \relative c' {
 	e'16(\p c e c e c e c e c e c)
 % Bars 51 to 55
 	f( d f d f d f d f d f d)
-	e(_\crescmarkup c e c e c e c e c e c)
+	e(-\tweak X-offset #-0.5 _\crescmarkup c e c e c e c e c e c)
 	f( d f d  f d f d  f d f d)
 	c\f b c d e d e f g g a b
 	c b c d e d e f g g, a b
@@ -171,19 +171,19 @@ musicViolinIIMvtIII = \relative c' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 <g f' d'>4\fermata\ff^\arco r
+	\grace {s8.} r4 <g f' d'>4\fermata-\tweak X-offset #-3.5 \ff-\tweak X-offset #-6 ^\arco r
 	R2.*2
 % Bars 151 to 155
 	
 	e'8-.(\pp e-. e-. e-. e-. e-.)
 	e_\crescmarkup e e e e e 
 	f f f f f f 
-	<b, f'>[ q q q] d16\ff b d b
+	<b, f'>[ q q q] d16-\tweak X-offset #-1 \ff b d b
 % Bars 156 to 160
 	e c e c e c e c e c f d
 	e c e c e d e f g e f g
 	a f g a d, <g, f'> q q q q q q
-	q4(\sf <g e'>8) r r4
+	q4(-\tweak X-offset #-2 \sf <g e'>8) r r4
 	r gis'(\sf a8) r
 % Bars 161 to 165
 	r4 r e(\sf

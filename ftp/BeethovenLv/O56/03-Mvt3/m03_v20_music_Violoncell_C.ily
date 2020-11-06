@@ -10,7 +10,7 @@ musicVioloncellMvtIII = \relative c' {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	c2.^\arco\pp
+	c2.-\tweak extra-offset #'(0.4 . -1) ^\arco-\tweak X-offset #3 ^\semprepp
 	c
 	c
 	c4 c c
@@ -28,7 +28,7 @@ musicVioloncellMvtIII = \relative c' {
 	e8 r e r r g
 	a r d r r f,
 % Bars 16 to 20
-	g r c r c,8.(\pp^\arco e16
+	g r c r \once \override CombineTextScript.X-offset = #-3.5 c,8.(\pp^\arco e16
 	g8-.) r r4 g,8.( b16
 	c8-.) r r4 c8.-. a16-. 
 	d8.-. d16-. d8-. r d-. r
@@ -46,10 +46,10 @@ musicVioloncellMvtIII = \relative c' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 g\ff^\arco\fermata r
+	\grace {s8.} r4 g\ff-\tweak X-offset #-5.5 ^\arco\fermata r
 	R2.*2
 	
-	c8(\pp-. c-. c-. c-. c-. c)-. 
+	c8(-\tweak X-offset #-3 \pp-. c-. c-. c-. c-. c)-. 
 	c\cresc c c c c c 
 % Bars 36 to 40
 	c c c c c c
@@ -96,7 +96,7 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	g,4^\pizz r r
+	\once \override CombineTextScript.X-offset = #-4 g,4^\pizz r r
 	d r r 
 	d r r
 	g r r
@@ -108,7 +108,7 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 91 to 95
 	
 	\mark \default
-	g'8\f^\arco d g d g d
+	g'8\f-\tweak X-offset #1 ^\arco d g d g d
 	a'\p d, a' d, a' d,
 	fis\f d fis d fis d
 % Bars 96 to 100
@@ -153,7 +153,7 @@ musicVioloncellMvtIII = \relative c' {
 	e8 r r4 r
 	e8 r e r r g
 	a r d r r f,
-	g r c r c,8.(\pp^\arco e16
+	g r c r \once \override CombineTextScript.X-offset = #-3.2 c,8.(\pp^\arco e16
 	g8-.) r r4 g,8.( b16
 % Bars 136 to 140
 	c8-.) r r4 c8.-. a16-. 
@@ -171,7 +171,7 @@ musicVioloncellMvtIII = \relative c' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 g\ff^\arco\fermata r
+	\grace {s8.} r4 g\ff-\tweak X-offset #-6 ^\arco\fermata r
 	R2.*2
 % Bars 151 to 155
 	

@@ -94,8 +94,8 @@ musicPianoDownMvtIII = \relative c, {
 % Bars 96 to 100
 	
 	
-	\tuplet 6/4 4 {g,16( b ais b ais b) g( d' cis d cis d) b( d' b g b g)
-	f! g f d f d b[ d b] \clef bass g b g f a g f e d}
+	\tuplet 6/4 4 {g,16( b ais b ais b) g( d' cis d cis d) \stemDown b( d' b g b g)
+	\stemNeutral f! g f d f d} \tuplet 3/2 4 {b[ d b]} \clef bass \tuplet 3/2 4 {g b g} \tuplet 6/4 4 {f a g f e d}
 	c8 r r4 r8 \tuplet 3/2 4 {g16^\ff a b}
 % Bars 101 to 105
 	\tuplet 6/4 4 {c b a g a b c b a g a b c b c d c d}
@@ -136,7 +136,7 @@ musicPianoDownMvtIII = \relative c, {
 	q8 r r4 r
 	\tuplet 6/4 4 {q16\noBeam d'''( cis d cis d) \clef treble b d'( cis d cis d) b( f' e f e f)} \mark \default 
 	\grace {e16[( f g]} f2)\fermata \acciaccatura fis,8 g \acciaccatura fis g
-	\acciaccatura fis g4 r \acciaccatura fis8 g \acciaccatura fis g
+	\acciaccatura fis8 g4 r \acciaccatura fis8 g \acciaccatura fis g
 % Bars 151 to 155
 	\acciaccatura fis g4 r r
 	<e g>16( c <e g> c <e g> c <e g> c <e g> c <e g> c)

@@ -46,7 +46,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	\grace {s8.} f2\f\fermata r4
 	R2.
 	\acciaccatura fis,,8 g\pp \acciaccatura fis g \acciaccatura fis g4 \acciaccatura fis'8 g \acciaccatura fis g
-	g4.(\startTrillSpan a16\stopTrillSpan b c8 d)
+	g4.\startTrillSpan a16\stopTrillSpan( b c8 d)
 	\grace {c16[( d]} e4)_\crescmarkup( c4. b8)
 % Bars 36 to 40
 	a( f'~ f) f16( e) e( d) d( c)

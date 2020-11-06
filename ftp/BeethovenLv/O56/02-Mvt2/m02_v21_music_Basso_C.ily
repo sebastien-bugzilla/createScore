@@ -49,7 +49,7 @@ musicBassoMvtII = \relative c {
 	
 	
 	
-	aes,16-.\pp(^\arco aes-. aes-. aes-. aes-. aes-.)
+	aes,16-.\pp(-\tweak X-offset #1.5 ^\arco aes-. aes-. aes-. aes-. aes-.)
 % Bars 41 to 45
 	g32\f[ g g g] g[ g\> g g] g[ g g g]
 	f16\p f f f f f

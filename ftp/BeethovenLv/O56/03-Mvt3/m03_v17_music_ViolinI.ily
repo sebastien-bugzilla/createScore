@@ -48,7 +48,7 @@ musicViolinIMvtIII = \relative c' {
 		R \mark #4 \no
 	}
 % Bars 31 to 35
-	\grace {s8.} r4 <g d' b' f'>\ff^\arco r
+	\grace {s8.} r4 <g d' b' f'>\ff^\arco^\fermata r
 	\cueDuring #"cueVoiceViolinIMvtIII" #UP {
 		\ni R2.
 		R \no

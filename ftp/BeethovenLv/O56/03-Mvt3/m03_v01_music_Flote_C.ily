@@ -29,16 +29,16 @@ musicFloteMvtIII = \relative c''' {
 	
 	\mark #4
 % Bars 31 to 35
-	\grace {s8.} r4 f\fermata\ff r
+	\grace {s8.} r4 f\fermata-\tweak X-offset #-3.7 \ff r
 	R2.*5
 % Bars 36 to 40
 	
-	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
-	g4.( a16 b\noBeam c8 d)
-	\grace {c16[( d]} e4)( c4.\sf b8)
+	r4 r \acciaccatura fis,8 g-\tweak extra-offset #'(-2 . 1) \ff \acciaccatura fis g
+	g4.( a16 b c8 d)
+	\grace {c16[( d]} e4)( c4.-\tweak extra-offset #'(0 . 2) \sf b8)
 	a([ f']) b,( g'4) g8
 % Bars 41 to 45
-	g4(\sf c,8) r g'4\sf(
+	g4(\sf c,8) r g'4-\tweak X-offset #-1 \sf(
 	c,16)\ff b c d e d c b a gis a b
 	c b a g! f e f g a g f e 
 	d cis d e f e d c b c d e
@@ -76,10 +76,10 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 91 to 95
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	g,8\f[ b(\trill \grace {a16[ b]} g8) d'8(\trill \grace {c16[ d]} b8) \afterGrace  g']\trill {fis16[ g]} 
 	g4\p( fis!8) r r4
-	d8\f[ fis(\trill \grace {e16[ fis]} d8) a'(\trill \grace {g16[ a]} fis8) \afterGrace d'8\trill] {cis16[ d]}  
+	d8\f[ fis(-\tweak extra-offset #'(0 . -2.6) \trill \grace {e16[ fis]} d8) a'(-\tweak extra-offset #'(0 . -2.6) \trill \grace {g16[ a]} fis8) \afterGrace d'8\trill] {cis16[ d]}  
 % Bars 96 to 100
 	c!4\p( b8) r r4
 	R2.*9
@@ -114,19 +114,19 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	\mark \default
-	\grace {s8.} r4 f\fermata\ff r
+	\grace {s8.} r4 f\fermata-\tweak X-offset #-3.3 \ff r
 	R2.*5
 % Bars 151 to 155
 	
 	
 	
 	
-	r4 r \acciaccatura fis,8 g\ff \acciaccatura fis g
+	r4 r \acciaccatura fis,8 g-\tweak extra-offset #'(-2.5 . 1.5) \ff \acciaccatura fis g
 % Bars 156 to 160
 	g4.( a16 b c8 d)
-	\grace {c16[( d]} e4) c4.\sf( b8)
+	\grace {c16[( d]} e4) c4.-\tweak extra-offset #'(0 . 3) \sf( b8)
 	a( f') b,(\noBeam g'4) g8
-	g4\sf( c,8) r g'4(\sf
+	g4\sf( c,8) r g'4(-\tweak X-offset #-1 \sf
 	c,8) r r4 r
 % Bars 161 to 165
 	e4(\sf a,8) r r4

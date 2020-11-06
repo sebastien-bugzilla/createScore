@@ -22,6 +22,7 @@
 \include "./00-Common/TripleConcerto_NameGrandStaff.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_Cond_Mvt02.ily"
+%\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./02-Mvt2/m02_v04_music_ClarinetI_C.ily"
 \include "./02-Mvt2/m02_v05_music_ClarinetII_C.ily"
 \include "./02-Mvt2/m02_v06_music_FagottoI_C.ily"
@@ -59,9 +60,12 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtII
-%					}
+					\new Voice {
+						\displayFilterVoice
+					}
+					\new Voice {
+						\formatConductorMvtII
+					}
 					\new Voice {
 						\timeMvtII \generalOptions \conductorOptions
 						\nameStaffIMvtII
@@ -133,6 +137,13 @@
 			breakbefore = ##t
 		}
 		\layout {
+			%system-count = #16
+			%indent = #0
+			\context {
+				\Staff
+				%\RemoveAllEmptyStaves
+				\RemoveEmptyStaves
+			}
 		}
 	}
 }
