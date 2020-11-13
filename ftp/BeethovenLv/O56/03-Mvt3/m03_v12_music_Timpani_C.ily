@@ -156,7 +156,7 @@ musicTimpaniMvtIII = \relative c {
 	
 % Bars 221 to 225
 	r8 g16^\crescmarkup g g8 g g g \mark \default
-	c\f c c c c c
+	\offset Beam.positions #-0.5 c-\tweak extra-offset #'(0 . 1) \f c c c c c
 	g r r4 r
 	R2.
 	r4 g8\pp r g r
@@ -185,7 +185,7 @@ musicTimpaniMvtIII = \relative c {
 	c r c r r c
 % Bars 251 to 255
 	c r g4 r8 g16 g
-	g8\ff r c r g4\trill
+	g8\ff r c r g4-\tweak extra-offset #'(-0.5 . 0)\trill
 	c8 r c r c r
 	c r c r r4
 	R2.*7

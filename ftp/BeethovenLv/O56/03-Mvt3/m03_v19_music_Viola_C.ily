@@ -186,57 +186,57 @@ musicViolaMvtIII = \relative c' {
 	<b d>4(\sf c8) r r4
 	r <b d>(\sf c8) r
 % Bars 161 to 165
-	r4 r <g bes>\sf(
-	<f a>8) r c'4(\sf f,8) r
-	a4(\sf d,8) r a'4(\sf
-	dis,8) r a'4.(\sf dis,8)
+	r4 r <g bes>-\tweak X-offset #-1 \sf(
+	<f a>8) r c'4(-\tweak X-offset #0.5 \sf f,8) r
+	a4(-\tweak X-offset #-1 \sf d,8) r a'4(-\tweak X-offset #-1 \sf
+	dis,8) r a'4.(-\tweak X-offset #-1 \sf dis,8)
 	e8\f e'16( dis) e-. d-. c-. b-. a-. b-. c-. d-. 
 % Bars 166 to 170
 	e8\p r r4 r
-	e16\f d c b a\sf b c d e\sf d c b
-	a\sf b c d e\sf d c b a\sf b c d
+	e16\f d c b a\sf b c d e-\tweak X-offset #-1 \sf d c b
+	a\sf b c d e-\tweak X-offset #-1 \sf d c b a\sf b c d
 	e4.\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
 	a\p r r4 r
 	a8^\pizz r r4 r
 	c8 r r4 b8 r
-	c8 r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
+	c8 r r4 r8 \tuplet 3/2 8 {g16(\f-\tweak X-offset #-4 ^\arco a b)}
 	c8 r r4 r
 % Bars 176 to 180
 	c8\p^\pizz r r4 r
 	b8 r r4 b8 r 
-	b r r4 r8 \tuplet 3/2 8 {e,16(\f^\arco fis gis)} \mark \default
+	b r r4 r8 \tuplet 3/2 8 {e,16(-\tweak X-offset #0.5 \f-\tweak X-offset #-4.5 ^\arco fis gis)} \mark \default
 	a8 r r4 r
-	a8\p^\pizz r r4 r
+	a8\p-\tweak X-offset #1 ^\pizz r r4 r
 % Bars 181 to 185
 	c8 r r4 b8 r
-	c r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
+	c r r4 r8 \tuplet 3/2 8 {g16(-\tweak X-offset #-1 \f-\tweak X-offset #-4 ^\arco a b)}
 	c8 r r4 r
-	c8\p^\pizz r r4 r
+	c8\p-\tweak X-offset #1 ^\pizz r r4 r
 	b8 r r4 b8 r
 % Bars 186 to 190
-	b r r4 r8 \tuplet 3/2 8 {e,16(\f^\arco fis gis)}
+	b r r4 r8 \tuplet 3/2 8 {e,16(\f-\tweak X-offset #-5 ^\arco fis gis)}
 	a8 r r4 r
 	cis8\p^\pizz r r4 r
 	d8 r r4 a8 r
-	d, r r4 r8 \tuplet 3/2 8 {b'16(\f^\arco cis dis)}
+	d, r r4 r8 \tuplet 3/2 8 {b'16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 % Bars 191 to 195
 	e8 r r4 r
-	e,8\p^\pizz r r4 r
+	e,8-\tweak X-offset #-1 \p-\tweak X-offset #1 ^\pizz r r4 r
 	e8 r r4 e8 r
-	e r r4 r8  \tuplet 3/2 8 {e16(\f^\arco fis gis)}
+	e r r4 r8  \tuplet 3/2 8 {e16(\f\tweak X-offset #-5 ^\arco fis gis)}
 	a8 r r4 r
 % Bars 196 to 200
-	a8\p^\pizz r r4 r
+	a8-\tweak X-offset #-0.5 \p -\tweak X-offset #1 ^\pizz r r4 r
 	<a d>8 r r4 a8 r
-	d r r4 r8 \tuplet 3/2 8 {b16(\f^\arco cis dis)}
+	d r r4 r8 \tuplet 3/2 8 {b16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 	e8 r r4 r
 	e,8\p^\pizz r r4 r
 % Bars 201 to 205
 	e8 r r4 e8 r
 	e r r4 r
-	e2.\pp^\arco~
+	e2.\pp-\tweak X-offset #1.5 ^\arco~
 	e
 	e
 % Bars 206 to 210
@@ -272,7 +272,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 	
-	r4 r e16\ff-. g-. e-. g-.
+	r4 r e16-\tweak X-offset #-1.5 \ff-. g-. e-. g-.
 	e g e g e g e g e g f g
 % Bars 246 to 250
 	e g e g e d e f g e f g
@@ -317,7 +317,7 @@ musicViolaMvtIII = \relative c' {
 	g16\f-. g-. e-. g-. e g e g e g e g
 	g8\p r r4 r
 	d16\f g d g d g d g d g d g
-	c,8\p r r4 r
+	c,8-\tweak X-offset #-1.8 \p r r4 r
 	R2.*2
 % Bars 291 to 295
 	
@@ -360,11 +360,11 @@ musicViolaMvtIII = \relative c' {
 	c,4 c' r8 g
 	b4_\crescmarkup b r8 b^\arco \mark \default
 % Bars 326 to 330
-	c\f-. g-. c-. g-. e-. c-. 
+	c-\tweak X-offset #-1 \f-. g-. c-. g-. e-. c-. 
 	g'8 g16 g b8 b16 b d8 d16 d
 	<g, g'>8 r r4 r
 	q8 r r4 r
-	g8 r r4 b8^\pizz\p r
+	g8 r r4 b8-\tweak X-offset #-5 ^\pizz\p r
 % Bars 331 to 335
 	b r r4 r
 	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
@@ -372,7 +372,7 @@ musicViolaMvtIII = \relative c' {
 	
 	
 % Bars 336 to 340
-	r4 r8 d^\arco_\semprepp
+	r4 r8 d-\tweak X-offset #-5 ^\arco_\semprepp
 	c c r c
 	c c r c
 	c c r d
@@ -433,7 +433,7 @@ musicViolaMvtIII = \relative c' {
 	g,8\p c r c
 % Bars 386 to 390
 	r c r b \mark \default
-	e,\f( f16 d e8 f)
+	e,-\tweak X-offset #-1.5 \f( f16 d e8 f)
 	g4( e8) r
 	d([ e f fis)]
 	g( a) b16( g a b)
@@ -447,7 +447,7 @@ musicViolaMvtIII = \relative c' {
 	b!\ff b b b b b b b 
 	b b b b  b b b b
 	g\sf c c c c c c c
-	fis,\sf fis' fis fis fis fis fis fis
+	fis,-\tweak X-offset #-1 \sf fis' fis fis fis fis fis fis
 	g8 r r4
 % Bars 401 to 405
 	R2*12
@@ -487,7 +487,7 @@ musicViolaMvtIII = \relative c' {
 	b8^\pizz r r4
 	R2\fermataMarkup \bar "||"
 	\time 3/4 \tempo "Tempo I." R2.
-	<c, c'>8\f^\arco r q r r4
+	<c, c'>8-\tweak X-offset #-2.1 \f-\tweak X-offset #-5 ^\arco r q r r4
 	R2.
 % Bars 446 to 450
 	<g' d'>8\f r g r r4
@@ -500,10 +500,10 @@ musicViolaMvtIII = \relative c' {
 	R2.*3
 	
 	
-	c,8\p^\pizz r r4 r
+	c,8\p-\tweak X-offset #-5 ^\pizz r r4 r
 % Bars 456 to 460
 	g'8 r r4 r
-	<g g'>16\ff^\arco q q q  q q q q  q q q q 
+	<g g'>16-\tweak X-offset #-3.5 \ff^\arco q q q  q q q q  q q q q 
 	q q q q  q q q q  q q q q \mark \default
 	c4. e8\sf-. g,-. b-. 
 	c r r4 r

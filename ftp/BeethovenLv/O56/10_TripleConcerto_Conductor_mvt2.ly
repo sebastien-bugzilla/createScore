@@ -60,9 +60,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-					\new Voice {
-						\displayFilterVoice
-					}
+%					\new Voice {
+%						\displayFilterVoice
+%					}
 					\new Voice {
 						\formatConductorMvtII
 					}

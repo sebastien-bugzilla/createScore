@@ -425,7 +425,7 @@ musicVioloncellMvtIII = \relative c' {
 	c4 c r8 c
 	g4_\crescmarkup g' r8 g_\arco \mark \default
 % Bars 326 to 330
-	c-. g-. c-. g-. e-. c-. 
+	c-.\f g-. c-. g-. e-. c-. 
 	g g16 g b8 b16 b d8 d16 d
 	g8 r r4 r
 	g,8 r r4 r

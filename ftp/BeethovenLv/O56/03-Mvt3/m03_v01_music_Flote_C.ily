@@ -130,7 +130,7 @@ musicFloteMvtIII = \relative c''' {
 	c,8) r r4 r
 % Bars 161 to 165
 	e4(\sf a,8) r r4
-	r c(\sf f,8) r
+	r c(-\tweak X-offset #-1 \sf f,8) r
 	a4(\sf d,8) r a'4(\sf
 	dis,8) r a'4.(\sf dis,8)
 	e r r4 r
@@ -166,7 +166,7 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 221 to 225
 	\mark \default
-	r8 g\f-. c-. g-. e-. c-. 
+	r8 g-\tweak X-offset -1 \f-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.*20
 % Bars 226 to 230
@@ -182,11 +182,11 @@ musicFloteMvtIII = \relative c''' {
 	r4 r \acciaccatura fis8 g\ff \acciaccatura fis g
 	g4.( a16 b c8 d)
 % Bars 246 to 250
-	e4( c4.\sf b8)
+	e4( c4.-\tweak X-offset #-1 \sf b8)
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) fis( g) fis( g)
-	g4.\startTrillSpan( a16\stopTrillSpan b c8 d)
-	\grace {c16([ d16]} e4) c4.(\sf b8)
+	\shape #'((0 . 2)(0 . 1.5)(0 . 0)(0 . 0)) Slur g4.-\tweak extra-offset #'(0  . -3.8) \startTrillSpan( a16\stopTrillSpan b c8 d)
+	\grace {c16([ d16]} e4) c4.(-\tweak X-offset #-1.5 ^\sf b8)
 % Bars 251 to 255
 	a( f') b,(\noBeam g'4) g8
 	g4(\ff c,8) r g'4(\sf
@@ -213,7 +213,7 @@ musicFloteMvtIII = \relative c''' {
 % Bars 286 to 290
 	c,8\f\noBeam e([\trill \grace {d16[ e]} c8)] g'[(\trill \grace {fis16[ g]} e8)] \afterGrace c'\trill {b16[ c]}
 	c4\p( b8) r r4
-	g8\noBeam\f b([\trill \grace {a16[ b]} g8)] d'[(\trill \grace {cis16[ d]} b8]) \afterGrace g'\trill {fis16[ g]}
+	g8\noBeam-\tweak X-offset #-0.5 \f b([\trill \grace {a16[ b]} g8)] d'[(\trill \grace {cis16[ d]} b8]) \afterGrace g'\trill {fis16[ g]}
 	f!4(\p e8) r r4
 	R2.*9
 % Bars 291 to 295
@@ -239,7 +239,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	\mark \default
+	\markXoffset #1 \mark \default
 % Bars 326 to 330
 	r8 g,\f-. c-. g-. e-. c-. 
 	g' g16 g b8 b16 b d8 d16 d
@@ -272,7 +272,7 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 386 to 390
 	\mark \default
-	g8(\f a16 b c8 d)
+	g8(-\tweak X-offset #-1.5 \f a16 b c8 d)
 	e4( c8) r
 	f16( g f e d e d c)
 	b( c b a) g8-. g-.
@@ -283,7 +283,7 @@ musicFloteMvtIII = \relative c''' {
 	ees4(\sf bes8) r
 	aes2
 % Bars 396 to 400
-	f'2\ff~
+	f'2-\tweak X-offset #-2.5 \ff~
 	f
 	ees\sf
 	ees\sf
@@ -294,7 +294,7 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 411 to 415
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	R2*28
 % Bars 416 to 420
 	
@@ -309,7 +309,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	
 	
-	\mark \default
+	\once \override Score.RehearsalMark.outside-staff-priority = #100 \mark \default
 % Bars 441 to 445
 	R2
 	R\fermataMarkup \bar "||" 
@@ -326,7 +326,7 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 456 to 460
 	
-	c4.\f e32([ g16.-.)] g32[( e16.-.)] e32([ c16.-.])
+	c4.-\tweak X-offset #-1 \f e32([ g16.-.)] g32[( e16.-.)] e32([ c16.-.])
 	c32([ b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.)] b32[( g16.-.)] \mark \default
 	c4. e8-.\sf[ g,-. b-.]
 	c8 r r4 r

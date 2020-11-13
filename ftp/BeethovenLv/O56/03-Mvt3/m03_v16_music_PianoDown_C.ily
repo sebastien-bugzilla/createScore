@@ -168,7 +168,7 @@ musicPianoDownMvtIII = \relative c, {
 	R2.*2
 	
 % Bars 186 to 190
-	r8 e16( dis \tuplet 6/4 4 {e f! e d e d cis d cis b cis b)}
+	r8 e16( dis \tuplet 6/4 4 {e f! e d e d cis d cis b cis b)} 
 	a8\noBeam a'16( gis a8-.) a16( b \clef treble cis8-.) cis16( d
 	e8-.) e16( f g!8-.) g16( a b cis d e)
 	f2( \afterGrace e4\trill) {d16[ e]}
@@ -193,16 +193,16 @@ musicPianoDownMvtIII = \relative c, {
 	b( e d e e, e' d e b e d e)
 % Bars 206 to 210
 	a,( e' c e a, e' c e a, d c d)
-	b( g' d g g, g' d g b, g' d g)
+	\stemDown b( g' d g g, g' d g b, g' d g)
 	c,( g' e g g, g' e g c, g' e g)
 	d( g f g g, g' f g b, g' f g)
 	c,( g' e g c, e c e c e c e)
 % Bars 211 to 215
-	dis( b' fis b b, b' fis b dis, b' fis b)
+	\stemNeutral dis( b' fis b b, b' fis b dis, b' fis b)
 	e, b'( g b b, b' g b e, b' g b)
 	r b,( dis fis a fis dis b a' fis dis b)
-	r b( d! e gis e d b gis' e d b)
-	r a( cis e g! e cis a g' e cis a)
+	r \stemUp b( d! e gis e d b gis' e d b)
+	r a( cis e g! e cis a g' e cis a) \stemNeutral
 % Bars 216 to 220
 	r a( c! d fis d c a fis' d c a)
 	r g( b d f! d b g f' d b g)
@@ -210,7 +210,7 @@ musicPianoDownMvtIII = \relative c, {
 	R2.
 	r16 g(^\f a b c d e f a g f e)
 % Bars 221 to 225
-	d( fis g a b \clef treble c d e g f! e d) \mark \default
+	d( fis g a \clef treble b c d e g f! e d) \mark \default
 	e(\noBeam \clef bass g, a b \clef treble c d e f a g f e
 	d8)\noBeam \clef bass \tuplet 3/2 4 {fis,,,16(^\ff g fis)} \tuplet 6/4 4 {g( fis g fis g fis) g( fis g fis g fis)
 	g fis g fis g fis g fis g fis g fis g fis g fis g fis
@@ -310,9 +310,9 @@ musicPianoDownMvtIII = \relative c, {
 	b( fis) fis-. fis-. g16( fis e fis)
 % Bars 316 to 320
 	g8( e) e-. e-. fis16( e dis e)
-	\afterGrace dis2.\startTrillSpan {cis16[\stopTrillSpan dis]}
+	\afterGrace 15/16 dis2.\startTrillSpan {cis16[\stopTrillSpan dis]}
 	e8( b) b-. b-. cis16( b a b)
-	\afterGrace cis2.\startTrillSpan^\natural {b16[\stopTrillSpan cis]}
+	\trillSpanCustom #6 #naturaltrill \afterGrace 15/16 cis2.\startTrillSpan {b16[\stopTrillSpan cis]}
 	d8( a) a-. a-. b16( a g a)
 % Bars 321 to 325
 	b4 r r

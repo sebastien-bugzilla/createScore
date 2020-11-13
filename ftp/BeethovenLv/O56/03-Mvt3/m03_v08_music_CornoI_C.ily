@@ -151,15 +151,15 @@ musicCornoIMvtIII = \relative c'' {
 	d4\sf( c8) r d4(\sf
 	c8) r r4 r
 % Bars 161 to 165
-	e4\sf e8 r r4
-	r c4\sf c8 r
+	e4-\tweak X-offset #-1 \sf e8 r r4
+	r c4-\tweak X-offset #-1 \sf c8 r
 	R2.*2
 	
 	e8\f e16 e e8 e e e
 % Bars 166 to 170
 	e8\p r r4 r
 	R2.
-	e8\sf e16 e e8\sf e16 e e8\sf e16 e
+	e8-\tweak X-offset #-1 \sf e16 e e8-\tweak X-offset #-1 \sf e16 e e8-\tweak X-offset #-1 \sf e16 e
 	e4. r8 r4
 	R2.
 % Bars 171 to 175
@@ -216,10 +216,10 @@ musicCornoIMvtIII = \relative c'' {
 	
 	r8 g16\pp g g8 g g g
 	R2.
-	r8 g16\pp g g8 g g g
+	r8 g16-\tweak extra-offset #'(-2.5 . 2) \pp g g8 g g g
 % Bars 221 to 225
 	g2._\crescmarkup~ \mark \default
-	g4.\f g8-. e-. c-.
+	g4.\f \once \offset Beam.positions #'(-0.5 . -0.5)  g8-. e-. c-.
 	g r r4 r
 	R2.*20
 % Bars 226 to 230
@@ -232,7 +232,7 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r g8\ff g
+	r4 r g8-\tweak extra-offset #'(-2.5 . 2) \ff g
 	c2 c8 g
 % Bars 246 to 250
 	g4 c4. c8
@@ -242,7 +242,7 @@ musicCornoIMvtIII = \relative c'' {
 	g c2~
 % Bars 251 to 255
 	c8 f d\noBeam d4 d8
-	d4(\ff c8) r d4(\sf
+	d4(-\tweak X-offset #0.5 \ff c8) r d4(-\tweak X-offset #0.5 \sf
 	c8) r c r c r
 	c r c r r4
 	R2.*2
@@ -271,11 +271,11 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 286 to 290
 	g\f r g r g r
 	R2.
-	g8\f r d' r d r
+	g8-\tweak X-offset #-2.3 \f r d' r d r
 	R2.*3
 % Bars 291 to 295
 	
-	r4 r r8 c\p
+	r4 r r8 c-\tweak X-offset #-0.5 \p
 	c r r4 r8 c
 	c r r4 r8 c
 	c r r4 r8 c
@@ -311,7 +311,7 @@ musicCornoIMvtIII = \relative c'' {
 	\mark \default
 % Bars 326 to 330
 	r8 \partcombineApart g,-. c-. g'-. e-. c-. \partcombineAutomatic
-	g' g,16 g g8 g16 g g8 g16 g
+	\once \offset positions #'(-0.7 . 0) Beam g' g,16 g g8 g16 g g8 g16 g
 	f'8 r r4 r
 	d8 r r4 r
 	d8 r r4 r
@@ -344,7 +344,7 @@ musicCornoIMvtIII = \relative c'' {
 	R2*3
 % Bars 376 to 380
 	
-	r8 c4\pp c8
+	r8 c4-\tweak X-offset #0.8 \pp c8
 	r c4 c8
 	r d4 d8
 	r d4 d8
@@ -355,21 +355,21 @@ musicCornoIMvtIII = \relative c'' {
 	R2*3
 % Bars 386 to 390
 	\mark \default
-	c8\f r c c
+	c8-\tweak X-offset #-2 \f r c c
 	e4( c8) r
 	R2
 	r4 d8 d
 % Bars 391 to 395
 	c\f r c d
-	c4.\sf r8
-	c4.\sf r8
+	c4.-\tweak X-offset #-1 \sf r8
+	c4.-\tweak X-offset #-1 \sf r8
 	R2
 	\once \partcombineApart f
 % Bars 396 to 400
-	f\ff
+	f-\tweak X-offset #-2.5 \ff
 	d
-	c\sf
-	c\sf
+	c-\tweak X-offset #-1 \sf
+	c-\tweak X-offset #-1 \sf
 	e8 r r4
 % Bars 401 to 405
 	R2*12
@@ -416,15 +416,15 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	c2.\p\cresc
+	c2.-\tweak extra-offset #'(2 . 1) \p-\tweak extra-offset #'(2 . 1)\cresc
 % Bars 456 to 460
 	g'
-	c8\f c, c c c c
+	c8-\tweak X-offset #-2 \f c, c c c c
 	d d d d d d \mark \default
-	c4. g'8\sf-. g-. g-.
+	c4. g'8-\tweak X-offset #-2.7 \sf-. g-. g-.
 	c, r r4 r
 % Bars 461 to 465
-	c4. g'8-.\sf g-. g-.
+	c4. g'8-.-\tweak X-offset #-2.7 \sf g-. g-.
 	c,8 r r4 r
 	R2.*2
 	\mark \default

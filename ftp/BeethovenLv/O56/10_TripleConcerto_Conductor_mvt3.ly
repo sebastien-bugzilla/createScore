@@ -21,8 +21,7 @@
 \include "./00-Common/TripleConcerto_NameStaff.ily"
 \include "./00-Common/TripleConcerto_NameGrandStaff.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-%\include "./00-Common/TripleConcerto_Format_Cond_Mvt03.ily"
-\include "./00-Common/TripleConcerto_Format_temp.ly"
+\include "./00-Common/TripleConcerto_Format_Cond_Mvt03.ily"
 \include "./03-Mvt3/m03_v01_music_Flote_C.ily"
 \include "./03-Mvt3/m03_v02_music_OboeI_C.ily"
 \include "./03-Mvt3/m03_v03_music_OboeII_C.ily"
@@ -67,9 +66,6 @@
 			\new StaffGroup <<
 				\new Staff <<
 					\new Voice {
-						\displayFilterVoice
-					}
-					\new Voice {
 						\formatConductorMvtIII
 					}
 					\new Voice {
@@ -82,31 +78,26 @@
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIMvtIII
 					\partcombine #'(0 . 12) \musicOboeIMvtIII \musicOboeIIMvtIII
-%					\musicOboeIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIIMvtIII
 					\partcombine \musicClarinetIMvtIII \musicClarinetIIMvtIII
-%					\musicClarinetIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIVMvtIII
 					\partcombine #'(0 . 16) \musicFagottoIMvtIII \musicFagottoIIMvtIII
-%					\musicFagottoIIMvtIII 
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffVMvtIII
 					\partcombine #'(0 . 16) \musicCornoIMvtIII \musicCornoIIMvtIII
-%					\musicCornoIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffVIMvtIII
 					\partcombine \musicTrombeIMvtIII \musicTrombeIIMvtIII
-%					\musicTrombeIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
@@ -158,7 +149,6 @@
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffXVMvtIII
 					\partcombine \musicVioloncellMvtIII \musicBassoMvtIII
-%					\musicBassoMvtIII
 				}
 			>>
 		>>
@@ -166,11 +156,9 @@
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #91
-			indent = #0
 			\context {
 				\Staff
-				\RemoveAllEmptyStaves
+				\RemoveEmptyStaves
 			}
 		}
 	}

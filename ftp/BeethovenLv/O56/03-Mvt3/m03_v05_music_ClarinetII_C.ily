@@ -132,7 +132,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	c8) r r4 r
 % Bars 161 to 165
 	d'4\sf( c8) r r4
-	r c,(\sf f8) r
+	r c,(-\tweak extra-offset #'(-1.5 . 1.0) \sf f8) r
 	R2.*3
 % Bars 166 to 170
 	gis8\p gis16 gis gis8-. gis-. a-. a-. 
@@ -189,7 +189,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 % Bars 221 to 225
 	\mark \default
-	c'8\f-. g-. c-. g-. e-. c-. 
+	\once \override CombineTextScript.X-offset = #-2 c'8\f-. g-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.
 	R
@@ -209,7 +209,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	
 	
-	e2\ff~ e8 f
+	e2-\tweak X-offset #-2 \ff~ e8 f
 % Bars 246 to 250
 	e4 c4. c8
 	c8 f f\noBeam r r d
@@ -218,7 +218,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	e4. r8 r4
 % Bars 251 to 255
 	r r8 f4 f8
-	f4(\ff e8) r f4(\sf
+	f4(-\tweak X-offset #-2.5 \ff e8) r f4(-\tweak X-offset #-2 \sf
 	e8) r c' r c r
 	c r c, r r4
 	R2.*5
@@ -237,21 +237,21 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 271 to 275
 	
 	
-	e2.\pp(
+	e2.-\tweak X-offset #0.5 \pp(
 	f)~
 	f8 b,-. d-. b-. d-. b-.
 % Bars 276 to 280
 	e8 r r4 r
 	R2.*2
 	
-	c8\p r r4 c8-. d-.
+	c8-\tweak X-offset #-1 \p r r4 c8-. d-.
 	e r e r e r
 % Bars 281 to 285
 	e r r4 r8 e
 	f r f r f r
 	f r r4 r8 ees\f
 	e! r r4 r
-	r4 c'8\p r d r \mark \default
+	r4 c'8-\tweak X-offset #-1 \p r d r \mark \default
 % Bars 286 to 290
 	c\f r e, r e r
 	R2.
@@ -290,7 +290,7 @@ musicClarinetIIMvtIII = \relative c'' {
 	R
 	R \mark \default
 % Bars 326 to 330
-	c'8\f-. g-. c-. g-. e-. c-. 
+	\once \override CombineTextScript.X-offset = #-3 c'8-\tweak X-offset #-1 \f-. g-. c-. g-. e-. c-. 
 	g\noBeam g16 g b8 b16 b d8 d16 d
 	f8 r r4 r
 	d8 r r4 r
@@ -321,18 +321,18 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 % Bars 386 to 390
 	\mark \default
-	e8\f( f16 d e8 f)
+	e8-\tweak X-offset #-1.5 \f( f16 d e8 f)
 	g4( e8) r
 	R2
 	r4 g8 g
 % Bars 391 to 395
 	e(\f f16 d e8 g)
-	ees4.\sf r8
-	ees4.\sf r8
-	g4.\sf r8
+	ees4.-\tweak X-offset #-1 \sf r8
+	ees4.-\tweak X-offset #-1 \sf r8
+	g4.-\tweak X-offset #0.5 \sf r8
 	f2
 % Bars 396 to 400
-	f\ff~
+	f-\tweak X-offset #-2.5 \ff~
 	f
 	ees\sf
 	c'\sf
@@ -350,7 +350,7 @@ musicClarinetIIMvtIII = \relative c'' {
 % Bars 421 to 425
 	
 % Bars 426 to 430
-	c,2\p
+	c,2-\tweak X-offset #-1 \p
 	c8 r r4
 	R2*13
 % Bars 431 to 435
@@ -379,10 +379,10 @@ musicClarinetIIMvtIII = \relative c'' {
 	
 	c8\f c c c c c 
 	d d d d d d  \mark \default
-	c4. e'8\sf-. g,-. b-. 
+	c4. \once \override CombineTextScript.X-offset = #-3 e'8-\tweak X-offset #-1.5 \sf-. g,-. b-. 
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8\sf-. g,-. b-.
+	c4. e8-\tweak X-offset #-1.5 \sf-. g,-. b-.
 	c r r4 r
 	R2.*2
 	\mark \default

@@ -201,42 +201,42 @@ musicViolinIMvtIII = \relative c' {
 	a8\p r r4 r
 	e8^\pizz r r4 r
 	<g, g'>8 r r4 q8 r
-	q r r4 r8 \tuplet 3/2 8 {g'16(\f^\arco a b)}
+	q r r4 r8 \tuplet 3/2 8 {g'16(-\tweak X-offset #-1 \f-\tweak X-offset #-4 ^\arco a b)}
 	c8 r r4 r
 % Bars 176 to 180
 	g8^\pizz\p r r4 r
 	<g b>8 r r4 <g a>8 r
-	<g b> r r4 r8 \tuplet 3/2 8 {e16(^\arco\f fis gis)} \mark \default
+	<g b> r r4 r8 \tuplet 3/2 8 {e16(-\tweak X-offset #-4.5 ^\arco-\tweak X-offset #0.5 \f fis gis)} \mark \default
 	a8 r r4 r
 	e8^\pizz\p r r4 r
 % Bars 181 to 185
 	<g, g'>8 r r4 q8 r
-	q r r4 r8 \tuplet 3/2 8 {g'16(\f^\arco a b)}
+	q r r4 r8 \tuplet 3/2 8 {g'16(-\tweak X-offset #-1 \f-\tweak X-offset #-4 ^\arco a b)}
 	c8 r r4 r
 	g8\p^\pizz r r4 r
 	g8 r r4 a8 r
 % Bars 186 to 190
-	g8 r r4 r8 \tuplet 3/2 8 {e16(^\arco\f fis gis)} 
+	g8 r r4 r8 \tuplet 3/2 8 {e16(-\tweak X-offset #-5 ^\arco\f fis gis)} 
 	a8 r r4 r
 	<a, g'!>8\p^\pizz r r4 r
 	<a f'>8 r r4 <a g'>8 r
-	<a f'> r r4 r8 \tuplet 3/2 8 {b'16(\f^\arco cis dis)}
+	<a f'> r r4 r8 \tuplet 3/2 8 {b'16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 % Bars 191 to 195
 	e8 r r4 r
-	<b, e>8\p^\pizz r r4 r
+	<b, e>8-\tweak X-offset #-1 \p^\pizz r r4 r
 	<c e>8 r r4 <c d>8 r
-	<c e>8 r r4 r8 \tuplet 3/2 8 {e16(\f^\arco fis gis)}
+	<c e>8 r r4 r8 \tuplet 3/2 8 {e16(\f\tweak X-offset #-5 ^\arco fis gis)}
 	a8 r r4 r
 % Bars 196 to 200
-	<a, g'!>8\p^\pizz r r4 r
+	<a, g'!>8-\tweak X-offset #-1 \p^\pizz r r4 r
 	<a f'>8 r r4 <a g'>8 r
-	<a f'> r r4 r8 \tuplet 3/2 8 {b'16(\f^\arco cis dis)}
+	<a f'> r r4 r8 \tuplet 3/2 8 {b'16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 	e8 r r4 r
-	<b, e>8\p^\pizz r r4 r
+	<b, e>8-\tweak X-offset #-0.5 \p^\pizz r r4 r
 % Bars 201 to 205
 	<c e>8 r r4 <d e>8 r
 	<c e> r r4 r
-	<b e>2.(\pp^\arco
+	<b e>2.(-\tweak X-offset #-1.5 \pp^\arco
 	<c e>)
 	<b e>
 % Bars 206 to 210
@@ -285,7 +285,7 @@ musicViolinIMvtIII = \relative c' {
 	g4(\ff c,8) r g'4(\sf
 	c,8) r <g e' c'> r q r
 	q r c, r r4
-	r8 <g g'>\p r q r q
+	r8 <g g'>-\tweak extra-offset #'(-0.5 . 0.5) \p r q r q
 % Bars 256 to 260
 	r q r q r q
 	r q r q r q
@@ -338,7 +338,7 @@ musicViolinIMvtIII = \relative c' {
 	<>^\atempo R2.*4
 % Bars 306 to 310
 	
-	gis,16\pp e' b e gis, e' b e gis, e' b e
+	gis,16-\tweak extra-offset #'(1 . 1) \pp e' b e gis, e' b e gis, e' b e
 	a, e' c e a, e' c e a, e' c e
 	b_\semprepp e d e b e d e gis, e' b e
 	a, e' c e a, e' c e c e d e
@@ -365,7 +365,7 @@ musicViolinIMvtIII = \relative c' {
 	g g'16 g b8 b16 b d8 d16 d
 	<g,, d' b' f'>8 r r4 r
 	<g f' d'>8 r r4 r
-	<g d' b'>8 r r4 f'8\p^\pizz r
+	<g d' b'>8 r r4 f'8\p-\tweak X-offset #-5 ^\pizz r
 % Bars 331 to 335
 	f r r4 r
 	<<{r4 r r8 \breathe \tempo "Allegro." r} {\fermataCentered}>> \bar "||"
@@ -373,7 +373,7 @@ musicViolinIMvtIII = \relative c' {
 	
 	
 % Bars 336 to 340
-	r4 r8 f^\arco_\semprepp
+	r4 r8 f-\tweak X-offset #-5 ^\arco_\semprepp
 	e e r g
 	g g r g
 	a a r a
@@ -429,7 +429,7 @@ musicViolinIMvtIII = \relative c' {
 % Bars 381 to 385
 	e8 r r4
 	a4 r8 a,
-	b r <g g'>4\f\>~
+	b r <g g'>4-\tweak X-offset #-1 \f\>~
 	q2~
 	q8\p g' r a
 % Bars 386 to 390
@@ -448,7 +448,7 @@ musicViolinIMvtIII = \relative c' {
 	g\ff g g g g g g g
 	g g g g g g g g
 	g\sf g g g g g g g
-	<a,! a'!>\sf q q q q q q q
+	<a,! a'!>-\tweak X-offset #-1 \sf q q q q q q q
 	g'8 r r4
 % Bars 401 to 405
 	R2*12
@@ -467,14 +467,14 @@ musicViolinIMvtIII = \relative c' {
 	
 	
 % Bars 421 to 425
-	<e! cis' g'>8\f r r4
+	<e! cis' g'>8-\tweak X-offset #0.5 \f r r4
 	R2
 	<d a'! f'>8\f r r4
 	R2
-	<d c' a'>8\f r r4
+	<d c' a'>8-\tweak X-offset #0.7 \f r r4
 % Bars 426 to 430
 	R2
-	<e c' g'>8\p r r4
+	<e c' g'>8-\tweak X-offset #0.5 \p r r4
 	R2*13
 % Bars 431 to 435
 	
@@ -488,12 +488,12 @@ musicViolinIMvtIII = \relative c' {
 	<g, f'>8^\pizz r r4
 	R2\fermataMarkup \bar "||"
 	\tempo "Tempo I." \time 3/4 R2.
-	<g e' e'>8\f^\arco r <g e' c'> r r4
+	<g e' e'>8-\tweak X-offset #-2.1 \f-\tweak X-offset #-5 ^\arco r <g e' c'> r r4
 	R2.
 % Bars 446 to 450
-	<g d' b' b'>8\f r <g d' b' g'> r r4
+	<g d' b' b'>8-\tweak X-offset #-2.1 \f r <g d' b' g'> r r4
 	R2.
-	<g e' e'>8\f r <g e' c'> r r4
+	<g e' e'>8-\tweak X-offset #-2.1 \f r <g e' c'> r r4
 	<a e' e'>8 r <a e' c'> r r4
 	r8 d'\p r c r b
 % Bars 451 to 455
@@ -501,10 +501,10 @@ musicViolinIMvtIII = \relative c' {
 	R2.*3
 	
 	
-	c,8\p^\pizz r r4 r
+	c,8\p-\tweak X-offset #-5 ^\pizz r r4 r
 % Bars 456 to 460
 	g'8 r r4 r
-	<g, e' c'>4.\ff^\arco e''32([ g16.-.]) g32[( e16.-.]) e32[( c16.-.])
+	<g, e' c'>4.-\tweak X-offset #-3.5 \ff^\arco e''32([ g16.-.]) g32[( e16.-.]) e32[( c16.-.])
 	c32[( b16.-.]) b4 b32[( d16.-.]) d32[( b16.-.]) b32[( g16.-.]) \mark \default
 	c4. e8-.\sf g,-. b-.
 	c r r4 r

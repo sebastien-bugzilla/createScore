@@ -133,8 +133,8 @@ musicSoloCelloMvtIII = \relative c'' {
 % Bars 116 to 120
 	\tuplet 6/4 4 {g16)( fis g fis g fis) g( fis g fis g fis) g( fis g fis g fis)}
 	\grace {fis16[( g)]} g2.~\startTrillSpan
-	\afterGrace g_\crescsottovoce {fis16\stopTrillSpan}
-	g4.( a16 b c8 d)
+	\afterGrace g_\crescmarkup {fis16\stopTrillSpan}
+	g4.(_\sottovoce a16 b c8 d)
 	e4( c4. b8)
 % Bars 121 to 125
 	a( f'~ f) f16( e) e( d) d( c)
@@ -354,7 +354,7 @@ musicSoloCelloMvtIII = \relative c'' {
 % Bars 316 to 320
 	\clef treble
 	b''8( fis) fis-. fis-. gis16( fis e fis)
-	\afterGrace gis2.\trill {fis16[ gis]}
+	\afterGrace gis2.\trill( {fis16[ gis])}
 	a8( e) e-. e-. fis16( e d! e)
 	\afterGrace fis2.^\naturaltrill( {e16[ fis]}
 % Bars 321 to 325
@@ -364,7 +364,7 @@ musicSoloCelloMvtIII = \relative c'' {
 	R2.
 	\clef bass r16 fis,(_\crescmarkup g fis g a b c e d c b \markYoffset #5.5 \mark \default
 % Bars 326 to 330
-	c)\ff e,( f! g a b c d f e d c
+	c) e,(\ff f! g a b c d f e d c
 	b8) r r4 r
 	\tuplet 6/4 4 {g,16(\f b ais b d cis d g fis g b ais b d cis d) d( b}
 	g8) r r4 r

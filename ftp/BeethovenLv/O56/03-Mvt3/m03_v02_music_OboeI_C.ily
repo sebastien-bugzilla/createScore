@@ -156,7 +156,7 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 166 to 170
 	e8\p e16 e e8[ e e e]
 	e\f r r4 b'8\sf b16 b
-	c8\sf c16 c b8\sf b16 b c8\sf c16 c
+	c8-\tweak X-offset #-1 \sf c16 c b8-\tweak X-offset #-1 \sf b16 b c8-\tweak X-offset #-1 \sf c16 c
 	b8 e,4\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
@@ -186,14 +186,14 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 211 to 215
 	R2.*5
 % Bars 216 to 220
-	r8 d16\pp d d8[ d d d]
+	r8 \once \override CombineTextScript.X-offset = #-3 d16\pp d d8[ d d d]
 	R2.
 	r8 g16\pp g g8[ g g g]
 	R2.
 	r8 g16\pp g g8[ g g g]
 % Bars 221 to 225
-	g2.^\crescmarkup \mark \default
-	c8-.\f[ g-. c-. g-. e-. c-.]
+	g2._\crescmarkup \mark \default
+	c8-.-\tweak X-offset #-2 \f[ g-. c-. g-. e-. c-.]
 	g' r r4 r
 	R2.*21
 % Bars 226 to 230
@@ -207,18 +207,18 @@ musicOboeIMvtIII = \relative c'' {
 	
 	
 	
-	e2\ff~ e8 f
+	e2-\tweak X-offset #-1.5 \ff~ e8 f
 % Bars 246 to 250
 	e4 e16 d e f g e f g
 	a4. a4 a8
 	d,8 d d4. d16( f)
 	e2~ e8 f
-	e4 c4.\sf( b8)
+	e4 c4.-\tweak X-offset #-1 \sf( b8)
 % Bars 251 to 255
 	a4 b8( f'4) f8
-	f4\ff( e8) r f4(\sf
+	f4-\tweak X-offset #-1.5 \ff( e8) r f4(\sf
 	e8) r c' r c r
-	c r c, r r4
+	c r \once \partcombineApart c, r r4
 	R2.
 % Bars 256 to 260
 	r4 e4(\p f8) r
@@ -241,7 +241,7 @@ musicOboeIMvtIII = \relative c'' {
 	g8 r r4 r
 	R2.*2
 	
-	e8 r r4 e8-. f-.
+	e8\p r r4 e8-. f-.
 	g r g r g r
 % Bars 281 to 285
 	g r r4 r8 g
@@ -292,7 +292,7 @@ musicOboeIMvtIII = \relative c'' {
 	g_\crescmarkup \mark \default
 % Bars 326 to 330
 	c8\f-.[ g-. c-. g-. e-. c-.]
-	g8 g16 g b8 b16 b d8 d16 d
+	g8\f g16 g b8 b16 b d8 d16 d
 	f8 r r4 r
 	d8 r r4 r
 	b8 r r4 r
@@ -322,18 +322,18 @@ musicOboeIMvtIII = \relative c'' {
 	
 % Bars 386 to 390
 	\mark \default
-	g8(\f a16 b c8 d)
+	g8(-\tweak X-offset #-1.5 \f a16 b c8 d)
 	e4( c8) r
 	R2
 	r4 g8 g
 % Bars 391 to 395
-	g\f( a16 b c8 d)
+	g-\tweak X-offset #-0.5 \f( a16 b c8 d)
 	ees4.\sf r8
 	ees4.\sf r8
-	ees4.\sf r8
+	ees4.-\tweak X-offset #0.5 \sf r8
 	f2
 % Bars 396 to 400
-	d'\ff~
+	d'-\tweak X-offset #-2.5 \ff~
 	d
 	ees,\sf
 	\partcombineChords a2\sf
@@ -345,19 +345,19 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	ees2\fp~
+	ees2-\tweak X-offset #0.5 \fp~
 	ees~
 	ees~
 % Bars 416 to 420
 	ees
-	d\fp~
+	d-\tweak X-offset #0.5 \fp~
 	d~
 	d~
 	d
 % Bars 421 to 425
 	cis~\fp
 	cis
-	d\fp~
+	d-\tweak X-offset #0.5 \fp~
 	d
 	d\fp~
 % Bars 426 to 430
@@ -390,7 +390,7 @@ musicOboeIMvtIII = \relative c'' {
 	
 	c8\f[ e e e e e]
 	f[ f f f f f] \mark \default
-	e4. e8\sf-. g,-. b-. 
+	e4. \once \override CombineTextScript.X-offset = #-3 e8\sf-. g,-. b-. 
 	c8 r r4 r
 % Bars 461 to 465
 	c4. e8\sf-. g,-. b-. 

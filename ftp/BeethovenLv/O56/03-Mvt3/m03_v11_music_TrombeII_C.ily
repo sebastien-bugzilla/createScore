@@ -125,10 +125,10 @@ musicTrombeIIMvtIII = \relative c' {
 	c8) r r4 r
 % Bars 161 to 165
 	e4\sf e8 r r4
-	r4 c\sf c8 r
+	r4 c-\tweak X-offset #-1 \sf c8 r
 	R2.*2
 	
-	e8\f e16 e e8 e e e
+	\once \override CombineTextScript.X-offset = #1 e8\f e16 e e8 e e e
 % Bars 166 to 170
 	e\p r r4 r
 	R2.
@@ -159,8 +159,8 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 216 to 220
 	
 % Bars 221 to 225
-	r4 r g,\p \mark \default
-	c8\f-. r r4 r
+	r4 r g,-\tweak extra-offset #'(-2 . 2) \p \mark \default
+	c8-\tweak extra-offset #'(-2 . 2.5) \f-. r r4 r
 	g8 r r4 r
 	R2.*20
 % Bars 226 to 230
@@ -173,7 +173,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
-	r4 r g8\ff g
+	r4 r g8-\tweak extra-offset #'(-2.5 . 2) \ff g
 	g2 g8 g
 % Bars 246 to 250
 	g4 c4. c8
@@ -183,7 +183,7 @@ musicTrombeIIMvtIII = \relative c' {
 	g4 c4. c16 c
 % Bars 251 to 255
 	c8 r g4 r8 g16 g
-	g4(\ff c8) r g4\sf(
+	g4^(-\tweak extra-offset #'(1.5 . 1.5) \ff c8) r g4-\tweak extra-offset #'(1.5 . 2) \sf^(
 	c8) r g' r e r
 	c r c r r4
 	R2.*7
@@ -207,7 +207,7 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 286 to 290
 	c8\f r c r c r
 	R2.
-	g8\f r g r g r
+	g8-\tweak X-offset #-2.3 \f r g r g r
 	R2.*3
 	
 % Bars 291 to 295
@@ -239,7 +239,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	g2. \mark \default
 % Bars 326 to 330
-	c8\f-. g-. c-. g'-. e-. c-. 
+	c8-\tweak extra-offset #'(-2.3 . 2) \f-. g-. c-. g'-. e-. c-. 
 	g r g r g r
 	g r r4 r
 	g8 r r4 r
@@ -270,18 +270,18 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 386 to 390
 	\mark \default
-	c8\f r c c
+	c8-\tweak X-offset #-2 \f r c c
 	c4 c8 r
 	R2
 	r4 g8 g
 % Bars 391 to 395
-	g\f r c c
+	g-\tweak X-offset #0.8 \f r c c
 	c4.\sf r8
 	c4.\sf r8
 	R2*2
 	
 % Bars 396 to 400
-	g2\ff~
+	g2-\tweak X-offset #-3 \ff~
 	g
 	c4.\sf r8
 	c4.\sf r8
@@ -326,10 +326,10 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	c2.\f
 	g \mark \default
-	c4. g8\sf g g
+	c4. g8-\tweak X-offset #-3.2 \sf g g
 	c r r4 r
 % Bars 461 to 465
-	c4. g8\sf g g
+	c4. g8-\tweak X-offset #-3.2 \sf g g
 	c8 r r4 r
 	R2.*2
 	\mark \default

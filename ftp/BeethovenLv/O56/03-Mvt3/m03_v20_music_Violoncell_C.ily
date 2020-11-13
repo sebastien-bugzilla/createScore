@@ -201,36 +201,36 @@ musicVioloncellMvtIII = \relative c' {
 	a8\p r r4 r
 	a8^\pizz r r4 r
 	g8 r r4 g8 r
-	c r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
+	c r r4 r8 \tuplet 3/2 8 {g16(\f-\tweak X-offset #-4 ^\arco a b)}
 	c8 r r4 r
 % Bars 176 to 180
-	c8^\pizz\p r r4 r
+	c8-\tweak X-offset #1 ^\pizz\p r r4 r
 	b8 r r4 b8 r
-	e r r4 r8 \tuplet 3/2 8 {e,16(\f^\arco fis gis)} \mark \default
+	e r r4 r8 \tuplet 3/2 8 {e,16(\f-\tweak X-offset #-4.5 ^\arco fis gis)} \mark \default
 	a8 r r4 r
 	a8\p^\pizz r r4 r
 % Bars 181 to 185
 	g!8 r r4 g8 r
-	c r r4 r8 \tuplet 3/2 8 {g16(\f^\arco a b)}
+	c r r4 r8 \tuplet 3/2 8 {g16(\f-\tweak X-offset #-4 ^\arco a b)}
 	c8 r r4 r
-	c8\p^\pizz r r4 r
+	c8\p-\tweak X-offset #1 ^\pizz r r4 r
 	b8 r r4 b8 r
 % Bars 186 to 190
-	e8 r r4 r8 \tuplet 3/2 8 {e,16(\f^\arco fis gis)}
+	e8 r r4 r8 \tuplet 3/2 8 {e,16(\f-\tweak X-offset #-5 ^\arco fis gis)}
 	a8 r r4 r
-	a8\p^\pizz r r4 r
+	a8\p-\tweak X-offset #1 ^\pizz r r4 r
 	d8 r r4 a8 r
-	d r r4 r8 \tuplet 3/2 8 {b16(\f^\arco cis dis)}
+	d r r4 r8 \tuplet 3/2 8 {b16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 % Bars 191 to 195
 	e8 r r4 r
-	e8^\pizz\p r r4 r
+	e8-\tweak X-offset #1 ^\pizz\p r r4 r
 	a,8 r r4 e'8 r
-	a, r r4 r8 \tuplet 3/2 8 {e16(\f^\arco fis gis)}
+	a, r r4 r8 \tuplet 3/2 8 {e16(\f\tweak X-offset #-5 ^\arco fis gis)}
 	a8 r r4 r
 % Bars 196 to 200
-	a8\p^\pizz r r4 r
+	a8\p-\tweak X-offset #1 ^\pizz r r4 r
 	d8 r r4 a8 r
-	d r r4 r8 \tuplet 3/2 8 {b16(\f^\arco cis dis)}
+	d r r4 r8 \tuplet 3/2 8 {b16(\f-\tweak X-offset #-5 ^\arco cis dis)}
 	e8 r r4 r
 	e8\p^\pizz r r4 r
 % Bars 201 to 205
@@ -277,11 +277,11 @@ musicVioloncellMvtIII = \relative c' {
 % Bars 246 to 250
 	c g c g c b c d e c d e
 	f e d cis d cis d e f d f fis
-	g g, g g g g' d b g f'! d b
+	\once \offset Beam.positions #'(-0.5 . 0) g g, g g g g' d b g f'! d b
 	c g c g c g c g c g b g
 	c g c g c b c d e c d e
 % Bars 251 to 255
-	f d e f g g, b g b g b g
+	f d e f \once \offset Beam.positions #'(-0.5 . 0) g g, b g b g b g
 	g4(\ff c8) r g4(\sf
 	c8) r g' r e r
 	c r c r r4
@@ -330,7 +330,7 @@ musicVioloncellMvtIII = \relative c' {
 	f r r4 r8 c
 	f,\dim r f' r f r
 	f r f r f r
-	f\pp r r r^\rallentando r4
+	f\pp r r r_\rallentando r4
 	R2.*3
 % Bars 301 to 305
 	
@@ -361,11 +361,11 @@ musicVioloncellMvtIII = \relative c' {
 	c4 c r8 c
 	g4_\crescmarkup g' r8 g^\arco \mark \default
 % Bars 326 to 330
-	c-. g-. c-. g-. e-. c-. 
+	c-.\f g-. c-. g-. e-. c-. 
 	g g16 g b8 b16 b d8 d16 d
 	g8 r r4 r
 	g,8 r r4 r
-	g8 r r4 g8\p^\pizz r
+	g8 r r4 g8\p-\tweak X-offset #-5 ^\pizz r
 % Bars 331 to 335
 	g r r4 r
 	<<{r4 r r8 \breathe \tempo "Allegro." r}{\fermataCentered}>> \bar "||"
@@ -373,7 +373,7 @@ musicVioloncellMvtIII = \relative c' {
 	
 	
 % Bars 336 to 340
-	r4 r8 g'_\semprepp^\arco
+	r4 r8 g'_\semprepp-\tweak X-offset #-5 ^\arco
 	c c r c
 	c c r c
 	f, f r d
@@ -487,7 +487,7 @@ musicVioloncellMvtIII = \relative c' {
 	g8^\pizz r r4
 	R2\fermataMarkup \bar "||"
 	\time 3/4 \tempo "Tempo I." R2.
-	c8\f^\arco r c r r4
+	c8\f-\tweak X-offset #-5 ^\arco r c r r4
 	R2.
 % Bars 446 to 450
 	g8\f r g r r4
@@ -500,7 +500,7 @@ musicVioloncellMvtIII = \relative c' {
 	R2.*3
 	
 	
-	c8\p^\pizz r r4 r
+	c8\p-\tweak X-offset #-5 ^\pizz r r4 r
 % Bars 456 to 460
 	g'8 r r4 r
 	c,8\ff^\arco c c c c c

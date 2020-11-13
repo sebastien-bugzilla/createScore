@@ -115,10 +115,10 @@ musicSoloViolinMvtIII = \relative c'' {
 	g\dim( f e d e f) g( f e d e f) g( f e d e f)
 	g( f e d e f) g( f e d e f) g( f e d e f)}
 % Bars 106 to 110
-	g4\p r8 \dimText "rallentando" e(-.\> g-. e)-. 
+	g4\p r8 \textSpanner "rallentando" #'italic e(-._\startTextSpan g-. e)-. 
 	g4 r8 e(-. g-. e)-. 
 	g(-. e-. g-. e-. g-. e)-. 
-	g4 r8 e(-. g-. e)-. 
+	g4 r8 e(-. g-. e)-.\stopTextSpan
 	<>^\atempo g\pp r r g,([ c)] r
 % Bars 111 to 115
 	r c,[( e)] r r4
@@ -253,7 +253,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) fis( g) fis( g)
 % Bars 241 to 245
-	g4.(_\crescmarkup\startTrillSpan a16\stopTrillSpan b c8 d)
+	g4.(\cresc\startTrillSpan a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)( c4. b8)
 	a( f') b,(\noBeam g'4) g8
 	g4(\f c,8) r r4
@@ -307,7 +307,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	R2.*2
 	
 	\tuplet 6/4 4 {c'16\p( b) d-. c( b) d-. c-. g-. e-. c e c g c g e g e
-	c-. e'(^\crescmarkup dis e dis e) c-. g'( fis g fis g) e-. c'( b c b c)}
+	c-. e'(_\crescmarkup dis e dis e) c-. g'( fis g fis g) e-. c'( b c b c)}
 % Bars 291 to 295
 	\grace {b16[( c d]} c4)( bes2)~
 	bes8\noBeam g'\f-. e-. c-. bes-. g-. 
@@ -341,11 +341,11 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 316 to 320
 	
 	b''8( fis) fis-. fis-. gis16( fis e fis)
-	\afterGrace gis2.\startTrillSpan {fis16[\stopTrillSpan gis]}
+	\shape #'((0 . 2)(0 . 1.5)(0 . 0.5)(0 . 0)) Slur \afterGrace 15/16 gis2.-\tweak extra-offset #'(0 . -4) \startTrillSpan( {fis16[\stopTrillSpan gis)]}
 	a8( e) e-. e-. fis16( e d! e)
-	\afterGrace fis2.\startTrillSpan^\natural {e16[\stopTrillSpan fis]}
+	\shape #'((0 . 2)(0 . 1.5)(0 . 0.5)(0 . 0)) Slur \trillSpanCustom #6 #naturaltrill \afterGrace 15/16 fis2.-\tweak extra-offset #'(-0.5 . -3.7) \startTrillSpan( {e16[\stopTrillSpan fis]}
 % Bars 321 to 325
-	g16 fis,( g a b c d e g f! e d
+	g16) fis,( g a b c d e g f! e d
 	e) g,( a b c d e f a g f e)
 	d4 r r
 	R2.
@@ -358,13 +358,13 @@ musicSoloViolinMvtIII = \relative c'' {
 	\tuplet 6/4 4 {d,,16\f( f e f b ais b d cis d f e f a! gis a) a( gis}
 % Bars 331 to 335
 	a2.)\>
-	aes2\p\fermata~ aes8 \breathe \tempo "Allegro." g16[ g] \bar "||"
+	aes2-\tweak X-offset #-1.5 \p\fermata~ aes8 \breathe \tempo "Allegro." g16[ g] \bar "||"
 	\time 2/4 g4. g16 g
 	g4. g16 g
 	\tuplet 3/2 4 {g8 g_\crescmarkup g g g g
 % Bars 336 to 340
 	g g g} g16\p g g g
-	g16\pp-. g-. a-. b-. c-. b-. c-. d-. 
+	g16-\tweak X-offset #0.5 \pp-. g-. a-. b-. c-. b-. c-. d-. 
 	e-. dis-. e-. d-. c-. d-. c-. b-. 
 	a_\semprestacc d f e d e d c
 	b c b a g g g g
@@ -378,7 +378,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	
 % Bars 351 to 355
 	
-	r4 r16 d, e fis
+	r4 r16 d,-. e-. fis-.
 	g\< a b c d\> b c a\!
 	g4 r16 d e fis
 	g\< a b c d\> b c a\!
@@ -403,19 +403,19 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 371 to 375
 	e8 r r4
 	R2
-	r16 f'\f a g f e d c
+	r16 f'-\tweak X-offset #-1 \f a g f e d c
 	b a g f e d c b
 	e\p g c e a,, c f a
 % Bars 376 to 380
 	g, c e g g, b d g
-	c,\p e' g f e d c bes
+	\once \override Beam.auto-knee-gap = #1 c,\p e' g f e d c bes
 	a8 r r4
 	r16 fis' a g fis e d c
 	b!8 r r4
 % Bars 381 to 385
 	r16 gis' b a gis f! e d
 	c a c b a g! f e
-	d8 r g'4\f\startTrillSpan~
+	d8 r g'4-\tweak X-offset #-1.5 \f\startTrillSpan~
 	g4. a16\stopTrillSpan b
 	d\p c b c d c b a
 % Bars 386 to 390
@@ -454,7 +454,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	\tuplet 3/2 4 {c'8\sf a fis} d r
 % Bars 426 to 430
 	r4 \tuplet 3/2 4 {c8 a fis
-	g\p( c, d ees e f
+	g-\tweak X-offset #-0.5 \p( c, d ees e f
 	fis g aes a bes b
 	c) e,( f fis g gis
 	a bes b c cis d
@@ -463,12 +463,12 @@ musicSoloViolinMvtIII = \relative c'' {
 	c d ees e f fis
 	g) e( f g e f 
 	g) e( f g f e)}
-	d2\startTrillSpan~
+	\trillSpanPadding #1 d2\startTrillSpan~
 % Bars 436 to 440
 	d
-	f,\startTrillSpan~
+	\trillSpanPadding #1 f,\startTrillSpan~
 	f
-	d'\startTrillSpan~
+	\trillSpanPadding #1.5 d'\startTrillSpan~
 	d \mark \default
 % Bars 441 to 445
 	b\startTrillSpan~\<
@@ -490,7 +490,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	g'2._\crescmarkup\startTrillSpan~
 % Bars 456 to 460
 	g2~ \tuplet 6/4 4 {g16\stopTrillSpan g( fis g a b)}
-	c8\f r r4 r
+	c8-\tweak X-offset #-2 \f r r4 r
 	R2. \mark \default
 	R
 	r16 g(\p a b c d e f g f e d)

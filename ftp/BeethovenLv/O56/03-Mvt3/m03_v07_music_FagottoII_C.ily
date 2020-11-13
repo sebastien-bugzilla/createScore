@@ -148,15 +148,15 @@ musicFagottoIIMvtIII = \relative c {
 	g4(-\tweak X-offset #0.5 \sf c8) r g4(-\tweak extra-offset #'(-2.5 . 1) \sf
 	c8) r r4 r 
 % Bars 161 to 165
-	e,4(\sf a8) r r4
-	r4 c(\sf f,8) r
+	e,4(-\tweak X-offset #-1 \sf a8) r r4
+	r4 c(-\tweak X-offset #-1 \sf f,8) r
 	a'4(\sf d,8) r a'4\sf( 
 	dis,8) r a'4.(\sf dis,8)
 	e8 r r4 r
 % Bars 166 to 170
 	e16(\p dis e dis) e-. d-. c-. b-. a-. b-. c-. d-. 
 	e8\f r r4 gis8\sf gis16 gis 
-	a8\sf a16 a gis8\sf gis16 gis a8\sf a16 a
+	a8-\tweak X-offset #-1 \sf a16 a gis8-\tweak X-offset #-1 \sf gis16 gis a8-\tweak X-offset #-1 \sf a16 a
 	gis8 e4\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
@@ -169,12 +169,12 @@ musicFagottoIIMvtIII = \relative c {
 	r8 c16 c c8 c c c
 	r8 b16 b b8 b b b
 	b r r4 r \mark \default
-	r8 a16\pp a a8 a a a
+	r8 a16-\tweak X-offset #-1.5 \pp a a8 a a a
 	r8 a16 a a8 a a a
 % Bars 181 to 185
 	r8 c16 c c8 c b d16 b
 	c8 r r4 r
-	r8 c16\pp c c8 c c c
+	r8 \once \override CombineTextScript.X-offset = #-4 c16\pp c c8 c c c
 	r8 c16 c c8 c c c
 	r8 b16 b b8 b b b
 % Bars 186 to 190
@@ -212,7 +212,7 @@ musicFagottoIIMvtIII = \relative c {
 	R2.*5
 % Bars 221 to 225
 	\mark \default
-	r8 g\f-. c-. g-. e-. c-. 
+	r8 \once \offset Beam.positions #'(0.5 . 0.5) g\f-. c-. g-. e-. c-. 
 	g r r4 r
 	R2.
 	r4 c'8\pp r c r
@@ -231,7 +231,7 @@ musicFagottoIIMvtIII = \relative c {
 	
 	
 	
-	r4 r c,16\ff-. g-. c-. g-. 
+	r4 r c,16-\tweak extra-offset #'(-2.5 . 2) \ff-. g-. c-. g-. 
 	c g c g c g c g c g c g
 % Bars 246 to 250
 	c g c g c b c d e c d e
@@ -241,7 +241,7 @@ musicFagottoIIMvtIII = \relative c {
 	c g c g c b c d e c d e
 % Bars 251 to 255
 	f d e f g g, b g b g b g
-	g4(\ff c8) r g4(\sf
+	g4(-\tweak X-offset #0.5 \ff c8) r g4(-\tweak X-offset #0.5 \sf
 	c8) r g' r e r
 	c r c r r4
 	r c'4(\p d8) r 
@@ -278,7 +278,7 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 286 to 290
 	c\f r e, r e r
 	f2.\p
-	b,8\f g b g b g
+	b,8-\tweak X-offset #-2 \f g b g b g
 	R2.
 	R2.*9
 % Bars 291 to 295
@@ -315,7 +315,7 @@ musicFagottoIIMvtIII = \relative c {
 	R \mark \default
 % Bars 326 to 330
 	R
-	g8\f g16 g b8 b16 b d8 d16 d
+	\once \offset positions #'(-0.7 . 0) Beam g8-\tweak X-offset #-1 \f g16 g b8 b16 b d8 d16 d
 	g8 r r4 r
 	g,8 r r4 r
 	g8 r r4 r
@@ -349,7 +349,7 @@ musicFagottoIIMvtIII = \relative c {
 	
 % Bars 376 to 380
 	
-	r8 e,4\pp e8
+	r8 e,4-\tweak X-offset #0.8 \pp e8
 	r f4 f8
 	r fis4 fis8
 	r g4 g8
@@ -360,18 +360,18 @@ musicFagottoIIMvtIII = \relative c {
 	R2*3
 % Bars 386 to 390
 	\mark \default
-	e,8\f( f16 d e8 f)
+	e,8-\tweak X-offset #-2 \f( f16 d e8 f)
 	g4( e8) r
 	R2
 	R
 % Bars 391 to 395
-	e8\f( f16 d e8 b')
-	c,2\sf
-	aes\sf
+	e8-\tweak X-offset #-0.5 \f( f16 d e8 b')
+	c,2-\tweak X-offset #-1 \sf
+	aes-\tweak X-offset #-1 \sf
 	bes\sf
 	bes'
 % Bars 396 to 400
-	b!~\ff
+	b!~-\tweak X-offset #-2.5 \ff
 	b
 	c\sf
 	fis,\sf
@@ -383,12 +383,12 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 411 to 415
 	
 	\mark \default
-	fis,2\fp~
+	fis,2-\tweak X-offset #0.5 \fp~
 	fis~
 	fis~
 % Bars 416 to 420
 	fis
-	f!~\fp
+	f!~-\tweak X-offset #0.5 \fp
 	f~
 	f~
 	f
@@ -413,12 +413,12 @@ musicFagottoIIMvtIII = \relative c {
 % Bars 441 to 445
 	R2
 	R2\fermataMarkup \bar "||"
-	\time 3/4 \tempo "Tempo I." c'8\pp-. c-. c-. c-. c-. c-. 
+	\time 3/4 \tempo "Tempo I." \once \override CombineTextScript.X-offset = #-4 c'8\pp-. c-. c-. c-. c-. c-. 
 	c,\f r c r r4
 	f8\pp-. f-. f-. f-. f-. f-. 
 % Bars 446 to 450
 	g\f r g r r4
-	c8\pp-. c-. c-. c-. c-. c-. 
+	\once \override CombineTextScript.X-offset = #-4 c8\pp-. c-. c-. c-. c-. c-. 
 	c,\f r c r r4
 	a8 r a r r4
 	R2.*7
@@ -426,12 +426,12 @@ musicFagottoIIMvtIII = \relative c {
 	
 % Bars 456 to 460
 	
-	c8\f c c c c c 
+	c8-\tweak X-offset #-2 \f c c c c c 
 	g g g g g g \mark \default
-	c4. e8-.\sf g,-. b-.
+	c4. e8-.-\tweak X-offset #-2.7 \sf g,-. b-.
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8\sf-. g,-. b-.
+	c4. e8-\tweak X-offset #-2.7 \sf-. g,-. b-.
 	c8 r r4 r
 	R2.*2
 	\mark \default

@@ -7,7 +7,7 @@
 %###############################################################################
 timeMvtI = {
 	\time 4/4
-	\tempo "Allegro"
+%	\tempo "Allegro"
 }
 timeMvtII = {
 	\time 3/8
@@ -15,5 +15,5 @@ timeMvtII = {
 }
 timeMvtIII = {
 	\time 3/4
-	%\tempo "Rondo alla Polacca."
+	\tempo "Rondo alla Polacca."
 }

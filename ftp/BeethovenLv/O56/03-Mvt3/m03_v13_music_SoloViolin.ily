@@ -115,10 +115,10 @@ musicSoloViolinMvtIII = \relative c'' {
 	g\dim( f e d e f) g( f e d e f) g( f e d e f)
 	g( f e d e f) g( f e d e f) g( f e d e f)}
 % Bars 106 to 110
-	g4\p r8 \dimText "rallentando" e(-.\> g-. e)-. 
+	g4\p r8 \textSpanner "rallentando" #'italic e(-._\startTextSpan g-. e)-. 
 	g4 r8 e(-. g-. e)-. 
 	g(-. e-. g-. e-. g-. e)-. 
-	g4 r8 e(-. g-. e)-. 
+	g4 r8 e(-. g-. e)-.\stopTextSpan
 	<>^\atempo g\pp r r g,([ c)] r
 % Bars 111 to 115
 	r c,[( e)] r r4
@@ -254,7 +254,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	a( f'~ f) f16( e) e( d) d( c)
 	c( b) b( a) a( g) fis( g) fis( g) fis( g)
 % Bars 241 to 245
-	g4.(_\crescmarkup\startTrillSpan a16\stopTrillSpan b c8 d)
+	g4.(\cresc\startTrillSpan a16\stopTrillSpan b c8 d)
 	\grace {c16[( d]} e4)( c4. b8)
 	a( f') b,(\noBeam g'4) g8
 	g4(\f c,8) r r4
@@ -342,11 +342,11 @@ musicSoloViolinMvtIII = \relative c'' {
 % Bars 316 to 320
 	
 	b''8( fis) fis-. fis-. gis16( fis e fis)
-	\afterGrace gis2.\startTrillSpan {fis16[\stopTrillSpan gis]}
+	\afterGrace gis2.\startTrillSpan( {fis16[\stopTrillSpan gis])}
 	a8( e) e-. e-. fis16( e d! e)
-	\trillSpanCustom #6 #naturaltrill \afterGrace fis2.\startTrillSpan {e16[\stopTrillSpan fis]}
+	\trillSpanCustom #6 #naturaltrill \afterGrace fis2.\startTrillSpan( {e16[\stopTrillSpan fis]}
 % Bars 321 to 325
-	g16 fis,( g a b c d e g f! e d
+	g16) fis,( g a b c d e g f! e d
 	e) g,( a b c d e f a g f e)
 	d4 r r
 	R2.
@@ -379,7 +379,7 @@ musicSoloViolinMvtIII = \relative c'' {
 	
 % Bars 351 to 355
 	
-	r4 r16 d, e fis
+	r4 r16 d,-. e-. fis-.
 	g\< a b c d\> b c a\!
 	g4 r16 d e fis
 	g\< a b c d\> b c a\!

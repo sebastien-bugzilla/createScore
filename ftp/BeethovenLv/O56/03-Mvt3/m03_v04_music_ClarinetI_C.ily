@@ -132,7 +132,7 @@ musicClarinetIMvtIII = \relative c'' {
 	e8) r r4 r
 % Bars 161 to 165
 	e'4\sf( e8) r r4
-	r c(\sf f,8) r
+	r c(-\tweak extra-offset #'(-1.5 . 1.0) \sf f,8) r
 	R2.*3
 % Bars 166 to 170
 	b8\p b16 b b8-. b-. c-. c-. 
@@ -189,10 +189,10 @@ musicClarinetIMvtIII = \relative c'' {
 	
 % Bars 221 to 225
 	\mark \default
-	c'8\f-. g-. c-. g-. e-. c-. 
+	\once \override CombineTextScript.X-offset = #-2 c'8\f-. g-. c-. g-. e-. c-. 
 	g' r r4 r
 	R2.
-	r4 g8\pp r g r
+	r4 g8-\tweak X-offset #0 \pp r g r
 % Bars 226 to 230
 	a8 r r4 r 
 	r b8 r b r
@@ -209,7 +209,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	c2\ff~ c8 d
+	c2-\tweak X-offset #-2 \ff~ c8 d
 % Bars 246 to 250
 	c4 c4. c8
 	a4 a8 r r a
@@ -218,7 +218,7 @@ musicClarinetIMvtIII = \relative c'' {
 	c4. r8 r4
 % Bars 251 to 255
 	r r8 d4 d8
-	d4(\ff c8) r d4(\sf
+	d4(-\tweak X-offset #-2.5 \ff c8) r d4(-\tweak X-offset #-2 \sf
 	c8) r e r e r
 	e r \once \partcombineApart c, r r4
 	R2.*5
@@ -244,14 +244,14 @@ musicClarinetIMvtIII = \relative c'' {
 	g8 r r4 r
 	R2.*2
 	
-	e8\p r r4 e8-. f-.
+	e8-\tweak X-offset #-1 \p r r4 e8-. f-.
 	g r g r g r
 % Bars 281 to 285
 	g r r4 r8 g
 	a r a r a r
 	a r r4 r8 c\f
 	c r r4 r
-	r4 e8\p r f r \mark \default
+	r4 e8-\tweak X-offset #-1 \p r f r \mark \default
 % Bars 286 to 290
 	e\f r g, r g r
 	R2.
@@ -275,7 +275,7 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	
 	
-	r4 r g_\semprepp(
+	r4 r g-\tweak X-offset #-1 _\semprepp(
 	b2.)~
 % Bars 316 to 320
 	b~
@@ -290,7 +290,7 @@ musicClarinetIMvtIII = \relative c'' {
 	g~
 	g_\crescmarkup \mark \default
 % Bars 326 to 330
-	c8\f-. g-. c-. g-. e-. c-. 
+	\once \override CombineTextScript.X-offset = #-3 c8-\tweak X-offset #-1 \f-. g-. c-. g-. e-. c-. 
 	g g'16 g b8 b16 b d8 d16 d
 	d8 r r4 r
 	b8 r r4 r
@@ -321,18 +321,18 @@ musicClarinetIMvtIII = \relative c'' {
 	
 % Bars 386 to 390
 	\mark \default
-	g8\f( a16 b c8 d)
+	g8-\tweak X-offset #-1.5 \f( a16 b c8 d)
 	e4( c8) r
 	R2
 	r4 \partcombineApart g8 g \partcombineAutomatic
 % Bars 391 to 395
 	g(\f a16 b c8 b)
-	c4.\sf r8
-	c4.\sf r8
+	c4.-\tweak X-offset #-1 \sf r8
+	c4.-\tweak X-offset #-1 \sf r8
 	\once \partcombineApart g4. r8
 	aes2
 % Bars 396 to 400
-	g\ff~
+	g-\tweak X-offset #-2.5 \ff~
 	g
 	g\sf
 	ees'\sf
@@ -350,7 +350,7 @@ musicClarinetIMvtIII = \relative c'' {
 % Bars 421 to 425
 	
 % Bars 426 to 430
-	d,2\p
+	d,2-\tweak X-offset #-1 \p
 	e8 r r4
 	R2*13
 % Bars 431 to 435
@@ -379,10 +379,10 @@ musicClarinetIMvtIII = \relative c'' {
 	
 	e,8\f e e e e e 
 	f f f f f f \mark \default
-	e4. e'8\sf-. g,-. b-. 
+	e4. \once \override CombineTextScript.X-offset = #-3 e'8-\tweak X-offset #-1.5 \sf-. g,-. b-. 
 	c8 r r4 r
 % Bars 461 to 465
-	c4. e8\sf-. g,-. b-.
+	c4. e8-\tweak X-offset #-1.5 \sf-. g,-. b-.
 	c r r4 r
 	R2.*2
 	\mark \default

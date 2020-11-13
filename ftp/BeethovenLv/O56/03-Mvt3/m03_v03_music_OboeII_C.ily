@@ -155,7 +155,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 166 to 170
 	e8\p e16 e e8[ e e e]
 	e\f r r4 gis'8\sf gis16 gis
-	a8\sf a16 a gis8\sf gis16 gis a8\sf a16 a
+	a8-\tweak X-offset #-1 \sf a16 a gis8-\tweak X-offset #-1 \sf gis16 gis a8-\tweak X-offset #-1 \sf a16 a
 	gis8 e4\sf f8-. e-. d-.
 	\acciaccatura d c-. b-. c-. d-. e-. e,-. 
 % Bars 171 to 175
@@ -192,7 +192,7 @@ musicOboeIIMvtIII = \relative c'' {
 	R2.
 % Bars 221 to 225
 	R2. \mark \default
-	e8-.\f[ g-. c-. g-. e-. c-.]
+	e8-.-\tweak X-offset #-2 \f[ g-. c-. g-. e-. c-.]
 	g' r r4 r
 	R2.*21
 % Bars 226 to 230
@@ -206,7 +206,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	c2\ff~ c8 d
+	c2-\tweak X-offset #-1.5 \ff~ c8 d
 % Bars 246 to 250
 	c4 e,16 d e f g e f g
 	a4. a4 a8
@@ -215,7 +215,7 @@ musicOboeIIMvtIII = \relative c'' {
 	c4 e,16 d e f g e f g
 % Bars 251 to 255
 	f4 f8( d'4) d8
-	d4\ff( c8) r d4(\sf
+	d4-\tweak X-offset #-1.5 \ff( c8) r d4(\sf
 	c8) r e r e r
 	e r c r r4
 	R2.
@@ -240,7 +240,7 @@ musicOboeIIMvtIII = \relative c'' {
 	e8 r r4 r
 	R2.*2
 	
-	c8 r r4 c8-. d-.
+	c8\p r r4 c8-. d-.
 	e r e r e r
 % Bars 281 to 285
 	e r r4 r8 e
@@ -321,18 +321,18 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 386 to 390
 	\mark \default
-	e8(\f f16 e e8 f)
+	e8(-\tweak X-offset #-1.5 \f f16 e e8 f)
 	g4( e8) r
 	R2
 	r4 g8 g
 % Bars 391 to 395
-	e\f( f16 d e8 b')
+	e-\tweak X-offset #-0.5 \f( f16 d e8 b')
 	c4.\sf r8
 	c4.\sf r8
-	g4.\sf r8
+	g4.-\tweak X-offset #0.5 \sf r8
 	d'2
 % Bars 396 to 400
-	f\ff~
+	f-\tweak X-offset #-2.5 \ff~
 	f
 	c\sf
 	c2_~\sf
@@ -344,19 +344,19 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 411 to 415
 	
 	\mark \default
-	a2\fp~
+	a2-\tweak X-offset #0.5 \fp~
 	a~
 	a~
 % Bars 416 to 420
 	a
-	aes\fp~
+	aes-\tweak X-offset #0.5 \fp~
 	aes~
 	aes~
 	aes
 % Bars 421 to 425
 	g~\fp
 	g
-	a!\fp~
+	a!-\tweak X-offset #0.5 \fp~
 	a
 	c\fp~
 % Bars 426 to 430
@@ -389,7 +389,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	e,8\f[ c' c  c c c]
 	d[ d d d d d] \mark \default
-	c4. e8\sf-. g,-. b-. 
+	c4. \once \override CombineTextScript.X-offset = #-3 e8\sf-. g,-. b-. 
 	c8 r r4 r
 % Bars 461 to 465
 	c4. e8\sf-. g,-. b-. 

@@ -248,7 +248,7 @@ musicOboeIIMvtIII = \relative c'' {
 	e8 r r4 r
 	R2.*2
 	
-	c8 r r4 c8-. d-.
+	c8\p r r4 c8-. d-.
 	e r e r e r
 % Bars 281 to 285
 	e r r4 r8 e
