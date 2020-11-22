@@ -19,7 +19,7 @@ musicViolinIIMvtI = \relative c' {
 	q-. r r2
 % Bars 11 to 15
 	<a f'>4-. r r  r8 g16( a
-	b4\f) r r r8 \tuplet 3/2 4 {g16([_\dimmarkup a b])}
+	b4\f) r r r8 \tuplet 3/2 4 {g16([-\tweak X-offset #-1.8 _\dimmarkup a b])}
 	c4\p r r2
 	R1
 	\crescText "cresc. poco a poco" c1\<
@@ -30,7 +30,7 @@ musicViolinIIMvtI = \relative c' {
 	g16( e g e g e g e \repeat tremolo 4 {g16 e)}
 	\repeat tremolo 4 {c'16( g)} \repeat tremolo 4 {e'( c)}
 % Bars 21 to 25
-	c16\noBeam\ff <a, f'>16 q q q q q q q2:16
+	c16\noBeam-\tweak X-offset #-1.5 \ff <a, f'>16 q q q q q q q2:16
 	q: q:
 	<g e'>: q:
 	q: q:
@@ -45,7 +45,7 @@ musicViolinIIMvtI = \relative c' {
 	<f d'>4-. f'2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
 	g4\p r r2
-	r2 r4 b,(
+	r2 r4 \shape #'((0 . 2)(0 . 0)(0 . -0.5)(0 . 0)) Slur b,(
 	c gis' a b)
 % Bars 36 to 40
 	c2._\crescmarkup e,4~
@@ -75,7 +75,7 @@ musicViolinIIMvtI = \relative c' {
 	\tuplet 3/2 4 {g_\crescmarkup c e g e c g c e g e c}
 	\tuplet 3/2 4 {g b d g d b g b d g d b}
 	\tuplet 3/2 4 {g c e g e c g c ees c ees g}
-	<fis ees'>8.\ff q16 q4 q8. q16 q4
+	<fis ees'>8.-\tweak X-offset #-1.5 \ff q16 q4 q8. q16 q4
 	q8.[-. q16-. q8.-. q16]-. q8.[-. q16-. q8.-. q16]-.
 % Bars 61 to 65
 	<g d'>4 r r <d b'>-.
@@ -139,7 +139,7 @@ musicViolinIIMvtI = \relative c' {
 	
 	
 	r2 r4 f'8\p r
-	<g, e'>16\ff q q q  q q q q  q q q q q q q q 
+	<g, e'>16-\tweak X-offset #-1.5 \ff q q q  q q q q  q q q q q q q q 
 	<g f'>  q q q  q q q q  q q q q  q q q q 
 % Bars 116 to 120
 	q q q q  q q q q  q q q q  q q q q  
@@ -160,7 +160,7 @@ musicViolinIIMvtI = \relative c' {
 	r4 c2( b4
 % Bars 131 to 135
 	c) r r2
-	c4-.\f c2( b4
+	c4-.-\tweak X-offset #0.5 \f c2( b4
 	c4) r r2
 	R1*4
 % Bars 136 to 140
@@ -194,9 +194,9 @@ musicViolinIIMvtI = \relative c' {
 	a r r a
 	a a a gis
 	cis, cis d d
-	r8. e16[\f^\arco-. fis8.-. gis16]-. a2\sf(~
+	r8. e16[-\tweak X-offset #-0.8 \f^\arco-. fis8.-. gis16]-. a2\sf(~
 % Bars 166 to 170
-	a8.[ cis16 e8. cis16]) a8 r b,4(\p
+	a8.[ cis16 e8. cis16]) a8 r b,4(-\tweak X-offset #-1 \p
 	a8) r r4 r r8 b
 	r a r b r a r ais
 	r b r ais r b r cis
@@ -262,7 +262,7 @@ musicViolinIIMvtI = \relative c' {
 	r b r b
 	\crescText "cresc. poco a poco" b,8\pp\< b b b gis' gis gis gis
 	b b b b b b b b \mark \default
-	a16\ff c, c c c4:16 c2:
+	a16-\tweak X-offset #-2 \ff c, c c c4:16 c2:
 % Bars 226 to 230
 	<bes e>2: q:
 	<bes g'>: q:

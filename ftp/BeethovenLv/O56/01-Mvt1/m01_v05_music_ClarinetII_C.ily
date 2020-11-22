@@ -18,7 +18,7 @@ musicClarinetIIMvtI = \relative c' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	c1\ff
+	c1-\tweak X-offset #-2 \ff
 	f
 	e~
 	e
@@ -30,7 +30,7 @@ musicClarinetIIMvtI = \relative c' {
 	g2. g4-.
 	g-. g-. g-. g-.
 % Bars 31 to 35
-	f-. f2\sf d8.-. c!16-.
+	f-. f2-\tweak X-offset #0.5 \sf d8.-. c!16-.
 	b4-. c2\sf a'8.-. fis16-. \mark \default
 	g4\p r r2
 	R1*6
@@ -55,7 +55,7 @@ musicClarinetIIMvtI = \relative c' {
 	r8. g16([\p a8. g16]) g4 r
 	r8. g16_\crescmarkup([ a8. g16]) g4 r
 	r8. g16([ a8. g16]) g4 r
-	fis2\ff fis
+	fis2-\tweak X-offset #0.3 \ff fis
 	fis4 fis fis fis
 % Bars 61 to 65
 	g r r g-.
@@ -107,7 +107,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 % Bars 131 to 135
 	
-	e4\f-. e2( f8. d16)
+	e4-\tweak X-offset #-0.5 \f-. e2( f8. d16)
 	g4 r r2
 	R1*15
 % Bars 136 to 140
@@ -130,7 +130,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	
-	r8. e16-.[\f e8.-. e16-.] e2~\sf
+	r8. e16-.[-\tweak X-offset #-1.8 \f e8.-. e16-.] e2~\sf
 % Bars 166 to 170
 	e~ e8 r r4
 	R1*27
@@ -162,10 +162,10 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	f2.\ff f4(
+	f2.-\tweak X-offset #-2 \ff f4(
 % Bars 226 to 230
 	e2. e4)
-	bes4 bes bes bes
+	bes4 bes s s
 	a2~ a8 c-. a-. c-.
 	a'4 r  r8. a16[-. a8.-. a16]-. 
 	a4 r  r8. a16[-. a8.-. a16]-. 

@@ -23,7 +23,7 @@ musicBassoMvtI = \relative c {
 	g-. r r2
 % Bars 11 to 15
 	a4-. r r r8 g16( a
-	b4\f) r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
+	b4\f) r r r8 \tuplet 3/2 4 {g16(-\tweak X-offset #-1.8 _\dimmarkup a b)}
 	c8\pp c c c  c c c c
 	c c c c  c c c c
 	\crescText "cresc. poco a poco" c\< c c c  c c c c 
@@ -168,7 +168,7 @@ musicBassoMvtI = \relative c {
 % Bars 146 to 150
 	e4 r r2
 	e4 r r2
-	r2 r4 r8 \tuplet 3/2 4 {b16(^\tutti cis dis)} \mark \default
+	r2 r4 r8 \tuplet 3/2 4 {\once \tupletDown b16(^\tutti cis dis)} \mark \default
 	e2\ff b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
@@ -252,7 +252,7 @@ musicBassoMvtI = \relative c {
 	e r e r
 	\crescText "cresc. poco a poco" e8\pp\< e e e  e e e e
 	e e e e  e e e e \mark \default
-	f\ff^\tutti c f c f c f c
+	f\ff-\tweak X-offset #1.5 ^\tutti c f c f c f c
 % Bars 226 to 230
 	g' c, g' c, g' c, g' c,
 	e c e c e c e c 

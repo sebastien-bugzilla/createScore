@@ -80,7 +80,7 @@ musicOboeIIMvtI = \relative c'' {
 		R
 		r8 \no } d4 d d d8~
 	d d4 d d d8
-	d4\fp r r2
+	d4 r r2
 	R1*4
 % Bars 71 to 75
 	

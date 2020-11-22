@@ -102,7 +102,7 @@ musicPianoUpMvtI = \relative c'' {
 	e,( e') r8 e2(\turn f8. c16)
 	e8.( dis16 d4.) d8\trill( \grace {cis16[ d]} e8 b)
 % Bars 136 to 140
-	d( c! b a) a4(\trill \grace {gis16[ a]} c8. a16)
+	d( c! b a) a4(-\tweak X-offset #-0.2 \trill \grace {gis16[ a]} c8. a16)
 	gis4 r r2 \voiceOne
 	\change Staff = "down" r16^\p e,, a c \change Staff = "up" e \change Staff = "down" a, c \change Staff = "up" e \change Staff = "down" r e, a c \change Staff = "up" e \change Staff = "down" a, c \change Staff = "up" e
 	\change Staff = "down" r16 d, a' c d a c d r d, e b' d e, b' d
@@ -116,7 +116,7 @@ musicPianoUpMvtI = \relative c'' {
 % Bars 146 to 150
 	\tuplet 3/2 4 {r8 e,_\crescmarkup( gis) gis( b) b( e) e( gis) gis( b) b(}
 	\tuplet 3/2 4 {e) e( b) b( gis) gis( e) e( b) b( gis) gis(}
-	\tuplet 3/2 4 {e\ff) b'-. gis-. e'-. b-. gis'-. e-. b'-. gis-. <gis b e>-. q-. q-.} \mark \default
+	\tuplet 3/2 4 {e\ff) b'-. gis-. \once \tupletUp e'-. b-. gis'-. e-. b'-. gis-. <gis b e>-. q-. q-.} \mark \default
 	q4 r r2
 	R1
 % Bars 151 to 155
@@ -143,16 +143,16 @@ musicPianoUpMvtI = \relative c'' {
 	f!)\pp f4 f f f8~
 	f_\crescmarkup f4 f f f8~
 	\tuplet 3/2 4 {f(\pp e g f e d c! bes a g f! e)}
-	\tuplet 3/2 4 {d(_\crescmarkup c! bes a g f! e bes' g e c! bes)}
-	a4\sf\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g)\!}
+	\tuplet 3/2 4 {\once \tupletUp d(_\crescmarkup c! bes a g f! e bes' g e c! bes)}
+	a4\sf\>(~ \tuplet 3/2 4 {a8 gis a cis e gis a e g\!)}
 % Bars 176 to 180
-	f4_\plegato^\dolce(~ \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
+	f4-\tweak extra-offset #'(0 . -1.5) _\plegato^\dolce(~ \once \tupletUp \tuplet 3/2 4 {f8 d' f} e4~ \tuplet 3/2 4 {e8 b d}
 	c4~ \tuplet 3/2 4 {c8 a' c} b4~ \tuplet 3/2 4 {b8 fis b)}
 	a2~ \tuplet 3/2 4 {a8( e_\dimmarkup fis gis a b)}
 	c2~ \tuplet 3/2 4 {c8 gis( a b c d)}
 	e16\pp dis e dis e dis e dis e dis f! e d c b a
 % Bars 181 to 185
-	\afterGrace b1\startTrillSpan {a8[\stopTrillSpan c b]}
+	\afterGrace 31/32 b1\startTrillSpan {a8[\stopTrillSpan c b]}
 	a4 r r2
 	R1*11
 % Bars 186 to 190

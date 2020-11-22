@@ -213,7 +213,7 @@ musicViolinIMvtI = \relative c' {
 	fis r r fis
 	e cis b b
 	a a gis b^\tutti
-	r8. e,16[^\arco-. fis8.-. gis16-.] a2\sf(~
+	r8. e,16[^\arco-.\f fis8.-. gis16-.] a2\sf(~
 % Bars 166 to 170
 	a8.[ cis16 e8. cis16]) a8 r^\solo d,4\p(
 	cis8) r r4 r r8 d

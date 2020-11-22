@@ -19,7 +19,7 @@ musicViolinIMvtI = \relative c' {
 	q-. r r2
 % Bars 11 to 15
 	<a f'!>4-. r r r8 g16( a
-	b4\f) r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
+	b4\f) r r r8 \tuplet 3/2 4 {g16(-\tweak X-offset #-1.8 _\dimmarkup a b)}
 	c1\pp
 	b8([ c d8. c16]) c4-. c-.
 	\crescText "cresc. poco a poco" e1\<
@@ -197,7 +197,7 @@ musicViolinIMvtI = \relative c' {
 	fis r r fis
 	e cis b b
 	a a gis b
-	r8. e,16[^\arco-. fis8.-. gis16-.] a2\sf(~
+	r8. e,16[^\arco-.-\tweak X-offset #-0.8 \f fis8.-. gis16-.] a2\sf(~
 % Bars 166 to 170
 	a8.[ cis16 e8. cis16]) a8 r d,4\p(
 	cis8) r r4 r r8 d
@@ -258,14 +258,14 @@ musicViolinIMvtI = \relative c' {
 	b~
 	b~
 	b2( d
-	gis b)
+	gis \once \stemUp b)
 	d1~
 % Bars 221 to 225
 	d4 d r d
 	r d r d
 	\crescText "cresc. poco a poco" gis,8\pp\< gis gis gis b b b b
 	d d d d gis gis gis gis \mark \default
-	<a, a'>2.\ff a'4(
+	<a, a'>2.-\tweak X-offset #-3.5 \ff a'4(
 % Bars 226 to 230
 	c2. bes4)
 	g-. g-. \acciaccatura a8 g8.[( f16 g8. a16])

@@ -92,7 +92,7 @@ musicFloteMvtI = \relative c''' {
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	R1*17
 % Bars 101 to 105
 	
@@ -122,7 +122,7 @@ musicFloteMvtI = \relative c''' {
 % Bars 146 to 150
 	
 	
-	\mark \default
+	\markYoffset #6 \mark \default
 	e'2\ff b4-. gis-.
 	e-. e'-. b-. gis-.
 % Bars 151 to 155
@@ -156,7 +156,7 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	r8. a16-.\p[ a8.-. a16-.] a4 r
+	r8. a16-.-\tweak X-offset #-1 \p[ a8.-. a16-.] a4 r
 	r  r8. a16-. a4-. r8. a16-.
 % Bars 201 to 205
 	a4-. r r2
@@ -171,8 +171,8 @@ musicFloteMvtI = \relative c''' {
 	
 	
 	
-	\mark \default
-	a2.\ff a4(
+	\markXoffset #1 \mark \default
+	a2.-\tweak X-offset #-2 \ff a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.([ f16 g8. a16)]

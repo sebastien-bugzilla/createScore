@@ -121,7 +121,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	c'1\pp~
+	\once \override CombineTextScript.X-offset = #-3.5 c'1\pp~
 % Bars 126 to 130
 	c~
 	c
@@ -130,7 +130,7 @@ musicFagottoIMvtI = \relative c' {
 	R1*2
 % Bars 131 to 135
 	
-	c,4(\f a g f)
+	\once \override CombineTextScript.X-offset = #1.2 c,4(\f a g f)
 	e r r2
 	R1*15
 % Bars 136 to 140
@@ -141,7 +141,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	e'2\ff b'4-. gis-.
+	e'2-\tweak X-offset #-1.5 \ff b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-. r r2
@@ -153,7 +153,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	
-	r8. e''16\f[-. d8.-. b16-.] a2\sf(~
+	r8. e''16\f[-. d8.-. b16-.] a2-\tweak X-offset #0.5 \sf(~
 % Bars 166 to 170
 	a8.[ cis16 a8. cis16]) a8 r r4
 	r d(\pp cis8) r r4
@@ -191,11 +191,11 @@ musicFagottoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	\partcombineApart a2. a4(
+	\partcombineApart a2. \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur a4(
 % Bars 226 to 230
 	c2. bes4)
 	g4-. g-. \acciaccatura a8 g8.[( f16 g8. a16)]
-	f2~ f8 a-. f-. a-.
+	f2~ f8 s4.
 	a4 \partcombineAutomatic r r8. a16-.[ a8.-. a16]-. 
 	c4 r r8. c16[-. c8.-. c16]-. 
 % Bars 231 to 235

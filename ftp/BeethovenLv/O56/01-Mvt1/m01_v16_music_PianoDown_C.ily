@@ -98,7 +98,7 @@ musicPianoDownMvtI = \relative c' {
 % Bars 131 to 135
 	r8 c,16( c') b,( b') a,( a') \clef bass g,( g') f,( f') e,( e') d,( d')
 	c,( c') r8 r4 r2
-	r8 c,16( c') d,( d') e,( e') f,( f') \clef treble g,( g') a,( a') b,( b')
+	r8 c,16( c') d,( d') e,( e') f,( f') g,( g') \clef treble a,( a') b,( b')
 	<c, c'>2( <a a'>
 	<fis fis'> <gis gis'>)
 % Bars 136 to 140
@@ -150,8 +150,8 @@ musicPianoDownMvtI = \relative c' {
 		d,( f bes d)
 		c,!( f a c)
 		\clef bass c,,( e g c,)
-		\tuplet 3/2 4 {r8 cis e} g2.~
-		\tuplet 3/2 4 {g4 a8} d4~ \tuplet 3/2 4 {d8 gis, b} e4~
+		\once \override TupletNumber.Y-offset = #2.7 \tuplet 3/2 4 {r8 cis e} g2.~
+		\once \override TupletNumber.Y-offset = #4 \tuplet 3/2 4 {g4 a8} d4~ \tuplet 3/2 4 {d8 gis, b} e4~
 		\tuplet 3/2 4 {e8 \clef treble a, e'} a4~ \tuplet 3/2 4 {a8 d, fis} b4 
 	} \\ {
 		\omit TupletNumber d,1
@@ -168,7 +168,7 @@ musicPianoDownMvtI = \relative c' {
 	r8 q q q q4 r
 	r8 q q q q q q q
 % Bars 181 to 185
-	<e a b> q q q <e gis b>^\< q q q\!
+	<e a b> q q q <e gis b>^\< q q q
 	<a, a'>4^\f r r2
 	R1*11
 % Bars 186 to 190

@@ -149,7 +149,7 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	\mark \default
-	c4\ff r r2
+	c4-\tweak X-offset #-3.5 \ff r r2
 % Bars 226 to 230
 	c4 r r2
 	c4 r c r

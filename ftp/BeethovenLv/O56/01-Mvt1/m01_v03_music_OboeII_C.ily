@@ -55,10 +55,10 @@ musicOboeIIMvtI = \relative c'' {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	r8. g,16([\p a8. g16]) g4 r
+	r8. g,16([-\tweak X-offset #-2 \p a8. g16]) g4 r
 	r8. g16([ a8. g16]) g4 r
 	r8. g16([ a8. g16]) g4 r
-	a2\ff a
+	a2-\tweak X-offset #0.5 \ff a
 	a4 a a a
 % Bars 61 to 65
 	b r r2
@@ -70,7 +70,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	r8 d4 d d d8~
 	d d4 d d d8
-	d4\fp r r2
+	d4 r r2
 	R1*3
 % Bars 71 to 75
 	
@@ -133,7 +133,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	\mark \default 
-	e2\ff b4-. gis-.
+	e2-\tweak X-offset #-1.5 \ff b4-. gis-.
 	e-. e-. b'-. gis-.
 % Bars 151 to 155
 	e-. r r2
@@ -145,7 +145,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	
-	r8. cis'16-.\f[ b8.-. b16-.] a2~\sf
+	r8. cis'16-.-\tweak X-offset #-1.5 \f[ b8.-. b16-.] a2~-\tweak X-offset #0.5 \sf
 % Bars 166 to 170
 	a2~ a8 r r4
 	r b(\pp a8) r r4
@@ -178,7 +178,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	a2.\ff a4
+	a2.-\tweak X-offset #-3.5 \ff a4
 % Bars 226 to 230
 	c2. bes4
 	bes bes bes bes

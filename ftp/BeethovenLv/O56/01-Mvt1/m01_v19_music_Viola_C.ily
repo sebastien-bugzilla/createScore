@@ -19,7 +19,7 @@ musicViolaMvtI = \relative c' {
 	g-.  r r2
 % Bars 11 to 15
 	<c, c'>4-. r r2
-	b'4\f r r r8 \tuplet 3/2 8 {g16(_\dimmarkup a b)}
+	b'4\f r r r8 \tuplet 3/2 8 {g16(-\tweak X-offset #-1.8 _\dimmarkup a b)}
 	e,16(\pp g e g e g e g \repeat tremolo 4 {e g)}
 	\repeat tremolo 4 {e( g} \repeat tremolo 4 {e g)}
 	\crescText "cresc. poco a poco" \repeat tremolo 4 {e(\< g} \repeat tremolo 4 {e g)}
@@ -30,7 +30,7 @@ musicViolaMvtI = \relative c' {
 	\repeat tremolo 4 {e'( c} \repeat tremolo 4 {e c)}
 	\repeat tremolo 4 {g'( e} \repeat tremolo 4 {c' g)}
 % Bars 21 to 25
-	a16\ff\noBeam c, c c c c c c c2:16
+	a16-\tweak X-offset #-1.5 \ff\noBeam c, c c c c c c c2:16
 	c: c:
 	c: c:
 	c: c:
@@ -119,7 +119,7 @@ musicViolaMvtI = \relative c' {
 	R1*4
 % Bars 96 to 100
 	\mark \default
-	<e g>4\p r r2
+	<e g>4-\tweak X-offset #-0.5 \p r r2
 	r4 <f g>8 r q r q r
 	q4 r r2
 	r4 g r2
@@ -151,7 +151,7 @@ musicViolaMvtI = \relative c' {
 	
 	
 	
-	r4 c'8\p r r4 c8 r
+	r4 c'8-\tweak X-offset #0.5 \p r r4 c8 r
 % Bars 126 to 130
 	r4 c8 r r4 c8 r
 	r4 c8 r r4 c8 r
@@ -160,20 +160,20 @@ musicViolaMvtI = \relative c' {
 	c4( a g f)
 % Bars 131 to 135
 	e r r2
-	r4 e8.(\f fis16 g4 d8. g16)
+	r4 e8.(-\tweak X-offset #-1 \f fis16 g4 d8. g16)
 	g4 r r2
 	R1*4
 % Bars 136 to 140
 	
 	
-	e1\p
+	e1-\tweak X-offset #-1 \p
 	a2( e)~
 	e_\crescmarkup f
 % Bars 141 to 145
 	e4\p r r2
 	r4 e2 e4
 	e r r2
-	r4 c'( b <a c>
+	r4 \once \stemUp c'( b <a c>
 	<gis b>) r r2
 % Bars 146 to 150
 	b4 r r2
@@ -184,7 +184,7 @@ musicViolaMvtI = \relative c' {
 % Bars 151 to 155
 	e-. r r2
 	R1
-	r4 gis'\p r2
+	r4 gis'-\tweak X-offset #-1 \p r2
 	r4 gis r2
 	R1*6
 % Bars 156 to 160
@@ -196,7 +196,7 @@ musicViolaMvtI = \relative c' {
 	e e e e
 	r8. e,16\f[^\arco-. fis8.-. gis16]-. a2\sf(~
 % Bars 166 to 170
-	a8.[ cis16 e8. cis16]) a8 r e4\p~
+	a8.[ cis16 e8. cis16]) a8 r e4-\tweak X-offset #-0.5 \p~
 	e8 r r4 r r8 e
 	r e r e r e r fis
 	r fis r fis r fis r a!
@@ -237,7 +237,7 @@ musicViolaMvtI = \relative c' {
 	
 	
 	
-	e'1(\p
+	e'1(-\tweak X-offset #-0.5 \p
 	a,4\f) r r2
 % Bars 206 to 210
 	c!1\p~
@@ -255,14 +255,14 @@ musicViolaMvtI = \relative c' {
 	dis
 	e~
 	e2 gis(
-	b d)
+	b \once \stemUp d)
 	gis1~
 % Bars 221 to 225
 	gis4 gis r gis
 	r gis r gis
 	\crescText "cresc. poco a poco" d8\pp\< d d d  d d d d 
 	gis gis gis gis d d d d \mark \default
-	c16\ff a a a a4:16 a2:
+	c16-\tweak X-offset #-2 \ff a a a a4:16 a2:
 % Bars 226 to 230
 	c: c:
 	c: c:

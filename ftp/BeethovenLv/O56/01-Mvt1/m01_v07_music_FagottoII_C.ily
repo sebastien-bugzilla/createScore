@@ -109,7 +109,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	c8\ff g c g c g c g
+	c8-\tweak X-offset #-1.5 \ff g c g c g c g
 	d' g, d' g, d' g, d' g,
 % Bars 116 to 120
 	b g b g b g b g 
@@ -130,7 +130,7 @@ musicFagottoIIMvtI = \relative c {
 	R1*2
 % Bars 131 to 135
 	
-	c4(\f a g f)
+	\once \override CombineTextScript.X-offset = #1.2 c4(\f a g f)
 	e r r2
 	R1*15
 % Bars 136 to 140
@@ -141,7 +141,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	e'2\ff b'4-. gis-.
+	e'2-\tweak X-offset #-1.5 \ff b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-. r r2
@@ -153,7 +153,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	
-	r8. cis''16\f[-. b8.-. d,16-.] cis2\sf(~
+	r8. cis''16\f[-. b8.-. d,16-.] cis2-\tweak X-offset #0.5 \sf(~
 % Bars 166 to 170
 	cis8.[ e16 cis8. e16]) cis8 r r4
 	r b'(\pp a8) r r4
@@ -191,11 +191,11 @@ musicFagottoIIMvtI = \relative c {
 	
 	
 	\mark \default
-	f8\ff c f c f c f c
+	f8-\tweak X-offset #-3.5 \ff c f c f c f c
 % Bars 226 to 230
 	g' c, g' c, g' c, g' c, 
 	e c e c e c e c
-	f c f c f f c f
+	f c f c f <f a>^. <c f>^. <f a>^.
 	f4 r r8. f16-.[ f8.-. f16]-. 
 	a4 r r8. a16[-. a8.-. a16]-. 
 % Bars 231 to 235

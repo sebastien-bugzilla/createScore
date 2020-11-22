@@ -111,14 +111,14 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {r c!-. c-. c-. c_\crescmarkup-. c-. c( d) d-. d( dis) dis-.}
 % Bars 141 to 145
 	\tuplet 3/2 4 {e-. e-. e-. e-. e-. e-. e( f) f-. f-. f-. f-. }
-	\tuplet 3/2 4 {f(\fp e) e-. e-. e-. e-. e( d) d-. d( c) c-.}
+	\tuplet 3/2 4 {f(-\tweak X-offset #-1 \fp e) e-. e-. e-. e-. e( d) d-. d( c) c-.}
 	b4 r r2
 	r \tuplet 3/2 4 {r8 f f fis fis fis}
-	\tuplet 3/2 4 {gis e,(\sf gis) gis( b) b( e) e( gis) gis( b) b(}
+	\tuplet 3/2 4 {\once \tupletUp \once \override Beam.auto-knee-gap = #2 gis e,(\sf gis) gis( b) b( e) e( gis) gis( b) b(}
 % Bars 146 to 150
 	\tuplet 3/2 4 {e) gis,,(_\crescmarkup b) b( e) e( gis) gis( b) b( e) e(}
 	\tuplet 3/2 4 {gis) gis( e) e( b) b( gis) gis( e) e( b) b(}
-	\tuplet 3/2 4 {gis)\ff e'-. b-. gis'-. e-. b'-. gis-. e'-. b-. gis'-. gis-. gis-. } \mark \default
+	\tuplet 3/2 4 {gis)-\tweak X-offset #-2 \ff e'-. b-. gis'-. e-. b'-. gis-. e'-. b-. gis'-. gis-. gis-. } \mark \default
 	gis4 r r2
 	R1*7
 % Bars 151 to 155
@@ -137,7 +137,7 @@ musicSoloViolinMvtI = \relative c''' {
 	R1*2
 % Bars 166 to 169
 	
-	r8 e,16\f( gis fis a gis b a8-.) r b4(\p
+	r8 e,16\f( gis fis a gis b a8-.) r b4(-\tweak X-offset #0.5 \p
 	a gis a ais
 	b cis d e)
 % Bars 170 to 180
@@ -155,10 +155,10 @@ musicSoloViolinMvtI = \relative c''' {
 		a1_\dimmarkup
 		a\pp
 		bes(_\crescmarkup
-		a2.)\pp f4(
-		e2)_\crescmarkup g~
-		g2._\sf e4(
-		f!2)\p e
+		a2.)-\tweak X-offset #0.5 \pp f4(
+		e2)-\tweak X-offset #0.7 _\crescmarkup g~
+		g2.-\tweak X-offset #0.7 _\sf e4(
+		f!2)-\tweak X-offset #0.8 \p e
 		e fis
 		c4 
 	}>> r r2
@@ -206,13 +206,13 @@ musicSoloViolinMvtI = \relative c''' {
 	b16( c d e fis gis a ais b c d e fis gis a! ais)
 	b1\startTrillSpan~
 	b~
-	\afterGrace b {a16[ b]\stopTrillSpan} 
+	\afterGrace b {a16[\stopTrillSpan b]} 
 % Bars 221 to 225
 	gis16 gis,-. a-. b-. c-. d-. e-. fis-. gis-. b,-. c-. d-. e-. fis-. gis-. a-. 
 	b-. d, e fis gis a b c d gis, a b c d e fis
 	gis1\cresc\startTrillSpan~
-	\afterGrace gis {fis16[( gis)]\stopTrillSpan} \mark \default
-	a4\ff r r2
+	\afterGrace gis {fis16[(\stopTrillSpan gis)]} \mark \default
+	a4-\tweak X-offset #-2 \ff r r2
 % Bars 226 to 230
 	R1*30
 % Bars 231 to 235

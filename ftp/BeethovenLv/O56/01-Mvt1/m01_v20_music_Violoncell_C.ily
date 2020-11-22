@@ -23,7 +23,7 @@ musicVioloncellMvtI = \relative c {
 	g-. r r2
 % Bars 11 to 15
 	a4-. r r r8 g16( a
-	b4\f) r r r8 \tuplet 3/2 4 {g16(_\dimmarkup a b)}
+	b4\f) r r r8 \tuplet 3/2 4 {g16(-\tweak X-offset #-1.8 _\dimmarkup a b)}
 	c8\pp c c c  c c c c
 	c c c c  c c c c
 	\crescText "cresc. poco a poco" c\< c c c  c c c c 
@@ -109,7 +109,7 @@ musicVioloncellMvtI = \relative c {
 	
 % Bars 96 to 100
 	\mark \default
-	c4\p^\unobassoeviolonc r r2
+	c4\p-\tweak X-offset #0.8 ^\unobassoeviolonc r r2
 	r4 c8 r c r c r
 	c4 r r2
 	r4 c r2
@@ -156,7 +156,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 136 to 140
 	
 	
-	c'2(^\unobassoeviolonc\p a
+	c'2(-\tweak X-offset #1 ^\unobassoeviolonc\p a
 	fis gis)
 	a_\crescmarkup f!
 % Bars 141 to 145
@@ -168,13 +168,13 @@ musicVioloncellMvtI = \relative c {
 % Bars 146 to 150
 	e4 r r2
 	e4 r r2
-	r2 r4 r8 \tuplet 3/2 4 {b16(^\tutti cis dis)} \mark \default
+	r2 r4 r8 \tuplet 3/2 4 {\once \tupletDown b16(-\tweak X-offset #-5 ^\tutti cis dis)} \mark \default
 	e2\ff b'4-. gis-.
 	e-. e-. b-. gis-.
 % Bars 151 to 155
 	e-. r r2
 	R1
-	r4 e''\p^\unobassoeviolonc r2
+	r4 e''\p-\tweak X-offset #0.5 ^\unobassoeviolonc r2
 	r4 e r2
 	R1*6
 % Bars 156 to 160
@@ -186,7 +186,7 @@ musicVioloncellMvtI = \relative c {
 	e cis b8.\noBeam e,16\f[-.^\tutti fis8.-. gis16]-. 
 	a2(~\sf a8.[ cis16 e8. cis16])
 % Bars 166 to 170
-	a2. a4\p~^\unobassoeviolonc
+	a2. a4\p~-\tweak X-offset #0.5 ^\unobassoeviolonc
 	a2. a8 r
 	a r a r a r fis r
 	b r fis r b r a r
@@ -227,7 +227,7 @@ musicVioloncellMvtI = \relative c {
 	
 	
 	
-	g'1\p^\unobassoeviolonc(
+	g'1\p-\tweak X-offset #0.5 ^\unobassoeviolonc(
 	fis4)\f r r2
 % Bars 206 to 210
 	f!1\p~
@@ -252,7 +252,7 @@ musicVioloncellMvtI = \relative c {
 	e r e r
 	\crescText "cresc. poco a poco" e8\pp\< e e e  e e e e
 	e e e e  e e e e \mark \default
-	f\ff^\tutti c f c f c f c
+	f\ff-\tweak X-offset #1.5 ^\tutti c f c f c f c
 % Bars 226 to 230
 	g' c, g' c, g' c, g' c,
 	e c e c e c e c 

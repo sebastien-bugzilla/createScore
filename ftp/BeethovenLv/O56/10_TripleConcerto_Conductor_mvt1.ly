@@ -66,9 +66,12 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtI
-%					}
+					\new Voice {
+						\displayFilterVoice
+					}
+					\new Voice {
+						\formatConductorMvtI
+					}
 					\new Voice {
 						\timeMvtI \generalOptions \conductorOptions
 						\nameStaffIMvtI
@@ -163,7 +166,7 @@
 			breakbefore = ##t
 		}
 		\layout {
-			system-count = #109
+			%system-count = #109
 		}
 	}
 }

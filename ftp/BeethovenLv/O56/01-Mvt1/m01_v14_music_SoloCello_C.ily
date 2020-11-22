@@ -142,7 +142,7 @@ musicSoloCelloMvtI = \relative c' {
 	a4 r r2 \clef bass
 	R1
 % Bars 166 to 170
-	r2 r8 e,,16(\f gis fis a gis b
+	r2 r8 e,,16(-\tweak X-offset #-1 \f gis fis a gis b
 	a8-.) r r4 r d'4(\p
 	cis b cis cis
 	d ais b cis)
@@ -160,7 +160,7 @@ musicSoloCelloMvtI = \relative c' {
 	R1*3
 % Bars 181 to 185
 	
-	a,8._\fmarcato[-.( gis16-.) a8.-.( b16]-.) \acciaccatura d8 c8.[-.( b16-.) c8.-.( d16]-.)
+	a,8.-\tweak X-offset #-1 _\fmarcato[-.( gis16-.) a8.-.( b16]-.) \acciaccatura d8 c8.[-.( b16-.) c8.-.( d16]-.)
 	e8.[-.( dis16-.) e8.-.( dis16]-.) e8.[-.( c16-.) b8.-.( a16]-.) 
 	gis8.[-.( e16-.) b'8.-.( b16]-.) gis8.[-.( e16-.) d'!8.-.( d16]-.) 
 	gis,8.[(-. e16)-. f'8.(-. f16])-. e8.[(-. d16)-. c8.(-. b16])-. 
@@ -201,11 +201,11 @@ musicSoloCelloMvtI = \relative c' {
 	
 	e,,16(_\semprepp fis gis a b c d dis) e( fis gis a b c cis d!)
 % Bars 221 to 225
-	\acciaccatura cis8 d1~\startTrillSpan
+	\clef tenor \acciaccatura cis8 d1~\startTrillSpan
 	d~
-	d16\stopTrillSpan \clef tenor b\cresc c! d e fis gis a b2\startTrillSpan~
+	d16\stopTrillSpan b\cresc c! d e fis gis a b2\startTrillSpan~
 	\afterGrace b1 {a16[(\stopTrillSpan b)]} \mark \default
-	a4\ff r r2 \clef bass
+	a4-\tweak X-offset #-2.5 \ff r r2 \clef bass
 % Bars 226 to 230
 	R1*17
 % Bars 231 to 235

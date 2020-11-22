@@ -50,7 +50,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	r4 g_\crescmarkup( f d)
 % Bars 41 to 45
-	c2\p(~ c8.[ e16 g8. e16])
+	c2-\tweak X-offset #-0.7 \p(~ c8.[ e16 g8. e16])
 	c2. r4
 	R1*6
 % Bars 46 to 50
@@ -149,7 +149,7 @@ musicCornoIMvtI = \relative c'' {
 	R1*3
 	
 	\mark \default
-	e2\ff e4-. e-.
+	e2-\tweak X-offset #-1.5 \ff e4-. e-.
 	e-. e-. e-. e-.
 % Bars 151 to 155
 	e-. r r2
@@ -178,11 +178,11 @@ musicCornoIMvtI = \relative c'' {
 	
 	\mark \default
 	r8. e16-.\p e8-. r r8. e16-. e8-. r
-	r8. e16-.[ e8.-. e16-.] e4-. r
+	r8. e16-. e8.-. e16-. e4-. r
 % Bars 196 to 200
 	r8. e16-. e4-. r8. e16-. e4-.
-	r8. e16-.[ e8.-. e16-.] e4-. r
-	r8. c16-.[ c8.-. c16-.] c4-. r
+	r8. e16-. e8.-. e16-. e4-. r
+	r8. c16-. c8.-. c16-. c4-. r
 	R1*26
 % Bars 201 to 205
 	
@@ -197,7 +197,7 @@ musicCornoIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	c2.\ff c4
+	c2.-\tweak X-offset #-3.5 \ff c4
 % Bars 226 to 230
 	c2. c4
 	c c c c

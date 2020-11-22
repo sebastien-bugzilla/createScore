@@ -18,7 +18,7 @@ musicTrombeIMvtI = \relative c'' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	c1\f~
+	c1-\tweak X-offset #-1.0 \f~
 	c4 c-. c-. c-.
 	c1~
 	c4 c-. c-. c-.
@@ -111,7 +111,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	e'2\ff e4-. e-.
+	e'2-\tweak X-offset #0.5 \ff e4-. e-.
 	e-. e-. e-. e-.
 % Bars 151 to 155
 	e-. r r2
@@ -150,7 +150,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	c4\ff r r2
+	c4-\tweak X-offset #-3.5 \ff r r2
 % Bars 226 to 230
 	c4 r r2
 	r4 c r c
