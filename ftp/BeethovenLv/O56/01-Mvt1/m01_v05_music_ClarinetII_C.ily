@@ -243,14 +243,14 @@ musicClarinetIIMvtI = \relative c' {
 	f2~\f f8 r r4
 % Bars 346 to 350
 	R1
-	e2\ff~ e8 r r4
+	e2-\tweak X-offset #-3 \ff~ e8 r r4
 	R1
-	a2\ff~ a8 r r4
+	a2-\tweak X-offset #-3.2 \ff~ a8 r r4
 	R1
 % Bars 351 to 355
-	g2\f~ g8 r r4
+	g2-\tweak X-offset #-0.5 \f~ g8 r r4
 	R1 \mark #11
-	a2~\f a8 r r4
+	a2~-\tweak X-offset #-2 \f a8 r r4
 	R1*16
 % Bars 356 to 360
 	
@@ -261,7 +261,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 	
 	
-	r2 r4 c,~\f
+	r2 r4 c,~-\tweak extra-offset #'(-2.0 . 3.5) \f
 % Bars 371 to 375
 	c r r2
 	R1*14
@@ -274,7 +274,7 @@ musicClarinetIIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 386 to 390
-	g'2\ff d4-. b-.
+	g'2-\tweak X-offset #-3.3 \ff d4-. b-.
 	g-. g'-. d-. b-.
 	g-. r r2
 	R1*13
@@ -317,7 +317,7 @@ musicClarinetIIMvtI = \relative c' {
 	\mark \default
 	R1*4
 % Bars 466 to 470
-	r2 r8. ees16\ff[-. ees8.-. ees16]-. 
+	r2 r8. ees16-\tweak X-offset #-3 \ff[-. ees8.-. ees16]-. 
 	ees4 r r8. g16[-. g8.-. g16]-. 
 	a4.. a16 a4.. a16
 	a8.[ a16-. a8.-. a16]-. a8.[-. a16-. a8.-. a16]-. 
@@ -355,7 +355,7 @@ musicClarinetIIMvtI = \relative c' {
 	\tempo "Più allegro." R1*2
 	
 % Bars 516 to 520
-	r2 r8. d'16[\f-. f8.-. e16]-. 
+	r2 r8. d'16[-\tweak X-offset #-1.5 \f-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
 	f4-.\ff r r2 \mark \default
 	g4-.\ff r r2

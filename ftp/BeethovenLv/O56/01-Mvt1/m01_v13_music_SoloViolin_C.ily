@@ -232,7 +232,7 @@ musicSoloViolinMvtI = \relative c''' {
 	gis4 r r8. gis16[( b8. a16])
 	a4 r r8. a16[( cis8. b16])
 % Bars 261 to 265
-	b4(\trill^\sharp d4)~\sfp \tuplet 3/2 4 {d8 cis-. b-. fis'-.\sfp e-. d-.}
+	b4(^\sharptrill d4)~\sfp \tuplet 3/2 4 {d8 cis-. b-. fis'-.\sfp e-. d-.}
 	\tuplet 3/2 4 {d-. cis-. b-. fis'\sfp-. e-. d-. d-. cis-. b-. fis'\sfp-. e-. d-.}
 	\tuplet 3/2 4 {d-. cis-. b-. b-. a-. gis-. gis-. fis-. e-. e-. d-. cis-.}
 	\tuplet 3/2 4 {cis b a a gis fis fis e dis fis e dis}
@@ -282,7 +282,7 @@ musicSoloViolinMvtI = \relative c''' {
 % Bars 301 to 305
 	
 	
-	g'4(_\cantabile g'2 f4)
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur g'4(_\cantabile g'2 f4)
 	f( ees2 d8. c16)
 	c4( b2\sf c8. d16)
 % Bars 306 to 310
@@ -358,7 +358,7 @@ musicSoloViolinMvtI = \relative c''' {
 	\tuplet 3/2 4 {g\noBeam g,,( b) b( d) d( g) g( b) b( d) d(}
 	\tuplet 3/2 4 {g)\cresc b,,( d) d( g) g( b) b( d) d( g) g(}
 	\tuplet 3/2 4 {b) b( g) g( d) d( b) b( g) g( d) d(}
-	\tuplet 3/2 4 {b)-.\ff b'-. g-. d'-. b-. g'-. d-. b'-. g-. d'-. b-. g'-. } \mark \default
+	\tuplet 3/2 4 {b)-.-\tweak X-offset #1 \ff b'-. g-. d'-. b-. g'-. d-. b'-. g-. d'-. b-. g'-. } \mark \default
 % Bars 386 to 390
 	g4 r r2
 	R1*7
@@ -397,10 +397,10 @@ musicSoloViolinMvtI = \relative c''' {
 		c1~_\dimmarkup
 		c\pp
 		des_\crescmarkup
-		c4(\pp aes) aes aes
+		c4(-\tweak X-offset #0.5 \pp aes) aes aes
 		g1_\crescmarkup
 		g2. bes4
-		aes2\pp f
+		aes2-\tweak X-offset #0.5 \pp f
 		ees d
 		ees4
 	}>> r r2
@@ -408,7 +408,7 @@ musicSoloViolinMvtI = \relative c''' {
 	R1*3
 	
 	
-	g,16\f( ees') c'( ees,) c'( ees,) c'( ees,) g,( ees') c'( ees,) c'( ees,) c'( ees,) 
+	g,16-\tweak X-offset #-1. \f( ees') c'( ees,) c'( ees,) c'( ees,) g,( ees') c'( ees,) c'( ees,) c'( ees,) 
 	g,( ees') c'( ees,)  g,( ees') c' ees, g, ees' c' ees, g, ees' c' ees, 
 % Bars 421 to 425
 	g, f' d' f, g, f' b f g, f' d' f, g, d' b' d,
@@ -454,9 +454,9 @@ musicSoloViolinMvtI = \relative c''' {
 	d~
 	d16\stopTrillSpan b,,-. c-. d-. e-. f-. g-. a-. b-. d,-. e-. f-. g-. a-. b-. c-. 
 	d-. b c d e f g a b d, e f g a b c
-	d2\cresc\startTrillSpan g\startTrillSpan~
+	\trillSpanPadding #1 d2\cresc\startTrillSpan \trillSpanPadding #1 g\startTrillSpan~
 % Bars 461 to 465
-	\afterGrace g1 {fis16[( g)]\stopTrillSpan } \mark \default
+	\afterGrace g1 {fis16[(\stopTrillSpan g)] } \mark \default
 	c4\ff r r2
 	R1*11
 % Bars 466 to 470
@@ -486,7 +486,7 @@ musicSoloViolinMvtI = \relative c''' {
 	r16 a c f a c f c a'4 r
 	g,8_\crescmarkup g'4 c e g8
 % Bars 491 to 495
-	\afterGrace d1\startTrillSpan {c16[( d)]\stopTrillSpan} \mark \default
+	\afterGrace d1\startTrillSpan {c16[(\stopTrillSpan d)]} \mark \default
 	e\ff bes g e bes g e g bes,4 r
 	r16 a c f a c f c a'4 r
 	R1*8
@@ -494,10 +494,10 @@ musicSoloViolinMvtI = \relative c''' {
 	
 % Bars 501 to 505
 	
-	\tuplet 3/2 4 {b,,8(\pp d c e d f e g f a g b}
+	\tuplet 3/2 4 {b,,8(-\tweak X-offset #-2 \pp d c e d f e g f a g b}
 	\tuplet 3/2 4 {a c b d c e) d( f) f-. f f f }
 	f1\startTrillSpan_\crescmarkup
-	\afterGrace b,1\startTrillSpan {a16[( b)]\stopTrillSpan}
+	\afterGrace 31/32 b,1\startTrillSpan {a16[( b)]\stopTrillSpan}
 % Bars 506 to 510
 	bes4\p r r2
 	g'4..(_\dolce e16 c4 bes)

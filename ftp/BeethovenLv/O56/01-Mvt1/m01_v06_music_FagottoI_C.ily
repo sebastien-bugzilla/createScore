@@ -211,7 +211,7 @@ musicFagottoIMvtI = \relative c' {
 	c4-. b-. c-. d-.
 	c-. d-. c-. e-.
 % Bars 241 to 245
-	e2(\> f\p
+	e2(_\> f_\p
 	b,2. e4
 	a,) r r2
 	R1*24
@@ -240,7 +240,7 @@ musicFagottoIMvtI = \relative c' {
 	R1
 	\partcombineApart r2 a8\p[( bes d8. bes16)] \partcombineAutomatic
 	R1
-	\partcombineApart r2 b!8^\semprepp[( c ees8. c16]) \partcombineAutomatic
+	\partcombineApart r2 b!8-\tweak X-offset #-10 ^\semprepp[( c ees8. c16]) \partcombineAutomatic
 % Bars 281 to 285
 	R1
 	\partcombineApart r2 a8[( bes des8. bes16]) \partcombineAutomatic
@@ -248,7 +248,7 @@ musicFagottoIMvtI = \relative c' {
 	\partcombineApart r2 b!8[(\p c d!8. c16)] \partcombineAutomatic
 	R1
 % Bars 286 to 290
-	\partcombineApart r2 ais8[(^\semprep b d8. b16)] \partcombineAutomatic
+	\partcombineApart r2 ais8[(-\tweak X-offset #-9 ^\semprep b d8. b16)] \partcombineAutomatic
 	R1
 	\partcombineApart r2 ais8[( b d8. b16]) \partcombineAutomatic
 	R1
@@ -286,7 +286,7 @@ musicFagottoIMvtI = \relative c' {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\afterGrace a1\startTrillSpan {g16[ a]\stopTrillSpan}
+	\afterGrace a1\startTrillSpan {g16[\stopTrillSpan a]}
 	g4 r g r
 	g r r2
 	R1*8
@@ -295,19 +295,19 @@ musicFagottoIMvtI = \relative c' {
 % Bars 341 to 345
 	
 	
-	c'1_\cresc
+	\clef tenor c'1_\cresc
 	b8[( c d8. c16)] c4-. c-.
-	c2~_\f c8  r c\p r
+	c2~_\f c8  r c\p r \clef bass
 % Bars 346 to 350
 	a r c r a r f r
 	c'2~ c8 r c4\p(
 	b8[ c d8. c16]) c4-. c-.
-	c2~ c8 r c\p r
+	\once \override CombineTextScript.transparent = ##t s2 s8 r c\p r
 	a r c r a r f r
 % Bars 351 to 355
-	b2~ b8 r d\p r
+	\once \override CombineTextScript.transparent = ##t s2 s8 r d'\p r
 	b r d r b r g r \mark #11
-	cis2~\f cis8 r e\p r
+	cis2~ cis8 r e\p r
 	cis r e r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
@@ -340,7 +340,7 @@ musicFagottoIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 386 to 390
-	g2\ff d'4-. b-.
+	g2-\tweak X-offset #-3.3 \ff d'4-. b-.
 	\partcombineApart g-. g-. d-. b-.
 	g-. \partcombineAutomatic r r2
 	R1*13
@@ -382,7 +382,7 @@ musicFagottoIMvtI = \relative c' {
 	
 % Bars 461 to 465
 	\mark \default
-	ees'1\ff
+	ees'1-\tweak X-offset #-2 \ff
 	ees
 	ees
 	ees
@@ -411,7 +411,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 491 to 495
 	R1 \mark \default
 	R1
-	r8. f16[\mf f8. f16] f8 r r4
+	r8. f16[-\tweak X-offset #-2 \mf f8. f16] f8 r r4
 	R1*20
 % Bars 496 to 500
 	
@@ -428,7 +428,7 @@ musicFagottoIMvtI = \relative c' {
 % Bars 516 to 520
 	r2 r8. d16\f[-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
+	f4-.-\tweak X-offset #-1 \ff r r2 \mark \default
 	g'4-.\ff r r2
 	c,4 r r b'8 r
 % Bars 521 to 525

@@ -21,8 +21,7 @@
 \include "./00-Common/TripleConcerto_NameStaff.ily"
 \include "./00-Common/TripleConcerto_NameGrandStaff.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-%\include "./00-Common/TripleConcerto_Format_Cond_Mvt01.ily"
-\include "./00-Common/TripleConcerto_Format_temp.ly"
+\include "./00-Common/TripleConcerto_Format_Cond_Mvt01.ily"
 \include "./01-Mvt1/m01_v01_music_Flote_C.ily"
 \include "./01-Mvt1/m01_v02_music_OboeI_C.ily"
 \include "./01-Mvt1/m01_v03_music_OboeII_C.ily"
@@ -67,9 +66,6 @@
 			\new StaffGroup <<
 				\new Staff <<
 					\new Voice {
-						\displayFilterVoice
-					}
-					\new Voice {
 						\formatConductorMvtI
 					}
 					\new Voice {
@@ -82,31 +78,26 @@
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffIIMvtI
 					\partcombine #'(0 . 10) \musicOboeIMvtI \musicOboeIIMvtI
-					%\musicOboeIIMvtI
 				}
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffIIIMvtI
 					\partcombine \musicClarinetIMvtI \musicClarinetIIMvtI
-%					\musicClarinetIIMvtI
 				}
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffIVMvtI
 					\partcombine \musicFagottoIMvtI \musicFagottoIIMvtI
-%					\musicFagottoIIMvtI
 				}
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffVMvtI
 					\partcombine \musicCornoIMvtI \musicCornoIIMvtI
-%					\musicCornoIIMvtI
 				}
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffVIMvtI
 					\partcombine \musicTrombeIMvtI \musicTrombeIIMvtI
-%					\musicTrombeIIMvtI
 				}
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
@@ -157,8 +148,7 @@
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffXVMvtI
-%					\partcombine \musicVioloncellMvtI \musicBassoMvtI
-					\musicVioloncellMvtI
+					\partcombine \musicVioloncellMvtI \musicBassoMvtI
 				}
 			>>
 		>>
@@ -166,7 +156,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #109
 		}
 	}
 }

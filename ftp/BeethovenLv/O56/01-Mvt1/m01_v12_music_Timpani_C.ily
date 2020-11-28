@@ -220,17 +220,17 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	
-	c2\f\startTrillSpan~ c8\stopTrillSpan r r4
+	c2\f-\tweak extra-offset #'(2 . -1) \startTrillSpan~ c8\stopTrillSpan r r4
 % Bars 346 to 350
 	R1
-	c2\ff\startTrillSpan~ c8\stopTrillSpan r r4
+	c2-\tweak X-offset #-3 \ff\startTrillSpan~ c8\stopTrillSpan r r4
 	R1
 	c2\ff\startTrillSpan~ c8\stopTrillSpan r r4
 	R1
 % Bars 351 to 355
-	g2\f\startTrillSpan~ g8\stopTrillSpan r r4
+	g2-\tweak X-offset #-2 \f\startTrillSpan~ g8\stopTrillSpan r r4
 	R1 \mark #11
-	g2\f\startTrillSpan~ g8\stopTrillSpan r r4
+	g2-\tweak X-offset #-1 \f\startTrillSpan~ g8\stopTrillSpan r r4
 	R1*32
 % Bars 356 to 360
 	
@@ -249,7 +249,7 @@ musicTimpaniMvtI = \relative c {
 	
 	\mark \default
 % Bars 386 to 390
-	g4\ff r g4-. g-.
+	g4-\tweak X-offset #-2.5 \ff r g4-. g-.
 	g-. g-. g-. g-.
 	g-. r r2
 	R1*42
@@ -287,7 +287,7 @@ musicTimpaniMvtI = \relative c {
 	
 % Bars 461 to 465
 	\mark \default
-	c4\ff r r2
+	c4-\tweak X-offset #-2 \ff r r2
 	g4 r r2
 	g4 r r2
 	c4 r r2

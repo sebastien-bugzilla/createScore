@@ -31,12 +31,12 @@ conductorOptions = {
 }
 #(set-global-staff-size 13)
 \layout {
-	indent = 0\cm
+	%indent = 0\cm
 	\context {
 		\Staff
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
-		\RemoveAllEmptyStaves
+		\RemoveEmptyStaves
 		%\override VerticalAxisGroup.remove-first = ##t
 		\override TupletNumber.avoid-slur = #'ignore
 	}

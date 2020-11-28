@@ -7,7 +7,7 @@
 	ragged-bottom = ##t
 	left-margin = 16 \mm
 %	first-page-number = 0
-	%annotate-spacing = ##t
+	annotate-spacing = ##f
 	slashSeparator = \markup {
 		\center-align
 		\vcenter \combine

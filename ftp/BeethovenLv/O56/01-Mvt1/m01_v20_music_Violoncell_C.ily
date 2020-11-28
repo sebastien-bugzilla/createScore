@@ -48,7 +48,7 @@ musicVioloncellMvtI = \relative c {
 % Bars 31 to 35
 	d4-. f2\sf d8.-. c!16-.
 	b4-. c2\sf a8.-. fis16-. \mark \default
-	\partcombineApart \tuplet 3/2 4 {g8\p b d g d b g b d g, b d}
+	\partcombineApart \tuplet 3/2 4 {g8 b d g d b g b d g, b d}
 	\tuplet 3/2 4 {g, b d g d b g b d e, b' e}
 	\tuplet 3/2 4 {a, c e e, b' e a, c e g, d' g}
 % Bars 36 to 40
@@ -67,8 +67,8 @@ musicVioloncellMvtI = \relative c {
 	f_\crescmarkup
 	ees\p~
 	ees_\crescmarkup
-	e!\sf\>(
-	f2)(\pp b,!
+	e!(
+	f2)( b,!
 % Bars 51 to 55
 	c fis,
 	g1)(
@@ -79,7 +79,7 @@ musicVioloncellMvtI = \relative c {
 	c_\crescmarkup)
 	f
 	e2( ees)
-	g,8.\ff g'16 g4 g,8. g'16 g4
+	\once \override CombineTextScript.X-offset = #-2.5 g,8.\ff g'16 g4 g,8. g'16 g4
 	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
 % Bars 61 to 65
 	g,4 r r g'-.
@@ -411,7 +411,7 @@ musicVioloncellMvtI = \relative c {
 	f r r2
 	R1*2
 	
-	f4\f^\tutti d( c bes
+	f4\f^\tutti \once \stemUp d( c bes
 % Bars 371 to 375
 	a) r r2
 	R1*6
@@ -457,7 +457,7 @@ musicVioloncellMvtI = \relative c {
 	e! r r2
 	R1*2
 	
-	r4 g\pp r2
+	r4 \once \override CombineTextScript.X-offset = #-2 g\pp r2
 % Bars 416 to 420
 	r4 g r2
 	r8 g g g  g g g g
@@ -507,7 +507,7 @@ musicVioloncellMvtI = \relative c {
 	\crescText "cresc. poco a poco" g8\pp\< g' g g  g g g g
 % Bars 461 to 465
 	g g g g  g g g g \mark \default
-	aes\ff^\tutti ees aes ees aes ees aes ees
+	aes\ff-\tweak X-offset #0.5 ^\tutti ees aes ees aes ees aes ees
 	bes' ees, bes' ees, bes' ees, bes' ees,
 	g ees g ees g ees g ees
 	aes ees aes ees aes ees aes ees
@@ -516,12 +516,12 @@ musicVioloncellMvtI = \relative c {
 	g4 r r8. g,16[-. g8.-. g16]-. 
 	fis4.. fis16 fis4.. fis16
 	fis8.[ fis16-. fis8.-. fis16]-. fis8.[-. fis16-. fis8.-. fis16]-. 
-	g'1\fp(
+	g'1(
 % Bars 471 to 475
 	f!
 	e!
 	d)
-	g,4^\pizz r g r
+	\once \override CombineTextScript.X-offset = #-3.5 g,4^\pizz r g r
 	g r g r
 % Bars 476 to 480
 	g_\crescmarkup r g r
@@ -539,7 +539,7 @@ musicVioloncellMvtI = \relative c {
 	
 % Bars 491 to 495
 	\mark \default
-	r2 r8. c16\mf[^\arco c8. c16]
+	r2 r8. c16\mf[-\tweak X-offset #-4 ^\arco c8. c16]
 	f,8 r r4 r8. f16[ f8. f16]
 	f1\p~
 	f~

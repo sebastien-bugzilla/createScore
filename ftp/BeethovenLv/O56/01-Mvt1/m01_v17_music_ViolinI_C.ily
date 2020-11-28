@@ -397,9 +397,9 @@ musicViolinIMvtI = \relative c' {
 	\afterGrace a1\startTrillSpan {g16[\stopTrillSpan a]}
 	g4 r <g, d' b' g'> r
 	q r r2
-	<a' f'!>4\p r r r8 g,16(\p a
+	<a' f'!>4\p r r r8 g,16(-\tweak X-offset #-1.2 \p a
 % Bars 336 to 340
-	b4\f) r r r8 \tuplet 3/2 8 {g16(_\dimmarkup a b)}
+	b4\f) r r r8 \tuplet 3/2 8 {g16(-\tweak X-offset #-3 _\dimmarkup a b)}
 	c1\pp
 	b8([ c d8. c16]) c4-. c-.
 	\crescText "cresc. poco a poco" e1\<
@@ -409,7 +409,7 @@ musicViolinIMvtI = \relative c' {
 	fis8[( g a8. g16]) g4-. g-.
 	c16( g c g c g c g c g c g c g c g)
 	e'( c e c e c e c g' e g e g e g e)
-	f\ff f, f f f f f f f f f f f8\p f
+	f-\tweak X-offset #-3.2 \ff f, f f f f f f f f f f f8\p f
 % Bars 346 to 350
 	f f f f f f f f
 	e16\ff e e e  e e e e  e e e e  e8\p e
@@ -446,7 +446,7 @@ musicViolinIMvtI = \relative c' {
 % Bars 376 to 380
 	
 	
-	g,4\p r r2
+	g,4-\tweak X-offset #-1.5 \p r r2
 	r4 g'( f ees)
 	d r r2
 % Bars 381 to 385
@@ -552,7 +552,7 @@ musicViolinIMvtI = \relative c' {
 	<c e>4 <g g'> r q
 	r q r q
 % Bars 476 to 480
-	r q^\crescmarkup r q
+	r q_\crescmarkup r q
 	r <a fis'> r q
 	<b g'>\p r r b'^\pizz
 	c r r c

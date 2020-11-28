@@ -277,14 +277,14 @@ musicOboeIIMvtI = \relative c'' {
 	c2~ c8 r r4
 % Bars 346 to 350
 	R1
-	e,2\ff~ e8 r r4
+	e,2-\tweak X-offset #-2 \ff~ e8 r r4
 	R1
 	c'2\ff~ c8 r r4
 	R1
 % Bars 351 to 355
 	d2~\f d8 r r4
 	R1 \mark #11
-	cis2\f~ cis8 r r4
+	cis2-\tweak X-offset #-2 \f~ cis8 r r4
 	R1*16
 	
 % Bars 356 to 360
@@ -309,7 +309,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 386 to 390
-	g,2\ff d'4-. b-.
+	g,2-\tweak X-offset #-3.3 \ff d'4-. b-.
 	g-. g'-. d-. b-.
 	g-. r r2
 	R1
@@ -350,7 +350,7 @@ musicOboeIIMvtI = \relative c'' {
 	g8.-.[ g16-. g8.-. g16-.] g4-. r
 	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 436 to 440
-	r8. c'16-.[\p c8.-. c16-.] c4-. r
+	r8. c'16-.[-\tweak X-offset #-1 \p c8.-. c16-.] c4-. r
 	r r8. c16-. c4-. r8. c16-.
 	c4-. r r2
 	R1*23
@@ -364,7 +364,7 @@ musicOboeIIMvtI = \relative c'' {
 	
 % Bars 461 to 465
 	\mark \default
-	c1\ff
+	c1-\tweak extra-offset #'(-2 . 1) \ff
 	g
 	des'
 	c
@@ -408,7 +408,7 @@ musicOboeIIMvtI = \relative c'' {
 	\tempo "Più allegro." R1*2
 	
 % Bars 516 to 520
-	r2 r8. d16\f-.[ f8.-. e16-.] 
+	r2 r8. d16-\tweak X-offset #-1.5 \f-.[ f8.-. e16-.] 
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
 	g4-.\ff r r2

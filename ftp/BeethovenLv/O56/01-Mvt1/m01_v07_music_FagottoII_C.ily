@@ -286,7 +286,7 @@ musicFagottoIIMvtI = \relative c {
 	d4-. f-. d-. c-.
 % Bars 331 to 335
 	b2( c)
-	\afterGrace a1\startTrillSpan {g16[ a]\stopTrillSpan}
+	\afterGrace a1\startTrillSpan {g16[\stopTrillSpan a]}
 	g4 r g r
 	g r r2
 	R1*8
@@ -300,14 +300,14 @@ musicFagottoIIMvtI = \relative c {
 	a'2~ a8 r r4
 % Bars 346 to 350
 	R1
-	g,2\ff~ g8 r r4
+	g,2-\tweak X-offset #-3.5 \ff~ g8 r r4
 	R1
-	f2\ff~ f8 r r4
+	\once \override CombineTextScript.transparent = ##t <f c''>2-\tweak X-offset #-3.2 \ff~ <f c''>8 r r4
 	R1
 % Bars 351 to 355
-	f2\f~ f8 r r4
+	\once \override CombineTextScript.transparent = ##t <f b'>2-\tweak X-offset #-2 \f~ <f b'>8 r r4
 	R1 \mark #11
-	e2~\f e8 r r4
+	e2~-\tweak X-offset #-2.2 \f e8 r r4
 	R1
 	R1
 % Bars 356 to 360
@@ -340,7 +340,7 @@ musicFagottoIIMvtI = \relative c {
 	
 	\mark \default
 % Bars 386 to 390
-	g,2\ff d'4-. b-.
+	g,2-\tweak X-offset #-3.3 \ff d'4-. b-.
 	g'-. g-. d-. b-.
 	g-. r r2
 	R1*13
@@ -382,7 +382,7 @@ musicFagottoIIMvtI = \relative c {
 	
 % Bars 461 to 465
 	\mark \default
-	c'1\ff
+	c'1-\tweak X-offset #-2 \ff
 	g
 	des'
 	c
@@ -411,7 +411,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 491 to 495
 	R1 \mark \default
 	R1
-	r8. f16[\mf f8. f16] f8 r r4
+	r8. f16[-\tweak X-offset #-2 \mf f8. f16] f8 r r4
 	R1*20
 % Bars 496 to 500
 	
@@ -428,7 +428,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 516 to 520
 	r2 r8. d'16\f[-. f8.-. e16]-. 
 	d8.[-. c16-. b8.-. a16]-. b8.[-. g16-. c8.-. e,16]-. 
-	f4-.\ff r r2 \mark \default
+	f4-.-\tweak X-offset #-1 \ff r r2 \mark \default
 	g4-.\ff r r2
 	c,4 r r g''8 r
 % Bars 521 to 525

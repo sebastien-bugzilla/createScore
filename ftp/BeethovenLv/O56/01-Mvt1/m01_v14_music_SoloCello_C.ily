@@ -226,10 +226,10 @@ musicSoloCelloMvtI = \relative c' {
 	b2( ais8[ b d8. cis16])
 % Bars 251 to 255
 	cis4 r r8. cis16[( e8. d16])
-	d2. e4(\trill^\sharp
+	d2. e4(^\sharptrill
 	fis d b a)
 	gis2(\cresc b4.. a16)
-	\afterGrace fis1\startTrillSpan^\sharp {e16[\stopTrillSpan gis fis]}
+	\trillSpanCustom #6 #sharptrill \afterGrace 31/32 fis1\startTrillSpan {e16[\stopTrillSpan gis fis]}
 % Bars 256 to 260
 	e1\p
 	dis~
@@ -282,7 +282,7 @@ musicSoloCelloMvtI = \relative c' {
 	c2. c,,4(
 	\tuplet 3/2 4 {f8) des' aes f' des aes'} r2
 	\tuplet 3/2 4 {fis,8 c' a! ees' c fis} r4 \tuplet 3/2 4 {fis,8 fis fis}
-	g4(_\cantabile g''2 f!4)
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur g4(_\cantabile g''2 f!4)
 	f( ees2 d8. c16)
 % Bars 301 to 305
 	c4( b2 c8. d16)
@@ -337,7 +337,7 @@ musicSoloCelloMvtI = \relative c' {
 	
 	
 	
-	f,2._\cantabile \acciaccatura f8( f'8. e16)
+	f,2._\cantabile \acciaccatura f8^( f'8. e16)
 	e4( d~ d8) cis( d e)
 % Bars 361 to 365
 	\acciaccatura e8 g4( f~ f8) a( f d)
@@ -393,9 +393,9 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 406 to 410
 	f cis d e)
 	f1_\dimmarkup~
-	f\pp~
+	f-\tweak X-offset #0.5 \pp~
 	f_\crescmarkup
-	ees4\pp( c) c-.( c-.)
+	ees4-\tweak extra-offset #'(0.5 . 1) \pp( c) c-.( c-.)
 % Bars 411 to 415
 	<<{
 		bes1(~
@@ -425,11 +425,11 @@ musicSoloCelloMvtI = \relative c' {
 	\tuplet 3/2 4 {d( b) f'-. f-. f-. f-. f-. e-. d-. d-. c-. b-.}
 	\tuplet 3/2 4 {c( d) d-. d-. d-. d-. d-. c-. b-. b-. a-. gis-.}
 	\tuplet 3/2 4 {a( bes) bes-. bes-. bes-. bes-. bes-. a-. g!-. g-. f-. e-.}
-	f16\noBeam \clef bass c, f, c' f, c' f, c' fis, c' fis, c' fis, c' fis, c'
+	\clef bass \once \override Beam.auto-knee-gap = #2 f16 c, f, c' f, c' f, c' fis, c' fis, c' fis, c' fis, c'
 	g c g c a c a c f,! c' f, c' g b g b \mark \default
 % Bars 431 to 435
-	c,4\f r c''16 d c b c d c d
-	e\noBeam c,, e g c e g c e e f e d c f e
+	c,4-\tweak X-offset #-1.5 \f r c''16 d c b c d c d
+	\once \override Beam.auto-knee-gap = #2 e c,, e g c e g c e e f e d c f e
 	d e d c b a g a b c b a g a b c
 	d e d c b c d e f e g f e d c b
 	c d cis d cis d cis d cis d e d c b a gis
@@ -454,7 +454,7 @@ musicSoloCelloMvtI = \relative c' {
 	
 % Bars 456 to 460
 	
-	g,,16(_\semprepp a b c d e f fis g a b c cis d dis e)
+	g,,16(-\tweak X-offset #-3 _\semprepp a b c d e f fis g a b c cis d dis e)
 	\clef tenor f1\startTrillSpan~
 	f2~ f16\stopTrillSpan b,-. c-. d-. e-. f-. g-. a-. 
 	b1\startTrillSpan\cresc~
@@ -472,7 +472,7 @@ musicSoloCelloMvtI = \relative c' {
 	b2~ b8.[ g16( a8. g16)]
 	c2~ c8.[ g16( a8. g16)]
 	f'4( d b f)
-	\tuplet 3/2 4 {e8(\noBeam \clef bass c,\p e) g-. e-. c-. g-. c-. e-. g-. e-. c-.}
+	\clef bass \once \override Beam.auto-knee-gap = #2 \tuplet 3/2 4 {e8( c,\p e) g-. e-. c-. g-. c-. e-. g-. e-. c-.}
 	\tuplet 3/2 4 {g-. d'-. f-. g-. f-. d-. g,-. d'-. f-. g-. f-. d-.}
 % Bars 476 to 480
 	\tuplet 3/2 4 {g,_\crescmarkup c e g e c g c ees g ees c}
@@ -485,7 +485,7 @@ musicSoloCelloMvtI = \relative c' {
 	<d b'>4_\crescmarkup <g, d' b'> r <g e' c'>
 	r <g f' d'> r <g d' b'>
 	<e' c'>16\noBeam g16(\p a b c d e d c b a g f e d c)
-	b( c d e f e d c b c d e f g a b)
+	b( c d e \stemUp f e d c b c d e f g a b) \stemNeutral
 % Bars 486 to 490
 	\clef treble c( d e f g f e d c d e f g a b c)
 	b( a g a b c d e f e d c b a g f)
@@ -508,7 +508,7 @@ musicSoloCelloMvtI = \relative c' {
 	f1(
 	d)
 	b_\crescmarkup\startTrillSpan
-	\afterGrace d\startTrillSpan {c16[(\stopTrillSpan d)]}
+	\afterGrace 31/32 d\startTrillSpan {c16[(\stopTrillSpan d)]}
 % Bars 506 to 510
 	e4\p r r2 \clef tenor
 	g4.._\dolce( e16 c4 bes)

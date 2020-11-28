@@ -256,7 +256,7 @@ musicPianoDownMvtI = \relative c' {
 	r2 \tuplet 3/2 4 {c'8-. f,-. aes-. c,-. f-. aes,-. }
 	g4 r r2
 % Bars 286 to 290
-	\tuplet 3/2 4 {g''8 b,! d! g, b d, g b, d g, b d}
+	\tuplet 3/2 4 {g''8 b,! d! \once \tupletDown g, b d, g b, d g, b d}
 	fis,4 r r2
 	\tuplet 3/2 4 {fis''8 b, d fis, b d, fis b, d fis, b d}
 	eis,4 r \tuplet 3/2 4 {eis''8 b d gis, b eis,}
@@ -318,7 +318,7 @@ musicPianoDownMvtI = \relative c' {
 	\mark #11
 	r2 r4 \tuplet 3/2 4 {a'8-. e'-. cis-.}
 	\tuplet 3/2 4 {a'-. e-. cis'-. \clef treble a-. e'-. cis-. a'-. e-. cis-. e-. cis-. a-. }
-	\clef bass \tuplet 3/2 4 {a, f' d a' f d' \clef treble a f' d a' f d} \clef bass
+	\clef bass \tuplet 3/2 4 {\once \tupletDown a, f' d a' f d' \clef treble a f' d a' f d} \clef bass
 % Bars 356 to 360
 	\tuplet 3/2 4 {f, d' bes \clef treble f' d bes' f d' bes f' d bes} \clef bass
 	\tuplet 3/2 4 {f, c' a \clef treble f' c a' f c' a f' c a}
@@ -361,7 +361,7 @@ musicPianoDownMvtI = \relative c' {
 	\oneVoice r16 g'' b a g b d c b d f e d b' d c
 	<<{
 		b2 r8 e( f cis)
-		d2(~ d8 e f cis)
+		\shape #'((0 . -1)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur d2(~ d8 e f cis)
 	} \\ {
 		g1
 		g
@@ -389,8 +389,8 @@ musicPianoDownMvtI = \relative c' {
 		f,( aes des f) \clef bass
 		ees,,( aes c ees)
 		ees,( g bes ees,)
-		\tuplet 3/2 4 {r8 e! g} bes2 c4~
-		\tuplet 3/2 4 {c8 f, c'} f4~ \tuplet 3/2 4 {f8\noBeam \clef treble b,! d!} g4~
+		\once \override TupletNumber.Y-offset = #4.5 \tuplet 3/2 4 {r8 e! g} bes2 c4~
+		\tuplet 3/2 4 {c8 f, c'} f4~ \once \override TupletNumber.Y-offset = #4 \tuplet 3/2 4 {f8\noBeam \clef treble b,! d!} g4~
 		\tuplet 3/2 4 {g8 c, g'} c4~ \tuplet 3/2 4 {c8 fis, a!} d4
 	} \\ {
 		\omit TupletNumber f,1
@@ -485,7 +485,7 @@ musicPianoDownMvtI = \relative c' {
 	r8. <g b! d f>16 q8 r r8. q16 q8 r \mark \default
 	r2 \clef bass r16 c,\sustainOn g e c g e c
 	f4\sustainOff r r16 f,\sustainOn a c f a c a
-	\voiceTwo \tuplet 3/2 4 {f8( f, a c a c f c f a f a}
+	\voiceTwo \shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 2.5)) Slur \tuplet 3/2 4 {f8( f, a c a c f c f a f a}
 	\oneVoice \tuplet 3/2 4 {c) a( c f c f a f a c a c}
 % Bars 496 to 500
 	\tuplet 3/2 4 {f c f \clef treble a f a c a c f c f}
@@ -498,7 +498,7 @@ musicPianoDownMvtI = \relative c' {
 	g'\startTrillSpan~
 	g~
 	g~
-	\afterGrace g {fis16[(\stopTrillSpan g])}
+	\afterGrace 31/32 g {fis16[(\stopTrillSpan g])}
 % Bars 506 to 510
 	g4..( e16 c4) c
 	c2. c8.( c'16)

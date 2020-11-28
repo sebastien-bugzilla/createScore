@@ -79,6 +79,7 @@ violinesolobold=^\markup {\bold \abs-fontsize #10 {Violine solo}}
 violoncellosolobold=^\markup {\bold \abs-fontsize #10 {Violoncello solo}}
 farco=^\markup {\dynamic f \italic arco}
 crescD = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+basso=^\markup {Basso.}
 sharptrill = \markup {\halign #RIGHT \tiny \sharp \lower #1.2 \musicglyph #"scripts.trill" }
 
 attaccaMark = \mark \markup { 

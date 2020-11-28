@@ -67,7 +67,7 @@ musicBassoMvtI = \relative c {
 	f_\crescmarkup
 	ees\p~
 	ees_\crescmarkup
-	e!\sf\>(
+	e!-\tweak X-offset #-2 \sf\>(
 	f2)(\pp b,!
 % Bars 51 to 55
 	c fis,
@@ -76,10 +76,10 @@ musicBassoMvtI = \relative c {
 	g~
 	g~
 % Bars 56 to 60
-	g_\crescmarkup
 	g
 	g
-	g8.\ff g'16 g4 g,8. g'16 g4
+	g
+	\once \override CombineTextScript.X-offset = #-2.5 g8.\ff g'16 g4 g,8. g'16 g4
 	g,8.-.[ g'16-. g8.-. g16]-. g8.[-. g16-. g8.-. g16]-. 
 % Bars 61 to 65
 	g,4 r r g'-.
@@ -461,7 +461,7 @@ musicBassoMvtI = \relative c {
 % Bars 416 to 420
 	
 	
-	r2 r4 r8. g,16
+	r2 r4 r8. g,16-\tweak X-offset #-2.5 _\basso
 	c4 r r r8. c16
 	c4 r r  r8. c16
 % Bars 421 to 425
@@ -507,7 +507,7 @@ musicBassoMvtI = \relative c {
 	\crescText "cresc. poco a poco" g8\pp\< g' g g  g g g g
 % Bars 461 to 465
 	g g g g  g g g g \mark \default
-	aes\ff^\tutti ees aes ees aes ees aes ees
+	aes\ff-\tweak X-offset #0.5 ^\tutti ees aes ees aes ees aes ees
 	bes' ees, bes' ees, bes' ees, bes' ees,
 	g ees g ees g ees g ees
 	aes ees aes ees aes ees aes ees
@@ -521,7 +521,7 @@ musicBassoMvtI = \relative c {
 	g4_\pizz r r2
 	g4 r r2
 	g4 r r2
-	g4 r g r
+	\once \override CombineTextScript.X-offset = #-3.5 g4 r g r
 	g r g r
 % Bars 476 to 480
 	g_\crescmarkup r g r
@@ -539,7 +539,7 @@ musicBassoMvtI = \relative c {
 	
 % Bars 491 to 495
 	\mark \default
-	r2 r8. c16\mf[^\arco c8. c16]
+	r2 r8. c16\mf[-\tweak X-offset #-4 ^\arco c8. c16]
 	f,8 r r4 r8. f16[ f8. f16]
 	f1\p~
 	f~

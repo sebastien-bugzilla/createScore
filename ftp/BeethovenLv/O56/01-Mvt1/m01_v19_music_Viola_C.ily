@@ -75,7 +75,7 @@ musicViolaMvtI = \relative c' {
 	c)_\crescmarkup
 	f
 	e2( ees)
-	<a c>8.\ff q16 q4 q8. q16 q4
+	<a c>8.-\tweak X-offset #-2 \ff q16 q4 q8. q16 q4
 	q8.[-. q16-. q8.-. q16]-. q8.[-. q16-. q8.-. q16]-. 
 % Bars 61 to 65
 	<b d>4 r r q-.
@@ -402,8 +402,8 @@ musicViolaMvtI = \relative c' {
 	c( g c g c g c g c g c g c g c g)
 	c( g c g c g c g c g c g c g c g)
 	e'( c e c e c e c e c e c e c e c)
-	g'( e g e g e g e c' g c g c g c g)
-	a\ff a, a a  a a a a a a a a a8\p a
+	\shape #'((0 . -0.8)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur g'( e g e g e g e c' g c g c g c g)
+	a-\tweak X-offset #-3.2 \ff a, a a  a a a a a a a a a8\p a
 % Bars 346 to 350
 	a a a a  a a a a 
 	g16\ff g g g  g g g g  g g g g g8\p g
@@ -433,7 +433,7 @@ musicViolaMvtI = \relative c' {
 	a r r2
 	f'4( d c bes
 	a) r r2
-	r4 a8.(\f b!16 c4 g8. c16)
+	r4 a8.(-\tweak X-offset #-1.5 \f b!16 \once \stemUp c4 g8. c16)
 % Bars 371 to 375
 	<f, c'>4 r r2
 	R1*7
@@ -479,7 +479,7 @@ musicViolaMvtI = \relative c' {
 	bes r r2
 	R1*2
 	
-	r4 c\pp r2
+	r4 c-\tweak X-offset #0.5 \pp r2
 % Bars 416 to 420
 	r4 g' r2
 	r8 c, c c  c c c c
@@ -561,7 +561,7 @@ musicViolaMvtI = \relative c' {
 	
 % Bars 491 to 495
 	\mark \default
-	r2 r8. <c, c'>16[\mf^\arco q8. q16]
+	r2 r8. <c, c'>16[\mf-\tweak X-offset #-4 ^\arco q8. q16]
 	q8 r r4 r8. c'16[ c8. c16]
 	c1\p(
 	a
@@ -587,7 +587,7 @@ musicViolaMvtI = \relative c' {
 	bes bes bes bes   bes bes bes bes
 	a a a a  a a a a
 	g g g g   g g g g
-	\tempo "Più allegro." r2 cis,16(_\crescmarkup d cis d) f8.( e16)
+	\tempo "Più allegro." r2 cis,16(-\tweak X-offset #-5 _\crescmarkup d cis d) f8.( e16)
 	dis16( e dis e) g8.( f16) e( f e f) a8.-. g16-.
 % Bars 516 to 520
 	f8.\f[-. e'16-. d8.-. c16]-. b8.[-. d16-. f8.-. e16]-. 

@@ -228,7 +228,7 @@ musicOboeIMvtI = \relative c'' {
 	R1
 	\partcombineApart r2 a8[(\p bes d8. bes16)] \partcombineAutomatic
 	R1
-	\partcombineApart r2 b!8[(^\semprepp c ees8. c16)] \partcombineAutomatic
+	\partcombineApart r2 b!8[(-\tweak X-offset #-10 ^\semprepp c ees8. c16)] \partcombineAutomatic
 % Bars 281 to 285
 	R1
 	\partcombineApart r2 a8([ bes des8. bes16)] \partcombineAutomatic
@@ -236,7 +236,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 % Bars 286 to 290
-	\partcombineApart r2 ais8[(^\semprep b! d!8. b16)] \partcombineAutomatic
+	\partcombineApart r2 ais8[(-\tweak X-offset #-9 ^\semprep b! d!8. b16)] \partcombineAutomatic
 	R1
 	\partcombineApart r2 ais8[( b d8. b16)] \partcombineAutomatic
 	R1*3
@@ -284,18 +284,18 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 	c,1_\cresc
-	b8([ c d8. c16)] c4-. c-.\!
+	b8([ c d8. c16)] c4-. c-.
 	f2_\f~ f8 r c\p r
 % Bars 346 to 350
 	a r c r a r f r
-	c'2\ff~ c8 r c4\p(
+	c'2-\tweak X-offset #-2 \ff~ c8 r c4\p(
 	b8[ c d8. c16]) c4-. c-.
 	a'2\ff~ a8 r c,\p r
 	a r c r a r f r
 % Bars 351 to 355
 	b'2~\f b8 r d,\p r
 	b r d r b r g r \mark #11
-	g'2\f~ g8 r e\p r
+	g'2-\tweak X-offset #-2 \f~ g8 r e\p r
 	cis r e  r cis r a r
 	d r f r d r a r
 % Bars 356 to 360
@@ -324,7 +324,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 386 to 390
-	g2\ff d4-. b-.
+	g2-\tweak X-offset #-3.3 \ff d4-. b-.
 	g-. g'-. d-. b-.
 	g-. r r2
 	R1
@@ -365,7 +365,7 @@ musicOboeIMvtI = \relative c'' {
 	g8.-.[ g16-. g8.-. g16-.] g4-. r
 	r8. e16-.[ e8.-. e16-.] e4-. r
 % Bars 436 to 440
-	r8. c16-.[\p c8.-. c16-.] c4-. r
+	r8. c16-.[-\tweak X-offset #-1 \p c8.-. c16-.] c4-. r
 	r r8. c16-. c4-. r8. c16-.
 	c4-. r r2
 	R1*23
@@ -379,7 +379,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 461 to 465
 	\mark \default
-	ees1\ff
+	ees1-\tweak extra-offset #'(-2 . 1) \ff
 	ees
 	ees
 	ees
@@ -423,7 +423,7 @@ musicOboeIMvtI = \relative c'' {
 	\tempo "Più allegro." R1*2
 	
 % Bars 516 to 520
-	r2 r8. d,16\f-.[ f8.-. e16-.] 
+	r2 r8. d,16-\tweak X-offset #-1.5 \f-.[ f8.-. e16-.] 
 	d8.-.[ c16-. b8.-. a16-.] b8.-.[ g16-. c8.-. e,16-.] 
 	f4-.\ff r r2 \mark \default
 	g'4-.\ff r r2
