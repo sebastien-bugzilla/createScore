@@ -92,7 +92,7 @@ musicFloteMvtI = \relative c''' {
 	g,) r r2
 	R1
 	g'1~\ff
-	g \mark \default
+	g \markYoffset #4.5 \mark \default
 	e4 r^\solo r2
 % Bars 76 to 80
 	R1*21
@@ -136,7 +136,7 @@ musicFloteMvtI = \relative c''' {
 	\cueDuring #"cueVoiceFloteMvtI" #UP {
 		\ni R1
 		R
-		R \no \markOffset #0.5 \mark \default
+		R \no \markYoffset #4.5 \mark \default
 	}
 	e'2\ff^\tutti b4-. gis-.
 	e-. e'-. b-. gis-.
@@ -299,7 +299,7 @@ musicFloteMvtI = \relative c''' {
 	R1
 % Bars 351 to 355
 	d2~\f d8 r r4
-	R1 \mark #11
+	R1 \markYoffset #4.5 \mark #11
 	cis2\f~ cis8 r r4
 	R1*3
 % Bars 356 to 360

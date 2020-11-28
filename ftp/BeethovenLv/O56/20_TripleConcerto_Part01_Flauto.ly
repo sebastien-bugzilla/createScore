@@ -20,8 +20,7 @@
 \include "./00-Common/TripleConcerto_OptionParts.ily"
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
-%\include "./00-Common/TripleConcerto_Format_PartFlauto.ily"
-\include "./00-Common/TripleConcerto_Format_temp.ly"
+\include "./00-Common/TripleConcerto_Format_PartFlauto.ily"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v01_music_Flote.ily"
 \include "./03-Mvt3/m03_v01_music_Flote.ily"
@@ -39,7 +38,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 "Triple Concerto""
+			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 \"Triple Concerto\""
 		}
 		instrument = \markup {
 			"Flauto"
@@ -65,7 +64,6 @@
 			}
 		}
 		\layout {
-			%system-count = 25
 			\context {
 				\CueVoice \layoutCueVoice
 			}
@@ -100,7 +98,6 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
-			%ragged-right = ##f
 		}
 	}
 	\score {
@@ -123,7 +120,6 @@
 			}
 		}
 		\layout {
-			%system-count = 24
 			\context {
 				\CueVoice \layoutCueVoice
 			}

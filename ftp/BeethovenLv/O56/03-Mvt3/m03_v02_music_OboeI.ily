@@ -263,7 +263,7 @@ musicOboeIMvtIII = \relative c'' {
 	a r a r a r
 	a r r4 r8 a\f
 	g r r4 r
-	r g8\p r g r \mark \default
+	r g8\p r g r \markYoffset #4.5 \mark \default
 % Bars 286 to 290
 	g\f r g r  g r
 	g2.\p
@@ -412,7 +412,7 @@ musicOboeIMvtIII = \relative c'' {
 % Bars 456 to 460
 	
 	c8\f[ e e e e e]
-	f[ f f f f f] \mark \default
+	f[ f f f f f] \markYoffset #4.5 \mark \default
 	e4. e8\sf[-. g,-. b]-. 
 	c8 r r4 r
 % Bars 461 to 465

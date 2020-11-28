@@ -87,7 +87,7 @@ musicOboeIMvtI = \relative c'' {
 	g,) r r2
 	R1
 	g'~\ff
-	g \mark \default
+	g \markYoffset #4.5 \mark \default
 	e4 r^\solo r2
 % Bars 76 to 80
 	R1*21
@@ -328,7 +328,7 @@ musicOboeIMvtI = \relative c'' {
 	a r c r a r f r
 % Bars 351 to 355
 	b'2~\f b8 r d,\p r
-	b r d r b r g r \mark #11
+	b r d r b r g r \markYoffset #4.5 \mark #11
 	g'2\f~ g8 r e\p r
 	cis r e  r cis r a r
 	d r f r d r a r
@@ -459,7 +459,7 @@ musicOboeIMvtI = \relative c'' {
 	f8 r r4 r8. f16-.[ f8.-. f16-.] 
 	e8 r r8. e16 e8 r r8. e16
 % Bars 491 to 495
-	f8 r r8. f16 f8 r r8. f16 \mark \default
+	f8 r r8. f16 f8 r r8. f16 \markYoffset #4.5 \mark \default
 	e8.\mf-.[ g16-. g8.-. g16-.] g4 r
 	r8. a16[ a8. a16] a8 r r4
 	R1*20

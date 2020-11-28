@@ -22,7 +22,6 @@
 \include "./00-Common/TripleConcerto_NameGrandStaff.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_Cond_Mvt02.ily"
-%\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./02-Mvt2/m02_v04_music_ClarinetI_C.ily"
 \include "./02-Mvt2/m02_v05_music_ClarinetII_C.ily"
 \include "./02-Mvt2/m02_v06_music_FagottoI_C.ily"
@@ -60,9 +59,6 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\displayFilterVoice
-%					}
 					\new Voice {
 						\formatConductorMvtII
 					}
@@ -70,20 +66,17 @@
 						\timeMvtII \generalOptions \conductorOptions
 						\nameStaffIMvtII
 						\partcombine \musicClarinetIMvtII \musicClarinetIIMvtII
-%						\musicClarinetIIMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffIIMvtII
-%					\musicFagottoIIMvtII
 					\partcombine \musicFagottoIMvtII \musicFagottoIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffIIIMvtII
 					\partcombine \musicCornoIMvtII \musicCornoIIMvtII
-%					\musicCornoIIMvtII
 				}
 			>>
 			\new Staff {
@@ -100,7 +93,7 @@
 				\new Staff = "up" {
 					\timeMvtII \generalOptions \conductorOptions
 					\nameStaffVIMvtII
-					\musicPianoUpMvtII % {\key aes \major R4.*53} 
+					\musicPianoUpMvtII
 				}
 				\new Staff = "down" {
 					\timeMvtII \generalOptions \conductorOptions
@@ -137,11 +130,8 @@
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = #16
-			%indent = #0
 			\context {
 				\Staff
-				%\RemoveAllEmptyStaves
 				\RemoveEmptyStaves
 			}
 		}

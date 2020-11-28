@@ -21,7 +21,6 @@
 \include "./00-Common/TripleConcerto_NameVoice.ily"
 \include "./00-Common/TripleConcerto_Shortcuts.ily"
 \include "./00-Common/TripleConcerto_Format_PartOboi.ily"
-%\include "./00-Common/TripleConcerto_Format_temp.ly"
 \include "./00-Common/TripleConcerto_CueVoice.ily"
 \include "./01-Mvt1/m01_v02_music_OboeI.ily"
 \include "./01-Mvt1/m01_v03_music_OboeII.ily"
@@ -43,7 +42,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 "Triple Concerto""
+			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 \"Triple Concerto\""
 		}
 		instrument = \markup {
 			"Oboi"
@@ -208,7 +207,6 @@
 			}
 		}
 		\layout {
-			%system-count = #22
 			\context {
 				\CueVoice \layoutCueVoice
 			}

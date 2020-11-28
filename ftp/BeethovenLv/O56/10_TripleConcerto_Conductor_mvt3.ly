@@ -55,7 +55,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 "Triple Concerto" — 3rd movement"
+			"Ludwig van Beethoven — Concerto for Violin Cello and Piano in C Major Op56 \"Triple Concerto\" — 3rd movement"
 		}
 		instrument = \markup {
 			""

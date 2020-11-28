@@ -72,5 +72,5 @@ musicSoloCelloMvtII = \relative c'' {
 % Bars 51 to 53
 	\tuplet 3/2 4 {g,,32([ b) d-.] g[ b d] } \clef treble g[-. g-. g-. g-.] g8-.
 	g32[ g g g] g[ g g g] \tuplet 3/2 16 {g[ g g] g[ g g]}
-	\tuplet 3/2 16 {g[_\crescmarkup g g] g[ g g]} g64[ g g g g g g g] \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]} \bar "||"
+	\tuplet 3/2 16 {g[_\crescmarkup g g] g[ g g]} g64[ g g g g g g g] \tuplet 3/2 32 {g[ g g] g[ g g] g[ g g] g[ g g]} \bar "||" \time 3/4 \key c \major \attacca
 }

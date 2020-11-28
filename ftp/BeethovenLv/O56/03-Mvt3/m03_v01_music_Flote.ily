@@ -82,7 +82,7 @@ musicFloteMvtIII = \relative c''' {
 % Bars 91 to 95
 	\cueDuring #"cueVoiceFloteMvtIII" #UP {
 		\ni R2.
-		\mmrPos #-8 R \no \mark \default
+		\mmrPos #-8 R \no \markYoffset #4.5 \mark \default
 	}
 	g,8\f[ b(\trill \grace {a16[ b]} g8) d'8(\trill \grace {c16[ d]} b8) \afterGrace  g']\trill {fis16[ g]} 
 	g4\p( fis!8) r r4
@@ -226,7 +226,7 @@ musicFloteMvtIII = \relative c''' {
 	
 	\cueDuring #"cueVoiceFloteMvtIII" #UP {
 		\ni R2.
-		R \no \mark \default
+		R \no \markYoffset #4.5 \mark \default
 	}
 % Bars 286 to 290
 	c,8\f\noBeam e([\trill \grace {d16[ e]} c8)] g'[(\trill \grace {fis16[ g]} e8)] \afterGrace c'\trill {b16[ c]}
@@ -320,7 +320,7 @@ musicFloteMvtIII = \relative c''' {
 	
 % Bars 411 to 415
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	R2*28
 % Bars 416 to 420
 	
