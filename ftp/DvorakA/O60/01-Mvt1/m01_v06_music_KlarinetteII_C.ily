@@ -13,8 +13,8 @@ musicKlarinetteIIMvtI = \relative c'' {
 	r4 r c\p
 	\repeat volta 2 {
 		c2 r4
-		r r c~
-		c c-. r
+		r r c(
+		c) c-. r
 % Bars 6 to 10
 		r r c
 		c4. c8\< c4
@@ -54,7 +54,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		e e2\<~
 		e2.~
 		e \mark \default
-		f4\ff^\grandioso r r
+		f4\ff r r
 		f2 r4
 % Bars 51 to 55
 		r r c-.
@@ -104,7 +104,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		
 		
 		
-		ees'2-^\f bes4~
+		ees'2\f bes4~
 % Bars 96 to 100
 		bes4 r r
 		g'2(-^ f8 ees)
@@ -156,7 +156,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		fis\> a, cis d fis, g)
 		fis4\p r r
 		fis r r
-		g_\crescmarkup r r
+		g r r
 % Bars 151 to 155
 		a r r 
 		R2.*3
@@ -167,7 +167,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		g2.\fz
 		a2\fz c8[( a)
 		bes-. c-.] bes2
-		d8(_\crescmarkup bes) c-. d-. e([ cis])
+		d8( bes) c-. d-. e([ cis])
 		d-.[ e-.] d( cis d cis)
 % Bars 161 to 165
 		d4\ff \tuplet 3/2 4 {a8( b a} a'4)->~
@@ -189,7 +189,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	\alternative {
 		{
 			r4 a\p\< a
-			d d d 
+			d d d\!
 			f2._\fpdimD~
 			f~
 % Bars 181 to 185
@@ -235,7 +235,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	aes'2(_\mfp g8 f)
+	aes'2( g8 f)
 % Bars 201 to 205
 	f2(\> ees8 d)
 	d2\p( ees8 f)
@@ -244,7 +244,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	f2.->~
 % Bars 206 to 210
 	f2( ees8 d)
-	d2.->~_\dimmarkup
+	d2.->~
 	d2( c8 bes)
 	bes2.->~
 	bes2( aes8 g)
@@ -267,7 +267,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 231 to 235
 	
 	
-	r4 ees'2\p
+	r4 ees'2
 	R2.*4
 % Bars 236 to 240
 	
@@ -312,7 +312,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	R2.
 % Bars 271 to 275
 	d'4\f r8 g,-. a-. b-.
-	g2-> f'!4-.
+	g2 f'!4
 	e r r
 	c-> d-> e->
 	f-> r r
@@ -369,24 +369,24 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	r4 r c(\p\<
+	r4 r c\(\p\<
 	c2 bes4
 % Bars 331 to 335
-	c d c)
+	c d c\)
 	c2(\f bes4
-	a_\dimmarkup bes a)
-	bes(\p\> f' e!
+	a bes a)
+	bes\(\p\> f' e!
 	d e d\!
 % Bars 336 to 340
-	cis8)\pp r r4 r
+	cis8\)\pp r r4 r
 	R2.*9
 % Bars 341 to 345
 	
 % Bars 346 to 350
-	e,4_\fsempre d8-. aes'-. g-. f-. 
+	e,4 d8-. aes'-. g-. f-. 
 	aes4\fz-. f-. aes-.\fz
 	f-. aes\fz-. f-.
-	bes-.\fz bes-. bes-.\fz
+	bes-.\fz bes bes-.\fz
 	ees,4 d8-. aes'-. g-. f-. 
 % Bars 351 to 355
 	aes4\fz-. f-. aes-.\fz
@@ -415,7 +415,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	R2.
 	r4 f,4-.\p r
 % Bars 376 to 380
-	r g_\crescmarkup r
+	r g r
 	r aes r
 	r bes! r
 	r bes r
@@ -425,7 +425,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	des8\<-. c-. bes-. aes-. g-. c-.\!
 	f, r r4 r
 	R2.
-	r4 f4.\f\<( f'8)\!
+	r4 f4.\f\<\( f'8\)\!
 % Bars 386 to 390
 	f2( e4
 	f4) r r
@@ -439,7 +439,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	R2.*2
 	
 % Bars 396 to 400
-	g8_\dimmarkup-. r r4 r
+	g8-. r r4 r
 	e8-.\p r r4 r
 	R2.*2
 	
@@ -458,8 +458,8 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 % Bars 421 to 425
 	a!8\pp\< a a4 c8 c
-	f4 f(\> e)
-	d\! r r
+	f4 f(\> e)\!
+	d r r
 	R2.*6
 	
 % Bars 426 to 430
@@ -476,10 +476,10 @@ musicKlarinetteIIMvtI = \relative c'' {
 	c8) r r4 des-.\<
 % Bars 436 to 440
 	r d!-. e-.\!
-	f8-. a,( bes c) bes4->(
-	a8-.) a( bes c)  bes4->(
-	a8-.) a( bes c f,\> g
-	a c, e f a, bes)
+	f8 a, bes c bes4
+	a8 a bes c  bes4
+	a8 a bes c f,\> g
+	a c, e f a, bes
 % Bars 441 to 445
 	a4\p r r
 	a r_\crescmarkup r
@@ -489,9 +489,9 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 446 to 450
 	
 	
-	c'4-^\f ees8( c) des-. ees -.
+	c'4\f ees8 c des ees
 	bes2.
-	c2_\crescmarkup ees8( c)
+	c2 ees8( c)
 % Bars 451 to 455
 	des-. ees-. des2
 	R2.
@@ -503,12 +503,12 @@ musicKlarinetteIIMvtI = \relative c'' {
 	f4( e2)
 	f2( e4)
 	f4( e2)
-	f4 fis2->
+	f4 fis2
 % Bars 461 to 465
-	g4 gis2->
+	g4 gis2
 	e2.->
 	e->
-	f->
+	f
 	f->
 % Bars 466 to 470
 	c4 r r
@@ -550,29 +550,30 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 506 to 510
 	
 	
+	
 	r4 r e-.\f
-	f-._\marc f-. e-.
-	f-. c-. e-.
+	f-. f e-.
 % Bars 511 to 515
+	f-. c-. e-.
 	f-. c-. e-.
 	f-. c-. e-.
 	a,4.\ff a8 a4
 	a( c f)
-	a2(\fz g8 f)
 % Bars 516 to 520
+	a2(\fz g8 f)
 	f2.
 	f4. f8 f4
 	a2(\fz g8 f)
 	f2 r4
-	a2\fz g8( f)
 % Bars 521 to 525
+	a2\fz g8( f)
 	a2\ff g8( f)
 	a2 g8( f)
 	a2(\> g8 f)
 	f2\! r4
-	a2(\p g8 f)
 % Bars 526 to 530
-	f2( c8_\dimmarkup a)
+	a2(\p g8 f)
+	f2( c8 a)
 	a2 r4
 	R2.*11
 % Bars 531 to 535

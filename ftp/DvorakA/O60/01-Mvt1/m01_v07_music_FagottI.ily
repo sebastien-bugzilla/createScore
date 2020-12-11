@@ -4,20 +4,39 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottIMvtI = \relative c {
+musicFagottIMvtI = \relative c, {
 	\clef bass
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
+	R2.*2
 	
+	\repeat volta 2 {
+		r4 r a(\p
+		d2) r4
+		r r a(
 % Bars 6 to 10
-	
+		d) d-. r
+		R2.
+		r4 r d\<
+		b2.\f\>(
+		e2)\p b4(
 % Bars 11 to 15
-	
+		e2) r4 
+		r r bes(\pp
+		e2) r4
+		r r a,(
+		e2\< dis4
 % Bars 16 to 20
-	
+		e2)\! g4~
+		g(\> fis d~\!
+		d2.)\<
+		d2(\f g4)
+		b2._\dimmarkup~
 % Bars 21 to 25
-	
+		b\p\>~
+		b(
+		ais8)\pp r r4 r
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -79,7 +98,7 @@ musicFagottIMvtI = \relative c {
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
+	}
 % Bars 181 to 185
 	
 % Bars 186 to 190

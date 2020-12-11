@@ -16,17 +16,18 @@
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_OptionConductors.ily"
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 %\include "./00-Common/DvorakSymph6_Format_Cond_Mvt01.ily"
-\include "./01-Mvt1/m01_v01_music_FloteI.ily"
-\include "./01-Mvt1/m01_v02_music_FloteII.ily"
-\include "./01-Mvt1/m01_v03_music_OboeI.ily"
-\include "./01-Mvt1/m01_v04_music_OboeII.ily"
-\include "./01-Mvt1/m01_v05_music_KlarinetteI.ily"
-\include "./01-Mvt1/m01_v06_music_KlarinetteII.ily"
+\include "./01-Mvt1/m01_v01_music_FloteI_C.ily"
+\include "./01-Mvt1/m01_v02_music_FloteII_C.ily"
+\include "./01-Mvt1/m01_v03_music_OboeI_C.ily"
+\include "./01-Mvt1/m01_v04_music_OboeII_C.ily"
+\include "./01-Mvt1/m01_v05_music_KlarinetteI_C.ily"
+\include "./01-Mvt1/m01_v06_music_KlarinetteII_C.ily"
 \include "./01-Mvt1/m01_v07_music_FagottI.ily"
 \include "./01-Mvt1/m01_v08_music_FagottII.ily"
 \include "./01-Mvt1/m01_v09_music_HornI.ily"
@@ -63,35 +64,41 @@
 		}
 	}
 	\score {
-%		<<
-%			\new StaffGroup <<
+		<<
+			\new StaffGroup <<
 %				\new Staff <<
 %%					\new Voice {
 %%						\formatConductorMvtI
 %%					}
-					\new Voice {
-						\timeMvtI \generalOptions \conductorOptions
-						\nameStaffIMvtI
-%						\partcombine \musicFloteIMvtI \musicFloteIIMvtI
-						\musicFloteIMvtI
-					}
+%					\new Voice {
+%						\tempiMvtI
+%					}
+%					\new Voice {
+%						\timeMvtI \generalOptions \conductorOptions
+%						\nameStaffIMvtI
+%						\partcombine #'(0 . 9) \musicFloteIMvtI \musicFloteIIMvtI
+%%						\musicFloteIIMvtI
+%					}
 %				>>
 %				\new Staff {
 %					\timeMvtI \generalOptions \conductorOptions
 %					\nameStaffIIMvtI
 %					\partcombine \musicOboeIMvtI \musicOboeIIMvtI
+%%					\musicOboeIIMvtI
 %				}
 %				\new Staff {
 %					\timeMvtI \generalOptions \conductorOptions
 %					\nameStaffIIIMvtI
 %					\partcombine \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
+%%					\musicKlarinetteIIMvtI
 %				}
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffIVMvtI
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffIVMvtI
 %					\partcombine \musicFagottIMvtI \musicFagottIIMvtI
-%				}
-%			>>
+					\musicFagottIMvtI
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
 %					\new Staff {
@@ -159,7 +166,7 @@
 %					}
 %				>>
 %			>>
-%		>>
+		>>
 		\header {
 			breakbefore = ##t
 		}

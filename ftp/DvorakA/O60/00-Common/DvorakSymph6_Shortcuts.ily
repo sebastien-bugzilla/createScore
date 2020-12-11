@@ -13,3 +13,6 @@ pcresc=^\markup {\dynamic p \italic cresc.}
 fsempre=^\markup {\dynamic f \italic sempre}
 fcresc=^\markup {\dynamic f \italic cresc.}
 marc=^\markup {\italic marc.}
+pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))
+fmarc=^\markup {\dynamic f \italic marc.}
+mfp=^\markup {\dynamic mfp}

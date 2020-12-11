@@ -138,7 +138,7 @@ musicFloteIMvtI = \relative c'' {
 		R2.
 		r4 r cis'8-.\p dis-.
 		b4 r cis8-. dis-.
-		b4^\crescmarkup r dis8-. e-.
+		b4_\crescmarkup r dis8-. e-.
 % Bars 151 to 155
 		b4 r e8\f-. fis-.
 		dis4 r r
@@ -150,7 +150,7 @@ musicFloteIMvtI = \relative c'' {
 		d8(_\crescmarkup b) cis!-. d-. e( cis)
 		d-. e-. eis( fis eis e-.)
 % Bars 161 to 165
-		dis2(\ff cis4)
+		dis2\ff cis4
 		dis( e8 fis cis4)
 		dis2( e4)
 		dis2( cis4)
@@ -164,7 +164,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 171 to 175
 		R2.*2
 		
-		b,2.\p~
+		b,2.~
 		b~
 		b~
 % Bars 176 to 180
@@ -294,7 +294,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 276 to 280
 	R2.
 	d4-> r8 b-. c-. d-.
-	g,4 r g'
+	\once \partcombineApart g,4 r g'
 	g2.\ff~
 	g~
 % Bars 281 to 285
@@ -337,18 +337,18 @@ musicFloteIMvtI = \relative c'' {
 	d4. d8 d4
 % Bars 321 to 325
 	d(\< e fis)
-	a2(\fz\> g8 fis)
-	e2\! r4
+	a2(\fz\> g8 fis)\!
+	\once \partcombineApart e2 r4
 	r r8 b'\p-. b( a)
 	g2 r4
 % Bars 326 to 330
 	R2.*3
 	
 	
-	r4 r a,\p(
+	r4 r a,\p\(
 	a'2\< gis4
 % Bars 331 to 335
-	a b a)
+	a b a\)
 	a2(\f g!4
 	fis_\dimmarkup g fis)
 	e(\p fis\> e
@@ -386,7 +386,7 @@ musicFloteIMvtI = \relative c'' {
 	a4 r8 f-. bes-. c-.
 % Bars 371 to 375
 	d4 r8 f,-. bes-. d-.
-	c4\p r8 c-. d-. e-.
+	\partcombineApart c4 r8 c-. d-. e-. \partcombineAutomatic
 	f4 r8 a,-. d-. f-.
 	e4 r r
 	R2.*5
@@ -401,18 +401,18 @@ musicFloteIMvtI = \relative c'' {
 	bes8\<-. a-. g-. f-. e-. a-.\!
 	d,4 r r
 	R2.
-	r4 d4.(\f\< d'8)\!
+	r4 \partcombineApart d4.( d'8)\!
 % Bars 386 to 390
 	d2.~->
-	d4 r r
+	d4 \partcombineAutomatic r r
 	R2.*3
 	
 	
 % Bars 391 to 395
-	r4 r8 a\f-. bes-. c-. 
-	d2(\fz c8 bes
+	r4 r8 \partcombineApart a-. bes-. c-. 
+	d2( c8 bes
 	a4) r8 c-. d-. e-.
-	f2(\fz e8 d
+	\partcombineAutomatic f2(\fz e8 d
 	cis!-.) r r4 r
 % Bars 396 to 400
 	R2.*4
@@ -453,14 +453,14 @@ musicFloteIMvtI = \relative c'' {
 % Bars 431 to 435
 	r4 e,8\mf-. fis-. gis4->
 	gis8(\< a b bis cis b)
-	a-.\f r r4 g!->(
-	a8) r r4 g4->(
-	a8) r r4 bes\<-.
+	a-.\f r r4 g!->\(
+	a8\) r r4 g4->\(
+	a8\) r r4 bes\<-.
 % Bars 436 to 440
 	r b!-. cis-.\!
-	d8-. fis,( g a) g4->(
-	a8-.) fis( g a) g4->(
-	a8-.) r r4 r
+	d8-. fis,\( g a\) g4->\(
+	a8-.\) fis\( g a\) g4->\(
+	a8-.\) r r4 r
 	R2.
 % Bars 441 to 445
 	r4 r e'8-.\p fis-.
@@ -485,10 +485,10 @@ musicFloteIMvtI = \relative c'' {
 	fis2( e4)
 	fis2( g4)
 	fis2( e4)
-	d4 dis2->
+	\partcombineApart d4 dis2->
 % Bars 461 to 465
 	e4 eis2->
-	fis2.->
+	\partcombineAutomatic fis2.->
 	g->
 	g->
 	gis->
@@ -499,7 +499,7 @@ musicFloteIMvtI = \relative c'' {
 	
 	
 % Bars 471 to 475
-	d,4\f r8 g,-. a-. b-.
+	\partcombineApart d,4\f r8 g,-. a-. b-.
 	cis4. fis,8-. g-. a-.
 	b e, fis g a d,
 	e fis g cis, d e
@@ -517,12 +517,12 @@ musicFloteIMvtI = \relative c'' {
 	cis!2 cis4~
 	cis cis cis
 	fis4.\ff-^ e-^
-	d d8-. e-. fis-.
+	\partcombineApart d d8-. e-. fis-. \partcombineAutomatic
 % Bars 491 to 495
 	g4-. cis,-. fis-.
 	b,-. e-. a,-.
-	d4. r8 r4
-	d4. r8 r4 \mark #11
+	\once \partcombineApart d4. r8 r4
+	\once \partcombineApart d4. r8 r4 \mark #11
 	R2.*14
 % Bars 496 to 500
 	
@@ -538,7 +538,7 @@ musicFloteIMvtI = \relative c'' {
 	fis-. d-. e-.
 	fis-. d-. e-.
 	fis-. d-. e-.
-	d r r
+	\once \partcombineApart d r r
 % Bars 516 to 520
 	R2.*7
 % Bars 521 to 525
@@ -556,7 +556,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 536 to 540
 	
 	
-	r4 cis4(\pp d8 e
+	\partcombineApart r4 cis4(\pp d8 e
 	fis2.)~
 	fis~
 % Bars 541 to 545
@@ -564,7 +564,7 @@ musicFloteIMvtI = \relative c'' {
 	fis~
 	fis4 r r
 	R2.
-	d8\f-. fis-. a4 cis,->
+	\partcombineAutomatic d8\f-. fis-. a4 cis,->
 % Bar 546
 	d-> r r \bar "|."
 }

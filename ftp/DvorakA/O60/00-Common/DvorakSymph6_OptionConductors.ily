@@ -6,12 +6,14 @@ generalOptions = {
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-alphabet
-%	\override Score.RehearsalMark #'font-size = #4
+	\override Score.RehearsalMark #'font-size = #4
 	\compressFullBarRests
 	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 	\override Score.RehearsalMark.outside-staff-priority = ##f
 }
 conductorOptions = {
+	\set Staff.soloText = #"1."
+	\set Staff.soloIIText = #"2."
 	\override Score.BarNumber #'font-size = #0.1
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
 		beam-event tuplet-span-event dynamic-event articulation-event
@@ -19,6 +21,7 @@ conductorOptions = {
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
 		decrescendo-event )
 	\set Voice.restNumberThreshold = #0
+	\override Staff.Script.avoid-slur = #'ignore
 }
 #(set-global-staff-size 19)
 \layout {
