@@ -28,8 +28,8 @@
 \include "./01-Mvt1/m01_v04_music_OboeII_C.ily"
 \include "./01-Mvt1/m01_v05_music_KlarinetteI_C.ily"
 \include "./01-Mvt1/m01_v06_music_KlarinetteII_C.ily"
-\include "./01-Mvt1/m01_v07_music_FagottI.ily"
-\include "./01-Mvt1/m01_v08_music_FagottII.ily"
+\include "./01-Mvt1/m01_v07_music_FagottI_C.ily"
+\include "./01-Mvt1/m01_v08_music_FagottII_C.ily"
 \include "./01-Mvt1/m01_v09_music_HornI.ily"
 \include "./01-Mvt1/m01_v10_music_HornII.ily"
 \include "./01-Mvt1/m01_v11_music_HornIII.ily"
@@ -66,37 +66,37 @@
 	\score {
 		<<
 			\new StaffGroup <<
-%				\new Staff <<
-%%					\new Voice {
-%%						\formatConductorMvtI
-%%					}
+				\new Staff <<
 %					\new Voice {
-%						\tempiMvtI
+%						\formatConductorMvtI
 %					}
-%					\new Voice {
-%						\timeMvtI \generalOptions \conductorOptions
-%						\nameStaffIMvtI
-%						\partcombine #'(0 . 9) \musicFloteIMvtI \musicFloteIIMvtI
-%%						\musicFloteIIMvtI
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffIIMvtI
-%					\partcombine \musicOboeIMvtI \musicOboeIIMvtI
-%%					\musicOboeIIMvtI
-%				}
-%				\new Staff {
-%					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffIIIMvtI
-%					\partcombine \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
-%%					\musicKlarinetteIIMvtI
-%				}
+					\new Voice {
+						\tempiMvtI
+					}
+					\new Voice {
+						\timeMvtI \generalOptions \conductorOptions
+						\nameStaffIMvtI
+						\partcombine #'(0 . 9) \musicFloteIMvtI \musicFloteIIMvtI
+%						\musicFloteIIMvtI
+					}
+				>>
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffIIMvtI
+					\partcombine \musicOboeIMvtI \musicOboeIIMvtI
+%					\musicOboeIIMvtI
+				}
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffIIIMvtI
+					\partcombine \musicKlarinetteIMvtI \musicKlarinetteIIMvtI
+%					\musicKlarinetteIIMvtI
+				}
 				\new Staff {
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffIVMvtI
-%					\partcombine \musicFagottIMvtI \musicFagottIIMvtI
-					\musicFagottIMvtI
+					\partcombine #'(0 . 9) \musicFagottIMvtI \musicFagottIIMvtI
+%					\musicFagottIIMvtI
 				}
 			>>
 %			\new StaffGroup <<
