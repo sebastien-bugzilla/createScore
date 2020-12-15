@@ -17,3 +17,5 @@ pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "
 fmarc=^\markup {\dynamic f \italic marc.}
 mfp=^\markup {\dynamic mfp}
 rf=^\markup {\dynamic rf}
+pespress=^\markup {\dynamic p \italic espress.}
+pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))

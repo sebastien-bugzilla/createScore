@@ -4,35 +4,35 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicHornIVMvtI = \relative c' {
+musicHornIIIMvtI = \relative c' {
 	\clef treble
 	\key c \major
-%	\transposition a
+	\transposition e
 % Bars 1 to 5
-	R2.*2
-	
+	\partcombineApart d8 d4 d d8
+	d d4 d d8
 	\repeat volta 2 {
-		R2.*10
-		
-		
+		d d4 d d8
+		d d4 d d8
+		d d4 d d8
 % Bars 6 to 10
-		
-		
-		
-		
-		
+		d d4 d d8
+		d d4 d d8
+		d\< d4 d f8\!
+		g g4\f\> g8 g g
+		g8\p\> g4 g g8
 % Bars 11 to 15
-		
-		
-		ees8\pp ees4 ees ees8
-		ees8 ees4 ees ees8
-		ees8 ees4\< ees ees8
+		g g4\pp g g8
+		ees ees4 ees ees8
+		\partcombineAutomatic c' c4 c c8
+		c c4 c c8
+		a a4\< a a8
 % Bars 16 to 20
-		ees8 ees4 ees\! ees8
-		f r r4 r
-		d2.(\fz
-		ees8) r r4 r
-		R2.*14
+		a a4 a\! c8
+		bes r r4 r
+		\partcombineApart R2.*2
+		
+		\partcombineAutomatic R2.*14
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -52,32 +52,32 @@ musicHornIVMvtI = \relative c' {
 % Bars 41 to 45
 		g2\fz g4~\fz
 		g g2\fz
-		fis2\ff fis4~
-		fis fis2
-		f! e4~
+		a2\ff a4~
+		a a2
+		a a4~
 % Bars 46 to 50
-		e a2\<~
-		a2.~
-		a \mark \default
-		bes4\ff^\grandioso r r
+		a c2\<~
+		c2.~
+		c \mark \default
+		d4\ff^\grandioso r r
 		R2.
 % Bars 51 to 55
+		\partcombineApart f2\f r4 \partcombineAutomatic
 		R2.
-		R2.
-		R2.
+		\partcombineApart f4-. f-. r \partcombineAutomatic
 		R2.*2
 		
 % Bars 56 to 60
-		b2(\fz c8 d)
-		c2.
-		R2.*2
-		
-		r4 r c8-.\f d-.
+		d2(\fz ees8 f)
+		ees2.
+		\partcombineApart ees2(\fz d8 c)
+		bes4 r r \partcombineAutomatic 
+		r r ees8-.\f f-.
 % Bars 61 to 65
-		ees2-> c8-. d-.
-		ees2-> c8-. d-.
-		ees2-> c8-. d-.
-		ees4-. r r
+		g2-> ees8-. f-.
+		g2-> ees8-. f-.
+		g2-> ees8-. f-.
+		g4-. r r
 		R2.*18
 % Bars 66 to 70
 	
@@ -88,11 +88,11 @@ musicHornIVMvtI = \relative c' {
 % Bars 81 to 85
 		
 		
-		r4 a,\pp r
-		r g r
-		R2.*2
+		r4 c,\pp r
+		r bes r
+		\partcombineApart r r cis-.
 % Bars 86 to 90
-		
+		d-. r r \partcombineAutomatic
 		R2.*3
 		
 		
@@ -102,10 +102,10 @@ musicHornIVMvtI = \relative c' {
 		g4 r r
 		R2.*2
 		
-		c2.(->\f
+		aes2.(->\f
 % Bars 96 to 100
-		ees4) r r
-		aes,2( c4
+		bes4) r r
+		aes2( c4
 		ees) r r
 		R2.*3
 % Bars 101 to 105
@@ -113,26 +113,26 @@ musicHornIVMvtI = \relative c' {
 		d8-.\f r r4 r
 		d8-. r r4 r
 		d8-.\p r r4 r
-		R2.*2
+		\partcombineApart r r fis,\pp
 % Bars 106 to 110
-		
+		r fis r \partcombineAutomatic
 		R2. \mark \default
-		d4(_\pespressD\< a'2)\!
-		g4.( d8 bes4)\<
-		f'( c'8) r c4-.\>
+		d4( a' c)\!
+		bes4.( a8 g4)\<
+		f\( ees'8\) r ees4-.\>
 % Bars 111 to 115
-		bes2\! r4 
+		d2\! r4 
 		R2.*14
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
 % Bars 126 to 130
-		r4 r d,\pp~
+		r4 r d\pp~
 		d r d~
-		d d--\< d--
-		d\>-- d-- fis--
-		b,2.\pp~
+		d b--\< b--
+		b\>-- b-- b--
+		b2.\pp~
 % Bars 131 to 135
 		b2 r4
 		R2.*4
@@ -144,13 +144,13 @@ musicHornIVMvtI = \relative c' {
 		R2.*2
 % Bars 141 to 145
 		
-		r4 r a'-.\f
-		r a-. a-.
-		g-. r aes(->
-		g8) r r4 aes->(
+		r4 r c-.\f
+		r c-. c-.
+		d-. r c(->
+		d8) r r4 c->(
 % Bars 146 to 150
-		g8) r r4 r
-		R2. 
+		d8) r r4 r
+		R2.
 		g,2.\p~
 		g~
 		g~_\crescmarkup
@@ -160,30 +160,30 @@ musicHornIVMvtI = \relative c' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-		g'2(\ff fis4)
-		g2( a4)
-		g2( a4)
-		g2( a4)
-		b2( a4)
+		b2(\ff c4)
+		d2( d4)
+		d2( c4)
+		b2( c4)
+		d2( c4)
 % Bars 166 to 170
-		g2( a4)
-		b-> c8-. d-. g,4
-		b-> c8-. d-. g,4
-		bes-> c8-. d-. g,4
-		bes-> c8-. d-. g,4
+		b2( c4)
+		\partcombineApart d-> c8-. d-. g,4
+		d'-> c8-. d-. g,4
+		d'-> c8-. d-. g,4
+		d'-> c8-. d-. g,4 \partcombineAutomatic
 % Bars 171 to 175
 		R2.*3
 		
 		
-		R2.*3
-		
+		\partcombineApart g2.~\pp
+		g~
 % Bars 176 to 180
-		
+		g~
 	}
 	\alternative {
 		{
-			R2.
-			g4\p\< g g
+			g4 r r \partcombineAutomatic
+			d'\p\< d e
 			f2._\fpdimD~
 			f~
 % Bars 181 to 185
@@ -194,12 +194,12 @@ musicHornIVMvtI = \relative c' {
 			
 			
 			
-			bes,8\pp bes4 bes bes8
-			bes bes4 bes bes8
+			d,8\pp d4 d d8
+			d d4 d d8
 		}
 		{
 % Bars 177 to 180
-			R2.
+			\partcombineApart g4 r r \partcombineAutomatic
 			R2.*4
 % Bars 181 to 185
 			
@@ -247,9 +247,9 @@ musicHornIVMvtI = \relative c' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	a'4_\fmarc-> r8 c-! bes-! a-!
-	g4-.-> r bes->-.
-	a4-> r r
+	c'4_\fmarc-> r8 \partcombineApart c-! bes-! a-!
+	\partcombineAutomatic bes4-.-> r des->-.
+	c4-> r r
 	R2.*21
 % Bars 246 to 250
 	
@@ -262,23 +262,23 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	\mark \default
-	g4\f r r
+	d4\f r r
 % Bars 266 to 270
 	R2.*4
 	
 	
 	
-	g4\f-> a-> b->
+	b4\f-> c-> d->
 % Bars 271 to 275
-	g r r
-	c-> d-> e->
 	c r r
+	e-> f-> g->
+	\once \partcombineApart c, r r
 	R2.*5
 % Bars 276 to 280
 	
 	
 	
-	c,2.\ff~
+	c2.\ff~
 	c~
 % Bars 281 to 285
 	c
@@ -293,8 +293,8 @@ musicHornIVMvtI = \relative c' {
 	bes~
 	bes
 % Bars 291 to 295
-	g'\fz~
-	g4 r r
+	bes\fz~
+	bes4 r r
 	R2.*14
 % Bars 296 to 300
 	
@@ -302,34 +302,34 @@ musicHornIVMvtI = \relative c' {
 	
 % Bars 306 to 310
 	
-	e2.\ff~
-	e~
-	e~
-	e
+	a2.\ff~
+	a~
+	a~
+	a
 % Bars 311 to 315
-	f8 r f2-^~
-	f2.~
-	f~
-	f2 f4-. \mark \default
-	d2.\fp\>~
+	a8 r a2-^~
+	a2.~
+	a~
+	a2 a4-. \mark \default
+	bes2.\fp\>~
 % Bars 316 to 320
-	d\pp~
-	d~
-	d~
-	d~
-	d~
+	bes\pp~
+	bes~
+	bes~
+	bes~
+	bes~
 % Bars 321 to 325
-	d\<
-	d\fz\>
-	ees\pp~
-	ees
-	ees~
+	bes\<
+	b!\fz\>
+	c\pp~
+	c
+	c~
 % Bars 326 to 330
-	ees~
-	ees
-	ees\<~
-	ees
-	f8\f r r4 r
+	c~
+	c
+	a\<~
+	a
+	bes8\f r r4 r
 % Bars 331 to 335
 	R2.*16
 % Bars 336 to 340
@@ -346,7 +346,7 @@ musicHornIVMvtI = \relative c' {
 	aes8-.\f r aes2->~
 	aes2.~
 	aes
-	g,2 g4~
+	g2 g4~
 	g g2
 % Bars 356 to 360
 	c2\ff c4\fz~
@@ -367,17 +367,17 @@ musicHornIVMvtI = \relative c' {
 % Bars 386 to 390
 	
 	
-	R2.*2
-	
-	ees''2(\fz des8 ces
+	\partcombineApart ges2.\fz~
+	ges4 r r \partcombineAutomatic
+	ges'2(\fz f8 ees
 % Bars 391 to 395
-	bes4) r r
+	des4) r r
 	R2.*6
 % Bars 396 to 400
 	
 	
-	R2.*2
-	
+	\partcombineApart r4 r a--\p
+	r a-- r \partcombineAutomatic
 	R2. \mark \default
 % Bars 401 to 405
 	R2.*28
@@ -393,7 +393,7 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	
-	d,2.\p~
+	d2.\p~
 	d
 % Bars 431 to 435
 	R2.*14
@@ -404,40 +404,40 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	\mark \default
-	d'2.\f~
+	f2.\f~
 % Bars 446 to 450
-	d
-	d~
-	d4 r r
+	f
+	f~
+	f4 r r
 	R2.*5
 	
 % Bars 451 to 455
 	
 	
 	
-	bes2(\ff c4)
-	d2( f,4)
+	d2(\ff ees4)
+	f2( c4)
 % Bars 456 to 460
-	bes2( a4)
-	bes4( a2)
-	bes2( a4)
-	bes4( a2)
-	bes4 b2->
+	d2( ees4)
+	d2( c4)
+	d2( ees4)
+	d2( c4)
+	\partcombineApart bes b2->
 % Bars 461 to 465
-	c4 cis2->
-	c,!2.->
+	c4 cis2-> \partcombineAutomatic
+	c!2.->
 	c->
 	bes->
 	bes->
 % Bars 466 to 470
-	f'4 r r
+	\once \partcombineApart f4 r r
 	R2.*4
 % Bars 471 to 475
 	d'2\f-^ c4
 	f8-. d-. ees-. f-. b,!4
-	ees-> f,-> bes->
-	ees,-> a-> d,->
-	aes'-> r r
+	ees-> a,-> d->
+	g,-> c-> f,->
+	\once \partcombineApart aes-> r r
 % Bars 476 to 480
 	R2.*3
 	
@@ -449,15 +449,15 @@ musicHornIVMvtI = \relative c' {
 	R2.*5
 % Bars 486 to 490
 	
-	f2\f f4~
-	f f f
-	bes4.\ff-^ f-^
-	g-^ g-^~
+	c2\f c4~
+	c c c
+	d4.\ff-^ c-^
+	bes-^ bes-^~
 % Bars 491 to 495
-	g4 r r
+	bes4 r r
 	R2.
-	e4. r8 r4
-	e4. r8 r4 \mark #11
+	g4. r8 r4
+	g4. r8 r4 \mark #11
 	R2.*15
 % Bars 496 to 500
 	
@@ -468,31 +468,31 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	
-	r4 d-._\fmarc f-.
+	r4 f-._\fmarc a-.
 % Bars 511 to 515
-	bes-. d,-. f-.
-	bes-. d,-. f-.
-	bes-. d,-. f-.
-	bes r r
+	\once \partcombineApart bes-. f-. a-.
+	\once \partcombineApart bes-. f-. a-.
+	\once \partcombineApart bes-. f-. a-.
+	\once \partcombineApart bes r r
 	R2.*7
 % Bars 516 to 520
 	
 % Bars 521 to 525
 	
-	f2.->\ff
-	f->
-	bes,\>~
-	bes
+	\partcombineApart f2.->
+	f-> \partcombineAutomatic
+	f\>~
+	f
 % Bars 526 to 530
-	bes\p~
-	bes~_\dimmarkup
-	bes~
-	bes~
-	bes2\pp r4
+	f\p~
+	f~_\dimmarkup
+	f~
+	f~
+	f2\pp r4
 % Bars 531 to 535
 	R2.*2
 	
-	d2\pp~ d8 r
+	d'2\pp~ d8 r
 	R2.
 	d2~ d8 r
 % Bars 536 to 540
@@ -502,7 +502,7 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	
-	r4 r f->\f
+	r4 r c->\f
 % Bar 546
-	f-> r r \bar "|."
+	d-> r r \bar "|."
 }

@@ -29,14 +29,14 @@ musicHornIMvtI = \relative c'' {
 		g g4\< g g8
 % Bars 16 to 20
 		g g4 g\! g8
-		c,\< c4 c c8
-		c2.\fz~
-		c\<
-		cis4.\!->(_\dimmarkup d8 b cis)
+		c,\< c4 c c8\!
+		c2.~
+		<< c {s2\< s8 s\!} >>
+		\partcombineApart cis4.\!->(_\dimmarkup d8 b cis)
 % Bars 21 to 25
 		d4\p\>( a2)~
 		a2.(
-		e'8\pp) r r4 r
+		e'8\pp) r r4 r \partcombineAutomatic
 		R2.*10
 % Bars 26 to 30
 	
@@ -73,7 +73,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 56 to 60
 		g2(\fz f8 e)
 		f2.
-		a2(\fz g8 f)
+		a2( g8 f)
 		e2.
 		f4 r c\fz~
 % Bars 61 to 65
@@ -104,8 +104,8 @@ musicHornIMvtI = \relative c'' {
 		d2.\f->(
 % Bars 96 to 100
 		c4) r r
-		f2.->~
-		f4 r r 
+		f2.->(
+		f4) r r 
 		r r c8-.\f d-.
 		e-. f-. g4 r
 % Bars 101 to 105
@@ -135,11 +135,11 @@ musicHornIMvtI = \relative c'' {
 		
 		
 		b2.\f-^~
-		b4 r ees\f \mark \default
-		e!8-. r r4 r
+		b4 r \once \partcombineApart ees\f \mark \default
+		\once \partcombineApart e!8-. r r4 r
 % Bars 141 to 145
-		e8 r r4 r
-		e8 r r4 r
+		\once \partcombineApart e8 r r4 r
+		\once \partcombineApart e8 r r4 r
 		R2.*9
 % Bars 146 to 150
 	
@@ -180,15 +180,15 @@ musicHornIMvtI = \relative c'' {
 % Bars 181 to 185
 			
 			
-			g,2.~\pp
+			\partcombineApart g,2.~\pp
 			g~
 			g~
 % Bars 186 to 190
-			g 
+			g  \partcombineAutomatic
 			\clef bass c,,\pp~
 			c~
-			c8 \clef treble g''4 g g8
-			g8 g4 g g8
+			c8 \clef treble \partcombineApart g''4 g g8
+			g8 g4 g g8 \partcombineAutomatic
 		}
 		{
 % Bars 177 to 180
@@ -250,8 +250,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	c2.(\p\>
-	b4)\! r r
+	\partcombineApart c2.(\p\>
+	b4)\! r r \partcombineAutomatic
 	R2.*7
 % Bars 261 to 265
 	
@@ -314,7 +314,7 @@ musicHornIMvtI = \relative c'' {
 	
 	
 	
-	c2.\f~
+	\partcombineApart c2.~
 % Bars 331 to 335
 	c~
 	c
@@ -322,7 +322,7 @@ musicHornIMvtI = \relative c'' {
 	d4)\p f2\>~
 	f2.
 % Bars 336 to 340
-	e8\pp r r4 r
+	e8\pp r r4 r \partcombineAutomatic
 	R2.*10
 % Bars 341 to 345
 	
@@ -345,9 +345,14 @@ musicHornIMvtI = \relative c'' {
 	g g2\fz \mark \default
 	g4-. r r
 % Bars 361 to 365
-	R2.*19
+	R2.*4
+	
+	
+	
+	R2.*2
 % Bars 366 to 370
 	
+	R2.*13
 % Bars 371 to 375
 	
 % Bars 376 to 380
@@ -365,12 +370,12 @@ musicHornIMvtI = \relative c'' {
 % Bars 386 to 390
 	R2.*2
 	
-	f2(\fz ees8 des
+	f2( ees8 des
 	ees4) r r
 	aes2.\fz~
 % Bars 391 to 395
 	aes4 r r
-	ees2\fz~ ees8-. f-.
+	\partcombineApart ees2( ees8-.) f-. \partcombineAutomatic
 	bes,4 r r
 	r4 g'\fz f8-. ees-.
 	d-. r r4 r
@@ -383,7 +388,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 401 to 405
 	g,4(_\pespress d' f)
 	ees4.(\< d8 c4)
-	bes( aes'8)\! r aes4-.
+	bes\( aes'8\)\! r aes4-.
 	g2\>( f8 ees\!)
 	des4\p( f aes)
 % Bars 406 to 410
@@ -392,15 +397,16 @@ musicHornIMvtI = \relative c'' {
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	g8(\p b g'4 f)
+	\partcombineApart g8(\p b g'4 f)
 	e2( d4)
 	g,8( b g'4 f)
 	e8-. d-. c2
 	e8-. d-. c2
 % Bars 421 to 425
-	e8\pp\< e e4 e8 e
-	e4\! r r
-	R2.*8
+	e8 e e4 e8 e
+	e4 r r
+	R2. \partcombineAutomatic
+	R2.*7
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -429,10 +435,10 @@ musicHornIMvtI = \relative c'' {
 	e2( d4)
 	e2( f4)
 	e2( d4)
-	c8-. e-. f4( e)
+	\partcombineApart c8-. e-. f4( e)
 % Bars 461 to 465
 	d8-. fis-. g4( fis)
-	e2.->
+	e2.-> \partcombineAutomatic 
 	f!->
 	f->
 	fis->
@@ -504,8 +510,8 @@ musicHornIMvtI = \relative c'' {
 	g~\p
 	g
 	g2(_\dimmarkup f8 e)
-	e2(\> d8) c
-	c2 g4~\pp
+	e2( d8) c
+	c2 g4~
 % Bars 531 to 535
 	g2.~
 	g4 r r
@@ -515,11 +521,11 @@ musicHornIMvtI = \relative c'' {
 	
 	R2.*2
 	
-	c2.--\pp
+	\partcombineApart c2.--\pp
 % Bars 541 to 545
 	c--
 	c--
-	c2\f r4
+	c2\f r4 \partcombineAutomatic
 	R2.
 	c8\f-. e-. g4 f->
 % Bar 546

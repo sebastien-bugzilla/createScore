@@ -4,39 +4,39 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicHornIMvtI = \relative c'' {
+musicHornIIMvtI = \relative c' {
 	\clef treble
 	\key c \major
 	\transposition d
 % Bars 1 to 5
-	g8\pp g4 g g8
-	g8 g4 g g8
+	c8\pp c4 c c8
+	c8 c4 c c8
 	\repeat volta 2 {
-		g8 g4 g g8
-		g8 g4 g g8
-		g8 g4 g g8
+		c8 c4 c c8
+		c8 c4 c c8
+		c8 c4 c c8
 % Bars 6 to 10
-		g8 g4 g g8
-		g8 g4 g g8
-		g8\< g4 g e'8\!
-		e e4\f e8(\> f g)
-		f8\p\> f4 f f8
+		c8 c4 c c8
+		c8 c4 c c8
+		c8\< c4 c c'8\!
+		cis cis4\f cis8(\> d e)
+		d8\p\> d4 d d8
 % Bars 11 to 15
-		f f4\pp f f8
-		f f4 f f8 
-		f f4 f f8 
-		f f4 f f8 
+		d d4\pp d d8
+		d d4 d d8 
+		c c4 c c8 
+		c c4 c c8 
 		g g4\< g g8
 % Bars 16 to 20
 		g g4 g\! g8
-		c,\< c4 c c8
+		c,\< c4 c c8\!
 		c2.\fz~
-		c\<
-		cis4.\!->(_\dimmarkup d8 b cis)
+		c2~ c8 r
+		R2.*4
 % Bars 21 to 25
-		d4\p\>( a2)~
-		a2.(
-		e'8\pp) r r4 r
+		
+		
+		
 		R2.*10
 % Bars 26 to 30
 	
@@ -44,38 +44,38 @@ musicHornIMvtI = \relative c'' {
 		
 		
 		
-		ees8-.\f r ees2\fz~
-		ees2.~
+		c'8-.\f r c2\fz~
+		c2.~
 % Bars 36 to 40
-		ees2 f4-.
-		ees-. r r
-		ees8-. r ees2\fz~
-		ees2.~
-		ees2 f4-. 
+		c2 d4-.
+		c-. r r
+		c8-. r c2\fz~
+		c2.~
+		c2 d4-. 
 % Bars 41 to 45
-		f2\fz f4\fz~
-		f f2\fz
-		f2\ff f4~
-		f e2
-		f fis4~
+		d2\fz d4\fz~
+		d d2\fz
+		d2\ff d4~
+		d d2
+		d d4~
 % Bars 46 to 50
-		fis g2~\<
+		d g,2~\<
 		g2.~
 		g \mark \default
-		g4\ff^\grandioso r r
+		g4\ff r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
 		c~
 		c
-		c4. c8 c4\<
-		c4( d e)\!
+		e4. e8 e4\<
+		e4( g c)\!
 % Bars 56 to 60
-		g2(\fz f8 e)
-		f2.
-		a2(\fz g8 f)
-		e2.
-		f4 r c\fz~
+		e2(\fz d8 cis)
+		d2.
+		b2.\fz
+		c2.
+		c4 r c,\fz~
 % Bars 61 to 65
 		c2 c4\fz~
 		c2 c4\fz~
@@ -91,8 +91,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 81 to 85
 		
 		
-		r4 gis\pp r
-		r a r
+		r4 e\pp r
+		r e r
 		R2.*10
 % Bars 86 to 90
 	
@@ -101,27 +101,27 @@ musicHornIMvtI = \relative c'' {
 		
 		
 		
-		d2.\f->(
+		bes'2.\f->(
 % Bars 96 to 100
-		c4) r r
-		f2.->~
-		f4 r r 
-		r r c8-.\f d-.
-		e-. f-. g4 r
+		a4) r r
+		d2.->(
+		c4) r r 
+		r r a8-.\f b!-.
+		c-. d-. e4 r
 % Bars 101 to 105
-		r e\fz d8-. c-.
-		b-. r r4 r
-		b8-. r r4 r
-		b8-.\p r r4 r
-		r r b\pp
+		r c\fz b8-. a-.
+		gis-. r r4 r
+		gis8-. r r4 r
+		gis8-.\p r r4 r
+		r r e\pp
 % Bars 106 to 110
-		r b r
+		r e r
 		R2. \mark \default
 		R2.*3
 % Bars 111 to 115
-		r4 r d8(\p c
-		bes4\< d f)
-		c4.(\> bes8 a4)\!
+		r4 r g8(\p e
+		f4\< bes d)
+		a4.(\> g8 f4)\!
 		R2.*24
 % Bars 116 to 120
 	
@@ -134,9 +134,9 @@ musicHornIMvtI = \relative c'' {
 % Bars 136 to 140
 		
 		
-		b2.\f-^~
-		b4 r ees\f \mark \default
-		e!8-. r r4 r
+		b,2.\f-^~
+		b4 r ees'\f \mark \default
+		e!8 r r4 r
 % Bars 141 to 145
 		e8 r r4 r
 		e8 r r4 r
@@ -145,13 +145,13 @@ musicHornIMvtI = \relative c'' {
 	
 % Bars 151 to 155
 		
-		e2.~\f~
-		e~
-		e~
-		e4 r r
+		cis2.~\f~
+		cis~
+		cis~
+		cis4 r r
 % Bars 156 to 160
-		f2.\fz
-		g2\fz r4
+		d2.\fz
+		e2\fz r4
 		R2.*3
 % Bars 161 to 165
 		e4\ff \tuplet 3/2 4 {e8( fis e)} e4~
@@ -161,14 +161,14 @@ musicHornIMvtI = \relative c'' {
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 % Bars 166 to 170
 		e4 \tuplet 3/2 4 {e8( fis e)} e4
-		e r a,8-. cis-.
+		cis r a8-. cis-.
 		e4 r a,8-. cis-.
 		e4 r a,8-. c!-.
 		e4 r a,8-. c-.
 % Bars 171 to 175
-		e2.\fp~
-		e~
 		e4 r r
+		R2.*2
+		
 		R2.*3
 		
 % Bars 176 to 180
@@ -180,15 +180,15 @@ musicHornIMvtI = \relative c'' {
 % Bars 181 to 185
 			
 			
-			g,2.~\pp
-			g~
-			g~
+			R2.*4
+			
+			
 % Bars 186 to 190
-			g 
-			\clef bass c,,\pp~
+			
+			\clef bass c,,,2.\pp~
 			c~
-			c8 \clef treble g''4 g g8
-			g8 g4 g g8
+			c8 r r4 r
+			R2.
 		}
 		{
 % Bars 177 to 180
@@ -197,12 +197,12 @@ musicHornIMvtI = \relative c'' {
 		
 		}
 	}
-	R2.*4
+	\clef treble R2.*4
 % Bars 186 to 190
-	r4 r a(\pp
+	r4 r a''(\pp
 	e'8) r e r r4
 	R2.
-	r4 r g,-.\p
+	r4 r g-.\p
 	c2-> r4
 % Bars 191 to 195
 	r r g4(\<
@@ -211,9 +211,9 @@ musicHornIMvtI = \relative c'' {
 % Bars 196 to 200
 	
 	
-	g'2(\p f8 ees)
-	ees2( d8 c)
-	c2 r4
+	ees2(\p d8 c)
+	c2( bes8 a)
+	a2 r4
 % Bars 201 to 205
 	R2.*14
 % Bars 206 to 210
@@ -236,13 +236,13 @@ musicHornIMvtI = \relative c'' {
 	
 	
 	
-	d4\f r r
+	g4\f r r
 	R2.*3
 % Bars 241 to 245
 	
 	
 	g,8\f g g2~
-	g8 g g2~_\dimmarkup
+	g8 g g2~
 	g8 g g2~
 % Bars 246 to 250
 	g4\p r r
@@ -250,8 +250,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	c2.(\p\>
-	b4)\! r r
+	R2.*2
+	
 	R2.*7
 % Bars 261 to 265
 	
@@ -262,32 +262,32 @@ musicHornIMvtI = \relative c'' {
 % Bars 266 to 270
 	
 % Bars 271 to 275
-	d2.\f->~
+	d'2.\f->~
 	d~
-	d4 d-> b->
-	g'2.\fz~
+	d4 b'-> g->
+	g2.\fz~
 	g4 r r
 % Bars 276 to 280
 	c,2.-^~
 	c4 r r
 	R2.
-	f2.\ff~
-	f~
+	bes'2.\ff~
+	bes~
 % Bars 281 to 285
-	f
-	f~\fz
-	f~
-	f
-	g\fz~
+	bes
+	bes~\fz
+	bes~
+	bes
+	e!\fz~
 % Bars 286 to 290
-	g~
-	g
-	ges\fz~
-	ges~
-	ges
+	e~
+	e
+	ees\fz~
+	ees~
+	ees
 % Bars 291 to 295
-	ges\fz~
-	ges4 r r
+	ees\fz~
+	ees4 r r
 	R2.*14
 % Bars 296 to 300
 	
@@ -295,59 +295,72 @@ musicHornIMvtI = \relative c'' {
 	
 % Bars 306 to 310
 	
-	fis2.\ff~
-	fis~
-	fis~
-	fis
+	dis2.\ff~
+	dis~
+	dis~
+	dis
 % Bars 311 to 315
-	f!8 r f2-^~
-	f2.~
-	f~
-	f2 f4-. \mark \default
-	e4-. r r
+	d!8 r g,2-^~
+	g2.~
+	g~
+	g2 g4-. \mark \default
+	g2.\fp\>~
 % Bars 316 to 320
-	R2.*14
+	g~\pp
+	g~
+	g~
+	g~
+	g~
 % Bars 321 to 325
-	
+	g\<
+	g\fz\>
+	a\pp~
+	a
+	\partcombineApart c~
 % Bars 326 to 330
-	
-	
-	
-	
-	c2.\f~
-% Bars 331 to 335
 	c~
 	c
-	cis(^\dimmarkup
-	d4)\p f2\>~
-	f2.
+	b\<~
+	<< b {s4 s s\!} >>
+	c,2.\f~
+% Bars 331 to 335
+	c~
+	c2 r4
+	R2.*4
+	
+	
 % Bars 336 to 340
-	e8\pp r r4 r
+	
 	R2.*10
 % Bars 341 to 345
 	
 % Bars 346 to 350
 	
-	ees8-.\f r ees2->~
-	ees2.~
-	ees4 ees-. f-.->
-	ees8-. r r4 r
+	c'8-.\f r c2->~
+	c2.~
+	c4 c-. d-.->
+	c8-. r r4 r
 % Bars 351 to 355
-	ees8-.\f r ees2->~
-	ees2.~
-	ees4 ees-. f->-.
-	f2 f4~
-	f f2
+	c8-.\f r c2->~
+	c2.~
+	c4 c-. d->-.
+	d2 d4~
+	d d2
 % Bars 356 to 360
-	f\ff e4\fz~
-	e f2\fz
-	fis\fz g4~\fz
-	g g2\fz \mark \default
-	g4-. r r
+	d\ff d4\fz~
+	d d2\fz
+	d\fz b4~\fz
+	b c2\fz \mark \default
+	cis4-. r r
 % Bars 361 to 365
-	R2.*19
-% Bars 366 to 370
+	R2.*4
 	
+	
+	
+	\partcombineApart g4\p-. g,-. r
+% Bars 366 to 370
+	g'-. g,-. r \partcombineAutomatic
+	R2.*13
 % Bars 371 to 375
 	
 % Bars 376 to 380
@@ -355,52 +368,49 @@ musicHornIMvtI = \relative c'' {
 	
 	
 	
-	d4\f r r
+	b'4\f r r
 % Bars 381 to 385
-	d r r
+	b r r
 	R2.
-	c2.\fz~
+	c,2.\fz~
 	c~
 	c4 r r
 % Bars 386 to 390
 	R2.*2
 	
-	f2(\fz ees8 des
-	ees4) r r
+	des'2\fz( aes4
+	c) r r
 	aes2.\fz~
 % Bars 391 to 395
 	aes4 r r
-	ees2\fz~ ees8-. f-.
-	bes,4 r r
-	r4 g'\fz f8-. ees-.
-	d-. r r4 r
+	aes2\fz bes8-. aes-.
+	g4 r r
+	r4 ees'\fz d8-. c-.
+	b!-. r r4 r
 % Bars 396 to 400
-	d8-._\dimmarkup r r4 r
-	d8-.\p r r4 r
-	r r d--\p
-	r d-- r
+	b8-. r r4 r
+	b8-.\p r r4 r
+	r r g--\p
+	r g-- r
 	R2. \mark \default
 % Bars 401 to 405
-	g,4(_\pespress d' f)
-	ees4.(\< d8 c4)
-	bes( aes'8)\! r aes4-.
-	g2\>( f8 ees\!)
-	des4\p( f aes)
+	g2( d'4)
+	c4.(\< g8 ees4)
+	bes'\( f'8\)\! r f4-.
+	ees2\>( bes8 g\!)
+	aes4\p( des f)
 % Bars 406 to 410
-	ees4.(_\dimmarkup des8 c4)
+	c4.( bes8 aes4)
 	R2.*9
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	g8(\p b g'4 f)
-	e2( d4)
-	g,8( b g'4 f)
-	e8-. d-. c2
-	e8-. d-. c2
+	R2.*5
 % Bars 421 to 425
-	e8\pp\< e e4 e8 e
-	e4\! r r
-	R2.*8
+	c,8\pp\< c c4 c8 c
+	c4 c\> e\!
+	a, r r
+	R2.*7
 % Bars 426 to 430
 	
 % Bars 431 to 435
@@ -420,22 +430,22 @@ musicHornIMvtI = \relative c'' {
 	
 % Bars 451 to 455
 	
-	ees8(\f c) d-. ees-. f([ d)]
-	ees-.\<[ f-.] ees8( d ees d)
-	g2(\ff f4)
-	e!2( d4)
+	c'8(\f aes) bes-. c-. d([ b)]
+	c-.\<[ d-.] c8( b c g)
+	e'!2(\ff d4)
+	c2( g4)
 % Bars 456 to 460
-	e2( f4)
-	e2( d4)
-	e2( f4)
-	e2( d4)
-	c8-. e-. f4( e)
+	c2( b4)
+	c4( b2)
+	c2( b4)
+	c4( b2)
+	c8-. e-. f4 e
 % Bars 461 to 465
-	d8-. fis-. g4( fis)
-	e2.->
-	f!->
-	f->
-	fis->
+	d8-. fis-. g4 fis
+	e2.
+	d->
+	c->
+	c->
 % Bars 466 to 470
 	g4 g,2~
 	g2.~
@@ -462,15 +472,15 @@ musicHornIMvtI = \relative c'' {
 	\clef treble c''2->\f c4~->
 % Bars 486 to 490
 	c c2->
-	f2 f4~
-	f f f
-	g4.\ff-^ g-^
-	g-^ f-^~
+	d'2 d4~
+	d d d
+	e4.\ff-^ d-^
+	c-^ c-^~
 % Bars 491 to 495
-	f4-. b,-. e-.
-	a,-. d-. g,-.
-	ees'4. r8 r4
-	ees4. r8 r4 \mark #11
+	c4-. g-. c-.
+	f,-. b-. e,-.
+	c'4. r8 r4
+	c4. r8 r4 \mark #11
 	R2.*14
 % Bars 496 to 500
 	
@@ -480,48 +490,50 @@ musicHornIMvtI = \relative c'' {
 	
 	
 	
-	r4 r f-.\f
-	e-._\marc g-. g-.
+	r4 r b-.\f
+	c-. c-. d-.
 % Bars 511 to 515
-	g-. g-. g-.
-	g-. g-. g-.
-	g-. g-. g-.
-	g r r
+	e-. c-. d-.
+	e-. c-. d-.
+	e-. c-. d-.
+	e r r
 	R2.
 % Bars 516 to 520
-	c,4.\f c8 c4
-	c( d e)
-	g2\fz f8( e)
-	e2 r4
-	g2\fz f8( e)
+	e,4.\f e8 e4
+	e( g c)
+	e2\fz d8( c)
+	c2 r4
+	e2\fz d8( c)
 % Bars 521 to 525
-	e2 r4
-	g2\ff f8( e)
-	g2 f8( e)
-	g2.\>~
-	g~
+	c2 r4
+	e2\ff d8( c)
+	e2 d8( c)
+	e2.\>~
+	e~
 % Bars 526 to 530
-	g~\p
-	g
-	g2(_\dimmarkup f8 e)
-	e2(\> d8) c
-	c2 g4~\pp
+	e~\p
+	e
+	e2( d8 c)
+	c2(\> g8) e
+	e2 g,4~\pp
 % Bars 531 to 535
 	g2.~
-	g4 r r
-	R2.*5
+	g~
+	g~
+	g~
+	g~
 % Bars 536 to 540
-	
-	
+	g~
+	g4 r r
 	R2.*2
 	
-	c2.--\pp
+	R2.*4
 % Bars 541 to 545
-	c--
-	c--
-	c2\f r4
+	
+	
+	
 	R2.
-	c8\f-. e-. g4 f->
+	c8\f-. e-. g4 d'->
 % Bar 546
-	e-> r r \bar "|."
+	c-> r r \bar "|."
 }
