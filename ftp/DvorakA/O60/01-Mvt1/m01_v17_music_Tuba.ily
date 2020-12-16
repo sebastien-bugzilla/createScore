@@ -9,7 +9,10 @@ musicTubaMvtI = \relative c {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
+	R2.*2
 	
+	\repeat volta 2 {
+		R2.*45
 % Bars 6 to 10
 	
 % Bars 11 to 15

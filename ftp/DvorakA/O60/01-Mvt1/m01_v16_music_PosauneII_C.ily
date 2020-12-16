@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicPosauneIMvtI = \relative c' {
+musicPosauneIIMvtI = \relative c' {
 	\clef alto
 	\key d \major
 %	\transposition a
@@ -32,26 +32,26 @@ musicPosauneIMvtI = \relative c' {
 % Bars 46 to 50
 		
 		
-		r4 r cis-.\ff \mark \default
-		d-.^\grandioso r r
-		r r a\f
+		r4 r g-.\ff \mark \default
+		fis-. r r
+		r r fis\f
 % Bars 51 to 55
-		d2-^ r4
-		r r a-.
-		d-. d-. r
+		a2-^ r4
+		r r fis-.
+		a-. a-. r
 		R2.*2
 		
 % Bars 56 to 60
-		dis2(\fz e8 fis)
-		e2.
-		cis\fz
-		d4 a b8 c
-		b4 r r
+		fis2(\fz g8 a)
+		g2.
+		b2(\fz a8 g)
+		fis2.
+		g2 c4
 % Bars 61 to 65
-		R2.*4
-		
-		
-		
+		b8-. a-. g4 c\fz
+		b8-. a-. g4 c\fz
+		b8-. a-. g4 c\fz
+		b8-. a-. g4 r
 		R2.*43
 % Bars 66 to 70
 	
@@ -98,17 +98,17 @@ musicPosauneIMvtI = \relative c' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-		dis2(\ff e4)
-		fis( b ais)
-		fis8( dis) e-. fis-. cis4
-		b8-. dis-. fis4-> e->
-		dis2( cis4)
+		b2(\ff ais4)
+		b2( cis4)
+		b4 cis8-. dis-. ais4
+		b-. dis4-> cis->
+		b2( ais4)
 % Bars 166 to 170
-		b8-. dis-. fis4-> e->
-		dis r r
-		dis r r
-		d! r r
-		d r r
+		b-. dis-> cis4->
+		b r r
+		b r r
+		b r r
+		b r r
 % Bars 171 to 175
 		R2.*6
 % Bars 176 to 180
@@ -123,23 +123,29 @@ musicPosauneIMvtI = \relative c' {
 		}
 		{
 % Bars 177 to 180
-			R2.*5
+			fis2.\pp~
+			fis~
+			fis~
+			fis~
 % Bars 181 to 185
-			
+			fis~
 		}
 	}
-	R2.*7
+	fis~
+	fis~
+	fis~
+	fis~
 % Bars 186 to 190
-	
-	
-	
-	a2.\ppp~
-	a~
+	fis~
+	fis~
+	fis
+	fis\ppp~
+	fis~
 % Bars 191 to 195
-	a
-	a~
-	a~
-	a4 r r
+	fis
+	f~
+	f~
+	f4 r r
 	R2.*20
 % Bars 196 to 200
 	
@@ -157,31 +163,31 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	c2.\pp~
-	c~
+	R2.*4
+	
 % Bars 221 to 225
-	c(
-	cis!)
-	cis4. cis8 cis4
-	cis2.~
-	cis~
+	
+	
+	e4(\pp f g)
+	bes2( a8 g)
+	g2.
 % Bars 226 to 230
-	cis
-	d4. d8 d4
-	d2.~
-	d~
-	d
+	eis4( gis b!)
+	b2.~
+	b2( a8 gis)
+	gis4. gis8 gis4
+	fis4( a c)
 % Bars 231 to 235
-	ees4. ees8 ees4
-	ees2.~
-	ees~
-	ees
-	e!4. e8 e4_\crescmarkup
+	c2.~
+	c2( b8 a)
+	a4. a8 a4
+	g( bes des)
+	des2.~_\crescmarkup
 % Bars 236 to 240
-	e2.~
-	e~
-	e
-	e4\f r r
+	des2( c8 bes)
+	bes4. bes8 bes4
+	gis4( b! d!)
+	cis!4\f r r
 	R2.*25
 % Bars 241 to 245
 	
@@ -201,7 +207,7 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	fis2.\f
+	dis2.\f
 	R2.*9
 % Bars 271 to 275
 	
@@ -209,23 +215,23 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	r4 r c\ff-.
-	g'2-> r4
+	r4 r c\ff
+	g2-> r4
 % Bars 281 to 285
-	r r c,-.
-	g'-. g-. r
-	r r c,-.
-	g'2-> r4
-	r4 r c,-.
+	r r c
+	g-. g-. r
+	r r c
+	g2-> r4
+	r4 r c
 % Bars 286 to 290
-	fis2-> r4
-	r r c-.
-	aes'2-> r4
-	r r c,-.
-	aes'-. aes-. r
+	fis,2-> r4
+	r r c'
+	aes2-> r4
+	r r c
+	aes-. aes-. r
 % Bars 291 to 295
-	f2.\fz ~
-	f4 r r
+	aes2.\fz ~
+	aes4 r r
 	R2.*14
 % Bars 296 to 300
 	
@@ -233,16 +239,16 @@ musicPosauneIMvtI = \relative c' {
 	
 % Bars 306 to 310
 	
-	eis2.\ff~
-	eis~
-	eis~
-	eis
+	gis2.\ff~
+	gis~
+	gis~
+	gis
 % Bars 311 to 315
-	e!2-^ a,4-.
+	e'!2-^ a,4-.
 	e'2-^ a,4-.
 	g'-> e-> cis->
-	a8-. g'-. e-. cis-. a-. cis-. \mark \default
-	d4-. r r
+	a8-. g'-. e-. cis-. a-. g-. \mark \default
+	fis4-. r r
 % Bars 316 to 320
 	R2.*40
 % Bars 321 to 325
@@ -260,11 +266,11 @@ musicPosauneIMvtI = \relative c' {
 % Bars 351 to 355
 	
 % Bars 356 to 360
-	g!2\ff fis4\fz~
-	fis e2\fz
-	e\fz e4~
-	e d2\fz \mark \default
-	dis4-. r r
+	cis'2\ff cis4\fz~
+	cis cis2\fz
+	cis\fz cis4~
+	cis a2\fz \mark \default
+	a4-. r r
 % Bars 361 to 365
 	R2.*40
 % Bars 366 to 370
@@ -299,15 +305,15 @@ musicPosauneIMvtI = \relative c' {
 	
 % Bars 431 to 435
 	
-	r4 r e-.\f
-	cis-. r d-.
-	cis-. r d-.
-	cis-. r e\<-.
+	r4 r gis-.\f
+	a-. r bes-.
+	a-. r bes-.
+	a-. r cis\<-.
 % Bars 436 to 440
-	r g-. e-.\!
-	fis-. r r
-	fis-. r r
-	fis-. r r
+	r b!-. cis-.\!
+	d-. r r
+	d-. r r
+	d-. r r
 	R2.*14
 % Bars 441 to 445
 	
@@ -317,20 +323,20 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	a2(\ff g4)
-	fis2( e4)
+	fis2(\ff e4)
+	a,2( a4)
 % Bars 456 to 460
-	fis2( g4)
-	fis2( e4)
-	fis2( g4)
-	fis2( e4)
-	d dis2->
+	d2( cis4)
+	d4( cis2)
+	d2( cis4)
+	d( cis2)
+	d4 dis2
 % Bars 461 to 465
-	e8-. r eis2->
-	fis2.->
-	g->
-	g->
-	gis->
+	e8-. b-. cis4-. b-.
+	cis2.->
+	cis->
+	d->
+	d->
 % Bars 466 to 470
 	a4 r r
 	R2.*8
@@ -339,26 +345,26 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	a4\f e2->~
+	c4\f gis2->~
 % Bars 476 to 480
-	e4 fis-> d->
-	g-> c,-> fis->
-	b,-> e-> a,8-. g-.
-	fis4 r r
+	gis4 a-> fis->
+	b-> e,-> a->
+	d,-> g-> fis8-. e-.
+	d4 r r
 	R2.*7
 % Bars 481 to 485
 	
 % Bars 486 to 490
 	
-	g'2\ff g4~
-	g g g
-	fis4.\ff-^ e-^
-	d2.~
+	cis'2\ff cis4~
+	cis cis cis
+	d4.\ff-^ cis-^
+	b2.~
 % Bars 491 to 495
-	d4 cis-. fis-.
-	b,-. e-. a,-.
-	d4. r8 r4
-	d4. r8 r4 \mark #11
+	b4 a-. d-.
+	g,-. cis-. fis,-.
+	gis4. r8 r4
+	gis4. r8 r4 \mark #11
 	R2.*15
 % Bars 496 to 500
 	
@@ -374,22 +380,22 @@ musicPosauneIMvtI = \relative c' {
 	d2-^_\marc r4
 	r r a-.
 	d-. d-. r
-	d r r
+	fis, r r
 	R2.
 % Bars 516 to 520
-	d4. d8 d4
-	d( e fis)
-	a2\fz g8( fis)
-	fis2 r4
-	a2\fz g8( fis)
+	fis4. fis8 fis4
+	fis( a d)
+	fis2\fz e8( d)
+	d2 r4
+	fis2\fz e8( d)
 % Bars 521 to 525
-	fis2 r4
-	fis2.-^
-	fis-^
-	fis~\>
-	fis~
+	d2 r4
+	a2.-^
+	a-^
+	a~\>
+	a~
 % Bars 526 to 530
-	fis4\p r r
+	a4\p r r
 	R2.*18
 % Bars 531 to 535
 	
@@ -400,7 +406,7 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	r4 r e\f->
+	r4 r cis\f->
 % Bar 546
-	fis-> r r \bar "|."
+	a-> r r \bar "|."
 }
