@@ -20,6 +20,14 @@ formatPosauneIIMvtIV = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
 }
+formatPosauneIIIMvtI = {
+	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+}
+formatPosauneIIIMvtIV = {
+	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
+	\override Score.NonMusicalPaperColumn.page-break-permission = ##f
+}
 formatTubaMvtI = {
 	\override Score.NonMusicalPaperColumn.line-break-permission = ##f
 	\override Score.NonMusicalPaperColumn.page-break-permission = ##f

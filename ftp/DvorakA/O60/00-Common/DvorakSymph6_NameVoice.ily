@@ -578,6 +578,16 @@ namePosauneIIMvtIV = {
 	\set Staff.shortInstrumentName = "Pos. II"
 	\set Staff.midiInstrument = #"trombone"
 }
+namePosauneIIIMvtI = {
+	\set Staff.instrumentName = "Posaune III"
+	\set Staff.shortInstrumentName = "Pos. III"
+	\set Staff.midiInstrument = #"trombone"
+}
+namePosauneIIIMvtIV = {
+	\set Staff.instrumentName = "Posaune III"
+	\set Staff.shortInstrumentName = "Pos. III"
+	\set Staff.midiInstrument = #"trombone"
+}
 nameTubaMvtI = {
 	\set Staff.instrumentName = "Tuba"
 	\set Staff.shortInstrumentName = "Tub."
