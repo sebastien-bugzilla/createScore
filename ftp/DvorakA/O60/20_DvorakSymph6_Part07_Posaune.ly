@@ -22,10 +22,12 @@
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_PosauneI.ily"
 \include "./01-Mvt1/m01_v16_music_PosauneII.ily"
-\include "./01-Mvt1/m01_v17_music_Tuba.ily"
+\include "./01-Mvt1/m01_v17_music_PosauneIII.ily"
+\include "./01-Mvt1/m01_v18_music_Tuba.ily"
 \include "./04-Mvt4/m04_v15_music_PosauneI.ily"
 \include "./04-Mvt4/m04_v16_music_PosauneII.ily"
-\include "./04-Mvt4/m04_v17_music_Tuba.ily"
+\include "./04-Mvt4/m04_v17_music_PosauneIII.ily"
+\include "./04-Mvt4/m04_v18_music_Tuba.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -33,6 +35,8 @@
 \addQuote "cueVoicePosauneIMvtIV" { \cueVoicePosauneIMvtIV }
 \addQuote "cueVoicePosauneIIMvtI" { \cueVoicePosauneIIMvtI }
 \addQuote "cueVoicePosauneIIMvtIV" { \cueVoicePosauneIIMvtIV }
+\addQuote "cueVoicePosauneIIIMvtI" { \cueVoicePosauneIIIMvtI }
+\addQuote "cueVoicePosauneIIIMvtIV" { \cueVoicePosauneIIIMvtIV }
 \addQuote "cueVoiceTubaMvtI" { \cueVoiceTubaMvtI }
 \addQuote "cueVoiceTubaMvtIV" { \cueVoiceTubaMvtIV }
 \book {
@@ -133,6 +137,56 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\namePosauneIIMvtIV \musicPosauneIIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					IV
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPosauneIIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \generalOptions \partOptions
+				\namePosauneIIIMvtI \musicPosauneIIIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\fill-line {
+					\fontsize #4
+					I
+				}
+			}
+		}
+		\layout {
+			\context {
+				\CueVoice \layoutCueVoice
+			}
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatPosauneIIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \generalOptions \partOptions
+				\namePosauneIIIMvtIV \musicPosauneIIIMvtIV
 			}
 		>>
 		\header {

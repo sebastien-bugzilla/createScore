@@ -20,10 +20,10 @@
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part08_Pauken.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
-\include "./01-Mvt1/m01_v18_music_Pauken.ily"
-\include "./02-Mvt2/m02_v18_music_Pauken.ily"
-\include "./03-Mvt3/m03_v18_music_Pauken.ily"
-\include "./04-Mvt4/m04_v18_music_Pauken.ily"
+\include "./01-Mvt1/m01_v19_music_Pauken.ily"
+\include "./02-Mvt2/m02_v19_music_Pauken.ily"
+\include "./03-Mvt3/m03_v19_music_Pauken.ily"
+\include "./04-Mvt4/m04_v19_music_Pauken.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################

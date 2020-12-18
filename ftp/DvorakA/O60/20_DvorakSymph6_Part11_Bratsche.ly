@@ -20,10 +20,10 @@
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part11_Bratsche.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
-\include "./01-Mvt1/m01_v21_music_Bratsche.ily"
-\include "./02-Mvt2/m02_v21_music_Bratsche.ily"
-\include "./03-Mvt3/m03_v21_music_Bratsche.ily"
-\include "./04-Mvt4/m04_v21_music_Bratsche.ily"
+\include "./01-Mvt1/m01_v22_music_Bratsche.ily"
+\include "./02-Mvt2/m02_v22_music_Bratsche.ily"
+\include "./03-Mvt3/m03_v22_music_Bratsche.ily"
+\include "./04-Mvt4/m04_v22_music_Bratsche.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################

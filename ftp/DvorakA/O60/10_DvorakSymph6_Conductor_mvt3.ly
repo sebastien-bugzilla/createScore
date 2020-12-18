@@ -34,12 +34,12 @@
 \include "./03-Mvt3/m03_v12_music_HornIV.ily"
 \include "./03-Mvt3/m03_v13_music_TrompeteI.ily"
 \include "./03-Mvt3/m03_v14_music_TrompeteII.ily"
-\include "./03-Mvt3/m03_v18_music_Pauken.ily"
-\include "./03-Mvt3/m03_v19_music_ViolinI.ily"
-\include "./03-Mvt3/m03_v20_music_ViolinII.ily"
-\include "./03-Mvt3/m03_v21_music_Bratsche.ily"
-\include "./03-Mvt3/m03_v22_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v23_music_Kontrabass.ily"
+\include "./03-Mvt3/m03_v19_music_Pauken.ily"
+\include "./03-Mvt3/m03_v20_music_ViolinI.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinII.ily"
+\include "./03-Mvt3/m03_v22_music_Bratsche.ily"
+\include "./03-Mvt3/m03_v23_music_Violoncello.ily"
+\include "./03-Mvt3/m03_v24_music_Kontrabass.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################

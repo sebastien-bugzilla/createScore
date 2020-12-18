@@ -20,10 +20,10 @@
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part10_ViolinII.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
-\include "./01-Mvt1/m01_v20_music_ViolinII.ily"
-\include "./02-Mvt2/m02_v20_music_ViolinII.ily"
-\include "./03-Mvt3/m03_v20_music_ViolinII.ily"
-\include "./04-Mvt4/m04_v20_music_ViolinII.ily"
+\include "./01-Mvt1/m01_v21_music_ViolinII.ily"
+\include "./02-Mvt2/m02_v21_music_ViolinII.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinII.ily"
+\include "./04-Mvt4/m04_v21_music_ViolinII.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
