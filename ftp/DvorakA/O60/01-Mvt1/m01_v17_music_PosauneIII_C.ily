@@ -46,12 +46,12 @@ musicPosauneIIIMvtI = \relative c' {
 		d2(-^ cis8 b)
 		a2.\fz
 		c2-^( b8 a)
-		g2 c4\fz
+		g2 \partcombineApart c4\fz
 % Bars 61 to 65
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
-		b8-. a-. g4 r
+		b8-. a-. g4 r \partcombineAutomatic
 		R2.*43
 % Bars 66 to 70
 	
@@ -98,7 +98,7 @@ musicPosauneIIIMvtI = \relative c' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-		fis'2.\ff
+		fis'2.
 		fis2 fis4
 		fis2 fis4~
 		fis fis2~
@@ -163,7 +163,7 @@ musicPosauneIIIMvtI = \relative c' {
 	
 	
 	
-	c2.\pp~
+	\partcombineApart c2.\pp~
 	c~
 % Bars 221 to 225
 	c(
@@ -187,7 +187,7 @@ musicPosauneIIIMvtI = \relative c' {
 	e2.~
 	e~
 	e
-	a4\f r r
+	\partcombineAutomatic a4\f r r
 	R2.*25
 % Bars 241 to 245
 	
@@ -336,7 +336,7 @@ musicPosauneIIIMvtI = \relative c' {
 	d8-. fis-. a4-. g-.
 	fis8-. a-. b4-. a-.
 % Bars 461 to 465
-	gis8-. r r4 r
+	\partcombineApart gis8-. r r4 r \partcombineAutomatic
 	ais2.->
 	ais->
 	bes->

@@ -20,7 +20,7 @@ conductorOptions = {
 		dynamic-event slur-event text-script-event trill-span-event
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
 		decrescendo-event )
-	\set Voice.restNumberThreshold = #0
+	%\set Voice.restNumberThreshold = #0
 	\override Staff.Script.avoid-slur = #'ignore
 }
 #(set-global-staff-size 19)

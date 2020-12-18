@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTubaMvtIV = \relative c {
+musicPosauneIIIMvtIV = \relative c {
 	\clef bass
 	\key d \major
 %	\transposition a
