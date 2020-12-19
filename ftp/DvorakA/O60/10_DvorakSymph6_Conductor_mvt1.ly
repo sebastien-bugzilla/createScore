@@ -143,11 +143,11 @@
 %			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
-					\new Staff {
-						\timeMvtI \generalOptions \conductorOptions
-						\nameStaffXIMvtI
-						\musicViolinIMvtI
-					}
+%					\new Staff {
+%						\timeMvtI \generalOptions \conductorOptions
+%						\nameStaffXIMvtI
+%						\musicViolinIMvtI
+%					}
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
 %						\nameStaffXIIMvtI
@@ -160,11 +160,11 @@
 %					\musicBratscheMvtI
 %				}
 %				\new GrandStaff \with { \nameGrandStaffIVMvtI } <<
-%					\new Staff {
-%						\timeMvtI \generalOptions \conductorOptions
-%						\nameStaffXIVMvtI
-%						\musicVioloncelloMvtI
-%					}
+					\new Staff {
+						\timeMvtI \generalOptions \conductorOptions
+						\nameStaffXIVMvtI
+						\musicVioloncelloMvtI
+					}
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
 %						\nameStaffXVMvtI

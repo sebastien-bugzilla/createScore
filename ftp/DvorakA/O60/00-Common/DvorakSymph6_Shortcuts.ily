@@ -31,3 +31,7 @@ sempremarc=^\markup {\italic {sempre marc.}}
 fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
 marcatosempre=^\markup {\italic {marcato sempre}}
 pdolceD=#(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce" ))
+legg=^\markup {\italic legg.}
+ppsubponticello=^\markup {\dynamic pp \italic {sub ponticello}}
+mfcrescD=#(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
+nonlegato=^\markup {\italic {non legato}}

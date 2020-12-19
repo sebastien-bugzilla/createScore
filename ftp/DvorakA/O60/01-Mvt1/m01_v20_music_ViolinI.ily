@@ -316,7 +316,7 @@ musicViolinIMvtI = \relative c'' {
 	a'8-. fis!16( g fis8) d-._\dimmarkup d-. a-.
 	cis4 r r
 % Bars 246 to 250
-	<d d'>8\p a'16( b a8) fis-. fis-. d-.
+	<d d'>8-.\p a'16( b a8) fis-. fis-. d-.
 	d4 r r
 	R2.*17
 % Bars 251 to 255
