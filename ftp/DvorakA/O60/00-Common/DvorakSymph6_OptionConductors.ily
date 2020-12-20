@@ -23,11 +23,15 @@ conductorOptions = {
 	%\set Voice.restNumberThreshold = #0
 	\override Staff.Script.avoid-slur = #'ignore
 }
-#(set-global-staff-size 19)
+#(set-global-staff-size 13)
 \layout {
-	#(layout-set-staff-size 19)
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
+	\context {
+		\Staff
+		\override TupletBracket #'bracket-visibility = ##f
+		\override Hairpin.to-barline = ##f
+		\RemoveEmptyStaves
+	}
+	#(layout-set-staff-size 13)
 }
 layoutCueVoice = \with {
 	fontSize = #-3
