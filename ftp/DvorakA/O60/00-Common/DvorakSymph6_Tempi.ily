@@ -33,3 +33,20 @@ tempiMvtI = {
 	\tempo "in tempo" % bar 543
 	s2.*4
 }
+tempiMvtII = {
+	s2*28
+	\tempo "Poco più animato." % bar 29
+	s2*6
+	\tempo "Tempo I." % bar 35
+	s2*60
+	\tempo "Poco più animato." % bar 95
+	s2*7
+	\tempo "rit." % bar 102
+	s2*2
+	\tempo "Tempo I." % bar 104
+	s2*64
+	\tempo "ritard." % bar 168
+	s2
+	\tempo "in tempo" %bar 169
+	s2*38
+}

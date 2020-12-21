@@ -31,13 +31,14 @@
 \include "./01-Mvt1/m01_v14_music_TrompeteII.ily"
 \include "./01-Mvt1/m01_v15_music_PosauneI.ily"
 \include "./01-Mvt1/m01_v16_music_PosauneII.ily"
-\include "./01-Mvt1/m01_v17_music_Tuba.ily"
-\include "./01-Mvt1/m01_v18_music_Pauken.ily"
-\include "./01-Mvt1/m01_v19_music_ViolinI.ily"
-\include "./01-Mvt1/m01_v20_music_ViolinII.ily"
-\include "./01-Mvt1/m01_v21_music_Bratsche.ily"
-\include "./01-Mvt1/m01_v22_music_Violoncello.ily"
-\include "./01-Mvt1/m01_v23_music_Kontrabass.ily"
+\include "./01-Mvt1/m01_v17_music_PosauneIII.ily"
+\include "./01-Mvt1/m01_v18_music_Tuba.ily"
+\include "./01-Mvt1/m01_v19_music_Pauken.ily"
+\include "./01-Mvt1/m01_v20_music_ViolinI.ily"
+\include "./01-Mvt1/m01_v21_music_ViolinII.ily"
+\include "./01-Mvt1/m01_v22_music_Bratsche.ily"
+\include "./01-Mvt1/m01_v23_music_Violoncello.ily"
+\include "./01-Mvt1/m01_v24_music_Kontrabass.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -57,7 +58,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 150
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -83,7 +84,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 150
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -104,7 +105,47 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 150
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeIV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtI \musicFloteIMvtI }
+				\new Staff { \timeMvtI \musicFloteIIMvtI }
+				\new Staff { \timeMvtI \musicOboeIMvtI }
+				\new Staff { \timeMvtI \musicOboeIIMvtI }
+				\new Staff { \timeMvtI \musicKlarinetteIMvtI }
+				\new Staff { \timeMvtI \musicKlarinetteIIMvtI }
+				\new Staff { \timeMvtI \musicFagottIMvtI }
+				\new Staff { \timeMvtI \musicFagottIIMvtI }
+				\new Staff { \timeMvtI \musicHornIMvtI }
+				\new Staff { \timeMvtI \musicHornIIMvtI }
+				\new Staff { \timeMvtI \musicHornIIIMvtI }
+				\new Staff { \timeMvtI \musicHornIVMvtI }
+				\new Staff { \timeMvtI \musicTrompeteIMvtI }
+				\new Staff { \timeMvtI \musicTrompeteIIMvtI }
+				\new Staff { \timeMvtI \musicPosauneIMvtI }
+				\new Staff { \timeMvtI \musicPosauneIIMvtI }
+				\new Staff { \timeMvtI \musicPosauneIIIMvtI }
+				\new Staff { \timeMvtI \musicTubaMvtI }
+				\new Staff { \timeMvtI \musicPaukenMvtI }
+				\new Staff { \timeMvtI \musicViolinIMvtI }
+				\new Staff { \timeMvtI \musicViolinIIMvtI }
+				\new Staff { \timeMvtI \musicBratscheMvtI }
+				\new Staff { \timeMvtI \musicVioloncelloMvtI }
+				\new Staff { \timeMvtI \musicKontrabassMvtI }
+			>>
+		>>
+		\midi {
+			\tempo 4 = 150
 			\context {
 				\Voice
 				\remove "Dynamic_performer"

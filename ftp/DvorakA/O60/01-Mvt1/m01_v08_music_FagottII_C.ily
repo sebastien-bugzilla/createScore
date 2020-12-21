@@ -43,7 +43,7 @@ musicFagottIIMvtI = \relative c {
 		fis,8\f r g4.(\fz fis8)
 		e-. fis-. g-. g-. fis-. e-. 
 		dis4-. b-. r
-		e8_\rf-. fis-. g-. g-. fis-. e-. 
+		e8-. fis-. g-. g-. fis-. e-. 
 % Bars 31 to 35
 		a4-. fis-. r
 		g8-. a-. b-. b-. a-. g-. 

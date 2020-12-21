@@ -8,13 +8,13 @@ generalOptions = {
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\override Score.RehearsalMark #'font-size = #4
 	\compressFullBarRests
-	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
-	\override Score.RehearsalMark.outside-staff-priority = ##f
 }
 conductorOptions = {
 	\set Staff.soloText = #"1."
 	\set Staff.soloIIText = #"2."
 	\override Score.BarNumber #'font-size = #0.1
+	\override Score.RehearsalMark.extra-spacing-width = #'(-1 . 1)
+	\override Score.RehearsalMark.outside-staff-priority = ##f
 	\set Score.quotedCueEventTypes = #'(note-event rest-event tie-event
 		beam-event tuplet-span-event dynamic-event articulation-event
 		dynamic-event slur-event text-script-event trill-span-event
@@ -23,7 +23,7 @@ conductorOptions = {
 	%\set Voice.restNumberThreshold = #0
 	\override Staff.Script.avoid-slur = #'ignore
 }
-#(set-global-staff-size 13)
+#(set-global-staff-size 19)
 \layout {
 	\context {
 		\Staff
@@ -31,7 +31,7 @@ conductorOptions = {
 		\override Hairpin.to-barline = ##f
 		\RemoveEmptyStaves
 	}
-	#(layout-set-staff-size 13)
+	#(layout-set-staff-size 19)
 }
 layoutCueVoice = \with {
 	fontSize = #-3

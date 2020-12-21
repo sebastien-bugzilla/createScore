@@ -7,7 +7,7 @@
 musicHornIVMvtI = \relative c' {
 	\clef treble
 	\key c \major
-%	\transposition a
+	\transposition e
 % Bars 1 to 5
 	R2.*2
 	
