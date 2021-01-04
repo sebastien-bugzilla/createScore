@@ -25,8 +25,8 @@
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI_C.ily"
 \include "./02-Mvt2/m02_v02_music_FloteII_C.ily"
-\include "./02-Mvt2/m02_v03_music_OboeI.ily"
-\include "./02-Mvt2/m02_v04_music_OboeII.ily"
+\include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
+\include "./02-Mvt2/m02_v04_music_OboeII_C.ily"
 \include "./02-Mvt2/m02_v05_music_KlarinetteI.ily"
 \include "./02-Mvt2/m02_v06_music_KlarinetteII.ily"
 \include "./02-Mvt2/m02_v07_music_FagottI.ily"
@@ -63,37 +63,39 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
-				\new Staff <<
+			\new StaffGroup <<
+%				\new Staff <<
 %%					\new Voice {
 %%						\formatConductorMvtII
 %%					}
-					\new Voice {
-						\tempiMvtII
-					}
-					\new Voice {
-						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
-						\nameStaffIMvtII
-						\partcombine \musicFloteIMvtII \musicFloteIIMvtII
-%						\musicFloteIIMvtII
-					}
-				>>
+%					\new Voice {
+%						\tempiMvtII
+%					}
+%					\new Voice {
+%						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+%						\nameStaffIMvtII
+%						\partcombine \musicFloteIMvtII \musicFloteIIMvtII
+%%						\musicFloteIIMvtII
+%					}
+%				>>
 %				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
+%					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
 %					\nameStaffIIMvtII
 %					\partcombine \musicOboeIMvtII \musicOboeIIMvtII
+%%					\musicOboeIIMvtII
 %				}
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
-%					\nameStaffIIIMvtII
-%					\partcombine \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
-%				}
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+					\nameStaffIIIMvtII
+					\partcombine \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
+					\musicKlarinetteIMvtII
+				}
 %				\new Staff {
 %					\timeMvtII \generalOptions \conductorOptions
 %					\nameStaffIVMvtII
 %					\partcombine \musicFagottIMvtII \musicFagottIIMvtII
 %				}
-%			>>
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
 %					\new Staff {

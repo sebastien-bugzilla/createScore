@@ -37,10 +37,10 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	g8(\p\< a bes4)\!
-	bes8\fp-> g4-> g16 a
-	bes8-> g4-> g16 a
+	bes8\fp g4 g16 a
+	bes8 g4 g16 a
 % Bars 31 to 35
-	bes8-> g4-> g16 a
+	bes8 g4 g16 a
 	bes8 r r4
 	R2*2
 	\bar "||" \mark \default
@@ -74,7 +74,7 @@ musicOboeIIMvtII = \relative c' {
 	R2*2
 	
 	g4\p r
-	g_\dimmarkup r
+	g r
 % Bars 61 to 65
 	g\pp r
 	g r
@@ -110,11 +110,11 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	bes8->\mf g4->  g16-. a-.
+	bes8\mf g4  g16-. a-.
 % Bars 96 to 100
-	bes8->_\crescmarkup g4-> g16-. a-.
-	bes8->\f g4->\< g16-. a-.\!
-	bes8\noBeam d16\ff-. f-. bes,-. f-. bes-. c-. 
+	bes8 g4 g16-. a-.
+	bes8\f g4\< g16-. a-.\!
+	bes8\noBeam d16-. f-. bes,-. f-. bes-. c-. 
 	d8-> c-> bes-> a->
 	bes4-> bes->
 % Bars 101 to 105
@@ -152,7 +152,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	r16\< c-. c-. c-.  c-. c-. c-. c-.\! 
+	r16\< c-. c-. c-.  c-. c-. c-. c-.\!
 % Bars 131 to 135
 	c\ff r r8 r4
 	R2*8
@@ -176,7 +176,7 @@ musicOboeIIMvtII = \relative c' {
 	bes4)\pp r
 	R2*2
 	
-	r8 bes4(_\pcresc a16 g
+	r8 bes4( a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
 	a2\p)(
@@ -190,10 +190,10 @@ musicOboeIIMvtII = \relative c' {
 	
 	r8 d4(\p\< c16 bes!)~
 % Bars 161 to 165
-	bes8 a16( g a4)\>
-	aes8\p( c4 bes16\> aes~
-	aes8) g16(\! f g4)~
-	g8 ges4\pp( f16 ees)~
+	bes8 a16(\! g a4)\>
+	aes8\p c4 bes16\> aes~
+	aes8 g16(\! f g4)~
+	g8 ges4\pp f16 ees~
 	ees8  r r4
 % Bars 166 to 170
 	R2*3
@@ -238,5 +238,5 @@ musicOboeIIMvtII = \relative c' {
 	d8 r r4
 	R2
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	R2_\fermataMarkup \bar "|."
 }

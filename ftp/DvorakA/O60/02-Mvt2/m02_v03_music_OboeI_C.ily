@@ -11,40 +11,40 @@ musicOboeIMvtII = \relative c'' {
 % Bars 1 to 5
 	R2
 	r8 bes(\p a4
-	bes2)~\<
-	bes8\fp( d bes\> c
-	d)\pp r r4
+	bes2)~
+	bes8( d bes c
+	d) r r4
 % Bars 6 to 10
 	R2
-	bes4(\< g8\! c
+	\partcombineApart bes4(\< g8\! c
 	bes g\> d e)\!
 	f2~
 	f8\< f( g a)
 % Bars 11 to 15
 	bes4.\>( g16 a\!
-	bes8) r r4
+	bes8) r r4 \partcombineAutomatic
 	R2*5
 % Bars 16 to 20
 	
 	
-	R2
+	\partcombineApart R2
 	f8( bes d f)~
 	f(_\dimmarkup ees d c
 % Bars 21 to 25
-	f4.)\pp r8
+	f4.)_\pp r8 \partcombineAutomatic
 	R2*2
 	
-	r4 b,(\p
+	\partcombineApart r4 b,(\p
 	c2)~
 % Bars 26 to 30
 	c~
 	c4(~ c16_\crescmarkup b d b)
-	c4.(\p\< cis8)\!
-	d->\fp bes-> g16(-- a-- bes-- c--)
+	c4.( cis8)
+	d-> bes-> g16(-- a-- bes-- c--)
 	d8-> bes-> g16(_\crescmarkup-- a-- bes-- c--)
 % Bars 31 to 35
 	d8-> bes-> g16(-- a-- bes-- c--)
-	d8 r r4
+	d8 \partcombineAutomatic r r4
 	R2*2
 	\bar "||" \mark \default
 	r4 fis--\pp
@@ -55,17 +55,17 @@ musicOboeIMvtII = \relative c'' {
 	f! f
 	f f 
 % Bars 41 to 45
-	r4 \tuplet 3/2 4 {g,8-.^\crescmarkup d'-. g-. }
+	\partcombineApart r4 \tuplet 3/2 4 {g,8-.^\crescmarkup d'-. g-. } \partcombineAutomatic
 	R2
-	r4 \tuplet 3/2 4 {f,8-.^\dimmarkup c'-. f-. }
+	\partcombineApart r4 \tuplet 3/2 4 {f,8-.^\dimmarkup c'-. f-. } \partcombineAutomatic
 	R2*3
 	
 % Bars 46 to 50
 	
-	r4 bes,\pp\<(
+	r4 \partcombineChords bes,\pp\<(
 	aes2\>)(
 	bes8) bes--\pp bes-- bes--
-	aes2->(
+	\partcombineAutomatic aes2->(
 % Bars 51 to 55
 	g8) bes\< bes bes
 	a!2\f\>
@@ -74,37 +74,37 @@ musicOboeIMvtII = \relative c'' {
 	R2*2
 % Bars 56 to 60
 	
-	r8 d(\p\< bes e~)\!
-	e4\fz r
+	\partcombineApart r8 d(\p\< bes e~)\!
+	e4\fz r \partcombineAutomatic
 	e\p r
 	e_\dimmarkup r
 % Bars 61 to 65
 	e\pp r
 	e r
-	f2~
-	f4. r8
+	\partcombineApart f2~
+	f4. r8 \partcombineAutomatic
 	R2
 % Bars 66 to 70
-	r4 r8. a,16\f
-	r8. a16^\dimmarkup r8. f16
+	\partcombineApart r4 r8. a,16\f
+	r8. a16^\dimmarkup r8. f16 \partcombineAutomatic
 	R2*5
 % Bars 71 to 75
 	
 	\mark \default
 	R2*2
 	
-	bes4\p( g8 c
+	\partcombineApart bes4\p( g8 c
 % Bars 76 to 80
 	bes\< g d\! e)\>
 	f2~\!
 	f~
-	f8 r r4
+	f8 r r4 \partcombineAutomatic
 	R2*6
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	r8 c'8\p\< c c
-	d2\f
+	r8 c'8 c c
+	d2
 	ees4(\> c8 a \mark \default
 	bes4.)\pp r8
 	R2*5
@@ -113,18 +113,18 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	d8->\mf bes-> g16( a) bes-. c-.
+	\partcombineApart d8-> bes-> g16( a) bes-. c-.
 % Bars 96 to 100
 	d8->_\crescmarkup bes-> g16( a) bes-. c-.
-	d8->\f bes->\< g16( a) bes-. c-.\!
-	d8\noBeam d16\ff-. f-. bes,-. c-. d-. ees-. 
-	f8-> fis-> g-> d->
+	d8-> bes-> g16( a) bes-. c-.
+	d8\noBeam d16-. f-. bes,-. c-. d-. ees-. 
+	\partcombineAutomatic f8-> fis-> g-> d->
 	d4-> e->
 % Bars 101 to 105
 	f8 r r4
 	a8 r r4
 	R2
-	f4.(\ff ges8)~
+	f4.( ges8)~
 	ges( f4.)~
 % Bars 106 to 110
 	f8( ees4.)
@@ -137,27 +137,27 @@ musicOboeIMvtII = \relative c'' {
 	gis8 r r4
 	R2*2
 	
-	f2\p->(
+	\partcombineApart f2\p->(
 % Bars 116 to 120
 	d4 g)
-	e r
+	e r \partcombineAutomatic
 	R2
-	a2->\p(
-	fis4\< b\!)
+	\partcombineApart a2->(
+	fis4 b)
 % Bars 121 to 125
-	bes!2\pp~
+	\partcombineAutomatic bes!2\pp~
 	bes
 	R2
-	ges4(\p^\pocoapococrescendo ees!8 aes
+	\partcombineApart ges4(\p\cresc ees!8 aes
 	ges2)~
 % Bars 126 to 130
 	ges4 ees!8( a!)~
 	a fis-. d-. a'~
 	a fis-. d-. a'~
 	a16\f fis-. d-. c'~ c a-. fis-. d'~
-	d\< a-. a-. a-.  a-. a-. a-. a-.\! 
+	d a-. a-. a-. a-. a-. a-. a-.
 % Bars 131 to 135
-	a\ff r fis4\pp fis8~
+	a r fis4_\pp fis8~
 	fis4. r8
 	r fis4 fis8~
 	fis4. r8
@@ -170,75 +170,75 @@ musicOboeIMvtII = \relative c'' {
 	f4.( g8~
 % Bars 141 to 145
 	g4 fis)
-	g2\p~
+	g2~
 	g
-	bes\mf\<(
-	c)(\>
+	bes(
+	c)(
 % Bars 146 to 150
-	bes8)\! r r4
+	bes8) r r4 \partcombineAutomatic
 	R2
 	R2*2
 	
 	r8 bes4(_\pcresc a16 g
 % Bars 151 to 155
-	f2)~\mf\>
-	f8\p r r4
+	f2)~
+	f8 r r4
 	R2
 	R2*2
 	
 % Bars 156 to 160
-	r8 b!4(\p a16 g
-	d8) r r4
+	r8 \partcombineChords b!4(\p a16 g
+	d8) \partcombineAutomatic r r4
 	R2*2
 	
-	r8 bes'!4(\p\< a16 g
+	r8 bes'!4( a16 g
 % Bars 161 to 165
-	c,4.)\> c8
-	c\p( aes'4 g16\> f
-	bes,4.)\! bes8
-	bes( ees4\pp d16 c)~
+	c,4.) c8
+	c( aes'4 g16 f
+	bes,4.) bes8
+	bes( ees4 d16 c)~
 	c8  r r4
 % Bars 166 to 170
 	R2*3
 	
 	\mark \default
-	R2*5
+	\partcombineApart R2*5
 % Bars 171 to 175
 	
 	
 	
-	r8 d(\p\< ees e\!
+	r8 \partcombineAutomatic d(\p\< ees e\!
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
 	f16) c->\f-. f->-. f->-. f->-. f->-. f->-. bes->-. 
-	a8\ff r g4-^~
+	a8\ff r \partcombineApart g4-^~
 	g8\> bes( a g)~\!
 	g( f4) r8
 % Bars 181 to 185
 	R2*2
 	
-	R2*4
+	\partcombineAutomatic R2*4
 % Bars 186 to 190
 	
-	r8 f(\p g a)
+	\partcombineApart r8 f(\p g a)
 	bes2~\<
 	bes8\>( aes ges f)\!
-	f4 r
+	f4 r \partcombineAutomatic
 % Bars 191 to 195
 	R2*5
 % Bars 196 to 200
-	r8 f(\pp d g~
+	\partcombineApart r8 f(\pp d g~
 	g4. f8)~
-	f\noBeam f\ff-! d-! g-!
+	f\noBeam \partcombineAutomatic f\ff-! d-! g-!
 	ees-! c-! a-! fis'-^
-	g-^ r f!4\fp~
+	g-^ r f!4~
 % Bars 201 to 205
-	f2~\>
-	f8\! r r4
+	f2~
+	f8 r r4
 	r8 f(\pp d g
 	f d bes ees)
-	d2~
+	\partcombineApart d2~
 % Bar 206
 	d\fermata \bar "|."
 }
