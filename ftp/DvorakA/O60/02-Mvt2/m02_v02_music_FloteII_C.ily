@@ -20,7 +20,7 @@ musicFloteIIMvtII = \relative c''' {
 	
 	r4 r8 g\mf
 	f4 bes\fz~
-	bes4(_\dimmarkup a
+	bes4( a
 % Bars 21 to 25
 	aes4.)\pp r8
 	R2
@@ -59,7 +59,7 @@ musicFloteIIMvtII = \relative c''' {
 	R2*2
 	
 	bes4\p r
-	bes_\dimmarkup r
+	bes r
 % Bars 61 to 65
 	bes\pp r
 	bes r
@@ -139,15 +139,15 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 141 to 145
 	R2
 	R2
-	bes2~\p\<
+	\shape #'((-1 . -1.5)(0 . -2.5)(0 . -2.5)(0.5 . -1.5)) Tie bes2~\p\<
 	bes8(\mf\< d f d
-	c2)(\> 
+	c2)\>-\shape #'((0 . -2)(0 . -2)(0 . -2)(0 . -1)) (
 % Bars 146 to 150
 	bes8\p) r r4 
 	R2
 	R2*2
 	
-	r8 bes4_\pcresc( a16 g
+	r8 bes4( a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
 	a2\p)(
@@ -175,7 +175,7 @@ musicFloteIIMvtII = \relative c''' {
 	r8 d(\mf\< ees e\!
 % Bars 176 to 180
 	f) r r4
-	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->
+	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	a8\ff r b-^ r
 	bes!8 r r4
 	r4 r8 e8\pp(
@@ -200,5 +200,5 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	R2_\fermataMarkup \bar "|."
 }

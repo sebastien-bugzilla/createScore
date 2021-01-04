@@ -17,13 +17,14 @@
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionConductors.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 %\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./02-Mvt2/m02_v01_music_FloteI.ily"
-\include "./02-Mvt2/m02_v02_music_FloteII.ily"
+\include "./02-Mvt2/m02_v01_music_FloteI_C.ily"
+\include "./02-Mvt2/m02_v02_music_FloteII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI.ily"
 \include "./02-Mvt2/m02_v04_music_OboeII.ily"
 \include "./02-Mvt2/m02_v05_music_KlarinetteI.ily"
@@ -63,7 +64,7 @@
 	\score {
 		<<
 %			\new StaffGroup <<
-%				\new Staff <<
+				\new Staff <<
 %%					\new Voice {
 %%						\formatConductorMvtII
 %%					}
@@ -71,12 +72,12 @@
 						\tempiMvtII
 					}
 					\new Voice {
-						\timeMvtII \generalOptions \conductorOptions
+						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
 						\nameStaffIMvtII
-%						\partcombine \musicFloteIMvtII \musicFloteIIMvtII
-						\musicFloteIMvtII
+						\partcombine \musicFloteIMvtII \musicFloteIIMvtII
+%						\musicFloteIIMvtII
 					}
-%				>>
+				>>
 %				\new Staff {
 %					\timeMvtII \generalOptions \conductorOptions
 %					\nameStaffIIMvtII
