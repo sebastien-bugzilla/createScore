@@ -27,8 +27,8 @@
 \include "./02-Mvt2/m02_v02_music_FloteII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
 \include "./02-Mvt2/m02_v04_music_OboeII_C.ily"
-\include "./02-Mvt2/m02_v05_music_KlarinetteI.ily"
-\include "./02-Mvt2/m02_v06_music_KlarinetteII.ily"
+\include "./02-Mvt2/m02_v05_music_KlarinetteI_C.ily"
+\include "./02-Mvt2/m02_v06_music_KlarinetteII_C.ily"
 \include "./02-Mvt2/m02_v07_music_FagottI.ily"
 \include "./02-Mvt2/m02_v08_music_FagottII.ily"
 \include "./02-Mvt2/m02_v09_music_HornI.ily"
@@ -88,7 +88,7 @@
 					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
 					\nameStaffIIIMvtII
 					\partcombine \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
-					\musicKlarinetteIMvtII
+%					\musicKlarinetteIIMvtII
 				}
 %				\new Staff {
 %					\timeMvtII \generalOptions \conductorOptions

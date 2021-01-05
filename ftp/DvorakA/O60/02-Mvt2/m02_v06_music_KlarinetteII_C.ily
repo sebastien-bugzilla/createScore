@@ -23,11 +23,11 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 16 to 20
 	
 	
-	r8 b\p\<-- c-- c--
-	c2\fz_\dimmarkup
-	a4( g~
+	r8 b\p\<-- c-- c--\!
+	c2_\fzdim
+	a4 g~
 % Bars 21 to 25
-	g4.) r8
+	g4. r8
 	R2*3
 	
 	
@@ -73,7 +73,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	a2)\<~
 	a4\fz r
 	a\p r
-	a_\dimmarkup r
+	a r
 % Bars 61 to 65
 	a\pp r
 	a r
@@ -197,7 +197,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 171 to 175
 	r8 c'4( g16 e)
 	e8 r r4
-	r8 c'4(_\crescmarkup g16 e)
+	r8 c'4( g16 e)
 	e8 r r4
 	r8 c'(\mf\< d dis\!
 % Bars 176 to 180
