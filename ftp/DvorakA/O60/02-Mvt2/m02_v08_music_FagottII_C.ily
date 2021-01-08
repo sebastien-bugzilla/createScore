@@ -12,8 +12,8 @@ musicFagottIIMvtII = \relative c {
 	R2*2
 	
 	R2
-	f8\fp\>( f,4) f8(
-	bes8)\pp r r4
+	f8( f,4) f8(
+	bes8) r r4
 % Bars 6 to 10
 	R2*7
 % Bars 11 to 15
@@ -21,10 +21,10 @@ musicFagottIIMvtII = \relative c {
 	
 	R2*2
 	
-	r4 e,\<
+	r4 << e, {s16\< s s s\!}>>
 % Bars 16 to 20
 	f2\f~
-	f4._\dimmarkup fis8
+	f4. fis8
 	g\p r r4
 	R2*3
 	
@@ -50,9 +50,9 @@ musicFagottIIMvtII = \relative c {
 	d d
 	d d 
 % Bars 41 to 45
-	a_\ten b4_\crescmarkup
+	a_\ten b4
 	c  c 
-	c_\dimmarkup f,4
+	c f,4
 	bes bes
 	R2*3
 % Bars 46 to 50
@@ -100,13 +100,13 @@ musicFagottIIMvtII = \relative c {
 	f8\f[ f'] f,[ f']
 	f,[ f']_\dimmarkup f,[ fis']
 % Bars 86 to 90
-	g\p r r4
+	g r r4
 	R2*2
 	\mark \default
-	bes,2\pp~
+	bes,2~
 	<< bes {s8\< s s\> s\!} >>
 % Bars 91 to 95
-	b2\pp(
+	b2(
 	g
 	c8) r r4
 	R2*4
@@ -171,8 +171,8 @@ musicFagottIIMvtII = \relative c {
 	
 	r4 e\mf
 % Bars 151 to 155
-	f2\<
-	f4~\!_\dimmarkup f8 fis(
+	f2
+	f4~ f8 fis(
 	g)\noBeam d'(\pp\< g, e)\!
 	f!2\fz~
 	f4.\>( fis8\!
@@ -193,11 +193,11 @@ musicFagottIIMvtII = \relative c {
 	
 	\mark \default
 	bes,2\p~
-	bes8 bes'4\<( a16 g\!
+	bes8 bes'4\< a16 g\!
 % Bars 171 to 175
-	f8) bes,4.\p~
-	bes8 bes'4(\< a16 g\!
-	f8) bes,4.\p~
+	f8 bes,4.\p~
+	bes8 bes'4\< a16 g\!
+	f8 bes,4.\p~
 	bes8 bes'4(\< a16\! g
 	f8) bes4\mf( a16\! g
 % Bars 176 to 180
@@ -205,12 +205,12 @@ musicFagottIIMvtII = \relative c {
 	f) ees'\f\<-> d-> des-> c-> bes-> a-> g->\!
 	fis8\ff r g-^ r
 	c,-^r r4
-	f2\p~-\tweak X-offset #2 _\dimmarkup
+	f2\p~
 % Bars 181 to 185
 	f\pp(
 	bes8) r r4
 	R2
-	g'2_\fpdim~
+	g'2~
 	g4 c,(
 % Bars 186 to 190
 	f8)\pp r r4
@@ -227,8 +227,8 @@ musicFagottIIMvtII = \relative c {
 % Bars 196 to 200
 	
 	f2\pp(
-	bes8\noBeam) f\ff-! d-! g-! 
-	ees-! c-! a-! d,-^\noBeam
+	bes8\noBeam) f\ff d g
+	ees c a d,-^\noBeam
 	g-^ r f4\fp~\>
 % Bars 201 to 205
 	f2

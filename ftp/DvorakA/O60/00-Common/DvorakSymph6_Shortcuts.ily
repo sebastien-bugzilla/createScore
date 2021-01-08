@@ -44,3 +44,4 @@ arco=^\markup {arco}
 ffmarcatosempre=^\markup {\dynamic ff \italic {marcato sempre}}
 pocoapococrescendo=^\markup {\italic {poco a poco crescendo}}
 fzdim=^\markup {\dynamic fz \italic dim.}
+ten=^\markup {\italic ten.}

@@ -29,8 +29,8 @@
 \include "./02-Mvt2/m02_v04_music_OboeII_C.ily"
 \include "./02-Mvt2/m02_v05_music_KlarinetteI_C.ily"
 \include "./02-Mvt2/m02_v06_music_KlarinetteII_C.ily"
-\include "./02-Mvt2/m02_v07_music_FagottI.ily"
-\include "./02-Mvt2/m02_v08_music_FagottII.ily"
+\include "./02-Mvt2/m02_v07_music_FagottI_C.ily"
+\include "./02-Mvt2/m02_v08_music_FagottII_C.ily"
 \include "./02-Mvt2/m02_v09_music_HornI.ily"
 \include "./02-Mvt2/m02_v10_music_HornII.ily"
 \include "./02-Mvt2/m02_v11_music_HornIII.ily"
@@ -64,37 +64,38 @@
 	\score {
 		<<
 			\new StaffGroup <<
-%				\new Staff <<
-%%					\new Voice {
-%%						\formatConductorMvtII
-%%					}
+				\new Staff <<
 %					\new Voice {
-%						\tempiMvtII
+%						\formatConductorMvtII
 %					}
-%					\new Voice {
-%						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
-%						\nameStaffIMvtII
-%						\partcombine \musicFloteIMvtII \musicFloteIIMvtII
-%%						\musicFloteIIMvtII
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
-%					\nameStaffIIMvtII
-%					\partcombine \musicOboeIMvtII \musicOboeIIMvtII
-%%					\musicOboeIIMvtII
-%				}
+					\new Voice {
+						\tempiMvtII
+					}
+					\new Voice {
+						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+						\nameStaffIMvtII
+						\partcombine \musicFloteIMvtII \musicFloteIIMvtII
+%						\musicFloteIIMvtII
+					}
+				>>
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+					\nameStaffIIMvtII
+					\partcombine \musicOboeIMvtII \musicOboeIIMvtII
+%					\musicOboeIIMvtII
+				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
 					\nameStaffIIIMvtII
 					\partcombine \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
 %					\musicKlarinetteIIMvtII
 				}
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
-%					\nameStaffIVMvtII
-%					\partcombine \musicFagottIMvtII \musicFagottIIMvtII
-%				}
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+					\nameStaffIVMvtII
+					\partcombine \musicFagottIMvtII \musicFagottIIMvtII
+%					\musicFagottIIMvtII 
+				}
 			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
