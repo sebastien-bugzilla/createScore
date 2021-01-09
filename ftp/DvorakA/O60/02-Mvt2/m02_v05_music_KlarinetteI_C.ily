@@ -11,9 +11,9 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 1 to 5
 	R2
 	\partcombineApart r8 c(\p b e)~
-	e4.(\< fis8\!
-	g2)\fp~\>
-	g8\pp r e4(~
+	e4.(_\< fis8\!
+	g2)_\fp~\>
+	g8_\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4
 	a) r \partcombineAutomatic

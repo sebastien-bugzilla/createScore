@@ -45,3 +45,16 @@ ffmarcatosempre=^\markup {\dynamic ff \italic {marcato sempre}}
 pocoapococrescendo=^\markup {\italic {poco a poco crescendo}}
 fzdim=^\markup {\dynamic fz \italic dim.}
 ten=^\markup {\italic ten.}
+semprepp=^\markup {\italic sempre \dynamic pp}
+
+
+
+% function
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+

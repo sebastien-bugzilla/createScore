@@ -104,7 +104,7 @@ musicFagottIIMvtII = \relative c {
 	R2*2
 	\mark \default
 	bes,2\pp~
-	<< bes {s8\< s s\> s\!} >>
+	bes
 % Bars 91 to 95
 	b2\pp(
 	g

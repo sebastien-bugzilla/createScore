@@ -31,13 +31,13 @@
 \include "./02-Mvt2/m02_v06_music_KlarinetteII_C.ily"
 \include "./02-Mvt2/m02_v07_music_FagottI_C.ily"
 \include "./02-Mvt2/m02_v08_music_FagottII_C.ily"
-\include "./02-Mvt2/m02_v09_music_HornI.ily"
-\include "./02-Mvt2/m02_v10_music_HornII.ily"
-\include "./02-Mvt2/m02_v11_music_HornIII.ily"
-\include "./02-Mvt2/m02_v12_music_HornIV.ily"
-\include "./02-Mvt2/m02_v13_music_TrompeteI.ily"
-\include "./02-Mvt2/m02_v14_music_TrompeteII.ily"
-\include "./02-Mvt2/m02_v19_music_Pauken.ily"
+\include "./02-Mvt2/m02_v09_music_HornI_C.ily"
+\include "./02-Mvt2/m02_v10_music_HornII_C.ily"
+\include "./02-Mvt2/m02_v11_music_HornIII_C.ily"
+\include "./02-Mvt2/m02_v12_music_HornIV_C.ily"
+\include "./02-Mvt2/m02_v13_music_TrompeteI_C.ily"
+\include "./02-Mvt2/m02_v14_music_TrompeteII_C.ily"
+\include "./02-Mvt2/m02_v19_music_Pauken_C.ily"
 \include "./02-Mvt2/m02_v20_music_ViolinI.ily"
 \include "./02-Mvt2/m02_v21_music_ViolinII.ily"
 \include "./02-Mvt2/m02_v22_music_Bratsche.ily"
@@ -97,30 +97,33 @@
 %					\musicFagottIIMvtII 
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
-%					\new Staff {
-%						\timeMvtII \generalOptions \conductorOptions
-%						\nameStaffVMvtII
-%						\partcombine \musicHornIMvtII \musicHornIIMvtII
-%					}
-%					\new Staff {
-%						\timeMvtII \generalOptions \conductorOptions
-%						\nameStaffVIMvtII
-%						\partcombine \musicHornIIIMvtII \musicHornIVMvtII
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
-%					\nameStaffVIIMvtII
-%					\partcombine \musicTrompeteIMvtII \musicTrompeteIIMvtII
-%				}
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
-%					\nameStaffVIIIMvtII
-%					\musicPaukenMvtII
-%				}
-%			>>
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+					\new Staff {
+						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+						\nameStaffVMvtII
+						\partcombine \musicHornIMvtII \musicHornIIMvtII
+%						\musicHornIIMvtII
+					}
+					\new Staff {
+						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+						\nameStaffVIMvtII
+						\partcombine \musicHornIIIMvtII \musicHornIVMvtII
+%						\musicHornIVMvtII
+					}
+				>>
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+					\nameStaffVIIMvtII
+					\partcombine \musicTrompeteIMvtII \musicTrompeteIIMvtII
+%					\musicTrompeteIIMvtII
+				}
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+					\nameStaffVIIIMvtII
+					\musicPaukenMvtII
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 %					\new Staff {
