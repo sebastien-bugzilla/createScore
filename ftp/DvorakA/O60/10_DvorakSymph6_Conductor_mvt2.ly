@@ -126,16 +126,16 @@
 %			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
+%					\new Staff {
+%						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+%						\nameStaffIXMvtII
+%						\musicViolinIMvtII
+%					}
 					\new Staff {
 						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
-						\nameStaffIXMvtII
-						\musicViolinIMvtII
+						\nameStaffXMvtII
+						\musicViolinIIMvtII
 					}
-%					\new Staff {
-%						\timeMvtII \generalOptions \conductorOptions
-%						\nameStaffXMvtII
-%						\musicViolinIIMvtII
-%					}
 %				>>
 %				\new Staff {
 %					\timeMvtII \generalOptions \conductorOptions
