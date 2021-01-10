@@ -46,8 +46,8 @@ pocoapococrescendo=^\markup {\italic {poco a poco crescendo}}
 fzdim=^\markup {\dynamic fz \italic dim.}
 ten=^\markup {\italic ten.}
 semprepp=^\markup {\italic sempre \dynamic pp}
-
-
+pesante=^\markup {\italic pesante}
+mfz=^\markup {\dynamic mfz}
 
 % function
 mmrPos = #(define-music-function
