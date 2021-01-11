@@ -185,7 +185,7 @@ musicBratscheMvtII = \relative c {
 	
 	
 	\mark \default
-	r16 <f, bes d>8-- q16-. r q8-- <g bes d>16-.
+	r16 <f, bes d>8--\pp q16-. r q8-- <g bes d>16-.
 % Bars 141 to 145
 	r <g a ees'>8 q16 r <fis a d>8 q16
 	r <g bes d>8 q16 r <g  c ees>8 q16
