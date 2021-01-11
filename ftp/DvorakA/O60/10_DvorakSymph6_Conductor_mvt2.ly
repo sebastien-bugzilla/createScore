@@ -131,17 +131,17 @@
 %						\nameStaffIXMvtII
 %						\musicViolinIMvtII
 %					}
-					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
-						\nameStaffXMvtII
-						\musicViolinIIMvtII
-					}
+%					\new Staff {
+%						\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+%						\nameStaffXMvtII
+%						\musicViolinIIMvtII
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
-%					\nameStaffXIMvtII
-%					\musicBratscheMvtII
-%				}
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions \MvtIIOptions
+					\nameStaffXIMvtII
+					\musicBratscheMvtII
+				}
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
 %					\new Staff {
 %						\timeMvtII \generalOptions \conductorOptions
