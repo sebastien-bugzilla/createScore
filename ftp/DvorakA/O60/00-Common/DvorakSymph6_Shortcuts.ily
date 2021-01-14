@@ -49,6 +49,8 @@ semprepp=^\markup {\italic sempre \dynamic pp}
 pesante=^\markup {\italic pesante}
 mfz=^\markup {\dynamic mfz}
 pespressivo=^\markup {\dynamic p \italic espressivo}
+semprecresc=^\markup {\italic {sempre cresc.}}
+ffgrandioso=^\markup {\dynamic ff \italic grandioso}
 
 % function
 mmrPos = #(define-music-function

@@ -12,6 +12,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperConductors.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
@@ -19,7 +20,8 @@
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-\include "./00-Common/DvorakSymph6_Format_Cond_Mvt03.ily"
+%\include "./00-Common/DvorakSymph6_Format_Cond_Mvt03.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./03-Mvt3/m03_v01_music_FloteI.ily"
 \include "./03-Mvt3/m03_v02_music_FloteII.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI.ily"
@@ -45,7 +47,7 @@
 %###############################################################################
 \book {
 	\header {
-		subtitle = \markup { 
+		subtitle = \markup {
 			\abs-fontsize #12 \sans
 			\center-column {
 				"3rd movement"
@@ -60,88 +62,92 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
+%			\new StaffGroup <<
 				\new Staff <<
 %					\new Voice {
 %						\formatConductorMvtIII
 %					}
 					\new Voice {
+						\tempiMvtIII
+					}
+					\new Voice {
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffIMvtIII
-						\partcombine \musicFloteIMvtIII \musicFloteIIMvtIII
+%						\partcombine \musicFloteIMvtIII \musicFloteIIMvtIII
+						\musicFloteIMvtIII
 					}
 				>>
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffIIMvtIII
-					\partcombine \musicOboeIMvtIII \musicOboeIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffIIIMvtIII
-					\partcombine \musicKlarinetteIMvtIII \musicKlarinetteIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffIVMvtIII
-					\partcombine \musicFagottIMvtIII \musicFagottIIMvtIII
-				}
-			>>
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffVMvtIII
-						\partcombine \musicHornIMvtIII \musicHornIIMvtIII
-					}
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffVIMvtIII
-						\partcombine \musicHornIIIMvtIII \musicHornIVMvtIII
-					}
-				>>
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffVIIMvtIII
-					\partcombine \musicTrompeteIMvtIII \musicTrompeteIIMvtIII
-				}
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffVIIIMvtIII
-					\musicPaukenMvtIII
-				}
-			>>
-			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffIXMvtIII
-						\musicViolinIMvtIII
-					}
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffXMvtIII
-						\musicViolinIIMvtIII
-					}
-				>>
-				\new Staff {
-					\timeMvtIII \generalOptions \conductorOptions
-					\nameStaffXIMvtIII
-					\musicBratscheMvtIII
-				}
-				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffXIIMvtIII
-						\musicVioloncelloMvtIII
-					}
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffXIIIMvtIII
-						\musicKontrabassMvtIII
-					}
-				>>
-			>>
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffIIMvtIII
+%					\partcombine \musicOboeIMvtIII \musicOboeIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffIIIMvtIII
+%					\partcombine \musicKlarinetteIMvtIII \musicKlarinetteIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffIVMvtIII
+%					\partcombine \musicFagottIMvtIII \musicFagottIIMvtIII
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffVMvtIII
+%						\partcombine \musicHornIMvtIII \musicHornIIMvtIII
+%					}
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffVIMvtIII
+%						\partcombine \musicHornIIIMvtIII \musicHornIVMvtIII
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffVIIMvtIII
+%					\partcombine \musicTrompeteIMvtIII \musicTrompeteIIMvtIII
+%				}
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffVIIIMvtIII
+%					\musicPaukenMvtIII
+%				}
+%			>>
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffIXMvtIII
+%						\musicViolinIMvtIII
+%					}
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffXMvtIII
+%						\musicViolinIIMvtIII
+%					}
+%				>>
+%				\new Staff {
+%					\timeMvtIII \generalOptions \conductorOptions
+%					\nameStaffXIMvtIII
+%					\musicBratscheMvtIII
+%				}
+%				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffXIIMvtIII
+%						\musicVioloncelloMvtIII
+%					}
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffXIIIMvtIII
+%						\musicKontrabassMvtIII
+%					}
+%				>>
+%			>>
 		>>
 		\header {
 			breakbefore = ##t

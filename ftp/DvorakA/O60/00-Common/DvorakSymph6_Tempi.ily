@@ -50,3 +50,39 @@ tempiMvtII = {
 	\tempo "in tempo" %bar 169
 	s2*38
 }
+tempiMvtIII = {
+	\repeat volta 2 {
+		s2.*23
+	}
+	\repeat volta 2 {
+		s2.*122
+	}
+	\alternative {
+		{
+			s2.
+		}
+		{
+			s2.
+		}
+	}
+	s2.*6
+	\repeat volta 2 {
+		\tempo "Poco meno mosso." % bar 153
+		s2.*6
+		\tempo "poco sosten." % bar 159
+		s2.*4
+		\tempo "in tempo" % bar 163
+		s2.*6
+		\tempo "poco sosten." % bar 169
+		s2.*4
+		\tempo "in tempo" % bar 173
+		s2.*28
+	}
+	s2.*80
+	\tempo "poco a poco string." % bar 281
+	s2.*7
+	\tempo "Tempo I." % bar 288
+	s2.*140
+	\tempo "poco a poco accelerando" % bar 428
+	s2.*11
+}
