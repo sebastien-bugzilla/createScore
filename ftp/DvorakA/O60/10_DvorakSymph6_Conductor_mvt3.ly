@@ -22,8 +22,9 @@
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 %\include "./00-Common/DvorakSymph6_Format_Cond_Mvt03.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./03-Mvt3/m03_v01_music_FloteI.ily"
-\include "./03-Mvt3/m03_v02_music_FloteII.ily"
+\include "./03-Mvt3/m03_v01_music_FloteI_C.ily"
+\include "./03-Mvt3/m03_v02_music_FloteII_C.ily"
+\include "./03-Mvt3/m03_v02_music_Piccolo_C.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI.ily"
 \include "./03-Mvt3/m03_v04_music_OboeII.ily"
 \include "./03-Mvt3/m03_v05_music_KlarinetteI.ily"
@@ -63,18 +64,24 @@
 	\score {
 		<<
 %			\new StaffGroup <<
-				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtIII
-%					}
-					\new Voice {
-						\tempiMvtIII
-					}
-					\new Voice {
+				\new GrandStaff <<
+					\new Staff <<
+%						\new Voice {
+%							\formatConductorMvtIII
+%						}
+						\new Voice {
+							\tempiMvtIII
+						}
+						\new Voice {
+							\timeMvtIII \generalOptions \conductorOptions
+							\nameStaffIMvtIII
+							\partcombine \musicFloteIMvtIII \musicFloteIIMvtIII
+%							\musicFloteIIMvtIII
+						}
+					>>
+					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffIMvtIII
-%						\partcombine \musicFloteIMvtIII \musicFloteIIMvtIII
-						\musicFloteIMvtIII
+						\nameStaffIMvtIII \musicPiccoloMvtIII
 					}
 				>>
 %				\new Staff {

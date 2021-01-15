@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFloteIIMvtIII = \relative c''' {
+musicFloteIMvtIII = \relative c''' {
 	\clef treble
 	\key d \minor
 %	\transposition a
@@ -43,35 +43,35 @@ musicFloteIIMvtIII = \relative c''' {
 		
 		
 		
-		f2\p\< a4~
+		a2\p\< d4~
 % Bars 41 to 45
-		a a-. a-.\!
-		c2\ff-> bes4->~
-		bes a2->
+		d e-. f-.\!
+		a2\ff-> g4->~
+		g f2->
 		R2.*2
 		
 % Bars 46 to 50
+		\partcombineApart c2.\p~
+		c \partcombineAutomatic
 		R2.*2
 		
-		R2.*2
-		
-		R2.*2
+		\partcombineApart c2.~
 % Bars 51 to 55
-		
+		c \partcombineAutomatic
 		R2.*2
 		
-		R2.*2
-		
+		\partcombineApart a2.~
+		a \partcombineAutomatic
 % Bars 56 to 60
 		R2.*2
 		
-		R2.*2
-		
+		\partcombineApart a2.~
+		a \partcombineAutomatic
 		d,8(\p\< e f! g a bes
 % Bars 61 to 65
 		b4)\! cis\f-. d-.
-		c!2->\ff  bes4->~
-		bes a2->
+		f4(-> a) d,(->
+		e) f2->
 		R2.*46
 % Bars 66 to 70
 	
@@ -94,23 +94,23 @@ musicFloteIIMvtIII = \relative c''' {
 		
 		
 		
-		R2.*3
+		\partcombineApart r4 a,8(_\mf gis a4)
 % Bars 111 to 115
-		
-		
-		r4 c!2
-		des4-.\f\< c-. c-. 
-		des-. c-. c-. 
+		r b8(_\crescmarkup ais b4)
+		r cis8( bis cis4)
+		\partcombineAutomatic r ees8( d ees4)
+		f4-. ees8( d ees4)
+		f-. ees8( d ees4) 
 % Bars 116 to 120
-		des-. c-. c-. 
-		des-. c-. c-.\!
-		cis!-. cis_\semprecresc cis
-		cis-. cis-. cis-. 
-		cis-. cis-. cis-. 
+		f-. ees8( d ees4) 
+		f-. ees8( d ees4)
+		f!-. e!8(_\semprecresc dis e4)
+		fis-. e8( dis e4)
+		fis-. e8( dis e4)
 % Bars 121 to 125
-		cis-. cis-. cis-. 
-		cis-. cis-. cis-. 
-		c!-. c-. c-. 
+		g-. e8( dis e4)
+		g-. ees8( d ees4)
+		aes-. ees8( d ees4)
 		c!(\ff des) c(
 		des) c( des)
 % Bars 126 to 130
@@ -144,92 +144,154 @@ musicFloteIIMvtIII = \relative c''' {
 	
 	\bar "||" \key d \major
 	\repeat volta 2 {
-		<>^\markup \bold {Piccolo} R2.*6
+		R2.*3
 % Bars 156 to 160
-		
-		
-		
-		e,,4(\fp b') e(\<
-		b' e) b~\!
+		e,4(\p fis8 dis e4)
+		R2.*9
 % Bars 161 to 165
-		b\> b8( a g a
-		b2.)\pp
-		R2.*6
-		
-		
+	
 % Bars 166 to 170
-		
-		
-		
-		d,,4\fp( a') d(\<
-		a') d(\! a)
+		fis4(\p\< g8 eis fis4)\!
+		R2.*6
 % Bars 171 to 175
-		fis-. a8(\> g fis g
-		a2.)\pp
-		R2.*8
 		
 		
+		d'2.\p->
+		R2.
+		d
 % Bars 176 to 180
-		
+		d4-.\< e-. fis-.
+		g2.\fz
+		d4(\> cis! d)\!
+		g2.
+		d4(\< e8 cis d4)\!
 % Bars 181 to 185
-		d,2.\f\>~
-		d~
-		d~
-		d2\! r4 
-		R2.*16
+		g2.\f\>~
+		g~
+		g~
+		g2(\! fis4)
+		e2(\p d4
 % Bars 186 to 190
-		
+		cis2 b4
+		a2 b4
+		cis2 d4)
+		e2(_\dimmarkup d4
+		cis2 b4
 % Bars 191 to 195
-		
+		a2 b4
+		cis2 d4)
+		b2(\pp cis4
+		a2_\dimmarkup b4
+		g2 a4
 % Bars 196 to 200
-		
-		
-		
-		
-		
+		fis2 g4)
+		e2.(\ppp
+		a)~
+		a~
+		a
 	}
 % Bars 201 to 205
 	R2.*4
 	
 	
 	
-	R2.*83
+	r4 fis(\p d)
 % Bars 206 to 210
+	r a( fis)
+	R2.*2
 	
+	d''2(\p a4
+	e2 fis4
 % Bars 211 to 215
-	
+	g a b
+	a e g)
+	fis( e d
+	c2.
+	b4 a g
 % Bars 216 to 220
-	
+	fis g e)
+	d(_\dimmarkup e fis
+	g fis e)
+	d( e fis
+	g fis e)
 % Bars 221 to 225
-	
+	d(\pp e8 cis d4)
+	R2.
+	a'4(\pp b8 gis a4
+	d e8 cis d4)
+	R2.*4
 % Bars 226 to 230
 	
+	
+	
+	fis,4(\p b d
+	fis b d~
 % Bars 231 to 235
-	
+	d2 cis4
+	b a g)
+	fis( d b
+	d fis b~
+	b2 a4
 % Bars 236 to 240
-	
+	g fis e)
+	d( fis b
+	a2.)
+	g4( fis e
+	d e cis)
 % Bars 241 to 245
-	
+	b2.\pp~
+	b~
+	b(
+	ais)
+	fis~
 % Bars 246 to 250
-	
+	fis~
+	fis~
+	fis
+	b4( cis8 ais b4)
+	R2.*6
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	
+	a'4(\p d, fis
+	a\< d fis~
+	fis e d~
+	d cis b)\!
+	a(\mf d, fis~
 % Bars 261 to 265
-	
+	fis a d~
+	d cis b~
+	b a g)
+	fis( a d
+	c2._\dimmarkup
 % Bars 266 to 270
-	
+	b4 a g
+	fis g e)
+	d2.\pp~
+	d~
+	d~
 % Bars 271 to 275
-	
+	d~
+	d~
+	d~
+	d~
+	d~
 % Bars 276 to 280
-	
+	d~
+	d~
+	d~
+	d
+	d4(\pp e8 cis d4)
 % Bars 281 to 285
-	
+	d( e8 cis d4)\<
+	d( e8 cis d4)
+	d( e8 cis d4)\!
+	d(\f e8 cis d4)
+	d( e8 cis d4)
 % Bars 286 to 290
-	
-	\bar "||" \key d \minor
-	<>^\markup \bold {Flote} cis'4(\f-> d8) r cis4(->
+	d( e8 cis d4)
+	d( e8 cis d4) \bar "||" \key d \minor
+	cis'4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 	e4-.\f d8( cis d4)
 % Bars 291 to 295
@@ -252,35 +314,35 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 321 to 325
 	
 	
-	f2\p\< a4~
-	a a-.\! a-.
-	c2->\ff bes4->~
+	a2\p\< d4~
+	d e-.\! f-.
+	a2->\ff g4->~
 % Bars 326 to 330
-	bes a2->
+	g f2->
 	R2.*2
 	
-	R2.*2
-	
+	\partcombineApart c2.\p~
+	c \partcombineAutomatic
 % Bars 331 to 335
 	R2.*2
 	
-	R2.*2
-	
+	\partcombineApart c2.~
+	c \partcombineAutomatic
 	R2.*2
 % Bars 336 to 340
 	
-	R2.*2
-	
+	\partcombineApart a2.~
+	a \partcombineAutomatic
 	R2.*2
 	
 % Bars 341 to 345
-	R2.*2
-	
+	\partcombineApart a2.~
+	a \partcombineAutomatic
 	d,8(\p\< e f! g a bes
 	b4\!) cis-. d-.
-	c!2->\ff bes4->~
+	f->( a) d,->(
 % Bars 346 to 350
-	bes a2->
+	e) f2->
 	R2.*46
 % Bars 351 to 355
 	
@@ -301,23 +363,23 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 391 to 395
 	
 	
-	R2.*3
-	
-	
+	\partcombineApart r4 a,8(\mf gis a4)
+	r b8(_\crescmarkup ais b4)
+	r cis8( bis cis4)
 % Bars 396 to 400
-	r4 c2
-	des4-.\f\< c-. c-. 
-	des-. c-. c-.
-	des-. c-. c-.
-	des-. c-. c-.\!
+	\partcombineAutomatic r ees8( d ees4)
+	f-. ees8( d ees4) 
+	f-. ees8( d ees4) 
+	f-. ees8( d ees4) 
+	f-. ees8( d ees4)
 % Bars 401 to 405
-	cis-._\semprecresc cis-. cis-.
-	cis-. cis-. cis-. 
-	cis-. cis-. cis-. 
-	cis-. cis-. cis-. 
-	cis-. cis-. cis-. 
+	f-._\semprecresc e!8( dis e4)
+	fis-. e8( dis e4)
+	fis-. e8( dis e4)
+	g-. e8( dis e4)
+	g-. ees8( d ees4)
 % Bars 406 to 410
-	c!-. c-. c-.
+	aes4-. ees8( d ees4)
 	c!(\ff des) c(
 	des) c( des)
 	c( des) c(
