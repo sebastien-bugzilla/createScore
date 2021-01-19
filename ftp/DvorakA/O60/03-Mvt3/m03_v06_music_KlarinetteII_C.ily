@@ -14,13 +14,13 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		
 		
 		
-		c2->\f c4->~
+		c2\f c4~
 % Bars 6 to 10
-		c c2->
+		c c2
 		ees4-.\fz c-. c-.
 		ees4-.\fz c-. c-.
-		b(-> c8) r b4(->
-		c8) r b4(-> c8) r
+		b( c8) r b4(
+		c8) r b4( c8) r
 % Bars 11 to 15
 		des4-.\fz c-. c-.
 		des-.\fz c-. c-.
@@ -85,13 +85,13 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		f r r
 % Bars 61 to 65
 		r g\f-. aes!-.
-		ees'2\ff-> des4->~
+		ees'2\ff des4->~
 		des c2->
 		R2.*8
 % Bars 66 to 70
 	
 % Bars 71 to 75
-		
+		%%%%%%%%%%%%%%%%%%%%%%%%%%
 		ees,2\p ees4~
 		ees aes-. g-.
 		bes2-> aes4~
@@ -130,7 +130,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		r4 bes'-. r
 		bes-. r bes-.
 		r ces2
-		r4 ces2_\pocoapococresc
+		r4 ces2
 % Bars 106 to 110
 		r4 ces r
 		ces r ces
@@ -146,7 +146,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 116 to 120
 		e-. dis-. dis-.
 		e-. dis-. dis-.\!
-		e-._\semprecresc e-. e-.
+		e-. e-. e-.
 		e-. e-. e-.
 		e\fz e e
 % Bars 121 to 125
@@ -192,7 +192,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	c
 	c
 	c\p
-	c_\dimmarkup
+	c
 % Bars 151 to 155
 	c
 	c \bar "||" \key f \major
@@ -203,7 +203,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 156 to 160
 		bes\<
 		c
-		d2 c4)
+		d2 c4)\!
 		bes2.\p~
 		bes~\>
 % Bars 161 to 165
@@ -308,7 +308,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 	
 	
-	g2(_\pdim a4
+	g2( a4
 % Bars 266 to 270
 	bes c d)
 	c2.~
@@ -327,8 +327,8 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 286 to 290
 	
 	\bar "||" \key f \minor
-	c2\f-> c4~->
-	c c2->
+	c2\f c4~
+	c c2
 	ees!4-.\fz c-. c-.
 % Bars 291 to 295
 	ees-.\fz c-. c-.
@@ -395,9 +395,9 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	g r g
 	f r r
 	r g-.\f aes!-.
-	ees'2->\ff des4->~
+	ees'2\ff des4->_(
 % Bars 346 to 350
-	des c2->
+	des) c2->
 	R2.*8
 % Bars 351 to 355
 	
@@ -441,7 +441,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	r4 bes'-.\pp r
 	bes-. r bes-.
 	r ces2
-	r4 ces2_\pocoapococresc
+	r4 ces2
 	r4 ces r
 % Bars 391 to 395
 	ces r ces
@@ -467,7 +467,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	dis( e) dis(
 	e) dis( e)
 % Bars 411 to 415
-	c2_\ffgrandioso  c4~
+	c2  c4~
 	c c2
 	c2 c4~
 	c c2
@@ -493,7 +493,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 431 to 435
 	c4-. c-. c-.
 	c-. c-. c-.
-	c-. c->( d8 e)
+	c-. c d8 e
 	f4-. c-. aes-.
 	aes-. c-. aes-.
 % Bars 436 to 438

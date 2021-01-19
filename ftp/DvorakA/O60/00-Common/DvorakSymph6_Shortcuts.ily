@@ -43,6 +43,7 @@ pizz=^\markup {pizz.}
 arco=^\markup {arco}
 ffmarcatosempre=^\markup {\dynamic ff \italic {marcato sempre}}
 pocoapococrescendo=^\markup {\italic {poco a poco crescendo}}
+pocoapococresc=^\markup {\italic {poco a poco cresc.}}
 fzdim=^\markup {\dynamic fz \italic dim.}
 ten=^\markup {\italic ten.}
 semprepp=^\markup {\italic sempre \dynamic pp}
@@ -51,6 +52,7 @@ mfz=^\markup {\dynamic mfz}
 pespressivo=^\markup {\dynamic p \italic espressivo}
 semprecresc=^\markup {\italic {sempre cresc.}}
 ffgrandioso=^\markup {\dynamic ff \italic grandioso}
+dimsempre=^\markup {\italic {dim. sempre}}
 
 % function
 mmrPos = #(define-music-function
@@ -58,6 +60,22 @@ mmrPos = #(define-music-function
 	(number?)
 	#{
 		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+mmrPosOver = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\override Staff.MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)
+
+mmrPosRevert = #(define-music-function
+	()
+	()
+	#{
+		\revert Staff.MultiMeasureRest.staff-position
 	#}
 )
 
