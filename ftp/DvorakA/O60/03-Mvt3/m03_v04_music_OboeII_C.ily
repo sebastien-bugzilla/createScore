@@ -174,14 +174,14 @@ musicOboeIIMvtIII = \relative c'' {
 			d2.\f\>
 		}
 	}
-	\repeat volta 2 {
-		d
-		d
-		d\p
-		d
+	d
+	d
+	d\p
+	d
 % Bars 151 to 155
-		d
-		d \bar "||" \key d \major
+	d
+	d \bar "||" \key d \major
+	\repeat volta 2 {
 		R2.
 		R2.
 		R2.

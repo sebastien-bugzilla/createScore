@@ -34,36 +34,36 @@ musicFagottIMvtIII = \relative c {
 		cis-. a-. a-.
 		d-. d,-. d-.
 % Bars 21 to 25
-		a'-. a,-. a-.
+		a'-. \partcombineApart a,-. a-.
 		d-. d,-. d-.
-		d r r
+		d \partcombineAutomatic r r
 	}
 	\repeat volta 2 {
 		a''4(\p c) a(
 		c) a( c)~
 % Bars 26 to 30
-		c2.\<~
-		c\>
-		a4(\! c) a(
+		c2.~
+		c
+		a4( c) a(
 		c) a( c)~
-		c2.~\<
+		c2.~
 % Bars 31 to 35
-		c\>
-		f,4(\! a) f(
+		c
+		f,4( a) f(
 		a) f( a)~
-		a2.\<
-		a\>
+		a2.
+		a
 % Bars 36 to 40
-		fis4(\! a) fis(
+		fis4( a) fis(
 		a) fis( a)~
-		a2.\<~
-		a\>
+		a2.~
+		a
 		d,8(\< e f! g a bes!
 % Bars 41 to 45
 		b!4) cis-. d-.\!
 		a\ff-. a,-. bes!-.
 		c-. f-. f,-.
-		f-.\p c'-. f-.
+		\partcombineApart f-.\p c'-. f-.
 		f,-. c'-. f-.
 % Bars 46 to 50
 		e,-. c'-. e-.
@@ -82,16 +82,16 @@ musicFagottIMvtIII = \relative c {
 		
 		
 		
-		a2\p d4~\<
+		\partcombineAutomatic a2\p d4~\<
 % Bars 61 to 65
 		d\! e-.\f f-.
 		c2->\ff c,4~->
 		c f2->
-		d2\p\< d4~
+		d2 d4~
 		d f2
 % Bars 66 to 70
-		a4-.\f\> a,-. bes-.
-		c-. c,-. f-.\!
+		a4-. a,-. bes-.
+		c-. c,-. f-.
 		R2.*4
 % Bars 71 to 75
 		
@@ -125,9 +125,9 @@ musicFagottIMvtIII = \relative c {
 		
 % Bars 96 to 100
 		des,4-.\pp r des-.
-		r des-. r
-		ges-. des-. des-.
-		ges-. des-. des-.
+		r des-. r 
+		ges-. \partcombineApart des-. des-. \partcombineAutomatic
+		ges-. \partcombineApart des-. des-. \partcombineAutomatic
 		R2.*2
 % Bars 101 to 105
 		
@@ -157,7 +157,7 @@ musicFagottIMvtIII = \relative c {
 		a a a
 		a a a
 		aes-. aes-. aes-.
-		c(\ff des) c( 
+		c( des) c( 
 		des) c( des)
 % Bars 126 to 130
 		c( des) c(
@@ -169,8 +169,8 @@ musicFagottIMvtIII = \relative c {
 		d d2
 		f2 f4~
 		f f2
-		bes,4-. f'-. f-.
-		bes,-. f'-. f-.
+		\once \partcombineApart bes,4-. f'-. f-.
+		\once \partcombineApart bes,-. f'-. f-.
 % Bars 136 to 140
 		ees2-> ees'4->~
 		ees2 d4-.
@@ -201,7 +201,7 @@ musicFagottIMvtIII = \relative c {
 	d
 	d \bar "||" \key d \major
 	\repeat volta 2 {
-		d'\fp
+		\partcombineApart d'\fp \partcombineAutomatic
 		R2.*39
 % Bars 156 to 160
 	
@@ -220,7 +220,7 @@ musicFagottIMvtIII = \relative c {
 % Bars 191 to 195
 		
 		
-		d2(\pp e4
+		\partcombineApart d2(\pp e4
 		cis2 d4
 		b2 cis4
 % Bars 196 to 200
@@ -231,7 +231,7 @@ musicFagottIMvtIII = \relative c {
 		e)
 	}
 % Bars 201 to 205
-	fis4 r r
+	fis4 r r \partcombineAutomatic
 	R2.*11
 	
 % Bars 206 to 210
@@ -239,7 +239,7 @@ musicFagottIMvtIII = \relative c {
 % Bars 211 to 215
 	
 	
-	d'2(\p a4
+	\partcombineApart d'2(\p a4
 	e2 fis4
 	g a b
 % Bars 216 to 220
@@ -249,7 +249,7 @@ musicFagottIMvtIII = \relative c {
 	fis2.(
 	b4 a g)
 % Bars 221 to 225
-	fis\pp r r
+	fis\pp r r \partcombineAutomatic
 	R2.*7
 % Bars 226 to 230
 	
@@ -285,7 +285,7 @@ musicFagottIMvtIII = \relative c {
 	g'2(_\pdim a4
 % Bars 266 to 270
 	b cis! d)
-	a2.
+	\partcombineApart a2.
 	fis4(\p a d
 	c2.
 	b4_\dimsempre a g
@@ -299,7 +299,7 @@ musicFagottIMvtIII = \relative c {
 	fis( g e
 	fis g e)
 	fis( g e
-	fis g e)
+	fis g e) \partcombineAutomatic
 	a4--\pp a-- a--
 % Bars 281 to 285
 	a a a\<
@@ -329,35 +329,35 @@ musicFagottIMvtIII = \relative c {
 	ees2 d4-.
 	cis-. a-. a-.
 	d-. d,-. d-.
-	a'-. a,-. a-.
+	a'-. \partcombineApart a,-. a-.
 	d-. d,-. d-.
 % Bars 306 to 310
-	d r r \bar "||"
+	d \partcombineAutomatic r r \bar "||"
 	a''4(\p c) a(
 	c) a( c)~
-	c2.\<~
-	c\>
+	c2.~
+	c
 % Bars 311 to 315
-	a4(\! c) a(
+	a4( c) a(
 	c) a( c)~
-	c2.\<~
-	c\>
-	f,4(\! a) f(
+	c2.~
+	c
+	f,4( a) f(
 % Bars 316 to 320
 	a) f( a)~
-	a2.\<~
-	a\>
-	fis4(\! a) fis(
+	a2.~
+	a
+	fis4( a) fis(
 	a) fis( a)~
 % Bars 321 to 325
-	a2.\<~
-	a\>
+	a2.~
+	a
 	d,8(\< e f! g a bes!
 	b4) cis-.\! d-.
 	a-.\ff a,-. bes!-.
 % Bars 326 to 330
 	c-. f-. f,-.
-	f-.\p c'-. f-.
+	\partcombineApart f-.\p c'-. f-.
 	f,-. c'-. f-.
 	e,-. c'-. e-.
 	e,-. c'-. e-.
@@ -372,15 +372,15 @@ musicFagottIMvtIII = \relative c {
 % Bars 341 to 345
 	
 	
-	a2\< d4~
+	\partcombineAutomatic a2\< d4~
 	d e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350
 	c f2->
-	d2\p d4~
-	d\< f2
-	a4-.\f\> a,-. bes-.
-	c-.\! c,-. f-.
+	\once \partcombineApart d2 d4~
+	d f2
+	a4-. a,-. bes-.
+	c-. \partcombineApart c,-. f-. \partcombineAutomatic
 % Bars 351 to 355
 	R2.*4
 	
@@ -417,8 +417,8 @@ musicFagottIMvtIII = \relative c {
 	des,4-.\pp r des-.
 	r des-. r
 % Bars 381 to 385
-	ges-. des-. des-.
-	ges-. des-. des-.
+	ges-. \partcombineApart des-. des-. \partcombineAutomatic
+	ges-. \partcombineApart des-. des-. \partcombineAutomatic
 	R2.*2
 	
 	r4 ees'-.\pp r 
@@ -448,7 +448,7 @@ musicFagottIMvtIII = \relative c {
 	a-. a-. a-.
 % Bars 406 to 410
 	aes-. aes-. aes-.
-	c(\ff des) c(
+	c( des) c(
 	des) c( des)
 	c( des) c(
 	des) c( cis)
@@ -460,8 +460,8 @@ musicFagottIMvtIII = \relative c {
 	f2 f4~
 % Bars 416 to 420
 	f f2
-	bes,4-. f'-. f-.
-	bes,-. f'-. f-.
+	\once \partcombineApart bes,4-. f'-. f-.
+	\once \partcombineApart bes,-. f'-. f-.
 	ees2-> ees'4~->
 	ees2 d4-.
 % Bars 421 to 425
@@ -475,12 +475,12 @@ musicFagottIMvtIII = \relative c {
 	a-. g4->( f8 e)
 	d4-. d-. d-.
 	d-. d-. d-.
-	a'-. a,->( b8 cis)
+	a'-. \partcombineApart a,->( b8 cis)
 % Bars 431 to 435
 	d4-. d-. d-.
 	d-. d-. d-.
 	a-. g'(-> f8 e)
-	d4-. d-. d-.
+	d4-. \partcombineAutomatic d-. d-.
 	d-. d-. d-.
 % Bars 436 to 438
 	d r r

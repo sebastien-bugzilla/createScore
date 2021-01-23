@@ -174,14 +174,14 @@ musicOboeIMvtIII = \relative c''' {
 			d2.\f\>
 		}
 	}
-	\repeat volta 2 {
-		d
-		d
-		d\p
-		d_\dimmarkup
+	d
+	d
+	d\p
+	d_\dimmarkup
 % Bars 151 to 155
-		d
-		d \bar "||" \key d \major
+	d
+	d \bar "||" \key d \major
+	\repeat volta 2 {
 		\partcombineApart d4(\fp e8 cis d4) \partcombineAutomatic
 		R2.
 		\partcombineApart d4(\p e8 cis d4) \partcombineAutomatic

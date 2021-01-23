@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottIMvtIII = \relative c {
+musicFagottIIMvtIII = \relative c, {
 	\clef bass
 	\key d \minor
 %	\transposition a
@@ -34,63 +34,59 @@ musicFagottIMvtIII = \relative c {
 		cis-. a-. a-.
 		d-. d,-. d-.
 % Bars 21 to 25
-		a'-. a,-. a-.
-		d-. d,-. d-.
+		a'-. a a
+		d d, d
 		d r r
 	}
 	\repeat volta 2 {
-		a''4(\p c) a(
-		c) a( c)~
+		f'4(\p a) f(
+		a) f( a)
 % Bars 26 to 30
-		c2.\<~
-		c\>
-		a4(\! c) a(
-		c) a( c)~
-		c2.~\<
+		c-. g8(\< fis g a\!
+		bes a\> c bes a g\!)
+		f!4( a) f(
+		a) f( a)
+		c-. g8(\< fis g a\!
 % Bars 31 to 35
-		c\>
-		f,4(\! a) f(
-		a) f( a)~
-		a2.\<
-		a\>
+		bes a\> c bes a g)\!
+		d4( f) d(
+		f) d( f)
+		a e8(\< dis e f\!
+		g fis\> a g f e)\!
 % Bars 36 to 40
-		fis4(\! a) fis(
-		a) fis( a)~
-		a2.\<~
-		a\>
-		d,8(\< e f! g a bes!
+		d4( fis) d(
+		fis) d( fis)
+		a-. e8(\< dis e fis\!
+		g fis\> a g fis e)\!
+		d8(\< e f! g a bes!
 % Bars 41 to 45
 		b!4) cis-. d-.\!
 		a\ff-. a,-. bes!-.
 		c-. f-. f,-.
-		f-.\p c'-. f-.
-		f,-. c'-. f-.
-% Bars 46 to 50
-		e,-. c'-. e-.
-		e,-. c'-. e-.
-		f,-. c'-. f-.
-		f,-. c'-. f-.
-		e,-. c'-. e-.
-% Bars 51 to 55
-		e,-. c'-. e-.
 		R2.*8
 		
+% Bars 46 to 50
 		
+% Bars 51 to 55
 		
+		d4-.\p a'-. d
+		d,-. a'-. d-.
+		cis,-. a'-. cis-.
+		cis,-. a'-. cis-.
 % Bars 56 to 60
-		
-		
-		
-		
+		d,-. a'-. d-.
+		d,-. a'-. d-.
+		cis,-. a'-. cis-.
+		cis,-. a'-. cis-.
 		a2\p d4~\<
 % Bars 61 to 65
 		d\! e-.\f f-.
 		c2->\ff c,4~->
 		c f2->
-		d2\p\< d4~
-		d f2
+		d'2\p\< d4~
+		d bes2\!
 % Bars 66 to 70
-		a4-.\f\> a,-. bes-.
+		a2\f bes4-.\>
 		c-. c,-. f-.\!
 		R2.*4
 % Bars 71 to 75
@@ -98,27 +94,27 @@ musicFagottIMvtIII = \relative c {
 		a'4-.\p g-. f-.
 		e-. d-. c-.
 		b-. g-. b-.
-		c-. g-. c-.
+		c-. g-. c,-.
 % Bars 76 to 80
 		R2.*4
 		
 		
 		
-		d2\p g4~
+		g'2.\p~
 % Bars 81 to 85
-		g a-. bes-.
-		d2-> c4->~
-		c bes2->
+		g
+		f~
+		f4 bes,2
 		R2.*2
 		
 % Bars 86 to 90
-		f2\p f4~
-		f f2
+		f'2\p f4~
+		f bes2
 		R2.*2
 		
-		d'2\p c4~
+		bes'2\p a4~
 % Bars 91 to 95
-		c bes2
+		a g2
 		R2.*4
 		
 		
@@ -126,21 +122,21 @@ musicFagottIMvtIII = \relative c {
 % Bars 96 to 100
 		des,4-.\pp r des-.
 		r des-. r
-		ges-. des-. des-.
-		ges-. des-. des-.
+		ges-. des' des
+		ges,-. des' des
 		R2.*2
 % Bars 101 to 105
 		
-		r4 ees'-.\pp r
-		ees-. r ees-.
+		r4 bes'-.\pp r
+		bes-. r bes-.
 		R2.*2
 		
 % Bars 106 to 110
-		r4 f\p r
-		f_\crescmarkup r f
+		r4 c\p r
+		c r c
 		R2.*2
 		
-		d,4(_\mf ees)_\crescmarkup ees(
+		d,,4(_\mf ees) ees(
 % Bars 111 to 115
 		e!) e( f)
 		fis( g) g(
@@ -150,27 +146,27 @@ musicFagottIMvtIII = \relative c {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		a!-._\semprecresc a-. a-.
+		a!-. a-. a-.
 		a a a
 		a a a
 % Bars 121 to 125
 		a a a
 		a a a
 		aes-. aes-. aes-.
-		c(\ff des) c( 
-		des) c( des)
+		des2->\ff des4~->
+		des des2->
 % Bars 126 to 130
-		c( des) c(
-		des) c( cis)
-		d2_\ffgrandioso d,4~
+		a!2-> a4->~
+		a a2->
+		d2 d,4~
 		d d2
 		d2 d4~
 % Bars 131 to 135
 		d d2
 		f2 f4~
 		f f2
-		bes,4-. f'-. f-.
-		bes,-. f'-. f-.
+		bes4 f-. f-.
+		bes f-. f-.
 % Bars 136 to 140
 		ees2-> ees'4->~
 		ees2 d4-.
@@ -196,12 +192,12 @@ musicFagottIMvtIII = \relative c {
 	d
 	d
 	d\p
-	d_\dimmarkup
+	d
 % Bars 151 to 155
 	d
 	d \bar "||" \key d \major
 	\repeat volta 2 {
-		d'\fp
+		R2.
 		R2.*39
 % Bars 156 to 160
 	
@@ -220,18 +216,18 @@ musicFagottIMvtIII = \relative c {
 % Bars 191 to 195
 		
 		
-		d2(\pp e4
-		cis2 d4
-		b2 cis4
+		R2.*8
+		
+		
 % Bars 196 to 200
-		a2 b4)
-		g2.\ppp~
-		g(
-		fis
-		e)
+		
+		
+		
+		
+		
 	}
 % Bars 201 to 205
-	fis4 r r
+	R2.
 	R2.*11
 	
 % Bars 206 to 210
@@ -239,23 +235,23 @@ musicFagottIMvtIII = \relative c {
 % Bars 211 to 215
 	
 	
-	d'2(\p a4
-	e2 fis4
-	g a b
+	R2.*9
+	
+	
 % Bars 216 to 220
-	a e g)
-	fis2.(^\dimmarkup
-	b4 a g)
-	fis2.(
-	b4 a g)
+	
+	
+	
+	
+	
 % Bars 221 to 225
-	fis\pp r r
+	
 	R2.*7
 % Bars 226 to 230
 	
 	
 	
-	b,2\p r4
+	b2\p r4
 	R2.
 % Bars 231 to 235
 	b2 r4
@@ -282,34 +278,34 @@ musicFagottIMvtIII = \relative c {
 	
 	
 	
-	g'2(_\pdim a4
+	e'2( fis4
 % Bars 266 to 270
-	b cis! d)
-	a2.
-	fis4(\p a d
-	c2.
-	b4_\dimsempre a g
+	g a b)
+	a2.~
+	a4 r r
+	R2.*11
+	
 % Bars 271 to 275
-	fis g e)
-	a2( g4
-	fis g e)
-	a2( g4
-	fis e g)
+	
+	
+	
+	
+	
 % Bars 276 to 280
-	fis( g e
-	fis g e)
-	fis( g e
-	fis g e)
-	a4--\pp a-- a--
+	
+	
+	
+	
+	d,4--\pp d-- d--
 % Bars 281 to 285
-	a a a\<
-	a a a
-	a a a\!
-	a\f a a
-	a a a
+	d d d\<
+	d d d 
+	d d d\!
+	d\f d d
+	d d d
 % Bars 286 to 290
-	a a a
-	a a a \bar "||" \key d \minor
+	d d d
+	d d d \bar "||" \key d \minor
 	d,2\f-> d4->~
 	d d2->
 	c4\fz-. d-. d-.
@@ -329,57 +325,61 @@ musicFagottIMvtIII = \relative c {
 	ees2 d4-.
 	cis-. a-. a-.
 	d-. d,-. d-.
-	a'-. a,-. a-.
-	d-. d,-. d-.
+	a'-. a a
+	d d, d
 % Bars 306 to 310
 	d r r \bar "||"
-	a''4(\p c) a(
-	c) a( c)~
-	c2.\<~
-	c\>
+	f'4(\p a) f(
+	a) f( a)
+	c-. g8(\< fis g a\!
+	bes a\> c bes a g)\!
 % Bars 311 to 315
-	a4(\! c) a(
-	c) a( c)~
-	c2.\<~
-	c\>
-	f,4(\! a) f(
+	f4( a) f(
+	a) f( a)
+	c-. g8(\< fis g a\!
+	bes a\> c bes a g)\!
+	d4( f) d(
 % Bars 316 to 320
-	a) f( a)~
-	a2.\<~
-	a\>
-	fis4(\! a) fis(
-	a) fis( a)~
+	f) d( f)
+	a-. e8(\< dis e f\!
+	g fis\> a g f e)\!
+	d4( fis) d(
+	fis) d( fis)
 % Bars 321 to 325
-	a2.\<~
-	a\>
-	d,8(\< e f! g a bes!
+	a-. e8(\< dis e fis\!
+	g fis\> a g fis e)\!
+	d8(\< e f! g a bes!
 	b4) cis-.\! d-.
 	a-.\ff a,-. bes!-.
 % Bars 326 to 330
 	c-. f-. f,-.
-	f-.\p c'-. f-.
-	f,-. c'-. f-.
-	e,-. c'-. e-.
-	e,-. c'-. e-.
-% Bars 331 to 335
-	f,-. c'-. f-.
-	f,-. c'-. f-.
-	e,-. c'-. e-.
-	e,-. c'-. e-.
 	R2.*8
+	
+	
+	
+% Bars 331 to 335
+	
+	
+	
+	
+	d4-.\p a'-. d-.
 % Bars 336 to 340
-	
+	d,-. a'-. d-.
+	cis,-. a'-. cis-.
+	cis,-. a'-. cis-.
+	d,-. a'-. d-.
+	d,-. a'-. d-.
 % Bars 341 to 345
-	
-	
+	cis,-. a'-. cis-.
+	cis,-. a'-. cis-.
 	a2\< d4~
 	d e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350
 	c f2->
-	d2\p d4~
-	d\< f2
-	a4-.\f\> a,-. bes-.
+	d'2\p d4~
+	d\< bes2
+	a2\f\> bes4-.
 	c-.\! c,-. f-.
 % Bars 351 to 355
 	R2.*4
@@ -390,25 +390,25 @@ musicFagottIMvtIII = \relative c {
 % Bars 356 to 360
 	e-. d-. c-.
 	b-. g-. b-.
-	c-. g-. c-.
+	c-. g-. c,-.
 	R2.*4
 % Bars 361 to 365
 	
 	
-	d2\p g4~
-	g a-. bes-.
-	d2-> c4~->
+	g'2.\p~
+	g
+	f~
 % Bars 366 to 370
-	c bes2->
+	f4 bes,2
 	R2.*2
 	
-	f2\p f4~
-	f f2
+	f'2\p f4~
+	f bes2
 % Bars 371 to 375
 	R2.*2
 	
-	d'2\p c4~
-	c bes2
+	bes'2\p a4~
+	a g2
 	R2.*4
 % Bars 376 to 380
 	
@@ -417,21 +417,21 @@ musicFagottIMvtIII = \relative c {
 	des,4-.\pp r des-.
 	r des-. r
 % Bars 381 to 385
-	ges-. des-. des-.
-	ges-. des-. des-.
+	ges-. des' des
+	ges,-. des' des
 	R2.*2
 	
-	r4 ees'-.\pp r 
+	r4 bes'-.\pp r 
 % Bars 386 to 390
-	ees-. r ees-.
+	bes-. r bes-.
 	R2.*2
 	
-	r4 f\p\< r 
-	f r f\!
+	r4 c\p\< r 
+	c r c\!
 % Bars 391 to 395
 	R2.*2
 	
-	d,4(_\mfcresc ees) ees(
+	d,,4( ees) ees(
 	e!) e( f)
 	fis( g) g(
 % Bars 396 to 400
@@ -441,27 +441,27 @@ musicFagottIMvtIII = \relative c {
 	aes-. aes-. aes-.
 	aes-. aes-. aes-.\!
 % Bars 401 to 405
-	a!-. a-._\semprecresc a-.
+	a!-. a-. a-.
 	a a a
 	a a a
 	a-. a-. a-.
 	a-. a-. a-.
 % Bars 406 to 410
 	aes-. aes-. aes-.
-	c(\ff des) c(
-	des) c( des)
-	c( des) c(
-	des) c( cis)
+	des2->\ff des4~->
+	des des2->
+	a!2-> a4~->
+	a a2->
 % Bars 411 to 415
-	d2_\ffgrandioso d,4~
+	d2 d,4~
 	d d2
 	d d4~
 	d d2
 	f2 f4~
 % Bars 416 to 420
 	f f2
-	bes,4-. f'-. f-.
-	bes,-. f'-. f-.
+	bes4 f-. f-.
+	bes f-. f-.
 	ees2-> ees'4~->
 	ees2 d4-.
 % Bars 421 to 425
@@ -475,12 +475,12 @@ musicFagottIMvtIII = \relative c {
 	a-. g4->( f8 e)
 	d4-. d-. d-.
 	d-. d-. d-.
-	a'-. a,->( b8 cis)
+	a'-. a b8 cis
 % Bars 431 to 435
-	d4-. d-. d-.
-	d-. d-. d-.
-	a-. g'(-> f8 e)
-	d4-. d-. d-.
+	d4 d d
+	d d d
+	a g' f8 e
+	d4 d,-. d-.
 	d-. d-. d-.
 % Bars 436 to 438
 	d r r
