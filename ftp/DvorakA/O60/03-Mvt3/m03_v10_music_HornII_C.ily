@@ -24,17 +24,17 @@ musicHornIIMvtIII = \relative c'' {
 % Bars 11 to 15
 		a4-.\fz g-. g-.
 		a-.\fz g-. g-.
-		bes2-> bes4~->
-		bes2 a4-.
-		gis-. gis-. gis-.
+		bes2 bes4~
+		bes2 a4
+		gis gis-. gis-.
 % Bars 16 to 20
 		a-. a-. a-.
-		bes2-> bes4~->
-		bes2 a4-.
-		gis-. gis-. gis-.
+		bes2 bes4~
+		bes2 a4
+		gis gis-. gis-.
 		a-. a-. a-.
 % Bars 21 to 25
-		e'-. e,-. e-.
+		e' e, e
 		a r r
 		R2.
 	}
@@ -116,7 +116,7 @@ musicHornIIMvtIII = \relative c'' {
 		R2.*2
 		
 		r4 b!2\p 
-		r4 b2_\crescmarkup
+		r4 b2
 		r4 g2
 % Bars 111 to 115
 		r4 a2
@@ -173,7 +173,7 @@ musicHornIIMvtIII = \relative c'' {
 	e
 	e
 	e\p
-	e_\dimmarkup
+	e
 % Bars 151 to 155
 	e
 	e \bar "||" \key c \major
@@ -271,16 +271,16 @@ musicHornIIMvtIII = \relative c'' {
 	a4\fz-. g-. g-.
 	a\fz-. g-. g-.
 % Bars 296 to 300
-	bes2-> bes4->~
-	bes2 a4-.
-	gis-. gis-. gis-.
+	bes2 bes4~
+	bes2 a4
+	gis gis-. gis-.
 	a-. a-. a-.
-	bes2-> bes4~->
+	bes2 bes4~
 % Bars 301 to 305
-	bes2 a4-.
-	gis-. gis-. gis-.
+	bes2 a4
+	gis gis-. gis-.
 	a-. a-. a-.
-	e'-. e,-. e-.
+	e' e, e
 	a r r
 % Bars 306 to 310
 	R2. \bar "||"
@@ -332,7 +332,7 @@ musicHornIIMvtIII = \relative c'' {
 	
 	
 	d4-.\p\< d-. d-.
-	d-. d-. d-.
+	d-. d-. d-.\!
 % Bars 361 to 365
 	c2.\f~
 	c
@@ -363,7 +363,7 @@ musicHornIIMvtIII = \relative c'' {
 	
 % Bars 391 to 395
 	r4 b!2\p
-	r4 b2_\crescmarkup
+	r4 b2
 	r4 g2
 	r4 b2
 	r4 b2
@@ -386,7 +386,7 @@ musicHornIIMvtIII = \relative c'' {
 	b!2-> b4~
 	b b2->
 % Bars 411 to 415
-	a2_\ffgrandioso a4~
+	a2 a4~
 	a a2
 	a2 a4~
 	a a2
