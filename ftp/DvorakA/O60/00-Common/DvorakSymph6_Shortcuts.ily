@@ -53,6 +53,7 @@ pespressivo=^\markup {\dynamic p \italic espressivo}
 semprecresc=^\markup {\italic {sempre cresc.}}
 ffgrandioso=^\markup {\dynamic ff \italic grandioso}
 dimsempre=^\markup {\italic {dim. sempre}}
+fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
 
 % function
 mmrPos = #(define-music-function
