@@ -94,7 +94,7 @@ musicTrompeteIIMvtIII = \relative c' {
 % Bars 126 to 130
 		g,2-> g4->~
 		g g2->
-		c2_\ffgrandioso c4~
+		c2 c4~
 		c c2
 		c2 c4~
 % Bars 131 to 135
@@ -128,7 +128,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	c
 	c
 	c\p
-	c_\dimmarkup
+	c
 % Bars 151 to 155
 	c
 	c \bar "||" \key c \major
@@ -185,7 +185,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	r c c
 	r c c
 	r c c
-	r c_\dimmarkup c
+	r c c
 % Bars 266 to 270
 	r c c
 	r c c
@@ -277,7 +277,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	g,2-> g4~->
 	g g2->
 % Bars 411 to 415
-	c2_\ffgrandioso c4~
+	c2 c4~
 	c c2
 	c2 c4~
 	c c2
@@ -299,11 +299,11 @@ musicTrompeteIIMvtIII = \relative c' {
 	g-. g-. g-.
 	c,-. c-. c-.
 	c-. c-. c-.
-	g'-. g2->
+	g' g2
 % Bars 431 to 435
 	c,4-. c-. c-.
 	c-. c-. c-.
-	g'-. g2->
+	g' g2
 	c,4-. c-. c-.
 	c-. c-. c-.
 % Bars 436 to 438

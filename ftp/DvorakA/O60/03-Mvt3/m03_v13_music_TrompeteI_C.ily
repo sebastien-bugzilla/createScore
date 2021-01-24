@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrompeteIIMvtIII = \relative c' {
+musicTrompeteIMvtIII = \relative c'' {
 	\clef treble
 	\key a \minor
 	\transposition d
@@ -22,7 +22,7 @@ musicTrompeteIIMvtIII = \relative c' {
 		R2.*2
 		
 % Bars 11 to 15
-		r4 g'-. g-.
+		r4 g-. g-.
 		r g-. g-.
 		R2.*2
 		
@@ -92,14 +92,14 @@ musicTrompeteIIMvtIII = \relative c' {
 		b!2->\ff b4->~
 		b b2->
 % Bars 126 to 130
-		g,2-> g4->~
+		g2-> g4->~
 		g g2->
 		c2_\ffgrandioso c4~
 		c c2
 		c2 c4~
 % Bars 131 to 135
 		c c2
-		bes'2 bes4~
+		bes2 bes4~
 		bes bes2
 		c4-. bes-. bes-.
 		c-. bes-. bes-.
@@ -114,7 +114,7 @@ musicTrompeteIIMvtIII = \relative c' {
 		g4-. g-. g-.
 		g-. g-. g-.
 		g-. g-. g-.
-		c,-. c-. c-.
+		c-. c-. c-.
 	}
 % Bars 146 to 150
 	\alternative {
@@ -206,7 +206,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	r c-. c-.
 	R2.*2
 	
-	r4 g'-. g-.
+	r4 g-. g-.
 	r g-. g-.
 % Bars 296 to 300
 	R2.*2
@@ -274,14 +274,14 @@ musicTrompeteIIMvtIII = \relative c' {
 	bes-. bes-. bes-. 
 	b!2->\ff b4~->
 	b b2->
-	g,2-> g4~->
+	g2-> g4~->
 	g g2->
 % Bars 411 to 415
 	c2_\ffgrandioso c4~
 	c c2
 	c2 c4~
 	c c2
-	bes'2 bes4~
+	bes2 bes4~
 % Bars 416 to 420
 	bes bes2
 	c4-. bes-. bes-.
@@ -297,14 +297,14 @@ musicTrompeteIIMvtIII = \relative c' {
 % Bars 426 to 430
 	g-. g-. g-.
 	g-. g-. g-.
-	c,-. c-. c-.
 	c-. c-. c-.
-	g'-. g2->
+	c-. c-. c-.
+	\partcombineApart g-. g2-> \partcombineAutomatic
 % Bars 431 to 435
-	c,4-. c-. c-.
+	c4-. c-. c-.
 	c-. c-. c-.
-	g'-. g2->
-	c,4-. c-. c-.
+	\partcombineApart g-. g2-> \partcombineAutomatic
+	c4-. c-. c-.
 	c-. c-. c-.
 % Bars 436 to 438
 	c r r
