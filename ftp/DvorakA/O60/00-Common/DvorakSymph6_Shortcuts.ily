@@ -32,6 +32,7 @@ sempremarc=^\markup {\italic {sempre marc.}}
 fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
 marcatosempre=^\markup {\italic {marcato sempre}}
 pdolceD=#(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce" ))
+pdolce=^\markup {\dynamic p \italic dolce}
 legg=^\markup {\italic legg.}
 ppsubponticello=^\markup {\dynamic pp \italic {sub ponticello}}
 mfcrescD=#(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
@@ -54,6 +55,8 @@ semprecresc=^\markup {\italic {sempre cresc.}}
 ffgrandioso=^\markup {\dynamic ff \italic grandioso}
 dimsempre=^\markup {\italic {dim. sempre}}
 fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
+benmarc=^\markup {\italic {ben marc.}}
+
 
 % function
 mmrPos = #(define-music-function

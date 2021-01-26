@@ -130,24 +130,24 @@
 					\musicPaukenMvtIII
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffIXMvtIII
-%						\musicViolinIMvtIII
-%					}
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffXMvtIII
-%						\musicViolinIIMvtIII
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIII \generalOptions \conductorOptions
-%					\nameStaffXIMvtIII
-%					\musicBratscheMvtIII
-%				}
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtIII } <<
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffIXMvtIII
+						\musicViolinIMvtIII
+					}
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffXMvtIII
+						\musicViolinIIMvtIII
+					}
+				>>
+				\new Staff {
+					\timeMvtIII \generalOptions \conductorOptions
+					\nameStaffXIMvtIII
+					\musicBratscheMvtIII
+				}
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
 %					\new Staff {
 %						\timeMvtIII \generalOptions \conductorOptions
@@ -160,7 +160,7 @@
 %						\musicKontrabassMvtIII
 %					}
 %				>>
-%			>>
+			>>
 		>>
 		\header {
 			breakbefore = ##t
