@@ -37,12 +37,12 @@
 \include "./03-Mvt3/m03_v12_music_HornIV_C.ily"
 \include "./03-Mvt3/m03_v13_music_TrompeteI_C.ily"
 \include "./03-Mvt3/m03_v14_music_TrompeteII_C.ily"
-\include "./03-Mvt3/m03_v19_music_Pauken.ily"
-\include "./03-Mvt3/m03_v20_music_ViolinI.ily"
-\include "./03-Mvt3/m03_v21_music_ViolinII.ily"
-\include "./03-Mvt3/m03_v22_music_Bratsche.ily"
-\include "./03-Mvt3/m03_v23_music_Violoncello.ily"
-\include "./03-Mvt3/m03_v24_music_Kontrabass.ily"
+\include "./03-Mvt3/m03_v19_music_Pauken_C.ily"
+\include "./03-Mvt3/m03_v20_music_ViolinI_C.ily"
+\include "./03-Mvt3/m03_v21_music_ViolinII_C.ily"
+\include "./03-Mvt3/m03_v22_music_Bratsche_C.ily"
+\include "./03-Mvt3/m03_v23_music_Violoncello_C.ily"
+\include "./03-Mvt3/m03_v24_music_Kontrabass_C.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -148,18 +148,18 @@
 					\nameStaffXIMvtIII
 					\musicBratscheMvtIII
 				}
-%				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffXIIMvtIII
-%						\musicVioloncelloMvtIII
-%					}
-%					\new Staff {
-%						\timeMvtIII \generalOptions \conductorOptions
-%						\nameStaffXIIIMvtIII
-%						\musicKontrabassMvtIII
-%					}
-%				>>
+				\new GrandStaff \with { \nameGrandStaffIIIMvtIII } <<
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffXIIMvtIII
+						\musicVioloncelloMvtIII
+					}
+					\new Staff {
+						\timeMvtIII \generalOptions \conductorOptions
+						\nameStaffXIIIMvtIII
+						\musicKontrabassMvtIII
+					}
+				>>
 			>>
 		>>
 		\header {
