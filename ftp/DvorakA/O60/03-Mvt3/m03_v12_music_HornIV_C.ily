@@ -205,7 +205,7 @@ musicHornIVMvtIII = \relative c' {
 		
 	}
 % Bars 201 to 205
-	\clef bass c,,2.\pp~
+	\clef bass \grace s8 c,,2.\pp~
 	c~
 	c~
 	c~

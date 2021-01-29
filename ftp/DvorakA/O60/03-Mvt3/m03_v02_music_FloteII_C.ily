@@ -144,7 +144,7 @@ musicFloteIIMvtIII = \relative c''' {
 	
 	\bar "||" \key d \major
 	\repeat volta 2 {
-		<>^\markup \bold {Piccolo} R2.*6
+		R2.*6
 % Bars 156 to 160
 		
 		
@@ -189,7 +189,7 @@ musicFloteIIMvtIII = \relative c''' {
 		
 	}
 % Bars 201 to 205
-	R2.*4
+	\grace {s8} R2.*4
 	
 	
 	

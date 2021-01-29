@@ -78,7 +78,7 @@ tempiMvtIII = {
 		\tempo "in tempo" % bar 173
 		s2.*28
 	}
-	s2.*80
+	\grace s8 s2.*80
 	\tempo "poco a poco string." % bar 281
 	s2.*7
 	\tempo "Tempo I." % bar 288

@@ -247,7 +247,7 @@ musicViolinIIMvtIII = \relative c' {
 		g)
 	}
 % Bars 201 to 205
-	\acciaccatura a8( a'2.\p)(~
+	\acciaccatura a8 a'2.\p(~
 	a
 	g~
 	g)

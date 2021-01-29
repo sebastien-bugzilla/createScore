@@ -238,7 +238,7 @@ musicKontrabassMvtIII = \relative c {
 		a
 	}
 % Bars 201 to 205
-	d4 r r
+	\grace s8 d4 r r
 	R2.*27
 	
 	

@@ -214,7 +214,7 @@ musicHornIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	R2.*55
+	\grace s8 R2.*55
 % Bars 206 to 210
 	
 % Bars 211 to 215

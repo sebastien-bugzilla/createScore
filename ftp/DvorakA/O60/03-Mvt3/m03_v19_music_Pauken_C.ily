@@ -149,7 +149,7 @@ musicPaukenMvtIII = \relative c {
 % Bars 196 to 200
 	}
 % Bars 201 to 205
-	d2.\pp\startTrillSpan
+	\grace s8 d2.\pp\startTrillSpan
 	d
 	d
 	d

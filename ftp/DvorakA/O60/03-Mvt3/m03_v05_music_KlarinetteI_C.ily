@@ -256,7 +256,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		c~
 	}
 % Bars 201 to 205
-	c4 r r \partcombineAutomatic
+	\grace s8 c4 r r \partcombineAutomatic
 	R2. 
 	\partcombineApart r4 bes(\p d)
 	r g( bes) \partcombineAutomatic

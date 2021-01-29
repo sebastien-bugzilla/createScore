@@ -233,7 +233,7 @@ musicOboeIMvtIII = \relative c''' {
 		
 	}
 % Bars 201 to 205
-	\partcombineApart r4 a(\p fis)
+	\grace s8 \partcombineApart r4 a(\p fis)
 	r d( a) \partcombineAutomatic
 	R2.*4
 	

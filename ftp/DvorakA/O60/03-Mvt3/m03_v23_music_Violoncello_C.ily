@@ -250,7 +250,7 @@ musicVioloncelloMvtIII = \relative c {
 		e)
 	}
 % Bars 201 to 205
-	d2(\p fis4
+	\grace s8 d2(\p fis4
 	a d fis)~
 	fis2 e4(
 	d cis b)

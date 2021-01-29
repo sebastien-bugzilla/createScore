@@ -227,7 +227,7 @@ musicFagottIIMvtIII = \relative c, {
 		
 	}
 % Bars 201 to 205
-	R2.
+	\grace s8 R2.
 	R2.*11
 	
 % Bars 206 to 210

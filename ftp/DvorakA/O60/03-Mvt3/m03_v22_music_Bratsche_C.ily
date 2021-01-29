@@ -267,7 +267,7 @@ musicBratscheMvtIII = \relative c {
 		cis
 	}
 % Bars 201 to 205
-	a4(\p d fis
+	\grace s8 a4(\p d fis
 	a d fis)~
 	fis2 e4(
 	d cis b)

@@ -256,7 +256,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	R2.
+	\grace s8 R2.
 	R2.
 	R2.*2
 	

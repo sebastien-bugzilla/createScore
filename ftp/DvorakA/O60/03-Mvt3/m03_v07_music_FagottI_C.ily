@@ -231,7 +231,7 @@ musicFagottIMvtIII = \relative c {
 		e)
 	}
 % Bars 201 to 205
-	fis4 r r \partcombineAutomatic
+	\grace s8 fis4 r r \partcombineAutomatic
 	R2.*11
 	
 % Bars 206 to 210
