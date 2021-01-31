@@ -23,7 +23,7 @@ conductorOptions = {
 	%\set Voice.restNumberThreshold = #0
 	\override Staff.Script.avoid-slur = #'ignore
 }
-#(set-global-staff-size 13)
+#(set-global-staff-size 19)
 \layout {
 	\context {
 		\Staff
@@ -31,7 +31,7 @@ conductorOptions = {
 		\override Hairpin.to-barline = ##f
 		\RemoveEmptyStaves
 	}
-	#(layout-set-staff-size 13)
+	#(layout-set-staff-size 19)
 }
 layoutCueVoice = \with {
 	fontSize = #-3

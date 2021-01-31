@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFloteIIMvtIV = \relative c'' {
+musicFloteIMvtIV = \relative c''' {
 	\clef treble
 	\key d \major
 %	\transposition a
@@ -14,15 +14,15 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 6 to 10
 	
 	
-	R1
-	r2 r4 d(\p
-	cis a'2 b4)
+	\partcombineApart r2 r4 e(\p
+	cis b a e)
+	a4.( a8 a4 b)
 % Bars 11 to 15
-	e,4.( e8 e4 d)
-	cis4( a2.)
-	e'4. e8 e2~
-	e4 r r2
-	R1
+	cis4.( cis8 cis4 b)
+	a4.( a8 a4 b)
+	cis4.( cis8 cis4 b)
+	a1~
+	a4 r r2 \partcombineAutomatic
 % Bars 16 to 20
 	R1*18
 % Bars 21 to 25
@@ -33,12 +33,12 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	g1~\f\<
-	g\!
+	e'1~\f\<
+	e\!
 % Bars 36 to 40
-	cis-^~
-	cis2. cis4-. \mark \default
-	d(_\ffgrandioso e d a)
+	a-^~
+	a2. a4-. \mark \default
+	\partcombineApart fis(_\ffgrandioso e d a) \partcombineAutomatic
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -56,13 +56,13 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 56 to 60
 	
 	
-	gis4\f r r2
-	b4 r r2
-	d4 r cis-. b-.
+	b4\f r r2
+	d4 r r2
+	fis4 r e-. d-.
 % Bars 61 to 65
-	b r b r
-	b r b r
-	b r r2
+	d r d r
+	d r d r
+	d r r2
 	R1*5
 	
 % Bars 66 to 70
@@ -75,10 +75,10 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	b4\fp \tuplet 3/2 4 {b8( a gis)-.} gis4-> \tuplet 3/2 4 {gis8( fis e-.)}
-	e4 r r2
-	b'4\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-> \tuplet 3/2 4 {gis8( fis e-.)}
-	e4 r r2
+	d4\fp \tuplet 3/2 4 {d8( cis b)-.} b4-> \tuplet 3/2 4 {b8( a gis-.)}
+	gis4 r r2
+	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
+	gis4 r r2
 	R1*6
 % Bars 86 to 90
 	
@@ -90,10 +90,10 @@ musicFloteIIMvtIV = \relative c'' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	b\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-> \tuplet 3/2 4 {gis8( fis e)-.}
-	e4 r r2
-	b'4\fp \tuplet 3/2 4 {b8( a gis-.)} gis4-. \tuplet 3/2 4 {gis8( fis e-.)}
-	e4 r r2
+	d'\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
+	gis4 r r2
+	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-. \tuplet 3/2 4 {b8( a gis-.)}
+	gis4 r r2
 % Bars 101 to 105
 	R1*6
 % Bars 106 to 110
@@ -110,37 +110,37 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	r2 cis2\ff~ 
-	cis4 b8( cis b4 a)
-	a( cis) b2
-	a4-. cis-. b2->
-	a4( cis) b2
+	r2 e'2\ff~
+	e4 d8( e d4 cis)
+	cis( e) d2
+	cis4-. \partcombineApart cis-. b2->
+	a4( e') d2
 % Bars 126 to 130
-	a4-. cis-. b2->
-	a4( fis') e2->
-	d4( fis) e2->~
-	e4 d2 cis4~
-	cis b( a gis
+	cis4-. cis-. b2->
+	a4( a') \partcombineAutomatic g2-> 
+	fis4( a) g2->~
+	g4 fis2 e4~
+	e d( cis b
 % Bars 131 to 135
-	fis) eis( fis eis
-	fis) gis a bis
-	bis r r2
-	cis4-. r r2
-	b!4-. r e-. r
+	a) gis( a gis
+	a) b cis dis
+	dis r r2
+	e4-. r r2
+	d!4-. r g-. r
 % Bars 136 to 140
-	r e-. d-. a-.
-	cis-. r gis-. r
-	cis-. r b( gis)
+	r g-. fis-. d-.
+	e-. r \once \partcombineApart gis,-. r
+	e'-. r d( b)
 	a-. e-. a2->
 	b4-. e,-. b'2->
 % Bars 141 to 145
 	cis4-. e,-. cis'2->
 	d4-. d,-. d'2->
 	d4-. d,-. d'2->
-	d4-. f,-. d'2->
-	d4-. f,4-. d'2->
+	f4-. \once \partcombineApart f,-. f'2->
+	f4-. \once \partcombineApart f,4-. f'2->
 % Bars 146 to 150
-	d4\f r r2
+	f4\f r r2
 	R1*20
 % Bars 151 to 155
 	
@@ -150,7 +150,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 % Bars 166 to 170
 	
-	a4\fz \tuplet 3/2 4 {a8( g fis!)} r2
+	a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
@@ -165,38 +165,38 @@ musicFloteIIMvtIV = \relative c'' {
 	c2. cis!4\fz~
 	cis2. cis4\fz~
 	cis2. cis4-.\ff
-	a-. r gis-. r
+	cis-. r b-. r
 % Bars 181 to 185
-	fis-. r r2
-	gis4-. r r2
-	a1\fp\>~
+	a-. r r2
+	\once \partcombineApart gis4-. r r2
+	\partcombineChords a1\fp\>~
 	a~
-	a4\! r r2
+	a4\! \partcombineAutomatic r r2
 % Bars 186 to 190
 	R1
-	R1*4
-	
-	
-	\mark \default
+	\partcombineApart r2 g!\pp~
+	g1~
+	g~
+	g \mark \default
 % Bars 191 to 195
-	R1*5
-	
-	
-	
-	
+	fis4(_\p_\< a bes_\> g)\!
+	fis1(
+	g
+	a2 d
+	cis4) r r2 \partcombineAutomatic
 % Bars 196 to 200
 	R1*6
 % Bars 201 to 205
 	
+	\partcombineApart r4 fis,-.\mf r b-. \partcombineAutomatic
 	R1
-	R1
-	R1
+	\partcombineApart r4 b-. r e-. \partcombineAutomatic
 	R1
 % Bars 206 to 210
-	R1
-	e'4(\ff d8 c) d4( c8 g)
-	c4 r b r
-	c r r2
+	\partcombineApart r4 b-. r e-. \partcombineAutomatic
+	g4(\ff f8 e) f4( e8 d)
+	\once \partcombineApart c4 r d r
+	e r r2
 	R1*6
 % Bars 211 to 215
 	
@@ -205,7 +205,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 216 to 220
-	r2 r4 r8. g16\f
+	r2 r4 r8. g,16\f
 	g4-> e-> g-> r
 	r2 r4 r8. c16
 	c4-> a-> c-> r
@@ -219,17 +219,17 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	c1\ff~
-	c~
-	c~
+	aes'1\ff~
+	aes~
+	aes~
 % Bars 231 to 235
-	c
-	ees~
-	ees~
-	ees~
-	ees2. ees4-.
+	aes
+	ges~
+	ges~
+	ges~
+	ges2. ges4-.
 % Bars 236 to 240
-	des4-. des-. bes-. f-.
+	f4-. des-. bes-. f-.
 	bes4.->_\marc bes8 bes4 c
 	des4.-> des8 des4 c
 	bes4.-> bes8 bes4 c
@@ -239,36 +239,36 @@ musicFloteIIMvtIV = \relative c'' {
 	R1*3
 	
 	
-	R1*4
+	\partcombineApart r2 r4 f'(\p
 % Bars 246 to 250
-	
-	
-	
-	r2 r4 a(\p
-	fis e d a)
+	d! c! bes f)
+	bes4. bes8 bes4 c
+	d4. d8 d4( c8 bes)
+	a4 c4\rest c2\rest
+	\mmrPos #8 R1
 % Bars 251 to 255
-	d4.( d8 d4 e)
-	\tuplet 6/4 1 {fis4( a c e d c)}\mark \default
-	b2 r
+	\mmrPos #8 R
+	\mmrPos #12 R \mark \default
+	\mmrPos #8 R1 \partcombineAutomatic
 	R1
-	\tuplet 6/4 1 { r4 a(\p\< c ees d c}
+	\tuplet 6/4 1 {a4(\p\< c ees g f ees}
 % Bars 256 to 260
-	bes4\f) r r2
+	d4\f) r r2
 	R1*8
 % Bars 261 to 265
 	
 	
 	
 	
-	R1
+	\partcombineApart r2 r4 r8 d-.\f
 % Bars 266 to 270
-	d,1\fz~
-	d2.. d8\fz~
-	d1~
-	d2.. d8\fz~
-	d1~
+	bes-. a-. g-. d-. g2->
+	a2-> bes4. d8
+	a8-. g-. f-. d-. f2->
+	g-> a4. d8-.
+	b!-. a-. gis-. d-. gis2->
 % Bars 271 to 275
-	d2~ d4. r8
+	a2-> b4. \partcombineAutomatic r8 
 	R1*5
 	
 	
@@ -283,10 +283,10 @@ musicFloteIIMvtIV = \relative c'' {
 	g-. fis-. e-. b-. e2->
 	e-> e->
 	e-> a->
-	a-> f4-. e-.
-	f-. e-. f-. e-.
+	a-> a4-. g-.
+	a-. g-. a-. g-.
 % Bars 286 to 290
-	c(\< cis! d dis)\!
+	a1
 	e4 r a\ff r8 e
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
@@ -316,54 +316,54 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	R1*4
-	
+	\partcombineApart r2 r4 g'(\pp
+	e d cis b
 % Bars 316 to 320
-	
-	
+	e a, b fis
+	g e a) r \partcombineAutomatic
 	R1*7
 % Bars 321 to 325
 	
 	
 	
 	
-	R1
+	\partcombineApart r2 r4 d(\p
 % Bars 326 to 330
-	r2 r4 c\p(
-	b g'2 a4)
-	d,4.( d8 d4 c
-	b g2.)
-	d'4. d8 d2~
+	b a g d
+	g4. g8 g4 a
+	b4. b8 b4 a)
+	g4.( g8 g4 a
+	b4. b8 b4 a)
 % Bars 331 to 335
-	d4 r r2
-	R1
+	g1~
+	g4 r r2 \partcombineAutomatic
 	R1*8
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	cis'1\fp
+	cis1\fp
 	d\fp
 	e\fp(
-	fis8)-. r cis4(\f d e
-	d) ais2.->~
+	fis8)-. r fis2.->~
+	fis1~
 % Bars 346 to 350
-	ais4 b( c d
-	c) gis2.->~
-	gis4 a(-> b c
-	b4) a(-> b c
-	gis4) r r2
+	fis4 e2.->~
+	e1~
+	e4 dis2.->~
+	dis4 dis2.->(
+	e4) r r2
 % Bars 351 to 355
 	R1
-	b4\f r r2
-	d2( cis4 b
-	a) a( b cis)~
-	cis cis( d e)~
-% Bars 356 to 360
+	d4\f r r2
+	fis2( e4 d
+	cis) cis( d e)~
 	e e( fis g)~
-	g g( fis e)~
-	e r cis r
-	cis r cis r
-	cis r r2
+% Bars 356 to 360
+	g g( a b)~
+	b b( a g)~
+	g r \once \partcombineApart cis, r
+	\once \partcombineApart cis r \once \partcombineApart cis r
+	\once \partcombineApart cis r r2
 % Bars 361 to 365
 	R1*5
 	
@@ -371,56 +371,56 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	R1*6
-	
-	
-	
-	
+	\partcombineApart a4--\p \tuplet 3/2 4 {a8( g fis)} g4-- \tuplet 3/2 4 {g8( fis e)}
+	d4-. a-. d2~
+	d4 a-. d2~
+	d8( a d cis d e fis g)
+	a1~
 % Bars 371 to 375
-	
+	a4 r r2 \partcombineAutomatic
 	R1*6
 % Bars 376 to 380
 	
 	
-	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
-	cis4 r r2
-	cis'4-> \tuplet 3/2 4 {cis8(_\crescmarkup b a)-.} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	e'4->\p \tuplet 3/2 4 {e8( d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
+	a4 r r2
+	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 % Bars 381 to 385
-	cis4 r r2
-	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
-	fis4 r r2
-	fis'4->\f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
-	fis4 r r2
+	a4 r r2
+	a'4->\mf \tuplet 3/2 4 {a8( g fis)-.} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	d4 r r2
+	a'4->\f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	d4 r r2
 % Bars 386 to 390
-	d'4\f r r2
+	\once \partcombineApart d4 r r2
 	R1
 	d2->\f d->
 	d2.-> e8( fis)
 	g2-> g->
 % Bars 391 to 395
 	g2.-> a8( b)
-	a4\fz r d,\fz d-.
-	d\fz d-. cis\fz a-.
-	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
-	cis4 r r2
+	a4\fz r b\fz g-.
+	fis\fz \once \partcombineApart d-. a'\fz \once \partcombineApart a,-.
+	e'->\p \tuplet 3/2 4 {e8( d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
+	a4 r r2
 % Bars 396 to 400
-	cis'4->\p \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
-	cis4 r r2
-	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
-	fis4 r r2
-	fis'4->\f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4-. \tuplet 3/2 4 {cis8( b a-.)}
+	a4 r r2
+	a'4->\mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)} 
+	d4 r r2
+	a'4->\f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 % Bars 401 to 405
-	fis4 r r2
-	d'4\f r r2
+	d4 r r2
+	\once \partcombineApart d4 r r2
 	R1
 	d2->\f d->
 	d2.-> e8( fis)
 % Bars 406 to 410
 	g2-> g->
 	g2.-> a8( b)
-	a4\fz r d,\fz d-.
-	d\fz d-. cis\fz a-.
-	d r r2
+	a4\fz r b\fz g-.
+	fis\fz \once \partcombineApart d-. a'\fz \once \partcombineApart a,-.
+	\once \partcombineApart d r r2
 % Bars 411 to 415
 	R1*7
 	
@@ -441,11 +441,11 @@ musicFloteIIMvtIV = \relative c'' {
 	dis2 e~
 	e f~
 	f fis!
-	e1\ff~
+	gis1\ff~
 % Bars 431 to 435
-	e
-	e~
-	e4 r r2
+	gis
+	g!~
+	g4 r r2
 	R1*6
 % Bars 436 to 440
 	
@@ -477,8 +477,8 @@ musicFloteIIMvtIV = \relative c'' {
 	cis-. r r cis-.
 	d8( e d cis d e d cis)
 	d( e d cis d e d e) \mark #11
-	ais,2.\ff b4(
-	ais) b( ais) r
+	fis2.\ff eis4(
+	fis) eis( fis) r
 % Bars 476 to 480
 	R1*8
 	
@@ -486,7 +486,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 a'-.\ff
+	r2 r4 a-.\ff
 	e-> d-. cis-> b-.
 % Bars 486 to 490
 	a-> e-. a-. r
@@ -501,76 +501,76 @@ musicFloteIIMvtIV = \relative c'' {
 	d-> a->
 	b-> cis->
 % Bars 496 to 500
-	d-> cis->
-	dis-> e->
-	fis-> d->
-	fis-> fis->
-	e-> e->
+	d-> e->
+	fis-> g->
+	\once \partcombineApart fis-> g->
+	ais-> b->
+	\once \partcombineApart e,-> a!->
 % Bars 501 to 505
-	d4 r fis2->~
-	fis4( e8 fis e4 d)
-	d( fis e2
-	d4) r fis2~
-	fis4( e8 fis e4 d)
+	\once \partcombineApart d,4 r a'2->~
+	a4( g8 a g4 fis)
+	fis( a g2
+	fis4) r a2~
+	a4( g8 a g4 fis)
 % Bars 506 to 510
-	d( fis e2
-	d4) r r2
+	fis( a g2
+	fis4) r r2
 	R1
-	g,4 r b2->~
-	b4( a8 b a4 g)
+	b,4 r d2->~
+	d4( cis8 d cis4 b)
 % Bars 511 to 515
-	c r e2->~
-	e4( d8 e d4 c)
-	e( d8 e d4 c)
-	fis( e8 fis e4 d)
+	e r g2->~
+	g4( fis8 g fis4 e)
 	g( fis8 g fis4 e)
-% Bars 516 to 520
 	a( g8 a g4 fis)
-	d4-> b-. cis!-> a-.
-	b-> g-. a-> fis-.
-	d'-> b-. cis-> a-.
-	b-> g-. a-> fis-. \mark \default
+	b( a8 b a4 g)
+% Bars 516 to 520
+	\partcombineApart \mmrPos #16 R1 \partcombineAutomatic
+	\once \partcombineApart d4-> d-. d-> d-.
+	d-> d-. d-> d-.
+	\once \partcombineApart d-> d-. d-> d-.
+	d-> d-. d-> d-. \mark \default
 % Bars 521 to 525
-	b r g2->~
-	g4 fis8( g fis4 e)
-	g r b2->~
+	e r b2->~
 	b4 a8( b a4 g)
-	a r a2~
+	b r d2->~
+	d4 cis8( d cis4 b)
+	\once \partcombineApart a r a'2~
 % Bars 526 to 530
-	a4 a-. a-. a-.
-	a-. a-. a-. a-.
-	a a a a
-	a a a a
-	a a a a
+	a4 g8( a g4) fis-.
+	fis-. e8( fis e4) d-.
+	d-. cis8( d cis4) b-.
+	b-. a8( b a4) g-.
+	g-> fis-. fis-> e-.
 % Bars 531 to 535
-	a a a a
-	a-. a-. a-. r
+	e-> d-. d-> cis-.
+	cis'-. b-. \once \partcombineApart a-. r
 	R1*10
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	fis'1\fff~
-	fis~
-	fis~
+	a'1\fff~
+	a~
+	a~
 % Bars 546 to 550
-	fis4 r a2->
+	a4 r a2->
 	fis-> e->
 	d-> a->
 	d2.-> d4-.
-	d2-> d->
+	d2-> g->
 % Bars 551 to 555
-	d1-^~
-	d~
-	d~
-	d2. a'4-.
+	fis1-^~
+	fis~
+	fis~
+	fis2. a4-.
 	fis-. e-. d-. a'-.
 % Bars 556 to 560
 	fis-. e-. d-. a'-. 
 	fis-. e-. d-. a'-. 
 	fis-. e-. d-. a'-. 
-	d, r d r
+	fis r d r
 	d r d r
 % Bars 561 to 563
 	d r r2

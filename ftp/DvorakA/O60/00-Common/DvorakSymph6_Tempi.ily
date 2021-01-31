@@ -86,3 +86,27 @@ tempiMvtIII = {
 	\tempo "poco a poco accelerando" % bar 428
 	s2.*11
 }
+tempiMvtIV = {
+	\partial 4 s4
+	s1*12
+	s2 \tempo "accelerando poco a poco" s2 % bar 13
+	s1*24
+	\tempo "Tempo I." % bar 38
+	s1*15
+	\tempo "accelerando poco a poco" % bar 53
+	s1*241
+	\tempo "Poco sostenuto." % bar 294
+	s1*8
+	\tempo "ritard." % bar 302
+	s1*4
+	\tempo "in tempo" % bar 306
+	s1*28
+	\tempo "accelerando poco a poco" % bar 334
+	s1*106
+	\tempo "Presto." % bar 440
+	s1*109
+	\tempo "ritard." % bar 549
+	s1*2
+	\tempo "in tempo" % bar 551
+	s1*13
+}
