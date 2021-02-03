@@ -56,7 +56,8 @@ ffgrandioso=^\markup {\dynamic ff \italic grandioso}
 dimsempre=^\markup {\italic {dim. sempre}}
 fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
 benmarc=^\markup {\italic {ben marc.}}
-
+dimin=^\markup {\italic dimin.}
+ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
 
 % function
 mmrPos = #(define-music-function

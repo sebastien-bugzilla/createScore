@@ -24,8 +24,8 @@
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./04-Mvt4/m04_v01_music_FloteI_C.ily"
 \include "./04-Mvt4/m04_v02_music_FloteII_C.ily"
-\include "./04-Mvt4/m04_v03_music_OboeI.ily"
-\include "./04-Mvt4/m04_v04_music_OboeII.ily"
+\include "./04-Mvt4/m04_v03_music_OboeI_C.ily"
+\include "./04-Mvt4/m04_v04_music_OboeII_C.ily"
 \include "./04-Mvt4/m04_v05_music_KlarinetteI.ily"
 \include "./04-Mvt4/m04_v06_music_KlarinetteII.ily"
 \include "./04-Mvt4/m04_v07_music_FagottI.ily"
@@ -81,11 +81,12 @@
 %						\musicFloteIIMvtIV
 					}
 				>>
-%				\new Staff {
-%					\timeMvtIV \generalOptions \conductorOptions
-%					\nameStaffIIMvtIV
-%					\partcombine \musicOboeIMvtIV \musicOboeIIMvtIV
-%				}
+				\new Staff {
+					\timeMvtIV \generalOptions \conductorOptions
+					\nameStaffIIMvtIV
+					\partcombine \musicOboeIMvtIV \musicOboeIIMvtIV
+%					\musicOboeIIMvtIV
+				}
 %				\new Staff {
 %					\timeMvtIV \generalOptions \conductorOptions
 %					\nameStaffIIIMvtIV

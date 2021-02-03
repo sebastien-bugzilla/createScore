@@ -50,7 +50,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e-^\!~
 	e2. e4-. \mark \default
-	d(_\ffgrandioso e d a)
+	d\( e d a\)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -88,7 +88,7 @@ musicOboeIIMvtIV = \relative c'' {
 	R1*2
 	\mark \default
 	a,4-.\p r a-. r
-	e-. r cis(_\dimmarkup d
+	e-. r cis( d
 % Bars 71 to 75
 	cis) r cis( d
 	cis2) r
@@ -149,7 +149,7 @@ musicOboeIIMvtIV = \relative c'' {
 	a4-. a-. fis( gis)
 	a1~
 % Bars 126 to 130
-	a2 fis'4( gis)
+	a2 fis'4 gis
 	a( fis) e2->
 	d4( fis) e2->~
 	e4 d2 cis4~
@@ -163,15 +163,15 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r g-. fis-. d-.
 	e-. r e-. r 
-	a,(\< cis\! d\> b\!)
+	a,\(\< cis\! d\> b\!\)
 	a-. cis-. a-. cis-. 
 	r4 b-. e,-. b'-.
 % Bars 141 to 145
 	r cis-. a-. cis-.
 	r d-. a-. d-.
 	r d-. a-. d-.
-	d-. d-. d2->
-	d4-. d-. d2->
+	d-. d d2->
+	d4-. d d2->
 % Bars 146 to 150
 	d4\f r r2
 	R1
@@ -185,7 +185,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 	
-	r4 d(\p f e8 d)
+	r4 d\(\p f e8 d\)
 	d4\(( c8 b) b4( a8 g)\)
 % Bars 161 to 165
 	R1*6
@@ -242,7 +242,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 211 to 215
 	
 	
-	b4->\f \tuplet 3/2 4 {b8( a g)} a4-> \tuplet 3/2 4 {a8( g fis)}
+	b4->\f \tuplet 3/2 4 {b8\( a g\)} a4-> \tuplet 3/2 4 {a8\( g fis\)}
 	e4-. b-. e2->
 	fis4-. b,-. fis'2-> \mark \default
 % Bars 216 to 220
@@ -276,7 +276,7 @@ musicOboeIIMvtIV = \relative c'' {
 	bes4.-> bes8 bes4 c
 	des4.-> des8 des4 bes
 % Bars 241 to 245
-	a4.-> a8 a4_\dimin bes
+	a4.-> a8 a4 bes
 	a4.-> a8 a4 bes
 	a4.-> a8 a4 bes
 	a\p r r2 
@@ -290,7 +290,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\tuplet 6/4 1 {r4 b(\p\< d f e\> d\!)}
+	\tuplet 6/4 1 {r4 b\p\< d f e\> d\!}
 	c2 r
 	R1
 % Bars 256 to 260
@@ -319,19 +319,19 @@ musicOboeIIMvtIV = \relative c'' {
 	r2 cis4\f r
 % Bars 276 to 280
 	R1
-	r2 fis2->\f
-	fis-> fis-> 
-	fis-> b,->
+	r2 fis2\f
+	fis fis
+	fis b,->
 	cis-> dis->
 % Bars 281 to 285
-	e-> e->
+	e-> e
 	e-> e->
 	e-> a,->
 	a-> a4-. e'-.
 	f-. e-. f-. e-. 
 % Bars 286 to 290
 	c(\< cis d dis)\!
-	e4 r a,\ff r8 e'-.
+	e4 r a,\ff r8 e'
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'
@@ -393,8 +393,8 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 341 to 345
 	cis1\fp
 	d\fp
-	e\fp(
-	fis8)-. r cis4(\f d e
+	e\fp\(
+	fis8\)-. r cis4(\f d e
 	d) ais2.->~
 % Bars 346 to 350
 	ais4 b4(-> c d
@@ -448,12 +448,12 @@ musicOboeIIMvtIV = \relative c'' {
 	fis'4\f r r2
 	R1
 	d2->\f d->
-	d2.-> e8( fis)
+	d2.-> e8\( fis\)
 	g2-> g->
 % Bars 391 to 395
-	g2. a8( b)
-	d,4\fz d-. d\fz d-.
-	d\fz d-. cis\fz a-.
+	g2. a8\( b\)
+	d,4\fz d d\fz d-.
+	d\fz d cis\fz a
 	R1
 	R1*3
 % Bars 396 to 400
@@ -467,13 +467,13 @@ musicOboeIIMvtIV = \relative c'' {
 	fis'4\f r r2
 	R1
 	d2->\f d->
-	d2.-> e8( fis)
+	d2.-> e8\( fis\)
 % Bars 406 to 410
 	g2-> g->
-	g2.-> a8( b)
-	d,4\fz d-. d\fz d-.
-	d\fz d-. cis\fz a-.
-	d r d,2->(\f
+	g2.-> a8\( b\)
+	d,4\fz d d\fz d-.
+	d\fz d cis\fz a
+	d r d,2(\f
 % Bars 411 to 415
 	dis1)->~
 	dis2 e4( d)~
@@ -522,16 +522,16 @@ musicOboeIIMvtIV = \relative c'' {
 	g-. r r a-.
 	b-. r r b-.
 % Bars 451 to 455
-	b-. r r  gis-.\f
+	b-. r r  gis-.
 	a-. r r eis-.
-	fis-. r r e!-.
+	fis-. r r e!
 	cis-. r r fis-.
 	e-. r r gis-.
 % Bars 456 to 460
 	a-. r r a-.
 	a-. r r cis-.
 	d-. r r g,-.
-	fis-. r r a-.
+	fis-. r r a
 	d,-. r r d-.
 % Bars 461 to 465
 	d-.  r r e-.
@@ -547,19 +547,19 @@ musicOboeIIMvtIV = \relative c'' {
 	cis-. r r cis-.
 % Bars 471 to 475
 	cis-. r r cis-.
-	fis8( g! fis e fis g fis e)
-	fis( g fis e fis4-. b-.) \mark #11
+	fis8\( g! fis e fis g fis e\)
+	fis\( g fis e fis4-. b-.\) \mark #11
 	fis-. r r2
 	R1
 % Bars 476 to 480
 	dis2.\ff e4(
 	dis) e( dis) r
-	b'\ff r r b-.
-	g-> fis-. e-> b'-.
+	b'\ff r r b
+	g-> fis-. e-> b'
 	g-> fis-. e-> e-.
 % Bars 481 to 485
 	c-> r r e->
-	c-> r r g'-._\marc
+	c-> r r g'
 	e2-> e->
 	e-> e4-. cis!-.
 	cis1~
@@ -568,10 +568,10 @@ musicOboeIIMvtIV = \relative c'' {
 	e2-> e->
 	e-> e4-. cis-.
 	cis1->~
-	cis2. a'4->
+	cis2. a'4
 % Bars 491 to 495
-	fis-. e-. d-. a'->
-	fis-. e-. d-. a'->
+	fis-. e-. d-. a'
+	fis-. e-. d-. a'
 	fis2-> e->
 	d-> cis->
 	d-> e->
@@ -601,9 +601,9 @@ musicOboeIIMvtIV = \relative c'' {
 	g( fis8 g fis4 e)
 % Bars 516 to 520
 	a( g8 a g4 fis)
+	d-> d d d-.
 	d-> d-. d-> d-.
-	d-> d-. d-> d-.
-	d-> d-. d-> d-.
+	d d d d-.
 	b-> d-. d-> d-. \mark \default
 % Bars 521 to 525
 	d r g2->~
@@ -630,21 +630,21 @@ musicOboeIIMvtIV = \relative c'' {
 	fis~
 	fis~
 % Bars 546 to 550
-	fis4 r a2->
-	a-> a->
-	a-> fis->
-	g2.-> g4-.
-	g2-> g->
+	fis4 r a2
+	a a
+	a fis->
+	g2. g4
+	g2 g
 % Bars 551 to 555
 	fis1-^~
 	fis~
 	fis~
-	fis2. a4-.
-	fis-. e-. d-. a'-.
+	fis2. a4
+	fis-. e-. d-. a'
 % Bars 556 to 560
-	fis-. e-. d-. a'-.
-	fis-. e-. d-. a'-.
-	fis-. e-. d-. a'-.
+	fis-. e-. d-. a'
+	fis-. e-. d-. a'
+	fis-. e-. d-. a'
 	fis r fis r
 	fis r fis r
 % Bars 561 to 563

@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-%\include "./00-Common/DvorakSymph6_Format_Cond_Mvt01.ily"
+\include "./00-Common/DvorakSymph6_Format_Cond_Mvt01.ily"
 \include "./01-Mvt1/m01_v01_music_FloteI_C.ily"
 \include "./01-Mvt1/m01_v02_music_FloteII_C.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI_C.ily"
@@ -68,9 +68,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtI
-%					}
+					\new Voice {
+						\formatConductorMvtI
+					}
 					\new Voice {
 						\tempiMvtI
 					}
@@ -177,6 +177,12 @@
 			breakbefore = ##t
 		}
 		\layout {
+			\context {
+				\Score
+					\override Score.NonMusicalPaperColumn.line-break-system-details
+						#'(
+						  (alignment-distances . (9 9 9  9 9 9  9 9 9  9 9 9  9 9 9)))
+			}
 		}
 	}
 }
