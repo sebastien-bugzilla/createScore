@@ -575,5 +575,5 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	\once \partcombineApart d r r2
 	\once \partcombineApart d4 r  r2
-	\once \partcombineApart d2. r4 \bar "|."
+	\once \partcombineApart d2 r4 \bar "|."
 }

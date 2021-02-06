@@ -108,5 +108,5 @@ tempiMvtIV = {
 	\tempo "ritard." % bar 549
 	s1*2
 	\tempo "in tempo" % bar 551
-	s1*13
+	s1*12 s2 s4
 }

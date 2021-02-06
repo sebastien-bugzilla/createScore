@@ -66,27 +66,27 @@
 	}
 	\score {
 		<<
-%%			\new StaffGroup <<
-%				\new Staff <<
-%%					\new Voice {
-%%						\formatConductorMvtIV
-%%					}
+%			\new StaffGroup <<
+				\new Staff <<
 %					\new Voice {
-%						\tempiMvtIV
+%						\formatConductorMvtIV
 %					}
-%					\new Voice {
-%						\timeMvtIV \generalOptions \conductorOptions
-%						\nameStaffIMvtIV
-%						\partcombine \musicFloteIMvtIV \musicFloteIIMvtIV
-%%						\musicFloteIIMvtIV
-%					}
-%				>>
-%				\new Staff {
-%					\timeMvtIV \generalOptions \conductorOptions
-%					\nameStaffIIMvtIV
-%					\partcombine \musicOboeIMvtIV \musicOboeIIMvtIV
-%%					\musicOboeIIMvtIV
-%				}
+					\new Voice {
+						\tempiMvtIV
+					}
+					\new Voice {
+						\timeMvtIV \generalOptions \conductorOptions
+						\nameStaffIMvtIV
+						\partcombine \musicFloteIMvtIV \musicFloteIIMvtIV
+%						\musicFloteIIMvtIV
+					}
+				>>
+				\new Staff {
+					\timeMvtIV \generalOptions \conductorOptions
+					\nameStaffIIMvtIV
+					\partcombine \musicOboeIMvtIV \musicOboeIIMvtIV
+%					\musicOboeIIMvtIV
+				}
 				\new Staff {
 					\timeMvtIV \generalOptions \conductorOptions
 					\nameStaffIIIMvtIV

@@ -650,5 +650,5 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 561 to 563
 	fis r r2
 	fis4 r r2
-	fis2.\fermata r4 \bar "|."
+	fis2\fermata r4 \bar "|."
 }
