@@ -86,7 +86,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	a4->_\fpcresc \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
+	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 % Bars 86 to 90
 	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
@@ -106,7 +106,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 % Bars 101 to 105
-	a4->_\fpcresc \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
+	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
 	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
@@ -176,10 +176,10 @@ musicHornIIMvtIV = \relative c' {
 	b4\fz b r2
 % Bars 171 to 175
 	R1
-	r2 r4 g-.\f
-	c2.-> r4
-	r2 r4 g-.\f
-	c2.-> r4
+	r2 r4 g\f
+	c2. r4
+	r2 r4 g\f
+	c2. r4
 % Bars 176 to 180
 	R1*3
 	
@@ -202,7 +202,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	d4-^\f a-^ d2-^~
+	d4\f a d2~
 % Bars 196 to 200
 	d4 r r2
 	R1*6
@@ -215,8 +215,8 @@ musicHornIIMvtIV = \relative c' {
 % Bars 206 to 210
 	R1*5
 % Bars 211 to 215
-	r2 ees4-.\f c-.
-	f2-> f4-. d-.
+	r2 ees4\f c
+	f2 f4 d
 	g4 r r2
 	R1*2
 	\mark \default
@@ -284,8 +284,8 @@ musicHornIIMvtIV = \relative c' {
 	r2 a4\f r
 % Bars 276 to 280
 	R1
-	r2 d2\f->
-	d-> d->
+	r2 d2\f
+	d d
 	g,-> g,->
 	g-> g->
 % Bars 281 to 285
@@ -350,9 +350,9 @@ musicHornIIMvtIV = \relative c' {
 	b4 b2.->(
 	c4) bes2.\fz~
 % Bars 351 to 355
-	bes4 bes2.\fz(
+	bes4 bes2.\fz_(
 	a4) bes2.\fz~
-	bes4 bes2.\fz(
+	bes4 bes2.\fz_(
 	a4) f2.->\f~
 	f4 f2.->~
 % Bars 356 to 360
@@ -384,7 +384,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	d4\mf \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d} 
+	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 % Bars 386 to 390
 	d4\f r r2
@@ -396,7 +396,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	d4\mf \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d}  
+	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d}  
 % Bars 401 to 405
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4\f r r2
@@ -469,13 +469,13 @@ musicHornIIMvtIV = \relative c' {
 % Bars 481 to 485
 	R1
 	r2 r4 ees'_\ffmarc
-	ees2-> ees->
-	ees-> ees4-. a,-.
+	ees2 ees
+	ees ees4 a,-.
 	a1~
 % Bars 486 to 490
 	a2. a4
-	ees'2-> ees->
-	ees-> ees4-. a,-.
+	ees'2 ees
+	ees ees4 a,-.
 	a1->~
 	a2. r4 
 % Bars 491 to 495
@@ -487,9 +487,9 @@ musicHornIIMvtIV = \relative c' {
 % Bars 496 to 500
 	bes-> c->
 	d-> ees->
-	d-> ees->
-	d-> d->
-	c-> c->
+	d ees
+	d d
+	c c->
 % Bars 501 to 505
 	bes4 r r2
 	R1*2
@@ -543,11 +543,11 @@ musicHornIIMvtIV = \relative c' {
 	f~
 	f~
 % Bars 546 to 550
-	f4 r f'2->
-	d-> c->
-	bes-> f->
-	bes2.-> bes4-.
-	bes2-> bes->
+	f4 r f'2
+	d c
+	bes f
+	bes2. bes4
+	bes2 bes->
 % Bars 551 to 555
 	d1-^~
 	d~

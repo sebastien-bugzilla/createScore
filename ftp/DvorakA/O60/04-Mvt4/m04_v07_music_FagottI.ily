@@ -615,8 +615,8 @@ musicFagottIMvtIV = \relative c' {
 	b-> a-. a-> g'-.
 % Bars 531 to 535
 	g-> fis-. fis-> e-.
-	e-. d-. cis-. a'_\ffpesante
-	a2-> g->
+	e-. d-. cis-. a'\ff
+	a2->_\pesante g->
 	fis-> e->
 	fis2.-> fis4
 % Bars 536 to 540

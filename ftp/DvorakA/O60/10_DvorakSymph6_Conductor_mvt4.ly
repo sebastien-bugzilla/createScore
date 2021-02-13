@@ -30,8 +30,8 @@
 \include "./04-Mvt4/m04_v06_music_KlarinetteII_C.ily"
 \include "./04-Mvt4/m04_v07_music_FagottI_C.ily"
 \include "./04-Mvt4/m04_v08_music_FagottII_C.ily"
-\include "./04-Mvt4/m04_v09_music_HornI.ily"
-\include "./04-Mvt4/m04_v10_music_HornII.ily"
+\include "./04-Mvt4/m04_v09_music_HornI_C.ily"
+\include "./04-Mvt4/m04_v10_music_HornII_C.ily"
 \include "./04-Mvt4/m04_v11_music_HornIII.ily"
 \include "./04-Mvt4/m04_v12_music_HornIV.ily"
 \include "./04-Mvt4/m04_v13_music_TrompeteI.ily"
@@ -102,11 +102,12 @@
 			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
-%					\new Staff {
-%						\timeMvtIV \generalOptions \conductorOptions
-%						\nameStaffVMvtIV
-%						\partcombine \musicHornIMvtIV \musicHornIIMvtIV
-%					}
+					\new Staff {
+						\timeMvtIV \generalOptions \conductorOptions
+						\nameStaffVMvtIV
+						\partcombine \musicHornIMvtIV \musicHornIIMvtIV
+%						\musicHornIIMvtIV
+					}
 %					\new Staff {
 %						\timeMvtIV \generalOptions \conductorOptions
 %						\nameStaffVIMvtIV

@@ -59,7 +59,7 @@ benmarc=^\markup {\italic {ben marc.}}
 dimin=^\markup {\italic dimin.}
 ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
 fpcresc=^\markup {\dynamic fp \italic {cresc.}}
-ffpesante=^\markup {\dynamic ff \italic {pesante}}
+pesante=^\markup {\italic {pesante}}
 pptranquillo=^\markup {\dynamic pp \italic tranquillo}
 
 
