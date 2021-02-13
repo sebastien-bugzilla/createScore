@@ -28,8 +28,8 @@
 \include "./04-Mvt4/m04_v04_music_OboeII_C.ily"
 \include "./04-Mvt4/m04_v05_music_KlarinetteI_C.ily"
 \include "./04-Mvt4/m04_v06_music_KlarinetteII_C.ily"
-\include "./04-Mvt4/m04_v07_music_FagottI.ily"
-\include "./04-Mvt4/m04_v08_music_FagottII.ily"
+\include "./04-Mvt4/m04_v07_music_FagottI_C.ily"
+\include "./04-Mvt4/m04_v08_music_FagottII_C.ily"
 \include "./04-Mvt4/m04_v09_music_HornI.ily"
 \include "./04-Mvt4/m04_v10_music_HornII.ily"
 \include "./04-Mvt4/m04_v11_music_HornIII.ily"
@@ -66,7 +66,7 @@
 	}
 	\score {
 		<<
-%			\new StaffGroup <<
+			\new StaffGroup <<
 				\new Staff <<
 %					\new Voice {
 %						\formatConductorMvtIV
@@ -93,12 +93,13 @@
 					\partcombine \musicKlarinetteIMvtIV \musicKlarinetteIIMvtIV
 %					\musicKlarinetteIIMvtIV
 				}
-%				\new Staff {
-%					\timeMvtIV \generalOptions \conductorOptions
-%					\nameStaffIVMvtIV
-%					\partcombine \musicFagottIMvtIV \musicFagottIIMvtIV
-%				}
-%			>>
+				\new Staff {
+					\timeMvtIV \generalOptions \conductorOptions
+					\nameStaffIVMvtIV
+					\partcombine \musicFagottIMvtIV \musicFagottIIMvtIV
+%					\musicFagottIIMvtIV 
+				}
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
 %					\new Staff {
@@ -171,6 +172,10 @@
 			breakbefore = ##t
 		}
 		\layout {
+			\context {
+				\Score 
+				scriptDefinitions = #my-script-alist
+			}
 		}
 	}
 }

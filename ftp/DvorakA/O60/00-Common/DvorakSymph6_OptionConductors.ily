@@ -12,6 +12,7 @@ generalOptions = {
 conductorOptions = {
 	\set Staff.soloText = #"1."
 	\set Staff.soloIIText = #"2."
+	\set Staff.aDueText = #"a2."
 	\override Score.BarNumber #'font-size = #0.1
 	\override Score.RehearsalMark.extra-spacing-width = #'(-1 . 1)
 	\override Score.RehearsalMark.outside-staff-priority = ##f
@@ -21,7 +22,7 @@ conductorOptions = {
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
 		decrescendo-event )
 	%\set Voice.restNumberThreshold = #0
-	\override Staff.Script.avoid-slur = #'ignore
+%	\override Staff.Script.avoid-slur = #'ignore
 }
 #(set-global-staff-size 19)
 \layout {

@@ -58,6 +58,10 @@ fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
 benmarc=^\markup {\italic {ben marc.}}
 dimin=^\markup {\italic dimin.}
 ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
+fpcresc=^\markup {\dynamic fp \italic {cresc.}}
+ffpesante=^\markup {\dynamic ff \italic {pesante}}
+pptranquillo=^\markup {\dynamic pp \italic tranquillo}
+
 
 % function
 mmrPos = #(define-music-function
@@ -82,5 +86,32 @@ mmrPosRevert = #(define-music-function
 	#{
 		\revert Staff.MultiMeasureRest.staff-position
 	#}
+)
+
+
+% DEFAULT SCRIPT POSITION
+% from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941
+%
+#(define my-script-alist
+	(
+		append `(
+			("marcato"
+				(script-stencil . (feta . ("dmarcato" . "umarcato")))
+				(padding . 0.20)
+				(avoid-slur . outside)
+				;;(staff-padding . ())
+				(quantize-position . #t)
+				(side-relative-direction . ,DOWN))
+			("staccatissimo"
+				(avoid-slur . outside)
+				(quantize-position . #t)
+				(script-stencil . (feta . ("dstaccatissimo" . "ustaccatissimo")))
+				(padding . 0.20)
+				(skyline-horizontal-padding . 0.10)
+				(side-relative-direction . ,DOWN)
+				(toward-stem-shift . 1.0)
+				(toward-stem-shift-in-column . 0.0))
+		)
+		default-script-alist)
 )
 
