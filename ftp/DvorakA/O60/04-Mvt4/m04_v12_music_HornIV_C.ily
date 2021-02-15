@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicHornIIIMvtIV = \relative c'' {
+musicHornIVMvtIV = \relative c' {
 	\clef treble
 	\key c \major
 	\transposition d
@@ -21,18 +21,18 @@ musicHornIIIMvtIV = \relative c'' {
 	g~
 	g2. g4~
 	g1~
-	g2. g4_\pocoapococresc~
+	g2. g4~
 	g2. g4~
 % Bars 16 to 20
 	g1~
 	g2. g4~
 	g1~
 	g2. r4
-	dis4.\mf dis8 dis4-. g-.
+	\mmrPos #-8 R1
 % Bars 21 to 25
-	fis4. fis8 fis4-. g-.
-	fis4.\f fis8 fis4-.\< b-.
-	cis4. cis8 cis4-. d-.\!
+	\mmrPos #-6 R1
+	fis'4.\f fis8 fis4 gis-.\< 
+	a4. a8 a4-. b!-.\!
 	c!1\fz~
 	c4 r r2
 % Bars 26 to 30
@@ -40,9 +40,9 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	d1-^\ff~
-	d2. d4-. \mark \default
-	e-. r r2
+	g1-^\ff~
+	g2. g4-. \mark \default
+	c-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -53,17 +53,17 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	a,4\f r a r
-	a r a r
-	a r r2
+	fis,4\f r d r
+	d r d r
+	d r r2
 	R1
-	d,2\f r
+	d2\f r
 % Bars 66 to 70
 	d\p r
 	R1*2
 	\mark \default
-	g4\p r g r
-	g r r2
+	R1*2
+	
 % Bars 71 to 75
 	R1*14
 % Bars 76 to 80
@@ -73,19 +73,19 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 	
-	g4->_\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
 % Bars 86 to 90
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4\f r r2
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4\f r r2
 	R1*5
 % Bars 91 to 95
 	
 	
 	
 	
-	g4\fz r g\fz r
+	g,4\fz r g\fz r
 % Bars 96 to 100
 	d'\fz r d\fz r
 	R1*4
@@ -93,15 +93,15 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 % Bars 101 to 105
-	g,4->_\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4\f r r2
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4-> \tuplet 3/2 4 {f8 f f} f4-> \tuplet 3/2 4 {f8 f f} 
+	f4\f r r2
 % Bars 106 to 110
 	R1*5
 % Bars 111 to 115
-	g4\fz r g\fz r
+	g,4\fz r g\fz r
 	d'\fz r d\fz r \mark \default
 	d r r2
 	R1*7
@@ -116,34 +116,34 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 126 to 130
 	g4 g2.->~
 	g4 g2.->~
-	g4 r r2
+	g4 r r2 
 	R1*5
 % Bars 131 to 135
 	
 	
-	cis4-.\f r r2
-	b4-. r r2
-	c!4-. r d-. r
+	ais'4-.\f r r2
+	f!4-. r r2
+	e4-. r aes-. r
 % Bars 136 to 140
-	r d-. c-. c-.
-	d-. r d-. r
+	r g-. g-. g-.
+	g-. r d-. r
 	g,-. r g-. r
 	g-. r r2
-	a4-. r r2
+	d'4-. r r2
 % Bars 141 to 145
-	b4-. r r2
-	c1~
+	g4-. r r2
+	c,1~
 	c~
 	c~
 	c
 % Bars 146 to 150
-	c4\f r r2
+	c4\f r r2 
 	R1
-	c2\f r
-	c r
-	c r
+	f2\f r
+	e r
+	d r
 % Bars 151 to 155
-	b r
+	e r
 	R1*15
 % Bars 156 to 160
 	
@@ -151,26 +151,26 @@ musicHornIIIMvtIV = \relative c'' {
 	
 % Bars 166 to 170
 	
-	e4\fz e r2
-	e4\fz e r2
-	e4\fz e r2
-	e4\fz e r2
+	bes'4\fz bes r2
+	bes4\fz bes r2
+	a4\fz a r2
+	a4\fz a r2
 % Bars 171 to 175
 	R1
-	r2 r4 a,-.\f
-	d2.-> r4
-	r2 r4 a-.\f
-	d2.-> bes4\fz~
+	r2 r4 a\f
+	d2. r4
+	r2 r4 a\f
+	d2. bes4\fz~
 % Bars 176 to 180
 	bes2. bes4\fz~
 	bes2. b4\fz~
 	b2. b4\fz~
-	b2. b4-.\ff
-	b-. r c-. r
+	b2. e,4-.\ff
+	e-. r e-. r
 % Bars 181 to 185
-	b-. r r2
-	b4-. r r2
-	b4-. r r2
+	e-. r r2
+	fis4-. r r2
+	e4-. r r2
 	R1*7
 % Bars 186 to 190
 	
@@ -186,7 +186,7 @@ musicHornIIIMvtIV = \relative c'' {
 	
 % Bars 206 to 210
 	
-	f'4\f r f r
+	f4\f r f r
 	f1-^~
 	f4 r r2
 	R1*5
@@ -211,17 +211,17 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 226 to 230
 	aes\fz
 	des,\fz
-	des'\ff~
-	des~
-	des~
+	ges'\ff~
+	ges~
+	ges~
 % Bars 231 to 235
-	des
-	e!->~
-	e~
-	e~
-	e2. e4-.
+	ges
+	cis->~
+	cis~
+	cis~
+	cis2. cis4-.
 % Bars 236 to 240
-	dis-. r r2
+	b-. r r2
 	ees,2\f r
 	ees r
 	ees r
@@ -231,14 +231,14 @@ musicHornIIIMvtIV = \relative c'' {
 	ees_\dimin r
 	ees r
 	ees4.\p ees8 ees4 r
-	R1*8
+	R1*8 
 % Bars 246 to 250
 	
 % Bars 251 to 255
 	
 	\mark \default
-	g'2(\p\< \tuplet 3/2 2 {c,4\> d ees\!}
-	d4) r r2
+	ees'2(\p\< \tuplet 3/2 2 {a,4\> bes c\!}
+	bes4) r r2
 	R1*5
 % Bars 256 to 260
 	
@@ -258,21 +258,21 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 271 to 275
 	
 	
-	r2 d4\f r
+	r2 c4\f r
 	R1
-	r2 d4\f r
+	r2 f,4\f r
 % Bars 276 to 280
 	R1
-	r2 e,\f->
-	e-> e->
-	a,->  a'->
+	r2 e\f
+	e e
+	a, a->
 	a-> a->
 % Bars 281 to 285
 	d-> d->
 	d-> d->
 	g,-> g->
-	g-> ees'4-. d-.
-	ees-. d-. ees-. d-.
+	g-> bes'4-. bes-.
+	bes-. bes-. bes-. bes-.
 % Bars 286 to 290
 	bes(\< b c cis)\!
 	d r g,\ff r8 d'-.
@@ -282,7 +282,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 291 to 295
 	
 	
-	r2 r4 r8 g\ff
+	r2 r4 r8 g,\ff
 	g2-> g->
 	g-> g->
 % Bars 296 to 300
@@ -290,15 +290,15 @@ musicHornIIIMvtIV = \relative c'' {
 	g2-> g->
 	g2. g4
 	g2 bes
-	bes2. bes4
+	ees2. ees4
 % Bars 301 to 305
-	bes2 c
-	bes1
-	bes2-> g-> \mark \default
-	g1\ff\>~
-	g~
+	ees2 ees
+	ees1
+	f2-> ees-> \mark \default
+	d1\ff\>~
+	d~
 % Bars 306 to 310
-	g4\p r r2
+	d4\p r r2
 	R1*19
 % Bars 311 to 315
 	
@@ -307,7 +307,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 321 to 325
 	
 % Bars 326 to 330
-	f1\p~
+	f,1\p~
 	f~
 	f2. f4~
 	f1~
@@ -316,16 +316,16 @@ musicHornIIIMvtIV = \relative c'' {
 	f2. f4~
 	f2. f4~
 	f1~
-	f2._\crescmarkup f4~
+	f2. f4~
 	f1~
 % Bars 336 to 340
 	f2. r4
-	cis4.\f cis8 cis4-. f!-.
-	e4. e8 e4-. a-.
-	gis4. gis8 gis4-. c!-.
-	b4. b8 b4-. a-.
+	\mmrPos #-8 R1
+	\mmrPos #-6 R1
+	R1*2
+	
 % Bars 341 to 345
-	b1\fp
+	b'1\fp
 	c\fp
 	d\fp
 	e,-^\f~
@@ -335,19 +335,19 @@ musicHornIIIMvtIV = \relative c'' {
 	d4 d2.->~
 	d4 r r2
 	R1
-	r4 d'2.\fz~
+	r4 d2.\fz~
 % Bars 351 to 355
 	d4 d2.\fz~
 	d4 d2.\fz~
-	d4 d2.\fz(
-	g,4) f'2.->\f~
-	f4 f2.->~
+	d4 d2.\fz_\(
+	g4\) g2.->\f~
+	g4 g2.->~
 % Bars 356 to 360
-	f4 f2.->~
-	f4 f2.->(
-	d4) r d r
-	d r d r
-	d r r2
+	g4 g2.->~
+	g4 g2.->_~
+	g4 r g r
+	g r g r
+	g r r2
 % Bars 361 to 365
 	R1*5
 	
@@ -355,64 +355,64 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	c1~\p
-	c2 c4-. g-.
-	c2 c4-. g-.
-	c,-. r r2
+	R1*4
+	
+	
+	
 	R1*4
 % Bars 371 to 375
 	
 	
 	
-	d'1\p~
-	d~
+	R1*4
+	
 % Bars 376 to 380
-	d~
-	d4 r r2
-	d4->\p \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d} 
+	
+	
+	g4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
+	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
+	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
 % Bars 381 to 385
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	c4\mf \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8_\crescmarkup c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
+	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
+	bes4\mf \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
 % Bars 386 to 390
-	c4\f r r2
+	bes4\f r r2
 	R1
 	c2->\f c->
 	c2.-> r4
 	f2-> f->
 % Bars 391 to 395
 	f2.-> r4
-	c4\fz c-. f\fz c-.
-	e\fz c-. d\fz g,-.
-	d'4\p-> \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
+	g,4\fz c c\fz c
+	c\fz c b\fz g
+	g4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
+	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g}
 % Bars 396 to 400
-	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d} 
-	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
-	c4\mf \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4 \tuplet 3/2 4 {c8_\crescmarkup c c} c4 \tuplet 3/2 4 {c8 c c} 
+	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g}
+	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
+	bes4\mf \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
 % Bars 401 to 405
-	c4 \tuplet 3/2 4 {c8 c c} c4 \tuplet 3/2 4 {c8 c c} 
-	c4\f r r2
+	bes4 \tuplet 3/2 4 {bes8 bes bes} bes4 \tuplet 3/2 4 {bes8 bes bes} 
+	bes4\f r r2
 	R1
 	c2->\f c->
 	c2.-> r4
 % Bars 406 to 410
 	f2-> f->
 	f2.-> r4
-	c\fz c-. f\fz c-.
-	e\fz c-. d\fz g,-.
-	e' r c2\f
+	g,\fz c c\fz c
+	c\fz c b\fz g
+	c r c,2\f
 % Bars 411 to 415
 	cis1->~
 	cis2 d4( c)~
-	c c-. a( b!)
-	g r r2
+	c c2.~
+	c4 r r2
 	R1*2
 % Bars 416 to 420
 	
@@ -427,37 +427,37 @@ musicHornIIIMvtIV = \relative c'' {
 	g1~
 	g2 c4-. c-.
 % Bars 426 to 430
-	g r bes2->~
+	g r bes'2->~
 	bes bes2->~
 	bes bes->~
 	bes des->
 	d!1\ff~
 % Bars 431 to 435
 	d
-	d~
-	d4 r r2
+	g,~
+	g4 r r2
 	R1*5
 	
 % Bars 436 to 440
 	
 	
 	
-	r2 r4 g-.\f \bar "||" \mark \default
-	e-.\f r r d-.
+	R1 \bar "||" \mark \default
+	R1*6
 % Bars 441 to 445
-	c-. r r g-.
-	c-. r r c-.
-	c-. r r d-.
-	e-. r r e-.
-	e-. r r2
+	
+	
+	
+	
+	
 % Bars 446 to 450
 	R1*10
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	R1*3
-	
-	
+	g4-.\f r r g-.
+	g-. r r g-.
+	g-. r r2
 	R1*4
 	
 % Bars 461 to 465
@@ -474,41 +474,41 @@ musicHornIIIMvtIV = \relative c'' {
 	e-> b e-> b
 % Bars 471 to 475
 	e-> b e-> d
-	e-> d e-> d
-	e-> d e-> c \mark #11
+	c-> g c-> g
+	c-> g c-> g \mark #11
 	e r r2
 	R1*7
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	r2 r4 f_\ffmarc
-	d2-> d->
-	d-> d4-. d-.
-	d1~
+	r2 r4 f'_\ffmarc
+	d2 d
+	d d4 g,-.
+	g1~
 % Bars 486 to 490
-	d2. d4
-	d2-> d->
-	d-> d4-. d-.
-	d1->~
-	d2. g4->
+	g2. d'4
+	d2 d
+	d d4 g,-.
+	g1->~
+	g2. g4->
 % Bars 491 to 495
-	e-. d-. c-. g'->
-	e-. d-. c-. g'->
-	g2-> g->
-	g-> g->
-	e-> d->
-% Bars 496 to 500
+	g-. g-. g-. g->
+	g-. g-. g-. g->
+	e'2-> d->
 	c-> d->
-	cis-> d->
-	e-> c!->
-	e-> c->
-	c-> b->
+	c-> g->
+% Bars 496 to 500
+	e-> g->
+	g-> a->
+	c-> a->
+	gis-> a->
+	a-> g!->
 % Bars 501 to 505
-	c4 r g'2->~
-	g4( f8 g f4 e)
-	e( g f2
-	e4) r r2
+	c4 r e2->~
+	e4( d8 e d4 c)
+	c( e d2
+	c4) r r2
 	R1*12
 % Bars 506 to 510
 	
@@ -516,16 +516,16 @@ musicHornIIIMvtIV = \relative c'' {
 	
 % Bars 516 to 520
 	
-	c4\ff c c c
+	c,4\ff c c c
 	c c c c
 	c c c c
 	c c c c
 % Bars 521 to 525
-	c r c2-> 
-	r c->
-	r c->
-	r c->
-	b4-. r g2->\ff~
+	f r a2-> 
+	r a->
+	r a->
+	r a->
+	g4-. r g2->\ff~
 % Bars 526 to 530
 	g2. g4-.
 	g-. g-. g-. g-.
@@ -536,22 +536,22 @@ musicHornIIIMvtIV = \relative c'' {
 	g g g g
 	g-. g-. g-. g\ff
 	c2->_\pesante g->
-	g-> d->
-	a'2.-> a4
+	c,-> b->
+	e2.-> e4
 % Bars 536 to 540
-	a2-> a->
-	a2.-> a4
-	a2-> a->
-	a2.-> a4
-	a2-> a->
+	e2-> f->
+	e2.-> e4
+	e2-> f->
+	e2.-> e4
+	e2-> f->
 % Bars 541 to 545
-	a2.-> a4
-	a2-> b->
-	c1\fff~
-	c~
-	c~
+	e2.-> e4
+	e2-> d->
+	e1\fff~
+	e~
+	e~
 % Bars 546 to 550
-	c4 r g'2->
+	e4 r g2->
 	g-> g->
 	g-> e->
 	c2.-> c4-.

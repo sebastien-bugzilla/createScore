@@ -32,8 +32,8 @@
 \include "./04-Mvt4/m04_v08_music_FagottII_C.ily"
 \include "./04-Mvt4/m04_v09_music_HornI_C.ily"
 \include "./04-Mvt4/m04_v10_music_HornII_C.ily"
-\include "./04-Mvt4/m04_v11_music_HornIII.ily"
-\include "./04-Mvt4/m04_v12_music_HornIV.ily"
+\include "./04-Mvt4/m04_v11_music_HornIII_C.ily"
+\include "./04-Mvt4/m04_v12_music_HornIV_C.ily"
 \include "./04-Mvt4/m04_v13_music_TrompeteI.ily"
 \include "./04-Mvt4/m04_v14_music_TrompeteII.ily"
 \include "./04-Mvt4/m04_v15_music_PosauneI.ily"
@@ -100,20 +100,21 @@
 %					\musicFagottIIMvtIV 
 				}
 			>>
-%			\new StaffGroup <<
-%				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
+			\new StaffGroup <<
+				\new GrandStaff \with { \nameGrandStaffIMvtIV } <<
 					\new Staff {
 						\timeMvtIV \generalOptions \conductorOptions
 						\nameStaffVMvtIV
 						\partcombine \musicHornIMvtIV \musicHornIIMvtIV
 %						\musicHornIIMvtIV
 					}
-%					\new Staff {
-%						\timeMvtIV \generalOptions \conductorOptions
-%						\nameStaffVIMvtIV
-%						\partcombine \musicHornIIIMvtIV \musicHornIVMvtIV
-%					}
-%				>>
+					\new Staff {
+						\timeMvtIV \generalOptions \conductorOptions
+						\nameStaffVIMvtIV
+						\partcombine \musicHornIIIMvtIV \musicHornIVMvtIV
+%						\musicHornIVMvtIV
+					}
+				>>
 %				\new Staff {
 %					\timeMvtIV \generalOptions \conductorOptions
 %					\nameStaffVIIMvtIV
@@ -136,7 +137,7 @@
 %					\nameStaffXMvtIV
 %					\musicPaukenMvtIV
 %				}
-%			>>
+			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtIV } <<
 %					\new Staff {

@@ -28,13 +28,13 @@ musicHornIIIMvtIV = \relative c'' {
 	g2. g4~
 	g1~
 	g2. r4
-	dis4.\mf dis8 dis4-. g-.
+	\partcombineApart dis4.\mf dis8 dis4-. g-.
 % Bars 21 to 25
-	fis4. fis8 fis4-. g-.
-	fis4.\f fis8 fis4-.\< b-.
+	fis4. fis8 fis4-. g-. 
+	fis4. fis8 fis4-. \partcombineAutomatic b-.\<
 	cis4. cis8 cis4-. d-.\!
-	c!1\fz~
-	c4 r r2
+	\partcombineApart c!1~
+	c4 \partcombineAutomatic r r2
 % Bars 26 to 30
 	R1*10
 % Bars 31 to 35
@@ -57,13 +57,13 @@ musicHornIIIMvtIV = \relative c'' {
 	a r a r
 	a r r2
 	R1
-	d,2\f r
+	\once \partcombineApart d,2 r
 % Bars 66 to 70
-	d\p r
+	\once \partcombineApart d r
 	R1*2
 	\mark \default
-	g4\p r g r
-	g r r2
+	\partcombineApart g4\p r g r
+	g r r2 \partcombineAutomatic
 % Bars 71 to 75
 	R1*14
 % Bars 76 to 80
@@ -157,15 +157,15 @@ musicHornIIIMvtIV = \relative c'' {
 	e4\fz e r2
 % Bars 171 to 175
 	R1
-	r2 r4 a,-.\f
-	d2.-> r4
-	r2 r4 a-.\f
-	d2.-> bes4\fz~
+	r2 r4 \partcombineApart a,-.
+	d2.-> \partcombineAutomatic r4
+	r2 r4 \partcombineApart a-.
+	d2.-> bes4~
 % Bars 176 to 180
-	bes2. bes4\fz~
-	bes2. b4\fz~
-	b2. b4\fz~
-	b2. b4-.\ff
+	bes2. bes4~
+	bes2. b4~
+	b2. b4~
+	b2. \partcombineAutomatic b4-.\ff
 	b-. r c-. r
 % Bars 181 to 185
 	b-. r r2
@@ -263,9 +263,9 @@ musicHornIIIMvtIV = \relative c'' {
 	r2 d4\f r
 % Bars 276 to 280
 	R1
-	r2 e,\f->
-	e-> e->
-	a,->  a'->
+	r2 \partcombineApart e,->
+	e-> e-> 
+	a,-> \partcombineAutomatic a'->
 	a-> a->
 % Bars 281 to 285
 	d-> d->
@@ -320,10 +320,10 @@ musicHornIIIMvtIV = \relative c'' {
 	f1~
 % Bars 336 to 340
 	f2. r4
-	cis4.\f cis8 cis4-. f!-.
+	\partcombineApart cis4.\f cis8 cis4-. f!-.
 	e4. e8 e4-. a-.
 	gis4. gis8 gis4-. c!-.
-	b4. b8 b4-. a-.
+	b4. b8 b4-. a-. \partcombineAutomatic
 % Bars 341 to 345
 	b1\fp
 	c\fp
@@ -339,13 +339,13 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 351 to 355
 	d4 d2.\fz~
 	d4 d2.\fz~
-	d4 d2.\fz(
-	g,4) f'2.->\f~
+	d4 d2.\fz^\( 
+	g,4\) f'2.->\f~
 	f4 f2.->~
 % Bars 356 to 360
 	f4 f2.->~
-	f4 f2.->(
-	d4) r d r
+	f4 \partcombineChords f2.->(
+	d4) \partcombineAutomatic r d r
 	d r d r
 	d r r2
 % Bars 361 to 365
@@ -355,20 +355,20 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	c1~\p
+	\partcombineApart c1~\p
 	c2 c4-. g-.
 	c2 c4-. g-.
-	c,-. r r2
+	c,-. r r2 \partcombineAutomatic
 	R1*4
 % Bars 371 to 375
 	
 	
 	
-	d'1\p~
+	\partcombineApart d'1\p~
 	d~
 % Bars 376 to 380
 	d~
-	d4 r r2
+	d4 r r2 \partcombineAutomatic
 	d4->\p \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8_\crescmarkup d d} d4 \tuplet 3/2 4 {d8 d d} 
@@ -386,8 +386,8 @@ musicHornIIIMvtIV = \relative c'' {
 	f2-> f->
 % Bars 391 to 395
 	f2.-> r4
-	c4\fz c-. f\fz c-.
-	e\fz c-. d\fz g,-.
+	c4\fz \once \partcombineApart c-. f\fz \once \partcombineApart c-.
+	e\fz \once \partcombineApart c-. d\fz \once \partcombineApart g,-.
 	d'4\p-> \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 	d4 \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
 % Bars 396 to 400
@@ -405,8 +405,8 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 406 to 410
 	f2-> f->
 	f2.-> r4
-	c\fz c-. f\fz c-.
-	e\fz c-. d\fz g,-.
+	c\fz \once \partcombineApart c-. f\fz \once \partcombineApart c-.
+	e\fz \once \partcombineApart c-. d\fz \once \partcombineApart g,-.
 	e' r c2\f
 % Bars 411 to 415
 	cis1->~
@@ -442,20 +442,20 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 g-.\f \bar "||" \mark \default
+	\partcombineApart r2 r4 g-.\f \bar "||" \mark \default
 	e-.\f r r d-.
 % Bars 441 to 445
 	c-. r r g-.
 	c-. r r c-.
 	c-. r r d-.
 	e-. r r e-.
-	e-. r r2
+	e-. r r2 \partcombineAutomatic
 % Bars 446 to 450
 	R1*10
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	R1*3
+	\partcombineApart R1*3 \partcombineAutomatic
 	
 	
 	R1*4
@@ -482,14 +482,14 @@ musicHornIIIMvtIV = \relative c'' {
 	
 % Bars 481 to 485
 	
-	r2 r4 f_\ffmarc
+	r2 r4 \partcombineApart f
 	d2-> d->
-	d-> d4-. d-.
+	d-> d4-. \partcombineAutomatic d-.
 	d1~
 % Bars 486 to 490
-	d2. d4
+	d2. \partcombineApart d4
 	d2-> d->
-	d-> d4-. d-.
+	d-> d4-. \partcombineAutomatic d-.
 	d1->~
 	d2. g4->
 % Bars 491 to 495
@@ -505,7 +505,7 @@ musicHornIIIMvtIV = \relative c'' {
 	e-> c->
 	c-> b->
 % Bars 501 to 505
-	c4 r g'2->~
+	\once \partcombineApart c4 r g'2->~
 	g4( f8 g f4 e)
 	e( g f2
 	e4) r r2
