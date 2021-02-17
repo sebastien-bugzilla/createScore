@@ -61,7 +61,7 @@ ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
 fpcresc=^\markup {\dynamic fp \italic {cresc.}}
 pesante=^\markup {\italic {pesante}}
 pptranquillo=^\markup {\dynamic pp \italic tranquillo}
-
+ffpesante=^\markup {\dynamic ff \italic pesante}
 
 % function
 mmrPos = #(define-music-function
