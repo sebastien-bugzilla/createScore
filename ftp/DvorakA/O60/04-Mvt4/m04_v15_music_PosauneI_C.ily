@@ -26,11 +26,11 @@ musicPosauneIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 g\f-.
+	\partcombineApart r2 r4 g\f-.
 % Bars 36 to 40
 	e-. cis-. a-. g'-.
 	e-. cis-. a-. a'-. \mark \default
-	fis-. r r2
+	fis-. \partcombineAutomatic r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -67,7 +67,7 @@ musicPosauneIMvtIV = \relative c'' {
 	d-. r r2
 	gis4-. r gis-. r
 	gis-. r r2
-	a4\fz r a\fz r 
+	a4\fz r a\fz \once \partcombineApart r 
 % Bars 96 to 100
 	e\fz r e\fz r
 	R1*8
@@ -84,7 +84,7 @@ musicPosauneIMvtIV = \relative c'' {
 	gis4-. r gis-. r
 	gis-. r r2
 % Bars 111 to 115
-	a4\fz r a\fz r
+	a4\fz r a\fz \once \partcombineApart r
 	e\fz r e\fz r \mark \default
 	cis r r2
 	R1*7
@@ -98,21 +98,21 @@ musicPosauneIMvtIV = \relative c'' {
 	a4( e') d2
 % Bars 126 to 130
 	cis4-. cis-. b2->
-	a4 a8(\< b bis4 cis)\!
+	a4 \partcombineApart a8(\< b bis4 cis)\!
 	d a8(\< b! bis4 cis)\!
 	d r r2
 	r4 gis->\f eis-> cis->
 % Bars 131 to 135
 	fis-> cis-> fis-> cis->
-	fis-> e-> a-> gis->
+	fis-> e-> a-> gis-> \partcombineAutomatic
 	dis-.\f r r2
 	e4-. r r2
 	d!4-. r e-. r
 % Bars 136 to 140
 	r e-. d-. d-.
 	cis-. r b-. r
-	a-. r a-. r
-	a-. r r2
+	\once \partcombineApart a-. r \once \partcombineApart a-. r
+	\once \partcombineApart a-. r r2
 	R1*2
 % Bars 141 to 145
 	
@@ -173,7 +173,7 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 206 to 210
 	
-	e4\f r e2->
+	e4\f \once \partcombineApart r e2->
 	e4 r d r 
 	e r r2
 	R1*6
@@ -194,15 +194,15 @@ musicPosauneIMvtIV = \relative c'' {
 	R1
 	ees2. r4
 % Bars 231 to 235
-	R1
-	ees2. des4-.
+	R1 %%%%%%%%%%%%%%%%%%%%%%%%
+	\partcombineApart ees2. des4-.
 	c-. a!-. ges-. ees-.
 	ees'2. des4-.
 	c-. a!-. ges-. ees'-.
 % Bars 236 to 240
-	des-. r  r f-.\f
-	des-. c-. bes-. f'-.
-	des2 r4 c
+	des-. \partcombineAutomatic r  r \once \partcombineChords f-.
+	\partcombineApart des-. c-. bes-. \partcombineChords f'-. 
+	\partcombineAutomatic des2 r4 c \partcombineAutomatic
 	des2 r4 c
 	aes2 r4 c
 % Bars 241 to 245
@@ -231,24 +231,24 @@ musicPosauneIMvtIV = \relative c'' {
 	R1
 % Bars 276 to 280
 	r2 cis4\f r
-	R1*2
+	\partcombineApart R1*2
 	
-	r2 b->
+	r2 b-> \partcombineAutomatic
 	b-> b->
 % Bars 281 to 285
 	e-> d->
 	c-> b->
-	a-> a->
+	\once \partcombineApart a-> a->
 	a-> f'4-. e-.
 	f-. e-. f-. e-.
 % Bars 286 to 290
-	c(\< cis d dis)\!
-	e r a,\ff r
+	c(_\< cis d dis)\!
+	e r \once \partcombineApart a, r
 	R1*5
 % Bars 291 to 295
 	
 	
-	r2 r4 r8 a\ff
+	r2 r4 r8 \once \partcombineApart a
 	d2-> e->
 	f-> e->
 % Bars 296 to 300
@@ -288,7 +288,7 @@ musicPosauneIMvtIV = \relative c'' {
 	
 	
 	
-	R1*7
+	\partcombineApart R1*7 \partcombineAutomatic
 % Bars 346 to 350
 	
 % Bars 351 to 355
@@ -357,7 +357,7 @@ musicPosauneIMvtIV = \relative c'' {
 	r g->
 	r a->~
 	a a->
-	gis4-. e-. d'!2->~
+	gis4-. \once \partcombineApart e-. d'!2->~
 % Bars 431 to 435
 	d4 b-. gis-. e-.
 	cis'1~
@@ -390,18 +390,18 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 481 to 485
 	
-	r2 r4 g_\ffmarc
+	r2 r4 \partcombineApart g
 	e2-> d->
-	c-> b4-. cis-.
+	c-> b4-. \partcombineAutomatic cis-.
 	cis1~
 % Bars 486 to 490
-	cis2. g'4->
+	cis2. \partcombineApart g'4->
 	e2-> d->
-	c-> b4-. cis-.
+	c-> b4-. \partcombineAutomatic cis-.
 	cis1~->
-	cis2. a4->
+	cis2. \once \partcombineApart a4->
 % Bars 491 to 495
-	d-. e-. fis-. a,->
+	d-. e-. fis-. \once \partcombineApart a,->
 	d-. e-. fis-. r
 	r2 r4 a->
 	fis2-> cis->
@@ -447,7 +447,7 @@ musicPosauneIMvtIV = \relative c'' {
 	a-. g-. g-. fis-.
 	fis e e d
 	d cis cis b
-	b a a g'
+	b \partcombineApart a a \partcombineAutomatic g'
 % Bars 531 to 535
 	g fis fis e
 	e-. d-. cis-. a'\ff
@@ -476,13 +476,13 @@ musicPosauneIMvtIV = \relative c'' {
 	fis1-^~
 	fis~
 	fis~
-	fis2. a,4-.
-	d-. e-. fis-. a,-. 
+	fis2. \once \partcombineApart a,4-.
+	d-. e-. fis-. \once \partcombineApart a,-. 
 % Bars 556 to 560
-	d-. e-. fis-. a,-. 
-	d-. e-. fis-. a,-. 
-	d-. e-. fis-. a,-. 
-	d r d r
+	d-. e-. fis-. \once \partcombineApart a,-. 
+	d-. e-. fis-. \once \partcombineApart a,-. 
+	d-. e-. fis-. \once \partcombineApart a,-. 
+	\once \partcombineApart d r d r
 	d r d r
 % Bars 561 to 563
 	d r r2
