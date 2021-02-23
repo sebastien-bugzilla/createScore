@@ -616,7 +616,7 @@ musicViolinIMvtIV = \relative c''' {
 	d4:16 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
-	b: g: a: fis: \ottava #0 \mark \default
+	b: g: a: fis: \ottava #0 \mark #11
 % Bars 521 to 525
 	e4 r <e,, b' e>2^\ten
 	r q^\ten
