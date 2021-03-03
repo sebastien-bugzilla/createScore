@@ -568,7 +568,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 471 to 475
 	fis gis fis eis fis a g e
 	fis g fis e fis g fis e
-	fis g fis e fis fis b, b'
+	fis g fis e fis fis b, b' \mark #11
 	ais4-> cis,-. ais-> gis-.
 	fis-> cis-. fis-. b'\fz
 % Bars 476 to 480
@@ -624,7 +624,7 @@ musicViolinIIMvtIV = \relative c'' {
 	d4:8 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
-	b: g: a: fis: \mark #11
+	b: g: a: fis: \mark \default
 % Bars 521 to 525
 	<d, b'>4 r <e d'>2^\ten
 	r q^\ten
