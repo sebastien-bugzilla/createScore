@@ -6,13 +6,13 @@
 	ragged-bottom = ##t
 	left-margin = 16 \mm
 %	first-page-number = 0
-%	slashSeparator = \markup {
-%		\center-align
-%		\vcenter \combine
-%		\beam #3.3 #0.5 #0.54
-%		\raise #1.24 \beam #3.3 #0.5 #0.54
-%	}
-%	system-separator-markup = \slashSeparator
+	slashSeparator = \markup {
+		\center-align
+		\vcenter \combine
+		\beam #3.3 #0.5 #0.54
+		\raise #1.24 \beam #3.3 #0.5 #0.54
+	}
+	system-separator-markup = \slashSeparator
 	bookTitleMarkup = \markup {
 		\column {
 			\vspace #15
