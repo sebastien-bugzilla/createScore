@@ -178,7 +178,7 @@ musicFloteIIMvtII = \relative c''' {
 	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	a8\ff r b-^ r
 	bes!8 r r4
-	r4 r8 e8\pp(
+	r4 r8 ees8\pp(
 % Bars 181 to 185
 	c8 a f16 ees d c
 	bes8) r r4

@@ -80,7 +80,7 @@
 				\new Staff { \timeMvtI \musicPosauneIMvtI }
 				\new Staff { \timeMvtI \musicPosauneIIMvtI }
 				\new Staff { \timeMvtI \musicTubaMvtI }
-				\new Staff { \timeMvtI \musicPaukenMvtI }
+%				\new Staff { \timeMvtI \musicPaukenMvtI }
 			>>
 		>>
 		\midi {
@@ -136,7 +136,7 @@
 				\new Staff { \timeMvtI \musicPosauneIIMvtI }
 				\new Staff { \timeMvtI \musicPosauneIIIMvtI }
 				\new Staff { \timeMvtI \musicTubaMvtI }
-				\new Staff { \timeMvtI \musicPaukenMvtI }
+%				\new Staff { \timeMvtI \musicPaukenMvtI }
 				\new Staff { \timeMvtI \musicViolinIMvtI }
 				\new Staff { \timeMvtI \musicViolinIIMvtI }
 				\new Staff { \timeMvtI \musicBratscheMvtI }

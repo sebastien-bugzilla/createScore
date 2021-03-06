@@ -96,7 +96,7 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 71 to 75
 	
 	
-	\acciaccatura b,8( b'4)\fz \tuplet 3/2 4 {b8(\mf a gis)} a4-> \tuplet 3/2 4 {a8( g fis)}
+	\acciaccatura b,8( b'4)\fz \tuplet 3/2 4 {b8(\mf a gis)} a4-> \tuplet 3/2 4 {a8( gis fis)}
 	e4-. b-._\dimmarkup e2->
 	fis4\p-. c-. fis2->
 % Bars 76 to 80
@@ -561,7 +561,7 @@ musicViolinIMvtIV = \relative c''' {
 	a b a gis a fis b cis
 	d e d cis d e d cis
 	d e d cis d e d e \mark #11
-	fis4-> cis-. a-> gis-.
+	fis4-> cis-. ais-> gis-.
 	fis-> cis-. fis-. b'\fz
 % Bars 476 to 480
 	fis-> e-. dis-> cis-.

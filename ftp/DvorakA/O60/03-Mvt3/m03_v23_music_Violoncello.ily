@@ -181,7 +181,7 @@ musicVioloncelloMvtIII = \relative c {
 		ees,2-> ees'4\fz~
 % Bars 141 to 145
 		ees2 d4-.
-		c-. a-. c-.
+		cis-. a-. cis-.
 		d-. f-. d-.
 		a,-. g'->( f8 e)
 		d4-. d-. d-.

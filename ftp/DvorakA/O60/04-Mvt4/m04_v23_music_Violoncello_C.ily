@@ -72,7 +72,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 51 to 55
 	a8) r a'2.\fz~
 	a8 r a,2.\fz~
-	a4 r bes'-.\f a-.
+	a4 r b'-.\f a-.
 	a2-> fis4-. dis-.
 	dis2-> b4-. fis-.
 % Bars 56 to 60

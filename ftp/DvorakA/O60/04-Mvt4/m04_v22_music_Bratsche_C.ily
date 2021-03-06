@@ -47,7 +47,7 @@ musicBratscheMvtIV = \relative c' {
 	bes4-. bes( g) d'->(
 % Bars 31 to 35
 	cis bes g) e'(->
-	d c bes) bes'(->
+	d cis bes) bes'(->
 	a g e) d'(->
 	cis bes g) d'(->
 	cis bes g) g'8-> g

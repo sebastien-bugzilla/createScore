@@ -577,7 +577,7 @@ musicViolinIIMvtI = \relative c' {
 	g-> cis, d e fis-> b,
 	cis4-> e-> a,->
 % Bars 471 to 475
-	f'2-^ e4
+	fis'2-^ e4
 	a8-. fis-. g-. a-. dis,4
 	g-> <a, cis>-> <d! fis>->
 	<g, b>-> <cis e>-> <fis, a>->

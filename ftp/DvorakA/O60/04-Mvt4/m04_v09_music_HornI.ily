@@ -145,7 +145,7 @@ musicHornIMvtIV = \relative c'' {
 	d4-. r ees-. r
 % Bars 136 to 140
 	r ees-. d-. f-.
-	f-. r ees-. r
+	f-. r e!-. r
 	c-. r des-. r
 	c-. r r2
 	c4-. r r2

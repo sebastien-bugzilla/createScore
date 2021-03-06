@@ -12,6 +12,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
@@ -31,13 +32,14 @@
 \include "./04-Mvt4/m04_v14_music_TrompeteII.ily"
 \include "./04-Mvt4/m04_v15_music_PosauneI.ily"
 \include "./04-Mvt4/m04_v16_music_PosauneII.ily"
-\include "./04-Mvt4/m04_v17_music_Tuba.ily"
-\include "./04-Mvt4/m04_v18_music_Pauken.ily"
-\include "./04-Mvt4/m04_v19_music_ViolinI.ily"
-\include "./04-Mvt4/m04_v20_music_ViolinII.ily"
-\include "./04-Mvt4/m04_v21_music_Bratsche.ily"
-\include "./04-Mvt4/m04_v22_music_Violoncello.ily"
-\include "./04-Mvt4/m04_v23_music_Kontrabass.ily"
+\include "./04-Mvt4/m04_v17_music_PosauneIII.ily"
+\include "./04-Mvt4/m04_v18_music_Tuba.ily"
+\include "./04-Mvt4/m04_v19_music_Pauken.ily"
+\include "./04-Mvt4/m04_v20_music_ViolinI.ily"
+\include "./04-Mvt4/m04_v21_music_ViolinII.ily"
+\include "./04-Mvt4/m04_v22_music_Bratsche.ily"
+\include "./04-Mvt4/m04_v23_music_Violoncello.ily"
+\include "./04-Mvt4/m04_v24_music_Kontrabass.ily"
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
@@ -57,7 +59,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 2 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -78,12 +80,13 @@
 				\new Staff { \timeMvtIV \musicTrompeteIIMvtIV }
 				\new Staff { \timeMvtIV \musicPosauneIMvtIV }
 				\new Staff { \timeMvtIV \musicPosauneIIMvtIV }
+				\new Staff { \timeMvtIV \musicPosauneIIIMvtIV }
 				\new Staff { \timeMvtIV \musicTubaMvtIV }
 				\new Staff { \timeMvtIV \musicPaukenMvtIV }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 2 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -104,7 +107,47 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 2 = 100
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeIV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtIV \musicFloteIMvtIV }
+				\new Staff { \timeMvtIV \musicFloteIIMvtIV }
+				\new Staff { \timeMvtIV \musicOboeIMvtIV }
+				\new Staff { \timeMvtIV \musicOboeIIMvtIV }
+				\new Staff { \timeMvtIV \musicKlarinetteIMvtIV }
+				\new Staff { \timeMvtIV \musicKlarinetteIIMvtIV }
+				\new Staff { \timeMvtIV \musicFagottIMvtIV }
+				\new Staff { \timeMvtIV \musicFagottIIMvtIV }
+				\new Staff { \timeMvtIV \musicHornIMvtIV }
+				\new Staff { \timeMvtIV \musicHornIIMvtIV }
+				\new Staff { \timeMvtIV \musicHornIIIMvtIV }
+				\new Staff { \timeMvtIV \musicHornIVMvtIV }
+				\new Staff { \timeMvtIV \musicTrompeteIMvtIV }
+				\new Staff { \timeMvtIV \musicTrompeteIIMvtIV }
+				\new Staff { \timeMvtIV \musicPosauneIMvtIV }
+				\new Staff { \timeMvtIV \musicPosauneIIMvtIV }
+				\new Staff { \timeMvtIV \musicPosauneIIIMvtIV }
+				\new Staff { \timeMvtIV \musicTubaMvtIV }
+				\new Staff { \timeMvtIV \musicPaukenMvtIV }
+				\new Staff { \timeMvtIV \musicViolinIMvtIV }
+				\new Staff { \timeMvtIV \musicViolinIIMvtIV }
+				\new Staff { \timeMvtIV \musicBratscheMvtIV }
+				\new Staff { \timeMvtIV \musicVioloncelloMvtIV }
+				\new Staff { \timeMvtIV \musicKontrabassMvtIV }
+			>>
+		>>
+		\midi {
+			\tempo 2 = 100
 			\context {
 				\Voice
 				\remove "Dynamic_performer"

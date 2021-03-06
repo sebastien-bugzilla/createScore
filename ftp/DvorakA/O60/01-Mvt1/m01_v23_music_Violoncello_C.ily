@@ -591,7 +591,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 446 to 450
 	c-^ a8-. bes-. c4-^
 	r r c
-	c8( a) bes-. c-. f,4
+	c8( a) bes-. c-. fis,4
 	bes8( g) a-. bes-. e,4
 	a8(_\crescmarkup f) g-. a-. d,4~
 % Bars 451 to 455
