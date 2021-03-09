@@ -9,7 +9,7 @@ musicFloteIMvtII = \relative c'' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R2
+	\cueDuring #"cueVoiceFloteIMvtII" #UP { \ni \mmrPos #-8 R2 \no }
 	r8 bes(\p a d~
 	d4.\< e8
 	f2\fp~
@@ -72,12 +72,12 @@ musicFloteIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*7
+	R2*6
 % Bars 76 to 80
 	
 	
 	
-	
+	\cueDuring #"cueVoiceFloteIMvtII" #UP { \ni R2 \no }
 	f4(\pp bes~
 % Bars 81 to 85
 	bes8 a g f)
@@ -90,12 +90,12 @@ musicFloteIMvtII = \relative c'' {
 	d4\f f\fz~
 	f8\> ees16( d f ees\! d c) \mark \default
 	bes4.\pp r8
-	R2
+	R2*14
 % Bars 91 to 95
-	R2*3
 	
 	
-	R2*10
+	
+	
 % Bars 96 to 100
 	
 % Bars 101 to 105

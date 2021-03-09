@@ -40,11 +40,11 @@ musicFloteIMvtI = \relative c'' {
 		a!4\f-. f-. b-.\fz
 		f-. c'\fz-. f,-. 
 % Bars 36 to 40
-		d'\fz-. g,-. e'-. 
+		d'\fz-. g,-. e'-.\fz
 		f,8-. g-. aes-. aes-. g-. f-. 
-		a!4->-.\fz f-. b-. 
+		a!4->-.\fz f-. b-.\fz
 		f-. c'-.\fz f,-.
-		d'-.\fz g,-. e'-.
+		d'-.\fz g,-. e'-.\fz
 % Bars 41 to 45
 		g,-. e'-.\fz g,-.
 		e'-.\fz g,-. e'-.\fz

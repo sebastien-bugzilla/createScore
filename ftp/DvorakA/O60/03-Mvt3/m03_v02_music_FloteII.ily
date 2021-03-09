@@ -48,24 +48,24 @@ musicFloteIIMvtIII = \relative c''' {
 		a a-. a-.\!
 		c2\ff-> bes4->~
 		bes a2->
-		R2.*2
+		R2.*16
 		
 % Bars 46 to 50
-		R2.*2
 		
-		R2.*2
 		
-		R2.*2
+		
+		
+		
 % Bars 51 to 55
 		
-		R2.*2
 		
-		R2.*2
+		
+		
 		
 % Bars 56 to 60
-		R2.*2
 		
-		R2.*2
+		
+		
 		
 		d,8(\p\< e f! g a bes
 % Bars 61 to 65
@@ -94,10 +94,12 @@ musicFloteIIMvtIII = \relative c''' {
 		
 		
 		
-		R2.*3
+		\cueDuring #"cueVoiceFloteIIMvtIII" #UP {
+			\ni R2.
 % Bars 111 to 115
-		
-		
+			R
+			R \no
+		}
 		r4 c!2
 		des4-.\f\< c-. c-. 
 		des-. c-. c-. 
@@ -189,11 +191,11 @@ musicFloteIIMvtIII = \relative c''' {
 		
 	}
 % Bars 201 to 205
-	R2.*4
+	R2.*87
 	
 	
 	
-	R2.*83
+	
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -257,24 +259,24 @@ musicFloteIIMvtIII = \relative c''' {
 	c2->\ff bes4->~
 % Bars 326 to 330
 	bes a2->
-	R2.*2
+	R2.*16
 	
-	R2.*2
+	
 	
 % Bars 331 to 335
-	R2.*2
 	
-	R2.*2
 	
-	R2.*2
+	
+	
+	
 % Bars 336 to 340
 	
-	R2.*2
 	
-	R2.*2
+	
+	
 	
 % Bars 341 to 345
-	R2.*2
+	
 	
 	d,8(\p\< e f! g a bes
 	b4\!) cis-. d-.
@@ -301,11 +303,13 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 391 to 395
 	
 	
-	R2.*3
-	
-	
+	\cueDuring #"cueVoiceFloteIIMvtIII" #UP {
+		\ni R2.
+		R
+		R \no
+	}
 % Bars 396 to 400
-	r4 c2
+	r4 c!2
 	des4-.\f\< c-. c-. 
 	des-. c-. c-.
 	des-. c-. c-.

@@ -23,8 +23,8 @@ musicFloteIMvtI = \relative c'' {
 		e2\p r4
 % Bars 11 to 15
 		r r8 b'-.\p b( a)
-		g2 r4
-		R2.*21
+		g2 r4 
+		R2.*20 
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -36,15 +36,15 @@ musicFloteIMvtI = \relative c'' {
 % Bars 31 to 35
 		
 		
-		
+		\cueDuring #"cueVoiceFloteIMvtI" #UP { \ni R2. \no}
 		a!4\f-. f-. b-.\fz
 		f-. c'\fz-. f,-. 
 % Bars 36 to 40
-		d'\fz-. g,-. e'-. 
+		d'\fz-. g,-. e'-.\fz
 		f,8-. g-. aes-. aes-. g-. f-. 
-		a!4->-.\fz f-. b-. 
+		a!4->-.\fz f-. b-.\fz
 		f-. c'-.\fz f,-.
-		d'-.\fz g,-. e'-.
+		d'-.\fz g,-. e'-.\fz
 % Bars 41 to 45
 		g,-. e'-.\fz g,-.
 		e'-.\fz g,-. e'-.\fz
@@ -74,15 +74,19 @@ musicFloteIMvtI = \relative c'' {
 		g-^ fis8( e d4)
 		g-^ fis8( e d4)
 		g-. r r
-		R2.*13
+		R2.*10
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
+		
+		
+		
+		
+		\cueDuring #"cueVoiceFloteIMvtI" #UP { \ni R2.
 % Bars 76 to 80
-		
-		
-		r4 r8 d8-.\p e-. fis-.
+		R
+		R \no
+		r4 } r8 d8-.\p e-. fis-.
 		g4-- r8 cis,-. d-. e-.
 		fis4-- r8 b,-. cis-. d-.
 % Bars 81 to 85
@@ -100,7 +104,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.
+		\cueDuring #"cueVoiceFloteIMvtI" #UP { \ni R2. \no}
 		d,4(\p fis\< b
 		a2.\!)~
 % Bars 111 to 115
@@ -116,14 +120,16 @@ musicFloteIMvtI = \relative c'' {
 		e eis\> fis)\!
 		b, r r 
 % Bars 121 to 125
-		R2.*17
+		R2.*15
 % Bars 126 to 130
 	
 % Bars 131 to 135
 	
 % Bars 136 to 140
-		
-		
+		\cueDuring #"cueVoiceFloteIMvtI" #UP {
+			\ni R2.
+			R \no
+		}
 		r4 des,8\f-. ees-. f4->
 		f8(_\crescmarkup ges aes a bes aes) \mark \default
 		ges\f r r4 e(->
@@ -138,7 +144,7 @@ musicFloteIMvtI = \relative c'' {
 		R2.
 		r4 r cis'8-.\p dis-.
 		b4 r cis8-. dis-.
-		b4^\crescmarkup r dis8-. e-.
+		b4_\crescmarkup r dis8-. e-.
 % Bars 151 to 155
 		b4 r e8\f-. fis-.
 		dis4 r r
@@ -190,7 +196,7 @@ musicFloteIMvtI = \relative c'' {
 			r4 r a,\p\repeatTie
 		}
 		{
-			b8(^\ppsempremoltotranquillo d fis2)~
+			b8(_\ppsempremoltotranquillo d fis2)~
 			fis2.~
 			fis~
 			fis
@@ -549,14 +555,15 @@ musicFloteIMvtI = \relative c'' {
 	fis2( e8 d)
 % Bars 526 to 530
 	d2\p r4
-	R2.*5
+	R2.*10
 % Bars 531 to 535
 	
-	R2.*6
+	
 % Bars 536 to 540
 	
-	
-	r4 cis4(\pp d8 e
+	\cueDuring #"cueVoiceFloteIMvtI" #UP {
+		\ni R2. \no
+	r4 } cis4(\pp d8 e
 	fis2.)~
 	fis~
 % Bars 541 to 545

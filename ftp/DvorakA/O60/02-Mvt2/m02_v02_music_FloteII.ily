@@ -9,16 +9,17 @@ musicFloteIIMvtII = \relative c''' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R2
-	R2*4
+	R2*17
+	
 % Bars 6 to 10
-	R2*12
+	
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
 	
-	r4 r8 g\mf
+	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
+		r4 r8 } g\mf
 	f4 bes\fz~
 	bes4(_\dimmarkup a
 % Bars 21 to 25
@@ -45,19 +46,18 @@ musicFloteIIMvtII = \relative c''' {
 	d d 
 	d d
 % Bars 41 to 45
-	R2
-	R
-	R2
-	R
-	R2*12
+	R2*16
+	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
 % Bars 56 to 60
 	
-	R2*2
-	
+	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
+		\ni R2
+		R \no
+	}
 	bes4\p r
 	bes_\dimmarkup r
 % Bars 61 to 65
@@ -69,19 +69,21 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*7
+	R2*11
 % Bars 76 to 80
 	
 	
 	
 	
-	R2*4
+	
 % Bars 81 to 85
 	
 	
 	
-	R2*2
-	
+	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
+		\ni \clef bass \mmrPos #-6 R2
+		\mmrPos #-6 R \no \clef treble
+	}
 % Bars 86 to 90
 	r8 g'\p\< g g
 	bes2\f

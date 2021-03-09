@@ -48,7 +48,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 31 to 35
 		c'8-. d-. ees-. ees-. d-. c-.
 		d4-. g,-. r
-		f'8\<-. g-. aes-. aes-. g-. f-. 
+		f'8\<-. g-. aes-. aes-. g-. f-.
 		a!\fz r c,4-. f-.\fz
 		c-. a'-.\fz c,-.
 % Bars 36 to 40

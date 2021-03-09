@@ -41,11 +41,11 @@ musicFloteIIMvtI = \relative c' {
 		a'!4\f-. f-. b-.\fz
 		f-. c'\fz-. f,-. 
 % Bars 36 to 40
-		d'\fz-. g,-. e'-. 
+		d'\fz-. g,-. e'-.\fz
 		f,8-. g-. aes-. aes-. g-. f-. 
-		a!4->-.\fz f-. b-. 
+		a!4->-.\fz f-. b-.\fz
 		f-. c'-.\fz f,-.
-		d'-.\fz g,-. e'-.
+		d'-.\fz g,-. e'-.\fz
 % Bars 41 to 45
 		g,-. e'-.\fz g,-.
 		e'-.\fz g,-. e'-.\fz
@@ -75,14 +75,20 @@ musicFloteIIMvtI = \relative c' {
 		d4\! b) g8(\< a
 		d4\! b) g8( a
 		d4-.) r r
-		R2.*13
+		R2.*10
 % Bars 66 to 70
 	
 % Bars 71 to 75
-	
+		
+		
+		
+		
+		\cueDuring #"cueVoiceFloteIIMvtI" #UP {
+			\ni R2.
 % Bars 76 to 80
-		
-		
+			R
+			R \no
+		}
 		r4 r8 b8-.\p cis-. d-.
 		e4-- r8 ais,-. b-. cis-.
 		d4-- r8 gis,-. ais-. b-.
@@ -101,7 +107,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*30
+		R2.*28
 % Bars 111 to 115
 	
 % Bars 116 to 120
@@ -113,8 +119,10 @@ musicFloteIIMvtI = \relative c' {
 % Bars 131 to 135
 	
 % Bars 136 to 140
-		
-		
+		\cueDuring #"cueVoiceFloteIIMvtI" #UP {
+			\ni R2.
+			R \no
+		}
 		r4 f,8\f-. ges-. aes4->
 		aes8(_\crescmarkup bes ces c des ces) \mark \default
 		bes\f r r4 e!(->
@@ -177,7 +185,7 @@ musicFloteIIMvtI = \relative c' {
 			
 		}
 	}
-	R2.*33
+	R2.*31
 % Bars 186 to 190
 	
 % Bars 191 to 195
@@ -191,8 +199,10 @@ musicFloteIIMvtI = \relative c' {
 % Bars 211 to 215
 	
 	
-	
-	\mark \default
+	\cueDuring #"cueVoiceFloteIIMvtI" #UP {
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R \no \mark \default
+	}
 	c''2.\pp~
 % Bars 216 to 220
 	c~
@@ -375,7 +385,7 @@ musicFloteIIMvtI = \relative c' {
 	
 	r4 r cis\pp \mark \default
 % Bars 401 to 405
-	R2.*30
+	R2.*28
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -386,6 +396,12 @@ musicFloteIIMvtI = \relative c' {
 	
 % Bars 426 to 430
 	
+	
+	
+	\cueDuring #"cueVoiceFloteIIMvtI" #UP {
+		\ni R2.
+		R \no
+	}
 % Bars 431 to 435
 	r4 gis8\mf-. a-. b4->
 	b8(\< cis d dis e d)
@@ -489,14 +505,16 @@ musicFloteIIMvtI = \relative c' {
 	d2( a8 fis)
 % Bars 526 to 530
 	fis2\p r4
-	R2.*13
+	R2.*11
 % Bars 531 to 535
 	
 % Bars 536 to 540
 	
 	
-	
-	
+	\cueDuring #"cueVoiceFloteIIMvtI" #UP {
+		\ni R2.
+		R \no
+	}
 	d'2.\pp--
 % Bars 541 to 545
 	d--

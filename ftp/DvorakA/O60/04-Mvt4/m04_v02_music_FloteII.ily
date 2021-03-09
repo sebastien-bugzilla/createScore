@@ -14,17 +14,18 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 6 to 10
 	
 	
-	R1
-	r2 r4 d(\p
+	\cueDuring #"cueVoiceFloteIIMvtIV" #UP {
+		\ni R1 \no
+	r2 r4 } d(\p
 	cis a'2 b4)
 % Bars 11 to 15
 	e,4.( e8 e4 d)
 	cis4( a2.)
 	e'4. e8 e2~
 	e4 r r2
-	R1
+	R1*19
 % Bars 16 to 20
-	R1*18
+	
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -260,7 +261,9 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	R1
+	\cueDuring #"cueVoiceFloteIIMvtIV" #UP {
+		\ni R1 \no
+	}
 % Bars 266 to 270
 	d,1\fz~
 	d2.. d8\fz~
@@ -327,9 +330,10 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	R1
+	\cueDuring #"cueVoiceFloteIIMvtIV" #UP {
+		\ni R1 \no
 % Bars 326 to 330
-	r2 r4 c\p(
+	r2 r4 } c\p(
 	b g'2 a4)
 	d,4.( d8 d4 c
 	b g2.)

@@ -64,6 +64,7 @@ pptranquillo=^\markup {\dynamic pp \italic tranquillo}
 ffpesante=^\markup {\dynamic ff \italic pesante}
 tranquillo=^\markup {\italic tranquillo}
 ffz=^\markup {\dynamic ffz}
+
 % function
 mmrPos = #(define-music-function
 	(position)
@@ -115,4 +116,13 @@ mmrPosRevert = #(define-music-function
 		)
 		default-script-alist)
 )
+
+no = {
+	\undo \omit MultiMeasureRestNumber
+}
+
+
+ni = {
+	\omit MultiMeasureRestNumber
+}
 

@@ -12,14 +12,17 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_FloteI.ily"
 \include "./01-Mvt1/m01_v02_music_FloteII.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI.ily"
@@ -63,9 +66,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameFloteIMvtI \musicFloteIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -77,6 +83,10 @@
 			\context {
 				\CueVoice \layoutCueVoice
 			}
+%			\context {
+%				\Score 
+%				scriptDefinitions = #my-script-alist
+%			}
 		}
 	}
 	\score {
@@ -85,8 +95,11 @@
 				\formatFloteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameFloteIMvtII \musicFloteIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -113,6 +126,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameFloteIMvtIII \musicFloteIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -137,6 +153,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameFloteIMvtIV \musicFloteIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -163,9 +182,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameFloteIIMvtI \musicFloteIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -185,8 +207,11 @@
 				\formatFloteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameFloteIIMvtII \musicFloteIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -213,6 +238,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameFloteIIMvtIII \musicFloteIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -237,6 +265,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameFloteIIMvtIV \musicFloteIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
