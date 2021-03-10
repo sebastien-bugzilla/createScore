@@ -578,14 +578,16 @@ musicKlarinetteIMvtI = \relative c'' {
 % Bars 526 to 530
 	a2( g8_\dimmarkup f)
 	f2 r4
-	R2.*11
+	R2.*9
 % Bars 531 to 535
 	
 % Bars 536 to 540
 	
 	
-	
-	
+	\cueDuring #"cueVoiceKlarinetteIMvtI" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+	}
 	f2.\pp--
 % Bars 541 to 545
 	f--

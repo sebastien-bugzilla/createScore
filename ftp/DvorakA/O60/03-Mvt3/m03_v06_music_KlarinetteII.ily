@@ -260,7 +260,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	R2.
 	R2.*2
 	
-	R2.*24
+	R2.*20
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -269,10 +269,16 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 % Bars 221 to 225
 	
+	
+	
+	
+	\cueDuring #"cueVoiceKlarinetteIIMvtIII" #DOWN {
+		\ni \mmrPos #-4 R2.
 % Bars 226 to 230
-	
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+	}
 	a,4( d f
 	a d f~
 % Bars 231 to 235

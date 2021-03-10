@@ -229,12 +229,14 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	R2.*6
+	R2.*4
 % Bars 196 to 200
 	
 	
-	
-	
+	\cueDuring #"cueVoiceKlarinetteIIMvtI" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+	}
 	aes'2(_\mfp g8 f)
 % Bars 201 to 205
 	f2(\> ees8 d)
@@ -255,9 +257,15 @@ musicKlarinetteIIMvtI = \relative c'' {
 	d ees d \mark \default
 	ees) r r
 % Bars 216 to 220
-	R2.*10
+	R2.*9
 % Bars 221 to 225
 	
+	
+	
+	
+	\cueDuring #"cueVoiceKlarinetteIIMvtI" #UP {
+		\ni R2. \no
+	}
 % Bars 226 to 230
 	r4 d'(\p c8 b)
 	R2.*2
@@ -574,14 +582,16 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 526 to 530
 	f2( c8_\dimmarkup a)
 	a2 r4
-	R2.*11
+	R2.*9
 % Bars 531 to 535
 	
 % Bars 536 to 540
 	
 	
-	
-	
+	\cueDuring #"cueVoiceKlarinetteIIMvtI" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+	}
 	c2.\pp--
 % Bars 541 to 545
 	c--

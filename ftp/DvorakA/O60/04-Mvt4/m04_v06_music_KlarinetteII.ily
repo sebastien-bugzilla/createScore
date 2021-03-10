@@ -14,7 +14,9 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 6 to 10
 	
 	
-	R1
+	\cueDuring #"cueVoiceKlarinetteIIMvtIV" #UP {
+		\ni R1 \no
+	}
 	g4(\p f e d)
 	e( g' fis f)
 % Bars 11 to 15

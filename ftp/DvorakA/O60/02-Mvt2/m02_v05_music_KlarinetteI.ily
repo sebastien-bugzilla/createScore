@@ -9,8 +9,9 @@ musicKlarinetteIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2
-	r8 c(\p b e)~
+	\cueDuring #"cueVoiceKlarinetteIMvtII" #DOWN {
+		\ni R2 \no
+	r8 } c(\p b e)~
 	e4.(\< fis8\!
 	g2)\fp~\>
 	g8\pp r e4(~

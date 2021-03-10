@@ -12,14 +12,17 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v05_music_KlarinetteI.ily"
 \include "./01-Mvt1/m01_v06_music_KlarinetteII.ily"
 \include "./02-Mvt2/m02_v05_music_KlarinetteI.ily"
@@ -34,7 +37,7 @@
 \addQuote "cueVoiceKlarinetteIMvtI" { \cueVoiceKlarinetteIMvtI }
 \addQuote "cueVoiceKlarinetteIMvtII" { \cueVoiceKlarinetteIMvtII }
 \addQuote "cueVoiceKlarinetteIMvtIII" { \cueVoiceKlarinetteIMvtIII }
-\addQuote "cueVoiceKlarinetteIMvtIV" { \cueVoiceKlarinetteIMvtIV }
+%\addQuote "cueVoiceKlarinetteIMvtIV" { \cueVoiceKlarinetteIMvtIV }
 \addQuote "cueVoiceKlarinetteIIMvtI" { \cueVoiceKlarinetteIIMvtI }
 \addQuote "cueVoiceKlarinetteIIMvtII" { \cueVoiceKlarinetteIIMvtII }
 \addQuote "cueVoiceKlarinetteIIMvtIII" { \cueVoiceKlarinetteIIMvtIII }
@@ -63,9 +66,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameKlarinetteIMvtI \musicKlarinetteIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -85,8 +91,11 @@
 				\formatKlarinetteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameKlarinetteIMvtII \musicKlarinetteIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -113,6 +122,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameKlarinetteIMvtIII \musicKlarinetteIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -137,6 +149,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameKlarinetteIMvtIV \musicKlarinetteIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -163,9 +178,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameKlarinetteIIMvtI \musicKlarinetteIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -185,8 +203,11 @@
 				\formatKlarinetteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameKlarinetteIIMvtII \musicKlarinetteIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -213,6 +234,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameKlarinetteIIMvtIII \musicKlarinetteIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -237,6 +261,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameKlarinetteIIMvtIV \musicKlarinetteIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

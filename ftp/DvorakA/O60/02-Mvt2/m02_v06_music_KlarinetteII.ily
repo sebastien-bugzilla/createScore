@@ -17,12 +17,18 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 6 to 10
 	
 	
-	R2*10
+	R2*7
 % Bars 11 to 15
 	
+	
+	
+	
+	\cueDuring #"cueVoiceKlarinetteIIMvtII" #UP {
+		\ni \mmrPos #4 R2
 % Bars 16 to 20
-	
-	
+		\mmrPos #4 R
+		\mmrPos #4 R \no
+	}
 	r8 b\p\<-- c-- c--
 	c2\fz_\dimmarkup
 	a4( g~
@@ -58,16 +64,18 @@ musicKlarinetteIIMvtII = \relative c'' {
 	R2*2
 % Bars 46 to 50
 	
-	R2*9
+	R2*6
 	
 	
 	
 % Bars 51 to 55
 	
 	
-	
-	
-	
+	\cueDuring #"cueVoiceKlarinetteIIMvtII" #UP {
+		\ni R2
+		R
+		R \no
+	}
 % Bars 56 to 60
 	r8 a(\p gis4
 	a2)\<~
