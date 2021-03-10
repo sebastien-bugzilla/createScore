@@ -216,10 +216,10 @@ musicOboeIMvtIII = \relative c''' {
 		g(\<
 		fis)\! \partcombineAutomatic
 % Bars 181 to 185
-		bes\f~
+		bes\f\>~
 		bes~
 		bes~
-		bes2 r4
+		bes2\! r4
 		R2.*16
 % Bars 186 to 190
 	

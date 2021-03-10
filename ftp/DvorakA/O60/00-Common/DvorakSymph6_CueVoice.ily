@@ -138,30 +138,81 @@ cueVoiceFloteIIMvtIV = \relative c {
 %###############################################################################
 %#                    C U E   V O I C E   F O R   O B O E N                    #
 %###############################################################################
-cueVoiceOboeIMvtI = \relative c {
-	
-}
+%cueVoiceOboeIMvtI = \relative c {
+%	no CueVoice for MVT I
+%}
 cueVoiceOboeIMvtII = \relative c {
-	
+	% bar 1
+	r8_\markup {Hob.II} f' d g
 }
 cueVoiceOboeIMvtIII = \relative c {
-	
+	R2.*264
+	% bar 264
+	fis''4(^\markup {Fl.I} a d
+	c2.
+	b4 a g 
+	fis g e)
 }
-cueVoiceOboeIMvtIV = \relative c {
-	
-}
+%cueVoiceOboeIMvtIV = \relative c {
+%	no CueVoice for MVT IV
+%}
 cueVoiceOboeIIMvtI = \relative c {
-	
+	R2.*121
+	% bar 122 - 125
+	b''8(^\markup {Hob.I} dis fis4 e
+	dis2 cis4)
+	b8( dis fis4 e
+	dis2 cis4)
+	R2.*53
+	% bar 179 - 182
+	a'2.^~^\markup {Ob.I}
+	a^~
+	a^~
+	a4. fis8^( g a)
+	R2.*24
+	% bar 193 - 194
+	r4^\markup {Hob.I} r a,
+	d4. d8 d4
+	R2.*220
+	% bar 415 - 418
+	d8(^\markup {Hob.I} fis a4 g)
+	fis2( e4)
+	d8( fis a4 g)
+	fis2( e4)
+	R2.*60
+	% bar 479 - 480
+	a4^\markup {Hob.I} d, g
+	c, fis b,
 }
 cueVoiceOboeIIMvtII = \relative c {
-	
+	R2*83
+	% bar 84 - 85
+	f,8^\markup {Fag.} f' f, f'
+	f, f' f, fis'
+	R2*110
+	% bar 196 - 197
+	r8 f''\pp^\markup {Hob.I} d g~
+	g4. f8~
+	f r r4
 }
 cueVoiceOboeIIMvtIII = \relative c {
-	
+	R2.*177
+	% bar 177 - 180
+	g'''2.(^\markup {Hob.I}
+	fis)
+	g(
+	fis)
+	R2.*36
+	% bar 217 - 221
+	d,2._(^\markup {Hob.I}
+	cis)
+	d_(
+	cis)_(
+	d4) e\rest e\rest
 }
-cueVoiceOboeIIMvtIV = \relative c {
-	
-}
+%cueVoiceOboeIIMvtIV = \relative c {
+%	No cue voice for Mvt IV
+%}
 %###############################################################################
 %#              C U E   V O I C E   F O R   K L A R I N E T T E N              #
 %###############################################################################

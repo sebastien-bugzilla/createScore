@@ -9,7 +9,9 @@ musicOboeIMvtII = \relative c'' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R2
+	\cueDuring #"cueVoiceOboeIMvtII" #DOWN { 
+		\ni R2 \no 
+	}
 	r8 bes(\p a4
 	bes2)~\<
 	bes8\fp( d bes\> c

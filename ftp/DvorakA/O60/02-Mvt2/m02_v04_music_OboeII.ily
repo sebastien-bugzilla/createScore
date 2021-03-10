@@ -96,9 +96,15 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	R2*6
+	R2*4
 % Bars 81 to 85
 	
+	
+	
+	\cueDuring #"cueVoiceOboeIIMvtII" #UP {
+		\ni \clef bass \mmrPos #-8 R2
+		\mmrPos #-8 R \no \clef treble
+	}
 % Bars 86 to 90
 	r8 bes16(\p\< a) a( g) g8
 	bes2\f
@@ -226,9 +232,10 @@ musicOboeIIMvtII = \relative c' {
 % Bars 191 to 195
 	R2*5
 % Bars 196 to 200
-	R2*2
-	
-	r8 f'\ff-! d-! g-!
+	\cueDuring #"cueVoiceOboeIIMvtII" #UP {
+		\ni R2
+		R \no
+	r8 } f'\ff-! d-! g-!
 	ees-! c-! a-! d-^
 	d-^ r f,4\fp(
 % Bars 201 to 205

@@ -123,13 +123,19 @@ musicOboeIIMvtI = \relative c' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*18
+		R2.*14
 % Bars 111 to 115
 		
 % Bars 116 to 120
 		
 % Bars 121 to 125
 		
+		\cueDuring #"cueVoiceOboeIIMvtI" #UP {
+			\ni R2.
+			R
+			R
+			R \no
+		}
 % Bars 126 to 130
 		fis2.\p~
 		fis
@@ -191,10 +197,15 @@ musicOboeIIMvtI = \relative c' {
 	}
 	\alternative {
 		{
-			R2.*6
+			R2.*2
+			
+			\cueDuring #"cueVoiceOboeIIMvtI" #DOWN {
+				\ni \mmrPos #-2 R2.
+				\mmrPos #-2 R
 % Bars 181 to 185
-			
-			
+				\mmrPos #-2 R
+				\mmrPos #-2 R \no
+			}
 			a2.\pp~
 			a~
 			a~
@@ -221,12 +232,14 @@ musicOboeIIMvtI = \relative c' {
 	b~
 	b(
 	a4) r r
-	R2.*5
+	R2.*3
 % Bars 191 to 195
 	
 	
-	
-	
+	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
+		\ni R2.
+		R \no
+	}
 	a4\p\<( d f)
 % Bars 196 to 200
 	f2(\! e8 d)
@@ -445,20 +458,26 @@ musicOboeIIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 401 to 405
-	R2.*18
+	R2.*14
 % Bars 406 to 410
 	
 % Bars 411 to 415
 	
+	
+	
+	
+	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
+		\ni R2.
 % Bars 416 to 420
-	
-	
-	
+		R
+		R
+		R \no
+	}
 	a2.~\pp
 	a~
 % Bars 421 to 425
 	a~\<
-	a2\> ais4)\!
+	a2\> ais4\!
 	b r r
 	R2.
 	r4 r gis(\p\<
@@ -512,11 +531,17 @@ musicOboeIIMvtI = \relative c' {
 	d->
 % Bars 466 to 470
 	a4 r r
-	R2.*14
+	R2.*12
 % Bars 471 to 475
 	
 % Bars 476 to 480
 	
+	
+	
+	\cueDuring #"cueVoiceOboeIIMvtI" #UP {
+		\ni R2.
+		R \no
+	}
 % Bars 481 to 485
 	g2.\f~->
 	g

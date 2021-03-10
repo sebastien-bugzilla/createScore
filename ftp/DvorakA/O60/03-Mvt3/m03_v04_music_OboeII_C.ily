@@ -216,10 +216,10 @@ musicOboeIIMvtIII = \relative c'' {
 		
 		
 % Bars 181 to 185
-		d'2.\f~
+		d'2.\f\>~
 		d~
 		d~
-		d2 r4
+		d2\! r4
 		R2.*16
 % Bars 186 to 190
 	

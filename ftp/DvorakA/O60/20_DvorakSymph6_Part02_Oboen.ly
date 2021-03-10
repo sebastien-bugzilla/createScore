@@ -12,14 +12,17 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part02_Oboen.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./01-Mvt1/m01_v04_music_OboeII.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI.ily"
@@ -31,14 +34,14 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
+%\addQuote "cueVoiceOboeIMvtI" { \cueVoiceOboeIMvtI }
 \addQuote "cueVoiceOboeIMvtII" { \cueVoiceOboeIMvtII }
 \addQuote "cueVoiceOboeIMvtIII" { \cueVoiceOboeIMvtIII }
-\addQuote "cueVoiceOboeIMvtIV" { \cueVoiceOboeIMvtIV }
+%\addQuote "cueVoiceOboeIMvtIV" { \cueVoiceOboeIMvtIV }
 \addQuote "cueVoiceOboeIIMvtI" { \cueVoiceOboeIIMvtI }
 \addQuote "cueVoiceOboeIIMvtII" { \cueVoiceOboeIIMvtII }
 \addQuote "cueVoiceOboeIIMvtIII" { \cueVoiceOboeIIMvtIII }
-\addQuote "cueVoiceOboeIIMvtIV" { \cueVoiceOboeIIMvtIV }
+%\addQuote "cueVoiceOboeIIMvtIV" { \cueVoiceOboeIIMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -63,9 +66,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIMvtI \musicOboeIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -85,8 +91,11 @@
 				\formatOboeIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameOboeIMvtII \musicOboeIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -113,6 +122,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIMvtIII \musicOboeIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -137,6 +149,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameOboeIMvtIV \musicOboeIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -163,9 +178,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameOboeIIMvtI \musicOboeIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -185,8 +203,11 @@
 				\formatOboeIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameOboeIIMvtII \musicOboeIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -213,6 +234,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -237,6 +261,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameOboeIIMvtIV \musicOboeIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

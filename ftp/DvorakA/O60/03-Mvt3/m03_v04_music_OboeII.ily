@@ -208,18 +208,20 @@ musicOboeIIMvtIII = \relative c'' {
 		
 		
 		R2.
-		R2.*6
+		R2.*2
 % Bars 176 to 180
 		
-		
-		
-		
-		
+		\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
+			\ni R2.
+			R
+			R
+			R \no
+		}
 % Bars 181 to 185
-		d'2.\f~
+		d'2.\f\>~
 		d~
 		d~
-		d2 r4
+		d2\! r4
 		R2.*16
 % Bars 186 to 190
 	
@@ -240,7 +242,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 206 to 210
 	
-	R2.*15
+	R2.*10
 	
 	
 	
@@ -252,12 +254,14 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 216 to 220
 	
-	
-	
-	
-	
+	\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R
 % Bars 221 to 225
-	
+		\mmrPos #4 R \no
+	}
 	fis,4(\pp g8 e fis4)
 	R2.*6
 % Bars 226 to 230
