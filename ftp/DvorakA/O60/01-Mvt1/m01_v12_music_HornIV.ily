@@ -78,7 +78,7 @@ musicHornIVMvtI = \relative c' {
 		ees2-> c8-. d-.
 		ees2-> c8-. d-.
 		ees4-. r r
-		R2.*18
+		R2.*16
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -86,8 +86,10 @@ musicHornIVMvtI = \relative c' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		
-		
+		\cueDuring #"cueVoiceHornIVMvtI" #DOWN {
+			\ni \mmrPos #-2 R2.
+			\mmrPos #-2 R \no
+		}
 		r4 a,\pp r
 		r g r
 		R2.*2
@@ -235,7 +237,7 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*26
+	R2.*24
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -246,6 +248,12 @@ musicHornIVMvtI = \relative c' {
 	
 % Bars 236 to 240
 	
+	
+	
+	\cueDuring #"cueVoiceHornIVMvtI" #UP {
+		\ni R2. \no
+	}
+	R2.
 % Bars 241 to 245
 	a'4_\fmarc-> r8 c-! bes-! a-!
 	g4-.-> r bes->-.
@@ -367,8 +375,10 @@ musicHornIVMvtI = \relative c' {
 % Bars 386 to 390
 	
 	
-	R2.*2
-	
+	\cueDuring #"cueVoiceHornIVMvtI" #UP {
+		\ni R2.
+		R \no
+	}
 	ees''2(\fz des8 ces
 % Bars 391 to 395
 	bes4) r r
@@ -458,16 +468,18 @@ musicHornIVMvtI = \relative c' {
 	R2.
 	e4. r8 r4
 	e4. r8 r4 \mark #11
-	R2.*15
+	R2.*12
 % Bars 496 to 500
 	
 % Bars 501 to 505
 	
 % Bars 506 to 510
 	
-	
-	
-	
+	\cueDuring #"cueVoiceHornIVMvtI" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+	}
 	r4 d-._\fmarc f-.
 % Bars 511 to 515
 	bes-. d,-. f-.

@@ -8,9 +8,11 @@ musicFagottIIMvtIV = \relative c {
 	\clef bass
 	\key d \major
 %	\transposition a
-	\partial 4 r4
+	\cueDuring #"cueVoiceFagottIIMvtIV" #UP {
+		\partial 4 r4
 % Bars 1 to 5
-	R1
+		\ni R1 \no
+	}
 	r2 r4 e(\p
 	d fis a g
 	fis e fis) g(
@@ -364,13 +366,15 @@ musicFagottIIMvtIV = \relative c {
 	a4\p r r2
 	R1*2
 	
-	R1*10
+	R1*8
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
-	
-	
+	\cueDuring #"cueVoiceFagottIIMvtIV" #UP {
+		\ni R1
+		R \no
+	}
 	r2 r4 e'(_\pptranquillo
 	d fis a g
 % Bars 321 to 325

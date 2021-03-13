@@ -178,7 +178,7 @@ musicHornIMvtIII = \relative c'' {
 	e
 	e \bar "||" \key c \major
 	\repeat volta 2 {
-		R2.*28
+		R2.*22
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -186,9 +186,19 @@ musicHornIMvtIII = \relative c'' {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	
+		
+		
+		
+		
+		\cueDuring #"cueVoiceHornIMvtIII" #DOWN {
+			\ni \mmrPos #-4 R2.
 % Bars 176 to 180
-	
+			\mmrPos #-4 R
+			\mmrPos #-4 R
+			\mmrPos #-4 R
+			\mmrPos #-4 R
+			\mmrPos #-4 R \no
+		}
 % Bars 181 to 185
 		f!2.\f~
 		f~\>
@@ -214,7 +224,7 @@ musicHornIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	R2.*55
+	R2.*51
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -235,6 +245,12 @@ musicHornIMvtIII = \relative c'' {
 	
 % Bars 251 to 255
 	
+	\cueDuring #"cueVoiceHornIMvtIII" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+	}
 % Bars 256 to 260
 	a,4\pp r a'
 	a,\< r a'

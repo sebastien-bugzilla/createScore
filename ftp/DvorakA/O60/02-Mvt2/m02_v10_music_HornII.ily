@@ -9,9 +9,11 @@ musicHornIIMvtII = \relative c'' {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2*3
+	R2*2
 	
-	
+	\cueDuring #"cueVoiceHornIIMvtII" #UP {
+		\ni \clef bass R2 \clef treble \no
+	}
 	a4\fp\> g(
 	f8)\pp r r4
 % Bars 6 to 10
@@ -63,11 +65,17 @@ musicHornIIMvtII = \relative c'' {
 	f f8 f8~\!
 	f\pp r r4
 % Bars 56 to 60
-	R2*10
+	R2*9
 % Bars 61 to 65
 	
+	
+	
+	
+	\cueDuring #"cueVoiceHornIIMvtII" #UP {
+		\ni R2 \no
 % Bars 66 to 70
-	r4 r8. g16\f
+		r4 r8. g16\f
+	}
 	r8. g16_\dimmarkup r8. g16
 	r4 c,8\pp r
 	R2*4

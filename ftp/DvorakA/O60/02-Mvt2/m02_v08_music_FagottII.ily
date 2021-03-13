@@ -11,7 +11,9 @@ musicFagottIIMvtII = \relative c {
 % Bars 1 to 5
 	R2*2
 	
-	R2
+	\cueDuring #"cueVoiceFagottIIMvtII" #UP {
+		\ni R2 \no
+	}
 	f8\fp\>( f,4) f8(
 	bes8)\pp r r4
 % Bars 6 to 10

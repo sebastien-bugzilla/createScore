@@ -214,7 +214,7 @@ musicHornIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	R2.*55
+	R2.*51
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -235,6 +235,12 @@ musicHornIIMvtIII = \relative c'' {
 	
 % Bars 251 to 255
 	
+	\cueDuring #"cueVoiceHornIIMvtIII" #DOWN {
+		\ni \mmrPos #-2 R2.
+		\mmrPos #-2 R
+		\mmrPos #-2 R
+		\mmrPos #-2 R \no
+	}
 % Bars 256 to 260
 	a,4\pp r a'
 	a,\< r a'

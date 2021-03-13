@@ -38,13 +38,19 @@ musicHornIIIMvtIII = \relative c'' {
 		c r r
 	}
 	\repeat volta 2 {
-		R2.*17
+		R2.*16
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
+		
+		
+		
+		
+		\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
+			\ni \mmrPos #-4 R2. \no
+		}
 % Bars 41 to 45
 		r4 b!-.\f\< c-.
 		g2->\ff c4-.
@@ -219,7 +225,7 @@ musicHornIIIMvtIII = \relative c'' {
 	c~
 	c~
 	c4 r r
-	R2.*46
+	R2.*42
 % Bars 211 to 215
 	
 % Bars 216 to 220
@@ -238,6 +244,12 @@ musicHornIIIMvtIII = \relative c'' {
 	
 % Bars 251 to 255
 	
+	\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
+		\ni \mmrPos #-2 \clef treble R2.
+		\mmrPos #-2 R
+		\mmrPos #-2 R
+		\mmrPos #-2 R \no \clef bass
+	}
 % Bars 256 to 260
 	c2.\p~
 	c~\<
@@ -288,7 +300,7 @@ musicHornIIIMvtIII = \relative c'' {
 	c-. c-. c-.
 % Bars 306 to 310
 	c r r \bar "||"
-	R2.*17
+	R2.*16
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -296,7 +308,9 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 321 to 325
 	
 	
-	
+	\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
+		\ni \mmrPos #-4 R2. \no
+	}
 	r4 b!-.\f\< c-.
 	g2\ff-> c4-.
 % Bars 326 to 330

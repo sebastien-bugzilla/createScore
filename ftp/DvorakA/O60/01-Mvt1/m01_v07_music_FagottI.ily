@@ -252,13 +252,19 @@ musicFagottIMvtI = \relative c {
 	r4 r b(\pp
 % Bars 186 to 190
 	fis'8) r fis r r4
-	R2.*15
+	R2.*13
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
-% Bars 201 to 205
 	
+	
+	
+	\cueDuring #"cueVoiceFagottIMvtI" #UP {
+		\ni \clef treble R2.
+% Bars 201 to 205
+		R \no
+	}
 	\clef tenor a2(\p\> g8 f)
 	f2(\< e8 d)\!
 	d2 r4

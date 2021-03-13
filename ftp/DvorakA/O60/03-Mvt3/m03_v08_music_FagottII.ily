@@ -246,11 +246,16 @@ musicFagottIIMvtIII = \relative c, {
 	
 % Bars 221 to 225
 	
-	R2.*7
+	R2.*3
+	
+	
+	\cueDuring #"cueVoiceFagottIIMvtIII" #DOWN {
+		\ni \clef treble \mmrPos #-4 R2.
 % Bars 226 to 230
-	
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef bass
+	}
 	b2\p r4
 	R2.
 % Bars 231 to 235

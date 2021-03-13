@@ -287,80 +287,276 @@ cueVoiceKlarinetteIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T E                  #
 %###############################################################################
 cueVoiceFagottIMvtI = \relative c {
-	
+	R2.*213
+	% bar 200 - 201
+	<f'' a>2(^\markup {Clar.} <e g>8 <d f>)
+	<d f>2( <c e>8 <b d>)
 }
-cueVoiceFagottIMvtII = \relative c {
-	
-}
+%cueVoiceFagottIMvtII = \relative c {
+%	no cue voice for Mvt II
+%}
 cueVoiceFagottIMvtIII = \relative c {
-	
+	R2.*185
+	% bar 185 - 192
+	g'''2(^\markup {Clar.} fis4
+	e2 d4
+	cis2 d4
+	e2 fis4)
+	g2( fis4
+	e2 d4
+	cis2 d4
+	e2 fis4)
 }
 cueVoiceFagottIMvtIV = \relative c {
-	
+	\partial 4 r4
+	R1*318
+	% bar 319 - 323
+	r2 r4^\markup {Fag.II} e(
+	d fis a g)
+	fis( e fis g
+	fis e fis g8 a)
+	b4 r r2
 }
 cueVoiceFagottIIMvtI = \relative c {
-	
+	R2.*213
+	% bar 200 - 201
+	<f'' a>2(^\markup {Clar.} <e g>8 <d f>)
+	<d f>2( <c e>8 <b d>)
 }
 cueVoiceFagottIIMvtII = \relative c {
-	
+	R2*2
+	% bar 3
+	r8^\markup {Fag.I} bes'( g c)
 }
 cueVoiceFagottIIMvtIII = \relative c {
-	
+	R2.*225
+	% bar 225 - 228
+	fis''4^(^\markup {Viol.} g8 e fis4
+	a b8 gis a4)
+	d^( e8 cis d4
+	d e8 cis d4)
 }
 cueVoiceFagottIIMvtIV = \relative c {
-	
+	\partial 4 a'4(^\markup {Bässe}
+	fis e d cis)
+	R1*315
+	% bar 317 - 318
+	r2 r4 a'(^\markup {C.B}
+	fis e d cis)
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   H O R N E R                   #
 %###############################################################################
 cueVoiceHornIMvtI = \relative c {
-	
+	\transposition d
+	R2.*80
+	% bar 81 - 82
+	<c''' e>4^\markup {Fl.} <c e> <b d>
+	<ais c> e\rest e\rest 
+	R2.*53
+	% bar 136 - 137
+	<b, b'>2.\p~^\markup {Hörner in E.}
+	q
+	R2.*113
+	% bar 237 - 238
+	bes''2^(^\markup {Viol.} aes8 g)
+	b!2^( a!8 gis)
+	R2.*139
+	% bar 378 - 379
+	bes4.^\markup {Viol.I} g8^.^( a^. bes^.)
+	bes4. g8^(^. a^. bes^.)
 }
 cueVoiceHornIMvtII = \relative c {
-	
+	\transposition f
+	R2*2
+	% bar 3
+	r8^\markup {Fag.} b'( g c)
+	R2*61
+	% bar 65-66
+	f'16^\markup {Clar.} e d g f e d g
+	f e d d' c b a g
 }
 cueVoiceHornIMvtIII = \relative c {
-	
+	\transposition f
+	R2.*175
+	% bar 175 - 180
+	d'''2.^\markup {Fl.}
+	d4^. e^. f^.
+	g2.
+	d4^( cis d)
+	g2.
+	d4^( e8 c d4)
+	R2.*71
+	% bar 252 - 255
+	b4^(^\markup {Viol.} c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
 }
 cueVoiceHornIMvtIV = \relative c {
-	
+	\transposition e
+	\partial 4 r4
+	R1*12
+	% bar 13 - 19
+	d''2\rest d4\rest e^(^\markup {Viol.}
+	a g f dis)
+	e8^( a gis f e f d e)
+	c4. c8 c4 b
+	a8^( a' gis f e f d e)
+	c4. c8 c4 b
+	a8^( a' gis f e f d e)
+	R1*310
+	% bar 330 - 333
+	r2^\markup {Viol.} r4 d_(
+	g f! e cis)
+	d8_( g fis e d e c! d)
+	b4. b8 b4_( a)
 }
 cueVoiceHornIIMvtI = \relative c {
-	
+	\transposition d
+	R2.*80
+	% bar 81 - 82
+	<c''' e>4^\markup {Fl.} <c e> <b d>
+	<ais c> f\rest f\rest
+	R2.*100
+	% bar 183_1 - 186_1
+	g,2.^\markup {Hn.I}~
+	g~
+	g~
+	g
+	R2.*64
+	% bar 237 - 238
+	bes'2(^\markup {Viol.} aes8 g)
+	b!2( a!8 gis)
 }
 cueVoiceHornIIMvtII = \relative c {
-	
+	\transposition f
+	R2*2
+	%  bar 3
+	r8 b'^\markup {Fag.} g c
+	R2*61
+	% bar 65 - 66
+	f'16^\markup {Clar.} e d g f e d g
+	f e d d' c b a g
 }
 cueVoiceHornIIMvtIII = \relative c {
-	
+	\transposition f
+	R2.*252
+	% bar 252 - 255
+	b'''4^(^\markup {Viol.} c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
 }
 cueVoiceHornIIMvtIV = \relative c {
-	
+	\transposition e
+	\partial 4 r4
+	R1*12
+	% bar 13 - 19
+	d''2\rest d4\rest e_(^\markup {Viol.}
+	a g f dis)
+	e8_( a gis f e f d e)
+	c4. c8 c4 b
+	a8_( a' gis f e f d e)
+	c4. c8 c4 b
+	a8_( a' gis f e f d e)
+	R1*310
+	% bar 330 - 333
+	r2^\markup {Viol.} r4 d_(
+	g f! e cis)
+	d8_( g fis e d e c! d)
+	b4. b8 b4_( a)
 }
 cueVoiceHornIIIMvtI = \relative c {
-	
+	\transposition e
+	R2.*80
+	% bar 81 - 82
+	<c''' e>4^\markup {Fl.} <c e> <b d>
+	<ais c> f\rest f\rest
+	R2.*170
+	% bar 239 - 240
+	<g, d'>4^\markup {Hörner in D.} r r
+	R2.
+	R2.*266
+	% bar 507 - 510
+	f'4^\markup {Viol.} f g
+	a b c 
+	d d e
+	f r r
 }
 cueVoiceHornIIIMvtII = \relative c {
-	
+	\transposition bes
+	R2*26
+	% bar 27 - 28
+	r8^\markup {Horn in F} g''4.~
+	g8 b4 b8
+	R2*37
+	% bar 66
+	f'16^\markup {Clar.} e d d' c b a g
 }
 cueVoiceHornIIIMvtIII = \relative c {
-	
+	\transposition d
+	R2.*39
+	% bar 40
+	<c'' e>2^\markup {F-Hörner} q4
+	R2.*212
+	% bar 252 - 255
+	b'4^(^\markup {Viol.} c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	R2.*67
+	% bar 323
+	<c, e>2^\markup {F-Hörner} q4
 }
-cueVoiceHornIIIMvtIV = \relative c {
-	
-}
+%cueVoiceHornIIIMvtIV = \relative c {
+%	no cue voice for mvt IV
+%}
 cueVoiceHornIVMvtI = \relative c {
-	
+	\transposition e
+	R2.*80
+	% bar 81 - 82
+	<c''' e>4^\markup {Fl.} q <b d>
+	<ais c> d,\rest d\rest
+	R2.*170
+	% bar 239
+	<g, d'>4^\markup {D-Hörner} r r
+	R2.*148
+	% bar 388 - 389
+	ges2.~^\markup {Horn III.}
+	ges4 r r
+	R2.*117
+	% bar 507 - 509
+	f'4^\markup {Viol.} f g
+	a b c 
+	d d e 
 }
 cueVoiceHornIVMvtII = \relative c {
-	
+	\transposition bes
+	R2*26
+	% bar 27 - 28
+	r8^\markup {F-Horn} g''4.~
+	g8 b4 b8
 }
 cueVoiceHornIVMvtIII = \relative c {
+	\transposition d
+	R2.*39
+	% bar 40
+	<c'' e>2^\markup {F-Hörner} q4
+	R2.*212
+	% bar 252 - 255
+	b'4^(^\markup {Viol.} c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	R2.*67
+	% bar 323
+	<c, e>2^\markup {F-Hörner} q4
 	
 }
-cueVoiceHornIVMvtIV = \relative c {
-	
-}
+%cueVoiceHornIVMvtIV = \relative c {
+%	no cue voice for mvt IV
+%}
 %###############################################################################
 %#                C U E   V O I C E   F O R   T R O M P E T E N                #
 %###############################################################################

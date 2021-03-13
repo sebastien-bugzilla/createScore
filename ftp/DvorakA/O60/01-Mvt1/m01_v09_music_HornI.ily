@@ -81,7 +81,7 @@ musicHornIMvtI = \relative c'' {
 		c2 c4\fz~
 		c2 c4-. 
 		c-. r r
-		R2.*18
+		R2.*16
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -89,8 +89,10 @@ musicHornIMvtI = \relative c'' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		
-		
+		\cueDuring #"cueVoiceHornIMvtI" #DOWN {
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R \no
+		}
 		r4 gis\pp r
 		r a r
 		R2.*10
@@ -122,7 +124,7 @@ musicHornIMvtI = \relative c'' {
 		r4 r d8(\p c
 		bes4\< d f)
 		c4.(\> bes8 a4)\!
-		R2.*24
+		R2.*22
 % Bars 116 to 120
 	
 % Bars 121 to 125
@@ -132,8 +134,10 @@ musicHornIMvtI = \relative c'' {
 % Bars 131 to 135
 	
 % Bars 136 to 140
-		
-		
+		\cueDuring #"cueVoiceHornIMvtI" #UP {
+			\ni \mmrPos #4 R2.
+			\mmrPos #4 R \no
+		}
 		b2.\f-^~
 		b4 r ees\f \mark \default
 		e!8-. r r4 r
@@ -223,7 +227,7 @@ musicHornIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R2.*24
+	R2.*22
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -234,8 +238,10 @@ musicHornIMvtI = \relative c'' {
 	
 % Bars 236 to 240
 	
-	
-	
+	\cueDuring #"cueVoiceHornIMvtI" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+	}
 	d4\f r r
 	R2.*3
 % Bars 241 to 245
@@ -345,7 +351,7 @@ musicHornIMvtI = \relative c'' {
 	g g2\fz \mark \default
 	g4-. r r
 % Bars 361 to 365
-	R2.*19
+	R2.*17
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -353,8 +359,10 @@ musicHornIMvtI = \relative c'' {
 % Bars 376 to 380
 	
 	
-	
-	
+	\cueDuring #"cueVoiceHornIMvtI" #DOWN {
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+	}
 	d4\f r r
 % Bars 381 to 385
 	d r r

@@ -10,16 +10,22 @@ musicHornIMvtIV = \relative c'' {
 	\transposition e
 	\partial 4 r4
 % Bars 1 to 5
-	R1*19
+	R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	\cueDuring #"cueVoiceHornIMvtIV" #DOWN {
+		\ni \mmrPos #-4 R1
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 16 to 20
-	
-	
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+	}
 	a4.\mf a8 a4-. d-.
 % Bars 21 to 25
 	c4.\< c8 c4-. b-.\!
@@ -320,7 +326,7 @@ musicHornIMvtIV = \relative c'' {
 	c~
 % Bars 306 to 310
 	c4\p r r2
-	R1*30
+	R1*23
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -329,7 +335,17 @@ musicHornIMvtIV = \relative c'' {
 	
 % Bars 326 to 330
 	
+	
+	
+	
+	\cueDuring #"cueVoiceHornIMvtIV" #UP {
+		\ni R1
 % Bars 331 to 335
+		R
+		R
+		R \no
+	}
+	R1*3
 	
 % Bars 336 to 340
 	

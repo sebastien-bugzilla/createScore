@@ -202,7 +202,7 @@ musicFagottIMvtIII = \relative c {
 	d \bar "||" \key d \major
 	\repeat volta 2 {
 		d'\fp
-		R2.*39
+		R2.*31
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -214,12 +214,22 @@ musicFagottIMvtIII = \relative c {
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		
+		
+		
+		
+		\cueDuring #"cueVoiceFagottIMvtIII" #UP {
+			\ni \clef treble R2.
 % Bars 186 to 190
-	
+			R
+			R
+			R
+			R
+			R
 % Bars 191 to 195
-		
-		
+			R
+			R \no \clef bass
+		}
 		d2(\pp e4
 		cis2 d4
 		b2 cis4

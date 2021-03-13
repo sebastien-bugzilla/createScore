@@ -12,14 +12,17 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v07_music_FagottI.ily"
 \include "./01-Mvt1/m01_v08_music_FagottII.ily"
 \include "./02-Mvt2/m02_v07_music_FagottI.ily"
@@ -32,7 +35,7 @@
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
 \addQuote "cueVoiceFagottIMvtI" { \cueVoiceFagottIMvtI }
-\addQuote "cueVoiceFagottIMvtII" { \cueVoiceFagottIMvtII }
+%\addQuote "cueVoiceFagottIMvtII" { \cueVoiceFagottIMvtII }
 \addQuote "cueVoiceFagottIMvtIII" { \cueVoiceFagottIMvtIII }
 \addQuote "cueVoiceFagottIMvtIV" { \cueVoiceFagottIMvtIV }
 \addQuote "cueVoiceFagottIIMvtI" { \cueVoiceFagottIIMvtI }
@@ -63,9 +66,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottIMvtI \musicFagottIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -85,8 +91,11 @@
 				\formatFagottIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameFagottIMvtII \musicFagottIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -113,6 +122,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottIMvtIII \musicFagottIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -137,6 +149,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameFagottIMvtIV \musicFagottIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -163,9 +178,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameFagottIIMvtI \musicFagottIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -185,8 +203,11 @@
 				\formatFagottIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameFagottIIMvtII \musicFagottIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -213,6 +234,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameFagottIIMvtIII \musicFagottIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -237,6 +261,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameFagottIIMvtIV \musicFagottIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

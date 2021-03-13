@@ -12,14 +12,17 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v09_music_HornI.ily"
 \include "./01-Mvt1/m01_v10_music_HornII.ily"
 \include "./01-Mvt1/m01_v11_music_HornIII.ily"
@@ -50,11 +53,11 @@
 \addQuote "cueVoiceHornIIIMvtI" { \cueVoiceHornIIIMvtI }
 \addQuote "cueVoiceHornIIIMvtII" { \cueVoiceHornIIIMvtII }
 \addQuote "cueVoiceHornIIIMvtIII" { \cueVoiceHornIIIMvtIII }
-\addQuote "cueVoiceHornIIIMvtIV" { \cueVoiceHornIIIMvtIV }
+%\addQuote "cueVoiceHornIIIMvtIV" { \cueVoiceHornIIIMvtIV }
 \addQuote "cueVoiceHornIVMvtI" { \cueVoiceHornIVMvtI }
 \addQuote "cueVoiceHornIVMvtII" { \cueVoiceHornIVMvtII }
 \addQuote "cueVoiceHornIVMvtIII" { \cueVoiceHornIVMvtIII }
-\addQuote "cueVoiceHornIVMvtIV" { \cueVoiceHornIVMvtIV }
+%\addQuote "cueVoiceHornIVMvtIV" { \cueVoiceHornIVMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -79,9 +82,12 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameHornIMvtI \musicHornIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -101,8 +107,11 @@
 				\formatHornIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameHornIMvtII \musicHornIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -181,7 +190,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -281,7 +290,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -381,7 +390,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4

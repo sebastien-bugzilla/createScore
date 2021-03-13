@@ -9,7 +9,7 @@ musicHornIIIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2*28
+	R2*26
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,8 +20,10 @@ musicHornIIIMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
-	
-	
+	\cueDuring #"cueVoiceHornIIIMvtII" #UP {
+		\ni R2
+		R \no
+	}
 	e16\fp e e e f f f f
 	e e e e f\< f f f
 % Bars 31 to 35
@@ -63,7 +65,9 @@ musicHornIIIMvtII = \relative c'' {
 	
 	
 % Bars 66 to 70
-	r4 r8. g,16\f
+	\cueDuring #"cueVoiceHornIIIMvtII" #UP {
+		r4 r8. g,16\f
+	}
 	r8. g16_\dimmarkup r8. g16
 	r4 f'8\pp r
 	r f r4

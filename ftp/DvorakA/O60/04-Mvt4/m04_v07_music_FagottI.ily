@@ -368,11 +368,13 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 	
-	R1*4
+	\cueDuring #"cueVoiceFagottIMvtIV" #UP {
+		\ni R1
+		R
 % Bars 321 to 325
-	
-	
-	r4 cis8(\p b e4 a,
+		R
+		R \no
+	r4 } cis8(\p b e4 a,
 	b gis a b
 	c b8 a d4 e8 c
 % Bars 326 to 330
