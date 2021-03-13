@@ -10,7 +10,7 @@ musicTrompeteIMvtIV = \relative c''' {
 	\transposition d
 	\partial 4 r4
 % Bars 1 to 5
-	R1*35
+	R1*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -21,8 +21,18 @@ musicTrompeteIMvtIV = \relative c''' {
 	
 % Bars 26 to 30
 	
-% Bars 31 to 35
 	
+	
+	
+	\cueDuring #"cueVoiceTrompeteIMvtIV" #UP {
+		\ni R1
+% Bars 31 to 35
+		R
+		R
+		R
+		R
+		R \no
+	}
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
@@ -272,7 +282,7 @@ musicTrompeteIMvtIV = \relative c''' {
 	d~
 % Bars 306 to 310
 	d4\p r r2
-	R1*37
+	R1*34
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -286,9 +296,11 @@ musicTrompeteIMvtIV = \relative c''' {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	
-	
-	
+	\cueDuring #"cueVoiceTrompeteIMvtIV" #UP {
+		\ni R1
+		R
+		R \no
+	}
 	r4 e'2.\f->~
 	e1~
 % Bars 346 to 350

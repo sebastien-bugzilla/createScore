@@ -100,18 +100,23 @@ musicTrompeteIIMvtI = \relative c'' {
 		
 		
 		\mark \default
-		R2.*19
+		R2.*12
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
 % Bars 151 to 155
-	
+		
+		\cueDuring #"cueVoiceTrompeteIIMvtI" #UP {
+			\ni R2.
+			R
+			R
+			R
 % Bars 156 to 160
-		
-		
-		
-		r4 r e\f~
+			R
+			R
+			R \no
+		r4 r } e\f~
 		e\< e-> e->
 % Bars 161 to 165
 		e2.\ff
@@ -163,7 +168,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R2.*24
+	R2.*22
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -174,8 +179,10 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 % Bars 236 to 240
 	
-	
-	
+	\cueDuring #"cueVoiceTrompeteIIMvtI" #UP {
+		\ni R2.
+		R \no
+	}
 	g4\f r r
 	R2.*25
 % Bars 241 to 245
@@ -191,11 +198,13 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R2.*4
+	R2.
 % Bars 266 to 270
-	
-	
-	
+	\cueDuring #"cueVoiceTrompeteIIMvtI" #UP {
+		\ni R2.
+		R
+		R \no
+	}
 	a2.\f
 	R2.
 % Bars 271 to 275
@@ -272,16 +281,21 @@ musicTrompeteIIMvtI = \relative c'' {
 	d g,2\fz \mark \default
 	g4-. r r
 % Bars 361 to 365
-	R2.*21
+	R2.*17
 % Bars 366 to 370
 	
 % Bars 371 to 375
 	
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
-	r4 r r8 g\f
+	\cueDuring #"cueVoiceTrompeteIIMvtI" #UP {
+		\ni R2.
+		R
+		R
+% Bars 381 to 385
+		R \no
+	r4 r r8 } g\f
 	c4 r r
 	R2.*17
 % Bars 386 to 390
@@ -295,7 +309,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 	\mark \default
 % Bars 401 to 405
-	R2.*31
+	R2.*28
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -306,10 +320,15 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
-	r4 r d,-.\f
-	g r c-.
+	
+	\cueDuring #"cueVoiceTrompeteIIMvtI" #UP {
+		\ni R2.
+		R
+% Bars 431 to 435
+		R \no
+	r4 r } d,-.\f
+	g-. r c-.
 	g-. r c-.
 	g-. r d'\<-.
 % Bars 436 to 440
@@ -412,7 +431,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	e2(\p d8 c)
 	c2( g8_\dimmarkup e)
 	e2 r4
-	R2.*16
+	R2.*15
 % Bars 531 to 535
 	
 % Bars 536 to 540
@@ -421,8 +440,9 @@ musicTrompeteIIMvtI = \relative c'' {
 	
 	
 	
-	
-	r4 r g->\f
+	\cueDuring #"cueVoiceTrompeteIIMvtI" #UP {
+		\ni R2. \no
+	r4 r } g->\f
 % Bar 546
 	e-> r r \bar "|."
 }

@@ -309,7 +309,7 @@ musicTrompeteIIMvtI = \relative c'' {
 % Bars 431 to 435
 	
 	r4 r d,-.\f
-	g r c-.
+	g-. r c-.
 	g-. r c-.
 	g-. r d'\<-.
 % Bars 436 to 440

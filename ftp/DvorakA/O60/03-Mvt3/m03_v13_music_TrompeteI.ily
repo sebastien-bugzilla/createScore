@@ -50,7 +50,7 @@ musicTrompeteIMvtIII = \relative c'' {
 		r4 g'-.\f\< g-.
 		g2->\ff c4-.
 		bes-. g2->
-		R2.*74
+		R2.*70
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -78,10 +78,16 @@ musicTrompeteIMvtIII = \relative c'' {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	
+		
+		
+		
+		\cueDuring #"cueVoiceTrompeteIMvtIII" #UP {
+			\ni R2.
+			R
 % Bars 116 to 120
-		
-		
+			R
+			R \no
+		}
 		g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g g g
@@ -153,7 +159,7 @@ musicTrompeteIMvtIII = \relative c'' {
 % Bars 196 to 200
 	}
 % Bars 201 to 205
-	R2.*55
+	R2.*51
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -174,6 +180,12 @@ musicTrompeteIMvtIII = \relative c'' {
 	
 % Bars 251 to 255
 	
+	\cueDuring #"cueVoiceTrompeteIMvtIII" #UP {
+		\ni R2.
+		R
+		R
+		R \no
+	}
 % Bars 256 to 260
 	r4 c\pp c
 	r c\< c
@@ -235,7 +247,7 @@ musicTrompeteIMvtIII = \relative c'' {
 	g2->\ff c4-.
 % Bars 326 to 330
 	bes4-. g2->
-	R2.*74
+	R2.*70
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -264,6 +276,12 @@ musicTrompeteIMvtIII = \relative c'' {
 	
 % Bars 396 to 400
 	
+	\cueDuring #"cueVoiceTrompeteIMvtIII" #UP {
+		\ni R2.
+		R
+		R
+		R \no
+	}
 % Bars 401 to 405
 	g4-._\fsemprecresc g-. g-.
 	g g g

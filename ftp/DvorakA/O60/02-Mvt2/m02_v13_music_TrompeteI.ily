@@ -52,15 +52,17 @@ musicTrompeteIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2*15
+	R2*12
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
 % Bars 101 to 105
-	
-	
-	
+	\cueDuring #"cueVoiceTrompeteIMvtII" #UP {
+		\ni R2
+		R
+		R \no
+	}
 	c2->\ff
 	d->
 % Bars 106 to 110
@@ -106,12 +108,15 @@ musicTrompeteIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2*6
+	\cueDuring #"cueVoiceTrompeteIMvtII" #UP {
+		\ni R2
+		R
 % Bars 171 to 175
-	
-	
-	
-	
+		R
+		R
+		R
+		R \no
+	}
 	r8 g4\mf\< g8~\!
 % Bars 176 to 180
 	g g4\f g8~

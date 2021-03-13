@@ -561,28 +561,190 @@ cueVoiceHornIVMvtIII = \relative c {
 %#                C U E   V O I C E   F O R   T R O M P E T E N                #
 %###############################################################################
 cueVoiceTrompeteIMvtI = \relative c {
-	
+	\transposition d
+	R2.*151
+	% bar 152 - 159
+	c'''!4-^^\markup {Viol.} c-^ a8 b
+	c!2.
+	c!4 c a8 b
+	c!2.:16
+	cis:
+	d2: dis4:
+	dis: e2:
+	eis2: r4
+	R2.*91
+	% bar 237 - 238
+	bes2(^\markup {Viol.} aes8 g)
+	b!2( a!8 gis)
+	R2.*27
+	% bar 266 - 268
+	b8-.^\markup {Viol.} f16_( g f8) b,-. b-. b'-.
+	b4 r r
+	b8-. g16_( a g8) e-. e-. e'-.
+	R2.*109
+	% bar 378 - 382
+	bes4.^\markup {Viol.} g8-.[ a-. bes-.]
+	bes4. g8-.[ a-. bes-.]
+	bes4 r8 g-.[ a-. bes-.]
+	bes4 r8 g-.[ a-. bes-.]
+	bes-.[ a-. g-. f-. e-.] r
+	R2.*46
+	% bar 429 - 432
+	b8^\markup {Viol.} d f4 gis8 ais
+	b cis d4 d8 dis
+	e2.:16
+	e2.:16
+	R2.*111
+	% bar 544 - 545
+	a,8^\markup {Viol.} f g a e4
+	d8 f a4 r
 }
 cueVoiceTrompeteIMvtII = \relative c {
-	
+	\transposition bes
+	R2*100
+	% bar 101 - 103
+	r8 c''(^\markup {Horner in F.} a des~
+	des4 c
+	bes g)
+	R2*65
+	% bar 169 - 174
+	a8^\markup {Horner in F.} a4 a8_~
+	a a_(\< bes b)\!
+	c a4\p a8_~
+	a a_(\< bes b)\!
+	c a4\p a8_~
+	a a_(\< bes b)\!
 }
 cueVoiceTrompeteIMvtIII = \relative c {
-	
+	\transposition d
+	R2.*113
+	% bar 114 - 117
+	ees''4^\markup {Hörner in F.} ees ees
+	ees ees ees
+	ees ees  ees
+	ees ees ees
+	R2.*135
+	% bar 252 - 255
+	b'4(^\markup {Viol.} c8 ais b4)
+	b( c8 ais b4)
+	b( c8 ais b4)
+	b( c8 ais b4)
+	R2.*141
+	% bar 397 - 400
+	ees,4^\markup {Hörner in F.} ees ees
+	ees ees ees
+	ees ees ees
+	ees ees ees
 }
 cueVoiceTrompeteIMvtIV = \relative c {
-	
+	\transposition d
+	\partial 4 r4
+	R1*29
+	% bar 30 - 35
+	e''8^\markup {Viol.} g, e e' e g, e e'
+	e g, e e' e g, e g'
+	g e g, g' g e g, g'
+	g e g, g' g e g, e''
+	e g, e e' e g, e g'
+	g e g, g' g e a, a'
+	R1*305
+	% bar 341 - 343
+	b,,1\fp^\markup {Hörner in D.} 
+	c\fp
+	d\fp
 }
 cueVoiceTrompeteIIMvtI = \relative c {
-	
+	\transposition d
+	R2.*151
+	% bar 152 - 159
+	c'''!4-^^\markup {Viol.} c-^ a8 b
+	c!2.
+	c!4 c a8 b
+	c!2.:16
+	cis:
+	d2: dis4:
+	dis: e2:
+	eis2: r4
+	R2.*91
+	% bar 237 - 238
+	bes2(^\markup {Viol.} aes8 g)
+	b!2( a!8 gis)
+	R2.*27
+	% bar 266 - 268
+	b8-.^\markup {Viol.} f16_( g f8) b,-. b-. b'-.
+	b4 r r
+	b8-. g16_( a g8) e-. e-. e'-.
+	R2.*109
+	% bar 378 - 382
+	bes4.^\markup {Viol.} g8-.[ a-. bes-.]
+	bes4. g8-.[ a-. bes-.]
+	bes4 r8 g-.[ a-. bes-.]
+	bes4 r8 g-.[ a-. bes-.]
+	bes-.[ a-. g-. f-. e-.] r
+	R2.*46
+	% bar 429 - 432
+	b8^\markup {Viol.} d f4 gis8 ais
+	b cis d4 d8 dis
+	e2.:16
+	e2.:16
+	R2.*111
+	% bar 544 - 545
+	a,8^\markup {Viol.} f g a e4
+	d8 f a4 r
 }
 cueVoiceTrompeteIIMvtII = \relative c {
-	
+	\transposition bes
+	R2*100
+	% bar 101 - 103
+	r8 c''(^\markup {Horner in F.} a des~
+	des4 c
+	bes g)
+	R2*65
+	% bar 169 - 174
+	a8^\markup {Horner in F.} a4 a8_~
+	a a_(^\< bes b)\!
+	c a4^\p a8_~
+	a a_(^\< bes b)\!
+	c a4^\p a8_~
+	a a_(^\< bes b)\!
 }
 cueVoiceTrompeteIIMvtIII = \relative c {
-	
+	\transposition d
+	R2.*113
+	% bar 114 - 117
+	ees''4^\markup {Hörner in F.} ees ees
+	ees ees ees
+	ees ees  ees
+	ees ees ees
+	R2.*135
+	% bar 252 - 255
+	b'4(^\markup {Viol.} c8 ais b4)
+	b( c8 ais b4)
+	b( c8 ais b4)
+	b( c8 ais b4)
+	R2.*141
+	% bar 397 - 400
+	ees,4^\markup {Hörner in F.} ees ees
+	ees ees ees
+	ees ees ees
+	ees ees ees
 }
 cueVoiceTrompeteIIMvtIV = \relative c {
-	
+	\transposition d
+	\partial 4 r4
+	R1*29
+	% bar 30 - 35
+	e''8^\markup {Viol.} g, e e' e g, e e'
+	e g, e e' e g, e g'
+	g e g, g' g e g, g'
+	g e g, g' g e g, e''
+	e g, e e' e g, e g'
+	g e g, g' g e a, a'
+	R1*305
+	% bar 341 - 343
+	b,,1\fp^\markup {Hörner in D.} 
+	c\fp
+	d\fp
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   P O S A U N E                  #
