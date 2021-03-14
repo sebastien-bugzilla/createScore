@@ -215,7 +215,7 @@ musicViolinIMvtIII = \relative c''' {
 % Bars 161 to 165
 		q r r 
 		q\pp r r
-		R2.*21
+		R2.*19
 % Bars 166 to 170
 	
 % Bars 171 to 175
@@ -224,9 +224,10 @@ musicViolinIMvtIII = \relative c''' {
 	
 % Bars 181 to 185
 		
-		
-		
-		r4 r a''8(\p^\arco a,
+		\cueDuring #"cueVoiceViolinIMvtIII" #DOWN {
+			\ni \clef bass R2.
+			\clef alto R \no
+		\clef treble r4 r } a''8(\p^\arco a,
 		g' fis g a, fis' a,
 % Bars 186 to 190
 		e' dis e a, d a)

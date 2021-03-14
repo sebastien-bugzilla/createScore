@@ -1062,16 +1062,56 @@ cueVoicePaukenMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   V I O L I N I                  #
 %###############################################################################
 cueVoiceViolinIMvtI = \relative c {
-	
+	% bar 1 - 5
+	<d fis a>8^\markup {Br.}\pp q4 q q8
+	q8 q4 q q8
+	q8 q4 q q8
+	q q4 q q8
+	q q4 q q8
+	R2.*206
+	% bar 198 - 199
+	b'4.\pp^\markup {Viol.II} b8 b4~
+	b( d fis!8 g)
+	R2.*59
+	% bar 259 - 265
+	r4^\markup {Clar.} r8 cis-. d-. e-.
+	e4.( fis8 e4)
+	<cis' e>4^\markup {Fl.} r8 <a cis>-. <b d>-. <cis e>-.
+	a4 r8 a b cis
+	e,4 r8 cis-.^\markup {Clar.} d-. e-.
+	fis4.( g8 fis4)
+	fis r r
 }
 cueVoiceViolinIMvtII = \relative c {
-	
+	R2*72
+	% bar 73 - 74
+	f'4^\markup {Br.} d8 g
+	ees c32 d c bes a8 d
+	R2*94
+	% bar 169 - 170
+	r8^\markup {Clar.} d'4( c16 bes)
+	bes8 r r4
 }
 cueVoiceViolinIMvtIII = \relative c {
-	
+	R2.*182
+	% bar 182 - 184
+	bes4^\pizz^\markup {Vcell.} e g
+	bes^\markup {Br.} d e
+	g^\markup {Viol.II} bes r
 }
 cueVoiceViolinIMvtIV = \relative c {
-	
+	\partial 4 r4
+	R1*252
+	% bar 253 - 255
+	f'2^\markup {Viol.II} r4 f
+	e2 r4 e
+	ees2 r
+	R1*58
+	% bar 314 - 317
+	f'2\rest f4\rest^\markup {Fl.} g'^(
+	e d cis b
+	e a, b fis
+	g e a) r
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   V I O L I N I I                 #

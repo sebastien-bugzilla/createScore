@@ -89,8 +89,10 @@ musicViolinIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*2
-	
+	\cueDuring #"cueVoiceViolinIMvtII" #DOWN {
+		\ni R2
+		R \no
+	}
 	r16 d,(\pp g\prall fis g a bes c)
 % Bars 76 to 80
 	d( g d c bes\< a g\> bes)
@@ -197,8 +199,9 @@ musicViolinIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	R2
-	r8 d,(\p\< ees e\!
+	\cueDuring #"cueVoiceViolinIMvtII" #DOWN {
+		\ni R2 \no
+	r8 } d,(\p\< ees e\!
 % Bars 171 to 175
 	f)\f r r4
 	r8 d(\p\< ees e\!

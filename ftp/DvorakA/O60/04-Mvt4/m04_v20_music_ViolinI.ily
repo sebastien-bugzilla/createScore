@@ -308,9 +308,10 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 251 to 255
 	
 	\mark \default
-	R1*2
-	
-	r2 r4 f-.\f
+	\cueDuring #"cueVoiceViolinIMvtIV" #DOWN {
+		\ni R1
+		R \no
+	r2 } r4 f-.\f
 % Bars 256 to 260
 	d-. c-. bes-. r
 	r2 r4 a'-.\f
@@ -378,10 +379,15 @@ musicViolinIMvtIV = \relative c''' {
 	g4) r8 b( e,4) r8 fis(
 	b,4) r r2
 % Bars 311 to 315
-	R1*6
-% Bars 316 to 320
+	R1*3
 	
-	r2 r4 a''(_\pptranquillo
+	
+	\cueDuring #"cueVoiceViolinIMvtIV" #DOWN {
+		\ni \mmrPos #-4 R1
+		\mmrPos #-4 R
+% Bars 316 to 320
+		\mmrPos #-4 R \no
+	e2\rest e4\rest } a'(_\pptranquillo
 	fis e d a)
 	d4.( d8 d4 e
 	fis4. fis8 fis4 e)

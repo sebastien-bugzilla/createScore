@@ -9,12 +9,18 @@ musicViolinIMvtI = \relative c'' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*2
-	
+	\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
+		\ni \clef alto R2.
+		R
+	}
 	\repeat volta 2 {
-		R2.*3
+		\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
+			R2.
+			R
+			R \no
+		}
 % Bars 6 to 10
-		r4 r a(\pp
+		r4 r \clef treble a(\pp
 		d4.) d8 d4\<
 		d( e fis)
 		a2\f\>( g8 fis)
@@ -254,12 +260,14 @@ musicViolinIMvtI = \relative c'' {
 	d~
 	d~
 	d4 r r
-	R2.*5
+	R2.*3
 % Bars 196 to 200
 	
 	
-	
-	
+	\cueDuring #"cueVoiceViolinIMvtI" #DOWN {
+		\ni R2.
+		R \no
+	}
 	b,4.(\pp b8 b4~
 % Bars 201 to 205
 	b d fis!8 g)
@@ -318,17 +326,23 @@ musicViolinIMvtI = \relative c'' {
 % Bars 246 to 250
 	<d d'>8-.\p a'16( b a8) fis-. fis-. d-.
 	d4 r r
-	R2.*17
+	R2.*11
 % Bars 251 to 255
 	
 % Bars 256 to 260
 	
+	
+	
+	\cueDuring #"cueVoiceViolinIMvtI" #UP {
+		\ni R2.
+		R
 % Bars 261 to 265
-	
-	
-	
-	\mark \default
-	R2.
+		R
+		R
+		R
+		R \mark \default
+		R2.
+	}
 % Bars 266 to 270
 	b'8-.\f fis16( g fis8) b,-. b-. b'-.
 	b4 r r
