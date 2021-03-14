@@ -17,7 +17,8 @@ partOptions = {
 		beam-event tuplet-span-event dynamic-event articulation-event
 		dynamic-event slur-event text-script-event trill-span-event
 		phrasing-slur-event beam-forbid-event tremolo-event crescendo-event 
-		decrescendo-event multi-measure-rest-event)
+		decrescendo-event multi-measure-rest-event tremolo-span-event 
+		tremolo-event)
 	\set Voice.restNumberThreshold = #0
 }
 #(set-global-staff-size 19)
@@ -30,5 +31,6 @@ layoutCueVoice = \with {
 	fontSize = #-3
 	\override Stem.length-fraction = #0.9
 	\override TupletBracket #'bracket-visibility = ##f
+	\override StemTremolo.beam-thickness = #0.35 
 	%\override Font.font-size = #+5
 }

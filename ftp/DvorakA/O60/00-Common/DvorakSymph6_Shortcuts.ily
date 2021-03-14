@@ -126,3 +126,7 @@ ni = {
 	\omit MultiMeasureRestNumber
 }
 
+% http://lilypond.1069038.n5.nabble.com/quoteDuring-and-repeat-tremolo-don-t-work-together-tp230771p234017.html
+stopTremolo = #(define-music-function () ()
+    (make-music 'TremoloSpanEvent
+        'span-direction STOP))

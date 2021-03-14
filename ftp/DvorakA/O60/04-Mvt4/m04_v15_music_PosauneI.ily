@@ -10,7 +10,7 @@ musicPosauneIMvtIV = \relative c'' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*34
+	R1*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -21,11 +21,17 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 26 to 30
 	
+	
+	
+	
+	\cueDuring #"cueVoicePosauneIMvtIV" #UP {
+		\ni \clef treble R1
 % Bars 31 to 35
-	
-	
-	
-	
+		R
+		R
+		R
+		R \clef alto \no
+	}
 	r2 r4 g\f-.
 % Bars 36 to 40
 	e-. cis-. a-. g'-.

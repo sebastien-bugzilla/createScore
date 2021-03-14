@@ -408,14 +408,15 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	\mark #11
-	R1*10
+	R1*8
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	r2 r4 a-.\ff
+	\cueDuring #"cueVoiceTubaMvtIV" #UP {
+		\ni R1
+		R \no
+	r2 r4 } a-.\ff
 	a1~
 % Bars 486 to 490
 	a2. r4

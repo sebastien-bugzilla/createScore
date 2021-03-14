@@ -10,7 +10,7 @@ musicPosauneIIMvtIV = \relative c' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*34
+	R1*29
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -21,12 +21,18 @@ musicPosauneIIMvtIV = \relative c' {
 	
 % Bars 26 to 30
 	
+	
+	
+	
+	\cueDuring #"cueVoicePosauneIIMvtIV" #UP {
+		\ni \clef treble R1
 % Bars 31 to 35
-	
-	
-	
-	
-	R1
+		R
+		R
+		R
+		R
+		R \no \clef alto
+	}
 % Bars 36 to 40
 	a1\f~
 	a2. a4-. \mark \default
@@ -275,7 +281,7 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 316 to 320
 	cis~
 	cis4 r r2
-	R1*26 
+	R1*23 
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -285,10 +291,11 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	
-	
-	
-	r4 ais'2.->\f~
+	\cueDuring #"cueVoicePosauneIIMvtIV" #UP {
+		\ni \clef bass R1
+		R
+		R \no
+	r4 } \clef alto ais'2.->\f~
 	ais4 cis(-> d e
 % Bars 346 to 350
 	d) gis,2.->~

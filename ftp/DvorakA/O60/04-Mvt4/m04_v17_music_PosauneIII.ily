@@ -408,14 +408,15 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	\mark #11
-	R1*10
+	R1*8
 % Bars 476 to 480
 	
 % Bars 481 to 485
 	
-	
-	
-	r2 r4 e-.\ff
+	\cueDuring #"cueVoicePosauneIIIMvtIV" #UP {
+		\ni R1
+		R \no
+	r2 r4 } e-.\ff
 	e1~
 % Bars 486 to 490
 	e2. r4

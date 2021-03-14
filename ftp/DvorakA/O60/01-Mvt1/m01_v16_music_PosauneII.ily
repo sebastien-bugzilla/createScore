@@ -12,7 +12,7 @@ musicPosauneIIMvtI = \relative c' {
 	R2.*2
 	
 	\repeat volta 2 {
-		R2.*45
+		R2.*43
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -30,9 +30,10 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-		
-		
-		r4 r g-.\ff \mark \default
+		\cueDuring #"cueVoicePosauneIIMvtI" #UP {
+			\clef treble \ni R2.
+			R \no 
+		r4 r } \clef alto g-.\ff \mark \default
 		fis-.^\grandioso r r
 		r r fis\f
 % Bars 51 to 55
@@ -88,7 +89,7 @@ musicPosauneIIMvtI = \relative c' {
 		
 		
 		\mark \default
-		R2.*21
+		R2.*19
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -96,7 +97,13 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
+		
+		
+		
+		\cueDuring #"cueVoicePosauneIIMvtI" #UP {
+			\ni \clef treble R2.
+			R \no \clef alto
+		}
 % Bars 161 to 165
 		b2(\ff ais4)
 		b2( cis4)
@@ -163,11 +170,13 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	R2.*4
-	
+	\cueDuring #"cueVoicePosauneIIMvtI" #UP {
+		\ni R2.
+		R
 % Bars 221 to 225
-	
-	
+		R
+		R \no
+	}
 	e4(\pp f g)
 	bes2( a8 g)
 	g2.
@@ -202,11 +211,13 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*4
+	R2.
 % Bars 266 to 270
-	
-	
-	
+	\cueDuring #"cueVoicePosauneIIMvtI" #DOWN {
+		\ni \clef treble \mmrPos #-6 R2.
+		\mmrPos #-6 R
+		\mmrPos #-6 R \no \clef alto
+	}
 	dis2.\f
 	R2.*9
 % Bars 271 to 275
@@ -250,7 +261,7 @@ musicPosauneIIMvtI = \relative c' {
 	a8-. g'-. e-. cis-. a-. g-. \mark \default
 	fis4-. r r
 % Bars 316 to 320
-	R2.*40
+	R2.*38
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -265,6 +276,12 @@ musicPosauneIIMvtI = \relative c' {
 	
 % Bars 351 to 355
 	
+	
+	
+	\cueDuring #"cueVoicePosauneIIMvtI" #DOWN {
+		\ni \clef treble \mmrPos #-4 R2.
+		\mmrPos #-4 R \clef alto \no
+	}
 % Bars 356 to 360
 	cis'2\ff cis4\fz~
 	cis cis2\fz
@@ -292,7 +309,7 @@ musicPosauneIIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 401 to 405
-	R2.*31
+	R2.*28
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -303,8 +320,14 @@ musicPosauneIIMvtI = \relative c' {
 	
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
+	
+	\cueDuring #"cueVoicePosauneIIMvtI" #UP {
+		\ni \clef treble R2.
+		R
+% Bars 431 to 435
+		R \no \clef alto
+	}
 	r4 r gis-.\f
 	a-. r bes-.
 	a-. r bes-.
@@ -365,7 +388,7 @@ musicPosauneIIMvtI = \relative c' {
 	g,-. cis-. fis,-.
 	gis4. r8 r4
 	gis4. r8 r4 \mark #11
-	R2.*15
+	R2.*14
 % Bars 496 to 500
 	
 % Bars 501 to 505
@@ -374,8 +397,9 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	
-	r4 r a\ff-^
+	\cueDuring #"cueVoicePosauneIIMvtI" #DOWN {
+		\ni \clef bass R2. \no
+	r4 r } \clef alto a\ff-^
 % Bars 511 to 515
 	d2-^_\marc r4
 	r r a-.
@@ -396,7 +420,7 @@ musicPosauneIIMvtI = \relative c' {
 	a~
 % Bars 526 to 530
 	a4\p r r
-	R2.*18
+	R2.*17
 % Bars 531 to 535
 	
 % Bars 536 to 540
@@ -405,8 +429,9 @@ musicPosauneIIMvtI = \relative c' {
 	
 	
 	
-	
-	r4 r cis\f->
+	\cueDuring #"cueVoicePosauneIIMvtI" #UP {
+		\ni \clef treble R2. \no
+	r4 r } \clef alto cis\f->
 % Bar 546
 	a-> r r \bar "|."
 }

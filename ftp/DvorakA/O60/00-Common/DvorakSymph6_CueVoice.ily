@@ -750,22 +750,208 @@ cueVoiceTrompeteIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   P O S A U N E                  #
 %###############################################################################
 cueVoicePosauneIMvtI = \relative c {
-	
+	R2.*45
+	% bar 46 - 48
+	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	a: e: cis: e: a: e:
+	cis':[ a: e': cis:] r4
+	R2.*110
+	% bar 159 - 160
+	r4^\markup {Tromp. in D.} r <e,, e'>4~
+	q q-> q->
+	R2.*68
+	% bar 215 - 218
+	\repeat tremolo 6 {c''16^( e}
+	\repeat tremolo 6 {c e}
+	\repeat tremolo 6 {c e}
+%	\repeat tremolo 6 {c e)}
+%	c''16^( e c e  c e c e  c e c e
+%	c16 e c e  c e c e  c e c e
+%	c16 e c e  c e c e  c e c e
+	c16 e c e  c e c e  c e c e)
+	R2.*47
+	% bar 266- 268
+	b8^\markup {Viol.} fis16^( g fis8) b,^. b^. b'^.
+	b4 e,\rest e\rest
+	b'8 g16^( a g8) e^. e^. e'^.
+	R2.*85
+	% bar 354 - 355
+	g,4^\markup {Viol.} e' g,
+	e' g, e'
+	R2.*73
+	% bar 429 - 432
+	b,8^\markup {Viol.} d fis4 gis8 ais
+	b cis d4 d8 dis
+	e2.:16
+	e:
+	R2.*76
+	% bar 509 - 510
+	r4^\markup {Bass poss.} r e,,,
+	d fis, r
+	R2.*33
+	% bar 544 - 545
+	a'''8^\markup {Viol.} fis g a e4
+	d8 fis a4 r
 }
 cueVoicePosauneIMvtIV = \relative c {
-	
+	\partial 4 r4
+	R1*29
+	% bar 30 - 35
+	e''8^\markup {Viol.} g, e e' e g, e e'
+	e g, e e' e g, e g'
+	g e g, g' g e g, g'
+	g e g, g' g e g, e''
+	e g, e e' e g, e g'
+	g e g, g' g e a, a'
 }
 cueVoicePosauneIIMvtI = \relative c {
-	
+	R2.*45
+	% bar 46 - 48
+	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	a: e: cis: e: a: e:
+	cis':[ a: e': cis:] r4
+	R2.*110
+	% bar 159 - 160
+	r4^\markup {Tromp. in D.} r <e,, e'>4~
+	q q-> q->
+	R2.*72
+	% bar 219 - 222
+	c2.~^\markup {Pos.I}
+	c~
+	c(
+	cis!)
+	R2.*43
+	% bar 266- 268
+	b''8^\markup {Viol.} fis16^( g fis8) b,^. b^. b'^.
+	b4 e,\rest e\rest
+	b'8 g16^( a g8) e^. e^. e'^.
+	R2.*85
+	% bar 354 - 355
+	g,4^\markup {Viol.} e' g,
+	e' g, e'
+	R2.*73
+	% bar 429 - 431
+	b,8^\markup {Viol.} d fis4 gis8 ais
+	b cis d4 d8 dis
+	e2.:16
+	R2.*77
+	% bar 509 - 510
+	r4^\markup {Bass poss.} r e,,,
+	d fis, r
+	R2.*33
+	% bar 544 - 545
+	a'''8^\markup {Viol.} fis g a e4
+	d8 fis a4 r
 }
 cueVoicePosauneIIMvtIV = \relative c {
-	
+	\partial 4 r4
+	R1*29
+	% bar 30 - 35
+	e''8^\markup {Viol.} g, e e' e g, e e'
+	e g, e e' e g, e g'
+	g e g, g' g e g, g'
+	g e g, g' g e g, e''
+	e g, e e' e g, e g'
+	g e g, g' g e a, a'
+	R1*305
+	% bar 341 - 344
+	cis,,,,1^\markup {Basspos.}
+	d
+	e
+	fis4 r r2
+}
+cueVoicePosauneIIIMvtI = \relative c {
+	R2.*45
+	% bar 46 - 48
+	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	a: e: cis: e: a: e:
+	cis':[ a: e': cis:] r4
+	R2.*110
+	% bar 159 - 160
+	r4^\markup {Tromp. in D.} r <e,, e'>4~
+	q q-> q->
+	R2.*68
+	% bar 215 - 218
+	\repeat tremolo 6 {c''16^( e}
+	\repeat tremolo 6 {c e}
+	\repeat tremolo 6 {c e}
+%	\repeat tremolo 6 {c e)}
+%	c''16^( e c e  c e c e  c e c e
+%	c16 e c e  c e c e  c e c e
+%	c16 e c e  c e c e  c e c e
+	c16 e c e  c e c e  c e c e)
+	R2.*47
+	% bar 266- 268
+	b8^\markup {Viol.} fis16^( g fis8) b,^. b^. b'^.
+	b4 e,\rest e\rest
+	b'8 g16^( a g8) e^. e^. e'^.
+	R2.*85
+	% bar 354 - 355
+	g,4^\markup {Viol.} e' g,
+	e' g, e'
+	R2.*73
+	% bar 429 - 432
+	b,8^\markup {Viol.} d fis4 gis8 ais
+	b cis d4 d8 dis
+	e2.:16
+	e:
+	R2.*112
+	% bar 545
+	d,8^\markup {Viol.} fis a4 r
+}
+cueVoicePosauneIIIMvtIV = \relative c {
+	\partial 4 r4
+	R1*481
+	% bar 482 - 484
+	r2^\markup {Pos.I} r4 g''4
+	e2 d
+	c b4 r
 }
 cueVoiceTubaMvtI = \relative c {
-	
+	R2.*45
+	% bar 46 - 48
+	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	a: e: cis: e: a: e:
+	cis':[ a: e': cis:] r4
+	R2.*110
+	% bar 159 - 160
+	r4^\markup {Tromp. in D.} r <e,, e'>4~
+	q q-> q->
+	R2.*72
+	% bar 219 - 222
+	<c, c'>2.~^\markup {Pos.I.III}
+	q~
+	q(
+	<cis! cis'!>)
+	R2.*43
+	% bar 266- 268
+	b'''8^\markup {Viol.} fis16_( g fis8) b,_. b_. b'_.
+	b4 e,\rest e\rest
+	b'8 g16_( a g8) e_. e_. e'_.
+	R2.*85
+	% bar 354 - 355
+	g,4^\markup {Viol.} e' g,
+	e' g, e'
+	R2.*73
+	% bar 429 - 431
+	b,8^\markup {Viol.} d fis4 gis8 ais
+	b cis d4 d8 dis
+	e2.:16
+	R2.*75
+	% bar 507 - 508
+	fis,4^\markup {Viol.} fis g
+	a b cis
+	R2.*36
+	% bar 545
+	d,8^\markup {Viol.} fis a4 r
 }
 cueVoiceTubaMvtIV = \relative c {
-	
+	\partial 4 r4
+	R1*481
+	% bar 482 - 484
+	r2^\markup {Pos.I.II.} r4 g''4
+	e2 d
+	c b4 r
 }
 %###############################################################################
 %#                   C U E   V O I C E   F O R   P A U K E N                   #

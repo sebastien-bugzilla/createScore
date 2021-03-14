@@ -12,7 +12,7 @@ musicPosauneIIIMvtI = \relative c' {
 	R2.*2
 	
 	\repeat volta 2 {
-		R2.*45
+		R2.*43
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -30,9 +30,10 @@ musicPosauneIIIMvtI = \relative c' {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-		
-		
-		r4 r a-.\ff \mark \default
+		\cueDuring #"cueVoicePosauneIIIMvtI" #UP {
+			\ni \clef treble R2.
+			R \no
+		r4 r } \clef bass a-.\ff \mark \default
 		a-.^\grandioso r r
 		r r a-.
 % Bars 51 to 55
@@ -88,7 +89,7 @@ musicPosauneIIIMvtI = \relative c' {
 		
 		
 		\mark \default
-		R2.*21
+		R2.*19
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -96,7 +97,13 @@ musicPosauneIIIMvtI = \relative c' {
 % Bars 151 to 155
 	
 % Bars 156 to 160
-	
+		
+		
+		
+		\cueDuring #"cueVoicePosauneIIIMvtI" #UP {
+			\ni \clef treble R2.
+			\mmrPos #-6 R \no \clef bass
+		}
 % Bars 161 to 165
 		fis'2.\ff
 		fis2 fis4
@@ -158,11 +165,13 @@ musicPosauneIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*4
+	\cueDuring #"cueVoicePosauneIIIMvtI" #DOWN {
+		\ni \clef treble \mmrPos #-4 R2.
 % Bars 216 to 220
-	
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef bass
+	}
 	c2.\pp~
 	c~
 % Bars 221 to 225
@@ -202,11 +211,13 @@ musicPosauneIIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*4
+	R2.
 % Bars 266 to 270
-	
-	
-	
+	\cueDuring #"cueVoicePosauneIIIMvtI" #DOWN {
+		\ni \clef treble \mmrPos #-8 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef bass
+	}
 	b2.\f
 	R2.*9
 % Bars 271 to 275
@@ -250,7 +261,7 @@ musicPosauneIIIMvtI = \relative c' {
 	a2 a4-. \mark \default
 	a-. r r
 % Bars 316 to 320
-	R2.*40
+	R2.*38
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -265,6 +276,12 @@ musicPosauneIIIMvtI = \relative c' {
 	
 % Bars 351 to 355
 	
+	
+	
+	\cueDuring #"cueVoicePosauneIIIMvtI" #UP {
+		\ni \clef treble R2.
+		R \no \clef bass
+	}
 % Bars 356 to 360
 	ais2\ff ais4~\fz
 	ais a2\fz
@@ -292,7 +309,7 @@ musicPosauneIIIMvtI = \relative c' {
 	
 	\mark \default
 % Bars 401 to 405
-	R2.*31
+	R2.*28
 % Bars 406 to 410
 	
 % Bars 411 to 415
@@ -303,9 +320,14 @@ musicPosauneIIIMvtI = \relative c' {
 	
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
-	r4 r e-.\f
+	
+	\cueDuring #"cueVoicePosauneIIIMvtI" #UP {
+		\ni \clef treble R2.
+		R
+% Bars 431 to 435
+		R \no
+	r4 r } \clef bass e-.\f
 	a-. r bes-.
 	a-. r bes-.
 	a-. r g!\<
@@ -411,7 +433,8 @@ musicPosauneIIIMvtI = \relative c' {
 	
 	
 	
-	r4 r a'->\f
+	\cueDuring #"cueVoicePosauneIIIMvtI" #UP {
+		\clef treble r4 r } \clef bass a'->\f
 % Bar 546
 	d,-> r r \bar "|."
 }
