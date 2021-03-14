@@ -52,15 +52,17 @@ musicPaukenMvtII = \relative c {
 	
 	
 	\mark \default
-	R2*15
+	R2*12
 % Bars 91 to 95
 	
 % Bars 96 to 100
 	
 % Bars 101 to 105
-	
-	
-	
+	\cueDuring #"cueVoicePaukenMvtII" #UP {
+		\ni \clef treble R2
+		R
+		R \no \clef bass
+	}
 	b2\ff\startTrillSpan
 	f'\startTrillSpan
 % Bars 106 to 110
@@ -86,7 +88,7 @@ musicPaukenMvtII = \relative c {
 	
 	
 	\mark \default
-	R2*29
+	R2*24
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -97,10 +99,16 @@ musicPaukenMvtII = \relative c {
 	
 % Bars 161 to 165
 	
+	
+	
+	\cueDuring #"cueVoicePaukenMvtII" #UP {
+		\ni \clef treble R2
+		R
 % Bars 166 to 170
-	
-	
-	\mark \default
+		\mmrPos #-6 R
+		R
+		\mmrPos #-6 R \no \clef bass \mark \default
+	}
 	b,8\pp f'16-. f-. f8-. f-.
 	b, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
@@ -114,7 +122,7 @@ musicPaukenMvtII = \relative c {
 	b,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
 	f8\ff r f-.-^ r
 	b,-.-^ r r4
-	R2*18
+	R2*16
 % Bars 181 to 185
 	
 % Bars 186 to 190
@@ -122,8 +130,10 @@ musicPaukenMvtII = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	
-	
+	\cueDuring #"cueVoicePaukenMvtII" #UP {
+		\ni \clef treble R2
+		R \no \clef bass
+	}
 	r8 f'\ff f f
 	f f f b,
 	b r f' r

@@ -53,7 +53,7 @@ musicPaukenMvtIII = \relative c {
 % Bars 41 to 45
 		d\startTrillSpan
 		a4\stopTrillSpan\f r r
-		R2.*83
+		R2.*75
 % Bars 46 to 50
 	
 % Bars 51 to 55
@@ -83,9 +83,19 @@ musicPaukenMvtIII = \relative c {
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
+		
+		
+		\cueDuring #"cueVoicePaukenMvtIII" #UP {
+			\ni \clef treble R2.
+			R
+			R
 % Bars 121 to 125
-	
+			R
+			R
+			R
+			R
+			R \no \clef bass
+		}
 % Bars 126 to 130
 		a2.\f\startTrillSpan
 		a\stopTrillSpan
@@ -129,7 +139,7 @@ musicPaukenMvtIII = \relative c {
 	d4 r8 d d4 \bar "||" \key c \major
 	\repeat volta 2 {
 		d4\pp r r
-		R2.*47
+		R2.*43
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -147,6 +157,13 @@ musicPaukenMvtIII = \relative c {
 % Bars 191 to 195
 	
 % Bars 196 to 200
+		
+		\cueDuring #"cueVoicePaukenMvtIII" #UP {
+			\ni \clef treble \mmrPos #8 R2.
+			\mmrPos #8 R
+			\mmrPos #8 R
+			\mmrPos #-6 R \no \clef bass
+		}
 	}
 % Bars 201 to 205
 	d2.\pp\startTrillSpan
@@ -159,7 +176,7 @@ musicPaukenMvtIII = \relative c {
 	d
 	d\stopTrillSpan
 	d4 r r
-	R2.*46
+	R2.*42
 % Bars 211 to 215
 	
 % Bars 216 to 220
@@ -178,6 +195,12 @@ musicPaukenMvtIII = \relative c {
 	
 % Bars 251 to 255
 	
+	\cueDuring #"cueVoicePaukenMvtIII" #DOWN {
+		\ni \clef treble \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef bass
+	}
 % Bars 256 to 260
 	r8 d\p d4 r8 d
 	d4 r8 d\< d4
@@ -242,7 +265,7 @@ musicPaukenMvtIII = \relative c {
 	d
 	a4\stopTrillSpan\f r r
 % Bars 326 to 330
-	R2.*83
+	R2.*75
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -272,11 +295,17 @@ musicPaukenMvtIII = \relative c {
 % Bars 396 to 400
 	
 % Bars 401 to 405
-	
+	\cueDuring #"cueVoicePaukenMvtIII" #UP {
+		\ni \clef treble R2.
+		R
+		R
+		R
+		R
 % Bars 406 to 410
-	
-	
-	
+		R
+		R
+		R \no \clef bass
+	}
 	a2.\f\startTrillSpan
 	a
 % Bars 411 to 415

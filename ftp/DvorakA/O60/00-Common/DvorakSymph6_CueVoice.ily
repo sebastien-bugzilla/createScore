@@ -957,16 +957,106 @@ cueVoiceTubaMvtIV = \relative c {
 %#                   C U E   V O I C E   F O R   P A U K E N                   #
 %###############################################################################
 cueVoicePaukenMvtI = \relative c {
-	
+	R2.*42
+	% bar 43 - 46
+	e'''2^\markup {Viol.} e4^~
+	e f2
+	g gis4^~
+	gis r2
+	R2.*124
+	% bar 171 - 177_1
+	f,2(^\markup {Hoboe} e4
+	d2 c4)
+	r4^\markup {Viol.} r \tuplet 3/2 4 {b8( c b}
+	b'4) r r
+	r r \tuplet 3/2 4 {b,8( c b}
+	b'2.)
+	b4 r r
+	R2.*115
+	% bar 279 - 284
+	<e,,,, e'>2.^\markup {Basspos. u. Tuba.}~
+	q~
+	q
+	<ees ees'>~
+	q~
+	q
+	R2.*22
+	% bar 307 - 310
+	c'2^\markup {Bass.} gis4
+	eis2 gis4
+	eis gis cis
+	eis, gis cis
+	R2.*67
+	% bar 378 - 382
+	bes'''4.^\markup {Viol.} g8^(^. a^. bes^.)
+	bes4. g8^(^. a^. bes^.)
+	bes4 f8\rest g8^(^. a^. bes^.)
+	bes4 f8\rest g8^(^. a^. bes^.)
+	bes[ a g f! e] r
+	R2.*160
+	% bar 543 - 545
+	d,2^\markup {Bass.} c4
+	a8 f g a e4
+	d8 f a4 r
 }
 cueVoicePaukenMvtII = \relative c {
-	
+	R2*100
+	% bar 101 - 103
+	r8^\markup {Hörner in F.} c''_( a des_~
+	des4 c
+	bes g)
+	R2*60
+	% bar 164 - 168
+	r4^\markup {Flote} a'\trill~
+	a16_( b32 a g16 a c a g f
+	d e a f e c b! c
+	f e c a gis a d c
+	a f e! f ees f c f)
+	R2*27
+	% bar 196 - 197
+	r8^\markup {Hoboe} f'( d g)~
+	g4.( f8)
 }
 cueVoicePaukenMvtIII = \relative c {
-	
+	R2.*117
+	% bar 118 - 125
+	g''4^\markup {Tromp. in D.} g g
+	g g g
+	g g g
+	g g g
+	g g g
+	bes bes bes
+	b!2 b4~
+	b b2
+	R2.*72
+	% bar 197 - 200
+	a8_(^\markup {Viol.} c,) a'_( c,) a'_( c,) 
+	a'_( c,) a'_( c,) a'_( c,) 
+	a'_( c,) a'_( c,) a'_( c,) 
+	a'_( c e g f e)
+	R2.*51
+	% bar 252 - 255
+	b'4^(^\markup {Viol.} c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	b^( c8 ais b4)
+	R2.*145
+	% bar 401 - 408
+	g,4^\markup {Tromp. in D.} g g 
+	g g g
+	g g g 
+	g g g
+	g g g
+	bes bes bes
+	b!2 b4
+	b b2
 }
 cueVoicePaukenMvtIV = \relative c {
-	
+	\partial 4 r4
+	R1*258
+	% bar 259 - 260
+	r2 r4^\markup {Viol.} f'''!
+	d c! b r
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   V I O L I N I                  #

@@ -22,7 +22,7 @@ musicPaukenMvtI = \relative c {
 		d2.\pp\<\startTrillSpan
 		d\startTrillSpan
 		d2\>\startTrillSpan d8-.\stopTrillSpan\! r
-		R2.*26
+		R2.*23
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -32,9 +32,14 @@ musicPaukenMvtI = \relative c {
 % Bars 36 to 40
 	
 % Bars 41 to 45
-	
+		
+		
+		\cueDuring #"cueVoicePaukenMvtI" #DOWN {
+			\ni \clef treble \mmrPos #-4 R2.
+			\mmrPos #-4 R
+			\mmrPos #-4 R \no
 % Bars 46 to 50
-		r4 a2\ff\startTrillSpan
+		c'4\rest } \clef bass a,2\ff\startTrillSpan
 		a2.
 		<< a2. {s4 s s\stopTrillSpan}>> \mark \default
 		d4-. r r
@@ -87,7 +92,7 @@ musicPaukenMvtI = \relative c {
 		
 		
 		\mark \default
-		R2.*37
+		R2.*31
 % Bars 141 to 145
 	
 % Bars 146 to 150
@@ -101,14 +106,22 @@ musicPaukenMvtI = \relative c {
 % Bars 166 to 170
 	
 % Bars 171 to 175
-	
+		\cueDuring #"cueVoicePaukenMvtI" #UP {
+			\ni \clef treble R2.
+			R
+			R
+			R
+			R
 % Bars 176 to 180
-		
+			R
+		}
 	}
 	\alternative {
 		{
-			R2.*2
-			
+			\cueDuring #"cueVoicePaukenMvtI" #UP {
+				R2. \no
+			}
+			R2. \clef bass
 			a2.\pp\startTrillSpan
 			a
 % Bars 181 to 185
@@ -182,18 +195,24 @@ musicPaukenMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*20
+	R2.*14
 % Bars 266 to 270
 	
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
+	
+	
+	\cueDuring #"cueVoicePaukenMvtI" #UP {
+		\ni \mmrPos #6 R2.
+		\mmrPos #6 R
 % Bars 281 to 285
-	
-	
-	
-	
+		\mmrPos #6 R
+		\mmrPos #6 R
+		\mmrPos #6 R
+		\mmrPos #6 R \no
+	}
 	d2.\ff\startTrillSpan
 % Bars 286 to 290
 	d
@@ -204,13 +223,19 @@ musicPaukenMvtI = \relative c {
 % Bars 291 to 295
 	<<d\fz {s4 s s\stopTrillSpan}>>
 	d4 r r
-	R2.*18
+	R2.*14
 % Bars 296 to 300
 	
 % Bars 301 to 305
 	
 % Bars 306 to 310
 	
+	\cueDuring #"cueVoicePaukenMvtI" #UP {
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
+	}
 % Bars 311 to 315
 	a2.\ff\startTrillSpan
 	a
@@ -247,7 +272,7 @@ musicPaukenMvtI = \relative c {
 	
 	
 	\mark \default
-	R2.*22
+	R2.*18
 % Bars 361 to 365
 	
 % Bars 366 to 370
@@ -256,9 +281,16 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
-	r4 r r8 a\f
+	\cueDuring #"cueVoicePaukenMvtI" #DOWN {
+		\ni \mmrPos #-4 \clef treble R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+% Bars 381 to 385
+		\mmrPos #-4 R \no
+	}
+	\cueDuring #"cueVoicePaukenMvtI" #UP {
+		r4 r r8 } \clef bass a\f
 	d2.\startTrillSpan
 	d
 	d
@@ -398,15 +430,16 @@ musicPaukenMvtI = \relative c {
 % Bars 531 to 535
 	<< d {s4 s s\stopTrillSpan}>>
 	d4 r r
-	R2.*12
+	R2.*10
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	
-	
-	r4 r a->\f
+	\cueDuring #"cueVoicePaukenMvtI" #UP {
+		\ni R2.
+		R \no
+	r4 r } a->\f
 % Bar 546
 	d-> r r \bar "|."
 }

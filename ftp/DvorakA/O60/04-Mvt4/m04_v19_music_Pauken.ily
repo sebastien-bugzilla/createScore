@@ -189,13 +189,14 @@ musicPaukenMvtIV = \relative c {
 % Bars 251 to 255
 	
 	\mark \default
-	R1*7
+	R1*6
 % Bars 256 to 260
 	
 	
 	
-	
-	r2 r4 d\f
+	\cueDuring #"cueVoicePaukenMvtIV" #UP {
+		\ni \clef treble R1 \no
+	r2 r4 } \clef bass d\f
 % Bars 261 to 265
 	d r r d
 	a r r a
