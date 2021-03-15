@@ -90,12 +90,14 @@ musicViolinIIMvtII = \relative c' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*7
+	R2*5
 % Bars 76 to 80
 	
 	
-	
-	
+	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
+		\ni R2
+		R \no
+	}
 	bes,16(\p f'8) f16-. d(\pp f8) f16~
 % Bars 81 to 85
 	f8 r r4
@@ -124,9 +126,10 @@ musicViolinIIMvtII = \relative c' {
 % Bars 101 to 105
 	<f d'> r r4
 	<c ees a>8 r r4
-	R2*2
-	
-	r8 f-.->\ff c-.-> f->~
+	R2
+	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
+		\ni R2 \no
+	r8 f-.->\ff } c-.-> f->~
 % Bars 106 to 110
 	f( ees) r4
 	r8 f'->-. bes,->-. bes'->~

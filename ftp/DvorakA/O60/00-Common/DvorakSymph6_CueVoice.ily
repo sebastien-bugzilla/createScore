@@ -1117,16 +1117,51 @@ cueVoiceViolinIMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N I I                 #
 %###############################################################################
 cueVoiceViolinIIMvtI = \relative c {
-	
+	% bar 1 - 2
+	<d fis a>8^\markup {Br.}\pp q4 q q8
+	q8 q4 q q8
+	R2.*176
+	% bar 179_1 - 180_1
+	d'''2(^\markup {Viol.I.} cis4
+	a8[ fis g a]) r4
+	R2.*10
+	% bar 177_2
+	b,8(^\markup {Viol.I.} d fis2)
 }
 cueVoiceViolinIIMvtII = \relative c {
-	
+	R2*77
+	% bar 78 - 79
+	f''8^\markup {Viol.I} f16_( g) g_( a) a_( c)
+	bes4_( c)
+	R2*24
+	% bar 104 - 105
+	r8 f,^\markup {Viol.I} des ges~
+	ges f r4
 }
 cueVoiceViolinIIMvtIII = \relative c {
-	
+	R2.*167
+	% bar 167 - 168
+	g'''4(^\markup {Hoboe} a8 fis g4
+	b2 a4)
+	R2.*13
+	% bar 182 - 183
+	bes,,,4^\markup {Vcll.}^\pizz e g
+	bes^\markup {Bratsche} d e
+	R2.*41
+	% bar 225 - 228
+	fis'4(^\markup {Viol.I} g8 e fis4
+	a b8 gis a4
+	d e8 cis d4
+	d e8 cis d4)
 }
 cueVoiceViolinIIMvtIV = \relative c {
-	
+	\partial 4 r4 
+	R1*313
+	% bar 314 - 317
+	r2 r4 g''''(^\markup {Fl.}
+	e d cis b
+	e a, b fis 
+	g e a) r
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   B R A T S C H E                 #

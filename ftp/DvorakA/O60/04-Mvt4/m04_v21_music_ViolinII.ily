@@ -377,12 +377,17 @@ musicViolinIIMvtIV = \relative c'' {
 	q~
 % Bars 306 to 310
 	q4\p r r2
-	R1*10
+	R1*7
 % Bars 311 to 315
 	
-% Bars 316 to 320
 	
-	r2 r4 a\pp~
+	
+	\cueDuring #"cueVoiceViolinIIMvtIV" #UP {
+		\ni R1
+		R
+% Bars 316 to 320
+		R \no
+	r2 r4 } a\pp~
 	a2._\tranquillo( e4
 	d cis b g')
 	fis( a cis b8 cis

@@ -9,8 +9,10 @@ musicViolinIIMvtI = \relative c' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*2
-	
+	\cueDuring #"cueVoiceViolinIIMvtI" #DOWN {
+		\ni \clef alto R2.
+		R \no \clef treble
+	}
 	\repeat volta 2 {
 		R2.*3
 		
@@ -220,10 +222,11 @@ musicViolinIIMvtI = \relative c' {
 	}
 	\alternative {
 		{
-			R2.*3
+			R2.*2
 			
-			
-			r4 r a,8[(\pp fis
+			\cueDuring #"cueVoiceViolinIIMvtI" #UP {
+				\ni R2. \no
+			r4 r } a,8[(\pp fis
 % Bars 181 to 185
 			g a)] r4 r 
 			R2.*2
@@ -234,7 +237,9 @@ musicViolinIIMvtI = \relative c' {
 		}
 		{
 % Bars 177 to 180
-			R2.
+			\cueDuring #"cueVoiceViolinIIMvtI" #UP {
+				\ni R2. \no
+			}
 			b8(\pp d fis2)~
 			fis2.~
 			fis~

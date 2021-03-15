@@ -204,27 +204,31 @@ musicViolinIIMvtIII = \relative c' {
 	q \bar "||" \key d \major
 	\repeat volta 2 {
 		fis4\pp r r
-		R2.*15
+		R2.*13
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 % Bars 166 to 170
 		
-		
-		
+		\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+			\ni R2.
+			R \no
+		}
 		<a, fis' d'>4^\pizz\fz\arpeggio r r
 		q\arpeggio\> r r
 % Bars 171 to 175
 		q\!\arpeggio r r
 		q\pp\arpeggio r r
-		R2.*11
+		R2.*9
 % Bars 176 to 180
 	
 % Bars 181 to 185
 		
-		
-		
+		\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+			\ni \clef bass R2.
+			\clef alto R \no \clef treble
+		}
 		g'4\p^\pizz bes a
 		g r fis
 % Bars 186 to 190
@@ -257,17 +261,23 @@ musicViolinIIMvtIII = \relative c' {
 	e~
 	e)
 	d4 r r
-	R2.*19
+	R2.*15
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
+	
+	
+	
+	\cueDuring #"cueVoiceViolinIIMvtIII" #UP {
+		\ni R2.
 % Bars 226 to 230
-	
-	
-	
+		R
+		R
+		R \no
+	}
 	fis2.\pp(~
 	fis
 % Bars 231 to 235
