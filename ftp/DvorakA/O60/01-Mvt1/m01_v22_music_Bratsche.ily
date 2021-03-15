@@ -269,9 +269,13 @@ musicBratscheMvtI = \relative c {
 	}
 	\alternative {
 		{
-			R2.*4
+			R2.*3
+			
+			
+			\cueDuring #"cueVoiceBratscheMvtI" #DOWN {
+				\ni << R2. {s4 \clef treble s  s} >> \no
 % Bars 181 to 185
-			r4 a8(\pp fis g a)
+			r4 } \clef alto a8(\pp fis g a)
 			R2.*9
 % Bars 186 to 190
 		}

@@ -1167,17 +1167,26 @@ cueVoiceViolinIIMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   B R A T S C H E                 #
 %###############################################################################
 cueVoiceBratscheMvtI = \relative c {
-	
+	R2.*179
+	% bar 180_1 - 181_1
+	r4 r a''8(^\markup {V.II.} fis
+	g a) r4 r
 }
-cueVoiceBratscheMvtII = \relative c {
-	
-}
+%cueVoiceBratscheMvtII = \relative c {
+%	no cue voice for mvt II
+%}
 cueVoiceBratscheMvtIII = \relative c {
-	
+	R2.*182
+	% bar 182
+	bes4^\pizz^\markup {Vcll.} e g
+	R2.*56
+	% bar 239 - 240
+	e4(^\markup {Vcell.} fis g
+	fis cis e)
 }
-cueVoiceBratscheMvtIV = \relative c {
-	
-}
+%cueVoiceBratscheMvtIV = \relative c {
+%	no cue voice for mvtIV
+%}
 %###############################################################################
 %#               C U E   V O I C E   F O R   V I O L O N C E L L               #
 %###############################################################################

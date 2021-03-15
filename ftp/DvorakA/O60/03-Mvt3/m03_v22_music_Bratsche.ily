@@ -238,12 +238,14 @@ musicBratscheMvtIII = \relative c {
 % Bars 171 to 175
 		q\arpeggio\! r r
 		q\pp\arpeggio r r
-		R2.*10
+		R2.*9
 % Bars 176 to 180
 	
 % Bars 181 to 185
 		
-		
+		\cueDuring #"cueVoiceBratscheMvtIII" #UP {
+			\ni \clef bass R2. \no \clef alto
+		}
 		bes'4^\pizz d e
 		R2.
 		a8\p^\arco a a a a a
@@ -281,7 +283,7 @@ musicBratscheMvtIII = \relative c {
 % Bars 211 to 215
 	d2.~
 	d
-	R2.*28
+	R2.*26
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -292,6 +294,12 @@ musicBratscheMvtIII = \relative c {
 	
 % Bars 236 to 240
 	
+	
+	
+	\cueDuring #"cueVoiceBratscheMvtIII" #UP {
+		\ni \clef bass R2.
+		R \no \clef alto
+	}
 % Bars 241 to 245
 	d,4(\pp fis b
 	a2.
