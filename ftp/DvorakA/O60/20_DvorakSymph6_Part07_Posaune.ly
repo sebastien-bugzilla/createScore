@@ -66,6 +66,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\namePosauneIMvtI \musicPosauneIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -90,6 +93,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\namePosauneIMvtIV \musicPosauneIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -116,6 +122,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\namePosauneIIMvtI \musicPosauneIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -140,6 +149,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\namePosauneIIMvtIV \musicPosauneIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

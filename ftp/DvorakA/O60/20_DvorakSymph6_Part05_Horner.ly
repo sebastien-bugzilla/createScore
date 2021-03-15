@@ -138,6 +138,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameHornIMvtIII \musicHornIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -162,6 +165,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameHornIMvtIV \musicHornIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -188,6 +194,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameHornIIMvtI \musicHornIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -210,8 +219,11 @@
 				\formatHornIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameHornIIMvtII \musicHornIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -238,6 +250,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameHornIIMvtIII \musicHornIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -262,6 +277,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameHornIIMvtIV \musicHornIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -288,6 +306,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameHornIIIMvtI \musicHornIIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -310,8 +331,11 @@
 				\formatHornIIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameHornIIIMvtII \musicHornIIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -338,6 +362,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameHornIIIMvtIII \musicHornIIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -362,6 +389,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameHornIIIMvtIV \musicHornIIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -388,6 +418,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameHornIVMvtI \musicHornIVMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -410,8 +443,11 @@
 				\formatHornIVMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameHornIVMvtII \musicHornIVMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -438,6 +474,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameHornIVMvtIII \musicHornIVMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -462,6 +501,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameHornIVMvtIV \musicHornIVMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

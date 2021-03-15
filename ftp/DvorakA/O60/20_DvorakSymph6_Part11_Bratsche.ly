@@ -58,6 +58,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameBratscheMvtI \musicBratscheMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -80,8 +83,11 @@
 				\formatBratscheMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameBratscheMvtII \musicBratscheMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -108,6 +114,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameBratscheMvtIII \musicBratscheMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -132,6 +141,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameBratscheMvtIV \musicBratscheMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

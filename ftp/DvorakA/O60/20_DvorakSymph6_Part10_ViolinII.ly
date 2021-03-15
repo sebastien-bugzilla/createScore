@@ -58,6 +58,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameViolinIIMvtI \musicViolinIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -80,8 +83,11 @@
 				\formatViolinIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameViolinIIMvtII \musicViolinIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -108,6 +114,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameViolinIIMvtIII \musicViolinIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -132,6 +141,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameViolinIIMvtIV \musicViolinIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

@@ -58,6 +58,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\namePaukenMvtI \musicPaukenMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -80,8 +83,11 @@
 				\formatPaukenMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\namePaukenMvtII \musicPaukenMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -108,6 +114,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\namePaukenMvtIII \musicPaukenMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -132,6 +141,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\namePaukenMvtIV \musicPaukenMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

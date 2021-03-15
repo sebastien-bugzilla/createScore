@@ -66,6 +66,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameTrompeteIMvtI \musicTrompeteIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -88,8 +91,11 @@
 				\formatTrompeteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameTrompeteIMvtII \musicTrompeteIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -116,6 +122,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrompeteIMvtIII \musicTrompeteIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -140,6 +149,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameTrompeteIMvtIV \musicTrompeteIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -166,6 +178,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameTrompeteIIMvtI \musicTrompeteIIMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -188,8 +203,11 @@
 				\formatTrompeteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameTrompeteIIMvtII \musicTrompeteIIMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -216,6 +234,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameTrompeteIIMvtIII \musicTrompeteIIMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -240,6 +261,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameTrompeteIIMvtIV \musicTrompeteIIMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {

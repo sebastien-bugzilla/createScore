@@ -58,6 +58,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameVioloncelloMvtI \musicVioloncelloMvtI
 			}
+			\new Voice {
+				\tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -80,8 +83,11 @@
 				\formatVioloncelloMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions
+				\timeMvtII \generalOptions \partOptions \MvtIIOptions
 				\nameVioloncelloMvtII \musicVioloncelloMvtII
+			}
+			\new Voice {
+				\tempiPartMvtII
 			}
 		>>
 		\header {
@@ -108,6 +114,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameVioloncelloMvtIII \musicVioloncelloMvtIII
 			}
+			\new Voice {
+				\tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -132,6 +141,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameVioloncelloMvtIV \musicVioloncelloMvtIV
+			}
+			\new Voice {
+				\tempiPartMvtIV
 			}
 		>>
 		\header {
