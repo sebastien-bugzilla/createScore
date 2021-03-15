@@ -1190,30 +1190,34 @@ cueVoiceBratscheMvtIII = \relative c {
 %###############################################################################
 %#               C U E   V O I C E   F O R   V I O L O N C E L L               #
 %###############################################################################
-cueVoiceVioloncelloMvtI = \relative c {
-	
-}
-cueVoiceVioloncelloMvtII = \relative c {
-	
-}
+%cueVoiceVioloncelloMvtI = \relative c {
+%	no cue voice for mvtI
+%}
+%cueVoiceVioloncelloMvtII = \relative c {
+%	no cue voice for mvtII
+%}
 cueVoiceVioloncelloMvtIII = \relative c {
+	R2.*180
+	% bar 180 - 181
+	d'''4^(^\markup {Fl.} e8 cis d4)
+	g2.
 	
 }
-cueVoiceVioloncelloMvtIV = \relative c {
-	
-}
+%cueVoiceVioloncelloMvtIV = \relative c {
+%	no cue voice for mvt IV
+%}
 %###############################################################################
 %#               C U E   V O I C E   F O R   K O N T R A B A S S               #
 %###############################################################################
-cueVoiceKontrabassMvtI = \relative c {
-	
-}
-cueVoiceKontrabassMvtII = \relative c {
-	
-}
-cueVoiceKontrabassMvtIII = \relative c {
-	
-}
-cueVoiceKontrabassMvtIV = \relative c {
-	
-}
+%cueVoiceKontrabassMvtI = \relative c {
+%	no cue voice for mvtI
+%}
+%cueVoiceKontrabassMvtII = \relative c {
+%	no cue voice for mvtII
+%}
+%cueVoiceKontrabassMvtIII = \relative c {
+%	no cue voice for mvtIII
+%}
+%cueVoiceKontrabassMvtIV = \relative c {
+%	no cue voice for mvtIV
+%}

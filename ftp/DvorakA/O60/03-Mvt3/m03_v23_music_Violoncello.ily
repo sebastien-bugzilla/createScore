@@ -217,15 +217,21 @@ musicVioloncelloMvtIII = \relative c {
 		q\pp r r 
 		R2.
 		d'4(\pp^\arco e8 cis d4)
-		R2.*17
+		R2.*15
 % Bars 166 to 170
 	
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
-% Bars 181 to 185
 		
+		
+		
+		
+		\cueDuring #"cueVoiceVioloncelloMvtIII" #DOWN {
+			\ni \clef treble \mmrPos #-2 R2.
+% Bars 181 to 185
+			\mmrPos #-2 R \no \clef bass
+		}
 		bes4\f^\pizz e g
 		R2.*2
 		

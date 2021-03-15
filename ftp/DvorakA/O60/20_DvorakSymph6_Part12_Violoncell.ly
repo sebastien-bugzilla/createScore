@@ -12,10 +12,13 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
+\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part12_Violoncell.ily"
@@ -27,10 +30,10 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceVioloncelloMvtI" { \cueVoiceVioloncelloMvtI }
-\addQuote "cueVoiceVioloncelloMvtII" { \cueVoiceVioloncelloMvtII }
+%\addQuote "cueVoiceVioloncelloMvtI" { \cueVoiceVioloncelloMvtI }
+%\addQuote "cueVoiceVioloncelloMvtII" { \cueVoiceVioloncelloMvtII }
 \addQuote "cueVoiceVioloncelloMvtIII" { \cueVoiceVioloncelloMvtIII }
-\addQuote "cueVoiceVioloncelloMvtIV" { \cueVoiceVioloncelloMvtIV }
+%\addQuote "cueVoiceVioloncelloMvtIV" { \cueVoiceVioloncelloMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,7 +60,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
