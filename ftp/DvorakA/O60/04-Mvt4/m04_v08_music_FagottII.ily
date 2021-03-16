@@ -93,20 +93,15 @@ musicFagottIIMvtIV = \relative c {
 	e,8(_\pdim d' cis b) r2
 	R1*2
 	\mark \default
-	R1*4
+	R1*16
 	
 % Bars 71 to 75
 	
-	
-	R1*4
 % Bars 76 to 80
 	
-	R1*2
-	
-	R1*3
 % Bars 81 to 85
 	
-	R1*3
+	
 	
 	
 	g'!4->_\fpcresc \tuplet 3/2 4 { g8 g g} g4-> \tuplet 3/2 4 { g8 g g} 
@@ -190,12 +185,12 @@ musicFagottIIMvtIV = \relative c {
 	e r
 % Bars 151 to 155
 	fis r
-	R1*4
+	R1*10
 	
 	
 	
 % Bars 156 to 160
-	R1*6
+	
 % Bars 161 to 165
 	
 	e'4--\pp \tuplet 3/2 4 {e8( d c-.)} c4-- \tuplet 3/2 4 {c8( g e-.)}
@@ -223,9 +218,9 @@ musicFagottIIMvtIV = \relative c {
 % Bars 181 to 185
 	fis-. r r2
 	cis4-. r r2
-	R1*2
+	R1*8
 	
-	R1*6
+	
 % Bars 186 to 190
 	
 	
@@ -233,19 +228,10 @@ musicFagottIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 191 to 195
-	R1
-	R1*5
+	R1*15
 % Bars 196 to 200
 	
-	R1
-	R1
-	R1
-	R1
 % Bars 201 to 205
-	R1
-	R1*4
-	
-	
 	
 % Bars 206 to 210
 	r2 r4 \tuplet 3/2 4 {g'8(\f\< a b)}
@@ -364,9 +350,7 @@ musicFagottIIMvtIV = \relative c {
 	a~
 % Bars 306 to 310
 	a4\p r r2
-	R1*2
-	
-	R1*8
+	R1*10
 % Bars 311 to 315
 	
 % Bars 316 to 320

@@ -48,15 +48,8 @@ musicHornIVMvtII = \relative c'' {
 	r8 f4\pp f8~
 % Bars 51 to 55
 	f r r4
-	R2*3
-	
-	
-	R2*4
+	R2*11
 % Bars 56 to 60
-	
-	
-	
-	R2*4
 	
 % Bars 61 to 65
 	

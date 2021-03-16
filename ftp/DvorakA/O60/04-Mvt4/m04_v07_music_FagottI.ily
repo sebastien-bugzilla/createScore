@@ -10,8 +10,7 @@ musicFagottIMvtIV = \relative c' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1
-	R1*4
+	R1*5
 % Bars 6 to 10
 	r4 cis8(\p b e4 a,)
 	b( gis a b)

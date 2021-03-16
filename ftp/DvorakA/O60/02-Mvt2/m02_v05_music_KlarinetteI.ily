@@ -179,8 +179,8 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 151 to 155
 	g2~
 	g8 r r4
-	R2
-	R2*3
+	R2*4
+	
 % Bars 156 to 160
 	
 	r8 cis,4->\p( b16 a

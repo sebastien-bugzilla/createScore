@@ -17,20 +17,16 @@ musicHornIIMvtII = \relative c'' {
 	a4\fp\> g(
 	f8)\pp r r4
 % Bars 6 to 10
-	R2*6
+	R2*23
 % Bars 11 to 15
 	
-	R2*4
-	
-	
-	
 % Bars 16 to 20
-	R2*11
+	
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
-	R2*2
+	
 	
 	f16\fp f f f   g g g g 
 	f f f f g\< g g g
@@ -47,16 +43,8 @@ musicHornIIMvtII = \relative c'' {
 	e e 
 	e e
 % Bars 41 to 45
-	R2*4
-	
-	
-	
-	R2*2
+	R2*10
 % Bars 46 to 50
-	
-	R2*4
-	
-	
 	
 % Bars 51 to 55
 	r8 f'\p\< f f\!
@@ -131,15 +119,11 @@ musicHornIIMvtII = \relative c'' {
 % Bars 111 to 115
 	fis dis-.-> gis,-.-> fis'->( \mark \default
 	dis) r r4
-	R2*4
+	R2*10
 	
 	
 % Bars 116 to 120
 	
-	R2*3
-	
-	
-	R2*3
 % Bars 121 to 125
 	
 	
@@ -154,13 +138,13 @@ musicHornIIMvtII = \relative c'' {
 	cis\< a e' cis a e' cis a
 % Bars 131 to 135
 	cis\ff r r8 r4
-	R2*5
+	R2*8
 	
 	
 	
 % Bars 136 to 140
 	
-	R2*3
+	
 	
 	\mark \default
 	r16 c,8\pp c16 r c8 d16
@@ -189,13 +173,13 @@ musicHornIIMvtII = \relative c'' {
 	d-- d--
 	d-- r
 % Bars 161 to 165
-	R2*5
+	R2*8
 	
 	
 	
 	
 % Bars 166 to 170
-	R2*3
+	
 	
 	\mark \default
 	f8\pp f4 f8~
@@ -218,25 +202,21 @@ musicHornIIMvtII = \relative c'' {
 	c2\pp\<(
 	bes'\>
 	a8)\! r r4
-	R2*4
+	R2*10
 	
 % Bars 191 to 195
 	
-	
-	R2*4
-	
-	
 % Bars 196 to 200
 	
-	R2*2
+	
 	
 	r4 r8 cis\ff-^
 	d-^ r a r
 % Bars 201 to 205
-	R2*3
+	R2*5
 	
 	
-	R2*2
+	
 	
 % Bar 206
 	R2\fermataMarkup \bar "|."

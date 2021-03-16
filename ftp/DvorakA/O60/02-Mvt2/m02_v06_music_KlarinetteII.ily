@@ -9,15 +9,9 @@ musicKlarinetteIIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2
-	R2*6
-	
-	
-	
+	R2*14
 % Bars 6 to 10
 	
-	
-	R2*7
 % Bars 11 to 15
 	
 	
@@ -42,12 +36,12 @@ musicKlarinetteIIMvtII = \relative c'' {
 	fis8 a g fis)
 	fis4 e\<(
 	d8)\! r r4
-	R2*4
+	R2*6
 	
 % Bars 31 to 35
 	
 	
-	R2*2
+	
 	\bar "||" \mark \default
 	r4 gis\pp--
 % Bars 36 to 40
@@ -57,16 +51,8 @@ musicKlarinetteIIMvtII = \relative c'' {
 	g! g
 	g g
 % Bars 41 to 45
-	R2
-	R
-	R2
-	R2
-	R2*2
+	R2*12
 % Bars 46 to 50
-	
-	R2*6
-	
-	
 	
 % Bars 51 to 55
 	
@@ -97,8 +83,8 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2
-	R2*6
+	R2*7
+	
 % Bars 76 to 80
 	
 	
@@ -109,19 +95,15 @@ musicKlarinetteIIMvtII = \relative c'' {
 	f2\<
 	e4\> d(\!
 	a8) r r4
-	R2*3
+	R2*5
 	
 % Bars 86 to 90
 	
-	R2*2
+	
 	\mark \default
-	R2
-	R2
+	R2*9
+	
 % Bars 91 to 95
-	R2*3
-	
-	
-	R2*4
 	
 % Bars 96 to 100
 	
@@ -144,13 +126,13 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 111 to 115
 	aes\fz \mark \default
 	g8 r r4
-	R2*8
+	R2*11
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	R2*2
 	
-	R2
+	
+	
 	bes,2\p\cresc
 	b!->
 % Bars 126 to 130
@@ -172,11 +154,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	b2(\pp  \mark \default
 	c4) r
 % Bars 141 to 145
-	R2*2
-	
-	R2*4
-	
-	
+	R2*6
 % Bars 146 to 150
 	
 	g4(\pp c)~

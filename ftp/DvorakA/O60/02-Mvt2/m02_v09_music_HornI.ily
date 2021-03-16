@@ -33,11 +33,11 @@ musicHornIMvtII = \relative c'' {
 	r8 g4.~->\p
 	g8 b4\< b8\!
 	c\f r r4
-	R2*3
+	R2*5
 % Bars 31 to 35
 	
 	
-	R2*2
+	
 	\bar "||" \mark \default
 	r4 e,\pp--
 % Bars 36 to 40
@@ -84,11 +84,11 @@ musicHornIMvtII = \relative c'' {
 	a(_\dimmarkup g c4)~
 	c2\pp~ \mark \default
 	c8 r r4
-	R2*7
+	R2*9
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	R2*2
+	
 	
 	r8 b4\mf\< b8
 	c2\f\>~

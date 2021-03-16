@@ -103,13 +103,13 @@ musicOboeIIMvtIII = \relative c'' {
 		d2.\p~
 % Bars 91 to 95
 		d
-		R2.*4
+		R2.*10
 % Bars 96 to 100
-		R2.*4
 		
 		
 		
-		R2.*2
+		
+		
 % Bars 101 to 105
 		
 		r4 bes'-.\pp r
@@ -182,33 +182,15 @@ musicOboeIIMvtIII = \relative c'' {
 	d
 	d \bar "||" \key d \major
 	\repeat volta 2 {
-		R2.
-		R2.
-		R2.
+		R2.*24
 % Bars 156 to 160
-		R2.
-		R2.*7
-		
-		
 		
 % Bars 161 to 165
 		
-		
-		
-		R2.
-		R2.
 % Bars 166 to 170
-		R2.
-		R2.*7
-		
-		
 		
 % Bars 171 to 175
 		
-		
-		
-		R2.
-		R2.*2
 % Bars 176 to 180
 		
 		\cueDuring #"cueVoiceOboeIIMvtIII" #UP {
@@ -235,14 +217,14 @@ musicOboeIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	R2.*2
+	R2.*16
 	
-	R2.*4
+	
 	
 	
 % Bars 206 to 210
 	
-	R2.*10
+	
 	
 	
 	
@@ -284,7 +266,7 @@ musicOboeIIMvtIII = \relative c'' {
 	d e cis)
 % Bars 241 to 245
 	b r r
-	R2.*26
+	R2.*38
 % Bars 246 to 250
 	
 % Bars 251 to 255
@@ -296,7 +278,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 266 to 270
 	
 	
-	R2.*12
+	
 	
 	
 % Bars 271 to 275
@@ -402,17 +384,17 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	d2.\p~
 	d
-	R2.*4
+	R2.*10
 % Bars 376 to 380
 	
 	
 	
-	R2.*4
+	
 	
 % Bars 381 to 385
 	
 	
-	R2.*2
+	
 	
 	r4 bes'-.\pp r
 % Bars 386 to 390

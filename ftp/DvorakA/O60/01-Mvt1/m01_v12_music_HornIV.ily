@@ -60,12 +60,8 @@ musicHornIVMvtI = \relative c' {
 		a2.~
 		a \mark \default
 		bes4\ff^\grandioso r r
-		R2.
+		R2.*6
 % Bars 51 to 55
-		R2.
-		R2.
-		R2.
-		R2.*2
 		
 % Bars 56 to 60
 		b2(\fz c8 d)
@@ -92,10 +88,10 @@ musicHornIVMvtI = \relative c' {
 		}
 		r4 a,\pp r
 		r g r
-		R2.*2
+		R2.*5
 % Bars 86 to 90
 		
-		R2.*3
+		
 		
 		
 		g,2.\f\>~
@@ -174,11 +170,7 @@ musicHornIVMvtI = \relative c' {
 		bes-> c8-. d-. g,4
 		bes-> c8-. d-. g,4
 % Bars 171 to 175
-		R2.*3
-		
-		
-		R2.*3
-		
+		R2.*6
 % Bars 176 to 180
 		
 	}
@@ -201,8 +193,7 @@ musicHornIVMvtI = \relative c' {
 		}
 		{
 % Bars 177 to 180
-			R2.
-			R2.*4
+			R2.*5
 % Bars 181 to 185
 			
 		}
@@ -382,13 +373,13 @@ musicHornIVMvtI = \relative c' {
 	ees''2(\fz des8 ces
 % Bars 391 to 395
 	bes4) r r
-	R2.*6
+	R2.*9
 % Bars 396 to 400
 	
 	
-	R2.*2
 	
-	R2. \mark \default
+	
+	\mark \default
 % Bars 401 to 405
 	R2.*28
 % Bars 406 to 410

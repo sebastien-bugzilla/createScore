@@ -517,11 +517,11 @@ musicHornIMvtI = \relative c'' {
 % Bars 531 to 535
 	g2.~
 	g4 r r
-	R2.*5
+	R2.*7
 % Bars 536 to 540
 	
 	
-	R2.*2
+	
 	
 	c2.--\pp
 % Bars 541 to 545

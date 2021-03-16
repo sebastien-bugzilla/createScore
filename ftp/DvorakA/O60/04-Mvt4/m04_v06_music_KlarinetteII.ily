@@ -81,14 +81,10 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	g\p r 
 	R1*2
 	\mark \default
-	R1*6
+	R1*12
 	
 % Bars 71 to 75
 	
-	
-	
-	
-	R1*6
 % Bars 76 to 80
 	
 % Bars 81 to 85
@@ -173,12 +169,12 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	d r
 % Bars 151 to 155
 	cis r
-	R1*4
+	R1*14
 	
 	
 	
 % Bars 156 to 160
-	R1*10
+	
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -210,13 +206,9 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 191 to 195
-	R1
-	R1*6
+	R1*16
 % Bars 196 to 200
 	
-	
-	R1
-	R1*8
 % Bars 201 to 205
 	
 % Bars 206 to 210
@@ -277,18 +269,14 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	\tuplet 6/4 1 {r4 c(\p\< ees ges f ees\!}
 % Bars 256 to 260
 	des\f) r r2
-	R1*9
+	R1*16
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	R1*6
-	
-	
-	
 	
 % Bars 271 to 275
 	
-	R1
+	
 	r2 d4\f r
 	R1
 	r2 e4\f r
@@ -330,19 +318,15 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	c~
 % Bars 306 to 310
 	c4\p r4 r2
-	R1*2
+	R1*19
 	
-	R1*16
+	
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
-	
-	
-	
-	R1
 % Bars 326 to 330
 	f,4(\p ees d c)
 	d( f' e ees

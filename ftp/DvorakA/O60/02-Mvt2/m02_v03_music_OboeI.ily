@@ -25,11 +25,11 @@ musicOboeIMvtII = \relative c'' {
 % Bars 11 to 15
 	bes4.\>( g16 a\!
 	bes8) r r4
-	R2*5
+	R2*6
 % Bars 16 to 20
 	
 	
-	R2
+	
 	f8( bes d f)~
 	f(_\dimmarkup ees d c
 % Bars 21 to 25
@@ -178,15 +178,15 @@ musicOboeIMvtII = \relative c'' {
 	c)(\>
 % Bars 146 to 150
 	bes8)\! r r4
-	R2
-	R2*2
+	R2*3
+	
 	
 	r8 bes4(_\pcresc a16 g
 % Bars 151 to 155
 	f2)~\mf\>
 	f8\p r r4
-	R2
-	R2*2
+	R2*3
+	
 	
 % Bars 156 to 160
 	r8 b!4(\p a16 g
@@ -218,9 +218,9 @@ musicOboeIMvtII = \relative c'' {
 	g8\> bes( a g)~\!
 	g( f4) r8
 % Bars 181 to 185
-	R2*2
+	R2*6
 	
-	R2*4
+	
 % Bars 186 to 190
 	
 	r8 f(\p g a)

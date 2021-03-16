@@ -115,16 +115,12 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		a2 a4~
 % Bars 91 to 95
 		a bes2
-		R2.*4
+		R2.*10
 		
 		
 		
 % Bars 96 to 100
-		R2.*4
 		
-		
-		
-		R2.*2
 % Bars 101 to 105
 		
 		r4 bes'-. r
@@ -256,11 +252,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	R2.
-	R2.
-	R2.*2
-	
-	R2.*20
+	R2.*24
 % Bars 206 to 210
 	
 % Bars 211 to 215
@@ -319,15 +311,11 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	bes c d)
 	c2.~
 	c4 r r
-	R2.*11
+	R2.*19
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
-	
-	
-	
-	R2.*8
 % Bars 281 to 285
 	
 % Bars 286 to 290
@@ -430,18 +418,10 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 	a2\p a4~
 	a bes2
-	R2.*4
+	R2.*10
 % Bars 376 to 380
 	
-	
-	
-	
-	R2.*4
 % Bars 381 to 385
-	
-	
-	
-	R2.*2
 	
 % Bars 386 to 390
 	r4 bes'-.\pp r

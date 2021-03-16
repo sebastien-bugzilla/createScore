@@ -85,11 +85,11 @@ musicFagottIMvtII = \relative c' {
 	r r8 bes'\pp(
 	a g ees4 \mark \default
 	d8) r r4
-	R2*7
+	R2*9
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	R2*2
+	
 	
 	r8 c4.\mf\<
 	f,8\f[ f'] f,[ f']

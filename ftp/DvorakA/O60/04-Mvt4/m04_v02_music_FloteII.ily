@@ -174,27 +174,23 @@ musicFloteIIMvtIV = \relative c'' {
 	a~
 	a4\! r r2
 % Bars 186 to 190
-	R1
-	R1*4
+	R1*5
+	
 	
 	
 	\mark \default
 % Bars 191 to 195
-	R1*5
+	R1*16
 	
 	
 	
 	
 % Bars 196 to 200
-	R1*6
+	
 % Bars 201 to 205
 	
-	R1
-	R1
-	R1
-	R1
 % Bars 206 to 210
-	R1
+	
 	e'4(\ff d8 c) d4( c8 g)
 	c4 r b r
 	c r r2
@@ -237,10 +233,10 @@ musicFloteIIMvtIV = \relative c'' {
 	aes4.-> aes8 aes4 ges
 % Bars 241 to 245
 	f r r2
-	R1*3
+	R1*7
 	
 	
-	R1*4
+	
 % Bars 246 to 250
 	
 	
@@ -314,17 +310,17 @@ musicFloteIIMvtIV = \relative c'' {
 	e~
 % Bars 306 to 310
 	e4\p r r2
-	R1*7
+	R1*18
 % Bars 311 to 315
 	
 	
 	
-	R1*4
+	
 	
 % Bars 316 to 320
 	
 	
-	R1*7
+	
 % Bars 321 to 325
 	
 	
@@ -340,8 +336,8 @@ musicFloteIIMvtIV = \relative c'' {
 	d'4. d8 d2~
 % Bars 331 to 335
 	d4 r r2
-	R1
-	R1*8
+	R1*9
+	
 % Bars 336 to 340
 	
 % Bars 341 to 345
@@ -375,14 +371,14 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	R1*6
+	R1*12
 	
 	
 	
 	
 % Bars 371 to 375
 	
-	R1*6
+	
 % Bars 376 to 380
 	
 	

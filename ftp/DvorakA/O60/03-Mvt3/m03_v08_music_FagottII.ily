@@ -197,8 +197,8 @@ musicFagottIIMvtIII = \relative c, {
 	d
 	d \bar "||" \key d \major
 	\repeat volta 2 {
-		R2.
-		R2.*39
+		R2.*48
+		
 % Bars 156 to 160
 	
 % Bars 161 to 165
@@ -215,10 +215,6 @@ musicFagottIIMvtIII = \relative c, {
 	
 % Bars 191 to 195
 		
-		
-		R2.*8
-		
-		
 % Bars 196 to 200
 		
 		
@@ -227,26 +223,16 @@ musicFagottIIMvtIII = \relative c, {
 		
 	}
 % Bars 201 to 205
-	R2.
-	R2.*11
-	
+	R2.*24
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
-	
-	R2.*9
-	
-	
 % Bars 216 to 220
-	
-	
-	
-	
 	
 % Bars 221 to 225
 	
-	R2.*3
+	
 	
 	
 	\cueDuring #"cueVoiceFagottIIMvtIII" #DOWN {

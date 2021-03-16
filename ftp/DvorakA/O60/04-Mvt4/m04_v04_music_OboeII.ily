@@ -10,16 +10,12 @@ musicOboeIIMvtIV = \relative c'' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*7
+	R1*13
 % Bars 6 to 10
 	
-	
-	R1*3
-	
-	
 % Bars 11 to 15
-	R1
-	R1*2
+	
+	
 	
 	a1_\ppocoapococresc~
 	a2. gis4(
@@ -99,11 +95,10 @@ musicOboeIIMvtIV = \relative c'' {
 	r4 e8(\p\< fis gis a b cis)
 	d4\fp \tuplet 3/2 4 {d8( cis b)} b2~
 	b4 r r2
-	R1*3
+	R1*10
 	
 % Bars 81 to 85
 	
-	R1*7
 % Bars 86 to 90
 	
 	
@@ -118,8 +113,7 @@ musicOboeIIMvtIV = \relative c'' {
 	e4\fz r fis\fz r
 % Bars 96 to 100
 	e\fz r e\fz r
-	R1
-	R1*7
+	R1*8
 % Bars 101 to 105
 	
 	
@@ -221,20 +215,16 @@ musicOboeIIMvtIV = \relative c'' {
 	a~ \mark \default
 % Bars 191 to 195
 	a4 r r2
-	R1*4
+	R1*15
 	
 	
 	
 % Bars 196 to 200
-	R1
-	R1*3
 	
-	
-	R1
 % Bars 201 to 205
-	R1*5
+	
 % Bars 206 to 210
-	R1
+	
 	e'4(\ff d8 c) d4( c8 g)
 	c4 r b r
 	c r r2
@@ -292,9 +282,9 @@ musicOboeIIMvtIV = \relative c'' {
 	\mark \default
 	\tuplet 6/4 1 {r4 b(\p\< d f e\> d\!)}
 	c2 r
-	R1
+	R1*5
 % Bars 256 to 260
-	R1*4
+	
 	
 	
 	
@@ -307,13 +297,13 @@ musicOboeIIMvtIV = \relative c'' {
 	a-. r c-. r
 % Bars 266 to 270
 	bes4\fz r r2
-	R1*5
+	R1*6
 	
 	
 	
 % Bars 271 to 275
 	
-	R1
+	
 	r2 e4\f r
 	R1
 	r2 cis4\f r
@@ -355,28 +345,14 @@ musicOboeIIMvtIV = \relative c'' {
 	cis~
 % Bars 306 to 310
 	cis4\p r r2
-	R1*7
+	R1*24
 % Bars 311 to 315
-	
-	
-	
-	R1*4
 	
 % Bars 316 to 320
 	
-	
-	R1*7
 % Bars 321 to 325
 	
-	
-	
-	
-	R1*3
 % Bars 326 to 330
-	
-	
-	R1
-	R1*2
 	
 % Bars 331 to 335
 	g1(~\p
@@ -433,11 +409,7 @@ musicOboeIIMvtIV = \relative c'' {
 	g4\mf \tuplet 3/2 4 {g8( fis e)} e2~
 	e4-. r  r2
 % Bars 376 to 380
-	R1*3
-	
-	
-	R1*3
-	
+	R1*6
 % Bars 381 to 385
 	
 	fis4->\mf \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}

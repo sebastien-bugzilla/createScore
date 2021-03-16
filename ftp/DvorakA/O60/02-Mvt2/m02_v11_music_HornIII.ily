@@ -56,13 +56,9 @@ musicHornIIIMvtII = \relative c'' {
 	f4 e(
 	a2)~\<
 	a4\fz r
-	R2*4
+	R2*7
 	
 % Bars 61 to 65
-	
-	
-	R2*3
-	
 	
 % Bars 66 to 70
 	\cueDuring #"cueVoiceHornIIIMvtII" #UP {

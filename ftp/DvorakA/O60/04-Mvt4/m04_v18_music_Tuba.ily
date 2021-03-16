@@ -28,13 +28,9 @@ musicTubaMvtIV = \relative c, {
 	d~
 	d~
 	d2. r4
-	R1*5
+	R1*7
 % Bars 31 to 35
 	
-	
-	
-	
-	R1*2
 % Bars 36 to 40
 	
 	r2 r4 a'\f-. \mark \default
@@ -168,11 +164,7 @@ musicTubaMvtIV = \relative c, {
 	
 	\mark \default
 % Bars 191 to 195
-	R1*4
-	
-	
-	
-	R1*4
+	R1*8
 % Bars 196 to 200
 	
 	
@@ -289,7 +281,7 @@ musicTubaMvtIV = \relative c, {
 % Bars 316 to 320
 	a~
 	a4 r r2
-	R1*23
+	R1*40
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -299,16 +291,8 @@ musicTubaMvtIV = \relative c, {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	R1*10
-	
-	
-	
 	
 % Bars 346 to 350
-	
-	
-	
-	
 	
 % Bars 351 to 355
 	R1*7

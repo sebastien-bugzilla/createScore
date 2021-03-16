@@ -259,19 +259,19 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 221 to 225
 	d4\pp r r
 	fis( g8 e fis4)
-	R2.*6
+	R2.*41
 % Bars 226 to 230
 	
 	
 	
-	R2.*13
+	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
 % Bars 241 to 245
 	
-	R2.*22
+	
 % Bars 246 to 250
 	
 % Bars 251 to 255

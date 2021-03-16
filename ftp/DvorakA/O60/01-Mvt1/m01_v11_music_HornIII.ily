@@ -30,9 +30,9 @@ musicHornIIIMvtI = \relative c' {
 % Bars 16 to 20
 		a a4 a\! c8
 		bes r r4 r
-		R2.*2
+		R2.*16
 		
-		R2.*14
+		
 % Bars 21 to 25
 	
 % Bars 26 to 30

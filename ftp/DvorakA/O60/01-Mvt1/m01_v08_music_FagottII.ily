@@ -151,11 +151,7 @@ musicFagottIIMvtI = \relative c {
 		e4(\> cis! fis!)
 		b,\p r r
 % Bars 121 to 125
-		R2.*2
-		
-		R2.*5
-		
-		
+		R2.*7
 % Bars 126 to 130
 		
 		
@@ -211,8 +207,7 @@ musicFagottIIMvtI = \relative c {
 		b r r
 		b r r
 % Bars 171 to 175
-		R2.
-		R2.*5
+		R2.*6
 % Bars 176 to 180
 		
 	}
@@ -237,21 +232,17 @@ musicFagottIIMvtI = \relative c {
 		}
 		{
 % Bars 177 to 180
-			R2.*3
-			
-			
-			R2.*2
+			R2.*5
 % Bars 181 to 185
 			
 		}
 	}
-	R2.*2
+	R2.*18
 	
-	R2.
-	R2.*2
+	
+	
 % Bars 186 to 190
 	
-	R2.*13
 % Bars 191 to 195
 	
 % Bars 196 to 200
@@ -444,10 +435,9 @@ musicFagottIIMvtI = \relative c {
 % Bars 366 to 370
 	d(
 	e4-.) r r
-	R2.*3
+	R2.*10
 % Bars 371 to 375
-	R2.
-	R2.*6
+	
 % Bars 376 to 380
 	
 	

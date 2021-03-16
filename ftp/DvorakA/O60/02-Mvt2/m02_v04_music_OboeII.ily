@@ -15,23 +15,23 @@ musicOboeIIMvtII = \relative c' {
 	bes4\fp( g8\> a
 	bes)\pp r r4
 % Bars 6 to 10
-	R2
-	R2*6
+	R2*12
+	
 % Bars 11 to 15
 	
 	
-	R2*5
+	
 % Bars 16 to 20
 	
 	
 	r8 fis(\p g e)
 	f!8 r r4
-	R2*2
+	R2*8
 % Bars 21 to 25
 	
-	R2*2
 	
-	R2*4
+	
+	
 	
 % Bars 26 to 30
 	
@@ -52,10 +52,10 @@ musicOboeIIMvtII = \relative c' {
 	d d
 	d d 
 % Bars 41 to 45
-	R2
-	R2
-	R2
-	R2*3
+	R2*6
+	
+	
+	
 	
 % Bars 46 to 50
 	
@@ -68,35 +68,35 @@ musicOboeIIMvtII = \relative c' {
 	e!2\f\>
 	g\p\>~
 	g8\! r r4
-	R2*2
+	R2*4
 % Bars 56 to 60
 	
-	R2*2
+	
 	
 	g4\p r
 	g_\dimmarkup r
 % Bars 61 to 65
 	g\pp r
 	g r
-	R2*2
+	R2*10
 	
-	R2
+	
 % Bars 66 to 70
-	R2*2
 	
-	R2*5
+	
+	
 % Bars 71 to 75
 	
 	\mark \default
-	R2*2
+	R2*11
 	
-	R2*5
+	
 % Bars 76 to 80
 	
 	
 	
 	
-	R2*4
+	
 % Bars 81 to 85
 	
 	
@@ -138,20 +138,20 @@ musicOboeIIMvtII = \relative c' {
 % Bars 111 to 115
 	b\fz \mark \default
 	b8 r r4
-	R2*2
+	R2*6
 	
-	R2*3
+	
 % Bars 116 to 120
 	
 	
-	R2
+	
 	dis\p~\<
 	dis\!
 % Bars 121 to 125
 	ees!\pp~
 	ees
-	R2
-	R2*6
+	R2*7
+	
 	
 % Bars 126 to 130
 	
@@ -222,15 +222,15 @@ musicOboeIIMvtII = \relative c' {
 % Bars 181 to 185
 	r4 a(\pp 
 	bes8) r r4
-	R2*4
+	R2*13
 % Bars 186 to 190
 	
-	R2*4
+	
 	
 	
 	
 % Bars 191 to 195
-	R2*5
+	
 % Bars 196 to 200
 	\cueDuring #"cueVoiceOboeIIMvtII" #UP {
 		\ni R2

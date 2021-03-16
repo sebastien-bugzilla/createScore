@@ -32,12 +32,9 @@ musicHornIIMvtI = \relative c' {
 		c,\< c4 c c8
 		c2.\fz~
 		c2~ c8 r
-		R2.*4
+		R2.*14
 % Bars 21 to 25
 		
-		
-		
-		R2.*10
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -169,9 +166,9 @@ musicHornIIMvtI = \relative c' {
 		e4 r a,8-. c-.
 % Bars 171 to 175
 		e4\fp r r
-		R2.*2
+		R2.*5
 		
-		R2.*3
+		
 		
 % Bars 176 to 180
 		
@@ -252,13 +249,11 @@ musicHornIIMvtI = \relative c' {
 	g8 g g2~
 % Bars 246 to 250
 	g4\p r r
-	R2.*9
+	R2.*18
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	R2.*2
 	
-	R2.*7
 % Bars 261 to 265
 	
 	
@@ -407,11 +402,11 @@ musicHornIIMvtI = \relative c' {
 	aes4\p( des f)
 % Bars 406 to 410
 	c4.(_\dimmarkup bes8 aes4)
-	R2.*9
+	R2.*14
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	R2.*5
+	
 % Bars 421 to 425
 	c,8\pp\< c c4 c8 c
 	c4 c\> e\!
@@ -531,14 +526,14 @@ musicHornIIMvtI = \relative c' {
 % Bars 536 to 540
 	g~
 	g4 r r
-	R2.*2
+	R2.*7
 	
-	R2.*4
+	
 % Bars 541 to 545
 	
 	
 	
-	R2.
+	
 	c8\f-. e-. g4 d'->
 % Bar 546
 	c-> r r \bar "|."

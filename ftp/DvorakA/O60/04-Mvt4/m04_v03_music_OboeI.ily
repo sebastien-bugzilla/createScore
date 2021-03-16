@@ -88,11 +88,11 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 71 to 75
 	e) r e( fis
 	e2) r
-	R1*3
+	R1*4
 	
 	
 % Bars 76 to 80
-	R1
+	
 	fis'4\fp \tuplet 3/2 4 {fis8( e d)} e4 \tuplet 3/2 4 {e8( d cis)}
 	b4-. fis b2->
 	cis4-. g-. cis2->
@@ -421,8 +421,8 @@ musicOboeIMvtIV = \relative c'' {
 	a1~
 % Bars 371 to 375
 	a4 r r2
-	R1
-	R1
+	R1*2
+	
 	b4\mf \tuplet 3/2 4 {b8( a g)} a4 \tuplet 3/2 4 {a8( g fis)}
 	e4-. b-. e2->
 % Bars 376 to 380
@@ -501,13 +501,13 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 	\bar "||" \mark \default
-	R1*5
+	R1*11
 % Bars 441 to 445
 	
 	
 	
 	
-	R1*6
+	
 % Bars 446 to 450
 	
 % Bars 451 to 455

@@ -432,7 +432,7 @@ musicTrompeteIMvtI = \relative c'' {
 	g2(\p f8 e)
 	e2( d8_\dimmarkup c)
 	c2 r4
-	R2.*16
+	R2.*15
 % Bars 531 to 535
 	
 % Bars 536 to 540

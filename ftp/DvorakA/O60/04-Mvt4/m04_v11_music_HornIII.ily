@@ -451,14 +451,10 @@ musicHornIIIMvtIV = \relative c'' {
 	e-. r r e-.
 	e-. r r2
 % Bars 446 to 450
-	R1*10
+	R1*17
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	R1*3
-	
-	
-	R1*4
 	
 % Bars 461 to 465
 	

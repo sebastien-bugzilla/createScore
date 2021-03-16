@@ -390,15 +390,11 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c r c( d
 	c) r c( d
 	c) r r2
-	R1*4
+	R1*8
 % Bars 371 to 375
 	
-	
-	
-	R1*2
-	
 % Bars 376 to 380
-	R1*2
+	
 	
 	g'4->\p \tuplet 3/2 4 {g8( f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
 	c4 r r2

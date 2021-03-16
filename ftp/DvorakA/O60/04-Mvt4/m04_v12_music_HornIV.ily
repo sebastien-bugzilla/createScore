@@ -62,10 +62,10 @@ musicHornIVMvtIV = \relative c' {
 	d\p r
 	R1*2
 	\mark \default
-	R1*2
+	R1*16
 	
 % Bars 71 to 75
-	R1*14
+	
 % Bars 76 to 80
 	
 % Bars 81 to 85
@@ -355,16 +355,8 @@ musicHornIVMvtIV = \relative c' {
 	
 	\mark \default
 % Bars 366 to 370
-	R1*4
-	
-	
-	
-	R1*4
+	R1*12
 % Bars 371 to 375
-	
-	
-	
-	R1*4
 	
 % Bars 376 to 380
 	
@@ -436,22 +428,18 @@ musicHornIVMvtIV = \relative c' {
 	d
 	g,~
 	g4 r r2
-	R1*5
+	R1*6
 	
 % Bars 436 to 440
 	
 	
 	
-	R1 \bar "||" \mark \default
-	R1*6
+	\bar "||" \mark \default
+	R1*16
 % Bars 441 to 445
 	
-	
-	
-	
-	
 % Bars 446 to 450
-	R1*10
+	
 % Bars 451 to 455
 	
 % Bars 456 to 460

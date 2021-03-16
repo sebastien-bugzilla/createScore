@@ -82,10 +82,11 @@ musicFloteIMvtI = \relative c'' {
 		
 		
 		
-		\cueDuring #"cueVoiceFloteIMvtI" #UP { \ni R2.
+		\cueDuring #"cueVoiceFloteIMvtI" #UP { 
+			\ni R2.
 % Bars 76 to 80
-		R
-		R \no
+			R
+			R \no
 		r4 } r8 d8-.\p e-. fis-.
 		g4-- r8 cis,-. d-. e-.
 		fis4-- r8 b,-. cis-. d-.

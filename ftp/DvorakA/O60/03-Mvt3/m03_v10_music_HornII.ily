@@ -194,18 +194,11 @@ musicHornIIMvtIII = \relative c'' {
 		b~\>
 		b~
 		b2\! r4
-		R2.*9
+		R2.*16
 % Bars 186 to 190
-		
-		
-		
-		
 		
 % Bars 191 to 195
 		
-		
-		
-		R2.*7
 % Bars 196 to 200
 		
 		

@@ -106,18 +106,10 @@ musicKlarinetteIMvtIII = \relative c'' {
 		bes c-. des-.
 		c2-> aes4->~
 		aes aes2->
-		R2.*6
+		R2.*12
 % Bars 86 to 90
 		
-		
-		
-		
-		R2.*2
 % Bars 91 to 95
-		
-		R2.*4
-		
-		
 		
 % Bars 96 to 100
 		b'2\pp b4~
@@ -428,13 +420,9 @@ musicKlarinetteIMvtIII = \relative c'' {
 	c2-> aes4~->
 % Bars 366 to 370
 	aes aes2->
-	R2.*6
+	R2.*12
 % Bars 371 to 375
 	
-	
-	R2.*2
-	
-	R2.*4
 % Bars 376 to 380
 	
 	

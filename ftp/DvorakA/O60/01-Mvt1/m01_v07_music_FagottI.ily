@@ -101,11 +101,11 @@ musicFagottIMvtI = \relative c {
 % Bars 76 to 80
 		e 
 		cis!)
-		R2.*5
+		R2.*6
 % Bars 81 to 85
 		
 		
-		R2.
+		
 		r4 fis2\p~
 		fis8( e g e b b'
 % Bars 86 to 90

@@ -281,7 +281,7 @@ musicPosauneIMvtIV = \relative c'' {
 % Bars 316 to 320
 	e~
 	e4 r r2
-	R1*26
+	R1*40
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -292,13 +292,10 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 341 to 345
 	
-	
-	
-	R1*7
 % Bars 346 to 350
 	
 % Bars 351 to 355
-	R1*7
+	
 % Bars 356 to 360
 	
 	

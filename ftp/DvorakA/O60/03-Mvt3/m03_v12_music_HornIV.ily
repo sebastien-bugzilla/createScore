@@ -84,7 +84,7 @@ musicHornIVMvtIII = \relative c' {
 % Bars 66 to 70
 		g2->\f f4\>~->
 		f ees2->\!
-		R2.*18
+		R2.*22
 % Bars 71 to 75
 	
 % Bars 76 to 80
@@ -92,18 +92,16 @@ musicHornIVMvtIII = \relative c' {
 % Bars 81 to 85
 	
 % Bars 86 to 90
-		R2.*2
 		
-		R2.*2
+		
+		
 		
 		c,2\p c4~
 % Bars 91 to 95
 		c f,2
-		R2.*4
+		R2.*26
 % Bars 96 to 100
-		R2.*2
 		
-		R2.*20
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -164,21 +162,11 @@ musicHornIVMvtIII = \relative c' {
 	c
 	c \bar "||" \key c \major
 	\repeat volta 2 {
-		R2.*2
-		
-		R2.*9
+		R2.*32
 % Bars 156 to 160
-		
-		
-		
-		
 		
 % Bars 161 to 165
 		
-		
-		
-		R2.
-		R2.*16
 % Bars 166 to 170
 		
 % Bars 171 to 175
@@ -186,7 +174,7 @@ musicHornIVMvtIII = \relative c' {
 % Bars 176 to 180
 		
 % Bars 181 to 185
-		R2.*4
+		
 		
 		
 		
@@ -340,31 +328,23 @@ musicHornIVMvtIII = \relative c' {
 	g2\f-> f4->~\>
 	f ees2->\!
 % Bars 351 to 355
-	R2.*18
+	R2.*22
 % Bars 356 to 360
 	
 % Bars 361 to 365
 	
 % Bars 366 to 370
 	
-	
-	
-	R2.*2
-	
 % Bars 371 to 375
-	R2.*2
+	
 	
 	c,2\p c4~
 	c f,2
-	R2.*4
+	R2.*26
 % Bars 376 to 380
 	
-	
-	
-	R2.*2
-	
 % Bars 381 to 385
-	R2.*20
+	
 % Bars 386 to 390
 	
 % Bars 391 to 395

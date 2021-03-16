@@ -137,17 +137,17 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	\mark \default
-	R2
+	R2*3
 % Bars 141 to 145
-	R2
-	R2
+	
+	
 	bes2~\p\<
 	bes8(\mf\< d f d
 	c2)(\> 
 % Bars 146 to 150
 	bes8\p) r r4 
-	R2
-	R2*2
+	R2*3
+	
 	
 	r8 bes4_\pcresc( a16 g
 % Bars 151 to 155

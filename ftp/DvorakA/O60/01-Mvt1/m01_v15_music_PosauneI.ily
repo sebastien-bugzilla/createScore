@@ -49,11 +49,7 @@ musicPosauneIMvtI = \relative c' {
 		d4 a b8 c
 		b4 r r
 % Bars 61 to 65
-		R2.*4
-		
-		
-		
-		R2.*43
+		R2.*47
 % Bars 66 to 70
 	
 % Bars 71 to 75

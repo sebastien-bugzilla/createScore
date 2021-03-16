@@ -94,12 +94,11 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 86 to 90
 		g,2\p g4~
 		g aes2
-		R2.*2
+		R2.*8
 		
-		R2.*2
+		
 % Bars 91 to 95
 		
-		R2.*4
 % Bars 96 to 100
 		r4 ges-. r
 		ges-. r ges-.
@@ -198,11 +197,7 @@ musicHornIIIMvtIII = \relative c'' {
 		c~\<
 		c\!
 % Bars 181 to 185
-		R2.*4
-		
-		
-		
-		R2.*13
+		R2.*20
 % Bars 186 to 190
 	
 % Bars 191 to 195
@@ -210,7 +205,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 196 to 200
 		
 		
-		R2.*3
+		
 		
 		
 	}
@@ -356,11 +351,7 @@ musicHornIIIMvtIII = \relative c'' {
 	g,2\p g4~
 	g aes2
 % Bars 371 to 375
-	R2.*2
-	
-	R2.*2
-	
-	R2.*4
+	R2.*8
 % Bars 376 to 380
 	
 	
