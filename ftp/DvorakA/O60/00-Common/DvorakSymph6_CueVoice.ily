@@ -16,7 +16,7 @@ cueVoiceFloteIMvtI = \relative c {
 	ais4) s2
 	R2.*29
 	% bar 108
-	fis8\pp^\markup {Viol.} fis16( gis ais8) ais16( b cis8) cis16( d)
+	fis8\pp-\tweak X-offset #1.5 ^\markup {Viol.} fis16( gis ais8) ais16( b cis8) cis16( d)
 	R2.*27
 	% bar 136 - 137
 	aes8^\markup {Viol.} ces ees4 f8 g
@@ -93,7 +93,7 @@ cueVoiceFloteIIMvtI = \relative c {
 	b cis d!4 d8 dis
 	R2.*107
 	% bar 538 - 539
-	r4^\markup {Fl.I} cis4(\pp d8 e)
+	r4-\tweak X-offset #-0.5 ^\markup {Fl.I} cis4_(\pp d8 e)
 	fis2.
 }
 cueVoiceFloteIIMvtII = \relative c {
@@ -112,7 +112,7 @@ cueVoiceFloteIIMvtII = \relative c {
 cueVoiceFloteIIMvtIII = \relative c {
 	R2.*109
 	% bar 110 - 112
-	r4^\markup {Fl.I} a'''8( gis a4)
+	r4-\tweak X-offset #-1 ^\markup {Fl.I} a'''8( gis a4)
 	r b8( ais b4)
 	r cis8( bis cis4)
 	R2.*281
@@ -125,7 +125,7 @@ cueVoiceFloteIIMvtIV = \relative c {
 	\partial 4 r4
 	R1*7
 	%bar 8 - 9
-	r2 r4^\markup {Fl.I} e'''(
+	r2 r4-\tweak X-offset #-2 ^\markup {Fl.I} e'''(
 	cis b a) r
 	R1*255
 	% bar 265

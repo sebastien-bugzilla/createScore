@@ -55,7 +55,7 @@ musicFloteIMvtI = \relative c'' {
 		gis a2~\<
 		a2.~
 		a \mark \default
-		d,4\ff^\grandioso r a-.
+		d,4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
 		d2 r4
 % Bars 51 to 55
 		r r a-.
@@ -86,8 +86,8 @@ musicFloteIMvtI = \relative c'' {
 			\ni R2.
 % Bars 76 to 80
 			R
-			R \no
-		r4 } r8 d8-.\p e-. fis-.
+			R \no \stopMeasureCount
+		r4^\solo } r8 d8-.\p e-. fis-.
 		g4-- r8 cis,-. d-. e-.
 		fis4-- r8 b,-. cis-. d-.
 % Bars 81 to 85
@@ -118,7 +118,7 @@ musicFloteIMvtI = \relative c'' {
 		fis
 		gis4( a\< b
 		c d dis
-		e eis\> fis)\!
+		e\> eis fis)\!
 		b, r r 
 % Bars 121 to 125
 		R2.*15
@@ -133,7 +133,7 @@ musicFloteIMvtI = \relative c'' {
 		}
 		r4 des,8\f-. ees-. f4->
 		f8(_\crescmarkup ges aes a bes aes) \mark \default
-		ges\f r r4 e(->
+		ges\f r r4 e!(->
 % Bars 141 to 145
 		fis!8) r r4 e->(
 		fis8) r r4 g-.
@@ -408,7 +408,7 @@ musicFloteIMvtI = \relative c'' {
 	bes8\<-. a-. g-. f-. e-. a-.\!
 	d,4 r r
 	R2.
-	r4 d4.(\f\< d'8)\!
+	r4 \hairpinShorten #0 #-2 d4.(\f\< d'8)\!
 % Bars 386 to 390
 	d2.~->
 	d4 r r
@@ -418,7 +418,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 391 to 395
 	r4 r8 a\f-. bes-. c-. 
 	d2(\fz c8 bes
-	a4) r8 c-. d-. e-.
+	a4) r8 c-.\< d-. e-.
 	f2(\fz e8 d
 	cis!-.) r r4 r
 % Bars 396 to 400
@@ -429,8 +429,8 @@ musicFloteIMvtI = \relative c'' {
 	r4 r e,\pp \mark \default
 % Bars 401 to 405
 	R2.
-	f4(\p a\< d)
-	c2.~
+	f4(\p\<^\solo a d)
+	c2.~\!
 	c\>
 	bes\p~
 % Bars 406 to 410

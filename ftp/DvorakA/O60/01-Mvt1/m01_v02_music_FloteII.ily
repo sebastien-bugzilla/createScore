@@ -10,13 +10,13 @@ musicFloteIIMvtI = \relative c' {
 %	\transposition a
 % Bars 1 to 5
 	R2.
-	r4 r fis\p~
+	r4 r fis\p
 	\repeat volta 2 {
 		fis2 r4
 		r r fis~
 		fis fis-. r
 % Bars 6 to 10
-		r r fis~
+		r r fis
 		fis4. fis8\< fis4
 		fis( a d)
 		fis2(\f\> e8 dis)
@@ -56,7 +56,7 @@ musicFloteIIMvtI = \relative c' {
 		cis cis2~\<
 		cis2.~
 		cis \mark \default
-		d4\ff^\grandioso r a-.
+		d4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
 		d2 r4
 % Bars 51 to 55
 		r r a-.
@@ -89,7 +89,7 @@ musicFloteIIMvtI = \relative c' {
 			R
 			R \no
 		}
-		r4 r8 b8-.\p cis-. d-.
+		r4 r8^\solo b8-.\p cis-. d-.
 		e4-- r8 ais,-. b-. cis-.
 		d4-- r8 gis,-. ais-. b-.
 % Bars 81 to 85
@@ -175,7 +175,7 @@ musicFloteIIMvtI = \relative c' {
 			
 			
 			
-			r4 r fis\p\repeatTie
+			r4 r fis\p
 		}
 		{
 % Bars 177 to 180
@@ -304,7 +304,7 @@ musicFloteIIMvtI = \relative c' {
 	cis2 cis4-. \mark \default
 	d-. r r
 % Bars 316 to 320
-	r r fis,,--\pp~
+	r r fis,,--\pp
 	fis2 r4
 	r r fis~
 	fis fis-. r
@@ -404,7 +404,7 @@ musicFloteIIMvtI = \relative c' {
 	}
 % Bars 431 to 435
 	r4 gis8\mf-. a-. b4->
-	b8(\< cis d dis e d)
+	b8(\< cis! d dis e d)
 	cis-.\f r r4 g'!->(
 	a8) r r4 g4->(
 	a8) r r4 bes\<-.
@@ -455,7 +455,7 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	
-	fis'4 r8 b,-. c-. d-.
+	fis'4\f r8 b,-. c-. d-.
 % Bars 476 to 480
 	e4. a,8-. b-. c-.
 	d g, a b c fis,
@@ -505,9 +505,10 @@ musicFloteIIMvtI = \relative c' {
 	d2( a8 fis)
 % Bars 526 to 530
 	fis2\p r4
-	R2.*11
+	R2.*5
 % Bars 531 to 535
 	
+	\tempoXOff #-2 R2.*6
 % Bars 536 to 540
 	
 	
@@ -519,9 +520,9 @@ musicFloteIIMvtI = \relative c' {
 % Bars 541 to 545
 	d--
 	d--
-	d2-^ cis4-.
+	d2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
-	d8\f-. fis-. a4 a->
+	d8-. fis-. a4 a->
 % Bar 546
 	a-> r r \bar "|."
 }

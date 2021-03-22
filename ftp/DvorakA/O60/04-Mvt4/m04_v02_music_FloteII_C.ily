@@ -287,7 +287,7 @@ musicFloteIIMvtIV = \relative c'' {
 	f-. e-. f-. e-.
 % Bars 286 to 290
 	c(\< cis! d dis)\!
-	e4 r a\ff r8 e
+	e4 r a\ff r8 e-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'

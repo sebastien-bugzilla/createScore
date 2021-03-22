@@ -101,17 +101,17 @@ musicFloteIIMvtIII = \relative c''' {
 			R \no
 		}
 		r4 c!2
-		des4-.\f\< c-. c-. 
+		\startMeasureCount des4-.\f\< c-. c-. 
 		des-. c-. c-. 
 % Bars 116 to 120
 		des-. c-. c-. 
-		des-. c-. c-.\!
-		cis!-. cis_\semprecresc cis
+		des-. c-. c-.\! \stopMeasureCount
+		\startMeasureCount cis!-. cis_\semprecresc cis
 		cis-. cis-. cis-. 
 		cis-. cis-. cis-. 
 % Bars 121 to 125
 		cis-. cis-. cis-. 
-		cis-. cis-. cis-. 
+		cis-. cis-. cis-. \stopMeasureCount
 		c!-. c-. c-. 
 		c!(\ff des) c(
 		des) c( des)
@@ -146,12 +146,12 @@ musicFloteIIMvtIII = \relative c''' {
 	
 	\bar "||" \key d \major
 	\repeat volta 2 {
-		<>^\markup \bold {Piccolo} R2.*6
+		\time 3/4 \trio \once \override MultiMeasureRestNumber.direction = #-1 R2.*6
 % Bars 156 to 160
 		
 		
 		
-		e,,4(\fp b') e(\<
+		\piccolo \tempoXOff #-3 e,,4(\fp b') e(\<
 		b' e) b~\!
 % Bars 161 to 165
 		b\> b8( a g a
@@ -231,7 +231,7 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 286 to 290
 	
 	\bar "||" \key d \minor
-	<>^\markup \bold {Flote} cis'4(\f-> d8) r cis4(->
+	\flote cis'4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 	e4-.\f d8( cis d4)
 % Bars 291 to 295
@@ -310,16 +310,16 @@ musicFloteIIMvtIII = \relative c''' {
 	}
 % Bars 396 to 400
 	r4 c!2
-	des4-.\f\< c-. c-. 
+	\startMeasureCount des4-.\f\< c-. c-. 
 	des-. c-. c-.
 	des-. c-. c-.
-	des-. c-. c-.\!
+	des-. c-. c-.\! \stopMeasureCount
 % Bars 401 to 405
-	cis-._\semprecresc cis-. cis-.
+	\startMeasureCount cis-._\semprecresc cis-. cis-.
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
-	cis-. cis-. cis-. 
+	cis-. cis-. cis-. \stopMeasureCount
 % Bars 406 to 410
 	c!-. c-. c-.
 	c!(\ff des) c(

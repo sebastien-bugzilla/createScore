@@ -241,14 +241,14 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 a(\p
+	r2 r4^\solo a(\p
 	fis e d a)
 % Bars 251 to 255
 	d4.( d8 d4 e)
-	\tuplet 6/4 1 {fis4( a c e d c)}\mark \default
+	\tuplet 3/2 2 {fis4( a c e d c)} \mark \default
 	b2 r
 	R1
-	\tuplet 6/4 1 { r4 a(\p\< c ees d c}
+	\tupletYOff #-2 \tuplet 3/2 2 { r4 a(\p\< c \tupletYOff #-2 ees d c}
 % Bars 256 to 260
 	bes4\f) r r2
 	R1*8
@@ -286,7 +286,7 @@ musicFloteIIMvtIV = \relative c'' {
 	f-. e-. f-. e-.
 % Bars 286 to 290
 	c(\< cis! d dis)\!
-	e4 r a\ff r8 e
+	e4 r a\ff r8 e-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'
@@ -344,7 +344,7 @@ musicFloteIIMvtIV = \relative c'' {
 	cis'1\fp
 	d\fp
 	e\fp(
-	fis8)-. r cis4(\f d e
+	fis8)-. r cis4(\f-> d e
 	d) ais2.->~
 % Bars 346 to 350
 	ais4 b( c d
@@ -503,7 +503,7 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 496 to 500
 	d-> cis->
 	dis-> e->
-	fis-> d->
+	fis-> d!->
 	fis-> fis->
 	e-> e->
 % Bars 501 to 505
@@ -538,12 +538,12 @@ musicFloteIIMvtIV = \relative c'' {
 	a r a2~
 % Bars 526 to 530
 	a4 a-. a-. a-.
-	a-. a-. a-. a-.
+	\startMeasureCount a-. a-. a-. a-.
 	a a a a
 	a a a a
 	a a a a
 % Bars 531 to 535
-	a a a a
+	a a a a \stopMeasureCount
 	a-. a-. a-. r
 	R1*10
 % Bars 536 to 540

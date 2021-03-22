@@ -126,7 +126,7 @@ musicFloteIMvtI = \relative c'' {
 		
 		r4 des,8\f-. ees-. f4->
 		f8(_\crescmarkup ges aes a bes aes) \mark \default
-		ges\f r r4 e(->
+		ges\f r r4 e!(->
 % Bars 141 to 145
 		fis!8) r r4 e->(
 		fis8) r r4 g-.
@@ -411,7 +411,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 391 to 395
 	r4 r8 \partcombineApart a-. bes-. c-. 
 	d2( c8 bes
-	a4) r8 c-. d-. e-.
+	a4) r8 c-._\< d-. e-.
 	\partcombineAutomatic f2(\fz e8 d
 	cis!-.) r r4 r
 % Bars 396 to 400
@@ -422,8 +422,8 @@ musicFloteIMvtI = \relative c'' {
 	r4 r e,\pp \mark \default
 % Bars 401 to 405
 	R2.
-	f4(\p a\< d)
-	c2.~
+	f4(\p\< a d)
+	c2.~\!
 	c\>
 	bes\p~
 % Bars 406 to 410

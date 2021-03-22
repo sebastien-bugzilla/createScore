@@ -20,8 +20,8 @@ musicFloteIIMvtII = \relative c''' {
 	
 	\cueDuring #"cueVoiceFloteIIMvtII" #UP {
 		r4 r8 } g\mf
-	f4 bes\fz~
-	bes4(_\dimmarkup a
+	f4 bes(\fz~
+	bes4_\dimmarkup a
 % Bars 21 to 25
 	aes4.)\pp r8
 	R2
@@ -30,15 +30,15 @@ musicFloteIIMvtII = \relative c''' {
 	c(\p e e4~
 % Bars 26 to 30
 	e8 g f e)
-	e8( c~ c16 b d b)
+	e8( c~ c16\< b d b)\!
 	c8 r r4
-	R2*6
+	\mmrLength #6 R2*6
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	r4 d--\pp
+	\tempoXOff #1.5 r4 d--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -94,13 +94,13 @@ musicFloteIIMvtII = \relative c''' {
 	r8 d(\p b f')~
 	f16 e( d) c( b) a( g) f(
 	e8) r r4
-	R2*10
-	
+	R2
+	\mmrLength #4 R2*7
 % Bars 96 to 100
 	
 % Bars 101 to 105
 	
-	
+	R2*2
 	
 	des'2\ff->
 	c->
@@ -142,8 +142,8 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	bes2~\p\<
-	bes8(\mf\< d f d
-	c2)(\> 
+	bes8(\mf\< d f d)
+	c2(\> 
 % Bars 146 to 150
 	bes8\p) r r4 
 	R2*3
@@ -160,13 +160,13 @@ musicFloteIIMvtII = \relative c''' {
 	
 	r8 d,4(\pp c16 bes~
 	bes8) r r4
-	R2*9
+	R2*8
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
 	
-	\mark \default
+	\tempoXOff #-3 R2 \mark \default
 	R2*6
 	
 % Bars 171 to 175
@@ -179,8 +179,8 @@ musicFloteIIMvtII = \relative c''' {
 	f) r r4
 	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->
 	a8\ff r b-^ r
-	bes!8 r r4
-	r4 r8 ees8\pp(
+	bes!8-^ r r4
+	r4 r8 ees!8\pp(
 % Bars 181 to 185
 	c8 a f16 ees d c
 	bes8) r r4
@@ -202,5 +202,5 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	\ni R2\fermataMarkup \bar "|."
 }

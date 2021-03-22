@@ -10,14 +10,14 @@ musicFloteIIMvtI = \relative c' {
 %	\transposition a
 % Bars 1 to 5
 	R2.
-	r4 r fis\p(
+	r4 r fis\p
 	\repeat volta 2 {
-		fis2) r4
+		fis2 r4
 		r r fis(
 		fis) fis-. r
 % Bars 6 to 10
-		r r fis(
-		fis4.) fis8\< fis4
+		r r fis
+		fis4. fis8\< fis4
 		fis( a d)
 		fis2(\f\> e8 dis)
 		e2\p r4
@@ -167,7 +167,7 @@ musicFloteIIMvtI = \relative c' {
 			
 			
 			
-			r4 r fis\p\repeatTie
+			r4 r fis\p
 		}
 		{
 % Bars 177 to 180
@@ -294,8 +294,8 @@ musicFloteIIMvtI = \relative c' {
 	cis2 cis4-. \mark \default
 	d-. r r
 % Bars 316 to 320
-	r r fis,,--\pp(
-	fis2) r4
+	r r fis,,--\pp
+	fis2 r4
 	r r fis(
 	fis) fis-. r
 	fis4. fis8 fis4
@@ -439,7 +439,7 @@ musicFloteIIMvtI = \relative c' {
 	
 	
 	
-	fis'4 r8 b,-. c-. d-.
+	fis'4\f r8 b,-. c-. d-.
 % Bars 476 to 480
 	e4. a,8-. b-. c-.
 	d g, a b c fis,
@@ -501,9 +501,9 @@ musicFloteIIMvtI = \relative c' {
 % Bars 541 to 545
 	d--
 	d--
-	\partcombineApart d2-^ cis4-.
+	\partcombineApart d2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
-	d8\f-. fis-. a4 a->
+	d8-. fis-. a4 a->
 % Bar 546
 	a-> r r \bar "|."
 }

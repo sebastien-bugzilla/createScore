@@ -10,6 +10,7 @@ generalOptions = {
 	\compressFullBarRests
 	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 	\override Score.RehearsalMark.outside-staff-priority = ##f
+	\override Staff.MultiMeasureRest.space-increment = 1.5
 }
 partOptions = {
 	\override Score.BarNumber #'font-size = #0.1
@@ -24,13 +25,28 @@ partOptions = {
 #(set-global-staff-size 19)
 \layout {
 	#(layout-set-staff-size 19)
-	\override TupletBracket #'bracket-visibility = ##f
-	\override Hairpin.to-barline = ##f
+	\context {
+		\Voice
+		\override TupletBracket #'bracket-visibility = ##f
+		\override Hairpin.to-barline = ##f
+	}
+	\context {
+		\CueVoice
+		fontSize = #-3
+		\override Stem.length-fraction = #0.85
+		\override TupletBracket #'bracket-visibility = ##f
+		\override StemTremolo.beam-thickness = #0.35 
+		%\override Font.font-size = #+5
+	}
+	\context {
+		\Score
+		scriptDefinitions = #my-script-alist
+	}
+	\context {
+		\Staff
+		\consists #Measure_counter_engraver
+	}
+	
 }
-layoutCueVoice = \with {
-	fontSize = #-3
-	\override Stem.length-fraction = #0.9
-	\override TupletBracket #'bracket-visibility = ##f
-	\override StemTremolo.beam-thickness = #0.35 
-	%\override Font.font-size = #+5
-}
+%layoutCueVoice = \with {
+%}

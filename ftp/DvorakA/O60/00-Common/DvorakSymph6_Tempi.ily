@@ -1,3 +1,9 @@
+%  work        : Symphony No. 6 in D Major  Op. 60
+%  typesetter  : Sébastien MANEN
+%  date        : Sunday 29 November 2020, 11:27
+%###############################################################################
+%#                       T E M P I   C O N D U C T O R S                       #
+%###############################################################################
 tempiMvtI = {
 	s2.*2
 	\repeat volta 2 {
@@ -110,17 +116,32 @@ tempiMvtIV = {
 	\tempo "in tempo" % bar 551
 	s1*12 s2 s4
 }
+%###############################################################################
+%#                            T E M P I   P A R T S                            #
+%###############################################################################
 tempiPartMvtI = {
 	s2.*2
 	\repeat volta 2 {
 		s2.*20
-		\tempo \markup { \medium \italic \column {\lower #1 "un poco più" "animato." }} % bar 23
+		% bar 23
+		\tag #'(floteI floteII) {
+			\tempo \markup { \medium \italic \column { \lower #1 "un poco più" "animato." } }
+		}
 		s2.*26
-		\tempo "Tempo I." % bar 49
+		% bar 49
+		\tag #'(floteI floteII) {
+			\tempo "Tempo I." 
+		}
 		s2.*11
-		\tempo \markup { \medium \italic "un poco animato." } % bar 60
+		% bar 60
+		\tag #'(floteI floteII) {
+			\tempo \markup { \medium \italic "un poco animato." }
+		}
 		s2.*60
-		\tempo \markup { \medium \italic "tranquillo." } % bar 120
+		% bar 120
+		\tag #'(floteI floteII) {
+			\tempo \markup { \medium \italic "tranquillo." }
+		}
 		s2.*57
 	}
 	\alternative {
@@ -132,36 +153,84 @@ tempiPartMvtI = {
 		}
 	}
 	s2.*133
-	\tempo "Più tranquillo." % bar 315
+	% bar 315
+	\tag #'(floteI floteII) {
+		\tempo "Più tranquillo." 
+	}
 	s2.*21 
-	\tempo "Poco animato" % 336
+	% bar 336
+	\tag #'(floteI floteII) {
+		\tempo "Poco animato"
+	}
 	s2.*77
-	\tempo "Poco tranquillo." % bar 413
+	% bar 413
+	\tag #'(floteI floteII) {
+		\tempo "Poco tranquillo."
+	}
 	s2.*47
-	\tempo \markup { \medium \italic "accelerando" } % bar 460
+	% bar 460
+	\tag #'(floteI floteII) {
+		\tempo \markup { \medium \italic "accelerando" }
+	}
 	s2.*72
-	\tempo \markup { \medium \italic "poco sostenuto." } % bar 532
+	% bar 532
+	\tag #'(floteI floteII) {
+		\tempo \markup { \medium \italic "poco sosten." }
+	}
 	s2.*11
-	\tempo \markup { \medium \italic "in tempo" } % bar 543
+	% bar 543
+	\tag #'(floteI floteII) {
+		\tempo \markup { \medium \italic "in tempo" }
+	}
 	s2.*4
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtII = {
 	s2*28
-	\tempo \markup {\medium \italic \column {\lower #1 "poco più" "animato"} } % bar 29
+	% bar 29
+	\tag #'(floteI) {
+		\tempo \markup {\medium \italic \column {\lower #1 "poco più" "animato"} }
+	}
+	\tag #'(floteII) {
+		\tempo \markup { \medium \italic "poco più animato" }
+	}
+
 	s2*6
-	\tempo "Tempo I." % bar 35
+	% bar 35
+	\tag #'(floteI floteII) {
+		\tempo "Tempo I."
+	}
 	s2*60
-	\tempo \markup {\medium \italic \column {\lower #1 "poco più" "animato"} } % bar 95
+	% bar 95
+	\tag #'(floteI) {
+		\tempo \markup {\medium \italic \column {\lower #1 "poco più" "animato"} }
+	}
+	\tag #'(floteII) {
+		\tempo \markup { \medium \italic "poco più animato" }
+	}
 	s2*7
-	\tempo \markup {\medium \italic "rit." } % bar 102
+	% bar 102
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "rit." }
+	}
 	s2*2
-	\tempo "Tempo I." % bar 104
+	% bar 104
+	\tag #'(floteI floteII) {
+		\tempo "Tempo I." 
+	}
 	s2*64
-	\tempo \markup {\medium \italic "ritard."} % bar 168
+	% bar 168
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "rit."} 
+	}
 	s2
-	\tempo \markup {\medium \italic "in tempo"} %bar 169
+	% bar 169
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "in tempo"} 
+	}
 	s2*38
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtIII = {
 	\repeat volta 2 {
 		s2.*23
@@ -179,47 +248,113 @@ tempiPartMvtIII = {
 	}
 	s2.*6
 	\repeat volta 2 {
-		\tempo "Poco meno mosso." % bar 153
+		% bar 153
+		\tag #'(floteI) {
+			\tempo "Poco meno mosso."
+		}
+		\tag #'(floteII) {
+			\tempo \markup {\bold \center-column { \lower #1.5 "Poco meno" "mosso."}}
+		}
 		s2.*6
-		\tempo \markup {\medium \italic "poco sosten." } % bar 159
+		% bar 159
+		\tag #'(floteI) {
+			\tempo \markup {\medium \italic "poco sosten." }
+		}
+		\tag #'(floteII) {
+			\tempo \markup {\medium \italic "poco sost." }
+		}
 		s2.*4
-		\tempo \markup {\medium \italic "in tempo" } % bar 163
+		% bar 163
+		\tag #'(floteI floteII) {
+			\tempo \markup {\medium \italic "in tempo" }
+		}
 		s2.*6
-		\tempo \markup {\medium \italic "poco sosten." } % bar 169
+		% bar 169
+		\tag #'(floteI floteII) {
+			\tempo \markup {\medium \italic "poco sost." } 
+		}
 		s2.*4
-		\tempo \markup {\medium \italic "in tempo" } % bar 173
+		% bar 173
+		\tag #'(floteI floteII) {
+			\tempo \markup {\medium \italic "in tempo" } 
+		}
 		s2.*28
 	}
 	s2.*80
-	\tempo \markup {\medium \italic "poco a poco string." } % bar 281
+	% bar 281
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "stringendo" }
+	}
 	s2.*7
-	\tempo "Tempo I." % bar 288
+	% bar 288
+	\tag #'(floteI floteII) {
+		\tempo "Tempo I."
+	}
 	s2.*140
-	\tempo \markup {\medium \italic "poco a poco accelerando"} % bar 428
+	% bar 428
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "poco a poco accelerando"}
+	}
 	s2.*11
 }
+%-------------------------------------------------------------------------------
 tempiPartMvtIV = {
 	\partial 4 s4
-	s1*12
-	s2 \tempo \markup {\medium \italic "accelerando poco a poco" } s2 % bar 13
-	s1*24
-	\tempo "Tempo I." % bar 38
+	s1*12 s2 
+	% bar 13
+	\tag #'(floteI) {
+		\tempo \markup {\medium \italic "accelerando poco a poco" }
+	}
+	\tag #'(floteII) {
+		\tempo \markup {\medium \italic "accelerando" }
+	}
+	s2 s1*24
+	% bar 38
+	\tag #'(floteI floteII) {
+		\tempo "Tempo I."
+	}
 	s1*15
-	\tempo \markup {\medium \italic "accelerando poco a poco" } % bar 53
+	% bar 53
+	\tag #'(floteI) {
+		\tempo \markup {\medium \italic "accelerando" }
+	}
+	\tag #'(floteII) {
+		\tempo \markup {\medium \italic "accelerando poco a poco" }
+	}
 	s1*241
-	\tempo "Poco sostenuto." % bar 294
+	% bar 294
+	\tag #'(floteI floteII) {
+		\tempo "Poco sostenuto."
+	}
 	s1*8
-	\tempo \markup {\medium \italic "ritard." } % bar 302
+	% bar 302
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "ritard." }
+	}
 	s1*4
-	\tempo \markup {\medium \italic "in tempo" } % bar 306
+	% bar 306
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "in tempo" }
+	}
 	s1*28
-	\tempo \markup {\medium \italic "accelerando poco a poco" } % bar 334
+	% bar 334
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "accelerando poco a poco" }
+	}
 	s1*106
-	\tempo "Presto." % bar 440
+	% bar 440
+	\tag #'(floteI floteII) {
+		\tempo "Presto."
+	}
 	s1*109
-	\tempo \markup {\medium \italic "ritard." } % bar 549
+	% bar 549
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "ritard." }
+	}
 	s1*2
-	\tempo \markup {\medium \italic "in tempo" } % bar 551
+	% bar 551
+	\tag #'(floteI floteII) {
+		\tempo \markup {\medium \italic "in tempo" }
+	}
 	s1*12 s2 s4
 }
-

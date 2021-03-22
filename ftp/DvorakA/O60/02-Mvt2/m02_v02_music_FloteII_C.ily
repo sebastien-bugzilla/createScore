@@ -19,8 +19,8 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	r4 r8 g\mf
-	f4 bes\fz~
-	bes4( a
+	f4 bes(\fz~
+	bes4 a
 % Bars 21 to 25
 	aes4.)\pp r8
 	R2
@@ -139,9 +139,9 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 141 to 145
 	R2
 	R2
-	\shape #'((-1 . -1.5)(0 . -2.5)(0 . -2.5)(0.5 . -1.5)) Tie bes2~\p\<
-	bes8(\mf\< d f d
-	c2)\>-\shape #'((0 . -2)(0 . -2)(0 . -2)(0 . -1)) (
+	bes2~\p\<
+	bes8(\mf\< d f d)
+	c2\>-\shape #'((0 . -2)(0 . -2)(0 . -2)(0 . -1)) (
 % Bars 146 to 150
 	bes8\p) r r4 
 	R2
@@ -177,7 +177,7 @@ musicFloteIIMvtII = \relative c''' {
 	f) r r4
 	r16 fis-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	a8\ff r b-^ r
-	bes!8 r r4
+	bes!8-^ r r4
 	r4 r8 ees8\pp(
 % Bars 181 to 185
 	c8 a f16 ees d c

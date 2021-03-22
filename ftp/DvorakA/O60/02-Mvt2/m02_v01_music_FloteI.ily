@@ -22,8 +22,8 @@ musicFloteIMvtII = \relative c'' {
 	
 	
 	r8 a(\p\<-- bes-- c--)\!
-	d4 f~\fz
-	f8(_\dimmarkup ees d c
+	d4 f(~\fz
+	f8_\dimmarkup ees d c
 % Bars 21 to 25
 	bes4.)\pp r8
 	R2
@@ -32,7 +32,7 @@ musicFloteIMvtII = \relative c'' {
 	e(\p g c4~
 % Bars 26 to 30
 	c8 b a g)
-	g8(~ g32 a g f) f4\<(
+	g8(~ g32 a g f-.) f4\<(
 	e8)\! r r4
 	R2*6
 % Bars 31 to 35
@@ -40,7 +40,7 @@ musicFloteIMvtII = \relative c'' {
 	
 	
 	\bar "||" \mark \default
-	r4 fis--\pp
+	\tempoXOff #1.5 r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis fis
@@ -108,11 +108,11 @@ musicFloteIMvtII = \relative c'' {
 	f8( ees4.)
 	des2\fz
 	ces\fz
-	b\fz
-	b\fz
+	ces\fz
+	ces\fz
 % Bars 111 to 115
-	b\fz \mark \default
-	b8 r r4
+	ces\fz \mark \default
+	ces8 r r4
 	R2*8
 % Bars 116 to 120
 	
@@ -141,8 +141,8 @@ musicFloteIMvtII = \relative c'' {
 % Bars 141 to 145
 	R2
 	bes4(\pp g8\< c)
-	bes( g d e
-	f2)~\mf\<
+	bes( g d e)
+	\hairpinMinLength #8 f2~\mf\<
 	f8\> f(-- g-- a--)
 % Bars 146 to 150
 	bes4\p(~ bes16_\dimmarkup c g a
@@ -168,10 +168,10 @@ musicFloteIMvtII = \relative c'' {
 	r4 a\trill~\<
 	a16( bes32 a g16 a\! c a g f
 % Bars 166 to 170
-	d ees a_\dimmarkup f ees c b c
+	d ees a->_\dimmarkup f ees c b c
 	f ees c a gis a d c
 	a f e f ees f c\p f)~ \mark \default
-	f2~
+	\tempoXOff #1.5 f2~
 	f8 d(\< ees! e)\!
 % Bars 171 to 175
 	f2\p~

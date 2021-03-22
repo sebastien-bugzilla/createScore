@@ -253,7 +253,7 @@ musicFloteIMvtIV = \relative c''' {
 	\mark \default
 	R1*2
 	
-	\tuplet 6/4 1 {a4(\p\< c ees g f ees}
+	\tupletYOff #-2 \tuplet 3/2 2 {a4(\p\< c ees \tupletYOff #-2 g f ees}
 % Bars 256 to 260
 	d4\f) r r2
 	R1*8
@@ -262,7 +262,7 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 r8 d-.\f
+	r2 r4 r8^\solo d-.\f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
 	a2-> bes4. d8
@@ -289,7 +289,7 @@ musicFloteIMvtIV = \relative c''' {
 	a-. g-. a-. g-.
 % Bars 286 to 290
 	a1\<
-	e4\! r a\ff r8 e
+	e4\! r a\ff r8 e-.
 	cis-. b-. a-. e-. a4 r8 e'
 	cis b a e a4 r8 a'
 	f e d a d4 r8 a'

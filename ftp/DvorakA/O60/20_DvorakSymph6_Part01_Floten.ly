@@ -16,11 +16,12 @@
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
+\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v01_music_FloteI.ily"
@@ -67,7 +68,7 @@
 				\nameFloteIMvtI \musicFloteIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(floteI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -80,13 +81,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
-%			\context {
-%				\Score 
-%				scriptDefinitions = #my-script-alist
-%			}
 		}
 	}
 	\score {
@@ -99,11 +93,11 @@
 				\nameFloteIMvtII \musicFloteIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'floteI \tempiPartMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -112,9 +106,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -127,7 +118,7 @@
 				\nameFloteIMvtIII \musicFloteIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'floteI \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -140,9 +131,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -155,7 +143,7 @@
 				\nameFloteIMvtIV \musicFloteIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'floteI \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -168,9 +156,7 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
+			%system-count = 46
 		}
 	}
 	\score {
@@ -183,7 +169,7 @@
 				\nameFloteIIMvtI \musicFloteIIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'floteII \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -196,9 +182,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -211,7 +194,7 @@
 				\nameFloteIIMvtII \musicFloteIIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'floteII \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -224,9 +207,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -239,7 +219,7 @@
 				\nameFloteIIMvtIII \musicFloteIIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'floteII \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -252,9 +232,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -267,7 +244,7 @@
 				\nameFloteIIMvtIV \musicFloteIIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'floteII \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -280,9 +257,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

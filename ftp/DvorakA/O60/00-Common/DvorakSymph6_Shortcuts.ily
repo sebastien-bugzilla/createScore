@@ -53,6 +53,7 @@ mfz=^\markup {\dynamic mfz}
 pespressivo=^\markup {\dynamic p \italic espressivo}
 semprecresc=^\markup {\italic {sempre cresc.}}
 ffgrandioso=^\markup {\dynamic ff \italic grandioso}
+ffgrandiosoD=#(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
 dimsempre=^\markup {\italic {dim. sempre}}
 fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
 benmarc=^\markup {\italic {ben marc.}}
@@ -64,6 +65,22 @@ pptranquillo=^\markup {\dynamic pp \italic tranquillo}
 ffpesante=^\markup {\dynamic ff \italic pesante}
 tranquillo=^\markup {\italic tranquillo}
 ffz=^\markup {\dynamic ffz}
+solo=^\markup {Solo.}
+trio = {
+	\once \override Score.RehearsalMark.outside-staff-priority = #1500
+	\once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
+	\once \override Score.RehearsalMark.self-alignment-X = -1
+	\mark \markup {\normalsize \bold Trio.}
+}
+
+piccolo = {
+	\once \override Score.TextScript.outside-staff-priority = #1500
+	<>^\markup {\bold Piccolo}
+}
+flote = {
+	\once \override Score.TextScript.outside-staff-priority = #1500
+	<>^\markup {\bold Flote}
+}
 
 % function
 mmrPos = #(define-music-function
@@ -90,6 +107,62 @@ mmrPosRevert = #(define-music-function
 	#}
 )
 
+no = {
+	\undo \omit MultiMeasureRestNumber
+}
+
+
+ni = {
+	\omit MultiMeasureRestNumber
+}
+
+tupletYOff = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override TupletNumber.Y-offset = #offset
+	#}
+)
+
+hairpinShorten = #(define-music-function
+	(left right)
+	(number? number?)
+	#{
+		\once \override Hairpin.shorten-pair = #(cons left right)
+	#}
+)
+
+hairpinMinLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override Hairpin.minimum-length = #length
+	#}
+)
+
+tempoXOff = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.X-offset = #offset
+	#}
+)
+
+mmrLength = #(define-music-function
+	(length)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.space-increment = #length
+	#}
+)
+
+mmrDown = #(define-music-function
+	()
+	()
+	#{
+		\once \override MultiMeasureRestNumber.direction = #-1
+	#}
+)
 
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941
@@ -117,14 +190,6 @@ mmrPosRevert = #(define-music-function
 		default-script-alist)
 )
 
-no = {
-	\undo \omit MultiMeasureRestNumber
-}
-
-
-ni = {
-	\omit MultiMeasureRestNumber
-}
 
 % http://lilypond.1069038.n5.nabble.com/quoteDuring-and-repeat-tremolo-don-t-work-together-tp230771p234017.html
 stopTremolo = #(define-music-function () ()

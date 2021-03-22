@@ -161,9 +161,8 @@
 		}
 		\layout {
 			\context {
-				\Score
-					\override Score.NonMusicalPaperColumn.line-break-system-details =
-						#'((alignment-distances . (9 9 9 9 9 9 9 9 9 9 9 9)))
+				\Score 
+				scriptDefinitions = #my-script-alist
 			}
 		}
 	}
