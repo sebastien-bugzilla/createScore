@@ -167,7 +167,7 @@ musicOboeIIMvtII = \relative c' {
 	R2*2
 % Bars 141 to 145
 	
-	bes4\p( g8 c
+	bes4\p\<( g8 c
 	bes g d e)
 	f2\mf\<~
 	f8\> f(-- g-- a--)
@@ -230,7 +230,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	r8 f'\ff-! d-! g-!
 	ees-! c-! a-! d-^
-	d-^ r f,4\fp(
+	d-^ r f,4\fp\>(
 % Bars 201 to 205
 	g f8 ees)
 	d2\pp~

@@ -16,11 +16,12 @@
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
+\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part02_Oboen.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
@@ -67,7 +68,7 @@
 				\nameOboeIMvtI \musicOboeIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -80,9 +81,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -95,7 +93,7 @@
 				\nameOboeIMvtII \musicOboeIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeI) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -108,9 +106,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -123,7 +118,7 @@
 				\nameOboeIMvtIII \musicOboeIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -136,9 +131,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -151,7 +143,7 @@
 				\nameOboeIMvtIV \musicOboeIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -164,9 +156,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -179,7 +168,7 @@
 				\nameOboeIIMvtI \musicOboeIIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -192,9 +181,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -207,7 +193,7 @@
 				\nameOboeIIMvtII \musicOboeIIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -220,9 +206,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -235,11 +218,11 @@
 				\nameOboeIIMvtIII \musicOboeIIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -248,9 +231,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -263,11 +243,11 @@
 				\nameOboeIIMvtIV \musicOboeIIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -276,9 +256,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

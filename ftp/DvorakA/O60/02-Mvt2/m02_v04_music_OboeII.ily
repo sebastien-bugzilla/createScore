@@ -9,7 +9,7 @@ musicOboeIIMvtII = \relative c' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 f(\p d g)~
+	r8^\solo f(\p d g)~
 	g4.( fis8
 	g2)\<
 	bes4\fp( g8\> a
@@ -36,15 +36,15 @@ musicOboeIIMvtII = \relative c' {
 % Bars 26 to 30
 	
 	
-	g8(\p\< a bes4)\!
+	g8(\p\< a \once \stemUp bes4)\!
 	bes8\fp-> g4-> g16 a
-	bes8-> g4-> g16 a
+	bes8-> g4->_\crescmarkup g16 a
 % Bars 31 to 35
 	bes8-> g4-> g16 a
 	bes8 r r4
 	R2*2
 	\bar "||" \mark \default
-	r4 d--\pp
+	\tempoXOff #1.5 r4 d--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -145,7 +145,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	dis\p~\<
+	dis2\p~\<
 	dis\!
 % Bars 121 to 125
 	ees!\pp~
@@ -173,16 +173,16 @@ musicOboeIIMvtII = \relative c' {
 	R2*2
 % Bars 141 to 145
 	
-	bes4\p( g8 c
+	bes4\p\<( g8 c
 	bes g d e)
 	f2\mf\<~
 	f8\> f(-- g-- a--)
 % Bars 146 to 150
-	bes4(\pdimD~ bes16 c g a
+	\once \stemUp bes4_(-\tweak X-offset #-1 \pdimD~ bes16 c g a
 	bes4)\pp r
 	R2*2
 	
-	r8 bes4(_\pcresc a16 g
+	r8 \once \stemUp bes4(_\pcresc a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
 	a2\p)(
@@ -205,16 +205,16 @@ musicOboeIIMvtII = \relative c' {
 	R2*3
 	
 	\mark \default
-	f2~\p
+	\tempoXOff #1 f2~\p
 	f8 d(\< ees! e)\!
 % Bars 171 to 175
 	f2\p~
 	f8 d(\< ees e)\!
 	f2\p~
-	f8\noBeam bes(\p\< c cis\!
-	d)\noBeam bes(\mf\< c cis\!
+	f8\noBeam bes(\< c cis\!
+	d)\noBeam bes(\mf\< c! cis\!
 % Bars 176 to 180
-	d)\noBeam bes(\f\< c cis\!
+	d)\noBeam bes(\f\< c! cis\!
 	d16)\noBeam a->\f-. b->-. b->-. c->-. d->-. c->-. cis->-. 
 	d8\ff r b-^ r
 	bes!-^ r r4
@@ -237,7 +237,7 @@ musicOboeIIMvtII = \relative c' {
 		R \no
 	r8 } f'\ff-! d-! g-!
 	ees-! c-! a-! d-^
-	d-^ r f,4\fp(
+	d-^ r f,4\fp\>(
 % Bars 201 to 205
 	g f8 ees)
 	d2\pp~
@@ -245,5 +245,5 @@ musicOboeIIMvtII = \relative c' {
 	d8 r r4
 	R2
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	\ni R2\fermataMarkup \bar "|."
 }

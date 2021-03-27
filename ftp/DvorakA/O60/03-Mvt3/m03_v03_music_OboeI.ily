@@ -28,7 +28,7 @@ musicOboeIMvtIII = \relative c''' {
 		g8) r fis4( g8) r
 		a4-. e8( dis e4)
 % Bars 16 to 20
-		f-. d8( cis d4)
+		f!-. d8( cis d4)
 		fis4( g8) r fis4(
 		g8) r fis4( g8) r
 		a4-. e8( dis e4)
@@ -92,12 +92,12 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 81 to 85
 		d-. c-. bes-.
 		f'->-. f,-. a-.
-		c-. bes8( a bes4)
+		c-. bes8( a \once \stemUp bes4)
 		R2.*2
 		
 % Bars 86 to 90
 		f'4-.\p f,-. a-.
-		c-. bes8( a bes4)
+		c-. bes8( a \once \stemUp bes4)
 		R2.*2
 		
 		d4-.\p d,-. fis-.
@@ -143,7 +143,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 126 to 130
 		g!2-> g4~->
 		g g2->
-		a!2\ff a4~
+		a!2_\ffgrandioso a4~
 		a a2
 		a2 a4~
 % Bars 131 to 135
@@ -174,15 +174,15 @@ musicOboeIMvtIII = \relative c''' {
 			d2.\f\>
 		}
 	}
-	d
+	\override Staff.MeasureCounter.count-from = #2 \startMeasureCount d
 	d
 	d\p
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \stopMeasureCount \bar "||" \key d \major
 	\repeat volta 2 {
-		d4(\fp e8 cis d4)
+		\time 3/4 \trio d4(\fp e8 cis d4)
 		R2.
 		d4(\p e8 cis d4)
 % Bars 156 to 160
@@ -385,11 +385,11 @@ musicOboeIMvtIII = \relative c''' {
 	d-. c-. bes-.
 	f'->-. f,-. a-.
 % Bars 366 to 370
-	c-. bes8( a bes4)
+	c-. bes8( a \once \stemUp bes4)
 	R2.*2
 	
 	f'4-.\p f,-. a-.
-	c-. bes8( a bes4)
+	c-. bes8( a \once \stemUp bes4)
 % Bars 371 to 375
 	R2.*2
 	
@@ -459,7 +459,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 426 to 430
 	f-. d8( cis d4)
 	a'-. a,(-> b8 cis)
-	d4-. f-. d-.
+	\tempoXOff #-3 d4-. f-. d-.
 	d-. f-. d-.
 	a-. g'->( f8 e)
 % Bars 431 to 435

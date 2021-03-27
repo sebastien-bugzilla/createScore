@@ -28,7 +28,7 @@ musicOboeIMvtIII = \relative c''' {
 		g8) r fis4( g8) r
 		a4-. e8( dis e4)
 % Bars 16 to 20
-		f-. d8( cis d4)
+		f!-. d8( cis d4)
 		fis4( g8) r fis4(
 		g8) r fis4( g8) r
 		a4-. e8( dis e4)
@@ -143,7 +143,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 126 to 130
 		g!2-> g4~->
 		g g2->
-		a!2\ff a4~
+		a!2_\ffgrandioso a4~
 		a a2
 		a2 a4~
 % Bars 131 to 135

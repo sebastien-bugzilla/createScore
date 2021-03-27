@@ -77,7 +77,7 @@ musicOboeIIMvtI = \relative c' {
 		a2\< fis'4
 % Bars 56 to 60
 		fis2(\fz e8 dis)
-		e2 e8( d)
+		e2 e8( d!)
 		cis2.\fz
 		d4 d2
 		g2 e8(\< fis
@@ -98,15 +98,15 @@ musicOboeIIMvtI = \relative c' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		r4 r eis'-.
+		r4 r eis'-.\p
 		fis-. r r
 		R2.*4
 % Bars 86 to 90
 		
 		R2.*4
 % Bars 91 to 95
-		e,2(\f fis8 e
-		dis8) r b'2~
+		e,2(\f fis8 e)
+		dis8 r b'2~
 		b ais4
 		b r4 r
 		c2\f g4~
@@ -166,7 +166,7 @@ musicOboeIIMvtI = \relative c' {
 		R2.
 		R2.*2
 		
-		fis4-.\f a8( fis) g-. a-.
+		fis4\f a8( fis) g-. a-.
 % Bars 156 to 160
 		e'2.\fz
 		fis2\fz a,8([ fis)

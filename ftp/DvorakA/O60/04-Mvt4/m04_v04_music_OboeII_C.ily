@@ -422,7 +422,7 @@ musicOboeIIMvtIV = \relative c'' {
 	\mark \default
 % Bars 366 to 370
 	d,4\p( a'\< bes\> g\!
-	f2 d)~
+	fis2 d)~
 	d1~
 	d4 r r2
 	R1*2
@@ -431,7 +431,7 @@ musicOboeIIMvtIV = \relative c'' {
 	R1
 	r4 a'8(\p\< b cis d e fis)\!
 	g4\mf \tuplet 3/2 4 {g8( fis e)} e2~
-	e4-. r  r2
+	e4 r  r2
 % Bars 376 to 380
 	R1*3
 	
@@ -614,11 +614,11 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 526 to 530
 	a4 a-. a-. a-.
 	a-. a-. a-. a-.
-	a a a a
-	a a a a
-	a a a a
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
 % Bars 531 to 535
-	a a a a
+	a-. a-. a-. a-.
 	a-. a-. a-. r
 	R1*10
 % Bars 536 to 540

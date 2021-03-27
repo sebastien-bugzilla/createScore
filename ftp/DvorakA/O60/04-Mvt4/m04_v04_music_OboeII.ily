@@ -10,13 +10,13 @@ musicOboeIIMvtIV = \relative c'' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*13
+	R1*12
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
 	
-	
+	<<R1 {s2 \tempoXOff #3 s}>>
 	a1_\ppocoapococresc~
 	a2. gis4(
 % Bars 16 to 20
@@ -46,7 +46,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e-^\!~
 	e2. e4-. \mark \default
-	d(_\ffgrandioso e d a)
+	\tempoXOff #1.5 d(_\ffgrandioso e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -131,7 +131,7 @@ musicOboeIIMvtIV = \relative c'' {
 	e\fz r e\fz r \mark \default
 	e r a,2(\fz
 	ais1\fz)~
-	ais2 b4( a~
+	ais2 \once \stemUp b4( a~
 % Bars 116 to 120
 	a2) fis4( gis)
 	e4 r r2
@@ -179,7 +179,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 	
-	r4 d(\p f e8 d)
+	r4 d(\p^\solo f e8 d)
 	d4\(( c8 b) b4( a8 g)\)
 % Bars 161 to 165
 	R1*6
@@ -204,7 +204,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 181 to 185
 	cis-. r r2
 	cis4-. r r2
-	a1\fp\>~
+	\startMeasureCount a1\fp\>~
 	a~
 	a\pp~
 % Bars 186 to 190
@@ -212,7 +212,7 @@ musicOboeIIMvtIV = \relative c'' {
 	a~
 	a~
 	a~
-	a~ \mark \default
+	a~ \stopMeasureCount \mark \default
 % Bars 191 to 195
 	a4 r r2
 	R1*15
@@ -280,7 +280,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\tuplet 6/4 1 {r4 b(\p\< d f e\> d\!)}
+	\tupletYOff #-3 \tuplet 3/2 2 {r4 b(\p\< d \tupletYOff #-3  f e\> d\!)}
 	c2 r
 	R1*5
 % Bars 256 to 260
@@ -398,16 +398,16 @@ musicOboeIIMvtIV = \relative c'' {
 	\mark \default
 % Bars 366 to 370
 	d,4\p( a'\< bes\> g\!
-	f2 d)~
+	fis2 d)~
 	d1~
 	d4 r r2
-	R1*2
+	R1*3
 % Bars 371 to 375
 	
-	R1
+	
 	r4 a'8(\p\< b cis d e fis)\!
 	g4\mf \tuplet 3/2 4 {g8( fis e)} e2~
-	e4-. r  r2
+	e4 r  r2
 % Bars 376 to 380
 	R1*6
 % Bars 381 to 385
@@ -426,8 +426,8 @@ musicOboeIIMvtIV = \relative c'' {
 	g2. a8( b)
 	d,4\fz d-. d\fz d-.
 	d\fz d-. cis\fz a-.
-	R1
-	R1*3
+	R1*4
+	
 % Bars 396 to 400
 	
 	
@@ -445,7 +445,7 @@ musicOboeIIMvtIV = \relative c'' {
 	g2.-> a8( b)
 	d,4\fz d-. d\fz d-.
 	d\fz d-. cis\fz a-.
-	d r d,2->(\f
+	d r d,2(\f
 % Bars 411 to 415
 	dis1)->~
 	dis2 e4( d)~
@@ -573,10 +573,10 @@ musicOboeIIMvtIV = \relative c'' {
 	g( fis8 g fis4 e)
 % Bars 516 to 520
 	a( g8 a g4 fis)
+	\startMeasureCount d-> d-. d-> d-.
 	d-> d-. d-> d-.
 	d-> d-. d-> d-.
-	d-> d-. d-> d-.
-	b-> d-. d-> d-. \mark \default
+	b-> d-. d-> d-. \stopMeasureCount \mark \default
 % Bars 521 to 525
 	d r g2->~
 	g4 fis8( g fis4 e)
@@ -585,12 +585,12 @@ musicOboeIIMvtIV = \relative c'' {
 	cis r a2~
 % Bars 526 to 530
 	a4 a-. a-. a-.
+	\startMeasureCount a-. a-. a-. a-.
 	a-. a-. a-. a-.
-	a a a a
-	a a a a
-	a a a a
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
 % Bars 531 to 535
-	a a a a
+	a-. a-. a-. a-. \stopMeasureCount 
 	a-. a-. a-. r
 	R1*10
 % Bars 536 to 540

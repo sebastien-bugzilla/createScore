@@ -162,7 +162,7 @@ musicOboeIIMvtIII = \relative c'' {
 		bes) a(\fz bes)
 		a-. a-. a-.
 		a-. a-. a-.
-		a-. a2
+		a-. a2->
 		f4-. a-. f-.
 	}
 % Bars 146 to 150
@@ -461,7 +461,7 @@ musicOboeIIMvtIII = \relative c'' {
 	a-. a-. a-.
 % Bars 426 to 430
 	a-. a-. a-.
-	a-. a2
+	a-. a2->
 	f4-. a-. f-.
 	f-. a-. f-.
 	a-. a2->

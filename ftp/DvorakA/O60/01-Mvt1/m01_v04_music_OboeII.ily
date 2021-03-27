@@ -10,13 +10,13 @@ musicOboeIIMvtI = \relative c' {
 %	\transposition a
 % Bars 1 to 5
 	R2.
-	r4 r fis~\p
+	r4 r fis\p
 	\repeat volta 2 {
 		fis2 r4 
 		r r fis~
 		fis fis-. r
 % Bars 6 to 10
-		r r fis~
+		r r fis
 		fis4. fis8\< fis4
 		fis( a d)
 		fis2(\f\> e8 dis)
@@ -67,7 +67,7 @@ musicOboeIIMvtI = \relative c' {
 		e e2\<~
 		e2.~
 		e \mark \default
-		fis4\ff^\grandioso r a,-.
+		\tempoXOff #1.5 fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
 		fis'2 r4
 % Bars 51 to 55
 		r r a,-.
@@ -77,7 +77,7 @@ musicOboeIIMvtI = \relative c' {
 		a2\< fis'4
 % Bars 56 to 60
 		fis2(\fz e8 dis)
-		e2 e8( d)
+		e2 e8( d!)
 		cis2.\fz
 		d4 d2
 		g2 e8(\< fis
@@ -98,14 +98,14 @@ musicOboeIIMvtI = \relative c' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		r4 r eis'-.
+		r4 r eis'-.\p
 		fis-. r r
 		R2.*8
 % Bars 86 to 90
 		
 % Bars 91 to 95
-		e,2(\f fis8 e
-		dis8) r b'2(~
+		e,2(\f fis8 e)
+		dis8 r b'2(~
 		b ais4
 		b) r4 r
 		c2\f-^ g4~
@@ -171,7 +171,7 @@ musicOboeIIMvtI = \relative c' {
 		R2.*3
 		
 		
-		fis4-.\f a8( fis) g-. a-.
+		fis4\f a8( fis) g-. a-.
 % Bars 156 to 160
 		e'2.\fz
 		fis2\fz a,8([ fis)
@@ -206,13 +206,13 @@ musicOboeIIMvtI = \relative c' {
 				\mmrPos #-2 R
 				\mmrPos #-2 R \no
 			}
-			a2.\pp~
+			\override Score.MeasureCounter.outside-staff-priority = #100 \startMeasureCount a2.\pp~
 			a~
 			a~
 % Bars 186 to 190
 			a~
 			a~
-			a~
+			a~ \stopMeasureCount \revert Score.MeasureCounter.outside-staff-priority
 			a4 r r
 			r r fis\p
 		}
@@ -265,12 +265,12 @@ musicOboeIIMvtI = \relative c' {
 % Bars 221 to 225
 	
 	
-	r4 bes\pp( a8 g)
+	r4 \once \stemUp bes\pp( a8 g)
 	g2 r4
 	R2.*2
 % Bars 226 to 230
 	
-	r4 b!(\p a8 gis)
+	r4 \once \stemUp b!(\p a8 gis)
 	gis4 r r
 	R2.*2
 	
@@ -293,9 +293,9 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	<< fis2.( {s8\p\< s s s\> s s\!}>>
+	<< fis2.( {s8-\tweak X-offset #-2 \p\< s s s s s\>}>>
 % Bars 251 to 255
-	g4) r r
+	g4)\! r r
 	R2.*2
 	
 	fis2.(
@@ -305,9 +305,9 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	<< gis2.( {s8\pp\< s s s\> s s\!} >>
+	<< gis2.( {s8-\tweak X-offset #-2 \pp\< s s s s s\>} >>
 % Bars 261 to 265
-	a4) r r
+	a4\!) r r
 	R2.*2
 	
 	ais2.(\< \mark \default
@@ -363,11 +363,11 @@ musicOboeIIMvtI = \relative c' {
 	cis2 cis4-. \mark \default
 	d-. r r
 % Bars 316 to 320
-	r r fis,--\pp~
+	r r fis,--\pp
 	fis2 r4
 	r r fis~
 	fis fis-. r
-	fis4. fis8 fis4
+	fis4. fis8 fis4 
 % Bars 321 to 325
 	fis(\< a d)
 	fis2\fz(\> e8 dis)\!

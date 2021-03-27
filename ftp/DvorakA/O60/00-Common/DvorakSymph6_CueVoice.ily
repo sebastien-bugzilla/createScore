@@ -143,12 +143,12 @@ cueVoiceFloteIIMvtIV = \relative c {
 %}
 cueVoiceOboeIMvtII = \relative c {
 	% bar 1
-	r8_\markup {Hob.II} f' d g
+	r8-\tweak X-offset #-4 _\markup {Hob.II} f' d g
 }
 cueVoiceOboeIMvtIII = \relative c {
 	R2.*264
 	% bar 264
-	fis''4(^\markup {Fl.I} a d
+	fis''4(-\tweak X-offset #-3 ^\markup {Fl.I} a d
 	c2.
 	b4 a g 
 	fis g e)
@@ -159,7 +159,7 @@ cueVoiceOboeIMvtIII = \relative c {
 cueVoiceOboeIIMvtI = \relative c {
 	R2.*121
 	% bar 122 - 125
-	b''8(^\markup {Hob.I} dis fis4 e
+	b''8(-\tweak X-offset #-3.5 ^\markup {Hob.I} dis fis4 e
 	dis2 cis4)
 	b8( dis fis4 e
 	dis2 cis4)
@@ -175,7 +175,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	d4. d8 d4
 	R2.*220
 	% bar 415 - 418
-	d8(^\markup {Hob.I} fis a4 g)
+	d8(-\tweak X-offset #-4 ^\markup {Hob.I} fis a4 g)
 	fis2( e4)
 	d8( fis a4 g)
 	fis2( e4)

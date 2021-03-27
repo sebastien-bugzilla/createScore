@@ -59,6 +59,7 @@ fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
 benmarc=^\markup {\italic {ben marc.}}
 dimin=^\markup {\italic dimin.}
 ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
+ppocoapococrescendo=^\markup {\dynamic p \italic {poco a poco crescendo}}
 fpcresc=^\markup {\dynamic fp \italic {cresc.}}
 pesante=^\markup {\italic {pesante}}
 pptranquillo=^\markup {\dynamic pp \italic tranquillo}
@@ -163,6 +164,15 @@ mmrDown = #(define-music-function
 		\once \override MultiMeasureRestNumber.direction = #-1
 	#}
 )
+
+markXOffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
 
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941

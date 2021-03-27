@@ -24,13 +24,13 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 11 to 15
 		d4-.\fz c-. c-.
 		d-.\fz c-. c-.
-		a( bes8) r a4(
-		bes8) r a4( bes8) r
+		a( \once \stemUp bes8) r a4(
+		\once \stemUp bes8) r a4( \once \stemUp bes8) r
 		a4-. a-. a-.
 % Bars 16 to 20
 		a-. a-. a-.
-		a4( bes8) r a4(
-		bes8) r a4( bes8) r
+		a4( \once \stemUp bes8) r a4(
+		\once \stemUp bes8) r a4( \once \stemUp bes8) r
 		a4-. a-. a-.
 		a-. a-. a-.
 % Bars 21 to 25
@@ -162,7 +162,7 @@ musicOboeIIMvtIII = \relative c'' {
 		bes) a(\fz bes)
 		a-. a-. a-.
 		a-. a-. a-.
-		a-. a2
+		a-. a2->
 		f4-. a-. f-.
 	}
 % Bars 146 to 150
@@ -174,14 +174,15 @@ musicOboeIIMvtIII = \relative c'' {
 			d2.\f\>
 		}
 	}
-	d
+	\override Staff.MeasureCounter.count-from = #2 \startMeasureCount d
 	d
 	d\p
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \stopMeasureCount \bar "||" \key d \major
 	\repeat volta 2 {
+		\trio \time 3/4
 		R2.*24
 % Bars 156 to 160
 		
@@ -250,7 +251,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 b,(\p d
+	r4^\solo b,(\p d
 	fis b d~
 % Bars 231 to 235
 	d2 cis4
@@ -312,13 +313,13 @@ musicOboeIIMvtIII = \relative c'' {
 	d4\fz-. c-. c-.
 	d-.\fz c-. c-.
 % Bars 296 to 300
-	a( bes8) r a4(
-	bes8) r a4( bes8) r
+	a( \once \stemUp bes8) r a4(
+	\once \stemUp bes8) r a4( \once \stemUp bes8) r
 	a4-. a-. a-.
 	a-. a-. a-.
-	a4( bes8) r a4(
+	a4( \once \stemUp bes8) r a4(
 % Bars 301 to 305
-	bes8) r a4( bes8) r
+	\once \stemUp bes8) r a4( \once \stemUp bes8) r
 	a4-. a-. a-.
 	a-. a-. a-.
 	a-. a8( gis a4)
@@ -437,17 +438,17 @@ musicOboeIIMvtIII = \relative c'' {
 	a a2
 	d4-. c-. c-.
 	d-. c-. c-.
-	a(\fz bes) a(\fz
-	bes) a(\fz bes)
+	a(\fz \once \stemUp bes) a(\fz
+	\once \stemUp bes) a(\fz \once \stemUp bes)
 % Bars 421 to 425
 	a4-. a-. a-.
 	a-. a-. a-.
-	a(\fz bes) a(\fz
-	bes) a(\fz bes)
+	a(\fz \once \stemUp bes) a(\fz
+	\once \stemUp bes) a(\fz \once \stemUp bes)
 	a-. a-. a-.
 % Bars 426 to 430
 	a-. a-. a-.
-	a-. a2
+	a-. a2->
 	f4-. a-. f-.
 	f-. a-. f-.
 	a-. a2->

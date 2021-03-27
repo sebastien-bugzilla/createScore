@@ -94,7 +94,7 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 76 to 80
 	\partcombineApart R1
 	fis'4 \tuplet 3/2 4 {fis8( e d)} e4 \tuplet 3/2 4 {e8( d cis)}
-	b4-. fis b2->
+	b4-. fis-. b2->
 	cis4-. g-. cis2->
 	d8( cis b cis d e fis e)
 % Bars 81 to 85
@@ -146,7 +146,7 @@ musicOboeIMvtIV = \relative c'' {
 	a1~
 % Bars 126 to 130
 	a2 \partcombineApart fis4( gis) 
-	a-. a-. \partcombineAutomatic g2->
+	a-. a-. \partcombineAutomatic g!2->
 	fis4( a) g2->~
 	g4 fis2 e4~
 	e d( cis b
@@ -187,7 +187,7 @@ musicOboeIMvtIV = \relative c'' {
 	R1*6
 % Bars 166 to 170
 	
-	a'4\fz \tuplet 3/2 4 {a8( g fis)} r2
+	a'4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
@@ -603,11 +603,11 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 526 to 530
 	a4 a-. a-. a-.
 	a-. a-. a-. a-.
-	a a a a
-	a a a a
-	a a a a
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
+	a-. a-. a-. a-.
 % Bars 531 to 535
-	a a a a
+	a-. a-. a-. a-.
 	a-. a-. a-. r
 	R1*10
 % Bars 536 to 540
