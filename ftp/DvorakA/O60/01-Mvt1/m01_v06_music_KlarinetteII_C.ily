@@ -284,7 +284,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	
 	
 	
-	r4 r8 bes-.\p c-. d-.
+	r4 r8 bes!-.\p c-. d-.
 	a4 r r
 % Bars 251 to 255
 	R2.

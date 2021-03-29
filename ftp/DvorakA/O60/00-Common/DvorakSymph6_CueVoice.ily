@@ -218,9 +218,12 @@ cueVoiceOboeIIMvtIII = \relative c {
 %###############################################################################
 cueVoiceKlarinetteIMvtI = \relative c {
 	\transposition a
-	R2.*551
+	R2.*238
+	% bar 225
+	r4 g'''4(^\markup {Fl.} f!8 e)
+	R2.*312
 	% bar 538 - 539
-	f''4\rest c'^(^\markup {Fl.} d8 e
+	f4\rest c'^(^\markup {Fl.} d8 e
 	f2.)
 }
 cueVoiceKlarinetteIMvtII = \relative c {

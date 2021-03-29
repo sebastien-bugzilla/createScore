@@ -338,7 +338,7 @@ tempiPartMvtIV = {
 	}
 	s1*241
 	% bar 294
-	\tag #'(floteI floteII oboeI) {
+	\tag #'(floteI floteII oboeI oboeII) {
 		\tempo "Poco sostenuto."
 	}
 	s1*8

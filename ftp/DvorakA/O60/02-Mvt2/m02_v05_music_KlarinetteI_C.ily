@@ -106,7 +106,7 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 86 to 90
 	
 	\partcombineApart r16 g,(\f\< c e g c e g)~\!
-	g8( f16 e g f e d) \mark \default
+	g8(\> f16 e g f e d) \mark \default
 	g4._\pp r8 \partcombineAutomatic
 	R2
 % Bars 91 to 95
@@ -176,8 +176,8 @@ musicKlarinetteIMvtII = \relative c'' {
 	
 	e,16^\pcresc( g c e a c b a)
 % Bars 151 to 155
-	g2~
-	g8 r r4
+	g2~\mf\>
+	g8\! r r4
 	R2 \partcombineAutomatic
 	R2*3
 % Bars 156 to 160

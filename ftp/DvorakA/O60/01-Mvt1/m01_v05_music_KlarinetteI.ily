@@ -211,7 +211,7 @@ musicKlarinetteIMvtI = \relative c'' {
 		}
 % Bars 177 to 180
 		{
-			r4 r a(\mp
+			r4 r a(\mp^\solo
 			d8) r d r r4
 			R2.*2
 			
@@ -239,7 +239,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	
 	
 	
-	c'2(_\mfp bes8 aes)
+	c'2(_\mfp^\solo bes8 aes)
 % Bars 201 to 205
 	aes2(\> g8 f)
 	f2\p( g8 aes)
@@ -259,9 +259,15 @@ musicKlarinetteIMvtI = \relative c'' {
 	aes g aes \mark \default
 	g) r r
 % Bars 216 to 220
-	R2.*10
+	R2.*9
 % Bars 221 to 225
 	
+	
+	
+	
+	\cueDuring #"cueVoiceKlarinetteIMvtI" #UP {
+		\ni R2. \no
+	}
 % Bars 226 to 230
 	r4 b'(\p a!8 gis)
 	R2.*2
@@ -294,7 +300,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	f r r
 	R2.
 	r4 r8 d-.\p ees-. f-.
-	f4.(\< g8\> f4)
+	f4.(\< g8\> f4)\!
 	f2(\< fis4
 % Bars 256 to 260
 	g4.\> a!8 g4)\!
@@ -423,7 +429,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	r c r
 	r des r
 	r des r
-	e\f r r
+	e!\f r r
 % Bars 381 to 385
 	e r r 
 	des8\<-. c-. bes-. aes-. g-. c-.\!
@@ -433,7 +439,7 @@ musicKlarinetteIMvtI = \relative c'' {
 % Bars 386 to 390
 	f2.->~
 	f4 r r
-	ges2( aes8 ges
+	ges2(\fz aes8 ges
 	f4) r r
 	des2(\fz c8 bes
 % Bars 391 to 395

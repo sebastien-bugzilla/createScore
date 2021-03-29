@@ -44,7 +44,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 36 to 40
 	g\!-^~
 	g2. g4-. \mark \default
-	f8(_\ffgrandioso\noBeam c e d c bes a g)
+	f8_\ffgrandioso\noBeam c( e d c bes a g)
 	f( g a g f e d e)
 	c r a'( bes c d e d)
 % Bars 41 to 45
@@ -128,7 +128,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	cis1)\fz~
 	cis2 d4( c!)~
 % Bars 116 to 120
-	c2 a4( b)
+	c2 a!4( b)
 	c r r2
 	R1*3
 	
@@ -344,7 +344,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 326 to 330
 	d c bes f)
 	bes( aes' g ges
-	f8)( bes a! g f g ees f
+	f8) bes( a! g f g ees f
 	d4) bes-. r2
 	R1*8
 % Bars 331 to 335

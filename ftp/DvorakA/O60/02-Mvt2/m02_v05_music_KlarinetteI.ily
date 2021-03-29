@@ -88,16 +88,16 @@ musicKlarinetteIMvtII = \relative c'' {
 	g(\< a c b\! a g f e)
 	\tuplet 3/2 4 {g8--( f-- e--} g\>[ f\!])
 % Bars 71 to 75
-	e(^\dimmarkup d g4)~
+	e(_\dimmarkup d g4)~
 	g2\pp~ \mark \default
 	g8 r r4
-	R2*6
+	R2*7
 % Bars 76 to 80
 	
 	
 	
 	
-	R2
+	
 % Bars 81 to 85
 	r8 g16(\pp\< a) a( b) b( d)\!
 	c4(\> a8 b\!
@@ -106,8 +106,8 @@ musicKlarinetteIMvtII = \relative c'' {
 	
 % Bars 86 to 90
 	
-	r16 g,(\f\< c e g c e g)~\!
-	g8( f16 e g f e d) \mark \default
+	r16 g,(\f c\< e g c e g)~\!
+	g8(\> f16 e g f e d) \mark \default
 	g4.\pp r8
 	R2
 % Bars 91 to 95
@@ -177,8 +177,8 @@ musicKlarinetteIMvtII = \relative c'' {
 	
 	e,16_\pcresc( g c e a c b a)
 % Bars 151 to 155
-	g2~
-	g8 r r4
+	g2~\mf\>
+	g8\! r r4
 	R2*4
 	
 % Bars 156 to 160
@@ -209,8 +209,8 @@ musicKlarinetteIMvtII = \relative c'' {
 	r8 g(->\p e a
 % Bars 181 to 185
 	f!_\dimmarkup d b g')~
-	g2\pp~
-	g4( gis)
+	g2\pp(~
+	g4 gis)
 	a\fp( e_\dimmarkup
 	c! d)
 % Bars 186 to 190

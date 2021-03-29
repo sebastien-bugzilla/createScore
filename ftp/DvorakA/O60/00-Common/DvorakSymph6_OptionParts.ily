@@ -21,6 +21,7 @@ partOptions = {
 		decrescendo-event multi-measure-rest-event tremolo-span-event 
 		tremolo-event)
 	\set Voice.restNumberThreshold = #0
+	\override Score.MeasureCounter.outside-staff-priority = #390
 }
 #(set-global-staff-size 19)
 \layout {

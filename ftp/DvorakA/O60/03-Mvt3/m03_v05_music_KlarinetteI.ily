@@ -138,8 +138,8 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 116 to 120
 		gis-. fis-. fis-.
 		gis-. fis-. fis-.\!
-		aes!-._\semprecresc g-. g-.
-		a-. g-. g-.
+		aes!-._\semprecresc g!-. g-.
+		a-.\fz g-. g-.
 		a\fz g g
 % Bars 121 to 125
 		bes\fz g g
@@ -150,7 +150,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 126 to 130
 		dis( e) dis(
 		e) dis( e)
-		e(\ff f) e(
+		e(_\ffgrandioso f) e(
 		f) e( f)
 		g-. f8( e f4)
 % Bars 131 to 135
@@ -169,7 +169,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		
 		g'4-. e-. e-.
 		aes-. f-. f-.
-		c'-. c,( d8 e)
+		c'-. c,(-> d8 e)
 		f4-. aes-. f-.
 	}
 % Bars 146 to 150
@@ -178,7 +178,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 			f r r
 		}
 		{
-			f2.\f\>
+			\startMeasureCount f2.\f\>
 		}
 	}
 	f
@@ -187,16 +187,16 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f_\dimmarkup
 % Bars 151 to 155
 	f
-	f \bar "||" \key f \major
+	f \stopMeasureCount \bar "||" \key f \major
 	\repeat volta 2 {
-		c
+		\time 3/4 \trio c\fp
 		R2.
 		c(\p
 % Bars 156 to 160
 		d\<
-		e
-		f)
-		d\p~
+		e!
+		f)\!
+		d\fp~
 		d~\>
 % Bars 161 to 165
 		d~
@@ -271,7 +271,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
 	}
-	a,4( d f
+	\shape #'((0 . 0)(0 . 2)(0 . 1)(0 . -2)) Slur a,4(\p d f
 	a d f~
 % Bars 231 to 235
 	f2 e4
@@ -319,7 +319,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	f4(\pp g8 e f4)
+	\startMeasureCount f4(\pp g8 e f4)
 % Bars 281 to 285
 	f( g8\< e f4)
 	f( g8 e f4)
@@ -328,7 +328,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f( g8 e f4)
 % Bars 286 to 290
 	f( g8 e f4)
-	f( g8 e f4) \bar "||" \key f \minor
+	f( g8 e f4) \stopMeasureCount \bar "||" \key f \minor
 	e(->\f f8) r e4(->
 	f8) r e4(-> f8) r
 	g4-.\fz f8( e f4)
@@ -434,7 +434,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	cis-. b-. b-.
 	R2.*2
 	
-	r4 des-.\pp r
+	r4 des!-.\pp r
 % Bars 386 to 390
 	des-. r des-.
 	r ces2
@@ -486,7 +486,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	c'-. c,->( d8 e)
 	f4-. aes-. f-.
 	f-. aes-. f-.
-	c-. bes'4->( a8 g)
+	c-. bes'4->( aes8 g)
 % Bars 431 to 435
 	f4-. aes-. f-.
 	f-. aes-. f-.

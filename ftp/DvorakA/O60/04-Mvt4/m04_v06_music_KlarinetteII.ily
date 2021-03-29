@@ -46,7 +46,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e\!-^~
 	e2. e4-. \mark \default
-	f8(_\ffgrandioso\noBeam a, c bes a g f e)
+	f8_\ffgrandioso\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
@@ -178,7 +178,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 161 to 165
 	
 % Bars 166 to 170
-	c4\f-- \tuplet 3/2 4 {c8( bes a-.)} a4-- \tuplet 3/2 4 {a8( ees c)-.}
+	c4\f-- \tuplet 3/2 4 {c8( bes! aes-.)} aes4-- \tuplet 3/2 4 {aes8( ees c)-.}
 	f'4\fz c r2
 	f4\fz c r2
 	c4\fz c r2
@@ -329,8 +329,8 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 % Bars 326 to 330
 	f,4(\p ees d c)
-	d( f' e ees
-	d8)( bes' a! g f g ees f
+	d( f' e ees)
+	d8( bes' a! g f g ees f
 	d4) bes-. r2
 	R1*8
 % Bars 331 to 335
@@ -339,13 +339,13 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	a,4.\f a8 a4-. d-.
-	cis-. r r2
+	cis r r2
 	e4.\f e8 e4-. a-.
 % Bars 341 to 345
 	e1\fp
 	f\fp
 	g\fp(
-	a8-.) r e'4(\f f g
+	a8-.) r e'4(->\f f g
 	f) cis2.->~
 % Bars 346 to 350
 	cis4 d->( ees f
@@ -400,7 +400,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	bes2-> bes->
 % Bars 391 to 395
 	bes2.-> r4
-	c,\fz f-. c\fz f-.
+	c,\fz f-. d\fz f-.
 	f\fz f-. e\fz c-.
 	e4->\p \tuplet 3/2 4 {e8( d c-.)} c4 \tuplet 3/2 4 {c8( g e-.)}
 	e4 r r2
@@ -417,13 +417,13 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 406 to 410
 	bes2-> bes-> 
 	bes2.-> r4
-	c,4\fz f-. c\fz f-.
+	c,4\fz f-. d\fz f-.
 	f\fz f-. e\fz c-.
-	a r f,2\f->(
+	a r f,2\f(
 % Bars 411 to 415
 	fis1->)~
 	fis2 g4( f)~
-	f2 g2(->
+	f2 g2(
 	f4) r r2
 	R1*3
 % Bars 416 to 420
@@ -453,7 +453,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 bes,,\f-. \mark \default \bar "||"
+	r2 r4 bes,,!\f-. \mark \default \bar "||"
 	a-.\f r  r bes-.
 % Bars 441 to 445
 	a-. r r g-.
@@ -518,7 +518,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	f-> c->
 	c-> d->
 	c-> d->
-	ais'-> ais->
+	a'-> a->
 	d,-> g->
 % Bars 501 to 505
 	f4 r a,2->~

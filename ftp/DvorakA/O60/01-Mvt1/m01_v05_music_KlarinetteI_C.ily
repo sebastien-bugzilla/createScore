@@ -423,7 +423,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	r c r
 	r des r
 	r des r
-	e\f r r
+	e!\f r r
 % Bars 381 to 385
 	e r r 
 	des8\<-. c-. bes-. aes-. g-. c-.\!

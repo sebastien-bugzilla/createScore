@@ -146,8 +146,8 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 116 to 120
 		gis-. fis-. fis-.
 		gis-. fis-. fis-.\!
-		aes!-._\semprecresc g-. g-.
-		a-. g-. g-.
+		aes!-._\semprecresc g!-. g-.
+		a\fz-. g-. g-.
 		a\fz g g
 % Bars 121 to 125
 		bes\fz g g
@@ -177,7 +177,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		
 		g'4-. e-. e-.
 		aes-. f-. f-.
-		c'-. c,( d8 e)
+		c'-. c,(-> d8 e)
 		f4-. aes-. f-.
 	}
 % Bars 146 to 150
@@ -197,12 +197,12 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f
 	f \bar "||" \key f \major
 	\repeat volta 2 {
-		c
+		c\fp
 		R2.
 		c(
 % Bars 156 to 160
 		d
-		e
+		e!
 		f)
 		d~
 		d~
@@ -273,7 +273,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	a,4( d f
+	a,4(\p d f
 	a d f~
 % Bars 231 to 235
 	f2 e4
@@ -440,7 +440,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	cis-. b-. b-. \partcombineAutomatic
 	R2.*2
 	
-	r4 des-.\pp r
+	r4 des!-.\pp r
 % Bars 386 to 390
 	des-. r des-.
 	r \once \partcombineApart ces2
@@ -492,7 +492,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	c'-. c,->( d8 e)
 	f4-. aes-. f-.
 	f-. aes-. f-.
-	\once \partcombineApart c-. bes'4->( a8 g)
+	\once \partcombineApart c-. bes'4->( aes8 g)
 % Bars 431 to 435
 	f4-. aes-. f-.
 	f-. aes-. f-.

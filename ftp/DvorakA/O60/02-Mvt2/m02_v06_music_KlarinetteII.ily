@@ -159,7 +159,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	g4(\pp c)~
 	c8( b a g)
-	g~ g32( a g f) f4(
+	g~ g32( a g f-.) f4(
 	e8) c16(\< e a c b a)\!
 % Bars 151 to 155
 	g8( d'4\mf c8)
@@ -196,11 +196,11 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 	
-	cis2_\fpdim
-	c!~
+	cis2_\fpdim(
+	c!)~
 % Bars 186 to 190
-	c2\pp\<
-	g\>~
+	c2\pp\<(
+	g\>)~
 	g8\! r r4
 	R2*8
 % Bars 191 to 195
