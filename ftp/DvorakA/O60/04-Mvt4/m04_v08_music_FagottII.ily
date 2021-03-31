@@ -139,7 +139,7 @@ musicFagottIIMvtIV = \relative c {
 	cis4\fz a'-. d\fz b-.
 	e\fz r e,\fz r \mark \default
 	a r g'!2\fz~
-	g1~\fz
+	g1~
 	g2 fis4( f)
 % Bars 116 to 120
 	e2 d

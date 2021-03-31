@@ -151,11 +151,11 @@ musicFagottIMvtIII = \relative c {
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
 		a!-._\semprecresc a-. a-.
-		a a a
-		a a a
+		a-. a-. a-.
+		a-. a-. a-.
 % Bars 121 to 125
-		a a a
-		a a a
+		a-. a-. a-.
+		a-. a-. a-.
 		aes-. aes-. aes-.
 		c(\ff des) c( 
 		des) c( des)
@@ -231,7 +231,7 @@ musicFagottIMvtIII = \relative c {
 			R \no \clef bass
 		}
 		d2(\pp e4
-		cis2 d4
+		cis2_\dimmarkup d4
 		b2 cis4
 % Bars 196 to 200
 		a2 b4)
@@ -249,12 +249,12 @@ musicFagottIMvtIII = \relative c {
 % Bars 211 to 215
 	
 	
-	d'2(\p a4
+	d'2(\p^\solo a4
 	e2 fis4
 	g a b
 % Bars 216 to 220
 	a e g)
-	fis2.(^\dimmarkup
+	fis2.(_\dimmarkup
 	b4 a g)
 	fis2.(
 	b4 a g)
@@ -322,7 +322,7 @@ musicFagottIMvtIII = \relative c {
 	a a a \bar "||" \key d \minor
 	d,2\f-> d4->~
 	d d2->
-	c4\fz-. d-. d-.
+	c!4\fz-. d-. d-.
 % Bars 291 to 295
 	c\fz-. d-. d-.
 	f2-> f4->~
@@ -382,7 +382,7 @@ musicFagottIMvtIII = \relative c {
 % Bars 341 to 345
 	
 	
-	a2\< d4~
+	a2\p\< d4~
 	d e-.\f f-.
 	c2->\ff c,4->~
 % Bars 346 to 350

@@ -151,11 +151,11 @@ musicFagottIMvtIII = \relative c {
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
 		a!-._\semprecresc a-. a-.
-		a a a
-		a a a
+		a-. a-. a-.
+		a-. a-. a-.
 % Bars 121 to 125
-		a a a
-		a a a
+		a-. a-. a-.
+		a-. a-. a-.
 		aes-. aes-. aes-.
 		c( des) c( 
 		des) c( des)
@@ -221,7 +221,7 @@ musicFagottIMvtIII = \relative c {
 		
 		
 		\partcombineApart d2(\pp e4
-		cis2 d4
+		cis2_\dimmarkup d4
 		b2 cis4
 % Bars 196 to 200
 		a2 b4)
@@ -312,7 +312,7 @@ musicFagottIMvtIII = \relative c {
 	a a a \bar "||" \key d \minor
 	d,2\f-> d4->~
 	d d2->
-	c4\fz-. d-. d-.
+	c!4\fz-. d-. d-.
 % Bars 291 to 295
 	c\fz-. d-. d-.
 	f2-> f4->~

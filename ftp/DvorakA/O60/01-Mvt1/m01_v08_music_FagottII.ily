@@ -137,7 +137,7 @@ musicFagottIIMvtI = \relative c {
 		\mark \default
 		ais4-.\p fis-. r
 		r b-. b-.
-		cis-. r a-.
+		cis-. r a!-.
 % Bars 111 to 115
 		r d-. d-.
 		e2.\p
@@ -349,7 +349,7 @@ musicFagottIIMvtI = \relative c {
 	ees\fz~
 	ees~
 	ees
-	d\fz~
+	d\fz~ 
 % Bars 286 to 290
 	d~
 	d
@@ -515,7 +515,7 @@ musicFagottIIMvtI = \relative c {
 	
 	
 	
-	
+	\mark \default
 	r4 r c-^\f
 % Bars 446 to 450
 	c-^ a8-. bes-. c4-^
@@ -572,7 +572,7 @@ musicFagottIIMvtI = \relative c {
 	d'4.\ff-^ cis-^
 	b8-. g-. a-. b-. e,4~
 % Bars 491 to 495
-	e a'4-. d-.
+	e-. a'4-. d-.
 	g,-. cis-. fis,-.
 	f4. r8 r4
 	f4. r8 r4 \mark #11

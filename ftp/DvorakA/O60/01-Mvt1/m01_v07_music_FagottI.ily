@@ -173,7 +173,7 @@ musicFagottIMvtI = \relative c {
 		aes,8_\crescmarkup( bes ces c des ces) \mark \default
 		bes\f r r4 b(->
 % Bars 141 to 145
-		cis8) r r4 b4(->
+		cis!8) r r4 b4(->
 		cis8) r r4 cis-.
 		r cis-. cis-.
 		b8-. dis( e fis) e4->(
@@ -219,7 +219,7 @@ musicFagottIMvtI = \relative c {
 	}
 	\alternative {
 		{
-			d d\p\< d
+			d d\< d
 			d d d
 			fis2._\fpdimD~
 			fis~
@@ -265,7 +265,7 @@ musicFagottIMvtI = \relative c {
 % Bars 201 to 205
 		R \no
 	}
-	\clef tenor a2(\p\> g8 f)
+	\clef tenor a2(\p\> g8 f)\!
 	f2(\< e8 d)\!
 	d2 r4
 	r a'(\mf g8 f)
@@ -403,8 +403,8 @@ musicFagottIMvtI = \relative c {
 % Bars 331 to 335
 	d2.)\<
 	d2(\f g4)
-	b2.~_\dimmarkup
-	b4\p\>( fis' e 
+	b2.(~_\dimmarkup
+	b4\p\> fis' e 
 	d e d\!
 % Bars 336 to 340
 	ais8)\pp r r4 r
@@ -437,7 +437,7 @@ musicFagottIMvtI = \relative c {
 	g fis2\fz \mark \default
 	f4-. r r
 % Bars 361 to 365
-	r4 b(\p\< c
+	r4 b(\p\<^\solo c
 	d\> b)\! r
 	r e(\pp f)
 	g2.~
@@ -526,7 +526,7 @@ musicFagottIMvtI = \relative c {
 	
 	
 	
-	
+	\mark \default
 	r4 r c'-^\f
 % Bars 446 to 450
 	c-^ a8-. bes-. c4-^

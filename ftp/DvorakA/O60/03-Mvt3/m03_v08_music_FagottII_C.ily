@@ -51,7 +51,7 @@ musicFagottIIMvtIII = \relative c, {
 		bes a\> c bes a g)\!
 		d4( f) d(
 		f) d( f)
-		a e8(\< dis e f\!
+		a-. e8(\< dis e f\!
 		g fis\> a g f e)\!
 % Bars 36 to 40
 		d4( fis) d(
@@ -103,8 +103,8 @@ musicFagottIIMvtIII = \relative c, {
 		g'2.\p~
 % Bars 81 to 85
 		g
-		f~
-		f4 bes,2
+		f~->
+		f4 bes,2->
 		R2.*2
 		
 % Bars 86 to 90
@@ -397,9 +397,9 @@ musicFagottIIMvtIII = \relative c, {
 	
 	g'2.\p~
 	g
-	f~
+	f~->
 % Bars 366 to 370
-	f4 bes,2
+	f4 bes,2->
 	R2.*2
 	
 	f'2\p f4~
@@ -453,7 +453,7 @@ musicFagottIIMvtIII = \relative c, {
 	a!2-> a4~->
 	a a2->
 % Bars 411 to 415
-	d2 d,4~
+	d!2 d,4~
 	d d2
 	d d4~
 	d d2

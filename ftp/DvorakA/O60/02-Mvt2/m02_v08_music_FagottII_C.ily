@@ -135,7 +135,7 @@ musicFagottIIMvtII = \relative c {
 	R2*4
 % Bars 116 to 120
 	
-	c'2\p~
+	c'!2\p~
 	c
 	b~\<
 	b\!
@@ -202,7 +202,7 @@ musicFagottIIMvtII = \relative c {
 	f8) bes4\mf( a16\! g
 % Bars 176 to 180
 	f8) bes4\f( a16 g
-	f) ees'\f\<-> d-> des-> c-> bes-> a-> g->\!
+	f) ees'\<-> d-> des-> c-> bes-> a-> g->\!
 	fis8\ff r g-^ r
 	c,-^r r4
 	f2\p~

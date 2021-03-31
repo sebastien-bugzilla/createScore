@@ -173,7 +173,7 @@ musicFagottIMvtI = \relative c {
 		aes,8_\crescmarkup( bes ces c des ces) \mark \default
 		bes\f r r4 b(->
 % Bars 141 to 145
-		cis8) r r4 b4(->
+		cis!8) r r4 b4(->
 		cis8) r r4 cis-.
 		r cis-. cis-.
 		b8-. dis\( e fis\) e4->\(
@@ -520,7 +520,7 @@ musicFagottIMvtI = \relative c {
 	
 	
 	
-	
+	\mark \default
 	r4 r c'-^\f
 % Bars 446 to 450
 	c-^ a8-. bes-. c4-^

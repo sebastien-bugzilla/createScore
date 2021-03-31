@@ -11,7 +11,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 1 to 5
 	R2*2
 	
-	\partcombineApart r8 bes(_\< g c)
+	\partcombineApart r8 bes(_\p_\< g c)
 	f,2_\fp~_\>
 	f8_\pp \partcombineAutomatic r r4
 % Bars 6 to 10
@@ -97,7 +97,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 86 to 90
 	g_\p_\< e' e e
 	f2_\fz~
-	f4._\>( ees8 \mark \default
+	f4._\>( ees!8 \mark \default
 	d4.)\pp r8
 	R2
 % Bars 91 to 95
