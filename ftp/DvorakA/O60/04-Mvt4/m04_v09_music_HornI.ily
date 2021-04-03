@@ -208,7 +208,7 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	d4-^\f a-^ d2-^~
+	d4-^\f^\solo a-^ d2-^~
 % Bars 196 to 200
 	d4 r r2
 	R1*6
@@ -227,7 +227,7 @@ musicHornIMvtIV = \relative c'' {
 	c,4-.\f g-. c2->
 	d4-. g,-. d'2-> \mark \default
 % Bars 216 to 220
-	ees4\f r r2
+	ees4 r r2
 	R1*7
 % Bars 221 to 225
 	
@@ -263,14 +263,14 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	d4(\p c bes f)
+	d!4(\p c bes f)
 	bes4. bes8 bes4 c
 % Bars 251 to 255
 	\tuplet 6/4 1 {d4( f aes g f ees)}
 	d2. r4 \mark \default
 	R1
-	\tuplet 6/4 1 {aes4( c ees ges f ees)}
-	ees2(\p\< \tuplet 3/2 2 {aes,4 bes ces\!}
+	\tuplet 6/4 1 {aes4(\p c ees ges f ees)}
+	ees2(\< \tuplet 3/2 2 {aes,4 bes ces\!}
 % Bars 256 to 260
 	bes\f) r r2
 	R1*11

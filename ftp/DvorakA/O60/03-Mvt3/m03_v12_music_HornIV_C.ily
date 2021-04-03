@@ -318,7 +318,7 @@ musicHornIVMvtIII = \relative c' {
 	g r g
 	R2.*2
 	
-	bes2->\ff aes4_~
+	bes2->\ff aes4_->~
 % Bars 346 to 350
 	aes g2->
 	g2\p c4~

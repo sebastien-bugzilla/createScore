@@ -54,7 +54,7 @@ musicHornIMvtIII = \relative c'' {
 		e e4-. e-.\!
 		g2->\ff f4~->
 		f e2->
-		g,->\p c4~->
+		g,->\p^\solo c4~->
 		c b-. c-.
 % Bars 46 to 50
 		d2-> g,4~->
@@ -78,8 +78,8 @@ musicHornIMvtIII = \relative c'' {
 		a b-.\f c-.
 		e2->\ff d4~->
 		d c2->
-		e,2\p e4~
-		e a2
+		e,2\p\< e4~
+		e a2\!
 % Bars 66 to 70
 		\partcombineChords b2->\f a4^(->\>
 		b) g2\!-> \partcombineAutomatic
@@ -137,7 +137,7 @@ musicHornIMvtIII = \relative c'' {
 		c2->\ff c4~->
 		c c2->
 % Bars 126 to 130
-		d2-> d4->~
+		d!2-> d4->~
 		d d2->
 		c2\ff c4~
 		c c2

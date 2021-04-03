@@ -257,14 +257,14 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	\partcombineApart d4(\p c bes f)
+	\partcombineApart d!4(\p c bes f)
 	bes4. bes8 bes4 c
 % Bars 251 to 255
 	\tuplet 6/4 1 {d4( f aes g f ees)}
 	d2. r4 \partcombineAutomatic \mark \default
 	R1
-	\partcombineApart \tuplet 6/4 1 {aes4( c ees ges f ees)} \partcombineAutomatic
-	ees2(\p\< \tuplet 3/2 2 {aes,4 bes ces\!}
+	\partcombineApart \tuplet 6/4 1 {aes4(\p c ees ges f ees)} \partcombineAutomatic
+	ees2(\< \tuplet 3/2 2 {aes,4 bes ces\!}
 % Bars 256 to 260
 	bes\f) r r2
 	R1*11

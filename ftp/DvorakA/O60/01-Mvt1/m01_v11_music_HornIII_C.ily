@@ -9,7 +9,7 @@ musicHornIIIMvtI = \relative c' {
 	\key c \major
 	\transposition e
 % Bars 1 to 5
-	\partcombineApart d8 d4 d d8
+	\partcombineApart d8\pp d4 d d8
 	d d4 d d8
 	\repeat volta 2 {
 		d d4 d d8
@@ -52,7 +52,7 @@ musicHornIIIMvtI = \relative c' {
 % Bars 41 to 45
 		g2\fz g4~\fz
 		g g2\fz
-		a2\ff a4~
+		a!2\ff a4~
 		a a2
 		a a4~
 % Bars 46 to 50

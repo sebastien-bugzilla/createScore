@@ -79,7 +79,7 @@ musicHornIIIMvtIII = \relative c'' {
 		
 		ees'2->\ff ees4-.
 		des-. bes2->
-		g2\p\< c4~
+		g2\p\<^\solo c4~
 		c d-. ees-.\!
 % Bars 66 to 70
 		g2->\f f4\>~->
@@ -100,7 +100,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 91 to 95
 		
 % Bars 96 to 100
-		r4 ges-. r
+		r4 ges-.\pp r
 		ges-. r ges-.
 		R2.*20
 % Bars 101 to 105
@@ -210,7 +210,7 @@ musicHornIIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	\clef bass c,,2.\pp~
+	c,2.\pp~
 	c~
 	c~
 	c~
@@ -240,10 +240,10 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 251 to 255
 	
 	\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
-		\ni \mmrPos #-2 \clef treble R2.
+		\ni \mmrPos #-2 R2.
 		\mmrPos #-2 R
 		\mmrPos #-2 R
-		\mmrPos #-2 R \no \clef bass
+		\mmrPos #-2 R \no
 	}
 % Bars 256 to 260
 	c2.\p~
@@ -275,7 +275,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 286 to 290
 	c~
 	c \clef treble \bar "||" \key a \minor
-	g''2->\f g4->~
+	g'2->\f g4->~
 	g g2->
 	r4 c-. c-.
 % Bars 291 to 295
@@ -334,7 +334,7 @@ musicHornIIIMvtIII = \relative c'' {
 	ees'2->\ff ees4-.
 % Bars 346 to 350
 	d-. bes2->
-	g2\p c4~
+	g2\p^\solo c4~
 	c\< d-. ees-.\!
 	g2\f-> f4->~\>
 	f ees2->\!

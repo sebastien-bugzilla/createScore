@@ -16,10 +16,10 @@
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
+\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
@@ -83,7 +83,7 @@
 				\nameHornIMvtI \musicHornIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -96,9 +96,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -111,7 +108,7 @@
 				\nameHornIMvtII \musicHornIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -124,9 +121,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -139,7 +133,7 @@
 				\nameHornIMvtIII \musicHornIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -152,9 +146,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -167,7 +158,7 @@
 				\nameHornIMvtIV \musicHornIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -180,9 +171,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -195,7 +183,7 @@
 				\nameHornIIMvtI \musicHornIIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -208,9 +196,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -223,7 +208,7 @@
 				\nameHornIIMvtII \musicHornIIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -236,9 +221,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -251,7 +233,7 @@
 				\nameHornIIMvtIII \musicHornIIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -264,9 +246,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -279,7 +258,7 @@
 				\nameHornIIMvtIV \musicHornIIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -292,9 +271,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -307,7 +283,7 @@
 				\nameHornIIIMvtI \musicHornIIIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -320,9 +296,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -335,7 +308,7 @@
 				\nameHornIIIMvtII \musicHornIIIMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -348,9 +321,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -363,7 +333,7 @@
 				\nameHornIIIMvtIII \musicHornIIIMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -376,9 +346,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -391,7 +358,7 @@
 				\nameHornIIIMvtIV \musicHornIIIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -404,9 +371,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -419,7 +383,7 @@
 				\nameHornIVMvtI \musicHornIVMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -432,9 +396,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -447,7 +408,7 @@
 				\nameHornIVMvtII \musicHornIVMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -460,9 +421,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -475,7 +433,7 @@
 				\nameHornIVMvtIII \musicHornIVMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -488,9 +446,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -503,7 +458,7 @@
 				\nameHornIVMvtIV \musicHornIVMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -516,9 +471,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

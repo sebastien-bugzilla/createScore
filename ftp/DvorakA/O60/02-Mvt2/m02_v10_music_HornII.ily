@@ -17,7 +17,7 @@ musicHornIIMvtII = \relative c'' {
 	a4\fp\> g(
 	f8)\pp r r4
 % Bars 6 to 10
-	R2*23
+	R2*21
 % Bars 11 to 15
 	
 % Bars 16 to 20
@@ -26,8 +26,10 @@ musicHornIIMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
-	
-	
+	\cueDuring #"cueVoiceHornIIMvtII" #UP {
+		\ni R2
+		R \no
+	}
 	f16\fp f f f   g g g g 
 	f f f f g\< g g g
 % Bars 31 to 35

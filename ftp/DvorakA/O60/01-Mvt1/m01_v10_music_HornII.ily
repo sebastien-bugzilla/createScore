@@ -200,7 +200,7 @@ musicHornIIMvtI = \relative c' {
 	}
 	\clef treble R2.*4
 % Bars 186 to 190
-	r4 r a''(\pp
+	r4 r a''(\pp^\solo
 	e'8) r e r r4
 	R2.
 	r4 r g-.\p
@@ -212,7 +212,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 196 to 200
 	
 	
-	ees2(\p d8 c)
+	ees2(\p^\solo d8 c)
 	c2( bes8 a)
 	a2 r4
 % Bars 201 to 205
@@ -327,12 +327,12 @@ musicHornIIMvtI = \relative c' {
 % Bars 331 to 335
 	c~
 	c2 r4
-	R2.*4
+	R2.*14
 	
 	
 % Bars 336 to 340
 	
-	R2.*10
+	
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -358,7 +358,7 @@ musicHornIIMvtI = \relative c' {
 	
 	
 	
-	g4\p-. g,-. r
+	g4\p-.^\solo g,-. r
 % Bars 366 to 370
 	g'-. g,-. r
 	R2.*13

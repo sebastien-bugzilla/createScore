@@ -463,7 +463,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 471 to 475
 	e-> b e-> d
 	c-> g c-> g
-	c-> g c-> g \mark #11
+	c-> g c-> a \mark #11
 	e r r2
 	R1*7
 % Bars 476 to 480

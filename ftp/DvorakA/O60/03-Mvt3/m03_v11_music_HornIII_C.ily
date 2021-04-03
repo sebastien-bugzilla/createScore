@@ -95,7 +95,7 @@ musicHornIIIMvtIII = \relative c'' {
 		
 		R2.*4
 % Bars 96 to 100
-		\partcombineApart r4 ges-. r
+		\partcombineApart r4 ges-.\pp r
 		ges-. r ges-. \partcombineAutomatic
 		R2.*20
 % Bars 101 to 105

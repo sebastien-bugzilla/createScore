@@ -79,7 +79,7 @@ musicHornIVMvtIII = \relative c' {
 		
 		bes2->\ff aes4~
 		aes g2->
-		g2\p\< c4~
+		g2\p\<^\solo c4~
 		c d-. ees-.\!
 % Bars 66 to 70
 		g2->\f f4\>~->
@@ -96,7 +96,7 @@ musicHornIVMvtIII = \relative c' {
 		
 		
 		
-		c,2\p c4~
+		c,2\p^\solo c4~
 % Bars 91 to 95
 		c f,2
 		R2.*26
@@ -320,10 +320,10 @@ musicHornIVMvtIII = \relative c' {
 	g r g
 	R2.*2
 	
-	bes2->\ff aes4~
+	bes2->\ff aes4->~
 % Bars 346 to 350
 	aes g2->
-	g2\p c4~
+	g2\p^\solo c4~
 	c\< d-. ees-.\!
 	g2\f-> f4->~\>
 	f ees2->\!
@@ -338,7 +338,7 @@ musicHornIVMvtIII = \relative c' {
 % Bars 371 to 375
 	
 	
-	c,2\p c4~
+	c,2\p^\solo c4~
 	c f,2
 	R2.*26
 % Bars 376 to 380

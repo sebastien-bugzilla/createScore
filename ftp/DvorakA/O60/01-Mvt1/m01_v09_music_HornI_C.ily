@@ -339,7 +339,7 @@ musicHornIMvtI = \relative c'' {
 	f2 f4~
 	f f2
 % Bars 356 to 360
-	f\ff e4\fz~
+	f\ff e!4\fz~
 	e f2\fz
 	fis\fz g4~\fz
 	g g2\fz \mark \default
@@ -510,7 +510,7 @@ musicHornIMvtI = \relative c'' {
 	g~\p
 	g
 	g2(_\dimmarkup f8 e)
-	e2( d8) c
+	e2( d8 c)
 	c2 g4~
 % Bars 531 to 535
 	g2.~

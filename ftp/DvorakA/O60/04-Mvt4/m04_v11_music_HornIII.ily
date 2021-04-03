@@ -30,7 +30,7 @@ musicHornIIIMvtIV = \relative c'' {
 	g2. r4
 	dis4.\mf dis8 dis4-. g-.
 % Bars 21 to 25
-	fis4. fis8 fis4-. g-.
+	fis4.\< fis8 fis4-. g-.
 	fis4.\f fis8 fis4-.\< b-.
 	cis4. cis8 cis4-. d-.\!
 	c!1\fz~

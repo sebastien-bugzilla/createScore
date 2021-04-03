@@ -30,7 +30,7 @@ musicHornIIIMvtIV = \relative c'' {
 	g2. r4
 	\partcombineApart dis4.\mf dis8 dis4-. g-.
 % Bars 21 to 25
-	fis4. fis8 fis4-. g-. 
+	fis4.\< fis8 fis4-. g-. 
 	fis4. fis8 fis4-. \partcombineAutomatic b-.\<
 	cis4. cis8 cis4-. d-.\!
 	\partcombineApart c!1~

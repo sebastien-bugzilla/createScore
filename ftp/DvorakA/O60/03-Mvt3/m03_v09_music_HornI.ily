@@ -78,7 +78,7 @@ musicHornIMvtIII = \relative c'' {
 		a b-.\f c-.
 		e2->\ff d4~->
 		d c2->
-		e,2\p e4~
+		e,2\p\< e4~
 		e a2
 % Bars 66 to 70
 		b2->\f a4(->\>
@@ -137,7 +137,7 @@ musicHornIMvtIII = \relative c'' {
 		c2->\ff c4~->
 		c c2->
 % Bars 126 to 130
-		d2-> d4->~
+		d!2-> d4->~
 		d d2->
 		c2\ff c4~
 		c c2
@@ -313,7 +313,7 @@ musicHornIMvtIII = \relative c'' {
 	g2\ff-> f4->~
 % Bars 326 to 330
 	f e2->
-	g,\p-> c4->~
+	g,\p->^\solo c4->~
 	c b4-. c-.
 	d2-> g,4~
 	g2.

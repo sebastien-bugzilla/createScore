@@ -20,7 +20,7 @@ musicHornIMvtII = \relative c'' {
 	
 	\partcombineApart c4(\pp f~
 	f8 e d c)
-	c(~ c32 d c bes) bes4(
+	c(~ c32 d c bes-.) bes4(
 	a8) r r4 \partcombineAutomatic
 % Bars 16 to 20
 	R2*11
@@ -161,7 +161,7 @@ musicHornIMvtII = \relative c'' {
 	
 	c4(\pp f)~
 	f8( e d c)
-	c~ c32( d c bes) bes4(
+	c~ c32( d c bes-.) bes4(
 	a) d8_>_\< e16_> f_>
 % Bars 151 to 155
 	f8_\f c a4_\dimmarkup
@@ -174,12 +174,12 @@ musicHornIMvtII = \relative c'' {
 	a-- a--
 	a-- a--
 	a-- a--
-	\partcombineApart a-- b
+	\partcombineApart a-- b\<
 % Bars 161 to 165
-	c4. g8~
-	g4 a 
-	bes4. f8~
-	f4 e~
+	c4. g8~\!
+	g4 a\>
+	bes4. f8~\!
+	f4\pp e~
 	e8 r r4 \partcombineAutomatic
 % Bars 166 to 170
 	R2*3

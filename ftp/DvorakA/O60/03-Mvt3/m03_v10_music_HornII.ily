@@ -14,7 +14,7 @@ musicHornIIMvtIII = \relative c'' {
 		
 		
 		
-		c2->\f c4~
+		c2->\f c4->~
 % Bars 6 to 10
 		c c2->
 		b4-.\fz c-. c-.
@@ -54,7 +54,7 @@ musicHornIIMvtIII = \relative c'' {
 		c d4-. c-.\!
 		b2->\ff d4~->
 		d c2->
-		g->\p c4~->
+		g->\p^\solo c4~->
 		c b-. c-.
 % Bars 46 to 50
 		d2-> g,4~->
@@ -78,7 +78,7 @@ musicHornIIMvtIII = \relative c'' {
 		a b-.\f c-.
 		e2->\ff d4~->
 		d c2->
-		c,2\p c4~
+		c,2\p\< c4~
 		c f2
 % Bars 66 to 70
 		g2->\f f4->\>~
@@ -296,9 +296,9 @@ musicHornIIMvtIII = \relative c'' {
 	b2\ff-> d4->~
 % Bars 326 to 330
 	d c2->
-	g\p-> c4->~
+	g\p->^\solo c4->~
 	c b4-. c-.
-	d2-> g,4~
+	d2-> g,4->~
 	g2.
 % Bars 331 to 335
 	g2-> c4~->
@@ -313,7 +313,7 @@ musicHornIIMvtIII = \relative c'' {
 	e2-> a4->~
 	a gis-. a-.
 % Bars 341 to 345
-	b2-> e,4~
+	b2-> e,4->~
 	e2.
 	e2 a4~\<
 	a b\f-. c-.
@@ -382,7 +382,7 @@ musicHornIIMvtIII = \relative c'' {
 	bes4-. bes-. bes-.
 	aes2->\ff aes4->~
 	aes aes2->
-	b!2-> b4~
+	b!2-> b4->~
 	b b2->
 % Bars 411 to 415
 	a2_\ffgrandioso a4~

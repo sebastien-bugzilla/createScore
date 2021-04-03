@@ -437,7 +437,11 @@ cueVoiceHornIIMvtII = \relative c {
 	R2*2
 	%  bar 3
 	r8 b'^\markup {Fag.} g c
-	R2*61
+	R2*23
+	% bar 27 - 28
+	r8^\markup {Horn I.} g'4._~
+	g8 b4 b8
+	R2*36
 	% bar 65 - 66
 	f'16^\markup {Clar.} e d g f e d g
 	f e d d' c b a g
@@ -459,9 +463,9 @@ cueVoiceHornIIMvtIV = \relative c {
 	d''2\rest d4\rest e_(^\markup {Viol.}
 	a g f dis)
 	e8_( a gis f e f d e)
-	c4. c8 c4 b
+	c4. c8 c4( b)
 	a8_( a' gis f e f d e)
-	c4. c8 c4 b
+	c4. c8 c4( b)
 	a8_( a' gis f e f d e)
 	R1*310
 	% bar 330 - 333

@@ -54,7 +54,7 @@ musicHornIVMvtII = \relative c'' {
 % Bars 61 to 65
 	
 	
-	r8 g'4\p\< g8~
+	r8 g'4\p\<^\solo g8~
 	g g4\! g8~
 	g16\f g8 g g g16~
 % Bars 66 to 70

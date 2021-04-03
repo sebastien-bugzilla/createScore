@@ -51,7 +51,7 @@ musicHornIIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	r8 e'\pp( c f)~
+	r8 e'\pp(^\solo c f)~
 % Bars 56 to 60
 	f4 e(
 	a2)~\<
@@ -100,7 +100,7 @@ musicHornIIIMvtII = \relative c'' {
 % Bars 96 to 100
 	e e e_\crescmarkup e f f f f
 	e e e e f f f f
-	e8 r16 g-.\f\< c16( g)\! e-. d-.
+	e8 r16 g-.\f\< c16( g) e-. d-.
 	c8\ff-> e-> e-> e->
 	e4-> d->
 % Bars 101 to 105

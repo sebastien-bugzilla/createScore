@@ -189,9 +189,9 @@ musicHornIMvtI = \relative c'' {
 			g~
 % Bars 186 to 190
 			g 
-			\clef bass c,,\pp~
+			c,\pp~
 			c~
-			c8 \clef treble g''4 g g8
+			c8 g'4 g g8
 			g8 g4 g g8
 		}
 		{
@@ -203,7 +203,7 @@ musicHornIMvtI = \relative c'' {
 	}
 	R2.*4
 % Bars 186 to 190
-	r4 r a(\pp
+	r4^\solo r a(\pp
 	e'8) r e r r4
 	R2.
 	r4 r g,-.\p
@@ -215,7 +215,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 196 to 200
 	
 	
-	g'2(\p f8 ees)
+	g'2(\p^\solo f8 ees)
 	ees2( d8 c)
 	c2 r4
 % Bars 201 to 205
@@ -345,7 +345,7 @@ musicHornIMvtI = \relative c'' {
 	f2 f4~
 	f f2
 % Bars 356 to 360
-	f\ff e4\fz~
+	f\ff e!4\fz~
 	e f2\fz
 	fis\fz g4~\fz
 	g g2\fz \mark \default
@@ -400,7 +400,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	g8(\p b g'4 f)
+	g8(\p^\solo b g'4 f)
 	e2( d4)
 	g,8( b g'4 f)
 	e8-. d-. c2
@@ -455,7 +455,7 @@ musicHornIMvtI = \relative c'' {
 	g~
 	g~
 	g2 r4
-	\clef bass c,,2.~
+	c,2.~
 % Bars 476 to 480
 	c~
 	c~
@@ -467,7 +467,7 @@ musicHornIMvtI = \relative c'' {
 	R2.*3
 	
 	
-	\clef treble c''2->\f c4~->
+	c'2->\f c4~->
 % Bars 486 to 490
 	c c2->
 	f2 f4~
@@ -512,7 +512,7 @@ musicHornIMvtI = \relative c'' {
 	g~\p
 	g
 	g2(_\dimmarkup f8 e)
-	e2(\> d8) c
+	e2(\> d8 c)
 	c2 g4~\pp
 % Bars 531 to 535
 	g2.~
