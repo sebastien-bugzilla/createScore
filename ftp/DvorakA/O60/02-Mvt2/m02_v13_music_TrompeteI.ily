@@ -117,7 +117,7 @@ musicTrompeteIMvtII = \relative c'' {
 		R
 		R \no
 	}
-	r8 g4\mf\< g8~\!
+	r8 g4\mf\< g8~
 % Bars 176 to 180
 	g g4\f g8~
 	g16 r g\f\<-> g->  g-> g-> g-> c,->

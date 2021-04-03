@@ -225,7 +225,7 @@ musicTrompeteIMvtI = \relative c'' {
 	r r f-.
 	bes-. bes-. r
 % Bars 286 to 290
-	r r e,
+	r r e,-.
 	bes'2-> r4
 	r r ees,-.
 	bes'-. bes-. r
@@ -275,7 +275,7 @@ musicTrompeteIMvtI = \relative c'' {
 	d2 d4~
 	d d2
 % Bars 356 to 360
-	d2->\ff d4\fz~
+	d2\ff d4\fz~
 	d d2\fz
 	d2\fz d4\fz~
 	d g,2\fz \mark \default
