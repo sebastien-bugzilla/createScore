@@ -191,7 +191,7 @@ musicPosauneIIIMvtI = \relative c' {
 	ees2.~
 	ees~
 	ees
-	e4. e8 e4_\crescmarkup
+	e!4. e8 e4_\crescmarkup
 % Bars 236 to 240
 	e2.~
 	e~

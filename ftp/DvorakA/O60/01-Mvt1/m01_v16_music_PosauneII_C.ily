@@ -34,7 +34,7 @@ musicPosauneIIMvtI = \relative c' {
 		
 		r4 r g-.\ff \mark \default
 		fis-. r r
-		r r fis\f
+		r r fis-.\f
 % Bars 51 to 55
 		a2-^ r4
 		r r fis-.
@@ -46,7 +46,7 @@ musicPosauneIIMvtI = \relative c' {
 		g2.
 		b2(\fz a8 g)
 		fis2.
-		g2 c4
+		g2 c4\fz
 % Bars 61 to 65
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
@@ -101,10 +101,10 @@ musicPosauneIIMvtI = \relative c' {
 		b2(\ff ais4)
 		b2( cis4)
 		b4 cis8-. dis-. ais4
-		b-. dis4-> cis->
+		b dis4-> cis->
 		b2( ais4)
 % Bars 166 to 170
-		b-. dis-> cis4->
+		b dis-> cis4->
 		b r r
 		b r r
 		b r r
@@ -268,7 +268,7 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 356 to 360
 	cis'2\ff cis4\fz~
 	cis cis2\fz
-	cis\fz cis4~
+	cis\fz cis4~\fz
 	cis a2\fz \mark \default
 	a4-. r r
 % Bars 361 to 365

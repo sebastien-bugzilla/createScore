@@ -35,7 +35,7 @@ musicPosauneIMvtI = \relative c' {
 			R \no
 		r4 r } \clef alto cis-.\ff \mark \default
 		d-.^\grandioso r r
-		r r a\f
+		r r a-.\f
 % Bars 51 to 55
 		d2-^ r4
 		r r a-.
@@ -167,7 +167,7 @@ musicPosauneIMvtI = \relative c' {
 % Bars 221 to 225
 	c(
 	cis!)
-	cis4. cis8 cis4
+	cis4.^\solo cis8 cis4
 	cis2.~
 	cis~
 % Bars 226 to 230
@@ -275,7 +275,7 @@ musicPosauneIMvtI = \relative c' {
 % Bars 356 to 360
 	g!2\ff fis4\fz~
 	fis e2\fz
-	e\fz e4~
+	e\fz e4~\fz
 	e d2\fz \mark \default
 	dis4-. r r
 % Bars 361 to 365

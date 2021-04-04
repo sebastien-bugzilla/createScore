@@ -889,9 +889,9 @@ cueVoicePosauneIIIMvtI = \relative c {
 	c16 e c e  c e c e  c e c e)
 	R2.*47
 	% bar 266- 268
-	b8^\markup {Viol.} fis16^( g fis8) b,^. b^. b'^.
+	b8^.^\markup {Viol.} fis16^( g fis8) b,^. b^. b'^.
 	b4 e,\rest e\rest
-	b'8 g16^( a g8) e^. e^. e'^.
+	b'8^. g16^( a g8) e^. e^. e'^.
 	R2.*85
 	% bar 354 - 355
 	g,4^\markup {Viol.} e' g,

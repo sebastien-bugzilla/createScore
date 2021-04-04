@@ -17,10 +17,10 @@
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_PosauneI.ily"
@@ -67,7 +67,7 @@
 				\namePosauneIMvtI \musicPosauneIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -80,9 +80,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -95,7 +92,7 @@
 				\namePosauneIMvtIV \musicPosauneIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -108,9 +105,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -123,7 +117,7 @@
 				\namePosauneIIMvtI \musicPosauneIIMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -136,9 +130,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -151,7 +142,7 @@
 				\namePosauneIIMvtIV \musicPosauneIIMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -164,9 +155,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -178,6 +166,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\namePosauneIIIMvtI \musicPosauneIIIMvtI
 			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -189,9 +180,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -203,6 +191,9 @@
 				\timeMvtIV \generalOptions \partOptions
 				\namePosauneIIIMvtIV \musicPosauneIIIMvtIV
 			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -214,9 +205,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -227,6 +215,9 @@
 			\new Voice {
 				\timeMvtI \generalOptions \partOptions
 				\nameTubaMvtI \musicTubaMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -239,9 +230,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -252,6 +240,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameTubaMvtIV \musicTubaMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -264,9 +255,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

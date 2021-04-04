@@ -232,9 +232,9 @@ musicTubaMvtI = \relative c {
 	eis-! gis-! cis-!
 	eis,-! gis-! cis-!
 % Bars 311 to 315
-	e2-^ a,4-.
+	e!2-^ a,4-.
 	e'2-^ a,4-.
-	g'-> e-> cis->
+	g'!-> e-> cis->
 	a8 r e'-. cis-. a4-. \mark \default
 	d-. r r
 % Bars 316 to 320

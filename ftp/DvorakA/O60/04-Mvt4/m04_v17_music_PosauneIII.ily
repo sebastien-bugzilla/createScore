@@ -85,7 +85,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	g4\f r r2
+	g!4\f r r2
 % Bars 106 to 110
 	R1
 	fis4-.\f r fis-. r
@@ -469,12 +469,12 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 526 to 530
 	a2. a4-.
 	a-. g-. g-. fis-.
-	fis e e d
-	d cis cis b
-	b a a g'
+	fis-. e-. e-. d-. 
+	d-. cis-. cis-. b-. 
+	b-. a-. a-. g'-. 
 % Bars 531 to 535
-	g fis fis e
-	e d cis a'\ff
+	g-. fis-. fis-. e-. 
+	e-. d-. cis-. a'\ff
 	a2->_\pesante g->
 	fis-> cis->
 	b2.-> b4

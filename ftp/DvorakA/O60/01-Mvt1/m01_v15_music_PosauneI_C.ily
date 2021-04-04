@@ -34,7 +34,7 @@ musicPosauneIMvtI = \relative c' {
 		
 		r4 r cis-.\ff \mark \default
 		d-.^\grandioso r r
-		r r a\f
+		r r a-.\f
 % Bars 51 to 55
 		d2-^ r4
 		r r a-.
@@ -262,7 +262,7 @@ musicPosauneIMvtI = \relative c' {
 % Bars 356 to 360
 	g!2\ff fis4\fz~
 	fis e2\fz
-	e\fz e4~
+	e\fz e4~\fz
 	e d2\fz \mark \default
 	dis4-. r r
 % Bars 361 to 365

@@ -76,7 +76,7 @@ musicTubaMvtIV = \relative c, {
 	fis-. r r2
 	b4-. r b-. r
 	b-. r r2
-	cis4\fz a-. d\fz b
+	cis4\fz a-. d\fz b-.
 % Bars 96 to 100
 	e\fz r e\fz r
 	R1*8
@@ -93,7 +93,7 @@ musicTubaMvtIV = \relative c, {
 	b4-. r b-. r
 	b-. r r2
 % Bars 111 to 115
-	cis4\fz a-. d\fz b
+	cis4\fz a-. d\fz b-.
 	e\fz r e\fz r \mark \default
 	a, r r2
 	R1*7

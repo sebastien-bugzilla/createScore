@@ -173,7 +173,7 @@ musicPosauneIMvtIV = \relative c'' {
 	
 % Bars 206 to 210
 	
-	e4\f \once \partcombineApart r e2->
+	e4-.\f \once \partcombineApart r e2->
 	e4 r d r 
 	e r r2
 	R1*6
@@ -233,7 +233,7 @@ musicPosauneIMvtIV = \relative c'' {
 	r2 cis4\f r
 	\partcombineApart R1*2
 	
-	r2 b-> \partcombineAutomatic
+	r2 b->\f \partcombineAutomatic
 	b-> b->
 % Bars 281 to 285
 	e-> d->
@@ -445,11 +445,11 @@ musicPosauneIMvtIV = \relative c'' {
 % Bars 526 to 530
 	a2. a4-.
 	a-. g-. g-. fis-.
-	fis e e d
-	d cis cis b
-	b \partcombineApart a a \partcombineAutomatic g'
+	fis-. e-. e-. d-. 
+	d-. cis-. cis-. b-. 
+	b-. \partcombineApart a-. a-. \partcombineAutomatic g'-.
 % Bars 531 to 535
-	g fis fis e
+	g-. fis-. fis-. e-. 
 	e-. d-. cis-. a'\ff
 	fis2->_\pesante e->
 	d-> a->
