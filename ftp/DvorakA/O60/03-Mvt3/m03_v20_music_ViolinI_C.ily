@@ -82,7 +82,7 @@ musicViolinIMvtIII = \relative c''' {
 		fis) eis( fis)
 		dis(\< e!) dis(\!
 		e) e(\> a)\!
-		d,8(\< e f g a bes
+		d,8(\< e f! g a bes
 % Bars 61 to 65
 		b!4)\! cis-.\f d-.
 		f->(\ff a) d,(->

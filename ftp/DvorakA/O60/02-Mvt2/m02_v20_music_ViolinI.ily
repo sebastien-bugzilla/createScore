@@ -52,9 +52,9 @@ musicViolinIMvtII = \relative c'' {
 	<d' a' fis'>->\arpeggio r
 % Bars 36 to 40
 	R2
-	r8 <a' fis'>4(\p\> <g e'>16\! <f d'>
+	r8 <a' fis'>4(\p\> <g e'>16\! <fis d'>
 	a8) r r4
-	r8 <a f'>4(\pp <g e'>16 <f d'>
+	r8 <a f'!>4(\pp <g e'>16 <f! d'>
 	a8) r r4
 % Bars 41 to 45
 	r8 f'4(_\crescmarkup e16 d)

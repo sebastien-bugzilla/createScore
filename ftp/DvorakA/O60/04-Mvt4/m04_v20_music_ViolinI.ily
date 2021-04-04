@@ -196,7 +196,7 @@ musicViolinIMvtIV = \relative c''' {
 	fis'4\pp->\( \tuplet 3/2 4 {fis8( e d)\)} e4->\( \tuplet 3/2 4 {e8( d cis)\)}
 	b4-. fis-. b2_\dimmarkup~
 % Bars 156 to 160
-	b4-. fis-. b2~
+	b4 fis-. b2~
 	b1\pp~
 	b4\(( c8 d) d4( e8 f)\)
 	f4 r r2
@@ -321,7 +321,7 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 261 to 265
 	gis\fz f-. e\fz d-.
 	e'\fz d-. cis!\fz bes-.
-	a\fz g-. f\fz e-.
+	a\fz g!-. f\fz e-.
 	d'\fz c-. a\fz fis!-.
 	d\fz c-. a\fz d-.
 % Bars 266 to 270
@@ -432,7 +432,7 @@ musicViolinIMvtIV = \relative c''' {
 	d d(\fz\< e fis)\!~
 	fis fis(\fz e d 
 	cis) cis(\fz d e)~
-	e e(\fz fis g)~
+	e e(\fz fis g!)~
 % Bars 356 to 360
 	g g(\fz a b)~
 	b b(\fz a g)~

@@ -292,7 +292,7 @@ tempiPartMvtIII = {
 		}
 		s2.*28
 	}
-	s2.*80
+	\grace {s8} s2.*80
 	% bar 281
 	\tag #'(floteI floteII) {
 		\tempo \markup {\medium \italic "stringendo" }
