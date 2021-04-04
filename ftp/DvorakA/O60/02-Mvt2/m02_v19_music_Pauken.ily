@@ -109,18 +109,18 @@ musicPaukenMvtII = \relative c {
 		R
 		\mmrPos #-6 R \no \clef bass \mark \default
 	}
-	b,8\pp f'16-. f-. f8-. f-.
+	b,8\pp^\solo f'16-. f-. f8-. f-.
 	b, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
 	b, f'16\pp f f8 f
 	b, f'16\< f f8 f\!
 	b, f'16\pp f f8 f
-	b,_\crescmarkup f'16 f f8 f
-	b,\mf f'16 f f8 f
+	b,_\crescmarkup f'16-. f-. f8 f16-. f-.
+	b,8\mf f'16 f f8 f16 f
 % Bars 176 to 180
-	b,\f f'16 f f8 f
+	b,8\f f'16-. f-. f8 f16-. f-.
 	b,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
-	f8\ff r f-.-^ r
+	f8-.\ff r f-.-^ r
 	b,-.-^ r r4
 	R2*16
 % Bars 181 to 185

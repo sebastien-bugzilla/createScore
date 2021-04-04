@@ -17,10 +17,10 @@
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
+\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part08_Pauken.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v19_music_Pauken.ily"
@@ -59,7 +59,7 @@
 				\namePaukenMvtI \musicPaukenMvtI
 			}
 			\new Voice {
-				\tempiPartMvtI
+				\keepWithTag #'(oboeII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -72,9 +72,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -87,7 +84,7 @@
 				\namePaukenMvtII \musicPaukenMvtII
 			}
 			\new Voice {
-				\tempiPartMvtII
+				\keepWithTag #'(oboeII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -100,9 +97,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -115,7 +109,7 @@
 				\namePaukenMvtIII \musicPaukenMvtIII
 			}
 			\new Voice {
-				\tempiPartMvtIII
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -128,9 +122,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -143,7 +134,7 @@
 				\namePaukenMvtIV \musicPaukenMvtIV
 			}
 			\new Voice {
-				\tempiPartMvtIV
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -156,9 +147,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }
