@@ -625,11 +625,11 @@ musicVioloncelloMvtIV = \relative c' {
 	a! ais b ais b c cis a
 	<d fis>4:8 <e g>: <fis a>: <g b>:
 	<a cis>: <b d>: <cis e>: <d fis>:
-	<g, b>: <a c>: <b d>: <c e>:
+	<g, b>: <a c>: <b d>: <c! e>:
 	\clef treble <d fis>: <e g>: <fis a>: <g b>:
 % Bars 511 to 515
 	<c, e>: <d f>: <e g>: <f a>:
-	<g b>: <a c>: <b d>: <c e>: \clef bass
+	<g b>: <a c>: <b d>: <c! e>: \clef bass
 	e,,2.: c4:
 	fis2.: d4:
 	g2.: e4:
