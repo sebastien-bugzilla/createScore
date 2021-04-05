@@ -208,7 +208,7 @@ musicKontrabassMvtII = \relative c {
 	f8 bes4-^\f a16( g)
 	f-. ees->\< d-> des-> c-> bes-> a-> g->\!
 	fis8-.\ff r g-.-^ r
-	c-.-> r r4
+	c-.-^ r r4
 	R2*2
 % Bars 181 to 185
 	

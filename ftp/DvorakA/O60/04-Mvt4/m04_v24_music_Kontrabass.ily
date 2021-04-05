@@ -382,7 +382,7 @@ musicKontrabassMvtIV = \relative c' {
 	R1*2
 	
 % Bars 311 to 315
-	r4 r8 b'( e,4) r8 fis\((
+	r4 r8 b'(\pp e,4) r8 fis\((
 	b,1)
 	c
 	cis!2\) a~\ppp

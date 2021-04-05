@@ -12,12 +12,13 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
+\version "2.20.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
+\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Format_Part13_Kontrabass.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v24_music_Kontrabass.ily"
@@ -27,10 +28,10 @@
 %###############################################################################
 %#                          S C O R E   S E C T I O N                          #
 %###############################################################################
-\addQuote "cueVoiceKontrabassMvtI" { \cueVoiceKontrabassMvtI }
-\addQuote "cueVoiceKontrabassMvtII" { \cueVoiceKontrabassMvtII }
-\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
-\addQuote "cueVoiceKontrabassMvtIV" { \cueVoiceKontrabassMvtIV }
+%\addQuote "cueVoiceKontrabassMvtI" { \cueVoiceKontrabassMvtI }
+%\addQuote "cueVoiceKontrabassMvtII" { \cueVoiceKontrabassMvtII }
+%\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
+%\addQuote "cueVoiceKontrabassMvtIV" { \cueVoiceKontrabassMvtIV }
 \book {
 	\header {
 		subtitle = \markup { 
@@ -57,7 +58,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -66,9 +67,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -91,9 +89,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -116,9 +111,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 	\score {
@@ -141,9 +133,6 @@
 			}
 		}
 		\layout {
-			\context {
-				\CueVoice \layoutCueVoice
-			}
 		}
 	}
 }

@@ -143,7 +143,7 @@ musicKontrabassMvtI = \relative c {
 		cis r a
 % Bars 111 to 115
 		r d d
-		e\p r e
+		e r e
 		g g,_\dimmarkup r
 		c\pp r c
 		fis, r r
@@ -166,7 +166,7 @@ musicKontrabassMvtI = \relative c {
 		r b dis
 		gis,\pp r ais
 % Bars 131 to 135
-		bis r cis
+		bis r cis!
 		c r aes_\crescmarkup
 		aes r aes
 		aes r aes
@@ -311,7 +311,7 @@ musicKontrabassMvtI = \relative c {
 	e( g bes)
 	e,2.
 	a,4\f r r
-	b! r8 b-! cis!-! d-! 
+	b!_\marc r8 b-! cis!-! d-! 
 % Bars 241 to 245
 	cis4 r r
 	R2.
@@ -439,7 +439,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 351 to 355
 	d'2-> g,4->
 	d'-> d-> g,->
-	f'-> g,-> g'->
+	f'->\fz g,-> g'->\fz
 	b,-. g'-.\fz g,-.
 	g'-.\fz e,-. g'-.\fz
 % Bars 356 to 360
@@ -522,7 +522,7 @@ musicKontrabassMvtI = \relative c {
 	d r r
 % Bars 421 to 425
 	d r r
-	r d^\pizz fis
+	r d fis
 	b,\pp r cis
 	dis r e
 	dis\< r b
@@ -536,7 +536,7 @@ musicKontrabassMvtI = \relative c {
 	gis8\mf\< b d4-> d8-. c-.
 	b8-. a-. gis-. fis!-. e4\!
 	a4\f r bes(->
-	a8) r r4 bes(
+	a8) r r4 bes(->
 	a8) r r4\< g!-.
 % Bars 436 to 440
 	r e-. a-.\!
@@ -593,7 +593,7 @@ musicKontrabassMvtI = \relative c {
 	d4 r r
 	R2.
 % Bars 481 to 485
-	d'4.-> bes8-. cis!-. d-.
+	d'4.->\ff bes8-. cis!-. d-.
 	d4.-> bes8-. cis!-. d-.
 	d-. bes-. cis-. d-. g,-. a-. 
 	bes e, fis g cis, d
@@ -654,7 +654,7 @@ musicKontrabassMvtI = \relative c {
 	d2\pp r4
 % Bars 531 to 535
 	d2 r4
-	d\pp r r
+	d r r
 	d r r
 	d_\dimmarkup r r
 	d r r

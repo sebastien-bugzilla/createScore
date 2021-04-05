@@ -270,7 +270,7 @@ musicKontrabassMvtIII = \relative c {
 	b r r
 	r b b
 % Bars 241 to 245
-	b2.~\pp
+	b2.~\pp^\arco
 	b~
 	b~
 	b~
@@ -311,7 +311,7 @@ musicKontrabassMvtIII = \relative c {
 	\bar "||" \key d \minor
 	d2\f-> d4~->
 	d d2->
-	c4-.\fz d-. d-.
+	c!4-.\fz d-. d-.
 % Bars 291 to 295
 	c-.\fz d-. d-.
 	f2-> f'4->~
@@ -355,7 +355,7 @@ musicKontrabassMvtIII = \relative c {
 	d\!
 	a'4-.\ff a,-. bes!-.
 % Bars 326 to 330
-	c-. f-. f,-.
+	c!-. f-. f,-.
 	f'\p r r
 	f^\pizz r r
 	e r r
