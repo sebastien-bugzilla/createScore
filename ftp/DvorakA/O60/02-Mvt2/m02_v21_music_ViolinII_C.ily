@@ -49,7 +49,7 @@ musicViolinIIMvtII = \relative c' {
 	d8->\ff bes->_\pesante g16-. a-. bes-. c-.
 	d8-> c-> bes-> a->
 	<g, d' bes'>4->\arpeggio <g d' d'>->\arpeggio \bar "||" \mark \default
-	<a fis' d'>\arpeggio r
+	<a fis' d'>->\arpeggio r
 % Bars 36 to 40
 	R2
 	r8 fis''(\pp a a,~
@@ -169,7 +169,7 @@ musicViolinIIMvtII = \relative c' {
 	f'4(\pp d8 g)
 % Bars 141 to 145
 	ees( c16. bes32 a8 d)
-	d4( ees
+	d4( ees\<
 	d4.) g8
 	f4(\mf\< bes)~
 	bes8\> a( g f)
@@ -220,7 +220,7 @@ musicViolinIIMvtII = \relative c' {
 % Bars 186 to 190
 	
 % Bars 191 to 195
-	bes!2\pp~^\arco
+	bes!2\ppp~^\arco
 	bes8 r r4
 	bes4(\< a8\> bes~\!
 	bes) r r4

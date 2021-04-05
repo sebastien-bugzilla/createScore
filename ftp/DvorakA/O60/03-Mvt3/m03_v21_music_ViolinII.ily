@@ -102,7 +102,7 @@ musicViolinIIMvtIII = \relative c' {
 		
 		
 % Bars 76 to 80
-		bes'2\p\< bes4~
+		bes'!2\p\< bes4~
 		bes ees-. d-.\!
 		f2->\f ees4~
 		ees d2
@@ -203,7 +203,7 @@ musicViolinIIMvtIII = \relative c' {
 	q
 	q \bar "||" \key d \major
 	\repeat volta 2 {
-		fis4\pp r r
+		fis!4\pp r r
 		R2.*13
 % Bars 156 to 160
 	
@@ -230,10 +230,10 @@ musicViolinIIMvtIII = \relative c' {
 			\clef alto R \no \clef treble
 		}
 		g'4\p^\pizz bes a
-		g r fis
+		g r fis!
 % Bars 186 to 190
 		e r d
-		cis r d
+		cis! r d
 		e r fis
 		g_\dimmarkup r fis
 		e r d
@@ -363,7 +363,7 @@ musicViolinIIMvtIII = \relative c' {
 	d-. d8( cis d4)
 % Bars 306 to 310
 	d r r \bar "||"
-	c'2(_\pdolce f4~
+	c'!2(_\pdolce f4~
 	f e f)
 	g2( c,4~
 	c2.)
@@ -468,9 +468,9 @@ musicViolinIIMvtIII = \relative c' {
 	e4-. e2->
 	fis4-. fis2->
 	gis4-. gis2->
-	ais4-. bes!2->
+	ais4-. ais2->
 % Bars 396 to 400
-	c4-. c2->
+	c!4-. c2->
 	des4-.\f\< c-. c-.
 	des-. c-. c-.
 	des-. c-. c-.

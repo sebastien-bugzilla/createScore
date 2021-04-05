@@ -39,7 +39,7 @@ musicViolinIIMvtI = \relative c' {
 		fis-. r g!4(\fz a)
 % Bars 26 to 30
 		b2.->
-		ais8\f r b2->
+		ais8-.\f r b2->
 		g!4( e cis)
 		fis8_\rf-> g-> a-> a-> g-> fis->
 		g4-.-> b,-.-> r
@@ -352,7 +352,7 @@ musicViolinIIMvtI = \relative c' {
 	a,2-> g'4
 	<d, d'>4 r8 d-. d-. d-.
 % Bars 276 to 280
-	<d c'>4. fis8 g a
+	<d c'>4. fis8-. g-. a-.
 	g16 g, g g g2:16
 	b4:16 c: d:
 	c2.:\ff
@@ -444,7 +444,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 351 to 355
 	<c f>4-.\fz <a c>-. <d f>-.\fz
 	<a c>-. <f' a>-.\fz <a, c>-.
-	<d g>-.\fz q-. <e g>-.
+	<d g>-.\fz q-. <e g>-.\fz
 	e-. g-.\fz e-.
 	g-.\fz e-. g-.\fz
 % Bars 356 to 360
@@ -474,7 +474,7 @@ musicViolinIIMvtI = \relative c' {
 	bes8: a: g2:
 	<e cis'!>4\f-> r r
 % Bars 381 to 385
-	q-> r8 g a bes
+	q-> r8 g-. a-. bes-.
 	bes\<-. a-. g-. f-. e-. a-.\!
 	d,4 d4.\<( d'8)\!
 	d2.->~
@@ -493,14 +493,14 @@ musicViolinIIMvtI = \relative c' {
 	e,-. r r4 r
 % Bars 396 to 400
 	cis!8-._\dimmarkup a16( b! a8) e-. e-. d-.
-	cis\p r r4 r
+	cis-.\p r r4 r
 	R2.*2
 	
-	r4 r8 b'16(\pp cis b8) a-.
+	r4 r8 b'16(\pp cis b8) a-. \mark \default
 % Bars 401 to 405
 	a2.~
 	a4. d16(_\legg e) f8-. f16( g)
-	c,8 c16( f) g8-. g16( fis!) g8-. g16( e)
+	c,8-. c16( f) g8-. g16( fis!) g8-. g16( e)
 	f8-. f16( g) a8-. a16( bes) a8-. a-.
 	g8-.\p g16( a) g8-._\dimmarkup g16( a) g8-. g16( a)
 % Bars 406 to 410
@@ -536,7 +536,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 431 to 435
 	e:\mf\<
 	e:
-	<e, cis'! a'>8\f\! r r4 g!(->
+	<e, cis'! a'>8-.\f\! r r4 g!(->
 	a8) r r4 g(->
 	a2)\< bes4~
 % Bars 436 to 440
@@ -549,7 +549,7 @@ musicViolinIIMvtI = \relative c' {
 	fis,8(\p a d4) r
 	fis,8( a d4)\cresc r
 	g,8( bes d4) r
-	a8( c fis4) r
+	a8( c fis4) r \mark \default
 	ees\f-^ ees-^ c8-. d-.
 % Bars 446 to 450
 	ees2.-^

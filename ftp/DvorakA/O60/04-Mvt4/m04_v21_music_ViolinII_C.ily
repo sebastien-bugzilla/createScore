@@ -66,7 +66,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 46 to 50
 	a( fis g a)
 	d,8-. r d'-. d-. e->( d) d-. d-.
-	d r fis,4( g a
+	d r fis,4(\fz g a
 	g8) r c-. c-. d(-> c) c-. c-.
 	c r e,4(\fz f g
 % Bars 51 to 55
@@ -102,7 +102,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 76 to 80
 	b4 r r2
 	R1
-	r4 \tuplet 3/2 4 {d,8( e fis)} r4 \tuplet 3/2 4 {d8( e fis)}
+	r4 \tuplet 3/2 4 {d,8(\p e fis)} r4 \tuplet 3/2 4 {d8( e fis)}
 	r4 \tuplet 3/2 4 {e8( fis g!)} r4 \tuplet 3/2 4 {e8( fis g)}
 	fis4 r r2
 % Bars 81 to 85
@@ -259,7 +259,7 @@ musicViolinIIMvtIV = \relative c'' {
 	g4 r r2
 	g4->\ff \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	<g,, e' c'>4-> r <d' b' g'>-> r
-	<e c' g'>-. r r8 e'( d c
+	<e c' g'>-. r r8 e'( d c!
 	b a g f e d c b
 % Bars 211 to 215
 	c4) r r8 g''( fis! e
@@ -307,11 +307,11 @@ musicViolinIIMvtIV = \relative c'' {
 	f4.-- f8-. f4-. f-. 
 	f4.-- f8-. f4-. f-. 
 	f4.-- f8-. f4-. f-. 
-	f4.-- f8-. f4-. f-. 
-	f4.-- f8-. f4-. f-. 
+	fis!4.-- fis8-. fis4-. fis-. 
+	fis4.-- fis8-. fis4-. fis-. 
 % Bars 251 to 255
-	f4.-- f8-. f4-. f-. 
-	f4.-- f8-. f4-. f-. \mark \default
+	fis4.-- fis8-. fis4-. fis-. 
+	fis4.-- fis8-. fis4-. fis-. \mark \default
 	f2\pp r4 f
 	e2 r4 e\<
 	ees2 r4 ees4-.\!
@@ -324,7 +324,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 261 to 265
 	gis\fz f-. e\fz d-.
 	e'\fz d-. cis!\fz bes-.
-	a\fz g-. f\fz e-.
+	a\fz g!-. f\fz e-.
 	d'\fz c-. a\fz fis!-.
 	d\fz c-. a\fz a'-.
 % Bars 266 to 270
@@ -429,7 +429,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a) a(\fz b cis)~
 	cis cis(\fz d e)~
 % Bars 356 to 360
-	e e(\fz fis g)~
+	e e(\fz fis g!)~
 	g g(\fz fis e)~
 	e r <a,,, g' cis> r 
 	q r q r
@@ -456,7 +456,7 @@ musicViolinIIMvtIV = \relative c'' {
 	r4 \tuplet 3/2 4 {a8( b c)} r4 \tuplet 3/2 4 {a8( b c)}
 	b4 r r2
 	R1
-	c4->\p \tuplet 3/2 4 {c8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	cis!4->\p \tuplet 3/2 4 {c8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 % Bars 381 to 385
 	cis'4-> \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis)-.}
@@ -480,7 +480,7 @@ musicViolinIIMvtIV = \relative c'' {
 	cis4 r r2
 	cis'4-> \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	fis4 r r2
-	fis'4\mf \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->\mf \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
 % Bars 401 to 405
 	fis'4->\f \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
@@ -592,7 +592,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 491 to 495
 	fis-. e-. d-. a'->
 	fis-. e-. d-. <a a'>->
-	<a fis'>2 <a e'>->
+	<a fis'>2-> <a e'>->
 	<d, d'>-> <a' g'>->
 	<d fis>-> <a a'>->
 % Bars 496 to 500
