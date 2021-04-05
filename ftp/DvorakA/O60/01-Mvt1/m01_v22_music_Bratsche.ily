@@ -30,12 +30,12 @@ musicBratscheMvtI = \relative c {
 % Bars 11 to 15
 			g-. g4 g g8-.
 			g-. g4 g g8-.
-			<d g>8 q4 q q8
-			q q4 q q8
-			cis cis4 cis cis8
+			<d g>8-. q4 q q8-.
+			q-. q4 q q8-.
+			cis-. cis4 cis cis8-.
 % Bars 16 to 20
-			cis cis4 cis cis8
-			d d4 d8\noBeam fis,( d'
+			cis-. cis4 cis cis8-.
+			d-. d4 d8-.\noBeam fis,( d'
 			fis,2.)
 			c'2( b4)
 			b2.
@@ -77,7 +77,7 @@ musicBratscheMvtI = \relative c {
 		fis-.\f r g!4.( fis8)
 		e!-! fis-! g-! g-! fis-! e-! 
 		c r \repeat tremolo 4 {fis,16(\fz a)}
-		<fis a>8 r \repeat tremolo 4 {e16(\fz g)}
+		<g b>8 r \repeat tremolo 4 {e16(\fz g)}
 % Bars 31 to 35
 		<a c>8 r \repeat tremolo 4 {fis16(\fz a)}
 		<b d>8 r \repeat tremolo 4 {g16(\fz b)}
@@ -85,7 +85,7 @@ musicBratscheMvtI = \relative c {
 		<d f>8\f r q2:16->
 		q2.:
 % Bars 36 to 40
-		q2: <e g>4:
+		q2: <e g>4:\fz->
 		<d f>8-. r \repeat tremolo 4 {b16( d)}
 		<d f>8 r q2:16->
 		q2.:
@@ -227,7 +227,7 @@ musicBratscheMvtI = \relative c {
 		cis!: \mark \default
 		cis8-.\f ais( b cis) b4->
 % Bars 141 to 145
-		cis8-. ais( b cis) b4-.
+		cis8-. ais( b cis) b4-.->
 		cis8-. ais( cis fis) g[-.\< ais,(
 		cis g')] gis[-. cis,( e ais)]\!
 		b-. r r4 e,(\fz
@@ -539,7 +539,7 @@ musicBratscheMvtI = \relative c {
 % Bars 381 to 385
 	<bes g'>-> r8 g-. a-. bes!-.
 	bes\<-. a-. g-. f-. e-. a-.\!
-	d,4 r8 d'( cis c)
+	d,4 r8 d'( cis! c)
 	c( b) b( bes) a( g)
 	fis4 r8 d'-.\< e-. fis-.
 % Bars 386 to 390
@@ -623,7 +623,7 @@ musicBratscheMvtI = \relative c {
 % Bars 451 to 455
 	<bes d>-. <c ees>-. \repeat tremolo 4 {d16( bes!)}
 	<d f>8([ <bes d>) <c e!>-. <d f>-.] <e  g>( <cis e>)
-	<d f>-.[ <d g>-.] <d f>( <cis e> <d f> <cis e>)
+	<d f>-.[ <e g>-.] <d f>( <cis e> <d f> <cis e>)
 	\acciaccatura d8 d'2\ff cis4
 	a8( fis) g-. a-. e4
 % Bars 456 to 460

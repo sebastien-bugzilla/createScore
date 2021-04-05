@@ -60,7 +60,7 @@ musicBratscheMvtIII = \relative c {
 % Bars 31 to 35
 		bes a c\> bes a g)\!
 		<<{
-			f4( a) f(
+			f!4( a) f(
 			a) f( a)
 		} \\ {
 			d,( f) d(
@@ -71,9 +71,9 @@ musicBratscheMvtIII = \relative c {
 % Bars 36 to 40
 		<<{
 			fis4( a) fis(
-			a) fis( a)
+			a) fis!( a)
 		} \\ {
-			d,( fis) d(
+			d,( fis!) d(
 			fis) d( fis)
 		}>>
 		a4-. e8(\< dis e fis\!
@@ -355,7 +355,7 @@ musicBratscheMvtIII = \relative c {
 	a \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \bar "||" \key d \minor
 	d,4(-> a'8) r d,4(->
 	a'8) r d,4(-> a'8) r
-	c4-.\fz a-. a-.
+	c!4-.\fz a-. a-.
 % Bars 291 to 295
 	c\fz-. a-. a-.
 	f,4(-> c'8) r f,4(-> 
@@ -390,14 +390,14 @@ musicBratscheMvtIII = \relative c {
 		a4( c) a(
 		c) a( c)
 	} \\ {
-		f,( a) f(
+		f,!( a) f(
 		a) f( a)
 	}>>
 	c4-. g8(\< fis g a\!
 	bes a c\> bes a g)\!
 % Bars 315 to 320
 	<<{
-		f4( a) f(
+		f!4( a) f(
 		a) f( a)
 	} \\ {
 		d,( f) d(
@@ -407,9 +407,9 @@ musicBratscheMvtIII = \relative c {
 	g fis a\> g f e)\!
 	<<{
 		fis4( a) fis(
-		a) fis( a)
+		a) fis!( a)
 	} \\ {
-		d,( fis) d(
+		d,( fis!) d(
 		fis) d( fis)
 	}>>
 % Bars 321 to 325
@@ -502,7 +502,7 @@ musicBratscheMvtIII = \relative c {
 	aes2 aes4~
 	aes aes2
 % Bars 391 to 395
-	bes4-. bes2
+	bes4-. bes2->
 	bes4-. bes2->
 	c4-. c2->
 	d4-. d2->

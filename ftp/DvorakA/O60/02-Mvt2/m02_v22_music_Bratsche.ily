@@ -16,8 +16,8 @@ musicBratscheMvtII = \relative c {
 	r16 f8--\p f16-. r g8-- g16-.
 % Bars 6 to 10
 	r g8-- g16-. r fis8-- fis16-.
-	r g8 g16 r g8\< g16\!
-	r g8 g16 r g8\> g16\!
+	r g8-- g16-. r g8\<-- g16-.\!
+	r g8-- g16-. r g8--\> g16-.\!
 	r <bes d>8\p q16 r q8\< q16
 	r f8 f16\! r f8 f16
 % Bars 11 to 15
@@ -105,8 +105,8 @@ musicBratscheMvtII = \relative c {
 		bes
 		bes
 		c\<
-		bes4\> g8 a\!
-		bes\p
+		bes4\> g8( a\!
+		bes)\p
 	}>> r r4
 % Bars 81 to 86
 	R2*2
@@ -203,9 +203,9 @@ musicBratscheMvtII = \relative c {
 	r <a c>8\> q16 r q8\! q16\p
 	<g bes>8 fis(\pp\< g \tuplet 3/2 4 {bes16 a g\!)}
 	f!4 d\fz~
-	d8( c4 a'8)(
+	d8(\> c4 a'8)(
 % Bars 156 to 160
-	d,) r r4
+	d,)\pp r r4
 	R2*4
 	
 	
@@ -221,10 +221,10 @@ musicBratscheMvtII = \relative c {
 	
 	\mark \default
 	f16\p f-. f-. f->~ f f-. f-. f~
-	f f f\< f~ f f f f~\!
+	f f-. f-.\< f~ f f-. f-. f~\!
 % Bars 171 to 175
-	f\p f f f~ f f f f~
-	f f f\< f~   f f f f~\!
+	f\p f-. f-. f~ f f-. f-. f~
+	f f-. f-.\< f~   f f-. f-. f~\!
 	f\p f f f~   f f f f~
 	f f' f f~    f f f f~
 	f\< f f f~   f f f f~\!
@@ -254,8 +254,8 @@ musicBratscheMvtII = \relative c {
 % Bars 191 to 195
 	e2\ppp(
 	f8) r r4
-	e2(
-	f8) r r4
+	<<e2( {s8\< s s s\>}>>
+	f8)\! r r4
 	ees!2(\pp
 % Bars 196 to 200
 	d8) r r4

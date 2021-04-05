@@ -38,7 +38,7 @@ musicBratscheMvtIV = \relative c' {
 	<bis dis>4.\f\< q8 q4-. <e g!>-.\!
 	<dis fis> r r2
 	<fis a>4.\f\< q8 q4-. <g b>-.\!
-	fis4\ff-! d-! b-! f'(
+	fis4\ff-! d!-! b-! f'(
 % Bars 26 to 30
 	e) c-! ais-! e'(
 	d) b-! gis-! d'(
@@ -149,7 +149,7 @@ musicBratscheMvtIV = \relative c' {
 	
 % Bars 116 to 120
 	
-	r2 \repeat tremolo 4 {g!16( a} 
+	r2 \repeat tremolo 4 {g!16(\fz a} 
 	\repeat tremolo 4 {g a} \repeat tremolo 4 {g a} 
 	\repeat tremolo 4 {g a)} \tuplet 3/2 4 {<fis! a>8\< q q <f a> q q
 	<e a> q q  q q q  <dis fis> q\! q <d gis> q q}
@@ -238,7 +238,7 @@ musicBratscheMvtIV = \relative c' {
 	cis~
 	cis \mark \default
 % Bars 191 to 195
-	d4-.\pp <fis a>-. d-. <g b>-.
+	d4-.\pp <fis a>-. d-. <g bes>-.
 	r <fis a>-. r q-.
 	r <g a>-. r q-.
 	r <fis a>-. r q-.
@@ -413,9 +413,9 @@ musicBratscheMvtIV = \relative c' {
 	g2.) g,4(
 % Bars 336 to 340
 	g'2. fis4)
-	<dis, fis>4._\mfcresc q8 q4-. <g! bes>
+	<dis, fis>4._\mfcresc q8 q4-. <g! bes>-.
 	<fis a> r r2
-	<ais cis>4.\f q8 q4-. <d! f>
+	<ais cis>4.\f q8 q4-. <d! f>-.
 	<cis e> r r2
 % Bars 341 to 345
 	cis8_\fsempre cis' b a gis a fis gis
@@ -440,7 +440,7 @@ musicBratscheMvtIV = \relative c' {
 		\repeat tremolo 4 {e, d'} \repeat tremolo 4 {e, d'} 
 		\repeat tremolo 4 {e, d'} \repeat tremolo 4 {e, d'} 
 	}>>
-	<a cis>16( a' <a, g'> <f' g> \repeat tremolo 6 {<a, g'>16 a')}
+	<a cis>16( a' <a, g'!> <g' a> \repeat tremolo 6 {<a, g'>16 a')}
 	\repeat tremolo 4 {<a, g'>( <g' a>} \repeat tremolo 4 {<a, g'> <g' a>)}
 % Bars 356 to 360
 	\repeat tremolo 4 {<a, g'>( <g' a>} \repeat tremolo 4 {<a, g'> <g' a>)}
@@ -479,7 +479,7 @@ musicBratscheMvtIV = \relative c' {
 	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
 	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
 % Bars 386 to 390
-	<f a>4\ff r r2
+	<fis a>4\ff r r2
 	R1
 	d2->\ff d->
 	d2.-> e8( fis)
@@ -527,7 +527,7 @@ musicBratscheMvtIV = \relative c' {
 	<a a'>4 <dis, dis'>2.:16->
 	q2: <e e'>8: <fis fis'>: <g g'>: <gis gis'>:
 % Bars 426 to 430
-	<a a'>4 <dis, dis'>2.:16
+	<a a'>4 <dis, dis'>2.:16->
 	q2: <e e'>:
 	<e e'>: <f f'>:
 	<f f'>: \clef alto <fis a>:
@@ -667,7 +667,7 @@ musicBratscheMvtIV = \relative c' {
 % Bars 541 to 545
 	b:
 	b2: cis:
-	<fis, a>1\fff
+	<fis, a>1:\fff
 	q:
 	q:
 % Bars 546 to 550
