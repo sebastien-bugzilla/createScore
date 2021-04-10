@@ -54,7 +54,7 @@ musicKlarinetteIMvtI = \relative c'' {
 		g g2\<~
 		g2.~
 		g \mark \default
-		a4\ff^\grandioso r r
+		a4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		a2 r4
 % Bars 51 to 55
 		r r c,-.
@@ -584,9 +584,11 @@ musicKlarinetteIMvtI = \relative c'' {
 % Bars 526 to 530
 	a2( g8_\dimmarkup f)
 	f2 r4
-	R2.*9
-% Bars 531 to 535
+	R2.*3
 	
+	
+% Bars 531 to 535
+	\tempoXOff #-3 R2.*6
 % Bars 536 to 540
 	
 	

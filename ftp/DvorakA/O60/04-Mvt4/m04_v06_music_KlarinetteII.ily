@@ -46,7 +46,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e\!-^~
 	e2. e4-. \mark \default
-	f8_\ffgrandioso\noBeam a,( c bes a g f e)
+	\tempoXOff #1 f8_\ffgrandioso\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
@@ -266,7 +266,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	\mark \default
 	R1*2
 	
-	\tuplet 6/4 1 {r4 c(\p\< ees ges f ees\!}
+	\tupletYOff #-3 \tuplet 3/2 2 {r4 c(\p\< ees \tupletYOff #-3 ges f ees\!}
 % Bars 256 to 260
 	des\f) r r2
 	R1*16
@@ -381,7 +381,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	
-	g4(\p\< d'\! ees\> c\!
+	g4(\p\< d' ees\> c\!
 	d) r r2
 % Bars 376 to 380
 	R1*2
@@ -419,7 +419,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	bes2.-> r4
 	c,4\fz f-. d\fz f-.
 	f\fz f-. e\fz c-.
-	a r f,2\f(
+	a r f,2-\tweak X-offset #-1.8 \f(
 % Bars 411 to 415
 	fis1->)~
 	fis2 g4( f)~
@@ -454,7 +454,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	r2 r4 bes,,!\f-. \mark \default \bar "||"
-	a-.\f r  r bes-.
+	\tempoXOff #0.5 a-.\f r  r bes-.
 % Bars 441 to 445
 	a-. r r g-.
 	a-. r r bes-.
@@ -498,7 +498,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	d-> d-. d-> bes-.
 % Bars 481 to 485
 	g-> r r bes->
-	g-> r r bes'_\marc
+	g-> r r bes'-\tweak X-offset #-2 _\marc
 	g2-> g->
 	g-> g4-. e-.
 	e1~

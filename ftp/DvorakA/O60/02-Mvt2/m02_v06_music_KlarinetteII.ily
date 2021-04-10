@@ -36,14 +36,14 @@ musicKlarinetteIIMvtII = \relative c'' {
 	fis8 a g fis)
 	fis4 e\<(
 	d8)\! r r4
-	R2*6
+	\tempoXOff #-2 \mmrLength #5 R2*6
 	
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	r4 gis\pp--
+	\tempoXOff #1.5 r4 gis\pp--
 % Bars 36 to 40
 	gis-- gis--
 	gis gis
@@ -71,7 +71,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 % Bars 61 to 65
 	a\pp r
 	a r
-	r8 d(\p b e
+	r8^\solo d(\p b e
 	d)\< b4 b8\!~
 	b16\f b8 b b b16~
 % Bars 66 to 70
@@ -162,8 +162,8 @@ musicKlarinetteIIMvtII = \relative c'' {
 	g~ g32( a g f-.) f4(
 	e8) c16(\< e a c b a)\!
 % Bars 151 to 155
-	g8( d'4\mf c8)
-	b4.( d8\p
+	g8( d'4\mf\> c8)
+	b4.(\! d8\p
 	c) r r4
 	R2*3
 % Bars 156 to 160
@@ -178,7 +178,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r8 c'4(\p g16 e)
+	\tempoXOff #1.5 r8 c'4(\p g16 e)
 	e8 r r4
 % Bars 171 to 175
 	r8 c'4( g16 e)

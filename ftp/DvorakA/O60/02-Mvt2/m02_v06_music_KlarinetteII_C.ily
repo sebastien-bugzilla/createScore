@@ -176,8 +176,8 @@ musicKlarinetteIIMvtII = \relative c'' {
 	g~ g32( a g f-.) f4(
 	e8) c16(\< e a c b a)\!
 % Bars 151 to 155
-	g8( d'4\mf c8)
-	b4.( d8\p
+	g8( d'4\mf\> c8)
+	b4.(\! d8\p
 	c) r r4
 	R2*3
 % Bars 156 to 160

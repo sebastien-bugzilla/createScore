@@ -51,7 +51,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		e e2\<~
 		e2.~
 		e \mark \default
-		f4\ff^\grandioso r r
+		f4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		f2 r4
 % Bars 51 to 55
 		r r c-.
@@ -227,7 +227,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		\ni \mmrPos #-4 R2.
 		\mmrPos #-4 R \no
 	}
-	aes'2(_\mfp g8 f)
+	aes'2(_\mfp^\solo g8 f)
 % Bars 201 to 205
 	f2(\> ees8 d)
 	d2\p( ees8 f)

@@ -127,22 +127,22 @@ tempiPartMvtI = {
 		\tag #'(floteI floteII ) {
 			\tempo \markup { \medium \italic \column { \lower #1 "un poco più" "animato." } }
 		}
-		\tag #'(oboeI oboeII) {
+		\tag #'(oboeI oboeII klarinetteI klarinetteII) {
 			\tempo \markup { \medium \italic "un poco più animato." }
 		}
 		s2.*26
 		% bar 49
-		\tag #'(floteI floteII oboeI oboeII) {
+		\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 			\tempo "Tempo I." 
 		}
 		s2.*11
 		% bar 60
-		\tag #'(floteI floteII oboeI oboeII) {
+		\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 			\tempo \markup { \medium \italic "un poco animato." }
 		}
 		s2.*60
 		% bar 120
-		\tag #'(floteI floteII oboeI oboeII) {
+		\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 			\tempo \markup { \medium \italic "tranquillo." }
 		}
 		s2.*57
@@ -157,12 +157,12 @@ tempiPartMvtI = {
 	}
 	s2.*133
 	% bar 315
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Più tranquillo." 
 	}
 	s2.*21 
 	% bar 336
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Poco animato."
 	}
 	s2.*77
@@ -170,9 +170,12 @@ tempiPartMvtI = {
 	\tag #'(floteI floteII oboeI oboeII) {
 		\tempo "Poco tranquillo."
 	}
+	\tag #'(klarinetteI klarinetteII) {
+		\tempo \markup {\medium \italic "poco tranquillo"}
+	}
 	s2.*47
 	% bar 460
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup { \medium \italic "accelerando" }
 	}
 	s2.*72
@@ -180,12 +183,12 @@ tempiPartMvtI = {
 	\tag #'(floteI floteII oboeI) {
 		\tempo \markup { \medium \italic "poco sosten." }
 	}
-	\tag #'(oboeII) {
+	\tag #'(oboeII klarinetteI klarinetteII) {
 		\tempo \markup { \medium \italic "poco sostenuto" }
 	}
 	s2.*11
 	% bar 543
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup { \medium \italic "in tempo" }
 	}
 	s2.*4
@@ -197,13 +200,13 @@ tempiPartMvtII = {
 	\tag #'(floteI) {
 		\tempo \markup {\medium \italic \column {\lower #1 "poco più" "animato"} }
 	}
-	\tag #'(floteII oboeI oboeII) {
+	\tag #'(floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup { \medium \italic "poco più animato" }
 	}
 	
 	s2*6
 	% bar 35
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Tempo I."
 	}
 	s2*60
@@ -211,27 +214,27 @@ tempiPartMvtII = {
 	\tag #'(floteI) {
 		\tempo \markup {\medium \italic \column {\lower #1 "poco più" "animato"} }
 	}
-	\tag #'(floteII oboeI oboeII) {
+	\tag #'(floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup { \medium \italic "poco più animato" }
 	}
 	s2*7
 	% bar 102
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "rit." }
 	}
 	s2*2
 	% bar 104
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Tempo I." 
 	}
 	s2*64
 	% bar 168
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "rit."} 
 	}
 	s2
 	% bar 169
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "in tempo"} 
 	}
 	s2*38
@@ -255,7 +258,7 @@ tempiPartMvtIII = {
 	s2.*6
 	\repeat volta 2 {
 		% bar 153
-		\tag #'(floteI oboeI) {
+		\tag #'(floteI oboeI klarinetteI klarinetteII) {
 			\tempo "Poco meno mosso."
 		}
 		\tag #'(floteII oboeII) {
@@ -266,28 +269,28 @@ tempiPartMvtIII = {
 		\tag #'(floteI) {
 			\tempo \markup {\medium \italic "poco sosten." }
 		}
-		\tag #'(floteII oboeII) {
+		\tag #'(floteII oboeII klarinetteI) {
 			\tempo \markup {\medium \italic "poco sost." }
 		}
-		\tag #'(oboeI) {
+		\tag #'(oboeI klarinetteII) {
 			\tempo \markup {\medium \italic "poco sostenuto" }
 		}
 		s2.*4
 		% bar 163
-		\tag #'(floteI floteII oboeI oboeII) {
+		\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 			\tempo \markup {\medium \italic "in tempo" }
 		}
 		s2.*6
 		% bar 169
-		\tag #'(floteI floteII oboeII) {
+		\tag #'(floteI floteII oboeII klarinetteI) {
 			\tempo \markup {\medium \italic "poco sost." } 
 		}
-		\tag #'(oboeI) {
+		\tag #'(oboeI klarinetteII) {
 			\tempo \markup {\medium \italic "poco sostenuto" } 
 		}
 		s2.*4
 		% bar 173
-		\tag #'(floteI floteII oboeI oboeII) {
+		\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 			\tempo \markup {\medium \italic "in tempo" } 
 		}
 		s2.*28
@@ -300,17 +303,20 @@ tempiPartMvtIII = {
 	\tag #'(floteI floteII) {
 		\tempo \markup {\medium \italic "stringendo" }
 	}
-	\tag #'(oboeI oboeII) {
+	\tag #'(oboeI oboeII klarinetteI) {
 		\tempo \markup {\medium \italic "poco a poco stringendo" }
+	}
+	\tag #'(klarinetteII) {
+		\tempo \markup {\medium \italic "string." }
 	}
 	s2.*7
 	% bar 288
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Tempo I."
 	}
 	s2.*140
 	% bar 428
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "poco a poco accelerando"}
 	}
 	s2.*11
@@ -318,17 +324,17 @@ tempiPartMvtIII = {
 %-------------------------------------------------------------------------------
 tempiPartMvtIV = {
 	\partial 4 s4
-	s1*12 s2 
-	% bar 13
-	\tag #'(floteI oboeI oboeII) {
+	s1*13 
+	% bar 14
+	\tag #'(floteI oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "accelerando poco a poco" }
 	}
 	\tag #'(floteII) {
 		\tempo \markup {\medium \italic "accelerando" }
 	}
-	s2 s1*24
+	s1*24
 	% bar 38
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Tempo I."
 	}
 	s1*15
@@ -336,42 +342,42 @@ tempiPartMvtIV = {
 	\tag #'(floteI) {
 		\tempo \markup {\medium \italic "accelerando" }
 	}
-	\tag #'(floteII oboeI oboeII) {
+	\tag #'(floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "accelerando poco a poco" }
 	}
 	s1*241
 	% bar 294
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Poco sostenuto."
 	}
 	s1*8
 	% bar 302
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "ritard." }
 	}
 	s1*4
 	% bar 306
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "in tempo" }
 	}
 	s1*28
 	% bar 334
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "accelerando poco a poco" }
 	}
 	s1*106
 	% bar 440
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo "Presto."
 	}
 	s1*109
 	% bar 549
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "ritard." }
 	}
 	s1*2
 	% bar 551
-	\tag #'(floteI floteII oboeI oboeII) {
+	\tag #'(floteI floteII oboeI oboeII klarinetteI klarinetteII) {
 		\tempo \markup {\medium \italic "in tempo" }
 	}
 	s1*12 s2 s4

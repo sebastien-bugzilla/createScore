@@ -13,7 +13,7 @@ musicKlarinetteIMvtII = \relative c'' {
 		\ni R2 \no
 	r8 } c(\p b e)~
 	e4.(\< fis8\!
-	g2)\fp~\>
+	\hairpinMinLength #7.5 g2)\fp~\>
 	g8\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4
@@ -25,7 +25,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	
 	
 	r8 e'\p\<-- e-- d--
-	e2\fz_\dimmarkup
+	e2-\tweak X-offset #0 _\fzdimD
 	c4( b
 % Bars 21 to 25
 	c4.) r8
@@ -44,7 +44,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	g8 r r4
 	R2*2
 	\bar "||" \mark \default
-	r4 b,\pp--
+	\tempoXOff #1.5 r4 b,\pp--
 % Bars 36 to 40
 	b-- b--
 	b b
@@ -60,14 +60,14 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 	c8(\pp\< a'4 g16 f)
-	<< des2 {s4\> s\!} >>
+	<< des2 {\hairpinMinLength #5 s4\> s\!} >>
 	c8( a'4 g16 f)
 	des2->(
 % Bars 51 to 55
 	c8) f4\< f8
 	fis4.\f\> fis8
 	a(\p e4) c8~
-	c(\> a~ a16 b c d)\!
+	c(\> a~ a16 b c d)
 	e8\pp r r4
 % Bars 56 to 60
 	r8 a,(\p gis c)~
@@ -106,7 +106,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	
 % Bars 86 to 90
 	
-	r16 g,(\f c\< e g c e g)~\!
+	r16 g,(-\tweak X-offset #-2.5 \f c\< e g c e g)~\!
 	g8(\> f16 e g f e d) \mark \default
 	g4.\pp r8
 	R2

@@ -267,7 +267,7 @@ cueVoiceKlarinetteIIMvtII = \relative c {
 	f8 e16 d \slashedGrace f8 e8. d16)
 	R2*35
 	% bar 53 - 55
-	a''8_(^\markup {Clar.I} e4) c8_~
+	a''8_(-\tweak X-offset #-4 ^\markup {Clar.I} e4) c8_~
 	c a_~ a16 b c d
 	e8 r r4
 }
@@ -284,7 +284,7 @@ cueVoiceKlarinetteIIMvtIV = \relative c {
 	\transposition a
 	\partial 4 r4
 	R1*7
-	r2 r4^\markup {Clar.I} g'''
+	r2 r4-\tweak X-offset #-2 ^\markup {Clar.I} g'''
 }
 %###############################################################################
 %#                  C U E   V O I C E   F O R   F A G O T T E                  #

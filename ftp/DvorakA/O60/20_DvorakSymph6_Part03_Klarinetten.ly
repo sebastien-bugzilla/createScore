@@ -21,7 +21,7 @@
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
-\include "./00-Common/DvorakSymph6_Format_temp.ly"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./01-Mvt1/m01_v05_music_KlarinetteI.ily"
@@ -68,7 +68,7 @@
 				\nameKlarinetteIMvtI \musicKlarinetteIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(klarinetteI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -93,11 +93,11 @@
 				\nameKlarinetteIMvtII \musicKlarinetteIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(klarinetteI) \tempiPartMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -118,7 +118,7 @@
 				\nameKlarinetteIMvtIII \musicKlarinetteIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -143,7 +143,7 @@
 				\nameKlarinetteIMvtIV \musicKlarinetteIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -168,7 +168,7 @@
 				\nameKlarinetteIIMvtI \musicKlarinetteIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(klarinetteII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -193,11 +193,11 @@
 				\nameKlarinetteIIMvtII \musicKlarinetteIIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(klarinetteII) \tempiPartMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -218,11 +218,11 @@
 				\nameKlarinetteIIMvtIII \musicKlarinetteIIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -243,7 +243,7 @@
 				\nameKlarinetteIIMvtIV \musicKlarinetteIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
 			}
 		>>
 		\header {

@@ -9,7 +9,7 @@ dimmarkup=^\markup {\italic dim.}
 crescmarkup=^\markup {\italic cresc.}
 ppsempremoltotranquillo=^\markup {\dynamic pp \italic {sempre molto tranquillo}}
 fpdim=^\markup {\dynamic fp \italic dim.}
-fpdimD = #(make-dynamic-script (markup #:dynamic "fp" #:normal-text #:italic "dim." ))
+fpdimD = \tweak DynamicText.self-alignment-X #-0.6 #(make-dynamic-script (markup #:dynamic "fp" #:normal-text #:italic "dim." ))
 pcresc=^\markup {\dynamic p \italic cresc.}
 fsempre=^\markup {\dynamic f \italic sempre}
 fcresc=^\markup {\dynamic f \italic cresc.}
@@ -67,6 +67,9 @@ ffpesante=^\markup {\dynamic ff \italic pesante}
 tranquillo=^\markup {\italic tranquillo}
 ffz=^\markup {\dynamic ffz}
 solo=^\markup {Solo.}
+fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
+
+
 trio = {
 	\once \override Score.RehearsalMark.outside-staff-priority = #1500
 	\once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)

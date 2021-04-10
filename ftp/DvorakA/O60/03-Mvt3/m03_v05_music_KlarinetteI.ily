@@ -42,13 +42,13 @@ musicKlarinetteIMvtIII = \relative c'' {
 		c'4(\p ees) c(
 		ees) c( ees)~
 % Bars 26 to 30
-		ees2.\<~
-		ees\>
+		\hairpinShorten #0 #2 ees2.\<~
+		\hairpinShorten #-1 #3 ees\>
 		c4(\! ees) c(
 		ees) c( ees)~
-		ees2.\<~
+		\hairpinShorten #0 #2 ees2.\<~
 % Bars 31 to 35
-		ees\>
+		\hairpinShorten #-1 #3 ees\>
 		aes,4\!( c) aes(
 		c) aes( c)~
 		c2.~\<
@@ -187,7 +187,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f_\dimmarkup
 % Bars 151 to 155
 	f
-	f \stopMeasureCount \bar "||" \key f \major
+	f \stopMeasureCount \bar ".|:-||" \key f \major
 	\repeat volta 2 {
 		\time 3/4 \trio c\fp
 		R2.
@@ -354,23 +354,23 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f r r \bar "||"
 	c'(\p ees) c(
 	ees) c( ees)~
-	ees2.\<~
-	ees\>
+	\hairpinShorten #0 #2 ees2.\<~
+	\hairpinShorten #-1 #3 ees\>
 % Bars 311 to 315
 	c4(\! ees) c(
 	ees) c( ees)~
-	ees2.\<~
-	ees\>
+	\hairpinShorten #0 #2 ees2.\<~
+	\hairpinShorten #-1 #3 ees\>
 	aes,4\!( c) aes(
 % Bars 316 to 320
 	c) aes( c)~
-	c2.\<
-	c\>
+	\hairpinShorten #0 #2 c2.\<
+	\hairpinShorten #-1 #3 c\>
 	a4(\! c) a(
 	c) a( c)~
 % Bars 321 to 325
-	c2.\<~
-	c\>
+	\hairpinShorten #0 #2 c2.\<~
+	\hairpinShorten #-1 #2 c\>
 	c2\< aes'4~
 	aes g-.\! aes-.
 	g2->\ff f4-.
@@ -415,7 +415,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 361 to 365
 	
 	
-	f,,2\p bes4~
+	f,,2-\tweak X-offset #-1.7 \p bes4~
 	bes c-. des-.
 	c2-> aes4~->
 % Bars 366 to 370

@@ -142,12 +142,12 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 116 to 120
 		e-. dis-. dis-.
 		e-. dis-. dis-.\!
-		e-._\semprecresc e-. e-.
+		\startMeasureCount e-._\semprecresc e-. e-.
 		e-. e-. e-.
 		e\fz e e
 % Bars 121 to 125
 		e\fz e e
-		e\fz e e
+		e\fz e e \stopMeasureCount
 		ees!\fz ees ees
 		dis(\ff e) dis(
 		e) dis( e)
@@ -182,7 +182,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 			aes r r
 		}
 		{
-			c2.\f\>
+			\startMeasureCount c2.\f\>
 		}
 	}
 	c
@@ -191,9 +191,9 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar "||" \key f \major
+	c \stopMeasureCount \bar ".|:-||" \key f \major
 	\repeat volta 2 {
-		a
+		\time 3/4 \trio a
 		R2.
 		a(\p
 % Bars 156 to 160
@@ -311,13 +311,13 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	bes c d)
 	c2.~
 	c4 r r
-	R2.*19
+	R2.*12
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\tempoXOff #-4 R2.*7
 % Bars 286 to 290
 	
 	\bar "||" \key f \minor
@@ -441,11 +441,11 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	e-. dis-. dis-.
 	e-. dis-. dis-.\!
 % Bars 401 to 405
+	\startMeasureCount e-.\fz e-. e-.
 	e-.\fz e-. e-.
 	e-.\fz e-. e-.
 	e-.\fz e-. e-.
-	e-.\fz e-. e-.
-	e-.\fz e-. e-.
+	e-.\fz e-. e-. \stopMeasureCount
 % Bars 406 to 410
 	ees!\fz ees ees
 	dis(\ff e) dis(
