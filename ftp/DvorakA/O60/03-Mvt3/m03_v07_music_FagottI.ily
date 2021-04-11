@@ -42,22 +42,22 @@ musicFagottIMvtIII = \relative c {
 		a''4(\p c) a(
 		c) a( c)~
 % Bars 26 to 30
-		c2.\<~
-		c\>
+		\hairpinShorten #0 #2 c2.\<~
+		\hairpinShorten #0 #3 c\>
 		a4(\! c) a(
 		c) a( c)~
-		c2.~\<
+		\hairpinShorten #0 #2 c2.~\<
 % Bars 31 to 35
-		c\>
+		\hairpinShorten #0 #3 c\>
 		f,4(\! a) f(
 		a) f( a)~
 		a2.\<
-		a\>
+		\hairpinShorten #0 #3 a\>
 % Bars 36 to 40
 		fis4(\! a) fis(
 		a) fis( a)~
-		a2.\<~
-		a\>
+		\hairpinShorten #0 #2 a2.\<~
+		\hairpinShorten #-1 #2 a\>
 		d,8(\< e f! g a bes!
 % Bars 41 to 45
 		b!4) cis-. d-.\!
@@ -150,12 +150,12 @@ musicFagottIMvtIII = \relative c {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		a!-._\semprecresc a-. a-.
+		\startMeasureCount a!-._\semprecresc a-. a-.
 		a-. a-. a-.
 		a-. a-. a-.
 % Bars 121 to 125
 		a-. a-. a-.
-		a-. a-. a-.
+		a-. a-. a-. \stopMeasureCount
 		aes-. aes-. aes-.
 		c(\ff des) c( 
 		des) c( des)
@@ -190,7 +190,7 @@ musicFagottIMvtIII = \relative c {
 			d r r
 		}
 		{
-			d2.\f\>
+			\startMeasureCount d2.\f\>
 		}
 	}
 	d
@@ -199,12 +199,15 @@ musicFagottIMvtIII = \relative c {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \stopMeasureCount \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		d'\fp
-		R2.*31
+		\time 3/4 \trio d'\fp
+		R2.*5
 % Bars 156 to 160
-	
+		
+		
+		
+		\tempoXOff #-1.5 R2.*26
 % Bars 161 to 165
 	
 % Bars 166 to 170
@@ -310,7 +313,7 @@ musicFagottIMvtIII = \relative c {
 	fis g e)
 	fis( g e
 	fis g e)
-	a4--\pp a-- a--
+	\startMeasureCount a4--\pp a-- a--
 % Bars 281 to 285
 	a a a\<
 	a a a
@@ -319,7 +322,7 @@ musicFagottIMvtIII = \relative c {
 	a a a
 % Bars 286 to 290
 	a a a
-	a a a \bar "||" \key d \minor
+	a a a \stopMeasureCount \bar "||" \key d \minor
 	d,2\f-> d4->~
 	d d2->
 	c!4\fz-. d-. d-.
@@ -345,23 +348,23 @@ musicFagottIMvtIII = \relative c {
 	d r r \bar "||"
 	a''4(\p c) a(
 	c) a( c)~
-	c2.\<~
-	c\>
+	\hairpinShorten #0 #2 c2.\<~
+	\hairpinShorten #-1 #2 c\>
 % Bars 311 to 315
 	a4(\! c) a(
 	c) a( c)~
-	c2.\<~
+	\hairpinShorten #0 #2 c2.\<~
 	c\>
 	f,4(\! a) f(
 % Bars 316 to 320
 	a) f( a)~
-	a2.\<~
-	a\>
+	\hairpinShorten #0 #2 a2.\<~
+	\hairpinShorten #-1 #4 a\>
 	fis4(\! a) fis(
 	a) fis( a)~
 % Bars 321 to 325
-	a2.\<~
-	a\>
+	\hairpinShorten #0 #2 a2.\<~
+	\hairpinShorten #-1 #2 a\>
 	d,8(\< e f! g a bes!
 	b4) cis-.\! d-.
 	a-.\ff a,-. bes!-.

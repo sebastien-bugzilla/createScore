@@ -17,6 +17,6 @@ timeMvtIII = {
 	\tempo "Scherzo (Furiant). Presto"
 }
 timeMvtIV = {
-	\time 4/4
+	\time 2/2
 	\tempo "Finale. Allegro con spirito"
 }

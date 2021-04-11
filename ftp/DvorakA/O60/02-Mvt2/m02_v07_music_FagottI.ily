@@ -12,7 +12,7 @@ musicFagottIMvtII = \relative c' {
 	R2*2
 	
 	r8 bes(\p\< g c)
-	f,2\fp~\>
+	\hairpinMinLength #8 f,2\fp~\>
 	f8\pp r r4
 % Bars 6 to 10
 	R2*7
@@ -42,7 +42,7 @@ musicFagottIMvtII = \relative c' {
 	d8) r r4
 	R2*2
 	\bar "||" \mark \default
-	r4 fis,--\pp
+	\tempoXOff #1 r4 fis,--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis fis
@@ -91,7 +91,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	
-	r8 c4.\mf\<
+	r8 \hairpinMinLength #8 c4.\mf\<
 	f,8\f[ f'] f,[ f']
 	f,[ f']_\dimmarkup f,[ fis']
 % Bars 86 to 90
@@ -166,7 +166,7 @@ musicFagottIMvtII = \relative c' {
 	bes4~ bes16 c g a)
 	f4 e\mf
 % Bars 151 to 155
-	f16 bes,( d\< f bes d f d)\!
+	f16 \shape #'((0 . 0.5)(0 . 1.2)(0 . 1.2)(0 . -0.8)) Slur bes,( d\< f bes d f d)\!
 	c(_\dimmarkup a f c f,8) fis(
 	g)\noBeam fis'(\pp\< g e)\!
 	f!2\fz~
@@ -187,7 +187,7 @@ musicFagottIMvtII = \relative c' {
 	R2*3
 	
 	\mark \default
-	bes,2\p~
+	\tempoXOff #0.5 bes,2\p~
 	bes8 bes4\<( a16 g\!
 % Bars 171 to 175
 	f8) bes4.\p~
@@ -200,7 +200,7 @@ musicFagottIMvtII = \relative c' {
 	f) ees'\f\<-> d-> des-> c-> bes-> a-> g->\!
 	fis8\ff r g-^ r
 	c,-^r r4
-	f2\p~-\tweak X-offset #2 _\dimmarkup
+	f2\p\>~
 % Bars 181 to 185
 	f\pp~
 	f8 r r4
@@ -232,5 +232,5 @@ musicFagottIMvtII = \relative c' {
 	f8 r r4
 	R2
 % Bar 206
-	R2^\fermataMarkup \bar "|."
+	\ni R2^\fermataMarkup \bar "|."
 }

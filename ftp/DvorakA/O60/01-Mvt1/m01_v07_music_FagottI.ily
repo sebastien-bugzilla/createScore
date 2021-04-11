@@ -66,7 +66,7 @@ musicFagottIMvtI = \relative c {
 		gis g8\<-. a-. cis-. e-. 
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		d,4\ff^\grandioso r r
+		\tempoXOff #1.5 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2 r4
@@ -318,9 +318,9 @@ musicFagottIMvtI = \relative c {
 	b4) r r
 	R2.*2
 	
-	<<c2.( {s8\p\< s s s\> s s\!} >>
+	<<c2.( {\hairpinMinLength #5 s8-\tweak X-offset #-2 \p\< s s s s\> s} >>
 % Bars 251 to 255
-	b4) r r
+	b4)\! r r
 	R2.*2
 	
 	c2.\p
@@ -330,9 +330,9 @@ musicFagottIMvtI = \relative c {
 	cis! r r
 	R2.*2
 	
-	<<d2.( {s8\pp\< s s s\> s s\!}>>
+	<<d2.( {\hairpinMinLength #7 s8-\tweak X-offset #-2 \pp\< s s s s\> s}>>
 % Bars 261 to 265
-	cis4) r r
+	cis4)\! r r
 	R2.*2
 	
 	cis2.(\< \mark \default
@@ -389,8 +389,8 @@ musicFagottIMvtI = \relative c {
 % Bars 316 to 320
 	R2.*5
 % Bars 321 to 325
-	r4 r a,\p\<
-	b2.\fz\>~
+	r4 r \hairpinMinLength #7 a,\p\<
+	\hairpinMinLength #7 b2.\fz\>~
 	b2\! b,4(\pp
 	e2) r4
 	r r bes(
@@ -623,7 +623,8 @@ musicFagottIMvtI = \relative c {
 	d~
 	d4 r r
 % Bars 531 to 535
-	R2.*12
+	R2.
+	\tempoXOff #-1 \mmrLength #3 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545

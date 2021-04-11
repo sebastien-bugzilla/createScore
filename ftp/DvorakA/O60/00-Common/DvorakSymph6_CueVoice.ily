@@ -292,7 +292,7 @@ cueVoiceKlarinetteIIMvtIV = \relative c {
 cueVoiceFagottIMvtI = \relative c {
 	R2.*213
 	% bar 200 - 201
-	<f'' a>2(^\markup {Clar.} <e g>8 <d f>)
+	<f'' a>2(-\tweak X-offset #-3 ^\markup {Clar.} <e g>8 <d f>)
 	<d f>2( <c e>8 <b d>)
 }
 %cueVoiceFagottIMvtII = \relative c {

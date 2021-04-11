@@ -56,7 +56,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. a'-. a-. \mark \default
-	d8(_\ffgrandioso fis a g fis e d cis)
+	\tempoXOff #1.5 d8(_\ffgrandioso fis a g fis e d cis)
 	b( cis d cis b a g a)
 	fis r d'( e fis g a g)
 % Bars 41 to 45
@@ -119,8 +119,8 @@ musicFagottIIMvtIV = \relative c {
 	cis4\fz a'-. d\fz b-.
 % Bars 96 to 100
 	e\fz r e,\fz r
-	R1
-	R1*3
+	R1*4
+	
 	
 	
 % Bars 101 to 105
@@ -378,7 +378,7 @@ musicFagottIIMvtIV = \relative c {
 	R1
 	g8(\p g' fis e d e c d)
 	b4._\crescmarkup b8 b4( a)
-	g8( g' fis e d e c d)
+	\stemDown g8( g' fis e d e c d) \stemNeutral
 % Bars 336 to 340
 	b4.\< b8 b4( a)\!
 	b4.\f b8 b4-. cis!-.
@@ -496,7 +496,7 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 	r2 r4 a-.\f \bar "||" \mark \default
-	d-.\f r r g-.
+	\tempoXOff #0.5 d-.\f r r g-.
 % Bars 441 to 445
 	fis-. r r e-.
 	d-. r r g-.
@@ -518,7 +518,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 456 to 460
 	a-. r r gis-.
 	fis-. r r a,-.\f
-	d8( e fis e d cis b cis
+	\shape #'((0 . -2)(0 . 1)(0 . 1)(0 . 0)) Slur d8( e fis e d cis b cis
 	a b g a fis g e fis)
 	d( e d e fis g fis g
 % Bars 461 to 465
@@ -579,7 +579,7 @@ musicFagottIIMvtIV = \relative c {
 	a4-. b!-. c-. cis-.
 	d-. e-. fis-. g-.
 	a-. b-. cis-. d-.
-	g,,1\ff->~
+	g,,1-\tweak X-offset #-2 \ff->~
 	g
 % Bars 511 to 515
 	c,->~
@@ -594,7 +594,7 @@ musicFagottIIMvtIV = \relative c {
 	b-> d-. a-> cis-.
 	g-> b-. fis-> a-. \mark \default
 % Bars 521 to 525
-	g2^\ten r
+	g2-\tweak X-offset #1.4 ^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

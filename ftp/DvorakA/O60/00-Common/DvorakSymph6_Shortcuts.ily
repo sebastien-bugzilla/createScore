@@ -68,7 +68,7 @@ tranquillo=^\markup {\italic tranquillo}
 ffz=^\markup {\dynamic ffz}
 solo=^\markup {Solo.}
 fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
-
+ppespr = ^\markup {\dynamic pp \musicglyph "scripts.espr"}
 
 trio = {
 	\once \override Score.RehearsalMark.outside-staff-priority = #1500
@@ -173,6 +173,14 @@ markXOffset = #(define-music-function
 	(number?)
 	#{
 		\once \override Score.RehearsalMark.self-alignment-X = #(- offset)
+	#}
+)
+
+markYoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override Score.RehearsalMark.Y-offset = #offset
 	#}
 )
 

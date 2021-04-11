@@ -193,7 +193,7 @@ musicFagottIMvtIV = \relative c' {
 	R1*6
 % Bars 161 to 165
 	
-	g4--\pp \tuplet 3/2 4 {g8( fis e-.)} e4-- \tuplet 3/2 4 {e8( d c-.)}
+	g4--\pp \tuplet 3/2 4 {g8( f e-.)} e4-- \tuplet 3/2 4 {e8( d c-.)}
 	R1
 	g'4--\p \tuplet 3/2 4 {g8( f e-.)} e4-- \tuplet 3/2 4 {e8( d c)-.}
 	R1*2

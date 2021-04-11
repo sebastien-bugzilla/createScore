@@ -67,7 +67,7 @@
 				\nameFagottIMvtI \musicFagottIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(fagottI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -92,7 +92,7 @@
 				\nameFagottIMvtII \musicFagottIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(fagottI) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -117,7 +117,7 @@
 				\nameFagottIMvtIII \musicFagottIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(fagottI) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -142,7 +142,7 @@
 				\nameFagottIMvtIV \musicFagottIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(fagottI) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -167,7 +167,7 @@
 				\nameFagottIIMvtI \musicFagottIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(fagottII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -192,7 +192,7 @@
 				\nameFagottIIMvtII \musicFagottIIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(fagottII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -217,7 +217,7 @@
 				\nameFagottIIMvtIII \musicFagottIIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(fagottII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -242,7 +242,7 @@
 				\nameFagottIIMvtIV \musicFagottIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(fagottII) \tempiPartMvtIV
 			}
 		>>
 		\header {

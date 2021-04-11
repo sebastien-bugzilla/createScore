@@ -37,7 +37,7 @@ musicViolinIIMvtI = \relative c' {
 		fis-. r g!4(\fz a)
 % Bars 26 to 30
 		b2.->
-		ais-.8\f r b2->
+		ais8-.\f r b2->
 		g!4( e cis)
 		fis8_\rf-> g-> a-> a-> g-> fis->
 		g4-.-> b,-.-> r

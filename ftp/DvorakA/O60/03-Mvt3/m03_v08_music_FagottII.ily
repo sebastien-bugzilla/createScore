@@ -146,12 +146,12 @@ musicFagottIIMvtIII = \relative c, {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		a!-._\semprecresc a-. a-.
+		\startMeasureCount a!-._\semprecresc a-. a-.
 		a a a
 		a a a
 % Bars 121 to 125
 		a a a
-		a a a
+		a a a \stopMeasureCount
 		aes-. aes-. aes-.
 		des2->\ff des4~->
 		des des2->
@@ -186,7 +186,7 @@ musicFagottIIMvtIII = \relative c, {
 			d r r
 		}
 		{
-			d2.\f\>
+			\startMeasureCount d2.\f\>
 		}
 	}
 	d
@@ -195,9 +195,9 @@ musicFagottIIMvtIII = \relative c, {
 	d_\dimmarkup
 % Bars 151 to 155
 	d
-	d \bar "||" \key d \major
+	d \stopMeasureCount \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		R2.*48
+		\time 3/4 \trio R2.*48
 		
 % Bars 156 to 160
 	
@@ -287,7 +287,7 @@ musicFagottIIMvtIII = \relative c, {
 	
 	
 	
-	d,4--\pp d-- d--
+	\startMeasureCount d,4--\pp d-- d--
 % Bars 281 to 285
 	d d d\<
 	d d d 
@@ -296,7 +296,7 @@ musicFagottIIMvtIII = \relative c, {
 	d d d
 % Bars 286 to 290
 	d d d
-	d d d \bar "||" \key d \minor
+	d d d \stopMeasureCount \bar "||" \key d \minor
 	d,2\f-> d4->~
 	d d2->
 	c4\fz-. d-. d-.
