@@ -32,7 +32,7 @@ musicFloteIIMvtII = \relative c''' {
 	e8 g f e)
 	e8( c~ c16\< b d b)\!
 	c8 r r4
-	\mmrLength #6 R2*6
+	\mmrLength #24 R2*6
 % Bars 31 to 35
 	
 	
@@ -95,7 +95,7 @@ musicFloteIIMvtII = \relative c''' {
 	f16 e( d) c( b) a( g) f(
 	e8) r r4
 	R2
-	\mmrLength #4 R2*7
+	\mmrLength #22 R2*7
 % Bars 96 to 100
 	
 % Bars 101 to 105

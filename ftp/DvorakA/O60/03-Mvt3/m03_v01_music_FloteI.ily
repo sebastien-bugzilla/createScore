@@ -149,17 +149,17 @@ musicFloteIMvtIII = \relative c''' {
 	
 	\bar "||" \key d \major
 	\repeat volta 2 {
-		\time 3/4 \trio \mmrLength #0.8 R2.*3
+		\time 3/4 \trio R2.*3
 % Bars 156 to 160
 		e,4(\p fis8 dis e4)
 		R2.*2
 		
-		\mmrLength #3 R2.*4
+		\mmrLength #14 R2.*4
 		
 % Bars 161 to 165
 		
 		
-		\mmrLength #4 R2.*2
+		\mmrLength #14 R2.*2
 		
 		\cueDuring #"cueVoiceFloteIMvtIII" #UP {
 			\ni R2. \no
@@ -168,7 +168,7 @@ musicFloteIMvtIII = \relative c''' {
 		fis4(\p\< g8 eis fis4)\!
 		R2.*2
 		
-		\mmrLength #3.5 R2.*4
+		\mmrLength #12 R2.*4
 % Bars 171 to 175
 		
 		

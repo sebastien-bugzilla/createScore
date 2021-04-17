@@ -137,9 +137,9 @@ musicTrompeteIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		R2.*48
+		\time 3/4 \trio R2.*48
 % Bars 156 to 160
 	
 % Bars 161 to 165

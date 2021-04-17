@@ -162,12 +162,12 @@ musicHornIVMvtIII = \relative c' {
 	c
 	c \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		\time 3/4 \trio \mmrLength #2 R2.*6
+		\time 3/4 \trio R2.*6
 % Bars 156 to 160
 		
 		
 		
-		\mmrLength #2 \tempoXOff #-1 R2.*4
+		\mmrLength #6 \tempoXOff #-1 R2.*4
 % Bars 161 to 165
 		
 		
@@ -176,7 +176,7 @@ musicHornIVMvtIII = \relative c' {
 		
 		
 		
-		\tempoXOff #-1 \mmrLength #2 R2.*4
+		\tempoXOff #-1 \mmrLength #8 R2.*4
 % Bars 171 to 175
 		
 		

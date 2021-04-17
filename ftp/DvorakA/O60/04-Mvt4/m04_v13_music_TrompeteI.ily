@@ -10,11 +10,14 @@ musicTrompeteIMvtIV = \relative c''' {
 	\transposition d
 	\partial 4 r4
 % Bars 1 to 5
-	R1*29
+	\mmrLength #22 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*16
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -208,14 +211,14 @@ musicTrompeteIMvtIV = \relative c''' {
 	cis2. cis4-.
 % Bars 236 to 240
 	b-. r r2
-	ees2\f r
+	\startMeasureCount ees2\f r
 	ees r
 	ees r
 	ees r
 % Bars 241 to 245
 	ees r
 	ees_\dimin r
-	ees r
+	ees r \stopMeasureCount
 	ees4\p r r2
 	R1*8
 % Bars 246 to 250
@@ -416,7 +419,7 @@ musicTrompeteIMvtIV = \relative c''' {
 	a-> a-. a-> r
 % Bars 481 to 485
 	R1
-	r2 r4 f'_\ffmarc
+	r2 r4 f'-\tweak X-offset #-2 _\ffmarc
 	f2-> f->
 	f-> f4-. g-.
 	g1~

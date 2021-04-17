@@ -35,7 +35,7 @@ musicFagottIIMvtII = \relative c {
 % Bars 26 to 30
 	
 	
-	\tempoXOff #-1 \mmrLength #2 R2*6
+	\tempoXOff #-1 \mmrLength #12 R2*6
 % Bars 31 to 35
 	
 	

@@ -9,7 +9,7 @@ musicTrompeteIIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2*34
+	R2*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,6 +20,9 @@ musicTrompeteIIMvtII = \relative c'' {
 	
 % Bars 26 to 30
 	
+	
+	
+	\mmrLength #14 R2*6
 % Bars 31 to 35
 	
 	
@@ -109,7 +112,7 @@ musicTrompeteIIMvtII = \relative c'' {
 	
 	\mark \default
 	\cueDuring #"cueVoiceTrompeteIIMvtII" #UP {
-		\ni R2
+		\ni \tempoXOff #1.2 R2
 		R
 % Bars 171 to 175
 		R
@@ -139,5 +142,5 @@ musicTrompeteIIMvtII = \relative c'' {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	\ni R2\fermataMarkup \bar "|."
 }

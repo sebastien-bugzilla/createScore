@@ -571,7 +571,7 @@ cueVoiceTrompeteIMvtI = \relative c {
 	\transposition d
 	R2.*151
 	% bar 152 - 159
-	c'''!4-^^\markup {Viol.} c-^ a8 b
+	c'''!4-^-\tweak X-offset #-4 ^\markup {Viol.} c-^ a8 b
 	c!2.
 	c!4 c a8 b
 	c!2.:16
@@ -581,16 +581,16 @@ cueVoiceTrompeteIMvtI = \relative c {
 	eis2: r4
 	R2.*91
 	% bar 237 - 238
-	bes2(^\markup {Viol.} aes8 g)
+	bes2(-\tweak X-offset #-4 ^\markup {Viol.} aes8 g)
 	b!2( a!8 gis)
 	R2.*27
 	% bar 266 - 268
-	b8-.^\markup {Viol.} f16_( g f8) b,-. b-. b'-.
+	b8-.-\tweak X-offset #-4 ^\markup {Viol.} f16_( g f8) b,-. b-. b'-.
 	b4 r r
 	b8-. g16_( a g8) e-. e-. e'-.
 	R2.*109
 	% bar 378 - 382
-	bes4.^\markup {Viol.} g8-.[ a-. bes-.]
+	bes4.-\tweak X-offset #-4 ^\markup {Viol.} g8-.[ a-. bes-.]
 	bes4. g8-.[ a-. bes-.]
 	bes4 r8 g-.[ a-. bes-.]
 	bes4 r8 g-.[ a-. bes-.]
@@ -615,7 +615,7 @@ cueVoiceTrompeteIMvtII = \relative c {
 	bes g)
 	R2*65
 	% bar 169 - 174
-	a8^\markup {Horner in F.} a4 a8_~
+	a8-\tweak X-offset #1.2 ^\markup {Horner in F.} a4 a8_~
 	a a_(\< bes b)\!
 	c a4\p a8_~
 	a a_(\< bes b)\!
@@ -664,7 +664,7 @@ cueVoiceTrompeteIIMvtI = \relative c {
 	\transposition d
 	R2.*151
 	% bar 152 - 159
-	c'''!4-^^\markup {Viol.} c-^ a8 b
+	c'''!4-^-\tweak X-offset #-4.5 ^\markup {Viol.} c-^ a8 b
 	c!2.
 	c!4 c a8 b
 	c!2.:16
@@ -674,7 +674,7 @@ cueVoiceTrompeteIIMvtI = \relative c {
 	eis2: r4
 	R2.*91
 	% bar 237 - 238
-	bes2(^\markup {Viol.} aes8 g)
+	bes2(-\tweak X-offset #-3 ^\markup {Viol.} aes8 g)
 	b!2( a!8 gis)
 	R2.*27
 	% bar 266 - 268
@@ -708,7 +708,7 @@ cueVoiceTrompeteIIMvtII = \relative c {
 	bes g)
 	R2*65
 	% bar 169 - 174
-	a8^\markup {Horner in F.} a4 a8_~
+	a8-\tweak X-offset #1.2 ^\markup {Horner in F.} a4 a8_~
 	a a_(^\< bes b)\!
 	c a4^\p a8_~
 	a a_(^\< bes b)\!

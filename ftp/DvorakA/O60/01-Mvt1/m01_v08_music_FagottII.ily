@@ -613,7 +613,7 @@ musicFagottIIMvtI = \relative c {
 	d4 r r
 % Bars 531 to 535
 	R2.*1
-	\mmrLength #3.2 \tempoXOff #-1 R2.*11
+	\mmrLength #18 \tempoXOff #-1 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545

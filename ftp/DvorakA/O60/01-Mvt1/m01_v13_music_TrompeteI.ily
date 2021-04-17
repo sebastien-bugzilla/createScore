@@ -12,7 +12,7 @@ musicTrompeteIMvtI = \relative c'' {
 	R2.*2
 	
 	\repeat volta 2 {
-		R2.*31
+		R2.*20
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,7 +20,9 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
+		
+		
+		\mmrLength #15 \tempoXOff #-2 R2.*11
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -45,7 +47,7 @@ musicTrompeteIMvtI = \relative c'' {
 		d g2->~\<
 		g2.~
 		g \mark \default
-		e4\ff^\grandioso r r
+		\tempoXOff #1 e4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r g,-.\f
 % Bars 51 to 55
 		c2-^ r4
@@ -84,11 +86,15 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*32
+		R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
+		
+		
+		
+		
+		\mmrLength #16 R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -432,15 +438,17 @@ musicTrompeteIMvtI = \relative c'' {
 	g2(\p f8 e)
 	e2( d8_\dimmarkup c)
 	c2 r4
-	R2.*15
+	R2.*3
+	
 % Bars 531 to 535
 	
+	\mmrLength #14 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	
+	\mmrLength #14 R2.*1
 	\cueDuring #"cueVoiceTrompeteIMvtI" #UP {
 		\ni R2. \no
 	r4 r } d->\f

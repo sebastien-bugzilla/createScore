@@ -21,6 +21,7 @@
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v13_music_TrompeteI.ily"
@@ -67,7 +68,7 @@
 				\nameTrompeteIMvtI \musicTrompeteIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(trompeteI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -92,7 +93,7 @@
 				\nameTrompeteIMvtII \musicTrompeteIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(trompeteI) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -117,7 +118,7 @@
 				\nameTrompeteIMvtIII \musicTrompeteIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(trompeteI) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -142,7 +143,7 @@
 				\nameTrompeteIMvtIV \musicTrompeteIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(trompeteI) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -167,7 +168,7 @@
 				\nameTrompeteIIMvtI \musicTrompeteIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(trompeteII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -192,7 +193,7 @@
 				\nameTrompeteIIMvtII \musicTrompeteIIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(trompeteII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -217,7 +218,7 @@
 				\nameTrompeteIIMvtIII \musicTrompeteIIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(trompeteII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -242,7 +243,7 @@
 				\nameTrompeteIIMvtIV \musicTrompeteIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(trompeteII) \tempiPartMvtIV
 			}
 		>>
 		\header {

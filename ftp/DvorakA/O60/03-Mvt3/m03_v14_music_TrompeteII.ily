@@ -88,12 +88,12 @@ musicTrompeteIIMvtIII = \relative c' {
 			R
 			R \no
 		}
-		g4-._\fsemprecresc g-. g-.
+		\startMeasureCount g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g g g
 % Bars 121 to 125
 		g g g
-		g g g
+		g g g \stopMeasureCount 
 		bes-. bes-. bes-.
 		b!2->\ff b4->~
 		b b2->
@@ -128,7 +128,7 @@ musicTrompeteIIMvtIII = \relative c' {
 			c r r
 		}
 		{
-			c2.\f\>
+			\startMeasureCount c2.\f\>
 		}
 	}
 	c
@@ -137,17 +137,27 @@ musicTrompeteIIMvtIII = \relative c' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \stopMeasureCount \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		R2.*48
+		\time 3/4 \trio R2.*6
 % Bars 156 to 160
-	
+		
+		
+		
+		\mmrLength #12 R2.*4
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #14 R2.*6
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #14 R2.*4
 % Bars 171 to 175
-	
+		
+		
+		R2.*28
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -187,7 +197,7 @@ musicTrompeteIIMvtIII = \relative c' {
 		R \no
 	}
 % Bars 256 to 260
-	r4 c\pp c
+	\startMeasureCount r4 c\pp c
 	r c\< c
 	r c c
 	r c\! c
@@ -200,7 +210,7 @@ musicTrompeteIIMvtIII = \relative c' {
 	r c_\dimmarkup c
 % Bars 266 to 270
 	r c c
-	r c c
+	r c c \stopMeasureCount
 	R2.*20
 % Bars 271 to 275
 	

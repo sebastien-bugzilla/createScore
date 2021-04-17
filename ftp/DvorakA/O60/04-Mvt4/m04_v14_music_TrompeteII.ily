@@ -10,11 +10,14 @@ musicTrompeteIIMvtIV = \relative c'' {
 	\transposition d
 	\partial 4 r4
 % Bars 1 to 5
-	R1*29
+	\mmrLength #21 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*16
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -36,7 +39,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
-	c-._\ffgrandioso r r g-.
+	\tempoXOff #1.2 c-._\ffgrandioso r r g-.
 	c-. r r2
 	r2 r4 g
 % Bars 41 to 45
@@ -175,7 +178,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 	
 	
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 % Bars 191 to 195
 	R1*25
 % Bars 196 to 200
@@ -208,14 +211,14 @@ musicTrompeteIIMvtIV = \relative c'' {
 	cis2. cis4-.
 % Bars 236 to 240
 	b-. r r2
-	ees2\f r
+	\startMeasureCount ees2\f r
 	ees r
 	ees r
 	ees r
 % Bars 241 to 245
 	ees r
 	ees_\dimin r
-	ees r
+	ees r \stopMeasureCount
 	ees4\p r r2
 	R1*8
 % Bars 246 to 250
@@ -257,7 +260,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 	g-> g4-. d'-.
 	g,-. d'-. g,-. d'-.
 % Bars 286 to 290
-	<<g,1 {s4\< s s s\!}>>
+	<<g,1 {\hairpinShorten #0 #-1 s4\< s s s\!}>>
 	d4 r g2-^\ff~
 	g1~
 	g2. g4
@@ -405,7 +408,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 % Bars 471 to 475
 	b-> r r b-.
 	c-> g c-> g
-	c-> g c-> a \mark #11
+	c-> g c-> a \markYoffset #4.5 \mark #11
 	e r r2
 	r2 r4 a\f
 % Bars 476 to 480

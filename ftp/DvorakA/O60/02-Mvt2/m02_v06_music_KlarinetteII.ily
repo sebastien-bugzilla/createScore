@@ -36,7 +36,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	fis8 a g fis)
 	fis4 e\<(
 	d8)\! r r4
-	\tempoXOff #-2 \mmrLength #5 R2*6
+	\tempoXOff #-2 \mmrLength #22 R2*6
 	
 % Bars 31 to 35
 	
