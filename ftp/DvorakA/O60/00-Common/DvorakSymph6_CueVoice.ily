@@ -443,7 +443,7 @@ cueVoiceHornIIMvtII = \relative c {
 	g8 b4 b8
 	R2*36
 	% bar 65 - 66
-	f'16^\markup {Clar.} e d g f e d g
+	f'16-\tweak X-offset #-3 ^\markup {Clar.} e d g f e d g
 	f e d d' c b a g
 }
 cueVoiceHornIIMvtIII = \relative c {
@@ -508,7 +508,7 @@ cueVoiceHornIIIMvtIII = \relative c {
 	<c'' e>2^\markup {F-Hörner} q4
 	R2.*212
 	% bar 252 - 255
-	b'4^(^\markup {Viol.} c8 ais b4)
+	b'4^(-\tweak X-offset #-4 ^\markup {Viol.} c8 ais b4)
 	b^( c8 ais b4)
 	b^( c8 ais b4)
 	b^( c8 ais b4)

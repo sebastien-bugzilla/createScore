@@ -52,7 +52,7 @@ musicHornIIIMvtIII = \relative c'' {
 			\ni \mmrPos #-4 R2. \no
 		}
 % Bars 41 to 45
-		r4 b!-.\f\< c-.
+		r4 b!-.-\tweak X-offset #-1 \f\< c-.
 		g2->\ff c4-.
 		d-. bes2->
 		r4 bes-.\p r
@@ -152,7 +152,7 @@ musicHornIIIMvtIII = \relative c'' {
 			c r r
 		}
 		{
-			c2.\f\>
+			\startMeasureCount c2.\f\>
 		}
 	}
 	c
@@ -161,9 +161,9 @@ musicHornIIIMvtIII = \relative c'' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \stopMeasureCount \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		R2.*2
+		\time 3/4 \trio R2.*2
 		
 		c2.~\p
 % Bars 156 to 160
@@ -175,7 +175,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 161 to 165
 		c~
 		c\pp
-		c->\p
+		\tempoXOff #-0.5 c->\p
 		R2.
 		c2.~\p
 % Bars 166 to 170
@@ -187,7 +187,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 171 to 175
 		c~
 		c\pp
-		c~\fp
+		\startMeasureCount c~\fp
 		c~
 		c~\<
 % Bars 176 to 180
@@ -195,7 +195,7 @@ musicHornIIIMvtIII = \relative c'' {
 		c~\fp
 		c~
 		c~\<
-		c\!
+		c\! \stopMeasureCount
 % Bars 181 to 185
 		R2.*20
 % Bars 186 to 190
@@ -210,7 +210,7 @@ musicHornIIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	c,2.\pp~
+	\startMeasureCount c,2.\pp~
 	c~
 	c~
 	c~
@@ -218,7 +218,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 206 to 210
 	c~
 	c~
-	c~
+	c~ \stopMeasureCount
 	c4 r r
 	R2.*42
 % Bars 211 to 215
@@ -246,7 +246,7 @@ musicHornIIIMvtIII = \relative c'' {
 		\mmrPos #-2 R \no
 	}
 % Bars 256 to 260
-	c2.\p~
+	\startMeasureCount c2.\p~
 	c~\<
 	c~
 	c~
@@ -259,7 +259,7 @@ musicHornIIIMvtIII = \relative c'' {
 	c~_\dimmarkup
 % Bars 266 to 270
 	c~
-	c~
+	c~ \stopMeasureCount
 	c4 r r
 	R2.*15
 % Bars 271 to 275
@@ -306,7 +306,7 @@ musicHornIIIMvtIII = \relative c'' {
 	\cueDuring #"cueVoiceHornIIIMvtIII" #DOWN {
 		\ni \mmrPos #-4 R2. \no
 	}
-	r4 b!-.\f\< c-.
+	r4 \hairpinMinLength #6.5 b!-.\f\< c-.
 	g2\ff-> c4-.
 % Bars 326 to 330
 	d-. bes2->

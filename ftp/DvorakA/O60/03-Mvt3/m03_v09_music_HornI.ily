@@ -54,7 +54,7 @@ musicHornIMvtIII = \relative c'' {
 		e e4-. e-.\!
 		g2->\ff f4~->
 		f e2->
-		g,->\p c4~->
+		g,->\p^\solo c4~->
 		c b-. c-.
 % Bars 46 to 50
 		d2-> g,4~->
@@ -167,7 +167,7 @@ musicHornIMvtIII = \relative c'' {
 			e r r
 		}
 		{
-			e2.\f\>
+			\startMeasureCount e2.\f\>
 		}
 	}
 	e
@@ -176,19 +176,28 @@ musicHornIMvtIII = \relative c'' {
 	e_\dimmarkup
 % Bars 151 to 155
 	e
-	e \bar "||" \key c \major
+	e \stopMeasureCount \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		R2.*22
+		\time 3/4 \trio R2.*6
 % Bars 156 to 160
-	
+		
+		
+		
+		\mmrLength #2 R2.*4
+		
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #2 R2.*6
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #2 R2.*4
 % Bars 171 to 175
 		
 		
-		
+		\mmrLength #3 R2.*2
 		
 		\cueDuring #"cueVoiceHornIMvtIII" #DOWN {
 			\ni \mmrPos #-4 R2.
@@ -252,7 +261,7 @@ musicHornIMvtIII = \relative c'' {
 		\mmrPos #-4 R \no
 	}
 % Bars 256 to 260
-	a,4\pp r a'
+	\startMeasureCount a,4\pp r a'
 	a,\< r a'
 	a, r a'
 	a, r a'\!
@@ -265,15 +274,15 @@ musicHornIMvtIII = \relative c'' {
 	a, r_\dimmarkup a'
 % Bars 266 to 270
 	a, r a'
-	a, r a'
+	a, r a' \stopMeasureCount
 	a,\pp r r 
-	R2.*19
+	R2.*12
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\mmrDown R2.*7
 % Bars 286 to 290
 	
 	\bar "||"

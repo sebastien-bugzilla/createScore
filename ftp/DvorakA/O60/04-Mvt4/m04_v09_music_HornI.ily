@@ -266,11 +266,11 @@ musicHornIMvtIV = \relative c'' {
 	d!4(\p c bes f)
 	bes4. bes8 bes4 c
 % Bars 251 to 255
-	\tuplet 6/4 1 {d4( f aes g f ees)}
+	\tuplet 3/2 2 {d4( f aes g f ees)}
 	d2. r4 \mark \default
 	R1
-	\tuplet 6/4 1 {aes4(\p c ees ges f ees)}
-	ees2(\< \tuplet 3/2 2 {aes,4 bes ces\!}
+	\tuplet 3/2 2 {aes4(\p c ees ges f ees)}
+	ees2(\< \tuplet 3/2 2 {\tupletYOff #3 aes,4 bes ces\!}
 % Bars 256 to 260
 	bes\f) r r2
 	R1*11
@@ -301,7 +301,7 @@ musicHornIMvtIV = \relative c'' {
 	f-> f4-. ees-.
 	f-. ees-. f-. ees-.
 % Bars 286 to 290
-	<<f1 {s4\< s  s s\!}>>
+	<<f1 { \hairpinShorten #0 #-2 s4\< s  s s\!}>>
 	e!4 r f\ff r
 	R1
 	r2 r4 r8 f-.\f
@@ -345,7 +345,7 @@ musicHornIMvtIV = \relative c'' {
 		R
 		R \no
 	}
-	R1*3
+	\mmrDown R1*3
 	
 % Bars 336 to 340
 	
@@ -536,13 +536,13 @@ musicHornIMvtIV = \relative c'' {
 	c4-. r f2->\ff~
 % Bars 526 to 530
 	f2. f4-.
-	f-. f-. f-. f-.
+	\startMeasureCount f-. f-. f-. f-.
 	f f f f
 	f f f f
 	f f f f
 % Bars 531 to 535
 	f f f f
-	f-. f-. f-. f\ff
+	f-. f-. f-. f\ff \stopMeasureCount
 	d2->_\pesante c->
 	bes-> f->
 	bes2.-> bes4

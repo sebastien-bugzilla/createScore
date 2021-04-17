@@ -30,7 +30,7 @@ musicHornIIIMvtII = \relative c'' {
 	e e e e f f f f\!
 	e8 r r4
 	R2*2
-	\bar "||" \mark \default
+	\bar "||" \markYoffset #4.5 \mark \default
 	R2*6
 % Bars 36 to 40
 	
@@ -172,7 +172,7 @@ musicHornIIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r8 g4\pp g8~
+	\tempoXOff #1.5 r8 g4\pp g8~
 	g g4\< g8\!~
 % Bars 171 to 175
 	g g4\pp g8~
@@ -185,7 +185,7 @@ musicHornIIIMvtII = \relative c'' {
 	g16 r g\f\<-> g-> g-> g-> g-> c,->\!
 	e8\ff r e-^-. r
 	d-^-. r r4
-	e2\p\>(
+	\hairpinMinLength #6 e2\p\>(
 % Bars 181 to 185
 	f\pp
 	e8) r r4
@@ -207,5 +207,5 @@ musicHornIIIMvtII = \relative c'' {
 	R2*2
 	
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	\ni R2\fermataMarkup \bar "|."
 }

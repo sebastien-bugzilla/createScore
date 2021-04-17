@@ -160,17 +160,27 @@ musicHornIVMvtIII = \relative c' {
 	c_\dimmarkup
 % Bars 151 to 155
 	c
-	c \bar "||" \key c \major
+	c \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		R2.*32
+		\time 3/4 \trio \mmrLength #2 R2.*6
 % Bars 156 to 160
 		
+		
+		
+		\mmrLength #2 \tempoXOff #-1 R2.*4
 % Bars 161 to 165
 		
+		
+		R2.*6
 % Bars 166 to 170
 		
+		
+		
+		\tempoXOff #-1 \mmrLength #2 R2.*4
 % Bars 171 to 175
 		
+		
+		R2.*12
 % Bars 176 to 180
 		
 % Bars 181 to 185
@@ -178,7 +188,7 @@ musicHornIVMvtIII = \relative c' {
 		
 		
 		
-		g2.\p~
+		\startMeasureCount g2.\p~
 % Bars 186 to 190
 		g~
 		g~
@@ -192,14 +202,14 @@ musicHornIVMvtIII = \relative c' {
 		g~_\dimmarkup
 		g~
 % Bars 196 to 200
-		g~
+		g~ \stopMeasureCount 
 		g4\ppp r r
 		R2.*3
 		
 		
 	}
 % Bars 201 to 205
-	\clef bass c,,2.\pp~
+	\clef bass \startMeasureCount c,,2.\pp~
 	c~
 	c~
 	c~
@@ -207,7 +217,7 @@ musicHornIVMvtIII = \relative c' {
 % Bars 206 to 210
 	c~
 	c~
-	c~
+	c~ \stopMeasureCount
 	c4 r r
 	R2.*42
 % Bars 211 to 215
@@ -235,7 +245,7 @@ musicHornIVMvtIII = \relative c' {
 		\mmrPos #-2 R \clef bass \no
 	}
 % Bars 256 to 260
-	c2.\p~
+	\startMeasureCount c2.\p~
 	c~\<
 	c~
 	c~
@@ -248,7 +258,7 @@ musicHornIVMvtIII = \relative c' {
 	c~_\dimmarkup
 % Bars 266 to 270
 	c~
-	c~
+	c~ \stopMeasureCount
 	c4 r r
 	R2.*15
 % Bars 271 to 275

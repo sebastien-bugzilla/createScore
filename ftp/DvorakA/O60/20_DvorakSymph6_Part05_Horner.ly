@@ -20,6 +20,7 @@
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
@@ -83,7 +84,7 @@
 				\nameHornIMvtI \musicHornIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(hornI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -108,7 +109,7 @@
 				\nameHornIMvtII \musicHornIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(hornI) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -133,7 +134,7 @@
 				\nameHornIMvtIII \musicHornIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(hornI) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -146,6 +147,7 @@
 			}
 		}
 		\layout {
+			system-count = #22
 		}
 	}
 	\score {
@@ -158,11 +160,11 @@
 				\nameHornIMvtIV \musicHornIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(hornI) \tempiPartMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -183,7 +185,7 @@
 				\nameHornIIMvtI \musicHornIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(hornII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -208,7 +210,7 @@
 				\nameHornIIMvtII \musicHornIIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(hornII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -233,7 +235,7 @@
 				\nameHornIIMvtIII \musicHornIIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(hornII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -258,11 +260,11 @@
 				\nameHornIIMvtIV \musicHornIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(hornII) \tempiPartMvtIV
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -283,7 +285,7 @@
 				\nameHornIIIMvtI \musicHornIIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(hornIII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -308,11 +310,11 @@
 				\nameHornIIIMvtII \musicHornIIIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(hornIII) \tempiPartMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -333,11 +335,11 @@
 				\nameHornIIIMvtIII \musicHornIIIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(hornIII) \tempiPartMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -358,7 +360,7 @@
 				\nameHornIIIMvtIV \musicHornIIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(hornIII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -383,7 +385,7 @@
 				\nameHornIVMvtI \musicHornIVMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(hornIV) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -408,11 +410,11 @@
 				\nameHornIVMvtII \musicHornIVMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(hornIV) \tempiPartMvtII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -433,11 +435,11 @@
 				\nameHornIVMvtIII \musicHornIVMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(hornIV) \tempiPartMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -458,7 +460,7 @@
 				\nameHornIVMvtIV \musicHornIVMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(hornIV) \tempiPartMvtIV
 			}
 		>>
 		\header {

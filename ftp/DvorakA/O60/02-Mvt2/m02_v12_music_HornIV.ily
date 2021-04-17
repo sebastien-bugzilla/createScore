@@ -167,16 +167,16 @@ musicHornIVMvtII = \relative c'' {
 	
 	
 	\mark \default
-	r8 c4\pp c8~
+	\tempoXOff #1.2 r8 c4\pp c8~
 	c g4\< g8\!~
 % Bars 171 to 175
 	g c4\pp c8~
 	c g4\< g8\!~
 	g c4\p c8~
 	c g'4\< g8\!~
-	g g4\mf\< g8\!~
+	g g4\mf\< g8~
 % Bars 176 to 180
-	g g4\f g8~
+	g\! g4\f g8~
 	g16 r g\f\<-> g-> g-> g-> g-> c->\!
 	b8\ff r a-^-. r
 	a-^-. r r4

@@ -57,7 +57,7 @@ musicHornIIMvtIV = \relative c' {
 % Bars 51 to 55
 	
 	
-	r4 g,2.\f~
+	r4 g,2.-\tweak X-offset #-2 \f~
 	g4 g2.\fz~
 	g4 g2.\fz~
 % Bars 56 to 60
@@ -193,7 +193,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 % Bars 191 to 195
 	R1*4
 	
@@ -236,14 +236,14 @@ musicHornIIMvtIV = \relative c' {
 	b2. b4-.
 % Bars 236 to 240
 	a-. r r2
-	des2\f r
+	\startMeasureCount des2\f r
 	des r
 	des r
 	des r
 % Bars 241 to 245
 	des r
 	des_\dimin r
-	des r
+	des r \stopMeasureCount 
 	des4.\p des8 des4 r
 	R1*8
 % Bars 246 to 250
@@ -284,7 +284,7 @@ musicHornIIMvtIV = \relative c' {
 	f-> f4-. c'-.
 	des-. c-. des-. c-.
 % Bars 286 to 290
-	<<f,1 {s4\< s  s s\!}>>
+	<<f,1 {\hairpinShorten #0 #-2 s4\< s  s s\!}>>
 	g4 r f\ff r
 	R1
 	r2 r4 r8 f'-.\f
@@ -328,7 +328,7 @@ musicHornIIMvtIV = \relative c' {
 		R
 		R \no
 	}
-	R1*3
+	\mmrDown \tempoXOff #-1 R1*3
 % Bars 336 to 340
 	
 	d,4.\f d8 d4-. ges-.

@@ -351,7 +351,7 @@ musicHornIVMvtI = \relative c' {
 % Bars 356 to 360
 	c2\ff c4\fz~
 	c c2\fz
-	c2\fz c4~
+	c2\fz c4~\fz
 	c f,2\fz \mark \default
 	f4-. r r
 % Bars 361 to 365

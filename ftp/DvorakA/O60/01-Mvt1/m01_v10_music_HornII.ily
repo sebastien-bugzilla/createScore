@@ -12,13 +12,13 @@ musicHornIIMvtI = \relative c' {
 	c8\pp c4 c c8
 	c8 c4 c c8
 	\repeat volta 2 {
-		c8 c4 c c8
+		\startMeasureCount c8 c4 c c8
 		c8 c4 c c8
 		c8 c4 c c8
 % Bars 6 to 10
 		c8 c4 c c8
-		c8 c4 c c8
-		c8\< c4 c c'8\!
+		c8 c4 c c8 \stopMeasureCount
+		c8\< c4 c c'8\! 
 		cis cis4\f cis8(\> d e)
 		d8\p\> d4 d d8
 % Bars 11 to 15
@@ -59,7 +59,7 @@ musicHornIIMvtI = \relative c' {
 		d g,2~\<
 		g2.~
 		g \mark \default
-		g4\ff^\grandioso r r
+		\tempoXOff #1.5 g4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -153,13 +153,13 @@ musicHornIIMvtI = \relative c' {
 		e2\fz r4
 		R2.*3
 % Bars 161 to 165
-		e4\ff \tuplet 3/2 4 {e8( fis e)} e4~
+		\startMeasureCount e4\ff \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 		e4 \tuplet 3/2 4 {e8( fis e)} e4~
 % Bars 166 to 170
-		e4 \tuplet 3/2 4 {e8( fis e)} e4
+		e4 \tuplet 3/2 4 {e8( fis e)} e4 \stopMeasureCount 
 		cis r a8-. cis-.
 		e4 r a,8-. cis-.
 		e4 r a,8-. c!-.
@@ -305,7 +305,7 @@ musicHornIIMvtI = \relative c' {
 	g2.~
 	g~
 	g2 g4-. \mark \default
-	g2.\fp\>~
+	\tempoXOff #1 \startMeasureCount g2.\fp\>~
 % Bars 316 to 320
 	g~\pp
 	g~
@@ -314,7 +314,7 @@ musicHornIIMvtI = \relative c' {
 	g~
 % Bars 321 to 325
 	g\<
-	g\fz\>
+	\hairpinMinLength #8 g\fz\> \stopMeasureCount
 	a\pp~
 	a
 	c~
@@ -402,13 +402,18 @@ musicHornIIMvtI = \relative c' {
 	aes4\p( des f)
 % Bars 406 to 410
 	c4.(_\dimmarkup bes8 aes4)
-	R2.*14
+	R2.*6
+	
+	
+	
 % Bars 411 to 415
 	
+	
+	\mmrDown R2.*8
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	c,8\pp\< c c4 c8 c
+	c,8-\tweak X-offset #0.5 \pp\< c c4 c8 c
 	c4 c\> e\!
 	a, r r
 	R2.*7
@@ -425,7 +430,7 @@ musicHornIIMvtI = \relative c' {
 	c2.\p~
 	c_\cresc
 	c
-	c\!
+	c\! \mark \default
 	R2.*7
 % Bars 446 to 450
 	
@@ -449,22 +454,22 @@ musicHornIIMvtI = \relative c' {
 	c->
 % Bars 466 to 470
 	g4 g,2~
-	g2.~
+	\startMeasureCount g2.~
 	g~
 	g~
 	g~
 % Bars 471 to 475
 	g~
 	g~
-	g~
+	g~ \stopMeasureCount 
 	g2 r4
-	\clef bass c,,2.~
+	\clef bass \startMeasureCount c,,2.~
 % Bars 476 to 480
 	c~
 	c~
 	c~
 	c~
-	c~
+	c~ \stopMeasureCount
 % Bars 481 to 485
 	c4 r r
 	R2.*3

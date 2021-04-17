@@ -20,7 +20,6 @@ ffmarc=^\markup {\dynamic ff \italic marc.}
 mfp=^\markup {\dynamic mfp}
 rf=^\markup {\dynamic rf}
 pespress=^\markup {\dynamic p \italic espress.}
-pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))
 pplegg=^\markup {\dynamic pp \italic legg.}
 ppdolce=^\markup {\dynamic pp \italic dolce}
 mfcresc=^\markup {\dynamic mf \italic cresc.}

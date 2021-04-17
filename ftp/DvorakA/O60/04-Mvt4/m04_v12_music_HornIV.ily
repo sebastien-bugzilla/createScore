@@ -42,7 +42,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
-	c-. r r2
+	\tempoXOff #1.5 c-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -237,7 +237,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 251 to 255
 	
 	\mark \default
-	ees'2(\p\< \tuplet 3/2 2 {a,4\> bes c\!}
+	ees'2(-\tweak X-offset #-1.5 \p\< \tupletYOff #3 \tuplet 3/2 2 {a,4\> bes c\!}
 	bes4) r r2
 	R1*5
 % Bars 256 to 260
@@ -353,7 +353,7 @@ musicHornIVMvtIV = \relative c' {
 	
 	
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 % Bars 366 to 370
 	R1*12
 % Bars 371 to 375

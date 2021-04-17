@@ -59,7 +59,7 @@ musicHornIVMvtI = \relative c' {
 		e a2\<~
 		a2.~
 		a \mark \default
-		bes4\ff^\grandioso r r
+		\tempoXOff #0.5 bes4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.*6
 % Bars 51 to 55
 		
@@ -115,9 +115,9 @@ musicHornIVMvtI = \relative c' {
 % Bars 106 to 110
 		
 		R2. \mark \default
-		d4(_\pespressD\< a'2)\!
+		\hairpinShorten #3 #-4 d4(_\pespress\< a'2)\!
 		g4.( d8 bes4)\<
-		f'( c'8) r c4-.\>
+		f'( c'8)\! r c4-.\>
 % Bars 111 to 115
 		bes2\! r4 
 		R2.*14
@@ -260,7 +260,7 @@ musicHornIVMvtI = \relative c' {
 	
 	
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	g4\f r r
 % Bars 266 to 270
 	R2.*4
@@ -310,16 +310,16 @@ musicHornIVMvtI = \relative c' {
 	f2.~
 	f~
 	f2 f4-. \mark \default
-	d2.\fp\>~
+	\tempoXOff #0.5 d2.\fp\>~
 % Bars 316 to 320
-	d\pp~
+	d-\tweak X-offset #0.5 \pp~
 	d~
 	d~
 	d~
 	d~
 % Bars 321 to 325
 	d\<
-	d\fz\>
+	\hairpinShorten #0 #-2 d\fz\>
 	ees\pp~
 	ees
 	ees~
@@ -350,7 +350,7 @@ musicHornIVMvtI = \relative c' {
 % Bars 356 to 360
 	c2\ff c4\fz~
 	c c2\fz
-	c2\fz c4~
+	c2\fz c4~\fz
 	c f,2\fz \mark \default
 	f4-. r r
 % Bars 361 to 365

@@ -12,12 +12,12 @@ musicHornIMvtI = \relative c'' {
 	g8\pp g4 g g8
 	g8 g4 g g8
 	\repeat volta 2 {
-		g8 g4 g g8
+		\startMeasureCount g8 g4 g g8
 		g8 g4 g g8
 		g8 g4 g g8
 % Bars 6 to 10
 		g8 g4 g g8
-		g8 g4 g g8
+		g8 g4 g g8 \stopMeasureCount
 		g8\< g4 g e'8\!
 		e e4\f e8(\> f g)
 		f8\p\> f4 f f8
@@ -62,7 +62,7 @@ musicHornIMvtI = \relative c'' {
 		fis g2~\<
 		g2.~
 		g \mark \default
-		g4\ff^\grandioso r r
+		g4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -324,7 +324,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 331 to 335
 	c~
 	c
-	cis(^\dimmarkup
+	cis(_\dimmarkup
 	d4)\p f2\>~
 	f2.
 % Bars 336 to 340
@@ -396,9 +396,11 @@ musicHornIMvtI = \relative c'' {
 	des4\p( f aes)
 % Bars 406 to 410
 	ees4.(_\dimmarkup des8 c4)
-	R2.*9
+	R2.*6
 % Bars 411 to 415
 	
+	
+	\tempoXOff #-1 \mmrDown R2.*3
 % Bars 416 to 420
 	g8(\p^\solo b g'4 f)
 	e2( d4)
@@ -446,22 +448,22 @@ musicHornIMvtI = \relative c'' {
 	fis->
 % Bars 466 to 470
 	g4 g,2~
-	g2.~
+	\startMeasureCount g2.~
 	g~
 	g~
 	g~
 % Bars 471 to 475
 	g~
 	g~
-	g~
+	g~ \stopMeasureCount
 	g2 r4
-	c,2.~
+	\startMeasureCount c,2.~
 % Bars 476 to 480
 	c~
 	c~
 	c~
 	c~
-	c~
+	c~ \stopMeasureCount
 % Bars 481 to 485
 	c4 r r
 	R2.*3

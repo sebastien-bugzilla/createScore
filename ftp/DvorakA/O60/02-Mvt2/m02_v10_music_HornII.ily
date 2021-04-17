@@ -37,7 +37,7 @@ musicHornIIMvtII = \relative c'' {
 	f8 r r4
 	R2*2
 	\bar "||" \mark \default
-	r4 e,\pp--
+	\tempoXOff #1.2 r4 e,-\tweak X-offset #-3 \pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -109,7 +109,7 @@ musicHornIIMvtII = \relative c'' {
 % Bars 101 to 105
 	r8 c'\f a des->~
 	des4_\dimmarkup( c
-	bes\p\> g\!)
+	\hairpinShorten #0 #-2 bes\p\> g\!)
 	aes8\ff-. r r4
 	r8 c-.-> g-.-> c->~
 % Bars 106 to 110
@@ -119,7 +119,7 @@ musicHornIIMvtII = \relative c'' {
 	e!) cis-.-> fis,-.-> fis'->~
 	fis cis-.-> fis,-.-> fis'->~
 % Bars 111 to 115
-	fis dis-.-> gis,-.-> fis'->( \mark \default
+	fis dis-.-> gis,-.-> fis'->( \markYoffset #4.5 \mark \default
 	dis) r r4
 	R2*10
 	
@@ -148,7 +148,7 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 	
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	r16 c,8\pp c16 r c8 d16
 % Bars 141 to 145
 	r d8 d16 r e8 e16
@@ -184,14 +184,14 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	f8\pp f4 f8~
+	\tempoXOff #1.2 f8\pp f4 f8~
 	f f(\< g gis\!
 % Bars 171 to 175
 	a) f4\pp f8~
 	f f(\< g gis\!
 	a) f4\p f8~
 	f f(\< g gis\!
-	a) c,4\mf\< c8\!~
+	a) \hairpinShorten #0 #-2 c,4\mf\< c8\!~
 % Bars 176 to 180
 	c c4\f c8~
 	c r r4
@@ -221,5 +221,5 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	\ni R2\fermataMarkup \bar "|."
 }

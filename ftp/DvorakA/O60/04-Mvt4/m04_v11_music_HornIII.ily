@@ -42,7 +42,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	d1-^\ff~
 	d2. d4-. \mark \default
-	e-. r r2
+	\markYoffset #4.5 e-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -61,7 +61,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 66 to 70
 	d\p r
 	R1*2
-	\mark \default
+	\markYoffset #4.5 \mark \default
 	g4\p r g r
 	g r r2
 % Bars 71 to 75
@@ -237,7 +237,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	g'2(\p\< \tuplet 3/2 2 {c,4\> d ees\!}
+	\hairpinShorten #0 #-1 g'2(-\tweak X-offset #-1 \p\< \tuplet 3/2 2 { \hairpinShorten #1 #0 c,4\> d ees\!}
 	d4) r r2
 	R1*5
 % Bars 256 to 260
