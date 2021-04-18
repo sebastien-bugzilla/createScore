@@ -124,8 +124,10 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 23
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII ) {
-		\tempo \markup { \medium \italic \column { \lower #1 "un poco più" "animato." } }
+	\tag #'(
+		floteI floteII trompeteI trompeteII posauneI posauneII posauneIII tuba
+	) {
+		\tempo \markup { \medium \italic \center-column { \lower #1 "un poco più" "animato." } }
 	}
 	\tag #'(
 		oboeI oboeII klarinetteI klarinetteII fagottI fagottII hornI hornII 
@@ -133,16 +135,14 @@ tempiPartMvtI = {
 	) {
 		\tempo \markup { \medium \italic "un poco più animato." }
 	}
-	\tag #'(trompeteI trompeteII) {
-		\tempo \markup { \medium \italic \center-column { \lower #1 "un poco" "più animato"}}
-	}
 	s2.*26
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 49
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo "Tempo I." 
 	}
@@ -152,7 +152,8 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup { \medium \italic "un poco animato." }
 	}
@@ -162,7 +163,8 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup { \medium \italic "tranquillo." }
 	}
@@ -172,7 +174,8 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo "Più tranquillo." 
 	}
@@ -182,9 +185,13 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII
 	) {
 		\tempo "Poco animato."
+	}
+	\tag #'(tuba) {
+		\tempo \markup {\medium \italic "poco animato" }
 	}
 	s2.*77
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -192,7 +199,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII fagottI  fagottII hornII hornIII hornIV
-		trompeteI trompeteII
+		trompeteI trompeteII posauneI posauneII posauneIII tuba
 	) {
 		\tempo "Poco tranquillo."
 	}
@@ -208,7 +215,8 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup { \medium \italic "accelerando" }
 	}
@@ -216,7 +224,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 532
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(floteI floteII oboeI trompeteI trompeteII) {
+	\tag #'(floteI floteII oboeI trompeteI trompeteII posauneI) {
 		\tempo \markup { \medium \italic "poco sosten." }
 	}
 	\tag #'(
@@ -225,13 +233,17 @@ tempiPartMvtI = {
 	) {
 		\tempo \markup { \medium \italic "poco sostenuto" }
 	}
+	\tag #'(posauneII posauneIII tuba) {
+		\tempo \markup { \medium \italic "poco sost." }
+	}
 	s2.*11
 	%%%%%%%%%%%%%%%%%%%%%%
 	% bar 543
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup { \medium \italic "in tempo" }
 	}
@@ -442,7 +454,7 @@ tempiPartMvtIV = {
 	\tag #'(floteII) {
 		\tempo \markup {\medium \italic "accelerando" }
 	}
-	\tag #'(trompeteI trompeteII) {
+	\tag #'(trompeteI trompeteII posauneI posauneII posauneIII tuba) {
 		\tempo \markup {\medium \italic \center-column { \lower #1 "accelerando" "poco a poco" } }
 	}
 	s1*24
@@ -451,7 +463,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo "Tempo I."
 	}
@@ -464,7 +477,8 @@ tempiPartMvtIV = {
 	}
 	\tag #'(
 		floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII hornI
-		hornII hornIII hornIV trompeteI trompeteII
+		hornII hornIII hornIV trompeteI trompeteII posauneI posauneII posauneIII
+		tuba
 	) {
 		\tempo \markup {\medium \italic "accelerando poco a poco" }
 	}
@@ -474,7 +488,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo "Poco sostenuto."
 	}
@@ -484,7 +499,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup {\medium \italic "ritard." }
 	}
@@ -494,7 +510,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII trompeteI trompeteII
+		hornI hornII hornIII trompeteI trompeteII posauneI posauneII posauneIII
+		tuba
 	) {
 		\tempo \markup {\medium \italic "in tempo" }
 	}
@@ -504,11 +521,11 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornIII hornIV trompeteI trompeteII
+		hornIII hornIV trompeteI trompeteII posauneI posauneIII tuba
 	) {
 		\tempo \markup {\medium \italic "accelerando poco a poco" }
 	}
-	\tag #'(hornI hornII) {
+	\tag #'(hornI hornII posauneII) {
 		\tempo \markup {\medium \italic \column {\lower #1 "accelerando" "poco a poco"}}
 	}
 	s1*106
@@ -517,7 +534,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo "Presto."
 	}
@@ -527,7 +545,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup {\medium \italic "ritard." }
 	}
@@ -537,7 +556,8 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	\tag #'(
 		floteI floteII oboeI oboeII klarinetteI klarinetteII fagottI fagottII
-		hornI hornII hornIII hornIV trompeteI trompeteII
+		hornI hornII hornIII hornIV trompeteI trompeteII posauneI posauneII
+		posauneIII tuba
 	) {
 		\tempo \markup {\medium \italic "in tempo" }
 	}

@@ -10,11 +10,14 @@ musicPosauneIMvtIV = \relative c'' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*29
+	\mmrLength #22 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*16
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -440,7 +443,7 @@ musicPosauneIMvtIV = \relative c'' {
 	r d r cis
 	r b r a \mark \default
 % Bars 521 to 525
-	e2^\ten r
+	e2-\tweak X-offset #1 ^\ten r
 	e^\ten r
 	g^\ten r
 	g^\ten r

@@ -34,7 +34,7 @@ musicTubaMvtI = \relative c {
 			\ni \clef treble R2.
 			R \no
 		r4 r } \clef bass a-.\ff \mark \default
-		d-.^\grandioso r r
+		\tempoXOff #1.2 d-._\grandioso r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -49,11 +49,11 @@ musicTubaMvtI = \relative c {
 		c2-^( b8 a)
 		g2 r4
 % Bars 61 to 65
-		R2.*4
+		R2.*47
 		
 		
 		
-		R2.*43
+		
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -73,11 +73,15 @@ musicTubaMvtI = \relative c {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*32
+		R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
+		
+		
+		
+		
+		\mmrLength #16 R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -251,7 +255,7 @@ musicTubaMvtI = \relative c {
 	a8 r e'-. cis-. a4-. \mark \default
 	d-. r r
 % Bars 316 to 320
-	R2.*38
+	R2.*20
 % Bars 321 to 325
 	
 % Bars 326 to 330
@@ -259,7 +263,7 @@ musicTubaMvtI = \relative c {
 % Bars 331 to 335
 	
 % Bars 336 to 340
-	
+	\mmrLength #15 R2.*18
 % Bars 341 to 345
 	
 % Bars 346 to 350
@@ -355,7 +359,7 @@ musicTubaMvtI = \relative c {
 	bes->
 	bes->
 % Bars 466 to 470
-	a2.\f~
+	\startMeasureCount a2.\f~
 	a~
 	a~
 	a~
@@ -363,15 +367,15 @@ musicTubaMvtI = \relative c {
 % Bars 471 to 475
 	a~
 	a~
-	a~
+	a~ \stopMeasureCount
 	a2 d,4\fz~
-	d2.~
+	\startMeasureCount d2.~
 % Bars 476 to 480
 	d~
 	d~
 	d~
 	d~
-	d~
+	d~ \stopMeasureCount 
 % Bars 481 to 485
 	d4 r r
 	R2.*5

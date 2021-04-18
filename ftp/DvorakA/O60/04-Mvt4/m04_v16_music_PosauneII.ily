@@ -10,11 +10,14 @@ musicPosauneIIMvtIV = \relative c' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*29
+	\mmrLength #22 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*16
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -36,7 +39,7 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 36 to 40
 	a1\f~
 	a2. a4-. \mark \default
-	a-. r r2
+	\tempoXOff #1 a-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -248,7 +251,7 @@ musicPosauneIIMvtIV = \relative c' {
 	f-> c'4-. c-.
 	c-. c-. c-. c-.
 % Bars 286 to 290
-	<<a1 {s4\< s s s\!}>>
+	<<a1 {\hairpinShorten #0 #-2 s4\< s s s\!}>>
 	b r a\ff r
 	R1*5
 % Bars 291 to 295
@@ -449,20 +452,20 @@ musicPosauneIIMvtIV = \relative c' {
 	r d r cis
 	r b r a \mark \default
 % Bars 521 to 525
-	b2^\ten r
+	b2-\tweak X-offset #0.5 ^\ten r
 	b^\ten r
 	b^\ten r
 	b^\ten r 
 	cis4 r a2\ff~
 % Bars 526 to 530
 	a2. a4-.
-	a-. a-. a-. a-.
+	\startMeasureCount a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 % Bars 531 to 535
 	a-. a-. a-. a-.
-	a-. a-. a-. a\ff
+	a-. a-. a-. a\ff \stopMeasureCount
 	d2->_\pesante a->
 	a-> e->
 	fis2.-> fis4

@@ -10,11 +10,14 @@ musicPosauneIIIMvtIV = \relative c {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*24
+	\mmrLength #22 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -22,11 +25,11 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	d1->\ff~
+	d1->\ff^~
 % Bars 26 to 30
-	d~
-	d~
-	d~
+	d^~
+	d^~
+	d^~
 	d2. r4
 	R1*5
 % Bars 31 to 35
@@ -38,7 +41,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 36 to 40
 	e-. cis-. a-. g'-.
 	e-. cis-. a-. a'-. \mark \default
-	d,-. r r2
+	\tempoXOff #1 d,-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -256,7 +259,7 @@ musicPosauneIIIMvtIV = \relative c {
 	f-> a4-. g-.
 	a-. g-. a-. g-.
 % Bars 286 to 290
-	<<f1 {s4\< s s s\!}>>
+	<<f1 {\hairpinShorten #0 #-1 s4\< s s s\!}>>
 	e,4 r a\ff r
 	R1*5
 % Bars 291 to 295
@@ -461,7 +464,7 @@ musicPosauneIIIMvtIV = \relative c {
 	b r a r
 	g r fis r \mark \default
 % Bars 521 to 525
-	g2^\ten r
+	g2-\tweak X-offset #1 ^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

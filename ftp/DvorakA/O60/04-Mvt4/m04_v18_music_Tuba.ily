@@ -10,11 +10,14 @@ musicTubaMvtIV = \relative c, {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*24
+	\mmrLength #22 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -34,7 +37,7 @@ musicTubaMvtIV = \relative c, {
 % Bars 36 to 40
 	
 	r2 r4 a'\f-. \mark \default
-	d-. r r2
+	\tempoXOff #1 d-. r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -295,7 +298,7 @@ musicTubaMvtIV = \relative c, {
 % Bars 346 to 350
 	
 % Bars 351 to 355
-	R1*7
+	
 % Bars 356 to 360
 	
 	
@@ -445,7 +448,7 @@ musicTubaMvtIV = \relative c, {
 	b r a r
 	g r fis r \mark \default
 % Bars 521 to 525
-	g2^\ten r
+	g2-\tweak X-offset #1 ^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

@@ -21,6 +21,7 @@
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v15_music_PosauneI.ily"
@@ -67,7 +68,7 @@
 				\namePosauneIMvtI \musicPosauneIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(posauneI) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -92,7 +93,7 @@
 				\namePosauneIMvtIV \musicPosauneIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(posauneI) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -117,7 +118,7 @@
 				\namePosauneIIMvtI \musicPosauneIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(posauneII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -142,7 +143,7 @@
 				\namePosauneIIMvtIV \musicPosauneIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(posauneII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -167,7 +168,7 @@
 				\namePosauneIIIMvtI \musicPosauneIIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(posauneIII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -192,7 +193,7 @@
 				\namePosauneIIIMvtIV \musicPosauneIIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(posauneIII) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -217,7 +218,7 @@
 				\nameTubaMvtI \musicTubaMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(tuba) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -242,7 +243,7 @@
 				\nameTubaMvtIV \musicTubaMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(tuba) \tempiPartMvtIV
 			}
 		>>
 		\header {

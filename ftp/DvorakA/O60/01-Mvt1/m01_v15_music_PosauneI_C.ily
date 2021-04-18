@@ -308,9 +308,13 @@ musicPosauneIMvtI = \relative c' {
 	fis-. r r
 	fis-. r r
 	fis-. r r
-	R2.*14
+	R2.*5
 % Bars 441 to 445
 	
+	
+	
+	\mark \default
+	R2.*9
 % Bars 446 to 450
 	
 % Bars 451 to 455

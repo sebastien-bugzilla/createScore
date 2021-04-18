@@ -759,7 +759,7 @@ cueVoiceTrompeteIIMvtIV = \relative c {
 cueVoicePosauneIMvtI = \relative c {
 	R2.*45
 	% bar 46 - 48
-	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	gis''''4-\tweak X-offset #-4.8 ^\markup {Viol.} a8:16 g: e: cis:
 	a: e: cis: e: a: e:
 	cis':[ a: e': cis:] r4
 	R2.*110
@@ -814,7 +814,7 @@ cueVoicePosauneIMvtIV = \relative c {
 cueVoicePosauneIIMvtI = \relative c {
 	R2.*45
 	% bar 46 - 48
-	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	gis''''4-\tweak X-offset #-4.8 ^\markup {Viol.} a8:16 g: e: cis:
 	a: e: cis: e: a: e:
 	cis':[ a: e': cis:] r4
 	R2.*110
@@ -834,7 +834,7 @@ cueVoicePosauneIIMvtI = \relative c {
 	b'8 g16^( a g8) e^. e^. e'^.
 	R2.*85
 	% bar 354 - 355
-	g,4^\markup {Viol.} e' g,
+	g,4-\tweak X-offset #-1 ^\markup {Viol.} e' g,
 	e' g, e'
 	R2.*73
 	% bar 429 - 431
@@ -870,7 +870,7 @@ cueVoicePosauneIIMvtIV = \relative c {
 cueVoicePosauneIIIMvtI = \relative c {
 	R2.*45
 	% bar 46 - 48
-	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	gis''''4-\tweak X-offset #-4.8 ^\markup {Viol.} a8:16 g: e: cis:
 	a: e: cis: e: a: e:
 	cis':[ a: e': cis:] r4
 	R2.*110
@@ -917,7 +917,7 @@ cueVoicePosauneIIIMvtIV = \relative c {
 cueVoiceTubaMvtI = \relative c {
 	R2.*45
 	% bar 46 - 48
-	gis''''4^\markup {Viol.} a8:16 g: e: cis:
+	gis''''4-\tweak X-offset #-4.8 ^\markup {Viol.} a8:16 g: e: cis:
 	a: e: cis: e: a: e:
 	cis':[ a: e': cis:] r4
 	R2.*110

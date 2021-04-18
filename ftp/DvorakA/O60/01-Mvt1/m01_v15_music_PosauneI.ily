@@ -34,7 +34,7 @@ musicPosauneIMvtI = \relative c' {
 			\ni \clef treble R2.
 			R \no
 		r4 r } \clef alto cis-.\ff \mark \default
-		d-.^\grandioso r r
+		\tempoXOff #1.3 d-._\grandioso r r
 		r r a-.\f
 % Bars 51 to 55
 		d2-^ r4
@@ -69,11 +69,15 @@ musicPosauneIMvtI = \relative c' {
 % Bars 106 to 110
 		
 		\mark \default
-		R2.*32
+		R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
+		
+		
+		
+		
+		\mmrLength #16 R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -136,12 +140,12 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	a2.\ppp~
+	\startMeasureCount a2.\ppp~
 	a~
 % Bars 191 to 195
 	a
 	a~
-	a~
+	a~ \stopMeasureCount
 	a4 r r
 	R2.*20
 % Bars 196 to 200
@@ -204,7 +208,7 @@ musicPosauneIMvtI = \relative c' {
 	R2.
 % Bars 266 to 270
 	\cueDuring #"cueVoicePosauneIMvtI" #DOWN {
-		\ni \clef treble \mmrPos #-4 R2.
+		\ni \clef treble \mmrPos #-8 R2.
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no \clef alto
 	}
@@ -249,7 +253,7 @@ musicPosauneIMvtI = \relative c' {
 	e'2-^ a,4-.
 	g'-> e-> cis->
 	a8-. g'-. e-. cis-. a-. cis-. \mark \default
-	d4-. r r
+	\tempoXOff #1 d4-. r r
 % Bars 316 to 320
 	R2.*38
 % Bars 321 to 325
@@ -326,9 +330,13 @@ musicPosauneIMvtI = \relative c' {
 	fis-. r r
 	fis-. r r
 	fis-. r r
-	R2.*14
+	R2.*5
 % Bars 441 to 445
 	
+	
+	
+	\mark \default
+	R2.*9
 % Bars 446 to 450
 	
 % Bars 451 to 455
@@ -409,15 +417,16 @@ musicPosauneIMvtI = \relative c' {
 	fis~
 % Bars 526 to 530
 	fis4\p r r
-	R2.*17
+	R2.*5
 % Bars 531 to 535
 	
+	\mmrLength #14 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545
 	
 	
-	
+	\mmrLength #12 R2.*1
 	\cueDuring #"cueVoicePosauneIMvtI" #UP {
 		\ni \clef treble R2. \no
 	r4 r } \clef alto e\f->
