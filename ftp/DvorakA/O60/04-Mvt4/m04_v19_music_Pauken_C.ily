@@ -440,7 +440,7 @@ musicPaukenMvtIV = \relative c {
 	
 	
 % Bars 551 to 555
-	d1\ff\startTrillSpan
+	d1-^\ff\startTrillSpan
 	d
 	d
 	d2. a4\stopTrillSpan-.

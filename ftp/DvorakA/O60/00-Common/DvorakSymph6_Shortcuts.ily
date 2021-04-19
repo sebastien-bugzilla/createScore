@@ -183,6 +183,15 @@ markYoffset = #(define-music-function
 	#}
 )
 
+trillSpanPadding = #(define-music-function
+	(padding)
+	(number?)
+	% function to create a trill spanner with :
+	%	- specified padding to avoid overlap
+	#{
+		\once \override TrillSpanner.bound-details.right.padding = #padding
+	#}
+)
 
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941

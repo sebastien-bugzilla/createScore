@@ -10,11 +10,14 @@ musicPaukenMvtIV = \relative c {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*24
+	\mmrLength #22 R1*13
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	\mmrLength #22 R1*11
 % Bars 16 to 20
 	
 % Bars 21 to 25
@@ -22,7 +25,7 @@ musicPaukenMvtIV = \relative c {
 	
 	
 	
-	d1\ff\startTrillSpan
+	\startMeasureCount d1\ff\startTrillSpan
 % Bars 26 to 30
 	d
 	d
@@ -34,11 +37,11 @@ musicPaukenMvtIV = \relative c {
 	d
 	d
 	d
-	d
+	d \stopMeasureCount
 % Bars 36 to 40
 	a\startTrillSpan
 	a\stopTrillSpan \mark \default
-	d4\ff r r a-.
+	\tempoXOff #1.2 d4\ff r r a-.
 	d-. r r2
 	r2 r4 a
 % Bars 41 to 45
@@ -104,15 +107,15 @@ musicPaukenMvtIV = \relative c {
 	
 % Bars 121 to 125
 	r2 a2\f\startTrillSpan
-	a1
+	\startMeasureCount a1
 	a
 	a
 	a
 % Bars 126 to 130
 	a
 	a
-	a\stopTrillSpan
-	d4 r r2
+	a \stopMeasureCount
+	d4\stopTrillSpan r r2
 	R1*6
 % Bars 131 to 135
 	
@@ -150,7 +153,7 @@ musicPaukenMvtIV = \relative c {
 	
 % Bars 186 to 190
 	
-	a1\pp\startTrillSpan
+	\trillSpanPadding #3 a1\pp\startTrillSpan
 	a
 	a
 	a \mark \default
@@ -216,7 +219,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 281 to 285
 	
 % Bars 286 to 290
-	<< a1\startTrillSpan {s4\f\< s s s\!\stopTrillSpan}>>
+	<< a1\startTrillSpan {\hairpinShorten #0 #-2 s4-\tweak X-offset #-1 \f\< s s s\!\stopTrillSpan}>>
 	d4 r a2\ff\startTrillSpan
 	a1
 	a
@@ -225,18 +228,18 @@ musicPaukenMvtIV = \relative c {
 	a2\stopTrillSpan a4 r8 a
 	d4 a d r8 a
 	d4 a d r8 a
-	a1\ff\startTrillSpan
+	\startMeasureCount a1\ff\startTrillSpan
 	a
 % Bars 296 to 300
 	a
 	a
 	a
 	a
-	a
+	a \stopMeasureCount
 % Bars 301 to 305
 	a2\stopTrillSpan d\trill
 	a1\trill
-	a2-> a-> \mark \default
+	a2-> a-> \markXOffset #-0.3 \mark \default
 	a1\ff-\tweak X-offset #3 _\dimin\startTrillSpan
 	a
 % Bars 306 to 310
@@ -417,13 +420,13 @@ musicPaukenMvtIV = \relative c {
 	a4 r a2\ff\startTrillSpan
 % Bars 526 to 530
 	a2. a4->\stopTrillSpan
-	a-> a-> a-> a-> 
+	\startMeasureCount a-> a-> a-> a-> 
 	a-> a-> a-> a-> 
 	a-> a-> a-> a-> 
 	a-> a-> a-> a-> 
 % Bars 531 to 535
 	a-> a-> a-> a-> 
-	a-> a-> a-> a-> 
+	a-> a-> a-> a-> \stopMeasureCount 
 	d r r2
 	R1*9
 % Bars 536 to 540
@@ -441,7 +444,7 @@ musicPaukenMvtIV = \relative c {
 	
 	
 % Bars 551 to 555
-	d1\ff\startTrillSpan
+	d1-^\ff\startTrillSpan
 	d
 	d
 	d2. a4\stopTrillSpan-.

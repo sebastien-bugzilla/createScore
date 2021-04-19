@@ -9,7 +9,7 @@ musicPaukenMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	R2*34
+	R2*28
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -20,6 +20,9 @@ musicPaukenMvtII = \relative c {
 	
 % Bars 26 to 30
 	
+	
+	
+	\mmrLength #15 R2*6
 % Bars 31 to 35
 	
 	
@@ -66,13 +69,13 @@ musicPaukenMvtII = \relative c {
 	b2\ff\startTrillSpan
 	f'\startTrillSpan
 % Bars 106 to 110
-	b,\startTrillSpan
-	b\startTrillSpan
-	b\startTrillSpan
-	b\startTrillSpan
-	b\startTrillSpan
+	\startMeasureCount b,\fz\startTrillSpan
+	b\fz\startTrillSpan
+	b\fz\startTrillSpan
+	b\fz\startTrillSpan
+	b\fz\startTrillSpan
 % Bars 111 to 115
-	b\startTrillSpan \mark \default
+	b\fz\startTrillSpan \stopMeasureCount \mark \default
 	f'8\stopTrillSpan r r4
 	R2*27
 % Bars 116 to 120
@@ -105,11 +108,11 @@ musicPaukenMvtII = \relative c {
 		\ni \clef treble R2
 		R
 % Bars 166 to 170
-		\mmrPos #-6 R
 		R
-		\mmrPos #-6 R \no \clef bass \mark \default
+		\mmrPos #-6 R
+		\mmrPos #-9 R \no \clef bass \mark \default
 	}
-	b,8\pp^\solo f'16-. f-. f8-. f-.
+	\tempoXOff #1.1 b,8\pp-\tweak X-offset #1.1 ^\solo f'16-. f-. f8-. f-.
 	b, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
 	b, f'16\pp f f8 f

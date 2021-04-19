@@ -21,6 +21,7 @@
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part08_Pauken.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v19_music_Pauken.ily"
@@ -59,7 +60,7 @@
 				\namePaukenMvtI \musicPaukenMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(pauken) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -84,7 +85,7 @@
 				\namePaukenMvtII \musicPaukenMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(pauken) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -109,11 +110,11 @@
 				\namePaukenMvtIII \musicPaukenMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(pauken) \tempiPartMvtIII
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\fill-line {
 					\fontsize #4
@@ -134,7 +135,7 @@
 				\namePaukenMvtIV \musicPaukenMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(pauken) \tempiPartMvtIV
 			}
 		>>
 		\header {

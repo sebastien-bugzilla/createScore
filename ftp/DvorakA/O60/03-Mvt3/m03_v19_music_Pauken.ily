@@ -99,7 +99,7 @@ musicPaukenMvtIII = \relative c {
 % Bars 126 to 130
 		a2.\f\startTrillSpan
 		a\stopTrillSpan
-		r8 d8\ff-> d4-> r8 d->
+		r8 d8_\ffgrandioso-> d4-> r8 d->
 		d4-> r8 d-> d4->
 		r8 d d4 r8 d
 % Bars 131 to 135
@@ -136,9 +136,9 @@ musicPaukenMvtIII = \relative c {
 	d4 r8 d_\dimmarkup d4
 % Bars 151 to 155
 	r8 d d4 r8 d
-	d4 r8 d d4 \bar "||" \key c \major
+	d4 r8 d d4 \bar ".|:-||" \key c \major
 	\repeat volta 2 {
-		d4\pp r r
+		\time 3/4 \trio d4\pp r r
 		R2.*43
 % Bars 156 to 160
 	
@@ -166,7 +166,7 @@ musicPaukenMvtIII = \relative c {
 		}
 	}
 % Bars 201 to 205
-	d2.\pp\startTrillSpan
+	\startMeasureCount d2.\pp\startTrillSpan
 	d
 	d
 	d
@@ -174,8 +174,8 @@ musicPaukenMvtIII = \relative c {
 % Bars 206 to 210
 	d
 	d
-	d\stopTrillSpan
-	d4 r r
+	d \stopMeasureCount
+	d4\stopTrillSpan r r
 	R2.*42
 % Bars 211 to 215
 	
@@ -309,7 +309,7 @@ musicPaukenMvtIII = \relative c {
 	a2.\f\startTrillSpan
 	a
 % Bars 411 to 415
-	r8\stopTrillSpan d-> d4-> r8 d->
+	r8\stopTrillSpan d->_\ffgrandioso d4-> r8 d->
 	d4-> r8 d-> d4->
 	r8 d d4 r8 d
 	d4 r8 d d4

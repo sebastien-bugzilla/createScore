@@ -64,13 +64,13 @@ musicPaukenMvtII = \relative c {
 	b2\ff\startTrillSpan
 	f'\startTrillSpan
 % Bars 106 to 110
-	b,\startTrillSpan
-	b\startTrillSpan
-	b\startTrillSpan
-	b\startTrillSpan
-	b\startTrillSpan
+	b,\fz\startTrillSpan
+	b\fz\startTrillSpan
+	b\fz\startTrillSpan
+	b\fz\startTrillSpan
+	b\fz\startTrillSpan
 % Bars 111 to 115
-	b\startTrillSpan \mark \default
+	b\fz\startTrillSpan \mark \default
 	f'8\stopTrillSpan r r4
 	R2*27
 % Bars 116 to 120

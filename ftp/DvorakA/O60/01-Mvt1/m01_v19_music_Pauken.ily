@@ -19,7 +19,7 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 16 to 20
 		
-		d2.\pp\<\startTrillSpan
+		\hairpinShorten #1 #1 d2.\pp\<\startTrillSpan
 		d\startTrillSpan
 		d2\>\startTrillSpan d8-.\stopTrillSpan\! r
 		R2.*23
@@ -42,7 +42,7 @@ musicPaukenMvtI = \relative c {
 		c'4\rest } \clef bass a,2\ff\startTrillSpan
 		a2.
 		<< a2. {s4 s s\stopTrillSpan}>> \mark \default
-		d4-. r r
+		\tempoXOff #1.3 d4-. r r
 		R2.*8
 % Bars 51 to 55
 	
@@ -76,11 +76,15 @@ musicPaukenMvtI = \relative c {
 	
 % Bars 106 to 110
 		\mark \default
-		R2.*32
+		R2.*12
 % Bars 111 to 115
 	
 % Bars 116 to 120
-	
+		
+		
+		
+		
+		\mmrLength #16 R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -122,7 +126,7 @@ musicPaukenMvtI = \relative c {
 				R2. \no
 			}
 			R2. \clef bass
-			a2.\pp\startTrillSpan
+			\startMeasureCount a2.\pp\startTrillSpan
 			a
 % Bars 181 to 185
 			a
@@ -131,7 +135,7 @@ musicPaukenMvtI = \relative c {
 			a
 			a
 % Bars 186 to 190
-			a
+			a \stopMeasureCount
 			d\startTrillSpan
 			<<d {s4 s s\stopTrillSpan}>>
 			d8 r r4 r
@@ -147,7 +151,7 @@ musicPaukenMvtI = \relative c {
 	R2.*3
 	
 	
-	d2.\ppp\startTrillSpan
+	\startMeasureCount d2.\ppp\startTrillSpan
 % Bars 186 to 190
 	d
 	d
@@ -157,7 +161,7 @@ musicPaukenMvtI = \relative c {
 % Bars 191 to 195
 	d
 	d
-	<<d {s4 s s\stopTrillSpan}>>
+	<<d {s4 s s\stopTrillSpan}>> \stopMeasureCount
 	d4 r r
 	R2.*20
 % Bars 196 to 200
@@ -350,18 +354,18 @@ musicPaukenMvtI = \relative c {
 	d_\crescmarkup
 	d2 a4\startTrillSpan
 	a2.
-	d\ff\startTrillSpan
+	\startMeasureCount d\ff\startTrillSpan
 	d
 % Bars 456 to 460
 	d
 	d
 	d
-	<< d {s4 s s\stopTrillSpan}>>
+	<< d {s4 s s\stopTrillSpan}>> \stopMeasureCount
 	d4 r r
 % Bars 461 to 465
 	R2.*5
 % Bars 466 to 470
-	a2.\f\startTrillSpan
+	\startMeasureCount a2.\f\startTrillSpan
 	a
 	a
 	a
@@ -369,15 +373,15 @@ musicPaukenMvtI = \relative c {
 % Bars 471 to 475
 	a
 	a
-	a
+	a \stopMeasureCount
 	a2 d4\startTrillSpan
-	d2.
+	\startMeasureCount d2.
 % Bars 476 to 480
 	d
 	d
 	d
 	d
-	<<d {s4 s s\stopTrillSpan}>>
+	<<d {s4 s s\stopTrillSpan}>> \stopMeasureCount
 % Bars 481 to 485
 	d4 r r
 	R2.*5
@@ -417,7 +421,7 @@ musicPaukenMvtI = \relative c {
 	r4 r r8 d16\f d
 % Bars 521 to 525
 	d4 r r
-	d2.\startTrillSpan
+	\startMeasureCount d2.\startTrillSpan
 	d
 	d\>
 	d
@@ -428,9 +432,9 @@ musicPaukenMvtI = \relative c {
 	d
 	d
 % Bars 531 to 535
-	<< d {s4 s s\stopTrillSpan}>>
+	<< d {s4 s s\stopTrillSpan}>> \stopMeasureCount
 	d4 r r
-	R2.*10
+	\mmrLength #17 R2.*10
 % Bars 536 to 540
 	
 % Bars 541 to 545

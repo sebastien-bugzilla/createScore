@@ -30,6 +30,7 @@ partOptions = {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
+		\override TrillSpanner.bound-details.right.padding = #1
 	}
 	\context {
 		\CueVoice

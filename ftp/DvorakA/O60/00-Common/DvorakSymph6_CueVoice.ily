@@ -1002,7 +1002,7 @@ cueVoicePaukenMvtI = \relative c {
 	bes[ a g f! e] r
 	R2.*160
 	% bar 543 - 545
-	d,2^\markup {Bass.} c4
+	d,2-\tweak X-offset #-4 ^\markup {Bass.} c4
 	a8 f g a e4
 	d8 f a4 r
 }
