@@ -151,6 +151,14 @@ tempoXOff = #(define-music-function
 	#}
 )
 
+tempoOSP = #(define-music-function
+	(prio)
+	(number?)
+	#{
+		\once \override Score.MetronomeMark.outside-staff-priority = #prio
+	#}
+)
+
 mmrLength = #(define-music-function
 	(length)
 	(number?)

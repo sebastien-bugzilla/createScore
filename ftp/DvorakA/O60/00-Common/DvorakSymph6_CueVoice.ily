@@ -1092,11 +1092,11 @@ cueVoiceViolinIMvtI = \relative c {
 cueVoiceViolinIMvtII = \relative c {
 	R2*72
 	% bar 73 - 74
-	f'4^\markup {Br.} d8 g
+	f'4-\tweak extra-offset #'(0 . 5.5) _\markup {Br.} d8 g
 	ees c32 d c bes a8 d
 	R2*94
 	% bar 169 - 170
-	r8^\markup {Clar.} d'4( c16 bes)
+	r8_\markup {Clar.} d'4( c16 bes)
 	bes8 r r4
 }
 cueVoiceViolinIMvtIII = \relative c {
@@ -1110,7 +1110,7 @@ cueVoiceViolinIMvtIV = \relative c {
 	\partial 4 r4
 	R1*252
 	% bar 253 - 255
-	f'2^\markup {Viol.II} r4 f
+	f'2-\tweak X-offset #0.8 _\markup {Viol.II} r4 f
 	e2 r4 e
 	ees2 r
 	R1*58

@@ -67,7 +67,7 @@ musicViolinIMvtI = \relative c'' {
 		gis a8:16\< g!: e: cis:
 		a: e: cis: e: a: e:
 		cis': a: e': cis a': a,:\! \mark \default
-		 <d,, d' d'>4\ff^\grandioso\arpeggio r <a' a'>-.
+		 <d,, d' d'>4-\tweak X-offset #0.5 _\ffgrandioso\arpeggio r <a' a'>-.
 		\acciaccatura d,8 <fis' d'>2 r4
 % Bars 51 to 55
 		r r <a, a'>-.
@@ -97,12 +97,12 @@ musicViolinIMvtI = \relative c'' {
 		g'[-> b, g b] a'[-> b,
 		g b] b'[-> b, g b]
 		cis'->[ b, g b] d'->[ b,]
-		dis'4-> r d(\p\<
+		dis'4-> r \hairpinShorten #2 #1  d(\p\<
 		dis2 a4\!
 % Bars 76 to 80
-		gis2)\> e'4(\<
-		eis2\> b4\!
-		ais) r r
+		\hairpinShorten #-2 #2 gis2)\> e'4(\<
+		\hairpinShorten #2 #2 eis2\> b4
+		ais\!) r r
 		R2.*3
 		
 % Bars 81 to 85
@@ -156,13 +156,13 @@ musicViolinIMvtI = \relative c'' {
 % Bars 121 to 125
 		R2.
 		r4 fis2~
-		fis2.~
+		\startMeasureCount fis2.~
 		fis~
 		fis~
 % Bars 126 to 130
 		fis~
 		fis~
-		fis~\<
+		fis~\< \stopMeasureCount
 		fis2(\> g4)\!
 		aes2(_\ppdolce g4)
 % Bars 131 to 135
@@ -427,7 +427,7 @@ musicViolinIMvtI = \relative c'' {
 	e4( g2~\p\>
 	g2.
 % Bars 336 to 340
-	fis8)\pp r r4 r
+	\tempoXOff #2.5 fis8)\pp r r4 r
 	d,2.\fz(
 	cis8) r d4(\< dis)\!
 	gis8-! fis-! eis-! eis-! fis-! gis-! 
@@ -575,7 +575,7 @@ musicViolinIMvtI = \relative c'' {
 	fis2( e4)
 	d8( fis a4 g)
 	fis2( e4)
-	d8( fis g4 fis)
+	\tempoOSP #100 d8( fis g4 fis)
 % Bars 461 to 465
 	e8( gis a4 gis)
 	cis2.:16
@@ -641,7 +641,7 @@ musicViolinIMvtI = \relative c'' {
 	fis-. d-. e-.
 	fis-. d-. e-.
 	d16 a'\ff a a a2:16
-	a2.:
+	\startMeasureCount a2.:
 % Bars 516 to 520
 	a:
 	a:
@@ -649,7 +649,7 @@ musicViolinIMvtI = \relative c'' {
 	a:
 	a:
 % Bars 521 to 525
-	a:
+	a: \stopMeasureCount
 	a2: g8: fis:
 	a2: g8: fis:
 	a2(\> g8 fis)
@@ -675,7 +675,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 541 to 545
 	R2.*2
 	
-	d''2\ff-^ cis4-.
+	\tempoXOff #1.5 d''2\ff-^ cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 <a, e' cis'>->
 % Bar 546

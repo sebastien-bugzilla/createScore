@@ -192,7 +192,7 @@ musicViolinIMvtIII = \relative c''' {
 			<d d'> r r
 		}
 		{
-			q2.\f\>
+			\startMeasureCount q2.\f\>
 		}
 	}
 	q
@@ -201,9 +201,9 @@ musicViolinIMvtIII = \relative c''' {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \stopMeasureCount \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		d'4\pp r r
+		\time 3/4 \trio d'4\pp r r
 		R2.*5
 		
 % Bars 156 to 160
@@ -258,22 +258,22 @@ musicViolinIMvtIII = \relative c''' {
 	a2 fis4)
 	e2( g4
 	b2 e4)
-	d2.\pp~
+	\startMeasureCount d2.\pp~
 	d~
 % Bars 211 to 215
 	d~
 	d~
 	d~
 	d~
-	d
+	d \stopMeasureCount
 % Bars 216 to 220
-	a~
+	\startMeasureCount a~
 	a~
 	a~
 	a~
 	a~
 % Bars 221 to 225
-	a~
+	a~ \stopMeasureCount
 	a4 r r
 	R2.*2
 	
@@ -322,7 +322,7 @@ musicViolinIMvtIII = \relative c''' {
 % Bars 266 to 270
 	b4( a g
 	fis g e)
-	d2.~\pp
+	\startMeasureCount d2.~\pp
 	d~
 	d~
 % Bars 271 to 275
@@ -335,10 +335,10 @@ musicViolinIMvtIII = \relative c''' {
 	d~
 	d~
 	d~
-	d~
+	d~ \stopMeasureCount
 	d4 r r
 % Bars 281 to 285
-	R2.*3
+	\mmrLength #14 R2.*3
 	
 	
 	\acciaccatura a'8( a'2)\p d,4~_\crescmarkup

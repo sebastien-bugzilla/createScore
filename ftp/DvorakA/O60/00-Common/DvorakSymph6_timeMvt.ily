@@ -19,4 +19,12 @@ timeMvtIII = {
 timeMvtIV = {
 	\time 2/2
 	\tempo "Finale. Allegro con spirito"
+	\set Timing.baseMoment = #(ly:make-moment 1/4)
+	\set Timing.beatStructure = 2,2
+	\set Timing.beamExceptions =
+		\beamExceptions { 
+			16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] 16[ 16 16 16] |
+			\tuplet 3/2 4 {8[ 8 8] 8[ 8 8] 8[ 8 8] 8[ 8 8]}
+		}
+
 }
