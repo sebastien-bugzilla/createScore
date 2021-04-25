@@ -1129,20 +1129,20 @@ cueVoiceViolinIIMvtI = \relative c {
 	q8 q4 q q8
 	R2.*176
 	% bar 179_1 - 180_1
-	d'''2(^\markup {Viol.I.} cis4
+	d'''2(-\tweak X-offset #-4 ^\markup {Viol.I.} cis4
 	a8[ fis g a]) r4
 	R2.*10
 	% bar 177_2
-	b,8(^\markup {Viol.I.} d fis2)
+	b,8(_\markup {Viol.I.} d fis2)
 }
 cueVoiceViolinIIMvtII = \relative c {
 	R2*77
 	% bar 78 - 79
-	f''8^\markup {Viol.I} f16_( g) g_( a) a_( c)
+	f''8-\tweak X-offset #-4 ^\markup {Viol.I} f16_( g) g_( a) a_( c)
 	bes4_( c)
 	R2*24
 	% bar 104 - 105
-	r8 f,^\markup {Viol.I} des ges~
+	r8 f,-\tweak X-offset #-4 ^\markup {Viol.I} des ges~
 	ges f r4
 }
 cueVoiceViolinIIMvtIII = \relative c {
@@ -1165,7 +1165,7 @@ cueVoiceViolinIIMvtIV = \relative c {
 	\partial 4 r4 
 	R1*313
 	% bar 314 - 317
-	r2 r4 g''''(^\markup {Fl.}
+	r2 r4 g''''(-\tweak X-offset #-2 ^\markup {Fl.}
 	e d cis b
 	e a, b fis 
 	g e a) r

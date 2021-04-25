@@ -21,6 +21,7 @@
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part10_ViolinII.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v21_music_ViolinII.ily"
@@ -59,7 +60,7 @@
 				\nameViolinIIMvtI \musicViolinIIMvtI
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
+				\keepWithTag #'(violinII) \tempiPartMvtI
 			}
 		>>
 		\header {
@@ -84,7 +85,7 @@
 				\nameViolinIIMvtII \musicViolinIIMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(violinII) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -109,7 +110,7 @@
 				\nameViolinIIMvtIII \musicViolinIIMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(violinII) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -134,7 +135,7 @@
 				\nameViolinIIMvtIV \musicViolinIIMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(violinII) \tempiPartMvtIV
 			}
 		>>
 		\header {

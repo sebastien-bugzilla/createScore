@@ -70,7 +70,7 @@ musicViolinIIMvtII = \relative c' {
 	
 % Bars 51 to 55
 	r8 <g bes>\p\< q q 
-	<e a>2\f\>
+	\hairpinMinLength #6.5 <e a>2\f\>
 	<g bes>8\p r r4
 	R2*4
 	
@@ -98,7 +98,7 @@ musicViolinIIMvtII = \relative c' {
 		\ni R2
 		R \no
 	}
-	bes,16(\p f'8) f16-. d(\pp f8) f16~
+	bes,16(-\tweak X-offset #1 \p f'8) f16-. d(\pp f8) f16~
 % Bars 81 to 85
 	f8 r r4
 	d16(\pp f8) f16-. c( c'8) c16-.
@@ -108,7 +108,7 @@ musicViolinIIMvtII = \relative c' {
 % Bars 86 to 90
 	d,)\p r r4
 	R2*2
-	\mark \default
+	\markXOffset #-0.6 \mark \default
 	r16 <bes d>8\pp q16 r q8 q16
 	r q8 q16 r q8 q16
 % Bars 91 to 95
@@ -129,7 +129,7 @@ musicViolinIIMvtII = \relative c' {
 	R2
 	\cueDuring #"cueVoiceViolinIIMvtII" #UP {
 		\ni R2 \no
-	r8 f-.->\ff_[ } c-.-> f]->~
+	r8 f-.->-\tweak X-offset #-3.3 \ff_[ } c-.-> f]->~
 % Bars 106 to 110
 	f( ees) r4
 	r8 f'->-. bes,->-. bes'->~
@@ -137,14 +137,14 @@ musicViolinIIMvtII = \relative c' {
 	a!) fis-.-> b,->-. b'->~
 	b fis-.-> b,-.-> b'->~
 % Bars 111 to 115
-	b gis-.-> cis,-.-> b'->~ \mark \default
+	b gis-.-> cis,-.-> b'->~ \markYoffset #5 \mark \default
 	b r r4
 	R2
 	r8 f,4\pp f8~
 	f f4 f8~
 % Bars 116 to 120
 	f f4 f8
-	e16( c g g'~ g e c c'~
+	\shape #'((0 . 0)(0 . 0)(0 . 1.5)(0 . -1.5)) Slur e16( c g g'~ g e c c'~
 	c g e e'~ e c a a'
 	fis8) r r4
 	R2
@@ -184,7 +184,7 @@ musicViolinIIMvtII = \relative c' {
 	r8 bes(\p\< c cis)
 % Bars 151 to 155
 	d4\!( f)_\mfz~
-	f8\> ees16( d \acciaccatura f8 ees8. d16)\p
+	f8\> \shape #'((-0.5 . -1.2)(0 . 0)(0 . 0)(0.5 . -1.2)) Slur ees16( d \acciaccatura f8 ees8. d16)\p
 	d8 r r4
 	bes,2\fp(
 	a4.)\> c8(\!
@@ -200,7 +200,7 @@ musicViolinIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	R2
+	\tempoXOff #0.5 R2
 	r8 bes(\p\< c cis\!
 % Bars 171 to 175
 	d)\f r r4
@@ -237,5 +237,5 @@ musicViolinIIMvtII = \relative c' {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	\ni R2\fermataMarkup \bar "|."
 }

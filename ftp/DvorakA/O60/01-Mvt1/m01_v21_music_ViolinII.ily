@@ -65,7 +65,7 @@ musicViolinIIMvtI = \relative c' {
 		q a8:16\< g!: e: cis:
 		a: e: cis: e: a: e:
 		cis': a: e': cis: a': a,:\! \mark \default
-		<a, fis' d'>4\ff\arpeggio^\grandioso r <a' a'>-.
+		<a, fis' d'>4\arpeggio-\tweak X-offset #-1 _\ffgrandioso r <a' a'>-.
 		\acciaccatura d,8 <d' a'>2 r4
 % Bars 51 to 55
 		r r <a a'>-.
@@ -102,9 +102,9 @@ musicViolinIIMvtI = \relative c' {
 		eis2.\>(
 		fis4)\! r r
 		R2.
-		r4 fis'\pp\(( fis,)~
+		r4 fis'\pp( \shape #'((0 . 0)(0 . -1)(0 . -2)(0 . 2)) Slur fis,)(~
 % Bars 81 to 85
-		fis8 e g e b b'\)
+		fis8 e g e b b')
 		fis2.~
 		fis~
 		fis
@@ -165,7 +165,7 @@ musicViolinIIMvtI = \relative c' {
 		c8(\pp ees aes c ees des
 % Bars 131 to 135
 		c aes bes c f, g)
-		ees( aes ees aes f_\crescmarkup aes
+		ees( aes ees aes \textInSlur f_\crescmarkup aes
 		ees g ees g des ees)
 		c( ees aes ees f aes
 		ees g ees g des ees)
@@ -241,7 +241,7 @@ musicViolinIIMvtI = \relative c' {
 				\ni R2. \no
 			}
 			b8(\pp d fis2)~
-			fis2.~
+			\startMeasureCount fis2.~
 			fis~
 % Bars 181 to 185
 			fis~
@@ -249,18 +249,18 @@ musicViolinIIMvtI = \relative c' {
 	}
 	fis~
 	fis~
-	fis
-	b~
+	fis \stopMeasureCount
+	\startMeasureCount b~
 % Bars 186 to 190
 	b~
 	b~
-	b
-	<a a'>\ppp~
+	b \stopMeasureCount
+	\startMeasureCount <a a'>\ppp~
 	q~
 % Bars 191 to 195
 	q~
 	q~
-	q~
+	q~ \stopMeasureCount
 	q4 r r
 	R2.*3
 % Bars 196 to 200
@@ -398,7 +398,7 @@ musicViolinIIMvtI = \relative c' {
 	q2.:16
 	q:
 	q8: g': e: cis: a: a': \mark \default
-	<d,, a' fis'>8 r \repeat tremolo 4 {d16(\fp\> a}
+	\tempoXOff #1 \once \stemDown <d,, a' fis'>8 r \repeat tremolo 4 {d16(\fp\> a}
 % Bars 316 to 320
 	\repeat tremolo 6 {d\pp a}
 	\repeat tremolo 6 {d a}
@@ -524,7 +524,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 421 to 425
 	fis4) r r
 	R2.
-	dis8(\pp fis b dis fis e
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . -2)) Slur dis8(\pp fis b dis fis e
 	dis b cis dis gis, ais)
 	fis(\< b fis b gis b
 % Bars 426 to 430
@@ -651,9 +651,11 @@ musicViolinIIMvtI = \relative c' {
 	fis2\p a,4~
 	a2._\dimmarkup~
 	a2 r4
-	R2.*14
+	R2.*3
+	
 % Bars 531 to 535
 	
+	\mmrLength #15 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545

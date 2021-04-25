@@ -195,20 +195,28 @@ musicViolinIIMvtIII = \relative c' {
 			q2.\f\>
 		}
 	}
-	<d a'>
+	\startMeasureCount <d a'>
 	q
 	q\p
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \stopMeasureCount \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		fis!4\pp r r
-		R2.*13
+		\time 3/4 \trio fis!4\pp r r
+		R2.*5
 % Bars 156 to 160
-	
+		
+		
+		
+		\mmrLength #12 R2.*4
+		
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #12 R2.*4
+		
+		
 % Bars 166 to 170
 		
 		\cueDuring #"cueVoiceViolinIIMvtIII" #UP {

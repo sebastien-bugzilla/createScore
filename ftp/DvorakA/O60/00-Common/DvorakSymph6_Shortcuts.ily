@@ -201,6 +201,16 @@ trillSpanPadding = #(define-music-function
 	#}
 )
 
+textInSlur = #(define-music-function
+	()
+	()
+	#{
+		\once \override TextScript.outside-staff-priority = ##f
+		\once \override TextScript.avoid-slur = #'inside
+	#}
+)
+
+
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941
 %
