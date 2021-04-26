@@ -207,5 +207,5 @@ musicHornIIIMvtII = \relative c'' {
 	R2*2
 	
 % Bar 206
-	\ni R2\fermataMarkup \bar "|."
+	\ni R2\fermata \bar "|."
 }

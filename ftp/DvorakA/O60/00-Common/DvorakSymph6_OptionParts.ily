@@ -7,7 +7,8 @@ generalOptions = {
 	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-alphabet
 	\override Score.RehearsalMark #'font-size = #4
-	\compressFullBarRests
+	\compressMMRests
+	\compressEmptyMeasures
 	\override Score.RehearsalMark.extra-spacing-width = #'(-0.7 . 0.7)
 	\override Score.RehearsalMark.outside-staff-priority = ##f
 	\override Staff.MultiMeasureRest.space-increment = 1.5

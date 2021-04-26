@@ -142,5 +142,5 @@ musicTrompeteIIMvtII = \relative c'' {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	\ni R2\fermataMarkup \bar "|."
+	\ni R2\fermata \bar "|."
 }

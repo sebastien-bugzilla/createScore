@@ -232,5 +232,5 @@ musicFagottIIMvtII = \relative c {
 	bes8 r r4
 	R2
 % Bar 206
-	\ni R2^\fermataMarkup \bar "|."
+	\ni R2^\fermata \bar "|."
 }
