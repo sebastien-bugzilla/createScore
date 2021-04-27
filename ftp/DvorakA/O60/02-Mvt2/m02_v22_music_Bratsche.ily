@@ -99,7 +99,7 @@ musicBratscheMvtII = \relative c {
 		f8~ f32( g f) ees-. ees4(
 		d8)
 	} \\ {
-		d4_\pespressivo bes8 d
+		d4-\tweak X-offset #-3 _\pespressivo bes8 d
 		c a16.\< g32\! g8\> fis\!
 		g2
 		bes
@@ -152,7 +152,7 @@ musicBratscheMvtII = \relative c {
 	\repeat tremolo 8 {gis( b)}
 % Bars 111 to 115
 	\repeat tremolo 8 {aes( ces)} \mark \default
-	<<{ces8} \\ {aes}>> r16 aes(\p f des8_\dimmarkup aes'16
+	<<{ces8} \\ {aes}>> r16 aes(\p f \textInSlur des8-\tweak X-offset #2 _\dimmarkup aes'16
 	f des8 aes'16 f des8 aes'16)
 	r8 d,!4.\pp
 	r8 d4.
@@ -220,7 +220,7 @@ musicBratscheMvtII = \relative c {
 	
 	
 	\mark \default
-	f16\p f-. f-. f->~ f f-. f-. f~
+	\tempoXOff #1.3 f16\p f-. f-. f->~ f f-. f-. f~
 	f f-. f-.\< f~ f f-. f-. f~\!
 % Bars 171 to 175
 	f\p f-. f-. f~ f f-. f-. f~
@@ -266,5 +266,5 @@ musicBratscheMvtII = \relative c {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	\ni R2\fermata \bar "|."
 }

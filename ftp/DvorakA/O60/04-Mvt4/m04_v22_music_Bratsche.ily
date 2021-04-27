@@ -106,15 +106,15 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {cis8( d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	d4 r r2
 % Bars 81 to 85
-	<e, gis>4\fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	<g a!>4_\fpcresc \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<e, gis>4\fp \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	<g a!>4_\fpcresc \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 % Bars 86 to 90
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	<cis e>4\f r r2
 	\tuplet 3/2 4 {g'8( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-.}
 % Bars 91 to 95
@@ -125,15 +125,15 @@ musicBratscheMvtIV = \relative c' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	<e gis>4\fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<e gis>4\fp \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 % Bars 101 to 105
-	<g! a>4_\fpcresc-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<g! a>4_\fpcresc-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	<cis e>4\f r r2
 % Bars 106 to 110
 	\tuplet 3/2 4 {g'8( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-.}
@@ -230,13 +230,13 @@ musicBratscheMvtIV = \relative c' {
 	gis4.-> a8 b eis, fis gis
 	fis4 r r gis'(\p
 	fis cis a fis)
-	cis1\pp~
+	\startMeasureCount cis1\pp~
 % Bars 186 to 190
 	cis~
 	cis~
 	cis~
 	cis~
-	cis \mark \default
+	cis \stopMeasureCount \mark \default
 % Bars 191 to 195
 	d4-.\pp <fis a>-. d-. <g bes>-.
 	r <fis a>-. r q-.
@@ -469,15 +469,15 @@ musicBratscheMvtIV = \relative c' {
 % Bars 376 to 380
 	r4 \tuplet 3/2 4 {fis8( g a)} r4 \tuplet 3/2 4 {fis8( g a)}
 	g4 r r2
-	<g, a>4\p-> \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
+	<g, a>4\p->  \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8_\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
 % Bars 381 to 385
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	<c d>4\mf \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	<c d>4\mf \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8-\tweak X-offset #0.9 _\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8}
 % Bars 386 to 390
 	<fis a>4\ff r r2
 	R1
@@ -488,16 +488,16 @@ musicBratscheMvtIV = \relative c' {
 	g2.-> a8( b)
 	a4\fz d,-. d'\fz d,-.
 	d'\fz d,-. <e cis'>\fz a,-.
-	<g a>4->\p \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	<g a>4->\p \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
 % Bars 396 to 400
-	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	<c d>4\mf \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q4.:8_\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	<c d>4\mf \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
+	q4 \tuplet 3/2 4 {q4.:8-\tweak X-offset #0.9 _\crescmarkup} q4 \tuplet 3/2 4 {q4.:8} 
 % Bars 401 to 405
-	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q4.:8} q4 \tuplet 3/2 4 {q4.:8} 
 	<fis a>4\ff r r2
 	R1
 	d2->\ff d->

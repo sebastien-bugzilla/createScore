@@ -221,14 +221,20 @@ musicBratscheMvtIII = \relative c {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		d'4\pp r r
-		R2.*15
+		\time 3/4 \trio d'4\pp r r
+		R2.*5
 % Bars 156 to 160
-	
+		
+		
+		
+		\mmrLength #12 R2.*4
+		
 % Bars 161 to 165
-	
+		
+		
+		\mmrLength #12 R2.*6
 % Bars 166 to 170
 		
 		
@@ -248,7 +254,7 @@ musicBratscheMvtIII = \relative c {
 		}
 		bes'4^\pizz d e
 		R2.
-		a8\p^\arco a a a a a
+		\startMeasureCount a8\p^\arco a a a a a
 % Bars 186 to 190
 		a a a a a a 
 		a a a a a a 
@@ -257,7 +263,7 @@ musicBratscheMvtIII = \relative c {
 		a a a a a a 
 % Bars 191 to 195
 		a a a a a a 
-		a a a a a a 
+		a a a a a a  \stopMeasureCount
 		a4\pp r r
 		R2.*4
 		
@@ -315,7 +321,7 @@ musicBratscheMvtIII = \relative c {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	d4\p^\pizz r d'
+	\startMeasureCount d4\p-\tweak X-offset #-1.5 ^\pizz r d'
 	d, r d'
 	d,\< r d'
 	d, r d'
@@ -328,7 +334,7 @@ musicBratscheMvtIII = \relative c {
 	d,_\dimmarkup r d'
 % Bars 266 to 270
 	d, r d'
-	d, r d'
+	d, r d' \stopMeasureCount
 	d,4\pp^\arco r8 d d4
 	r8 d d4 r8 d
 	d4 r8 d d4
