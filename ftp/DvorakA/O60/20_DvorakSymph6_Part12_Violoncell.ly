@@ -21,9 +21,11 @@
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_Part12_Violoncell.ily"
+\include "./00-Common/DvorakSymph6_Format_temp.ly"
+%\include "./00-Common/DvorakSymph6_Format_Part12_Violoncell.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v23_music_Violoncello.ily"
+\include "./01-Mvt1/m01_v23_music_Violoncello_div.ily"
 \include "./02-Mvt2/m02_v23_music_Violoncello.ily"
 \include "./03-Mvt3/m03_v23_music_Violoncello.ily"
 \include "./04-Mvt4/m04_v23_music_Violoncello.ily"
@@ -50,18 +52,27 @@
 		}
 	}
 	\score {
-		\new Staff <<
-			\new Voice {
-				\formatVioloncelloMvtI
-			}
-			\new Voice {
-				\timeMvtI \generalOptions \partOptions
-				\nameVioloncelloMvtI \musicVioloncelloMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
-			}
+		\new GrandStaff <<
+			\new Staff <<
+				\new Voice {
+					\formatVioloncelloMvtI
+				}
+				\new Voice {
+					\timeMvtI \generalOptions \partOptions
+					\nameVioloncelloMvtI \musicVioloncelloMvtI
+				}
+				\new Voice {
+					\keepWithTag #'(violoncello) \tempiPartMvtI
+				}
+			>>
+			\new Staff <<
+				\new Voice {
+					\timeMvtI \generalOptions \partOptions
+					\nameVioloncelloMvtI \musicVioloncelloMvtIdiv
+				}
+			>>
 		>>
+		
 		\header {
 			breakbefore = ##t
 			piece = \markup {
@@ -72,6 +83,10 @@
 			}
 		}
 		\layout {
+			%system-count = #59
+			\context {
+				\Staff \RemoveAllEmptyStaves
+			}
 		}
 	}
 	\score {
@@ -84,7 +99,7 @@
 				\nameVioloncelloMvtII \musicVioloncelloMvtII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
+				\keepWithTag #'(violoncello) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -97,6 +112,7 @@
 			}
 		}
 		\layout {
+			%system-count = #20
 		}
 	}
 	\score {
@@ -109,7 +125,7 @@
 				\nameVioloncelloMvtIII \musicVioloncelloMvtIII
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
+				\keepWithTag #'(violoncello) \tempiPartMvtIII
 			}
 		>>
 		\header {
@@ -134,7 +150,7 @@
 				\nameVioloncelloMvtIV \musicVioloncelloMvtIV
 			}
 			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
+				\keepWithTag #'(violoncello) \tempiPartMvtIV
 			}
 		>>
 		\header {
@@ -147,6 +163,7 @@
 			}
 		}
 		\layout {
+			system-count = #64
 		}
 	}
 }

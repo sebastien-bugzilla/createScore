@@ -1206,7 +1206,7 @@ cueVoiceBratscheMvtIII = \relative c {
 cueVoiceVioloncelloMvtIII = \relative c {
 	R2.*180
 	% bar 180 - 181
-	d'''4^(^\markup {Fl.} e8 cis d4)
+	d'''4^(-\tweak X-offset #-2.5 ^\markup {Fl.} e8 cis d4)
 	g2.
 	
 }

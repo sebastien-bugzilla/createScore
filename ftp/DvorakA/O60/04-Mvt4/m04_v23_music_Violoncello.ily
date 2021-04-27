@@ -54,7 +54,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> cis-> a-> g->
 	e-> cis-> a-> a'-> \mark \default
-	d,8_\ffgrandioso fis a g fis e d cis
+	\tempoXOff #1.3 d,8_\ffgrandioso fis a g fis e d cis
 	b cis d cis b a g a
 	fis e d e fis g a g
 % Bars 41 to 45
@@ -91,7 +91,7 @@ musicVioloncelloMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1*2
 	\mark \default
-	a4\p^\pizz r a r
+	a4\p-\tweak X-offset #1.2 ^\pizz r a r
 	a r a_\dimmarkup e
 % Bars 71 to 75
 	a, r a' e
@@ -314,7 +314,7 @@ musicVioloncelloMvtIV = \relative c' {
 	a4-- fis8 d c4-- a8 c \mark \default
 	g1\pp
 	c
-	<<f, {s4\< s s s\!}>>
+	<<f, {\hairpinShorten #0 #-1.5 s4\< s s s\!}>>
 % Bars 256 to 260
 	r2 r4 f''-.\f
 	d-. c-. bes-. r
@@ -380,7 +380,7 @@ musicVioloncelloMvtIV = \relative c' {
 	a~
 	a4 r r2
 	r2 r4 r8 fis'(\pp
-	b,4) r8 d( b a g d
+	b,4) r8 \once \stemUp d( b a g d
 % Bars 311 to 317
 	a'4) r8 b( e,4) r8 fis\((
 	b1)
@@ -640,7 +640,7 @@ musicVioloncelloMvtIV = \relative c' {
 	b: d: a: cis:
 	g: b: fis: a: \mark \default
 % Bars 521 to 525
-	g2^\ten r
+	g2-\tweak X-offset #1 ^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

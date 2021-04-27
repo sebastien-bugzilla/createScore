@@ -201,9 +201,9 @@ musicVioloncelloMvtIII = \relative c {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		d4\pp r r
+		\time 3/4 \trio d4\pp r r
 		d4(\pp e8 cis d4)
 		R2.*4
 % Bars 156 to 160
@@ -235,7 +235,7 @@ musicVioloncelloMvtIII = \relative c {
 		bes4\f^\pizz e g
 		R2.*2
 		
-		a,2.\p^\arco~
+		\startMeasureCount a,2.\p^\arco~
 % Bars 186 to 190
 		a~
 		a~
@@ -249,7 +249,7 @@ musicVioloncelloMvtIII = \relative c {
 		a~_\dimmarkup
 		a~
 % Bars 196 to 200
-		a
+		a \stopMeasureCount
 		a(\ppp
 		g'
 		fis
@@ -517,7 +517,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 426 to 430
 	d-. f-. d-.
 	a,-. g'(-> f8 e)
-	d4-. d-. d-.
+	\tempoXOff #-1.5 d4-. d-. d-.
 	d-. d-. d-.
 	a'-. a,->( b8 cis)
 % Bars 431 to 435

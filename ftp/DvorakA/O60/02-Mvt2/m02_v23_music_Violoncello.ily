@@ -35,9 +35,9 @@ musicVioloncelloMvtII = \relative c {
 % Bars 21 to 25
 	bes,4(\pp f'
 	d8\< bes  f\! bes)
-	b4(\p\> g\!)
+	\hairpinShorten #0 #-2 b4(\p\> g\!)
 	f'8(_\dimmarkup d b g)
-	c,(\pp c'4) c8-.
+	c,(-\tweak X-offset #-3 \pp c'4) c8-.
 % Bars 26 to 30
 	c,( c'4) c8-.
 	c r r4
@@ -77,7 +77,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 56 to 60
 	R2*2
 	
-	r8 bes,(\mf\< g des'\f)~
+	r8 \hairpinMinLength #9 bes,(\mf\< g des'\f)~
 	des2_\dimmarkup~
 	des\>~
 % Bars 61 to 65
@@ -129,7 +129,7 @@ musicVioloncelloMvtII = \relative c {
 	f r r4
 	f,8 r r4
 	R2
-	bes32(\ff des bes des  bes des bes des  bes des bes des  bes des bes des)
+	bes32(-\tweak X-offset #-2 \ff des bes des  bes des bes des  bes des bes des  bes des bes des)
 	\repeat tremolo 8 {aes32( c)}
 % Bars 106 to 110
 	\repeat tremolo 8 {ges( bes)}
@@ -204,14 +204,14 @@ musicVioloncelloMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	bes,8\p r r4
+	\tempoXOff #1.5 bes,8\p r r4
 	r8 bes4(\< a16 g\!
 % Bars 171 to 175
 	f4)\p r
 	r8 bes4(\< a16 g\!
 	f4)\p r
 	r8 bes'4(\< a16 g)\!
-	f8 bes4-^\mf\< a16(\! g)
+	f8 bes4-^\mf\< a16( g)
 % Bars 176 to 180
 	f8 bes4-^\f a16( g)
 	f-. ees->\< d-> des-> c-> bes-> a-> g->\!
@@ -245,5 +245,5 @@ musicVioloncelloMvtII = \relative c {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	\ni R2\fermata \bar "|."
 }
