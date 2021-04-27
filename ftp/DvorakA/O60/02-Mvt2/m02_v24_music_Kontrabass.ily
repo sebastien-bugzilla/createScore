@@ -25,7 +25,7 @@ musicKontrabassMvtII = \relative c {
 	bes\pp r
 	R2*2
 	
-	r4 e,\<
+	r4 \hairpinShorten #0 #-1 e,\<
 % Bars 16 to 20
 	f2\f~
 	f4.(_\dimmarkup fis8
@@ -49,7 +49,7 @@ musicKontrabassMvtII = \relative c {
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
 	g4-> g-> \bar "||" \mark \default
-	a-> r
+	\tempoXOff #1. a-> r
 % Bars 36 to 40
 	R2*5
 	
@@ -69,8 +69,8 @@ musicKontrabassMvtII = \relative c {
 	
 	
 % Bars 51 to 55
-	r8 ees\p\<-- ees-- ees--\!
-	cis2\f\>
+	r8 ees\p\<-- ees-- ees--
+	\hairpinMinLength #7 cis2\f\>
 	d8\p r r4
 	R2*5
 	
@@ -92,7 +92,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 71 to 75
 	
 	\mark \default
-	bes8^\pizz\pp r r4
+	bes8-\tweak X-offset #1.5 ^\pizz\pp r r4
 	c8 r d r
 	g, r  r4
 % Bars 76 to 80
@@ -104,14 +104,14 @@ musicKontrabassMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 c4\mf\<^\arco c8\!
+	r8 c4\mf\<^\arco c8
 	f,2\f~
 	f4.( fis8
 % Bars 86 to 90
 	g8\p) r r4
 	R2*2
 	\mark \default
-	bes8\pp^\pizz r r  bes
+	bes8\pp-\tweak X-offset #1.5 ^\pizz r r  bes
 	bes r r bes
 % Bars 91 to 95
 	b r r b
@@ -167,16 +167,16 @@ musicKontrabassMvtII = \relative c {
 	g,2~
 	g4.\< c8\!
 	d(\mf\< f d bes)\!
-	ees2\> 
+	ees2\>  % \hairpinMinLength #4 \hairpinShorten #-1 #0 
 % Bars 146 to 150
-	d4(_\pdimD  c)
+	d4(-\tweak X-offset #-0.5 _\pdimD  c)
 	bes4\pp r
 	R2*2
 	
 	r4 e\<
 % Bars 151 to 155
 	f2\fz
-	f4._\dimmarkup fis8\p
+	f4.-\tweak X-offset #-1.5 _\dimmarkup fis8\p
 	g r r4
 	R2*6
 	
@@ -196,14 +196,14 @@ musicKontrabassMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	bes8\p^\arco r r4
+	\tempoXOff #1.2 bes8\p-\tweak X-offset #1.2 ^\arco r r4
 	r8 bes4(\< a16 g\!)
 % Bars 171 to 175
 	f8(\p bes) r4
 	r8 bes4(\< a16 g\!)
 	f8(\p bes) r4
 	r8 bes'4(\< a16 g)\!
-	f8 bes4-^\mf\< a16(\! g)
+	f8 bes4-^\mf\< a16( g)
 % Bars 176 to 180
 	f8 bes4-^\f a16( g)
 	f-. ees->\< d-> des-> c-> bes-> a-> g->\!
@@ -237,5 +237,5 @@ musicKontrabassMvtII = \relative c {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermata \bar "|."
+	\ni R2\fermata \bar "|."
 }

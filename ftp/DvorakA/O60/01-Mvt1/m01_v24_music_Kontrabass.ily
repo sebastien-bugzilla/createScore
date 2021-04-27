@@ -67,7 +67,7 @@ musicKontrabassMvtI = \relative c {
 		gis g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-. \mark \default
-		d,4\ff^\grandioso r r
+		\tempoXOff #1.5 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -259,13 +259,13 @@ musicKontrabassMvtI = \relative c {
 	f~
 	f
 % Bars 196 to 200
-	g\pp~
+	\startMeasureCount g\pp~
 	g~
 	g~
 	g~
 	g~
 % Bars 201 to 205
-	g~
+	g~ \stopMeasureCount
 	g4 r r
 	g r r
 	g r r
@@ -393,7 +393,7 @@ musicKontrabassMvtI = \relative c {
 	e'2-^ a,4-.
 	g'-! e-! cis-! 
 	a8-! g-! e-! cis-! a-! a'-! \mark \default
-	d,4-. r a(\pp
+	\tempoXOff #1.5 d,4-. r a(\pp
 % Bars 316 to 320
 	d2) r4
 	r r a(
@@ -419,7 +419,7 @@ musicKontrabassMvtI = \relative c {
 	e(\p\>
 	eis)
 % Bars 336 to 340
-	fis8\pp r r4 r
+	\tempoXOff #-1 fis8\pp r r4 r
 	R2.*3
 	
 	
@@ -497,7 +497,7 @@ musicKontrabassMvtI = \relative c {
 	
 	\mark \default
 % Bars 401 to 405
-	cis4^\pizz\p a r
+	cis4-\tweak X-offset #0.5 ^\pizz\p a r
 	r d d
 	e r c
 	r f f
@@ -575,7 +575,7 @@ musicKontrabassMvtI = \relative c {
 	bes,8( d bes'4) bes,8( d
 	bes'4) bes,8( d bes'4)
 % Bars 466 to 470
-	a,2.~\ff
+	\startMeasureCount a,2.~\ff
 	a~
 	a~
 	a~
@@ -583,7 +583,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 471 to 475
 	a~
 	a~
-	a~
+	a~ \stopMeasureCount 
 	a2 d4->\fz~
 	d2.~
 % Bars 476 to 480
@@ -642,7 +642,7 @@ musicKontrabassMvtI = \relative c {
 	R2.
 % Bars 521 to 525
 	d4 r r
-	d2.:16
+	\startMeasureCount d2.:16
 	d:
 	d:\>
 	d:
@@ -650,7 +650,7 @@ musicKontrabassMvtI = \relative c {
 	d:\p
 	d:_\dimmarkup
 	d:
-	d:
+	d: \stopMeasureCount
 	d2\pp r4
 % Bars 531 to 535
 	d2 r4

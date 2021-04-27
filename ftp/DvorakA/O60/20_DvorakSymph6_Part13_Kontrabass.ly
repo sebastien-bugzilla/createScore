@@ -17,10 +17,11 @@
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
+\include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
-\include "./00-Common/DvorakSymph6_Format_temp.ly"
-%\include "./00-Common/DvorakSymph6_Format_Part13_Kontrabass.ily"
+%\include "./00-Common/DvorakSymph6_Format_temp.ly"
+\include "./00-Common/DvorakSymph6_Format_Part13_Kontrabass.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./01-Mvt1/m01_v24_music_Kontrabass.ily"
 \include "./02-Mvt2/m02_v24_music_Kontrabass.ily"
@@ -31,7 +32,7 @@
 %###############################################################################
 %\addQuote "cueVoiceKontrabassMvtI" { \cueVoiceKontrabassMvtI }
 %\addQuote "cueVoiceKontrabassMvtII" { \cueVoiceKontrabassMvtII }
-%\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
+\addQuote "cueVoiceKontrabassMvtIII" { \cueVoiceKontrabassMvtIII }
 %\addQuote "cueVoiceKontrabassMvtIV" { \cueVoiceKontrabassMvtIV }
 \book {
 	\header {
@@ -57,6 +58,9 @@
 				\timeMvtI \generalOptions \partOptions
 				\nameKontrabassMvtI \musicKontrabassMvtI
 			}
+			\new Voice {
+				\keepWithTag #'(kontrabass) \tempiPartMvtI
+			}
 		>>
 		\header {
 			breakbefore = ##t
@@ -78,6 +82,9 @@
 			\new Voice {
 				\timeMvtII \generalOptions \partOptions
 				\nameKontrabassMvtII \musicKontrabassMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(kontrabass) \tempiPartMvtII
 			}
 		>>
 		\header {
@@ -101,6 +108,9 @@
 				\timeMvtIII \generalOptions \partOptions
 				\nameKontrabassMvtIII \musicKontrabassMvtIII
 			}
+			\new Voice {
+				\keepWithTag #'(kontrabass) \tempiPartMvtIII
+			}
 		>>
 		\header {
 			breakbefore = ##f
@@ -122,6 +132,9 @@
 			\new Voice {
 				\timeMvtIV \generalOptions \partOptions
 				\nameKontrabassMvtIV \musicKontrabassMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(kontrabass) \tempiPartMvtIV
 			}
 		>>
 		\header {

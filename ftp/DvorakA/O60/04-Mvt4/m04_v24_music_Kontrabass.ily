@@ -54,7 +54,7 @@ musicKontrabassMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> cis-> a-> g->
 	e-> cis-> a-> a'-> \mark \default
-	d,8_\ffgrandioso fis a g fis e d cis
+	\tempoXOff #1.2 d,8_\ffgrandioso fis a g fis e d cis
 	b cis d cis b a g a
 	fis e' d e fis g a g
 % Bars 41 to 45
@@ -96,7 +96,7 @@ musicKontrabassMvtIV = \relative c' {
 % Bars 71 to 75
 	
 	
-	e,4\mf^\pizz e' r e
+	e,4\mf-\tweak X-offset #-2 ^\pizz e' r e
 	e, e'_\dimmarkup r e
 	e,\p e' r e
 % Bars 76 to 80
@@ -112,7 +112,7 @@ musicKontrabassMvtIV = \relative c' {
 	d4-. b-. d2->
 	R1
 % Bars 86 to 90
-	g!4->_\fpcresc e-> g2->
+	g!4->-\tweak X-offset #-1 _\fpcresc e-> g2->
 	R1
 	g4->\fz e-> g2->
 	g4\f r r2
@@ -137,7 +137,7 @@ musicKontrabassMvtIV = \relative c' {
 	g4\f r r2
 % Bars 106 to 110
 	R1
-	fis8->_\ffmarc e d e fis-> e d e
+	fis8->-\tweak X-offset #-1 _\ffmarc e d e fis-> e d e
 	fis-> e d e fis-> e d cis
 	b-> cis d cis b-> cis d cis
 	b-> cis b a' gis fis e d
@@ -311,7 +311,7 @@ musicKontrabassMvtIV = \relative c' {
 	c r  r c
 % Bars 251 to 255
 	c r r c
-	c  r r a\mark \default
+	c  r r a \markXOffset #-0.3 \mark \default
 	g1\pp^\arco
 	c
 	<<f, {s4\< s s s\!}>>
@@ -413,7 +413,7 @@ musicKontrabassMvtIV = \relative c' {
 	g8( g' fis e d e c d)
 % Bars 336 to 340
 	b4. b8 b4( a)
-	b4._\mfcresc b8 b4-. cis!-.
+	b4.-\tweak X-offset #-1 _\mfcresc b8 b4-. cis!-.
 	d r r2
 	fis4.\f fis8 fis4-. gis-. 
 	a r r2
@@ -505,7 +505,7 @@ musicKontrabassMvtIV = \relative c' {
 	R1*3
 	
 	
-	fis,2\mf\< a\!~
+	\hairpinShorten #0 #-2 fis,2\mf\< a\!~
 	a4 g8(_\crescmarkup a g4 fis)
 % Bars 416 to 420
 	fis( a) g2
@@ -621,7 +621,7 @@ musicKontrabassMvtIV = \relative c' {
 	b d a cis
 	g b fis a \mark \default
 % Bars 521 to 525
-	g2^\ten r
+	g2-\tweak X-offset #1.2 ^\ten r
 	g^\ten r
 	e^\ten r
 	e^\ten r

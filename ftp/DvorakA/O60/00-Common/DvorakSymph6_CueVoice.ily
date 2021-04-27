@@ -1222,9 +1222,20 @@ cueVoiceVioloncelloMvtIII = \relative c {
 %cueVoiceKontrabassMvtII = \relative c {
 %	no cue voice for mvtII
 %}
-%cueVoiceKontrabassMvtIII = \relative c {
-%	no cue voice for mvtIII
-%}
+cueVoiceKontrabassMvtIII = \relative c {
+	R2.*159
+	% bar 159 - 162
+	<g d' b'>4\f-\tweak X-offset #-3.5 ^\pizz-\tweak X-offset #-3.5 ^\markup {Vlc.} r r
+	q_\dimmarkup r r
+	q r r 
+	q\pp r r
+	R2.*30
+	% bar 193 - 196
+	d''2^(-\tweak X-offset #-3.5 ^\markup {Fag.I} e4
+	cis2 d4
+	b2 cis4
+	a2 b4)
+}
 %cueVoiceKontrabassMvtIV = \relative c {
 %	no cue voice for mvtIV
 %}

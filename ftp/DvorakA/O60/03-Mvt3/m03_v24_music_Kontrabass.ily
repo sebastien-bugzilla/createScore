@@ -157,7 +157,7 @@ musicKontrabassMvtIII = \relative c {
 		a a a 
 % Bars 121 to 125
 		a a a
-		a a a
+		a a a 
 		aes-. aes-. aes-.
 		des,2->\ff des4->~
 		des des2->
@@ -201,27 +201,35 @@ musicKontrabassMvtIII = \relative c {
 	q_\dimmarkup
 % Bars 151 to 155
 	q
-	q \bar "||" \key d \major
+	q \bar ".|:-||" \key d \major
 	\repeat volta 2 {
-		d4\pp r r
+		\time 3/4 \trio d4\pp r r
 		d4(\pp e8 cis d4)
-		R2.*9
+		R2.*4
 % Bars 156 to 160
 		
 		
 		
-		
-		
+		\cueDuring #"cueVoiceKontrabassMvtIII" #UP {
+			\ni R2.
+			R
 % Bars 161 to 165
-		
-		
-		
+			R
+			R \no
+		}
+		R2.
 		d4(\pp e8 cis d4)
-		R2.*32
+		\mmrLength #12 R2.*4
 % Bars 166 to 170
-	
+		
+		
+		
+		\mmrLength #12 R2.*4
+		
 % Bars 171 to 175
-	
+		
+		
+		\mmrLength #15 R2.*20
 % Bars 176 to 180
 	
 % Bars 181 to 185
@@ -230,8 +238,14 @@ musicKontrabassMvtIII = \relative c {
 		
 % Bars 191 to 195
 		
-% Bars 196 to 200
 		
+		\cueDuring #"cueVoiceKontrabassMvtIII" #DOWN {
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R
+			\mmrPos #-4 R
+% Bars 196 to 200
+			\mmrPos #-4 R \no
+		}
 		a2.~\ppp
 		a~
 		a~
@@ -270,7 +284,7 @@ musicKontrabassMvtIII = \relative c {
 	b r r
 	r b b
 % Bars 241 to 245
-	b2.~\pp^\arco
+	\startMeasureCount b2.~\pp^\arco
 	b~
 	b~
 	b~
@@ -278,13 +292,13 @@ musicKontrabassMvtIII = \relative c {
 % Bars 246 to 250
 	b~
 	b~
-	b~
+	b~ \stopMeasureCount 
 	b4 r r
 	b(\pp cis8 ais b4)
 % Bars 251 to 255
 	R2.*5
 % Bars 256 to 260
-	d4^\pizz\p r d'
+	\startMeasureCount d4-\tweak X-offset #-2.5 ^\pizz\p r d'
 	d,\< r d'
 	d, r d'
 	d, r d'\!
@@ -297,7 +311,7 @@ musicKontrabassMvtIII = \relative c {
 	d,_\dimmarkup r d'
 % Bars 266 to 270
 	d, r d'
-	d, r d'
+	d, r d' \stopMeasureCount
 	d,\pp r r
 	R2.*19
 % Bars 271 to 275
