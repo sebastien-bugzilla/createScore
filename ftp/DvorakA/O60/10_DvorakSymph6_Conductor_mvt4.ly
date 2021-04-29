@@ -77,26 +77,26 @@
 					\new Voice {
 						\timeMvtIV \generalOptions \conductorOptions
 						\nameStaffIMvtIV
-						\partcombine \musicFloteIMvtIV \musicFloteIIMvtIV
+						\partCombine \musicFloteIMvtIV \musicFloteIIMvtIV
 %						\musicFloteIIMvtIV
 					}
 				>>
 				\new Staff {
 					\timeMvtIV \generalOptions \conductorOptions
 					\nameStaffIIMvtIV
-					\partcombine \musicOboeIMvtIV \musicOboeIIMvtIV
+					\partCombine \musicOboeIMvtIV \musicOboeIIMvtIV
 %					\musicOboeIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \generalOptions \conductorOptions
 					\nameStaffIIIMvtIV
-					\partcombine \musicKlarinetteIMvtIV \musicKlarinetteIIMvtIV
+					\partCombine \musicKlarinetteIMvtIV \musicKlarinetteIIMvtIV
 %					\musicKlarinetteIIMvtIV
 				}
 				\new Staff {
 					\timeMvtIV \generalOptions \conductorOptions
 					\nameStaffIVMvtIV
-					\partcombine \musicFagottIMvtIV \musicFagottIIMvtIV
+					\partCombine \musicFagottIMvtIV \musicFagottIIMvtIV
 %					\musicFagottIIMvtIV 
 				}
 			>>
@@ -105,33 +105,33 @@
 					\new Staff {
 						\timeMvtIV \generalOptions \conductorOptions
 						\nameStaffVMvtIV
-						\partcombine \musicHornIMvtIV \musicHornIIMvtIV
+						\partCombine \musicHornIMvtIV \musicHornIIMvtIV
 %						\musicHornIIMvtIV
 					}
 					\new Staff {
 						\timeMvtIV \generalOptions \conductorOptions
 						\nameStaffVIMvtIV
-						\partcombine \musicHornIIIMvtIV \musicHornIVMvtIV
+						\partCombine \musicHornIIIMvtIV \musicHornIVMvtIV
 %						\musicHornIVMvtIV
 					}
 				>>
 				\new Staff {
 					\timeMvtIV \generalOptions \conductorOptions
 					\nameStaffVIIMvtIV
-					\partcombine \musicTrompeteIMvtIV \musicTrompeteIIMvtIV
+					\partCombine \musicTrompeteIMvtIV \musicTrompeteIIMvtIV
 %					\musicTrompeteIIMvtIV
 				}
 				\new GrandStaff \with { \nameGrandStaffIIMvtIV } <<
 					\new Staff {
 						\timeMvtIV \generalOptions \conductorOptions
 						\nameStaffVIIIMvtIV
-						\partcombine \musicPosauneIMvtIV \musicPosauneIIMvtIV
+						\partCombine \musicPosauneIMvtIV \musicPosauneIIMvtIV
 %						\musicPosauneIIMvtIV
 					}
 					\new Staff {
 						\timeMvtIV \generalOptions \conductorOptions
 						\nameStaffIXMvtIV
-						\partcombine \musicPosauneIIIMvtIV \musicTubaMvtIV
+						\partCombine \musicPosauneIIIMvtIV \musicTubaMvtIV
 %						\musicTubaMvtIV
 					}
 				>>

@@ -24,18 +24,18 @@ musicHornIMvtIII = \relative c'' {
 % Bars 11 to 15
 		c4-.\fz c-. c-.
 		c-.\fz c-. c-.
-		\partcombineApart bes2-> bes4~->
+		\partCombineApart bes2-> bes4~->
 		bes2 a4-.
-		gis-. \partcombineAutomatic b!-. b-.
+		gis-. \partCombineAutomatic b!-. b-.
 % Bars 16 to 20
 		c-. c-. c-.
-		\partcombineApart bes2-> bes4~->
+		\partCombineApart bes2-> bes4~->
 		bes2 a4-.
-		gis-. \partcombineAutomatic b!-. b-.
+		gis-. \partCombineAutomatic b!-. b-.
 		c-. c-. c-.
 % Bars 21 to 25
-		\partcombineApart e-. e,-. e-.
-		a \partcombineAutomatic r r
+		\partCombineApart e-. e,-. e-.
+		a \partCombineAutomatic r r
 		R2.
 	}
 	\repeat volta 2 {
@@ -81,8 +81,8 @@ musicHornIMvtIII = \relative c'' {
 		e,2\p\< e4~
 		e a2\!
 % Bars 66 to 70
-		\partcombineChords b2->\f a4^(->\>
-		b) g2\!-> \partcombineAutomatic
+		\partCombineChords b2->\f a4^(->\>
+		b) g2\!-> \partCombineAutomatic
 		R2.*8
 % Bars 71 to 75
 	
@@ -190,7 +190,7 @@ musicHornIMvtIII = \relative c'' {
 % Bars 176 to 180
 	
 % Bars 181 to 185
-		\partcombineApart f!2.~
+		\partCombineApart f!2.~
 		f~
 		f~
 		f2( e4)
@@ -204,7 +204,7 @@ musicHornIMvtIII = \relative c'' {
 % Bars 191 to 195
 		gis2( a4
 		b2 cis4)
-		a4\pp r r \partcombineAutomatic
+		a4\pp r r \partCombineAutomatic
 		R2.*7
 % Bars 196 to 200
 		
@@ -271,17 +271,17 @@ musicHornIMvtIII = \relative c'' {
 	c4\fz-. c-. c-.
 	c\fz-. c-. c-.
 % Bars 296 to 300
-	\partcombineApart bes2-> bes4->~
+	\partCombineApart bes2-> bes4->~
 	bes2 a4-.
-	gis-. \partcombineAutomatic b!-. b-.
+	gis-. \partCombineAutomatic b!-. b-.
 	c-. c-. c-.
-	\partcombineApart bes2-> bes4~->
+	\partCombineApart bes2-> bes4~->
 % Bars 301 to 305
 	bes2 a4-.
-	gis-. \partcombineAutomatic b!-. b-.
+	gis-. \partCombineAutomatic b!-. b-.
 	c-. c-. c-.
-	\partcombineApart e-. e,-. e-.
-	a \partcombineAutomatic r r
+	\partCombineApart e-. e,-. e-.
+	a \partCombineAutomatic r r
 % Bars 306 to 310
 	R2. \bar "||"
 	R2.*16
@@ -323,8 +323,8 @@ musicHornIMvtIII = \relative c'' {
 	d c2->
 	e,\p e4~
 	e\< a2
-	\partcombineChords b2\f-> a4^(\>->
-	b) g2->\! \partcombineAutomatic
+	\partCombineChords b2\f-> a4^(\>->
+	b) g2->\! \partCombineAutomatic
 % Bars 351 to 355
 	R2.*8
 % Bars 356 to 360

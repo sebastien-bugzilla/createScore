@@ -18,23 +18,23 @@ musicHornIMvtII = \relative c'' {
 	R2*6
 % Bars 11 to 15
 	
-	\partcombineApart c4(\pp f~
+	\partCombineApart c4(\pp f~
 	f8 e d c)
 	c(~ c32 d c bes-.) bes4(
-	a8) r r4 \partcombineAutomatic
+	a8) r r4 \partCombineAutomatic
 % Bars 16 to 20
 	R2*11
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
-	\partcombineApart r8 g4.~->\p
+	\partCombineApart r8 g4.~->\p
 	g8 b4\< b8\!
 	c\f r r4
 	R2*3
 % Bars 31 to 35
 	
-	\partcombineAutomatic
+	\partCombineAutomatic
 	R2*2
 	\bar "||" \mark \default
 	r4 e,\pp--
@@ -45,14 +45,14 @@ musicHornIMvtII = \relative c'' {
 	e e 
 	e e
 % Bars 41 to 45
-	\partcombineApart c'8(\p e4_\crescmarkup d16 c)~
+	\partCombineApart c'8(\p e4_\crescmarkup d16 c)~
 	c8( b16 a b4)
 	bes8( d4_\dimmarkup c16 bes)~
-	bes8( a16 g a4) \partcombineAutomatic
+	bes8( a16 g a4) \partCombineAutomatic
 	R2*2
 % Bars 46 to 50
 	
-	\partcombineApart r4 bes\fp\>~
+	\partCombineApart r4 bes\fp\>~
 	bes2\!~
 	bes8 bes\pp-- bes-- bes--
 	bes2->~
@@ -61,7 +61,7 @@ musicHornIMvtII = \relative c'' {
 	b!2
 	a4 a~
 	a8 d4 d8~
-	d \partcombineAutomatic r r4
+	d \partCombineAutomatic r r4
 % Bars 56 to 60
 	R2*10
 % Bars 61 to 65
@@ -69,7 +69,7 @@ musicHornIMvtII = \relative c'' {
 % Bars 66 to 70
 	r4 r8. bes16\f
 	r8. bes16_\dimmarkup r8. bes16
-	\partcombineApart R2
+	\partCombineApart R2
 	c16(\p\< d f e d\> c bes a\!)
 	\tuplet 3/2 4 {c8(-- bes-- a--} c[ bes])
 % Bars 71 to 75
@@ -80,7 +80,7 @@ musicHornIMvtII = \relative c'' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-	\partcombineAutomatic R2*2
+	\partCombineAutomatic R2*2
 	
 	r8 b4\mf\< b8
 	c2\f\>~
@@ -89,19 +89,19 @@ musicHornIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	\partcombineApart r4 r8 c(\p
+	\partCombineApart r4 r8 c(\p
 	a\< ees'\! c\> a\!)
 % Bars 91 to 95
 	c2~
 	c(
-	b!8) \once \partcombineUnisono r r d(
-	b_\crescmarkup f' d b) \partcombineAutomatic
+	b!8) \once \partCombineUnisono r r d(
+	b_\crescmarkup f' d b) \partCombineAutomatic
 	c16\mf c c c  c c c c 
 % Bars 96 to 100
 	c c c_\crescmarkup c   c c c c 
 	c c c c   c c c c
-	c8\noBeam \partcombineApart a16-. c-. f,-. g-. a-. bes-.
-	\partcombineAutomatic c8\ff-> cis-> d-> e->
+	c8\noBeam \partCombineApart a16-. c-. f,-. g-. a-. bes-.
+	\partCombineAutomatic c8\ff-> cis-> d-> e->
 	d4-> d-> 
 % Bars 101 to 105
 	r8 c\f a des->~
@@ -123,9 +123,9 @@ musicHornIMvtII = \relative c'' {
 	
 % Bars 116 to 120
 	
-	\partcombineApart d2(->\p
+	\partCombineApart d2(->\p
 	b4 e)
-	cis r \partcombineAutomatic
+	cis r \partCombineAutomatic
 	R2*3
 % Bars 121 to 125
 	
@@ -147,7 +147,7 @@ musicHornIMvtII = \relative c'' {
 	
 % Bars 136 to 140
 	
-	\partcombineApart r4 b8\pp\< b
+	\partCombineApart r4 b8\pp\< b
 	c2\>~
 	c\pp \mark \default
 	c4. d8~
@@ -170,17 +170,17 @@ musicHornIMvtII = \relative c'' {
 	a4 c_\fz~
 	c8(_\> bes16 a \acciaccatura c8 bes8. a16)\!
 % Bars 156 to 160
-	\partcombineAutomatic a4\pp-- a--
+	\partCombineAutomatic a4\pp-- a--
 	a-- a--
 	a-- a--
 	a-- a--
-	\partcombineApart a-- b\<
+	\partCombineApart a-- b\<
 % Bars 161 to 165
 	c4. g8~\!
 	g4 a\>
 	bes4. f8~\!
 	f4\pp e~
-	e8 r r4 \partcombineAutomatic
+	e8 r r4 \partCombineAutomatic
 % Bars 166 to 170
 	R2*3
 	
@@ -210,11 +210,11 @@ musicHornIMvtII = \relative c'' {
 % Bars 191 to 195
 	
 	
-	\partcombineApart g4.(\pp\< gis8\>
+	\partCombineApart g4.(\pp\< gis8\>
 	a\!)\noBeam c(\< a d)~\!
 	d4.\> c8\pp~
 % Bars 196 to 200
-	c8 r r4 \partcombineAutomatic
+	c8 r r4 \partCombineAutomatic
 	R2*2
 	
 	r4 r8 e\ff-^
@@ -223,7 +223,7 @@ musicHornIMvtII = \relative c'' {
 	R2*3
 	
 	
-	\partcombineApart r8 c(\pp a d)
+	\partCombineApart r8 c(\pp a d)
 	c4-- c--
 % Bar 206
 	c2\fermata \bar "|."

@@ -51,22 +51,22 @@ musicFloteIMvtIII = \relative c''' {
 		R2.*2
 		
 % Bars 46 to 50
-		\partcombineApart c2.\p~
-		c \partcombineAutomatic
+		\partCombineApart c2.\p~
+		c \partCombineAutomatic
 		R2.*2
 		
-		\partcombineApart c2.~
+		\partCombineApart c2.~
 % Bars 51 to 55
-		c \partcombineAutomatic
+		c \partCombineAutomatic
 		R2.*2
 		
-		\partcombineApart a2.~
-		a \partcombineAutomatic
+		\partCombineApart a2.~
+		a \partCombineAutomatic
 % Bars 56 to 60
 		R2.*2
 		
-		\partcombineApart a2.~
-		a \partcombineAutomatic
+		\partCombineApart a2.~
+		a \partCombineAutomatic
 		d,8(\p\< e f! g a bes
 % Bars 61 to 65
 		b4)\! cis\f-. d-.
@@ -94,11 +94,11 @@ musicFloteIMvtIII = \relative c''' {
 		
 		
 		
-		\partcombineApart r4 a,8(_\mf gis a4)
+		\partCombineApart r4 a,8(_\mf gis a4)
 % Bars 111 to 115
 		r b8(_\crescmarkup ais b4)
 		r cis8( bis cis4)
-		\partcombineAutomatic r ees8( d ees4)
+		\partCombineAutomatic r ees8( d ees4)
 		f4-. ees8( d ees4)
 		f-. ees8( d ees4) 
 % Bars 116 to 120
@@ -321,23 +321,23 @@ musicFloteIMvtIII = \relative c''' {
 	g f2->
 	R2.*2
 	
-	\partcombineApart c2.\p~
-	c \partcombineAutomatic
+	\partCombineApart c2.\p~
+	c \partCombineAutomatic
 % Bars 331 to 335
 	R2.*2
 	
-	\partcombineApart c2.~
-	c \partcombineAutomatic
+	\partCombineApart c2.~
+	c \partCombineAutomatic
 	R2.*2
 % Bars 336 to 340
 	
-	\partcombineApart a2.~
-	a \partcombineAutomatic
+	\partCombineApart a2.~
+	a \partCombineAutomatic
 	R2.*2
 	
 % Bars 341 to 345
-	\partcombineApart a2.~
-	a \partcombineAutomatic
+	\partCombineApart a2.~
+	a \partCombineAutomatic
 	d,8(\p\< e f! g a bes
 	b4\!) cis-. d-.
 	f->( a) d,->(
@@ -363,11 +363,11 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 391 to 395
 	
 	
-	\partcombineApart r4 a,8(\mf gis a4)
+	\partCombineApart r4 a,8(\mf gis a4)
 	r b8(_\crescmarkup ais b4)
 	r cis8( bis cis4)
 % Bars 396 to 400
-	\partcombineAutomatic r ees8( d ees4)
+	\partCombineAutomatic r ees8( d ees4)
 	f-. ees8( d ees4) 
 	f-. ees8( d ees4) 
 	f-. ees8( d ees4) 

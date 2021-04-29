@@ -65,9 +65,9 @@ musicHornIMvtIV = \relative c'' {
 	e r e r
 	e r r2
 	R1
-	\once \partcombineApart c2 r 
+	\once \partCombineApart c2 r 
 % Bars 66 to 70
-	\once \partcombineApart c2 r
+	\once \partCombineApart c2 r
 	R1*2
 	\mark \default
 	R1*5
@@ -76,10 +76,10 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	\partcombineApart r4 c2.\fp~
+	\partCombineApart r4 c2.\fp~
 	c1~
 % Bars 76 to 80
-	c4 r r2 \partcombineAutomatic
+	c4 r r2 \partCombineAutomatic
 	R1*8
 % Bars 81 to 85
 	
@@ -116,13 +116,13 @@ musicHornIMvtIV = \relative c'' {
 % Bars 111 to 115
 	c4\fz r d\fz r
 	c\fz r c\fz r \mark \default
-	\partcombineApart c r c2\fz~
+	\partCombineApart c r c2\fz~
 	c4 bes8( c bes4 a)
 	a( c) bes2
 % Bars 116 to 120
 	a4-. a-. g2->
 	f4 r f'2\fz\>~
-	f4\! r r2 \partcombineAutomatic
+	f4\! r r2 \partCombineAutomatic
 	R1*2
 	
 % Bars 121 to 125
@@ -176,10 +176,10 @@ musicHornIMvtIV = \relative c'' {
 	f4\fz f r2
 % Bars 171 to 175
 	R1
-	r2 r4 \partcombineApart g,-.
-	c2.-> \partcombineAutomatic r4
-	r2 r4 \partcombineApart g-.
-	c2.-> \partcombineAutomatic r4
+	r2 r4 \partCombineApart g,-.
+	c2.-> \partCombineAutomatic r4
+	r2 r4 \partCombineApart g-.
+	c2.-> \partCombineAutomatic r4
 % Bars 176 to 180
 	R1*3
 	
@@ -202,26 +202,26 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	\partcombineApart d4-^ a-^ d2-^~
+	\partCombineApart d4-^ a-^ d2-^~
 % Bars 196 to 200
-	d4 r r2 \partcombineAutomatic
+	d4 r r2 \partCombineAutomatic
 	R1*6
 % Bars 201 to 205
 	
 	
-	\partcombineApart r4 g,-.\mf r c-. \partcombineAutomatic
+	\partCombineApart r4 g,-.\mf r c-. \partCombineAutomatic
 	R1
-	\partcombineApart r4 g-.\mf r c-. \partcombineAutomatic
+	\partCombineApart r4 g-.\mf r c-. \partCombineAutomatic
 % Bars 206 to 210
 	R1*5
 % Bars 211 to 215
-	r2 \partcombineApart ees4-. c-.
+	r2 \partCombineApart ees4-. c-.
 	f2-> f4-. d-.
-	g4 \partcombineAutomatic r r2
-	\partcombineApart c,4-.\f g-. c2->
+	g4 \partCombineAutomatic r r2
+	\partCombineApart c,4-.\f g-. c2->
 	d4-. g,-. d'2-> \mark \default
 % Bars 216 to 220
-	ees4 \partcombineAutomatic r r2
+	ees4 \partCombineAutomatic r r2
 	R1*7
 % Bars 221 to 225
 	
@@ -257,13 +257,13 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	\partcombineApart d!4(\p c bes f)
+	\partCombineApart d!4(\p c bes f)
 	bes4. bes8 bes4 c
 % Bars 251 to 255
 	\tuplet 6/4 1 {d4( f aes g f ees)}
-	d2. r4 \partcombineAutomatic \mark \default
+	d2. r4 \partCombineAutomatic \mark \default
 	R1
-	\partcombineApart \tuplet 6/4 1 {aes4(\p c ees ges f ees)} \partcombineAutomatic
+	\partCombineApart \tuplet 6/4 1 {aes4(\p c ees ges f ees)} \partCombineAutomatic
 	ees2(\< \tuplet 3/2 2 {aes,4 bes ces\!}
 % Bars 256 to 260
 	bes\f) r r2
@@ -284,8 +284,8 @@ musicHornIMvtIV = \relative c'' {
 	r2 f4\f r
 % Bars 276 to 280
 	R1
-	r2 \partcombineApart d2->
-	d-> d-> \partcombineAutomatic
+	r2 \partCombineApart d2->
+	d-> d-> \partCombineAutomatic
 	d-> g,->
 	g-> g->
 % Bars 281 to 285
@@ -310,7 +310,7 @@ musicHornIMvtIV = \relative c'' {
 	f2.-> f4
 	f2-> f->
 	f2. f4
-	\once \partcombineApart f2 ees
+	\once \partCombineApart f2 ees
 	des2. des4
 % Bars 301 to 305
 	des2 des
@@ -350,10 +350,10 @@ musicHornIMvtIV = \relative c'' {
 	b4 b2.->(
 	c4) c2.\fz~
 % Bars 351 to 355
-	c4 \partcombineChords c2.\fz~
+	c4 \partCombineChords c2.\fz~
 	c4 c2.\fz~
 	c4 c2.\fz~
-	c4 \partcombineAutomatic f2.->\f~
+	c4 \partCombineAutomatic f2.->\f~
 	f4 f2.->~
 % Bars 356 to 360
 	f4 f2.->~
@@ -468,14 +468,14 @@ musicHornIMvtIV = \relative c'' {
 	c-> d-. ees-> r
 % Bars 481 to 485
 	R1
-	r2 r4 \partcombineApart ees
+	r2 r4 \partCombineApart ees
 	ees2-> ees->
-	ees-> ees4-. \partcombineAutomatic f-.
+	ees-> ees4-. \partCombineAutomatic f-.
 	f1~
 % Bars 486 to 490
 	f2. ees4
-	\partcombineApart ees2-> ees->
-	ees-> ees4-. \partcombineAutomatic f-.
+	\partCombineApart ees2-> ees->
+	ees-> ees4-. \partCombineAutomatic f-.
 	f1->~
 	f2. r4 
 % Bars 491 to 495
@@ -487,9 +487,9 @@ musicHornIMvtIV = \relative c'' {
 % Bars 496 to 500
 	d-> ees->
 	f-> g->
-	\partcombineApart d-> ees->
+	\partCombineApart d-> ees->
 	d-> d->
-	c-> \partcombineAutomatic ees->
+	c-> \partCombineAutomatic ees->
 % Bars 501 to 505
 	d4 r r2
 	R1*2
@@ -508,10 +508,10 @@ musicHornIMvtIV = \relative c'' {
 	g-.  r r ees-.
 % Bars 516 to 520
 	a!-. r r f-.
-	\partcombineApart bes, bes bes bes
+	\partCombineApart bes, bes bes bes
 	bes bes bes bes
 	bes bes bes bes
-	bes bes bes bes \partcombineAutomatic \mark \default
+	bes bes bes bes \partCombineAutomatic \mark \default
 % Bars 521 to 525
 	c r c2->
 	r c->
@@ -543,11 +543,11 @@ musicHornIMvtIV = \relative c'' {
 	f~
 	f~
 % Bars 546 to 550
-	f4 r \partcombineApart f2->
+	f4 r \partCombineApart f2->
 	d-> c->
 	bes-> f->
 	bes2.-> bes4-.
-	bes2-> \partcombineAutomatic ees->
+	bes2-> \partCombineAutomatic ees->
 % Bars 551 to 555
 	f1-^~
 	f~

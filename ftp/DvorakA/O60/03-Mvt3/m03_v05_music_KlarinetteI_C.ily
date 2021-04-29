@@ -58,9 +58,9 @@ musicKlarinetteIMvtIII = \relative c'' {
 		c) a( c)~
 		c2.~
 		c
-		\partcombineChords c2 aes'4~
+		\partCombineChords c2 aes'4~
 % Bars 41 to 45
-		aes g-. aes-.\! \partcombineAutomatic
+		aes g-. aes-.\! \partCombineAutomatic
 		g2\ff-> f4-.
 		g-. aes2->
 		r4 ees-.\p r
@@ -85,7 +85,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		aes! r r
 % Bars 61 to 65
 		r bes\f-. c-.
-		\once \partcombineApart ees2-> f4(->
+		\once \partCombineApart ees2-> f4(->
 		g) aes2->
 		R2.*8
 % Bars 66 to 70
@@ -112,7 +112,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		
 		
 		
-		\partcombineApart R2.*2 \partcombineAutomatic
+		\partCombineApart R2.*2 \partCombineAutomatic
 % Bars 91 to 95
 		
 		R2.*4
@@ -120,22 +120,22 @@ musicKlarinetteIMvtIII = \relative c'' {
 		
 		
 % Bars 96 to 100
-		\partcombineApart b'2\pp b4~
+		\partCombineApart b'2\pp b4~
 		b b2
 		cis4-. b-. b-.
-		cis!-. b-. b-. \partcombineAutomatic
+		cis!-. b-. b-. \partCombineAutomatic
 		R2.*2
 % Bars 101 to 105
 		
 		r4 des!-. r
 		des-. r des-.
-		r \once \partcombineApart ces2
-		r4 \once \partcombineApart ces2_\pocoapococresc
+		r \once \partCombineApart ces2
+		r4 \once \partCombineApart ces2_\pocoapococresc
 % Bars 106 to 110
 		r4 ees r
 		ees r ees
-		r \once \partcombineApart des2
-		r4 \once \partcombineApart des2
+		r \once \partCombineApart des2
+		r4 \once \partCombineApart des2
 		R2.*4
 % Bars 111 to 115
 		
@@ -231,7 +231,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		d4-.\< ees-. f-.\!
 		ees2.
 % Bars 181 to 185
-		\partcombineApart bes'\f~
+		\partCombineApart bes'\f~
 		bes~\>
 		bes~
 		bes2(\! a4)
@@ -256,10 +256,10 @@ musicKlarinetteIMvtIII = \relative c'' {
 		c~
 	}
 % Bars 201 to 205
-	\grace s8 c4 r r \partcombineAutomatic
+	\grace s8 c4 r r \partCombineAutomatic
 	R2. 
-	\partcombineApart r4 bes(\p d)
-	r g( bes) \partcombineAutomatic
+	\partCombineApart r4 bes(\p d)
+	r g( bes) \partCombineAutomatic
 	R2.*24
 % Bars 206 to 210
 	
@@ -311,8 +311,8 @@ musicKlarinetteIMvtIII = \relative c'' {
 	bes2(_\pdim c4
 % Bars 266 to 270
 	d e! f)
-	\partcombineApart c2.~
-	c4 \partcombineAutomatic r r 
+	\partCombineApart c2.~
+	c4 \partCombineAutomatic r r 
 	R2.*11
 % Bars 271 to 275
 	
@@ -321,7 +321,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	\partcombineApart f4(\pp g8 e f4)
+	\partCombineApart f4(\pp g8 e f4)
 % Bars 281 to 285
 	f( g8_\< e f4)
 	f( g8 e f4)
@@ -330,7 +330,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f( g8 e f4)
 % Bars 286 to 290
 	f( g8 e f4)
-	f( g8 e f4) \bar "||" \key f \minor \partcombineAutomatic
+	f( g8 e f4) \bar "||" \key f \minor \partCombineAutomatic
 	e(-> f8) r e4(->
 	f8) r e4(-> f8) r
 	g4-.\fz f8( e f4)
@@ -399,7 +399,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	bes r bes
 	aes! r r
 	r bes-.\f c-.
-	\once \partcombineApart ees2-> f4(->
+	\once \partCombineApart ees2-> f4(->
 % Bars 346 to 350
 	g) aes2->
 	R2.*8
@@ -426,30 +426,30 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 371 to 375
 	
 	
-	\partcombineApart R2.*2 \partcombineAutomatic
+	\partCombineApart R2.*2 \partCombineAutomatic
 	
 	R2.*4
 % Bars 376 to 380
 	
 	
 	
-	\partcombineApart b'2\pp b4~
+	\partCombineApart b'2\pp b4~
 	b b2
 % Bars 381 to 385
 	cis4-. b-. b-.
-	cis-. b-. b-. \partcombineAutomatic
+	cis-. b-. b-. \partCombineAutomatic
 	R2.*2
 	
 	r4 des!-.\pp r
 % Bars 386 to 390
 	des-. r des-.
-	r \once \partcombineApart ces2
-	r4 \once \partcombineApart ces2_\pocoapococresc
+	r \once \partCombineApart ces2
+	r4 \once \partCombineApart ces2_\pocoapococresc
 	r4 ees r
 	ees r ees
 % Bars 391 to 395
-	r4 \once \partcombineApart des2
-	r4 \once \partcombineApart des2
+	r4 \once \partCombineApart des2
+	r4 \once \partCombineApart des2
 	R2.*4
 % Bars 396 to 400
 	
@@ -492,12 +492,12 @@ musicKlarinetteIMvtIII = \relative c'' {
 	c'-. c,->( d8 e)
 	f4-. aes-. f-.
 	f-. aes-. f-.
-	\once \partcombineApart c-. bes'4->( aes8 g)
+	\once \partCombineApart c-. bes'4->( aes8 g)
 % Bars 431 to 435
 	f4-. aes-. f-.
 	f-. aes-. f-.
-	c'-. \partcombineApart c,->( d8 e)
-	f4-. \partcombineAutomatic aes-. f-.
+	c'-. \partCombineApart c,->( d8 e)
+	f4-. \partCombineAutomatic aes-. f-.
 	f-. aes-. f-.
 % Bars 436 to 438
 	f r r

@@ -570,10 +570,10 @@ musicFloteIIMvtIV = \relative c'' {
 	fis-. e-. d-. a'-. 
 	fis-. e-. d-. a'-. 
 	fis-. e-. d-. a'-. 
-	d, r \once \partcombineApart d r
-	\once \partcombineApart d r \once \partcombineApart d r
+	d, r \once \partCombineApart d r
+	\once \partCombineApart d r \once \partCombineApart d r
 % Bars 561 to 563
-	\once \partcombineApart d r r2
-	\once \partcombineApart d4 r  r2
-	\once \partcombineApart d2 r4 \bar "|."
+	\once \partCombineApart d r r2
+	\once \partCombineApart d4 r  r2
+	\once \partCombineApart d2 r4 \bar "|."
 }

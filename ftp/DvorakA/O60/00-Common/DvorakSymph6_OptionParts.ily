@@ -2,7 +2,7 @@
 %  typesetter  : Sébastien MANEN
 %  date        : Sunday 29 November 2020, 11:27
 generalOptions = {
-	\version "2.20.0"
+	\version "2.22.0"
 	\set Score.alternativeNumberingStyle = #'numbers
 	\set Score.doubleRepeatType = #":|.|:"
 	\set Score.markFormatter = #format-mark-box-alphabet

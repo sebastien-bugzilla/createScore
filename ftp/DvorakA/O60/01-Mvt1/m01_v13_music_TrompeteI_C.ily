@@ -56,7 +56,7 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 56 to 60
 		g2\fz( f8 e)
 		d2.
-		r4 r \once \partcombineApart g,-.
+		r4 r \once \partCombineApart g,-.
 		g2-^ c4
 		c r c
 % Bars 61 to 65
@@ -176,7 +176,7 @@ musicTrompeteIMvtI = \relative c'' {
 	
 	
 	
-	\once \partcombineApart g,4 r r
+	\once \partCombineApart g,4 r r
 	R2.*25
 % Bars 241 to 245
 	
@@ -196,7 +196,7 @@ musicTrompeteIMvtI = \relative c'' {
 	
 	
 	
-	\once \partcombineApart a2.
+	\once \partCombineApart a2.
 	R2.
 % Bars 271 to 275
 	d2.\f->~
@@ -206,21 +206,21 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 276 to 280
 	
 	
-	r4 r \once \partcombineApart f,-.
+	r4 r \once \partCombineApart f,-.
 	bes2-> r4
-	r r \once \partcombineApart f-.
+	r r \once \partCombineApart f-.
 % Bars 281 to 285
 	bes-. bes-. r
-	r r \once \partcombineApart f-.
+	r r \once \partCombineApart f-.
 	bes2-> r4
-	r r \once \partcombineApart f-.
+	r r \once \partCombineApart f-.
 	bes-. bes-. r
 % Bars 286 to 290
-	r r \once \partcombineApart e,-.
+	r r \once \partCombineApart e,-.
 	bes'2-> r4
-	r r \once \partcombineApart ees,-.
+	r r \once \partCombineApart ees,-.
 	bes'-. bes-. r
-	r r \once \partcombineApart ees,-.
+	r r \once \partCombineApart ees,-.
 % Bars 291 to 295
 	c'2.\fz~
 	c4 r r
@@ -399,7 +399,7 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 516 to 520
 	g2\fz f8( e)
 	e2.
-	\partcombineApart c4. c8 c4 \partcombineAutomatic
+	\partCombineApart c4. c8 c4 \partCombineAutomatic
 	g'2\fz f8( e)
 	e2 r4
 % Bars 521 to 525

@@ -143,9 +143,9 @@ musicFloteIIMvtI = \relative c' {
 		b2( cis4)
 % Bars 166 to 170
 		b2( ais4)
-		\once \partcombineApart b r r
-		\once \partcombineApart b r r
-		\once \partcombineApart b r r
+		\once \partCombineApart b r r
+		\once \partCombineApart b r r
+		\once \partCombineApart b r r
 		b r r
 % Bars 171 to 175
 		R2.*2
@@ -444,7 +444,7 @@ musicFloteIIMvtI = \relative c' {
 	e4. a,8-. b-. c-.
 	d g, a b c fis,
 	g a b e, fis g
-	a4 r r \partcombineAutomatic
+	a4 r r \partCombineAutomatic
 	R2.*5
 % Bars 481 to 485
 	
@@ -501,7 +501,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 541 to 545
 	d--
 	d--
-	\partcombineApart d2-^\f cis4-.
+	\partCombineApart d2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a->
 % Bar 546

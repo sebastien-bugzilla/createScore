@@ -316,7 +316,7 @@ musicHornIIMvtI = \relative c' {
 	g\fz\>
 	a\pp~
 	a
-	\partcombineApart c~
+	\partCombineApart c~
 % Bars 326 to 330
 	c~
 	c
@@ -357,9 +357,9 @@ musicHornIIMvtI = \relative c' {
 	
 	
 	
-	\partcombineApart g4\p-. g,-. r
+	\partCombineApart g4\p-. g,-. r
 % Bars 366 to 370
-	g'-. g,-. r \partcombineAutomatic
+	g'-. g,-. r \partCombineAutomatic
 	R2.*13
 % Bars 371 to 375
 	

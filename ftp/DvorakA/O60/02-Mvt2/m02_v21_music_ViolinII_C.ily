@@ -234,5 +234,5 @@ musicViolinIIMvtII = \relative c' {
 % Bars 201 to 205
 	R2*5
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	R2\fermata \bar "|."
 }

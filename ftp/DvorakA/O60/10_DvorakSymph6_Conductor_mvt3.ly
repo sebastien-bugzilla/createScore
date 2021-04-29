@@ -75,7 +75,7 @@
 						\new Voice {
 							\timeMvtIII \generalOptions \conductorOptions
 							\nameStaffIMvtIII
-							\partcombine \musicFloteIMvtIII \musicFloteIIMvtIII
+							\partCombine \musicFloteIMvtIII \musicFloteIIMvtIII
 %							\musicFloteIIMvtIII
 						}
 					>>
@@ -87,19 +87,19 @@
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIMvtIII
-					\partcombine \musicOboeIMvtIII \musicOboeIIMvtIII
+					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
 %					\musicOboeIIMvtIII 
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIIMvtIII
-					\partcombine \musicKlarinetteIMvtIII \musicKlarinetteIIMvtIII
-%					\musicKlarinetteIIMvtIII
+%					\partCombine \musicKlarinetteIMvtIII \musicKlarinetteIIMvtIII
+					\musicKlarinetteIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIVMvtIII
-					\partcombine \musicFagottIMvtIII \musicFagottIIMvtIII
+					\partCombine \musicFagottIMvtIII \musicFagottIIMvtIII
 %					\musicFagottIIMvtIII
 				}
 			>>
@@ -108,20 +108,20 @@
 					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffVMvtIII
-						\partcombine \musicHornIMvtIII \musicHornIIMvtIII
+						\partCombine \musicHornIMvtIII \musicHornIIMvtIII
 %						\musicHornIIMvtIII
 					}
 					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffVIMvtIII
-						\partcombine \musicHornIIIMvtIII \musicHornIVMvtIII
+						\partCombine \musicHornIIIMvtIII \musicHornIVMvtIII
 %						\musicHornIVMvtIII 
 					}
 				>>
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffVIIMvtIII
-					\partcombine \musicTrompeteIMvtIII \musicTrompeteIIMvtIII
+					\partCombine \musicTrompeteIMvtIII \musicTrompeteIIMvtIII
 %					\musicTrompeteIIMvtIII
 				}
 				\new Staff {

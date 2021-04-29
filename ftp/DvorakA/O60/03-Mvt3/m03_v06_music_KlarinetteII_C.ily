@@ -61,7 +61,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		aes!2\< f'4~
 % Bars 41 to 45
 		f e-. f-.\!
-		ees!2\ff-> des!->4~
+		ees!2\ff-> des!4->~
 		des c2->
 		r4 c-.\p r
 		c-. r c-.

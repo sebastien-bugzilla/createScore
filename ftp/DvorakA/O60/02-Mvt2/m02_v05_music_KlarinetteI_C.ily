@@ -10,24 +10,24 @@ musicKlarinetteIMvtII = \relative c'' {
 	\transposition bes
 % Bars 1 to 5
 	R2
-	\partcombineApart r8 c(\p b e)~
+	\partCombineApart r8 c(\p b e)~
 	e4.(_\< fis8\!
 	g2)_\fp~\>
 	g8_\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4
-	a) r \partcombineAutomatic
+	a) r \partCombineAutomatic
 	R2*10
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
 	
-	r8 \partcombineChords e'-- e-- d-- \partcombineAutomatic
+	r8 \partCombineChords e'-- e-- d-- \partCombineAutomatic
 	e2
-	\partcombineChords c4( b
+	\partCombineChords c4( b
 % Bars 21 to 25
-	c4.) \partcombineAutomatic r8
+	c4.) \partCombineAutomatic r8
 	R2*3
 	
 	
@@ -36,11 +36,11 @@ musicKlarinetteIMvtII = \relative c'' {
 	d8 cis b a)
 	a4 g\<(
 	fis8)\! r r4
-	\partcombineApart g'2\fp~
+	\partCombineApart g'2\fp~
 	g~
 % Bars 31 to 35
 	g~
-	g8 r r4 \partcombineAutomatic
+	g8 r r4 \partCombineAutomatic
 	R2*2
 	\bar "||" \mark \default
 	r4 b,\pp--
@@ -52,13 +52,13 @@ musicKlarinetteIMvtII = \relative c'' {
 	b b
 % Bars 41 to 45
 	R2
-	\partcombineApart \tuplet 3/2 4 {d,8_\crescmarkup-. a'-. d-. } r4 \partcombineAutomatic
+	\partCombineApart \tuplet 3/2 4 {d,8_\crescmarkup-. a'-. d-. } r4 \partCombineAutomatic
 	R2
-	\partcombineApart \tuplet 3/2 4 {c,8_\dimmarkup-. g'-. c-. } r4 \partcombineAutomatic
+	\partCombineApart \tuplet 3/2 4 {c,8_\dimmarkup-. g'-. c-. } r4 \partCombineAutomatic
 	R2*2
 % Bars 46 to 50
 	
-	\partcombineApart c8(\pp\< a'4 g16 f)
+	\partCombineApart c8(\pp\< a'4 g16 f)
 	<< des2 {s4\> s\!} >>
 	c8( a'4 g16 f)
 	des2->(
@@ -67,11 +67,11 @@ musicKlarinetteIMvtII = \relative c'' {
 	fis4.\f\> fis8
 	a(\p e4) c8~
 	c(\> a~ a16 b c d)\!
-	e8\pp r r4 \partcombineAutomatic
+	e8\pp r r4 \partCombineAutomatic
 % Bars 56 to 60
-	r8 \partcombineApart a,( gis c)~
+	r8 \partCombineApart a,( gis c)~
 	c2~
-	c4 \partcombineAutomatic r
+	c4 \partCombineAutomatic r
 	c\p r
 	c_\dimmarkup r
 % Bars 61 to 65
@@ -82,44 +82,44 @@ musicKlarinetteIMvtII = \relative c'' {
 	f16) e( d) g( f) e( d) g(
 % Bars 66 to 70
 	f)_\< e( d) d'( c b a\! g)
-	\partcombineApart f( e d_\dimmarkup g f e d c)
+	\partCombineApart f( e d_\dimmarkup g f e d c)
 	b(\p c d e d c b a)
 	g(\< a c b\! a g f e)
 	\tuplet 3/2 4 {g8--( f-- e--} g\>[ f\!])
 % Bars 71 to 75
 	e(^\dimmarkup d g4)~
 	g2\pp~ \mark \default
-	g8 r r4 \partcombineAutomatic
+	g8 r r4 \partCombineAutomatic
 	R2*6
 % Bars 76 to 80
 	
 	
 	
 	
-	\partcombineApart R2
+	\partCombineApart R2
 % Bars 81 to 85
 	r8 g16(\pp\< a) a( b) b( d)\!
 	c4( a8 b
-	c) r r4 \partcombineAutomatic
+	c) r r4 \partCombineAutomatic
 	R2*3
 	
 % Bars 86 to 90
 	
-	\partcombineApart r16 g,(\f\< c e g c e g)~\!
+	\partCombineApart r16 g,(\f\< c e g c e g)~\!
 	g8(\> f16 e g f e d) \mark \default
-	g4._\pp r8 \partcombineAutomatic
+	g4._\pp r8 \partCombineAutomatic
 	R2
 % Bars 91 to 95
-	\partcombineApart r4 r8 e(\p
+	\partCombineApart r4 r8 e(\p
 	cis\< g'\! e\> cis\!
-	d) r r4 \partcombineAutomatic
+	d) r r4 \partCombineAutomatic
 	R2*4
 	
 % Bars 96 to 100
 	
 	
-	r8 \partcombineApart e16-. g-. c,-. d-. e-. f-.
-	\partcombineAutomatic e8-> e-> e-> e->
+	r8 \partCombineApart e16-. g-. c,-. d-. e-. f-.
+	\partCombineAutomatic e8-> e-> e-> e->
 	e4-> fis->
 % Bars 101 to 105
 	g8 r r4
@@ -140,8 +140,8 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	\partcombineApart ees2\pp(->
-	c4 f) \partcombineAutomatic
+	\partCombineApart ees2\pp(->
+	c4 f) \partCombineAutomatic
 	R2
 	f2\p\cresc
 	f->
@@ -166,7 +166,7 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 141 to 145
 	R2*2
 	
-	\partcombineApart c2\p\<~
+	\partCombineApart c2\p\<~
 	c8\mf\< e( g e)
 	d2\>(
 % Bars 146 to 150
@@ -178,14 +178,14 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 151 to 155
 	g2~\mf\>
 	g8\! r r4
-	R2 \partcombineAutomatic
+	R2 \partCombineAutomatic
 	R2*3
 % Bars 156 to 160
 	
 	r8 cis,4->\p( b16 a
 	e8) r r4
-	r8  \partcombineChords c'!4\pp( b16 a
-	e8) \partcombineAutomatic r r4
+	r8  \partCombineChords c'!4\pp( b16 a
+	e8) \partCombineAutomatic r r4
 % Bars 161 to 165
 	R2*8
 % Bars 166 to 170
@@ -205,7 +205,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	g16)\noBeam d\f-> g-> g-> g->\< g-> g-> fis->\!
 	e8\ff r g-^ r
 	fis-^ r r4
-	\partcombineApart r8 g(->_\p e a
+	\partCombineApart r8 g(->_\p e a
 % Bars 181 to 185
 	f!_\dimmarkup d b g')~
 	g2_\pp~
@@ -215,7 +215,7 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 186 to 190
 	e2(
 	d
-	c8) \partcombineAutomatic r r4
+	c8) \partCombineAutomatic r r4
 	R2*8
 % Bars 191 to 195
 	

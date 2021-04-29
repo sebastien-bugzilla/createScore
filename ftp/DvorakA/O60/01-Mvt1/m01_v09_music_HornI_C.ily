@@ -32,11 +32,11 @@ musicHornIMvtI = \relative c'' {
 		c,\< c4 c c8\!
 		c2.~
 		<< c {s2\< s8 s\!} >>
-		\partcombineApart cis4.\!->(_\dimmarkup d8 b cis)
+		\partCombineApart cis4.\!->(_\dimmarkup d8 b cis)
 % Bars 21 to 25
 		d4\p\>( a2)~
 		a2.(
-		e'8\pp) r r4 r \partcombineAutomatic
+		e'8\pp) r r4 r \partCombineAutomatic
 		R2.*10
 % Bars 26 to 30
 	
@@ -135,11 +135,11 @@ musicHornIMvtI = \relative c'' {
 		
 		
 		b2.\f-^~
-		b4 r \once \partcombineApart ees\f \mark \default
-		\once \partcombineApart e!8-. r r4 r
+		b4 r \once \partCombineApart ees\f \mark \default
+		\once \partCombineApart e!8-. r r4 r
 % Bars 141 to 145
-		\once \partcombineApart e8 r r4 r
-		\once \partcombineApart e8 r r4 r
+		\once \partCombineApart e8 r r4 r
+		\once \partCombineApart e8 r r4 r
 		R2.*9
 % Bars 146 to 150
 	
@@ -180,15 +180,15 @@ musicHornIMvtI = \relative c'' {
 % Bars 181 to 185
 			
 			
-			\partcombineApart g,2.~\pp
+			\partCombineApart g,2.~\pp
 			g~
 			g~
 % Bars 186 to 190
-			g  \partcombineAutomatic
+			g  \partCombineAutomatic
 			\clef bass c,,\pp~
 			c~
-			c8 \clef treble \partcombineApart g''4 g g8
-			g8 g4 g g8 \partcombineAutomatic
+			c8 \clef treble \partCombineApart g''4 g g8
+			g8 g4 g g8 \partCombineAutomatic
 		}
 		{
 % Bars 177 to 180
@@ -250,8 +250,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	\partcombineApart c2.(\p\>
-	b4)\! r r \partcombineAutomatic
+	\partCombineApart c2.(\p\>
+	b4)\! r r \partCombineAutomatic
 	R2.*7
 % Bars 261 to 265
 	
@@ -314,7 +314,7 @@ musicHornIMvtI = \relative c'' {
 	
 	
 	
-	\partcombineApart c2.~
+	\partCombineApart c2.~
 % Bars 331 to 335
 	c~
 	c
@@ -322,7 +322,7 @@ musicHornIMvtI = \relative c'' {
 	d4)\p f2\>~
 	f2.
 % Bars 336 to 340
-	e8\pp r r4 r \partcombineAutomatic
+	e8\pp r r4 r \partCombineAutomatic
 	R2.*10
 % Bars 341 to 345
 	
@@ -375,7 +375,7 @@ musicHornIMvtI = \relative c'' {
 	aes2.\fz~
 % Bars 391 to 395
 	aes4 r r
-	\partcombineApart ees2( ees8-.) f-. \partcombineAutomatic
+	\partCombineApart ees2( ees8-.) f-. \partCombineAutomatic
 	bes,4 r r
 	r4 g'\fz f8-. ees-.
 	d-. r r4 r
@@ -397,7 +397,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 411 to 415
 	
 % Bars 416 to 420
-	\partcombineApart g8(\p b g'4 f)
+	\partCombineApart g8(\p b g'4 f)
 	e2( d4)
 	g,8( b g'4 f)
 	e8-. d-. c2
@@ -405,7 +405,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 421 to 425
 	e8 e e4 e8 e
 	e4 r r
-	R2. \partcombineAutomatic
+	R2. \partCombineAutomatic
 	R2.*7
 % Bars 426 to 430
 	
@@ -435,10 +435,10 @@ musicHornIMvtI = \relative c'' {
 	e2( d4)
 	e2( f4)
 	e2( d4)
-	\partcombineApart c8-. e-. f4( e)
+	\partCombineApart c8-. e-. f4( e)
 % Bars 461 to 465
 	d8-. fis-. g4( fis)
-	e2.-> \partcombineAutomatic 
+	e2.-> \partCombineAutomatic 
 	f!->
 	f->
 	fis->
@@ -521,11 +521,11 @@ musicHornIMvtI = \relative c'' {
 	
 	R2.*2
 	
-	\partcombineApart c2.--\pp
+	\partCombineApart c2.--\pp
 % Bars 541 to 545
 	c--
 	c--
-	c2\f r4 \partcombineAutomatic
+	c2\f r4 \partCombineAutomatic
 	R2.
 	c8\f-. e-. g4 f->
 % Bar 546

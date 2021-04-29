@@ -49,28 +49,28 @@ musicHornIIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	\partcombineApart r8 e'\pp( c f)~
+	\partCombineApart r8 e'\pp( c f)~
 % Bars 56 to 60
 	f4 e(
 	a2)~\<
-	a4\fz r \partcombineAutomatic
+	a4\fz r \partCombineAutomatic
 	R2*4
 	
 % Bars 61 to 65
 	
 	
-	\partcombineApart R2*3
+	\partCombineApart R2*3
 	
 	
 % Bars 66 to 70
-	r4 \partcombineAutomatic r8. g,16\f
+	r4 \partCombineAutomatic r8. g,16\f
 	r8. g16_\dimmarkup r8. g16
 	r4 f'8\pp r
 	r f r4
 	r d--
 % Bars 71 to 75
-	\partcombineApart r r8 f(\pp
-	e d a b) \mark \default \partcombineAutomatic
+	\partCombineApart r r8 f(\pp
+	e d a b) \mark \default \partCombineAutomatic
 	r e_\semprepp r e
 	r f r e
 	r e r f
@@ -158,8 +158,8 @@ musicHornIIIMvtII = \relative c'' {
 	r e8\mf e16_\dimmarkup r c8 c16
 	r d8\p d16\> r d8 d16\!
 	R2
-	\partcombineApart e4 c
-	b2 \partcombineAutomatic
+	\partCombineApart e4 c
+	b2 \partCombineAutomatic
 % Bars 156 to 160
 	cis4--\pp cis--
 	cis-- cis--
@@ -202,10 +202,10 @@ musicHornIIIMvtII = \relative c'' {
 	e-^ r c r
 % Bars 201 to 205
 	R2
-	\partcombineApart e2~
+	\partCombineApart e2~
 	e
 	R2*2
 	
 % Bar 206
-	R2\fermataMarkup \bar "|."
+	R2\fermata \bar "|."
 }

@@ -9,7 +9,7 @@ musicHornIIIMvtI = \relative c' {
 	\key c \major
 	\transposition e
 % Bars 1 to 5
-	\partcombineApart d8\pp d4 d d8
+	\partCombineApart d8\pp d4 d d8
 	d d4 d d8
 	\repeat volta 2 {
 		d d4 d d8
@@ -24,15 +24,15 @@ musicHornIIIMvtI = \relative c' {
 % Bars 11 to 15
 		g g4\pp g g8
 		ees ees4 ees ees8
-		\partcombineAutomatic c' c4 c c8
+		\partCombineAutomatic c' c4 c c8
 		c c4 c c8
 		a a4\< a a8
 % Bars 16 to 20
 		a a4 a\! c8
 		bes r r4 r
-		\partcombineApart R2.*2
+		\partCombineApart R2.*2
 		
-		\partcombineAutomatic R2.*14
+		\partCombineAutomatic R2.*14
 % Bars 21 to 25
 	
 % Bars 26 to 30
@@ -62,16 +62,16 @@ musicHornIIIMvtI = \relative c' {
 		d4\ff^\grandioso r r
 		R2.
 % Bars 51 to 55
-		\partcombineApart f2\f r4 \partcombineAutomatic
+		\partCombineApart f2\f r4 \partCombineAutomatic
 		R2.
-		\partcombineApart f4-. f-. r \partcombineAutomatic
+		\partCombineApart f4-. f-. r \partCombineAutomatic
 		R2.*2
 		
 % Bars 56 to 60
 		d2(\fz ees8 f)
 		ees2.
-		\partcombineApart ees2(\fz d8 c)
-		bes4 r r \partcombineAutomatic 
+		\partCombineApart ees2(\fz d8 c)
+		bes4 r r \partCombineAutomatic 
 		r r ees8-.\f f-.
 % Bars 61 to 65
 		g2-> ees8-. f-.
@@ -90,9 +90,9 @@ musicHornIIIMvtI = \relative c' {
 		
 		r4 c,\pp r
 		r bes r
-		\partcombineApart r r cis-.
+		\partCombineApart r r cis-.
 % Bars 86 to 90
-		d-. r r \partcombineAutomatic
+		d-. r r \partCombineAutomatic
 		R2.*3
 		
 		
@@ -113,9 +113,9 @@ musicHornIIIMvtI = \relative c' {
 		d8-.\f r r4 r
 		d8-. r r4 r
 		d8-.\p r r4 r
-		\partcombineApart r r fis,\pp
+		\partCombineApart r r fis,\pp
 % Bars 106 to 110
-		r fis r \partcombineAutomatic
+		r fis r \partCombineAutomatic
 		R2. \mark \default
 		d4( a' c)\!
 		bes4.( a8 g4)\<
@@ -167,22 +167,22 @@ musicHornIIIMvtI = \relative c' {
 		d2( c4)
 % Bars 166 to 170
 		b2( c4)
-		\partcombineApart d-> c8-. d-. g,4
+		\partCombineApart d-> c8-. d-. g,4
 		d'-> c8-. d-. g,4
 		d'-> c8-. d-. g,4
-		d'-> c8-. d-. g,4 \partcombineAutomatic
+		d'-> c8-. d-. g,4 \partCombineAutomatic
 % Bars 171 to 175
 		R2.*3
 		
 		
-		\partcombineApart g2.~\pp
+		\partCombineApart g2.~\pp
 		g~
 % Bars 176 to 180
 		g~
 	}
 	\alternative {
 		{
-			g4 r r \partcombineAutomatic
+			g4 r r \partCombineAutomatic
 			d'\p\< d e
 			f2._\fpdimD~
 			f~
@@ -199,7 +199,7 @@ musicHornIIIMvtI = \relative c' {
 		}
 		{
 % Bars 177 to 180
-			\partcombineApart g4 r r \partcombineAutomatic
+			\partCombineApart g4 r r \partCombineAutomatic
 			R2.*4
 % Bars 181 to 185
 			
@@ -247,8 +247,8 @@ musicHornIIIMvtI = \relative c' {
 % Bars 236 to 240
 	
 % Bars 241 to 245
-	c'4_\fmarc-> r8 \partcombineApart c-! bes-! a-!
-	\partcombineAutomatic bes4-.-> r des->-.
+	c'4_\fmarc-> r8 \partCombineApart c-! bes-! a-!
+	\partCombineAutomatic bes4-.-> r des->-.
 	c4-> r r
 	R2.*21
 % Bars 246 to 250
@@ -272,7 +272,7 @@ musicHornIIIMvtI = \relative c' {
 % Bars 271 to 275
 	c r r
 	e-> f-> g->
-	\once \partcombineApart c, r r
+	\once \partCombineApart c, r r
 	R2.*5
 % Bars 276 to 280
 	
@@ -367,8 +367,8 @@ musicHornIIIMvtI = \relative c' {
 % Bars 386 to 390
 	
 	
-	\partcombineApart ges2.\fz~
-	ges4 r r \partcombineAutomatic
+	\partCombineApart ges2.\fz~
+	ges4 r r \partCombineAutomatic
 	ges'2(\fz f8 ees
 % Bars 391 to 395
 	des4) r r
@@ -376,8 +376,8 @@ musicHornIIIMvtI = \relative c' {
 % Bars 396 to 400
 	
 	
-	\partcombineApart r4 r a--\p
-	r a-- r \partcombineAutomatic
+	\partCombineApart r4 r a--\p
+	r a-- r \partCombineAutomatic
 	R2. \mark \default
 % Bars 401 to 405
 	R2.*28
@@ -422,22 +422,22 @@ musicHornIIIMvtI = \relative c' {
 	d2( c4)
 	d2( ees4)
 	d2( c4)
-	\partcombineApart bes b2->
+	\partCombineApart bes b2->
 % Bars 461 to 465
-	c4 cis2-> \partcombineAutomatic
+	c4 cis2-> \partCombineAutomatic
 	c!2.->
 	c->
 	bes->
 	bes->
 % Bars 466 to 470
-	\once \partcombineApart f4 r r
+	\once \partCombineApart f4 r r
 	R2.*4
 % Bars 471 to 475
 	d'2\f-^ c4
 	f8-. d-. ees-. f-. b,!4
 	ees-> a,-> d->
 	g,-> c-> f,->
-	\once \partcombineApart aes-> r r
+	\once \partCombineApart aes-> r r
 % Bars 476 to 480
 	R2.*3
 	
@@ -470,17 +470,17 @@ musicHornIIIMvtI = \relative c' {
 	
 	r4 f-._\fmarc a-.
 % Bars 511 to 515
-	\once \partcombineApart bes-. f-. a-.
-	\once \partcombineApart bes-. f-. a-.
-	\once \partcombineApart bes-. f-. a-.
-	\once \partcombineApart bes r r
+	\once \partCombineApart bes-. f-. a-.
+	\once \partCombineApart bes-. f-. a-.
+	\once \partCombineApart bes-. f-. a-.
+	\once \partCombineApart bes r r
 	R2.*7
 % Bars 516 to 520
 	
 % Bars 521 to 525
 	
-	\partcombineApart f2.->
-	f-> \partcombineAutomatic
+	\partCombineApart f2.->
+	f-> \partCombineAutomatic
 	f\>~
 	f
 % Bars 526 to 530

@@ -46,13 +46,13 @@ musicPosauneIMvtI = \relative c' {
 		e2.
 		cis
 		d4 a b8 c
-		\partcombineApart b4 r r
+		\partCombineApart b4 r r
 % Bars 61 to 65
 		R2.*4
 		
 		
 		
-		\partcombineAutomatic R2.*43
+		\partCombineAutomatic R2.*43
 % Bars 66 to 70
 	
 % Bars 71 to 75
@@ -157,11 +157,11 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	\partcombineApart c2.\pp~
+	\partCombineApart c2.\pp~
 	c~
 % Bars 221 to 225
 	c(
-	cis!) \partcombineAutomatic
+	cis!) \partCombineAutomatic
 	cis4. cis8 cis4
 	cis2.~
 	cis~
@@ -209,19 +209,19 @@ musicPosauneIMvtI = \relative c' {
 	
 	
 	
-	r4 r \once \partcombineApart c-.
+	r4 r \once \partCombineApart c-.
 	g'2-> r4
 % Bars 281 to 285
-	r r \once \partcombineApart c,-.
+	r r \once \partCombineApart c,-.
 	g'-. g-. r
-	r r \once \partcombineApart c,-.
+	r r \once \partCombineApart c,-.
 	g'2-> r4
-	r4 r \once \partcombineApart c,-.
+	r4 r \once \partCombineApart c,-.
 % Bars 286 to 290
 	fis2-> r4
-	r r \once \partcombineApart c-.
+	r r \once \partCombineApart c-.
 	aes'2-> r4
-	r r \once \partcombineApart c,-.
+	r r \once \partCombineApart c,-.
 	aes'-. aes-. r
 % Bars 291 to 295
 	f2.\fz ~
@@ -328,9 +328,9 @@ musicPosauneIMvtI = \relative c' {
 	fis2( e4)
 	fis2( g4)
 	fis2( e4)
-	\partcombineApart d dis2->
+	\partCombineApart d dis2->
 % Bars 461 to 465
-	e8 r eis2-> \partcombineAutomatic
+	e8 r eis2-> \partCombineAutomatic
 	fis2.->
 	g->
 	g->

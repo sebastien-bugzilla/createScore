@@ -34,11 +34,11 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	\partcombineApart r2 r4 g\f-.
+	\partCombineApart r2 r4 g\f-.
 % Bars 36 to 40
 	e-. cis-. a-. g'-.
 	e-. cis-. a-. a'-. \mark \default
-	d,-. \partcombineAutomatic r r2
+	d,-. \partCombineAutomatic r r2
 	R1*22
 % Bars 41 to 45
 	
@@ -76,7 +76,7 @@ musicPosauneIIIMvtIV = \relative c {
 	fis-. r r2
 	b4-. r b-. r
 	b-. r r2
-	cis4\fz a-. a\fz \once \partcombineApart r
+	cis4\fz a-. a\fz \once \partCombineApart r
 % Bars 96 to 100
 	a\fz r gis\fz r
 	R1*8
@@ -93,7 +93,7 @@ musicPosauneIIIMvtIV = \relative c {
 	b4-. r b-. r
 	b-. r r2
 % Bars 111 to 115
-	cis4\fz a-. a\fz \once \partcombineApart r
+	cis4\fz a-. a\fz \once \partCombineApart r
 	a\fz r gis\fz r \mark \default
 	a r r2
 	R1*7
@@ -107,21 +107,21 @@ musicPosauneIIIMvtIV = \relative c {
 	cis-. g'( fis f)
 % Bars 126 to 130
 	e-. e( dis d)
-	cis-. \partcombineApart a8(\< b bis4 cis)\!
+	cis-. \partCombineApart a8(\< b bis4 cis)\!
 	d a8(\< b! bis4 cis)\!
 	d r r2
 	r4 gis->\f eis-> cis->
 % Bars 131 to 135
 	fis-> cis-> fis-> cis->
-	fis-> e-> a-> gis-> \partcombineAutomatic
+	fis-> e-> a-> gis-> \partCombineAutomatic
 	gis-.\f r r2
 	ais4-. r r2
-	b4-. r \once \partcombineApart cis,-. r
+	b4-. r \once \partCombineApart cis,-. r
 % Bars 136 to 140
-	r \partcombineApart cis-. d-. f-.
-	e-. \partcombineAutomatic r e-.  r
-	\once \partcombineApart a,-. r \once \partcombineApart a-. r
-	\once \partcombineApart a-. r r2
+	r \partCombineApart cis-. d-. f-.
+	e-. \partCombineAutomatic r e-.  r
+	\once \partCombineApart a,-. r \once \partCombineApart a-. r
+	\once \partCombineApart a-. r r2
 	R1*2
 % Bars 141 to 145
 	
@@ -158,7 +158,7 @@ musicPosauneIIIMvtIV = \relative c {
 	fis-. r fis-. r
 % Bars 181 to 185
 	fis-. r r2
-	\once \partcombineApart cis4-. r r2
+	\once \partCombineApart cis4-. r r2
 	fis4-. r r2
 	R1*7 
 % Bars 186 to 190
@@ -172,11 +172,11 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	\partcombineApart ais,1\pp~
+	\partCombineApart ais,1\pp~
 % Bars 196 to 200
 	ais~
 	ais~
-	ais4 r r2 \partcombineAutomatic
+	ais4 r r2 \partCombineAutomatic
 	b1~\pp
 	b~
 % Bars 201 to 205
@@ -187,9 +187,9 @@ musicPosauneIIIMvtIV = \relative c {
 	g~
 % Bars 206 to 210
 	g
-	c4-.\f \partcombineApart g-. c2-> \partcombineAutomatic
+	c4-.\f \partCombineApart g-. c2-> \partCombineAutomatic
 	g'4 r f r
-	\once \partcombineApart c r r2
+	\once \partCombineApart c r r2
 	R1*6
 % Bars 211 to 215
 	
@@ -204,19 +204,19 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 226 to 230
 	
 	
-	\partcombineApart aes'2. bes4-.
+	\partCombineApart aes'2. bes4-.
 	aes-. ees-. c-. bes-. 
 	aes2. bes'4-.
 % Bars 231 to 235
 	aes-. ees-. c-. bes-. 
-	a!2. \partcombineAutomatic r4
+	a!2. \partCombineAutomatic r4
 	R1
-	\once \partcombineApart a!2. r4
-	r2 r4 \partcombineApart a-.
+	\once \partCombineApart a!2. r4
+	r2 r4 \partCombineApart a-.
 % Bars 236 to 240
-	bes-. \partcombineAutomatic r r2
-	r2 r4 \partcombineApart f
-	bes2 \partcombineAutomatic r4 f'
+	bes-. \partCombineAutomatic r r2
+	r2 r4 \partCombineApart f
+	bes2 \partCombineAutomatic r4 f'
 	bes2  r4 aes
 	des,2 r4 ees
 % Bars 241 to 245
@@ -239,30 +239,30 @@ musicPosauneIIIMvtIV = \relative c {
 	
 % Bars 271 to 275
 	
-	r2 \once \partcombineApart gis,4 r
+	r2 \once \partCombineApart gis,4 r
 	R1
 	r2 e'4\f r
 	R1
 % Bars 276 to 280
 	r2 e4\f r
-	\partcombineApart r2 e2\f->
+	\partCombineApart r2 e2\f->
 	d-> cis->
 	b-> a->
 	g-> fis->
 % Bars 281 to 285
-	e-> e'-> \partcombineAutomatic
+	e-> e'-> \partCombineAutomatic
 	e-> e->
 	a-> g->
 	f-> a4-. g-.
 	a-. g-. a-. g-.
 % Bars 286 to 290
 	<<f1 {s4\< s s s\!}>>
-	\once \partcombineApart e,4 r \once \partcombineApart a r
+	\once \partCombineApart e,4 r \once \partCombineApart a r
 	R1*5
 % Bars 291 to 295
 	
 	
-	r2 r4 r8 \once \partcombineApart a
+	r2 r4 r8 \once \partCombineApart a
 	d2-> e->
 	f-> g->
 % Bars 296 to 300
@@ -299,7 +299,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 336 to 340
 	
 % Bars 341 to 345
-	\partcombineApart cis1\fp
+	\partCombineApart cis1\fp
 	d\fp
 	e\fp
 	fis4-. ais,2.->~
@@ -309,7 +309,7 @@ musicPosauneIIIMvtIV = \relative c {
 	gis4 b4(-> c d
 	c) fis,2.->~
 	fis4 f2.->(
-	e4) r r2 \partcombineAutomatic
+	e4) r r2 \partCombineAutomatic
 % Bars 351 to 355
 	R1*7
 % Bars 356 to 360
@@ -341,7 +341,7 @@ musicPosauneIIIMvtIV = \relative c {
 % Bars 391 to 395
 	e r r2
 	fis4\fz d-. g\fz e-.
-	a\fz r \once \partcombineApart a, r
+	a\fz r \once \partCombineApart a, r
 	R1*8
 % Bars 396 to 400
 	
@@ -355,8 +355,8 @@ musicPosauneIIIMvtIV = \relative c {
 	e,4 r e r
 	e r r2
 	fis4\fz d-. g\fz e-.
-	a\fz r \once \partcombineApart a, r
-	\once \partcombineApart d r r2
+	a\fz r \once \partCombineApart a, r
+	\once \partCombineApart d r r2
 % Bars 411 to 415
 	R1*3
 	
@@ -382,7 +382,7 @@ musicPosauneIIIMvtIV = \relative c {
 	c b->
 	e,4-. r r2
 % Bars 431 to 435
-	r4 \partcombineApart b-. gis-. e-. \partcombineAutomatic
+	r4 \partCombineApart b-. gis-. e-. \partCombineAutomatic
 	a'1~
 	a4 r r2
 	R1*6
@@ -421,12 +421,12 @@ musicPosauneIIIMvtIV = \relative c {
 	e2. r4
 	R1
 	r2 r4 e-.\ff
-	\partcombineApart e1->~
+	\partCombineApart e1->~
 	e2. a,4->
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. r
-	\partcombineAutomatic r2 r4 a->
+	\partCombineAutomatic r2 r4 a->
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500
@@ -464,7 +464,7 @@ musicPosauneIIIMvtIV = \relative c {
 	g^\ten r
 	e^\ten r
 	e^\ten r
-	\once \partcombineApart a,4 r \partcombineApart a'2\ff~
+	\once \partCombineApart a,4 r \partCombineApart a'2\ff~
 % Bars 526 to 530
 	a2. a4-.
 	a-. g-. g-. fis-.
@@ -473,7 +473,7 @@ musicPosauneIIIMvtIV = \relative c {
 	b-. a-. a-. g'-. 
 % Bars 531 to 535
 	g-. fis-. fis-. e-. 
-	e-. d-. cis-. \partcombineAutomatic a'\ff
+	e-. d-. cis-. \partCombineAutomatic a'\ff
 	a2->_\pesante g->
 	fis-> cis->
 	b2.-> b4
@@ -490,22 +490,22 @@ musicPosauneIIIMvtIV = \relative c {
 	d~
 	d~
 % Bars 546 to 550
-	d4 r \partcombineApart a'2->
+	d4 r \partCombineApart a'2->
 	fis-> e->
-	d-> cis-> \partcombineAutomatic
+	d-> cis-> \partCombineAutomatic
 	b'2.-> b4-.
 	b2-> b->
 % Bars 551 to 555
 	a1-^~
 	a~
 	a~
-	a2. \partcombineApart a,4-.
+	a2. \partCombineApart a,4-.
 	d-. e-. fis-. a,-.
 % Bars 556 to 560
 	d-. e-. fis-. a,-.
 	d-. e-. fis-. a,-.
 	d-. e-. fis-. a,-.
-	d \partcombineAutomatic r d r
+	d \partCombineAutomatic r d r
 	d r d r
 % Bars 561 to 563
 	d r r2

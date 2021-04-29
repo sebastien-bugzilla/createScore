@@ -200,5 +200,5 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 % Bar 206
-	R2_\fermataMarkup \bar "|."
+	R2_\fermata \bar "|."
 }
