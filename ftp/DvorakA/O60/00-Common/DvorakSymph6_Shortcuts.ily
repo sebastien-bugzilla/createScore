@@ -210,6 +210,14 @@ textInSlur = #(define-music-function
 	#}
 )
 
+red = {
+	\override NoteHead.color = #red
+}
+
+black = {
+	\revert NoteHead.color
+}
+
 
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941
@@ -242,3 +250,5 @@ textInSlur = #(define-music-function
 stopTremolo = #(define-music-function () ()
     (make-music 'TremoloSpanEvent
         'span-direction STOP))
+
+

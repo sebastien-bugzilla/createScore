@@ -68,7 +68,7 @@
 			\new Staff <<
 				\new Voice {
 					\timeMvtI \generalOptions \partOptions
-					\nameVioloncelloMvtI \musicVioloncelloMvtIdiv
+					\nameVioloncelloMvtI \keepWithTag #'(celli) \musicVioloncelloMvtIdiv
 				}
 			>>
 		>>

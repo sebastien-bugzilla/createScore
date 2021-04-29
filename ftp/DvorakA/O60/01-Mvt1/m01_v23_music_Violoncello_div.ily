@@ -12,7 +12,7 @@ musicVioloncelloMvtIdiv = \relative c {
 	R2.*2
 	
 	\repeat volta 2 {
-		R2.*105
+		R2.*102
 % Bars 6 to 10
 		
 % Bars 11 to 15
@@ -53,10 +53,18 @@ musicVioloncelloMvtIdiv = \relative c {
 		
 % Bars 101 to 105
 		
+		
+		
+		\tag #'(bassi) {
+			b8-. ais-. ais-. gis16( ais gis8) fis-.
 % Bars 106 to 110
-		
-		
-		fis4( cis'2)
+			fis\pp gis16( ais gis8) fis-. fis-. r
+			R2.
+		}
+		\tag #'(celli) {
+			R2.*3
+		}
+		fis'4( cis'2)
 		b4.( fis8 d4)
 		a'4( e'8) r e4
 % Bars 111 to 115
@@ -203,9 +211,14 @@ musicVioloncelloMvtIdiv = \relative c {
 % Bars 396 to 400
 	
 	
-	d'8-. cis-. cis-. b16( cis b8) a-.
-	a-. b16( cis b8) a-. a-. r
-	R2.
+	\tag #'(celli) {
+		d'8-. cis-. cis-. b16( cis b8) a-.
+		a-. b16( cis b8) a-. a-. r
+		R2.
+	}
+	\tag #'(bassi) {
+		R2.*3
+	}
 % Bars 401 to 405
 	\clef tenor a'4( e' e)
 	d4.( a8 f4)
@@ -223,11 +236,20 @@ musicVioloncelloMvtIdiv = \relative c {
 	g!4( e a
 	d,) r r
 	r4 \clef bass d^\pizz d
-	R2.*132
+	\tag #'(bassi) {
+		d4 r r
 % Bars 416 to 420
-	
+		r a a 
+		d r r 
+		r a a
+		d, d'8(^\arco a d,4~)
+		d d'8( a d,4)
+	}
+	\tag #'(celli) {
+		R2.*6
+	}
 % Bars 421 to 425
-	
+	R2.*126
 % Bars 426 to 430
 	
 % Bars 431 to 435
