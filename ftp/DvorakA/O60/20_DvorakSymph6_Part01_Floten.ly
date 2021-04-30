@@ -18,7 +18,6 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
-\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
 %\include "./00-Common/DvorakSymph6_Format_temp.ly"
@@ -89,7 +88,7 @@
 				\formatFloteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameFloteIMvtII \musicFloteIMvtII
 			}
 			\new Voice {
@@ -190,7 +189,7 @@
 				\formatFloteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameFloteIIMvtII \musicFloteIIMvtII
 			}
 			\new Voice {

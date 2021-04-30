@@ -18,7 +18,6 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
-\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
@@ -88,7 +87,7 @@
 				\formatFagottIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameFagottIMvtII \musicFagottIMvtII
 			}
 			\new Voice {
@@ -188,7 +187,7 @@
 				\formatFagottIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameFagottIIMvtII \musicFagottIIMvtII
 			}
 			\new Voice {

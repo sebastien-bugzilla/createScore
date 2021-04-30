@@ -18,7 +18,6 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
-\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
 %\include "./00-Common/DvorakSymph6_Format_temp.ly"
@@ -89,7 +88,7 @@
 				\formatKlarinetteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameKlarinetteIMvtII \musicKlarinetteIMvtII
 			}
 			\new Voice {
@@ -189,7 +188,7 @@
 				\formatKlarinetteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameKlarinetteIIMvtII \musicKlarinetteIIMvtII
 			}
 			\new Voice {

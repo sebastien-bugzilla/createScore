@@ -18,7 +18,6 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
-\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 %\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
@@ -105,7 +104,7 @@
 				\formatHornIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameHornIMvtII \musicHornIMvtII
 			}
 			\new Voice {
@@ -206,7 +205,7 @@
 				\formatHornIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameHornIIMvtII \musicHornIIMvtII
 			}
 			\new Voice {
@@ -306,7 +305,7 @@
 				\formatHornIIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameHornIIIMvtII \musicHornIIIMvtII
 			}
 			\new Voice {
@@ -406,7 +405,7 @@
 				\formatHornIVMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameHornIVMvtII \musicHornIVMvtII
 			}
 			\new Voice {

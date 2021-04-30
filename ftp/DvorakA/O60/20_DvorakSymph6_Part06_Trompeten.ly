@@ -19,7 +19,6 @@
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
-\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 %\include "./00-Common/DvorakSymph6_Format_temp.ly"
 \include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
@@ -89,7 +88,7 @@
 				\formatTrompeteIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameTrompeteIMvtII \musicTrompeteIMvtII
 			}
 			\new Voice {
@@ -189,7 +188,7 @@
 				\formatTrompeteIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameTrompeteIIMvtII \musicTrompeteIIMvtII
 			}
 			\new Voice {

@@ -18,7 +18,6 @@
 \include "./00-Common/DvorakSymph6_timeMvt.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_OptionParts.ily"
-\include "./00-Common/DvorakSymph6_OptionMvt.ily"
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_Format_Part02_Oboen.ily"
 %\include "./00-Common/DvorakSymph6_Format_temp.ly"
@@ -89,7 +88,7 @@
 				\formatOboeIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameOboeIMvtII \musicOboeIMvtII
 			}
 			\new Voice {
@@ -189,7 +188,7 @@
 				\formatOboeIIMvtII
 			}
 			\new Voice {
-				\timeMvtII \generalOptions \partOptions \MvtIIOptions
+				\timeMvtII \generalOptions \partOptions 
 				\nameOboeIIMvtII \musicOboeIIMvtII
 			}
 			\new Voice {
