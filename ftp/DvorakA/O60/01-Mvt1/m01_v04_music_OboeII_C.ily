@@ -28,8 +28,8 @@ musicOboeIIMvtI = \relative c' {
 		bes2 r4
 		R2.
 % Bars 16 to 20
-		r4 r a(\mf\<
-		c2 b4
+		r4 r a(\mf
+		c2\< b4
 		c d c)
 		c2(\f b4
 		a b a)
@@ -67,7 +67,7 @@ musicOboeIIMvtI = \relative c' {
 		e e2\<~
 		e2.~
 		e \mark \default
-		fis4\ff r a,-.
+		fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
 		fis'2 r4
 % Bars 51 to 55
 		r r a,-.
@@ -109,7 +109,7 @@ musicOboeIIMvtI = \relative c' {
 		dis8 r b'2~
 		b ais4
 		b r4 r
-		c2\f g4~
+		c2 \tweak extra-offset #'(-1 . 0) \f g4~
 % Bars 96 to 100
 		g4 r r
 		e'2 d8 c
@@ -196,7 +196,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 181 to 185
 			
 			
-			a2.\pp~
+			a2.-\tweak X-offset #0.8 \pp~
 			a~
 			a~
 % Bars 186 to 190
@@ -204,7 +204,7 @@ musicOboeIIMvtI = \relative c' {
 			a~
 			a~
 			a4 r r
-			r r fis\p
+			r r fis\p\laissezVibrer
 		}
 		{
 % Bars 177 to 180
@@ -217,7 +217,7 @@ musicOboeIIMvtI = \relative c' {
 	R2.*3
 	
 	
-	r4 b2\pp~
+	r4 b2-\tweak X-offset #-3.2 \pp~
 % Bars 186 to 190
 	b2.~
 	b~
@@ -301,7 +301,7 @@ musicOboeIIMvtI = \relative c' {
 	a4) r r
 	R2.*2
 	
-	ais2.(\< \mark \default
+	\hairpinShorten #1.5 #0 ais2.( \tweak extra-offset #'(0 . 0.5) \< \mark \default
 	b4)\f r r
 % Bars 266 to 270
 	R2.*4
@@ -354,8 +354,8 @@ musicOboeIIMvtI = \relative c' {
 	cis2 cis4-. \mark \default
 	d-. r r
 % Bars 316 to 320
-	r r fis,--\pp(
-	fis2) r4
+	r r fis,--\pp
+	fis2 r4
 	r r fis(
 	fis) fis-. r
 	fis4. fis8 fis4

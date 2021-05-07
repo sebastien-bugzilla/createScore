@@ -98,17 +98,13 @@ mmrPosOver = #(define-music-function
 	(position)
 	(number?)
 	#{
-		\override Staff.MultiMeasureRest.staff-position = #(- position 2)
+		\override Voice.MultiMeasureRest.staff-position = #(- position 2)
 	#}
 )
 
-mmrPosRevert = #(define-music-function
-	()
-	()
-	#{
-		\revert Staff.MultiMeasureRest.staff-position
-	#}
-)
+mmrPosRevert = {
+	\revert Voice.MultiMeasureRest.staff-position
+}
 
 no = {
 	\undo \omit MultiMeasureRestNumber
@@ -210,14 +206,21 @@ textInSlur = #(define-music-function
 	#}
 )
 
-red = {
-	\override NoteHead.color = #red
-}
+aIIXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\once \override CombineTextScript.X-offset = #offset
+	#}
+)
 
-black = {
-	\revert NoteHead.color
-}
-
+trillXoffset = #(define-music-function
+	(offset)
+	(number?)
+	#{
+		\override TrillSpanner.bound-details.left.padding = #offset
+	#}
+)
 
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941

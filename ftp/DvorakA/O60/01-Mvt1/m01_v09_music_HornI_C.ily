@@ -34,9 +34,9 @@ musicHornIMvtI = \relative c'' {
 		<< c {s2\< s8 s\!} >>
 		\partCombineApart cis4.\!->(_\dimmarkup d8 b cis)
 % Bars 21 to 25
-		d4\p\>( a2)~
+		d4_\p_\>( a2)~
 		a2.(
-		e'8\pp) r r4 r \partCombineAutomatic
+		e'8_\pp) r r4 r \partCombineAutomatic
 		R2.*10
 % Bars 26 to 30
 	
@@ -62,7 +62,7 @@ musicHornIMvtI = \relative c'' {
 		fis g2~\<
 		g2.~
 		g \mark \default
-		g4\ff^\grandioso r r
+		g4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -75,10 +75,10 @@ musicHornIMvtI = \relative c'' {
 		f2.
 		a2( g8 f)
 		e2.
-		f4 r c\fz~
+		f4 r c \tweak X-offset #-2 \fz~
 % Bars 61 to 65
-		c2 c4\fz~
-		c2 c4\fz~
+		c2 c4 \tweak X-offset #-2 \fz~
+		c2 c4 \tweak X-offset #-2 \fz~
 		c2 c4-. 
 		c-. r r
 		R2.*18
@@ -134,8 +134,8 @@ musicHornIMvtI = \relative c'' {
 % Bars 136 to 140
 		
 		
-		b2.\f-^~
-		b4 r \once \partCombineApart ees\f \mark \default
+		b2. \tweak X-offset #-1.8 \f-^~
+		b4 r \once \partCombineApart ees \mark \default
 		\once \partCombineApart e!8-. r r4 r
 % Bars 141 to 145
 		\once \partCombineApart e8 r r4 r
@@ -199,7 +199,7 @@ musicHornIMvtI = \relative c'' {
 	}
 	R2.*4
 % Bars 186 to 190
-	r4 r a(\pp
+	r4 r a(-\tweak X-offset #-3 \pp
 	e'8) r e r r4
 	R2.
 	r4 r g,-.\p
@@ -241,16 +241,16 @@ musicHornIMvtI = \relative c'' {
 % Bars 241 to 245
 	
 	
-	g,8\f g g2~
-	g8 g g2~_\dimmarkup
+	g,8-\tweak X-offset #-2 \f g g2~
+	g8 g g2~-\tweak extra-offset #'(-2 . 0.6) _\dimmarkup
 	g8 g g2~
 % Bars 246 to 250
-	g4\p r r
+	g4-\tweak X-offset #-0.5 \p r r
 	R2.*9
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	\partCombineApart c2.(\p\>
+	\partCombineApart c2.(_\p_\>
 	b4)\! r r \partCombineAutomatic
 	R2.*7
 % Bars 261 to 265

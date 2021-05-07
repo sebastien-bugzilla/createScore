@@ -49,7 +49,7 @@ musicVioloncelloMvtI = \relative c {
 		a4-.-> fis-.-> r
 		g'8-> a-> b-> b-> a-> g->
 		d'4->-. g,-.-> r
-		d'2\f g,4-.->
+		\clef tenor d'2\f g,4-.->
 		d'-.-> d\fz-.-> g,-.
 % Bars 36 to 40
 		f'-.\fz g,-. g'-.\fz
@@ -64,10 +64,10 @@ musicVioloncelloMvtI = \relative c {
 		ais ais2\fz
 		a!\fz gis4~\fz
 % Bars 46 to 50
-		gis g,!8\<-. a-. cis-. e-.
+		gis \clef bass g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-. \mark \default
-		d,4\ff^\grandioso r r
+		d,4-\tweak X-offset #-1 _\ffgrandiosoD  r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -85,7 +85,7 @@ musicVioloncelloMvtI = \relative c {
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
 		b8-. a-. g4 c\fz
-		b8-. a-. g4 g''\ff-^~
+		b8-. a-. g4 g'' \tweak extra-offset #'(-1.5 . 1.5) \ff-^~
 		g4. fis8-. e-. d-.
 % Bars 66 to 70
 		g-> fis e d e-> d
@@ -130,7 +130,7 @@ musicVioloncelloMvtI = \relative c {
 		\tuplet 3/2 4 {g,8(\fz a g)} g'4-> b,8-. cis!-.
 		d4 r r
 % Bars 101 to 105
-		\tuplet 3/2 4 {d8(\fz\< e d} d'4)\! e,8-. eis-.
+		\tuplet 3/2 4 {d8(\fz \tweak extra-offset #'(0 . 0.7) \< e d} d'4)\! e,8-. eis-.
 		fis-. r r4 r
 		fis8-.\f r r4 r
 		ais8-._\pdim fis16( gis fis8) cis-. cis-. b-.
@@ -139,7 +139,7 @@ musicVioloncelloMvtI = \relative c {
 		fis\pp gis16( ais gis8) fis-. fis-. r
 		R2. \mark \default
 		<<{
-			fis'4^\div( cis' e)
+			fis'4-\tweak X-offset #-3 ^\div( cis' e)
 			d4.( cis8 b4)
 			a4( g'8) r g4-.
 % Bars 111 to 115
@@ -192,7 +192,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 136 to 140
 		aes'8-.\pp\< ces-. ees4-. des-.
 		ces8-. bes-. aes4-. aes8-. ges-.
-		f-._\mfcrescD aes-. ces4 ces8-. bes-.
+		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4 ces8-. bes-.
 		aes ges f ees des4 \mark \default
 		fis!8-. ais( b cis!) b4->
 % Bars 141 to 145
@@ -310,7 +310,7 @@ musicVioloncelloMvtI = \relative c {
 	r r g( 
 	c-.) c-. r
 	R2.
-	\tuplet 6/4 2 {c,2.:8_\ppsempre} \tuplet 3/2 4 { c4.:8
+	\tuplet 6/4 2 {c,2.:8 \tweak X-offset #0.5 _\ppsempre} \tuplet 3/2 4 { c4.:8
 	c: d: e:
 % Bars 221 to 225
 	e: f: g:
@@ -403,7 +403,7 @@ musicVioloncelloMvtI = \relative c {
 	f-! g-! aes-! f-! g-! aes-! 
 	f-! g-! aes-!\noBeam r r4
 % Bars 296 to 300
-	r f_\ffrinforz->-. g->-.
+	r f \tweak X-offset #-3.5 _\ffrinforz->-. g->-.
 	aes->-. aes->-. g->-.
 	f->-. aes->-. g->-.
 	f->-. fes->-. ees->-.

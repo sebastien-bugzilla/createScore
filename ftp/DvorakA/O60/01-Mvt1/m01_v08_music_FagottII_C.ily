@@ -66,7 +66,7 @@ musicFagottIIMvtI = \relative c {
 		gis g8\<-. a-. cis-. e-. 
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		d,4\ff^\grandioso r r
+		d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2 r4
@@ -182,7 +182,7 @@ musicFagottIIMvtI = \relative c {
 		fis8-.\) dis\( e fis\) e4->\(
 % Bars 146 to 150
 		fis8-.\) dis\( e fis b, cis
-		dis\> fis, ais b dis, e\)\!
+		dis\> fis, ais b dis, e\)
 		dis4\p r r
 		dis r r
 		e r r

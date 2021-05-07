@@ -168,7 +168,7 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 221 to 225
 	
 	
-	e4(\pp f g)
+	e4( \tweak X-offset #-1.5 \pp f g)
 	bes2( a8 g)
 	g2.
 % Bars 226 to 230
@@ -182,7 +182,7 @@ musicPosauneIIMvtI = \relative c' {
 	c2( b8 a)
 	a4. a8 a4
 	g( bes des)
-	des2.~_\crescmarkup
+	des2.~
 % Bars 236 to 240
 	des2( c8 bes)
 	bes4. bes8 bes4
@@ -230,7 +230,7 @@ musicPosauneIIMvtI = \relative c' {
 	r r c
 	aes-. aes-. r
 % Bars 291 to 295
-	aes2.\fz ~
+	aes2. \tweak X-offset #-2 \fz ~
 	aes4 r r
 	R2.*14
 % Bars 296 to 300

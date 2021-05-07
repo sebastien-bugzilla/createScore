@@ -66,7 +66,7 @@ musicFagottIMvtI = \relative c {
 		gis g8\<-. a-. cis-. e-. 
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		d,4\ff^\grandioso r r
+		d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2 r4
@@ -105,7 +105,7 @@ musicFagottIMvtI = \relative c {
 % Bars 81 to 85
 		
 		
-		\partCombineApart R2.
+		\partCombineApart \mmrPos #6 R2.
 		r4 fis2\p~
 		fis8( e g e b b'
 % Bars 86 to 90
@@ -180,7 +180,7 @@ musicFagottIMvtI = \relative c {
 		fis8-.\) dis\( e fis\) e4->\(
 % Bars 146 to 150
 		fis8-.\) dis\( e fis b, cis
-		dis\> fis, ais b dis, e\)\!
+		dis\> fis, ais b dis, e\)
 		fis4\p r r
 		fis r r
 		g_\crescmarkup r r
@@ -210,7 +210,7 @@ musicFagottIMvtI = \relative c {
 		b r r
 % Bars 171 to 175
 		R2.
-		fis''2(\fp e4
+		\aIIXoffset #-1 fis''2(\fp e4
 		d2 cis4)
 		b8( d fis4 e)
 		d2( cis4)
@@ -249,7 +249,7 @@ musicFagottIMvtI = \relative c {
 	\partCombineApart r4 r fis(
 	cis'8) r cis r r4 \partCombineAutomatic
 	R2.
-	\partCombineApart r4 r b(\pp
+	\partCombineApart r4 r b(-\tweak X-offset #-1.5 _\pp
 % Bars 186 to 190
 	fis'8) r fis r r4 \partCombineAutomatic
 	R2.*15
@@ -312,7 +312,7 @@ musicFagottIMvtI = \relative c {
 	b4) r r
 	R2.*2
 	
-	<<c2.( {s8\p\< s s s\> s s\!} >>
+	\shape #'((0 . -0.8)(0 . -0.8)(0 . -0.8)(0 . -0.8)) Slur <<c2.( {s8\p\< s s s\> s s\!} >>
 % Bars 251 to 255
 	b4) r r
 	R2.*2

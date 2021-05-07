@@ -6,7 +6,7 @@
 %###############################################################################
 timeMvtI = {
 	\time 3/4
-	\tempo "Allegro non tanto"
+	%\tempo "Allegro non tanto"
 }
 timeMvtII = {
 	\time 2/4

@@ -33,7 +33,7 @@ musicPosauneIMvtI = \relative c' {
 		
 		
 		r4 r cis-.\ff \mark \default
-		d-.^\grandioso r r
+		d-._\grandioso r r
 		r r a-.\f
 % Bars 51 to 55
 		d2-^ r4
@@ -224,7 +224,7 @@ musicPosauneIMvtI = \relative c' {
 	r r \once \partCombineApart c,-.
 	aes'-. aes-. r
 % Bars 291 to 295
-	f2.\fz ~
+	f2. \tweak X-offset #-2 \fz ~
 	f4 r r
 	R2.*14
 % Bars 296 to 300

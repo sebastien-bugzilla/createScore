@@ -20,9 +20,9 @@ musicHornIIIMvtI = \relative c' {
 		d d4 d d8
 		d\< d4 d f8\!
 		g g4\f\> g8 g g
-		g8\p\> g4 g g8
+		g8_\p_\> g4 g g8
 % Bars 11 to 15
-		g g4\pp g g8
+		g g4_\pp g g8
 		ees ees4 ees ees8
 		\partCombineAutomatic c' c4 c c8
 		c c4 c c8
@@ -41,7 +41,7 @@ musicHornIIIMvtI = \relative c' {
 		
 		
 		
-		aes8-.\f r aes2\fz~
+		\aIIXoffset #-3.5 aes8-.\f r aes2\fz~
 		aes2.~
 % Bars 36 to 40
 		aes2 aes4-.
@@ -56,10 +56,10 @@ musicHornIIIMvtI = \relative c' {
 		a a2
 		a a4~
 % Bars 46 to 50
-		a c2\<~
+		a c2 \tweak extra-offset #'(0 . 1.2) \<~
 		c2.~
 		c \mark \default
-		d4\ff^\grandioso r r
+		d4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		\partCombineApart f2\f r4 \partCombineAutomatic
@@ -113,7 +113,7 @@ musicHornIIIMvtI = \relative c' {
 		d8-.\f r r4 r
 		d8-. r r4 r
 		d8-.\p r r4 r
-		\partCombineApart r r fis,\pp
+		\partCombineApart r r fis,_\pp
 % Bars 106 to 110
 		r fis r \partCombineAutomatic
 		R2. \mark \default
@@ -184,7 +184,7 @@ musicHornIIIMvtI = \relative c' {
 		{
 			g4 r r \partCombineAutomatic
 			d'\p\< d e
-			f2._\fpdimD~
+			f2.-\tweak X-offset #0.8 _\fpdimD~
 			f~
 % Bars 181 to 185
 			f~
@@ -208,7 +208,7 @@ musicHornIIIMvtI = \relative c' {
 	R2.*3
 	
 	
-	g2.\pp~
+	g2.-\tweak X-offset #-3 \pp~
 % Bars 186 to 190
 	g~
 	g~

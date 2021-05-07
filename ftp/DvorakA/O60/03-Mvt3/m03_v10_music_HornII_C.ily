@@ -79,7 +79,7 @@ musicHornIIMvtIII = \relative c'' {
 		e2->\ff d4~->
 		d c2->
 		c,2\p\< c4~
-		c f2
+		c f2\!
 % Bars 66 to 70
 		g2->\f f4->\>~
 		f e2\!->

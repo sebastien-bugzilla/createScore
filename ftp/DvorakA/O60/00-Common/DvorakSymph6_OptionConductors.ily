@@ -27,17 +27,14 @@ conductorOptions = {
 }
 #(set-global-staff-size 13)
 \layout {
+	indent = 0\cm
 	\context {
 		\Staff
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\RemoveEmptyStaves
+		\override TrillSpanner.bound-details.right.padding = #1
+		\override VerticalAxisGroup.remove-first = ##t
 	}
 	#(layout-set-staff-size 13)
-}
-layoutCueVoice = \with {
-	fontSize = #-3
-	\override Stem.length-fraction = #0.9
-	\override TupletBracket #'bracket-visibility = ##f
-	%\override Font.font-size = #+5
 }

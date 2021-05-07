@@ -63,10 +63,10 @@ musicBratscheMvtI = \relative c {
 			q8 q4 q\! q8
 			a a4 a8 fis4\<~
 			fis2.
-			a2\f g4
-			a2._\dimmarkup
+			a2-\tweak extra-offset #'(0.5 . 1) \f g4
+			a2. \tweak X-offset #0.5 _\dimmarkup
 % Bars 21 to 25
-			g2.\p\>~
+			g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
 			g
 			fis8\pp
 		}>> r r4 r
@@ -101,7 +101,7 @@ musicBratscheMvtI = \relative c {
 		a: e: cis: e: a: e:
 		cis': a: e': cis: a': a,:\! \mark \default
 		<<{
-			d2.:16^\grandioso
+			d2.:16
 			d:
 % Bars 51 to 55
 			<d, d'>:
@@ -115,14 +115,14 @@ musicBratscheMvtI = \relative c {
 			cis2: cis4:
 			d: fis2:
 		} \\ {
-			<fis, a>2.:16\ff
+			<fis, a>2.:16_\ffgrandioso
 			q:
 % Bars 51 to 55
+			\override Stem.length = #9.5 q:
 			q:
 			q:
 			q:
-			q:
-			q:\<
+			q:\< \revert Stem.length
 % Bars 56 to 60
 			s2\fz s4
 			<g b>2.:16
@@ -135,7 +135,7 @@ musicBratscheMvtI = \relative c {
 		d4(\! b) g8(\< a)
 		d4(\! b) g8( a)
 		d4 r r
-		r r8 fis,\f-. e-. d-.
+		r r8 fis, \tweak X-offset #-2 \f-. e-. d-.
 % Bars 66 to 70
 		g-> fis e d e-> d
 		c8:16 b: a: g: fis: e:
@@ -179,7 +179,7 @@ musicBratscheMvtI = \relative c {
 		g8 r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
 		<d fis>-. <e g>-. <fis a>4 r
 % Bars 101 to 105
-		r \tuplet 3/2 4 {d8\fz( e d)} g,-. gis-.
+		r \tuplet 3/2 4 {d8 \tweak X-offset #-1 \fz( e d)} g,-. gis-.
 		<ais cis>-.\f r r4 r
 		cis8-.\f r r4 r
 		<cis, fis>8-.\p r r4 r
@@ -194,14 +194,14 @@ musicBratscheMvtI = \relative c {
 		a
 		g!2(\p c4
 		b g2)_\dimmarkup
-		c,2.\pp
+		c,2. \tweak extra-offset #'(0.8 . 1.3) \pp
 		fis~
 % Bars 116 to 120
 		fis
-		f~\<
+		f~ \tweak extra-offset #'(0 . 0.8) \<
 		f
 		e4(\> cis fis!)
-		b2\pp( cis4
+		b2 \tweak X-offset #-1.7 \pp( cis4
 % Bars 121 to 125
 		dis2 e4)
 		dis2( gis4
@@ -216,14 +216,14 @@ musicBratscheMvtI = \relative c {
 		aes8(\pp ees aes ees bes' ees,
 % Bars 131 to 135
 		aes ees aes ees bes' ees,)
-		aes( ees aes ees aes_\crescmarkup f
+		aes( ees aes ees aes \tweak extra-offset #'(0 . 2) _\crescmarkup f
 		g ees g ees g ees)
 		aes( ees c ees aes f
 		g ees g ees g ees)
 % Bars 136 to 140
 		aes16\pp\< ees' ees  ees ees2:16
 		ees2.:
-		des:_\mfcrescD
+		des:-\tweak X-offset #-1.5 _\mfcrescD
 		cis!: \mark \default
 		cis8-.\f ais( b cis) b4->
 % Bars 141 to 145
@@ -314,7 +314,7 @@ musicBratscheMvtI = \relative c {
 	c2) r4
 	r r g(
 	c)-. c-. r
-	\repeat tremolo 6 {c,16_\ppsempre^\nonlegato c'}
+	\repeat tremolo 6 {c,16 \tweak X-offset #0.5 _\ppsempre^\nonlegato c'}
 	\repeat tremolo 6 {c, c'}
 % Bars 221 to 225
 	\repeat tremolo 6 {c, c'}
@@ -349,10 +349,10 @@ musicBratscheMvtI = \relative c {
 	e8-. cis16( d cis8) a-. a-. e-.
 	f-. d16( e d8) r r <gis b>-.
 	a-. a-. a2~
-	a8 a-. a2_\dimmarkup~
+	a8 a-. a2-\tweak X-offset #5.5 _\dimmarkup~
 	a8 a-. a2~
 % Bars 246 to 250
-	a8\p a-. a2
+	a8-\tweak X-offset #-1 \p a-. a2
 	<g b>2.:32_\ppsubponticello
 	q:
 	q:
@@ -418,12 +418,12 @@ musicBratscheMvtI = \relative c {
 		d':
 		d4
 	} \\ {
-		d,2.:16\fz
+		d,2.:16 \tweak X-offset #0.8 \fz
 		d:
 		d:
-		<f aes>:\fz
+		\override Stem.length = #9.5 <f aes>: \tweak X-offset #0.8 \fz
 		q:
-		q:
+		q: \revert Stem.length
 		q:\fz
 		q4
 	}>> r r
@@ -431,7 +431,7 @@ musicBratscheMvtI = \relative c {
 	f: g: aes: f: g: aes:
 	f: g: aes8\noBeam r r4
 % Bars 296 to 300
-	r f->-._\ffrinforz g->-.
+	r f->-. \tweak X-offset #-3.5 _\ffrinforz g->-.
 	aes->-. ces->-. bes->-.
 	aes->-. ces->-. bes->-.
 	aes->-. des->-. des->-.

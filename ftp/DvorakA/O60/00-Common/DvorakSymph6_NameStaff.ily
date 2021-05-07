@@ -15,7 +15,11 @@ nameStaffIIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIIMvtI = {
-	\set Staff.instrumentName = "2 Klarinetten in A."
+	\set Staff.instrumentName = \markup {
+		\center-column { 
+			\lower #1 "2 Klarinetten" "in A."
+		}
+	}
 	\set Staff.shortInstrumentName = "Kl.(A)"
 	\set Staff.midiInstrument = #""
 }
@@ -49,7 +53,11 @@ nameStaffVIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffVIIMvtI = {
-	\set Staff.instrumentName = "2 Trompeten in D."
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "2 Trompeten" "in D."
+		}
+	}
 	\set Staff.shortInstrumentName = "Trp.(D)"
 	\set Staff.midiInstrument = #""
 }
@@ -64,7 +72,11 @@ nameStaffIXMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXMvtI = {
-	\set Staff.instrumentName = "Pauken in D. A."
+	\set Staff.instrumentName = \markup {
+		\center-column {
+			\lower #1 "Pauken" "in D. A."
+		}
+	}
 	\set Staff.shortInstrumentName = \markup {
 		\center-column {
 			\lower #1 "Pk." "in D. A."

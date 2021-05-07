@@ -43,7 +43,7 @@ musicFloteIIMvtI = \relative c' {
 % Bars 36 to 40
 		d'\fz-. g,-. e'-.\fz
 		f,8-. g-. aes-. aes-. g-. f-. 
-		a!4->-.\fz f-. b-.\fz
+		a!4->-. \tweak extra-offset #'(0 . 0.5) \fz f-. b-.\fz
 		f-. c'-.\fz f,-.
 		d'-.\fz g,-. e'-.\fz
 % Bars 41 to 45
@@ -56,7 +56,7 @@ musicFloteIIMvtI = \relative c' {
 		cis cis2~\<
 		cis2.~
 		cis \mark \default
-		d4\ff^\grandioso r a-.
+		d4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
 		d2 r4
 % Bars 51 to 55
 		r r a-.
@@ -300,7 +300,7 @@ musicFloteIIMvtI = \relative c' {
 	fis) fis-. r
 	fis4. fis8 fis4
 % Bars 321 to 325
-	fis(\< a d)
+	fis( \tweak extra-offset #'(0 . 1) \< a d)
 	fis2(\fz\> e8 dis)\!
 	e2 r4
 	r r8 g\p-. g( fis)

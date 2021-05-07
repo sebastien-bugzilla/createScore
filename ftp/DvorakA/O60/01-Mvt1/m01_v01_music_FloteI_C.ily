@@ -10,7 +10,7 @@ musicFloteIMvtI = \relative c'' {
 %	\transposition a
 % Bars 1 to 5
 	R2.
-	r4 r a(\p
+	r4 r a(
 	\repeat volta 2 {
 		d2) r4
 		r r a(
@@ -42,7 +42,7 @@ musicFloteIMvtI = \relative c'' {
 % Bars 36 to 40
 		d'\fz-. g,-. e'-.\fz
 		f,8-. g-. aes-. aes-. g-. f-. 
-		a!4->-.\fz f-. b-.\fz
+		a!4->-. \tweak extra-offset #'(0 . 0.5) \fz f-. b-.\fz
 		f-. c'-.\fz f,-.
 		d'-.\fz g,-. e'-.\fz
 % Bars 41 to 45
@@ -55,7 +55,7 @@ musicFloteIMvtI = \relative c'' {
 		gis a2~\<
 		a2.~
 		a \mark \default
-		d,4\ff^\grandioso r a-.
+		d,4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
 		d2 r4
 % Bars 51 to 55
 		r r a-.
@@ -140,7 +140,7 @@ musicFloteIMvtI = \relative c'' {
 		b4 r cis8-. dis-.
 		b4_\crescmarkup r dis8-. e-.
 % Bars 151 to 155
-		b4 r e8\f-. fis-.
+		b4 r e8-\tweak X-offset #-0.5 \f-. fis-.
 		dis4 r r
 		R2.*4
 % Bars 156 to 160
@@ -150,7 +150,7 @@ musicFloteIMvtI = \relative c'' {
 		d8(_\crescmarkup b) cis!-. d-. e( cis)
 		d-. e-. eis( fis eis e-.)
 % Bars 161 to 165
-		dis2\ff cis4
+		dis2 cis4
 		dis( e8 fis cis4)
 		dis2( e4)
 		dis2( cis4)
@@ -178,7 +178,7 @@ musicFloteIMvtI = \relative c'' {
 			a~
 % Bars 181 to 185
 			a~
-			a4.( fis8\pp g a)
+			a4.( fis8-\tweak extra-offset #'(0 . -3.3) ^\pp g a)
 			e2.~
 			e~
 			e
@@ -187,7 +187,7 @@ musicFloteIMvtI = \relative c'' {
 			fis2.~
 			fis~
 			fis8 r r4 r
-			r4 r a,\p\repeatTie
+			r4 r a,\p\laissezVibrer
 		}
 		{
 			b8(^\ppsempremoltotranquillo d fis2)~
@@ -330,13 +330,13 @@ musicFloteIMvtI = \relative c'' {
 	g2 g4-. \mark \default
 	fis-. r r
 % Bars 316 to 320
-	r r a,,(--\pp
-	d2) r4
+	r r \partCombineChords a,,^(--\pp
+	d2) \partCombineAutomatic r4
 	r r a(
 	d) d-. r
 	d4. d8 d4
 % Bars 321 to 325
-	d(\< e fis)
+	d( \tweak extra-offset #'(0 . 1) \< e fis)
 	a2(\fz\> g8 fis)\!
 	\once \partCombineApart e2 r4
 	r r8 b'\p-. b( a)

@@ -49,7 +49,7 @@ musicKontrabassMvtI = \relative c {
 		a4-.-> fis-.-> r
 		g8-> a-> b-> b-> a-> g->
 		d'4->-. g,-.-> r
-		d'2\f g,4-.->
+		\clef tenor d'2\f g,4-.->
 		d'-.-> d\fz-.-> g,-.
 % Bars 36 to 40
 		f'-.\fz g,-. g'-.\fz
@@ -64,10 +64,10 @@ musicKontrabassMvtI = \relative c {
 		ais ais2\fz
 		a!\fz gis4~\fz
 % Bars 46 to 50
-		gis g,!8\<-. a-. cis-. e-.
+		gis \clef bass g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-. \mark \default
-		d,4\ff^\grandioso r r
+		d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -172,9 +172,9 @@ musicKontrabassMvtI = \relative c {
 		aes r aes
 		aes r aes
 % Bars 136 to 140
-		aes'8-.\pp\<^\arco ces-. ees4-. des-. 
+		aes'8-.\pp\<-\tweak extra-offset #'(-0.9 . -1.8) ^\arco ces-. ees4-. des-. 
 		ces8-. bes-. aes4-. aes8-. ges-.
-		f-._\mfcrescD aes-. ces4 ces8-. bes-.
+		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4 ces8-. bes-.
 		aes ges f ees des4 \mark \default
 		fis!4-. r g!-.
 % Bars 141 to 145
@@ -311,7 +311,7 @@ musicKontrabassMvtI = \relative c {
 	e( g bes)
 	e,2.
 	a,4\f r r
-	b! r8 b-! cis!-! d-! 
+	b!_\marc r8 b-! cis!-! d-! 
 % Bars 241 to 245
 	cis4 r r
 	R2.
@@ -373,7 +373,7 @@ musicKontrabassMvtI = \relative c {
 % Bars 296 to 300
 	R2.*2
 	
-	r4 aes->-._\ffrinforz g->-.
+	r4 aes->-. \tweak X-offset #-3.5 _\ffrinforz g->-.
 	f->-. fes->-. ees->-.
 	aes-._\sempremarc des,-. bes-.
 % Bars 301 to 305

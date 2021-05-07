@@ -42,7 +42,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		bes\fz-. bes-. bes-.\fz
 		ees,4-. d8-. aes'-. g-. f-. 
 		aes\fz r f4-. aes-.\fz
-		f-. aes-.\fz f-.
+		f-. aes-. \tweak extra-offset #'(0 . 0.5) \fz f-.
 		bes-.\fz bes-. bes-.\fz
 % Bars 41 to 45
 		g-. bes-.\fz g-.
@@ -54,7 +54,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 		e e2\<~
 		e2.~
 		e \mark \default
-		f4\ff r r
+		f4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		f2 r4
 % Bars 51 to 55
 		r r c-.
@@ -136,14 +136,14 @@ musicKlarinetteIIMvtI = \relative c'' {
 		
 		fis4--\p\< d'-- d--
 		d--\> d-- cis--
-		b\pp r r 
+		b-\tweak X-offset #-2 \pp r r 
 % Bars 131 to 135
 		R2.*6
 % Bars 136 to 140
 		
 		R2.*2
 		
-		gis8(_\fcresc a b bis cis b) \mark \default
+		gis8(-\tweak X-offset #-2 _\fcresc a b bis cis b) \mark \default
 		a\f r r4 bes!(->
 % Bars 141 to 145
 		a8) r r4 bes(->
@@ -164,8 +164,8 @@ musicKlarinetteIIMvtI = \relative c'' {
 		
 		R2.
 % Bars 156 to 160
-		g2.\fz
-		a2\fz c8[( a)
+		g2. \tweak X-offset #-2 \fz
+		a2 \tweak X-offset #-2 \fz c8[( a)
 		bes-. c-.] bes2
 		d8( bes) c-. d-. e([ cis])
 		d-.[ e-.] d( cis d cis)
@@ -188,7 +188,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 	}
 	\alternative {
 		{
-			r4 a\p\< a
+			r4 a-\tweak X-offset #-1 \p\< a
 			d d d\!
 			f2._\fpdimD~
 			f~
@@ -267,7 +267,7 @@ musicKlarinetteIIMvtI = \relative c'' {
 % Bars 231 to 235
 	
 	
-	r4 ees'2
+	r4 ees'2\p
 	R2.*4
 % Bars 236 to 240
 	

@@ -54,14 +54,14 @@ musicViolinIMvtI = \relative c'' {
 % Bars 41 to 45
 		g,-. e'-.\fz g,-.
 		e'-.\fz g,-. e'-.\fz
-		e2\ff e4\fz~
-		e fis2\fz
-		g\fz gis4~\fz
+		e2 \tweak extra-offset #'(0 . 2) \ff e4 \tweak extra-offset #'(0 . 2) \fz~
+		e fis2 \tweak extra-offset #'(0 . 2) \fz
+		g \tweak extra-offset #'(0 . 2) \fz gis4~ \tweak extra-offset #'(0 . 2) \fz
 % Bars 46 to 50
 		gis a8:16\< g!: e: cis:
 		a: e: cis: e: a: e:
 		cis': a: e': cis a': a,:\! \mark \default
-		 <d,, d' d'>4\ff^\grandioso\arpeggio r <a' a'>-.
+		 <d,, d' d'>4\arpeggio-\tweak X-offset #-1 _\ffgrandiosoD r <a' a'>-.
 		\acciaccatura d,8 <fis' d'>2 r4
 % Bars 51 to 55
 		r r <a, a'>-.
@@ -167,8 +167,8 @@ musicViolinIMvtI = \relative c'' {
 		c2( bes4)
 % Bars 136 to 140
 		aes8-.\pp\< ces-. ees4-. f8-. g-.
-		aes-. bes-. ces4\!-. ces8-. c-.
-		des2.:16_\mfcresc
+		aes-. bes-. ces4-. ces8-. c-.
+		des2.:16-\tweak X-offset #-1.5 _\mfcrescD
 		cis!: \mark \default
 		fis!8-.\f ais,,( b cis) b4->
 % Bars 141 to 145
@@ -260,7 +260,7 @@ musicViolinIMvtI = \relative c'' {
 	
 	
 	
-	b,4.(\pp b8 b4~
+	b,4.(-\tweak X-offset #0.6 \pp b8 b4~
 % Bars 201 to 205
 	b d fis!8 g)
 	r4 d( e8 f)
@@ -356,17 +356,17 @@ musicViolinIMvtI = \relative c'' {
 % Bars 286 to 290
 	fis([ g a)] fis,( g a)
 	fis,[( g a)] fis'( g a)
-	aes'4.:16\fz f8( g aes)
+	aes'4.:16 \tweak extra-offset #'(0 . 0.5) \fz f8( g aes)
 	f([ g aes]) f,( g aes)
 	f,[( g aes]) f'( g aes)
 % Bars 291 to 295
-	aes'4.:16\fz f8:16_\sempreff g: aes:
+	aes'4.:16\fz f8:16 \tweak X-offset #-1 _\sempreff g: aes:
 	f: g: aes: f,: g: aes:
 	f: g: aes: f,: g: aes:
 	f: g: aes: f: g: aes:
 	f: g: aes8\noBeam r r4
 % Bars 296 to 300
-	r f->-._\ffrinforz^\pesante g->-.
+	r f->-. \tweak X-offset #-3.5 _\ffrinforz^\pesante g->-.
 	aes-.-> f-.-> g-.->
 	aes-.-> f-.-> g-.->
 	aes-.-> aes-.-> bes-.->

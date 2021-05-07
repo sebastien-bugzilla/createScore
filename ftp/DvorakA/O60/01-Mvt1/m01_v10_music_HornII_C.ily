@@ -30,7 +30,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 16 to 20
 		g g4 g\! g8
 		c,\< c4 c c8\!
-		c2.\fz~
+		c2. \tweak X-offset #-2.5 \fz~
 		c2~ c8 r
 		R2.*4
 % Bars 21 to 25
@@ -62,7 +62,7 @@ musicHornIIMvtI = \relative c' {
 		d g,2~\<
 		g2.~
 		g \mark \default
-		g4\ff r r
+		g4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -75,10 +75,10 @@ musicHornIIMvtI = \relative c' {
 		d2.
 		b2.\fz
 		c2.
-		c4 r c,\fz~
+		c4 r c, \tweak X-offset #-2 \fz~
 % Bars 61 to 65
-		c2 c4\fz~
-		c2 c4\fz~
+		c2 c4 \tweak X-offset #-2 \fz~
+		c2 c4 \tweak X-offset #-2 \fz~
 		c2 c4-. 
 		c-. r r
 		R2.*18
@@ -134,7 +134,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 136 to 140
 		
 		
-		b,2.\f-^~
+		b,2. \tweak X-offset #-1.8 \f-^~
 		b4 r ees'\f \mark \default
 		e!8 r r4 r
 % Bars 141 to 145
@@ -199,7 +199,7 @@ musicHornIIMvtI = \relative c' {
 	}
 	\clef treble R2.*4
 % Bars 186 to 190
-	r4 r a''(\pp
+	r4 r a''(-\tweak X-offset #-3 \pp
 	e'8) r e r r4
 	R2.
 	r4 r g-.\p
@@ -241,11 +241,11 @@ musicHornIIMvtI = \relative c' {
 % Bars 241 to 245
 	
 	
-	g,8\f g g2~
+	g,8-\tweak X-offset #-2 \f g g2~
 	g8 g g2~
 	g8 g g2~
 % Bars 246 to 250
-	g4\p r r
+	g4-\tweak X-offset #-0.5 \p r r
 	R2.*9
 % Bars 251 to 255
 	

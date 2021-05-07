@@ -27,7 +27,7 @@ musicTrompeteIIMvtI = \relative c'' {
 		
 		
 		
-		c8-.\f r c2\fz~
+		\aIIXoffset #-3.5 c8-.\f r c2\fz~
 		c2.~
 % Bars 36 to 40
 		c2 d4-. 
@@ -42,10 +42,10 @@ musicTrompeteIIMvtI = \relative c'' {
 		d d2
 		d d4~
 % Bars 46 to 50
-		d g,2->~\<
+		d g,2->~ \tweak extra-offset #'(0 . 1) \<
 		g2.~
 		g \mark \default
-		c4\ff r r
+		c4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r e,-.\f
 % Bars 51 to 55
 		e2-^ r4
@@ -111,7 +111,7 @@ musicTrompeteIIMvtI = \relative c'' {
 		
 		
 		
-		r4 r e\f~
+		r4 r e \tweak X-offset #-1 \f~
 		e\< e-> e->
 % Bars 161 to 165
 		e2.\ff
@@ -222,7 +222,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	bes-. bes-. r
 	r r ees
 % Bars 291 to 295
-	c2.\fz~
+	c2. \tweak X-offset #-2 \fz~
 	c4 r r
 	R2.*14
 % Bars 296 to 300

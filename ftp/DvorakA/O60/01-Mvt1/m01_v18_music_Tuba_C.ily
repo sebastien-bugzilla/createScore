@@ -48,10 +48,10 @@ musicTubaMvtI = \relative c {
 		c2-^( b8 a)
 		g2 r4
 % Bars 61 to 65
-		R2.*4
-		
-		
-		
+		\mmrPos #-8 R2.
+		\mmrPos #-8 R2.
+		\mmrPos #-8 R2.
+		\mmrPos #-8 R2.
 		R2.*43
 % Bars 66 to 70
 	
@@ -214,7 +214,7 @@ musicTubaMvtI = \relative c {
 % Bars 286 to 290
 	d~
 	d
-	c~\fz
+	c~ \tweak X-offset #-1 \fz
 	c~
 	c2 c'4-.
 % Bars 291 to 295
