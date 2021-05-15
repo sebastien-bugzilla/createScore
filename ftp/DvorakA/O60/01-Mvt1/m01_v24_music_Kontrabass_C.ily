@@ -488,7 +488,7 @@ musicKontrabassMvtI = \relative c {
 	bes r r
 	\tuplet 3/2 4 {bes,8(\fz\< c bes} bes'4)\! d,8-. e!-.
 	f4 r r
-	\tuplet 3/2 4 {f8(\fz\< g f} f'4)\! g,8-. gis-.
+	\once \tupletUp \tuplet 3/2 4 {f8(\fz\< g f} f'4)\! g,8-. gis-.
 	a-. r r4 r
 % Bars 396 to 400
 	a8-._\dimmarkup r r4 r
@@ -497,7 +497,7 @@ musicKontrabassMvtI = \relative c {
 	
 	\mark \default
 % Bars 401 to 405
-	cis4^\pizz\p a r
+	cis4-\tweak extra-offset #'(0 . -0.3) ^\pizz\p a r
 	r d d
 	e r c
 	r f f
@@ -530,11 +530,11 @@ musicKontrabassMvtI = \relative c {
 	b r b\!
 	b r\> b
 	b r b
-	b'8-.\p^\arco d!-. fis4-.\< e-.
+	b'8-.\p-\tweak extra-offset #'(-1.3 . -1.5) ^\arco d!-. fis4-.\< e-.
 	d8-. cis-. b4-> b8-. a-.
 % Bars 431 to 435
 	gis8\mf\< b d4-> d8-. c-.
-	b8-. a-. gis-. fis!-. e4\!
+	b8-. a-. gis-. fis!-. e4
 	a4\f r bes(->
 	a8) r r4 bes(->
 	a8) r r4\< g!-.

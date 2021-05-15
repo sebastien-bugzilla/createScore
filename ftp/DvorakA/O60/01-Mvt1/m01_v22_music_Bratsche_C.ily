@@ -470,7 +470,7 @@ musicBratscheMvtI = \relative c {
 	\repeat tremolo 6 {g, d'}
 	\repeat tremolo 6 {g, d')}
 	\repeat tremolo 6 {g,(\< a}
-	\repeat tremolo 6 {g a)}
+	\repeat tremolo 6 {g a)\!}
 	\repeat tremolo 4 {a(\> c\!} fis,8 d')
 % Bars 331 to 335
 	c(\< d c d c d
@@ -491,7 +491,7 @@ musicBratscheMvtI = \relative c {
 	<a c>8 r \repeat tremolo 4 {fis16->( a)}
 	<b d>8 r \repeat tremolo 4 {g16(-> b)}
 % Bars 346 to 350
-	<d f>8_\fsempre r \repeat tremolo 4 {b16(-> d)}
+	<d f>8-\tweak extra-offset #'(-1 . 0.5) _\fsempre r \repeat tremolo 4 {b16(-> d)}
 	<d f>8-. r q2:16->
 	q2.:
 	q2: <e g>4:\fz
@@ -539,16 +539,16 @@ musicBratscheMvtI = \relative c {
 	c( b) b( bes) a( g)
 	fis4 r8 d'-.\< e-. fis-.
 % Bars 386 to 390
-	g2(\fz fis8 e)
+	g2(-\tweak X-offset #-2 \fz fis8 e)
 	d4 r r
-	r \tuplet 3/2 4 {g,8(\f\< a g} bes4\!->~
+	r \tuplet 3/2 4 {g,8(\f\< a g} bes4\!^>~
 	bes8) r \tuplet 3/2 4 {bes8(\< c bes} bes'4\!
 	g8) r \tuplet 3/2 4 {ees,8(\< f ees} ees'4\!
 % Bars 391 to 395
 	bes8) r \tuplet 3/2 4 {bes(\< c bes} bes'4\!)~
 	bes8 r \tuplet 3/2 4 {bes8(\fz c bes)} f-. g-.
 	<f a>-. <g bes>-. <a c>4-. r
-	r \tuplet 3/2 4 {f8(\fz g f)} g8-. f-.
+	r \tuplet 3/2 4 {f8(-\tweak extra-offset #'(-0.5 . 0.5) \fz g f)} g8-. f-.
 	e8-. r r4 r
 % Bars 396 to 400
 	<cis e>8-._\dimmarkup r r4 r
@@ -606,8 +606,8 @@ musicBratscheMvtI = \relative c {
 	R2.
 % Bars 441 to 445
 	d2.:16\p
-	d:\cresc
-	d:
+	<<d: {s4 s2\cresc}>>
+	d2.:16
 	d: \mark \default
 	<fis a>:\f
 % Bars 446 to 450
@@ -671,7 +671,7 @@ musicBratscheMvtI = \relative c {
 	r4 d'8-.\ff b-. cis-. d-.
 	b-. cis-. d-. b-. cis-. d-. 
 	R2.
-	r4 f,\ff^\pesante-.-> e-.->
+	r4 f,-\tweak extra-offset #'(-1 . 0.3) _\ffpesante-.-> e-.->
 	d-.-> g-.-> g-.->
 % Bars 501 to 505
 	a-.-> fis-.-> a-.->

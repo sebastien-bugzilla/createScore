@@ -396,9 +396,9 @@ musicViolinIMvtI = \relative c'' {
 	r4 r a'(\pp
 	d4.) d8-- d4--
 % Bars 321 to 325
-	d(\< e fis)
-	a2(\fz\> g8 fis)
-	e2\! r4 
+	\hairpinYoffset #0 #0.6 d(\< e fis)
+	a2( \tweak extra-offset #'(0 . 0.6) \fz\> g8 fis)
+	e2\! r4 \hairpinYoffset #0 #0
 	R2.*6
 % Bars 326 to 330
 	
@@ -415,7 +415,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 336 to 340
 	fis8)\pp r r4 r
 	d,2.\fz(
-	cis8) r d4(\< dis)\!
+	cis8) r \hairpinShorten #0 #-2 d4(\< dis)\!
 	gis8-! fis-! eis-! eis-! fis-! gis-! 
 	fis\f r b2\fz
 % Bars 341 to 345
@@ -480,7 +480,7 @@ musicViolinIMvtI = \relative c'' {
 	<bes, bes'>4-^\arpeggio r r
 % Bars 391 to 395
 	<d, bes' f'>\arpeggio r8 a''-. bes-. c-.
-	d2\f-^ c8( bes)
+	d2-\tweak X-offset #-0.3 \f-^ c8( bes)
 	a4 r8 c-.\< d-. e-.
 	f2\fz e8( d)
 	cis!-. a16( b! a8) e-. e-. d-.
@@ -498,7 +498,7 @@ musicViolinIMvtI = \relative c'' {
 	bes,8-.\p bes16( c) bes8-._\dimmarkup bes16( c) bes8-. bes16( ees)
 % Bars 406 to 410
 	d8-. d16( ees) d8-. d16( ees) f8-. ees16( f)
-	g8\((\pp f) f( ees) ees( bes)\)
+	g8\((-\tweak X-offset #-1.5 \pp f) f( ees) ees( bes)\)
 	d( a a e! a d,)
 	a'( a, a' a, a' a,)
 	b4( c\< d
@@ -517,7 +517,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 421 to 425
 	a~\<
 	a2\> ais4
-	b2(\pdolceD ais4)
+	b2(-\tweak X-offset #0 \pdolceD ais4)
 	fis8( dis e fis cis4)
 	b8(\< dis fis4 e--
 % Bars 426 to 430
@@ -529,7 +529,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 431 to 435
 	e2.:16\mf\<
 	e:
-	a8-.\f cis,,( d e) d4->
+	a8-.-\tweak X-offset #-0.5 \f cis,,( d e) d4->
 	a'8-. cis,( d e) d4->
 	a'8-^ cis,(\< e a) bes-^([ cis, 
 % Bars 436 to 440
@@ -607,7 +607,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 496 to 500
 	cis: d:] d,:[ b: cis: d:]
 	b: cis: d: b: cis: d:
-	r4 b\ff->^\pesante-. cis-.->
+	r4 b-\tweak X-offset #-1 _\ffpesante->-. cis-.->
 	d-.-> b-.-> cis-.->
 	d-.-> d-.-> e-.->
 % Bars 501 to 505
@@ -626,7 +626,7 @@ musicViolinIMvtI = \relative c'' {
 	fis-. d-. e-.
 	fis-. d-. e-.
 	fis-. d-. e-.
-	d16 a'\ff a a a2:16
+	d16 a'-\tweak extra-offset #'(0 . 0.3) \ff a a a2:16
 	a2.:
 % Bars 516 to 520
 	a:

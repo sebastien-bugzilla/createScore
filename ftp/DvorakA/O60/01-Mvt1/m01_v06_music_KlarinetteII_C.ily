@@ -361,22 +361,22 @@ musicKlarinetteIIMvtI = \relative c'' {
 	c c-. r
 	c4. c8 c4
 % Bars 321 to 325
-	c2\< c4
-	d2.(\fz\> 
-	bes2)\! r4
+	\hairpinYoffset #0 #0.8 c2\< c4
+	d2.(-\tweak extra-offset #'(0 . 0.5) \fz\> 
+	bes2)\! r4 \hairpinYoffset #0 #0
 	R2.*5
 % Bars 326 to 330
 	
 	
 	
-	r4 r c\(\p\<
+	r4 r \hairpinYoffset #0 #1 \aIIXoffset #-3 c\( \tweak extra-offset #'(0.5 . 1) \p\<
 	c2 bes4
 % Bars 331 to 335
 	c d c\)
 	c2(\f bes4
 	a bes a)
-	bes\(\p\> f' e!
-	d e d\!
+	bes\( \tweak extra-offset #'(0.5 . 1) \p\> f' e!
+	d e d\! \hairpinYoffset #0 #0
 % Bars 336 to 340
 	cis8\)\pp r r4 r
 	R2.*9
@@ -386,14 +386,14 @@ musicKlarinetteIIMvtI = \relative c'' {
 	ees,4 d8-. aes'-. g-. f-. 
 	aes4\fz-. f-. aes-.\fz
 	f-. aes\fz-. f-.
-	bes-.\fz bes bes-.\fz
+	bes-.-\tweak extra-offset #'(1 . 1) \fz bes bes-.-\tweak extra-offset #'(1 . 1) \fz
 	ees,4 d8-. aes'-. g-. f-. 
 % Bars 351 to 355
 	aes4\fz-. f-. aes-.\fz
 	f-. aes-.\fz f-.
-	bes-.\fz bes-. bes-.\fz
-	g-. bes-.\fz g-.
-	bes-.\fz g-. bes-.\fz
+	bes-.-\tweak extra-offset #'(1 . 1) \fz bes-. bes-.-\tweak extra-offset #'(1 . 1) \fz
+	g-. bes-.-\tweak extra-offset #'(0.5 . 1) \fz g-.
+	bes-.-\tweak extra-offset #'(0.5 . 1) \fz g-. bes-.-\tweak extra-offset #'(0.5 . 1) \fz
 % Bars 356 to 360
 	e!2\ff e4~\fz
 	e e2\fz
@@ -422,12 +422,12 @@ musicKlarinetteIIMvtI = \relative c'' {
 	des\f r r
 % Bars 381 to 385
 	des r r 
-	des8\<-. c-. bes-. aes-. g-. c-.\!
+	\aIIXoffset #-5 des8\<-. c-. bes-. aes-. g-. c-.\!
 	f, r r4 r
 	R2.
-	r4 f4.\f\<\( f'8\)\!
+	r4 f4.\f-\tweak extra-offset #'(0 . 0.5) \<\( f'8\)\!
 % Bars 386 to 390
-	f2( e4
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f2( e4
 	f4) r r
 	des2.\fz
 	des4 r r

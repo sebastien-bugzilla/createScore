@@ -304,25 +304,25 @@ musicHornIIMvtI = \relative c' {
 	g2.~
 	g~
 	g2 g4-. \mark \default
-	g2.\fp\>~
+	\partCombineApart g2.\fp\>~
 % Bars 316 to 320
-	g~\pp
+	g~-\tweak X-offset #-2 \pp
 	g~
 	g~
 	g~
 	g~
 % Bars 321 to 325
-	g\<
-	g\fz\>
-	a\pp~
+	\hairpinYoffset #0 #1 g\<
+	g \tweak extra-offset #'(0.5 . 1) \fz\>
+	a \tweak extra-offset #'(0.5 . 1) \pp~ \hairpinYoffset #0 #0
 	a
-	\partCombineApart c~
+	c~
 % Bars 326 to 330
 	c~
 	c
 	b\<~
 	<< b {s4 s s\!} >>
-	c,2.\f~
+	c,2.-\tweak X-offset #-2 \f~
 % Bars 331 to 335
 	c~
 	c2 r4
@@ -378,9 +378,9 @@ musicHornIIMvtI = \relative c' {
 % Bars 386 to 390
 	R2.*2
 	
-	des'2\fz( aes4
-	c) r r
-	aes2.\fz~
+	des'2\fz aes4
+	c r r
+	aes2.-\tweak X-offset #0.5 \fz~
 % Bars 391 to 395
 	aes4 r r
 	aes2\fz bes8-. aes-.
@@ -396,7 +396,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 401 to 405
 	g2( d'4)
 	c4.(\< g8 ees4)
-	bes'\( f'8\)\! r f4-.
+	\aIIOmit bes'\( f'8\)\! r f4-.
 	ees2\>( bes8 g\!)
 	aes4\p( des f)
 % Bars 406 to 410
@@ -414,7 +414,7 @@ musicHornIIMvtI = \relative c' {
 % Bars 426 to 430
 	
 % Bars 431 to 435
-	r4 d2\f->~
+	r4 d2-\tweak X-offset #0.4 \f->~
 	d2.~
 	d8 r r4 r
 	R2.*7

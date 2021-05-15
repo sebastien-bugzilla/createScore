@@ -450,16 +450,16 @@ musicFagottIIMvtI = \relative c {
 	g\f r r
 % Bars 381 to 385
 	g r r
-	bes8\<-. a-. g-. f-. e-. a-.\! 
+	\aIIXoffset #-5 bes8\<-. a-. g-. f-. e-. a-.\! 
 	d,4 r8 d'\(\f cis c\)
 	c\( b\) b\( bes\) a\( g\)
 	fis4 r8 d'-.\< e-. fis-.
 % Bars 386 to 390
-	g2\fz\( fis8 e
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) PhrasingSlur g2\fz\( fis8 e
 	d4\) r r
 	g,,2.\fz(
 	bes4) r r
-	ees,2(\fz g4)
+	ees,2(-\tweak X-offset #-1.8 \fz g4)
 % Bars 391 to 395
 	bes r r
 	bes,2\fz d8-. e!-.
@@ -485,7 +485,7 @@ musicFagottIIMvtI = \relative c {
 	a
 	gis~\<
 % Bars 411 to 415
-	gis
+	<< gis {s4 s s\!} >>
 	g!4(\> e a)\!
 	d\p r r
 	R2.*7

@@ -329,7 +329,7 @@ musicHornIVMvtI = \relative c' {
 	ees
 	ees\<~
 	ees
-	f8\f r r4 r
+	f8-\tweak X-offset #-1 \f r r4 r
 % Bars 331 to 335
 	R2.*16
 % Bars 336 to 340
@@ -352,7 +352,7 @@ musicHornIVMvtI = \relative c' {
 	c2\ff c4\fz~
 	c c2\fz
 	c2\fz c4~\fz
-	c f,2\fz \mark \default
+	c f,2-\tweak extra-offset #'(1.5 . 1.5) \fz \mark \default
 	f4-. r r
 % Bars 361 to 365
 	R2.*27

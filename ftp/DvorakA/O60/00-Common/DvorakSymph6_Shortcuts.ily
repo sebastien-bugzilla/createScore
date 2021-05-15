@@ -214,11 +214,21 @@ aIIXoffset = #(define-music-function
 	#}
 )
 
+aIIOmit = \once \omit Voice.CombineTextScript
+
 trillXoffset = #(define-music-function
 	(offset)
 	(number?)
 	#{
 		\override TrillSpanner.bound-details.left.padding = #offset
+	#}
+)
+
+hairpinYoffset = #(define-music-function
+	(x y)
+	(number? number?)
+	#{
+		\override Staff.Hairpin.extra-offset = #(cons x y)
 	#}
 )
 

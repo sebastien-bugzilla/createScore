@@ -401,8 +401,8 @@ musicViolinIIMvtI = \relative c' {
 	\repeat tremolo 4 {d( a} fis'16 d fis d
 	\repeat tremolo 6 {fis a)}
 % Bars 321 to 325
-	fis( a fis\< a cis a cis a d a d a
-	\repeat tremolo 4 {fis'\fz\> dis} b a b a)\!
+	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur fis( a fis\< a cis a cis a d a d a
+	\repeat tremolo 4 {fis'\fz \tweak extra-offset #'(0 . 0.5) \> dis} b a b a)\!
 	g( b, e b \repeat tremolo 4 {e b}
 	\repeat tremolo 6 {e b)}
 	\repeat tremolo 6 {e( d}
@@ -410,7 +410,7 @@ musicViolinIIMvtI = \relative c' {
 	\repeat tremolo 6 {e d}
 	\repeat tremolo 6 {e d)}
 	\repeat tremolo 6 {cis( a\<}
-	\repeat tremolo 6 {cis a)}
+	\repeat tremolo 6 {cis a)\!}
 	\repeat tremolo 4 {c(\> d\!} b d b' d)
 % Bars 331 to 335
 	c8(\< d c d c d
@@ -421,7 +421,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 336 to 340
 	ais\pp r g4.\fz fis8
 	eis-! fis-! gis-! gis-! fis-! eis-! 
-	fis-. r g,4(\< gis)
+	fis-. r \hairpinShorten #0 #-2 g,4(\< gis)\!
 	b2.\fz
 	ais8\f r f''4(\fz e)
 % Bars 341 to 345
@@ -467,7 +467,7 @@ musicViolinIIMvtI = \relative c' {
 	a8: g: f2:
 	bes8: a: g2:
 	bes8: a: g2:
-	<e cis'!>4\f-> r r
+	<e cis'!>4-\tweak X-offset #0.5 \f-> r r
 % Bars 381 to 385
 	q-> r8 g-. a-. bes-.
 	bes\<-. a-. g-. f-. e-. a-.\!
@@ -477,7 +477,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 386 to 390
 	d2.->~
 	d4 r r
-	<bes,, g' ees'>4\f\arpeggio r r
+	<bes,, g' ees'>4-\tweak extra-offset #'(0.4 . 0.8) \f\arpeggio r r
 	<bes f' d'>\arpeggio r r
 	<ees bes' g'>\arpeggio r r
 % Bars 391 to 395
@@ -519,7 +519,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 421 to 425
 	fis4) r r
 	R2.
-	dis8(\pp fis b dis fis e
+	dis8(-\tweak extra-offset #'(0.7 . 0.8) \pp fis b dis fis e
 	dis b cis dis gis, ais)
 	fis(\< b fis b gis b
 % Bars 426 to 430
@@ -609,7 +609,7 @@ musicViolinIIMvtI = \relative c' {
 % Bars 496 to 500
 	cis: d:] d,: b: cis: d:
 	b: cis: d: b: cis: d:
-	r4 b\ff^\pesante-.-> cis-.-> 
+	r4 b-\tweak X-offset #-1 _\ffpesante-.-> cis-.-> 
 	d-.->  gis,-.->  ais-.-> 
 	b-.->  b-.->  cis-.-> 
 % Bars 501 to 505

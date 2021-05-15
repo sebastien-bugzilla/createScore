@@ -260,10 +260,10 @@ musicPosauneIMvtI = \relative c' {
 % Bars 351 to 355
 	
 % Bars 356 to 360
-	g!2\ff fis4\fz~
-	fis e2\fz
-	e\fz e4~\fz
-	e d2\fz \mark \default
+	g!2-\tweak X-offset #0.5 \ff fis4-\tweak X-offset #0.5 \fz~
+	fis e2-\tweak X-offset #0.5 \fz
+	e-\tweak X-offset #0.5 \fz e4~-\tweak X-offset #0.5 \fz
+	e d2-\tweak X-offset #0.5 \fz \mark \default
 	dis4-. r r
 % Bars 361 to 365
 	R2.*40

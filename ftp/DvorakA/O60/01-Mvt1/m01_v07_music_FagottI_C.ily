@@ -431,9 +431,9 @@ musicFagottIMvtI = \relative c {
 	g fis2\fz \mark \default
 	f4-. r r
 % Bars 361 to 365
-	\partCombineApart r4 b(\p\< c
-	d\> b)\! r
-	r e(\pp f) \partCombineAutomatic
+	\partCombineApart r4 b(_\p_\< c
+	d_\> b)\! r
+	r e(-\tweak X-offset #-2.5 \pp f) \partCombineAutomatic
 	g2.~
 	g
 % Bars 366 to 370
@@ -441,7 +441,7 @@ musicFagottIMvtI = \relative c {
 	g4-.) r r
 	R2.*3
 % Bars 371 to 375
-	\partCombineApart bes,8-. c-. d4 r \partCombineAutomatic
+	\partCombineApart bes,8-.-\tweak X-offset #-1 \p c-. d4 r \partCombineAutomatic
 	R2.*6
 % Bars 376 to 380
 	
@@ -451,16 +451,16 @@ musicFagottIMvtI = \relative c {
 	bes\f r r
 % Bars 381 to 385
 	bes r r
-	bes8\<-. a-. g-. f-. e-. a-.\! 
+	\aIIXoffset #-5 bes8\<-. a-. g-. f-. e-. a-.\! 
 	d,4 r8 d'\(\f cis c\)
 	c\( b\) b\( bes\) a\( g\)
 	fis4 r8 d'-.\< e-. fis-.
 % Bars 386 to 390
-	g2\fz\( fis8 e
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) PhrasingSlur g2\fz\( fis8 e
 	d4\) r r
 	g,2.\fz(
 	bes4) r r
-	ees,2(\fz g4)
+	ees,2(-\tweak X-offset #-1.8 \fz g4)
 % Bars 391 to 395
 	bes r r
 	bes,2\fz d8-. e!-.
@@ -495,7 +495,7 @@ musicFagottIMvtI = \relative c {
 % Bars 421 to 425
 	\partCombineChords a8\pp\< a a4 d8 d
 	fis4\> fis( e)\!
-	\partCombineApart dis2(\p e4
+	\partCombineApart dis2(-\tweak extra-offset #'(-0.3 . -1) \p e4
 	fis2.)~
 	fis~
 % Bars 426 to 430

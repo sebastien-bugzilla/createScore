@@ -263,7 +263,7 @@ musicPaukenMvtI = \relative c {
 	d
 	d
 % Bars 386 to 390
-	<<d {s4 s s\stopTrillSpan}>>
+	<<d {s4 s s8 s16 s\stopTrillSpan}>>
 	d4 r r
 	R2.*13
 % Bars 391 to 395
@@ -293,7 +293,7 @@ musicPaukenMvtI = \relative c {
 % Bars 431 to 435
 	
 	
-	a4\f r d
+	a4-\tweak X-offset #-0.7 \f r d
 	a r d
 	a r a\<
 % Bars 436 to 440

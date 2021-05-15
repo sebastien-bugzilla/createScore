@@ -441,17 +441,18 @@ musicFloteIMvtI = \relative c'' {
 	R2.*3
 % Bars 411 to 415
 	
+	
 	d2(\p cis4)
 	a8( fis) g-. a-. e4
 	d8( fis a4) g--
-	fis2( e4)
 % Bars 416 to 420
+	fis2( e4)
 	d8( fis a4 g
 	fis2 e4)
 	d8( e fis2
 	d8 e fis2)
-	d8(-- e--\< fis4 fis8-- g--
 % Bars 421 to 425
+	d8(-- e--\< fis4 fis8-- g--
 	a4) a(\> ais)\!
 	b r r 
 	R2.*7

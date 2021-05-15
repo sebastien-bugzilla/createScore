@@ -386,8 +386,8 @@ musicOboeIMvtI = \relative c'' {
 	d) d-. r
 	d4. d8 d4
 % Bars 321 to 325
-	d(\< e fis)
-	a2\fz(\> g8 fis)\!
+	\hairpinYoffset #0 #1.5 d(\< e fis)
+	a2-\tweak extra-offset #'(0 . 1) \fz(\> g8 fis)\! \hairpinYoffset #0 #0
 	\once \partCombineApart e2 r4
 	R2.*2
 	
@@ -395,14 +395,14 @@ musicOboeIMvtI = \relative c'' {
 	r4 r8 bes'-.\p bes( a)
 	g2 r4
 	R2.
-	r4 r a,\(\p
-	a'2\< gis4
+	r4 r \aIIXoffset #-3 a,\(\p
+	\hairpinYoffset #0 #0.5 a'2\< gis4
 % Bars 331 to 335
 	a b a\)
 	a2(\f g4
 	fis_\dimmarkup g fis)
 	e( g2)~
-	g2.
+	g2. \hairpinYoffset #0 #0
 % Bars 336 to 340
 	\once \partCombineChords cis,8 r r4 r
 	R2.*5
@@ -432,8 +432,8 @@ musicOboeIMvtI = \relative c'' {
 	a4-. r r
 % Bars 361 to 365
 	R2.
-	\partCombineApart r4 d,(\p\< g!
-	gis2\> d4)\!
+	\partCombineApart r4 d,(_\p_\< g!
+	gis2_\> d4)\!
 	cis2.~
 	cis(
 % Bars 366 to 370
@@ -441,7 +441,7 @@ musicOboeIMvtI = \relative c'' {
 	e4-. g-. f-.
 	e \partCombineAutomatic r r
 	R2.
-	\partCombineApart d8-.\p e-. f4 r \partCombineAutomatic
+	\partCombineApart d8-.-\tweak X-offset #-1 \p e-. f4 r \partCombineAutomatic
 % Bars 371 to 375
 	R2.*4
 	
@@ -470,30 +470,30 @@ musicOboeIMvtI = \relative c'' {
 	f4) r r
 	f2\fz~ f8 g-.
 	a4 r r
-	a2\fz( bes8 b
+	a2-\tweak X-offset #0.3 \fz( bes8 b
 	e,-.) r r4 r
 % Bars 396 to 400
 	\partCombineApart cis!8-._\dimmarkup r r4 r
-	a8-.\p r r4  r \partCombineAutomatic
+	a8-._\p r r4  r \partCombineAutomatic
 	R2.*2
 	
-	\partCombineApart e'4\pp r a, \partCombineAutomatic \mark \default
+	\partCombineApart e'4_\pp r a, \partCombineAutomatic \mark \default
 % Bars 401 to 405
 	R2.
-	\partCombineApart f4(\p\< a d)
-	c2.~
-	c\>
-	bes\p~
+	\partCombineApart f4(_\p_\< a d)
+	c2.~\!
+	c_\>
+	bes_\p~
 % Bars 406 to 410
 	bes_\dimmarkup~
-	bes\pp
+	bes-\tweak extra-offset #'(0.5 . 0.4) _\pp
 	a~
 	a
-	b4(\< c d
+	b4(_\< c d
 % Bars 411 to 415
 	ees f fis
-	g\> gis a)
-	d2(\p cis4)
+	g_\> gis a)
+	d2(_\p cis4)
 	a8( fis) g-. a-. e4
 	d8( fis a4) g--
 % Bars 416 to 420
@@ -623,9 +623,9 @@ musicOboeIMvtI = \relative c'' {
 % Bars 526 to 530
 	a2(\p g8 fis)
 	fis2( e8_\dimmarkup d)
-	d2 a4~
-	a2.\>~
-	a2\! r4
+	d2 \partCombineApart a4~
+	a2.~
+	a2 \partCombineAutomatic r4
 % Bars 531 to 535
 	R2.*6
 % Bars 536 to 540

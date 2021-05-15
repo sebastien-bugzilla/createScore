@@ -329,7 +329,7 @@ musicHornIIIMvtI = \relative c' {
 	c
 	a\<~
 	a
-	bes8\f r r4 r
+	bes8-\tweak X-offset #-1 \f r r4 r
 % Bars 331 to 335
 	R2.*16
 % Bars 336 to 340
@@ -352,7 +352,7 @@ musicHornIIIMvtI = \relative c' {
 	c2\ff c4\fz~
 	c c2\fz
 	c2\fz c4~\fz
-	c f,2\fz \mark \default
+	c f,2-\tweak extra-offset #'(1.5 . 1.5) \fz \mark \default
 	f4-. r r
 % Bars 361 to 365
 	R2.*27
@@ -367,7 +367,7 @@ musicHornIIIMvtI = \relative c' {
 % Bars 386 to 390
 	
 	
-	\partCombineApart ges2.\fz~
+	\partCombineApart ges2._\fz~
 	ges4 r r \partCombineAutomatic
 	ges'2(\fz f8 ees
 % Bars 391 to 395
@@ -376,7 +376,7 @@ musicHornIIIMvtI = \relative c' {
 % Bars 396 to 400
 	
 	
-	\partCombineApart r4 r a--\p
+	\partCombineApart r4 r a_-_\p
 	r a-- r \partCombineAutomatic
 	R2. \mark \default
 % Bars 401 to 405
@@ -485,7 +485,7 @@ musicHornIIIMvtI = \relative c' {
 	f
 % Bars 526 to 530
 	f\p~
-	f~_\dimmarkup
+	f~-\tweak X-offset #6 _\dimmarkup
 	f~
 	f~
 	f2\pp r4

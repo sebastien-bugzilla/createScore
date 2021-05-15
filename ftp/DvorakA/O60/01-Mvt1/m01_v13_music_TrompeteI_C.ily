@@ -308,7 +308,7 @@ musicTrompeteIMvtI = \relative c'' {
 	
 % Bars 431 to 435
 	
-	r4 r d-.\f
+	r4 r d-.-\tweak X-offset #-0.5 \f
 	g,-. r c-.
 	g-. r c-.
 	g-. r d'\<-.

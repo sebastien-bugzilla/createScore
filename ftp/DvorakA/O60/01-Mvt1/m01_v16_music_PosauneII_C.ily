@@ -266,10 +266,10 @@ musicPosauneIIMvtI = \relative c' {
 % Bars 351 to 355
 	
 % Bars 356 to 360
-	cis'2\ff cis4\fz~
-	cis cis2\fz
-	cis\fz cis4~\fz
-	cis a2\fz \mark \default
+	cis'2-\tweak X-offset #0.5 \ff cis4-\tweak X-offset #0.5 \fz~
+	cis cis2-\tweak X-offset #0.5 \fz
+	cis-\tweak X-offset #0.5 \fz cis4~-\tweak X-offset #0.5 \fz
+	cis a2-\tweak X-offset #0.5 \fz \mark \default
 	a4-. r r
 % Bars 361 to 365
 	R2.*40
