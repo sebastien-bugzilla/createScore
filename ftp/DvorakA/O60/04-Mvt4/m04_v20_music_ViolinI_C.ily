@@ -442,7 +442,7 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 366 to 370
 	R1*4
 	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 	
 	\acciaccatura e,8 e'4--\fp \tuplet 3/2 4 {e8( d cis)} d4-- \tuplet 3/2 4 {d8( cis b)}
 % Bars 371 to 375

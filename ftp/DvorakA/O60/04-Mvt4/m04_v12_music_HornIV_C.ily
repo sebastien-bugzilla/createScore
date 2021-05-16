@@ -295,7 +295,7 @@ musicHornIVMvtIV = \relative c' {
 	ees2 ees
 	ees1
 	f2-> ees-> \mark \default
-	d1\ff\>~
+	\grace {s8} d1\ff\>~
 	d~
 % Bars 306 to 310
 	d4\p r r2

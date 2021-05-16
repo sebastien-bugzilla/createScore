@@ -307,7 +307,7 @@ musicFloteIMvtIV = \relative c''' {
 	c2 d
 	a1
 	g2-> f-> \mark \default
-	e1\ff\>~
+	\grace {s8} e1\ff\>~
 	e~
 % Bars 306 to 310
 	e4\p r r2

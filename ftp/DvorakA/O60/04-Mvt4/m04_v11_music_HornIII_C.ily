@@ -295,7 +295,7 @@ musicHornIIIMvtIV = \relative c'' {
 	bes2 c
 	bes1
 	bes2-> g-> \mark \default
-	g1\ff\>~
+	\grace {s8} g1\ff\>~
 	g~
 % Bars 306 to 310
 	g4\p r r2

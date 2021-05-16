@@ -324,7 +324,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c2 aes
 	aes1
 	g2-> f-> \mark \default
-	\partCombineApart e!1~
+	\partCombineApart \grace {s8} e!1~
 	e~
 % Bars 306 to 310
 	e4 r8 g(\mp e! d! c g

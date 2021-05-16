@@ -373,7 +373,7 @@ musicBratscheMvtIV = \relative c' {
 	f2-> f->
 	\clef alto c1->
 	c2-> <a, a'>-> \mark \default
-	q1\ff\>~
+	\grace {s8} q1\ff\>~
 	q~
 % Bars 306 to 310
 	q4\p r r2

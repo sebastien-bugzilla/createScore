@@ -373,7 +373,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a2 bes
 	<a, f'>1
 	<g e'>2-> <f d'>-> \mark \default
-	<e cis'!>1\ff\>~
+	\grace {s8} <e cis'!>1\ff\>~
 	q~
 % Bars 306 to 310
 	q4\p r r2

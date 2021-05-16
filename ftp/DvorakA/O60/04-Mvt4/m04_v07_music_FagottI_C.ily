@@ -355,7 +355,7 @@ musicFagottIMvtIV = \relative c' {
 	f2 bes,
 	c1
 	c2-> d-> \mark \default
-	\partCombineApart a1~
+	\partCombineApart \grace {s8} a1~
 	a~
 % Bars 306 to 310
 	a4 \once \partCombineAutomatic r r r8 e''(\mp

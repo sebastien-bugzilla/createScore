@@ -324,7 +324,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	aes2 f
 	ees1
 	ees2-> c-> \mark \default
-	c1\ff\>~
+	\grace {s8} c1\ff\>~
 	c~
 % Bars 306 to 310
 	c4\p r4 r2
