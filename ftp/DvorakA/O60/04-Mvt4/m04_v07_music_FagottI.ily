@@ -50,7 +50,7 @@ musicFagottIMvtIV = \relative c' {
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. a-. a-. \mark \default
-	\tempoXOff #1 fis'8(_\ffgrandioso a cis b a g fis e)
+	\tempoXoffset #1 fis'8(_\ffgrandioso a cis b a g fis e)
 	d( e fis e d cis b cis)
 	a r fis'( g a b cis b)
 % Bars 41 to 45

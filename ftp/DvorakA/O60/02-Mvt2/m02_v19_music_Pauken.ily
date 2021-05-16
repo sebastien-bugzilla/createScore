@@ -112,7 +112,7 @@ musicPaukenMvtII = \relative c {
 		\mmrPos #-6 R
 		\mmrPos #-9 R \no \clef bass \mark \default
 	}
-	\tempoXOff #1.1 b,8\pp-\tweak X-offset #1.1 ^\solo f'16-. f-. f8-. f-.
+	\tempoXoffset #1.1 b,8\pp-\tweak X-offset #1.1 ^\solo f'16-. f-. f8-. f-.
 	b, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
 	b, f'16\pp f f8 f

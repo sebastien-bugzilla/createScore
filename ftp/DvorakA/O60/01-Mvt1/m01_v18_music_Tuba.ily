@@ -34,7 +34,7 @@ musicTubaMvtI = \relative c {
 			\ni \clef treble R2.
 			R \no
 		r4 r } \clef bass a-.\ff \mark \default
-		\tempoXOff #1.2 d-._\grandioso r r
+		\tempoXoffset #1.2 d-._\grandioso r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4

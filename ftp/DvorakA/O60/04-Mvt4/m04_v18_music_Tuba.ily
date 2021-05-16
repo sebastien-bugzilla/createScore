@@ -37,7 +37,7 @@ musicTubaMvtIV = \relative c, {
 % Bars 36 to 40
 	
 	r2 r4 a'\f-. \mark \default
-	\tempoXOff #1 d-. r r2
+	\tempoXoffset #1 d-. r r2
 	R1*22
 % Bars 41 to 45
 	

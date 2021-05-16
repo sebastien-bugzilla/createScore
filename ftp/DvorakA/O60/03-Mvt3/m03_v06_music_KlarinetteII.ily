@@ -317,7 +317,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	\tempoXOff #-4 R2.*7
+	\tempoXoffset #-4 R2.*7
 % Bars 286 to 290
 	
 	\bar "||" \key f \minor

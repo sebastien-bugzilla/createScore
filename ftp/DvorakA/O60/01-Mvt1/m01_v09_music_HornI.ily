@@ -400,7 +400,7 @@ musicHornIMvtI = \relative c'' {
 % Bars 411 to 415
 	
 	
-	\tempoXOff #-1 \mmrDown R2.*3
+	\tempoXoffset #-1 \mmrDown R2.*3
 % Bars 416 to 420
 	g8(\p^\solo b g'4 f)
 	e2( d4)

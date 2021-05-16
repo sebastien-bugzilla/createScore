@@ -427,7 +427,7 @@ musicViolinIMvtI = \relative c'' {
 	e4( g2~\p\>
 	g2.
 % Bars 336 to 340
-	\tempoXOff #2.5 fis8)\pp r r4 r
+	\tempoXoffset #2.5 fis8)\pp r r4 r
 	d,2.\fz(
 	cis8) r d4(\< dis)\!
 	gis8-! fis-! eis-! eis-! fis-! gis-! 
@@ -675,7 +675,7 @@ musicViolinIMvtI = \relative c'' {
 % Bars 541 to 545
 	R2.*2
 	
-	\tempoXOff #1.5 d''2\ff-^ cis4-.
+	\tempoXoffset #1.5 d''2\ff-^ cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 <a, e' cis'>->
 % Bar 546

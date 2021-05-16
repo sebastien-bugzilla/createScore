@@ -36,14 +36,14 @@ musicKlarinetteIIMvtII = \relative c'' {
 	fis8 a g fis)
 	fis4 e\<(
 	d8)\! r r4
-	\tempoXOff #-2 \mmrLength #22 R2*6
+	\tempoXoffset #-2 \mmrLength #22 R2*6
 	
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	\tempoXOff #1.5 r4 gis\pp--
+	\tempoXoffset #1.5 r4 gis\pp--
 % Bars 36 to 40
 	gis-- gis--
 	gis gis
@@ -178,7 +178,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXOff #1.5 r8 c'4(\p g16 e)
+	\tempoXoffset #1.5 r8 c'4(\p g16 e)
 	e8 r r4
 % Bars 171 to 175
 	r8 c'4( g16 e)

@@ -49,7 +49,7 @@ musicKontrabassMvtII = \relative c {
 	f'16->\ff f,-. bes_\pesante-. d-. f-. ees-. d-. c-.
 	bes8-> a-> g-> fis->
 	g4-> g-> \bar "||" \mark \default
-	\tempoXOff #1. a-> r
+	\tempoXoffset #1. a-> r
 % Bars 36 to 40
 	R2*2
 	
@@ -200,7 +200,7 @@ musicKontrabassMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	\tempoXOff #1.2 bes8\p-\tweak X-offset #1.2 ^\arco r r4
+	\tempoXoffset #1.2 bes8\p-\tweak X-offset #1.2 ^\arco r r4
 	r8 bes4(\< a16 g\!)
 % Bars 171 to 175
 	f8(\p bes) r4

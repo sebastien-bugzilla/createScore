@@ -42,7 +42,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
-	\tempoXOff #1.5 c-. r r2
+	\tempoXoffset #1.5 c-. r r2
 	R1*22
 % Bars 41 to 45
 	

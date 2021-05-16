@@ -44,7 +44,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	g8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXOff #1.5 r4 b,\pp--
+	\tempoXoffset #1.5 r4 b,\pp--
 % Bars 36 to 40
 	b-- b--
 	b b

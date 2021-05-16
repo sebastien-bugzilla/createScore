@@ -59,7 +59,7 @@ musicHornIVMvtI = \relative c' {
 		e a2\<~
 		a2.~
 		a \mark \default
-		\tempoXOff #0.5 bes4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #0.5 bes4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.*6
 % Bars 51 to 55
 		
@@ -310,7 +310,7 @@ musicHornIVMvtI = \relative c' {
 	f2.~
 	f~
 	f2 f4-. \mark \default
-	\tempoXOff #0.5 d2.\fp\>~
+	\tempoXoffset #0.5 d2.\fp\>~
 % Bars 316 to 320
 	d-\tweak X-offset #0.5 \pp~
 	d~

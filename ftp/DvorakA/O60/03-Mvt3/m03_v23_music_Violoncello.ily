@@ -517,7 +517,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 426 to 430
 	d-. f-. d-.
 	a,-. g'(-> f8 e)
-	\tempoXOff #-1.5 d4-. d-. d-.
+	\tempoXoffset #-1.5 d4-. d-. d-.
 	d-. d-. d-.
 	a'-. a,->( b8 cis)
 % Bars 431 to 435

@@ -46,7 +46,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e\!-^~
 	e2. e4-. \mark \default
-	\tempoXOff #1 f8_\ffgrandioso\noBeam a,( c bes a g f e)
+	\tempoXoffset #1 f8_\ffgrandioso\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
@@ -454,7 +454,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	r2 r4 bes,,!\f-. \mark \default \bar "||"
-	\tempoXOff #0.5 a-.\f r  r bes-.
+	\tempoXoffset #0.5 a-.\f r  r bes-.
 % Bars 441 to 445
 	a-. r r g-.
 	a-. r r bes-.

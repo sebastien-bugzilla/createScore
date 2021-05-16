@@ -22,7 +22,7 @@ musicTrompeteIMvtI = \relative c'' {
 % Bars 21 to 25
 		
 		
-		\mmrLength #15 \tempoXOff #-2 R2.*11
+		\mmrLength #15 \tempoXoffset #-2 R2.*11
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -47,7 +47,7 @@ musicTrompeteIMvtI = \relative c'' {
 		d g2->~\<
 		g2.~
 		g \mark \default
-		\tempoXOff #1 e4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #1 e4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r g,-.\f
 % Bars 51 to 55
 		c2-^ r4

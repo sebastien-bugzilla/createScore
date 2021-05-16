@@ -139,7 +139,7 @@ hairpinMinLength = #(define-music-function
 	#}
 )
 
-tempoXOff = #(define-music-function
+tempoXoffset = #(define-music-function
 	(offset)
 	(number?)
 	#{
@@ -171,7 +171,7 @@ mmrDown = #(define-music-function
 	#}
 )
 
-markXOffset = #(define-music-function
+markXoffset = #(define-music-function
 	(offset)
 	(number?)
 	#{

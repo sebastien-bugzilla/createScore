@@ -39,7 +39,7 @@ musicHornIMvtII = \relative c'' {
 	
 	
 	\bar "||" \mark \default
-	\tempoXOff #1 r4 e,\pp--
+	\tempoXoffset #1 r4 e,\pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -193,7 +193,7 @@ musicHornIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	\tempoXOff #0.5 a8\pp a4 a8~
+	\tempoXoffset #0.5 a8\pp a4 a8~
 	a a(\< bes b\!
 % Bars 171 to 175
 	c) a4\pp a8~

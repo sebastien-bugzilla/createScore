@@ -67,7 +67,7 @@ musicKontrabassMvtI = \relative c {
 		gis g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-. \mark \default
-		\tempoXOff #1.5 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #1.5 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -393,7 +393,7 @@ musicKontrabassMvtI = \relative c {
 	e'2-^ a,4-.
 	g'-! e-! cis-! 
 	a8-! g-! e-! cis-! a-! a'-! \mark \default
-	\tempoXOff #1.5 d,4-. r a(\pp
+	\tempoXoffset #1.5 d,4-. r a(\pp
 % Bars 316 to 320
 	d2) r4
 	r r a(
@@ -419,7 +419,7 @@ musicKontrabassMvtI = \relative c {
 	e(\p\>
 	eis)
 % Bars 336 to 340
-	\tempoXOff #-1 fis8\pp r r4 r
+	\tempoXoffset #-1 fis8\pp r r4 r
 	R2.*3
 	
 	

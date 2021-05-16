@@ -637,7 +637,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 541 to 545
 	a--
 	a--
-	\tempoXOff #1.5 d2\f-^ cis4-.
+	\tempoXoffset #1.5 d2\f-^ cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 g->
 % Bar 546

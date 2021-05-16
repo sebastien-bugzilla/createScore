@@ -39,7 +39,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
-	\tempoXOff #1.2 c-._\ffgrandioso r r g-.
+	\tempoXoffset #1.2 c-._\ffgrandioso r r g-.
 	c-. r r2
 	r2 r4 g
 % Bars 41 to 45

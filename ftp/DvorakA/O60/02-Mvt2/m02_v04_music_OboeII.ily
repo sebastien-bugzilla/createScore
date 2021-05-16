@@ -44,7 +44,7 @@ musicOboeIIMvtII = \relative c' {
 	bes8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXOff #1.5 r4 d--\pp
+	\tempoXoffset #1.5 r4 d--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -205,7 +205,7 @@ musicOboeIIMvtII = \relative c' {
 	R2*3
 	
 	\mark \default
-	\tempoXOff #1 f2~\p
+	\tempoXoffset #1 f2~\p
 	f8 d(\< ees! e)\!
 % Bars 171 to 175
 	f2\p~

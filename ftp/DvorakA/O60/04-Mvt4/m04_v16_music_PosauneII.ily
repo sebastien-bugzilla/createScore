@@ -39,7 +39,7 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 36 to 40
 	a1\f~
 	a2. a4-. \mark \default
-	\tempoXOff #1 a-. r r2
+	\tempoXoffset #1 a-. r r2
 	R1*22
 % Bars 41 to 45
 	

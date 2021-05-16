@@ -67,7 +67,7 @@ musicOboeIIMvtI = \relative c' {
 		e e2\<~
 		e2.~
 		e \mark \default
-		\tempoXOff #1.5 fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
+		\tempoXoffset #1.5 fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
 		fis'2 r4
 % Bars 51 to 55
 		r r a,-.

@@ -151,7 +151,7 @@ musicFloteIIMvtIII = \relative c''' {
 		
 		
 		
-		\piccolo \tempoXOff #-3 e,,4(\fp b') e(\<
+		\piccolo \tempoXoffset #-3 e,,4(\fp b') e(\<
 		b' e) b~\!
 % Bars 161 to 165
 		b\> b8( a g a

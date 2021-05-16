@@ -40,7 +40,7 @@ musicFloteIMvtII = \relative c'' {
 	
 	
 	\bar "||" \mark \default
-	\tempoXOff #1.5 r4 fis--\pp
+	\tempoXoffset #1.5 r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis fis
@@ -171,7 +171,7 @@ musicFloteIMvtII = \relative c'' {
 	d ees a->_\dimmarkup f ees c b c
 	f ees c a gis a d c
 	a f e f ees f c\p f)~ \mark \default
-	\tempoXOff #1.5 f2~
+	\tempoXoffset #1.5 f2~
 	f8 d(\< ees! e)\!
 % Bars 171 to 175
 	f2\p~

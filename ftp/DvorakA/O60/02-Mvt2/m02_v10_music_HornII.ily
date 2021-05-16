@@ -37,7 +37,7 @@ musicHornIIMvtII = \relative c'' {
 	f8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXOff #1.2 r4 e,-\tweak X-offset #-3 \pp--
+	\tempoXoffset #1.2 r4 e,-\tweak X-offset #-3 \pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -184,7 +184,7 @@ musicHornIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXOff #1.2 f8\pp f4 f8~
+	\tempoXoffset #1.2 f8\pp f4 f8~
 	f f(\< g gis\!
 % Bars 171 to 175
 	a) f4\pp f8~

@@ -508,7 +508,7 @@ musicFloteIIMvtI = \relative c' {
 	R2.*5
 % Bars 531 to 535
 	
-	\tempoXOff #-2 R2.*6
+	\tempoXoffset #-2 R2.*6
 % Bars 536 to 540
 	
 	

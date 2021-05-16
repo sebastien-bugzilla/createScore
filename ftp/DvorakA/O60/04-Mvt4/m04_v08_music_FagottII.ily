@@ -56,7 +56,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. a'-. a-. \mark \default
-	\tempoXOff #1.5 d8(_\ffgrandioso fis a g fis e d cis)
+	\tempoXoffset #1.5 d8(_\ffgrandioso fis a g fis e d cis)
 	b( cis d cis b a g a)
 	fis r d'( e fis g a g)
 % Bars 41 to 45
@@ -496,7 +496,7 @@ musicFagottIIMvtIV = \relative c {
 	
 	
 	r2 r4 a-.\f \bar "||" \mark \default
-	\tempoXOff #0.5 d-.\f r r g-.
+	\tempoXoffset #0.5 d-.\f r r g-.
 % Bars 441 to 445
 	fis-. r r e-.
 	d-. r r g-.

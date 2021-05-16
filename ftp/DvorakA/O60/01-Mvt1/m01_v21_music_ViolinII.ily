@@ -398,7 +398,7 @@ musicViolinIIMvtI = \relative c' {
 	q2.:16
 	q:
 	q8: g': e: cis: a: a': \mark \default
-	\tempoXOff #1 \once \stemDown <d,, a' fis'>8 r \repeat tremolo 4 {d16(\fp\> a}
+	\tempoXoffset #1 \once \stemDown <d,, a' fis'>8 r \repeat tremolo 4 {d16(\fp\> a}
 % Bars 316 to 320
 	\repeat tremolo 6 {d\pp a}
 	\repeat tremolo 6 {d a}

@@ -49,7 +49,7 @@ musicOboeIMvtII = \relative c'' {
 	d8 r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXOff #1.5 r4 fis--\pp
+	\tempoXoffset #1.5 r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis fis

@@ -47,7 +47,7 @@ musicTrompeteIIMvtI = \relative c'' {
 		d g,2->~\<
 		g2.~
 		g \mark \default
-		\tempoXOff #1 c4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #1 c4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r e,-.\f
 % Bars 51 to 55
 		e2-^ r4
@@ -255,7 +255,7 @@ musicTrompeteIIMvtI = \relative c'' {
 	g2.~
 	g~
 	g2 g4-. \mark \default
-	\tempoXOff #1 c-. r r
+	\tempoXoffset #1 c-. r r
 % Bars 316 to 320
 	R2.*31
 % Bars 321 to 325

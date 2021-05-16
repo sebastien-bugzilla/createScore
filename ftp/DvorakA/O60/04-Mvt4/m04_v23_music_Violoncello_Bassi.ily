@@ -53,8 +53,8 @@ musicVioloncelloMvtIV = \relative c' {
 	cis bes g) g'->
 % Bars 36 to 40
 	e-> cis-> a-> g->
-	e-> cis-> a-> a'-> \markXOffset #0 \mark \default
-	\tempoXOff #1.3 d,8_\ffgrandioso fis a g fis e d cis
+	e-> cis-> a-> a'-> \markXoffset #0 \mark \default
+	\tempoXoffset #1.3 d,8_\ffgrandioso fis a g fis e d cis
 	b cis d cis b a g a
 	fis e d e fis g a g
 % Bars 41 to 45
@@ -90,7 +90,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 66 to 70
 	e,8_\pdim d' cis b r2
 	R1*2
-	\markXOffset #0 \mark \default
+	\markXoffset #0 \mark \default
 	a4\p^\pizz r a r
 	a r a_\dimmarkup e
 % Bars 71 to 75

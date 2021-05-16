@@ -175,7 +175,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 161 to 165
 		c~
 		c\pp
-		\tempoXOff #-0.5 c->\p
+		\tempoXoffset #-0.5 c->\p
 		R2.
 		c2.~\p
 % Bars 166 to 170

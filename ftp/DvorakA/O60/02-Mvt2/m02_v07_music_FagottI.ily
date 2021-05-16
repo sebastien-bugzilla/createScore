@@ -42,7 +42,7 @@ musicFagottIMvtII = \relative c' {
 	d8) r r4
 	R2*2
 	\bar "||" \mark \default
-	\tempoXOff #1 r4 fis,--\pp
+	\tempoXoffset #1 r4 fis,--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis fis
@@ -187,7 +187,7 @@ musicFagottIMvtII = \relative c' {
 	R2*3
 	
 	\mark \default
-	\tempoXOff #0.5 bes,2\p~
+	\tempoXoffset #0.5 bes,2\p~
 	bes8 bes4\<( a16 g\!
 % Bars 171 to 175
 	f8) bes4.\p~

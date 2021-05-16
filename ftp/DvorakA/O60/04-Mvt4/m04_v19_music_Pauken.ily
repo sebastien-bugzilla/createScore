@@ -41,7 +41,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 36 to 40
 	a\startTrillSpan
 	a\stopTrillSpan \mark \default
-	\tempoXOff #1.2 d4\ff r r a-.
+	\tempoXoffset #1.2 d4\ff r r a-.
 	d-. r r2
 	r2 r4 a
 % Bars 41 to 45
@@ -239,7 +239,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 301 to 305
 	a2\stopTrillSpan d\trill
 	a1\trill
-	a2-> a-> \markXOffset #-0.3 \mark \default
+	a2-> a-> \markXoffset #-0.3 \mark \default
 	a1\ff-\tweak X-offset #3 _\dimin\startTrillSpan
 	a
 % Bars 306 to 310

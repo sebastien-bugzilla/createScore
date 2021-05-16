@@ -167,7 +167,7 @@ musicHornIVMvtIII = \relative c' {
 		
 		
 		
-		\mmrLength #6 \tempoXOff #-1 R2.*4
+		\mmrLength #6 \tempoXoffset #-1 R2.*4
 % Bars 161 to 165
 		
 		
@@ -176,7 +176,7 @@ musicHornIVMvtIII = \relative c' {
 		
 		
 		
-		\tempoXOff #-1 \mmrLength #8 R2.*4
+		\tempoXoffset #-1 \mmrLength #8 R2.*4
 % Bars 171 to 175
 		
 		

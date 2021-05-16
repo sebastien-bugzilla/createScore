@@ -38,7 +38,7 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	\bar "||" \mark \default
-	\tempoXOff #1.5 r4 d--\pp
+	\tempoXoffset #1.5 r4 d--\pp
 % Bars 36 to 40
 	d-- d--
 	d d
@@ -166,7 +166,7 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 166 to 170
 	
 	
-	\tempoXOff #-3 R2 \mark \default
+	\tempoXoffset #-3 R2 \mark \default
 	R2*6
 	
 % Bars 171 to 175

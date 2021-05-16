@@ -183,7 +183,7 @@ musicHornIMvtIII = \relative c'' {
 		
 		
 		
-		\mmrLength #6 \tempoXOff #-2 R2.*4
+		\mmrLength #6 \tempoXoffset #-2 R2.*4
 		
 % Bars 161 to 165
 		
@@ -193,11 +193,11 @@ musicHornIMvtIII = \relative c'' {
 		
 		
 		
-		\mmrLength #6 \tempoXOff #-2 R2.*4
+		\mmrLength #6 \tempoXoffset #-2 R2.*4
 % Bars 171 to 175
 		
 		
-		\mmrLength #6 \tempoXOff #-2 R2.*2
+		\mmrLength #6 \tempoXoffset #-2 R2.*2
 		
 		\cueDuring #"cueVoiceHornIMvtIII" #DOWN {
 			\ni \mmrPos #-4 R2.

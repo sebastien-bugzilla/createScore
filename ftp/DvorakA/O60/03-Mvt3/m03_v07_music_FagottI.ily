@@ -207,7 +207,7 @@ musicFagottIMvtIII = \relative c {
 		
 		
 		
-		\tempoXOff #-1.5 R2.*26
+		\tempoXoffset #-1.5 R2.*26
 % Bars 161 to 165
 	
 % Bars 166 to 170

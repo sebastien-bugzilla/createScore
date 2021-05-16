@@ -112,7 +112,7 @@ musicTrompeteIMvtII = \relative c'' {
 	
 	\mark \default
 	\cueDuring #"cueVoiceTrompeteIMvtII" #UP {
-		\tempoXOff #1.5 \ni R2
+		\tempoXoffset #1.5 \ni R2
 		R
 % Bars 171 to 175
 		R

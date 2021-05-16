@@ -588,7 +588,7 @@ musicKlarinetteIMvtI = \relative c'' {
 	
 	
 % Bars 531 to 535
-	\tempoXOff #-3 R2.*6
+	\tempoXoffset #-3 R2.*6
 % Bars 536 to 540
 	
 	

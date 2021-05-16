@@ -167,7 +167,7 @@ musicHornIVMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\tempoXOff #1.2 r8 c4\pp c8~
+	\tempoXoffset #1.2 r8 c4\pp c8~
 	c g4\< g8\!~
 % Bars 171 to 175
 	g c4\pp c8~

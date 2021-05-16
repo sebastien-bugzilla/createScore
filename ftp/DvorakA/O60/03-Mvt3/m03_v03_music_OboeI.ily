@@ -459,7 +459,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 426 to 430
 	f-. d8( cis d4)
 	a'-. a,(-> b8 cis)
-	\tempoXOff #-3 d4-. f-. d-.
+	\tempoXoffset #-3 d4-. f-. d-.
 	d-. f-. d-.
 	a-. g'->( f8 e)
 % Bars 431 to 435

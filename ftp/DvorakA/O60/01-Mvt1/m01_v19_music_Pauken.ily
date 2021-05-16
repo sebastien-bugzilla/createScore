@@ -42,7 +42,7 @@ musicPaukenMvtI = \relative c {
 		c'4\rest } \clef bass a,2\ff\startTrillSpan
 		a2.
 		<< a2. {s4 s s\stopTrillSpan}>> \mark \default
-		\tempoXOff #1.3 d4-. r r
+		\tempoXoffset #1.3 d4-. r r
 		R2.*8
 % Bars 51 to 55
 	

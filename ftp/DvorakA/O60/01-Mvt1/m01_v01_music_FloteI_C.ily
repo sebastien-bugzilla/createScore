@@ -527,7 +527,7 @@ musicFloteIMvtI = \relative c'' {
 	g4-. cis,-. fis-.
 	b,-. e-. a,-.
 	\once \partCombineApart d4. r8 r4
-	\once \partCombineApart d4. r8 r4 \markYoffset #4.5 \markXOffset #-0.5 \mark #11
+	\once \partCombineApart d4. r8 r4 \markYoffset #4.5 \markXoffset #-0.5 \mark #11
 	R2.*14
 % Bars 496 to 500
 	

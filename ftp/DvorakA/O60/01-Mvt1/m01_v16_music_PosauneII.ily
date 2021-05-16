@@ -34,7 +34,7 @@ musicPosauneIIMvtI = \relative c' {
 			\clef treble \ni R2.
 			R \no 
 		r4 r } \clef alto g-.\ff \mark \default
-		\tempoXOff #1.5 fis-._\grandioso r r
+		\tempoXoffset #1.5 fis-._\grandioso r r
 		r r fis-.\f
 % Bars 51 to 55
 		a2-^ r4

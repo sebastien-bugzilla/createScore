@@ -200,7 +200,7 @@ musicViolinIMvtII = \relative c'' {
 	
 	\mark \default
 	\cueDuring #"cueVoiceViolinIMvtII" #DOWN {
-		\tempoXOff #1.5 \ni R2 \no
+		\tempoXoffset #1.5 \ni R2 \no
 	r8 } d,(\p\< ees e\!
 % Bars 171 to 175
 	f)\f r r4

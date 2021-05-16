@@ -66,7 +66,7 @@ musicFagottIIMvtI = \relative c {
 		gis g8\<-. a-. cis-. e-. 
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		\tempoXOff #1.5 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #1.5 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2 r4
@@ -613,7 +613,7 @@ musicFagottIIMvtI = \relative c {
 	d4 r r
 % Bars 531 to 535
 	R2.*1
-	\mmrLength #18 \tempoXOff #-1 R2.*11
+	\mmrLength #18 \tempoXoffset #-1 R2.*11
 % Bars 536 to 540
 	
 % Bars 541 to 545

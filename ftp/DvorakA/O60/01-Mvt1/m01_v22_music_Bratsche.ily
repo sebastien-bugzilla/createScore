@@ -42,7 +42,7 @@ musicBratscheMvtI = \relative c {
 % Bars 21 to 25
 			b2.~
 			b
-			\tempoXOff #2 fis'8
+			\tempoXoffset #2 fis'8
 		} \\ {
 			d,8 d4 d d8
 			d d4 d d8
@@ -457,7 +457,7 @@ musicBratscheMvtI = \relative c {
 	cis2.:
 	cis:
 	cis8: g!: e: cis: a: a': \mark \default
-	\tempoXOff #1.1 \repeat tremolo 6 {fis,16(\fp\> a}
+	\tempoXoffset #1.1 \repeat tremolo 6 {fis,16(\fp\> a}
 % Bars 316 to 320
 	\repeat tremolo 6 {fis\pp a}
 	\repeat tremolo 6 {fis a}
@@ -669,7 +669,7 @@ musicBratscheMvtI = \relative c {
 	g4: cis,: fis:
 	b,: e: a,:
 	<gis eis'>4. r8 r4
-	q4. r8 r4 \markXOffset #-0.3 \mark #11
+	q4. r8 r4 \markXoffset #-0.3 \mark #11
 	R2.
 % Bars 496 to 500
 	r4 d'8-.\ff b-. cis-. d-.

@@ -35,13 +35,13 @@ musicFagottIIMvtII = \relative c {
 % Bars 26 to 30
 	
 	
-	\tempoXOff #-1 \mmrLength #12 R2*6
+	\tempoXoffset #-1 \mmrLength #12 R2*6
 % Bars 31 to 35
 	
 	
 	
 	\bar "||" \mark \default
-	\tempoXOff #1 r4 d'--\pp
+	\tempoXoffset #1 r4 d'--\pp
 % Bars 36 to 40
 	d-- d--
 	d d

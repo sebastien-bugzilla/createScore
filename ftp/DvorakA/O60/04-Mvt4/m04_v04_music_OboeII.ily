@@ -16,7 +16,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 11 to 15
 	
 	
-	<<R1 {s2 \tempoXOff #3 s}>>
+	<<R1 {s2 \tempoXoffset #3 s}>>
 	a1_\ppocoapococresc~
 	a2. gis4(
 % Bars 16 to 20
@@ -46,7 +46,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e-^\!~
 	e2. e4-. \mark \default
-	\tempoXOff #1.5 d(_\ffgrandioso e d a)
+	\tempoXoffset #1.5 d(_\ffgrandioso e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45

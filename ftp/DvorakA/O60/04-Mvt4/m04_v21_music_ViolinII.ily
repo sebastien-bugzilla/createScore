@@ -54,7 +54,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	a e a, a' a e a, a'
 	a e a, a' a e a, a' \mark \default
-	\tempoXOff #1.2 fis4(_\ffgrandioso e) d( a)
+	\tempoXoffset #1.2 fis4(_\ffgrandioso e) d( a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4(-. e-.)
 % Bars 41 to 45

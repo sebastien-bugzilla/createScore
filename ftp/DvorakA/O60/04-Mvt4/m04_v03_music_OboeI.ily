@@ -46,7 +46,7 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 36 to 40
 	g-^\!~
 	g2. g4-. \mark \default
-	\tempoXOff #1 fis(_\ffgrandioso e d a)
+	\tempoXoffset #1 fis(_\ffgrandioso e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -214,7 +214,7 @@ musicOboeIMvtIV = \relative c'' {
 	cis~
 	cis~
 	cis~
-	cis \stopMeasureCount \markXOffset #0.2 \mark \default
+	cis \stopMeasureCount \markXoffset #0.2 \mark \default
 % Bars 191 to 195
 	d4 r r2
 	R1*4

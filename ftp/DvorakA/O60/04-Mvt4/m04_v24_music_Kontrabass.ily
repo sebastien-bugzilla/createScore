@@ -54,7 +54,7 @@ musicKontrabassMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> cis-> a-> g->
 	e-> cis-> a-> a'-> \mark \default
-	\tempoXOff #1.2 d,8_\ffgrandioso fis a g fis e d cis
+	\tempoXoffset #1.2 d,8_\ffgrandioso fis a g fis e d cis
 	b cis d cis b a g a
 	fis e' d e fis g a g
 % Bars 41 to 45
@@ -311,7 +311,7 @@ musicKontrabassMvtIV = \relative c' {
 	c r  r c
 % Bars 251 to 255
 	c r r c
-	c  r r a \markXOffset #-0.3 \mark \default
+	c  r r a \markXoffset #-0.3 \mark \default
 	g1\pp^\arco
 	c
 	<<f, {s4\< s s s\!}>>

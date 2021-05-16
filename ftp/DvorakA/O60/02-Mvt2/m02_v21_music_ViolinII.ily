@@ -108,7 +108,7 @@ musicViolinIIMvtII = \relative c' {
 % Bars 86 to 90
 	d,)\p r r4
 	R2*2
-	\markXOffset #-0.6 \mark \default
+	\markXoffset #-0.6 \mark \default
 	r16 <bes d>8\pp q16 r q8 q16
 	r q8 q16 r q8 q16
 % Bars 91 to 95
@@ -200,7 +200,7 @@ musicViolinIIMvtII = \relative c' {
 	
 	
 	\mark \default
-	\tempoXOff #0.5 R2
+	\tempoXoffset #0.5 R2
 	r8 bes(\p\< c cis\!
 % Bars 171 to 175
 	d)\f r r4

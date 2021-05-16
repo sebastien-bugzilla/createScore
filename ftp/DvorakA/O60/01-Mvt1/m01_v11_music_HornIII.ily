@@ -59,7 +59,7 @@ musicHornIIIMvtI = \relative c' {
 		a c2\<~
 		c2.~
 		c \mark \default
-		\tempoXOff #1.3 d4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #1.3 d4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		f2\f r4

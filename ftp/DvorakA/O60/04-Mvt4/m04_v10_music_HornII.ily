@@ -328,7 +328,7 @@ musicHornIIMvtIV = \relative c' {
 		R
 		R \no
 	}
-	\mmrDown \tempoXOff #-1 R1*3
+	\mmrDown \tempoXoffset #-1 R1*3
 % Bars 336 to 340
 	
 	d,4.\f d8 d4-. ges-.

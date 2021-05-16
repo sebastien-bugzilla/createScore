@@ -54,7 +54,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> cis-> a-> g->
 	e-> cis-> a-> a'-> \mark \default
-	\tempoXOff #1.3 d,8_\ffgrandioso fis a g fis e d cis
+	\tempoXoffset #1.3 d,8_\ffgrandioso fis a g fis e d cis
 	b cis d cis b a g a
 	fis e d e fis g a g
 % Bars 41 to 45

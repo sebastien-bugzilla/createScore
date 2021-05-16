@@ -67,7 +67,7 @@ musicVioloncelloMvtI = \relative c {
 		gis g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-. \mark \default
-		\tempoXOff #0.7 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #0.7 d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -137,7 +137,7 @@ musicVioloncelloMvtI = \relative c {
 		b-. ais-. ais-. gis16( ais gis8) fis-.
 % Bars 106 to 110
 		fis\pp gis16( ais gis8) fis-. fis-. r
-		R2. \markXOffset #-0.3 \mark \default
+		R2. \markXoffset #-0.3 \mark \default
 		fis'4^\div(_\pespressD cis'\< e\!)
 		d4.( cis8\< b4)
 		a4( g'8)\! r g4-.\>
@@ -407,7 +407,7 @@ musicVioloncelloMvtI = \relative c {
 	e'2-^ a,4-.
 	g'!-! e-! cis-! 
 	a8:16 g: e: cis: a: a': \mark \default
-	\tempoXOff #1.2 d,4-. r a(\pp
+	\tempoXoffset #1.2 d,4-. r a(\pp
 % Bars 316 to 320
 	d2) r4
 	r r a(

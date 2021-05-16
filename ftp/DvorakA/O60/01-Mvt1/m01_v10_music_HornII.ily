@@ -59,7 +59,7 @@ musicHornIIMvtI = \relative c' {
 		d g,2~\<
 		g2.~
 		g \mark \default
-		\tempoXOff #1.5 g4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		\tempoXoffset #1.5 g4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~
@@ -305,7 +305,7 @@ musicHornIIMvtI = \relative c' {
 	g2.~
 	g~
 	g2 g4-. \mark \default
-	\tempoXOff #1 \startMeasureCount g2.\fp\>~
+	\tempoXoffset #1 \startMeasureCount g2.\fp\>~
 % Bars 316 to 320
 	g~\pp
 	g~

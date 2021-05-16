@@ -204,7 +204,7 @@ musicVioloncelloMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	\tempoXOff #1.5 bes,8\p r r4
+	\tempoXoffset #1.5 bes,8\p r r4
 	r8 bes4(\< a16 g\!
 % Bars 171 to 175
 	f4)\p r

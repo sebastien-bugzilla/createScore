@@ -34,7 +34,7 @@ musicPosauneIMvtI = \relative c' {
 			\ni \clef treble R2.
 			R \no
 		r4 r } \clef alto cis-.\ff \mark \default
-		\tempoXOff #1.3 d-._\grandioso r r
+		\tempoXoffset #1.3 d-._\grandioso r r
 		r r a-.\f
 % Bars 51 to 55
 		d2-^ r4
@@ -253,7 +253,7 @@ musicPosauneIMvtI = \relative c' {
 	e'2-^ a,4-.
 	g'-> e-> cis->
 	a8-. g'-. e-. cis-. a-. cis-. \mark \default
-	\tempoXOff #1 d4-. r r
+	\tempoXoffset #1 d4-. r r
 % Bars 316 to 320
 	R2.*38
 % Bars 321 to 325

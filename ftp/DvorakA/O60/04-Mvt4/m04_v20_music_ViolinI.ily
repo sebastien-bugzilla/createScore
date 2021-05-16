@@ -534,7 +534,7 @@ musicViolinIMvtIV = \relative c''' {
 	g: e: cis: a: a':-> g: e: cis:
 	a: a':-> g: e: cis: a: a':-> g:
 	e: cis: a: a':-> g: e: cis: a: \mark \default \bar "||"
-	\tempoXOff #0.5 d4\f r r2
+	\tempoXoffset #0.5 d4\f r r2
 % Bars 441 to 445
 	R1*10
 % Bars 446 to 450
@@ -622,7 +622,7 @@ musicViolinIMvtIV = \relative c''' {
 	d4:16 b: cis!: a:
 	b: g: a: fis:
 	d': b: cis: a:
-	b: g: a: fis: \ottava #0 \markXOffset #0.3 \mark \default
+	b: g: a: fis: \ottava #0 \markXoffset #0.3 \mark \default
 % Bars 521 to 525
 	e4 r <e,, b' e>2^\ten
 	r q^\ten
