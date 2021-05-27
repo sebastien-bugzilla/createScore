@@ -30,7 +30,7 @@ musicOboeIMvtIV = \relative c'' {
 	gis r r2
 	b4. b8\< b4-. e-.\!
 	d r r2
-	\partCombineApart a'8\ff-. g-. fis-. g-. a-. f-. d-. a'-. 
+	\partCombineApart a'8-\tweak X-offset #-2.5 \ff-. g-. fis-. g-. a-. f-. d-. a'-. 
 % Bars 26 to 30
 	g4 r r2
 	fis!8-. e-. d-. e-. f-. d-. b-. f'-. 
@@ -57,12 +57,12 @@ musicOboeIMvtIV = \relative c'' {
 	c( b8 a d4 g,)
 % Bars 46 to 50
 	a( fis g a)
-	g8-. r \partCombineApart fis'4(\fz g a 
+	g8-. r \partCombineApart fis'4(-\tweak X-offset #-1.5 \fz g a 
 	g8) r r4 r2
-	r4 e(\fz f g
+	r4 e(-\tweak X-offset #-1.5 \fz f g
 	f8) r r4 r2
 % Bars 51 to 55
-	r4 dis(\fz e fis!
+	r4 dis(-\tweak X-offset #-1.5 \fz e fis!
 	e8) r r4 r2
 	R1 \partCombineAutomatic
 	fis4\f r r2
@@ -83,7 +83,7 @@ musicOboeIMvtIV = \relative c'' {
 	\once \partCombineApart e r
 	R1*2
 	\mark \default
-	cis4-.\p r b-. r
+	cis4-.-\tweak X-offset #0.5 \p r b-. r
 	a-. r e(_\dimmarkup fis
 % Bars 71 to 75
 	e) r e( fis
@@ -92,7 +92,7 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 % Bars 76 to 80
-	\partCombineApart R1
+	\partCombineApart \mmrPos #6 R1
 	fis'4 \tuplet 3/2 4 {fis8( e d)} e4 \tuplet 3/2 4 {e8( d cis)}
 	b4-. fis-. b2->
 	cis4-. g-. cis2->
@@ -107,7 +107,7 @@ musicOboeIMvtIV = \relative c'' {
 	a'4\f r r2
 	R1
 % Bars 91 to 95
-	a,2\ff-> a->
+	\aIIXoffset #1.5 a,2\ff-> a->
 	a2.-> b8( cis)
 	d2-> d->
 	d2.-> e8( fis)

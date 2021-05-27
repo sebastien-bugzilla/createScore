@@ -14,7 +14,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 6 to 10
 	
 	
-	r2 r4 g\p(
+	r2 r4 g-\tweak X-offset # -1 \p(
 	e d c g)
 	c( bes' a aes)
 % Bars 11 to 15
@@ -24,9 +24,9 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	d,4.\f d8 d4-. fis-.
+	d,4.-\tweak X-offset #1 \f d8 d4-. fis-.
 	fis r r2
-	a4. a8\< a4-. des-.\!
+	a4. \hairpinYoffset #0 #0.8 a8\< a4-. des-.\! \hairpinYoffset #0 #0 
 	c r r2
 	R1*5
 % Bars 26 to 30
@@ -44,7 +44,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 36 to 40
 	g\!-^~
 	g2. g4-. \mark \default
-	f8_\ffgrandioso\noBeam c( e d c bes a g)
+	\aIIOmit f8_\ffgrandioso\noBeam c( e d c bes a g)
 	f( g a g f e d e)
 	c r a'( bes c d e d)
 % Bars 41 to 45
@@ -61,12 +61,12 @@ musicKlarinetteIMvtIV = \relative c''' {
 	
 	
 	
-	a4\f r r2
+	a4-\tweak X-offset #0.5 \f r r2
 	c4 r r2
 % Bars 56 to 60
 	e4 r d-. c-.
 	b r r2
-	d4\f r r2
+	d4-\tweak extra-offset #'(0.2 . 0.5) \f r r2
 	f4 r r2
 	a4 r g-. f-.
 % Bars 61 to 65
@@ -79,12 +79,12 @@ musicKlarinetteIMvtIV = \relative c''' {
 	\once \partCombineApart g r 
 	R1*2
 	\mark \default
-	\partCombineApart g4->\p \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
+	\partCombineApart g4->_\p \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
 	c4-. g-. c2_\dimmarkup~
 % Bars 71 to 75
 	c4 g-. c2~
-	c8( g\< c b c d e f)\!
-	<< g1~ {s4\mf\> s s s\!}>>
+	c8( g_\< c b c d e f)
+	<< g1~ {s4_\mf_\> s s s\!}>>
 	g4 r r2 \partCombineAutomatic
 	R1*6
 % Bars 76 to 80
@@ -92,7 +92,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 81 to 85
 	f4\fp \tuplet 3/2 4 {f8( e d-.)} d4-> \tuplet 3/2 4 {d8( c b)-.} 
 	b4 r r2
-	f'4\fp \tuplet 3/2 4 {f8( e d)-.} d4-> \tuplet 3/2 4 {d8( c b)-.}
+	f'4-\tweak X-offset #-1.5 \fp \tuplet 3/2 4 {f8( e d)-.} d4-> \tuplet 3/2 4 {d8( c b)-.}
 	b4 r r2
 	R1*4
 % Bars 86 to 90
@@ -125,7 +125,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	g4\fz r a\fz r
 	g\fz r g\fz r \mark \default
 	g r c,,2(
-	cis1)\fz~
+	cis1)-\tweak extra-offset #'(1 . -3) \fz~
 	cis2 d4( c!)~
 % Bars 116 to 120
 	c2 a!4( b)

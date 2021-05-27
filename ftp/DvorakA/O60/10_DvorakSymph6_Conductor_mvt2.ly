@@ -20,6 +20,7 @@
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
+\include "./00-Common/DvorakSymph6_Format_temp.ly"
 %\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI_C.ily"
@@ -64,9 +65,9 @@
 		<<
 			\new StaffGroup <<
 				\new Staff <<
-%					\new Voice {
-%						\formatConductorMvtII
-%					}
+					\new Voice {
+						\formatConductorMvtII
+					}
 					\new Voice {
 						\tempiMvtII
 					}

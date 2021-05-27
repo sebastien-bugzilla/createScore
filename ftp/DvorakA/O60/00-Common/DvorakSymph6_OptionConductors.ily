@@ -27,14 +27,14 @@ conductorOptions = {
 }
 #(set-global-staff-size 13)
 \layout {
-%	indent = 0\cm
+	indent = 0\cm
 	\context {
 		\Staff
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
 		\RemoveEmptyStaves
 		\override TrillSpanner.bound-details.right.padding = #1
-%		\override VerticalAxisGroup.remove-first = ##t
+		\override VerticalAxisGroup.remove-first = ##t
 	}
 	#(layout-set-staff-size 13)
 }

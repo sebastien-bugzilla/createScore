@@ -38,7 +38,7 @@ musicViolinIIMvtIV = \relative c'' {
 	gis8\f\<-! gis'-! fis-! e-! dis-! e-! cis-! dis-!\!
 	b4 r r2
 	d!8\f\<-! d'-! cis-! b-! a-! b-! g!-! b-! 
-	a4\ff-! d,-! f-! b,(
+	a4-\tweak X-offset #-1.5 \ff-! d,-! f-! b,(
 % Bars 26 to 30
 	c) c-! e-! ais,(
 	b) b-. d-. gis,(
@@ -71,8 +71,8 @@ musicViolinIIMvtIV = \relative c'' {
 	c r e,4(\fz f g
 % Bars 51 to 55
 	f8) r b!-. b-. cis!->( b) b-. b-.
-	b r dis,4(\fz e fis
-	e8) r b'4(\fz cis dis~
+	b r dis,4(-\tweak X-offset #-1.5 \fz e fis
+	e8) r b'4(-\tweak X-offset #0.3 \fz cis dis~
 	dis) dis\fz( e fis~
 	fis) fis(\fz gis a~
 % Bars 56 to 60
@@ -96,7 +96,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 71 to 75
 	
 	
-	r4 \tuplet 3/2 4 {e,8(\mf fis gis)} r4 \tuplet 3/2 4 {fis8( gis a)}
+	r4 \tuplet 3/2 4 {e,8(-\tweak X-offset #-2.5 \mf fis gis)} r4 \tuplet 3/2 4 {fis8( gis a)}
 	r4 \tuplet 3/2 4 {gis8(_\dimmarkup a b)} r4 \tuplet 3/2 4 {gis8( a b)}
 	r4 \tuplet 3/2 4 {a8(\p b c)} r4 \tuplet 3/2 4 {a8( b c)}
 % Bars 76 to 80
@@ -110,7 +110,7 @@ musicViolinIIMvtIV = \relative c'' {
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
-	\acciaccatura e' cis'4\fp \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4-> \tuplet 3/2 4 {a8( e cis-.)}
+	\acciaccatura e' cis'4_\fpcresc \tuplet 3/2 4 {cis8( b a-.)} a4-> \tuplet 3/2 4 {a8( e cis-.)}
 % Bars 86 to 90
 	cis4 r r2
 	\acciaccatura e8 cis'4\fz \tuplet 3/2 4 {cis8( b a-.)} a4-> \tuplet 3/2 4 {a8( e cis-.)}
@@ -118,27 +118,27 @@ musicViolinIIMvtIV = \relative c'' {
 	\acciaccatura a8 a'4\f \tuplet 3/2 4 {a8( g) fis-. e( d) cis-. cis( b) a-.
 	g'( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-. }
 % Bars 91 to 95
-	\acciaccatura d8 a'2->\ff \acciaccatura d,8 a'2->
+	\acciaccatura d8 a'2^>\ff \acciaccatura d,8 a'2->
 	\acciaccatura d,8 a'2.-> b8( cis)
 	d2-> d->
 	d2.-> e8( fis)
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	b,4\fp \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
+	b,4-\tweak X-offset #0.8 \fp \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 % Bars 101 to 105
-	\acciaccatura e'8 cis'4\fp \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4-> \tuplet 3/2 4 {a8( e cis-.)}
+	\acciaccatura e'8 cis'4_\fpcresc \tuplet 3/2 4 {cis8( b a-.)} a4-> \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 	\acciaccatura e8 cis'4\fz \tuplet 3/2 4 {cis8( b a-.)} a4-> \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 	\acciaccatura a8 a'4\f \tuplet 3/2 4 {a8( g) fis-. e( d) cis-. cis( b) a-.
 % Bars 106 to 110
 	g'( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-.}
-	\acciaccatura d8 a'2\ff-> \acciaccatura d,8 a'2->
-	\acciaccatura d,8 a'2.-> b8( cis)
+	\acciaccatura d8 a'2\ff^> \acciaccatura d,8 a'2^>
+	\acciaccatura d,8 a'2.^> b8( cis)
 	d2-> d->
 	d2.-> e8( fis)
 % Bars 111 to 115

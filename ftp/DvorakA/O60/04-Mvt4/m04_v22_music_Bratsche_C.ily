@@ -37,8 +37,8 @@ musicBratscheMvtIV = \relative c' {
 	<gis b> r r2
 	<bis dis>4.\f\< q8 q4-. <e g!>-.\!
 	<dis fis> r r2
-	<fis a>4.\f\< q8 q4-. <g b>-.\!
-	fis4\ff-! d!-! b-! f'(
+	<fis a>4.\f\< q8 q4-. <g b>-.
+	fis4-\tweak X-offset #-2 \ff-! d!-! b-! f'(
 % Bars 26 to 30
 	e) c-! ais-! e'(
 	d) b-! gis-! d'(
@@ -65,43 +65,43 @@ musicBratscheMvtIV = \relative c' {
 	c d e c fis, a d b
 % Bars 46 to 50
 	e, e' d c d g e fis
-	g r d4\fz( e fis
-	e8) r d,4(\fz e fis
-	g8) r c4(\fz d e
+	g r d4-\tweak X-offset #0.5 \fz( e fis
+	e8) r d,4(-\tweak X-offset #-1 \fz e fis
+	g8) r c4(-\tweak X-offset #0.5 \fz d e
 	d8) r c,4(\fz d e
 % Bars 51 to 55
 	f8) r b4(\fz cis! dis
-	cis8) r b4(\fz cis, dis
+	cis8) r \shape #'((0 . 1.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur b4(\fz cis, dis
 	cis8) r \repeat tremolo 6 {a'16(\f b}
 	\repeat tremolo 4 {a b} \repeat tremolo 4 {a b)}
 	\repeat tremolo 4 {a( b} \repeat tremolo 4 {a b}
 % Bars 56 to 60
 	\repeat tremolo 4 {a b} \repeat tremolo 4 {a b)}
-	gis16( e' d e \repeat tremolo 6 {d16 e}
+	\once \stemDown gis16( e' d e \repeat tremolo 6 {d16 e}
 	\repeat tremolo 4 {d e} \repeat tremolo 4 {d e)}
 	\repeat tremolo 4 {d( e} \repeat tremolo 4 {d e} 
 	\repeat tremolo 4 {d e} \repeat tremolo 4 {d e)} 
 % Bars 61 to 65
 	<d e>4 r <gis, d'> r
 	q r q r
-	q r r8 e'(\< d cis\!
+	q r r8 \hairpinYoffset #0 #0.5 e'(\< d cis\! \hairpinYoffset #0 #0
 	b)\ff e-! d-! cis-! b-! a-! gis-! fis-! 
-	e-!\fz d'-! cis-! b-! r2
+	e-!-\tweak X-offset #-1 \fz d'-! cis-! b-! r2
 % Bars 66 to 70
 	e,8_\pdim d' cis b r2
 	R1
 	e,8(\pp d' cis b a gis fis' e) \mark \default
-	a,4(_\pdolce\< e' f\> d\!
+	\hairpinYoffset #0 #-0.5 a,4(-\tweak extra-offset #'(0 . 3) _\pdolce\< e' \hairpinShorten #0 #-3 f\> d\! \hairpinYoffset #0 #0
 	cis2 a_\dimmarkup)~
 % Bars 71 to 75
 	a1~
 	a4 r r2
-	e'4(\mf\< b' c\> a)\!
-	gis \tuplet 3/2 4 {e8(_\dimmarkup fis gis)} r4 \tuplet 3/2 4 {e8( fis gis)}
+	e'4(\mf\< b' \hairpinShorten #0 #-3 c\> a)\!
+	gis \tuplet 3/2 4 {e8(-\tweak extra-offset #'(0 . 0.3) _\dimmarkup fis gis)} r4 \tuplet 3/2 4 {e8( fis gis)}
 	r4 \tuplet 3/2 4 {fis8(\p gis a)} r4 \tuplet 3/2 4 {fis8( gis a)}
 % Bars 76 to 80
 	e4 r r2
-	b4(\p\< fis' g!\> e\!)
+	b4(\p\< fis' \hairpinShorten #0 #-3 g!\> e\!)
 	d \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	r4 \tuplet 3/2 4 {cis8( d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	d4 r r2
@@ -110,11 +110,11 @@ musicBratscheMvtIV = \relative c' {
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	<g a!>4_\fpcresc \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<g a!>4_\fpcresc \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 % Bars 86 to 90
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
-	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	q4^> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	<cis e>4\f r r2
 	\tuplet 3/2 4 {g'8( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-.}
 % Bars 91 to 95
@@ -125,12 +125,12 @@ musicBratscheMvtIV = \relative c' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	<e gis>4\fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<e gis>4-\tweak extra-offset #'(1.3 . 1.3) \fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 % Bars 101 to 105
-	<g! a>4_\fpcresc-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<g! a>4_\fpcresc-\tweak X-offset #1 -> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
@@ -149,10 +149,10 @@ musicBratscheMvtIV = \relative c' {
 	
 % Bars 116 to 120
 	
-	r2 \repeat tremolo 4 {g!16(\fz a} 
+	r2 \repeat tremolo 4 {g!16(-\tweak extra-offset #'(-0.6 . 0.5) \fz a} 
 	\repeat tremolo 4 {g a} \repeat tremolo 4 {g a} 
-	\repeat tremolo 4 {g a)} \tuplet 3/2 4 {<fis! a>8\< q q <f a> q q
-	<e a> q q  q q q  <dis fis> q\! q <d gis> q q}
+	\repeat tremolo 4 {g a)} \hairpinYoffset #0 #0.8 \tuplet 3/2 4 {<fis! a>8\< q q <f a> q q
+	<e a> q q  q q q  <dis fis>\! q q <d gis> q q} \hairpinYoffset #0 #0
 % Bars 121 to 125
 	<cis e>8\f r r4 e''2\ff~
 	e4 d8( e) d4( cis)

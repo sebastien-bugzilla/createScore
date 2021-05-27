@@ -83,7 +83,7 @@ musicViolinIMvtIV = \relative c''' {
 	fis) fis(\fz e d~
 % Bars 61 to 65
 	d8) d->( cis b~ b) fis'(-> e d~
-	d) d->( cis b~ b) b->( a\< gis~
+	d) d->( cis b~ b) b->(\< a gis~
 	gis) gis(-> fis e~ e) e(-> d cis\!
 	b)\ff e-! d-! cis-! b-! a-! gis-! fis-! 
 	e\fz-! d'-! cis-! b-! r2

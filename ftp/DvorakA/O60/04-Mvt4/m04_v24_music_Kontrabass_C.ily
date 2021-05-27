@@ -96,7 +96,7 @@ musicKontrabassMvtIV = \relative c' {
 % Bars 71 to 75
 	
 	
-	e,4\mf^\pizz e' r e
+	e,4\mf-\tweak X-offset #-3 ^\pizz e' r e
 	e, e'_\dimmarkup r e
 	e,\p e' r e
 % Bars 76 to 80
@@ -125,7 +125,7 @@ musicKontrabassMvtIV = \relative c' {
 	cis4\fz a-. d\fz b-.
 % Bars 96 to 100
 	e\fz r e\fz r
-	e^\pizz\f r r2
+	e-\tweak extra-offset #'(-1 . -0.6) ^\pizz\f r r2
 	d4-.\p^\arco b-. d2->
 	R1
 	d4-. b-. d2->

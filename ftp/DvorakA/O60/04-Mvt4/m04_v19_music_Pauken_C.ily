@@ -37,7 +37,7 @@ musicPaukenMvtIV = \relative c {
 	d
 % Bars 36 to 40
 	a\startTrillSpan
-	a\stopTrillSpan \mark \default
+	<< a {s4 s s s\stopTrillSpan } >> \mark \default
 	d4\ff r r a-.
 	d-. r r2
 	r2 r4 a
@@ -83,9 +83,9 @@ musicPaukenMvtIV = \relative c {
 	d r r2
 	d4 r d r
 	d r r2
-	a4\fz a-. d\fz d-.
+	a4\fz a-. d-\tweak extra-offset #'(0.5 . 0.8) \fz d-.
 % Bars 96 to 100
-	a\fz r d\fz r
+	a\fz r d-\tweak extra-offset #'(0.5 . 0.8) \fz r
 	R1*10
 % Bars 101 to 105
 	
@@ -96,7 +96,7 @@ musicPaukenMvtIV = \relative c {
 	d4 r d r
 	d r r2
 % Bars 111 to 115
-	a4\fz a-. d\fz d-.
+	a4\fz a-. d-\tweak X-offset #0.2 \fz d-.
 	a\fz r d\fz r \mark \default
 	a r r2
 	R1*7

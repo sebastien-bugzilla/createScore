@@ -15,7 +15,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	R1
-	g4(\p f e d)
+	g4(-\tweak X-offset # -2 \p f e d)
 	e( g' fis f)
 % Bars 11 to 15
 	e8( c b a g a f g
@@ -24,9 +24,9 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	b4.\f b8 b4-. e-.
+	b4.-\tweak X-offset #1 \f b8 b4-. e-.
 	dis r r2
-	fis4. fis8\< fis4-. bes!-.\!
+	fis4. \hairpinYoffset #0 #0.8 fis8\< fis4-. bes!-.\! \hairpinYoffset #0 #0 
 	a r r2
 	R1*5
 % Bars 26 to 30
@@ -44,7 +44,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e\!-^~
 	e2. e4-. \mark \default
-	f8_\ffgrandioso\noBeam a,( c bes a g f e)
+	\aIIOmit f8_\ffgrandioso\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
@@ -61,12 +61,12 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	
-	fis4\f r r2
+	fis4-\tweak X-offset #0.5 \f r r2
 	a4 r r2
 % Bars 56 to 60
 	c4 r b-. a-.
 	g r r2
-	b4\f r r2
+	b4-\tweak extra-offset #'(0.2 . 0.5) \f r r2
 	d4 r r2
 	f4 r e-. d-.
 % Bars 61 to 65
@@ -92,7 +92,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 81 to 85
 	d4\fp \tuplet 3/2 4 {d8( c b-.)} b4-> \tuplet 3/2 4 {b8( a g)-.} 
 	g4 r r2
-	d'4\fp \tuplet 3/2 4 {d8( c b)-.} b4-> \tuplet 3/2 4 {b8( a g)-.}
+	d'4-\tweak X-offset #-1.5 \fp \tuplet 3/2 4 {d8( c b)-.} b4-> \tuplet 3/2 4 {b8( a g)-.}
 	g4 r r2
 	R1*4
 % Bars 86 to 90
@@ -124,7 +124,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 111 to 115
 	c4\fz r c\fz r
 	e\fz r d\fz r \mark \default
-	e r bes,!2\fz~
+	e r bes,!2-\tweak X-offset #0.3 \fz~
 	bes1~
 	bes2 a4( aes)
 % Bars 116 to 120

@@ -22,7 +22,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	d1->\ff~
+	d1->-\tweak X-offset #-3 \ff~
 % Bars 26 to 30
 	d~
 	d~
@@ -85,7 +85,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	g,4\f r r2
+	g,4-\tweak extra-offset #'(1 . 1) \f r r2
 % Bars 106 to 110
 	R1
 	fis4-.\f r fis-. r

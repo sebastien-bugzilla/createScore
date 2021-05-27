@@ -51,11 +51,11 @@ musicHornIMvtIV = \relative c'' {
 % Bars 51 to 55
 	
 	
-	r4 g,2.\f~
-	g4 g2.\fz~
-	g4 g2.\fz~
+	r4 g,2.-\tweak X-offset #-2.0 \f~
+	g4 g2.-\tweak X-offset #-2.3 \fz~
+	g4 g2.-\tweak X-offset #-2.3 \fz~
 % Bars 56 to 60
-	g4 g2.\fz
+	g4 g2.-\tweak X-offset #-2.3 \fz
 	r4 c2.\fz~
 	c4 c2.\fz~
 	c4 c2.\fz~
@@ -86,11 +86,11 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	c4->_\fpcresc \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
+	c4->_\fpcresc \tuplet 3/2 4 {c4.:8 } c4-> \tuplet 3/2 4 {c4.:8} 
 % Bars 86 to 90
-	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
-	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
-	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
+	c4-> \once \tupletUp \tuplet 3/2 4 {c4.:8} c4-> \tuplet 3/2 4 {c4.:8} 
+	c4-> \tuplet 3/2 4 {c4.:8} c4-> \tuplet 3/2 4 {c4.:8} 
+	c4-> \tuplet 3/2 4 {c4.:8} c4-> \tuplet 3/2 4 {c4.:8} 
 	c4\f r r2
 	R1*5
 % Bars 91 to 95
@@ -98,7 +98,7 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 	
-	c4\fz r d\fz r 
+	\aIIXoffset #-3 c4\fz r d\fz r 
 % Bars 96 to 100
 	c\fz r c\fz r
 	R1*4
@@ -106,7 +106,7 @@ musicHornIMvtIV = \relative c'' {
 	
 	
 % Bars 101 to 105
-	c4->_\fpcresc \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
+	c4->-\tweak extra-offset #'(-1 . 1) _\fpcresc \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
 	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
 	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
 	c4-> \tuplet 3/2 4 {c8 c c} c4-> \tuplet 3/2 4 {c8 c c} 
@@ -115,13 +115,13 @@ musicHornIMvtIV = \relative c'' {
 	R1*5
 % Bars 111 to 115
 	c4\fz r d\fz r
-	c\fz r c\fz r \mark \default
-	\partCombineApart c r c2\fz~
+	c-\tweak X-offset #0.2 \fz r c-\tweak X-offset #0.2 \fz r \mark \default
+	\once \partCombineApart c r \partCombineApart c2-\tweak extra-offset #'(-0.8 . -1) \fz~
 	c4 bes8( c bes4 a)
 	a( c) bes2
 % Bars 116 to 120
 	a4-. a-. g2->
-	f4 r f'2\fz\>~
+	f4 r f'2_\fz_\>~
 	f4\! r r2 \partCombineAutomatic
 	R1*2
 	

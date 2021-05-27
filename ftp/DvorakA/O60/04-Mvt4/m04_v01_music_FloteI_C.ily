@@ -14,7 +14,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 6 to 10
 	
 	
-	\partCombineApart r2 r4 e(\p
+	\partCombineApart r2 r4 e(-\tweak X-offset # -1 \p
 	cis b a e)
 	a4.( a8 a4 b)
 % Bars 11 to 15
@@ -56,7 +56,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 56 to 60
 	
 	
-	b4\f r r2
+	b4-\tweak extra-offset #'(0.2 . 0.5) \f r r2
 	d4 r r2
 	fis4 r e-. d-.
 % Bars 61 to 65

@@ -21,16 +21,16 @@ musicHornIIIMvtIV = \relative c'' {
 	g~
 	g2. g4~
 	g1~
-	g2. g4_\pocoapococresc~
+	g2. g4-\tweak X-offset #-8 _\pocoapococresc~
 	g2. g4~
 % Bars 16 to 20
 	g1~
 	g2. g4~
 	g1~
 	g2. r4
-	\partCombineApart dis4.\mf dis8 dis4-. g-.
+	\partCombineApart dis4._\mf dis8 dis4-. g-.
 % Bars 21 to 25
-	fis4.\< fis8 fis4-. g-. 
+	fis4._\< fis8 fis4-. g-.\!
 	fis4. fis8 fis4-. \partCombineAutomatic b-.\<
 	cis4. cis8 cis4-. d-.\!
 	\partCombineApart c!1~
@@ -73,11 +73,11 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 	
-	g4->_\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
+	g4->-\tweak extra-offset #'(-2.8 . 0.8) _\fpcresc \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
 % Bars 86 to 90
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
-	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
+	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
 	g4\f r r2
 	R1*5
 % Bars 91 to 95
@@ -85,7 +85,7 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 	
-	g4\fz r g\fz r
+	g4-\tweak extra-offset #'(1.5 . 1.5) \fz r g-\tweak extra-offset #'(1.5 . 1.5) \fz r
 % Bars 96 to 100
 	d'\fz r d\fz r
 	R1*4
@@ -93,7 +93,7 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 % Bars 101 to 105
-	g,4->_\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
+	g,4->-\tweak extra-offset #'(-2.3 . 0.5) _\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
@@ -101,7 +101,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 106 to 110
 	R1*5
 % Bars 111 to 115
-	g4\fz r g\fz r
+	g4-\tweak extra-offset #'(0.5 . 0.5) \fz r g-\tweak extra-offset #'(0.5 . 0.5) \fz r
 	d'\fz r d\fz r \mark \default
 	d r r2
 	R1*7

@@ -85,7 +85,7 @@ musicPosauneIMvtIV = \relative c'' {
 	gis-. r r2
 % Bars 111 to 115
 	a4\fz r a\fz \once \partCombineApart r
-	e\fz r e\fz r \mark \default
+	e-\tweak X-offset #0.2 \fz r e-\tweak X-offset #0.2 \fz r \mark \default
 	cis r r2
 	R1*7
 % Bars 116 to 120

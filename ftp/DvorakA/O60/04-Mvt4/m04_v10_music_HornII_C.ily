@@ -51,11 +51,11 @@ musicHornIIMvtIV = \relative c' {
 % Bars 51 to 55
 	
 	
-	r4 g,2.\f~
-	g4 g2.\fz~
-	g4 g2.\fz~
+	r4 g,2.-\tweak X-offset #-2.0 \f~
+	g4 g2.-\tweak X-offset #-2.3 \fz~
+	g4 g2.-\tweak X-offset #-2.3 \fz~
 % Bars 56 to 60
-	g4 g2.\fz
+	g4 g2.-\tweak X-offset #-2.3 \fz
 	r4 c2.\fz~
 	c4 c2.\fz~
 	c4 c2.\fz~
@@ -86,11 +86,11 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
+	a4-> \once \tupletUp \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
 % Bars 86 to 90
-	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
-	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
-	a4-> \tuplet 3/2 4 {a8 a a} a4-> \tuplet 3/2 4 {a8 a a} 
+	a4-> \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
+	a4-> \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
+	a4-> \tuplet 3/2 4 {a4.:8} a4-> \tuplet 3/2 4 {a4.:8} 
 	a4\f r r2
 	R1*5
 % Bars 91 to 95
@@ -98,7 +98,7 @@ musicHornIIMvtIV = \relative c' {
 	
 	
 	
-	c4\fz r d\fz r 
+	\aIIXoffset #-3 c4\fz r d\fz r 
 % Bars 96 to 100
 	c\fz r c\fz r
 	R1*4
@@ -115,7 +115,7 @@ musicHornIIMvtIV = \relative c' {
 	R1*5
 % Bars 111 to 115
 	c4\fz r d\fz r
-	c\fz r c\fz r \mark \default
+	c-\tweak X-offset #0.2 \fz r c-\tweak X-offset #0.2 \fz r \mark \default
 	c r r2
 	R1*5
 	

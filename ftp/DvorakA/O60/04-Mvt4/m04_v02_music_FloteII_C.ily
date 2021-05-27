@@ -15,7 +15,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	R1
-	r2 r4 d(\p
+	r2 r4 d(-\tweak X-offset # -2 \p
 	cis a'2 b4)
 % Bars 11 to 15
 	e,4.( e8 e4 d)
@@ -56,7 +56,7 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 56 to 60
 	
 	
-	gis4\f r r2
+	gis4-\tweak extra-offset #'(0.2 . 0.5) \f r r2
 	b4 r r2
 	d4 r cis-. b-.
 % Bars 61 to 65

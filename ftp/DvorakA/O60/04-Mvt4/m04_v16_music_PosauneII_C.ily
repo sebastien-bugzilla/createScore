@@ -85,7 +85,7 @@ musicPosauneIIMvtIV = \relative c' {
 	d-. r r2
 % Bars 111 to 115
 	e4\fz r d\fz b-.
-	cis\fz r b\fz r \mark \default
+	cis-\tweak X-offset #0.2 \fz r b-\tweak X-offset #0.2 \fz r \mark \default
 	a r r2
 	R1*7
 % Bars 116 to 120
