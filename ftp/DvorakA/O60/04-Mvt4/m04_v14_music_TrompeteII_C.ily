@@ -118,17 +118,17 @@ musicTrompeteIIMvtIV = \relative c'' {
 	
 	
 	
-	d'4-.\f r r2
-	c4-. r d-. r
+	d'4\f r r2
+	c4 r d r
 % Bars 136 to 140
-	r g,-. g-. g-.
-	d'-. r d-. r
-	g,-. r g-. r
-	g-. r r2
+	r g, g g
+	d' r d r
+	g, r g r
+	g r r2
 	R1*2
 % Bars 141 to 145
 	
-	c,1\ff~
+	c,1-\tweak X-offset #-3 \ff~
 	c~
 	c~
 	c

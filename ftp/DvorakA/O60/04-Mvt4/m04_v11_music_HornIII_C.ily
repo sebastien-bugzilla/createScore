@@ -109,7 +109,7 @@ musicHornIIIMvtIV = \relative c'' {
 	
 % Bars 121 to 125
 	
-	r2 g,->\f~
+	r2 g,->-\tweak extra-offset #'(-2.0 . 1) \f~
 	g1~
 	g~
 	g~
@@ -137,7 +137,7 @@ musicHornIIIMvtIV = \relative c'' {
 	c~
 	c
 % Bars 146 to 150
-	c4\f r r2
+	c4-\tweak X-offset #-0.5 \f r r2
 	R1
 	c2\f r
 	c r

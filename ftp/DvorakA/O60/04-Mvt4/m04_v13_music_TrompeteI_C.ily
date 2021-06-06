@@ -118,17 +118,17 @@ musicTrompeteIMvtIV = \relative c''' {
 	
 	
 	
-	d4-.\f r r2
-	c4-. r d-. r
+	\once \partCombineApart d4-. r r2
+	\once \partCombineApart c4-. r \once \partCombineApart d-. r
 % Bars 136 to 140
-	r g,-. g-. g-.
-	d'-. r d-. r
-	g,-. r g-. r
-	g-. r r2
+	r \partCombineApart g,-. g-. g-.
+	d'-. \partCombineAutomatic r \once \partCombineApart d-. r
+	\once \partCombineApart g,-. r \once \partCombineApart g-. r
+	\once \partCombineApart g-. r r2
 	R1*2
 % Bars 141 to 145
 	
-	c1\ff~
+	c1-\tweak X-offset #-3 \ff~
 	c~
 	c~
 	c

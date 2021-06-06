@@ -159,7 +159,7 @@ musicOboeIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r a-. a-. a-.
 	a-. r gis-. r
-	a,\(\< e'\! f\> d\!\)
+	\aIIOmit a,\(\< e'\! f\> d\!\)
 	cis-. e-. cis-. e-. 
 	r4 d-. b-. d-.
 % Bars 141 to 145
@@ -181,7 +181,7 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 	
-	r4 d\(\p a' g8 f\)
+	r4 \aIIOmit d\(\p a' g8 f\)
 	f4\(( e8 d) d4( c8 b)\)
 % Bars 161 to 165
 	R1*6
@@ -192,7 +192,7 @@ musicOboeIMvtIV = \relative c'' {
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 % Bars 171 to 175
-	r2 r4 b,-.\ff
+	r2 r4 b,-.-\tweak X-offset #-2.2 \ff
 	e2.-> r4
 	r2 r4 b-.
 	e2.-> r4

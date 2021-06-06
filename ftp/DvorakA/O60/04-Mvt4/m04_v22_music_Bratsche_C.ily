@@ -197,8 +197,8 @@ musicBratscheMvtIV = \relative c' {
 	d( e4_\dimmarkup d8 cis)
 % Bars 156 to 160
 	d2( e4 d8 cis)
-	d4\(( b) f'(\pp e8 d)\)
-	d4\(( c8 b) b4( a8 g)\)
+	d4\(( \once \stemDown b) f'(\pp e8 d)\)
+	\once \stemUp d4\(( c8 b) b4( a8 g)\)
 	d1(~
 	d2 f)
 % Bars 161 to 165

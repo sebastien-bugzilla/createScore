@@ -171,7 +171,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 136 to 140
 	r cis-. d-. a-.
 	a-. r gis-. r
-	a\(\< cis\! d\> b\!\)
+	\aIIOmit a\(\< cis\! d\> b\!\)
 	a-. cis-. a-. cis-.
 	r b-. e,-. b'-.
 % Bars 141 to 145
@@ -202,7 +202,7 @@ musicFagottIIMvtIV = \relative c {
 	R1*2
 % Bars 166 to 170
 	
-	c'4\fz c r2
+	\aIIXoffset #-4.5 c'4\fz c r2
 	c4\fz c r2
 	b4\fz b r2
 	b4\fz b r2

@@ -154,16 +154,16 @@ musicViolinIMvtIV = \relative c''' {
 	cis( e) d2\<
 	cis4-. cis-. b2->\!
 % Bars 121 to 125
-	a16(\f\< b cis d e fis gis a)\! \acciaccatura a8 e'2\ff~
+	a16(\f\< b cis d e fis gis a) \acciaccatura a8 e'2\ff~
 	e4 d8( e) d4( cis)
 	cis( e) d2
 	cis4-. cis-. b2->
 	a4( e') d2
 % Bars 126 to 130
 	cis4-. cis-. b2->
-	\tuplet 3/2 4 {a4.:8} \tuplet 3/2 4 {a':} \tuplet 3/2 2 {g!2.:} 
-	\tuplet 3/2 4 { fis4.: a:} \tuplet 3/2 2 { g2.: }
-	\tuplet 3/2 4 { g4.: } \tuplet 3/2 2 { fis2.: } \tuplet 3/2 4 { e4.: }
+	\tuplet 3/2 4 {a4.:8} \tuplet 3/2 4 {a':} \tuplet 6/4 2 {g!2.:} 
+	\tuplet 3/2 4 { fis4.: a:} \tuplet 6/4 2 { g2.: }
+	\tuplet 3/2 4 { g4.: } \tuplet 6/4 2 { fis2.: } \tuplet 3/2 4 { e4.: }
 	e8 e4-> d-> cis-> b8->~
 % Bars 131 to 135
 	b a4-> gis-> a-> gis8->~
@@ -184,13 +184,13 @@ musicViolinIMvtIV = \relative c''' {
 	f4-. f,-. f'2->
 	f4-. f,-. f'2->
 % Bars 146 to 150
-	f4->\f \tuplet 3/2 4 {f8( e d)} d4-> \tuplet 3/2 4 {d8( c b)}
+	f4->-\tweak X-offset #-0.3 \f \tuplet 3/2 4 {f8( e d)} d4-> \tuplet 3/2 4 {d8( c b)}
 	b4-> \tuplet 3/2 4 {f8( e d)} d4-> \tuplet 3/2 4 {d8( cis b)}
 	f'4\ff \tuplet 3/2 4 {d8( cis! b)} r2
 	fis'!4\fz \tuplet 3/2 4 {d8( cis b)} r2
-	<b g'>4\fz \tuplet 3/2 4 {d8( cis b)} r2
+	<b g'>4-\tweak X-offset #0.2 \fz \tuplet 3/2 4 {d8( cis b)} r2
 % Bars 151 to 155
-	<ais fis'>4\fz \tuplet 3/2 4 {cis8( b ais)} r2
+	<ais fis'>4-\tweak X-offset #0.2 \fz \tuplet 3/2 4 {cis8( b ais)} r2
 	R1*2
 	
 	fis'4\pp->\( \tuplet 3/2 4 {fis8( e d)\)} e4->\( \tuplet 3/2 4 {e8( d cis)\)}
@@ -209,7 +209,7 @@ musicViolinIMvtIV = \relative c''' {
 	c'4--\( \tuplet 3/2 4 {c8(_\crescmarkup bes a)\)} a4--\( \tuplet 3/2 4 {a8( g f)\)}
 % Bars 166 to 170
 	R1
-	r2 c,4->\ff \tuplet 3/2 4 {c8( b! a)}
+	r2 c,4-\tweak X-offset #0.8 ->\ff \tuplet 3/2 4 {c8( b! a)}
 	r2 c4\fz \tuplet 3/2 4 {c8( b a)}
 	r2 dis4\fz \tuplet 3/2 4 {dis8( cis! b)}
 	r2 dis4\fz \tuplet 3/2 4 {dis8( cis b)}

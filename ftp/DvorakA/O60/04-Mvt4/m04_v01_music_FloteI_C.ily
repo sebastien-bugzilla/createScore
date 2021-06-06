@@ -140,7 +140,7 @@ musicFloteIMvtIV = \relative c''' {
 	f4-. \once \partCombineApart f,-. f'2->
 	f4-. \once \partCombineApart f,4-. f'2->
 % Bars 146 to 150
-	f4\f r r2
+	f4-\tweak extra-offset #'(0 . 0.5) \f r r2
 	R1*20
 % Bars 151 to 155
 	
@@ -150,10 +150,10 @@ musicFloteIMvtIV = \relative c''' {
 	
 % Bars 166 to 170
 	
-	a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
+	\tupletUp a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
-	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
+	a4\fz \tuplet 3/2 4 {a8( g fis)} r2 \tupletNeutral
 % Bars 171 to 175
 	r2 r4 b4-.\ff
 	e2.-> r4

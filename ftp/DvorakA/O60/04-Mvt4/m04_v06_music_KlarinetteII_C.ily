@@ -154,7 +154,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r c-. c-. c-.
 	c-. r b-. r
-	c\(\< e\! f\> d\!\)
+	\aIIOmit c\(\< e\! f\> d\!\)
 	c-. e-. c-. e-.
 	r d-. g,-. d'-.
 % Bars 141 to 145
@@ -164,7 +164,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	r f-. des-. f-.
 	r f-. des-. f-.
 % Bars 146 to 150
-	f\f r r2
+	f-\tweak extra-offset #'(0.5 . 0.5) \f r r2
 	R1
 	d2\f r
 	d r

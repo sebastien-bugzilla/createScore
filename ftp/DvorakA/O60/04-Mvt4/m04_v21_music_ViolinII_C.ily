@@ -151,7 +151,7 @@ musicViolinIIMvtIV = \relative c'' {
 	
 	r2 cis2\fz\>~
 	cis4 b8( cis b4 a)\!
-	a1\<~
+	\hairpinShorten #6 #0 a1\<~
 	a4 a( fis\! <e gis>)
 % Bars 121 to 125
 	a16(\f\< b cis d e fis gis a) a2:16\ff
@@ -186,7 +186,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 146 to 150
 	<f d' b'>4\f r r2
 	R1
-	<d b'>4\ff r r2
+	<d b'>4-\tweak extra-offset #'(0.3 . 0.3) \ff r r2
 	q4 r r2
 	<e d'>4 r r2
 % Bars 151 to 155
@@ -197,7 +197,7 @@ musicViolinIIMvtIV = \relative c'' {
 	fis( g4_\dimmarkup fis8 e)
 % Bars 156 to 160
 	fis2( g4 fis8 e)
-	fis4\(( d) a'(\pp g8 f)\)
+	fis4\(( d) a'(-\tweak extra-offset #'(-0.3 . 2.7) \pp g8 f)\)
 	f4\(( e8 d) d4( c8 b)\)
 	b1~
 	b
@@ -209,7 +209,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a'4--\( \tuplet 3/2 4 {a8(_\crescmarkup g f)\)} f4--\( \tuplet 3/2 4 {f8( c a)\)}
 % Bars 166 to 170
 	R1
-	r2 c,4->\ff \tuplet 3/2 4 {c8( b! a)}
+	r2 c,4-\tweak X-offset #0.8 ->\ff \tuplet 3/2 4 {c8( b! a)}
 	r2 c4\fz \tuplet 3/2 4 {c8( b a)}
 	r2 dis4\fz \tuplet 3/2 4 {dis8( cis! b)}
 	r2 dis4\fz \tuplet 3/2 4 {dis8( cis b)}

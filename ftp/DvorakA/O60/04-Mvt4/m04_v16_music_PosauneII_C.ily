@@ -116,7 +116,7 @@ musicPosauneIIMvtIV = \relative c' {
 	R1*2
 % Bars 141 to 145
 	
-	d1\ff-^
+	\aIIXoffset #-1 d1-\tweak X-offset #-3 \ff-^
 	c-^
 	bes-^~
 	bes
