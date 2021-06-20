@@ -193,7 +193,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 c,-.\ff
+	r2 r4 c,-.-\tweak X-offset #-1.5 \ff
 	c-. r d-. r
 % Bars 181 to 185
 	c-. r r2
@@ -239,7 +239,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	aes4-> f-> aes-> r
 	r2 r4 r8. des16
 	des4-> bes-> des-> r
-	ees4-.\f bes-. ees2->
+	ees4-.-\tweak extra-offset #'(0 . 0.5) \f bes-. ees2->
 	r2 r4 r8. des16
 % Bars 226 to 230
 	des4-. aes-. des2->
@@ -272,7 +272,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	\mark \default
 	R1*2
 	
-	\tuplet 6/4 1 {r4 c\p\< ees ges f ees\!}
+	\omitTupletNumber \tuplet 6/4 1 {r4 c\p\< ees ges f ees}
 % Bars 256 to 260
 	des\f r r2
 	R1*9

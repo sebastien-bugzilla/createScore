@@ -193,14 +193,14 @@ musicKlarinetteIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 e,-.\ff
+	r2 r4 e,-.-\tweak X-offset #-1.5 \ff
 	e-. r f-. r
 % Bars 181 to 185
 	e-. r r2
 	e4-. r r2
 	\partCombineApart e1~
 	e~
-	e4 r r b'(\pp
+	e4 e\rest e\rest b'(-\tweak X-offset #-4 \pp
 % Bars 186 to 190
 	a e c a
 	bes!) r r bes'!(
@@ -213,7 +213,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 196 to 200
 	
 	
-	\partCombineApart r4 e'-.\mf r a-. \partCombineAutomatic
+	\partCombineApart r4 e'-._\mf r a-. \partCombineAutomatic
 	R1*8
 % Bars 201 to 205
 	
@@ -239,7 +239,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	aes4-> f-> aes-> r
 	r2 r4 r8. des16
 	des4-> bes-> des-> r
-	ees4-.\f bes-. ees2->
+	ees4-.-\tweak extra-offset #'(0 . 0.5) \f bes-. ees2->
 	r2 r4 r8. des16
 % Bars 226 to 230
 	des4-. aes-. des2->
@@ -270,20 +270,20 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 251 to 255
 	
 	\mark \default
-	R1
-	\partCombineApart \tuplet 6/4 1 {g,4(\p bes des f ees des)}
-	\tuplet 6/4 1 {c( ees ges bes aes ges}
+	\partCombineApart R1
+	\tupletIgnoreSlur \tuplet 6/4 1 {g,4(_\p bes des f ees des)}
+	\tupletIgnoreSlur \shape #'((0 . 2)(0 . -1)(0 . -1)(0 . 1)) Slur \tuplet 6/4 1 {c( ees ges bes aes ges}
 % Bars 256 to 260
 	f) \partCombineAutomatic r r2
 	R1*9
 % Bars 261 to 265
 	
 % Bars 266 to 270
-	\partCombineApart r4 r8 f-.\f des-. c-. bes-. f-.
+	\partCombineApart r4 r8 f-._\f des-. c-. bes-. f-.
 	a2-> bes->
-	r4 r8 f'-.\fz c-. bes-. aes-. f-.
+	r4 r8 f'-._\fz c-. bes-. aes-. f-.
 	g2-> aes->
-	r4 r8 f'-.\fz d-. c-. b-. g-.
+	r4 r8 f'-._\fz d-. c-. b-. g-.
 % Bars 271 to 275
 	a!2-> b4.-> r8 \partCombineAutomatic
 	R1

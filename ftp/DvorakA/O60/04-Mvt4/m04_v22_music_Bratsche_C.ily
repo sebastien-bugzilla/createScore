@@ -218,11 +218,11 @@ musicBratscheMvtIV = \relative c' {
 	r2 r4 cis8-.\f dis-.
 	e-> b a b g b e, fis
 	b4 r r cis8 dis
-	e-> b a b g4 e8\fz fis
+	e-> b a b g4 e8-\tweak extra-offset #'(0.5 . 0.5) \fz fis
 % Bars 176 to 180
 	g b c d e-> c f,\fz g
-	aes b! c e f-> c f,\fz g
-	aes c des ees f-> d fis,!\fz gis
+	aes b! c e f-> c f,-\tweak extra-offset #'(0.5 . 0.5) \fz g
+	aes c des ees f-> d fis,!-\tweak extra-offset #'(0.5 . 0.5) \fz gis
 	a! bis cis! eis fis!-> cis <a' cis>4->\ff
 	q4-> \tuplet 3/2 4 {<a cis>8( <gis b> <fis a>)} <gis b>4-> r
 % Bars 181 to 185
@@ -268,7 +268,7 @@ musicBratscheMvtIV = \relative c' {
 	g r8 b-. a-. g-.
 	fis4-. b,2.-> \mark \default
 % Bars 216 to 220
-	e8->\ff e e, e' d-> d e, d'
+	e8-\tweak extra-offset #'(0 . 2.2) -> -\tweak extra-offset #'(0 . 1.1) \ff e e, e' d-> d e, d'
 	c-> c e, c' b-> b e, b'
 	a'-> a a, a' g-> g a, g'
 	f-> f a, f' e-> e a, e'
@@ -316,17 +316,17 @@ musicBratscheMvtIV = \relative c' {
 	bes2 r4 bes\<
 	a2 r4 a-.\!
 % Bars 256 to 260
-	\tuplet 3/2 2 {bes4\f f' f  f f f}
+	\tuplet 3/2 2 {bes4\f f' f \once \tupletUp f f f}
 	\tuplet 3/2 2 {f f f f f f }
 	\tuplet 3/2 2 {f f f f f f}
 	\tuplet 3/2 2 {f f f f f r}
-	r2 f4_\ffz d-.
+	r2 f4-\tweak extra-offset #'(0.5 . 0.5) _\ffz d-.
 % Bars 261 to 265
 	b!\fz a-. gis\fz e-.
-	a r g'!\fz e-.
+	a r g'!-\tweak extra-offset #'(0.5 . 0.5) \fz e-.
 	cis!\fz bes-. a\fz g-.
 	fis! r ees'\fz d-.
-	c-.\fz a-. g\fz fis-.
+	c-.-\tweak X-offset #0.2 \fz a-. g\fz fis-.
 % Bars 266 to 270
 	d'\fz r r2
 	R1

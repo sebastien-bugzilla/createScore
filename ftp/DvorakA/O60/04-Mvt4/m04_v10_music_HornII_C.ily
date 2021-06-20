@@ -184,7 +184,7 @@ musicHornIIMvtIV = \relative c' {
 	R1*3
 	
 	
-	r2 r4 d-.\ff
+	r2 r4 d-.-\tweak X-offset #-1.5 \ff
 	d-. r d-. r
 % Bars 181 to 185
 	d-. r r2
@@ -264,7 +264,7 @@ musicHornIIMvtIV = \relative c' {
 	\mark \default
 	R1
 	R1
-	c2(\p\< \tuplet 3/2 2 {f,4 ges aes\!}
+	c2(\p\< \tuplet 3/2 2 {f,4 ges aes}
 % Bars 256 to 260
 	ges\f) r r2
 	R1*11

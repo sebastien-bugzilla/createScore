@@ -218,12 +218,12 @@ musicViolinIMvtIV = \relative c''' {
 	g fis e) b--
 	e4. e8 e4 b'(
 	g fis e) b--
-	e4. e8 e4 c'(\fz
+	e4. e8 e4 c'(-\tweak extra-offset #'(0.5 . 2) \fz
 % Bars 176 to 180
-	g f e) c'(\fz
-	aes g f) des'(\fz
-	aes ges f) cis'!(\fz
-	a! gis fis!) cis'->\ff
+	g f e) c'(-\tweak extra-offset #'(0.5 . 2) \fz
+	aes g f) des'(-\tweak extra-offset #'(0.5 . 2) \fz
+	aes ges f) cis'!(-\tweak extra-offset #'(0.5 . 2) \fz
+	a! gis fis!) cis'->-\tweak extra-offset #'(0 . 1.8) \ff
 	cis-> \tuplet 3/2 4 {cis8( b a)} b4-> \tuplet 3/2 4 {b8( a gis)}
 % Bars 181 to 185
 	fis4-. cis-. fis2->
@@ -282,7 +282,7 @@ musicViolinIMvtIV = \relative c''' {
 % Bars 226 to 230
 	bes2.) \tuplet 3/2 4 {bes8( c d}
 	ees2.) \tuplet 3/2 4 {ees8( f g}
-	aes4)\ff ees-. aes2:16->
+	aes4)-\tweak extra-offset #'(0 . 2) \ff ees-. aes2:16->
 	aes: aes:
 	aes4: ees: aes2:
 % Bars 231 to 235

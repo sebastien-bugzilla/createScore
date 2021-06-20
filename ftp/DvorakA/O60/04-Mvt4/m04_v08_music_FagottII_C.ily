@@ -211,7 +211,7 @@ musicFagottIIMvtIV = \relative c {
 	r2 r4 b,(\f
 	g fis e) b--
 	e4. e8 e4 b'(
-	g fis e) e(\fz
+	g fis e) \aIIXoffset #-2.5 e(\fz
 % Bars 176 to 180
 	g c e) f,(\fz
 	aes c f) f,(\fz

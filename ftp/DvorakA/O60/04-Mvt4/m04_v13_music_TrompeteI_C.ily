@@ -153,7 +153,7 @@ musicTrompeteIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 b'-.\ff
+	r2 r4 \aIIXoffset #-4.5 b'-.-\tweak extra-offset #'(-0.8 . 0.5) \ff
 	b-. r c-. r
 % Bars 181 to 185
 	b-. r r2
@@ -229,9 +229,9 @@ musicTrompeteIMvtIV = \relative c''' {
 % Bars 266 to 270
 	c-. r r2
 	R1
-	c4\f r r2
+	c4-\tweak X-offset #0.5 \f r r2
 	R1
-	c4\f r r2
+	c4-\tweak X-offset #0.5 \f r r2
 % Bars 271 to 275
 	R1*6
 % Bars 276 to 280
@@ -255,7 +255,7 @@ musicTrompeteIMvtIV = \relative c''' {
 % Bars 291 to 295
 	g2. g4
 	g1~
-	g2. g,4->\ff
+	g2. \aIIXoffset #-2 g,4->\ff
 	c2-> g->
 	c-> g->
 % Bars 296 to 300

@@ -140,12 +140,12 @@ musicPosauneIIMvtIV = \relative c' {
 	
 	
 	
-	r2 r4 g\p
+	r2 r4 g-\tweak X-offset #-0.5 \p
 % Bars 176 to 180
-	r2 r4 aes\p
-	r2 r4 aes\p
-	r2 r4 a!\p
-	r2 r4 a-.\ff
+	r2 r4 aes-\tweak X-offset #-0.5 \p
+	r2 r4 aes-\tweak X-offset #-0.5 \p
+	r2 r4 a!-\tweak X-offset #-0.5 \p
+	r2 r4 a-.-\tweak X-offset #-1.5 \ff
 	a-. r b-. r
 % Bars 181 to 185
 	a-. r r2
@@ -190,7 +190,7 @@ musicPosauneIIMvtIV = \relative c' {
 % Bars 226 to 230
 	
 	
-	c2.\ff r4
+	c2.-\tweak X-offset #0.2 \ff r4
 	R1
 	c2. r4
 % Bars 231 to 235

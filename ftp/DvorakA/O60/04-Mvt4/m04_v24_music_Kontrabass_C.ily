@@ -302,7 +302,7 @@ musicKontrabassMvtIV = \relative c' {
 	f4.-> f8 f4 ees
 	f4.-> f8 f4 ees
 	f\p r r2
-	bes,4\pp^\pizz r r bes
+	bes,4\pp-\tweak X-offset #-7 ^\pizz r r bes
 % Bars 246 to 250
 	bes r r bes
 	bes r r bes

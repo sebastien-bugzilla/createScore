@@ -188,7 +188,7 @@ musicFloteIMvtIV = \relative c''' {
 	R1*6
 % Bars 201 to 205
 	
-	\partCombineApart r4 fis,-.\mf r b-. \partCombineAutomatic
+	\partCombineApart r4 fis,-._\mf r b-. \partCombineAutomatic
 	R1
 	\partCombineApart r4 b-. r e-. \partCombineAutomatic
 	R1
@@ -219,7 +219,7 @@ musicFloteIMvtIV = \relative c''' {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	aes'1\ff~
+	aes'1-\tweak extra-offset #'(0 . 2) \ff~
 	aes~
 	aes~
 % Bars 231 to 235
@@ -239,7 +239,7 @@ musicFloteIMvtIV = \relative c''' {
 	R1*3
 	
 	
-	\partCombineApart r2 r4 f'(\p
+	\partCombineApart r2 r4 f'(-\tweak X-offset #-2.8 \p
 % Bars 246 to 250
 	d! c! bes f)
 	bes4. bes8 bes4 c
@@ -248,19 +248,19 @@ musicFloteIMvtIV = \relative c''' {
 	\mmrPos #8 R1
 % Bars 251 to 255
 	\mmrPos #8 R
-	\mmrPos #12 R \mark \default
+	\mmrPos #14 R \mark \default
 	\mmrPos #8 R1 \partCombineAutomatic
 	R1
-	\tuplet 6/4 1 {a4(\p\< c ees g f ees}
+	\tupletIgnoreSlur \tuplet 6/4 1 {a4( c ees g f ees}
 % Bars 256 to 260
-	d4\f) r r2
+	d4) r r2
 	R1*8
 % Bars 261 to 265
 	
 	
 	
 	
-	\partCombineApart r2 r4 r8 d-.\f
+	\partCombineApart r2 r4 r8 d-.-\tweak X-offset #-0.7 \f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
 	a2-> bes4. d8

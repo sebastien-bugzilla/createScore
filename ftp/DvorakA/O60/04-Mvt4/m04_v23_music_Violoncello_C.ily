@@ -218,7 +218,7 @@ musicVioloncelloMvtIV = \relative c' {
 	r2 r4 b'(\f
 	g fis e) b--
 	e4. e8 e4 b'(
-	g fis e) e,8\fz fis
+	g fis e) e,8-\tweak extra-offset #'(0.5 . 0.5) \fz fis
 % Bars 176 to 180
 	g b c d e-> c f,\fz g
 	aes b! c e f-> c f,\fz g
@@ -316,14 +316,14 @@ musicVioloncelloMvtIV = \relative c' {
 	c
 	<<f, {s4\< s s s\!}>>
 % Bars 256 to 260
-	r2 r4 f''-.\f
+	r2 r4 f''-.-\tweak extra-offset #'(0 . 2) \f
 	d-. c-. bes-. r
 	r2 r4 a-.
 	f-. e-. d-. r 
-	r2 f'4_\ffz d-.
+	r2 f'4-\tweak extra-offset #'(0.5 . 0.5) _\ffz d-.
 % Bars 261 to 265
 	b!\fz a-. gis\fz e-.
-	a r g'!\fz e-.
+	a r g'!-\tweak extra-offset #'(0.5 . 0.5) \fz e-.
 	cis!\fz bes-. a\fz g-.
 	fis! r ees'\fz d-.
 	c\fz a-. g\fz fis-.
@@ -337,7 +337,7 @@ musicVioloncelloMvtIV = \relative c' {
 	r2 r4 r8 d\f
 	b a gis e <gis e' b'>4\arpeggio r
 	r2 r4 r8 e'
-	cis b a e <g! e' cis'>4\arpeggio r
+	cis b a e \arpeggioPadding #0.2 <g! e' cis'>4\arpeggio r
 	r2 r4 r8 e'
 % Bars 276 to 280
 	cis b ais e <ais fis' cis'>4\arpeggio r

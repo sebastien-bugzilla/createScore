@@ -160,11 +160,11 @@ musicHornIVMvtIV = \relative c' {
 	r2 r4 a\f
 	d2. r4
 	r2 r4 a\f
-	d2. bes4\fz~
+	d2. bes4-\tweak X-offset #0.2 \fz~
 % Bars 176 to 180
-	bes2. bes4\fz~
-	bes2. b4\fz~
-	b2. b4\fz~
+	bes2. bes4-\tweak X-offset #0.2 \fz~
+	bes2. b4-\tweak X-offset #0.2 \fz~
+	b2. b4-\tweak X-offset #0.2 \fz~
 	b2. e,4-.\ff
 	e-. r e-. r
 % Bars 181 to 185
@@ -201,16 +201,16 @@ musicHornIVMvtIV = \relative c' {
 	d
 	g,\fz~
 	g
-	c\fz~
+	c-\tweak X-offset #-1 \fz~
 % Bars 221 to 225
 	c
 	f,\fz~
 	f
 	bes\fz
-	ees,\fz
+	ees,-\tweak extra-offset #'(1 . 0.5) \fz
 % Bars 226 to 230
 	aes\fz
-	des,\fz
+	des,-\tweak extra-offset #'(1.5 . 0.8) \fz
 	ges'\ff~
 	ges~
 	ges~

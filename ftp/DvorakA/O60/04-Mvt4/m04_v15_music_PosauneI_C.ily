@@ -140,12 +140,12 @@ musicPosauneIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 c\p
+	r2 r4 c-\tweak X-offset #-0.5 \p
 % Bars 176 to 180
-	r2 r4 c\p
-	r2 r4 des\p
-	r2 r4 cis!\p
-	r2 r4 cis-.\ff
+	r2 r4 c-\tweak X-offset #-0.5 \p
+	r2 r4 des-\tweak X-offset #-0.5 \p
+	r2 r4 cis!-\tweak X-offset #-0.5 \p
+	r2 r4 cis-.-\tweak X-offset #-1.5 \ff
 	cis-. r d-. r
 % Bars 181 to 185
 	cis-. r r2
@@ -190,11 +190,11 @@ musicPosauneIMvtIV = \relative c'' {
 % Bars 226 to 230
 	
 	
-	ees2.\ff r4
+	ees2.-\tweak X-offset #0.2 \ff r4
 	R1
 	ees2. r4
 % Bars 231 to 235
-	R1 %%%%%%%%%%%%%%%%%%%%%%%%
+	R1 
 	\partCombineApart ees2. des4-.
 	c-. a!-. ges-. ees-.
 	ees'2. des4-.
@@ -233,7 +233,7 @@ musicPosauneIMvtIV = \relative c'' {
 	r2 cis4\f r
 	\partCombineApart R1*2
 	
-	r2 b->\f \partCombineAutomatic
+	r2 b->-\tweak X-offset #-1.6 \f \partCombineAutomatic
 	b-> b->
 % Bars 281 to 285
 	e-> d->

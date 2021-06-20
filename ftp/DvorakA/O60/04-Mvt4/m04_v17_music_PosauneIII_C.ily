@@ -154,7 +154,7 @@ musicPosauneIIIMvtIV = \relative c {
 	r2 r4 f\p
 	r2 r4 f\p
 	r2 r4 fis!\p
-	r2 r4 fis-.\ff
+	r2 r4 fis-.-\tweak extra-offset #'(-2.3 . 1.3) \ff
 	fis-. r fis-. r
 % Bars 181 to 185
 	fis-. r r2
@@ -172,7 +172,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	\partCombineApart ais,1\pp~
+	\partCombineApart ais,1_\pp~
 % Bars 196 to 200
 	ais~
 	ais~
@@ -245,7 +245,7 @@ musicPosauneIIIMvtIV = \relative c {
 	R1
 % Bars 276 to 280
 	r2 e4\f r
-	\partCombineApart r2 e2\f->
+	\partCombineApart r2 e2_\f->
 	d-> cis->
 	b-> a->
 	g-> fis->

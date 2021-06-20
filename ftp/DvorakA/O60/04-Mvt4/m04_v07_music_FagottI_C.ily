@@ -208,7 +208,7 @@ musicFagottIMvtIV = \relative c' {
 	r2 r4 b(\f
 	g fis e) b--
 	e4. e8 e4 b'(
-	g fis e) e,(\fz
+	g fis e) \aIIXoffset #-2.5 e,(\fz
 % Bars 176 to 180
 	g c e) f,(\fz
 	aes c f) f,(\fz
@@ -220,7 +220,7 @@ musicFagottIMvtIV = \relative c' {
 	cis4-. r r2
 	R1*2
 	
-	\partCombineApart r2 r4 gis''\pp(
+	\clef tenor \partCombineApart r2 r4 gis''-\tweak X-offset #-2.5 \pp(
 % Bars 186 to 190
 	fis cis a fis
 	g!) r r g'!(
@@ -228,16 +228,16 @@ musicFagottIMvtIV = \relative c' {
 	a) r r g'( 
 	e cis a g \mark \default
 % Bars 191 to 195
-	fis) r r2 \partCombineAutomatic
+	fis) r r2 \clef bass \partCombineAutomatic
 	R1*5
 % Bars 196 to 200
 	
-	\partCombineApart r4 cis'-.\mf r fis-. \partCombineAutomatic
+	\partCombineApart r4 cis'-._\mf r fis-. \partCombineAutomatic
 	R1
-	\partCombineApart r4 fis,-.\mf r b-. \partCombineAutomatic
+	\partCombineApart r4 fis,-._\mf r b-. \partCombineAutomatic
 	R1
 % Bars 201 to 205
-	\partCombineApart r4 fis-.\mf r b-. \partCombineAutomatic
+	\partCombineApart r4 fis-._\mf r b-. \partCombineAutomatic
 	R1*4
 	
 	

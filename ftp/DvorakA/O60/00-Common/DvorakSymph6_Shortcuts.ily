@@ -64,7 +64,7 @@ pesante=^\markup {\italic {pesante}}
 pptranquillo=^\markup {\dynamic pp \italic tranquillo}
 ffpesante=^\markup {\dynamic ff \italic pesante}
 tranquillo=^\markup {\italic tranquillo}
-ffz=^\markup {\dynamic ffz}
+ffz=^\markup { \hspace #-1 \dynamic ffz}
 solo=^\markup {Solo.}
 fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
 ppespr = ^\markup {\dynamic pp \musicglyph "scripts.espr"}
@@ -231,6 +231,19 @@ hairpinYoffset = #(define-music-function
 		\override Staff.Hairpin.extra-offset = #(cons x y)
 	#}
 )
+
+tupletIgnoreSlur = \once \override Voice.TupletNumber.avoid-slur = #'ignore
+
+omitTupletNumber = \once \omit Voice.TupletNumber
+
+arpeggioPadding = #(define-music-function
+	(padding)
+	(number?)
+	#{
+		\once \override Voice.Arpeggio.padding = #padding
+	#}
+)
+
 
 % DEFAULT SCRIPT POSITION
 % from http://lilypond.1069038.n5.nabble.com/Articulation-mark-amp-slur-placement-td237907.html#a237941

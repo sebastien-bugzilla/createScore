@@ -219,7 +219,7 @@ musicFloteIIMvtIV = \relative c'' {
 % Bars 226 to 230
 	bes4-. f-. bes2->
 	R1
-	c1\ff~
+	c1-\tweak extra-offset #'(0 . 2) \ff~
 	c~
 	c~
 % Bars 231 to 235
@@ -244,14 +244,14 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 a(\p
+	r2 r4 \shape #'((0 . -1.5)(0 . -0.5)(0 . -0.5)(0 . -1.5)) Slur a(\p
 	fis e d a)
 % Bars 251 to 255
 	d4.( d8 d4 e)
-	\tuplet 6/4 1 {fis4( a c e d c)}\mark \default
+	\tupletYOff #5.5 \tuplet 6/4 1 {fis4( a c e d c)}\mark \default
 	b2 r
 	R1
-	\tuplet 6/4 1 { r4 a\p\< c ees d c}
+	\omitTupletNumber \tuplet 6/4 1 { r4 a\p\< c ees d c}
 % Bars 256 to 260
 	bes4\f r r2
 	R1*8
@@ -262,7 +262,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	R1
 % Bars 266 to 270
-	d,1\fz~
+	d,1-\tweak extra-offset #'(-1 . 2.8) \fz~
 	d2.. d8\fz~
 	d1~
 	d2.. d8\fz~

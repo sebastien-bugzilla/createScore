@@ -296,7 +296,7 @@ musicOboeIIMvtIV = \relative c'' {
 	a-. r c-. r
 	a-. r c-. r
 % Bars 266 to 270
-	bes4\fz r r2
+	bes4 r r2
 	R1*6
 	
 	

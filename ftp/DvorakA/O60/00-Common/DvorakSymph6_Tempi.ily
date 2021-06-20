@@ -102,7 +102,7 @@ tempiMvtIV = {
 	\tempo "accelerando poco a poco" % bar 53
 	s1*241
 	\tempo "Poco sostenuto." % bar 294
-	s1*8
+	s1*8 \grace {s8}
 	\tempo "ritard." % bar 302
 	s1*4
 	\tempo "in tempo" % bar 306

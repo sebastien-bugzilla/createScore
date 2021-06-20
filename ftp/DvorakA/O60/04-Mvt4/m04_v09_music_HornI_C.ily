@@ -184,7 +184,7 @@ musicHornIMvtIV = \relative c'' {
 	R1*3
 	
 	
-	r2 r4 f-.\ff
+	r2 r4 f-.-\tweak X-offset #-1.5 \ff
 	f-. r e-. r
 % Bars 181 to 185
 	f-. r r2
@@ -209,9 +209,9 @@ musicHornIMvtIV = \relative c'' {
 % Bars 201 to 205
 	
 	
-	\partCombineApart r4 g,-.\mf r c-. \partCombineAutomatic
+	\partCombineApart r4 g,-._\mf r c-. \partCombineAutomatic
 	R1
-	\partCombineApart r4 g-.\mf r c-. \partCombineAutomatic
+	\partCombineApart r4 g-._\mf r c-. \partCombineAutomatic
 % Bars 206 to 210
 	R1*5
 % Bars 211 to 215
@@ -260,11 +260,11 @@ musicHornIMvtIV = \relative c'' {
 	\partCombineApart d!4(\p c bes f)
 	bes4. bes8 bes4 c
 % Bars 251 to 255
-	\tuplet 6/4 1 {d4( f aes g f ees)}
+	\tupletIgnoreSlur \shape #'((0 . 1)(0 . -0.5)(0 . -0.5)(0 . 1)) Slur \tuplet 6/4 1 {d4( f aes g f ees)}
 	d2. r4 \partCombineAutomatic \mark \default
 	R1
-	\partCombineApart \tuplet 6/4 1 {aes4(\p c ees ges f ees)} \partCombineAutomatic
-	ees2(\< \tuplet 3/2 2 {aes,4 bes ces\!}
+	\partCombineApart \tupletIgnoreSlur  \tuplet 6/4 1 {aes4(_\p c ees ges f ees)} \partCombineAutomatic
+	ees2(\< \tuplet 3/2 2 {aes,4 bes ces}
 % Bars 256 to 260
 	bes\f) r r2
 	R1*11

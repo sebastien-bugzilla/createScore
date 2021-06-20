@@ -200,12 +200,12 @@ musicOboeIIMvtIV = \relative c'' {
 	e2.-> r4
 	r2 r4 b-.
 	e2.-> r4
-	r2 r4 c\fz~
+	r2 r4 c-\tweak extra-offset #'(0.8 . 1) \fz~
 % Bars 176 to 180
-	c2. c4\fz~
-	c2. cis4~\fz
-	cis2. cis4\fz~
-	cis2. cis4\ff-.
+	c2. c4-\tweak X-offset #0.2 \fz~
+	c2. cis4~-\tweak X-offset #0.2 \fz
+	cis2. cis4-\tweak X-offset #0.2 \fz~
+	cis2. cis4-\tweak X-offset #0.2 \ff-.
 	fis-. r d-. r
 % Bars 181 to 185
 	cis-. r r2
@@ -255,7 +255,7 @@ musicOboeIIMvtIV = \relative c'' {
 	f4-> d-> f-> r
 	r2 r4 r8. bes,16
 	bes4-> g-> bes-> r
-	r2 r4 r8. f'16\f
+	r2 r4 r8. \aIIXoffset #-1.3 f'16\f
 	f4-. c-. f2->
 % Bars 226 to 230
 	r2 r4 r8. ees16
@@ -290,7 +290,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\tuplet 6/4 1 {r4 b\p\< d f e\> d\!}
+	\omitTupletNumber \tuplet 6/4 1 {r4 b\p\< d f e\> d\!}
 	c2 r
 	R1
 % Bars 256 to 260
@@ -306,7 +306,7 @@ musicOboeIIMvtIV = \relative c'' {
 	a-. r c-. r
 	a-. r c-. r
 % Bars 266 to 270
-	bes4\fz r r2
+	bes4 r r2
 	R1*5
 	
 	

@@ -201,16 +201,16 @@ musicHornIIIMvtIV = \relative c'' {
 	d
 	g,\fz~
 	g
-	c\fz~
+	c-\tweak X-offset #-1 \fz~
 % Bars 221 to 225
 	c
 	f,\fz~
 	f
 	bes\fz
-	ees,\fz
+	ees,-\tweak extra-offset #'(1 . 0.5) \fz
 % Bars 226 to 230
 	aes\fz
-	des,\fz
+	des,-\tweak extra-offset #'(1.5 . 0.8) \fz
 	des'\ff~
 	des~
 	des~
@@ -237,7 +237,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	g'2(\p\< \tuplet 3/2 2 {c,4\> d ees\!}
+	g'2(\p\< \once \tupletUp \tuplet 3/2 2 {c,4\> d ees\!}
 	d4) r r2
 	R1*5
 % Bars 256 to 260
