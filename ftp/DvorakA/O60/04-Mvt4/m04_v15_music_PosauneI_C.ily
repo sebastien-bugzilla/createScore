@@ -259,7 +259,7 @@ musicPosauneIMvtIV = \relative c'' {
 	c2. c4
 % Bars 301 to 305
 	c2 d
-	c1
+	\grace {s8} c1
 	e2-> d-> \mark \default
 	\grace {s8} cis!1\ff\>~
 	cis~

@@ -305,7 +305,7 @@ musicFloteIIMvtIV = \relative c'' {
 	c2. c4
 % Bars 301 to 305
 	c2 d
-	a1
+	\grace {s8} a1
 	g2-> f-> \mark \default
 	\grace {s8} e1\ff\>~
 	e~
@@ -329,7 +329,7 @@ musicFloteIIMvtIV = \relative c'' {
 	
 	R1
 % Bars 326 to 330
-	r2 r4 c\p(
+	r2 r4 c-\tweak X-offset #-2 \p(
 	b g'2 a4)
 	d,4.( d8 d4 c
 	b g2.)
@@ -387,9 +387,9 @@ musicFloteIIMvtIV = \relative c'' {
 	cis'4-> \tuplet 3/2 4 {cis8( b a)-.} a4 \tuplet 3/2 4 {a8( e cis-.)}
 % Bars 381 to 385
 	cis4 r r2
-	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->-\tweak extra-offset #'(0 . 1.8) \mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
-	fis'4->\f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
 % Bars 386 to 390
 	d'4\f r r2

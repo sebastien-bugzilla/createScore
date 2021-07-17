@@ -371,7 +371,7 @@ musicViolinIIMvtIV = \relative c'' {
 	a2. a4
 % Bars 301 to 305
 	a2 bes
-	<a, f'>1
+	\grace {s8} <a, f'>1
 	<g e'>2-> <f d'>-> \mark \default
 	\grace {s8} <e cis'!>1\ff\>~
 	q~
@@ -383,7 +383,7 @@ musicViolinIIMvtIV = \relative c'' {
 % Bars 316 to 320
 	
 	r2 r4 a\pp~
-	a2._\tranquillo( e4
+	\shape #'((0 . 1.5)(0 . 1)(0 . 0.5)(0 . 1)) Slur a2._\tranquillo( e4
 	d cis b g')
 	fis( a cis b8 cis
 % Bars 321 to 325
@@ -402,7 +402,7 @@ musicViolinIIMvtIV = \relative c'' {
 	g f e cis!)
 	d8( g fis! e d e c d)
 	b4. b8 b4( a)
-	g8(_\crescmarkup g' fis e d e c d)
+	g8(-\tweak extra-offset #'(1.5 . 2.3) _\crescmarkup g' fis e d e c d)
 	b4. b8 b4( a)
 % Bars 336 to 340
 	g8( g' fis e d e c d)
@@ -447,7 +447,7 @@ musicViolinIIMvtIV = \relative c'' {
 	
 	a,4(\p\< e' f\> d\!
 % Bars 371 to 375
-	cis) \tuplet 3/2 4 {cis8(\pp d e)} r4 \tuplet 3/2 4 {cis8( d e)}
+	cis) \tuplet 3/2 4 {cis8(-\tweak X-offset #-1.5 \pp d e)} r4 \tuplet 3/2 4 {cis8( d e)}
 	r4 \tuplet 3/2 4 {d8( e f)} r4 \tuplet 3/2 4 {d8( e f)}
 	e4 r r2
 	e1\pp~

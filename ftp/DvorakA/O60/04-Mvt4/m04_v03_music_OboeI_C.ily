@@ -345,7 +345,7 @@ musicOboeIMvtIV = \relative c'' {
 	a2. a4
 % Bars 301 to 305
 	a2 bes
-	a1
+	\grace {s8} a1
 	g2-> f-> \mark \default
 	\grace {s8} e1\ff\>~
 	e~
@@ -356,7 +356,7 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 	
-	\partCombineApart r2 r4 g(\pp
+	\partCombineApart r2 r4 g(-\tweak X-offset #-2 \pp
 	e d cis b
 % Bars 316 to 320
 	e a, b fis
@@ -367,7 +367,7 @@ musicOboeIMvtIV = \relative c'' {
 	
 	
 	
-	\partCombineApart r2 r4 d(\p~
+	\partCombineApart r2 r4 d(-\tweak X-offset #-1 \p~
 % Bars 326 to 330
 	d c b a 
 	b) r r2 \partCombineAutomatic
@@ -423,7 +423,7 @@ musicOboeIMvtIV = \relative c'' {
 	a4 r r2 \partCombineAutomatic
 	R1
 	\partCombineApart R1
-	b4\mf \tuplet 3/2 4 {b8( a g)} a4 \tuplet 3/2 4 {a8( g fis)}
+	b4 \tuplet 3/2 4 {b8( a g)} a4 \tuplet 3/2 4 {a8( g fis)}
 	e4-. b-. e2->
 % Bars 376 to 380
 	fis4-. c-. fis2->

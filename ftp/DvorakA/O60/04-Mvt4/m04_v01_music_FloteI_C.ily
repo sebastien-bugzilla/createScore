@@ -305,7 +305,7 @@ musicFloteIMvtIV = \relative c''' {
 	c2. c4
 % Bars 301 to 305
 	c2 d
-	a1
+	\grace {s8} a1
 	g2-> f-> \mark \default
 	\grace {s8} e1\ff\>~
 	e~
@@ -316,7 +316,7 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	
-	\partCombineApart r2 r4 g'(\pp
+	\partCombineApart r2 r4 g'(-\tweak X-offset #-2 \pp
 	e d cis b
 % Bars 316 to 320
 	e a, b fis
@@ -327,7 +327,7 @@ musicFloteIMvtIV = \relative c''' {
 	
 	
 	
-	\partCombineApart r2 r4 d(\p
+	\partCombineApart r2 r4 d(-\tweak X-offset #-1 \p
 % Bars 326 to 330
 	b a g d
 	g4. g8 g4 a
@@ -387,9 +387,9 @@ musicFloteIMvtIV = \relative c''' {
 	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 % Bars 381 to 385
 	a4 r r2
-	a'4->\mf \tuplet 3/2 4 {a8( g fis)-.} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	a'4->-\tweak extra-offset #'(0 . 1.8) \mf \tuplet 3/2 4 {a8( g fis)-.} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 	d4 r r2
-	a'4->\f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	a'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 	d4 r r2
 % Bars 386 to 390
 	\once \partCombineApart d4 r r2

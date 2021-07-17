@@ -371,7 +371,7 @@ musicBratscheMvtIV = \relative c' {
 	f2. f4
 % Bars 301 to 305
 	f2-> f->
-	\clef alto c1->
+	\clef alto \grace {s8} c1->
 	c2-> <a, a'>-> \mark \default
 	\grace {s8} q1\ff\>~
 	q~
@@ -465,11 +465,11 @@ musicBratscheMvtIV = \relative c' {
 	r4 \tuplet 3/2 4 {b8( cis d)} r4 \tuplet 3/2 4 {b8( cis d)}
 	cis4 r r2
 	e,4(\p\< b' c\> a\!
-	g) \tuplet 3/2 4 {e8(\pp fis g)} r4 \tuplet 3/2 4 {e8( fis g)}
+	g) \tuplet 3/2 4 {e8(-\tweak X-offset #-1.5 \pp fis g)} r4 \tuplet 3/2 4 {e8( fis g)}
 % Bars 376 to 380
 	r4 \tuplet 3/2 4 {fis8( g a)} r4 \tuplet 3/2 4 {fis8( g a)}
 	g4 r r2
-	<g, a>4\p-> \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	<g, a>4-\tweak X-offset #0.5 \p-> \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
 	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
 	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
 % Bars 381 to 385

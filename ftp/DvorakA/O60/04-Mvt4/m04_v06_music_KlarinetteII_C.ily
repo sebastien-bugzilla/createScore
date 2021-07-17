@@ -322,7 +322,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	aes2. aes4
 % Bars 301 to 305
 	aes2 f
-	ees1
+	\grace {s8} ees1
 	ees2-> c-> \mark \default
 	\grace {s8} c1\ff\>~
 	c~
@@ -342,7 +342,7 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	R1
 % Bars 326 to 330
-	f,4(\p ees d c)
+	f,4(-\tweak X-offset #-2 \p ees d c)
 	d( f' e ees)
 	d8( bes' a! g f g ees f
 	d4) bes-. r2
@@ -395,14 +395,14 @@ musicKlarinetteIIMvtIV = \relative c'' {
 	
 	
 	
-	g4(\p\< d'\! ees\> c\!
+	\hairpinShorten #0 #-2 g4(\p\< \hairpinShorten #-2 #0 d'\! ees\> c\!
 	d) r r2
 % Bars 376 to 380
 	R1*2
 	
 	e4->\p \tuplet 3/2 4 {e8( d c-.)} c4 \tuplet 3/2 4 {c8( g e-.)}
 	e4 r r2
-	e'4-> \tuplet 3/2 4 {e8( d c-.)} c4 \tuplet 3/2 4 {c8( g e-.)}
+	e'4-> \once \tupletUp \tuplet 3/2 4 {e8( d c-.)} c4 \tuplet 3/2 4 {c8( g e-.)}
 % Bars 381 to 385
 	e4 r r2
 	R1*4

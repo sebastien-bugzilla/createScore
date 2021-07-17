@@ -349,7 +349,7 @@ musicOboeIIMvtIV = \relative c'' {
 	c2. c4
 % Bars 301 to 305
 	c2 d
-	f1
+	\grace {s8} f1
 	e2-> d-> \mark \default
 	\grace {s8} cis!1\ff\>~
 	cis~
@@ -421,7 +421,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	d,4\p( a'\< bes\> g\!
+	d,4-\tweak extra-offset #'(1.5 . 2.5) \p( a'-\tweak extra-offset #'(0 . 2.5) \< bes-\tweak extra-offset #'(0 . 2.5)\> g\!
 	fis2 d)~
 	d1~
 	d4 r r2
@@ -429,8 +429,8 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 371 to 375
 	
 	R1
-	r4 a'8(\p\< b cis d e fis)\!
-	g4\mf \tuplet 3/2 4 {g8( fis e)} e2~
+	r4 a'8(\p\< b cis d e fis)
+	g4\mf \tuplet 3/2 4 {g8 fis e} e2~
 	e4 r  r2
 % Bars 376 to 380
 	R1*3

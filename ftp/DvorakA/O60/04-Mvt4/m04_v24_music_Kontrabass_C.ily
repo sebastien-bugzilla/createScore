@@ -371,7 +371,7 @@ musicKontrabassMvtIV = \relative c' {
 	f2. f4
 % Bars 301 to 305
 	f2 bes,
-	c1
+	\grace {s8} c1
 	c2-> d-> \mark \default
 	\grace {s8} a1\ff\>~
 	a~

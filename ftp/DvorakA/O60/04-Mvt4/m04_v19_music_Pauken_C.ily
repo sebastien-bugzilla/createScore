@@ -234,7 +234,7 @@ musicPaukenMvtIV = \relative c {
 	a
 % Bars 301 to 305
 	a2\stopTrillSpan d\trill
-	a1\trill
+	\grace {s8} a1\trill
 	a2-> a-> \mark \default
 	\grace {s8} a1\ff-\tweak X-offset #3 _\dimin\startTrillSpan
 	a

@@ -293,7 +293,7 @@ musicHornIIIMvtIV = \relative c'' {
 	bes2. bes4
 % Bars 301 to 305
 	bes2 c
-	bes1
+	\grace {s8} bes1
 	bes2-> g-> \mark \default
 	\grace {s8} g1\ff\>~
 	g~
@@ -307,7 +307,7 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 321 to 325
 	
 % Bars 326 to 330
-	f1\p~
+	f1-\tweak X-offset #-1 \p~
 	f~
 	f2. f4~
 	f1~
@@ -320,7 +320,7 @@ musicHornIIIMvtIV = \relative c'' {
 	f1~
 % Bars 336 to 340
 	f2. r4
-	\partCombineApart cis4.\f cis8 cis4-. f!-.
+	\partCombineApart cis4._\f cis8 cis4-. f!-.
 	e4. e8 e4-. a-.
 	gis4. gis8 gis4-. c!-.
 	b4. b8 b4-. a-. \partCombineAutomatic
@@ -339,8 +339,8 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 351 to 355
 	d4 d2.\fz~
 	d4 d2.\fz~
-	d4 d2.\fz^\( 
-	g,4\) f'2.->\f~
+	d4 \partCombineApart d2.^\( 
+	g,4\) \partCombineAutomatic f'2.->\f~
 	f4 f2.->~
 % Bars 356 to 360
 	f4 f2.->~

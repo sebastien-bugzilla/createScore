@@ -353,7 +353,7 @@ musicFagottIMvtIV = \relative c' {
 	f2. f4
 % Bars 301 to 305
 	f2 bes,
-	c1
+	\grace {s8} c1
 	c2-> d-> \mark \default
 	\partCombineApart \grace {s8} a1~
 	a~
@@ -368,11 +368,11 @@ musicFagottIMvtIV = \relative c' {
 	
 	
 	
-	\partCombineApart \mmrPosOver #6 R1*4 \mmrPosRevert
+	\partCombineApart \mmrPosOver #8 R1*4 \mmrPosRevert
 % Bars 321 to 325
 	
 	
-	r4 cis8(\p b e4 a,
+	r4 cis8(-\tweak X-offset #-1 \p b e4 a,
 	b gis a b
 	c b8 a d4 e8 c
 % Bars 326 to 330
@@ -384,7 +384,7 @@ musicFagottIMvtIV = \relative c' {
 % Bars 331 to 335
 	g r r2
 	R1
-	g,8(\p g' fis e d e c d)
+	\aIIXoffset #-2.5 g,8(\p g' fis e d e c d)
 	b4._\crescmarkup b8 b4( a)
 	g8( g' fis e d e c d)
 % Bars 336 to 340

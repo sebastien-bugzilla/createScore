@@ -266,7 +266,7 @@ musicTrompeteIIMvtIV = \relative c'' {
 	g2. g4
 % Bars 301 to 305
 	g2 c
-	g1
+	\grace {s8} g1
 	f2-> ees-> \mark \default
 	\grace {s8} d1\ff\>~
 	d~

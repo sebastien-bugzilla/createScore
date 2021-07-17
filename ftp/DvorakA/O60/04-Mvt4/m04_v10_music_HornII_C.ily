@@ -314,7 +314,7 @@ musicHornIIMvtIV = \relative c' {
 	aes2. aes4
 % Bars 301 to 305
 	aes2 bes
-	des1
+	\grace {s8} des1
 	c2-> bes-> \mark \default
 	\grace {s8} a!1~\ff\>
 	a~

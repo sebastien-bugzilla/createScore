@@ -322,7 +322,7 @@ musicKlarinetteIMvtIV = \relative c''' {
 	c2. c4
 % Bars 301 to 305
 	c2 aes
-	aes1
+	\grace {s8} aes1
 	g2-> f-> \mark \default
 	\partCombineApart \grace {s8} e!1~
 	e~
@@ -340,12 +340,12 @@ musicKlarinetteIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 f(\p
+	r2 r4 f(-\tweak X-offset #-1 \p
 % Bars 326 to 330
 	d c bes f)
 	bes( aes' g ges
 	f8) bes( a! g f g ees f
-	d4) bes-. r2
+	d4) \once \partCombineApart bes-. r2
 	R1*8
 % Bars 331 to 335
 	

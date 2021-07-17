@@ -293,7 +293,7 @@ musicHornIVMvtIV = \relative c' {
 	ees2. ees4
 % Bars 301 to 305
 	ees2 ees
-	ees1
+	\grace {s8} ees1
 	f2-> ees-> \mark \default
 	\grace {s8} d1\ff\>~
 	d~
@@ -307,7 +307,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 321 to 325
 	
 % Bars 326 to 330
-	f,1\p~
+	f,1-\tweak X-offset #-1 \p~
 	f~
 	f2. f4~
 	f1~
@@ -321,7 +321,7 @@ musicHornIVMvtIV = \relative c' {
 % Bars 336 to 340
 	f2. r4
 	\mmrPos #-8 R1
-	\mmrPos #-6 R1
+	\mmrPos #-8 R1
 	R1*2
 	
 % Bars 341 to 345

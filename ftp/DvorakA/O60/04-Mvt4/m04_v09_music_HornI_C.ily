@@ -314,7 +314,7 @@ musicHornIMvtIV = \relative c'' {
 	des2. des4
 % Bars 301 to 305
 	des2 des
-	f1
+	\grace {s8} f1
 	ees2-> des-> \mark \default
 	\grace {s8} c1~\ff\>
 	c~

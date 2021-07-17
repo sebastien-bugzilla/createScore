@@ -172,11 +172,11 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	\mmrPosOver #-6 R1*4 \mmrPosRevert
+	\mmrPos #-6 R1
 % Bars 196 to 200
-	
-	
-	
+	\mmrPos #-6 R1
+	\mmrPos #-6 R1
+	\mmrPos #-6 R1
 	b,1~\pp
 	b~
 % Bars 201 to 205
@@ -205,10 +205,10 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	aes2.-\tweak X-offset #0.2 \ff r4
-	R1
+	\mmrPos #-6 R1
 	aes2. r4
 % Bars 231 to 235
-	R1
+	\mmrPos #-6 R1
 	a!2. r4
 	R1
 	a!2. r4
@@ -273,7 +273,7 @@ musicTubaMvtIV = \relative c, {
 	f2. f4
 % Bars 301 to 305
 	f2 bes
-	c1
+	\grace {s8} c1
 	c2-> d-> \mark \default
 	\grace {s8} a1\ff\>~
 	a~
@@ -284,7 +284,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	r2 a,2\ppp~
+	r2 a,2-\tweak X-offset #-4.5 \ppp~
 	a1~
 % Bars 316 to 320
 	a~

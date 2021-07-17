@@ -381,8 +381,8 @@ musicViolinIMvtIV = \relative c''' {
 	R1*6
 % Bars 316 to 320
 	
-	r2 r4 a''(_\pptranquillo
-	fis e d a)
+	r2 r4 a''(_\pp
+	fis_\tranquillo e d a)
 	d4.( d8 d4 e
 	fis4. fis8 fis4 e)
 % Bars 321 to 325

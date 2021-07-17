@@ -371,7 +371,7 @@ musicVioloncelloMvtIV = \relative c' {
 	f2. f4
 % Bars 301 to 305
 	f2 bes,
-	c1
+	\grace {s8} c1
 	c2-> d-> \mark \default
 	\grace {s8} a1\ff\>~
 	a~
@@ -391,7 +391,7 @@ musicVioloncelloMvtIV = \relative c' {
 		a~
 		a4
 	} \\ {
-		e2~\ppp
+		e2~-\tweak X-offset #0.8 \ppp
 		e1~
 		e~
 		e4
@@ -455,7 +455,7 @@ musicVioloncelloMvtIV = \relative c' {
 	R1*2
 	\mark \default
 % Bars 366 to 370
-	d'4\pp^\pizz r d r
+	d'4\pp-\tweak X-offset #-3 ^\pizz r d r
 	d r d a
 	d r d a 
 	d, r r2

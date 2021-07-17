@@ -273,7 +273,7 @@ musicPosauneIIIMvtIV = \relative c {
 	f2. f4
 % Bars 301 to 305
 	f2 f
-	f1
+	\grace {s8} f1
 	g2-> f-> \mark \default
 	\grace {s8} e1\ff\>~
 	e~
@@ -284,7 +284,7 @@ musicPosauneIIIMvtIV = \relative c {
 	
 	
 	
-	r2 a,2\ppp~
+	r2 a,2-\tweak X-offset #-4.5 \ppp~
 	a1~
 % Bars 316 to 320
 	a~

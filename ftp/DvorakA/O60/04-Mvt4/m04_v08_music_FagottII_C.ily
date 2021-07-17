@@ -356,7 +356,7 @@ musicFagottIIMvtIV = \relative c {
 	f2. f4
 % Bars 301 to 305
 	f2 bes,
-	c1
+	\grace {s8} c1
 	c2-> d-> \mark \default
 	\grace {s8} a'1\ff\>~
 	a~
@@ -388,7 +388,7 @@ musicFagottIIMvtIV = \relative c {
 % Bars 331 to 335
 	b r r2
 	R1
-	g8(\p g' fis e d e c d)
+	\aIIXoffset #-2.5 g8(\p g' fis e d e c d)
 	b4._\crescmarkup b8 b4( a)
 	g8( g' fis e d e c d)
 % Bars 336 to 340
