@@ -447,7 +447,7 @@ musicOboeIMvtIV = \relative c'' {
 	g2. a8( b)
 	a4\fz \once \partCombineApart d,-. b'\fz a-.
 	fis\fz \once \partCombineApart d-. a'\fz \once \partCombineApart a,-.
-	\partCombineApart g'\p r r2 \partCombineAutomatic
+	\partCombineApart g'_\p r r2 \partCombineAutomatic
 	R1*3
 % Bars 396 to 400
 	
@@ -459,7 +459,7 @@ musicOboeIMvtIV = \relative c'' {
 	d4 r r2
 	a'4\f r r2
 	R1
-	d,2->\f d->
+	\aIIXoffset #-4 d,2->\f d->
 	d2.-> e8\( fis\)
 % Bars 406 to 410
 	g2-> g->

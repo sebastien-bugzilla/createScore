@@ -477,12 +477,12 @@ musicViolinIMvtIV = \relative c''' {
 	e'4->\p \tuplet 3/2 4 {e8( d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 % Bars 396 to 400
 	a4 r r2
-	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
+	e'4-> \tuplet 3/2 4 {e8(-\tweak X-offset #-2.8 _\crescmarkup d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	d4 r r2
-	a'4->\mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	a'4->-\tweak extra-offset #'(0 . 0.5) \mf \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 	d4 r r2
 % Bars 401 to 405
-	a'4->\f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
+	a'4->-\tweak extra-offset #'(0 . 0.5) \f \tuplet 3/2 4 {a8( g fis-.)} fis4 \tuplet 3/2 4 {fis8( e d-.)}
 	d'4\ff \tuplet 3/2 4 {d8( c) b-. a( g) fis-. fis( e) d-.
 	c( b) a-. a( g) fis-. fis( e) d-. c( b) a-.}
 	\acciaccatura d8 d'2->\ff d->

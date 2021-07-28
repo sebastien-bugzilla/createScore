@@ -445,7 +445,7 @@ musicTubaMvtIV = \relative c, {
 	a4-. b!-. c-. cis-.
 	d r d,2->~
 	d1
-	g->\ff~
+	g-\tweak X-offset #-2 \ff~
 	g
 % Bars 511 to 515
 	c,->~

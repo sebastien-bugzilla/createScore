@@ -416,17 +416,17 @@ musicKlarinetteIMvtIV = \relative c''' {
 	bes2.-> r4
 	f\fz \once \partCombineApart f-. f\fz \once \partCombineApart f-.
 	a\fz \once \partCombineApart f-. g\fz \once \partCombineApart c,-.
-	g'4->\p \tuplet 3/2 4 {g8( f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
+	g'4->-\tweak X-offset #-1 \p \tuplet 3/2 4 {g8( f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
 	c4 r r2
 % Bars 396 to 400
-	g'4-> \tuplet 3/2 4 {g8(_\crescmarkup f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
+	g'4-> \tuplet 3/2 4 {g8(-\tweak X-offset #-2.8 _\crescmarkup f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
 	c4 r r2
 	R1*4
 % Bars 401 to 405
 	
 	a'4\f r r2
 	R1
-	f2->\f f->
+	\aIIXoffset #-4 f2->\f f->
 	f2.-> g8( a)
 % Bars 406 to 410
 	bes2-> bes-> 
@@ -467,8 +467,8 @@ musicKlarinetteIMvtIV = \relative c''' {
 	
 	
 	
-	r2 r4 e,,\f-. \mark \default \bar "||"
-	f-.\f r  r d-.
+	r2 r4 e,,-\tweak X-offset #-0.5 \f-. \mark \default \bar "||"
+	f-.-\tweak X-offset #-0.5 \f r  r d-.
 % Bars 441 to 445
 	c-. r r bes-.
 	c-. r r d-.
@@ -507,9 +507,9 @@ musicKlarinetteIMvtIV = \relative c''' {
 % Bars 476 to 480
 	R1*2
 	
-	d,4\ff r r d-.
+	\once \partCombineApart d,4 r r \partCombineApart d-.
 	d-> d-. d-> d-.
-	d-> d-. d-> g-.
+	d-> d-. d-> \partCombineAutomatic g-.
 % Bars 481 to 485
 	ees-> r r g->
 	ees-> r r \once \partCombineApart bes'
@@ -554,10 +554,10 @@ musicKlarinetteIMvtIV = \relative c''' {
 	d( c8 d c4 bes)
 % Bars 516 to 520
 	e!( d8 e d4 c)
-	f-> d-. e!-> c-.
+	\partCombineApart f-> d-. e!-> c-.
 	d-> bes-. c-> a-.
 	f'-> d-. e-> c-.
-	d-> bes-. c-> a-. \mark \default
+	d-> bes-. c-> a-. \partCombineAutomatic \mark \default
 % Bars 521 to 525
 	g' r d2->~
 	d4 c8( d c4 bes)
@@ -583,21 +583,21 @@ musicKlarinetteIMvtIV = \relative c''' {
 	a~
 	a~
 % Bars 546 to 550
-	a4 r c,2->
+	a4 r \partCombineApart c,2->
 	a'-> g->
 	f-> f->
 	f2.-> f4-.
-	f2-> f->
+	f2-> f-> \partCombineAutomatic
 % Bars 551 to 555
 	a1-^~
 	a~
 	a~
-	a2. c,4-.
+	a2. \partCombineApart c,4-.
 	a'-. g-. f-. c-.
 % Bars 556 to 560
 	a'-. g-. f-. c-.
 	a'-. g-. f-. c-.
-	a'-. g-. f-. c-.
+	a'-. g-. f-. c-. \partCombineAutomatic
 	a' r a r
 	a r a r
 % Bars 561 to 563

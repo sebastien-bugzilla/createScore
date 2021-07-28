@@ -430,7 +430,7 @@ musicPaukenMvtIV = \relative c {
 % Bars 541 to 545
 	
 	
-	d1\fff\startTrillSpan
+	\trillSpanPadding #-5 d1\fff\startTrillSpan
 	d
 	d\stopTrillSpan
 % Bars 546 to 550

@@ -466,7 +466,7 @@ musicOboeIIMvtIV = \relative c'' {
 	fis4 r r2
 	fis'4\f r r2
 	R1
-	d2->\f d->
+	\aIIXoffset #-4 d2->\f d->
 	d2.-> e8\( fis\)
 % Bars 406 to 410
 	g2-> g->
@@ -554,7 +554,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 476 to 480
 	dis2.\ff e4(
 	dis) e( dis) r
-	b'\ff r r b
+	b'-\tweak X-offset #-1 \ff r r b
 	g-> fis-. e-> b'
 	g-> fis-. e-> e-.
 % Bars 481 to 485

@@ -498,9 +498,9 @@ musicBratscheMvtIV = \relative c' {
 	q4 \tuplet 3/2 4 {q8_\crescmarkup q q} q4 \tuplet 3/2 4 {q8 q q} 
 % Bars 401 to 405
 	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
-	<fis a>4\ff r r2
+	<fis a>4-\tweak extra-offset #'(0 . 0.5) \ff r r2
 	R1
-	d2->\ff d->
+	d2->-\tweak X-offset #0.3 \ff d->
 	d2.-> e8( fis)
 % Bars 406 to 410
 	g2-> g->
@@ -584,7 +584,7 @@ musicBratscheMvtIV = \relative c' {
 	fis-> fis cis cis fis-> fis e e 
 	d-> d a a d-> d a a
 	d-> d a a d-> d g g \mark #11
-	fis2 r4 cis'4->\f
+	fis2 r4 cis'4->-\tweak X-offset #-1 \f
 	ais-. gis-. fis-. b\fz
 % Bars 476 to 480
 	fis-. r r fis->

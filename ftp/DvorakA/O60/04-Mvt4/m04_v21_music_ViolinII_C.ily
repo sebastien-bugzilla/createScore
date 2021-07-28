@@ -478,7 +478,7 @@ musicViolinIIMvtIV = \relative c'' {
 	cis'4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 % Bars 396 to 400
 	cis4 r r2
-	cis'4-> \tuplet 3/2 4 {cis8(_\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	cis'4-> \tuplet 3/2 4 {cis8(-\tweak X-offset #-2.8 _\crescmarkup b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	fis4 r r2
 	fis'4->\mf \tuplet 3/2 4 {fis8( e d-.)} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2

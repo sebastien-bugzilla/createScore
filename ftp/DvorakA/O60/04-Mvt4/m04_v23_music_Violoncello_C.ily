@@ -494,11 +494,11 @@ musicVioloncelloMvtIV = \relative c' {
 	R1
 	g4-._\crescmarkup e-. g2
 	R1
-	c4\mf-. a-. c2
+	c4-\tweak extra-offset #'(0 . 0.5) \mf-. a-. c2
 	R1
 % Bars 401 to 405
-	c4-.\f a-. c2
-	c4\ff r r2
+	c4-.-\tweak extra-offset #'(0 . 0.5) \f a-. c2
+	c4-\tweak extra-offset #'(0 . 0.5) \ff r r2
 	\tuplet 3/2 4 {c8(\ff b) a-. a( g) fis-. fis( e) d-. c( b) a-.}
 	b'_\ffmarc a g a b a g a
 	b a g a b a g fis

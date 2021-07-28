@@ -381,11 +381,11 @@ musicHornIIIMvtIV = \relative c'' {
 % Bars 386 to 390
 	c4\f r r2
 	R1
-	c2->\f c->
-	c2.-> r4
+	\partCombineApart c2-> c->
+	c2.-> \once \partCombineAutomatic r4
 	f2-> f->
 % Bars 391 to 395
-	f2.-> r4
+	f2.-> \partCombineAutomatic r4
 	c4\fz \once \partCombineApart c-. f\fz \once \partCombineApart c-.
 	e\fz \once \partCombineApart c-. d\fz \once \partCombineApart g,-.
 	d'4\p-> \tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {d8 d d} 
@@ -442,8 +442,8 @@ musicHornIIIMvtIV = \relative c'' {
 	
 	
 	
-	\partCombineApart r2 r4 g-.\f \bar "||" \mark \default
-	e-.\f r r d-.
+	\partCombineApart r2 r4 g-._\f \bar "||" \mark \default
+	e-._\f r r d-.
 % Bars 441 to 445
 	c-. r r g-.
 	c-. r r c-.

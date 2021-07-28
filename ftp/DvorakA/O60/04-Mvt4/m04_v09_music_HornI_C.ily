@@ -204,7 +204,7 @@ musicHornIMvtIV = \relative c'' {
 	
 	\partCombineApart d4-^ a-^ d2-^~
 % Bars 196 to 200
-	d4 r r2 \partCombineAutomatic
+	d4 \partCombineAutomatic r r2 
 	R1*6
 % Bars 201 to 205
 	
@@ -462,7 +462,7 @@ musicHornIMvtIV = \relative c'' {
 	
 % Bars 476 to 480
 	
-	r2 r4 g->\ff
+	r2 r4 g->-\tweak X-offset #0.2 \ff
 	c-> g-. ees-> d-.
 	c-> d-. ees-> g,-.
 	c-> d-. ees-> r

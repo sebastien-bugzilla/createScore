@@ -445,8 +445,8 @@ musicPosauneIIIMvtIV = \relative c {
 	a4-. b!-. c-. cis-.
 	d r d2->~
 	d1
-	g,->\ff~
-	g
+	\partCombineApart g,->~
+	g \partCombineAutomatic
 % Bars 511 to 515
 	c->~
 	c
@@ -464,7 +464,7 @@ musicPosauneIIIMvtIV = \relative c {
 	g^\ten r
 	e^\ten r
 	e^\ten r
-	\once \partCombineApart a,4 r \partCombineApart a'2\ff~
+	\once \partCombineApart a,4 r \partCombineApart a'2-\tweak X-offset #-2 \ff~
 % Bars 526 to 530
 	a2. a4-.
 	a-. g-. g-. fis-.

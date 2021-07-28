@@ -416,15 +416,15 @@ musicTrompeteIMvtIV = \relative c''' {
 	g2. g4->
 % Bars 491 to 495
 	e-. d-. c-. g'->
-	e-. d-. c-. g->
+	e-. d-. c-. \partCombineApart g->
 	g2-> g->
-	g-> r4 g
+	g-> \once \partCombineAutomatic r4 g
 	e2-> g->
 % Bars 496 to 500
 	c-> g->
 	g-> f->
 	c'-> c->
-	e-> e->
+	e-> \partCombineAutomatic e->
 	d-> d->
 % Bars 501 to 505
 	c4 r r2
@@ -488,13 +488,13 @@ musicTrompeteIMvtIV = \relative c''' {
 	e1-^~
 	e~
 	e~
-	e2. g,4-.
+	e2. \partCombineApart g,4-.
 	c-. d-. e-. g,-.
 % Bars 556 to 560
 	c-. d-. e-. g,-.
 	c-. d-. e-. g,-.
 	c-. d-. e-. g,-.
-	c r c r
+	c \partCombineAutomatic r c r
 	c r c r
 % Bars 561 to 563
 	c r r2

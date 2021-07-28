@@ -401,19 +401,19 @@ musicFloteIIMvtIV = \relative c'' {
 	g2.-> a8( b)
 	a4\fz r d,\fz d-.
 	d\fz d cis\fz a
-	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
+	cis4->-\tweak X-offset #-0.5 \p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
 % Bars 396 to 400
 	cis'4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
-	fis'4->\mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->-\tweak extra-offset #'(0 . 1) \mf \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 	fis4 r r2
-	fis'4->\f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
+	fis'4->-\tweak extra-offset #'(0 . 1.8) \f \tuplet 3/2 4 {fis8( e d)-.} d4 \tuplet 3/2 4 {d8( a fis-.)}
 % Bars 401 to 405
 	fis4 r r2
 	d'4\f r r2
 	R1
-	d2->\f d->
+	\aIIXoffset #-4 d2->\f d->
 	d2.-> e8( fis)
 % Bars 406 to 410
 	g2-> g->
@@ -555,21 +555,21 @@ musicFloteIIMvtIV = \relative c'' {
 	fis~
 	fis~
 % Bars 546 to 550
-	fis4 r a2->
-	fis-> e->
-	d-> a->
-	d2.-> d4-.
-	d2-> d->
+	fis4 r a2
+	fis e
+	d a
+	d2. d4
+	d2 d->
 % Bars 551 to 555
 	d1-^~
 	d~
 	d~
-	d2. a'4-.
-	fis-. e-. d-. a'-.
+	d2. a'4
+	fis e d a'
 % Bars 556 to 560
-	fis-. e-. d-. a'-. 
-	fis-. e-. d-. a'-. 
-	fis-. e-. d-. a'-. 
+	fis e d a' 
+	fis e d a' 
+	fis e d a' 
 	d, r \once \partCombineApart d r
 	\once \partCombineApart d r \once \partCombineApart d r
 % Bars 561 to 563

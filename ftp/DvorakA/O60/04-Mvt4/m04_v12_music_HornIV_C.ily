@@ -381,11 +381,11 @@ musicHornIVMvtIV = \relative c' {
 % Bars 386 to 390
 	bes4\f r r2
 	R1
-	c2->\f c->
-	c2.-> r4
-	f2-> f->
+	c2\f c
+	c2. r4
+	f2 f
 % Bars 391 to 395
-	f2.-> r4
+	f2. r4
 	g,4\fz c c\fz c
 	c\fz c b\fz g
 	g4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 

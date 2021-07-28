@@ -465,7 +465,7 @@ musicFagottIIMvtIV = \relative c {
 	
 	c,4\f r r2
 	R1
-	b'8(\ff a g a b a g a)  
+	\aIIXoffset #-4 b'8(\ff a g a b a g a)  
 	b( a g a b a g fis)
 % Bars 406 to 410
 	e( d cis! d e d cis d)
@@ -619,7 +619,7 @@ musicFagottIIMvtIV = \relative c {
 	b-> a-. a-> g-.
 % Bars 531 to 535
 	g-> fis-. fis-> e-.
-	e'-. d-. cis-. a
+	e' d cis a
 	d2-> g,->
 	fis-> e->
 	fis2.-> fis4

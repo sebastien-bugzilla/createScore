@@ -462,7 +462,7 @@ musicHornIIMvtIV = \relative c' {
 	
 % Bars 476 to 480
 	
-	r2 r4 g->\ff
+	r2 r4 g->-\tweak X-offset #0.2 \ff
 	c-> g-. ees-> d-.
 	c-> d-. ees-> g,-.
 	c-> d-. ees-> r
