@@ -66,6 +66,9 @@
 			\new StaffGroup <<
 				\new Staff <<
 					\new Voice {
+						\displayFilterVoice
+					}
+					\new Voice {
 						\formatConductorMvtII
 					}
 					\new Voice {
@@ -160,6 +163,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+			%system-count = 28
 			\context {
 				\Score 
 				scriptDefinitions = #my-script-alist

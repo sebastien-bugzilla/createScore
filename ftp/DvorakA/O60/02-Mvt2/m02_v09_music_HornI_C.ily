@@ -37,7 +37,7 @@ musicHornIMvtII = \relative c'' {
 	\partCombineAutomatic
 	R2*2
 	\bar "||" \mark \default
-	r4 e,\pp--
+	r4 e,-\tweak X-offset #-3.1 \pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -89,8 +89,8 @@ musicHornIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	\partCombineApart r4 r8 c(\p
-	a\< ees'\! c\> a\!)
+	\partCombineApart r4 r8 c(_\p
+	a_\< ees'\! c_\> a\!)
 % Bars 91 to 95
 	c2~
 	c(
@@ -123,14 +123,14 @@ musicHornIMvtII = \relative c'' {
 	
 % Bars 116 to 120
 	
-	\partCombineApart d2(->\p
+	\partCombineApart d2(->_\p
 	b4 e)
 	cis r \partCombineAutomatic
 	R2*3
 % Bars 121 to 125
 	
 	
-	des4\(\mf bes8 ees\)
+	\aIIXoffset #-3 des4\(\mf bes8 ees\)
 	des2\cresc
 	des4\( bes8 e!\)
 % Bars 126 to 130
@@ -138,7 +138,7 @@ musicHornIMvtII = \relative c'' {
 	cis4-> a8-. e'-.
 	cis4-> a8-. e'-.
 	cis\f a16 e' cis8 a16 e'
-	cis\< a e' cis a e' cis a
+	cis\< a e' cis a e' cis a\!
 % Bars 131 to 135
 	e'\ff r r8 r4
 	R2*5

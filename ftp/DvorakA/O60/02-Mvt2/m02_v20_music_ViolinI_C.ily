@@ -52,7 +52,7 @@ musicViolinIMvtII = \relative c'' {
 	<d' a' fis'>->\arpeggio r
 % Bars 36 to 40
 	R2
-	r8 <a' fis'>4(\p\> <g e'>16\! <fis d'>
+	r8 <a' fis'>4(\p-\tweak extra-offset #'(0 . 0.25) \> <g e'>16\! <fis d'>
 	a8) r r4
 	r8 <a f'!>4(\pp <g e'>16 <f! d'>
 	a8) r r4
@@ -144,7 +144,7 @@ musicViolinIMvtII = \relative c'' {
 	b( g f b~ b g f b)
 	c8 r r4
 	R2
-	fis,16\(\pp dis b a'~ a\< fis dis dis'~
+	fis,16\(-\tweak X-offset #0.1 \pp dis b a'~ a\< fis dis dis'~
 	dis b a fis'~ fis dis b b'(\!
 % Bars 121 to 125
 	bes!8)\)\pp r r4

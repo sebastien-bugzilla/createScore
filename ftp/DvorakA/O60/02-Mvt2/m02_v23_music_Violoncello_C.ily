@@ -111,7 +111,7 @@ musicVioloncelloMvtII = \relative c {
 	g,8\p r r4
 	R2*2
 	\mark \default
-	bes8(\pp d f, bes
+	bes8(-\tweak X-offset #-1.5 \pp d f, bes
 	d f, bes d)
 % Bars 91 to 95
 	g,( b d g,

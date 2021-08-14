@@ -27,16 +27,16 @@ musicFagottIMvtII = \relative c' {
 	f4._\dimmarkup fis8
 	g\p \partCombineAutomatic r r4
 	\partCombineApart f'2_\fz~-\tweak X-offset #4 _\dimmarkup
-	f4.( ees8
+	\shape #'((0 . 0)(0 . 0)(0 . -0.7)(0 . -0.7)) Slur f4.( ees8
 % Bars 21 to 25
 	d4.)_\pp  r8 \partCombineAutomatic
 	R2*6
 % Bars 26 to 30
 	
 	
-	\partCombineApart r4 g\fz(
+	\partCombineApart r4 g-\tweak extra-offset #'(0 . 4.3) _\fz(
 	f8) r ees4(->
-	d8) r ees4(-\crescmarkup
+	d8) r ees4(_\crescmarkup
 % Bars 31 to 35
 	d8) r ees4(
 	d8) r r4 \partCombineAutomatic
@@ -50,7 +50,7 @@ musicFagottIMvtII = \relative c' {
 	f! f
 	f f
 % Bars 41 to 45
-	\tuplet 3/2 4 {d8-. f-. a-.} g4_\crescmarkup
+	\tuplet 3/2 4 {d8-. f-. a-.} g4-\tweak X-offset #0.6 _\crescmarkup
 	g g
 	\tuplet 3/2 4 {c,8-._\dimmarkup g'-. c-.} a4
 	bes bes
@@ -58,9 +58,9 @@ musicFagottIMvtII = \relative c' {
 % Bars 46 to 50
 	
 	
-	\partCombineApart r16 ees(\p\> d ces aes f ees aes,)\!
+	\partCombineApart r16 ees(_\p_\> d ces aes f ees aes,)\!
 	ees8 r r4
-	r16 ees''(\pp d ces aes f ees aes,)
+	r16 ees''(_\pp d ces aes f ees aes,)
 % Bars 51 to 55
 	ees8\noBeam ees' ees ees
 	cis2
@@ -72,13 +72,13 @@ musicFagottIMvtII = \relative c' {
 % Bars 61 to 65
 	
 	
-	r8 \partCombineApart c'( ees a,~
-	a)\< f'( ees d\!
-	c16\f) f( ees) d( c) f( ees) d(
+	r8 \clef tenor \partCombineApart c'( ees a,~
+	a)_\< f'( ees d\!
+	c16_\f) f( ees) d( c) f( ees) d(
 % Bars 66 to 70
 	c f ees) r r4 \partCombineAutomatic
 	R2
-	r4 \once \partCombineChords a,8\pp r
+	r4 \clef bass \once \partCombineChords a,8\pp r
 	r f r4
 	r ees--
 % Bars 71 to 75
@@ -97,7 +97,7 @@ musicFagottIMvtII = \relative c' {
 % Bars 86 to 90
 	g_\p_\< e' e e
 	f2_\fz~
-	f4._\>( ees!8 \mark \default
+	\shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . -0.5)) Slur f4._\>( ees!8 \mark \default
 	d4.)\pp r8
 	R2
 % Bars 91 to 95

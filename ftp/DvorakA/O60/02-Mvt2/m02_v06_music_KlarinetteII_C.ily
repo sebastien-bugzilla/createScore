@@ -27,7 +27,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	c2_\fzdim
 	a4 g~
 % Bars 21 to 25
-	g4. r8
+	g4.\pp r8
 	R2*3
 	
 	
@@ -82,13 +82,13 @@ musicKlarinetteIIMvtII = \relative c'' {
 	b16\f b8 b b b16~
 % Bars 66 to 70
 	b8. r16 r4
-	R2*6
+	R2*3
 	
 	
-	
+	\mmrPos #-8 R2
 % Bars 71 to 75
-	
-	\mark \default
+	\mmrPos #-8 R
+	R \mark \default
 	R2
 	R2*6
 % Bars 76 to 80
@@ -96,7 +96,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 	
 	
-	c,4(\pp e)
+	c,4(-\tweak X-offset #0.5 \pp e)
 % Bars 81 to 85
 	f2\<
 	e4\> d(\!
@@ -105,8 +105,8 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 % Bars 86 to 90
 	
-	R2*2
-	\mark \default
+	\mmrPos #-6 R2
+	R \mark \default
 	R2
 	R2
 % Bars 91 to 95
@@ -150,7 +150,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	gis4 gis
 	gis gis
 	gis8\f gis gis gis
-	gis16\< b b b b b b b
+	gis16\< b b b b b b b\!
 % Bars 131 to 135
 	b\ff r r8 r4
 	R2*3

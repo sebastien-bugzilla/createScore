@@ -66,7 +66,7 @@ musicTrompeteIIMvtII = \relative c'' {
 % Bars 106 to 110
 	c->
 	c\fz
-	c\fz
+	c-\tweak X-offset #0.1 \fz
 	aes\fz
 	aes\fz
 % Bars 111 to 115

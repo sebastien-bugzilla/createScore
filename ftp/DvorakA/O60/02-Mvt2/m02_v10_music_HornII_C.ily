@@ -37,7 +37,7 @@ musicHornIIMvtII = \relative c'' {
 	f8 r r4
 	R2*2
 	\bar "||" \mark \default
-	r4 e,\pp--
+	r4 e,-\tweak X-offset #-3.1 \pp--
 % Bars 36 to 40
 	e-- e--
 	e e
@@ -69,13 +69,13 @@ musicHornIIMvtII = \relative c'' {
 % Bars 66 to 70
 	r4 r8. g16\f
 	r8. g16 r8. g16
-	r4 c,8\pp r
+	r4 c,8-\tweak X-offset #0.7 \pp r
 	R2*4
 	
 % Bars 71 to 75
 	
 	\mark \default
-	r8 c_\semprepp r d
+	r8 c-\tweak X-offset #0.5 _\semprepp r d
 	r d r e
 	r f r g
 % Bars 76 to 80
@@ -135,7 +135,7 @@ musicHornIIMvtII = \relative c'' {
 % Bars 121 to 125
 	
 	
-	des4\(\mf bes8 ees\)
+	\aIIXoffset #-3 des4\(\mf bes8 ees\)
 	des2\cresc
 	des4\( bes8 e!\)
 % Bars 126 to 130
@@ -143,7 +143,7 @@ musicHornIIMvtII = \relative c'' {
 	cis4-> a8-. e'-.
 	cis4-> a8-. e'-.
 	cis\f a16 e' cis8 a16 e'
-	cis\< a e' cis a e' cis a
+	cis\< a e' cis a e' cis a\!
 % Bars 131 to 135
 	cis\ff r r8 r4
 	R2*5

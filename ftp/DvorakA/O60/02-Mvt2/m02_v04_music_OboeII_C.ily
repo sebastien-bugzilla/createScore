@@ -9,14 +9,16 @@ musicOboeIIMvtII = \relative c' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	r8 f(\p d g)~
-	g4.( fis8
-	g2)\<
-	bes4\fp( g8\> a
-	bes)\pp r r4
+	r8 f(-\tweak X-offset #-1.4 \p d g)~
+	\shape #'((0 . 1)(0 . 1)(0 . 1)(0 . 1)) Slur g4.( fis8
+	\hairpinShorten #1 #1 g2)-\tweak extra-offset #'(0 . 1) \<
+	\shape #'((0 . 0.4)(0 . 0.8)(0 . 0.8)(0 . 0.4)) Slur bes4-\tweak extra-offset #'(0 . 0.3) \fp( g8\> a
+	bes)-\tweak extra-offset #'(0 . 0.3) \pp r r4
 % Bars 6 to 10
 	R2
-	R2*6
+	\mmrPos #-6 R2
+	\mmrPos #-8 R2
+	R2*4
 % Bars 11 to 15
 	
 	
@@ -37,7 +39,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	g8(\p\< a bes4)\!
-	bes8\fp g4 g16 a
+	bes8-\tweak extra-offset #'(0.8 . 0.8) \fp g4 g16 a
 	bes8 g4 g16 a
 % Bars 31 to 35
 	bes8 g4 g16 a
@@ -54,14 +56,14 @@ musicOboeIIMvtII = \relative c' {
 % Bars 41 to 45
 	R2
 	R2
-	R2
+	\mmrPos #-6 R2
 	R2*3
 	
 % Bars 46 to 50
 	
-	r4 g,\pp\<(
+	r4 g,-\tweak extra-offset #'(0 . 0.8) \pp\<(
 	f2\>)
-	g8 g--\pp g-- g--
+	g8 g---\tweak extra-offset #'(0 . 0.6)\pp g-- g--
 	f2->(
 % Bars 51 to 55
 	ees8) g\< g g
@@ -90,10 +92,10 @@ musicOboeIIMvtII = \relative c' {
 	\mark \default
 	R2*2
 	
-	R2*5
+	\mmrPos #-8 R2
 % Bars 76 to 80
-	
-	
+	\mmrPos #-8 R
+	R2*3
 	
 	
 	R2*6
@@ -102,7 +104,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 86 to 90
 	r8 bes16(\p\< a) a( g) g8
 	bes2\f
-	c4\> f,~ \mark \default
+	c4-\tweak extra-offset #'(0 . 0.8) \> f,~ \mark \default
 	f4.\pp r8
 	R2*5
 % Bars 91 to 95
@@ -114,7 +116,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 96 to 100
 	bes8 g4 g16-. a-.
 	bes8\f g4\< g16-. a-.\!
-	bes8\noBeam d16-. f-. bes,-. f-. bes-. c-. 
+	bes8\noBeam d16-.-\tweak X-offset #-1.5 \ff f-. bes,-. f-. bes-. c-. 
 	d8-> c-> bes-> a->
 	bes4-> bes->
 % Bars 101 to 105
@@ -126,11 +128,11 @@ musicOboeIIMvtII = \relative c' {
 % Bars 106 to 110
 	bes->
 	des2\fz
-	ces\fz
-	b\fz
-	b\fz
+	ces-\tweak X-offset #0.1 \fz
+	b-\tweak X-offset #0.1 \fz
+	b-\tweak X-offset #0.1 \fz
 % Bars 111 to 115
-	b\fz \mark \default
+	b-\tweak X-offset #0.1 \fz \mark \default
 	b8 r r4
 	R2*2
 	

@@ -10,7 +10,7 @@ musicOboeIMvtII = \relative c'' {
 %	\transposition a
 % Bars 1 to 5
 	R2
-	r8 bes(\p a4
+	r8 bes(-\tweak X-offset #-0.5 \p a4
 	bes2)~
 	bes8( d bes c
 	d) r r4
@@ -41,7 +41,7 @@ musicOboeIMvtII = \relative c'' {
 	c4(~ c16_\crescmarkup b d b)
 	c4.( cis8)
 	d-> bes-> g16(-- a-- bes-- c--)
-	d8-> bes-> g16(_\crescmarkup-- a-- bes-- c--)
+	d8-> bes-> g16(-\tweak X-offset #-1 _\crescmarkup-- a-- bes-- c--)
 % Bars 31 to 35
 	d8-> bes-> g16(-- a-- bes-- c--)
 	d8 \partCombineAutomatic r r4
@@ -55,16 +55,16 @@ musicOboeIMvtII = \relative c'' {
 	f! f
 	f f 
 % Bars 41 to 45
-	\partCombineApart r4 \tuplet 3/2 4 {g,8-.^\crescmarkup d'-. g-. } \partCombineAutomatic
+	\partCombineApart r4 \tuplet 3/2 4 {g,8-._\crescmarkup d'-. g-. } \partCombineAutomatic
 	R2
-	\partCombineApart r4 \tuplet 3/2 4 {f,8-.^\dimmarkup c'-. f-. } \partCombineAutomatic
+	\partCombineApart r4 \tuplet 3/2 4 {f,8-.-\tweak X-offset #-1 ^\dimmarkup c'-. f-. } \partCombineAutomatic
 	R2*3
 	
 % Bars 46 to 50
 	
-	r4 \partCombineChords bes,\pp\<(
+	r4 \partCombineChords bes,-\tweak extra-offset #'(0 . 0.8) \pp\<(
 	aes2\>)(
-	bes8) bes--\pp bes-- bes--
+	bes8) bes---\tweak extra-offset #'(0 . 0.6) \pp bes-- bes--
 	\partCombineAutomatic aes2->(
 % Bars 51 to 55
 	g8) bes\< bes bes
@@ -105,8 +105,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 86 to 90
 	r8 c'8 c c
 	d2
-	ees4(\> c8 a \mark \default
-	bes4.)\pp r8
+	ees4( c8 a \mark \default
+	bes4.) r8
 	R2*5
 % Bars 91 to 95
 	
@@ -129,15 +129,15 @@ musicOboeIMvtII = \relative c'' {
 % Bars 106 to 110
 	f8( ees4.)
 	bes'2\fz
-	bes\fz
-	a\fz
-	gis\fz
+	bes-\tweak X-offset #0.1 \fz
+	a-\tweak X-offset #0.1 \fz
+	gis-\tweak X-offset #0.1 \fz
 % Bars 111 to 115
-	gis\fz \mark \default
+	gis-\tweak X-offset #0.1 \fz \mark \default
 	gis8 r r4
 	R2*2
 	
-	\partCombineApart f2\p->(
+	\partCombineApart f2_\p->(
 % Bars 116 to 120
 	d4 g)
 	e r \partCombineAutomatic
@@ -148,7 +148,7 @@ musicOboeIMvtII = \relative c'' {
 	\partCombineAutomatic bes!2\pp~
 	bes
 	R2
-	\partCombineApart ges4(\p\cresc ees!8 aes
+	\partCombineApart ges4(_\p_\cresc ees!8 aes
 	ges2)~
 % Bars 126 to 130
 	ges4 ees!8( a!~
@@ -161,7 +161,7 @@ musicOboeIMvtII = \relative c'' {
 	fis4. r8
 	r fis4 fis8~
 	fis4. r8
-	r4 e\pp(~
+	r4 e-\tweak X-offset #-2 \pp(~
 % Bars 136 to 140
 	e dis)
 	e g8(--\< g--)\!

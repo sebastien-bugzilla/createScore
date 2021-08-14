@@ -27,7 +27,7 @@ musicBratscheMvtII = \relative c {
 	r f8( f16~ f f8 f16)~
 	f8 bes4(\< a16 g)\!
 % Bars 16 to 20
-	bes4 d,\f~
+	bes4 d,-\tweak extra-offset #'(-1 . 0.5) \f~
 	d8 c4(_\dimmarkup a'8)
 	d,8\p r r4
 	r r16 f(\p bes d
@@ -36,7 +36,7 @@ musicBratscheMvtII = \relative c {
 	r16 f,8\pp f16 r f8 f16
 	r f8\< f16 r\! f8 f16
 	r f8\p f16_\dimmarkup r f8 f16
-	r <d g>8\pp q16 r q8 q16
+	r <d g>8-\tweak extra-offset #'(0 . 0.3) \pp q16 r q8 q16
 	r <e g>8 q16 r q8 q16
 % Bars 26 to 30
 	r c( e g c8) r
@@ -70,7 +70,7 @@ musicBratscheMvtII = \relative c {
 	
 % Bars 51 to 55
 	r8 <ees g>\p\< q q\!
-	<cis a'>2\f\>
+	<<{ <cis a'>2} {\hairpinShorten #0 #-2 s8-\tweak X-offset #1.5 \f\> s s s\!} >>
 	<d bes'>8\p r r4
 	R2*5
 % Bars 56 to 60
@@ -118,7 +118,7 @@ musicBratscheMvtII = \relative c {
 		d8
 	} \\ {
 		bes4\f d~->
-		d8 c16_\dimmarkup bes d8 c
+		d8 c16-\tweak extra-offset #'(-1.5 . 0.3) _\dimmarkup bes d8 c
 		bes\p
 	}>> r r4
 % Bars 87 to 90
@@ -154,7 +154,7 @@ musicBratscheMvtII = \relative c {
 	\repeat tremolo 8 {aes( ces)} \mark \default
 	<<{ces8} \\ {aes}>> r16 aes(\p f des8_\dimmarkup aes'16
 	f des8 aes'16 f des8 aes'16)
-	r8 d,!4.\pp
+	r8 d,!4.-\tweak X-offset #0.05 \pp
 	r8 d4.
 % Bars 116 to 120
 	r8 d4.

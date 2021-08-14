@@ -104,7 +104,7 @@ musicKontrabassMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 c4\mf\<^\arco c8\!
+	r8 c4\mf\<-\tweak X-offset #-4.5 ^\arco c8\!
 	f,2\f~
 	f4.( fis8
 % Bars 86 to 90
@@ -152,7 +152,7 @@ musicKontrabassMvtII = \relative c {
 	
 	
 	r16 d-.\f d-. d-.  d-. d-. d-. d-.
-	d32[(\< d') d-. d-.] d[ d d d] d[ d d d] d[ d d d]
+	d32[(\< d') d-. d-.] d[ d d d] d[ d d d] d[ d d d]\!
 % Bars 131 to 135
 	d,16\ff r r8 r4
 	R2*8

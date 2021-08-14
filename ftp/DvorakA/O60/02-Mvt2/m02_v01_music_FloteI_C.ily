@@ -25,7 +25,7 @@ musicFloteIMvtII = \relative c'' {
 	d4 f(~
 	f8_\dimmarkup ees d c
 % Bars 21 to 25
-	bes4.) r8 \partCombineAutomatic
+	bes4.) \partCombineAutomatic r8 
 	R2
 	d4(\p b8\< f')\!
 	d(\> b\! g f)
@@ -87,14 +87,14 @@ musicFloteIMvtII = \relative c'' {
 	
 % Bars 86 to 90
 	r8 g16( a) a( bes) bes( c)
-	d4 f\fz~
+	d4 f-\tweak X-offset #-1.5 \fz~
 	f8 ees16( d f ees d c) \mark \default
 	bes4. r8
 	R2
 % Bars 91 to 95
-	\partCombineApart R2*3
-	
-	\partCombineAutomatic
+	\partCombineApart \mmrPos #12 R2
+	\mmrPos #12 R
+	R \partCombineAutomatic
 	R2*10
 % Bars 96 to 100
 	
@@ -117,7 +117,7 @@ musicFloteIMvtII = \relative c'' {
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	des,2\pp~
+	des,2-\tweak X-offset #0.5 \pp~
 	des
 	R2*6
 % Bars 126 to 130
@@ -125,12 +125,12 @@ musicFloteIMvtII = \relative c'' {
 	
 	
 	r16 fis-.\f d-. c'~ c a-. fis-. d'~
-	d\< d-. d-. d-. d-. d-. d-. d-.
+	d\< d-. d-. d-. d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r c8( a d
 	c4.) r8
-	\partCombineApart r c( a d
-	c4.) r8
+	r \partCombineApart c( a d
+	c4.) \once \partCombineAutomatic r8
 	r d( b e)
 % Bars 136 to 140
 	c( a fis b)

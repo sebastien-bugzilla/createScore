@@ -28,7 +28,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	e2-\tweak X-offset #0 _\fzdimD
 	c4( b
 % Bars 21 to 25
-	c4.) r8
+	c4.)\pp r8
 	R2*3
 	
 	

@@ -24,10 +24,10 @@ musicKlarinetteIIMvtII = \relative c'' {
 		\mmrPos #4 R \no
 	}
 	r8 b\p\<-- c-- c--
-	c2\fz_\dimmarkup
+	c2-\tweak X-offset #0 _\fzdimD
 	a4( g~
 % Bars 21 to 25
-	g4.) r8
+	g4.)\pp r8
 	R2*3
 	
 	

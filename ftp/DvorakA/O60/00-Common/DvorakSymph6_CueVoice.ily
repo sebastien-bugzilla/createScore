@@ -229,7 +229,7 @@ cueVoiceKlarinetteIMvtI = \relative c {
 cueVoiceKlarinetteIMvtII = \relative c {
 	\transposition bes
 	% bar 1 - 2
-	r8 g'' e a~
+	r8-\tweak X-offset #-2 _\markup {Hob.} g'' e a~
 	a4*1/2 r8 r4
 }
 cueVoiceKlarinetteIMvtIII = \relative c {

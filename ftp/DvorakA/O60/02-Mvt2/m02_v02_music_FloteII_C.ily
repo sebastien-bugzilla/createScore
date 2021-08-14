@@ -115,7 +115,7 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	bes,2\pp~
+	bes,2-\tweak X-offset #0.5 \pp~
 	bes
 	R2*6
 % Bars 126 to 130
@@ -123,7 +123,7 @@ musicFloteIIMvtII = \relative c''' {
 	
 	
 	r16 fis'-.\f d-. c'~ c a-. fis-. d'~
-	d\< d-. d-. d-. d-. d-. d-. d-.
+	d\< d-. d-. d-. d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r a4\pp a8~
 	a4. r8

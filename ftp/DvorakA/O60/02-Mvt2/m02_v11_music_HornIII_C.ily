@@ -49,11 +49,11 @@ musicHornIIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	\partCombineApart r8 e'\pp( c f)~
+	\partCombineApart r8 e'_\pp( c f)~
 % Bars 56 to 60
 	f4 e(
-	a2)~\<
-	a4\fz r \partCombineAutomatic
+	a2)~_\<
+	a4_\fz r \partCombineAutomatic
 	R2*4
 	
 % Bars 61 to 65
@@ -69,7 +69,7 @@ musicHornIIIMvtII = \relative c'' {
 	r f r4
 	r d--
 % Bars 71 to 75
-	\partCombineApart r r8 f(\pp
+	\partCombineApart r r8 f(-\tweak X-offset #-2 \pp
 	e d a b) \mark \default \partCombineAutomatic
 	r e_\semprepp r e
 	r f r e
