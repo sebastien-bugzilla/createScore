@@ -179,7 +179,7 @@ musicOboeIMvtII = \relative c'' {
 	R2
 	R2*2
 	
-	r8 bes4(_\pcresc a16 g
+	r8 bes4(-\tweak X-offset #0.7 _\pcresc a16 g
 % Bars 151 to 155
 	f2)~
 	f8 r r4
@@ -191,12 +191,12 @@ musicOboeIMvtII = \relative c'' {
 	d8) \partCombineAutomatic r r4
 	R2*2
 	
-	r8 bes'!4( a16 g
+	r8 \shape #'((0 . -0.5)(0 . -1)(0 . 0)(0 . 0)) Slur bes'!4( a16 g
 % Bars 161 to 165
 	c,4.) c8
 	c( aes'4 g16 f
 	bes,4.) bes8
-	bes( ees4 d16 c~
+	\shape #'((-0.5 . 2)(0 . -0.5)(0 . -0.5)(0 . 2)) Slur bes( ees4 d16 c~
 	c8) r r4
 % Bars 166 to 170
 	R2*3
@@ -211,10 +211,10 @@ musicOboeIMvtII = \relative c'' {
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
-	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-. 
+	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes->-.\!
 	a8\ff r \partCombineApart g4-^~
-	g8\> bes( a g~\!
-	g f4)\p r8
+	g8_\> bes( a g~\!
+	g f4)_\p r8
 % Bars 181 to 185
 	R2*2
 	
@@ -228,7 +228,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 191 to 195
 	R2*5
 % Bars 196 to 200
-	\partCombineApart r8 f(\pp d g~
+	\partCombineApart r8 f(-\tweak X-offset #-2 \pp d g~
 	g4. f8)~
 	f\noBeam \partCombineAutomatic f\ff-! d-! g-!
 	ees-! c-! a-! fis'-^
@@ -236,7 +236,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 201 to 205
 	f2~
 	f8 r r4
-	r8 f(\pp d g
+	r8 f(-\tweak X-offset #-2 \pp d g
 	f d bes ees)
 	\partCombineApart d2~
 % Bar 206

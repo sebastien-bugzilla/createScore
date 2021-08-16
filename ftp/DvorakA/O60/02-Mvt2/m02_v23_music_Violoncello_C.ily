@@ -185,7 +185,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 151 to 155
 	f16(\< bes d f\! bes d f d)
 	c(\> a f c f,8) fis\p
-	g a'(\pp\< bes c16 cis\!)
+	g \clef tenor a'(\pp\< bes c16 cis\!)
 	d4 f\fz~
 	f8 ees16(\> d \acciaccatura f8 ees8. d16)\!
 % Bars 156 to 160
@@ -204,7 +204,7 @@ musicVioloncelloMvtII = \relative c {
 	R2*3
 	
 	\mark \default
-	bes,8\p r r4
+	\clef bass bes,8\p r r4
 	r8 bes4(\< a16 g\!
 % Bars 171 to 175
 	f4)\p r
@@ -239,7 +239,7 @@ musicVioloncelloMvtII = \relative c {
 % Bars 196 to 200
 	bes8) r r4
 	R2
-	r8 f'\ff-! d-! g-!
+	r8 f'-\tweak X-offset #-2.5 \ff-! d-! g-!
 	ees-! c-! a-! d-! 
 	g, r f r
 % Bars 201 to 205

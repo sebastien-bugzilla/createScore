@@ -164,28 +164,28 @@ musicHornIIMvtII = \relative c'' {
 	r c8\> c16 r c8 c16\!
 % Bars 146 to 150
 	r c8_\pdim c16 r d8 c16
-	r c8\pp c16 r4
-	R2*8
+	r c8-\tweak X-offset #-3 \pp c16 r4
+	R2*5
 	
 	
 % Bars 151 to 155
 	
 	
-	
-	
+	\mmrPos #-6 R2
+	R2*2
 	
 % Bars 156 to 160
-	d4\pp-- d--
+	d4-\tweak X-offset #-1.5 \pp-- d--
 	d-- d--
 	d-- d--
 	d-- d--
 	d-- r
 % Bars 161 to 165
+	R2
+	R2
 	\mmrPos #-6 R2
 	\mmrPos #-6 R2
-	\mmrPos #-6 R2
-	\mmrPos #-6 R2
-	\mmrPos #-6 R2
+	R2
 % Bars 166 to 170
 	R2*3
 	

@@ -162,11 +162,11 @@ musicFagottIMvtII = \relative c' {
 % Bars 146 to 150
 	
 	
-	\partCombineApart c'2\pp
+	\partCombineApart c'2_\pp
 	bes4~ bes16( c g a)
 	f4 e
 % Bars 151 to 155
-	f16 bes,( d_\< f bes d f d)\!
+	f16 bes,_( d_\< f bes d f d)\!
 	c(_\dimmarkup a f c f,8) fis(
 	g)\noBeam \partCombineAutomatic fis'(\pp\< g e)\!
 	f!2\fz~
@@ -217,7 +217,7 @@ musicFagottIMvtII = \relative c' {
 	R2
 	\partCombineApart r4 bes(\pp~
 	bes a8 g
-	f8) r r4 \partCombineAutomatic
+	f8) \partCombineAutomatic r r4
 	R2*2
 % Bars 196 to 200
 	

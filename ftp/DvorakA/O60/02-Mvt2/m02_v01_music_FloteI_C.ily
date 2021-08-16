@@ -142,11 +142,11 @@ musicFloteIMvtII = \relative c'' {
 	R2
 	bes4(\pp g8\< c)
 	bes( g d e)
-	f2~\!
+	\shape #'((0 . 1.7)(0 . 4)(0 . 4)(1.3 . 3)) Tie f2~\!
 	f8 f(-- g-- a--)
 % Bars 146 to 150
 	bes4(~ bes16^\dimmarkup c g a
-	bes4)\pp r
+	bes4)-\tweak X-offset #-2 \pp r
 	R2*2
 	
 	\partCombineApart r8 bes4_\pcresc( a16 g
@@ -183,7 +183,7 @@ musicFloteIMvtII = \relative c'' {
 	d) r r4
 	r16 fis,-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	d8\ff r g4-^~
-	g8\> bes( a g)~\!
+	g8_\> bes( a g)~\!
 	g\p f4.~^\dimmarkup
 % Bars 181 to 185
 	f2~
@@ -196,7 +196,7 @@ musicFloteIMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	
-	r8 f\ff-! d-! g-! 
+	r8 f-\tweak extra-offset #'(0 . 1) \ff-! d-! g-! 
 	ees-! c-! a-! d-^\noBeam
 	d-^ r \partCombineApart f4~
 % Bars 201 to 205

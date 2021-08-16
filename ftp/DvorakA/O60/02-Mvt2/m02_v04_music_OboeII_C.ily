@@ -170,7 +170,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 141 to 145
 	
 	bes4\p\<( g8 c
-	bes g d e)
+	bes g d e)\!
 	f2\mf\<~
 	f8\> f(-- g-- a--)
 % Bars 146 to 150
@@ -178,7 +178,7 @@ musicOboeIIMvtII = \relative c' {
 	bes4)\pp r
 	R2*2
 	
-	r8 bes4( a16 g
+	r8 bes4^( a16 g
 % Bars 151 to 155
 	f8) c'4(\mf\> bes8
 	a2\p)(
@@ -190,7 +190,7 @@ musicOboeIIMvtII = \relative c' {
 	b8) r r4
 	R2*2
 	
-	r8 d4(\p\< c16 bes!)~
+	r8 d4(-\tweak extra-offset #'(0 . 0.5) \p\< c16 bes!)~
 % Bars 161 to 165
 	bes8 a16(\! g a4)\>
 	aes8\p c4 bes16\> aes~
@@ -211,7 +211,7 @@ musicOboeIIMvtII = \relative c' {
 	d)\noBeam bes(\mf\< c cis\!
 % Bars 176 to 180
 	d)\noBeam bes(\f\< c cis\!
-	d16)\noBeam a->\f-. b->-. b->-. c->-. d->-. c->-. cis->-. 
+	d16)\noBeam a->\f\<-. b->-. b->-. c->-. d->-. c->-. cis->-.\!
 	d8\ff r b-^ r
 	bes!-^ r r4
 	R2
@@ -232,9 +232,9 @@ musicOboeIIMvtII = \relative c' {
 	
 	r8 f'\ff-! d-! g-!
 	ees-! c-! a-! d-^
-	d-^ r f,4\fp\>(
+	d-^ r f,4\fp(
 % Bars 201 to 205
-	g f8 ees)
+	g\> f8 ees)\!
 	d2\pp~
 	d~
 	d8 r r4

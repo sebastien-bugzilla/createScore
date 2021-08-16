@@ -182,7 +182,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	R2*3
 % Bars 156 to 160
 	
-	r8 e,4->\p( d16 cis
+	r8 e,4->-\tweak extra-offset #'(0 . 0.2) \p( d16 cis
 	c!8) r r4
 	r8 e!4\pp( d16 c!~
 	c8) r r4
@@ -213,7 +213,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	cis2(_\fpdim
 	c!)~
 % Bars 186 to 190
-	c2\pp\<(
+	\hairpinShorten #1.5 #0 c2-\tweak extra-offset #'(2.3 . 0.8) \pp\<(
 	g\>)~
 	g8\! r r4
 	R2*8
@@ -221,7 +221,7 @@ musicKlarinetteIIMvtII = \relative c'' {
 	
 % Bars 196 to 200
 	
-	b2\pp(
+	b2-\tweak X-offset #0.8 \pp(
 	c8)\noBeam g'\ff-! e-! a-! 
 	f-! d-! b-! b-^
 	a-^ r c4\fp~

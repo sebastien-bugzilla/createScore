@@ -170,7 +170,7 @@ musicHornIMvtII = \relative c'' {
 	a4 c_\fz~
 	c8(_\> bes16 a \acciaccatura c8 bes8. a16)\!
 % Bars 156 to 160
-	\partCombineAutomatic a4\pp-- a--
+	\partCombineAutomatic a4-\tweak X-offset #-1.5 \pp-- a--
 	a-- a--
 	a-- a--
 	a-- a--
@@ -179,7 +179,7 @@ musicHornIMvtII = \relative c'' {
 	c4. g8~\!
 	g4 a\>
 	bes4. f8~\!
-	f4\pp e~
+	f4_\pp e~
 	e8 r r4 \partCombineAutomatic
 % Bars 166 to 170
 	R2*3
@@ -210,9 +210,9 @@ musicHornIMvtII = \relative c'' {
 % Bars 191 to 195
 	
 	
-	\partCombineApart g4.(\pp\< gis8\>
-	a\!)\noBeam c(\< a d)~\!
-	d4.\> c8\pp~
+	\partCombineApart g4.(_\pp_\< gis8_\>
+	a\!)\noBeam c(_\< a d)~\!
+	d4._\> c8_\pp~
 % Bars 196 to 200
 	c8 r r4 \partCombineAutomatic
 	R2*2

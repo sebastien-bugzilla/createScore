@@ -166,23 +166,23 @@ musicKlarinetteIMvtII = \relative c'' {
 % Bars 141 to 145
 	R2*2
 	
-	\partCombineApart c2\p\<~
-	c8\mf\< e( g e)
-	d2\>(
+	\partCombineApart c2_\p_\<~
+	c8_\mf_\< e( g e)
+	d2_\>(
 % Bars 146 to 150
-	c8)\p r r4
+	c8)_\p r r4
 	R2*3
 	
 	
-	e,16^\pcresc( g c e a c b a)
+	e,16-\tweak extra-offset #'(0 . -2) ^\p -\tweak extra-offset #'(1.8 . -3) ^\crescmarkup ( g c e a c b a)
 % Bars 151 to 155
-	g2~\mf\>
-	g8\! r r4
+	g2~
+	g8 r r4
 	R2 \partCombineAutomatic
 	R2*3
 % Bars 156 to 160
 	
-	r8 cis,4->\p( b16 a
+	r8 cis,4->-\tweak extra-offset #'(0 . 0.2) \p( b16 a
 	e8) r r4
 	r8  \partCombineChords c'!4\pp( b16 a
 	e8) \partCombineAutomatic r r4
@@ -221,7 +221,7 @@ musicKlarinetteIMvtII = \relative c'' {
 	
 % Bars 196 to 200
 	
-	dis2\pp(
+	dis2-\tweak X-offset #0.8 \pp(
 	e8)\noBeam g\ff-! e-! a-! 
 	f-! d-! b-! d-^
 	c-^ r e4(

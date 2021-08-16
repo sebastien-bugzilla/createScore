@@ -139,7 +139,7 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 141 to 145
 	R2
 	R2
-	bes2~\p\<
+	\shape #'((-0.8 . -1)(0 . -3.5)(0 . -3)(0.2 . -0.5)) Tie bes2~\p\<
 	bes8(\mf\< d f d)
 	c2\>-\shape #'((0 . -2)(0 . -2)(0 . -2)(0 . -1)) (
 % Bars 146 to 150
@@ -156,21 +156,21 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 156 to 160
 	
 	
-	r8 d,4(\pp c16 bes~
+	r8 d,4(\pp c16 bes_~
 	bes8) r r4
-	R2*9
+	R2*7
 % Bars 161 to 165
 	
 % Bars 166 to 170
 	
-	
-	\mark \default
-	R2*6
-	
+	\mmrPos #-6 R2
+	\mmrPos #-6 R2 \mark \default
+	R2
+	\mmrPos #-8 R
 % Bars 171 to 175
-	
-	
-	
+	R
+	\mmrPos #-8 R
+	R2*2
 	
 	r8 d(\mf\< ees e\!
 % Bars 176 to 180
@@ -190,7 +190,7 @@ musicFloteIIMvtII = \relative c''' {
 % Bars 196 to 200
 	
 	
-	r8 f''\ff-! d-! g-! 
+	r8 f''-\tweak extra-offset #'(0 . 1) \ff-! d-! g-! 
 	ees-! c-! a-! a-^\noBeam
 	bes-^ r f4~\fp
 % Bars 201 to 205

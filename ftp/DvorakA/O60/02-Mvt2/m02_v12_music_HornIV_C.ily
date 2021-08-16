@@ -197,7 +197,7 @@ musicHornIVMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	
-	r8 g\ff-! g-! g-! 
+	r8 g-\tweak X-offset #-2.5 \ff-! g-! g-! 
 	g-! g-! g-! e-^
 	a-^ r g r
 % Bars 201 to 205

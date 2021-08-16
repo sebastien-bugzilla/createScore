@@ -182,7 +182,7 @@ musicHornIIIMvtII = \relative c'' {
 	g g4\mf\< g8\!~
 % Bars 176 to 180
 	g g4\f g8~
-	g16 r g\f\<-> g-> g-> g-> g-> c,->\!
+	g16 r g\f\<-> g-> g-> g-> g-> \aIIOmit c,->\!
 	e8\ff r e-^-. r
 	d-^-. r r4
 	e2\p\>(
@@ -197,7 +197,7 @@ musicHornIIIMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	
-	r8 g\ff-! g-! g-! 
+	r8 g-\tweak X-offset #-2.5 \ff-! g-! g-! 
 	g-! g-! g-! e-^
 	e-^ r c r
 % Bars 201 to 205
