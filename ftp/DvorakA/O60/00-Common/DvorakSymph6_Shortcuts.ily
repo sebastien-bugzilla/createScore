@@ -4,70 +4,75 @@
 %###############################################################################
 %#                      S H O R T C U T S   S E C T I O N                      #
 %###############################################################################
-grandioso=^\markup {\italic grandioso}
-dimmarkup=^\markup {\italic dim.}
+
+% dynamics 
+
 crescmarkup=^\markup {\italic cresc.}
-ppsempremoltotranquillo=^\markup {\dynamic pp \italic {sempre molto tranquillo}}
-fpdim=^\markup {\dynamic fp \italic dim.}
-fpdimD = \tweak DynamicText.self-alignment-X #-0.6 #(make-dynamic-script (markup #:dynamic "fp" #:normal-text #:italic "dim." ))
-pcresc=^\markup {\dynamic p \italic cresc.}
-fsempre=^\markup {\dynamic f \italic sempre}
+dimin=^\markup {\italic dimin.}
+dimmarkup=^\markup {\italic dim.}
+dimsempre=^\markup {\italic {dim. sempre}}
 fcresc=^\markup {\dynamic f \italic cresc.}
-marc=^\markup {\italic marc.}
-pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))
-fmarc=^\markup {\dynamic f \italic marc.}
-ffmarc=^\markup {\halign #0 \dynamic ff \italic marc.}
-mfp=^\markup {\dynamic mfp}
-rf=^\markup {\dynamic rf}
-pespress=^\markup {\dynamic p \italic espress.}
-pplegg=^\markup {\dynamic pp \italic legg.}
-ppdolce=^\markup {\dynamic pp \italic dolce}
-mfcresc=^\markup {\dynamic mf \italic cresc.}
-ppsempre=^\markup {\dynamic pp \italic sempre}
-sempreff=^\markup {\italic sempre \dynamic ff}
-ffrinforz=^\markup {\dynamic ff \italic rinforz.}
-pesante=^\markup {\italic pesante}
-sempremarc=^\markup {\italic {sempre marc.}}
 fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
-marcatosempre=^\markup {\italic {marcato sempre}}
+ffgrandiosoD=#(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
+ffgrandioso=^\markup {\dynamic ff \italic grandioso}
+ffmarcatosempre=^\markup {\dynamic ff \italic {marcato sempre}}
+ffmarc=^\markup {\halign #0 \dynamic ff \italic marc.}
+ffpesante=^\markup {\dynamic ff \italic pesante}
+ffrinforz=^\markup {\dynamic ff \italic rinforz.}
+ffz=^\markup { \hspace #-1 \dynamic ffz}
+fmarc=^\markup {\dynamic f \italic marc.}
+fpcresc=^\markup {\dynamic fp \italic {cresc.}}
+fpdimD = \tweak DynamicText.self-alignment-X #-0.6 #(make-dynamic-script (markup #:dynamic "fp" #:normal-text #:italic "dim." ))
+fpdim=^\markup {\dynamic fp \italic dim.}
+fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
+fsempre=^\markup {\dynamic f \italic sempre}
+fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
+fzdim=^\markup {\dynamic fz \italic dim.}
+mfcrescD=#(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
+mfcresc=^\markup {\dynamic mf \italic cresc.}
+mfp=^\markup {\dynamic mfp}
+mfz=^\markup {\dynamic mfz}
+pcresc=^\markup {\dynamic p \italic cresc.}
+pdimD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim." ))
+pdim=^\markup {\dynamic p \italic dim.}
 pdolceD=#(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce" ))
 pdolce=^\markup {\dynamic p \italic dolce}
-legg=^\markup {\italic legg.}
-ppsubponticello=^\markup {\dynamic pp \italic {sub ponticello}}
-mfcrescD=#(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cresc." ))
-nonlegato=^\markup {\italic {non legato}}
-pdim=^\markup {\dynamic p \italic dim.}
-pdimD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim." ))
-div=^\markup {div.}
-pizz=^\markup {pizz.}
-arco=^\markup {arco}
-ffmarcatosempre=^\markup {\dynamic ff \italic {marcato sempre}}
+pespressD = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress." ))
+pespressivo=^\markup {\dynamic p \italic espressivo}
+pespress=^\markup {\dynamic p \italic espress.}
 pocoapococrescendo=^\markup {\italic {poco a poco crescendo}}
 pocoapococresc=^\markup {\italic {poco a poco cresc.}}
-fzdim=^\markup {\dynamic fz \italic dim.}
-ten=^\markup {\italic ten.}
-semprepp=^\markup {\italic sempre \dynamic pp}
-pesante=^\markup {\italic pesante}
-mfz=^\markup {\dynamic mfz}
-pespressivo=^\markup {\dynamic p \italic espressivo}
-semprecresc=^\markup {\italic {sempre cresc.}}
-ffgrandioso=^\markup {\dynamic ff \italic grandioso}
-ffgrandiosoD=#(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "grandioso"))
-dimsempre=^\markup {\italic {dim. sempre}}
-fsemprecresc=^\markup {\dynamic f \italic {sempre cresc.}}
-benmarc=^\markup {\italic {ben marc.}}
-dimin=^\markup {\italic dimin.}
-ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
-ppocoapococrescendo=^\markup {\dynamic p \italic {poco a poco crescendo}}
-fpcresc=^\markup {\dynamic fp \italic {cresc.}}
-pesante=^\markup {\italic {pesante}}
-pptranquillo=^\markup {\dynamic pp \italic tranquillo}
-ffpesante=^\markup {\dynamic ff \italic pesante}
-tranquillo=^\markup {\italic tranquillo}
-ffz=^\markup { \hspace #-1 \dynamic ffz}
-solo=^\markup {Solo.}
-fzdimD = #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim." ))
+ppdolce=^\markup {\dynamic pp \italic dolce}
 ppespr = ^\markup {\dynamic pp \musicglyph "scripts.espr"}
+pplegg=^\markup {\dynamic pp \italic legg.}
+ppocoapococrescendo=^\markup {\dynamic p \italic {poco a poco crescendo}}
+ppocoapococresc=^\markup {\dynamic p \italic {poco a poco cresc.}}
+ppsempre=^\markup {\dynamic pp \italic sempre}
+ppsempremoltotranquillo=^\markup {\dynamic pp \italic {sempre molto tranquillo}}
+ppsubponticello=^\markup {\dynamic pp \italic {sub ponticello}}
+pptranquillo=^\markup {\dynamic pp \italic tranquillo}
+rf=^\markup {\dynamic rf}
+semprecresc=^\markup {\italic {sempre cresc.}}
+sempreff=^\markup {\italic sempre \dynamic ff}
+semprepp=^\markup {\italic sempre \dynamic pp}
+
+
+% tempo and expression
+
+arco=^\markup {arco}
+benmarc=^\markup {\italic {ben marc.}}
+div=^\markup {div.}
+grandioso=^\markup {\italic grandioso}
+legg=^\markup {\italic legg.}
+marcatosempre=^\markup {\italic {marcato sempre}}
+marc=^\markup {\italic marc.}
+nonlegato=^\markup {\italic {non legato}}
+pesante=^\markup {\italic pesante}
+pizz=^\markup {pizz.}
+sempremarc=^\markup {\italic {sempre marc.}}
+solo=^\markup {Solo.}
+ten=^\markup {\italic ten.}
+tranquillo=^\markup {\italic tranquillo}
 
 trio = {
 	\once \override Score.RehearsalMark.outside-staff-priority = #1500
@@ -85,7 +90,10 @@ flote = {
 	<>^\markup {\bold Flote}
 }
 
-% function
+
+
+% functions
+
 mmrPos = #(define-music-function
 	(position)
 	(number?)

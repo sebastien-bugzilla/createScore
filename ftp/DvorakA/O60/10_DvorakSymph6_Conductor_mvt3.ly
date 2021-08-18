@@ -72,9 +72,6 @@
 						\new Voice {
 							\tempiMvtIII
 						}
-%						\new Voice {
-%							\displayFilterVoice
-%						}
 						\new Voice {
 							\timeMvtIII \generalOptions \conductorOptions
 							\nameStaffIMvtIII

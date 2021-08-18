@@ -23,14 +23,14 @@ musicVioloncelloMvtII = \relative c {
 % Bars 11 to 15
 	d4\> c\!)
 	bes(\pp d
-	\red ees2
-	d4 c \black
+	ees2
+	d4 c
 	bes8) bes'4(\< a16 g)
 % Bars 16 to 20
 	f8(\f bes d, f)
 	f,4.(_\dimmarkup fis8
 	g\p) r r4
-	\red r16 f(\p bes d f8.) r16 \black
+	r16 f(\p bes d f8.) r16
 	R2
 % Bars 21 to 25
 	bes,4(\pp f'
@@ -53,9 +53,9 @@ musicVioloncelloMvtII = \relative c {
 % Bars 36 to 40
 	R2*2
 	
-	\red r8 <a' fis'>4(\p <g e'>16 <fis d'>
+	r8 <a' fis'>4(\p <g e'>16 <fis d'>
 	a8) r r4
-	r8 <a f'!>4\pp( <g e'>16 <f! d'>) \black
+	r8 <a f'!>4\pp( <g e'>16 <f! d'>)
 % Bars 41 to 45
 	a8( a'4_\crescmarkup g16 f)~
 	f8( e16 d e8 c)~

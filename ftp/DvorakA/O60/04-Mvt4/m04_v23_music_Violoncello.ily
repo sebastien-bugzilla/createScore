@@ -91,11 +91,11 @@ musicVioloncelloMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1*2
 	\mark \default
-	\red a4\p-\tweak X-offset #1.2 ^\pizz r a r
+	a4\p-\tweak X-offset #1.2 ^\pizz r a r
 	a r a_\dimmarkup e
 % Bars 71 to 75
 	a, r a' e
-	a, r r2 \black
+	a, r r2
 	e'4\mf e' r e
 	e, e'_\dimmarkup r e
 	e,\p e' r e
@@ -149,10 +149,10 @@ musicVioloncelloMvtIV = \relative c' {
 	
 % Bars 116 to 120
 	
-	\red r2 e''2\fz\>~
+	r2 e''2\fz\>~
 	e4 d8( e d4\! cis)
 	cis( e) d2\<
-	cis4-. cis-. b2->\! \black
+	cis4-. cis-. b2->\!
 % Bars 121 to 125
 	a8\f r r4 g!2:8\ff
 	g: g:
@@ -228,7 +228,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 181 to 185
 	fis-. r r2
 	cis4-. r r2
-	\red fis,1_\fpdim~
+	fis,1_\fpdim~
 	fis
 	fis~\pp
 % Bars 186 to 190
@@ -242,7 +242,7 @@ musicVioloncelloMvtIV = \relative c' {
 	d~
 	d~
 	d
-	ais'4 r r2 \black
+	ais'4 r r2
 % Bars 196 to 200
 	R1*2
 	
@@ -253,8 +253,8 @@ musicVioloncelloMvtIV = \relative c' {
 	b4 r r2
 	r4 dis8\f-! cis-! b-! c-! a-! b-! 
 	g!4 r r2
-	\red r2 r4 \tuplet 3/2 4 {b'8(\f\< cis dis\!}
-	e4) b-. e2\fz~ \black
+	r2 r4 \tuplet 3/2 4 {b'8(\f\< cis dis\!}
+	e4) b-. e2\fz~ 
 % Bars 206 to 210
 	e8 r r4 r \tuplet 3/2 4 {g,,8(\f\< a b)}
 	c4-.\ff g-. c2->
@@ -379,8 +379,8 @@ musicVioloncelloMvtIV = \relative c' {
 	a\pp~
 	a~
 	a4 r r2
-	\red r2 r4 r8 fis'(\pp
-	b,4) r8 \once \stemUp d( b a g d \black
+	r2 r4 r8 fis'(\pp
+	b,4) r8 \once \stemUp d( b a g d
 % Bars 311 to 317
 	a'4) r8 b( e,4) r8 fis\((
 	b1)
@@ -455,10 +455,10 @@ musicVioloncelloMvtIV = \relative c' {
 	R1*2
 	\mark \default
 % Bars 366 to 370
-	\red d'4\pp^\pizz r d r
+	d'4\pp^\pizz r d r
 	d r d a
 	d r d a 
-	d, r r2 \black
+	d, r r2
 	a4\p a' r a
 % Bars 371 to 375
 	a, a' r a
@@ -542,7 +542,7 @@ musicVioloncelloMvtIV = \relative c' {
 	
 	
 	\mark \default \bar "||"
-	\red d'8\f e fis e d cis b cis
+	d'8\f e fis e d cis b cis
 % Bars 441 to 445
 	a b g a fis g e fis
 	d e d e fis g fis g
@@ -562,7 +562,7 @@ musicVioloncelloMvtIV = \relative c' {
 	a-> d->
 	cis-> e->
 % Bars 456 to 460
-	a-> gis-> \black
+	a-> gis->
 	fis-> e4-. a,-.
 	d8 e fis e d cis b cis
 	a b g a fis g e fis
