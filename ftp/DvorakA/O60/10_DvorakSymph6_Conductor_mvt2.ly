@@ -20,8 +20,7 @@
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-\include "./00-Common/DvorakSymph6_Format_temp.ly"
-%\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
+\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./02-Mvt2/m02_v01_music_FloteI_C.ily"
 \include "./02-Mvt2/m02_v02_music_FloteII_C.ily"
@@ -78,26 +77,22 @@
 						\timeMvtII \generalOptions \conductorOptions 
 						\nameStaffIMvtII
 						\partCombine \musicFloteIMvtII \musicFloteIIMvtII
-%						\musicFloteIIMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions 
 					\nameStaffIIMvtII
 					\partCombine \musicOboeIMvtII \musicOboeIIMvtII
-%					\musicOboeIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions 
 					\nameStaffIIIMvtII
 					\partCombine \musicKlarinetteIMvtII \musicKlarinetteIIMvtII
-%					\musicKlarinetteIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions 
 					\nameStaffIVMvtII
 					\partCombine \musicFagottIMvtII \musicFagottIIMvtII
-%					\musicFagottIIMvtII 
 				}
 			>>
 			\new StaffGroup <<
@@ -106,20 +101,17 @@
 						\timeMvtII \generalOptions \conductorOptions 
 						\nameStaffVMvtII
 						\partCombine \musicHornIMvtII \musicHornIIMvtII
-%						\musicHornIIMvtII
 					}
 					\new Staff {
 						\timeMvtII \generalOptions \conductorOptions 
 						\nameStaffVIMvtII
 						\partCombine \musicHornIIIMvtII \musicHornIVMvtII
-%						\musicHornIVMvtII
 					}
 				>>
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions 
 					\nameStaffVIIMvtII
 					\partCombine \musicTrompeteIMvtII \musicTrompeteIIMvtII
-%					\musicTrompeteIIMvtII
 				}
 				\new Staff {
 					\timeMvtII \generalOptions \conductorOptions 
@@ -163,7 +155,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-			%system-count = 28
 			\context {
 				\Score 
 				scriptDefinitions = #my-script-alist

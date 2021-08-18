@@ -204,7 +204,7 @@ musicHornIMvtIII = \relative c'' {
 % Bars 191 to 195
 		gis2( a4
 		b2 cis4)
-		a4\pp r r \partCombineAutomatic
+		a4_\pp r r \partCombineAutomatic
 		R2.*7
 % Bars 196 to 200
 		
@@ -236,8 +236,8 @@ musicHornIMvtIII = \relative c'' {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	a,4\pp r a'
-	a,\< r a'
+	a,4-\tweak extra-offset #'(-1.5 . 0.5) \pp r a'
+	a,-\tweak extra-offset #'(0 . 0.4) \< r a'
 	a, r a'
 	a, r a'\!
 	a,\mf r a'
@@ -250,7 +250,7 @@ musicHornIMvtIII = \relative c'' {
 % Bars 266 to 270
 	a, r a'
 	a, r a'
-	a,\pp r r 
+	a,-\tweak extra-offset #'(-1. . 0.5) \pp r r 
 	R2.*19
 % Bars 271 to 275
 	

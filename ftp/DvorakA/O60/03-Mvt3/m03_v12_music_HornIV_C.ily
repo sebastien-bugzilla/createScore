@@ -205,7 +205,7 @@ musicHornIVMvtIII = \relative c' {
 		
 	}
 % Bars 201 to 205
-	\clef bass \grace s8 c,,2.\pp~
+	\clef bass \grace s8 c,,2.-\tweak X-offset #-2 \pp~
 	c~
 	c~
 	c~
@@ -236,7 +236,7 @@ musicHornIVMvtIII = \relative c' {
 	
 % Bars 256 to 260
 	c2.\p~
-	c~\<
+	c~-\tweak extra-offset #'(0 . 0.4) \<
 	c~
 	c~
 	c~\mf

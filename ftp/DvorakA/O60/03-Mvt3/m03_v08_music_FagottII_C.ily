@@ -386,7 +386,7 @@ musicFagottIIMvtIII = \relative c, {
 	
 	
 	
-	a'4-.\p g-. f-.
+	\aIIXoffset #-4 a'4-.\p g-. f-.
 % Bars 356 to 360
 	e-. d-. c-.
 	b-. g-. b-.

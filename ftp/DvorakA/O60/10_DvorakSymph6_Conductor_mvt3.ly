@@ -20,8 +20,7 @@
 \include "./00-Common/DvorakSymph6_NameStaff.ily"
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
-%\include "./00-Common/DvorakSymph6_Format_Cond_Mvt03.ily"
-\include "./00-Common/DvorakSymph6_Format_temp.ly"
+\include "./00-Common/DvorakSymph6_Format_Cond_Mvt03.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
 \include "./03-Mvt3/m03_v01_music_FloteI_C.ily"
 \include "./03-Mvt3/m03_v02_music_FloteII_C.ily"
@@ -73,14 +72,13 @@
 						\new Voice {
 							\tempiMvtIII
 						}
-						\new Voice {
-							\displayFilterVoice
-						}
+%						\new Voice {
+%							\displayFilterVoice
+%						}
 						\new Voice {
 							\timeMvtIII \generalOptions \conductorOptions
 							\nameStaffIMvtIII
 							\partCombine \musicFloteIMvtIII \musicFloteIIMvtIII
-%							\musicFloteIIMvtIII
 						}
 					>>
 					\new Staff {
@@ -92,19 +90,16 @@
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIMvtIII
 					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
-%					\musicOboeIIMvtIII 
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIIIMvtIII
 					\partCombine \musicKlarinetteIMvtIII \musicKlarinetteIIMvtIII
-%					\musicKlarinetteIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffIVMvtIII
 					\partCombine \musicFagottIMvtIII \musicFagottIIMvtIII
-%					\musicFagottIIMvtIII
 				}
 			>>
 			\new StaffGroup <<
@@ -113,20 +108,17 @@
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffVMvtIII
 						\partCombine \musicHornIMvtIII \musicHornIIMvtIII
-%						\musicHornIIMvtIII
 					}
 					\new Staff {
 						\timeMvtIII \generalOptions \conductorOptions
 						\nameStaffVIMvtIII
 						\partCombine \musicHornIIIMvtIII \musicHornIVMvtIII
-%						\musicHornIVMvtIII 
 					}
 				>>
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions
 					\nameStaffVIIMvtIII
 					\partCombine \musicTrompeteIMvtIII \musicTrompeteIIMvtIII
-%					\musicTrompeteIIMvtIII
 				}
 				\new Staff {
 					\timeMvtIII \generalOptions \conductorOptions

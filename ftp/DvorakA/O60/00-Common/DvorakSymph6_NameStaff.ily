@@ -205,7 +205,7 @@ nameStaffIMvtIII = {
 }
 nameStaffIMvtIIIPic = {
 	\set Staff.instrumentName = "Piccolo"
-	\set Staff.shortInstrumentName = "Pic."
+	\set Staff.shortInstrumentName = "Picc."
 	\set Staff.midiInstrument = #""
 }
 nameStaffIIMvtIII = {

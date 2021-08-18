@@ -174,22 +174,22 @@ musicHornIIIMvtIII = \relative c'' {
 		R2.
 		\partCombineApart c2.~\p
 % Bars 166 to 170
-		c~\<
+		c~_\<
 		c~
 		c\!
-		c~\fp
-		c~\>
+		c~_\fp
+		c~_\>
 % Bars 171 to 175
 		c~
-		c\pp
-		c~\fp
+		c_\pp
+		c~_\fp
 		c~
-		c~\<
+		c~_\<
 % Bars 176 to 180
 		c~
-		c~\fp
+		c~_\fp
 		c~
-		c~\<
+		c~_\<
 		c\! \partCombineAutomatic
 % Bars 181 to 185
 		R2.*4
@@ -209,7 +209,7 @@ musicHornIIIMvtIII = \relative c'' {
 		
 	}
 % Bars 201 to 205
-	\clef bass \grace s8 c,,2.\pp~
+	\clef bass \grace s8 c,,2.-\tweak X-offset #-2 \pp~
 	c~
 	c~
 	c~
@@ -240,7 +240,7 @@ musicHornIIIMvtIII = \relative c'' {
 	
 % Bars 256 to 260
 	c2.\p~
-	c~\<
+	c~-\tweak extra-offset #'(0 . 0.4) \<
 	c~
 	c~
 	c~\mf
@@ -351,7 +351,7 @@ musicHornIIIMvtIII = \relative c'' {
 	
 	
 	
-	\partCombineApart r4 ges-.\pp r
+	\partCombineApart r4 ges-._\pp r
 	ges-. r ges-. \partCombineAutomatic
 % Bars 381 to 385
 	R2.*20

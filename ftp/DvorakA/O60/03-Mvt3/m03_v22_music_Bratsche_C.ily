@@ -233,7 +233,7 @@ musicBratscheMvtIII = \relative c {
 		
 		
 		
-		<d, a' fis'>4\fz\arpeggio^\pizz r r
+		<d, a' fis'>4\fz\arpeggio-\tweak X-offset #-4.2 ^\pizz r r
 		q\>\arpeggio r r
 % Bars 171 to 175
 		q\arpeggio\! r r
@@ -307,9 +307,9 @@ musicBratscheMvtIII = \relative c {
 % Bars 251 to 255
 	
 % Bars 256 to 260
-	d4\p^\pizz r d'
+	d4-\tweak extra-offset #'(-1. . 0.5) \p^\pizz r d'
 	d, r d'
-	d,\< r d'
+	d,-\tweak extra-offset #'(0 . 0.4) \< r d'
 	d, r d'
 	d,\mf r d'
 % Bars 261 to 265
@@ -372,7 +372,7 @@ musicBratscheMvtIII = \relative c {
 		a'4( c) a(
 		c) a( c)
 	} \\ {
-		f,(\p a) f(
+		f,(-\tweak X-offset #0.8 \p a) f(
 		a) f( a)
 	}>>
 	c-. g8(\< fis g a\!
@@ -455,7 +455,7 @@ musicBratscheMvtIII = \relative c {
 	
 	
 	
-	g'4-.\p\< f-. ees-.
+	g'4-.-\tweak X-offset #-0.5 \p\< f-. ees-.
 	d-. c'-. bes-.\!
 % Bars 361 to 365
 	a-.\f f-. a-.
@@ -465,7 +465,7 @@ musicBratscheMvtIII = \relative c {
 	
 % Bars 366 to 370
 	
-	<f d'>2\p\< <ees c'>4~
+	<f d'>2-\tweak X-offset #-0.5 \p\< <ees c'>4~
 	q <d bes'>2\f
 	R2.*2
 	

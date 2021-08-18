@@ -310,7 +310,7 @@ musicVioloncelloMvtIII = \relative c {
 	R2.*5
 % Bars 256 to 260
 	\clef tenor a''2(\p fis4
-	d2\< a4)
+	d2-\tweak extra-offset #'(0 . 0.4) \< a4)
 	g2( b4
 	e2 g4)~\!
 	g fis(\mf d
@@ -361,7 +361,7 @@ musicVioloncelloMvtIII = \relative c {
 	d'-. d,-. d-.
 % Bars 306 to 310
 	d r r \bar "||"
-	f,\p^\pizz c' f
+	f,-\tweak extra-offset #'(0.8 . 0.5) \p-\tweak X-offset #-1 ^\pizz c' f
 	f, c' f
 	e, c' e
 	e, c' e

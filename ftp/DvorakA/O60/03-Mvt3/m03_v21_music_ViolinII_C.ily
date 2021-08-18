@@ -213,7 +213,7 @@ musicViolinIIMvtIII = \relative c' {
 		
 		
 		
-		<a, fis' d'>4^\pizz\fz\arpeggio r r
+		<a, fis' d'>4^\pizz-\tweak X-offset #0.5 \fz\arpeggio r r
 		q\arpeggio\> r r
 % Bars 171 to 175
 		q\!\arpeggio r r

@@ -423,14 +423,14 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	
 % Bars 381 to 385
 	
-% Bars 386 to 390
 	r4 bes'-.\pp r
+% Bars 386 to 390
 	bes-. r bes-.
 	r ces2
 	r4 ces2_\pocoapococresc
 	r4 ces r
-% Bars 391 to 395
 	ces r ces
+% Bars 391 to 395
 	r4 des2
 	r4 des2
 	R2.*4

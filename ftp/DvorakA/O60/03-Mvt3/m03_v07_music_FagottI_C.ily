@@ -220,12 +220,12 @@ musicFagottIMvtIII = \relative c {
 % Bars 191 to 195
 		
 		
-		\partCombineApart d2(\pp e4
+		\partCombineApart d2(_\pp e4
 		cis2_\dimmarkup d4
 		b2 cis4
 % Bars 196 to 200
 		a2 b4)
-		g2.\ppp~
+		g2._\ppp~
 		g(
 		fis
 		e)
@@ -244,12 +244,12 @@ musicFagottIMvtIII = \relative c {
 	g a b
 % Bars 216 to 220
 	a e g)
-	fis2.(^\dimmarkup
+	fis2.(_\dimmarkup
 	b4 a g)
 	fis2.(
 	b4 a g)
 % Bars 221 to 225
-	fis\pp r r \partCombineAutomatic
+	fis_\pp r r \partCombineAutomatic
 	R2.*7
 % Bars 226 to 230
 	
@@ -286,7 +286,7 @@ musicFagottIMvtIII = \relative c {
 % Bars 266 to 270
 	b cis! d)
 	\partCombineApart a2.
-	fis4(\p a d
+	\shape #'( () ((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -0.5))) Slur fis4(_\p a d
 	c2.
 	b4_\dimsempre a g
 % Bars 271 to 275
@@ -386,7 +386,7 @@ musicFagottIMvtIII = \relative c {
 	
 	
 	
-	a'4-.\p g-. f-.
+	\aIIXoffset #-4 a'4-.\p g-. f-.
 % Bars 356 to 360
 	e-. d-. c-.
 	b-. g-. b-.
@@ -395,7 +395,7 @@ musicFagottIMvtIII = \relative c {
 % Bars 361 to 365
 	
 	
-	d2\p g4~
+	d2 g4~
 	g a-. bes-.
 	d2-> c4~->
 % Bars 366 to 370

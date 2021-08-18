@@ -267,7 +267,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 266 to 270
 	b4 a g
 	fis g e)
-	d2.\pp~
+	d2.-\tweak X-offset #-2 \pp~
 	d~
 	d~
 % Bars 271 to 275
@@ -363,7 +363,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 391 to 395
 	
 	
-	\partCombineApart r4 a,8(\mf gis a4)
+	\partCombineApart r4 a,8(-\tweak X-offset #-1.9 \mf gis a4)
 	r b8(_\crescmarkup ais b4)
 	r cis8( bis cis4)
 % Bars 396 to 400
@@ -399,7 +399,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 431 to 435
 	
 	
-	a'4-.\ff a,(-> b8 cis)
+	a'4-.-\tweak extra-offset #'(0.7 . 0.3) \ff a,(-> b8 cis)
 	d4-. f-. d-.
 	d-. f-. d-.
 % Bars 436 to 438

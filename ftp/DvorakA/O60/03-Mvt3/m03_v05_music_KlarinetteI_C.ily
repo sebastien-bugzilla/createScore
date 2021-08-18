@@ -231,10 +231,10 @@ musicKlarinetteIMvtIII = \relative c'' {
 		d4-.\< ees-. f-.\!
 		ees2.
 % Bars 181 to 185
-		\partCombineApart bes'\f~
-		bes~\>
+		\partCombineApart bes'~
 		bes~
-		bes2(\! a4)
+		bes~
+		bes2( a4)
 		g2(\p f4
 % Bars 186 to 190
 		e2 d4
@@ -245,12 +245,12 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 191 to 195
 		c2 d4
 		e2 f4)
-		d2(\pp e4
+		d2(_\pp e4
 		c2_\dimmarkup d4
 		bes2 c4
 % Bars 196 to 200
 		a2 bes4)
-		g2.\ppp(
+		g2._\ppp(
 		c)~
 		c~
 		c~
@@ -258,7 +258,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 % Bars 201 to 205
 	\grace s8 c4 r r \partCombineAutomatic
 	R2. 
-	\partCombineApart r4 bes(\p d)
+	\partCombineApart r4 bes(_\p d)
 	r g( bes) \partCombineAutomatic
 	R2.*24
 % Bars 206 to 210
@@ -321,7 +321,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	
 	
-	\partCombineApart f4(\pp g8 e f4)
+	\partCombineApart f4(_\pp g8 e f4)
 % Bars 281 to 285
 	f( g8_\< e f4)
 	f( g8 e f4)
@@ -419,9 +419,9 @@ musicKlarinetteIMvtIII = \relative c'' {
 	
 	f,,2\p bes4~
 	bes c-. des-.
-	c2-> aes4~->
+	c2^> aes4~^>
 % Bars 366 to 370
-	aes aes2->
+	aes aes2^>
 	R2.*6
 % Bars 371 to 375
 	
@@ -440,7 +440,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	cis-. b-. b-. \partCombineAutomatic
 	R2.*2
 	
-	r4 des!-.\pp r
+	r4 des!-.-\tweak X-offset #0.5 \pp r
 % Bars 386 to 390
 	des-. r des-.
 	r \once \partCombineApart ces2

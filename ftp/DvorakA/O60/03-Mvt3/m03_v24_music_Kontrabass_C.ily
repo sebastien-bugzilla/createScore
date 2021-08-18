@@ -332,7 +332,7 @@ musicKontrabassMvtIII = \relative c {
 	d'-. d,-. d-.
 % Bars 306 to 310
 	d r r \bar "||"
-	f,\p^\pizz r r
+	f,\p-\tweak extra-offset #'(0 . -0.5) ^\pizz r r
 	f' r r
 	e r r
 	r r c

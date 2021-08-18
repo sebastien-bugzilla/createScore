@@ -332,8 +332,8 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	ees!4-.\fz c-. c-.
 % Bars 291 to 295
 	ees-.\fz c-. c-.
-	b4(-> c8) r b4(->
-	c8) r b4(-> c8) r
+	b4( c8) r b4(
+	c8) r b4( c8) r
 	des4\fz-. c-. c-.
 	des\fz-. c-. c-.
 % Bars 296 to 300
@@ -352,8 +352,8 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	f r r \bar "||"
 	aes(\p c) aes(
 	c) aes( c)
-	ees-.\< bes8( a bes c\!
-	des\> c ees des c bes)\!
+	ees-.\< \once \override Beam.positions = #'(-2.5 . -2.5) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur bes8( a bes c\!
+	\once \override Beam.positions = #'(-2.5 . -2.5) des\> c ees des c bes)\!
 % Bars 311 to 315
 	aes!4(\! c) aes(
 	c) aes( c)
@@ -422,29 +422,28 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 371 to 375
 	
 	
-	a2\p a4~
+	a2-\tweak X-offset #0.5 \p a4~
 	a bes2
 	R2.*4
 % Bars 376 to 380
 	
 	
 	
-	
 	R2.*4
-% Bars 381 to 385
 	
+% Bars 381 to 385
 	
 	
 	R2.*2
 	
+	r4 bes'-.-\tweak X-offset #0.5 \pp r
 % Bars 386 to 390
-	r4 bes'-.\pp r
 	bes-. r bes-.
 	r ces2
 	r4 ces2
 	r4 ces r
-% Bars 391 to 395
 	ces r ces
+% Bars 391 to 395
 	r4 des2
 	r4 des2
 	R2.*4
@@ -486,7 +485,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 	c4-. c-. c-.
 % Bars 426 to 430
 	c-. c-. c-.
-	c-. c2->
+	c-. c2
 	aes4-. c-. aes-.
 	aes-. c-. aes-.
 	c-. c2->

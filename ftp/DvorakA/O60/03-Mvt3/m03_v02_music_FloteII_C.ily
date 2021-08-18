@@ -337,7 +337,7 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 431 to 435
 	
 	
-	a'4-.\ff a,(-> b8 cis)
+	a'4-.-\tweak extra-offset #'(0.7 . 0.3) \ff a,(-> b8 cis)
 	d4-. f-. d-.
 	d-. f-. d-.
 % Bars 436 to 438

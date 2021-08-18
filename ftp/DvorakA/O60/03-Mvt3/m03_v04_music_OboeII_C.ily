@@ -264,12 +264,12 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 b,(\p d
+	r4 \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0.5)) Slur b,(-\tweak X-offset #-1.6 \p d
 	fis b d~
 % Bars 231 to 235
 	d2 cis4
 	b a g)
-	fis( d b
+	\shape #'((0 . 1)(0 . 1)(0 . 0.5)(0 . 0)) Slur fis( d b
 	d fis b~
 	b2 a4
 % Bars 236 to 240
@@ -292,20 +292,20 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 266 to 270
 	
 	
-	\mmrPosOver #-6 R2.*12
-	
-	
+	R2.
+	R
+	R
 % Bars 271 to 275
-	
-	
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 276 to 280
-	
-	
-	
-	\mmrPosRevert
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R 
 	fis'4\pp-- fis-- fis--
 % Bars 281 to 285
 	fis fis fis\<
@@ -396,7 +396,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 371 to 375
 	R2.*2
 	
-	d2.\p~
+	d2.-\tweak X-offset #0.5 \p~
 	d
 	R2.*4
 % Bars 376 to 380
@@ -461,7 +461,7 @@ musicOboeIIMvtIII = \relative c'' {
 	a-. a-. a-.
 % Bars 426 to 430
 	a-. a-. a-.
-	a-. a2->
+	a-. a2
 	f4-. a-. f-.
 	f-. a-. f-.
 	a-. a2->
