@@ -116,7 +116,7 @@ musicFloteIIMvtIII = \relative c''' {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		cis(_\ffgrandioso d) cis(
+		cis(-\tweak extra-offset #'(0 . 0.5) _\ffgrandioso d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135

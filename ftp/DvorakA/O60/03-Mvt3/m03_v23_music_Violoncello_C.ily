@@ -39,7 +39,7 @@ musicVioloncelloMvtIII = \relative c {
 		d r r
 	}
 	\repeat volta 2 {
-		f,4\p^\pizz c' f
+		f,4\p-\tweak X-offset #-0.2 ^\pizz c' f
 		f, c' f
 % Bars 26 to 30
 		e, c' e
@@ -63,7 +63,7 @@ musicVioloncelloMvtIII = \relative c {
 		b!4)\! cis-. d-.
 		a-.\ff a,-. bes!-.
 		c-. f-. f,-.
-		f\p^\pizz c' f
+		f\p-\tweak X-offset #-0.3 ^\pizz c' f
 		f, c' f
 % Bars 46 to 50
 		e, c' e
@@ -130,7 +130,7 @@ musicVioloncelloMvtIII = \relative c {
 		
 		
 		
-		<ces ges'>2\ff q4~
+		<ces ges'>2-\tweak X-offset #-1 \ff q4~
 % Bars 101 to 105
 		q q2
 		bes4-.\pp bes8( a bes4)
@@ -174,11 +174,11 @@ musicVioloncelloMvtIII = \relative c {
 		bes-> f-. f-.
 		bes-> f-. f-.
 % Bars 136 to 140
-		ees'2-> ees'4\fz~
+		ees'2-> ees'4-\tweak extra-offset #'(0.5 . 0.5) \fz~
 		ees2 d4-.
 		cis-. a-. cis-.
 		d-. f-. d-.
-		ees,2-> ees'4\fz~
+		ees,2-> ees'4-\tweak extra-offset #'(0.5 . 0.5) \fz~
 % Bars 141 to 145
 		ees2 d4-.
 		cis-. a-. cis-.
@@ -214,7 +214,7 @@ musicVioloncelloMvtIII = \relative c {
 		q_\dimmarkup r r
 % Bars 161 to 165
 		q r r
-		q\pp r r 
+		q-\tweak X-offset #0.8 \pp r r 
 		R2.
 		d'4(\pp^\arco e8 cis d4)
 		R2.*17
@@ -309,7 +309,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 251 to 255
 	R2.*5
 % Bars 256 to 260
-	a''2(\p fis4
+	\clef tenor a''2(\p fis4
 	d2\< a4)
 	g2( b4
 	e2 g4)~\!
@@ -323,7 +323,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 266 to 270
 	g( a b
 	a e g)
-	fis\pp r r
+	fis\pp r r \clef bass
 	R2.*15
 % Bars 271 to 275
 	

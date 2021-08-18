@@ -54,7 +54,7 @@ musicHornIMvtIII = \relative c'' {
 		e e4-. e-.\!
 		g2->\ff f4~->
 		f e2->
-		g,->\p^\solo c4~->
+		g,->\p c4~->
 		c b-. c-.
 % Bars 46 to 50
 		d2-> g,4~->
@@ -139,7 +139,7 @@ musicHornIMvtIII = \relative c'' {
 % Bars 126 to 130
 		d!2-> d4->~
 		d d2->
-		c2\ff c4~
+		c2-\tweak X-offset #0.5 \ff c4~
 		c c2
 		c2 c4~
 % Bars 131 to 135

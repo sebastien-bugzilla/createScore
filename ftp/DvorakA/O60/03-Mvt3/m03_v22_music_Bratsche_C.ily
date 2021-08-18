@@ -43,7 +43,7 @@ musicBratscheMvtIII = \relative c {
 			a'4( c) a(
 			c) a( c)
 		} \\ {
-			f,(\p a) f(
+			f,(-\tweak X-offset #0.5 \p a) f(
 			a) f( a)
 		}>>
 % Bars 26 to 30
@@ -104,7 +104,7 @@ musicBratscheMvtIII = \relative c {
 		g fis a\> g fis e)\!
 		a2\< d4~
 % Bars 61 to 65
-		d e-.\f f!-.
+		d\! e-.-\tweak X-offset #-0.5 \f f!-.
 		a2\ff-> g4~->
 		g f2->
 		R2.*4
@@ -122,7 +122,7 @@ musicBratscheMvtIII = \relative c {
 		
 		
 % Bars 76 to 80
-		g'4-.\p\< f-. ees-.
+		g'4-.-\tweak extra-offset #'(-0.3 . 0.5) \p\< f-. ees-.
 		d-. c'-. bes-.\!
 		a->\f f-. a-.
 		bes-. f2->
@@ -194,11 +194,11 @@ musicBratscheMvtIII = \relative c {
 		f-> f-. f-.
 		f-> f-. f-.
 % Bars 136 to 140
-		ees,2-> ees'4~\fz
+		ees,2-> ees'4~-\tweak extra-offset #'(0.5 . 0.5) \fz
 		ees2 d4-.
 		cis8 cis a a cis cis
 		d d f f d d
-		ees,2-> ees'4\fz~
+		ees,2-> ees'4-\tweak extra-offset #'(0.5 . 0.5) \fz~
 % Bars 141 to 145
 		ees2 d4-.
 		cis8 cis a a cis cis

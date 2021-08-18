@@ -107,7 +107,7 @@ musicHornIVMvtIII = \relative c' {
 % Bars 116 to 120
 		
 		
-		g'4\f g g
+		g'4_\fsemprecresc g g
 		g-. g-. g-.
 		g g g 
 % Bars 121 to 125

@@ -67,7 +67,7 @@ musicViolinIMvtIII = \relative c''' {
 		a) gis( a)
 % Bars 46 to 50
 		fis( g!) fis(\<
-		g) g(\> c)\!
+		g)\! g(\> c)\!
 		gis( a) gis(
 		a) gis( a)
 		fis( g!)\< fis(\!
@@ -210,7 +210,7 @@ musicViolinIMvtIII = \relative c''' {
 		
 		
 		
-		<g,, d' b'>4\f\arpeggio^\pizz r r
+		<g,, d' b'>4-\tweak extra-offset #'(0.8 . 0.8) \f\arpeggio^\pizz r r
 		q_\dimmarkup r r
 % Bars 161 to 165
 		q r r 

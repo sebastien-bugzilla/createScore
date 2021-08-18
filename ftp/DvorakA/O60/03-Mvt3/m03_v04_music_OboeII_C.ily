@@ -143,7 +143,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		e!2-> e4~->
 		e e2->
-		f!2\ff f4~
+		f!2_\ffgrandioso f4~
 		f f2
 		f2 f4~
 % Bars 131 to 135
@@ -162,7 +162,7 @@ musicOboeIIMvtIII = \relative c'' {
 		bes) a(\fz bes)
 		a-. a-. a-.
 		a-. a-. a-.
-		a-. a2->
+		a-. a2
 		f4-. a-. f-.
 	}
 % Bars 146 to 150

@@ -63,7 +63,7 @@ musicFagottIMvtIII = \relative c {
 		b!4) cis-. d-.\!
 		a\ff-. a,-. bes!-.
 		c-. f-. f,-.
-		\partCombineApart f-.\p c'-. f-.
+		\partCombineApart f-._\p c'-. f-.
 		f,-. c'-. f-.
 % Bars 46 to 50
 		e,-. c'-. e-.
@@ -104,7 +104,7 @@ musicFagottIMvtIII = \relative c {
 		
 		
 		
-		d2\p g4~
+		d2 g4~
 % Bars 81 to 85
 		g a-. bes-.
 		d2-> c4->~
@@ -201,7 +201,7 @@ musicFagottIMvtIII = \relative c {
 	d
 	d \bar "||" \key d \major
 	\repeat volta 2 {
-		\partCombineApart d'\fp \partCombineAutomatic
+		\partCombineApart d'_\fp \partCombineAutomatic
 		R2.*39
 % Bars 156 to 160
 	

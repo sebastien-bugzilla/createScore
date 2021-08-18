@@ -86,7 +86,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 81 to 85
 	
 % Bars 86 to 90
-		\partCombineApart g,2\p g4~
+		\partCombineApart g,2_\p g4~
 		g aes2 \partCombineAutomatic
 		R2.*2
 		
@@ -95,7 +95,7 @@ musicHornIIIMvtIII = \relative c'' {
 		
 		R2.*4
 % Bars 96 to 100
-		\partCombineApart r4 ges-.\pp r
+		\partCombineApart r4 ges-._\pp r
 		ges-. r ges-. \partCombineAutomatic
 		R2.*20
 % Bars 101 to 105
@@ -107,7 +107,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 116 to 120
 		
 		
-		\partCombineApart g4-. g-._\semprecresc g-. \partCombineAutomatic
+		\partCombineApart g4-. g-. g-. \partCombineAutomatic
 		b-. b-. b-.
 		b b b
 % Bars 121 to 125
@@ -119,7 +119,7 @@ musicHornIIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		g2-> g4->~
 		g g2->
-		g2_\ffgrandioso g4~
+		g2-\tweak extra-offset #'(0.5 . 1) _\ffgrandioso g4~
 		g g2
 		g2 g4~
 % Bars 131 to 135

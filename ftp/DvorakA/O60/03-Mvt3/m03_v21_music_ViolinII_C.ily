@@ -63,7 +63,7 @@ musicViolinIIMvtIII = \relative c' {
 		d e-. f-.\!
 		a2->\ff g4->~
 		g f2->
-		c2\p c4~
+		c2-\tweak X-offset #0.5 \p c4~
 		c c2
 % Bars 46 to 50
 		a4( bes) a(\<
@@ -94,7 +94,7 @@ musicViolinIIMvtIII = \relative c' {
 		
 		c4->\f e-. d-.
 		c-. b-. a-.
-		<g, g'>2->\f q4~->
+		<g, g'>2->-\tweak X-offset #-0.5 \f q4~->
 % Bars 71 to 75
 		q q2->
 		R2.*4

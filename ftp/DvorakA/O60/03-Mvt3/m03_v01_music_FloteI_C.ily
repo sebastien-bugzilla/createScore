@@ -116,7 +116,7 @@ musicFloteIMvtIII = \relative c''' {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		cis(_\ffgrandioso d) cis(
+		cis(-\tweak extra-offset #'(0 . 0.5) _\ffgrandioso d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -144,7 +144,7 @@ musicFloteIMvtIII = \relative c''' {
 	
 	\bar "||" \key d \major
 	\repeat volta 2 {
-		R2.*3
+		\trio R2.*3
 % Bars 156 to 160
 		e,4(\p fis8 dis e4)
 		R2.*9

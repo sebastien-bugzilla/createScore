@@ -139,7 +139,7 @@ musicHornIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		b2-> b4->~
 		b b2->
-		a2\ff a4~
+		a2-\tweak X-offset #0.5 \ff a4~
 		a a2
 		a2 a4~
 % Bars 131 to 135

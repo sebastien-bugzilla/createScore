@@ -84,7 +84,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		g r g
 		f r r
 % Bars 61 to 65
-		r g\f-. aes!-.
+		r g-\tweak X-offset #-0.5 \f-. aes!-.
 		ees'2\ff des4->~
 		des c2->
 		R2.*8
@@ -127,7 +127,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		R2.*2
 % Bars 101 to 105
 		
-		r4 bes'-.\pp r
+		r4 bes'-.-\tweak X-offset #0.7 \pp r
 		bes-. r bes-.
 		r ces2
 		r4 ces2
@@ -158,7 +158,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		dis( e) dis(
 		e) dis( e)
-		c2\ff  c4~
+		c2-\tweak extra-offset #'(0.8 . 0.8) \ff  c4~
 		c c2
 		c2  c4~
 % Bars 131 to 135
@@ -177,7 +177,7 @@ musicKlarinetteIIMvtIII = \relative c'' {
 		
 		c4-. c-. c-.
 		c-. c-. c-. 
-		c-. c2->
+		c-. c2
 		aes4-. c-. aes-.
 	}
 % Bars 146 to 150

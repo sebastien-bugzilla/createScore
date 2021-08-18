@@ -143,7 +143,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 126 to 130
 		g!2-> g4~->
 		g g2->
-		a!2_\ffgrandioso a4~
+		a!2 a4~
 		a a2
 		a2 a4~
 % Bars 131 to 135
@@ -182,7 +182,7 @@ musicOboeIMvtIII = \relative c''' {
 	d
 	d \bar "||" \key d \major
 	\repeat volta 2 {
-		\partCombineApart d4(\fp e8 cis d4) \partCombineAutomatic
+		\partCombineApart d4(-\tweak X-offset #-2 \fp e8 cis d4) \partCombineAutomatic
 		R2.
 		\partCombineApart d4(\p e8 cis d4) \partCombineAutomatic
 % Bars 156 to 160

@@ -84,7 +84,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 		bes r bes
 		aes! r r
 % Bars 61 to 65
-		r bes\f-. c-.
+		r bes-\tweak X-offset #-0.5 \f-. c-.
 		\once \partCombineApart ees2-> f4(->
 		g) aes2->
 		R2.*8
@@ -197,7 +197,7 @@ musicKlarinetteIMvtIII = \relative c'' {
 	f
 	f \bar "||" \key f \major
 	\repeat volta 2 {
-		c\fp
+		c-\tweak X-offset #-3 \fp
 		R2.
 		c(
 % Bars 156 to 160
