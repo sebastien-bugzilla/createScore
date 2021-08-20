@@ -4,12 +4,12 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicPiccoloMvtI = \relative c {
+musicPiccoloMvtI = \relative c''' {
 	\clef treble
 	\key b \minor
 %	\transposition a
 % Bars 1 to 5
-	
+	R1*121
 % Bars 6 to 10
 	
 % Bars 11 to 15
@@ -58,8 +58,15 @@ musicPiccoloMvtI = \relative c {
 	
 % Bars 121 to 125
 	
+	r8 c16\mf c c8 c \acciaccatura d c4. r8
+	r b16 b b8 b \acciaccatura cis b4. r8
+	r8. d,16(\f g8)[ r16 b,]( e8)[ r16 g,]( c8)[ r16 e,](
+	b'8) r r4 r2
 % Bars 126 to 130
-	
+	fis'8\f r r4 r2
+	r8 fis,16(\f\< g gis a ais b cis d dis e eis fis g! fis)
+	b8\f r^\mutainflautoII r4 r2
+	R1*226
 % Bars 131 to 135
 	
 % Bars 136 to 140

@@ -12,7 +12,7 @@ musicFlautoIMvtI = \relative c'' {
 	R1*6
 % Bars 6 to 10
 	
-	fis2(\pp a4 g
+	fis2( a4 g
 	fis4.) r8 r2
 	R1*7
 % Bars 11 to 15
@@ -46,7 +46,7 @@ musicFlautoIMvtI = \relative c'' {
 	ais8\! r r4 r2
 	R1*3
 % Bars 41 to 45
-	r2 r8 fis\mf-. gis-. ais-. 
+	\partCombineApart r2 r8 fis\mf-. gis-. ais-. 
 	\acciaccatura cis b\< ais-. b-. cis-. \acciaccatura e d cis-. d-. e-. 
 	fis( gis) gis4.->( ais8) ais4~\!
 	ais8( b cis d) eis,4.\>( fis8)\! \mark \default
@@ -58,7 +58,7 @@ musicFlautoIMvtI = \relative c'' {
 	cis4.\stopTrillSpan\p\<( d16 e cis4 b)
 	a(\f\> b a8 fis4-> e8
 % Bars 51 to 55
-	e4\!) r r2
+	e4\!) r r2 \partCombineAutomatic
 	R1*18
 % Bars 56 to 60
 	
@@ -69,7 +69,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	r2 r4 a,(\mf
+	\partCombineApart r2 r4 a,(\mf
 % Bars 71 to 75
 	d)\< fis(~\< fis8 e d b)
 	d2(\! fis,8) r fis'8.( d'16)
@@ -80,7 +80,7 @@ musicFlautoIMvtI = \relative c'' {
 	d4 r8 d d-. d-. d-. r
 	cis4-> cis8 d d cis cis r
 	cis4-> cis8 d d cis cis r
-	d r b(\prall a) a r g(\prall fis)
+	d r \partCombineAutomatic b(\prall a) a r g(\prall fis)
 	fis r e(_\dimmarkup\prall d) d r b(\prall a)
 % Bars 81 to 85
 	a r r4 r2
@@ -120,7 +120,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 	r8 g'16\mf g g8 r r fis16 fis fis8 r
 % Bars 121 to 125
-	r g16_\crescmarkup g g8 r r fis16 fis fis8 r
+	r g16_\crescmarkup g g8 r r fis16 fis fis8 r 
 	R1*2
 	
 	r8. d16(\f g8)[ r16 b,]( e8)[ r16 g,]( cis8)[ r16 e,](
@@ -143,10 +143,10 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	r8 b,,(\p d-. e-. b'-.) r r4
+	\partCombineApart r8 b,,(\p d-. e-. b'-.) r r4 \partCombineAutomatic
 	R1
 % Bars 151 to 155
-	r8 a,(-. cis-. e-. a-.) r r4
+	\partCombineApart r8 a,(-. cis-. e-. a-.) r r4
 	r8 b,(-. d-. e-. b'-.) r r4
 	r8 a,(-. cis-. e-. a-.) r r4
 	a1
@@ -164,10 +164,10 @@ musicFlautoIMvtI = \relative c'' {
 	f( e_\dimmarkup f e)
 	f(_\pdim e ees d)
 % Bars 166 to 170
-	cis!2 r 
+	cis!2 r \partCombineAutomatic
 	R1
-	cis'2(\p fis4 cis8. dis16)
-	ais( fis ais cis) cis2.
+	\partCombineApart cis'2(\p fis4 cis8. dis16)
+	ais( fis ais cis) cis2. \partCombineAutomatic
 	g!16-.\p g-. fis-. g-. r8. g16-.\< b-. b-. ais-. b-.\! r8. b16-.\<
 % Bars 171 to 175
 	c-. c-. b-. c-.\! r8. c16\< cis!-. cis-. bis-. cis-.\! r4
@@ -177,14 +177,14 @@ musicFlautoIMvtI = \relative c'' {
 	R1 \mark \default
 % Bars 176 to 180
 	R1
-	r8 a,(\mf\< a') a-. a4. a8\!
+	\partCombineApart r8 a,(\mf\< a') a-. a4. a8\!
 	b( a) a4 r2
 	r8 a,(\< a') a-. a4. a8\!
 	a8.(\f g16 b,4) a'8.( g16 b,4)
 % Bars 181 to 185
 	g'8.( fis16 a,4) g'8.( fis16 a,4)
 	a'8.( g16 b,4) b'8.( a16 cis,4)
-	bes'8\f r r4 r2
+	bes'8\f r r4 r2 \partCombineAutomatic
 	r4 bes,2.\f
 	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\!\startTrillSpan {d16[( ees)]\stopTrillSpan}
 % Bars 186 to 190
@@ -203,12 +203,12 @@ musicFlautoIMvtI = \relative c'' {
 	d-. r r2
 	R1*2
 	
-	bes8(\f g e cis bes_\dimmarkup g e cis)
+	\partCombineApart bes8(\f g e cis bes_\dimmarkup g e cis)
 	bes'( g e cis bes' g e cis)
 % Bars 201 to 205
 	a'\p\>( g e cis a' g e cis)\!
 	a'16(\pp g a g  a g a g  a g a g  a g a g
-	a g a g  a g a g  a g a g  a g b a)
+	a g a g  a g a g  a g a g  a g b a) \partCombineAutomatic
 	d,1\pp~
 	d~
 % Bars 206 to 210
@@ -216,13 +216,13 @@ musicFlautoIMvtI = \relative c'' {
 	d~
 	d8 r r4 r2 \mark \default
 	R1
-	d8\p-. f16-. f-. f8-. aes-. aes-. b!-. b-. d-.
+	\partCombineApart d8\p-. f16-. f-. f8-. aes-. aes-. b!-. b-. d-.
 % Bars 211 to 215
-	c r r4 r2
+	c r r4 r2 \partCombineAutomatic
 	R1
-	d8-.\p\< g16-. g-. g8-. bes-. bes-. d-. d-.\! g-.
+	\partCombineApart d8-.\p\< g16-. g-. g8-. bes-. bes-. d-. d-.\! g-.
 	g(\mf a16 bes g4. d8 g4)
-	g8(_\crescmarkup a16 bes g4. des8 g4)
+	g8(_\crescmarkup a16 bes g4. des8 g4) \partCombineAutomatic
 % Bars 216 to 220
 	g1\f
 	ees4( ces2.)
@@ -239,7 +239,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 	
 	
-	gis2(\p\< ais4 b
+	\partCombineApart gis2(\p\< ais4 b
 	dis2~\fz dis8\> fis e8. dis16\!
 % Bars 231 to 235
 	cis4)\p \acciaccatura e dis4.( cis8) \tuplet 3/2 4 {cis8( b ais)}
@@ -268,7 +268,7 @@ musicFlautoIMvtI = \relative c'' {
 	a,( d2 e8 fis)
 	fis4(\< e bes e)\!
 % Bars 256 to 260
-	e8\fz r r4 r2
+	e8\fz r r4 r2 \partCombineAutomatic
 	R1*4
 	
 	
@@ -280,13 +280,13 @@ musicFlautoIMvtI = \relative c'' {
 	dis2\ff~ dis8 cis( b gis)
 	b2( fis4) b
 	cis cis dis8( fis dis b)
-	cis2.\> r4\!
+	\once \partCombineChords cis2.\> r4\!
 % Bars 271 to 275
 	R1*5
 % Bars 276 to 280
-	r8 cis,-.\p cis-. e-. gis-. r r4
+	\partCombineApart r8 cis,-.\p cis-. e-. gis-. r r4 \partCombineAutomatic
 	R1
-	r8 ais,-. ais-. cis-. fis-. r r4
+	\partCombineApart r8 ais,-. ais-. cis-. fis-. r r4
 	r8 cis-. cis-. e-. gis-. r r4
 	r8 ais,-. ais-. cis-. fis-. r r4
 % Bars 281 to 285
@@ -304,11 +304,11 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 291 to 295
 	d!( cis_\dimmarkup\> d cis)\!
 	d( cis\> c b)\!
-	bes2\pp r
+	bes2\pp r \partCombineAutomatic
 	R1
-	bes'2(\p ees4 bes8. c16)
+	\partCombineApart bes'2(\p ees4 bes8. c16)
 % Bars 296 to 300
-	g16( ees g bes) bes2.
+	g16( ees g bes) bes2. \partCombineAutomatic
 	e,!16\pp-. e-. dis-. e-. r8. e16-. gis-. gis-. fisis-. gis-. r8. gis16-.
 	a!16-._\crescmarkup a-. gis-. a-. r8. a16-.\< ais-. ais-. gisis-. ais-.\! r4
 	bis8\fz r r4 r2
@@ -317,14 +317,14 @@ musicFlautoIMvtI = \relative c'' {
 	d!8\f r r4 r2
 	R1 \mark \default
 	R1
-	r4 fis,\p(\< fis'4. fis8)\!
+	\partCombineApart r4 fis,\p(\< fis'4. fis8)\!
 	gis8( fis) fis4 r2
 % Bars 306 to 310
 	r4 fis,(\< fis'4. fis8)\!
 	fis8.(\fp e16 gis,4) fis'8.(\fp e16 gis,4)
 	e'8.(\fp dis16 fis,4) e'8.(\fp dis16 fis,4)
 	fis'8.( e16 gis,4)_\crescmarkup gis'8.( fis16 ais,4)
-	g'!8\f r r4 r2
+	g'!8\f r r4 r2 \partCombineAutomatic
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {g,8\f\< b d}
 	g2\! fis4-. fis-.
@@ -339,19 +339,19 @@ musicFlautoIMvtI = \relative c'' {
 	ais4. gis16 fis b2
 % Bars 321 to 325
 	b8 r cis r dis r e r
-	fis2 e4-. ais,-. \mark \default
-	b8 r r4 r2
+	fis2 e4-. \once \partCombineApart ais,-. \mark \default
+	\once \partCombineApart b8 r r4 r2
 	R1*2
 	
 % Bars 326 to 330
-	r8 b~\<\startTrillSpan b2.
-	gis8\f\stopTrillSpan r r4 r2
+	\partCombineApart r8 b~\<\startTrillSpan b2.
+	gis8\f\stopTrillSpan r r4 r2 \partCombineAutomatic
 	R1
-	b16\mf b cis dis b4-> ais16 ais gis fis ais4->
+	\partCombineApart b16\mf b cis dis b4-> ais16 ais gis fis ais4->
 	b16 b cis dis b4-> ais16 ais gis fis ais4->
 % Bars 331 to 335
 	dis8. b16 dis8. b16 dis8. b16 dis8. b16
-	dis8 r b4(\p bis cis)
+	dis8 r b4(\p bis cis) \partCombineAutomatic
 	dis(\< e eis g!)\!
 	\sharptrill gis1\<\startTrillSpan
 	gis8\!\stopTrillSpan r r4 r2

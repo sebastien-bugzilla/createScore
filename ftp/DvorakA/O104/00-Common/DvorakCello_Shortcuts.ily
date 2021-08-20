@@ -11,14 +11,14 @@ dimmarkup=^\markup {\italic dim.}
 crescmarkup=^\markup {\italic cresc.}
 pdim=^\markup {\dynamic p \italic dim.}
 fzmarkup=^\markup {\dynamic fz}
-%fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
 
 % expression
 
-
+IImutainflautopicc=^\markup { \smaller { [II. muta in Flauto picc.] } }
+mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
 
 
 % shortcuts & funcions
@@ -37,5 +37,7 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
 	}
 }
+
+fermataSign = \markup {\musicglyph "scripts.ufermata"}
 
 

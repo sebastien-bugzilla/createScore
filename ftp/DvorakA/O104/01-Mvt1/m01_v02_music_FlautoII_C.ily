@@ -12,8 +12,8 @@ musicFlautoIIMvtI = \relative c'' {
 	R1*6
 % Bars 6 to 10
 	
-	cis2(\pp d2
-	cis4.) r8 r2
+	cis2\pp d2
+	cis4. r8 r2
 	R1*7
 % Bars 11 to 15
 	
@@ -39,7 +39,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	r4 ais\prall\mp r b\prall
-	r fis\prall_\dimmarkup r b\prall
+	r fis\prall r b\prall
 	r fis\prall\mp r e\prall_\dimmarkup
 % Bars 36 to 40
 	r cis\prall\> r b\prall\p
@@ -50,17 +50,21 @@ musicFlautoIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R1*30
+	R1*7
 % Bars 46 to 50
 	
 % Bars 51 to 55
-	
+	R1*18
 % Bars 56 to 60
 	
 % Bars 61 to 65
 	
 % Bars 66 to 70
 	
+	
+	
+	
+	R1*5
 % Bars 71 to 75
 	
 	
@@ -119,22 +123,28 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 126 to 130
 	
 	\mark \default
-	R1*29
+	R1*5
 	
 	
 % Bars 131 to 135
 	
+	
+	R1*16
 % Bars 136 to 140
 	
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
-% Bars 151 to 155
 	
+	
+	R1
+	R1
+% Bars 151 to 155
+	R1*6
 % Bars 156 to 160
 	\mark \default
-	R1*13 
+	R1*10 
 	
 	
 	
@@ -142,8 +152,8 @@ musicFlautoIIMvtI = \relative c'' {
 	
 % Bars 166 to 170
 	
-	
-	
+	R1
+	R1*2
 	
 	g'!16-.\p g-. fis-. g-. r8. g16-.\< b-. b-. ais-. b-.\! r8. b16-.\<
 % Bars 171 to 175
@@ -303,7 +313,7 @@ musicFlautoIIMvtI = \relative c'' {
 	ais4. gis16 fis b2
 % Bars 321 to 325
 	b8 r ais r b r b r
-	dis2 cis4-. ais-. \mark \default
+	dis2 cis4-. ais \mark \default
 	b8 r r4 r2
 	R1*2
 	
