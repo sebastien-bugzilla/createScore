@@ -40,4 +40,10 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 
 fermataSign = \markup {\musicglyph "scripts.ufermata"}
 
-
+mmrPos = #(define-music-function
+	(position)
+	(number?)
+	#{
+		\once \override MultiMeasureRest.staff-position = #(- position 2)
+	#}
+)

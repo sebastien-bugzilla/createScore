@@ -101,7 +101,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 101 to 105
 	r16 e,\p\<-. e-. dis-. e8-. a-. \tuplet 3/2 4 {a-. a-. c-. } c16-. c-. c-. e-.\!
-	dis8 r r4 r2
+	dis8 r_\IImutainflautopicc r4 r2
 	a'4.(\p b16 c a2)
 	d4( c8 b d2)
 	b4.( cis!16 d b2)
@@ -252,11 +252,15 @@ musicFlautoIMvtI = \relative c'' {
 	dis4( \acciaccatura fis8 e4 dis fisis,)\!
 	gis4.(\pp ais16 b gis4. fis16 dis
 	gis2) r
-	R1*7
+	\mmrPos #10 R1
 % Bars 241 to 245
-	
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
 % Bars 246 to 250
-	
+	R
 	r2 r4 r8 gis'\p \mark \default
 	gis2.( ais8 b)
 	b4( ais2) ais4
@@ -353,7 +357,7 @@ musicFlautoIMvtI = \relative c'' {
 	dis8. b16 dis8. b16 dis8. b16 dis8. b16
 	dis8 r b4(\p bis cis) \partCombineAutomatic
 	dis(\< e eis g!)\!
-	\sharptrill gis1\<\startTrillSpan
+	gis1\<\startTrillSpan
 	gis8\!\stopTrillSpan r r4 r2
 % Bars 336 to 340
 	R1*5
@@ -361,7 +365,7 @@ musicFlautoIMvtI = \relative c'' {
 	r4 r8 ais,\ff-^ b-^ bis-^ cis-^ ais-^
 	b1\ff\startTrillSpan
 	dis\startTrillSpan
-	\sharptrill fis\startTrillSpan
+	fis\startTrillSpan
 	b\startTrillSpan
 % Bars 346 to 350
 	b4-.\stopTrillSpan fis-. r g!-.

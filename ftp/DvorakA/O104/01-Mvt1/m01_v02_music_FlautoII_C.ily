@@ -46,8 +46,8 @@ musicFlautoIIMvtI = \relative c'' {
 	ais8\! r r4 r2
 	R1*3
 % Bars 41 to 45
-	R1*4
-	
+	\mmrPos #-6 R1
+	R1*3
 	
 	\mark \default
 	R1*7
@@ -96,7 +96,7 @@ musicFlautoIIMvtI = \relative c'' {
 	
 % Bars 101 to 105
 	r16 c,,\p\<-. c-. b-. c8-. e-. \tuplet 3/2 4 {e-. e-. a-. } a16-. a-. a-. c-.\!
-	c8 r_\IImutainflautopicc r4 r2
+	c8 r r4 r2
 	R1*7 
 	
 	
@@ -190,11 +190,11 @@ musicFlautoIIMvtI = \relative c'' {
 	d-. r r2
 	R1*2
 	
-	R1*5
-	
+	R1
+	\mmrPos #-8 R
 % Bars 201 to 205
-	
-	
+	\mmrPos #-8 R1
+	R1*2
 	
 	d,,1\pp~
 	d~
@@ -336,7 +336,7 @@ musicFlautoIIMvtI = \relative c'' {
 	b1\ff\startTrillSpan
 	dis\startTrillSpan
 	dis\startTrillSpan
-	\sharptrill gis\startTrillSpan
+	gis\startTrillSpan 
 % Bars 346 to 350
 	dis4-.\stopTrillSpan dis-. r e-.
 	r b-. b-. b-.
