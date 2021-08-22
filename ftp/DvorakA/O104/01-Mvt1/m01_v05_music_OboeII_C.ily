@@ -44,7 +44,7 @@ musicOboeIIMvtI = \relative c' {
 	e4.\f e16 e e4. e16 e 
 	e4. e16 e e4. e16 e 
 	e8 r fis4\prall\mp r e\prall
-	r cis\prall_\dimmarkup r b\prall
+	r cis\prall r b\prall
 	r ais\prall\mp r b\prall
 % Bars 36 to 40
 	r fis\prall\> r e\p\prall
@@ -53,8 +53,8 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 % Bars 41 to 45
-	R1*4
-	
+	\mmrPos #-6 R1
+	R1*3
 	
 	\mark \default
 	R1*4
@@ -161,17 +161,17 @@ musicOboeIIMvtI = \relative c' {
 	cis,,2.\fz( d4)\<
 	d4( fis e fis)\!
 % Bars 156 to 160
-	a1\dimD\> \mark \default
-	a2.(_\pdimD\> ais4)
-	b(\pp fis g fis
-	g dis2->\> e4)\!
+	a1 \mark \default
+	a2.( ais4)
+	b fis g fis
+	g dis2->\> e4\!
 	g4( fis g fis)
 % Bars 161 to 165
 	g4(\< dis2->\> e4\!)
 	b'(\crescD\< a b a)\!
 	g(\mf fis g fis)
-	f( e_\dimmarkup f e)
-	d4_\pdim( e f fis)
+	f( e f e)
+	d4( e f fis)
 % Bars 166 to 170
 	fis4(\pp eis dis eis)
 	fis( eis dis eis)
@@ -213,9 +213,9 @@ musicOboeIIMvtI = \relative c' {
 	dis-^
 	e4._\dimmarkup fis16\> gis e2~
 	e8\fz r r4 r2
-	R1*2
+	\mmrPos #-8 R1
 % Bars 201 to 205
-	
+	\mmrPos #-8 R
 	R1*7
 % Bars 206 to 210
 	
@@ -250,14 +250,18 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	
-	R1*8 
+	R1*3 
 % Bars 241 to 245
+	
+	
+	\mmrPos #-6 R1
+	R1*4
 	
 % Bars 246 to 250
 	
 	\mark \default
-	R1*9
-	
+	\mmrPos #-6 R1
+	R1*8
 	
 % Bars 251 to 255
 	
@@ -269,42 +273,42 @@ musicOboeIIMvtI = \relative c' {
 	\mark \default
 % Bars 261 to 265
 	R1
-	r4 d8(\mf cis\< g'! fis eis\! fis)
+	r4 d8\(\mf cis\< g'! fis eis\! fis\)
 	r ais(\f\< b ais)\! r ais(\< b ais)\!
-	eis8\fz->( fis16) r eis8->( fis16) r eis8(-> fis16) r eis8->( fis16) r
+	eis8\fz->\( fis16\) r eis8->\( fis16\) r eis8\(-> fis16\) r eis8->\( fis16\) r
 	ais8\f r r4 r2
 % Bars 266 to 270
 	R1
-	dis2\ff~ dis8 cis( b gis)
-	b2( fis4) b
-	cis cis dis8( fis dis b)
+	dis2\ff~ dis8 cis\( b gis\)
+	b2\( fis4\) b
+	cis cis dis8\( fis dis b\)
 	ais2.\> r4\!
 % Bars 271 to 275
 	R1*10
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	R1*2
-	
+	\mmrPos #-6 R1
+	R
 	<< fis1\mf {s2\mf\> s4 s\!} >>  \mark \default
-	fis2.(\p\> fisis4)\!
-	gis(\pp dis e dis)
+	fis2.\(\p\> fisis4\)\!
+	gis\(\pp dis e dis\)
 % Bars 286 to 290
 	e(\< bis2->\fz\> cis4\!)
 	e( dis e dis)
 	e(\< bis2->_\fzmarkup cis4)\!
 	gis'(\mf fis gis fis)
-	e( dis\>_\dimmarkup e dis)\!
+	e( dis\> e dis)\!
 % Bars 291 to 295
-	d!( cis\dimmarkup\> d cis)\!
+	d!( cis\> d cis)\!
 	d4 r r2
-	R1*2
-	
+	R1
+	\mmrPos #-6 R
 	R1*2
 % Bars 296 to 300
 	
 	g!16-.\p g-. g-. g-. r8. g16-. gis\<-. gis-. gis-. gis-.\! r8. gis16-.
-	a!-._\crescmarkup a-. a-. a-. r8. a16-.\< ais-. ais-. ais-. ais-.\! r4
+	a!-. a-. a-. a-. r8. a16-.\< ais-. ais-. ais-. ais-.\! r4
 	dis8\fz r r4 r2
 	cis8\fz r r4 r2
 % Bars 301 to 305
@@ -356,7 +360,7 @@ musicOboeIIMvtI = \relative c' {
 	dis1\ff\startTrillSpan
 	dis\startTrillSpan
 	dis\startTrillSpan
-	\sharptrill gis\startTrillSpan
+	gis\startTrillSpan
 % Bars 346 to 350
 	dis4\stopTrillSpan-. dis-. r e-.
 	r dis-. dis-. e-.
@@ -367,5 +371,5 @@ musicOboeIIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {dis8\f dis dis } dis4 dis
 	dis2 dis,4. dis8
 	dis1\<
-	b4\ff r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
+	b4\ff r r2 \bar "|."
 }
