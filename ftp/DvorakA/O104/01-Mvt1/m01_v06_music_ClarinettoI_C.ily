@@ -57,7 +57,7 @@ musicClarinettoIMvtI = \relative c' {
 	g[ g g g\f g g]  g\>[ g g g g g]
 	f_\dimmarkup[ f f f f f]  f[ f f f f f\!] }
 % Bars 41 to 45
-	e r r4 r8 a,-.\mf b-. cis-.
+	e r r4 \partCombineApart r8 a,-.\mf b-. cis-.
 	\acciaccatura e d\< cis-. d-. e-. \acciaccatura g f e-. f-. g-.
 	a( b) b4.->( cis8) cis4~\!
 	cis8( d e f) gis,4.(\> a8) \mark \default
@@ -70,7 +70,7 @@ musicClarinettoIMvtI = \relative c' {
 	e\f\>~
 % Bars 51 to 55
 	e4\! r r2
-	R1
+	R1 \partCombineAutomatic
 	R1*11
 % Bars 56 to 60
 	
@@ -78,7 +78,7 @@ musicClarinettoIMvtI = \relative c' {
 	
 	
 	
-	r2 r4 c8(\p cis)
+	\partCombineApart r2 r4 c8(\p cis)
 	d2(~ d8 c! bes a
 % Bars 66 to 70
 	g2 d4) d'(\<
@@ -90,28 +90,28 @@ musicClarinettoIMvtI = \relative c' {
 	f)\< a\<(~ a8 g f d)\!
 	f2( a,4) r
 	c2.(\< a'4)
-	c(\f\< bes g4. f8)\! \mark \default
+	c(\f\< bes g4. f8)\! \partCombineAutomatic \mark \default
 	a4\ff r8 a bes-. a-. a-. r
 % Bars 76 to 80
 	a4 r8 a bes-. a-. a-. r
 	e4-> e8 f a g g r
 	e4-> e8 f a g g r
-	a r r4 r d,8(\prall c)
-	c r bes(\prall_\dimmarkup a) a r r4
+	a r r4 \partCombineApart r d,8(\prall c)
+	c r bes(\prall_\dimmarkup a) a r r4 \partCombineAutomatic
 % Bars 81 to 85
 	r bes8(\p\prall a) a r bes(\prall a)
-	a r d,(\pp\prall c) c r d(\prall c)
-	c r r4 r2
+	a r \partCombineApart d,(\pp\prall c) c r d(\prall c)
+	c r r4 r2 \partCombineAutomatic
 	R1*2
 	
 % Bars 86 to 90
 	d1\pp~
-	d4 r r2
+	d4 r r2 
 	R1*2
 	
-	d'2(\p\< ees4. d8\!
+	\partCombineApart d'2(\p\< ees4. d8\!
 % Bars 91 to 95
-	f2\p) r
+	f2\p) r \partCombineAutomatic
 	R1*3
 	
 	
@@ -120,7 +120,7 @@ musicClarinettoIMvtI = \relative c' {
 	g8\fz r r4 r16 g-.\p\< g-. f-. g8-. f16-. f-.\!
 	g8\fz r r4 r2
 	R1
-	r4 r8 c,,-.\p\< \tuplet 3/2 4 {c-. c-. ees-.} ees16-. ees-. ees-. g-. \!
+	\partCombineApart r4 r8 c,,-.\p\< \tuplet 3/2 4 {c-. c-. ees-.} ees16-. ees-. ees-. g-. \!
 	fis8\fz r r4 r2
 % Bars 101 to 105
 	r16 c-.\p\< c-. c-. c8-. ees-. \tuplet 3/2 4 {ees-. ees-. g-.} g16-. g-. g-. c-.\!
@@ -133,26 +133,26 @@ musicClarinettoIMvtI = \relative c' {
 	e2(\< f)\!
 	f2.\fz( e4)
 	a,(_\dimD d,8 f bes, a4.) \mark \default
-	a8 r r4 r2
+	a8 r r4 r2 \partCombineAutomatic
 % Bars 111 to 115
 	R1*11
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
-	r8 ees''16\mf ees ees8 ees \acciaccatura f ees4. r8
+	\partCombineApart r8 ees''16\mf ees ees8 ees \acciaccatura f ees4. r8
 	r8 d16 d d8 d \acciaccatura e! d4. r8
 	r4 bes'8\f[ r16 a]( g8)[ r16 f]( e8)[ r16 d]
-	d8 r16 f_\fcresc( bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,](
+	d8 r16 \partCombineAutomatic f_\fcresc( bes8)[ r16 d,]( g8)[ r16 bes,]( e8)[ r16 g,](
 % Bars 126 to 130
 	cis8\f) r r4 r2
 	r8 cis,16(\f\< d dis e f fis g gis a bes b c cis\!\noBeam) r \mark \default
-	f1\startTrillSpan\f
+	\partCombineApart f1\startTrillSpan\f
 	f\startTrillSpan
 	f\startTrillSpan
 % Bars 131 to 135
-	f\startTrillSpan
-	f4\stopTrillSpan\f r r2
+	f\startTrillSpan 
+	f4\stopTrillSpan \partCombineAutomatic r r2
 	R1
 	f2.\fp\> r4\!
 	R1*14
@@ -164,13 +164,13 @@ musicClarinettoIMvtI = \relative c' {
 	
 	
 	
-	r8 g,-.(\pp d'-. f-. g-.) r r4
+	r8 g,-.([\pp d'-. f-.] g-.) r r4
 	R1
 % Bars 151 to 155
-	r8 c,-.( e-. e-. g-.) r r4
+	r8 \partCombineApart c,-.( e-. e-. g-.) \partCombineAutomatic r r4
 	r8 d-.( f-. f-. g-.) r r4
 	r8 c,-.( c-. e-. g-.) r r4
-	e2\fz( g4 f)\<
+	\partCombineApart e2\fz( g4 f)\<
 	a( f e d)\!
 % Bars 156 to 160
 	f(\dimD\> c \acciaccatura a'8 g4. f8) \mark \default
@@ -186,9 +186,9 @@ musicClarinettoIMvtI = \relative c' {
 	aes(_\pdim g ges f!)
 % Bars 166 to 170
 	e!2(\p a!4 e8. fis16)
-	cis8.( a16 e'2.)
-	a,4(\pp gis fis gis
-	e) r r2
+	cis8.( a16 e'2.) \partCombineAutomatic
+	a,4\(\pp gis fis gis
+	e\) r r2
 	R1*2
 % Bars 171 to 175
 	
@@ -220,11 +220,11 @@ musicClarinettoIMvtI = \relative c' {
 	c-^
 	c-^
 	d2._\dimD\> d4\!
-	des8\fz r r4 r2
+	des8\fz r r4 \partCombineApart r2
 	R1*3
 % Bars 201 to 205
 	
-	
+	\partCombineAutomatic
 	R1*5
 	
 	
@@ -254,7 +254,7 @@ musicClarinettoIMvtI = \relative c' {
 	
 % Bars 226 to 230
 	
-	R1*21
+	\partCombineApart R1*21
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -272,7 +272,7 @@ musicClarinettoIMvtI = \relative c' {
 	a(
 	bes)\!_\crescmarkup
 	a(
-	bes)\<
+	<< bes) {s4\< s s s\!} >>  \partCombineAutomatic
 % Bars 256 to 260
 	b8\fz r r4 r2
 	R1*4
@@ -281,15 +281,15 @@ musicClarinettoIMvtI = \relative c' {
 	\mark \default
 % Bars 261 to 265
 	r2 gis,,8(\mf a d cis)
-	r e(\< d cis) gis'( a b cis)\!
+	r e\(\< d cis\) gis'\( a b cis\)\!
 	r e(\f\< f! e)\! r e(\< f e)\!
 	f,!8(\fz-> e16) r f8->( e16) r f8->( e16) r f8->( e16) r 
 	cis'8\f r r4 r2 
 % Bars 266 to 270
 	R1
-	fis2~\ff fis8 e( d b)
-	d2( a4) d
-	e e fis8( a fis d)
+	fis2~\ff fis8 e\( d b\)
+	d2\( a4\) d
+	e e fis8\( a fis d\)
 	e2.\> r4\!
 % Bars 271 to 275
 	R1*5
@@ -300,7 +300,7 @@ musicClarinettoIMvtI = \relative c' {
 	r8 d-. d-. e-. e-. r r4
 	r8 cis-. cis-. cis-. e-. r r4
 % Bars 281 to 285
-	cis2\mf( e4 d)
+	\partCombineApart cis2\mf( e4 d)
 	fis(\< d cis b)\!
 	d(\> a) \acciaccatura fis'8 e4.( d8)\! \mark \default
 	fis2.\> fis4\!
@@ -313,10 +313,10 @@ musicClarinettoIMvtI = \relative c' {
 	g( fis\>^\dimmarkup g fis)\!
 % Bars 291 to 295
 	f!( e\>^\dimmarkup f e)\!
-	f( e\> ees d!8\! a)
+	f( e\> ees d!8\! a) \partCombineAutomatic
 	bes4(\pp aes ges aes)
 	bes( aes ges aes)
-	des,8 r r4 r2
+	\once \partCombineApart des,8 r r4 r2
 % Bars 296 to 300
 	R1*3
 	
@@ -331,9 +331,9 @@ musicClarinettoIMvtI = \relative c' {
 	
 % Bars 306 to 310
 	
-	c,4(\fp b) c(\fp b)
-	bes!(\fp a) bes(\fp a)
-	c( b_\crescmarkup d cis)
+	c,4\(\fp b\) c\(\fp b\)
+	bes!\(\fp a\) bes\(\fp a\)
+	c\( b_\crescmarkup d cis\)
 	e2.\f-^ r4
 % Bars 311 to 315
 	r2 r4 \tuplet 3/2 4 {bes'8\f\< d f}
@@ -361,7 +361,7 @@ musicClarinettoIMvtI = \relative c' {
 	\tuplet 3/2 4 {d8 d d} d4 \tuplet 3/2 4 {cis8 cis cis} cis4
 % Bars 331 to 335
 	d8 r r4 r2
-	r4 fis2(\p g4)
+	r4 fis2( g4)
 	ees(\< cis f! e!)\!
 	f1\startTrillSpan\<
 	f8\!\stopTrillSpan r r4 r2
@@ -369,10 +369,10 @@ musicClarinettoIMvtI = \relative c' {
 	R1*5
 % Bars 341 to 345
 	r4 r8 cis\ff-^ d-^ dis-^ e-^ cis-^
-	\naturaltrill a'1\startTrillSpan
-	\naturaltrill a\startTrillSpan
-	\naturaltrill a\startTrillSpan
-	\sharptrill b\startTrillSpan
+	a'1\startTrillSpan
+	a\startTrillSpan
+	a\startTrillSpan
+	b\startTrillSpan
 % Bars 346 to 350
 	a4-.\stopTrillSpan a-. r bes!-.
 	r a-. b-. bes-.
@@ -383,5 +383,5 @@ musicClarinettoIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {fis8\f fis fis} fis4 fis
 	fis2 d,4. d8
 	d1\<
-	d4\ff r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
+	d4\ff r r2 \bar "|."
 }

@@ -31,7 +31,7 @@ conductorOptions = {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
 		\override Hairpin.to-barline = ##f
-		\override TrillSpanner.bound-details.right.padding = #1
+		\override TrillSpanner.bound-details.right.padding = #1  % 1.8
 	}
 	\context {
 		\CueVoice

@@ -11,6 +11,7 @@ dimmarkup=^\markup {\italic dim.}
 crescmarkup=^\markup {\italic cresc.}
 pdim=^\markup {\dynamic p \italic dim.}
 fzmarkup=^\markup {\dynamic fz}
+fcresc=^\markup {\dynamic f \italic cresc.}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
