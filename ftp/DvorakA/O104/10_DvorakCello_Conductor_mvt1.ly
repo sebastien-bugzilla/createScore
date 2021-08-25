@@ -95,17 +95,18 @@
 %					\partCombine \musicOboeIMvtI \musicOboeIIMvtI
 %%					\musicOboeIMvtI
 %				}
-				\new Staff {
-					\timeMvtI \generalOptions \conductorOptions
-					\nameStaffIVMvtI
-					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
-%					\musicClarinettoIIMvtI
-				}
 %				\new Staff {
 %					\timeMvtI \generalOptions \conductorOptions
-%					\nameStaffVMvtI
-%					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
+%					\nameStaffIVMvtI
+%					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
+%%					\musicClarinettoIIMvtI
 %				}
+				\new Staff {
+					\timeMvtI \generalOptions \conductorOptions
+					\nameStaffVMvtI
+%					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
+					\musicFagottoIMvtI
+				}
 			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
