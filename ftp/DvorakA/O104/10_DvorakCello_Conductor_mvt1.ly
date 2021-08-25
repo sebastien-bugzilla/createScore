@@ -105,7 +105,7 @@
 					\timeMvtI \generalOptions \conductorOptions
 					\nameStaffVMvtI
 %					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
-					\musicFagottoIMvtI
+					\musicFagottoIIMvtI
 				}
 			>>
 %			\new StaffGroup <<

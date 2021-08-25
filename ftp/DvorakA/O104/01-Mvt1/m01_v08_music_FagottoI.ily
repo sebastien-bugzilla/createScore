@@ -355,5 +355,5 @@ musicFagottoIMvtI = \relative c {
 	r4 \tuplet 3/2 4 {fis''8\f fis fis} fis4 fis
 	fis2 b,,4. b8
 	b1\<
-	b4\ff r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\ff r r2-\tweak extra-offset #'(4.7 . 0) ^\fermataSign \bar "|."
 }
