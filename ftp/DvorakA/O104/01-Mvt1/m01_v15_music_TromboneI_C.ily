@@ -29,8 +29,8 @@ musicTromboneIMvtI = \relative c' {
 	b8 r r4 r2
 	R1
 % Bars 31 to 35
-	e2->\f d->
-	c-> b->
+	\partCombineApart e2->\f d->
+	c-> b-> \partCombineAutomatic
 	cis!8\f r r4 r2
 	R1*11
 % Bars 36 to 40
@@ -173,7 +173,7 @@ musicTromboneIMvtI = \relative c' {
 	dis2\ff b
 	dis2. dis4->
 	cis2 dis
-	cis2.\> r4\!
+	\once \partCombineChords cis2.\> r4\!
 % Bars 271 to 275
 	R1*13
 % Bars 276 to 280
@@ -201,7 +201,7 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	r2 r4 r8\fermata r
-	dis2\ff b4 cis
+	dis2 b4 cis
 	dis2 dis
 % Bars 321 to 325
 	r8 b r cis r b r b
@@ -234,5 +234,5 @@ musicTromboneIMvtI = \relative c' {
 	r4 \tuplet 3/2 4 {dis8 dis dis} dis4 dis
 	dis2 dis4. dis8
 	dis1\<
-	b4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\f r r2 \bar "|."
 }

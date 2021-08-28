@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTromboneIMvtI = \relative c' {
+musicTromboneIIMvtI = \relative c {
 	\clef alto
 	\key b \minor
 %	\transposition a
@@ -19,19 +19,19 @@ musicTromboneIMvtI = \relative c' {
 % Bars 21 to 25
 	
 	\mark \default
-	d2.\ff e4-.
-	d-. cis-. d2~
-	d4 r b8. d16 fis8.-> e16
+	fis2.\ff g4-.
+	fis-. e-. fis2~
+	fis4 r b8. d16 fis8.-> e16
 % Bars 26 to 30
 	d4-. cis-. e-. d-.
-	b2. b4
-	b2. b4
-	b8 r r4 r2
+	g,2. g4
+	g2. g4
+	g8 r r4 r2
 	R1
 % Bars 31 to 35
-	e2->\f d->
-	c-> b->
-	cis!8\f r r4 r2
+	R1*2
+	
+	ais8\f r r4 r2
 	R1*11
 % Bars 36 to 40
 	
@@ -56,18 +56,18 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	\mark \default
-	a4\f r8 a b-. a-. a-. r
+	fis4\f r8 fis g-. fis-. fis-. r
 % Bars 76 to 80
-	a4 r8 a bes-. a-. a-. r
-	fis'4 e8 d d cis cis r
-	fis4 e8 d d cis cis r
-	d4 r r2
+	fis4 r8 fis g-. fis-. fis-. r
+	a4 a8 a a a a r
+	a4 a8 a a a a r
+	a4 r r2
 	R1*6
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	fis,1\pp~
-	fis4 r r2
+	dis,1\pp~
+	dis4 r r2
 	R1*22
 % Bars 91 to 95
 	
@@ -134,8 +134,8 @@ musicTromboneIMvtI = \relative c' {
 % Bars 206 to 210
 	
 	
-	d1\pp~ \mark \default
-	d8 r r4 r2
+	c1\pp~ \mark \default
+	c8 r r4 r2
 	R1*14
 % Bars 211 to 215
 	
@@ -170,10 +170,10 @@ musicTromboneIMvtI = \relative c' {
 	R1*6
 % Bars 266 to 270
 	
-	dis2\ff b
-	dis2. dis4->
-	cis2 dis
-	cis2.\> r4\!
+	fis,2\ff gis
+	fis2. fis4->
+	ais2 fis
+	ais2.\> r4\!
 % Bars 271 to 275
 	R1*13
 % Bars 276 to 280
@@ -201,12 +201,12 @@ musicTromboneIMvtI = \relative c' {
 	
 	
 	r2 r4 r8\fermata r
-	dis2\ff b4 cis
-	dis2 dis
+	fis1\ff
+	ais2 b
 % Bars 321 to 325
-	r8 b r cis r b r b
-	bis2\fz cis8 r ais r \mark \default
-	b! r r4 r2
+	r8 gis r ais r fis r gis
+	fis2\fz e8 r fis r \mark \default
+	fis r r4 r2
 	R1*14
 % Bars 326 to 330
 	
@@ -215,24 +215,24 @@ musicTromboneIMvtI = \relative c' {
 % Bars 336 to 340
 	
 	
-	r8 ais4\pp r8 r4 ais
+	r8 e4\pp r8 r4 e
 	R1*3
 	
 % Bars 341 to 345
 	
-	b4.\ff cis16 dis b2
+	b'4.\ff cis16 dis b2
 	ais4. gis16 fis ais2
 	gis4. ais16 b gis4-. fis-.
 	e8 e'4 dis-^ cis-^ b8-.
 % Bars 346 to 350
-	dis4-. dis-. r b-.
-	r dis-. dis-. e-.
-	dis-. r dis-. r
-	dis-. r dis-. r
-	dis-. r r2
+	fis4-. fis-. r g!-.
+	r fis-. gis-. g-.
+	fis-. r fis-. r
+	fis-. r fis-. r
+	fis-. r r2
 % Bars 351 to 354
-	r4 \tuplet 3/2 4 {dis8 dis dis} dis4 dis
-	dis2 dis4. dis8
-	dis1\<
-	b4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	r4 \tuplet 3/2 4 {fis8 fis fis} fis4 fis
+	fis2 fis4. fis8
+	fis1\<
+	b4\f r r2 \bar "|."
 }
