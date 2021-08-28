@@ -29,8 +29,8 @@
 \include "./01-Mvt1/m01_v05_music_OboeII_C.ily"
 \include "./01-Mvt1/m01_v06_music_ClarinettoI_C.ily"
 \include "./01-Mvt1/m01_v07_music_ClarinettoII_C.ily"
-\include "./01-Mvt1/m01_v08_music_FagottoI.ily"
-\include "./01-Mvt1/m01_v09_music_FagottoII.ily"
+\include "./01-Mvt1/m01_v08_music_FagottoI_C.ily"
+\include "./01-Mvt1/m01_v09_music_FagottoII_C.ily"
 \include "./01-Mvt1/m01_v10_music_CornoI.ily"
 \include "./01-Mvt1/m01_v11_music_CornoII.ily"
 \include "./01-Mvt1/m01_v12_music_CornoIII.ily"
@@ -67,8 +67,8 @@
 	}
 	\score {
 		<<
-			\new StaffGroup <<
-%%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
+%			\new StaffGroup <<
+%				\new GrandStaff \with { \nameGrandStaffIMvtI } <<
 %					\new Staff <<
 %%						\new Voice {
 %%							\formatConductorMvtI
@@ -88,7 +88,7 @@
 %						\nameStaffIIMvtI
 %						\musicPiccoloMvtI
 %					}
-%%				>>
+%				>>
 %				\new Staff {
 %					\timeMvtI \generalOptions \conductorOptions
 %					\nameStaffIIIMvtI
@@ -101,20 +101,21 @@
 %					\partCombine \musicClarinettoIMvtI \musicClarinettoIIMvtI
 %%					\musicClarinettoIIMvtI
 %				}
-				\new Staff {
-					\timeMvtI \generalOptions \conductorOptions
-					\nameStaffVMvtI
+%				\new Staff {
+%					\timeMvtI \generalOptions \conductorOptions
+%					\nameStaffVMvtI
 %					\partCombine \musicFagottoIMvtI \musicFagottoIIMvtI
-					\musicFagottoIIMvtI
-				}
-			>>
+%%					\musicFagottoIIMvtI
+%				}
+%			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
-%					\new Staff {
-%						\timeMvtI \generalOptions \conductorOptions
-%						\nameStaffVIMvtI
+					\new Staff {
+						\timeMvtI \generalOptions \conductorOptions
+						\nameStaffVIMvtI
 %						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
-%					}
+						\musicCornoIMvtI 
+					}
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
 %						\nameStaffVIIMvtI

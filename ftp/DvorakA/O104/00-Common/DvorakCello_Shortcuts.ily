@@ -12,15 +12,19 @@ crescmarkup=^\markup {\italic cresc.}
 pdim=^\markup {\dynamic p \italic dim.}
 fzmarkup=^\markup {\dynamic fz}
 fcresc=^\markup {\dynamic f \italic cresc.}
+piuf=^\markup {\italic più \dynamic f}
+pcresc=^\markup {\dynamic p \italic cresc.}
+ffz=^\markup {\dynamic ffz}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
+pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
 
 % expression
 
 IImutainflautopicc=^\markup { \smaller { [II. muta in Flauto picc.] } }
 mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
-
+moltoespressivo=^\markup {\italic {molto espressivo}}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
