@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTrombaIMvtI = \relative c'' {
+musicTrombaIIMvtI = \relative c'' {
 	\clef treble
 	\key a \minor
 	\transposition e
@@ -24,7 +24,7 @@ musicTrombaIMvtI = \relative c'' {
 	g4 r r2
 % Bars 26 to 30
 	R1
-	r2 g4.\f g16 g
+	r2 g,4.\f g16 g
 	g4 r g4. g16 g
 	g8 r^\mutaind r4 r2
 	R1*15
@@ -52,13 +52,13 @@ musicTrombaIMvtI = \relative c'' {
 	
 	
 	
-	g4.\mf \tuplet 3/2 4 {g16_\crescmarkup g g} g4 g \mark \default
-	c\ff r8 c c-. c-. c-. r
+	g'4.\mf \tuplet 3/2 4 {g16_\crescmarkup g g} g4 g \mark \default
+	c,\ff r8 c c-. c-. c-. r
 % Bars 76 to 80
 	c4 r8 c c-. c-. c-. r
+	g'4 g8 g g g g r8
 	g4 g8 g g g g r8
-	g4 g8 g g g g r8
-	c4 c8 c c4 c8 c
+	c,4 c8 c c4 c8 c
 	c4_\dimD\> c8 c c4 c8 c\!
 % Bars 81 to 85
 	c4\p r4^\mutaine r2
@@ -118,7 +118,7 @@ musicTrombaIMvtI = \relative c'' {
 	
 % Bars 191 to 195
 	R1\fermata \mark \default
-	bes4\f d,8 f d8. bes16 f'4-^~
+	bes'4\f d,8 f d8. bes16 f'4-^~
 	f2~ f8 r r4
 	c4-> e!8 g c,8. c16 c'4-^~
 	c2 r4 f,
@@ -203,7 +203,7 @@ musicTrombaIMvtI = \relative c'' {
 	d2 \tuplet 3/2 2 {e4-^ fis-^ g-^}
 % Bars 321 to 325
 	g8-. b-. d2-^ \tuplet 3/2 4 {e8\< d c\!}
-	f!2\fz \tuplet 3/2 4 {e8-. c-. a-.} d-. d,-. \mark \default
+	b2\fz \tuplet 3/2 4 {c8-. c-. a-.} d-. d,-. \mark \default
 	g r r4 r2
 	R1*22
 % Bars 326 to 330
@@ -217,12 +217,12 @@ musicTrombaIMvtI = \relative c'' {
 % Bars 346 to 350
 	g4.\ff a16 b g2
 	g4. a16 b g2
-	g4 a8. b16 g4 a8. b16 
-	g4 a8. b16 g4 a8. b16 
-	d4 \tuplet 3/2 4 {b8 b b} b4 b
+	b,4 d8. g16 b,4 d8. g16 
+	b,4 d8. g16 b,4 d8. g16 
+	b4 \tuplet 3/2 4 {g8 g g} g4 g
 % Bars 351 to 354
-	b1-^_\ffz~
-	b4 r r2
+	g1-^~
+	g4 r r2
 	R1 
-	g4\f r r2-\tweak extra-offset #'(6 . 0) ^\fermataSign \bar "|."
+	g4\f r r2 \bar "|."
 }

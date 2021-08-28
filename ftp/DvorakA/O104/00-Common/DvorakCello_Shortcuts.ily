@@ -25,7 +25,8 @@ pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (marku
 IImutainflautopicc=^\markup { \smaller { [II. muta in Flauto picc.] } }
 mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
 moltoespressivo=^\markup {\italic {molto espressivo}}
-
+mutaind=^\markup {\italic {muta in D}}
+mutaine=^\markup {\italic {muta in E}}
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\concat { 

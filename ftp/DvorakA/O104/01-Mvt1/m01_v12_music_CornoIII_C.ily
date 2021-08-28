@@ -282,5 +282,5 @@ musicCornoIIIMvtI = \relative c'' {
 	a1-_\ffz~
 	a4 r r2
 	R1
-	a4\f r r2-\tweak extra-offset #'(5 . 0) ^\fermataSign \bar "|."
+	a4\f r r2 \bar "|."
 }

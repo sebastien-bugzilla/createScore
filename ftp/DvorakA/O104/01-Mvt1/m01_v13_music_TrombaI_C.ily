@@ -203,8 +203,8 @@ musicTrombaIMvtI = \relative c'' {
 	d2 \tuplet 3/2 2 {e4-^ fis-^ g-^}
 % Bars 321 to 325
 	g8-. b-. d2-^ \tuplet 3/2 4 {e8\< d c\!}
-	f!2\fz \tuplet 3/2 4 {e8-. c-. a-.} d-. d,-. \mark \default
-	g r r4 r2
+	f!2\fz \partCombineApart \tuplet 3/2 4 {e8-. c-. a-.} d-. d,-. \mark \default
+	g \partCombineAutomatic r r4 r2
 	R1*22
 % Bars 326 to 330
 	
@@ -224,5 +224,5 @@ musicTrombaIMvtI = \relative c'' {
 	b1-^_\ffz~
 	b4 r r2
 	R1 
-	g4\f r r2-\tweak extra-offset #'(6 . 0) ^\fermataSign \bar "|."
+	\once \partCombineApart g4 r r2 \bar "|."
 }
