@@ -114,7 +114,7 @@
 						\timeMvtI \generalOptions \conductorOptions
 						\nameStaffVIMvtI
 %						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
-						\musicCornoIMvtI 
+						\musicCornoIIMvtI 
 					}
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
