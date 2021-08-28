@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTubaMvtI = \relative c, {
+musicTromboneIIIMvtI = \relative c' {
 	\clef bass
 	\key b \minor
 %	\transposition a
@@ -18,7 +18,7 @@ musicTubaMvtI = \relative c, {
 	
 % Bars 21 to 25
 	
-	R1 \mark \default
+	\partCombineApart r4 r8 g\f\<-. fis-. e-. d-. cis-.\! \partCombineAutomatic \mark \default
 	b2\f b2->~
 	b b~
 	b4 r r2
@@ -31,7 +31,7 @@ musicTubaMvtI = \relative c, {
 % Bars 31 to 35
 	
 	
-	R1
+	\partCombineApart fis'8\f r r4 r2 \partCombineAutomatic
 	R1*11
 % Bars 36 to 40
 	
@@ -59,8 +59,8 @@ musicTubaMvtI = \relative c, {
 	d4\f r8 d d-. d-. d-. r
 % Bars 76 to 80
 	d4 r8 d d-. d-. d-. r
-	r4 r8 d' d a a r
-	r4 r8 d d a a r
+	\partCombineApart fis4 e8 d d a' a \once \partCombineAutomatic r
+	fis4 e8 d d a' a \partCombineAutomatic r 
 	d,4 r d r
 	d_\dimD\> r d r\!
 % Bars 81 to 85
@@ -224,7 +224,7 @@ musicTubaMvtI = \relative c, {
 % Bars 336 to 340
 	
 	
-	r8 fis'4\pp r8 r4 fis
+	r8 cis4\pp r8 r4 \once \partCombineApart fis,
 	R1*3
 	
 % Bars 341 to 345
@@ -232,7 +232,7 @@ musicTubaMvtI = \relative c, {
 	b4\ff r8. d16 b2
 	ais4 r8. fis16 ais2
 	gis4 r8. b16 gis4-. fis-.
-	e4.-^ dis4-^ cis-^ b8-.
+	e'4.-^ dis4-^ cis-^ b8-.
 % Bars 346 to 350
 	b4-. b-. r e-.
 	r b-. gis-. e'-.
@@ -240,8 +240,8 @@ musicTubaMvtI = \relative c, {
 	b-. r b-. r
 	b-. r r2
 % Bars 351 to 354
-	r4 \tuplet 3/2 4 {b'8 b b} b4 b
+	r4 \tuplet 3/2 4 {b8 b b} b4 b
 	b2 b4. b8
 	b1\<
-	b,4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b4\f r r2 \bar "|."
 }

@@ -133,7 +133,7 @@ musicTubaMvtI = \relative c, {
 % Bars 196 to 200
 	d-^
 	d-^
-	d-^~_\dimmarkup
+	d-^~
 	d~
 	d~\p\>
 % Bars 201 to 205
@@ -243,5 +243,5 @@ musicTubaMvtI = \relative c, {
 	r4 \tuplet 3/2 4 {b'8 b b} b4 b
 	b2 b4. b8
 	b1\<
-	b,4\f r r2-\tweak extra-offset #'(0 . 0) ^\fermataSign \bar "|."
+	b,4\f r r2 \bar "|."
 }

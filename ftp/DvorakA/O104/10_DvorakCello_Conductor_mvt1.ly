@@ -38,8 +38,8 @@
 \include "./01-Mvt1/m01_v14_music_TrombaII_C.ily"
 \include "./01-Mvt1/m01_v15_music_TromboneI_C.ily"
 \include "./01-Mvt1/m01_v16_music_TromboneII_C.ily"
-\include "./01-Mvt1/m01_v17_music_TromboneIII.ily"
-\include "./01-Mvt1/m01_v18_music_Tuba.ily"
+\include "./01-Mvt1/m01_v17_music_TromboneIII_C.ily"
+\include "./01-Mvt1/m01_v18_music_Tuba_C.ily"
 \include "./01-Mvt1/m01_v19_music_Timpani.ily"
 \include "./01-Mvt1/m01_v21_music_SoloCello.ily"
 \include "./01-Mvt1/m01_v22_music_ViolinoI.ily"
@@ -108,7 +108,7 @@
 %%					\musicFagottoIIMvtI
 %				}
 %			>>
-%			\new StaffGroup <<
+			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
@@ -128,20 +128,21 @@
 %					\partCombine \musicTrombaIMvtI \musicTrombaIIMvtI
 %%					\musicTrombaIIMvtI 
 %				}
-%				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
-					\new Staff {
-						\timeMvtI \generalOptions \conductorOptions
-						\nameStaffIXMvtI
-						\partCombine \musicTromboneIMvtI \musicTromboneIIMvtI
-%						\musicTromboneIIMvtI
-					}
+%%				\new GrandStaff \with { \nameGrandStaffIIIMvtI } <<
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
-%						\nameStaffXMvtI
-%						\partCombine \musicTromboneIIIMvtI \musicTubaMvtI
+%						\nameStaffIXMvtI
+%						\partCombine \musicTromboneIMvtI \musicTromboneIIMvtI
+%%						\musicTromboneIIMvtI
 %					}
+					\new Staff {
+						\timeMvtI \generalOptions \conductorOptions
+						\nameStaffXMvtI
+						\partCombine \musicTromboneIIIMvtI \musicTubaMvtI
+%						\musicTubaMvtI 
+					}
 %				>>
-%			>>
+			>>
 %			\new Staff {
 %				\timeMvtI \generalOptions \conductorOptions
 %				\nameStaffXIMvtI
