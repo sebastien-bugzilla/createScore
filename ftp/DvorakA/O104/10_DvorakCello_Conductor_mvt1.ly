@@ -110,17 +110,17 @@
 %			>>
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIMvtI } <<
-					\new Staff {
-						\timeMvtI \generalOptions \conductorOptions
-						\nameStaffVIMvtI
-						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
-%						\musicCornoIIMvtI 
-					}
 %					\new Staff {
 %						\timeMvtI \generalOptions \conductorOptions
-%						\nameStaffVIIMvtI
-%						\musicCornoIIIMvtI
+%						\nameStaffVIMvtI
+%						\partCombine \musicCornoIMvtI \musicCornoIIMvtI
+%%						\musicCornoIIMvtI 
 %					}
+					\new Staff {
+						\timeMvtI \generalOptions \conductorOptions
+						\nameStaffVIIMvtI
+						\musicCornoIIIMvtI
+					}
 %				>>
 %				\new Staff {
 %					\timeMvtI \generalOptions \conductorOptions
