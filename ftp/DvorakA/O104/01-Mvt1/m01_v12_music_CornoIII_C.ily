@@ -279,7 +279,7 @@ musicCornoIIIMvtI = \relative c'' {
 	a-. r a-. r
 	a \tuplet 3/2 4 {a8 a a} a4 a
 % Bars 351 to 354
-	a1-_\ffz~
+	a1-^_\ffz~
 	a4 r r2
 	R1
 	a4\f r r2 \bar "|."

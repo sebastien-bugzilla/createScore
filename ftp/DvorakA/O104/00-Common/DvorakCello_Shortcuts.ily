@@ -15,6 +15,7 @@ fcresc=^\markup {\dynamic f \italic cresc.}
 piuf=^\markup {\italic più \dynamic f}
 pcresc=^\markup {\dynamic p \italic cresc.}
 ffz=^\markup {\dynamic ffz}
+psempre=^\markup {\dynamic p \italic sempre}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
