@@ -16,10 +16,23 @@ piuf=^\markup {\italic più \dynamic f}
 pcresc=^\markup {\dynamic p \italic cresc.}
 ffz=^\markup {\dynamic ffz}
 psempre=^\markup {\dynamic p \italic sempre}
+frisoluto=^\markup {\dynamic f \italic risoluto}
+pspiccato=^\markup {\dynamic p \italic spiccato}
+perit=^\markup {\dynamic p \italic {e rit.}}
+mfleggieroecantabile=^\markup {\dynamic mf \italic {leggiero e cantabile}}
+fzconforza=^\markup {\dynamic fz \italic {con forza}}
+pdolceedanimato=^\markup {\dynamic p \italic {dolce ed animato}}
+crescpocoapoco=^\markup {\italic {cresc. poco a poco}}
+mfcantabile=^\markup {\dynamic mf \italic cantabile}
+ffcolottavaadlib=^\markup {\dynamic ff \italic {col \concat { 8 \super va } ad lib.}}
+fpspiccato=^\markup {\dynamic fp \italic spiccato}
+mfmarkup=^\markup {\dynamic mf}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
 pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
+fanimatoD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "animato"))
+ppdolceD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
 
 % expression
 
@@ -28,6 +41,14 @@ mutainflautoII=^\markup { \smaller { [muta in Flauto II.] } }
 moltoespressivo=^\markup {\italic {molto espressivo}}
 mutaind=^\markup {\italic {muta in D}}
 mutaine=^\markup {\italic {muta in E}}
+pesante=^\markup {\italic pesante}
+vivo=^\markup {\italic vivo}
+dolceemoltosostenuto=^\markup {\italic {dolce e molto sostenuto}}
+portamento=^\markup {\italic portamento}
+moltoespressivoesostenuto=^\markup {\italic {molto espressivo e sostenuto}}
+moltoespressesostenuto=^\markup {\italic {molto espress. e sostenuto}}
+moltoappassionato=^\markup {\italic {molto appassionato}}
+
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\concat { 
@@ -54,3 +75,16 @@ mmrPos = #(define-music-function
 		\once \override MultiMeasureRest.staff-position = #(- position 2)
 	#}
 )
+
+ffcolottava = \once \override TextSpanner.bound-details.left.text = \markup {
+	\dynamic ff \italic {col 8va bassa ad libitum}
+}
+
+setSextolet = {
+	\set subdivideBeams = ##t
+	\set baseMoment = #(ly:make-moment 1/8)
+	\set beatStructure = 2,2,2,2
+}
+unsetSextolet = {
+	\set subdivideBeams = ##f
+}
