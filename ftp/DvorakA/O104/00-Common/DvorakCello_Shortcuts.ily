@@ -27,12 +27,16 @@ mfcantabile=^\markup {\dynamic mf \italic cantabile}
 ffcolottavaadlib=^\markup {\dynamic ff \italic {col \concat { 8 \super va } ad lib.}}
 fpspiccato=^\markup {\dynamic fp \italic spiccato}
 mfmarkup=^\markup {\dynamic mf}
+psemprepiudim=^\markup {\dynamic p \italic {sempre più dim.}}
+ppdim=^\markup {\dynamic pp \italic dim.}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
 pcrescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cresc."))
 fanimatoD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "animato"))
 ppdolceD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
+psempredimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "sempre dim."))
+ffzD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "ffz"))
 
 % expression
 
@@ -48,6 +52,9 @@ portamento=^\markup {\italic portamento}
 moltoespressivoesostenuto=^\markup {\italic {molto espressivo e sostenuto}}
 moltoespressesostenuto=^\markup {\italic {molto espress. e sostenuto}}
 moltoappassionato=^\markup {\italic {molto appassionato}}
+pizz=^\markup {pizz.}
+arco=^\markup {arco}
+
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
@@ -65,6 +72,17 @@ flattrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 		\musicglyph #"scripts.trill" \translate #'(0.6 . 0.52) \tiny \flat 
 	}
 }
+
+naturaltrillmark = \markup { 
+	\line { 
+		\hspace #0.65
+		\general-align #Y #CENTER {
+			\musicglyph #"scripts.trill" 
+			\teeny \natural 
+		}
+	}
+}
+
 
 fermataSign = \markup {\musicglyph "scripts.ufermata"}
 
