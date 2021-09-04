@@ -424,5 +424,5 @@ musicViolaMvtI = \relative c {
 	r4 \tuplet 3/2 4 {<b fis'>8\f q q} q4 q
 	q2 fis4. fis8
 	fis1:32\<
-	b4_\ffzD r r2-\tweak extra-offset #'(5.2 . 0) ^\fermataSign \bar "|."
+	b4_\ffzD r r2 \bar "|."
 }
