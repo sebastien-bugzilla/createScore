@@ -391,7 +391,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 321 to 325
 	gis4 fis dis cis
 	bis2 cis4 <<{fis} \\ {fis,}>> \mark \default
-	b8 r r4 b'8\p^\pizz r r4
+	b!8 r r4 b'8\p^\pizz r r4
 	dis,8 r r4 gis8 r r4
 	gis8 r fis r dis_\crescmarkup r cis r
 % Bars 326 to 330

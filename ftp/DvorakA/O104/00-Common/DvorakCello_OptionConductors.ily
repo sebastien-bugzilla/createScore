@@ -24,9 +24,9 @@ conductorOptions = {
 	%\set Voice.restNumberThreshold = #0
 	\override Score.MeasureCounter.outside-staff-priority = #390
 }
-#(set-global-staff-size 19)
+#(set-global-staff-size 13)
 \layout {
-	#(layout-set-staff-size 19)
+	#(layout-set-staff-size 13)
 	\context {
 		\Voice
 		\override TupletBracket #'bracket-visibility = ##f
