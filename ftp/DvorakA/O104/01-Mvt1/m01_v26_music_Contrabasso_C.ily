@@ -35,7 +35,7 @@ musicContrabassoMvtI = \relative c' {
 % Bars 21 to 25
 	fis r r4 r2
 	r4 r8 g-.\f\< fis-. e-. d-. cis-. \mark \default
-	b2\ff b->
+	\grace {s8} b2\ff b->
 	b2.\fz b4
 	b2.\fz b4-.
 % Bars 26 to 30

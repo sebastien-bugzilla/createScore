@@ -31,7 +31,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 21 to 25
 	ees8 r r4 r2
 	r d4.. d16 \mark \default
-	d2.\ff-> ees4-.
+	\grace {s8} d2.\ff-> ees4-.
 	d4-. c-. d2~
 	d4 r r2
 % Bars 26 to 30

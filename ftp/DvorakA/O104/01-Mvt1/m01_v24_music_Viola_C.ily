@@ -35,7 +35,7 @@ musicViolaMvtI = \relative c {
 % Bars 21 to 25
 	q8 r cis8:16\fz ais: g: fis: e: d:
 	cis: b': ais: g':-> fis:\< e: d: cis: \mark \default
-	<b d>2.:16\ff <g e'>4:
+	\grace {s8} <b d>2.:16\ff <g e'>4:
 	<fis d'>: <e cis'>: <fis d'>2:
 	<b d>: q:
 % Bars 26 to 30

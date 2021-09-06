@@ -26,7 +26,7 @@ musicFlautoIIMvtI = \relative c'' {
 % Bars 21 to 25
 	cis8 r r4 r2
 	R1 \mark \default
-	r2 b4.\ff cis16 d
+	\grace {s8} r2 b4.\ff cis16 d
 	b4 r b4. cis16 d
 	b4 r r2
 % Bars 26 to 30

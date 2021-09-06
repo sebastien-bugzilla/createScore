@@ -363,7 +363,7 @@ musicClarinettoIMvtI = \relative c' {
 	d8 r r4 r2
 	r4 fis2(\p g4)
 	ees(\< cis f! e!)\!
-	f1\startTrillSpan\<
+	f!1\startTrillSpan\<
 	f8\!\stopTrillSpan r r4 r2
 % Bars 336 to 340
 	R1*5

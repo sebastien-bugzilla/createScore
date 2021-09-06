@@ -35,7 +35,7 @@ musicClarinettoIMvtI = \relative c' {
 % Bars 21 to 25
 	g8 r r4 r2
 	R1 \mark \default
-	r2 d4.\ff e16 f
+	\grace {s8} r2 d4.\ff e16 f
 	d4 r d4. e16 f
 	d4 r r2
 % Bars 26 to 30
@@ -363,7 +363,7 @@ musicClarinettoIMvtI = \relative c' {
 	d8 r r4 r2
 	r4 fis2( g4)
 	ees(\< cis f! e!)\!
-	f1\startTrillSpan\<
+	f!1\startTrillSpan\<
 	f8\!\stopTrillSpan r r4 r2
 % Bars 336 to 340
 	R1*5

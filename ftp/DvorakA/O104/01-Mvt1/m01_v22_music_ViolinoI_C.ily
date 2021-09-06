@@ -308,7 +308,7 @@ musicViolinoIMvtI = \relative c' {
 	r2 r4 fis'8.\< dis'16\!
 	dis2\ff~ dis8 cis( b gis)
 	b2( fis4) b
-	cis-> cis-> d8(-^ fis-^ dis-^ b-^)
+	cis-> cis-> dis8(-^ fis-^ dis-^ b-^)
 	cis2.\> r4\!
 % Bars 271 to 275
 	R1*6

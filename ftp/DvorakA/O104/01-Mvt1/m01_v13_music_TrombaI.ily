@@ -26,7 +26,7 @@ musicTrombaIMvtI = \relative c'' {
 	R1
 	r2 g4.\f g16 g
 	g4 r g4. g16 g
-	g8 r^\mutaind r4 r2
+	g8 r^\mutaind r4 r2 \transposition d
 	R1*15
 % Bars 31 to 35
 	
@@ -61,7 +61,7 @@ musicTrombaIMvtI = \relative c'' {
 	c4 c8 c c4 c8 c
 	c4_\dimD\> c8 c c4 c8 c\!
 % Bars 81 to 85
-	c4\p r4^\mutaine r2
+	c4\p r4^\mutaine r2 \transposition e
 	R1*28
 % Bars 86 to 90
 	

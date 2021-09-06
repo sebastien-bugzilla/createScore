@@ -61,7 +61,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 115
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -83,11 +83,11 @@
 				\new Staff { \timeMvtI \musicTromboneIIMvtI }
 				\new Staff { \timeMvtI \musicTromboneIIIMvtI }
 				\new Staff { \timeMvtI \musicTubaMvtI }
-				\new Staff { \timeMvtI \musicTimpaniMvtI }
+%				\new Staff { \timeMvtI \musicTimpaniMvtI }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 115
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -100,16 +100,73 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtI \musicTriangoloMvtI }
+				\new Staff { \timeMvtI \musicSoloCelloMvtI }
+			>>
+		>>
+		\midi {
+			\tempo 4 = 115
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeIV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtI \musicViolinoIMvtI }
+				\new Staff { \timeMvtI \musicViolinoIIMvtI }
+				\new Staff { \timeMvtI \musicViolaMvtI }
+				\new Staff { \timeMvtI \musicVioloncelloMvtI }
+				\new Staff { \timeMvtI \musicContrabassoMvtI }
+			>>
+		>>
+		\midi {
+			\tempo 4 = 115
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtI \musicFlautoIMvtI }
+				\new Staff { \timeMvtI \musicFlautoIIMvtI }
+				\new Staff { \timeMvtI \musicPiccoloMvtI }
+				\new Staff { \timeMvtI \musicOboeIMvtI }
+				\new Staff { \timeMvtI \musicOboeIIMvtI }
+				\new Staff { \timeMvtI \musicClarinettoIMvtI }
+				\new Staff { \timeMvtI \musicClarinettoIIMvtI }
+				\new Staff { \timeMvtI \musicFagottoIMvtI }
+				\new Staff { \timeMvtI \musicFagottoIIMvtI }
+				\new Staff { \timeMvtI \musicCornoIMvtI }
+				\new Staff { \timeMvtI \musicCornoIIMvtI }
+				\new Staff { \timeMvtI \musicCornoIIIMvtI }
+				\new Staff { \timeMvtI \musicTrombaIMvtI }
+				\new Staff { \timeMvtI \musicTrombaIIMvtI }
+				\new Staff { \timeMvtI \musicTromboneIMvtI }
+				\new Staff { \timeMvtI \musicTromboneIIMvtI }
+				\new Staff { \timeMvtI \musicTromboneIIIMvtI }
+				\new Staff { \timeMvtI \musicTubaMvtI }
+%				\new Staff { \timeMvtI \musicTimpaniMvtI }
 				\new Staff { \timeMvtI \musicSoloCelloMvtI }
 				\new Staff { \timeMvtI \musicViolinoIMvtI }
 				\new Staff { \timeMvtI \musicViolinoIIMvtI }
 				\new Staff { \timeMvtI \musicViolaMvtI }
 				\new Staff { \timeMvtI \musicVioloncelloMvtI }
+				\new Staff { \timeMvtI \musicContrabassoMvtI }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 4 = 115
 			\context {
 				\Voice
 				\remove "Dynamic_performer"

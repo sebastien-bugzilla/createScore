@@ -31,7 +31,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 21 to 25
 	e8 r r4 r2
 	R1 \mark \default
-	r2 b4.\ff cis16 d
+	\grace {s8} r2 b4.\ff cis16 d
 	b4 r b4. cis16 d
 	b4 r r2
 % Bars 26 to 30
@@ -195,7 +195,7 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	r4 bes,2.\f
-	\tuplet 3/2 4 {e,8\< ges bes} \naturaltrill \afterGrace ees2.\startTrillSpan\! {d16[(\stopTrillSpan ees])}
+	\tuplet 3/2 4 {ees,8\< ges bes} \naturaltrill \afterGrace ees2.\startTrillSpan\! {d16[(\stopTrillSpan ees])}
 % Bars 186 to 190
 	cis!8 r r4 r2
 	r8 a\fz r4 r2

@@ -19,7 +19,7 @@ musicTromboneIMvtI = \relative c' {
 % Bars 21 to 25
 	
 	\mark \default
-	d2.\ff e4-.
+	\grace {s8} d2.\ff e4-.
 	d-. cis-. d2~
 	d4 r b8. d16 fis8.-> e16
 % Bars 26 to 30

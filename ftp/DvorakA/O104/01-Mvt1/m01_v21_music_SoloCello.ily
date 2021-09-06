@@ -211,7 +211,7 @@ musicSoloCelloMvtI = \relative c' {
 	ais4( fisis) \acciaccatura fis8 e4.(\! dis8)
 	dis2.\mp( e8 fis)
 	dis2.( dis4--)
-	dis2(_\dimmarkup dis4. b8)\>
+	dis2(_\dimmarkup cis4. b8)\>
 	cis2.\! cis4(
 % Bars 236 to 240
 	dis2\pp b4 gis)

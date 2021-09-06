@@ -19,7 +19,7 @@ musicTrombaIIMvtI = \relative c'' {
 % Bars 21 to 25
 	
 	\mark \default
-	g2\ff g4. g16 g
+	\grace {s8} g2\ff g4. g16 g
 	g2 g4. g16 g
 	g4 r r2
 % Bars 26 to 30

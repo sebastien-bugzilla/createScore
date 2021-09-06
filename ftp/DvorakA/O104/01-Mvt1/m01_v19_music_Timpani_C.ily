@@ -35,7 +35,7 @@ musicTimpaniMvtI = \relative c, {
 % Bars 21 to 25
 	fis8 r r4 r2
 	R1 \mark \default
-	b2:32\f b4 r
+	\grace {s8} b2:32\f b4 r
 	b2:32 b4 r
 	b8-> b-> r4 r2
 % Bars 26 to 30

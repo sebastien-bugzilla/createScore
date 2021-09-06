@@ -19,7 +19,7 @@ musicSoloCelloMvtI = \relative c' {
 % Bars 21 to 25
 	
 	\mark \default
-	R1*22
+	\grace {s8} R1*22
 % Bars 26 to 30
 	
 % Bars 31 to 35
@@ -211,7 +211,7 @@ musicSoloCelloMvtI = \relative c' {
 	ais4( fisis) \acciaccatura fis8 e4.(\! dis8)
 	dis2.\mp( e8 fis)
 	dis2.( dis4--)
-	dis2(_\dimmarkup dis4. b8)\>
+	dis2(_\dimmarkup cis4. b8)\>
 	cis2.\! cis4(
 % Bars 236 to 240
 	dis2\pp b4 gis)

@@ -19,7 +19,7 @@ musicTromboneIIIMvtI = \relative c' {
 % Bars 21 to 25
 	
 	\partCombineApart r4 r8 g\f\<-. fis-. e-. d-. cis-.\! \partCombineAutomatic \mark \default
-	b2\f b2->~
+	\grace {s8} b2\f b2->~
 	b b~
 	b4 r r2
 % Bars 26 to 30
@@ -229,7 +229,7 @@ musicTromboneIIIMvtI = \relative c' {
 	
 % Bars 341 to 345
 	
-	b4\ff r8. d16 b2
+	b4\ff r8. dis16 b2
 	ais4 r8. fis16 ais2
 	gis4 r8. b16 gis4-. fis-.
 	e'4.-^ dis4-^ cis-^ b8-.

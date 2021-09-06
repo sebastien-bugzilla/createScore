@@ -35,7 +35,7 @@ musicClarinettoIIMvtI = \relative c' {
 % Bars 21 to 25
 	e8 r r4 r2
 	R1 \mark \default
-	r2 d4.\ff e16 f
+	\grace {s8} r2 d4.\ff e16 f
 	d4 r d4. e16 f
 	d4 r r2
 % Bars 26 to 30
