@@ -59,9 +59,9 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	c4(\f\> beses ges
 	f)\p r r
-	c'(\f\> beses ges
+	c'\(\f\> beses ges
 % Bars 61 to 65
-	des2.\p)
+	des2.\p\)
 	cis2.~
 	cis4( b! g4)
 	fis(\> fis e)\! \bar "||" \key g \major \mark \default
@@ -80,18 +80,18 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	\mark \default
 	R2.
-	des''4(\p\< bes16-- a-- g-- a-- bes4\!
-	a8) r r4 r
+	des''4\(\p\< bes16-- a-- g-- a-- bes4\!
+	a8\) r r4 r
 % Bars 86 to 90
-	des4(\p\< bes16 a g a bes4)\!
+	des4\(\p\< bes16 a g a bes4\)\!
 	f2.\fz 
 	f_\dimD\>
 	dis!2(\p\> b!4)~
 	b2.\pp
 % Bars 91 to 95
-	<< g!2. {s4\< s s\!} >>
-	<< fis!2. {s4\> s s\!} >>
-	dis4(_\dimmarkup e dis)
+	g!2.
+	fis!2.
+	dis4( e dis)
 	e(\> ees d \mark \default
 	d8)\! r r4 r
 % Bars 96 to 100
@@ -111,15 +111,15 @@ musicFlautoIIMvtII = \relative c'' {
 	
 	
 	
-	g8(\mf c16 b fis4)_\dimmarkup g8( c16 b
+	g8(\mf c16 b fis4) g8( c16 b
 % Bars 121 to 125
 	fis4) fis8( b16 a e4)
 	e8(\< a16 g d8 e fis g)\!
 	g2.\f
-	g2.\>~
+	g2.~
 	g~
 % Bars 126 to 130
-	g8\p r r4 r
+	g8 r r4 r
 	R2.
 	R\fermata \mark \default
 	R2.*6

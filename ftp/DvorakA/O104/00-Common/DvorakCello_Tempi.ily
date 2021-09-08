@@ -57,8 +57,40 @@ tempiMvtI = {
 	s1
 	\tempo \markup { "Tempo I. grandioso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =116 } } % bar 342
 }
-
-
+%--------------------------------------
+%       M V T   II
+%--------------------------------------
+tempiMvtII = {
+	\tempo \markup { "Agagio, ma non troppo" \teeny \translate #'(0 . 0.4) { \note-by-number #3 #0 #0.9 } \medium { =116 } }
+	s2.*28
+	\tempo "poco accel." % bar 29
+	s2.*3
+	\tempo "Tempo I." % bar 32
+	s2.*6
+	\tempo "rit." % bar 38
+	s2.
+	\tempo "Tempo I." % bar 39
+	s2.*18
+	\tempo "Un poco più animato" % bar 57
+	s2.*6
+	\tempo "poco a poco ritard." % bar 63
+	s2.*2
+	\tempo "Meno. Tempo I." % bar 65
+	s2.*18
+	\tempo "Un poco più animato" % bar 83
+	s2.*12
+	\tempo "Meno. Tempo I." % bar 95
+	s2.*25
+	\tempo "poco a poco string." % bar 120
+	s2.*4
+	\tempo "poco a poco rit." % bar 124
+	s2.*5
+	\tempo "Tempo I." % bar 129
+	s2.*30
+	\tempo "rit." % bar 159
+	s2.
+	\tempo "a tempo" % bar 160
+}
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
 %###############################################################################

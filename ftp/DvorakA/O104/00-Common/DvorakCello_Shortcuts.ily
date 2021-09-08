@@ -57,7 +57,7 @@ moltoespressesostenuto=^\markup {\italic {molto espress. e sostenuto}}
 moltoappassionato=^\markup {\italic {molto appassionato}}
 pizz=^\markup {pizz.}
 arco=^\markup {arco}
-
+lunga=^\markup {\italic lunga}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {

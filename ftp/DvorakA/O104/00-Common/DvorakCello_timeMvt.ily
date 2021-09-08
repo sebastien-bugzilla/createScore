@@ -10,7 +10,7 @@ timeMvtI = {
 }
 timeMvtII = {
 	\time 3/4
-	\tempo "Adagio ma non troppo"
+	%\tempo "Adagio ma non troppo"
 }
 timeMvtIII = {
 	\time 2/4
