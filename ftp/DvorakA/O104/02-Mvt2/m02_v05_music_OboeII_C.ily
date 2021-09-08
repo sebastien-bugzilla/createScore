@@ -4,17 +4,21 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicOboeIMvtII = \relative c'' {
+musicOboeIIMvtII = \relative c'' {
 	\clef treble
 	\key g \major
 %	\transposition a
 % Bars 1 to 5
-	R2.*6
+	g2.\p~
+	g
+	g2( e4)
+	fis2( d4)
+	g2.
 % Bars 6 to 10
-	
-	cis2.\fz
-	c!2(\> b8\p a
-	b4)\! r r
+	\tuplet 5/4 4 {g16( a c b a)} b4 b\<
+	ais2.\fz
+	a!4(\> fis2
+	g4)\! r r
 	R2.*4
 % Bars 11 to 15
 	
@@ -32,75 +36,75 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	R2.\fermata \mark \default
-	R2.*4
+	g2.\pp~
 % Bars 36 to 40
-	
-	
-	\bar "||" \key g \minor
-	g'2\ff g16-^ bes-^ a-^ g-^
-	g2 bes,8. c16
+	g
+	g4.( fis8 e4)
+	d8( dis e f fis4) \bar "||" \key g \minor
+	g2\ff g'16-^ bes-^ a-^ g-^
+	g2 g,8. a16
 % Bars 41 to 45
-	d4-> bes'-> a->
+	bes4-> g'-> fis->
 	g4. r8 r4
 	R2.*4
 	
 	
 % Bars 46 to 50
 	
+	r4 g,2\p\<
+	f2.\>
+	f4.\! r8 r4 \mark \default
 	R2.*2
-	
-	r4 r8 f(\p bes c) \mark \default
-	d4.( c8 bes a
 % Bars 51 to 55
-	g2) f8( ees
-	ees4. d8 c ees)
-	\acciaccatura {d32 ees} f2 f4~
-	f2.
-	bes,4.(\< ees4 e8)\!
-% Bars 56 to 60
-	f4( ges8\> f f ees
-	des4)\! r r 
-	ges(\fz\> ees2
-	f4\p) r r
-	ges4(\f ees2\>)
-% Bars 61 to 65
-	f4\p r r
-	R2.*3
 	
-	\bar "||" \key g \major \mark \default
-	b,2\ff b16-^ d-^ cis-^ b-^
+	r4 a2\p
+	\acciaccatura {bes32 c} d2 r4
+	R2.*4
+	
+% Bars 56 to 60
+	
+	
+	ees4(\fz\> c2
+	des4\p) r r
+	ees4(\f c4.\> a!8)
+% Bars 61 to 65
+	a8.\p gis16 r8 a16( gis) r8 a16( gis)
+	r8 aes16( g!) r8 aes16( g) r8 aes16( g)
+	r8 g16( fis) r8 g16( fis) r8 fis16( e)
+	r8 e16(\> d) r8 e16( d) r8 d16( cis)\! \bar "||" \key g \major \mark \default
+	b2\ff b'16-^ d-^ cis-^ b-^
 % Bars 66 to 70
-	b2 d8. e16
-	fis4-^ d-^ cis-^
+	b2 b8. cis16
+	d4-^ b-^ ais-^
 	b2 r4
 	R2.*3
 	
 % Bars 71 to 75
 	
 	r4 r fis8.(\p e16
-	d4.)\< g'8(\! fis e)
-	fis4(\mf\< \tuplet 3/2 4 {b8\! a\> fis)} g16( fis) fis( e)\!
-	e4(_\dimmarkup d8 a~\> a4)
+	d4.)\< g8(\! fis e)
+	fis(\mf\< d' \tuplet 3/2 4 {g8\! fis\> d)} b16( a) a( g)\!
+	g4( a8) r r4
 % Bars 76 to 80
-	fis'4.(\p e8 d cis
-	b2) a8( g
-	g4. fis8 e g)
-	\acciaccatura {fis32 g} a2 a4(
-	a'4.\< g16 a f a e a)\!
+	R2.*2
+	
+	r4 cis,2\pp
+	\acciaccatura {d32 e} fis2 r4
+	R2.*3
 % Bars 81 to 85
-	d,4.( g4_\crescmarkup gis!8)
-	a4(\< bes)\! a8.( g!16 \mark \default
+	
+	\mark \default
+	R2.
+	e'4\p\<( des e,\!
 	f8) r r4 r
-	bes4\p\<( e,! g,\!
-	a8) r r4 r
 % Bars 86 to 90
-	bes'4\p\<( e,! g,)\!
-	a8 r r des16\mp( c) r8 des16( c)
-	r8 c16(_\dimD\> b!) r8 c16( b) r8 c16( b)\!
-	r8 b16(\p\> ais) r8 b16( ais) r8 ais16( gis)\!
-	r8 gis16(\pp fis!) r8 gis16( fis) r8 g16( fis)
+	e'4\p\<( des e,)\!
+	f8 r r4 r
+	R2.*2
+	
+	\mmrPos #-6 R2.
 % Bars 91 to 95
-	r8 fis16(\< e) r8 e16( d) r8 d16( c)\!
+	\mmrPos #-8 R
 	R2.*3
 	
 	\mark \default
@@ -124,39 +128,39 @@ musicOboeIMvtII = \relative c'' {
 	R2.*2
 	
 % Bars 131 to 135
-	d'4(\p g fis)
-	fis16( e) e8~ e2(
-	d8) r r4 r
+	b2(\p d4)
+	d16( c) c8~ c2(
+	b8) r r4 r
 	R2.
 	R\fermata^\lunga
 % Bars 136 to 140
-	g,2\pp( fis!4)
-	f2( e!4)
-	ees2( d4\<)
-	ees2._\crescD
+	ees,2.\pp 
+	des
+	b!2.
+	ees2.
 	e!\<
 % Bars 141 to 145
-	g\f-^~
-	g~_\dimmarkup
-	g4\p r r
+	d\f-^~
+	d~
+	d4\p r r
 	R2.*4
 	
 % Bars 146 to 150
 	
 	
 	R2.\fermata \mark \default
-	d'4\p-- d-- d16(\<-- d-- d-- d--)
-	d4( b\!) g8.\< g16
+	b'4\p-- b-- b16(\<-- b-- b-- b--)
+	b4( g\!) d8.\< e16
 % Bars 151 to 155
-	b4(\! fis2\>
-	g\!) r4
+	fis4(\! d2~\>
+	d\!) r4
 	R2.*10
 % Bars 156 to 160
 	
 % Bars 161 to 165
 	
 	
-	g16(\pp b8 a32 g g8) r r4
+	R2.
 	R2.*2
 	
 % Bar 166
