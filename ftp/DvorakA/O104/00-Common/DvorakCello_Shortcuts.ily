@@ -61,6 +61,7 @@ pizz=^\markup {pizz.}
 arco=^\markup {arco}
 lunga=^\markup {\italic lunga}
 morendo=^\markup {\italic morendo}
+mutainf=^\markup {\italic {muta in F}}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {

@@ -56,9 +56,12 @@ musicCornoIIMvtII = \relative c' {
 	R2.*3
 	
 	\mark \default
-	R2.*8
+	R2.
 % Bars 51 to 55
-	
+	\mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	R2.*4
 % Bars 56 to 60
 	
 	
@@ -107,14 +110,14 @@ musicCornoIIMvtII = \relative c' {
 	fis'2\p g8 d
 % Bars 96 to 100
 	fis4 r8 fis(--\< a-- fis--)\!
-	d4 \tuplet 3/2 4 {d8\> d d} d4
+	d4 \tuplet 3/2 4 {d8\> d d} d4\!
 	cis2_\dimD b4
-	b\p\< dis e
-	g4\! fis8 e fis4
+	b\p\< dis e\!
+	g4 fis8 e fis4
 % Bars 101 to 105
 	g4\<-> a-> b->\!
 	b2-^\ff\> b4\!
-	b g2_\dimmarkup~
+	b g2~
 	g4(\p fis)\> e~
 	e\! d2\>
 % Bars 106 to 110
