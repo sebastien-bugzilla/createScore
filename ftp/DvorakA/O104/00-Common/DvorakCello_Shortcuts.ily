@@ -42,6 +42,7 @@ ppdolceD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup
 psempredimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "sempre dim."))
 ffzD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "ffz"))
 ppdimD = \tweak DynamicText.self-alignment-X #0 #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dim."))
+fzdimD = \tweak DynamicText.self-alignment-X #-1 #(make-dynamic-script (markup #:dynamic "fz" #:normal-text #:italic "dim."))
 
 % expression
 

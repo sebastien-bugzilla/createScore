@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTromboneIIMvtII = \relative c {
+musicTromboneIMvtII = \relative c' {
 	\clef alto
 	\key g \major
 %	\transposition a
@@ -17,15 +17,15 @@ musicTromboneIIMvtII = \relative c {
 	
 	\mark \default
 	R2.
-	d2.\pp(
+	b2.\pp(
 % Bars 16 to 20
-	e)
-	d(
-	e)
-	d
-	e4( g gis)
+	g)
+	b(
+	g)
+	b
+	g4( c b)
 % Bars 21 to 25
-	e2 r4
+	a2 r4
 	R2.*12
 % Bars 26 to 30
 	
@@ -39,10 +39,10 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	\bar "||" \key g \minor
-	bes'2\ff bes4
-	bes16-> bes-> a-> g-> g4 g8. a16
+	d2\ff d4
+	\partCombineApart d16-> bes-> a-> g-> g4 \partCombineAutomatic bes8. c16
 % Bars 41 to 45
-	bes4 g fis
+	d4 bes a
 	g16-^ bes-^ a-^ g-^ g4 r 
 	R2.*7
 % Bars 46 to 50
@@ -55,20 +55,20 @@ musicTromboneIIMvtII = \relative c {
 	
 % Bars 56 to 60
 	
-	aes2.\pp\<(
-	beses)\>
-	aes(\pp\<
-	beses\>
+	\partCombineApart R2.*5 \partCombineAutomatic
+	
+	
+	
 % Bars 61 to 65
-	aes8\pp) r r4 r
+	
 	R2.*3
 	
 	\bar "||" \key g \major \mark \default
-	fis2\f fis4
+	d'2\f d4
 % Bars 66 to 70
-	fis2 b8. cis16
-	d4 b ais
-	fis2 r4
+	d2 d8. e16
+	fis4 d cis
+	d2 r4
 	R2.*14
 % Bars 71 to 75
 	
@@ -77,12 +77,12 @@ musicTromboneIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*5
-	
-	
+	\partCombineApart r4 c2\p\<(
+	des2.\>)(
+	c8)\! r r4 c(\p\<
 % Bars 86 to 90
-	
-	
+	des2.)(\>
+	c8\!) r r4 r \partCombineAutomatic
 	R2.*7
 % Bars 91 to 95
 	
@@ -130,11 +130,11 @@ musicTromboneIIMvtII = \relative c {
 	
 	
 	
-	r4 g2(\p\<
+	r4 b2(
 % Bars 161 to 165
-	aes2_\fzdimD a4)
-	g2.\pp\>~
-	g4\! r r
+	c2.)
+	b2.\pp\>~
+	b4\! r r
 	R2.*2
 	
 % Bar 166
