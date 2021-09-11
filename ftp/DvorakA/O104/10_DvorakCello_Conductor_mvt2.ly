@@ -32,9 +32,9 @@
 \include "./02-Mvt2/m02_v09_music_FagottoII_C.ily"
 \include "./02-Mvt2/m02_v10_music_CornoI_C.ily"
 \include "./02-Mvt2/m02_v11_music_CornoII_C.ily"
-\include "./02-Mvt2/m02_v12_music_CornoIII.ily"
-\include "./02-Mvt2/m02_v13_music_TrombaI.ily"
-\include "./02-Mvt2/m02_v14_music_TrombaII.ily"
+\include "./02-Mvt2/m02_v12_music_CornoIII_C.ily"
+\include "./02-Mvt2/m02_v13_music_TrombaI_C.ily"
+\include "./02-Mvt2/m02_v14_music_TrombaII_C.ily"
 \include "./02-Mvt2/m02_v15_music_TromboneI.ily"
 \include "./02-Mvt2/m02_v16_music_TromboneII.ily"
 \include "./02-Mvt2/m02_v17_music_TromboneIII.ily"
@@ -108,17 +108,18 @@
 %						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
 %%						\musicCornoIIMvtII
 %					}
-					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffVIMvtII
-						\musicCornoIIIMvtII
-					}
+%					\new Staff {
+%						\timeMvtII \generalOptions \conductorOptions
+%						\nameStaffVIMvtII
+%						\musicCornoIIIMvtII
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtII \generalOptions \conductorOptions
-%					\nameStaffVIIMvtII
-%					\partCombine \musicTrombaIMvtII \musicTrombaIIMvtII
-%				}
+				\new Staff {
+					\timeMvtII \generalOptions \conductorOptions
+					\nameStaffVIIMvtII
+					\partCombine \musicTrombaIMvtII \musicTrombaIIMvtII
+%					\musicTrombaIIMvtII
+				}
 %				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
 %					\new Staff {
 %						\timeMvtII \generalOptions \conductorOptions
