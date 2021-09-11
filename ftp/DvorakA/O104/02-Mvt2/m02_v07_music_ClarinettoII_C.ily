@@ -29,19 +29,19 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 16 to 20
 	f16( ees) ees8~ ees2
 	d2(\< f4)\!
-	f16( ees) ees8~ ees2\>
+	f16( ees) ees8~ << ees2 {s4\> s8 s\!} >>
 	d2(\< f4)\!
-	f8.( ees16 ees8._\dimmarkup d16) d4
+	f8.( ees16 ees8. d16) d4
 % Bars 21 to 25
 	c8(\p g ees4) r
 	c2.\p(
-	bes)_\dimmarkup
+	bes)
 	gis
 	aes2\< f4
 % Bars 26 to 30
 	e2.\fz\<
 	f2(\! aes8\< c\!)
-	d2(-^_\fzdim g8)\p r
+	d2\(^^ g8\)\p r
 	R2.*5
 	
 % Bars 31 to 35
@@ -89,8 +89,8 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 66 to 70
 	R2.*2
 	
-	r4 r a'\p(
-	f'4.)( e8 d c)
+	r4 r a'\p\(
+	f'4.\)( e8 d c)
 	bes4 bes\< \tuplet 3/2 4 {bes8( c d}
 % Bars 71 to 75
 	e4.)\! c8( a g)\>
@@ -109,9 +109,9 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 86 to 90
 	
 	aes'2.\mp
-	aes_\dimD\>
-	fis2(\p\> d!4)~
-	d2.\pp
+	<< aes {s4_\dimD_\> s s\!} >> 
+	fis2( d!4)~
+	d2.
 % Bars 91 to 95
 	bes2.\< 
 	a!\>
@@ -144,12 +144,12 @@ musicClarinettoIIMvtII = \relative c'' {
 	bes8\p r r4 r 
 	R2.
 	R2.\fermata \mark \default
-	d2(\p\< f4)
+	d2(\p\< f4)\!
 	f16(\> ees) ees8~ ees2(
 % Bars 131 to 135
 	d8\!) r r4 r
 	R2.
-	d2(\p\< f4)
+	d2(\p\< f4)\!
 	f16\((\< ees) ees8~ ees4. d8\)\!
 	c(--\mf\> g-- ees4--)\! r4\fermata
 % Bars 136 to 140
@@ -167,7 +167,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 146 to 150
 	R2.*2
 	
-	\afterGrace a2.\sf\>\fermata^\lunga\trill( {gis16 a)} \mark \default
+	\afterGrace a2.\sf\>\fermata\trill( {gis16 a\!)} \mark \default
 	bes8\pp r r4 r
 	R2.*3
 % Bars 151 to 155
@@ -185,9 +185,9 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 161 to 165
 	
 	R2.
-	r4 r r8 bes16(\p d~
+	r4 r r8 bes16\(\p d~
 	d^\morendo c32 bes d16 c bes\> d c bes d c bes d\!
-	c8\pp bes) d( c bes d
+	c8\pp bes\) d\( c bes d
 % Bar 166
-	c4 bes2)\fermata \bar "|."
+	c4 bes2\)\fermata \bar "|."
 }
