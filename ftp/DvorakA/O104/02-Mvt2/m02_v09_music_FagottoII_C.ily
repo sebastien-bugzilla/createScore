@@ -35,7 +35,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 	a,2.\p\<
 % Bars 26 to 30
-	<<g {s4\fz\< s s\!}>>
+	<<g {s4\fz\< s s\!} >>
 	f2.
 	<<e( {s4\fz\> s s\!}>>
 	a8) r r4 r
@@ -44,7 +44,7 @@ musicFagottoIIMvtII = \relative c' {
 	
 	
 	
-	R2.\fermata \mark \default
+	R2._\fermata \mark \default
 	g'2(\pp c,8 e)
 % Bars 36 to 40
 	g2.
@@ -67,8 +67,8 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 51 to 55
 	
 % Bars 56 to 60
-	aes'2\p\> aes4~
-	aes\! r r
+	aes'2\p\> aes4(
+	aes)\! r r
 	ees'4\fz\>( c2
 	des4\p) r r
 	ees4\fz\>( << c2) {s4 s\!}>>
@@ -124,7 +124,7 @@ musicFagottoIIMvtII = \relative c' {
 	fis4(\p g a)
 	b16-. g'-. b,-. g'-. c,\<-. g'-. b,-. g'-. c,-. g'-. b,-. g'-.\!
 	c,8 c,16 e~ e\p\<-. g-. c-. e-. g8( c)\!
-	b4(\mf c_\dimmarkup b)
+	b4(\mf c b)
 % Bars 121 to 125
 	c( a b)
 	g(\< a8 e'16 d c8 b)\!

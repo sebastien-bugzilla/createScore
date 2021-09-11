@@ -32,6 +32,7 @@ ppdim=^\markup {\dynamic pp \italic dim.}
 fpp=^\markup {\dynamic fpp}
 pococresc=^\markup {\italic {poco cresc.}}
 fzdim=^\markup {\dynamic fz \italic dim.}
+psemplice=^\markup {\dynamic p \italic semplice}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
