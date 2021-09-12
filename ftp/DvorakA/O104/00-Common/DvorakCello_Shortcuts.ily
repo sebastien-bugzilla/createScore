@@ -33,6 +33,9 @@ fpp=^\markup {\dynamic fpp}
 pococresc=^\markup {\italic {poco cresc.}}
 fzdim=^\markup {\dynamic fz \italic dim.}
 psemplice=^\markup {\dynamic p \italic semplice}
+pdolce=^\markup {\dynamic p \italic dolce}
+espr = \markup { "<" ">"}
+pmorendo=^\markup {\dynamic p \italic morendo}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
@@ -63,6 +66,10 @@ arco=^\markup {arco}
 lunga=^\markup {\italic lunga}
 morendo=^\markup {\italic morendo}
 mutainf=^\markup {\italic {muta in F}}
+ten=^\markup {\italic ten.}
+dolce=^\markup {\italic dolce}
+quasicadenza=^\markup {\italic {quasi Cadenza}}
+tranquillo=^\markup {\italic tranquillo}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {

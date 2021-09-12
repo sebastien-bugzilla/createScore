@@ -135,16 +135,16 @@
 %					}
 %				>>
 %			>>
-			\new Staff {
-				\timeMvtII \generalOptions \conductorOptions
-				\nameStaffXMvtII
-				\musicTimpaniMvtII
-			}
 %			\new Staff {
 %				\timeMvtII \generalOptions \conductorOptions
-%				\nameStaffXIMvtII
-%				\musicSoloCelloMvtII
+%				\nameStaffXMvtII
+%				\musicTimpaniMvtII
 %			}
+			\new Staff {
+				\timeMvtII \generalOptions \conductorOptions
+				\nameStaffXIMvtII
+				\musicSoloCelloMvtII
+			}
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIIIMvtII } <<
 %					\new Staff {
