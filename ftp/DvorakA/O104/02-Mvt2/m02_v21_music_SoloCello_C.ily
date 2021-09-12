@@ -147,12 +147,12 @@ musicSoloCelloMvtII = \relative c' {
 		<e c'>2 r16 \stemDown g\<-- a-- b--
 		<e, c'>4-> <g d'>-> <c e>->\!
 	} \\ {
-		r4_\pizz <c, g'>\fz r4
+		r4_\pizz <c,, g'>\fz r4
 		s2.
 	}>>
 % Bars 116 to 120
 	<<{
-		fis'2^\f fis4 \clef tenor
+		fis''2^\f fis4 \clef tenor
 		<e c'>-> <d b'>-> <c a'>->
 	} \\ {
 		r4 d,\fz_\pizz r
