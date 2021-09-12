@@ -94,6 +94,12 @@ naturaltrillmark = \markup {
 
 fermataSign = \markup {\musicglyph "scripts.ufermata"}
 
+fermatatrill = \once \override TrillSpanner.bound-details.left.text = \markup {
+	\combine 
+		\musicglyph #"scripts.trill"
+		\translate #'(0 . 2.6) \musicglyph #"scripts.ufermata"
+}
+
 mmrPos = #(define-music-function
 	(position)
 	(number?)

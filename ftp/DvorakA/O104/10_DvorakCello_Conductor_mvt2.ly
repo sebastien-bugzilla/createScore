@@ -39,7 +39,7 @@
 \include "./02-Mvt2/m02_v16_music_TromboneII_C.ily"
 \include "./02-Mvt2/m02_v17_music_TromboneIII_C.ily"
 \include "./02-Mvt2/m02_v18_music_Tuba_C.ily"
-\include "./02-Mvt2/m02_v19_music_Timpani.ily"
+\include "./02-Mvt2/m02_v19_music_Timpani_C.ily"
 \include "./02-Mvt2/m02_v21_music_SoloCello.ily"
 \include "./02-Mvt2/m02_v22_music_ViolinoI.ily"
 \include "./02-Mvt2/m02_v23_music_ViolinoII.ily"
@@ -127,19 +127,19 @@
 %						\partCombine \musicTromboneIMvtII \musicTromboneIIMvtII
 %%						\musicTromboneIIMvtII
 %					}
-					\new Staff {
-						\timeMvtII \generalOptions \conductorOptions
-						\nameStaffIXMvtII
-						\partCombine \musicTromboneIIIMvtII \musicTubaMvtII
-%						\musicTubaMvtII
-					}
+%					\new Staff {
+%						\timeMvtII \generalOptions \conductorOptions
+%						\nameStaffIXMvtII
+%						\partCombine \musicTromboneIIIMvtII \musicTubaMvtII
+%%						\musicTubaMvtII
+%					}
 %				>>
 %			>>
-%			\new Staff {
-%				\timeMvtII \generalOptions \conductorOptions
-%				\nameStaffXMvtII
-%				\musicTimpaniMvtII
-%			}
+			\new Staff {
+				\timeMvtII \generalOptions \conductorOptions
+				\nameStaffXMvtII
+				\musicTimpaniMvtII
+			}
 %			\new Staff {
 %				\timeMvtII \generalOptions \conductorOptions
 %				\nameStaffXIMvtII
