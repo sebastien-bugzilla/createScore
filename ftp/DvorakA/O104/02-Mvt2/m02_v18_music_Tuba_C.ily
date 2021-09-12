@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicTromboneIIIMvtII = \relative c {
+musicTubaMvtII = \relative c, {
 	\clef bass
 	\key g \major
 %	\transposition a
@@ -17,15 +17,15 @@ musicTromboneIIIMvtII = \relative c {
 	
 	\mark \default
 	R2.
-	g2.(\pp
+	\mmrPos #-6 R2.
 % Bars 16 to 20
-	c)
-	g(
-	c)
-	g
-	c2( e4)
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 21 to 25
-	a,2 r4
+	\mmrPos #-6 R
 	R2.*12
 % Bars 26 to 30
 	
@@ -43,7 +43,7 @@ musicTromboneIIIMvtII = \relative c {
 	g8 r g4 g
 % Bars 41 to 45
 	d' d16-> f-> ees-> d-> d4
-	g,16-^ bes-^ a-^ g-^ g4 r
+	g,8 r r4 r
 	R2.*7
 % Bars 46 to 50
 	
@@ -55,12 +55,12 @@ musicTromboneIIIMvtII = \relative c {
 	
 % Bars 56 to 60
 	
-	aes2.\pp\<(
-	beses)\>
-	aes\pp\<(
-	beses\>
+	R2.*5
+	
+	
+	
 % Bars 61 to 65
-	aes8\pp) r r4 r
+	
 	R2.*3
 	
 	\bar "||" \key g \major \mark \default
@@ -77,12 +77,12 @@ musicTromboneIIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	r4 c2\p\<(
-	des2.)(\>
-	c8)\! r r4 c\p\<(
+	R2.*5
+	
+	
 % Bars 86 to 90
-	des2.)(\>
-	c8\!) r r4 r
+	
+	
 	R2.*7
 	
 	
@@ -132,11 +132,11 @@ musicTromboneIIIMvtII = \relative c {
 	g2\ppp g4~
 	g b2~
 	b r4
-	r e2(\p\<
+	r e'2\(\p\<
 % Bars 161 to 165
-	ees2.)_\fzdimD
-	d\pp\>~
-	d4\! r r 
+	c2.\)_\fzdimD
+	g\pp\>~
+	g4\! r r 
 	R2.*2
 	
 % Bar 166

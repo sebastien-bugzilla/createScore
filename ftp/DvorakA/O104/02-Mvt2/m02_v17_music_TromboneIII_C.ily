@@ -17,7 +17,7 @@ musicTromboneIIIMvtII = \relative c {
 	
 	\mark \default
 	R2.
-	g2.(\pp
+	\partCombineApart g2.(\pp
 % Bars 16 to 20
 	c)
 	g(
@@ -25,7 +25,7 @@ musicTromboneIIIMvtII = \relative c {
 	g
 	c2( e4)
 % Bars 21 to 25
-	a,2 r4
+	a,2 r4 \partCombineAutomatic
 	R2.*12
 % Bars 26 to 30
 	
@@ -43,7 +43,7 @@ musicTromboneIIIMvtII = \relative c {
 	g8 r g4 g
 % Bars 41 to 45
 	d' d16-> f-> ees-> d-> d4
-	g,16-^ bes-^ a-^ g-^ g4 r
+	\partCombineApart g,16-^ bes-^ a-^ g-^ g4 \partCombineAutomatic r 
 	R2.*7
 % Bars 46 to 50
 	
@@ -55,12 +55,12 @@ musicTromboneIIIMvtII = \relative c {
 	
 % Bars 56 to 60
 	
-	aes2.\pp\<(
+	\partCombineApart aes2.\pp\<(
 	beses)\>
 	aes\pp\<(
 	beses\>
 % Bars 61 to 65
-	aes8\pp) r r4 r
+	aes8\pp) r r4 r \partCombineAutomatic
 	R2.*3
 	
 	\bar "||" \key g \major \mark \default
@@ -77,12 +77,12 @@ musicTromboneIIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	r4 c2\p\<(
+	\partCombineApart r4 c2\p\<(
 	des2.)(\>
 	c8)\! r r4 c\p\<(
 % Bars 86 to 90
 	des2.)(\>
-	c8\!) r r4 r
+	c8\!) r r4 r \partCombineAutomatic
 	R2.*7
 	
 	
@@ -132,9 +132,9 @@ musicTromboneIIIMvtII = \relative c {
 	g2\ppp g4~
 	g b2~
 	b r4
-	r e2(\p\<
+	r e2\(\p\<
 % Bars 161 to 165
-	ees2.)_\fzdimD
+	ees2.\)_\fzdimD
 	d\pp\>~
 	d4\! r r 
 	R2.*2
