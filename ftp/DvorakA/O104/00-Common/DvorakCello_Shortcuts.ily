@@ -36,6 +36,7 @@ psemplice=^\markup {\dynamic p \italic semplice}
 pdolce=^\markup {\dynamic p \italic dolce}
 espr = \markup { "<" ">"}
 pmorendo=^\markup {\dynamic p \italic morendo}
+ppleggiero=^\markup {\dynamic pp \italic leggiero}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
