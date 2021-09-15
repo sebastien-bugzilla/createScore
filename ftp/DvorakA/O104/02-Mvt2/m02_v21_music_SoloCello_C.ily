@@ -49,7 +49,7 @@ musicSoloCelloMvtII = \relative c' {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	R2.*3
 	
 % Bars 41 to 45
@@ -80,7 +80,7 @@ musicSoloCelloMvtII = \relative c' {
 	beses8.(\f\> aes16) beses8.(\> aes16) beses8.( aes16)\! \clef tenor
 	aes8.(\> g!16) aes8.(\>_\dimmarkup g16) aes8.(\> g16)
 	g8.(\p\> fis16) g8.(\>_\dimmarkup fis16) fis8.(\> e16)
-	e8.(\pp d16) e8.( d16) d8.( cis16) \bar "||" \key g \major \clef bass \mark \default
+	e8.(\pp d16) e8.( d16) d8.( cis16) \bar "||" \key g \major \clef bass \mark \default \grace {s8} 
 	b4 r r
 % Bars 66 to 70
 	R2.*2
@@ -103,7 +103,7 @@ musicSoloCelloMvtII = \relative c' {
 % Bars 81 to 85
 	a8 g(_\crescD\< f e) \tuplet 3/2 4 {f( e d)\!}
 	c(\f\< cis d des)\! c8.( e,16) \mark \default
-	f4 r r
+	\grace {s8} f4 r r
 	\tuplet 5/4 4 {g16->\mf\< a-> bes-> des-> e!->\! } \clef tenor g(\f a bes des) des8.(\fz\> c16)
 	a4\! r r \clef bass
 % Bars 86 to 90

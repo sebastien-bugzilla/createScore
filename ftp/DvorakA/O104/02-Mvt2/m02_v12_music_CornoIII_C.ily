@@ -32,7 +32,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key a \minor
+	\bar "||" \grace {s8} \key a \minor
 	R2.*11
 % Bars 41 to 45
 	
@@ -50,7 +50,7 @@ musicCornoIIIMvtII = \relative c' {
 	
 	
 	
-	\bar "||" \key c \major \mark \default
+	\bar "||"  \key c \major \mark \default \grace {s8}
 	R2.*18
 % Bars 66 to 70
 	
@@ -61,7 +61,7 @@ musicCornoIIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*9
+	\grace {s8} R2.*9
 % Bars 86 to 90
 	
 % Bars 91 to 95

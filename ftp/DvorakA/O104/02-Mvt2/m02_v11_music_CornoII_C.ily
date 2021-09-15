@@ -42,7 +42,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key a \minor
+	\bar "||" \grace {s8} \key a \minor
 	d2\ff d4
 	d2 d8. d16
 % Bars 41 to 45
@@ -72,8 +72,8 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	
-	\bar "||" \key c \major \mark \default
-	g,2\f g4
+	\bar "||" \key c \major \mark \default \grace {s8} 
+	g,2\f g4 
 % Bars 66 to 70
 	g2 d8. d16
 	d4 d' d,
@@ -95,7 +95,7 @@ musicCornoIIMvtII = \relative c' {
 % Bars 81 to 85
 	R2.*2
 	\mark \default
-	R2.*5
+	\grace {s8} R2.*5
 	
 	
 % Bars 86 to 90

@@ -43,13 +43,13 @@ musicVioloncelloMvtII = \relative c {
 % Bars 31 to 35
 	eis,8_\dimmarkup r fis! r g r
 	c,\pp r r4 c8 r
-	d_\dimD\> r d4(^\arco g)\!
+	d!_\dimD\> r d4(^\arco g)\!
 	g2(\ppp fis4\fermata \mark \default
 	g) r r
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	<d bes'>2\ff q4-^
 	g16-> bes-> a-> g-> g4 g8. g16
 % Bars 41 to 45
@@ -80,7 +80,7 @@ musicVioloncelloMvtII = \relative c {
 	des16\p^\pizz des' f, r des des' f, r des des' f, r
 	ais, cis' e, r ais, cis' e, r ais, cis' e, r
 	b b' fis r b, b' fis r e, g' e r
-	fis, b' fis r fis, b' fis r fis, ais' fis r \bar "||" \key g \major \mark \default
+	fis, b' fis r fis, b' fis r fis, ais' fis r \bar "||"  \key g \major \mark \default \grace {s8}
 	b,2\ff^\arco b'4
 % Bars 66 to 70
 	b,16-^ d-^ cis-^ b-^ b4 b'8. b16
@@ -112,7 +112,7 @@ musicVioloncelloMvtII = \relative c {
 	}>>
 % Bars 82 to 85
 	<c g'>2(\< c4)\! \mark \default
-	<<f,2. {s4\mf\< s s16\> s s s\!}>>
+	\grace {s8} <<f,2. {s4\mf\< s s16\> s s s\!}>>
 	f2._\pdim
 	<<f2. {s4\mf\< s s16\> s s s\!}>>
 % Bars 86 to 90
@@ -129,15 +129,20 @@ musicVioloncelloMvtII = \relative c {
 	g8\pp r16 \tuplet 3/2 4 {g32^\arco g g} g8 r c^\pizz e
 % Bars 96 to 100
 	g r16 \tuplet 3/2 4 {g,32^\arco g g } g8 r r d'^\pizz
+	g dis e r a,[ r16 a]
+	d!8 r r r16 \tuplet 3/2 4 {dis32^\arco dis dis} e8 r
+	c8^\pizz c' b b, a a'
+	g r16 \tuplet 3/2 4 {g,32^\arco g g} g4 r8 g^\pizz\<
+% Bars 101 to 105
+	c c' \tuplet 3/2 4 {b b, b} e, e'\!
 	fis,-^ r16 \tuplet 3/2 4 {fis32^\arco fis fis} fis8 r r fis^\pizz_\dimmarkup
 	g r a r16 a32\p^\arco a a8 r
 	b4^\pizz r8 b_\dimmarkup\noBeam c r16 c32^\arco c
 	d4\pp r r8 d
-% Bars 101 to 105
+% Bars 106 to 110
 	d2.\ppp\fermata
 	g,4 r r
 	R2.*19
-% Bars 106 to 110
 	
 % Bars 111 to 115
 	

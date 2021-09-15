@@ -38,7 +38,7 @@ musicTromboneIMvtII = \relative c' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	d2\ff d4
 	\partCombineApart d16-> bes-> a-> g-> g4 \partCombineAutomatic bes8. c16
 % Bars 41 to 45
@@ -63,7 +63,7 @@ musicTromboneIMvtII = \relative c' {
 	
 	R2.*3
 	
-	\bar "||" \key g \major \mark \default
+	\bar "||" \key g \major \mark \default \grace {s8}
 	d'2\f d4
 % Bars 66 to 70
 	d2 d8. e16
@@ -77,7 +77,7 @@ musicTromboneIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	\partCombineApart r4 c2\p\<(
+	\grace {s8} \partCombineApart r4 c2\p\<(
 	des2.\>)(
 	c8)\! r r4 c(\p\<
 % Bars 86 to 90

@@ -49,7 +49,7 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 36 to 40
 	g2.
 	d2.~
-	d \bar "||" \key g \minor
+	d \bar "||" \grace {s8} \key g \minor
 	g,2\ff g4
 	g16-^ bes-^ a-^ g-^ g4 g8. g16
 % Bars 41 to 45
@@ -76,7 +76,7 @@ musicFagottoIIMvtII = \relative c' {
 	des4\pp r r
 	R2.*3
 	
-	\bar "||" \key g \major \mark \default
+	\bar "||" \key g \major \mark \default \grace {s8} 
 	b,2\ff b,4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b8. b16
@@ -95,7 +95,7 @@ musicFagottoIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	c2.\p\<~  \mark \default
-	c8\! r r4 f,\p~
+	\grace {s8} c8\! r r4 f,\p~
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90

@@ -40,7 +40,7 @@ musicViolaMvtII = \relative c' {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	<g g' bes>2\ff\arpeggio q4-^\arpeggio
 	q2 <g bes>8. <a c>16
 % Bars 41 to 45
@@ -71,7 +71,7 @@ musicViolaMvtII = \relative c' {
 	R2.*4
 	
 	
-	\bar "||" \key g \major \mark \default
+	\bar "||" \key g \major \mark \default \grace {s8} 
 	<b d>2\ff q4
 % Bars 66 to 70
 	q2 q8. <cis e>16

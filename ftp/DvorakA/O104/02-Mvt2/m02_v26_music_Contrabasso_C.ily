@@ -49,7 +49,7 @@ musicContrabassoMvtII = \relative c' {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	g2\ff g4-^
 	g16-> bes-> a-> g-> g4 g8. g16
 % Bars 41 to 45
@@ -76,7 +76,7 @@ musicContrabassoMvtII = \relative c' {
 	des8\p^\pizz r des r des r
 	ais r ais r ais r
 	b r b r e! r
-	fis r fis r fis r \bar "||" \key g \major \mark \default
+	fis r fis r fis r \bar "||" \key g \major \mark \default \grace {s8}
 	b,2\ff^\arco b'4
 % Bars 66 to 70
 	b,16-^ d-^ cis-^ b-^ b4 b'8. b16
@@ -99,7 +99,7 @@ musicContrabassoMvtII = \relative c' {
 % Bars 82 to 85
 	bes bes bes r b b
 	c\< r c, c c\! r \mark \default
-	<<f,2. {s4\mf\< s s16\> s s s\!}>>
+	\grace {s8} <<f,2. {s4\mf\< s s16\> s s s\!}>>
 	f2._\pdim
 	<<f2. {s4\mf\< s s16\> s s s\!}>>
 % Bars 86 to 90

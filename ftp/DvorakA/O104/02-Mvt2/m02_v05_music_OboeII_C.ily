@@ -40,7 +40,7 @@ musicOboeIIMvtII = \relative c'' {
 % Bars 36 to 40
 	g
 	g4.( fis8 e4)
-	d8( dis e f fis4) \bar "||" \key g \minor
+	d8( dis e f fis4) \bar "||" \key g \minor \grace {s8} 
 	g2\ff g'16-^ bes-^ a-^ g-^
 	g2 g,8. a16
 % Bars 41 to 45
@@ -71,7 +71,7 @@ musicOboeIIMvtII = \relative c'' {
 	a8.\p gis16 r8 a16( gis) r8 a16( gis)
 	r8 aes16( g!) r8 aes16( g) r8 aes16( g)
 	r8 g16( fis) r8 g16( fis) r8 fis16( e)
-	r8 e16(\> d) r8 e16( d) r8 d16( cis)\! \bar "||" \key g \major \mark \default
+	r8 e16(\> d) r8 e16( d) r8 d16( cis)\! \bar "||" \key g \major  \mark \default \grace {s8}
 	b2\ff b'16-^ d-^ cis-^ b-^
 % Bars 66 to 70
 	b2 b8. cis16
@@ -94,7 +94,7 @@ musicOboeIIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.
+	\grace {s8} R2.
 	e'4\p\<( des e,\!
 	f8) r r4 r
 % Bars 86 to 90

@@ -40,7 +40,7 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	<d d'>2\ff q4
 	q2 <bes g'>8. <d a'>16
 % Bars 41 to 45
@@ -71,7 +71,7 @@ musicViolinoIIMvtII = \relative c' {
 	R2.*4
 	
 	
-	\bar "||" \key g \major \mark \default
+	\bar "||" \key g \major \mark \default \grace {s8}
 	<fis d'>2\ff q4
 % Bars 66 to 70
 	q2 b8. cis16
@@ -85,7 +85,7 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 81 to 85
 	
 	\mark \default
-	<< c2.( {s4\mf\< s s16\> s s s\!} >>
+	\grace {s8} << c2.( {s4\mf\< s s16\> s s s\!} >>
 	des4)\p r r
 	<< c2.( {s4\< s s16\> s s s\!} >>
 % Bars 86 to 90

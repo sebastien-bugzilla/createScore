@@ -38,7 +38,7 @@ musicTromboneIIIMvtII = \relative c {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	g2\ff g4~
 	g8 r g4 g
 % Bars 41 to 45
@@ -63,7 +63,7 @@ musicTromboneIIIMvtII = \relative c {
 	aes8\pp) r r4 r \partCombineAutomatic
 	R2.*3
 	
-	\bar "||" \key g \major \mark \default
+	\bar "||" \key g \major \mark \default \grace {s8} 
 	b2\f b4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b
@@ -77,7 +77,7 @@ musicTromboneIIIMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	\partCombineApart r4 c2\p\<(
+	\grace {s8} \partCombineApart r4 c2\p\<(
 	des2.)(\>
 	c8)\! r r4 c\p\<(
 % Bars 86 to 90

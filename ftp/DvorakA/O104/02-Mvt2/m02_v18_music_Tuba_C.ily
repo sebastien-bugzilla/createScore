@@ -38,7 +38,7 @@ musicTubaMvtII = \relative c, {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	g2\ff g4~
 	g8 r g4 g
 % Bars 41 to 45
@@ -63,7 +63,7 @@ musicTubaMvtII = \relative c, {
 	
 	R2.*3
 	
-	\bar "||" \key g \major \mark \default
+	\bar "||" \key g \major \mark \default \grace {s8}
 	b2\f b4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b
@@ -77,7 +77,7 @@ musicTubaMvtII = \relative c, {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*5
+	\grace {s8} R2.*5
 	
 	
 % Bars 86 to 90

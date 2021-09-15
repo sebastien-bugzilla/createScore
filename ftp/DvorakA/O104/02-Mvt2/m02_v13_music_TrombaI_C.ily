@@ -32,7 +32,7 @@ musicTrombaIMvtII = \relative c'' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key a \minor
+	\bar "||" \grace {s8} \key a \minor
 	g2\ff g4
 	g r d'8. d16
 % Bars 41 to 45
@@ -53,7 +53,7 @@ musicTrombaIMvtII = \relative c'' {
 	
 	
 	
-	\bar "||" \key c \major \mark \default
+	\bar "||" \key c \major \mark \default \grace {s8} 
 	d,2\f d4
 % Bars 66 to 70
 	d2 d8. d16 
@@ -67,7 +67,7 @@ musicTrombaIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*12
+	\grace {s8} R2.*12
 % Bars 86 to 90
 	
 % Bars 91 to 95

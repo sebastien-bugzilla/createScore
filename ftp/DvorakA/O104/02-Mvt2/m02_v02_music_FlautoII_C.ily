@@ -37,7 +37,7 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" \key g \minor
+	\bar "||" \grace {s8} \key g \minor
 	R2.
 	r4 r g'8.\ff a16
 % Bars 41 to 45
@@ -64,7 +64,7 @@ musicFlautoIIMvtII = \relative c'' {
 	des2.\p\)
 	cis2.~
 	cis4( b! g4)
-	fis(\> fis e)\! \bar "||" \key g \major \mark \default
+	fis(\> fis e)\! \bar "||"  \key g \major \mark \default \grace {s8}
 	d4\ff r r
 % Bars 66 to 70
 	R2.*8
@@ -79,7 +79,7 @@ musicFlautoIIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.
+	\grace {s8} R2.
 	des''4\(\p\< bes16-- a-- g-- a-- bes4\!
 	a8\) r r4 r
 % Bars 86 to 90

@@ -74,10 +74,10 @@ tempiMvtII = {
 	\tempo "Un poco più animato" % bar 57
 	s2.*6
 	\tempo "poco a poco ritard." % bar 63
-	s2.*2
-	\tempo "Meno. Tempo I." % bar 65
+	s2.*2 
+	\tempo "Meno. Tempo I." \grace {s8} % bar 65 
 	s2.*18
-	\tempo "Un poco più animato" % bar 83
+	\grace {s8} \tempo "Un poco più animato" % bar 83
 	s2.*12
 	\tempo "Meno. Tempo I." % bar 95
 	s2.*25

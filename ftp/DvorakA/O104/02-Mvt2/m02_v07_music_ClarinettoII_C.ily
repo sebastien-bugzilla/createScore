@@ -53,7 +53,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 36 to 40
 	
 	
-	\bar "||" \key bes \minor
+	\bar "||" \grace {s8} \key bes \minor
 	des'2\ff des4
 	des2 bes8. c16
 % Bars 41 to 45
@@ -84,7 +84,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	e'2.\pp
 	e~
 	e4( d bes!4)
-	a( a,2\pp)\>~ \bar "||" \key bes \major \mark \default
+	a( a,2\pp)\>~ \bar "||" \key bes \major \mark \default \grace {s8} 
 	a4\ff r r
 % Bars 66 to 70
 	R2.*2
@@ -103,7 +103,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*4
+	\grace {s8} R2.*4
 	
 	
 % Bars 86 to 90

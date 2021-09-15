@@ -49,7 +49,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 36 to 40
 	b2.
 	d4( b g~
-	g c2) \bar "||" \key g \minor \partCombineAutomatic
+	g c2) \bar "||" \key g \minor \grace {s8} \partCombineAutomatic
 	g2\ff g4
 	g16-^ bes-^ a-^ g-^ g4 g8. g16
 % Bars 41 to 45
@@ -76,7 +76,7 @@ musicFagottoIMvtII = \relative c' {
 	\partCombineApart des2.(
 	bes)
 	b2( e,4)
-	fis2(\pp\> ais4)\! \bar "||" \key g \major \mark \default \partCombineAutomatic
+	fis2(\pp\> ais4)\! \bar "||" \key g \major \mark \default \grace {s8}  \partCombineAutomatic
 	b2\ff b,4
 % Bars 66 to 70
 	b16-^ d-^ cis-^ b-^ b4 b8. b16
@@ -99,7 +99,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 81 to 85
 	bes, d f d bes f' d bes( b) f' d b
 	c4( f bes \mark \default
-	a8) \partCombineAutomatic r r4 f\p~
+	\grace {s8} a8) \partCombineAutomatic r r4 f\p~
 	f2.~\<
 	f8\! r r4 f\p~
 % Bars 86 to 90

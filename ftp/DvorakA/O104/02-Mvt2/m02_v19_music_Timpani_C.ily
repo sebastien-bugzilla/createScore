@@ -32,7 +32,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 36 to 40
 	R2.*3
 	
-	\bar "||" 
+	\bar "||" \grace {s8} 
 	g16\f g g g g8 r g r
 	g r g16 g g g g8 r
 % Bars 41 to 45
@@ -53,7 +53,7 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	
-	\bar "||" \mark \default
+	\bar "||" \mark \default \grace {s8}
 	R2.*18
 % Bars 66 to 70
 	
@@ -64,7 +64,7 @@ musicTimpaniMvtII = \relative c {
 % Bars 81 to 85
 	
 	\mark \default
-	R2.*9
+	\grace {s8} R2.*9
 % Bars 86 to 90
 	
 % Bars 91 to 95
