@@ -71,7 +71,7 @@ ten=^\markup {\italic ten.}
 dolce=^\markup {\italic dolce}
 quasicadenza=^\markup {\italic {quasi Cadenza}}
 tranquillo=^\markup {\italic tranquillo}
-
+div=^\markup {div.}
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
 	\concat { 
