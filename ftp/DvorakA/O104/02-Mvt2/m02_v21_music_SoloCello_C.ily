@@ -41,7 +41,7 @@ musicSoloCelloMvtII = \relative c' {
 	d8(->_\espr c16) r d8->(_\espr c16) r c8(->_\espr b16) r
 	b8(->_\espr bes16) r bes8(->_\espr a16) r a8(->_\espr gis16) r \clef tenor
 % Bars 31 to 35
-	aes8(_\pdim_\espr g16) r g8(_\espr fis16) r fis8(_\espr f16) r 
+	aes8(_\pdim_\espr g16) r g8(_\espr fis!16) r fis8(_\espr f16) r 
 	f8(\pp ees16) r f8( ees16) r d8( c16) r
 	c8( b!16) r c8( b16) r \clef bass \tuplet 3/2 4 {d8( c b)}
 	e2(\ppp d4\fermata \mark \default

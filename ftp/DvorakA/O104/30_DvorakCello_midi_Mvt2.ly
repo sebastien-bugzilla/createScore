@@ -50,16 +50,16 @@
 			\new StaffGroup <<
 				\new Staff { \timeMvtII \musicFlautoIMvtII }
 				\new Staff { \timeMvtII \musicFlautoIIMvtII }
-				\new Staff { \timeMvtII \musicPiccoloMvtII }
 				\new Staff { \timeMvtII \musicOboeIMvtII }
 				\new Staff { \timeMvtII \musicOboeIIMvtII }
 				\new Staff { \timeMvtII \musicClarinettoIMvtII }
 				\new Staff { \timeMvtII \musicClarinettoIIMvtII }
 				\new Staff { \timeMvtII \musicFagottoIMvtII }
+				\new Staff { \timeMvtII \musicFagottoIIMvtII }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 8 = 108
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -72,7 +72,6 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtII \musicFagottoIIMvtII }
 				\new Staff { \timeMvtII \musicCornoIMvtII }
 				\new Staff { \timeMvtII \musicCornoIIMvtII }
 				\new Staff { \timeMvtII \musicCornoIIIMvtII }
@@ -85,7 +84,7 @@
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 8 = 108
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -98,16 +97,11 @@
 	\score {
 		<<
 			\new StaffGroup <<
-				\new Staff { \timeMvtII \musicTimpaniMvtII }
-				\new Staff { \timeMvtII \musicTriangoloMvtII }
 				\new Staff { \timeMvtII \musicSoloCelloMvtII }
-				\new Staff { \timeMvtII \musicViolinoIMvtII }
-				\new Staff { \timeMvtII \musicViolinoIIMvtII }
-				\new Staff { \timeMvtII \musicViolaMvtII }
 			>>
 		>>
 		\midi {
-			\tempo 4 = 80
+			\tempo 8 = 108
 			\context {
 				\Voice
 				\remove "Dynamic_performer"
@@ -115,3 +109,64 @@
 		}
 	}
 }
+\book {
+	#(define output-suffix "groupeIV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtII \musicViolinoIMvtII }
+				\new Staff { \timeMvtII \musicViolinoIIMvtII }
+				\new Staff { \timeMvtII \musicViolaMvtII }
+				\new Staff { \timeMvtII \musicVioloncelloMvtII }
+				\new Staff { \timeMvtII \musicContrabassoMvtII }
+			>>
+		>>
+		\midi {
+			\tempo 8 = 108
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+\book {
+	#(define output-suffix "groupeV")
+	\score {
+		<<
+			\new StaffGroup <<
+				\new Staff { \timeMvtII \musicFlautoIMvtII }
+				\new Staff { \timeMvtII \musicFlautoIIMvtII }
+				\new Staff { \timeMvtII \musicOboeIMvtII }
+				\new Staff { \timeMvtII \musicOboeIIMvtII }
+				\new Staff { \timeMvtII \musicClarinettoIMvtII }
+				\new Staff { \timeMvtII \musicClarinettoIIMvtII }
+				\new Staff { \timeMvtII \musicFagottoIMvtII }
+				\new Staff { \timeMvtII \musicFagottoIIMvtII }
+				\new Staff { \timeMvtII \musicCornoIMvtII }
+				\new Staff { \timeMvtII \musicCornoIIMvtII }
+				\new Staff { \timeMvtII \musicCornoIIIMvtII }
+				\new Staff { \timeMvtII \musicTrombaIMvtII }
+				\new Staff { \timeMvtII \musicTrombaIIMvtII }
+				\new Staff { \timeMvtII \musicTromboneIMvtII }
+				\new Staff { \timeMvtII \musicTromboneIIMvtII }
+				\new Staff { \timeMvtII \musicTromboneIIIMvtII }
+				\new Staff { \timeMvtII \musicTubaMvtII }
+				\new Staff { \timeMvtII \musicSoloCelloMvtII }
+				\new Staff { \timeMvtII \musicViolinoIMvtII }
+				\new Staff { \timeMvtII \musicViolinoIIMvtII }
+				\new Staff { \timeMvtII \musicViolaMvtII }
+				\new Staff { \timeMvtII \musicVioloncelloMvtII }
+				\new Staff { \timeMvtII \musicContrabassoMvtII }
+			>>
+		>>
+		\midi {
+			\tempo 8 = 108
+			\context {
+				\Voice
+				\remove "Dynamic_performer"
+			}
+		}
+	}
+}
+

@@ -131,13 +131,13 @@ musicCornoIIMvtII = \relative c' {
 	
 	
 	R2.\fermata \mark \default
-	R2.*6
-	
+	d2.~
+	d~
 % Bars 131 to 135
-	
-	
-	
-	
+	d~
+	d~
+	d~
+	d8 r r4 r
 	R2.\fermata
 % Bars 136 to 140
 	R2.*12
