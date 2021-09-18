@@ -91,6 +91,84 @@ tempiMvtII = {
 	s2.
 	\tempo "a tempo" % bar 160
 }
+%--------------------------------------
+%       M V T   II
+%--------------------------------------
+tempiMvtIII = {
+	\tempo \markup { "Allegro moderato" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } }
+	s2*134
+	s4 \tempo "string." s % bar 135
+	s2*4
+	\tempo "molto rit." % bar 140
+	s2*3
+	\tempo \markup { "Poco meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =92 } } % bar 143
+	s2*14
+	\tempo "rit" % bar 157
+	s2*2
+	\tempo "in tempo" % bar 159
+	s2*7
+	\tempo "rit" % bar 166
+	s2
+	\tempo "in tempo" % bar 167
+	s2*5
+	\tempo "poco a poco accel." % bar 172
+	s2*5
+	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 177
+	s2*26
+	\tempo "rit" % bar 203
+	s2
+	\tempo "in tempo" % bar 204
+	s2*38
+	s4 \tempo "molto rit." s % bar 242
+	s2*3
+	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 246
+	s2*27
+	\tempo "ritard. poco a poco" % bar 273
+	s2*4
+	\tempo "Andante" % bar 277
+	s2*2
+	\tempo "rit" % bar 279
+	s2*2
+	\tempo \markup { "Moderato" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } % bar 281
+	s2*16
+	\tempo "string." % bar 297
+	s2*4
+	\tempo "ritard. molto" % bar 301
+	s2*2
+	\tempo \markup { "Tempo I." \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 303
+	s2*11
+	\tempo "rit." % bar 314
+	s2
+	\tempo \markup { "in tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 315
+	s2*16
+	\tempo \markup { "Meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } % bar 331 
+	s2*14
+	s4 \tempo "string." s % bar 345
+	s2
+	\tempo \markup { "a tempo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =104 } } % bar 347
+	s2*16
+	\tempo "string." % bar 363
+	s2*4
+	\tempo "molto ritard." % bar 367
+	s2*2
+	\tempo "in tempo" % bar 369
+	s2*49
+	\tempo "poco ritard." % bar 418
+	s2*3
+	\tempo "in tempo" % bar 421
+	s2*16
+	\tempo \markup { "Meno mosso" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =84 } } % bar 437
+	s2*7
+	\tempo "poco a poco rit." % bar 444
+	s2*5
+	\tempo \markup { "Andante" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =76 } } % bar 449
+	s2*48
+	\tempo "Andante maestoso" % bar 497
+	s2*9
+	\tempo "molto accel." % bar 506
+	s2*3
+	\tempo \markup { "Allegro vivo" \teeny \translate #'(0 . 0.4) { \note-by-number #2 #0 #0.9 } \medium { =132 } } % bar 509
+}
 %###############################################################################
 %#                            T E M P I   P A R T S                            #
 %###############################################################################

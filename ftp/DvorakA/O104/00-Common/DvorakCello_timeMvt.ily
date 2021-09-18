@@ -14,5 +14,5 @@ timeMvtII = {
 }
 timeMvtIII = {
 	\time 2/4
-	\tempo "Allegro moderato"
+	%\tempo "Allegro moderato"
 }
