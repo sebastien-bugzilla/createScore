@@ -37,11 +37,15 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 31 to 35
 	
 	
-	R2*8
-	
-	
+	R2
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 36 to 40
-	
+	R
+	R
+	R
+	\mmrPos #-6 R
+	R
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
@@ -132,13 +136,17 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	R2*9
-	
+	R2
+	\mmrPos #-8 R
 % Bars 131 to 135
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 136 to 140
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 	R2*5
 	
 	
@@ -281,7 +289,7 @@ musicOboeIIMvtIII = \relative c'' {
 	g g g g g g
 % Bars 301 to 305
 	g g g g\< g g
-	g g g fis fis e}
+	g g g fis fis e\!}
 	g2(\p
 	fis)
 	g(
@@ -326,7 +334,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 341 to 345
 	
 	
-	bes4\p bes_\crescmarkup~
+	bes4\p bes~
 	bes8( c bes16 c bes c)
 	d4\< bes16( c bes c
 % Bars 346 to 350
@@ -342,7 +350,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	dis4(\mp \tuplet 3/2 4 {e8 dis cis_\crescmarkup)}
+	dis4(\mp \tuplet 3/2 4 {e8 dis cis)}
 % Bars 366 to 370
 	dis4( \tuplet 3/2 4 {e8 dis cis)}
 	dis4 e\f~
@@ -457,10 +465,10 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 496 to 500
 	\mark \default
-	dis2(\p\<
+	dis2\(\p\<
 	dis4 fis
 	b dis~
-	dis fis)\!
+	dis fis\)\!
 % Bars 501 to 505
 	dis2\ff-^~
 	dis

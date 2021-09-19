@@ -25,8 +25,8 @@
 \include "./03-Mvt3/m03_v01_music_FlautoI_C.ily"
 \include "./03-Mvt3/m03_v02_music_FlautoII_C.ily"
 \include "./03-Mvt3/m03_v03_music_Piccolo_C.ily"
-\include "./03-Mvt3/m03_v04_music_OboeI.ily"
-\include "./03-Mvt3/m03_v05_music_OboeII.ily"
+\include "./03-Mvt3/m03_v04_music_OboeI_C.ily"
+\include "./03-Mvt3/m03_v05_music_OboeII_C.ily"
 \include "./03-Mvt3/m03_v06_music_ClarinettoI.ily"
 \include "./03-Mvt3/m03_v07_music_ClarinettoII.ily"
 \include "./03-Mvt3/m03_v08_music_FagottoI.ily"
@@ -70,31 +70,32 @@
 		<<
 %			\new StaffGroup <<
 %				\new GrandStaff \with { \nameGrandStaffIMvtIII } <<
-					\new Staff <<
+%					\new Staff <<
 %%						\new Voice {
 %%							\formatConductorMvtIII
 %%						}
+%%						\new Voice {
+%%							\tempiMvtIII
+%%						}
 %						\new Voice {
-%							\tempiMvtIII
+%							\timeMvtIII \generalOptions \conductorOptions
+%							\nameStaffIMvtIII
+%							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
+%%							\musicFlautoIIMvtIII
 %						}
-						\new Voice {
-							\timeMvtIII \generalOptions \conductorOptions
-							\nameStaffIMvtIII
-							\partCombine \musicFlautoIMvtIII \musicFlautoIIMvtIII
-%							\musicFlautoIIMvtIII
-						}
-					>>
-					\new Staff {
-						\timeMvtIII \generalOptions \conductorOptions
-						\nameStaffIIMvtIII
-						\musicPiccoloMvtIII
-					}
+%					>>
+%					\new Staff {
+%						\timeMvtIII \generalOptions \conductorOptions
+%						\nameStaffIIMvtIII
+%						\musicPiccoloMvtIII
+%					}
 %				>>
-%				\new Staff {
-%					\timeMvtIII \generalOptions \conductorOptions
-%					\nameStaffIIIMvtIII
-%					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
-%				}
+				\new Staff {
+					\timeMvtIII \generalOptions \conductorOptions
+					\nameStaffIIIMvtIII
+					\partCombine \musicOboeIMvtIII \musicOboeIIMvtIII
+%					\musicOboeIIMvtIII
+				}
 %				\new Staff {
 %					\timeMvtIII \generalOptions \conductorOptions
 %					\nameStaffIVMvtIII
