@@ -1328,13 +1328,13 @@ class Score(ScoreSet):
 				self.sectionScore.append('\t\t\t}')
 				self.sectionScore.append('\t\t}')
 				self.sectionScore.append('\t\t\\layout {')
-				if self.cue_voice == 'yes':
-					line1 = '\t\t\t\\context {'
-					line2 = '\t\t\t\t\\CueVoice \\layoutCueVoice'
-					line3 = '\t\t\t}'
-					self.sectionScore.append(line1)
-					self.sectionScore.append(line2)
-					self.sectionScore.append(line3)
+#				if self.cue_voice == 'yes':
+#					line1 = '\t\t\t\\context {'
+#					line2 = '\t\t\t\t\\CueVoice \\layoutCueVoice'
+#					line3 = '\t\t\t}'
+#					self.sectionScore.append(line1)
+#					self.sectionScore.append(line2)
+#					self.sectionScore.append(line3)
 				self.sectionScore.append('\t\t}')
 				self.sectionScore.append('\t}')
 		else:
@@ -1398,9 +1398,9 @@ class Score(ScoreSet):
 				self.sectionScore.append('\t\t\t}')
 				self.sectionScore.append('\t\t}')
 				self.sectionScore.append('\t\t\\layout {')
-				self.sectionScore.append('\t\t\t\\context {')
-				self.sectionScore.append('\t\t\t\t\\CueVoice \\layoutCueVoice')
-				self.sectionScore.append('\t\t\t}')
+#				self.sectionScore.append('\t\t\t\\context {')
+#				self.sectionScore.append('\t\t\t\t\\CueVoice \\layoutCueVoice')
+#				self.sectionScore.append('\t\t\t}')
 				self.sectionScore.append('\t\t}')
 				self.sectionScore.append('\t}')
 				i_mvt = i_mvt + 1
@@ -1618,14 +1618,15 @@ class Score(ScoreSet):
 				ligne4 = pref_gdSt + pref_form + pref_stGp + '\t\\' \
 					+ self.key_music[i][0]
 			else:
-				if i+1 in self.pianostaff[n][0]:
-					temp = '<< { \\' + self.key_music[i][0]
-					j = 1
-					while j < len(self.key_music[i][0]):
-						temp = temp + ' } \\\\ { \\' + self.key_music[i][j]
-						j = j + 1
-					ligne4 = pref_gdSt + pref_form + pref_stGp + \
-						temp + ' } >>'
+				if self.pianostaff != 'no':
+					if i+1 in self.pianostaff[n][0]:
+						temp = '<< { \\' + self.key_music[i][0]
+						j = 1
+						while j < len(self.key_music[i][0]):
+							temp = temp + ' } \\\\ { \\' + self.key_music[i][j]
+							j = j + 1
+						ligne4 = pref_gdSt + pref_form + pref_stGp + \
+							temp + ' } >>'
 				else:
 					temp = '\\' + self.key_music[i][0]
 					j = 1
@@ -1633,7 +1634,7 @@ class Score(ScoreSet):
 						temp = temp + ' \\' + self.key_music[i][j]
 						j = j + 1
 					ligne4 = pref_gdSt + pref_form + pref_stGp + \
-						'\t\\partcombine ' + temp
+						'\t\\partCombine ' + temp
 			# ligne 5
 			ligne5 = pref_gdSt + pref_form + pref_stGp + '}'
 			
@@ -1644,9 +1645,10 @@ class Score(ScoreSet):
 				if i+1 in self.grandstaff[n][0]:
 					count_gdSt = count_gdSt + 1
 					num_gdSt = romain(count_gdSt)
-					if i+1 in self.pianostaff[n][0]:
-						temp = pref + pref_stGp + '\\new PianoStaff \with { ' \
-							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					if not self.pianostaff == 'no':
+						if i+1 in self.pianostaff[n][0]:
+							temp = pref + pref_stGp + '\\new PianoStaff \with { ' \
+								+ '\\' + self.key_gdstaff_name[i] + ' } <<'
 					else:
 						temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
 							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
@@ -1674,9 +1676,10 @@ class Score(ScoreSet):
 				if i+1 in self.grandstaff[n][0]:
 					count_gdSt = count_gdSt + 1
 					num_gdSt = romain(count_gdSt)
-					if i+1 in self.pianostaff[n][0]:
-						temp = pref + pref_stGp + '\\new PianoStaff \with { ' \
-							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
+					if self.pianostaff != 'no':
+						if i+1 in self.pianostaff[n][0]:
+							temp = pref + pref_stGp + '\\new PianoStaff \with { ' \
+								+ '\\' + self.key_gdstaff_name[i] + ' } <<'
 					else:
 						temp = pref + pref_stGp + '\\new GrandStaff \with { ' \
 							+ '\\' + self.key_gdstaff_name[i] + ' } <<'
