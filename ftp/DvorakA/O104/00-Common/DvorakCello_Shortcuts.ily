@@ -73,7 +73,7 @@ quasicadenza=^\markup {\italic {quasi Cadenza}}
 tranquillo=^\markup {\italic tranquillo}
 div=^\markup {div.}
 IImutainflautopiccolo=^\markup { \smaller { [II. muta in Flauto piccolo] } }
-
+espressivoecantabile=^\markup {\italic {espressivo e cantabile}}
 
 
 % shortcuts & funcions

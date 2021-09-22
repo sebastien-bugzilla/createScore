@@ -128,7 +128,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	c c c  c c c\!
 	bes! bes bes  bes bes bes
 	bes\> bes bes   bes bes bes\!}
-	bes2_\dimmarkup~
+	bes2~
 	bes4 r
 % Bars 141 to 145
 	R2*2
@@ -236,7 +236,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	f,,2\fp\>~
 % Bars 266 to 270
 	f~\!
-	f_\dimmarkup~
+	f~
 	f~
 	f8 r r4
 	R2*11
@@ -273,8 +273,8 @@ musicClarinettoIIMvtIII = \relative c' {
 	d'4\p( \tuplet 3/2 4 {ees8 d c)}
 	d4( \tuplet 3/2 4 {ees8 d c)}
 % Bars 301 to 305
-	d4(\< ees~
-	ees8\!) r r4
+	d4( ees~
+	ees8) r r4
 	R2*2
 	
 	bes8\p\<( d~ d8 bes16 ees)
@@ -335,7 +335,7 @@ musicClarinettoIIMvtIII = \relative c' {
 	cis!2
 	\tuplet 3/2 4 {fis8 fis fis  fis fis fis
 	fis\< fis fis  fis fis fis\!
-	fis fis fis  g( fis e)_\crescmarkup
+	fis fis fis  g( fis e)
 % Bars 366 to 370
 	fis fis fis  g( fis e)
 	fis fis fis g\f g g}
@@ -431,14 +431,14 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 461 to 465
 	d4.(\pp\< e16 fis
-	d2)
+	d2)\!
 	d2~\>
 	d~
 	d4.\pp r8
 % Bars 466 to 470
 	R2*2
 	
-	r4 a8.\p\<( fis'16)
+	r4 a8.\p\<\( fis'16\)
 	fis4.\fz\>( e8
 	d4. cis8)\!
 % Bars 471 to 475
@@ -449,9 +449,9 @@ musicClarinettoIIMvtIII = \relative c' {
 	
 % Bars 476 to 480
 	
-	d4.(\fp\> e16 f)
+	d4.\(\fp\> e16 f\)
 	d2\!
-	d4.(_\dimmarkup e16 f)
+	d4.\(_\dimmarkup e16 f\)
 	d2~
 % Bars 481 to 485
 	d8 r r4

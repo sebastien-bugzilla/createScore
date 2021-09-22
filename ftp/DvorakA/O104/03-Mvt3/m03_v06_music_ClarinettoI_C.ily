@@ -43,9 +43,9 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 36 to 40
 	a8. gis16 gis8-. a-.
 	a4 a
-	g! bes8-.\< g-.
-	f bes16 g f8-. g-.\!
-	bes\mf( g a) r
+	g! \partCombineChords bes8-.\< g-.
+	\partCombineApart f bes16 g  \partCombineChords f8-. g-.\!
+	\partCombineAutomatic bes\mf( g a) r
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
@@ -69,8 +69,8 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	
 	
-	\tuplet 5/4 4 {d16(\f\< e g f e)\!} d8-. cis-.
-	d r r4
+	\partCombineApart \tuplet 5/4 4 {d16(\f\< e g f e)\!} d8-. cis-.
+	d r r4 \partCombineAutomatic
 % Bars 81 to 85
 	R2*6
 % Bars 86 to 90
@@ -111,18 +111,18 @@ musicClarinettoIMvtIII = \relative c' {
 	
 	
 	
-	r8 f\p-. e-. r
+	\partCombineApart r8 f\p-. e-. r
 % Bars 126 to 130
 	r f-. e-._\dimmarkup r
 	r f-. e-. r
-	r f-. e-. r
+	r f-. e-. r \partCombineAutomatic
 	R2*2
 	
 % Bars 131 to 135
-	e,2\p~
+	\partCombineChords e,2\p~
 	e~
-	e\>~
-	e\!
+	e\>^~
+	e\! \partCombineAutomatic
 	\tuplet 3/2 4 {e8 e e\<  e e e
 % Bars 136 to 140
 	e e e  e e e\!
@@ -133,7 +133,7 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 141 to 145
 	R2*2
 	\mark \default
-	g'4(\p^\espressivoecantabile e
+	\partCombineApart g'4(\p^\espressivoecantabile e
 	g e)
 	g8.(\< e16 c4~
 % Bars 146 to 150
@@ -174,7 +174,7 @@ musicClarinettoIMvtIII = \relative c' {
 	a4\! \acciaccatura a8 bes4(
 % Bars 176 to 180
 	\acciaccatura gis8 a4 \acciaccatura fis8 g4
-	f!8) r r4
+	f!8) r r4 \partCombineAutomatic
 	R2*5
 	
 	
@@ -293,13 +293,13 @@ musicClarinettoIMvtIII = \relative c' {
 	f'4\p( \tuplet 3/2 4 {g8 f ees)}
 	f4( \tuplet 3/2 4 {g8 f ees)}
 % Bars 301 to 305
-	f4(\< g~
-	g\!\> f8 ees)\!
-	d2\p~
+	f4(_\< g~
+	g\!_\> f8 ees)\!
+	\partCombineApart d2\p~
 	d8 c( f8. ees16)
-	d8\p\<( f~ f16 bes d, g)
+	d8( f~ f16 bes d, g)
 % Bars 306 to 310
-	f4(~\! f16\> ees d c)\!
+	f4(~ f16 ees d c)
 	d2~
 	d8 c( f8. ees16)
 	d8( f~ f16 bes d, g)
@@ -307,7 +307,7 @@ musicClarinettoIMvtIII = \relative c' {
 % Bars 311 to 315
 	d4(~\< d16 c f ees)
 	d4(~ d16 c f ees)\!
-	d4( c8) r
+	d4( c8) r \partCombineAutomatic
 	R2 \mark \default
 	R2*16
 % Bars 316 to 320
@@ -343,7 +343,7 @@ musicClarinettoIMvtIII = \relative c' {
 	fis
 	fis4( e)
 	e2
-	e4(\p a
+	e4( a
 % Bars 356 to 360
 	e g)
 	e( g
@@ -363,7 +363,7 @@ musicClarinettoIMvtIII = \relative c' {
 	a8) r r4
 	R2
 % Bars 371 to 375
-	a'4(~\mf a16 d fis, b)
+	a'4(~ a16 d fis, b)
 	a4(~ a16 g fis e)
 	fis8-. r r4
 	R2
@@ -399,8 +399,8 @@ musicClarinettoIMvtIII = \relative c' {
 	gis(
 	g!)
 % Bars 401 to 405
-	d'\fz\>~
-	d\!~
+	d'~
+	d~
 	d~
 	d
 	R2*3
@@ -451,14 +451,14 @@ musicClarinettoIMvtIII = \relative c' {
 	
 % Bars 461 to 465
 	fis4.(\pp\< g16 a
-	fis2)
-	fis4.(\> e16 d
+	fis2)\!
+	fis4.( e16 d
 	fis4. e16 d)
-	fis4.\pp r8
+	fis4. r8
 % Bars 466 to 470
 	R2*2
 	
-	r4 a,8.\p\<( a'16)
+	r4 a,8.\p\<\( a'16\)
 	a4.\fz\>( g8
 	fis4. e8)\!
 % Bars 471 to 475
@@ -469,9 +469,9 @@ musicClarinettoIMvtIII = \relative c' {
 	
 % Bars 476 to 480
 	
-	d4.(\fp\> e16 f)
+	d4.\(\fp\> e16 f\)
 	d2\!
-	d4.(_\dimmarkup e16 f)
+	d4.\(_\dimmarkup e16 f\)
 	d2~
 % Bars 481 to 485
 	d8 r r4
