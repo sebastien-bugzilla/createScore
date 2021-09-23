@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicFagottoIIMvtIII = \relative c, {
+musicFagottoIMvtIII = \relative c {
 	\clef bass
 	\key b \minor
 %	\transposition a
@@ -24,39 +24,39 @@ musicFagottoIIMvtIII = \relative c, {
 	R2*2
 % Bars 26 to 30
 	
-	fis8\ff fis16 fis fis8 fis16 fis
+	fis,8\ff fis16 fis fis8 fis16 fis
 	fis8 fis16 fis fis8 fis16 fis
 	fis8 r r4
 	R2*3
 % Bars 31 to 35
 	
 	
-	b,4\p r8 b
-	e8. b16 b4
-	d4-> b8-. d-.
+	\partCombineApart R2
+	R
+	R
 % Bars 36 to 40
-	fis8. g16 g8-. fis-.
-	fis4 b,\p
-	e cis8-.\< fis-.
-	g e16 g b,8-. fis-.\!
-	b4.\mf r8
+	\mmrPos #6 R
+	r4 b\p \partCombineAutomatic
+	\partCombineChords b b8-.\< ais-.
+	\partCombineApart b b \partCombineChords fis-. fis-.\!
+	\partCombineAutomatic b4.\mf r8
 % Bars 41 to 45
 	R2*8
 % Bars 46 to 50
 	
 	
 	\mark \default
-	a8\p a' a, a'
-	a, a' a, a'
+	\partCombineApart \mmrPos #8 R2
+	\mmrPos #8 R
 % Bars 51 to 55
-	a, a' a, a'
-	a, a' a, a'
-	a, a' a, a'
-	a, a' a, a'
-	a, a' a, a'
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R
 % Bars 56 to 60
-	a-. d-. a-. g-.
-	fis4 r
+	\mmrPos #10 R
+	\mmrPos #8 R \partCombineAutomatic
 	R2*29
 % Bars 61 to 65
 	
@@ -70,20 +70,20 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 86 to 90
 	\mark \default
-	b8[\ff r16 d] d8 r
-	e8[ r16 d] d8 r
-	d r r4
+	\partCombineApart b8[ \once \partCombineAutomatic f'16\rest fis] fis8 \partCombineAutomatic r
+	g8[ r16 fis] fis8 r
+	fis r r4
 	R2
 % Bars 91 to 95
-	e,8[\f r16 g] g8 r
-	a8[ r16 g] g8 r
-	g8 r r4
+	b,8[\f r16 b] b8 r
+	c8[ r16 b] b8 r
+	b8 r r4
 	R2
-	e2\f~
+	g2\f~
 % Bars 96 to 100
-	e~
-	e~
-	e
+	g~
+	g~
+	g
 	R2*12
 % Bars 101 to 105
 	
@@ -94,117 +94,111 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	\mark \default
 % Bars 111 to 115
-	b2\pp~
-	b~
-	b~
-	b~
-	b
+	d2\pp~
+	d~
+	d~
+	d~
+	d
 % Bars 116 to 120
-	a~
-	a~
-	a~
-	a~
-	a
+	cis~
+	cis~
+	cis~
+	cis~
+	cis
 % Bars 121 to 125
 	R2*4
 	
 	
 	
-	R2*4
+	\partCombineApart r8 d'-.\p cis-. r
 % Bars 126 to 130
-	
-	
-	
+	r d-. cis-._\dimmarkup r
+	r d-. cis-. r
+	r d-. cis-. r \partCombineAutomatic
 	R2*2
 	
 % Bars 131 to 135
-	g'2_\pdim(
-	fis)~
-	fis\>~
-	fis\!
-	\tuplet 3/2 4 {e8 e e\< e e e
+	\partCombineApart \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
+	R
 % Bars 136 to 140
-	e e e   e e e\!
-	a, a a   a a a
-	a\> a a   a a a\!}
-	a2_\dimmarkup~
-	a4 r
+	R
+	R
+	R
+	R
+	R \partCombineAutomatic
 % Bars 141 to 145
 	R2*2
 	\mark \default
-	a2\p~
-	a~
-	a~
+	\partCombineApart R2*12
 % Bars 146 to 150
-	a~
-	a~
-	a~
-	a~
-	a
+	
 % Bars 151 to 155
-	a~
-	a
-	a(~
-	a4 d8) r
+	
+	
+	
+	\partCombineAutomatic
 	R2*4
 % Bars 156 to 160
 	
 	
 	
-	a'2\p
-	e8( a a4)
+	cis!4( c)
+	b8( cis! c4)
 % Bars 161 to 165
-	e8( a a4)
-	g8( fis g e)
-	a2\pp
-	e8( a a4)
-	g2(
+	b8( cis! c4)
+	b8( a b g)
+	cis!4( c)
+	b8( cis! c4)
+	b2(
 % Bars 166 to 170
-	e4 a) \mark \default
-	g8-.\p g( a) a(
-	g) g( a) a(
-	g)\< g( fis e)\!
-	fis(\> g b a)\!
+	g4 cis!) \mark \default
+	b8-.\p b( cis) cis(
+	b) b( cis) cis(
+	b)\< b( a g)\!
+	a( b d4)
 % Bars 171 to 175
-	a2\<
-	b\!
-	a4( g)
-	fis(\< gis)
-	ais\! b8.( g!16
+	cis2\<
+	d\!
+	cis4( b)
+	a(\< b)
+	cis\! d8.( b16
 % Bars 176 to 180
-	a!8. fis16 g8. e16
-	d8) r r4
+	cis8. a16 b8. g16
+	fis8) r r4
 	R2*5
 	
 	
 % Bars 181 to 185
 	
 	
-	R2*3
-	
-	
+	\partCombineApart f'2\pp~
+	f\<
+	e8\fz r r4 \partCombineAutomatic
 % Bars 186 to 190
 	R2*7
 % Bars 191 to 195
 	
 	
-	\clef tenor r8 e'8\p\<~ e4->\fz
-	r8 e~\< e4\fz->
-	e8 r r4 \clef bass
+	\clef tenor r8 \partCombineChords g8\p\<( fis4->\fz) \partCombineAutomatic
+	r8 \partCombineChords g(\< fis4)\fz-> \partCombineAutomatic
+	g8 r r4 \clef bass
 % Bars 196 to 200
 	R2*4
 	
 	
 	
-	g,8-.\fp g-. r4
+	bes,8-.\fp a-. r4
 % Bars 201 to 205
-	g,8-.\pp g-. r4
+	bes,8-.\pp a-. r4
 	R2
-	r4 r8 a\ff \mark \default
+	r4 r8 a'\ff \mark \default
 	d8. d16 d8 r
 	fis8. d16 d8 r
 % Bars 206 to 210
-	r8 d'\f r e
+	r8 d\f r e
 	r fis r g
 	r a r4
 	R2
@@ -213,7 +207,7 @@ musicFagottoIIMvtIII = \relative c, {
 	r fis r g
 	r a r4
 	R2
-	e,8.\ff e16 e8 r
+	e8.\ff e16 e8 r
 	g8. e16 e8 r
 % Bars 216 to 220
 	e,-. e-. g-. e-. 
@@ -243,12 +237,12 @@ musicFagottoIIMvtIII = \relative c, {
 	e4.-> e8
 % Bars 256 to 260
 	d4 b8 d
-	fis fis ais cis
-	fis,4-> a!->
+	\partCombineApart fis fis, ais cis \partCombineAutomatic
+	fis4-> a!->
 	g-> e8 cis
 	fis fis fis fis \mark \default
 % Bars 261 to 265
-	b,2\ff-^~
+	b,,2\ff-^~
 	b~\>
 	b~\dimD\>
 	b~
@@ -264,33 +258,33 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	\mark \default \bar "||"
 % Bars 281 to 285
-	g'2\p~
-	g
-	g~
-	g
-	g~
+	d'2\p~
+	d
+	g4( d
+	g d)
+	g( d)
 % Bars 286 to 290
-	g
-	d2~
-	d8 fis-- a-- d--
-	d4 d,
-	d'8-- a' a,4--
+	g( d)
+	\partCombineApart d2~
+	d8 r r4
+	R2
+	\mmrPos #8 R
 % Bars 291 to 295
-	d8-- a' a,4--
-	d8 d, r4
-	d'4 d,
-	d' a
-	d a
+	\mmrPos #8 R
+	R
+	d2
+	d4 e
+	d e \partCombineAutomatic
 % Bars 296 to 300
-	d, r
-	\tuplet 3/2 4 {g'8\p g g  g g g 
-	f f f  f f f 
-	f f f  f f f 
-	f f f  f f f 
+	d r
+	\tuplet 3/2 4 {b'8\p b b  b b b
+	b g g  g g g
+	g g g  g g g
+	g g g  g g g
 % Bars 301 to 305
-	f f f  e\< e e 
-	a, a a   a a a\!}
-	d4 r
+	g g g  g\< g g
+	g g g  g g g\!}
+	\once \partCombineApart d4 r
 	R2*11
 % Bars 306 to 310
 	
@@ -311,9 +305,9 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	\mark \default
 % Bars 331 to 335
-	a'8\p r a4(~
-	a8 b a b)
-	cis4. r8
+	cis'8\p r cis4(~
+	cis8 d cis d)
+	e4. r8
 	R2*13
 % Bars 336 to 340
 	
@@ -321,7 +315,7 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 346 to 350
 	\bar "||" \key b \major
-	fis,,2\p~
+	fis,2\p~
 	fis~
 	fis~
 	fis
@@ -330,39 +324,39 @@ musicFagottoIIMvtIII = \relative c, {
 	fis
 	fis~
 	fis
-	fis'\p
+	ais(
 % Bars 356 to 360
-	fis4( cis)
-	fis( cis)
-	fis2
-	fis
-	fis4( cis)
+	a4 gis)
+	ais!8( a gis4)
+	ais!2
+	ais(
+	a4 gis)
 % Bars 361 to 365
-	fis( cis)
-	fis2
-	\tuplet 3/2 4 {a!8 a a   a a a
-	a\< a a  a a a\!
-	a a a   a a a_\crescmarkup
+	ais!8( a gis4)
+	ais!2
+	\tuplet 3/2 4 {b8 b b  b b b
+	b\< b b  b b b\!
+	b b b   b b b_\crescmarkup
 % Bars 366 to 370
-	a a a  a a a 
-	a a a  gis\f gis gis
-	cis, cis cis  cis cis cis}
-	fis4(\mf b)
-	ais2
+	b b b  b b b
+	b b b  b\f b b
+	e e e  e e e}
+	dis2(\mf
+	e)
 % Bars 371 to 375
-	b(
-	ais)
-	b(
-	ais)
-	b(
+	dis2(
+	e)
+	dis(
+	e)
+	dis(
 % Bars 376 to 380
-	ais)
-	b4( ais)
-	b( ais)
-	b( cis8-.)\f r
+	e)
+	dis4( e)
+	dis( e)
+	dis( e8-.)\f r
 	R2 \mark \default
 % Bars 381 to 385
-	b,4\f b 
+	b4\f b 
 	a2
 	gis
 	g
@@ -371,31 +365,31 @@ musicFagottoIIMvtIII = \relative c, {
 	R2*3
 	
 	
-	\tuplet 3/2 4 {bis8\p\< bis r cis cis r
-	ais ais r b! b r
+	\tuplet 3/2 4 {dis!8\p\< dis r e e r
+	cis cis r dis dis r
 % Bars 391 to 395
-	gis gis r gis gis r
-	g g r  g g\! r }
-	b\f r r4
-	r r8 eis,\f
-	fis r fis r
+	b b r b b r
+	b b r b b\! r }
+	d\f r r4
+	r r8 eis\f
+	fis r e! r
 % Bars 396 to 400
 	R2
-	b'2\p(
-	a)
-	gis!(
-	g)
+	\partCombineApart b'2(
+	b) \partCombineAutomatic
+	b(
+	b)
 % Bars 401 to 405
-	fis2~\fz\>
-	fis~\!
-	fis~
-	fis
-	bis4(\mf cis)
+	\partCombineApart b4 r
+	\mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\partCombineAutomatic dis4(\mf e)
 % Bars 406 to 410
-	ais(\< b!)
-	gis2\fz(
-	g)\fz~
-	g8 r r4
+	\partCombineChords cis(\< dis)
+	b2\fz~
+	b\fz~
+	b8 \partCombineAutomatic r r4
 	R2*3
 % Bars 411 to 415
 	
@@ -423,11 +417,11 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 456 to 460
 	
 % Bars 461 to 465
-	fis2\pp\<~
-	fis\!
-	fis\>~
-	fis(
-	b,4.)\pp r8
+	b2\pp\<~
+	b\!
+	b\>~
+	b(
+	b4.)\pp r8
 % Bars 466 to 470
 	R2*13
 % Bars 471 to 475
@@ -436,10 +430,10 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	
 	
-	R2*3
-	
+	cis2\p\>~
+	cis(\!
 % Bars 481 to 485
-	
+	d8) r r4
 	R2*15
 % Bars 486 to 490
 	
@@ -464,11 +458,11 @@ musicFagottoIIMvtIII = \relative c, {
 	b8-.\ff b-. b-. b-.
 	b-. b-. b-. b-.
 % Bars 511 to 515
-	b r cis''-. b-.
+	b r cis'-. b-.
 	e-. d-. g-. fis-.
 	b,8-. r r4
-	b,,8 r b r
-	b b'4-^ b8-.
+	b,8 r b r
+	b b4-^ b8-.
 % Bar 516
-	b, r r4 \bar "|."
+	b r r4 \bar "|."
 }

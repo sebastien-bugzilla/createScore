@@ -36,7 +36,7 @@ musicFagottoIIMvtIII = \relative c, {
 	d4-> b8-. d-.
 % Bars 36 to 40
 	fis8. g16 g8-. fis-.
-	fis4 b,\p
+	fis4 b,
 	e cis8-.\< fis-.
 	g e16 g b,8-. fis-.\!
 	b4.\mf r8
@@ -188,8 +188,8 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 191 to 195
 	
 	
-	\clef tenor r8 e'8\p\<~ e4->\fz
-	r8 e~\< e4\fz->
+	\clef tenor r8 e'8\p\<_~ e4->\fz
+	r8 e_~\< e4\fz->
 	e8 r r4 \clef bass
 % Bars 196 to 200
 	R2*4
@@ -342,12 +342,12 @@ musicFagottoIIMvtIII = \relative c, {
 	fis2
 	\tuplet 3/2 4 {a!8 a a   a a a
 	a\< a a  a a a\!
-	a a a   a a a_\crescmarkup
+	a a a   a a a
 % Bars 366 to 370
 	a a a  a a a 
 	a a a  gis\f gis gis
-	cis, cis cis  cis cis cis}
-	fis4(\mf b)
+	\partCombineChords cis, cis cis  cis cis cis \partCombineAutomatic }
+	fis4( b)
 	ais2
 % Bars 371 to 375
 	b(
@@ -393,8 +393,8 @@ musicFagottoIIMvtIII = \relative c, {
 	bis4(\mf cis)
 % Bars 406 to 410
 	ais(\< b!)
-	gis2\fz(
-	g)\fz~
+	gis2\fz
+	g\fz~
 	g8 r r4
 	R2*3
 % Bars 411 to 415
@@ -436,7 +436,7 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	
 	
-	R2*3
+	\partCombineApart R2*3 \partCombineAutomatic
 	
 % Bars 481 to 485
 	
