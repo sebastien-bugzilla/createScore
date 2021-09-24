@@ -4,7 +4,7 @@
 %###############################################################################
 %#                          M U S I C   S E C T I O N                          #
 %###############################################################################
-musicCornoIIMvtIII = \relative c' {
+musicCornoIMvtIII = \relative c' {
 	\clef treble
 	\key a \minor
 	\transposition e
@@ -13,19 +13,19 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	bes8\p r d r
+	d8\p r g r
 % Bars 6 to 10
-	\tuplet 3/2 4 {g g g} d4
-	bes'->\fz g8-. d-.
-	g4 r
+	\tuplet 3/2 4 {a bes a} g4
+	d'->\fz bes8-. g-.
+	a4 r
 	R2*12
 % Bars 11 to 15
 	
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	d'4\ff-> a8 fis
-	fis4-> d'8 a
+	\partCombineApart d4-> a8 fis \partCombineAutomatic
+	fis'4-> d8 a
 	a fis16 d c'8\< a16 fis\!
 	ees'8\fz r r4
 	R2*24
@@ -51,10 +51,10 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*2
+	\partCombineApart d4(\p ees
 % Bars 66 to 70
-	
-	r4 d,8\f r
+	d ees)
+	d8 r d \partCombineAutomatic r
 	R2*19
 % Bars 71 to 75
 	
@@ -64,9 +64,9 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 86 to 90
 	\mark \default
-	g8\ff[ r16 g] g8 r
-	c8[ r16 g] g8 r
-	g r r4
+	d8\ff[ r16 d] d8 r
+	ees8[ r16 d] d8 r
+	d r r4
 	R2*15
 % Bars 91 to 95
 	
@@ -77,7 +77,7 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	ees'8.\ff d16 d8 r
+	ees8.\ff d16 d8 r
 % Bars 106 to 110
 	ees8. d16 d8 r
 	ees8-._\ffz d-. r4
@@ -107,72 +107,76 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	bes,2\pp~
+	bes2\pp~
 % Bars 156 to 160
 	bes
 	f~
 	f8 r r4
-	R2*3
-	
+	\partCombineApart r8 c'4.\pp~
+	c2~
 % Bars 161 to 165
-	
+	c4. r8 \partCombineAutomatic
 	R2
-	R2*4
-	
-	
+	\partCombineApart r8 c4.\pp~
+	c2~
+	c~
 % Bars 166 to 170
-	\mark \default
+	c4 r \partCombineAutomatic \mark \default
 	R2*2
 	
-	R2*9
-	
+	\partCombineApart r8 c(\p\< bes a)
+	bes(\> c ees d)\!
 % Bars 171 to 175
-	
+	c4(\< a8 d~\!
+	d4) \acciaccatura d8 ees4(\mf
+	\acciaccatura cis8 d4 \acciaccatura b8 c4)
+	bes8(\< b c cis)
+	d4\! \acciaccatura d8 ees4(
 % Bars 176 to 180
-	
-	
+	\acciaccatura cis8 d4 \acciaccatura b8 c4
+	f!8) r r4 \partCombineAutomatic
 	R2*5
 	
 	
 % Bars 181 to 185
 	
 	
-	R2*3
-	
-	
+	\partCombineApart des2\pp~
+	des\<
+	c8\fz r r4 \partCombineAutomatic
 % Bars 186 to 190
 	R2*11
 % Bars 191 to 195
 	
 % Bars 196 to 200
 	
-	R2*3
-	
-	
+	\partCombineApart r8 ees4.\fz
+	r8 ees4.\fz
+	ees8-.\fz ees-. r4 \partCombineAutomatic
 	R2*3
 % Bars 201 to 205
 	
 	
-	r4 r8 c''\ff \mark \default
-	bes8. bes16 bes8 r
-	bes8. bes16 bes8 r
+	r4 r8 ees\ff \mark \default
+	d8. d16 d8 r
+	d8. d16 d8 r
 % Bars 206 to 210
 	R2*8
 % Bars 211 to 215
 	
 	
 	
-	c8.\ff c16 c8 r
-	c8. c16 c8 r
+	ees8.\ff ees16 ees8 r
+	ees8. ees16 ees8 r
 % Bars 216 to 220
-	c8 c4 c8~
-	c c4 c8
-	c2->\fz 
-	des\fz->
-	d!\fz->
+	ees8 ees4 ees8~
+	ees ees4 ees8
+	ees2->\fz 
+	ees\fz->
+	\once \partCombineApart d!->
 % Bars 221 to 225
-	b!4\fz g8 g \mark \default
-	a r r4
+	d4\fz c8 cis \mark \default
+	d r r4
 	R2*31
 % Bars 226 to 230
 	
@@ -188,20 +192,20 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	bes4\f bes
-	a4. a8
+	d4\f d
+	ees4. ees8
 % Bars 256 to 260
-	bes4 bes8 bes
-	a2-^
-	a4-> b!->
-	c g8 c
-	bes-. a-. g-. fis-. \mark \default
+	d4 d8 d
+	fis2-^
+	f!4-> d->
+	g c,8 ees
+	d-. c-. bes-. a-. \mark \default
 % Bars 261 to 265
-	bes\f r r4
-	bes8 r r4
-	bes8_\dimmarkup r r4\>
-	bes8 r r4
-	g8\p r r4
+	d\f r r4
+	d8 r r4
+	d8_\dimmarkup r r4\>
+	d8 r r4\!
+	\once \partCombineApart g,8 r r4
 % Bars 266 to 270
 	R2*15
 % Bars 271 to 275
@@ -221,21 +225,13 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 296 to 300
 	
 % Bars 301 to 305
-	r4 \tuplet 3/2 4 {aes8\p\< aes aes 
-	aes aes aes  aes aes aes\!}
-	bes2\p~
-	bes~
-	bes~
+	\partCombineApart R2*13 \partCombineAutomatic
 % Bars 306 to 310
-	bes~
-	bes~
-	bes
-	bes~
-	bes
+	
 % Bars 311 to 315
-	bes-^
-	bes-^
-	bes4. r8
+	
+	
+	
 	R2 \mark \default
 	R2*16
 % Bars 316 to 320
@@ -256,46 +252,58 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 346 to 350
 	\bar "||" \key c \major
-	R2*22
-	
-	
-	
+	\partCombineApart d'2\p
+	d
+	d4( e)
+	d( e)
 % Bars 351 to 355
-	
+	d2
+	d
+	d4 d
+	d2
+	a4_\pocomarcato-! d-!
 % Bars 356 to 360
-	
+	a-! c-!
+	a-! c-!
+	a-! d-!
+	a-! d-!
+	a-! c-!
 % Bars 361 to 365
-	
+	a-! c-!
+	a-! d-!
+	d-!\< g-!\!
+	d g-^\f~
+	g2~
 % Bars 366 to 370
-	
-	
-	
-	\tuplet 3/2 4 {d,8\mf d d  d d d
-	d d d   d d d 
+	g
+	g-^~
+	g4 fis8(-^ e)-^ 
+	d2->
+	d
 % Bars 371 to 375
-	d d d   d d d 
-	d d d   d d d 
-	d d d   d d d 
-	d d d   d d d 
-	d d d   d d d 
+	d
+	d
+	d
+	d
+	d
 % Bars 376 to 380
-	d d d   d d d 
-	d d d   d d d 
-	d d d   d d d 
-	d d d } d r
+	d
+	d4 d
+	d d 
+	d d8 \partCombineAutomatic r
 	R2 \mark \default
 % Bars 381 to 385
-	b'4\f b
-	b2
-	a
-	a
-	b8 r r4
+	d4\f d
+	d2
+	cis
+	c!
+	d8 r r4
 % Bars 386 to 390
 	R2*7
 % Bars 391 to 395
 	
 	
-	ees,8\f r r4
+	ees8\f r r4
 	r r8 ees\f
 	d r d r
 % Bars 396 to 400
@@ -304,13 +312,13 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*3
-	
+	\partCombineApart r4 d\mp\<(
+	f! e!)
 % Bars 406 to 410
-	
-	e'!2\fz
-	ees2\fz~
-	ees8 r r4
+	ees( d)\! \partCombineAutomatic
+	g2\fz
+	g2\fz~
+	g8 r r4
 	R2*3
 % Bars 411 to 415
 	
@@ -319,21 +327,25 @@ musicCornoIIMvtIII = \relative c' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	b2->\f
+	b,2->\f
 	e->
-	g,->~
-	g
-	d_\fzdim->~
+	e->~
+	e
+	b_\fzdim->~
 % Bars 426 to 430
-	d~\>
-	d\p~
-	d4. r8
-	R2*8
-	
+	b~\>
+	b\p~
+	b4. r8
+	\partCombineApart d2->\mf
+	e->\fz
 % Bars 431 to 435
-	
+	e->\fz~
+	e
+	d\fz\>~
+	d~-\dimD
+	d\pp~
 % Bars 436 to 440
-	
+	d4. r8 \partCombineAutomatic
 	R2*12
 % Bars 441 to 445
 	
@@ -346,9 +358,9 @@ musicCornoIIMvtIII = \relative c' {
 	
 % Bars 456 to 460
 	
-	R2*3
-	
-	
+	\partCombineApart d2\ppp~
+	d~
+	d8 r r4 \partCombineAutomatic
 	R2*9
 % Bars 461 to 465
 	
@@ -356,23 +368,23 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 	
-	R2*5
-	
+	\partCombineApart d2\fz\>~
+	d\!
 % Bars 471 to 475
-	
-	
-	
+	d\pp~
+	d~
+	d4. r8 \partCombineAutomatic
 	R2*3
 	
 % Bars 476 to 480
 	
 	
-	c'2\fp\>->~
+	c2\fp\>->~
 	c\!
-	f,2\>~
+	\partCombineChords c2\>~
 % Bars 481 to 485
-	f\!(
-	c8)\pp r r4
+	c\!^~
+	c8\pp \partCombineAutomatic r r4
 	R2*15
 % Bars 486 to 490
 	
@@ -385,23 +397,23 @@ musicCornoIIMvtIII = \relative c' {
 	
 	
 % Bars 501 to 505
-	g'2-^\ff
-	d-^
+	b2-^\ff
+	b-^
 	c-^~
 	c
-	d4 g-^
+	b4 g-^
 % Bars 506 to 510
 	d'-^ c8-. b-.
 	a-. g-. g4-^
 	d'-^ c8-. b-.
-	b8\ff[ r16 b b8 r16 b]
-	b8[ r16 b b8 r16 b]
+	d8\ff[ r16 d d8 r16 d]
+	d8[ r16 d d8 r16 d]
 % Bars 511 to 515
-	b8 r a r
-	ees' r g, r
-	g r r4
-	g8 r g r
-	g g4-^ g8-.
+	d8 r f! r
+	g r ees r
+	d r r4
+	d8 r d r
+	d g,4-^ g8-.
 % Bar 516
 	g r r4 \bar "|."
 }

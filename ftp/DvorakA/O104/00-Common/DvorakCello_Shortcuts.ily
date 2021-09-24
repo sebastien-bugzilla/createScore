@@ -74,7 +74,7 @@ tranquillo=^\markup {\italic tranquillo}
 div=^\markup {div.}
 IImutainflautopiccolo=^\markup { \smaller { [II. muta in Flauto piccolo] } }
 espressivoecantabile=^\markup {\italic {espressivo e cantabile}}
-
+pocomarcato=^\markup {\italic {poco marcato}}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
