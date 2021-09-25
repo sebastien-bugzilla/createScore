@@ -37,6 +37,7 @@ pdolce=^\markup {\dynamic p \italic dolce}
 espr = \markup { "<" ">"}
 pmorendo=^\markup {\dynamic p \italic morendo}
 ppleggiero=^\markup {\dynamic pp \italic leggiero}
+pconsord=^\markup {\dynamic p \italic {con sord.}}
 crescD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:normal-text #:italic "dim."))
 pdimD = \tweak DynamicText.self-alignment-X #-0.5 #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dim."))
@@ -75,6 +76,8 @@ div=^\markup {div.}
 IImutainflautopiccolo=^\markup { \smaller { [II. muta in Flauto piccolo] } }
 espressivoecantabile=^\markup {\italic {espressivo e cantabile}}
 pocomarcato=^\markup {\italic {poco marcato}}
+senzasord=^\markup {\italic {senza sord.}}
+solo=^\markup {Solo}
 
 % shortcuts & funcions
 sharptrill = \once \override TrillSpanner.bound-details.left.text = \markup {
